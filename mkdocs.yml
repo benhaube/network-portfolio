@@ -57,7 +57,7 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
-    # - content.action.edit
+    - content.action.edit
 
 markdown_extensions:
   - attr_list
@@ -140,4 +140,4 @@ copyright: >
 extra_css:
   - stylesheets/extra.css
 
-repo_url: https://github.com/benhaube/
+repo_url: https://github.com/benhaube/network-portfolio

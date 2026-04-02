@@ -1,0 +1,143 @@
+site_name: Network Documentation & Portfolio
+site_url: https://portfolio.rac3r4life.online
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # scheme: slate # Enables a dark mode theme
+    # primary: green
+    # accent: light blue
+  font:
+    text: Google Sans
+    code: Google Sans Code
+  icon:
+    logo: material/file-document-multiple
+    repo: simple/github
+    tag:
+      default: material/tag
+    top: material/arrow-up-bold
+    previous: material/arrow-left-bold
+    next: material/arrow-right-bold
+    search: material/magnify
+    annotation: material/plus-circle
+  favicon: /assets/icons/favicon.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    # - content.action.edit
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.blocks.caption
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search
+  - roamlinks
+  - callouts
+  - tags:
+      export: true
+  - optimize
+  - typeset
+  - social:
+      log: true
+      log_level: warn
+  - blog
+
+use_directory_urls: false
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/benhaube
+      title: benhaube on Github
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/benjamin-haube/
+      title: Benjamin Haube on Linkedin
+    - icon: simple/printables
+      link: https://www.printables.com/@rac3r4life
+      title: rac3r4life on Printables
+    - icon: simple/gravatar
+      link: https://benhaube.link
+      title: Ben Haube - Gravatar
+    - icon: simple/bluesky
+      link: https://bsky.app/profile/rac3r4life.me
+      title: rac3r4life.me on Bluesky
+  generator: false
+  tags:
+
+
+copyright: >
+  Copyright&copy; 2026 Benjamin Haube -
+  <a href="#__consent">Change cookie settings</a>
+
+extra_css:
+  - stylesheets/extra.css
+
+repo_url: https://github.com/benhaube/

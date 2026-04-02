@@ -1,0 +1,110 @@
+---
+tags:
+  - hardware
+  - network
+  - server
+  - 3D-printer
+hide:
+  - toc
+---
+![[creality.svg|200]]
+
+# [[Kacey_3D-printer|Kacey (Creality(c) K1C) 3D-Printer]]
+[Creality Docs :material-file-document-multiple:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :octicons-terminal-16:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
+
+---
+## Device Overview
+* **Role:** 3D-Printer
+* **Hostname(s):** `k1c-a71e`
+* **Location:** 
+    * Office
+* **OS / Firmware:**
+    * :devices-creality:&nbsp;Creality&copy; FW Version: 1.3.3.46
+    * :simple-linux:&nbsp;Buildroot 2020.02.1
+* **Credentials:** 
+    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
+
+> [!info]+
+> *See more detailed information about the Creality&copy; K1C hardware:* 
+> 
+> ![[creality.svg|15]]&nbsp;[[Kacey_Info|Kacey Info]]
+
+## Network Configuration
+**:material-ethernet: Network Interface:**
+
+| Interface | IP Address | MAC Address | Connected To |
+| :-------: | :--------- | :---------- | :----------- |
+| wlan0 | `192.168.50.153` | `FC:EE:28:09:A7:1E` | SSID: `Home` |
+
+**:material-ip-network: IP Configuration:**
+
+| VLAN | Hostname(s) | DNS Servers | Gateway |
+| :--: | :---------- | :---------- | :------ |
+| vlan50 | `k1c-a71e.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
+
+## Storage & Mounts
+**:material-harddisk: Internal Drive(s):**
+
+| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
+| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
+| `/usr/data` | eMMC | 6.5 GB | `/dev/mmcblk0p10` | `ext4` | - |
+| `/overlay` | eMMC | 96.8 MB | `/dev/mmcblk0p9` | `ext4` | - |
+| `/rom` | Read-Only Memory | 126.8 MB | `/dev/root` | `squashfs` | - |
+
+**:material-usb: External/Attached:**
+
+| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
+| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
+| `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB | `/dev/sda1` | `vfat` | - |
+
+## Services / Docker Containers
+**:simple-linux: Native Linux:**
+
+| Status | Service | Port(s) | Role / Notes |
+| :----: | :------ | :-----: | :----------- |
+| *Active* | :services-fluidd: [[Fluidd]] | `80` `4408` | A Web UI for managing the printer. |
+| *Active* | :material-printer-3d: [[Moonraker]] | `7125` | An API that allows applications to communicate with the 3D-printing firmware, [Klipper](https://www.klipper3d.org/).  |
+| *Active* | :material-console-network: [[SSH]] | `22` | Remote terminal access. |
+
+---
+## Maintenance & Notes
+> [!NOTE]+ Modifications:
+> **:material-chip: Firmware**
+> + The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/) for configuration issues.
+> 
+> **:material-application-brackets: Software**
+> 
+> + Fluidd / Moonraker
+>     + For information regarding the [[Fluidd]] Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).
+>     + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
+> + Klipper
+>     + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
+> 
+> **:material-printer-3d-nozzle: Hardware:**
+> 
+> + :material-cog:&nbsp;Bed Leveling Knobs
+>     + Changes from a fixed bed to an adjustable bed with aluminum knobs. 
+>     + See the [tutorial](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md) for information about how to install and use the `Screws_Tilt_Adjust` gcode macro. 
+> 
+> + :devices-prowiper:&nbsp;PROWIPER&copy; Mod
+>     + Replaces the standard nozzle wiping brush at the back of the build plate.
+>     + See the [[PROWIPER_Mod|tutorial]] for information on how to install and activate the required G-Code macros.
+> 	   
+> > [!warning]
+> > Add these coordinates to "Bed Exclude Area" in [OrcaSlicer](https://www.orcaslicer.com/) printer settings to avoid collisions during prints:
+> > ``` linenums="1"
+> > 70x210, 150x210, 150x220, 70x220
+> > ```
+> 
+> **:material-code-block-tags: Custom G-Code Macros:**
+> + Manual Nozzle Cleaning Macro
+>     + This custom macro set *(`CLEAN_NOZZLE` and `DONE_CLEANING`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
+>     + See more information and G-Code [[Manual_Nozzle_Cleaning_Gcode_Macro|here]].
+
+**:material-update: Update Process:** 
+
+* Update software through the [Fluidd](http://k1c-a71e.internal) Web UI. 
+
+**:material-cloud-upload-outline: Backup Policy:** 
+
+* Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup) repository. 

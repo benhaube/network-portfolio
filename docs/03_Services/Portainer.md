@@ -1,0 +1,58 @@
+---
+tags:
+  - inactive
+  - service
+  - software
+  - docker
+  - download
+hide:
+  - toc
+---
+![[portainer-pink.svg|200]]
+
+# [[Portainer]]&emsp;*(Inactive)*
+[GitHub :material-github:](https://github.com/portainer/portainer-docs){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
+
+---
+## Overview
+* **Purpose:** Docker container management platform
+* **Port(s):** `9443`
+* **URL / Access:** 
+    * ~~[[https://portainer.internal]]~~
+    * ~~[[https://pi-server.internal:9443]]~~
+* **Credentials:** 
+    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Portainer @ pi-server"
+
+## Deployment Details 
+* **Host Device:** &nbsp;~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
+* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Container Name:** `portainer`
+* **Image:** `portainer/portainer-ee:lts`
+
+### Configuration  
+
+```yaml title="docker-compose.yml" linenums="1"
+services:  
+  portainer:  
+    container_name: portainer  
+    image: portainer/portainer-ee:lts  
+    restart: always  
+    volumes:  
+      - /var/run/docker.sock:/var/run/docker.sock  
+      - portainer_data:/data  
+      - /:/host  
+    ports:  
+      - 9443:9443  
+      - 8000:8000  # Remove if you do not intend to use Edge Agents  
+    dns:  
+      - 192.168.50.6  
+      - 192.168.50.2  
+  
+volumes:  
+  portainer_data:  
+    name: portainer_data  
+  
+networks:  
+  default:  
+    name: portainer_network
+```

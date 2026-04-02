@@ -55,7 +55,7 @@ hide:
 
 > [!NOTE] Critical Configurations
 > #### :material-clock-outline: Chrony:
->     + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
+> + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
 
 #### :material-update: Update Process: 
 

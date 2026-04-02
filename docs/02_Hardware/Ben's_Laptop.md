@@ -376,10 +376,10 @@ Type=Application
 ```toml title="rclone.conf" linenums="1"
 [Google-Drive]
 type = drive
-client_id = 573386641912-ghiduspigg77h5mrq82j4b04npqqilf9.apps.googleusercontent.com
-client_secret = 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
+client_id = <id>.apps.googleusercontent.com
+client_secret = <secret>
 scope = drive
-token = {"access_token":"ya29.a0AUMWg_KfeqgqL-4xk_QqYYsnYbKhcrbksYyfIqwECPMPW4L0iXJxoifYXVaLHCqYnJJc-9cBeXHSuy3D5glTSmh4k6TdJsAcWSB5us6-kNs_hQx9D9lGggODoTom19d9s1XKZS06lIYA_G49DOFYbLfKeva_zCMW0q6VnFaXICDNBe0GfCvyJmhqk-l_IGwhL-hpwH9EdQaCgYKASgSARYSFQHGX2MiMPbyjD343dtLx_2_F197DQ0209","token_type":"Bearer","refresh_token":"1//05eUu-3h8kKWtCgYIARAAGAUSNwF-L9Irau--EfXl97yI9msm45Ar1_Is00QPmUCyC1sa5c6FUeE98YRMTx5TaNVdAJSKIWzvFHw","expiry":"2026-01-27T13:30:17.807967299-05:00","expires_in":3599}
+token = {token}
 auth_url = https://accounts.google.com/o/oauth2/auth
 token_url = https://oauth2.googleapis.com/token
 metadata_owner = failok

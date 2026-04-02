@@ -17,7 +17,7 @@ hide:
 [Documentation :material-file-document-multiple:](https://docs.kernel.org/admin-guide/nfs/index.html){ .md-button .md-button--primary }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Remote file system access
 * **Port(s):** `2049`
 * **URL / Access:** 
@@ -26,13 +26,13 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "[[SSH]] keys"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Service
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 **Exports File:**
 

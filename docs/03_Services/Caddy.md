@@ -16,7 +16,7 @@ hide:
 [GitHub :material-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 * **Port(s):** 
     * `80`
@@ -24,13 +24,13 @@ hide:
 * **URL / Access:** <https://pi-zero.internal>
 * **Credentials:** N/A
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Install *(Systemd service)*
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 **How to Install:**
 
 1. Add the official Caddy repository. 

@@ -13,7 +13,7 @@ hide:
 [GitHub :material-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.fluidd.xyz/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A Web UI for managing the 3D-printer.
 * **Port(s):** 
     * `80`
@@ -26,13 +26,13 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:devices-creality:&nbsp;[[Kacey_3D-printer|Kacey (Creality(c) K1C) 3D-Printer]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Install
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 # Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.

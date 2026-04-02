@@ -12,7 +12,7 @@ hide:
 [Fedora Discussion :material-chat-question:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs :material-file-document-multiple:](https://docs.fedoraproject.org//en-US/docs/){ .md-button }&emsp;[Lenovo Support :material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button }
 
 ---
-## Device Overview
+## :material-information-outline: Device Overview
 * **Role:** Personal laptop PC
 * **Hostname(s):** `ben-laptop`
 * **Location:** 
@@ -20,27 +20,29 @@ hide:
 * **OS / Firmware:** &nbsp;:material-fedora:&nbsp;[Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
 * **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Laptop"
 
-## Network Configuration
-**:material-ethernet: Network Interface:**
+## :material-lan: Network Configuration
+
+#### :material-ethernet: Network Interface:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | wlp0s20f3 | `DHCP` | `A6:97:E3:D2:F1:C4` | SSID: *Home (vlan50)* |
 
-**:material-ip-network: IP Configuration:**
+#### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--- | :---------- | :---------- | :------ |
 | vlan50 | `ben-laptop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## Storage & Mounts
-**:material-harddisk: Internal Drive(s):**
+## :material-folder-open: Storage & Mounts
+
+#### :material-harddisk: Internal Drive(s):
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/`, `/home` | NVMe SSD | 929 GB | `/dev/dm-0` | `btrfs` | LUKS2 |
 
-**:material-usb: External/Attached:**
+#### :material-usb: External/Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -50,7 +52,8 @@ hide:
 | `/mnt/storage_server/NVMe` | NFS | 234 GB | `192.168.50.4:/media/nvme0n1p1` | `nfs4` | - |        
 
 ---
-## Maintenance & Notes
+## :material-tools: Maintenance & Notes
+
 > [!NOTE]+ Critical Configurations
 > 1. **:material-clock-outline: Chrony:** 
 >     + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
@@ -67,17 +70,17 @@ hide:
 >         ```
 >     + More information about the configuration process can be found at: [[Unlock_LUKS_TPM2|Unlock LUKS w/ TPM2]] 
 
-**:material-update: Update Process:** 
+#### :material-update: Update Process:
 
 * `sudo dnf offline-upgrade download` 
 * `sudo dnf offline reboot`
 * `flatpak update`
 
-**:material-cloud-upload-outline: Backup Policy:** 
+#### :material-cloud-upload-outline: Backup Policy:
 
 * `/home` directory backed up every weekday at `18:00` to [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 
-#### Backup Script Config
+#### :material-backup-restore: Backup Script Config
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
 ```bash title="home-bkp-nas.sh" linenums="1"
@@ -292,7 +295,7 @@ WantedBy=default.target
 7. Run the command `systemctl --user daemon-reload`
 8. Run the command `systemctl --user enable home-bkp-nas.timer`
 
-#### Systemd Files for ZimaOS NAS Mounts (NFS)
+#### :material-folder-network: Systemd Files for ZimaOS NAS Mounts (NFS)
 
 ```systemd title="mnt-storage_server-NVMe.mount" linenums="1"
 [Unit]  
@@ -358,7 +361,8 @@ TimeoutIdleSec=600
 WantedBy=multi-user.target
 ```
 
-#### Encrypted-Documents Config
+#### :material-folder-lock: Encrypted-Documents Config
+
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
 
@@ -370,7 +374,8 @@ Icon=plasmavault
 Type=Application
 ```
 
-#### Rclone Google Drive Config
+#### :material-google-drive: Rclone Google Drive Config
+
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
 ```toml title="rclone.conf" linenums="1"
@@ -401,7 +406,8 @@ Icon=google-drive
 Comment=Mount Google Drive via rclone
 ```
 
-#### Starship.rs Terminal Prompt
+#### :material-console-line: Starship.rs Terminal Prompt
+
 1. Install the latest version.
 
 ```bash linenums="1"

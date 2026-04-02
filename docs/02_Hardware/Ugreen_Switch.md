@@ -13,7 +13,8 @@ hide:
 [Manual :material-book-information-variant:](../assets/manuals/Ugreen_CM753.pdf){ .md-button .md-button--primary }
 
 ---
-## Physical Overview
+## :material-information-outline: Physical Overview
+
 * **Role:** Rack Aggregation
 * **Location:**
     * Living-Room 
@@ -27,7 +28,8 @@ hide:
         * 45 Gb/s Total Switching Capacity
     * **Jumbo Frames:** Supported *(12KB)*
 
-## Port Map
+## :material-ethernet: Port Map
+
 > [!note]-
 > *Since this switch is unmanaged, use this table to track physical cabling.*
 
@@ -41,13 +43,16 @@ hide:
 | **6** | :material-router-wireless: [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red, 10Gb/s, Cat6A | SFP+ Ethernet Transceiver |
 
 ---
-## Maintenance Notes
+## :material-tools: Maintenance Notes
+
 > [!TIP] Visual Indicators
-> **Ethernet Ports:** 
+> #### Ethernet Ports: 
+> 
 > * **Green LED:** 2500 Mbps Link 
 > * **Amber LED:** 10/100/1000 Mbps Link
 >   
-> **SFP+ Port:** 
+> #### SFP+ Port: 
+> 
 > * **Green LED:** 10 Gbps Link 
 > * **Amber LED:** 1000/2500 Mbps Link
 

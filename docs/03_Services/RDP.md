@@ -13,7 +13,7 @@ hide:
 [Gitlab :simple-gitlab:](https://invent.kde.org/plasma/krdp){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Remote desktop access over the local network *(not publicly exposed)*
 * **Port(s):** `3389`
 * **URL / Access:** 
@@ -22,14 +22,14 @@ hide:
 * **Credentials:** 
     * :material-account:&nbsp;Local User: `bhaube`
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:simple-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Linux
 * **Provider:** `krdpserver`
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```toml title="~/.config/krdbserverrc" linenums="1"
 [General]  

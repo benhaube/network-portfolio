@@ -16,7 +16,7 @@ hide:
 [GitHub :material-github:](https://github.com/glanceapp/glance){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/glanceapp/glance/tree/main/docs){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A server dashboard Web UI. 
 * **Port(s):** `8580`
 * **URL / Access:**
@@ -24,13 +24,13 @@ hide:
     * <http://pi-server.internal:8580/>
 * **Credentials:** N/A
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `glance`
 * **Image:** `glanceapp/glance` 
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
   glance:

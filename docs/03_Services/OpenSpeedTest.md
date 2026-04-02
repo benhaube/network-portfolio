@@ -16,7 +16,7 @@ hide:
 [GitHub :material-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://openspeedtest.com/selfhosted-speedtest){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** HTML5 Network Speed Test Server. 
 * **Port(s):** `3004`
 * **URL / Access:**
@@ -24,13 +24,13 @@ hide:
     * <http://storage-server.internal:3004>
 * **Credentials:** N/A
 
-## Deployment Details  
+## :material-package-down: Deployment Details  
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `openspeedtest`
 * **Image:** `openspeedtest/latest:v2.0.6` 
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: openspeedtest

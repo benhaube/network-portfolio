@@ -16,7 +16,7 @@ hide:
 [Documentation :material-file-document-multiple:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Remote shell access to servers
 * **Port(s):** `22`
 * **URL / Access:** 
@@ -41,7 +41,7 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): SSH keys
 
-## Deployment Details  
+## :material-package-down: Deployment Details  
 * **Host Device(s):** 
     * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
     * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
@@ -51,9 +51,9 @@ hide:
     * :devices-creality:&nbsp;[[Kacey_3D-printer|Creality K1C 3D-Printer]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Linux
 
-### Configuration 
+## :fontawesome-solid-gear: Configuration 
 
-#### :material-server-outline: Servers:
+### :material-server-outline: Servers:
 
 **SSH Config File:**
 
@@ -272,7 +272,7 @@ hide:
 > The SSH servers on the network have email login notifications configured to notify in the case of unwanted access.<br>
 > More information regarding setup and configuration can be found [[Setup_SSH_Login_Email_Notification|here]].
 
-#### :material-account: Clients:
+### :material-account: Clients:
 
 **Bitwarden SSH Key Agent:**
 

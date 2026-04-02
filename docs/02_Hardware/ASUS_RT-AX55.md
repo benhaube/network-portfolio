@@ -13,7 +13,7 @@ hide:
 [Docs :material-file-document-multiple:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=c59d7d6d-28e2-476f-affc-cb81b9846164&sn=MBIG31800578KSJ&from=Myproducts){ .md-button }
 
 ---
-## Device Overview
+## :material-information-outline: Device Overview
 * **Role:** AiMesh Node
 * **Hostname(s):** `aimesh-node`
 * **Location:** 
@@ -24,7 +24,7 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
-## Network Configuration
+## :material-lan: Network Configuration
 **:material-wan: WAN Connection:**
 
 | Interface | IP Address | MAC Address | Connected To |
@@ -56,11 +56,15 @@ hide:
 | LAN 4 | :material-ethernet: *Empty* | - | - |
 
 ---
-## Maintenance & Notes
+## :material-tools: Maintenance & Notes
 > [!NOTE] Critical Configurations
 > **AiMesh Node:**
 > + All settings for AiMesh node are available through the main router's Web UI. See [[ASUS_RT-BE92U|ASUS RT-BE92U]].
 
-**:material-update: Update Process:** Automatic firmware and script updates enabled. 
+#### :material-update: Update Process: 
 
-**:material-cloud-upload-outline: Backup Policy:** No settings backup needed for AiMesh node. 
++ Automatic firmware and script updates enabled. 
+
+#### :material-cloud-upload-outline: Backup Policy: 
+
++ No settings backup needed for AiMesh node. 

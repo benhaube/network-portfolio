@@ -15,7 +15,7 @@ hide:
 [GitHub :material-github:](https://github.com/marcopiovanello/yt-dlp-web-ui){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/marcopiovanello/yt-dlp-web-ui/wiki){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A Web UI and RPC server for `yt-dlp`.
 * **Port(s):** `3033`
 * **URL / Access:** 
@@ -23,13 +23,13 @@ hide:
     * <https://yt-dlp.internal>
 * **Credentials:** N/A
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** :simple-docker:&nbsp;Docker Compose
 * **Container Name:** `yt-dlp-webui`
 * **Image:** `marcobaobao/yt-dlp-webui:latest` 
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

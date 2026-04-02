@@ -15,7 +15,7 @@ hide:
 [GitHub :material-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.couchdb.org/en/stable/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** CouchDB database for synchronizing Obsidian Vaults 
 * **Port(s):** `5984`
 * **URL / Access:** 
@@ -26,13 +26,13 @@ hide:
 * **Credentials:** 
     * :simple-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `obsidian-livesync`
 * **Image:** `couchdb:3.5.0`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 **:material-server-outline: Server:**
 

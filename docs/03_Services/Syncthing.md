@@ -15,7 +15,7 @@ hide:
 [GitHub :material-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.syncthing.net/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Open decentralized file synchronization.
 * **Port(s):** `8384`
 * **URL / Access:** 
@@ -38,7 +38,7 @@ hide:
         * "Syncthing @ bens-workstation"
         * "Syncthing @ ben-laptop"
 
-## Deployment Details  
+## :material-package-down: Deployment Details  
 * **Host Device:** 
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
@@ -56,7 +56,7 @@ hide:
         * :simple-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]] / [[Ben's_Laptop|Ben's Laptop]]
             * `sudo dnf install syncthing`
 
-### Configuration  
+### :fontawesome-solid-gear: Configuration  
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: syncthing

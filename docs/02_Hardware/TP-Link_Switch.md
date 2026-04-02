@@ -13,7 +13,8 @@ hide:
 [Info :material-information-outline:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }&emsp;[Manual :material-book-information-variant:](../assets/manuals/TL-SG105.pdf){ .md-button }
 
 ---
-## Physical Overview
+## :material-information-outline: Physical Overview
+
 * **Role:** Core Desktop Switch
 * **Location:** 
     * Office
@@ -26,7 +27,8 @@ hide:
         * 10Gb/s total switching capacity
     * **Jumbo Frames:** Supported *(16KB)*
 
-## Port Map 
+## :material-ethernet: Port Map 
+
 > [!info]-
 > *Since this switch is unmanaged, use this table to track physical cabling.*
 
@@ -39,7 +41,8 @@ hide:
 | **5** | :material-router-wireless: [ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md) | Black Cat5e | Uplink |
 
 ---
-## Maintenance Notes
+## :material-tools: Maintenance Notes
+
 > [!TIP] Visual Indicators
 > **Green LED:** 10/100/1000 Mbps Link <br>
 > **Flashing:** Activity

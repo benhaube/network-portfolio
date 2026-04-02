@@ -15,7 +15,7 @@ hide:
 [GitHub :material-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://technitium.com/dns/help.html){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 * **Port(s):**
     * `53`
@@ -31,7 +31,7 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Technitium"
 
-## Deployment Details  
+## :material-package-down: Deployment Details  
 * **Host Device:** 
     * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
@@ -39,7 +39,7 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```bash title="Command to install Technitium" linenums="1"
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash

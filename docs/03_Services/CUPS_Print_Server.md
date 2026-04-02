@@ -13,7 +13,7 @@ hide:
 [GitHub :material-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Print server for `Brother_HL-L2300D_series` laser printer.
 * **Port(s):** `631`
 * **URL / Access:** 
@@ -28,13 +28,13 @@ hide:
     > [!note] 
     > *Login needed for Administration, but anyone on the local network can print.*
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Install
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```apacheconf title="cupsd.conf" linenums="1"
 LogLevel warn  

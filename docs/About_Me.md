@@ -4,13 +4,13 @@
 [My Resume :material-briefcase:](../assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact :material-email:](mailto:ben@haube-pereira.com){ .md-button }
 
 ---
-## From Engines to Infrastructure
+## :material-engine: :material-arrow-right-bold: :material-lan: From Engines to Infrastructure
 
 With 13 years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology and Cybersecurity**.
 
 I’ve found that whether it’s a fuel injection system or a network stack, the core principles remain the same: **precision, security, and relentless troubleshooting.**
 
-## My Technical North Star
+## :material-star-four-points: My Technical North Star
 
 I am a firm believer in the **Self-Hosted and Open-Source** movement. My home lab isn’t just a hobby; it’s a sandbox for testing the "Defense in Depth" strategies I’m studying for my IT / Cybersecurity career. 
 
@@ -20,7 +20,7 @@ I prioritize:
 + **Immutable Documentation:** Maintaining a "Single Source of Truth" using Markdown and Obsidian to ensure the infrastructure is reproducible and transparent.
 + **Continuous Learning:** From earning my **CompTIA A+ & Linux+** to mastering Docker orchestration, I am always looking for the next "bottleneck" to solve.
     
-## Beyond the Terminal
+## :material-racing-helmet: Beyond the Terminal
 
 When I’m not hardening my network or managing services, you can usually find me:
 

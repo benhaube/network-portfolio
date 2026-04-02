@@ -13,7 +13,7 @@ hide:
 [GitHub :material-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/louislam/dockge/wiki){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 * **Port(s):** `5001`
 * **URL / Access:** 
@@ -26,7 +26,7 @@ hide:
         * "Dockge @ pi-zero"
         * "Dockge @ debian-vm"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** 
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
@@ -35,7 +35,7 @@ hide:
 * **Container Name:** `dockge-dockge-1`
 * **Image:** `louislam/dockge:1`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

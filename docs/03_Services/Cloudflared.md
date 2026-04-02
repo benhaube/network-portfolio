@@ -17,20 +17,20 @@ hide:
 [GitHub :material-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button }&emsp;[Cloudflare :simple-cloudflare:](https://dash.cloudflare.com/login){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Secure reverse-proxy tunnel for hosting private services on the public internet.
 * **Port(s):** `14333`
 * **URL / Access:** <http://storage-server.internal:14333>
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Cloudflare Dashboard"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `cloudflared`
 * **Image:** `wisdomsky/cloudflared-web:2025.11.1` 
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: cloudflared

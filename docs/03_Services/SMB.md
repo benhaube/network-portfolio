@@ -16,7 +16,7 @@ hide:
 [Documentation :material-file-document-multiple:](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-smb/f210069c-7086-4dc2-885e-861d837df688){ .md-button .md-button--primary }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Remote file system access.
 * **Port(s):** `445`
 * **URL / Access:** 
@@ -27,7 +27,7 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com)
 
-## Deployment Details  
+## :material-package-down: Deployment Details  
 * **Host Device:** 
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] *(SMB multi-channel)*
@@ -35,7 +35,7 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### Configuration  
+### :fontawesome-solid-gear: Configuration  
 
 **:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:**
 

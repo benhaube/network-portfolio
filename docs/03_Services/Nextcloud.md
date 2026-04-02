@@ -14,20 +14,20 @@ hide:
 [GitHub :material-github:](https://github.com/nextcloud/documentation){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.nextcloud.com/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Self-hosted cloud storage and collaboration platform.
 * **Port(s):** `10081`
 * **URL / Access:** ~~[[http://storage-server.internal:10081]]~~
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "storage-server (admin)"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;~~:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]~~
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `nextcloud`
 * **Image:** `nextcloud:32.0` 
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: nextcloud

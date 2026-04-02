@@ -15,14 +15,14 @@ hide:
 [GitHub :material-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/henrygd/beszel-docs){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Agent for [[Beszel_Hub|Beszel Hub]], a server utilization monitor.  Allows for client servers to connect to hub.
 * **Port(s):** `45867`
 * **URL / Access:** `N/A`
 * **Credentials:** 
     * :simple-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
-## Deployment Details
+## :material-package-down: Deployment Details
 
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `beszel-agent`
@@ -32,7 +32,7 @@ hide:
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
         * **Image:** `henrygd/beszel-agent:alpine`
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

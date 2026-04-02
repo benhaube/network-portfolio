@@ -14,7 +14,7 @@ hide:
 [GitHub :material-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://homebox.software/en/quick-start/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** An inventory and organization system built for the home user.
 * **Port(s):** `3100`
 * **URL / Access:** 
@@ -23,13 +23,13 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Homebox @ storage-server"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `homebox`
 * **Image:** `ghcr.io/sysadminsmedia/homebox:latest`
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

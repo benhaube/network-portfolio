@@ -4,7 +4,7 @@ hide:
 ---
 ![[file-document-multiple-color.svg|200]] 
 
-# [[index|Network Documentation & Portfolio: Index]]
+# [[index|Network Documentation Index]]
 [About Me :material-account-question:](About_Me.md){ .md-button .md-button--primary }&emsp;[Contact :material-email:](mailto:ben@haube-pereira.com){ .md-button }
 
 ---

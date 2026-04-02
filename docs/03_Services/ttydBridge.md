@@ -15,20 +15,20 @@ hide:
 [GitHub :material-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Easily access and use the host terminal in a Web browser.
 * **Port(s):** `2222`
 * **URL / Access:** <http://storage-server.internal:2222>
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "storage-server (Admin)"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos: [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] 
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `ttydbridge`
 * **Image:** `cp0204/ttydbridge:v0.0.3`
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: ttydbridge

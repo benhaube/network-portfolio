@@ -14,7 +14,7 @@ hide:
 [GitHub :material-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** An API that allows applications to communicate with the 3D-printing firmware, [Klipper](https://www.klipper3d.org/). 
 * **Port(s):** `7125`
 * **URL / Access:** 
@@ -23,13 +23,13 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:devices-creality:&nbsp;[[Kacey_3D-printer|Kacey 3D-Printer]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Install
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 # Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.

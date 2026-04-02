@@ -12,7 +12,7 @@ hide:
 [Fedora Discussion :material-chat-question:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs :material-file-document-multiple:](https://docs.fedoraproject.org//en-US/docs/){ .md-button }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=4b12aa6c-2687-4e62-b1f5-3f68820bb06c&sn=L8M0CS003053JKW&from=Myproducts){ .md-button }
 
 ---
-## Device Overview
+## :material-information-outline: Device Overview
 * **Role:** Personal workstation PC
 * **Hostname(s):** `bens-workstation`
 * **Location:** 
@@ -21,29 +21,31 @@ hide:
 * **OS / Firmware:** &nbsp;:material-fedora:&nbsp;[Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
 * **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Workstation"
 
-## Network Configuration
-**:material-ethernet: Network Interface:**
+## :material-lan: Network Configuration
+
+#### :material-ethernet: Network Interface:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | [TP-Link Switch](../02_Hardware/TP-Link_Switch.md) (Port 1) |
 | wlp6s0 | `DHCP` | `F2:1E:02:CD:11:10` | SSID: *Home (vlan50)* |
 
-**:material-ip-network: IP Configuration:**
+#### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--- | :---------- | :---------- | :------ |
 | vlan50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## Storage & Mounts
-**:material-harddisk: Internal Drive(s):**
+## :material-folder-open: Storage & Mounts
+
+#### :material-harddisk: Internal Drive(s):
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/`, `/home` | NVMe SSD | 929 GB | `/dev/dm-0` | `btrfs` | LUKS2 |
 | `/mnt/1TB_HDD` | SATA HDD | 1 TB | `/dev/mapper/1TB_HDD_crypt` | `btrfs` | LUKS2 |
 
-**:material-usb: External/Attached:**
+#### :material-usb: External/Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -53,22 +55,24 @@ hide:
 | `/mnt/storage_server/Quick_Storage` | NFS | 1.9 TB | `192.168.50.4:/media/Quick-Storage` | `nfs4` | - |        
 | `/mnt/storage_server/NVMe` | NFS | 234 GB | `192.168.50.4:/media/nvme0n1p1` | `nfs4` | - |        
 
-## Services / Docker Containers
-**:material-network-pos: Virtualization:** 
+## :material-web: Services / Docker Containers
+
+#### :material-network-pos: Virtualization:
 
 | Status | Operating System | Network Interface | Disk Image | Role / Notes |
 | :----: | :--------------- | :---------------- | :--------- | :----------- |
 | *Active* | :simple-kalilinux:&nbsp;[Kali Linux](https://kali.org) | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2` | Network security and penetration testing tools. | 
 | *Active* | :material-microsoft:&nbsp;[Windows 11](https://microsoft.com/windows) | Virtual Network *(NAT)* | `Windows_11.qcow2` | Windows environment to run Windows software that won't run with WINE. |
 
-**:simple-linux: Native Linux:**
+#### :simple-linux: Native Linux:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
 | *Active* | :material-remote-desktop:&nbsp;[RDP (Remote Desktop Protocol)](../03_Services/RDP.md) | `3389` | Remote desktop protocol for accessing the desktop over the local network. |
 
 ---
-## Maintenance & Notes
+## :material-tools: Maintenance & Notes
+
 > [!NOTE]+ Critical Configurations
 > 1. **:material-clock-outline: Chrony:** 
 >     + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
@@ -85,17 +89,17 @@ hide:
 >         ```
 >     + More information about the configuration process can be found at: [[Unlock_LUKS_TPM2|Unlock LUKS w/ TPM2]]
 
-**:material-update: Update Process:** 
+#### :material-update: Update Process:
 
 * `sudo dnf upgrade -y --offline` 
 * `sudo dnf offline reboot`
 * `flatpak update`
 
-**:material-cloud-upload-outline: Backup Policy:** 
+#### :material-cloud-upload-outline: Backup Policy:
 
  * `/home` directory backed up every weekday at `18:00` to [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 
-#### Backup Script Config
+#### :material-backup-restore: Backup Script Config
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
 ```bash title="home-bkp-nas.sh" linenums="1"
@@ -310,7 +314,7 @@ WantedBy=default.target
 7. Run the command `systemctl --user daemon-reload`
 8. Run the command `systemctl --user enable home-bkp-nas.timer`
 
-#### Systemd Files for ZimaOS NAS Mounts (NFS)
+#### :material-folder-network: Systemd Files for ZimaOS NAS Mounts (NFS)
 
 ```systemd title="mnt-storage_server-NVMe.mount" linenums="1"
 [Unit]  
@@ -376,7 +380,7 @@ TimeoutIdleSec=600
 WantedBy=multi-user.target
 ```
 
-#### Encrypted-Documents Config
+#### :material-folder-lock: Encrypted-Documents Config
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
 
@@ -388,7 +392,7 @@ Icon=plasmavault
 Type=Application
 ```
 
-#### Rclone Google Drive Config
+#### :material-google-drive: Rclone Google Drive Config
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
 ```toml title="rclone.conf" linenums="1"
@@ -419,7 +423,7 @@ Icon=google-drive
 Comment=Mount Google Drive via rclone
 ```
 
-#### Starship.rs Terminal Prompt
+#### :material-console-line: Starship.rs Terminal Prompt
 1. Install the latest version.
 
 ```bash linenums="1"

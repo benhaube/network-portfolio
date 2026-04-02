@@ -15,7 +15,7 @@ hide:
 [GitHub :material-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/louislam/uptime-kuma/wiki){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A fancy self-hosted service monitoring tool.
 * **Port(s):** `3001`
 * **URL / Access:** 
@@ -27,13 +27,13 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Uptime Kuma @ pi-server"
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `uptime-kuma`
 * **Image:** `louislam/uptime-kuma:2`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

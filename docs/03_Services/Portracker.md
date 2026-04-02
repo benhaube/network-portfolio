@@ -16,7 +16,7 @@ hide:
 [GitHub :material-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A self-hosted, real-time port monitoring and discovery tool.
 * **Port(s):** `4999`
 * **URL / Access:** 
@@ -24,7 +24,7 @@ hide:
     * <http://storage-server.internal:4999>
 * **Credentials:** N/A
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Devices:** 
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
@@ -33,7 +33,7 @@ hide:
 * **Container Name:** `portracker`
 * **Image:** `mostafawahied/portracker:latest`
 
-### Configuration  
+### :fontawesome-solid-gear: Configuration  
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-portracker

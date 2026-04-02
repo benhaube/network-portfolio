@@ -15,7 +15,7 @@ hide:
 [GitHub :material-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/henrygd/beszel-docs){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A lightweight server utilization monitor.
 * **Port(s):** `8090`
 * **URL / Access:**
@@ -24,13 +24,13 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Beszel Hub (Admin)"
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `beszel`
 * **Image:** `henrygd/beszel:latest`
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

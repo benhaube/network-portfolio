@@ -14,7 +14,7 @@ hide:
 [GitHub :material-github:](https://github.com/portainer/portainer-docs){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Agent for [[Portainer]]
 * **Port(s):** `9001`
 * **URL / Access:** 
@@ -22,7 +22,7 @@ hide:
     * ~~[[http://storage-server.internal:9001]]~~
 * **Credentials:** N/A
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** 
     * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]~~
     * ~~:simple-raspberrypi:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]~~
@@ -30,7 +30,7 @@ hide:
 * **Container Name:** `portainer_agent`
 * **Image:** `portainer/agent:lts` 
 
-### Configuration  
+### :fontawesome-solid-gear: Configuration  
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

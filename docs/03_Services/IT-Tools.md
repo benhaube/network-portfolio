@@ -14,7 +14,7 @@ hide:
 [GitHub :material-github:](https://github.com/CorentinTh/it-tools){ .md-button .md-button--primary }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Handy tools for network administrators and developers.
 * **Port(s):** `8080`
 * **URL / Access:**
@@ -22,13 +22,13 @@ hide:
     * <http://pi-server.internal:8080/>
 * **Credentials:** N/A
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `it-tools`
 * **Image:** `sharevb/it-tools:latest`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

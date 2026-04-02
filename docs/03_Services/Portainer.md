@@ -14,7 +14,7 @@ hide:
 [GitHub :material-github:](https://github.com/portainer/portainer-docs){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Docker container management platform
 * **Port(s):** `9443`
 * **URL / Access:** 
@@ -23,13 +23,13 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Portainer @ pi-server"
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `portainer`
 * **Image:** `portainer/portainer-ee:lts`
 
-### Configuration  
+### :fontawesome-solid-gear: Configuration  
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

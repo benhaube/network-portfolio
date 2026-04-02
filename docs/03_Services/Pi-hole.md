@@ -15,7 +15,7 @@ hide:
 [GitHub :material-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** DNS Blocker
 * **Port(s):** 
     * `80`
@@ -32,7 +32,7 @@ hide:
         * "Pi-hole Admin @ (pi-hole)"
         * "Pi-hole Admin @ (pi-server)"
 
-## Deployment Details  
+## :material-package-down: Deployment Details  
 * **Host Device:** 
     * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
     * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]~~
@@ -40,7 +40,7 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 
-### Configuration  
+### :fontawesome-solid-gear: Configuration  
 
 ```bash linenums="1"
 curl -sSL https://install.pi-hole.net | bash

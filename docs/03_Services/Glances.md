@@ -14,7 +14,7 @@ hide:
 [GitHub :material-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/nicolargo/glances/wiki){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Glances an Eye on your system. A `top` / `htop` alternative for the Web browser. 
 * **Port(s):** `21208`
 * **URL / Access:** 
@@ -22,7 +22,7 @@ hide:
     * <http://storage-server.internal:61208>
 * **Credentials:** N/A
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** 
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
     * :simple-raspberrypi:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
@@ -30,7 +30,7 @@ hide:
 * **Container Name:** `glances`
 * **Image:** `nicolargo/glances:latest-full `
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

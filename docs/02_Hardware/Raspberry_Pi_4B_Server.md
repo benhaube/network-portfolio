@@ -15,7 +15,8 @@ hide:
 [Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }
 
 ---
-## Device Overview
+## :material-information-outline: Device Overview
+
 * **Role:** Secondary DNS server *(Technitium Cluster)*, CUPS print server, Home Assistant server
 * **Hostname(s):** `pi-server`
 * **Location:** 
@@ -25,23 +26,25 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-server"
 
-## Network Configuration
-**:material-ethernet: Network Interface:**
+## :material-lan: Network Configuration
+
+#### :material-ethernet: Network Interface:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | eth0 | `192.168.50.2` | `E4:5F:01:A4:60:07` | [TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
 | wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | SSID: *2G_IoT (vlan53)* |
 
-**:material-ip-network: IP Configuration:**
+#### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
 | vlan50 | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
 | vlan53 | - | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
 
-## Storage & Mounts
-**:material-harddisk: Internal Drive(s):**
+## :material-folder-open: Storage & Mounts
+
+#### :material-harddisk: Internal Drive(s):
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -49,14 +52,15 @@ hide:
 | `/boot/firmware` | MicroSD | 512 MB | `/dev/mmcblk0p1` | `vfat` | - |
 | `/var/log` | RAM | 128 MB | `log2ram` | `tmpfs` | - |
 
-**:material-usb: External/Attached:**
+#### :material-usb: External/Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/mnt/usb-drive` | USB Flash Drive | 28.7 GB | `/dev/sda1` | `ext4` | - |
 
-## Services / Docker Containers
-**:simple-linux: Native Linux:**
+## :material-web: Services / Docker Containers
+
+#### :simple-linux: Native Linux:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
@@ -65,7 +69,7 @@ hide:
 | *Active* | :simple-syncthing: [[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. |
 | *Active* | :services-technitium: [[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. | 
 
-**:material-docker: Docker:**
+#### :material-docker: Docker:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
@@ -82,22 +86,22 @@ hide:
 | *Active* | :services-uptime-kuma: [Uptime Kuma](../03_Services/Uptime_Kuma.md) | `3001` | A fancy self-hosted monitoring tool. |
  
 ---
-## Maintenance & Notes
+## :material-tools: Maintenance & Notes
 > [!important] Critical Configurations
-> **:material-clock-outline: Chrony:**
+> #### :material-clock-outline: Chrony:
 > * Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
 > 
-> **:material-text-long: Logs:**
+> #### :material-text-long: Logs:
 > * Logs are configured with `log2ram` to reduce wear on the MicroSD card.
 > 
-> **:material-email-alert: Email Notifications:**
+> #### :material-email-alert: Email Notifications:
 > * This server has email notifications configured for new SSH sessions and `unattended-upgrades`. See [SSH Login Email Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation.
 
-**:material-update: Update Process:** 
+#### :material-update: Update Process:
 
 * `apt update && apt upgrade` *(Standard Debian)*
 * `unattended-upgrades` enabled for critical bug and security fixes.
 
-**:material-cloud-upload-outline: Backup Policy:** 
+#### :material-cloud-upload-outline: Backup Policy:
 
 * Image of MicroSD card stored on [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] `/media/Quick-Storage/Backup` directory.

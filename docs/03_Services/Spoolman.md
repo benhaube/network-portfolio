@@ -14,7 +14,7 @@ hide:
 [GitHub :material-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Manage 3D-printer filament inventory, and actively track filament usage.
 * **Port(s):** `7912`
 * **URL / Access:** 
@@ -22,13 +22,13 @@ hide:
     * <https://spoolman.internal>
 * **Credentials:** N/A
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `spoolman`
 * **Image:** `ghcr.io/donkie/spoolman:0.22.1`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-spoolman

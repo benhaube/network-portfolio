@@ -15,7 +15,8 @@ hide:
 [IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :material-file-document-multiple:](https://www.zimaspace.com/docs/zimaos/){ .md-button }
 
 ---
-## Device Overview
+## :material-information-outline: Device Overview
+
 * **Role:** Primary Network Attached Storage & VM Host
 * **Hostname(s):** `storage-server`
 * **Location:** 
@@ -28,48 +29,51 @@ hide:
         * "storage-server (bhaube)"  
         * SSH key: "admin@storage-server"
 
-## Network Configuration
-**:material-ethernet: Network Interface:**
+## :material-lan: Network Configuration
+
+#### :material-ethernet: Network Interface:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | eth0 | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 4)* |
 | eth1 | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 5)* |
 
-**:material-ip-network: IP Configuration:**
+#### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
 | vlan50 | `storage-server.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 | vlan50 | `storage-server-2.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 
-## Storage & Mounts
-**:material-memory: Boot:**
+## :material-folder-open: Storage & Mounts
+
+#### :material-memory: Boot:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/` | eMMC | 64 GB | `/dev/mmcblk0` | `ext4` | - |
 
-**:material-harddisk: Data:**
+#### :material-harddisk: Data:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2TB | `/dev/md0` | `btrfs` | - |
 | `/media/nvme0n1p1` | NVMe SSD | 250 GB | `/dev/nvme0n1` | `ext4` | - |
 
-## Services / Docker Containers
-**:material-folder-network: File Sharing:** 
+## :material-web: Services / Docker Containers
+
+#### :material-folder-network: File Sharing:
 
 * SMB  *(with Multichannel enabled)*
 * NFS *(for Linux PCs)*
 
-**:material-network-pos: Virtualization:** 
+#### :material-network-pos: Virtualization:
 
 | Status | Operating System | Network Interface | Disk Image | Role / Notes |
 | :----: | :--------------- | :---------------- | :--------- | :----------- | 
 | *Active* | :material-debian: [Debian Linux 13](../02_Hardware/Debian_Server_VM.md) | Bridged (`eth0`) | `cd175b11.qcow2` | Hosting the network's primary [[Technitium]] DNS server. |
 
-**:simple-linux: Native Linux:**
+#### :simple-linux: Native Linux:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
@@ -77,7 +81,7 @@ hide:
 | *Active* | :material-console-network: [[SSH]] | `22` | Remote terminal access. |
 | *Active* | :material-folder-network: [[SMB]] | `445` | Remote file system access. |
 
-**:material-docker: Docker:**
+#### :material-docker: Docker:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
@@ -100,7 +104,8 @@ hide:
 | *Active* | :services-youtube-dl: [yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md) | `3033` | A Web UI and RPC server for `yt-dlp`. |
 
 ---
-## Maintenance & Notes
+## :material-tools: Maintenance & Notes
+
 > [!warning] Immutable OS
 > 1. This device runs ZimaOS. Do not attempt to use `apt` to install system packages or change NTP settings (stuck on systemd-timesyncd).
 > 2. The [Entware](https://github.com/Entware/Entware) package manager is installed. Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. Check the [Entware Wiki](https://github.com/Entware/Entware/wiki) for documentation.
@@ -119,7 +124,7 @@ hide:
 > 
 > **Performance:** Reduced backup time from ~10m to ~1.5m.
 > 
-> **Server Side *(ZimaOS)*:**
+> #### Server Side *(ZimaOS)*:
 > 
 > + Config File: `etc/exports`
 > + Exports Entry:
@@ -141,7 +146,7 @@ hide:
 >     systemctl restart nfs-server
 >     ```
 >     
-> **Client Side *(Fedora 43)*:**
+> #### Client Side *(Fedora 43)*:
 > 
 > + Package required: `nfs-utils`
 > + Systemd `.mount` unit files: `/etc/systemd/system`

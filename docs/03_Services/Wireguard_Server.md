@@ -16,7 +16,7 @@ hide:
 [GitHub :material-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://wg-easy.github.io/wg-easy/latest/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** A lightweight, secure remote access VPN server.
 * **Port(s):** 
     * `41820`
@@ -34,7 +34,7 @@ hide:
     * `ben-laptop`
     * `ben-pixel`
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** 
     * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
@@ -44,7 +44,7 @@ hide:
 * **Container Name:** `big-bear-wg-easy-v15`
 * **Image:** `ghcr.io/wg-easy/wg-easy:15`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-wg-easy-v15

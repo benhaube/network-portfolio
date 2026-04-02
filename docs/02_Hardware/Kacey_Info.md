@@ -13,7 +13,7 @@ hide:
 [Creality Docs :material-file-document-multiple:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :octicons-terminal-16:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---
-## Basic Information
+## :material-information-outline: Basic Information
 
 + **Model:**
     + Creality&copy; K1C
@@ -33,31 +33,31 @@ hide:
     + *Chip:* GD32F303RET6
     + *Version:* CR4CU220812S12
 
-## Network
+## :material-lan: Network
 
-**Moonraker:**
+#### Moonraker:
 
 + URL
     + <http://k1c-a71e.internal:7125>
 + API Key
     + `461a3689cb1a41dea9f1cc215f48bcbe`
 
-**Fluidd:**
+#### Fluidd:
 
 + URL
     + <http://k1c-a71e.internal>
     + <http://k1c-a71e.internal:4408>
 
-## Camera
+## :material-camera: Camera
 
-**Moonraker:**
+#### Moonraker:
 
 + Snapshot URL
     + <http://k1c-a71e.internal:8080/?action=snapshot>
     + <http://localhost:8080/?action=snapshot>
     + <http://127.0.0.1:8080/?action=snapshot>
 
-**Fluidd:**
+#### Fluidd:
 
 + Snapshot URL
     + <http://k1c-a71e.internal:8080/?action=snapshot>
@@ -65,7 +65,7 @@ hide:
     + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
-## Machine G-code (OrcaSlicer)
+## :material-code-block-brackets: Machine G-code (OrcaSlicer)
 
 ```gcode title="Machine Start" linenums="1"
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]

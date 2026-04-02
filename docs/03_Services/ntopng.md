@@ -16,7 +16,7 @@ hide:
 [GitHub :material-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://www.ntop.org/guides/ntopng/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Network traffic probe
 * **Port(s):** 
     * `3000`
@@ -26,13 +26,13 @@ hide:
     * <http://storage-server.internal:3000>
 * **Credentials:** N/A
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `ntop`
 * **Image:** `ntop/ntopng:latest`
 
-### Configuration
+### :fontawesome-solid-gear: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

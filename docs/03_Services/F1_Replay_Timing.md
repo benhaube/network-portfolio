@@ -13,7 +13,7 @@ hide:
 [GitHub :material-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Visualization of real-time track data and telemetry synced to F1 live and replays.
 * **Port(s):** 
     * `3000`
@@ -23,7 +23,7 @@ hide:
     * Frontend: <http://storage-server.internal:3000>
 * **Credentials:** N/A
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** 
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose *(Stack)*
@@ -34,7 +34,7 @@ hide:
     * `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`
     * `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

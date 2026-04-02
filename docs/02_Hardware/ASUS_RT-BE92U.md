@@ -16,7 +16,7 @@ hide:
 [Docs :material-file-document-multiple:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=d50535eb-570b-44c6-87c6-e77cd9e5eb09&sn=T5IG7L216442EU5&from=Myproducts){ .md-button }
 
 ---
-## Device Overview
+## :material-information-outline: Device Overview
 * **Role:** Main Router
 * **Hostname(s):** `asusrouter`
 * **Location:** 
@@ -26,7 +26,7 @@ hide:
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
-## Network Configuration
+## :material-lan: Network Configuration
 **:material-wan: WAN Connection:**
 
 | Interface | IP Address | MAC Address | Connected To |
@@ -63,7 +63,7 @@ hide:
 | 2.5Gb LAN 3 | :material-ethernet: *Empty* | - | - |
 | 2.5Gb LAN 4 | :material-ethernet: *Empty* | - | - |
 
-## Storage & Mounts
+## :material-folder-open: Storage & Mounts
 **:material-harddisk: Internal Drive(s):**
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
@@ -78,8 +78,8 @@ hide:
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB | `/dev/sda1` | `ext4` | - |
 
-## Services / Docker Containers
-**:simple-linux: Native:**
+## :material-web: Services / Docker Containers
+#### :simple-linux: Native:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
@@ -88,17 +88,17 @@ hide:
 | *Active* | :simple-wireguard: [WireGuard](../03_Services/Wireguard_Server.md) | `41820` | Remote access VPN server. |
 
 ---
-## Maintenance & Notes
+## :material-tools: Maintenance & Notes
 > [!note] Critical Configurations
 > Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
 > 
 > [Documentation](https://github.com/RMerl/asuswrt-merlin.ng/wiki) for asuswrt-merlin.
 
-**:material-update: Update Process:**
+#### :material-update: Update Process:
 
-* Automatic firmware and script update email notifications enabled. 
-* For Entware packages use the command, `opkg update`, or update with `amtm` script.
++ Automatic firmware and script update email notifications enabled. 
++ For Entware packages use the command, `opkg update`, or update with `amtm` script.
 
-**:material-cloud-upload-outline: Backup Policy:**
+#### :material-cloud-upload-outline: Backup Policy:
 
-* Firmware and settings backed up automatically to [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] and [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]].
++ Firmware and settings backed up automatically to [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] and [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]].

@@ -16,20 +16,20 @@ hide:
 [GitHub :material-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Synchronize settings between [[Pi-hole]] instances.
 * **Port(s):** `N/A`
 * **URL / Access:** N/A
 * **Credentials:** 
     * :simple-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
-## Deployment Details 
+## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Name:** `nebula-sync`
 * **Image:** `ghcr.io/lovelaze/nebula-sync:latest` 
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

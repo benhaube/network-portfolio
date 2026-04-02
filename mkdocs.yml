@@ -41,8 +41,8 @@ theme:
     next: material/arrow-right-bold
     search: material/magnify
     annotation: material/plus-circle
-    edit: material/pencil
-    view: material/eye
+    edit: material/file-edit-outline
+    view: material/file-code-outline
   favicon: /assets/icons/favicon.png
   features:
     - navigation.instant

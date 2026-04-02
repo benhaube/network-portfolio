@@ -16,7 +16,7 @@ hide:
 [GitHub :material-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.immich.app/overview/quick-start/){ .md-button }
 
 ---
-## Overview
+## :material-information-outline: Overview
 * **Purpose:** Photo gallery and backup service.
 * **Port(s):** `2283`
 * **URL / Access:**
@@ -30,7 +30,7 @@ hide:
         * "Immich User"
         * "Immich Administrator"
 
-## Deployment Details
+## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
 * **Container Names:** 
@@ -44,7 +44,7 @@ hide:
     * `redis:6.2-alpine`
     * `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0`
 
-### Configuration 
+### :fontawesome-solid-gear: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: immich

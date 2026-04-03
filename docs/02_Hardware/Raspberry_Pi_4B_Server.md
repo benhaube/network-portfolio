@@ -82,7 +82,7 @@ hide:
 | *Active* | :simple-homeassistant: [Home Assistant](../03_Services/Home_Assistant.md) | `8123` | Smart home management dashboard. |
 | *Active* | :services-it-tools: [[IT-Tools]] | `8080` | Collection of handy online tools for developers, with great UX. |
 | *Inactive* | :services-portainer: [[Portainer]] | `8000` `9000` `9443` | Docker container management. |
-| *Active* | :services-portainer: [[Portracker]] | `4999` | A self-hosted, real-time port monitoring and discovery tool. | 
+| *Active* | :services-portracker: [[Portracker]] | `4999` | A self-hosted, real-time port monitoring and discovery tool. | 
 | *Active* | :services-uptime-kuma: [Uptime Kuma](../03_Services/Uptime_Kuma.md) | `3001` | A fancy self-hosted monitoring tool. |
  
 ---

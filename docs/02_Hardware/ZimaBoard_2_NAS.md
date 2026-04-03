@@ -19,8 +19,8 @@ hide:
 
 * **Role:** Primary Network Attached Storage & VM Host
 * **Hostname(s):** 
-  * `storage-server` *(eth0)*
-  * `storage-server-2` *(eth1)*
+    * `storage-server` *(eth0)*
+    * `storage-server-2` *(eth1)*
 * **Location:** 
     * Living-Room
     * Mini-Rack

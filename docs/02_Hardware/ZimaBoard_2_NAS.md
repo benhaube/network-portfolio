@@ -18,7 +18,9 @@ hide:
 ## :material-information-outline: Device Overview
 
 * **Role:** Primary Network Attached Storage & VM Host
-* **Hostname(s):** `storage-server`
+* **Hostname(s):** 
+  * `storage-server` *(eth0)*
+  * `storage-server-2` *(eth1)*
 * **Location:** 
     * Living-Room
     * Mini-Rack
@@ -124,7 +126,7 @@ hide:
 > 
 > **Performance:** Reduced backup time from ~10m to ~1.5m.
 > 
-> #### Server Side *(ZimaOS)*:
+> #### :services-zimaos: Server Side *(ZimaOS)*:
 > 
 > + Config File: `etc/exports`
 > + Exports Entry:
@@ -146,7 +148,7 @@ hide:
 >     systemctl restart nfs-server
 >     ```
 >     
-> #### Client Side *(Fedora 43)*:
+> #### :simple-fedora: Client Side *(Fedora 43)*:
 > 
 > + Package required: `nfs-utils`
 > + Systemd `.mount` unit files: `/etc/systemd/system`

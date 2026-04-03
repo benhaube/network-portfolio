@@ -102,7 +102,7 @@ hide:
      > Some distributions may require a separate option for the UUID, such as `rd.luks.options=UUID-OF-YOUR-LUKS-PARTITION=tpm2-device=auto`. Check your distribution's documentation for the exact syntax if the simpler option above doesn't work. I needed to use this syntax on Fedora 42.
 
  + **Save and close** the `/etc/default/grub` file.
-	 + ++ctrl+o++&nbsp;++ctrl=x++
+	 + ++ctrl+o++&nbsp;++ctrl+x++
  + Update the **GRUB** configuration. 
      + The change you made in `/etc/default/grub` will not take effect until you regenerate the main GRUB configuration file, which is usually located at `/boot/grub2/grub.cfg`.
      + Run the appropriate command for your distribution:

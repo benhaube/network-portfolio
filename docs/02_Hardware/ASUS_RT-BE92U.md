@@ -17,6 +17,7 @@ hide:
 
 ---
 ## :material-information-outline: Device Overview
+
 * **Role:** Main Router
 * **Hostname(s):** `asusrouter`
 * **Location:** 
@@ -27,14 +28,15 @@ hide:
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
 ## :material-lan: Network Configuration
-**:material-wan: WAN Connection:**
+
+#### :material-wan: WAN Connection:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | WAN0 | `DHCP` | `60:CF:84:51:FA:F0` | 2.5Gb/s WAN/LAN (Port 1) |
 | WAN1 | `disabled` | `xx:xx:xx:xx:xx:xx` | - |
 
-**:material-lan: Local Networks:**
+#### :material-lan: Local Networks:
 
 | VLAN | Domain | DNS Server(s) | Gateway | Subnet | Subnet Mask | Broadcast | DHCP Range |
 | :--: | :----- | :------------ | :------ | :----- | :---------- | :-------- | :--------- |
@@ -42,7 +44,7 @@ hide:
 | *vlan52* | - | `9.9.9.9` `149.112.112.112` | `192.168.52.1` | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.255` | `.2` to `.254` |
 | *vlan53* | - | `9.9.9.9` `149.112.112.112` | `192.168.53.1` | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.255` | `.2` to `.254` |
 
-**:material-wifi: Wi-Fi Networks:**
+#### :material-wifi: Wi-Fi Networks:
 
 | SSID | VLAN | IP Address | Frequency | Notes |  
 | :--: | :--: | :--------- | :-------- | :---- |
@@ -50,7 +52,8 @@ hide:
 | *Home_Guest* | *vlan52* | `192.168.52.0/24` | 2.4GHz, 5GHz | Guest Wi-Fi Network |
 | *2G_IoT* | *vlan53* | `192.168.53.0/24` | 2.4GHz | Main IoT Network |
 
-**:material-ethernet: Physical Ethernet Ports:**
+#### :material-ethernet: Physical Ethernet Ports:
+
 > [!info]-
 > *Use this table to track physical cabling.*
 
@@ -64,7 +67,8 @@ hide:
 | 2.5Gb LAN 4 | :material-ethernet: *Empty* | - | - |
 
 ## :material-folder-open: Storage & Mounts
-**:material-harddisk: Internal Drive(s):**
+
+#### :material-harddisk: Internal Drive(s):
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -72,13 +76,14 @@ hide:
 | `/jffs` | - | 44.5 MB | `ubi:jffs2` | `ubifs` | - |
 | `/data` | - | 16.8 MB | `bui:data` | `ubifs` | - |
 
-**:material-usb: External/Attached:**
+#### :material-usb: External/Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB | `/dev/sda1` | `ext4` | - |
 
 ## :material-web: Services / Docker Containers
+
 #### :simple-linux: Native:
 
 | Status | Service | Port(s) | Role / Notes |
@@ -89,6 +94,7 @@ hide:
 
 ---
 ## :material-tools: Maintenance & Notes
+
 > [!note] Critical Configurations
 > Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
 > 

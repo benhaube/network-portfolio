@@ -25,25 +25,27 @@ hide:
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
 ## :material-lan: Network Configuration
-**:material-wan: WAN Connection:**
+
+#### :material-wan: WAN Connection:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | WAN0 | `192.168.50.221` | `7C:10:C9:DF:13:60` | Backhaul |
 
-**:material-lan: Local Networks:**
+#### :material-lan: Local Networks:
 
 | VLAN | Domain | DNS Server(s) | Gateway | Subnet | Subnet Mask | Broadcast | DHCP Range |
 | :--: | :----- | :------------ | :------ | :----- | :---------- | :-------- | :--------- |
 | *vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
 
-**:material-wifi: Wi-Fi Networks:**
+#### :material-wifi: Wi-Fi Networks:
 
 | SSID | VLAN | IP Address | Frequency | Notes |  
 | :--: | :--: | :--------- | :-------- | :---- |
 | *Home* | *vlan50* | `192.168.50.0/24` | 2.4GHz, 5GHz | Main Wi-Fi Network |
 
-**:material-ethernet: Physical Ethernet Ports:**
+#### :material-ethernet: Physical Ethernet Ports:
+
 > [!info]-
 > *Use this table to track physical cabling.*
 

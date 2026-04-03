@@ -35,14 +35,14 @@ hide:
 
 ## :material-lan: Network
 
-#### Moonraker:
+#### :material-printer-3d: Moonraker:
 
 + URL
     + <http://k1c-a71e.internal:7125>
 + API Key
     + `461a3689cb1a41dea9f1cc215f48bcbe`
 
-#### Fluidd:
+#### :services-fluidd: Fluidd:
 
 + URL
     + <http://k1c-a71e.internal>
@@ -50,14 +50,14 @@ hide:
 
 ## :material-camera: Camera
 
-#### Moonraker:
+#### :material-printer-3d: Moonraker:
 
 + Snapshot URL
     + <http://k1c-a71e.internal:8080/?action=snapshot>
     + <http://localhost:8080/?action=snapshot>
     + <http://127.0.0.1:8080/?action=snapshot>
 
-#### Fluidd:
+#### :services-fluidd: Fluidd:
 
 + Snapshot URL
     + <http://k1c-a71e.internal:8080/?action=snapshot>

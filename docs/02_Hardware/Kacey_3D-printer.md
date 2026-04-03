@@ -22,6 +22,7 @@ hide:
 * **OS / Firmware:**
     * :devices-creality:&nbsp;Creality&copy; FW Version: 1.3.3.46
     * :simple-linux:&nbsp;Buildroot 2020.02.1
+    * ::&nbsp; Klipper 0.13.0
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
 
@@ -67,7 +68,7 @@ hide:
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
 | *Active* | :services-fluidd: [[Fluidd]] | `80` `4408` | A Web UI for managing the printer. |
-| *Active* | :material-printer-3d: [[Moonraker]] | `7125` | An API that allows applications to communicate with the 3D-printing firmware, [Klipper](https://www.klipper3d.org/).  |
+| *Active* | :material-printer-3d: [[Moonraker]] | `7125` | An API that allows applications to communicate with the 3D-printing firmware, :services-klipper: [Klipper](https://www.klipper3d.org/).  |
 | *Active* | :material-console-network: [[SSH]] | `22` | Remote terminal access. |
 
 ---
@@ -79,10 +80,10 @@ hide:
 > 
 > #### :material-application-brackets: Software:
 > 
-> + Fluidd / Moonraker
+> + :services-fluidd: Fluidd / Moonraker
 >     + For information regarding the [[Fluidd]] Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).
 >     + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
-> + Klipper
+> + :services-klipper: Klipper
 >     + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
 > 
 > #### :material-printer-3d-nozzle: Hardware:
@@ -96,7 +97,7 @@ hide:
 >     + See the [[PROWIPER_Mod|tutorial]] for information on how to install and activate the required G-Code macros.
 > 	   
 > > [!warning]
-> > Add these coordinates to "Bed Exclude Area" in [OrcaSlicer](https://www.orcaslicer.com/) printer settings to avoid collisions during prints:
+> > Add these coordinates to "Bed Exclude Area" in :services-orca-slicer: [OrcaSlicer](https://www.orcaslicer.com/) printer settings to avoid collisions during prints:
 > > ``` linenums="1"
 > > 70x210, 150x210, 150x220, 70x220
 > > ```
@@ -109,7 +110,8 @@ hide:
 
 #### :material-update: Update Process:
 
-* Update software through the [Fluidd](http://k1c-a71e.internal) Web UI. 
+* Update most software through the [Fluidd](http://k1c-a71e.internal) Web UI.
+* Update Entware packages in terminal via [[SSH]] 
 
 #### :material-cloud-upload-outline: Backup Policy:
 

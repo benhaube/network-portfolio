@@ -22,14 +22,14 @@ hide:
 * **OS / Firmware:**
     * :devices-creality:&nbsp;Creality&copy; FW Version: 1.3.3.46
     * :simple-linux:&nbsp;Buildroot 2020.02.1
-    * ::&nbsp; Klipper 0.13.0
+    * :services-klipper:&nbsp;Klipper 0.13.0
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
 
 > [!info]+
 > *See more detailed information about the Creality&copy; K1C hardware:* 
-> 
-> ![[creality.svg|15]]&nbsp;[[Kacey_Info|Kacey Info]]
+>
+> [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
 ## :material-lan: Network Configuration
 
@@ -104,8 +104,8 @@ hide:
 > 
 > #### :material-code-block-tags: Custom G-Code Macros:
 > 
-> + Manual Nozzle Cleaning Macro
->     + This custom macro set *(`CLEAN_NOZZLE` and `DONE_CLEANING`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
+> + :material-toothbrush: Manual Nozzle Cleaning Macro
+>     + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
 >     + See more information and G-Code [[Manual_Nozzle_Cleaning_Gcode_Macro|here]].
 
 #### :material-update: Update Process:

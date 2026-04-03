@@ -1,7 +1,7 @@
 ![[assets/pictures/profilepic.jpg|300]]
 
 # [[About_Me|About Me & Professional Philosophy]]
-[My Resume :material-briefcase:](../assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact :material-email:](mailto:ben@haube-pereira.com){ .md-button }
+[My Resume :material-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact :material-email:](mailto:ben@haube-pereira.com){ .md-button }
 
 ---
 ## :material-engine: :material-arrow-right-bold: :material-lan: From Engines to Infrastructure

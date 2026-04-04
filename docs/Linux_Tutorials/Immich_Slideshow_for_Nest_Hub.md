@@ -26,7 +26,7 @@ hide:
 
 ### :material-file-code-outline: Photo Cleaning Script
 
-```javascript linenums="1"
+```javascript title="Javascript" linenums="1"
 // Function to delete photos
 async function deletePhotos() {
     const deleteSelector = "button[aria-label='Delete']";

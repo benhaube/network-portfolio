@@ -35,7 +35,7 @@ hide:
     > [!info]- More Creality K1C Info
     > More detailed information about the Creality K1C hardware.
     >
-    > [Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
+    > [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
 
 8. :simple-raspberrypi:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
 9. :simple-raspberrypi:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]: Second DNS server *(Pi-hole)*.

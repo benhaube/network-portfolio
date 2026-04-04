@@ -170,4 +170,6 @@ hide:
 > sudo dracut -f # or appropriate command for your system
 > ```
 > 
-> If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a script I have written. It is available to download in this [Github](https://github.com/benhaube/Update-LUKS-PCRs-script) repo.
+> If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a script I have written. It is available to download in this GitHub repo:
+>
+> [Update PCRs Script :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }

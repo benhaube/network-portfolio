@@ -3455,8 +3455,8 @@
 </span></span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="na">host           smtp.example.com</span>
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="hll"><span class="na">port           465</span>
 </span></span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="hll"><span class="na">from           example@example.com</span>
-</span></span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="na">user           example@example.com</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="na">passwordeval   &quot;cat /root/.email_app_password&quot;</span>
+</span></span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="hll"><span class="na">user           example@example.com</span>
+</span></span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="na">passwordeval   &quot;cat /root/.email_app_password&quot;</span>
 </span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>
 </span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="c1"># Set default</span>
 </span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="na">account default</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s">email</span>
@@ -3577,7 +3577,7 @@
 <li>
 <p>Save the file and exit.</p>
 <ul>
-<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span>&ensp;<span class="keys"><kbd class="key-enter">Enter</kbd></span>&ensp;<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span></li>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span>&ensp;<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span></li>
 </ul>
 </li>
 </ol>
@@ -3697,7 +3697,10 @@
 </span></code></pre></div></p>
 </li>
 <li>
-<p>Save and close the config file: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span>&ensp;<span class="keys"><kbd class="key-enter">Enter</kbd></span>&ensp;<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span></p>
+<p>Save and close the config file: </p>
+<ul>
+<li><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-o">O</kbd></span>&ensp;<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-x">X</kbd></span></li>
+</ul>
 </li>
 <li>
 <p>Restart the <code>unattended-upgrades</code> Systemd service:

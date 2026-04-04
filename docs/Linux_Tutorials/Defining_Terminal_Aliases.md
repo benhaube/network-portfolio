@@ -113,4 +113,6 @@ hide:
 
 > [!tip] Recommended Aliases
 >
-> You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems. You can find them in the file, [[My_Terminal_Aliases|My Terminal Aliases]].
+> You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
+> 
+> [My Aliases :material-console-line:](My_Terminal_Aliases.md){ .md-button }

@@ -17,6 +17,7 @@ hide:
 
 >[!note]+
 > You can check this with the following command:
+> 
 > ```bash linenums="1"
 > cryptsetup luksDump /dev/your_device
 > ```

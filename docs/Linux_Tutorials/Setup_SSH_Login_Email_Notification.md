@@ -33,7 +33,7 @@ hide:
 
 2. Paste the following into the configuration file:
 
-    ```ini title="/etc/msmtprc" linenums="1" hl_lines="11 13 14"
+    ```ini title="/etc/msmtprc" linenums="1" hl_lines="11 13 14-15"
     # Global defaults
     defaults
     auth           on
@@ -135,7 +135,7 @@ hide:
     ```
 
 2. Save the file and exit.
-	+ ++ctrl+o++&ensp;++enter++&ensp;++ctrl+x++
+	+ ++ctrl+o++&ensp;++ctrl+x++
 
 ---
 ## :material-file-code-outline: Creating the Shell Script 
@@ -218,7 +218,8 @@ hide:
 >     ```bash
 >     Unattended-Upgrade::Sender "your-authorized-email@domain.com";
 >     ```
-> 3. Save and close the config file: ++ctrl+o++&ensp;++enter++&ensp;++ctrl+x++
+> 3. Save and close the config file: 
+>     + ++ctrl+o++&ensp;++ctrl+x++
 > 4. Restart the `unattended-upgrades` Systemd service:
 >     ```bash
 >     sudo systemctl restart unattended-upgrades.service

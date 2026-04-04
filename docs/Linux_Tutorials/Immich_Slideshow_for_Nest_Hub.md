@@ -8,7 +8,7 @@ hide:
 
 > [!info]
 > **User:** Ben Haube | **Date:** Feb 5, 2026<br>
-> **Infrastructure:** [[ZimaBoard_2_NAS|ZimaOS NAS]] ([[Immich]]), [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] ([[Home_Assistant]], [[Cloudflared]] Tunnel)
+> **Infrastructure:** [[ZimaBoard_2_NAS|ZimaOS NAS]] *([[Immich]])*, [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] *([[Home_Assistant]], [[Cloudflared]] Tunnel)*
 
 ---
 
@@ -18,7 +18,10 @@ hide:
 
 1.  **Safety First *(Mobile)*:**
     * Uninstall Google Photos App OR Turn OFF "Backup & Sync".
-    * Install **Fossify Gallery** *(via [F-Droid](https://f-droid.org/en/packages/org.fossify.gallery/))* for local viewing.
+    * Install **Fossify Gallery** *(via F-Droid)* for local viewing.
+
+        [Fossify Gallery :simple-fdroid:](https://f-droid.org/en/packages/org.fossify.gallery/){ .md-button }
+
 2.  **Deletion *(Desktop)*:**
     * **Manual:** Go to photos.google.com, select first photo, scroll down, Shift+Click last photo, Delete.
     * **Console Script *(Advanced)*:** Open Chrome DevTools ++f12++ --> Console. Paste script to auto-select/delete. 
@@ -118,7 +121,7 @@ services:
 ### :material-file-image: Auto Album Config
 Place this in the same folder as your docker-compose file.
 
-```json linenums="1"
+```json title="config.json" linenums="1"
 {
   "albums": [
     {
@@ -140,7 +143,7 @@ Place this in the same folder as your docker-compose file.
 > [!info] Goal
 > Allow Nest Hubs to load the frame securely.
 
-1. **Tunnel:** Point `frame.rac3r4life.online` to `http://<ZIMABOARD_IP>:8081`
+1. **Tunnel:** Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081`
 2. **WAF Rules *(Critical)*:**
     * Go to Cloudflare Dashboard --> Security --> WAF --> Custom Rules.
     * **Create Rule:** If Hostname equals `frame.rac3r4life.online` --> **Skip** "Super Bot Fight Mode" and "Managed Challenge".

@@ -3432,7 +3432,7 @@
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><strong>User:</strong> Ben Haube | <strong>Date:</strong> Feb 5, 2026<br>
-<strong>Infrastructure:</strong> <a href="../02_Hardware/ZimaBoard_2_NAS.html">ZimaOS NAS</a> (<a href="../03_Services/Immich.html">Immich</a>), <a href="../02_Hardware/Raspberry_Pi_4B_Server.html">Raspberry Pi 4B Server</a> (<a href="../03_Services/Home_Assistant.html">Home_Assistant</a>, <a href="../03_Services/Cloudflared.html">Cloudflared</a> Tunnel)</p>
+<strong>Infrastructure:</strong> <a href="../02_Hardware/ZimaBoard_2_NAS.html">ZimaOS NAS</a> <em>(<a href="../03_Services/Immich.html">Immich</a>)</em>, <a href="../02_Hardware/Raspberry_Pi_4B_Server.html">Raspberry Pi 4B Server</a> <em>(<a href="../03_Services/Home_Assistant.html">Home_Assistant</a>, <a href="../03_Services/Cloudflared.html">Cloudflared</a> Tunnel)</em></p>
 </div>
 <hr />
 <h2 id="phase-1-cleaning-google-photos"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19.36 2.72 1.42 1.42-5.72 5.71c1.07 1.54 1.22 3.39.32 4.59L9.06 8.12c1.2-.9 3.05-.75 4.59.32zM5.93 17.57c-2.01-2.01-3.24-4.41-3.58-6.65l4.88-2.09 7.44 7.44-2.09 4.88c-2.24-.34-4.64-1.57-6.65-3.58"/></svg></span> Phase 1: Cleaning Google Photos</h2>
@@ -3441,12 +3441,19 @@
 <p>Delete cloud data without losing local files.</p>
 </div>
 <ol>
-<li><strong>Safety First <em>(Mobile)</em>:</strong><ul>
+<li>
+<p><strong>Safety First <em>(Mobile)</em>:</strong></p>
+<ul>
 <li>Uninstall Google Photos App OR Turn OFF "Backup &amp; Sync".</li>
-<li>Install <strong>Fossify Gallery</strong> <em>(via <a href="https://f-droid.org/en/packages/org.fossify.gallery/">F-Droid</a>)</em> for local viewing.</li>
+<li>
+<p>Install <strong>Fossify Gallery</strong> <em>(via F-Droid)</em> for local viewing.</p>
+<p><a class="md-button" href="https://f-droid.org/en/packages/org.fossify.gallery/">Fossify Gallery <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.472 10.081H3.528a1.59 1.59 0 0 0-1.589 1.589v10.59a1.59 1.59 0 0 0 1.589 1.589h16.944a1.59 1.59 0 0 0 1.589-1.589V11.67a1.59 1.59 0 0 0-1.589-1.589M12 22.525c-3.066 0-5.56-2.494-5.56-5.56s2.494-5.56 5.56-5.56 5.56 2.494 5.56 5.56-2.494 5.56-5.56 5.56m0-10.114c-2.511 0-4.554 2.043-4.554 4.554S9.489 21.519 12 21.519s4.554-2.043 4.554-4.554-2.043-4.554-4.554-4.554m0 7.863a3.32 3.32 0 0 1-3.221-2.568h1.67c.275.581.859.979 1.551.979.96 0 1.721-.761 1.721-1.721S12.96 15.243 12 15.243a1.7 1.7 0 0 0-1.493.874H8.805A3.32 3.32 0 0 1 12 13.655a3.32 3.32 0 0 1 3.309 3.309A3.32 3.32 0 0 1 12 20.274M23.849.396l-.002.003-.006-.005.004-.004a.67.67 0 0 0-.519-.238.65.65 0 0 0-.512.259l-1.818 2.353a1.6 1.6 0 0 0-.523-.095H3.528c-.184 0-.358.038-.523.095L1.187.41A.657.657 0 0 0 .156.389L.16.393.153.399.151.396a.66.66 0 0 0-.012.824l1.909 2.471a1.6 1.6 0 0 0-.108.566v3.707a1.59 1.59 0 0 0 1.589 1.589h16.944a1.59 1.59 0 0 0 1.589-1.589V4.257c0-.2-.041-.39-.109-.566l1.909-2.471a.66.66 0 0 0-.013-.824M6.904 8.228a1.787 1.787 0 1 1 0-3.574 1.787 1.787 0 0 1 0 3.574m10.325 0a1.787 1.787 0 1 1 0-3.574 1.787 1.787 0 0 1 0 3.574"/></svg></span></a></p>
+</li>
 </ul>
 </li>
-<li><strong>Deletion <em>(Desktop)</em>:</strong><ul>
+<li>
+<p><strong>Deletion <em>(Desktop)</em>:</strong></p>
+<ul>
 <li><strong>Manual:</strong> Go to photos.google.com, select first photo, scroll down, Shift+Click last photo, Delete.</li>
 <li><strong>Console Script <em>(Advanced)</em>:</strong> Open Chrome DevTools <span class="keys"><kbd class="key-f12">F12</kbd></span> &rarr; Console. Paste script to auto-select/delete. </li>
 </ul>
@@ -3610,7 +3617,7 @@
 </span></code></pre></div></td></tr></table></div>
 <h3 id="auto-album-config"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m0 18h12v-8l-4 4-2-2zM8 9a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span> Auto Album Config</h3>
 <p>Place this in the same folder as your docker-compose file.</p>
-<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<div class="language-json highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">config.json</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
@@ -3643,7 +3650,7 @@
 <p>Allow Nest Hubs to load the frame securely.</p>
 </div>
 <ol>
-<li><strong>Tunnel:</strong> Point <code>frame.rac3r4life.online</code> to <code>http://&lt;ZIMABOARD_IP&gt;:8081</code></li>
+<li><strong>Tunnel:</strong> Point <code>frame.rac3r4life.online</code> to <code>http://&lt;ZIMAOS_NAS_IP&gt;:8081</code></li>
 <li><strong>WAF Rules <em>(Critical)</em>:</strong><ul>
 <li>Go to Cloudflare Dashboard &rarr; Security &rarr; WAF &rarr; Custom Rules.</li>
 <li><strong>Create Rule:</strong> If Hostname equals <code>frame.rac3r4life.online</code> &rarr; <strong>Skip</strong> "Super Bot Fight Mode" and "Managed Challenge".<ul>

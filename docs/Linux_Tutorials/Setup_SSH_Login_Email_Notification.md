@@ -33,7 +33,7 @@ hide:
 
 2. Paste the following into the configuration file:
 
-    ```ini linenums="1"
+    ```ini title="/etc/msmtprc" linenums="1" hl_lines="11 13 14"
     # Global defaults
     defaults
     auth           on
@@ -101,11 +101,11 @@ hide:
     ```
 
     >[!warning] Warning: 
-    > It is important to use `sudo -e` instead of a direct editor command *(like `sudo nano`)* when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's `$EDITOR` environment variable.
+    > It is important to use `#!bash sudo -e` instead of a direct editor command *(like `sudo nano`)* when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's `$EDITOR` environment variable.
 
     The final file should look like this: 
 
-    ```ini linenums="1"
+    ```ini title="/etc/pam.d/sshd" linenums="1" hl_lines="26"
     # PAM configuration for the Secure Shell service
     # Standard Un*x authentication.
     @include common-auth
@@ -150,7 +150,7 @@ hide:
 
 2. Paste the following into your script file, and replace `example@example.com` with the email address to which you would like the notifications to be sent. 
 
-    ```bash title="ssh-login-notify.sh" linenums="1"
+    ```bash title="ssh-login-notify.sh" linenums="1" hl_lines="7"
     #!/bin/bash
 
     USER="$PAM_USER"

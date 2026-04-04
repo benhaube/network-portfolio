@@ -71,7 +71,7 @@ hide:
       - 192.168.50.2
 ```
 
-**Glance Pages:**
+#### :material-application-brackets: Glance Pages:
 
 ```yaml title="glance.yml" linenums="1"
 server:

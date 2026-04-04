@@ -39,8 +39,8 @@ Instead of pointing every service to the proxy's IP address directly, we use a s
 
 **Commands:** 
 
-+ `sudo nano /etc/caddy/Caddyfile` *(Open config file in `nano`)*  
-+ `sudo systemctl reload caddy` *(Apply changes)*
++ `#!bash sudo nano /etc/caddy/Caddyfile` *(Open config file in `nano`)*  
++ `#!bash sudo systemctl reload caddy` *(Apply changes)*
 
 ```nginx linenums="1"
 # Immich Photo Server

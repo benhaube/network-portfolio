@@ -83,7 +83,7 @@ markdown_extensions:
           - overrides/.icons
   - pymdownx.highlight:
       use_pygments: true
-      auto_title: true
+      auto_title: false
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true

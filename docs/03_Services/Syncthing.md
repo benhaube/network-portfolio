@@ -52,9 +52,9 @@ hide:
             * Image: `linuxserver/syncthing:1.29.7` 
     * :simple-linux:&nbsp;Native Install
         * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] / [[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
-            * `sudo apt install syncthing`
+            * `#!bash sudo apt install syncthing`
         * :simple-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]] / [[Ben's_Laptop|Ben's Laptop]]
-            * `sudo dnf install syncthing`
+            * `#!bash sudo dnf install syncthing`
 
 ### :fontawesome-solid-gear: Configuration  
 

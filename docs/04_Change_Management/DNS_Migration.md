@@ -34,7 +34,7 @@ hide:
 **Raspberry Pi 4B:**
 
 1. **Uninstall Pi-hole:**
-    + [ ] Use the command `sudo pihole uninstall` to remove Pi-hole from the server.
+    + [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.
 2. **Install Technitium:** 
     + [ ] Match the version running on the Debian VM.
 3. **Set as Secondary:** 
@@ -56,13 +56,13 @@ hide:
     + [ ] Point DNS 2 to the Pi 4B IP.
     + [ ] *(Optional)* Point DNS 3 to the Pi Zero IP.
 2. **Clear Local Caches:** 
-    + [ ] Flush DNS on your main workstation *(`resolvectl flush-caches` or `ipconfig /flushdns`)*.
+    + [ ] Flush DNS on your main workstation *(`#!bash resolvectl flush-caches` or `#!bash ipconfig /flushdns`)*.
 3. **Test Resolution:** 
-    + [ ] Run `dig @[Primary-IP] google.com` and verify the `SERVER` field.
+    + [ ] Run `#!bash dig @[Primary-IP] google.com` and verify the `SERVER` field.
 ---
 ## :material-web-check: Phase 5: Verification & Safety Net
 1. **Check DoT Status:** 
-    + [ ] Run `dig @[Primary-IP] +short txt proto.on.quad9.net` to ensure the upstream is encrypted.
+    + [ ] Run `#!bash dig @[Primary-IP] +short txt proto.on.quad9.net` to ensure the upstream is encrypted.
 2. **Verify Pi Zero Fallback:** 
     + [ ] Temporarily stop the Technitium service on both the VM and Pi 4B. Confirm the Pi Zero Pi-hole takes over resolution.
 3. **Audit Dashboard:** 

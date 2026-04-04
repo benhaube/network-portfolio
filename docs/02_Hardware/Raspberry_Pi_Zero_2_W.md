@@ -83,7 +83,7 @@ hide:
 
 #### :material-update: Update Process:
 
-* `apt update && apt upgrade` *(Standard Debian)*
+* `#!bash apt update && apt upgrade` *(Standard Debian)*
 * `unattended-upgrades` enabled for critical bug and security fixes.
 
 #### :material-cloud-upload-outline: Backup Policy:

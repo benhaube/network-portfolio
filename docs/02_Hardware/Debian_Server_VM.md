@@ -87,7 +87,7 @@ hide:
 
 #### :material-update: Update Policy:
 
-* `sudo apt update && sudo apt upgrade` *(Standard Debian)*
+* `#!bash sudo apt update && sudo apt upgrade` *(Standard Debian)*
 * `unattended-upgrades` enabled for critical bug and security fixes.
 
 #### :material-camera: Snapshot Policy:

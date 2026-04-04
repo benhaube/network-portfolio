@@ -177,7 +177,7 @@ hide:
     ```
 
 3. Save and close the file.
-	+ ++ctrl+o++&ensp;++enter++&ensp;++ctrl+x++
+	+ ++ctrl+o++&ensp;++ctrl+x++
 4. Give execute permission to the script.
 
     ```bash linenums="1"

@@ -72,9 +72,9 @@ hide:
 
 #### :material-update: Update Process:
 
-* `sudo dnf offline-upgrade download` 
-* `sudo dnf offline reboot`
-* `flatpak update`
+* `#!bash sudo dnf offline-upgrade download` 
+* `#!bash sudo dnf offline reboot`
+* `#!bash flatpak update`
 
 #### :material-cloud-upload-outline: Backup Policy:
 
@@ -83,7 +83,7 @@ hide:
 #### :material-backup-restore: Backup Script Config
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
-```bash title="home-bkp-nas.sh" linenums="1"
+```bash title="home-bkp-nas.sh" linenums="1" hl_lines="44"
 #!/bin/bash
 
 # Backup the /home/ directory to the ZimaOS NAS
@@ -240,8 +240,8 @@ Templates/
 Vaults/
 ```
 
-3. Run the command `mkdir -p ~/.var/log` to create the log directory.
-4. Run the command `touch ~/.var/log/backup_log.log` to create the empty log file.
+3. Run the command `#!bash mkdir -p ~/.var/log` to create the log directory.
+4. Run the command `#!bash touch ~/.var/log/backup_log.log` to create the empty log file.
 5. Place `home-backup` in the `/etc/logrotate.d/` directory.
 
 ```ini title="/etc/logrotate.d/home-backup" linenums="1"
@@ -292,8 +292,8 @@ IOSchedulingClass=idle
 WantedBy=default.target
 ```
 
-7. Run the command `systemctl --user daemon-reload`
-8. Run the command `systemctl --user enable home-bkp-nas.timer`
+7. Run the command `#!bash systemctl --user daemon-reload`
+8. Run the command `#!bash systemctl --user enable home-bkp-nas.timer`
 
 #### :material-folder-network: Systemd Files for ZimaOS NAS Mounts (NFS)
 

@@ -3423,7 +3423,7 @@
 </li>
 <li>
 <p>Paste the following into the configuration file:</p>
-<div class="language-ini highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/msmtprc</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
@@ -3451,11 +3451,11 @@
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="na">syslog         on</span>
 </span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9"></a>
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="c1"># Email account</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="na">account        email</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="na">host           smtp.example.com</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="na">port           465</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="na">from           example@example.com</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="na">user           example@example.com</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="hll"><span class="na">account        email</span>
+</span></span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="na">host           smtp.example.com</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="hll"><span class="na">port           465</span>
+</span></span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="hll"><span class="na">from           example@example.com</span>
+</span></span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="na">user           example@example.com</span>
 </span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="na">passwordeval   &quot;cat /root/.email_app_password&quot;</span>
 </span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17"></a>
 </span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="c1"># Set default</span>
@@ -3518,10 +3518,10 @@
 </span></code></pre></div></td></tr></table></div>
 <div class="admonition warning">
 <p class="admonition-title">Warning:</p>
-<p>It is important to use <code>sudo -e</code> instead of a direct editor command <em>(like <code>sudo nano</code>)</em> when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's <code>$EDITOR</code> environment variable.</p>
+<p>It is important to use <code class="language-bash highlight">sudo<span class="w"> </span>-e</code> instead of a direct editor command <em>(like <code>sudo nano</code>)</em> when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's <code>$EDITOR</code> environment variable.</p>
 </div>
 <p>The final file should look like this: </p>
-<div class="language-ini highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/pam.d/sshd</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
 <span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
@@ -3571,8 +3571,8 @@
 </span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23"></a><span class="c1"># Create a new session keyring.</span>
 </span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24"></a><span class="na">session    optional     pam_keyinit.so force revoke</span>
 </span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25"></a>
-</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26"></a><span class="na">session    optional     pam_exec.so /usr/local/bin/ssh-login-notify.sh</span>
-</span></code></pre></div></td></tr></table></div>
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26"></a><span class="hll"><span class="na">session    optional     pam_exec.so /usr/local/bin/ssh-login-notify.sh</span>
+</span></span></code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>Save the file and exit.</p>
@@ -3623,8 +3623,8 @@
 </span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="nv">IP</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PAM_RHOST</span><span class="s2">&quot;</span>
 </span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="nv">HOST</span><span class="o">=</span><span class="k">$(</span>hostname<span class="k">)</span>
 </span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="nv">DATE</span><span class="o">=</span><span class="k">$(</span>date<span class="k">)</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="nv">RECIPIENT</span><span class="o">=</span><span class="s2">&quot;example@example.com&quot;</span>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="nv">SUBJECT</span><span class="o">=</span><span class="s2">&quot;SSH Login on </span><span class="nv">$HOST</span><span class="s2">&quot;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="hll"><span class="nv">RECIPIENT</span><span class="o">=</span><span class="s2">&quot;example@example.com&quot;</span>
+</span></span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="nv">SUBJECT</span><span class="o">=</span><span class="s2">&quot;SSH Login on </span><span class="nv">$HOST</span><span class="s2">&quot;</span>
 </span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a>
 </span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="nv">BODY</span><span class="o">=</span><span class="s2">&quot;</span>
 </span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="s2">A new SSH session was successfully established.</span>

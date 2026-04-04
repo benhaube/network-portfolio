@@ -7,19 +7,18 @@ hide:
 # [[K1_Bed_Level_Knobs_Tutorial|Manual Bed Leveling Mod]]
 
 ---
-> [!info]
+> [!info] Why?
 > The K1 series does NOT have automatic bed leveling! This upgrade allows you to fine tune your bed level using the `screws_tilt_calculate` command in Fluidd. This method is superior to tooth skipping and the Creality method. It's quick, easy and accurate.
 
 > [!done] Purchased Parts
 > The links below are for a complete kit, which is used on a lot of printers. It's possible to print knobs if you already have longer screws and springs.
 > 
-> + Order from [AliExpress](https://s.click.aliexpress.com/e/_oopAFjx). 
-> + Order from [Amazon](https://amzn.to/4jkJ185).
+> [AliExpress :material-shopping:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon :fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
 
 > [!danger] Root Access Required
 > This project requires you to use the helper script to make changes to the `printer.cfg` file *(located at `/usr/data/printer_data/config/`)* and run macros or commands through a Klipper interface such as Fluidd or Mainsail. On a Creality K1-Series printer, this requires root access. Read the links below for more information.
-> + [Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/) guide.
-> + [Root Access](https://www.3dphub.net/learn/root-access-quick-start-guide) quick guide
+>
+> [Helper Script :devices-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }&emsp;[Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 
 ---
 ## :material-tools: Hardware Setup
@@ -76,7 +75,9 @@ hide:
 2. [ ] SSH into the printer.
 
     > [!info]
-    > If you don't know how to do this, refer to the [Root Access Guide](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access).
+    > If you don't know how to do this, refer to the Root Access Guide:
+    >
+    > [Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 
 3. [ ] **Option 1:** Run the [helper script](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
 
@@ -168,6 +169,4 @@ hide:
 
 ---
 ### :material-link-variant: References and Resources
-+ [Screws Tilt Calculate Documentation](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate)
-+ [Manual Bed Leveling Documentation](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe)
-+ [Fluidd Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/)
+[Screws Tilt Adjust Docs :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }&emsp;[Manual Bed Leveling Docs :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }&emsp;[Fluidd Access :services-fluidd:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ .md-button }

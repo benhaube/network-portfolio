@@ -9,14 +9,21 @@ hide:
 ---
 > [!info]
 > **Printer:** &nbsp;:devices-creality:&nbsp;[[Kacey_3D-printer|Creality K1C]]
-> 
-> **Modifications:** Upgraded bed leveling kit with aluminum spacers, PROWIPER V5 Mount
+>
+> **Modifications:** Upgraded bed leveling kit with aluminum spacers, PROWIPER&copy; V5 Mount
 > 
 > **Hardware Required:**
-> + Printed 4mm Z-spacer
-> + Printed `v5-k1c-brush-mount-for-a1-brushes.stl` *(in high-temp filament like ASA / ABS)*
-> + [Bambu A1](https://www.amazon.com/dp/B0DRBZK7RZ) Silicone Brushes
-> + 2x [M3x12mm](https://www.amazon.com/dp/B0D9BDDYG3) self-tapping screws
+> + Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` *(in high-temp filament like ASA / ABS)*
+>
+>     [Printables :simple-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button } 
+>
+> + **Bambu A1** Silicone Brushes
+>
+>     [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0DRBZK7RZ){ .md-button }
+>
+> + 2x **M3x12mm** self-tapping screws
+>
+>     [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BDDYG3){ .md-button }
 
 ---
 ## :material-file-document-edit: Phase 1: Configuration File Edits

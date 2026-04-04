@@ -55,7 +55,7 @@ immich.internal {
 ```mermaid
 graph TD
 	%% --- Class definitions ---
-	classDef box fill:#255425,stroke:#4cae4f,stroke-width:2px;
+	%% classDef box fill:#255425,stroke:#4cae4f,stroke-width:2px;
 
     User[Client Browser]:::box -- "DNS Query: immich.internal" --> DNS[Technitium DNS]:::box
     DNS -- "Returns CNAME: proxy IP" --> User

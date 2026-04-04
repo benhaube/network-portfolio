@@ -73,7 +73,7 @@ hide:
 graph LR
 
 	%% --- Class Definitions ---
-	classDef box fill:#255425,stroke:#4cae4f,stroke-width:2px;
+	%% classDef box fill:#255425,stroke:#4cae4f,stroke-width:2px;
 
     %% Phase 1
     subgraph Phase_1 ["<b>Phase 1:</b> Pre-Migration & Documentation"]

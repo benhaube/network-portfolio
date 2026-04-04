@@ -7,7 +7,12 @@ hide:
 ---
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
+%%{
+  init: {
+    "themeCSS": ".node.vlan50 rect, .node.vlan50 polygon, .node.vlan50 circle, .node.vlan50 path { fill: var(--vlan50-bg) !important; stroke: var(--vlan50-border) !important; stroke-width: 2px !important; } .node.vlan52 rect, .node.vlan52 polygon, .node.vlan52 circle, .node.vlan52 path { fill: var(--vlan52-bg) !important; stroke: var(--vlan52-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.vlan53 rect, .node.vlan53 polygon, .node.vlan53 circle, .node.vlan53 path { fill: var(--vlan53-bg) !important; stroke: var(--vlan53-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.service rect, .node.service polygon, .node.service circle, .node.service path { fill: var(--service-bg) !important; stroke: var(--service-border) !important; stroke-width: 2px !important; } .node.storage rect, .node.storage polygon, .node.storage circle, .node.storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; } .node.usb-storage rect, .node.usb-storage polygon, .node.usb-storage circle, .node.usb-storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+  }
+}%%
+
 graph
 	%% --- Class definitions for Obsidian ---
     %% classDef vlan50 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
@@ -18,14 +23,22 @@ graph
     %% classDef usb-storage fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
     %% classDef vm fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
     
-    %% --- Class definitions for MkDocs ---
-    classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
-    classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
-    classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-    
+    %% --- Class definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
+    %% classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
+    %% classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
+    %% classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
+    %% classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
+
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    classDef vlan50 fill: stroke:;
+    classDef vlan52 fill: stroke:;
+    classDef vlan53 fill: stroke:;
+    classDef service fill: stroke:;
+    classDef storage fill: stroke:;
+    classDef usb-storage fill: stroke:;
+
     %% --- Ledgend ---
     VLAN50("VLAN50<br><i>(192.168.50.0/24)</i>"):::vlan50
     VLAN52("VLAN52<br><i>(192.168.52.0/24)</i>"):::vlan52
@@ -36,7 +49,12 @@ graph
 ```
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
+%%{
+  init: {
+    "themeCSS": ".node.vlan50 rect, .node.vlan50 polygon, .node.vlan50 circle, .node.vlan50 path { fill: var(--vlan50-bg) !important; stroke: var(--vlan50-border) !important; stroke-width: 2px !important; } .node.vlan52 rect, .node.vlan52 polygon, .node.vlan52 circle, .node.vlan52 path { fill: var(--vlan52-bg) !important; stroke: var(--vlan52-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.vlan53 rect, .node.vlan53 polygon, .node.vlan53 circle, .node.vlan53 path { fill: var(--vlan53-bg) !important; stroke: var(--vlan53-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.service rect, .node.service polygon, .node.service circle, .node.service path { fill: var(--service-bg) !important; stroke: var(--service-border) !important; stroke-width: 2px !important; } .node.storage rect, .node.storage polygon, .node.storage circle, .node.storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; } .node.usb-storage rect, .node.usb-storage polygon, .node.usb-storage circle, .node.usb-storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+  }
+}%%
+
 graph TD
 	%% --- Class definitions for Obsidian ---
     %% classDef vlan50 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
@@ -47,14 +65,22 @@ graph TD
     %% classDef usb-storage fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
     %% classDef vm fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
     
-    %% --- Class definitions for MkDocs ---
-    classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
-    classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
-    classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-    
+    %% --- Class definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
+    %% classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
+    %% classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
+    %% classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
+    %% classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
+
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    classDef vlan50 fill: stroke:;
+    classDef vlan52 fill: stroke:;
+    classDef vlan53 fill: stroke:;
+    classDef service fill: stroke:;
+    classDef storage fill: stroke:;
+    classDef usb-storage fill: stroke:;
+
     %% --- Trusted VLAN ---
     subgraph Trusted_VLAN50 ["<b>VLAN 50: Trusted</b><br><i>(192.168.50.x)</i>"]
         direction TB

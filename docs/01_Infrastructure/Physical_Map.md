@@ -7,7 +7,12 @@ hide:
 ---
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
+%%{
+  init: {
+    "themeCSS": ".node.isp rect, .node.isp polygon, .node.isp circle, .node.isp path { fill: var(--isp-bg) !important; stroke: var(--isp-border) !important; stroke-width: 2px !important; } .node.multi rect, .node.multi polygon, .node.multi circle, .node.multi path { fill: var(--multi-bg) !important; stroke: var(--multi-border) !important; stroke-width: 2px !important; } .node.tenGb rect, .node.tenGb polygon, .node.tenGb circle, .node.tenGb path { fill: var(--tengb-bg) !important; stroke: var(--tengb-border) !important; stroke-width: 2px !important; } .node.twoFiveGb rect, .node.twoFiveGb polygon, .node.twoFiveGb circle, .node.twoFiveGb path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; } .node.twoFiveGbTemp rect, .node.twoFiveGbTemp polygon, .node.twoFiveGbTemp circle, .node.twoFiveGbTemp path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.gigabit rect, .node.gigabit polygon, .node.gigabit circle, .node.gigabit path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; } .node.gigabitTemp rect, .node.gigabitTemp polygon, .node.gigabitTemp circle, .node.gigabitTemp path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.wifi rect, .node.wifi polygon, .node.wifi circle, .node.wifi path { fill: var(--wifi-bg) !important; stroke: var(--wifi-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+  }
+}%%
+
 graph
     %% --- Class definitions for Obsidian ---
     %% classDef isp fill:#ffebee,stroke:#c62828,stroke-width:2px;
@@ -19,15 +24,25 @@ graph
     %% classDef gigabitTemp fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
     %% classDef wifi fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
     
-	%% --- Class Definitions for MkDocs ---
-	classDef isp fill:#22090E,stroke:#c62828,stroke-width:2px;
-    classDef multi fill:#00111D,stroke:#01579b,stroke-width:2px;
-    classDef tenGb fill:#5A1C00,stroke:#bf360c,stroke-width:2px;
-    classDef twoFiveGb fill:#110C00,stroke:#fbc02d,stroke-width:2px;
-    classDef twoFiveGbTemp fill:#110C00,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef gigabit fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    classDef gigabitTemp fill:#001200,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef wifi fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
+	%% --- Class Definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
+	%% classDef isp fill:#22090E,stroke:#c62828,stroke-width:2px;
+    %% classDef multi fill:#00111D,stroke:#01579b,stroke-width:2px;
+    %% classDef tenGb fill:#5A1C00,stroke:#bf360c,stroke-width:2px;
+    %% classDef twoFiveGb fill:#110C00,stroke:#fbc02d,stroke-width:2px;
+    %% classDef twoFiveGbTemp fill:#110C00,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef gigabit fill:#001200,stroke:#2e7d32,stroke-width:2px;
+    %% classDef gigabitTemp fill:#001200,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef wifi fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
+
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    classDef isp fill: stroke:;
+    classDef multi fill: stroke:;
+    classDef tenGb fill: stroke:;
+    classDef twoFiveGb fill: stroke:;
+    classDef twoFiveGbTemp fill: stroke:;
+    classDef gigabit fill: stroke:;
+    classDef gigabitTemp fill: stroke:;
+    classDef wifi fill: stroke:;
 
 	%% --- Ledgend ---
 	VM("Virtual Machine"):::multi
@@ -40,7 +55,12 @@ graph
 ```
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
+%%{
+  init: {
+    "themeCSS": ".node.isp rect, .node.isp polygon, .node.isp circle, .node.isp path { fill: var(--isp-bg) !important; stroke: var(--isp-border) !important; stroke-width: 2px !important; } .node.multi rect, .node.multi polygon, .node.multi circle, .node.multi path { fill: var(--multi-bg) !important; stroke: var(--multi-border) !important; stroke-width: 2px !important; } .node.tenGb rect, .node.tenGb polygon, .node.tenGb circle, .node.tenGb path { fill: var(--tengb-bg) !important; stroke: var(--tengb-border) !important; stroke-width: 2px !important; } .node.twoFiveGb rect, .node.twoFiveGb polygon, .node.twoFiveGb circle, .node.twoFiveGb path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; } .node.twoFiveGbTemp rect, .node.twoFiveGbTemp polygon, .node.twoFiveGbTemp circle, .node.twoFiveGbTemp path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.gigabit rect, .node.gigabit polygon, .node.gigabit circle, .node.gigabit path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; } .node.gigabitTemp rect, .node.gigabitTemp polygon, .node.gigabitTemp circle, .node.gigabitTemp path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.wifi rect, .node.wifi polygon, .node.wifi circle, .node.wifi path { fill: var(--wifi-bg) !important; stroke: var(--wifi-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+  }
+}%%
+
 graph TD
     %% --- Class definitions for Obsidian ---
     %% classDef isp fill:#ffebee,stroke:#c62828,stroke-width:2px;
@@ -52,15 +72,25 @@ graph TD
     %% classDef gigabitTemp fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
     %% classDef wifi fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
     
-    %% --- Class definitions for MkDocs ---
-	classDef isp fill:#22090E,stroke:#c62828,stroke-width:2px;
-    classDef multi fill:#00111D,stroke:#01579b,stroke-width:2px;
-    classDef tenGb fill:#5A1C00,stroke:#bf360c,stroke-width:2px;
-    classDef twoFiveGb fill:#110C00,stroke:#fbc02d,stroke-width:2px;
-    classDef twoFiveGbTemp fill:#110C00,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef gigabit fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    classDef gigabitTemp fill:#001200,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef wifi fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
+	%% --- Class Definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
+	%% classDef isp fill:#22090E,stroke:#c62828,stroke-width:2px;
+    %% classDef multi fill:#00111D,stroke:#01579b,stroke-width:2px;
+    %% classDef tenGb fill:#5A1C00,stroke:#bf360c,stroke-width:2px;
+    %% classDef twoFiveGb fill:#110C00,stroke:#fbc02d,stroke-width:2px;
+    %% classDef twoFiveGbTemp fill:#110C00,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef gigabit fill:#001200,stroke:#2e7d32,stroke-width:2px;
+    %% classDef gigabitTemp fill:#001200,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
+    %% classDef wifi fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
+
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    classDef isp fill: stroke:;
+    classDef multi fill: stroke:;
+    classDef tenGb fill: stroke:;
+    classDef twoFiveGb fill: stroke:;
+    classDef twoFiveGbTemp fill: stroke:;
+    classDef gigabit fill: stroke:;
+    classDef gigabitTemp fill: stroke:;
+    classDef wifi fill: stroke:;
     
     %% --- Nodes ---
     ISP(("<b>ISP</b><br><i>(Xfinity)</i>")):::isp

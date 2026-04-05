@@ -14,23 +14,6 @@ hide:
 }%%
 
 graph
-	%% --- Class definitions for Obsidian --- %%
-    %% classDef vlan50 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vm fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    
-    %% --- Class definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! --- %%
-    %% classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-
     %% --- Dummy Class Definitions (To register the classes on the SVGs) --- %%
     classDef vlan50 fill: stroke:;
     classDef vlan52 fill: stroke:;
@@ -45,7 +28,7 @@ graph
     VLAN53("VLAN53<br><i>(192.168.53.0/24)</i>"):::vlan53
     Service("Services"):::service
     OnboardStorage[("Onboard Storage")]:::storage
-    USB-Storage[("USB Storage")]:::usb-storage
+    USB-Storage[("USB / Virtual Storage")]:::usb-storage
 ```
 
 ```mermaid
@@ -56,23 +39,6 @@ graph
 }%%
 
 graph TD
-	%% --- Class definitions for Obsidian --- %%
-    %% classDef vlan50 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vm fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    
-    %% --- Class definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! --- %%
-    %% classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-
     %% --- Dummy Class Definitions (To register the classes on the SVGs) --- %%
     classDef vlan50 fill: stroke:;
     classDef vlan52 fill: stroke:;
@@ -124,7 +90,7 @@ graph TD
             subgraph VM_Debian ["<b>Debian Server VM</b> <i>(.6)</i>"]
                 DNS_Primary("<b>Primary DNS</b><br><i>(Technitium Cluster)</i>"):::service
                 Service_Docker_VM("<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"):::service
-                Virtual_Disk[("<b>Virtual Disk</b><br><i>(Debian Trixie)</i>")]:::storage
+                Virtual_Disk[("<b>Virtual Disk</b><br><i>(Debian Trixie)</i>")]:::usb-storage
             end
         end
         

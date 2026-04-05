@@ -51,7 +51,7 @@ graph TD
     subgraph Router ["<b>ASUS RT-BE92U</b> <i>(Main Router)</i>"]
         direction TB
         Services["<b>Services:</b><br>Chrony<br>SMB<br>SSH<br>WireGuard"]:::service
-        Router_USB[("USB Storage")]:::storage
+        Router_USB[("USB Storage")]:::usb-storage
         Router_JFFS[("JFFS")]:::storage
         RouterNVRAM[("NVRAM")]:::storage
     end

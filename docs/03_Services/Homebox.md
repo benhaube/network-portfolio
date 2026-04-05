@@ -29,7 +29,7 @@ hide:
 * **Container Name:** `homebox`
 * **Image:** `ghcr.io/sysadminsmedia/homebox:latest`
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

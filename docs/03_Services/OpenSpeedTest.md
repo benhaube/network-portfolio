@@ -30,7 +30,7 @@ hide:
 * **Container Name:** `openspeedtest`
 * **Image:** `openspeedtest/latest:v2.0.6` 
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: openspeedtest

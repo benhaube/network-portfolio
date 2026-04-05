@@ -28,7 +28,7 @@ hide:
 * **Container Name:** `it-tools`
 * **Image:** `sharevb/it-tools:latest`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

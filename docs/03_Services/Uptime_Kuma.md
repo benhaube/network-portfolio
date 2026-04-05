@@ -33,7 +33,7 @@ hide:
 * **Container Name:** `uptime-kuma`
 * **Image:** `louislam/uptime-kuma:2`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

@@ -29,7 +29,7 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```toml title="~/.config/krdbserverrc" linenums="1"
 [General]  

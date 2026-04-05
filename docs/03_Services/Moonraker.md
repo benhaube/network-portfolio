@@ -29,7 +29,9 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
+
+#### Install:
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 # Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.
@@ -41,6 +43,8 @@ sh /usr/data/helper-script/helper.sh
 # If you encounter an issue to clone Helper Script repository, enter this command before cloning:
 git config --global http.sslVerify false
 ```
+
+#### Config File:
 
 ```toml title="moonraker.cfg" linenums="1"
 [server]

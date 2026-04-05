@@ -27,7 +27,7 @@ hide:
 * **Container Name:** `nextcloud`
 * **Image:** `nextcloud:32.0` 
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: nextcloud

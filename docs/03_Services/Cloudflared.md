@@ -30,7 +30,7 @@ hide:
 * **Container Name:** `cloudflared`
 * **Image:** `wisdomsky/cloudflared-web:2025.11.1` 
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: cloudflared

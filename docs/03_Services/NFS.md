@@ -32,16 +32,16 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
-**Exports File:**
+#### Exports File:
 
 ```ini title="/etc/exports" linenums="1"
 /media/Quick-Storage *(rw,sync,no_subtree_check)
 /media/nvme0n1p1 *(rw,sync,no_subtree_check)
 ```
 
-**Command to Apply:**
+#### Command to Apply:
 
 ```bash linenums="1"
 exportfs -a

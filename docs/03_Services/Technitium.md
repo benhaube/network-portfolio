@@ -39,7 +39,7 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```bash title="Command to install Technitium" linenums="1"
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash

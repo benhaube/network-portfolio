@@ -34,7 +34,7 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```apacheconf title="cupsd.conf" linenums="1"
 LogLevel warn  

@@ -32,9 +32,9 @@ hide:
 * **Container Name:** `obsidian-livesync`
 * **Image:** `couchdb:3.5.0`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
-**:material-server-outline: Server:**
+#### :material-server-outline: Server:
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-obsidian-livesync
@@ -140,7 +140,7 @@ x-casaos:
     en_us: Obsidian Livesync
 ```
 
-**:material-account: Clients:**
+#### :material-account: Clients:
 
 ```json linenums="1"
 {

@@ -30,7 +30,7 @@ hide:
 * **Container Name:** `beszel`
 * **Image:** `henrygd/beszel:latest`
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

@@ -35,7 +35,7 @@ hide:
 * **Container Name:** `dockge-dockge-1`
 * **Image:** `louislam/dockge:1`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

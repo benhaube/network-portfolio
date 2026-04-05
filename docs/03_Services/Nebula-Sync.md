@@ -29,7 +29,7 @@ hide:
 * **Container Name:** `nebula-sync`
 * **Image:** `ghcr.io/lovelaze/nebula-sync:latest` 
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

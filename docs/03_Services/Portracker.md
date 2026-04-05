@@ -33,7 +33,7 @@ hide:
 * **Container Name:** `portracker`
 * **Image:** `mostafawahied/portracker:latest`
 
-### :fontawesome-solid-gear: Configuration  
+### :material-cog: Configuration  
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-portracker

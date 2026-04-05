@@ -40,13 +40,15 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 
-### :fontawesome-solid-gear: Configuration  
+### :material-cog: Configuration
+
+#### Install:
 
 ```bash linenums="1"
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-**Pi-hole Config file: `pihole.toml`**
+#### Pi-hole Config file: `pihole.toml`
 
 ```toml title="/etc/pihole/pihole.toml" linenums="1"
 # Pi-hole configuration file (v6.4.1)

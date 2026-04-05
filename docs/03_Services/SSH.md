@@ -51,11 +51,11 @@ hide:
     * :devices-creality:&nbsp;[[Kacey_3D-printer|Creality K1C 3D-Printer]]
 * **Method:** &nbsp;:simple-linux:&nbsp;Native Linux
 
-## :fontawesome-solid-gear: Configuration 
+## :material-cog: Configuration 
 
 ### :material-server-outline: Servers:
 
-**SSH Config File:**
+#### SSH Config File:
 
 1. Make the required changes to the SSH config file: 
 
@@ -191,7 +191,7 @@ hide:
     sudo systemctl restart sshd
     ```
 
-**Login Banner:** 
+#### Login Banner:
 
 1. Paste this ASCII message into the banner file:
 
@@ -206,7 +206,7 @@ hide:
     \\\\\---------------------------------------------------------------\\\\\
     ```
 
-**Suppress MOTD:**
+#### Suppress MOTD:
 
 1. Run this command to clear MOTD file:
 
@@ -217,7 +217,7 @@ hide:
 > [!warning] Warning
 > `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
 
-**Suppress Dynamic MOTD:**
+#### Suppress Dynamic MOTD:
 
 1. See what dynamic MOTD scripts exist:
 
@@ -237,7 +237,7 @@ hide:
     sudo chmod +x /etc/update-motd.d/SCRIPT_TO_ENABLE
     ```
 
-**Suppress Last Login (optional):** 
+#### Suppress Last Login: 
 
 1. Open the SSH config file with a text editor:
 
@@ -274,7 +274,7 @@ hide:
 
 ### :material-account: Clients:
 
-**Bitwarden SSH Key Agent:**
+#### Bitwarden SSH Key Agent:
 
 1. Paste this line into the client's `~/.bashrc` file to enable the Bitwarden SSH key agent.
 
@@ -282,7 +282,7 @@ hide:
     export SSH_AUTH_SOCK=/home/$USER/.bitwarden-ssh-agent.sock
     ```
 
-**Client SSH Configuration:**
+#### Client SSH Configuration:
 
 1. Create the `~/.ssh` directory:
 

@@ -30,7 +30,9 @@ hide:
 * **Container Name:** `glances`
 * **Image:** `nicolargo/glances:latest-full `
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
+
+#### Docker Compose:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  
@@ -215,6 +217,9 @@ x-casaos:
     pt_br: Glances
     zh_cn: Glances
 ```
+
+#### Config File:
+
 ```toml title="glances.conf" linenums="1"
 ##############################################################################
 # Globals Glances parameters

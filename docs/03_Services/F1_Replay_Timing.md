@@ -34,7 +34,7 @@ hide:
     * `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`
     * `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

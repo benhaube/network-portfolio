@@ -29,7 +29,7 @@ hide:
 * **Container Name:** `homeassistant`
 * **Image:** `ghcr.io/home-assistant/home-assistant:latest` 
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

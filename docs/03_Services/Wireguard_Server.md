@@ -44,7 +44,7 @@ hide:
 * **Container Name:** `big-bear-wg-easy-v15`
 * **Image:** `ghcr.io/wg-easy/wg-easy:15`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-wg-easy-v15

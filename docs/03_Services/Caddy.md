@@ -30,8 +30,9 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### :fontawesome-solid-gear: Configuration 
-**How to Install:**
+### :material-cog: Configuration 
+
+#### Install:
 
 1. Add the official Caddy repository. 
 
@@ -62,7 +63,7 @@ hide:
     sudo systemctl reload caddy
     ```
 
-**The 'Caddyfile' *(configuration file)*:**
+#### The 'Caddyfile' *(configuration file)*:
 
 ```nginx title="/etc/caddy/caddyfile" linenums="1"
 # The Caddyfile is an easy way to configure your Caddy web server.  

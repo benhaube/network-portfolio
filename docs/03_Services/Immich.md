@@ -44,7 +44,7 @@ hide:
     * `redis:6.2-alpine`
     * `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: immich

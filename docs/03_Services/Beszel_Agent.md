@@ -32,7 +32,7 @@ hide:
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
         * **Image:** `henrygd/beszel-agent:alpine`
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

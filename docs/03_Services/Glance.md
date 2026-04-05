@@ -30,7 +30,9 @@ hide:
 * **Container Name:** `glance`
 * **Image:** `glanceapp/glance` 
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
+
+#### Docker Compose:
 
 ```yaml title="docker-compose.yml" linenums="1"
   glance:
@@ -71,7 +73,7 @@ hide:
       - 192.168.50.2
 ```
 
-#### :material-application-brackets: Glance Pages:
+#### Glance Pages:
 
 ```yaml title="glance.yml" linenums="1"
 server:

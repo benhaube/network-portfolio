@@ -32,7 +32,7 @@ hide:
 * **Container Name:** `ntop`
 * **Image:** `ntop/ntopng:latest`
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

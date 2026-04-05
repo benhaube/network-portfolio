@@ -28,7 +28,7 @@ hide:
 * **Container Name:** `network-portfolio`
 * **Image:** `nginx:alpine` 
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

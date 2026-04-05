@@ -29,7 +29,7 @@ hide:
 * **Container Name:** `portainer`
 * **Image:** `portainer/portainer-ee:lts`
 
-### :fontawesome-solid-gear: Configuration  
+### :material-cog: Configuration  
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  

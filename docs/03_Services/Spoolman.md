@@ -28,7 +28,7 @@ hide:
 * **Container Name:** `spoolman`
 * **Image:** `ghcr.io/donkie/spoolman:0.22.1`
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-spoolman

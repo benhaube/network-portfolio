@@ -28,7 +28,7 @@ hide:
 * **Container Name:** `ttydbridge`
 * **Image:** `cp0204/ttydbridge:v0.0.3`
 
-### :fontawesome-solid-gear: Configuration
+### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: ttydbridge

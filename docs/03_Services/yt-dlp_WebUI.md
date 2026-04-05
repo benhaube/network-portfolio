@@ -29,7 +29,7 @@ hide:
 * **Container Name:** `yt-dlp-webui`
 * **Image:** `marcobaobao/yt-dlp-webui:latest` 
 
-### :fontawesome-solid-gear: Configuration 
+### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

@@ -35,9 +35,9 @@ hide:
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 
-### :fontawesome-solid-gear: Configuration  
+### :material-cog: Configuration  
 
-**:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:**
+#### [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:
 
 ```toml title="/etc/samba/smb.conf" linenums="1"
 [global]  
@@ -54,7 +54,7 @@ hide:
  force user = admin
 ```
 
-**:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] Config:**
+#### [[ZimaBoard_2_NAS|ZimaOS NAS]] Config:
 
 ```toml title="/etc/samba/smb.conf" linenums="1"
 # custom config  

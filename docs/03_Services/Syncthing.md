@@ -56,7 +56,7 @@ hide:
         * :simple-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]] / [[Ben's_Laptop|Ben's Laptop]]
             * `#!bash sudo dnf install syncthing`
 
-### :fontawesome-solid-gear: Configuration  
+### :material-cog: Configuration  
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: syncthing

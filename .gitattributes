@@ -35,6 +35,7 @@
 *.less            text
 *.ls              text
 *.map             text -diff
+*.mermaid         text -diff
 *.od              text
 *.onlydata        text
 *.php             text diff=php

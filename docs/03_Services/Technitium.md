@@ -41,6 +41,8 @@ hide:
 
 ### :material-cog: Configuration 
 
+#### Install:
+
 ```bash title="Command to install Technitium" linenums="1"
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 ```

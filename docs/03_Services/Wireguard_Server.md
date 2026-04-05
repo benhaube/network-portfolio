@@ -68,7 +68,7 @@ services:
       - INIT_HOST=https://remote-access-home-34.asuscomm.com
       - INIT_IPV4_CIDR=10.8.0.0/24
       - INIT_IPV6_CIDR=fd42:42:42::/64
-      - INIT_PASSWORD=nsuq3BHmzq$$$$!3488
+      - INIT_PASSWORD=password # (1)!
       - INIT_PORT=51820
       - INIT_USERNAME=admin
       - INSECURE=true
@@ -136,3 +136,5 @@ x-casaos:
     custom: ""
     en_us: WireGuard Easy v15
 ```
+
+1. Setting your password here is **NOT** recommended. Leave as the default, and change the password from the Web UI. 

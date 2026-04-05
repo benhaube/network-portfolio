@@ -44,7 +44,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - FRONTEND_URL=http://storage-server.internal:3000
+      - FRONTEND_URL=http://storage-server.internal:3000 # (1)!
       - DATA_DIR=/data
     volumes:
       - /media/nvme0n1p1/AppData/f1-replay-timing/f1data:/data
@@ -58,7 +58,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - NEXT_PUBLIC_API_URL=http://storage-server.internal:8000
+      - NEXT_PUBLIC_API_URL=http://storage-server.internal:8000 # (2)!
     depends_on:
       - backend
     networks:
@@ -71,3 +71,7 @@ volumes:
   f1data:
   f1cache:
 ```
+
+1. Do *NOT* use `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. Use the IP address or URL of the host server. 
+
+2. Do *NOT* use `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. Use the IP address or URL of the host server. 

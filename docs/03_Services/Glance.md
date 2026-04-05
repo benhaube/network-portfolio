@@ -47,7 +47,7 @@ hide:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     ports:
       - 8580:8580
-    env_file: .env
+    env_file: .env # (1)!
     labels:
       glance.name: Glance
       glance.icon: sh:glance
@@ -72,6 +72,8 @@ hide:
       - 192.168.50.6
       - 192.168.50.2
 ```
+
+1. Use `.env` to store tokens / secrets and URLs for Widgets. Do **NOT** put API tokens directly into the Glance pages.
 
 #### Glance Pages:
 

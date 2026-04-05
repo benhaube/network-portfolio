@@ -23,10 +23,7 @@ hide:
 	* `ipp://pi-server.local:631/printers/Brother_HL-L2300D_series`
 	* `dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
 * **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "CUPS Server"
-
-    > [!note] 
-    > *Login needed for Administration, but anyone on the local network can print.*
+    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "CUPS Server"&ensp;:material-information-outline:{ title="Login needed for Administration, but anyone on the local network can print." }
 
 ## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]

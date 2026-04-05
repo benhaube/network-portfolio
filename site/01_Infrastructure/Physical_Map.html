@@ -3295,26 +3295,6 @@
 }%%
 
 graph
-    %% --- Class definitions for Obsidian ---
-    %% classDef isp fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    %% classDef multi fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    %% classDef tenGb fill:#ffccbc,stroke:#bf360c,stroke-width:2px;
-    %% classDef twoFiveGb fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
-    %% classDef twoFiveGbTemp fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef gigabit fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    %% classDef gigabitTemp fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef wifi fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-
-    %% --- Class Definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
-    %% classDef isp fill:#22090E,stroke:#c62828,stroke-width:2px;
-    %% classDef multi fill:#00111D,stroke:#01579b,stroke-width:2px;
-    %% classDef tenGb fill:#5A1C00,stroke:#bf360c,stroke-width:2px;
-    %% classDef twoFiveGb fill:#110C00,stroke:#fbc02d,stroke-width:2px;
-    %% classDef twoFiveGbTemp fill:#110C00,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef gigabit fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    %% classDef gigabitTemp fill:#001200,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef wifi fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-
     %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
     classDef isp fill: stroke:;
     classDef multi fill: stroke:;
@@ -3340,26 +3320,6 @@ graph
 }%%
 
 graph TD
-    %% --- Class definitions for Obsidian ---
-    %% classDef isp fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    %% classDef multi fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    %% classDef tenGb fill:#ffccbc,stroke:#bf360c,stroke-width:2px;
-    %% classDef twoFiveGb fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
-    %% classDef twoFiveGbTemp fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef gigabit fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    %% classDef gigabitTemp fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef wifi fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-
-    %% --- Class Definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
-    %% classDef isp fill:#22090E,stroke:#c62828,stroke-width:2px;
-    %% classDef multi fill:#00111D,stroke:#01579b,stroke-width:2px;
-    %% classDef tenGb fill:#5A1C00,stroke:#bf360c,stroke-width:2px;
-    %% classDef twoFiveGb fill:#110C00,stroke:#fbc02d,stroke-width:2px;
-    %% classDef twoFiveGbTemp fill:#110C00,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef gigabit fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    %% classDef gigabitTemp fill:#001200,stroke:#2e7d32,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef wifi fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-
     %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
     classDef isp fill: stroke:;
     classDef multi fill: stroke:;
@@ -3370,9 +3330,12 @@ graph TD
     classDef gigabitTemp fill: stroke:;
     classDef wifi fill: stroke:;
 
-    %% --- Nodes ---
+%% --- Nodes --- %%
+
+    %% --- ISP --- %%
     ISP(("&lt;b&gt;ISP&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Xfinity)&lt;/i&gt;")):::isp
 
+    %% --- Living Room / Mini-Rack --- %%
     subgraph Living_Room ["&lt;b&gt;Living Room / Mini-Rack&lt;/b&gt;"]
         direction TB
         Modem("&lt;b&gt;Hitron Modem&lt;/b&gt;&lt;br&gt;&lt;i&gt;(DOCSIS 3.1)&lt;/i&gt;"):::twoFiveGb
@@ -3382,6 +3345,7 @@ graph TD
         VM("&lt;b&gt;Debian Server VM&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Primary DNS)&lt;/i&gt;"):::multi
     end
 
+    %% --- Office / Printer Cart --- %%
     subgraph Office ["&lt;b&gt;Office / Printer Cart&lt;/b&gt;"]
         direction TB
         MeshNode("&lt;b&gt;ASUS RT-AX55&lt;/b&gt;&lt;br&gt;&lt;i&gt;(AiMesh Node)&lt;/i&gt;"):::gigabit
@@ -3393,6 +3357,7 @@ graph TD
         Printer3D("&lt;b&gt;Creality K1C&lt;/b&gt;&lt;br&gt;&lt;i&gt;(3D-printer)&lt;/i&gt;"):::wifi
     end
 
+    %% --- Mobile / Wi-Fi --- %%
     subgraph Mobile ["&lt;b&gt;Mobile / Wi-Fi&lt;/b&gt; &lt;i&gt;(VLAN50)&lt;/i&gt;"]
         direction TB
         LaptopBen("Ben's Laptop"):::wifi
@@ -3401,56 +3366,50 @@ graph TD
         PhoneRob("Rob's Phone"):::wifi
     end
 
-    %% Invisible connections to arrange "Mobile / Wi-Fi"
-    %% LaptopBen ~~~ PhoneBen
-    %% LaptopRob ~~~ PhoneRob
-
+    %% --- IoT Network (VLAN53) --- %%
     subgraph IoT ["&lt;b&gt;IoT Network&lt;/b&gt; &lt;i&gt;(VLAN 53)&lt;/i&gt;"]
         direction TB
         IoTDevices("IoT Devices"):::wifi
     end
 
+    %% --- Guest Wi-Fi (VLAN52) --- %%
     subgraph Guest ["&lt;b&gt;Guest Wi-Fi&lt;/b&gt; &lt;i&gt;(VLAN 52)&lt;/i&gt;"]
         direction TB
         GuestDevices("Guest Devices"):::wifi
     end
 
-    %% --- Connections ---
+%% --- Connections --- %%
 
-    %% WAN / Uplinks
+    %% --- WAN / Uplinks --- %%
     ISP ==&gt; Modem
-    Modem -- "&lt;b&gt;WAN&lt;/b&gt; &lt;i&gt;(2.5Gb)&lt;/i&gt;" --&gt; RouterMain
+    Modem == "&lt;b&gt;WAN&lt;/b&gt; &lt;i&gt;(2.5Gb)&lt;/i&gt;" ==&gt; RouterMain
 
-    %% 10Gb Core Backbone
+    %% --- 10Gb Core Backbone --- %%
     RouterMain == "&lt;b&gt;10Gb SFP+&lt;/b&gt; &lt;i&gt;(Red Cat6a)&lt;/i&gt;" ==&gt; SwitchAgg
 
-    %% Living Room Connections
+    %% --- Living Room Connections --- %%
     SwitchAgg -- "&lt;b&gt;Port 1&lt;/b&gt; &lt;i&gt;(White Cat5e)&lt;/i&gt;" --&gt; LaptopRob
     SwitchAgg -- "&lt;b&gt;Port 4&lt;/b&gt; &lt;i&gt;(Blue Cat6a)&lt;/i&gt;" --&gt; Zima
     SwitchAgg -- "&lt;b&gt;Port 5&lt;/b&gt; &lt;i&gt;(Yellow Cat6a)&lt;/i&gt;" --&gt; Zima
 
-    %% Virtual Connections
+    %% --- Virtual Connections --- %%
     Zima -.- VM
 
-    %% Wireless Backhaul to Office
-    RouterMain -. "Wi-Fi 5GHz Backhaul" .- MeshNode
+    %% --- Wireless Backhaul to AiMesh Node --- %%
+    RouterMain == "Wi-Fi 5GHz Backhaul" ==&gt; MeshNode
 
-    %% Office Connections
-    MeshNode -- "&lt;b&gt;LAN 1&lt;/b&gt; &lt;i&gt;(Black Cat6a)&lt;/i&gt;" --&gt; SwitchOffice
+    %% --- Office Connections --- %%
+    MeshNode == "&lt;b&gt;LAN 1&lt;/b&gt; &lt;i&gt;(Black Cat6a)&lt;/i&gt;" ==&gt; SwitchOffice
     SwitchOffice -- "&lt;b&gt;Port 1&lt;/b&gt; &lt;i&gt;(White Cat5e)&lt;/i&gt;" --&gt; DesktopBen
     SwitchOffice -- "&lt;b&gt;Port 2&lt;/b&gt; &lt;i&gt;(White Cat5e)&lt;/i&gt;" --&gt; DesktopRob
     SwitchOffice -- "&lt;b&gt;Port 3&lt;/b&gt; &lt;i&gt;(White Cat5e)&lt;/i&gt;" --&gt; Pi4
 
-    %% Wi-Fi Devices
-    RouterMain -. "VLAN 52" .- GuestDevices
-    RouterMain -. "VLAN 53" .- IoTDevices
-    MeshNode -. "VLAN 50" .- PiZero
-    RouterMain -. "VLAN 53&lt;br&gt;&lt;i&gt;(wlan0)&lt;/i&gt;" .- Pi4
-    MeshNode -. "VLAN 50" .- Printer3D
-    %%RouterMain -. "VLAN 50" .- LaptopBen
-    %%RouterMain -. "VLAN 50" .- LaptopRob
-    %%RouterMain -. "VLAN 50" .- PhoneBen
-    %%RouterMain -. "VLAN 50" .- PhoneRob
+    %% Wi-Fi Connections --- %%
+    RouterMain -. "VLAN52" .- GuestDevices
+    RouterMain -. "VLAN53" .- IoTDevices
+    MeshNode -. "VLAN50" .- PiZero
+    RouterMain -. "VLAN53&lt;br&gt;&lt;i&gt;(wlan0)&lt;/i&gt;" .- Pi4
+    MeshNode -. "VLAN50" .- Printer3D
     RouterMain -. "VLAN 50" .- Mobile</code></pre>
 
 

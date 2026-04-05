@@ -3295,24 +3295,7 @@
 }%%
 
 graph
-    %% --- Class definitions for Obsidian ---
-    %% classDef vlan50 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vm fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-
-    %% --- Class definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
-    %% classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-
-    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) --- %%
     classDef vlan50 fill: stroke:;
     classDef vlan52 fill: stroke:;
     classDef vlan53 fill: stroke:;
@@ -3320,13 +3303,13 @@ graph
     classDef storage fill: stroke:;
     classDef usb-storage fill: stroke:;
 
-    %% --- Ledgend ---
+    %% --- Ledgend --- %%
     VLAN50("VLAN50&lt;br&gt;&lt;i&gt;(192.168.50.0/24)&lt;/i&gt;"):::vlan50
     VLAN52("VLAN52&lt;br&gt;&lt;i&gt;(192.168.52.0/24)&lt;/i&gt;"):::vlan52
     VLAN53("VLAN53&lt;br&gt;&lt;i&gt;(192.168.53.0/24)&lt;/i&gt;"):::vlan53
     Service("Services"):::service
     OnboardStorage[("Onboard Storage")]:::storage
-    USB-Storage[("USB Storage")]:::usb-storage</code></pre>
+    USB-Storage[("USB / Virtual Storage")]:::usb-storage</code></pre>
 <pre class="mermaid"><code>%%{
   init: {
     "themeCSS": ".node.vlan50 rect, .node.vlan50 polygon, .node.vlan50 circle, .node.vlan50 path { fill: var(--vlan50-bg) !important; stroke: var(--vlan50-border) !important; stroke-width: 2px !important; } .node.vlan52 rect, .node.vlan52 polygon, .node.vlan52 circle, .node.vlan52 path { fill: var(--vlan52-bg) !important; stroke: var(--vlan52-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.vlan53 rect, .node.vlan53 polygon, .node.vlan53 circle, .node.vlan53 path { fill: var(--vlan53-bg) !important; stroke: var(--vlan53-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.service rect, .node.service polygon, .node.service circle, .node.service path { fill: var(--service-bg) !important; stroke: var(--service-border) !important; stroke-width: 2px !important; } .node.storage rect, .node.storage polygon, .node.storage circle, .node.storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; } .node.usb-storage rect, .node.usb-storage polygon, .node.usb-storage circle, .node.usb-storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
@@ -3334,24 +3317,7 @@ graph
 }%%
 
 graph TD
-    %% --- Class definitions for Obsidian ---
-    %% classDef vlan50 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#e1f5fe,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#ffebee,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#ffebee,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vm fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-
-    %% --- Class definitions for MkDocs !! Deprecated -- Colors now defined in /stylesheets/extra.css -- Left commented out in case I need to revert !! ---
-    %% classDef vlan50 fill:#001200,stroke:#2e7d32,stroke-width:2px;
-    %% classDef vlan52 fill:#180900,stroke:#ef6c00,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef vlan53 fill:#241026,stroke:#7b1fa2,stroke-width:2px,stroke-dasharray: 5 5;
-    %% classDef service fill:#00111D,stroke:#0277bd,stroke-width:2px;
-    %% classDef storage fill:#22090E,stroke:#c62828,stroke-width:2px;
-    %% classDef usb-storage fill:#22090E,stroke:#c62828,stroke-width:2px,stroke-dasharray: 5 5;
-
-    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) --- %%
     classDef vlan50 fill: stroke:;
     classDef vlan52 fill: stroke:;
     classDef vlan53 fill: stroke:;
@@ -3359,29 +3325,63 @@ graph TD
     classDef storage fill: stroke:;
     classDef usb-storage fill: stroke:;
 
-    %% --- Trusted VLAN ---
-    subgraph Trusted_VLAN50 ["&lt;b&gt;VLAN 50: Trusted&lt;/b&gt;&lt;br&gt;&lt;i&gt;(192.168.50.x)&lt;/i&gt;"]
+    %% --- Router --- %%
+    subgraph Router ["&lt;b&gt;ASUS RT-BE92U&lt;/b&gt; &lt;i&gt;(Main Router)&lt;/i&gt;"]
+        direction TB
+        Services["&lt;b&gt;Services:&lt;/b&gt;&lt;br&gt;Chrony&lt;br&gt;SMB&lt;br&gt;SSH&lt;br&gt;WireGuard"]:::service
+        Router_USB[("USB Storage")]:::storage
+        Router_JFFS[("JFFS")]:::storage
+        RouterNVRAM[("NVRAM")]:::storage
+    end
+
+    %% --- Router storage connections --- %%
+    Services -- "Storage" --&gt; Router_USB
+    Services -- "Storage" --&gt; Router_JFFS
+
+    %% --- AiMesh Node --- %%
+    subgraph AiMesh_Node["&lt;b&gt;ASUS RT-AX55&lt;/b&gt; &lt;i&gt;(AiMesh Node)&lt;/i&gt;"]
+        direction TB
+        AiMesh_JFFS[("JFFS")]:::storage
+        AiMesh_NVRAM[("NVRAM")]:::storage
+    end
+
+    %% --- Router ==&gt; AiMesh_Node backhaul --- %%
+    Router == "Backhaul" ==&gt; AiMesh_Node
+
+    %% --- Trusted VLAN --- %%
+    subgraph Trusted_VLAN50 ["&lt;b&gt;VLAN 50: Trusted&lt;/b&gt; &lt;i&gt;(192.168.50.x)&lt;/i&gt;"]
         direction TB
 
         Clients("&lt;b&gt;Clients:&lt;/b&gt;&lt;br&gt;Ben's Desktop&lt;br&gt;Rob's Desktop&lt;br&gt;Laptops&lt;br&gt;Phones&lt;br&gt;Smart TVs"):::vlan50
+        Printer("&lt;b&gt;Creality K1C&lt;/b&gt;&lt;br&gt;&lt;i&gt;(3D-printer)&lt;/i&gt;"):::vlan50
+        Brother("&lt;b&gt;Brother HL-L2300D&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Laser Printer)&lt;/i&gt;"):::vlan50
+        USB_Ext[("&lt;b&gt;USB Flash Drive&lt;/b&gt;&lt;br&gt;&lt;i&gt;(32 GB)&lt;/i&gt;")]:::usb-storage
 
-        subgraph Server_Zima ["&lt;b&gt;ZimaBoard 2&lt;/b&gt; &lt;i&gt;(.4 / .5)&lt;/i&gt;"]
-            Storage_SMB[("&lt;b&gt;SMB / NFS Shares&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Quick-Storage)&lt;/i&gt;")]:::storage
-            Storage_NVMe[("&lt;b&gt;Docker / VM Storage&lt;/b&gt;&lt;br&gt;&lt;i&gt;(nvme0n1p1)&lt;/i&gt;")]:::storage
+        %% --- ZimaOS NAS --- %%
+        subgraph Server_Zima ["&lt;b&gt;ZimaOS NAS&lt;/b&gt; &lt;i&gt;(.4 / .5)&lt;/i&gt;"]
+            Storage_SMB[("&lt;b&gt;RAID: Quick-Storage&lt;/b&gt;&lt;br&gt;&lt;i&gt;(SMB / NFS Shares)&lt;/i&gt;")]:::storage
+            Storage_NVMe[("&lt;b&gt;nvme0n1p1&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Docker / VM Storage)&lt;/i&gt;")]:::storage
             Storage_MMC[("&lt;b&gt;Onboard MMC&lt;/b&gt;&lt;br&gt;&lt;i&gt;(ZimaOS)&lt;/i&gt;")]:::storage
             Service_Docker("&lt;b&gt;Docker Containers:&lt;/b&gt;&lt;br&gt;Beszel Agent&lt;br&gt;Cloudflared&lt;br&gt;F1 Replay Timing&lt;br&gt;Glances&lt;br&gt;Homebox&lt;br&gt;Immich&lt;br&gt;Nginx&lt;br&gt;ntopng&lt;br&gt;Obsidian LiveSync&lt;br&gt;OpenSpeedTest&lt;br&gt;Portracker&lt;br&gt;Spoolman&lt;br&gt;Syncthing&lt;br&gt;ttydBridge&lt;br&gt;WireGuard&lt;br&gt;yt-dlp WebUI"):::service
-            %% VM_Debian("&lt;b&gt;Debian VM &lt;i&gt;(.6)&lt;/i&gt;:&lt;/b&gt;&lt;br&gt;&lt;i&gt;Primary DNS&lt;/i&gt;&lt;br&gt;&lt;i&gt;(Technitium Cluster)&lt;/i&gt;"):::vm
-            subgraph VM_Debian ["&lt;b&gt;Debian VM&lt;/b&gt; &lt;i&gt;(.6)&lt;/i&gt;"]
+
+            %% --- Debain VM Server --- %%
+            subgraph VM_Debian ["&lt;b&gt;Debian Server VM&lt;/b&gt; &lt;i&gt;(.6)&lt;/i&gt;"]
                 DNS_Primary("&lt;b&gt;Primary DNS&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Technitium Cluster)&lt;/i&gt;"):::service
                 Service_Docker_VM("&lt;b&gt;Docker Containers:&lt;/b&gt;&lt;br&gt;Beszel Agent&lt;br&gt;Dockge"):::service
+                Virtual_Disk[("&lt;b&gt;Virtual Disk&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Debian Trixie)&lt;/i&gt;")]:::usb-storage
             end
         end
 
-        %% --- ZimaBoard 2 storage connections ---
+        %% --- Debian VM storage connections --- %%
+        DNS_Primary -- "Storage" --&gt; Virtual_Disk
+        Service_Docker_VM -- "Storage" --&gt; Virtual_Disk
+
+        %% --- ZimaOS NAS storage connections --- %%
         VM_Debian -- "Storage" --&gt; Storage_NVMe
         Service_Docker -- "Storage" --&gt; Storage_NVMe
 
-        subgraph Server_Pi4 ["&lt;b&gt;Raspberry Pi 4B&lt;/b&gt; &lt;i&gt;(.2)&lt;/i&gt;"]
+        %% --- Raspberry Pi 4B Server --- %%
+        subgraph Server_Pi4 ["&lt;b&gt;Raspberry Pi 4B Server&lt;/b&gt; &lt;i&gt;(.2)&lt;/i&gt;"]
             MicroSD_Pi4[("&lt;b&gt;MicroSD Storage&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Debian Trixie)&lt;/i&gt;")]:::storage
             DNS_Secondary("&lt;b&gt;Secondary DNS&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Technitium Cluster)&lt;/i&gt;"):::service
             HA("Home Assistant"):::service
@@ -3390,14 +3390,15 @@ graph TD
             Service_Docker_Pi4("&lt;b&gt;Docker Containers:&lt;/b&gt;&lt;br&gt;Beszel Agent&lt;br&gt;Beszel Hub&lt;br&gt;Dockge&lt;br&gt;F1 API&lt;br&gt;Glance&lt;br&gt;Glances&lt;br&gt;IT-Tools&lt;br&gt;Portracker&lt;br&gt;Uptime Kuma"):::service
         end
 
-        %% --- Pi 4B storage connections ---
-        Server_Pi4 -- "USB Storage" --&gt; USB_Ext
+        %% --- Pi 4B storage connections --- %%
         DNS_Secondary -- "Storage" --&gt; MicroSD_Pi4
         HA -- "Storage" --&gt; MicroSD_Pi4
         Service_Docker_Pi4 -- "Storage" --&gt; MicroSD_Pi4
         Print -- "Storage" --&gt; MicroSD_Pi4
         Syncthing_Pi4 -- "Storage" --&gt; MicroSD_Pi4
+        Server_Pi4 -. "USB Storage" .- USB_Ext
 
+        %% --- Raspberry Pi Zero Server --- %%
         subgraph Server_PiZero ["&lt;b&gt;Pi Zero 2 W&lt;/b&gt; &lt;i&gt;(.3)&lt;/i&gt;"]
             MicroSD_PiZero[("&lt;b&gt;MicroSD Storage&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Debian Trixie)&lt;/i&gt;")]:::storage
             Service_Docker_PiZero("&lt;b&gt;Docker Containers:&lt;/b&gt;&lt;br&gt;Beszel Agent&lt;br&gt;Dockge"):::service
@@ -3405,56 +3406,44 @@ graph TD
             Caddy("&lt;b&gt;Caddy Reverse Proxy&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Unique domain names for local services)&lt;/i&gt;"):::service
         end
 
-        %% --- Pi Zero storage connections ---
+        %% --- Pi Zero storage connections --- %%
         Service_Docker_PiZero -- "Storage" --&gt; MicroSD_PiZero
         Caddy -- "Storage" --&gt; MicroSD_PiZero
         Syncthing_PiZero -- "Storage" --&gt; MicroSD_PiZero
 
-        Printer("&lt;b&gt;Creality K1C&lt;/b&gt;&lt;br&gt;&lt;i&gt;(3D-printer)&lt;/i&gt;"):::vlan50
-        Brother("&lt;b&gt;Brother HL-L2300D&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Laser Printer)&lt;/i&gt;"):::vlan50
-        USB_Ext[("&lt;b&gt;USB Flash Drive&lt;/b&gt;&lt;br&gt;&lt;i&gt;(32 GB)&lt;/i&gt;")]:::usb-storage
     end
 
-    %% --- Invisible link to fix cut-off title for Trusted_VLAN50 ---
-    Trusted_VLAN50 ~~~ Clients
-
-    %% --- Segregated VLANs ---
+    %% --- Segregated VLANs --- %%
     subgraph IoT_VLAN53 ["&lt;b&gt;VLAN 53: IoT Network&lt;/b&gt; &lt;i&gt;(192.168.53.x)&lt;/i&gt;"]
         direction TB
         IoTClients("IoT Clients"):::vlan53  
     end
-
-    %% Invisible link to fix cut-off title for IoT_VLAN53
-    IoT_VLAN53 ~~~ IoTClients
 
     subgraph Guest_VLAN52 ["&lt;b&gt;VLAN 52: Guest Wi-Fi&lt;/b&gt; &lt;i&gt;(192.168.52.x)&lt;/i&gt;"]
         direction TB
         GuestClients("Guest Clients"):::vlan52
     end
 
-    %% Invisible link to fix cut-off title for Guest_VLAN52
-    Guest_VLAN52 ~~~ GuestClients
-
-    %% --- Connections ---
-
+    %% --- Trusted VLAN Connections --- %%
     Clients -- "DNS Query" --&gt; DNS_Primary
     Clients -- "DNS Query" --&gt; DNS_Secondary
-    Clients -- "HTTP&lt;i&gt;(s)&lt;/i&gt;" --&gt; Caddy
+    Clients -- "HTTPS" --&gt; Caddy
     Caddy -- "DNS Query" --&gt; DNS_Primary
     Caddy -- "DNS Query" --&gt; DNS_Secondary
-
-    HA -- "Device Control" --&gt; IoTClients
-
+    HA -. "Device Control&lt;br&gt;&lt;i&gt;(wlan0)&lt;/i&gt;" .- IoT_VLAN53
     Clients -- "SMB / NFS / Backups" --&gt; Storage_SMB
     Clients -- "Photo Backup&lt;br&gt;&lt;i&gt;(Immich)&lt;/i&gt;" --&gt; Storage_SMB
-
     Clients -- "Manage" --&gt; HA
     Clients -- "Manage" --&gt; Printer
     Clients -- "Print" --&gt; Print
+    Printer -- "Status / Video" --&gt; HA
+    Print -. "USB Printer" .- Brother
 
-    Printer -- "Status/Video" --&gt; HA
-
-    Print -- "USB Printer" --&gt; Brother</code></pre>
+    %% --- Router --&gt; VLAN Connections --- %%
+    Router -- "VLAN50" --&gt; Trusted_VLAN50
+    Router -- "VLAN52" --&gt; Guest_VLAN52
+    Router -- "VLAN53" --&gt; IoT_VLAN53
+    AiMesh_Node -- "VLAN50" --&gt; Trusted_VLAN50</code></pre>
 
 
 

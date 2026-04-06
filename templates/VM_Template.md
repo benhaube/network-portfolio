@@ -22,7 +22,7 @@ hide:
 * **Host Node:** 
     * :device-icon:&nbsp;[[Device_Template|Device Template]]
 * **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): ""
+    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-cpu-64-bit: Resource Allocation
 

@@ -18,7 +18,7 @@ hide:
 * **Hostname(s):** `hostname`
 * **Location:** 
 * **OS / Firmware:** &nbsp;:os-icon:&nbsp;Operating System
-* **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): ""
+* **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-lan: Network Configuration
 

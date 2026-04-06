@@ -20,7 +20,7 @@ hide:
 * **URL / Access:**
     * <https://example.com>
 * **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): ""
+    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-package-down: Deployment Details
 

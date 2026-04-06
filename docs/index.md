@@ -102,7 +102,7 @@ hide:
 > 
 > [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
-### :material-file-document-multiple: Documentation
+### :material-file-document-multiple: Documentation <br> &emsp;*(External Links)*
 1. :devices-creality:&ensp;[Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/): Add features to your printer.
 2. :services-fluidd:&ensp;[Fluidd Docs](https://docs.fluidd.xyz/): A lightweight & responsive user interface for Klipper.
 3. :services-klipper:&ensp;[Klipper Docs](https://www.klipper3d.org/): The Klipper firmware controls 3D-printers. It combines the power of a general purpose computer with one or more micro-controllers.

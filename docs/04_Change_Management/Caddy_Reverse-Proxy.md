@@ -27,8 +27,8 @@ Instead of pointing every service to the proxy's IP address directly, we use a s
 
 | Domain / Alias | Record Type | Target / Value | PTR | Description |
 | :--- | :--- | :--- | :---: | :--- |
-| `pi-zero.internal` | **A** | `192.168.50.3` | ✅ | The dedicated Caddy reverse proxy host. |
-| `immich.internal` | **CNAME** | `pi-zero.internal` | ❌ | Points the Immich domain to the proxy. |
+| `pi-zero.internal` | **A** | `192.168.50.3` | :material-checkbox-outline: | The dedicated Caddy reverse proxy host. |
+| `immich.internal` | **CNAME** | `pi-zero.internal` | :material-close-box-outline: | Points the Immich domain to the proxy. |
 
 ---
 ## :material-cloud-cog: 2. Caddy Configuration

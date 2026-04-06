@@ -4,7 +4,7 @@ tags:
   - service
   - software
   - docker
-  - InternetofThings
+  - IoT
 hide:
   - toc
 ---
@@ -15,7 +15,7 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A home automation and Internet of Things *(IoT)* dashboard.
+* **Purpose:** A home automation and IoT dashboard.
 * **Port(s):** `8123`
 * **URL / Access:** 
     * <http://pi-server.internal:8123>

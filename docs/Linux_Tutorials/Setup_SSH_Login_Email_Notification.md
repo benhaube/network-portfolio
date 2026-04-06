@@ -57,7 +57,7 @@ hide:
 
 3. Fill in the configuration file with your email address and the correct server information for your email provider. 
 4. Save and close the `/etc/msmtprc` configuration file.
-	+ ++ctrl+o++&ensp;++enter++&ensp;++ctrl+x++
+	+ ++ctrl+o++&ensp;++ctrl+x++
 5. **Set restrictive permissions for the configuration file.** This file contains sensitive server information, so it must be readable only by root.
 
     ```bash linenums="1"
@@ -88,7 +88,7 @@ hide:
 
 ## :material-alert: Enable Login Alerts with PAM
 > [!info]
-> **PAM** *(Pluggable Authentication Module)* is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
+> **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
 
 1. Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
 
@@ -140,7 +140,7 @@ hide:
 ---
 ## :material-file-code-outline: Creating the Shell Script 
 > [!info]
-> Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The `pam_exec.so`, *Pluggable Authentication Module* (**PAM**), we configured for `sshd` will run this script every time a new SSH session begins.
+> Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
 
 1. Create the shell script file.
 

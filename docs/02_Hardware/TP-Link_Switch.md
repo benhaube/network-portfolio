@@ -25,7 +25,7 @@ hide:
         * Unmanaged Gigabit
         * Five 1GbE ports
         * 10Gb/s total switching capacity
-    * **Jumbo Frames:** Supported *(16KB)*
+    * **Jumbo Frames:** Supported *(16 KB)*
 
 ## :material-ethernet: Port Map 
 
@@ -35,7 +35,7 @@ hide:
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
 | **1** | :material-desktop-tower: [Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | White Cat5e | `enp7s0`, `192.168.50.61` |
-| **2** | :material-desktop-tower: [Rob's Desktop](../02_Hardware/Rob's_Desktop.md) | White Cat5e | `DHCP` |
+| **2** | :material-desktop-tower: [Rob's Desktop](../02_Hardware/Rob's_Desktop.md) | White Cat5e | DHCP |
 | **3** | :material-server: [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White Cat5e | `eth0`, `192.168.50.2` |
 | **4** | :material-ethernet: *Empty* | - | - |
 | **5** | :material-router-wireless: [ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md) | Black Cat5e | Uplink |

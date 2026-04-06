@@ -13,7 +13,7 @@ hide:
 
 ---
 ## :material-information-outline: Device Overview
-* **Role:** Personal workstation PC
+* **Role:** My workstation PC
 * **Hostname(s):** `bens-workstation`
 * **Location:** 
     * Office 

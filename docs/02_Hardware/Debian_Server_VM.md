@@ -20,7 +20,7 @@ hide:
 
 * **Role:** Primary DNS server *([[Technitium]] Cluster)*
 * **Hostname(s):** `debian-vm`
-* **Hypervisor:** ZimaOS *(KVM/QEMU)*
+* **Hypervisor:** ZimaOS *(KVM / QEMU)*
 * **Operating System:** 
     * :material-debian:&nbsp;[Debian Linux 13](https://www.debian.org/) *(Trixie)*
 * **Host Node:** 
@@ -29,7 +29,7 @@ hide:
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com) SSH key: "server-admin@debian-vm"
 
 ## :material-cpu-64-bit: Resource Allocation
-* **vCPUs:** 2 Cores
+* **vCPU:** 2 Cores
 * **RAM:** 2 GB
 * **Storage:** 50GB Virtual Disk Image
     * *Disk Location on Host:* `/media/nvme0n1p1/VM/debian-vm/cd175b11` 
@@ -95,7 +95,7 @@ hide:
 * Perform external snapshots before major changes.
 
 > [!warning] Warning!
-> 4. The **kvm/qemu** hypervisor on ZimaOS only supports external snapshots.
+> 4. The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
 > 5. To create an external snapshot, run the following command as `root`: 
 > 
 >     ```bash linenums="1"

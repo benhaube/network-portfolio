@@ -10,7 +10,7 @@ hide:
 ---
 ## :material-lan: Local Network(s)
 > [!info]+
-> The list of software defined, segmented subnets or Virtual Local Networks **(VLANs)**.
+> The list of software defined, segmented subnets or VLANs.
 
 | VLAN | SSID | Subnet | Subnet Mask | Gateway | DNS Servers | Domain | Role / Notes |
 | :--- | :--- | :----- | :---------- | :------ | :---------- | :----- | :----------- |
@@ -48,7 +48,7 @@ hide:
 ---
 ## :material-web: Dynamic DNS Provider(s)
 > [!info]+
-> The list of dynamic DNS **(DDNS)** providers that monitor the leased public IP address for changes  and bind it to a permanent domain name, enabling remote access to the local network.
+> The list of DDNS providers that monitor the leased public IP address for changes  and bind it to a permanent domain name, enabling remote access to the local network.
 
 | Status | Server | Provider | Domain Name | TLS Certificate | Certificate Expire |
 | :----- | :----- | :------- | :---------- | :-------------- | :----------------- |
@@ -57,7 +57,7 @@ hide:
 ---
 ## :material-vpn: VPN Server(s) / Client(s)
 > [!info]+
-> The active Virtual Private Network **(VPN)** servers and clients that enable remote access to the services hosted on the local network.
+> The active VPN servers and clients that enable remote access to the services hosted on the local network.
 
 1. :simple-wireguard: **WireGuard @ [[ASUS_RT-BE92U|ASUS RT-BE92U]]**<br>*(the main server)*
 
@@ -80,7 +80,7 @@ hide:
 ---
 ## :material-ethernet: MAC Address Tables
 > [!info]+
-> Tables containing devices on the Local Area Network **(LAN)** and their hardware MAC addresses.
+> Tables containing devices on the LAN and their hardware MAC addresses.
 
 * [[MAC_Address_Tables|MAC Address Tables]]
 

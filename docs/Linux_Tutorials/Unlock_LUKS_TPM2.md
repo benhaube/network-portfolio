@@ -7,12 +7,12 @@ hide:
 # [[Unlock_LUKS_TPM2|Unlocking LUKS Volumes with TPM2]]
 
 > [!info] 
-> Unlocking your LUKS volume with a Trusted Platform Module 2.0 *(TPM2)* provides a secure way to enable automatic decryption during boot, usually eliminating the need to type a passphrase unless the system state changes. The most common and recommended way to achieve this on modern Linux systems, especially those using LUKS2 and systemd, is by using the `systemd-cryptenroll` tool.
+> Unlocking your LUKS volume with a **TPM2** provides a secure way to enable automatic decryption during boot, usually eliminating the need to type a passphrase unless the system state changes. The most common and recommended way to achieve this on modern Linux systems, especially those using LUKS2 and systemd, is by using the `systemd-cryptenroll` tool.
 
 ---
 ## :material-check-decagram: Prerequisites:
 
-**TPM2 Chip:** Your computer must have an active *Trusted Platform Module 2.0* **(TPM2)** chip. Most modern hardware does, but you may need to enable in *Universal Extensible Firmware Interface* **(UEFI)** settings.  <br>
+**TPM2 Chip:** Your computer must have an active **TPM2** chip. Most modern hardware does, but you may need to enable in **UEFI** settings.  <br>
 **LUKS2:** Your encrypted volume must be using **LUKS2** format. 
 
 >[!note]+
@@ -41,8 +41,8 @@ hide:
 	+ *Example:* `/dev/nvme0n1p3`
 
 2. **Enroll the TPM2 key:**
-	+ The `systemd-cryptenroll` command adds a new random key to one of your LUKS key slots and **seals** it with the TPM2, binding it to a set of Platform Configuration Registers **(PCRs)**.
-	+ The **PCR**s record a cryptographic hash of the boot-time state (firmware, bootloader, kernel, etc.).
+	+ The `systemd-cryptenroll` command adds a new random key to one of your LUKS key slots and **seals** it with the TPM2, binding it to a set of **PCRs**.
+	+ The **PCRs** record a cryptographic hash of the boot-time state (FW, bootloader, kernel, etc.).
 	+ If an attacker alters the boot chain, the **PCR** values change, and the key will not be released.
 	+ Run the enrollment command as **root**. Replace `/dev/your_device` with your actual device path.
 
@@ -51,11 +51,11 @@ hide:
     ```
 
     + `--tpm2-device=auto`: Automatically detects the TPM2 device. 
-    + `--tpm2-pcrs=0+4+7+11`: Specifies the **PCR**s to bind to.
-        + **PCR 0**: Core system firmware. *(UEFI/BIOS)*
-        + **PCR 4**: Boot loader and additional drivers. *(Grub/shim)* 
+    + `--tpm2-pcrs=0+4+7+11`: Specifies the **PCRs** to bind to.
+        + **PCR 0**: Core system firmware. *(UEFI / BIOS)*
+        + **PCR 4**: Boot loader and additional drivers. *(GRUB / shim)* 
         + **PCR 7**: The Secure Boot state. *(enabled / disabled, UEFI certificates)*
-        + **PCR 11**: Unified Kernel Image **(UKI)** components, kernel image, embedded initrd.
+        + **PCR 11**: **UKI** components, kernel image, embedded initrd.
     + When prompted, enter an **existing passphrase** for your LUKS volume to authorize the new key slot.
 
 3. **Configure `crypttab`:**

@@ -13,7 +13,7 @@ hide:
 
 ---
 ## :material-information-outline: Device Overview
-* **Role:** Personal laptop PC
+* **Role:** My laptop PC
 * **Hostname(s):** `ben-laptop`
 * **Location:** 
     * Mobile

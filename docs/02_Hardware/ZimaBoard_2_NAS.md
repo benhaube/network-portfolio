@@ -17,7 +17,7 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** Primary Network Attached Storage & VM Host
+* **Role:** Primary NAS & VM Host
 * **Hostname(s):** 
     * `storage-server` *(eth0)*
     * `storage-server-2` *(eth1)*
@@ -59,7 +59,7 @@ hide:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2TB | `/dev/md0` | `btrfs` | - |
+| `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB | `/dev/md0` | `btrfs` | - |
 | `/media/nvme0n1p1` | NVMe SSD | 250 GB | `/dev/nvme0n1` | `ext4` | - |
 
 ## :material-web: Services / Docker Containers
@@ -225,4 +225,3 @@ hide:
 >     sudo systemd daemon-reload
 >     ```
 
----

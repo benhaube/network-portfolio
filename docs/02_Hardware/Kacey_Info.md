@@ -40,7 +40,7 @@ hide:
 + URL
     + <http://k1c-a71e.internal:7125>
 + API Key
-    + `461a3689cb1a41dea9f1cc215f48bcbe` *(old API key)*
+    + Check :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd" 
 
 #### :services-fluidd: Fluidd:
 

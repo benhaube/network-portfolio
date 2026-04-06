@@ -83,7 +83,7 @@ hide:
     + ++ctrl+o++ to save the changes
     + ++ctrl+x++ to exit 
 
-    + **Fedora / RHEL** based GNU/Linux distributions use a different method for modifying the `.bashrc` file which I find more intuitive and modular. Instead of modifying the file directly and creating a dedicated `.bash_aliases` file, this code allows you to create a hidden sub-directory within your home (`~/`) directory to house all the modifications in separate files. I find this method to be superior, personally. It allows you to easily enable / disable your modifications, and keeps them far more organized. 
+    + **Fedora / RHEL** based GNU / Linux distributions use a different method for modifying the `.bashrc` file which I find more intuitive and modular. Instead of modifying the file directly and creating a dedicated `.bash_aliases` file, this code allows you to create a hidden sub-directory within your home (`~/`) directory to house all the modifications in separate files. I find this method to be superior, personally. It allows you to easily enable / disable your modifications, and keeps them far more organized. 
 
     + You can use this directory to store all future modifications to your `.bashrc` file, not just your aliases. For example, in my `~/.bashrc.d` directory I have files to define paths, change my SSH key agent to Bitwarden, enable the [Starship](https://starship.rs) terminal prompt, enable `fzf`, and to print a custom `fastfetch` profile to show relevant system information every time I open a new terminal.
 

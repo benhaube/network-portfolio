@@ -10,11 +10,11 @@ hide:
 ---
 ## :material-lan: Infrastructure
 > [!info]+
-> The core infrastructure that makes up the Local Area Network, such as: IP addressing, VLANs, VPNs, Dynamic DNS providers, etc.
+> The core infrastructure that makes up the LAN, such as: IP addressing, VLANs, VPNs, DDNS providers, etc.
 
-1. :material-restore-alert:&ensp;[[Disaster_Recovery_Plan|Disaster Recovery Plan]]: Ensure *High Availability (HA)* for critical network services and to provide a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
-2. :material-ip-network:&ensp;[[IP_Address_Management|IP Address Management]]: Local network *IP Address Management (IPAM)*, *Virtual Private Network (VPN)*, and *Virtual Local Area Network (VLAN)* information.
-3. :material-ethernet:&ensp;[[MAC_Address_Tables|MAC Address Tables]]: Tables containing devices on the *Local Area Network (LAN)* and their hardware MAC addresses.
+1. :material-restore-alert:&ensp;[[Disaster_Recovery_Plan|Disaster Recovery Plan]]: Ensure **HA** for critical network services and to provide a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
+2. :material-ip-network:&ensp;[[IP_Address_Management|IP Address Management]]: Local network IPAM, VPN and VLAN information.
+3. :material-ethernet:&ensp;[[MAC_Address_Tables|MAC Address Tables]]: Tables containing devices on the LAN and their hardware MAC addresses.
 4. :material-server-security:&ensp;[[Network_Security_Policy|Network Security Policy]]: This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 5. :material-sitemap:&ensp;[[Logical_Map|Logical Map]]: *Mermaid.js* flowchart focusing on servers and services. 
 6. :material-sitemap:&ensp;[[Physical_Map|Physical Map]]: *Mermaid.js* flowchart focusing on physical connections.
@@ -22,7 +22,7 @@ hide:
 ---
 ## :material-router-wireless: Hardware
 > [!info]+
-> The hardware on the Local Area Network. (servers, clients, routers, switches, etc.)
+> The hardware on the LAN. (servers, clients, routers, switches, etc.)
 
 1. :material-router-network-wireless:&ensp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]: Main router for the local network.
 2. :material-router-network-wireless:&ensp;[[ASUS_RT-AX55|ASUS RT-AX55]]: Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
@@ -42,7 +42,7 @@ hide:
 10. :material-desktop-tower:&ensp;[[Rob's_Desktop|Rob's Desktop]]: Rob's main desktop PC located in the office upstairs.
 11. :material-switch:&ensp;[[TP-Link_Switch|TP-Link Switch]]: Core gigabit desktop switch *(5-port)*. 
 12. :material-switch:&ensp;[[Ugreen_Switch|Ugreen Switch]]: Rack-mounted 2.5 gigabit switch in the living room.
-13. :material-nas:&ensp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]: Primary Network Attached Storage *(NAS)* server & Virtual Machine *(VM)* host. 
+13. :material-nas:&ensp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]: Primary NAS server & VM host. 
 
 ---
 ## :material-web: Services
@@ -59,7 +59,7 @@ hide:
 8. :services-fluidd:&ensp;[[Fluidd]]: A Web UI for managing the 3D-printer.
 9. :services-glance:&ensp;[[Glance]]: A server dashboard Web UI. 
 10. :services-glances:&ensp;[[Glances]]: A `top` / `htop` alternative for the Web browser. 
-11. :simple-homeassistant:&ensp;[[Home_Assistant|Home Assistant]]: A home automation and Internet of Things *(IoT)* dashboard.
+11. :simple-homeassistant:&ensp;[[Home_Assistant|Home Assistant]]: A home automation and IoT dashboard.
 12. :services-homebox:&ensp;[[Homebox]]: An inventory and organization system built for the home user.
 13. :services-immich:&ensp;[[Immich]]: Photo gallery and backup service.
 14. :services-it-tools:&ensp;[[IT-Tools]]: Handy tools for network administrators and developers.
@@ -97,7 +97,8 @@ hide:
 ---
 ## :material-printer-3d-nozzle: 3D Printing
 > [!info]+ 
-> Documenting 3D-printing projects, custom g-code, and hardware modifications.<br>**Check out my 3D-models:**
+> Documenting 3D-printing projects, custom g-code, and hardware modifications.<br>
+> **Check out my 3D-models:**
 > 
 > [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
@@ -115,11 +116,12 @@ hide:
 ---
 ## :simple-linux: Linux Tutorials
 > [!info]+
-> Documenting the Linux tutorials I have written.<br>**Check out these tutorials in this GitHub repository:**
+> Documenting the Linux tutorials I have written.<br>
+> **Check out these tutorials in this GitHub repository:**
 > 
 > [Linux Tutorials :simple-github:](https://github.com/benhaube/Linux-Configuration-Tutorials){ .md-button }
 
-1. :material-console:&ensp;[[Defining_Terminal_Aliases|Defining Terminal Aliases]]: How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL/Fedora based Linux distributions.
+1. :material-console:&ensp;[[Defining_Terminal_Aliases|Defining Terminal Aliases]]: How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 
     > [!info]- My Terminal Aliases
     > Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.

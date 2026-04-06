@@ -23,7 +23,7 @@ hide:
 **Debian VM (ZimaOS):**
 
 1. **Allocate Resources:** 
-    + [ ] Assign 2 vCPUs and 2GB RAM to the VM.
+    + [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
 2. **Install Technitium:** 
     + [ ] Use the installer script or Docker container.
 3. **Configure Upstream:** 

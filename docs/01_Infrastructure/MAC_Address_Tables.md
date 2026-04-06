@@ -6,7 +6,7 @@ hide:
 # [MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md)
 
 > [!info]+
-> Tables containing devices on the Local Area Network **(LAN)** and their hardware MAC addresses.
+> Tables containing devices on the LAN and their hardware MAC addresses.
 
 ---
 ## :material-router-wireless: Network Infrastructure

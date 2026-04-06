@@ -20,7 +20,7 @@
 ## :material-wall-fire: Boundary Defense & Remote Access
 
 + **Edge Protection:** 
-	+ An [[ASUS_RT-BE92U|ASUS RT-BE92U]] acts as the primary firewall, utilizing **SPI** *(Stateful Packet Inspection)* and **DoS** *(Denial of Service)* protection. 
+	+ An [[ASUS_RT-BE92U|ASUS RT-BE92U]] acts as the primary firewall, utilizing **SPI** and **DoS** protection. 
 + **External Access:** 
 	+ Direct port forwarding is strictly prohibited. 
 	+ Remote access to individual services is facilitated through a [[Cloudflared|Cloudflare Tunnel]], ensuring all incoming traffic is proxied and SSL-encrypted.
@@ -35,7 +35,7 @@
 + **Internal Resolution:** 
 	+ A clustered [[Technitium|Technitium DNS]] environment *([[Debian_Server_VM|Debian VM]] & [[Raspberry_Pi_4B_Server|Pi 4B Server]])* handles all local queries.
 + **Upstream Privacy:** 
-	+ Queries are forwarded to [Quad-9](https://quad9.net/) via **DNS-over-TLS *(DoT)*** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
+	+ Queries are forwarded to [Quad-9](https://quad9.net/) via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
 + **Blocking:** 
 	+ Network-wide ad and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 

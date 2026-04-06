@@ -26,7 +26,7 @@ hide:
         * Five 2.5 Gb/s Ports
         * One SFP+ 10 Gb/s Uplink *(from [[ASUS_RT-BE92U|ASUS RT-BE92U]] router)*
         * 45 Gb/s Total Switching Capacity
-    * **Jumbo Frames:** Supported *(12KB)*
+    * **Jumbo Frames:** Supported *(12 KB)*
 
 ## :material-ethernet: Port Map
 
@@ -38,9 +38,9 @@ hide:
 | **1** | :material-laptop: [Rob's Laptop](../02_Hardware/Rob's_Laptop.md) | White, Cat5e | Temporary Connection |
 | **2** | :material-ethernet: *Empty* | - | - |
 | **3** | :material-ethernet: *Empty* | - | - |
-| **4** | :material-nas: [ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Blue, 2.5Gb/s, Cat6A | `eth1`, `192.168.50.5` |
-| **5** | :material-nas: [ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Yellow, 2.5Gb/s, Cat6A | `eth0`, `192.168.50.4` |
-| **6** | :material-router-wireless: [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red, 10Gb/s, Cat6A | SFP+ Ethernet Transceiver |
+| **4** | :material-nas: [ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Blue, 2.5 Gb/s, Cat6A | `eth1`, `192.168.50.5` |
+| **5** | :material-nas: [ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Yellow, 2.5 Gb/s, Cat6A | `eth0`, `192.168.50.4` |
+| **6** | :material-router-wireless: [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red, 10 Gb/s, Cat6A | SFP+ Ethernet Transceiver |
 
 ---
 ## :material-tools: Maintenance Notes
@@ -48,13 +48,13 @@ hide:
 > [!TIP] Visual Indicators
 > #### Ethernet Ports: 
 > 
-> * **Green LED:** 2500 Mbps Link 
-> * **Amber LED:** 10/100/1000 Mbps Link
+> * **Green LED:** 2500 Mb/s Link 
+> * **Amber LED:** 10/100/1000 Mb/s Link
 >   
 > #### SFP+ Port: 
 > 
-> * **Green LED:** 10 Gbps Link 
-> * **Amber LED:** 1000/2500 Mbps Link
+> * **Green LED:** 10 Gb/s Link 
+> * **Amber LED:** 1000/2500 Mb/s Link
 
 > [!WARNING] Troubleshooting
 > Hard reboot required if traffic stalls *(unplug power for 60s)*.

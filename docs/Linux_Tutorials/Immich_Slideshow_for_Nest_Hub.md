@@ -23,7 +23,7 @@ hide:
         [Fossify Gallery :simple-fdroid:](https://f-droid.org/en/packages/org.fossify.gallery/){ .md-button }
 
 2.  **Deletion *(Desktop)*:**
-    * **Manual:** Go to photos.google.com, select first photo, scroll down, Shift+Click last photo, Delete.
+    * **Manual:** Go to photos.google.com, :material-mouse-left-click-outline: first photo, scroll down, ++shift++ + :material-mouse-left-click-outline: last photo, ++del++.
     * **Console Script *(Advanced)*:** Open Chrome DevTools ++f12++ --> Console. Paste script to auto-select/delete. 
 3.  **Finalize:** Empty "Trash/Bin" to reclaim storage.
 
@@ -155,7 +155,7 @@ Place this in the same folder as your docker-compose file.
 > [!info] Goal
 > Force Nest Hub to show the frame when idle.
 
-**Prerequisite:** Install "DashCast" add-on in HA.
+**Prerequisite:** Install "DashCast" add-on in [[Home_Assistant|Home Assistant]].
 
 **Automation YAML:**
 

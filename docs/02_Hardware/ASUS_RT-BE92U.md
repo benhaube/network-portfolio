@@ -6,7 +6,7 @@ tags:
   - infrastructure
   - remote-access
   - dns
-  - InternetofThings
+  - IoT
 hide:
   - toc
 ---
@@ -59,7 +59,7 @@ hide:
 
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
-| 10Gb WAN/LAN 1 | :material-switch: [Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10Gb/s Uplink |
+| 10Gb WAN/LAN 1 | :material-switch: [Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10 Gb/s Uplink |
 | 2.5Gb WAN/LAN 2 | :material-wan: [Hitron Modem](../02_Hardware/Hitron_Modem.md) | Black Cat6a | WAN Connection |
 | 2.5Gb LAN 1 | :material-ethernet: Mini-Rack | Black Cat6a | Spare Keystone Jack |
 | 2.5Gb LAN 2 | :material-ethernet: *Empty* | - | - |

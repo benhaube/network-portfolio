@@ -32,8 +32,8 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| eth0 | `192.168.50.2` | `E4:5F:01:A4:60:07` | [TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
-| wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | SSID: *2G_IoT (vlan53)* |
+| eth0 | `192.168.50.2` | `E4:5F:01:A4:60:07` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
+| wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | :material-wifi:&nbsp;*2G_IoT (vlan53)* |
 
 #### :material-ip-network: IP Configuration:
 

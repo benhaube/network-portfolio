@@ -33,7 +33,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| WAN0 | `DHCP` | `60:CF:84:51:FA:F0` | 2.5Gb/s WAN/LAN (Port 1) |
+| WAN0 | `DHCP` | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5Gb/s WAN/LAN (Port 1) |
 | WAN1 | `disabled` | `xx:xx:xx:xx:xx:xx` | - |
 
 #### :material-lan: Local Networks:

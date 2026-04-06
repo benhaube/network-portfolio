@@ -26,7 +26,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| wlp0s20f3 | `DHCP` | `A6:97:E3:D2:F1:C4` | SSID: *Home (vlan50)* |
+| wlp0s20f3 | `DHCP` | `A6:97:E3:D2:F1:C4` | :material-wifi:&nbsp;*Home (vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 

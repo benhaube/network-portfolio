@@ -23,8 +23,8 @@ hide:
 * **Specs:**
     * **Throughput:** 
         * Unmanaged Gigabit
-        * Five 1GbE ports
-        * 10Gb/s total switching capacity
+        * Five 1 GbE ports
+        * 10 Gb/s total switching capacity
     * **Jumbo Frames:** Supported *(16 KB)*
 
 ## :material-ethernet: Port Map 
@@ -44,7 +44,7 @@ hide:
 ## :material-tools: Maintenance Notes
 
 > [!TIP] Visual Indicators
-> **Green LED:** 10/100/1000 Mbps Link <br>
+> **Green LED:** 10/100/1000 Mb/s Link <br>
 > **Flashing:** Activity
 
 > [!WARNING] Troubleshooting

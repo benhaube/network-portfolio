@@ -40,7 +40,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Notes |
 | :-------: | :--------- | :---------- | :---- |
-| enp1s0 | `192.168.50.6` | `52:54:00:28:BB:EA` | Bridged Adapter *(Appears as separate device on LAN)* |
+| enp1s0 | `192.168.50.6` | `52:54:00:28:BB:EA` | :material-lan-connect:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
 #### :material-ip-network: IP Configuration:
 

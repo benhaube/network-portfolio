@@ -25,8 +25,8 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| Ethernet | `DHCP` | `50:EB:F6:59:74:C3` | Port 2: [TP-Link Switch](../02_Hardware/TP-Link_Switch.md) |
-| Wi-Fi | `DHCP` | `70:A6:CC:B5:F5:4A` | SSID: *Home (vlan50)* |
+| Ethernet | `DHCP` | `50:EB:F6:59:74:C3` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
+| Wi-Fi | `DHCP` | `70:A6:CC:B5:F5:4A` | :material-wifi:&nbsp;*Home (vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 

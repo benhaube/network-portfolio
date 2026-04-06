@@ -37,7 +37,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| wlan0 | `192.168.50.153` | `FC:EE:28:09:A7:1E` | SSID: `Home` |
+| wlan0 | `192.168.50.153` | `FC:EE:28:09:A7:1E` | :material-wifi:&nbsp;*Home (vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 

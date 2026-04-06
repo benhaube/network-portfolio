@@ -28,8 +28,8 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | [TP-Link Switch](../02_Hardware/TP-Link_Switch.md) (Port 1) |
-| wlp6s0 | `DHCP` | `F2:1E:02:CD:11:10` | SSID: *Home (vlan50)* |
+| enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) (Port 1) |
+| wlp6s0 | `DHCP` | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;*Home (vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 

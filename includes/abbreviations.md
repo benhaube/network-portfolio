@@ -19,6 +19,7 @@
 *[eMMC]: embedded MultiMedia Card
 *[F1]: Formula 1 (Racing Series)
 *[FW]: Firmware
+*[GbE]: Gigabit Ethernet
 *[Gb]: Gigabit
 *[Gb/s]: Gigabits Per Second
 *[GB]: Gigabyte

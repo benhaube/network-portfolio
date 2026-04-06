@@ -30,7 +30,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| WAN0 | `192.168.50.221` | `7C:10:C9:DF:13:60` | Backhaul |
+| WAN0 | `192.168.50.221` | `7C:10:C9:DF:13:60` | :material-wifi:&nbsp;Backhaul |
 
 #### :material-lan: Local Networks:
 

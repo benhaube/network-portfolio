@@ -24,6 +24,7 @@
 *[GB]: Gigabyte
 *[GB/s]: Megabytes Per Second
 *[GE]: General Electric Inc.
+*[GHz]: Gigahertz
 *[GNU]: An extensive collection of free software. A recursive acronym for "GNU's Not Unix."
 *[GPU]: Graphics Processing Unit
 *[GPUs]: Graphics Processing Units
@@ -56,6 +57,7 @@
 *[MB/s]: Megabytes Per Second
 *[MCU]: Micro Controller Unit
 *[MFA]: Multi-Factor Authentication
+*[MHz]: Megahertz
 *[MicroSD]: Micro Secure Digital
 *[MITM]: Man in the Middle
 *[MMC]: MultiMedia Card

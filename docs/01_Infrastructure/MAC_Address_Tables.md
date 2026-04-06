@@ -15,13 +15,13 @@ hide:
 | :---------- | :------- | :------- | :-------- | :---------- | :----------- |
 | :material-wan: Cable Modem | Living-Room | [hitron-modem](../02_Hardware/Hitron_Modem.md) | :material-ethernet: LAN 1 | `00:1c:73:00:00:99` | Cable modem, Hitron DOCSIS 3.1 |  
 | - | - | - | :material-ethernet: LAN 2 | `XX:XX:XX:XX:XX:XX` | - | 
-| :material-router-network-wireless: Wireless Router | Living-Room | [asusrouter](../02_Hardware/ASUS_RT-BE92U.md) | :material-ethernet: Ethernet | `60:CF:84:51:FA:F0` | Main router, ASUS RT-BE92U |
-| - | - | - | :material-wifi: Wi-Fi *(2.4GHz)* | `6A:CF:84:51:FA:F1` | - |
-| - | - | - | :material-wifi: Wi-Fi *(5GHz)* | `82:CF:84:51:FA:F5` | - |
-| - | - | - | :material-wifi: Wi-Fi *(6GHz)* | `60:CF:84:51:FA:F9` | - |
-| :material-router-network-wireless: Mesh Node | Office | [aimesh-node](../02_Hardware/ASUS_RT-AX55.md) | :material-ethernet: Ethernet | `7C:10:C9:DF:13:60` | AiMesh Node, ASUS RT-AX55 |
-| - | - | - | :material-wifi: Wi-Fi *(2.4GHz)* | `7C:10:C9:DF:13:61` | - |
-| - | - | - | :material-wifi: Wi-Fi *(5GHz)* | `7C:10:C9:DF:13:64` | - |
+| :material-router-wireless: Wireless Router | Living-Room | [asusrouter](../02_Hardware/ASUS_RT-BE92U.md) | :material-ethernet: | `60:CF:84:51:FA:F0` | Main router, ASUS RT-BE92U |
+| - | - | - | :material-wifi: *(2.4 GHz)* | `6A:CF:84:51:FA:F1` | - |
+| - | - | - | :material-wifi: *(5 GHz)* | `82:CF:84:51:FA:F5` | - |
+| - | - | - | :material-wifi: *(6 GHz)* | `60:CF:84:51:FA:F9` | - |
+| :material-router-wireless: Mesh Node | Office | [aimesh-node](../02_Hardware/ASUS_RT-AX55.md) | :material-ethernet: | `7C:10:C9:DF:13:60` | AiMesh Node, ASUS RT-AX55 |
+| - | - | - | :material-wifi: *(2.4 GHz)* | `7C:10:C9:DF:13:61` | - |
+| - | - | - | :material-wifi: *(5 GHz)* | `7C:10:C9:DF:13:64` | - |
 
 ---
 ## :material-security: Trusted Network *(vlan50)*

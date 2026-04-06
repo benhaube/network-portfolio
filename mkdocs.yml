@@ -36,6 +36,41 @@ theme:
     repo: simple/github
     tag:
       default: material/tag
+      3D-printer: material/printer-3d-nozzle
+      isp: material/wan
+      iot: material/home-automation
+      active: material/check-circle-outline
+      backup: material/cloud-upload-outline
+      dashboard: material/view-dashboard
+      desktop: material/desktop-tower
+      dns: material/dns
+      docker: material/docker
+      docker_host: material/docker
+      domain: material/domain
+      download: material/download
+      file-share: material/share
+      inactive: material/close-circle-outline
+      infra: material/router-network
+      inventory: material/list-box-outline
+      laptop: material/laptop
+      monitor: material/monitor-eye
+      nas: material/nas
+      network: material/lan 
+      native: material/linux
+      pc: material/desktop-classic
+      print: material/printer
+      remote: material/remote-desktop
+      router: material/router-wireless
+      server: material/server
+      service: material/web
+      shell: material/console
+      software: material/application
+      switch: material/switch
+      tools: material/tools
+      video: material/video
+      vh: material/network-pos
+      vm: material/network-pos
+      vpn: material/vpn
     top: material/arrow-up-bold
     previous: material/arrow-left-bold
     next: material/arrow-right-bold
@@ -106,6 +141,7 @@ plugins:
   - callouts
   - tags:
       export: true
+      tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
   - optimize
   - typeset
   - social:
@@ -144,7 +180,42 @@ extra:
       title: rac3r4life.me on Bluesky
   generator: false
   tags:
-
+    3D-printer: 3D-printer
+    ISP: isp
+    IoT: iot
+    active: active
+    backup: backup
+    dashboard: dashboard
+    desktop: desktop
+    dns: dns
+    docker: docker
+    docker_host: docker_host
+    domain: domain
+    download: download
+    file-share: file-share
+    hardware: hardware
+    inactive: inactive
+    infrastructure: infra
+    inventory: inventory
+    laptop: laptop
+    monitor: monitor
+    nas: nas
+    network: network
+    native: native
+    pc: pc
+    printing: print 
+    remote-access: remote
+    router: router
+    server: server
+    service: service
+    shell: shell
+    software: software
+    switch: switch
+    tools: tools
+    video: video
+    virtual_host: vh 
+    virtual_machine: vm 
+    vpn: vpn
 
 copyright: >
   Copyright&copy; 2026 Benjamin Haube -

@@ -3,6 +3,7 @@ tags:
   - hardware
   - pc
   - desktop
+  - virtual_host
 hide:
   - toc
 ---

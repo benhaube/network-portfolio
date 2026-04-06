@@ -59,7 +59,7 @@ hide:
 > [!info]+
 > The active VPN servers and clients that enable remote access to the services hosted on the local network.
 
-1. :simple-wireguard: **WireGuard @ [[ASUS_RT-BE92U|ASUS RT-BE92U]]**<br>*(the main server)*
+:simple-wireguard: **WireGuard @ [[ASUS_RT-BE92U|ASUS RT-BE92U]]**<br>*(the main server)*
 
 | Client | IP Address | DNS Server(s) | Endpoint |
 | :----- | :--------- | :------------ | :------- |  
@@ -68,7 +68,7 @@ hide:
 | :material-cellphone: Rob's-Phone | `10.6.0.4/32` | `10.6.0.1` *\[Quad-9 (DoT)]* | remote-access-home-34.asuscomm.com:41820 |
 | :material-laptop: Rob's-Laptop | `10.6.0.5/32` | `10.6.0.1` *\[Quad-9 (DoT)]* | remote-access-home-34.asuscomm.com:41820 |
 
-2. :simple-wireguard: **WireGuard @ [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]**<br>*(the backup server)*
+:simple-wireguard: **WireGuard @ [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]**<br>*(the backup server)*
 
 | Client | IP Address | DNS Server(s) | Endpoint |
 | :----- | :--------- | :------------ | :------- |  

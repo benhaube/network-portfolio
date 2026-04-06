@@ -9,10 +9,10 @@
 
 | Priority | Service | Impact of Failure | Recovery Time Objective *(RTO)* |
 | :------- | :------ | :---------------- | :------------------------------ |
-| Critical | [[Technitium]] DNS Cluster | Total loss of internet/LAN connectivity. | < 5 Minutes *(Automatic Failover)* |
-| High | [[Caddy]] Reverse Proxy | Loss of remote access and SSL termination. | < 1 Hour |
-| Medium | [Home Assistant](../03_Services/Home_Assistant.md) / IoT | Loss of automation and physical device control. | < 4 Hours |
-| Standard | [[Immich]] / Media | Loss of access to personal archives. | < 24 Hours |
+| Critical | :services-technitium:&nbsp;[[Technitium]] DNS Cluster | Total loss of internet/LAN connectivity. | < 5 Minutes *(Automatic Failover)* |
+| High | :services-caddy:&nbsp;[[Caddy]] Reverse Proxy | Loss of remote access and SSL termination. | < 1 Hour |
+| Medium | :simple-homeassistant:&nbsp;[Home Assistant](../03_Services/Home_Assistant.md) / IoT | Loss of automation and physical device control. | < 4 Hours |
+| Standard | :services-immich:&nbsp;[[Immich]] / Media | Loss of access to personal archives. | < 24 Hours |
 
 ---
 ## :material-cloud-upload-outline: Backup Strategy

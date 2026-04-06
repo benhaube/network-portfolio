@@ -1,6 +1,7 @@
 ---
 tags:
   - network
+  - map
 hide:
   - toc
 ---

@@ -12,9 +12,9 @@
 
 | Zone | VLAN ID | Description | Access Rules |
 | :--- | :------ | :---------- | :----------- |
-| :material-security: Trusted | *vlan50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound |
-| :material-account-multiple: Guest | *vlan52* | Temporary visitor devices | Internet access only; strictly isolated from all other VLANs |
-| :material-home-automation: IoT | *vlan53* | Smart home hardware *(bulbs, sensors, etc.)* | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
+| :material-security:&nbsp;Trusted | *vlan50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound |
+| :material-account-multiple:&nbsp;Guest | *vlan52* | Temporary visitor devices | Internet access only; strictly isolated from all other VLANs |
+| :material-home-automation:&nbsp;IoT | *vlan53* | Smart home hardware *(bulbs, sensors, etc.)* | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ---
 ## :material-wall-fire: Boundary Defense & Remote Access

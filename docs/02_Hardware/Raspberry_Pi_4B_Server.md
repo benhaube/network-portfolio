@@ -64,26 +64,26 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :material-printer: [CUPS Print Server](../03_Services/CUPS_Print_Server.md) | `631` | Print server for `Brother_HL-L2300D_series` laser printer. |
-| *Active* | :material-console-network: [SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
-| *Active* | :simple-syncthing: [[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. |
-| *Active* | :services-technitium: [[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. | 
+| *Active* | :material-printer:&nbsp;[CUPS Print Server](../03_Services/CUPS_Print_Server.md) | `631` | Print server for `Brother_HL-L2300D_series` laser printer. |
+| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :simple-syncthing:&nbsp;[[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. |
+| *Active* | :services-technitium:&nbsp;[[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. | 
 
 #### :material-docker: Docker:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :services-beszel: [Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-beszel: [Beszel Hub](../03_Services/Beszel_Hub.md) | `8090` | Lightweight server monitoring hub with historical data, docker stats, and alerts. |
-| *Active* | :services-dockge: [[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
-| *Active* | :simple-f1: [F1 API](../03_Services/Glance.md) | `4463` | Part of the [[Glance]] stack. Supplies Formula 1 data for widgets on Glance dashboard. |
-| *Active* | :services-glance: [[Glance]] | `8580` | A server home-page/dashboard. |
-| *Active* | :services-glances: [[Glances]] | `61208` | A top/htop alternative. |
-| *Active* | :simple-homeassistant: [Home Assistant](../03_Services/Home_Assistant.md) | `8123` | Smart home management dashboard. |
-| *Active* | :services-it-tools: [[IT-Tools]] | `8080` | Collection of handy online tools for developers, with great UX. |
-| *Inactive* | :services-portainer: [[Portainer]] | `8000` `9000` `9443` | Docker container management. |
-| *Active* | :services-portracker: [[Portracker]] | `4999` | A self-hosted, real-time port monitoring and discovery tool. | 
-| *Active* | :services-uptime-kuma: [Uptime Kuma](../03_Services/Uptime_Kuma.md) | `3001` | A fancy self-hosted monitoring tool. |
+| *Active* | :services-beszel:&nbsp;[Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | :services-beszel:&nbsp;[Beszel Hub](../03_Services/Beszel_Hub.md) | `8090` | Lightweight server monitoring hub with historical data, docker stats, and alerts. |
+| *Active* | :services-dockge:&nbsp;[[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
+| *Active* | :simple-f1:&nbsp;[F1 API](../03_Services/Glance.md) | `4463` | Part of the [[Glance]] stack. Supplies Formula 1 data for widgets on Glance dashboard. |
+| *Active* | :services-glance:&nbsp;[[Glance]] | `8580` | A server home-page/dashboard. |
+| *Active* | :services-glances:&nbsp;[[Glances]] | `61208` | A top/htop alternative. |
+| *Active* | :simple-homeassistant:&nbsp;[Home Assistant](../03_Services/Home_Assistant.md) | `8123` | Smart home management dashboard. |
+| *Active* | :services-it-tools:&nbsp;[[IT-Tools]] | `8080` | Collection of handy online tools for developers, with great UX. |
+| *Inactive* | :services-portainer:&nbsp;[[Portainer]] | `8000` `9000` `9443` | Docker container management. |
+| *Active* | :services-portracker:&nbsp;[[Portracker]] | `4999` | A self-hosted, real-time port monitoring and discovery tool. | 
+| *Active* | :services-uptime-kuma:&nbsp;[Uptime Kuma](../03_Services/Uptime_Kuma.md) | `3001` | A fancy self-hosted monitoring tool. |
  
 ---
 ## :material-tools: Maintenance & Notes

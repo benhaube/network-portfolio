@@ -54,15 +54,15 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :material-console-network: [SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
-| *Active* | :services-technitium: [[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. |
+| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :services-technitium:&nbsp;[[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. |
 
 #### :material-docker: Docker:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :services-beszel: [Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for [Beszel Hub](../03_Services/Beszel_Hub.md) *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-dockge: [[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
+| *Active* | :services-beszel:&nbsp;[Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for [Beszel Hub](../03_Services/Beszel_Hub.md) *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | :services-dockge:&nbsp;[[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
 
 ---
 ## :material-tools: Maintenance & Snapshots

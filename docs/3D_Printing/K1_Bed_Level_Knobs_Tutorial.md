@@ -130,9 +130,9 @@ hide:
 3. [ ] Open up Fluidd or mainsail through Orca Slicer or by typing your printers IP address into your web browser with the appropriate port number appended.
 
     | Interface | Port |
-    | :---------- | :----: |
-    | Fluidd | `4408` |
-    | Mainsail | `4409` |
+    | :-------- | :--: |
+    | :services-fluidd:&nbsp;Fluidd | `4408` |
+    | :material-printer-3d:&nbsp;Mainsail | `4409` |
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
 5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.

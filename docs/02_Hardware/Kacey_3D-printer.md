@@ -67,9 +67,9 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :services-fluidd: [[Fluidd]] | `80` `4408` | A Web UI for managing the printer. |
-| *Active* | :material-printer-3d: [[Moonraker]] | `7125` | An API that allows applications to communicate with the 3D-printing firmware, :services-klipper: [Klipper](https://www.klipper3d.org/).  |
-| *Active* | :material-console-network: [[SSH]] | `22` | Remote terminal access. |
+| *Active* | :services-fluidd:&nbsp;[[Fluidd]] | `80` `4408` | A Web UI for managing the printer. |
+| *Active* | :material-printer-3d:&nbsp;[[Moonraker]] | `7125` | An API that allows applications to communicate with the 3D-printing firmware, :services-klipper: [Klipper](https://www.klipper3d.org/).  |
+| *Active* | :material-console-network:&nbsp;[[SSH]] | `22` | Remote terminal access. |
 
 ---
 ## :material-tools: Maintenance & Notes

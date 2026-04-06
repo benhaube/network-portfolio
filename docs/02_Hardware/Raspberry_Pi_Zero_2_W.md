@@ -56,17 +56,17 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :services-caddy: [[Caddy]] | `80` `443` | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | :material-console-network: [SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
-| *Active* | :simple-syncthing: [[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. | 
+| *Active* | :services-caddy:&nbsp;[[Caddy]] | `80` `443` | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
+| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :simple-syncthing:&nbsp;[[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. | 
 
 #### :material-docker: Docker:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :services-beszel: [Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for [Beszel Hub](../03_Services/Beszel_Hub.md) *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-dockge: [[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
-| *Inactive* | :services-portainer: [Portainer Agent](../03_Services/Portainer_Agent.md) | `9001` | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | :services-beszel:&nbsp;[Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for [Beszel Hub](../03_Services/Beszel_Hub.md) *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | :services-dockge:&nbsp;[[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
+| *Inactive* | :services-portainer:&nbsp;[Portainer Agent](../03_Services/Portainer_Agent.md) | `9001` | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
 
 ---
 ## :material-tools: Maintenance & Notes

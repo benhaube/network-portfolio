@@ -59,12 +59,12 @@ hide:
 
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
-| 10Gb WAN/LAN 1 | :material-switch: [Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10 Gb/s Uplink |
-| 2.5Gb WAN/LAN 2 | :material-wan: [Hitron Modem](../02_Hardware/Hitron_Modem.md) | Black Cat6a | WAN Connection |
-| 2.5Gb LAN 1 | :material-ethernet: Mini-Rack | Black Cat6a | Spare Keystone Jack |
-| 2.5Gb LAN 2 | :material-ethernet: *Empty* | - | - |
-| 2.5Gb LAN 3 | :material-ethernet: *Empty* | - | - |
-| 2.5Gb LAN 4 | :material-ethernet: *Empty* | - | - |
+| 10Gb WAN/LAN 1 | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10 Gb/s Uplink |
+| 2.5Gb WAN/LAN 2 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md) | Black Cat6a | WAN Connection |
+| 2.5Gb LAN 1 | :material-ethernet:&nbsp;Mini-Rack | Black Cat6a | Spare Keystone Jack |
+| 2.5Gb LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
+| 2.5Gb LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
+| 2.5Gb LAN 4 | :material-ethernet:&nbsp;*Empty* | - | - |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -88,9 +88,9 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :material-clock-outline: Chrony | `123` | Network time server. |
-| *Active* | :material-console-network: [SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
-| *Active* | :simple-wireguard: [WireGuard](../03_Services/Wireguard_Server.md) | `41820` | Remote access VPN server. |
+| *Active* | :material-clock-outline:&nbsp;Chrony | `123` | Network time server. |
+| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md) | `41820` | Remote access VPN server. |
 
 ---
 ## :material-tools: Maintenance & Notes

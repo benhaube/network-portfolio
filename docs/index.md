@@ -32,7 +32,7 @@ hide:
 6. :material-wan:&ensp;[[Hitron_Modem|Hitron Modem]]: DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
 7. :material-printer-3d-nozzle:&ensp;[[Kacey_3D-printer|Kacey 3D-Printer]]: Creality K1C 3D-printer located in the office upstairs. 
     
-    > [!info]- More Creality K1C Info
+    > [!info]+ More Creality K1C Info
     > More detailed information about the Creality K1C hardware.
     >
     > [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
@@ -123,7 +123,7 @@ hide:
 
 1. :material-console:&ensp;[[Defining_Terminal_Aliases|Defining Terminal Aliases]]: How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 
-    > [!info]- My Terminal Aliases
+    > [!info]+ My Terminal Aliases
     > Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
     > 
     > [My Aliases :material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
@@ -132,7 +132,7 @@ hide:
 3. :material-email-alert:&ensp;[[Setup_SSH_Login_Email_Notification|Setup SSH Login Email Notification]]: How to set up an email notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`. 
 4. :material-lock-open:&ensp;[[Unlock_LUKS_TPM2|Unlocking LUKS2 Volumes with TPM2]]: How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots. 
 
-    > [!info]- Update PCRs Script
+    > [!info]+ Update PCRs Script
     > In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
     > 
     > [Update PCRs :simple-github:](){ .md-button }

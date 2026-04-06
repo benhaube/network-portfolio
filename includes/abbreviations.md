@@ -6,6 +6,7 @@
 *[BIOS]: Basic Input / Output System
 *[CLI]: Command Line Interface
 *[CPU]: Central Processing Unit
+*[CPUs]: Central Processing Units
 *[CUPS]: Common UNIX Printing System
 *[DHCP]: Dynamic Host Connection Protocol
 *[DNS]: Domain Name Service
@@ -25,6 +26,7 @@
 *[GE]: General Electric Inc.
 *[GNU]: An extensive collection of free software. A recursive acronym for "GNU's Not Unix."
 *[GPU]: Graphics Processing Unit
+*[GPUs]: Graphics Processing Units
 *[GRUB]: Grand Unified Bootloader
 *[GRUB2]: Grand Unified Bootloader 2
 *[GUID]: Globally Unique Identifier
@@ -121,3 +123,4 @@
 *[VPN]: Virtual Private Network
 *[VPNs]: Virtual Private Networks
 *[WAN]: Wide Area Network
+*[YAML]: Yet Another Markup Language

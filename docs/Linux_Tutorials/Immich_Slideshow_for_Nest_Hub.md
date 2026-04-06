@@ -30,7 +30,7 @@ hide:
 ### :material-file-code-outline: Photo Cleaning Script
 
 ```javascript title="Javascript" linenums="1"
-// Function to delete photos
+// Function to delete photos (1)
 async function deletePhotos() {
     const deleteSelector = "button[aria-label='Delete']";
     const moveToTrashSelector = "span[text()='Move to trash']"; // May vary based on region/language
@@ -75,8 +75,7 @@ async function deletePhotos() {
 deletePhotos();
 ```
 
-> [!note]
-> If the script selects them but doesn't delete them, just click the trash icon yourself after it does the hard work of selecting everything.
+1. If the script selects them but doesn't delete them, just click the :material-trash-can-outline: icon yourself after it does the hard work of selecting everything.
 
 ---
 

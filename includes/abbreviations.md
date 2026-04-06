@@ -95,6 +95,7 @@
 *[SPI]: Stateful Packet Inspection
 *[SSD]: Solid State Drive
 *[SSH]: Secure Shell
+*[SSID]: Service Set Identifier
 *[SSL]: Secure Sockets Layer
 *[Tb]: Terabit
 *[Tb/s]: Terabits Per Second

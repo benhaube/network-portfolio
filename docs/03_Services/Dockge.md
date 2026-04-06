@@ -31,7 +31,7 @@ hide:
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
     * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `dockge-dockge-1`
 * **Image:** `louislam/dockge:1`
 

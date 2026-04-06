@@ -1,4 +1,6 @@
 ---
+tags:
+  - network
 hide:
   - toc
 ---

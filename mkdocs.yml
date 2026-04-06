@@ -56,6 +56,7 @@ theme:
       infra: material/router-network
       inventory: material/list-box-outline
       laptop: material/laptop
+      map: material/sitemap
       monitor: material/monitor-eye
       nas: material/nas
       network: material/lan 
@@ -208,6 +209,7 @@ extra:
     infrastructure: infra
     inventory: inventory
     laptop: laptop
+    map: map
     monitor: monitor
     nas: nas
     network: network

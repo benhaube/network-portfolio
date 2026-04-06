@@ -23,7 +23,7 @@ hide:
 
 ## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;~~:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]~~
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `nextcloud`
 * **Image:** `nextcloud:32.0` 
 

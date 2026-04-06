@@ -23,8 +23,8 @@ hide:
     * :material-account:&nbsp;Local User: `bhaube`
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:simple-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]]
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Linux
+* **Host Device:** &nbsp;:material-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]]
+* **Method:** &nbsp;:material-linux:&nbsp;Native Linux
 * **Provider:** `krdpserver`
 * **Container Name:** `N/A`
 * **Image:** `N/A` 

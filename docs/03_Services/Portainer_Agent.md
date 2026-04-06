@@ -26,7 +26,7 @@ hide:
 * **Host Device:** 
     * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]~~
     * ~~:simple-raspberrypi:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]~~
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `portainer_agent`
 * **Image:** `portainer/agent:lts` 
 

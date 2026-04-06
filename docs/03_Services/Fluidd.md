@@ -28,7 +28,7 @@ hide:
 
 ## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:devices-creality:&nbsp;[[Kacey_3D-printer|Kacey (Creality(c) K1C) 3D-Printer]]
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Install
+* **Method:** &nbsp;:material-linux:&nbsp;Native Install
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 

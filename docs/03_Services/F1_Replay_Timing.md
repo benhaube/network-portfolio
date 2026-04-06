@@ -26,7 +26,7 @@ hide:
 ## :material-package-down: Deployment Details
 * **Host Device:** 
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose *(Stack)*
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose *(Stack)*
 * **Container Names:** 
     * `f1-backend`
     * `f1-frontend`

@@ -27,7 +27,7 @@ hide:
 
 ## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Install
+* **Method:** &nbsp;:material-linux:&nbsp;Native Install
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 

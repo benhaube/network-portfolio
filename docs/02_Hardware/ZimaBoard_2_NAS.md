@@ -75,7 +75,7 @@ hide:
 | :----: | :--------------- | :---------------- | :--------- | :----------- | 
 | *Active* | :material-debian: [Debian Linux 13](../02_Hardware/Debian_Server_VM.md) | Bridged (`eth0`) | `cd175b11.qcow2` | Hosting the network's primary [[Technitium]] DNS server. |
 
-#### :simple-linux: Native Linux:
+#### :material-linux: Native Linux:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
@@ -148,7 +148,7 @@ hide:
 >     systemctl restart nfs-server
 >     ```
 >     
-> #### :simple-fedora: Client Side *(Fedora 43)*:
+> #### :material-fedora: Client Side *(Fedora 43)*:
 > 
 > + Package required: `nfs-utils`
 > + Systemd `.mount` unit files: `/etc/systemd/system`

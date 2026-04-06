@@ -36,7 +36,7 @@ hide:
 * **Host Device:** 
     * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
     * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]~~
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Linux
+* **Method:** &nbsp;:material-linux:&nbsp;Native Linux
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 

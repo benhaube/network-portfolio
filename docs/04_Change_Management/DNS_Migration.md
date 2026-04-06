@@ -20,7 +20,7 @@ hide:
     + [ ] Tertiary/Failover :simple-raspberrypi:&nbsp;*([[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]])*: `192.168.50.3`
 ---
 ## :material-dns: Phase 2: Server Provisioning
-**Debian VM (ZimaOS):**
+**:material-debian:&nbsp;Debian VM (ZimaOS):**
 
 1. **Allocate Resources:** 
     + [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
@@ -31,7 +31,7 @@ hide:
 4. **Import Records:** 
     + [ ] Manually add local DNS zones/records from the Pi-hole export.
 
-**Raspberry Pi 4B:**
+**:simple-raspberrypi:&nbsp;Raspberry Pi 4B:**
 
 1. **Uninstall Pi-hole:**
     + [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.

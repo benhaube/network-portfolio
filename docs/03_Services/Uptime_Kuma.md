@@ -29,7 +29,7 @@ hide:
 
 ## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `uptime-kuma`
 * **Image:** `louislam/uptime-kuma:2`
 

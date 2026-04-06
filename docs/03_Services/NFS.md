@@ -28,7 +28,7 @@ hide:
 
 ## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Service
+* **Method:** &nbsp;:material-linux:&nbsp;Native Service
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 

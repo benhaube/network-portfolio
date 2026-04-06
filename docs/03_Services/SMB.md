@@ -31,7 +31,7 @@ hide:
 * **Host Device:** 
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] *(SMB multi-channel)*
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Service
+* **Method:** &nbsp;:material-linux:&nbsp;Native Service
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 

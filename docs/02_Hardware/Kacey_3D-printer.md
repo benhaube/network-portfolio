@@ -63,7 +63,7 @@ hide:
 
 ## :material-web: Services / Docker Containers
 
-#### :simple-linux: Native Linux:
+#### :material-linux: Native Linux:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |

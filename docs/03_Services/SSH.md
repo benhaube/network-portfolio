@@ -23,7 +23,7 @@ hide:
     * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
         * `192.168.50.1:22` 
         * `asusrouter.internal:22`
-    * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
+    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
         * `192.168.50.6:22` 
         * `debian-vm.internal:22` 
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
@@ -44,12 +44,12 @@ hide:
 ## :material-package-down: Deployment Details  
 * **Host Device(s):** 
     * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
-    * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
+    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W Server]]
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaOS NAS]]
     * :devices-creality:&nbsp;[[Kacey_3D-printer|Creality K1C 3D-Printer]]
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Linux
+* **Method:** &nbsp;:material-linux:&nbsp;Native Linux
 
 ## :material-cog: Configuration 
 

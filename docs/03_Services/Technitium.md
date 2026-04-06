@@ -6,6 +6,7 @@ tags:
   - dns
   - infrastructure
   - network
+  - domain
 hide:
   - toc
 ---
@@ -22,7 +23,7 @@ hide:
     * `443`
     * `5380`
 * **URL / Access:** 
-    * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
+    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
         * `192.168.50.6:53`
         * <http://debian-vm.internal:5380>
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
@@ -33,9 +34,9 @@ hide:
 
 ## :material-package-down: Deployment Details  
 * **Host Device:** 
-    * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
+    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Install
+* **Method:** &nbsp;:material-linux:&nbsp;Native Install
 * **Container Name:** `N/A`
 * **Image:** `N/A`
 

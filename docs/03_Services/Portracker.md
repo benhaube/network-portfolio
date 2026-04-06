@@ -29,7 +29,7 @@ hide:
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
     * :simple-raspberrypi:&nbsp;~~[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]~~
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `portracker`
 * **Image:** `mostafawahied/portracker:latest`
 

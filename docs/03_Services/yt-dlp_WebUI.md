@@ -25,7 +25,7 @@ hide:
 
 ## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** :simple-docker:&nbsp;Docker Compose
+* **Method:** :material-docker:&nbsp;Docker Compose
 * **Container Name:** `yt-dlp-webui`
 * **Image:** `marcobaobao/yt-dlp-webui:latest` 
 

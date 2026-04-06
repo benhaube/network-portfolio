@@ -20,11 +20,11 @@ hide:
 * **Port(s):** `45867`
 * **URL / Access:** `N/A`
 * **Credentials:** 
-    * :simple-docker:&nbsp;Docker Compose: `docker-compose.yml`
+    * :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details
 
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `beszel-agent`
 * **Host Device:** 
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]

@@ -39,8 +39,8 @@ hide:
     * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
 * **Method:** 
-    * :simple-linux:&nbsp;Native *(for [[ASUS_RT-BE92U|ASUS RT-BE92U]])*
-    * :simple-docker:&nbsp;Docker Compose *(for [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]])*
+    * :material-linux:&nbsp;Native *(for [[ASUS_RT-BE92U|ASUS RT-BE92U]])*
+    * :material-docker:&nbsp;Docker Compose *(for [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]])*
 * **Container Name:** `big-bear-wg-easy-v15`
 * **Image:** `ghcr.io/wg-easy/wg-easy:15`
 

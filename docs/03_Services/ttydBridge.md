@@ -24,7 +24,7 @@ hide:
 
 ## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:services-zimaos: [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] 
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `ttydbridge`
 * **Image:** `cp0204/ttydbridge:v0.0.3`
 

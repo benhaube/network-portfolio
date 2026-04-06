@@ -24,11 +24,11 @@ hide:
     * Database:
         * <http://storage-server.internal:5984/obsidian-vault>
 * **Credentials:** 
-    * :simple-docker:&nbsp;Docker Compose: `docker-compose.yml`
+    * :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details 
 * **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:simple-docker:&nbsp;Docker Compose
+* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
 * **Container Name:** `obsidian-livesync`
 * **Image:** `couchdb:3.5.0`
 

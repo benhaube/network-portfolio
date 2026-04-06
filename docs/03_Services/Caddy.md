@@ -26,7 +26,7 @@ hide:
 
 ## :material-package-down: Deployment Details
 * **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
-* **Method:** &nbsp;:simple-linux:&nbsp;Native Install *(Systemd service)*
+* **Method:** &nbsp;:material-linux:&nbsp;Native Install *(Systemd service)*
 * **Container Name:** `N/A`
 * **Image:** `N/A` 
 

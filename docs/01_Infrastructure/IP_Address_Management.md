@@ -14,7 +14,7 @@ hide:
 
 | VLAN | SSID | Subnet | Subnet Mask | Gateway | DNS Servers | Domain | Role / Notes |
 | :--- | :--- | :----- | :---------- | :------ | :---------- | :----- | :----------- |
-| vlan50 | *Home* | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.1` | `192.168.50.6` `192.168.50.2` *\[[Technitium](../03_Services/Technitium.md) (DoT)]* | internal | :material-shield: Trusted |
+| vlan50 | *Home* | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.1` | `192.168.50.6` `192.168.50.2` *\[[Technitium](../03_Services/Technitium.md) (DoT)]* | internal | :material-security: Trusted |
 | vlan52 | *Home_Guest* | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.1` | `9.9.9.9` `149.112.112.112` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-account-multiple: Guest |
 | vlan53 | *2G_IoT* | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.1` | `9.9.9.9` `149.122.122.122` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-home-automation: IoT |
 
@@ -25,13 +25,13 @@ hide:
 
 | Device Name | VLAN | IP Address | Hostname | Type | Role / Notes |
 | :---------- | :--- | :--------- | :------- | :--- | :----------- |
-| :material-router-network-wireless: [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | - | `192.168.50.1` | `asusrouter.internal` | Static | Main Gateway, NTP Master, DHCP Server |
+| :material-router-wireless: [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | - | `192.168.50.1` | `asusrouter.internal` | Static | Main Gateway, NTP Master, DHCP Server |
 | :material-server: [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(eth0)* | vlan50 | `192.168.50.2` | `pi-server.internal` | Static | DNS Secondary *([[Technitium]] cluster)*, [CUPS](../03_Services/CUPS_Print_Server.md) |
 | :material-server: [Raspberry Pi Zero 2 W](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | vlan50 | `192.168.50.3` | `proxy.pi-zero.internal` | Static | Caddy reverse proxy server for local domain names | 
 | :material-nas: [ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) *(eth0)* | vlan50 | `192.168.50.4` | `storage-server.internal` | Static | Main File Server *(eth0)* |
 | :material-nas: [ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) *(eth1)* | vlan50 | `192.168.50.5` | `storage-server-2.internal` | Static | SMB Multi-channel Path *(eth1)* |
 | :material-server: [Debian Server VM](../02_Hardware/Debian_Server_VM.md) | vlan50 | `192.168.50.6` | `debian-vm.internal` | Reserved | DNS Primary *([[Technitium]] cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
-| :material-router-network-wireless: [ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md) | vlan50 | `192.168.50.221` | `aimesh-node.internal` | Reserved | AiMesh Node *(Backhaul)* |
+| :material-router-wireless: [ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md) | vlan50 | `192.168.50.221` | `aimesh-node.internal` | Reserved | AiMesh Node *(Backhaul)* |
 | :material-wan: [Hitron Modem](../02_Hardware/Hitron_Modem.md) | - | `192.168.100.1` | `hitron-modem.internal` | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
 
 ---

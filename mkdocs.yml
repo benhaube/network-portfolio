@@ -6,13 +6,14 @@ site_url: https://portfolio.rac3r4life.online
 theme:
   name: material
   custom_dir: overrides
+  # -- Light, Dark, and Automatic toggles --
   palette:
-    # Palette toggle for automatic mode
+    # - Toggle for automatic mode -
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-    # Palette toggle for light mode
+    # - Toggle for light mode - 
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: green
@@ -20,7 +21,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Palette toggle for dark mode
+    # - Toggle for dark mode -
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: green
@@ -31,9 +32,11 @@ theme:
   font:
     text: Google Sans
     code: Google Sans Code
+  # -- Icon Settings--
   icon:
     logo: material/file-document-multiple
     repo: simple/github
+    # - Icons for Tags -
     tag:
       default: material/tag
       3D-printer: material/printer-3d-nozzle
@@ -161,6 +164,7 @@ use_directory_urls: false
 
 # --- Extra Settings ---
 extra:
+  # -- Cookies Consent Message --
   consent:
     title: Cookie consent
     description: >-

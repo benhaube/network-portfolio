@@ -24,8 +24,8 @@ hide:
 > [!info]+
 > The hardware on the LAN. (servers, clients, routers, switches, etc.)
 
-1. :material-router-network-wireless:&ensp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]: Main router for the local network.
-2. :material-router-network-wireless:&ensp;[[ASUS_RT-AX55|ASUS RT-AX55]]: Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
+1. :material-router-wireless:&ensp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]: Main router for the local network.
+2. :material-router-wireless:&ensp;[[ASUS_RT-AX55|ASUS RT-AX55]]: Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
 3. :material-desktop-tower:&ensp;[[Ben's_Desktop|Ben's Desktop]]: Ben's main desktop PC located in the office upstairs.
 4. :material-laptop:&ensp;[[Ben's_Laptop|Ben's Laptop]]: Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
 5. :material-debian:&ensp;[[Debian_Server_VM|Debian Server VM]]: General purpose Debian Linux server hosted on *[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]*. 
@@ -37,8 +37,8 @@ hide:
     >
     > [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
 
-8. :simple-raspberrypi:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
-9. :simple-raspberrypi:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]: Second DNS server *(Pi-hole)*.
+8. :material-server:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
+9. :material-server:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]: Second DNS server *(Pi-hole)*.
 10. :material-desktop-tower:&ensp;[[Rob's_Desktop|Rob's Desktop]]: Rob's main desktop PC located in the office upstairs.
 11. :material-switch:&ensp;[[TP-Link_Switch|TP-Link Switch]]: Core gigabit desktop switch *(5-port)*. 
 12. :material-switch:&ensp;[[Ugreen_Switch|Ugreen Switch]]: Rack-mounted 2.5 gigabit switch in the living room.

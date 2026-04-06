@@ -14,9 +14,9 @@ hide:
 
 | VLAN | SSID | Subnet | Subnet Mask | Gateway | DNS Servers | Domain | Role / Notes |
 | :--- | :--- | :----- | :---------- | :------ | :---------- | :----- | :----------- |
-| vlan50 | *Home* | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.1` | `192.168.50.6` `192.168.50.2` *\[[Technitium](../03_Services/Technitium.md) (DoT)]* | internal | :material-security: Trusted |
-| vlan52 | *Home_Guest* | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.1` | `9.9.9.9` `149.112.112.112` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-account-multiple: Guest |
-| vlan53 | *2G_IoT* | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.1` | `9.9.9.9` `149.122.122.122` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-home-automation: IoT |
+| vlan50 | :material-wifi:&nbsp;*Home* | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.1` | `192.168.50.6` `192.168.50.2` *\[[Technitium](../03_Services/Technitium.md) (DoT)]* | internal | :material-security: Trusted |
+| vlan52 | :material-wifi:&nbsp;*Home_Guest* | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.1` | `9.9.9.9` `149.112.112.112` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-account-multiple: Guest |
+| vlan53 | :material-wifi:&nbsp;*2G_IoT* | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.1` | `9.9.9.9` `149.122.122.122` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-home-automation: IoT |
 
 ---
 ## :material-router-wireless: Core Infrastructure *(Static & Reserved)*

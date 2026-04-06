@@ -114,7 +114,7 @@ hide:
 3. :devices-prowiper:&ensp;[[PROWIPER_Mod|PROWIPER© Mod]]: Installing the PROWIPER© Mod, and editing the required g-code on the [[Kacey_3D-printer|Creality K1C]].
 
 ---
-## :simple-linux: Linux Tutorials
+## :material-linux: Linux Tutorials
 > [!info]+
 > Documenting the Linux tutorials I have written.<br>
 > **Check out these tutorials in this GitHub repository:**

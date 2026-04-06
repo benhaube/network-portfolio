@@ -1,5 +1,8 @@
+# --- Site Name and URL ---
 site_name: Network Documentation & Portfolio
 site_url: https://portfolio.rac3r4life.online
+
+# --- Theme Settings ---
 theme:
   name: material
   custom_dir: overrides
@@ -25,9 +28,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-    # scheme: slate # Enables a dark mode theme
-    # primary: green
-    # accent: light blue
   font:
     text: Google Sans
     code: Google Sans Code
@@ -98,6 +98,7 @@ theme:
     - content.action.view
     - content.tooltips
 
+# --- Markdown Extensions & Settings ---
 markdown_extensions:
   - attr_list
   - abbr
@@ -135,6 +136,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+# --- MkDocs Native Plugins ---
 plugins:
   - search
   - roamlinks
@@ -149,11 +152,14 @@ plugins:
       log_level: warn
   - blog
 
+# --- Watch directories outside of /docs --- 
 watch:
   - includes
 
+# --- Disable directory URLs ---
 use_directory_urls: false
 
+# --- Extra Settings ---
 extra:
   consent:
     title: Cookie consent
@@ -217,12 +223,15 @@ extra:
     virtual_machine: vm 
     vpn: vpn
 
+# --- Copyright message in site footer w/ cookies consent button ---
 copyright: >
   Copyright&copy; 2026 Benjamin Haube -
   <a href="#__consent">Change cookie settings</a>
 
+# --- Extra CSS stylesheets ---
 extra_css:
   - stylesheets/extra.css
 
+# --- Project Repository URL & Docs directory ---
 repo_url: https://github.com/benhaube/network-portfolio
 edit_uri: edit/main/docs/

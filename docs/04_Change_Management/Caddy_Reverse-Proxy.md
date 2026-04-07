@@ -9,8 +9,6 @@ hide:
 > [!info] Goal
 > Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
 
----
-
 ## :material-information-outline: Architecture Overview
 * **DNS Servers:** 
     * Technitium Cluster Primary: *[[Debian_Server_VM|Debian VM]]*
@@ -21,6 +19,7 @@ hide:
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard NAS]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
 
+---
 
 ## :material-file-cloud: 1. Technitium DNS Records
 
@@ -49,7 +48,6 @@ immich.internal {
 }
 ```
 
----
 ## :material-traffic-light: 3. Traffic Flow
 
 ```mermaid

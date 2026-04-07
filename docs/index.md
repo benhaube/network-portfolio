@@ -9,8 +9,6 @@ hide:
 
 ---
 ## :material-lan: Infrastructure
-> [!info]+
-> The core infrastructure that makes up the LAN, such as: IP addressing, VLANs, VPNs, DDNS providers, etc.
 
 1. :material-restore-alert:&ensp;[[Disaster_Recovery_Plan|Disaster Recovery Plan]]: Ensure **HA** for critical network services and to provide a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 2. :material-ip-network:&ensp;[[IP_Address_Management|IP Address Management]]: Local network IPAM, VPN and VLAN information.
@@ -21,8 +19,11 @@ hide:
 
 ---
 ## :material-router-wireless: Hardware
-> [!info]+
-> The hardware on the LAN. (servers, clients, routers, switches, etc.)
+
+> [!links inline end] More Creality K1C Info
+> This page has more detailed information about the Creality K1C 3D-printer.
+> 
+> [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
 
 1. :material-router-wireless:&ensp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]: Main router for the local network.
 2. :material-router-wireless:&ensp;[[ASUS_RT-AX55|ASUS RT-AX55]]: Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
@@ -31,12 +32,6 @@ hide:
 5. :material-debian:&ensp;[[Debian_Server_VM|Debian Server VM]]: General purpose Debian Linux server hosted on *[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]*. 
 6. :material-wan:&ensp;[[Hitron_Modem|Hitron Modem]]: DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
 7. :material-printer-3d-nozzle:&ensp;[[Kacey_3D-printer|Kacey 3D-Printer]]: Creality K1C 3D-printer located in the office upstairs. 
-    
-    > [!info]+ More Creality K1C Info
-    > More detailed information about the Creality K1C hardware.
-    >
-    > [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
-
 8. :material-server:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
 9. :material-server:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]: Second DNS server *(Pi-hole)*.
 10. :material-desktop-tower:&ensp;[[Rob's_Desktop|Rob's Desktop]]: Rob's main desktop PC located in the office upstairs.
@@ -46,8 +41,6 @@ hide:
 
 ---
 ## :material-web: Services
-> [!info]+
-> The applications and services hosted on the Local Area Network.
 
 1. :services-beszel:&ensp;[[Beszel_Agent|Beszel Agent]]: Agent for *[[Beszel_Hub|Beszel Hub]]*, a server utilization monitor. 
 2. :services-beszel:&ensp;[[Beszel_Hub|Beszel Hub]]: A self-hosted server utilization monitor.
@@ -88,17 +81,15 @@ hide:
 
 ---
 ## :material-swap-horizontal-bold: Change Management
-> [!info]+
-> Change management involves implementing approaches to prepare for organizational change.
 
 1. :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[[Caddy_Reverse-Proxy|Caddy Reverse Proxy]]: Preparing the *[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]* to be a *[[Caddy]]* reverse proxy server to give unique domain names to services hosted on the local network.
 2. :simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;[[DNS_Migration|DNS Migration]]: Preparing to migrate from *[[Pi-hole]]* to *[[Technitium]]* for DNS queries on the local network. 
 
 ---
 ## :material-printer-3d-nozzle: 3D Printing
-> [!info]+ 
-> Documenting 3D-printing projects, custom g-code, and hardware modifications.<br>
-> **Check out my 3D-models:**
+
+> [!links inline end] Check out my 3D Models!
+> All of my 3D models are published to Printables, and shared with the GPLv3 open-source licence. Every model has STEP and FreeCAD files included for easy editing.
 > 
 > [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
@@ -115,24 +106,18 @@ hide:
 
 ---
 ## :material-linux: Linux Tutorials
-> [!info]+
-> Documenting the Linux tutorials I have written.<br>
-> **Check out these tutorials in this GitHub repository:**
+
+> [!links inline end] My Terminal Aliases
+> Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
 > 
-> [Linux Tutorials :simple-github:](https://github.com/benhaube/Linux-Configuration-Tutorials){ .md-button }
+> [My Aliases :material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
+
+> [!links inline end] Update PCRs Script
+> In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
+> 
+> [Update PCRs :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
 1. :material-console:&ensp;[[Defining_Terminal_Aliases|Defining Terminal Aliases]]: How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
-
-    > [!info]+ My Terminal Aliases
-    > Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
-    > 
-    > [My Aliases :material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
-
 2. :services-immich:&ensp;[[Immich_Slideshow_for_Nest_Hub|Immich Slideshow for Nest Hub]]: How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [[Home_Assistant|Home Assistant]] with Google Cast.
 3. :material-email-alert:&ensp;[[Setup_SSH_Login_Email_Notification|Setup SSH Login Email Notification]]: How to set up an email notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`. 
 4. :material-lock-open:&ensp;[[Unlock_LUKS_TPM2|Unlocking LUKS2 Volumes with TPM2]]: How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots. 
-
-    > [!info]+ Update PCRs Script
-    > In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
-    > 
-    > [Update PCRs :simple-github:](){ .md-button }

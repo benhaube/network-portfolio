@@ -6,26 +6,23 @@ hide:
 
 # [[K1_Bed_Level_Knobs_Tutorial|Manual Bed Leveling Mod]]
 
----
-> [!info] Why?
+> [!question] Why do this?
 > The K1 series does NOT have automatic bed leveling! This upgrade allows you to fine tune your bed level using the `screws_tilt_calculate` command in Fluidd. This method is superior to tooth skipping and the Creality method. It's quick, easy and accurate.
 
-> [!done] Purchased Parts
-> The links below are for a complete kit, which is used on a lot of printers. It's possible to print knobs if you already have longer screws and springs.
-> 
+> [!links] Bed Leveling Kit 
 > [AliExpress :material-shopping:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon :fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
 
-> [!danger] Root Access Required
+> [!note] Root Access Required
 > This project requires you to use the helper script to make changes to the `printer.cfg` file *(located at `/usr/data/printer_data/config/`)* and run macros or commands through a Klipper interface such as Fluidd or Mainsail. On a Creality K1-Series printer, this requires root access. Read the links below for more information.
 >
 > [Helper Script :devices-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }&emsp;[Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 
 ---
 ## :material-tools: Hardware Setup
-> [!info]+
-> If you plan to upgrade your bed to glass, aluminium or graphite, or if you want to increase your chamber temperature for ABS and ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
 
-> [!info]+ 
+> [!note inline end] Installation Note
+> If you plan to upgrade your bed to glass, aluminium or graphite, or if you want to increase your chamber temperature for ABS and ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
+> 
 > If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
 
 1. [ ] Home the printer.
@@ -34,7 +31,7 @@ hide:
 4. [ ] You can optionally remove the side panels to make the process easier.
 5. [ ] Slowly and gently move the toolhead to the side, so that you have enough room to work.
 
-    > [!danger] Danger!
+    > [!danger] Caution!
     > Moving the toolhead quickly generates back EMF that can damage your printer’s electronics.
 
 6. [ ] Remove the build plate.
@@ -56,33 +53,30 @@ hide:
 
 15. [ ] Repeat for the other 3 corners, making sure the springs are straight.
 16. [ ] Alternating between corners, tighten the knobs little by little to ensure even torque distribution.
-
-    > [!info]
-    > This prevents uneven stress warping the bed.
-
 17. [ ] When it starts getting tight or bottoms out, back off a little so you have room for adjustment.
 
-    > [!danger] Danger!
+    > [!danger] Caution!
     > Do not overtighten if you are still using the factory load cells as it may cause damage or issues.
 
 18. [ ] Place the build plate back on.
 
 ![[bed-knobs-mod-complete.jpg|400]]
 
----
 ## :material-chip: Firmware Setup
+
+> [!info inline end] Root SSH Access
+> If you don't know how to do this, refer to the Root Access Guide:
+>
+> [Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
+> 
+> > [!danger] Default Password
+> > The default `root` password is `creality_2023` *(at least on my K1C)*. 
+> > 
+> > It is highly recommended to change this password using the `passwd` command. 
+
 1. [ ] Turn the printer on.
 2. [ ] SSH into the printer.
-
-    > [!info]
-    > If you don't know how to do this, refer to the Root Access Guide:
-    >
-    > [Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
-
-3. [ ] **Option 1:** Run the [helper script](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
-
-    > [!info]
-    > This automatically modifies your printer.cfg file and adds a convenient macro you can click inside of Fluidd.
+3. [ ] **Option 1:** Run the [Helper Script :devices-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
 
     **Option 2:** Add this to `printer.cfg`
 
@@ -118,15 +112,13 @@ hide:
 
 4. [ ] Save *(if you edited `printer.cfg`)* and restart the printer to apply the changes.
 
----
 ## :material-tooltip-question-outline: How to Use
+
+> [!note inline end] Preheating the Bed
+> Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade. 
+
 1. [ ] Home the printer.
 2. [ ] Preheat the bed to your normal bed temperature for 20 minutes *(60° C for PLA)*.
-
-    > [!info]
-    > + Factory beds change shape when heated - you need to wait for it to stabilize.
-    > + You can skip this if you have a Graphite Bed Upgrade. 
-
 3. [ ] Open up Fluidd or mainsail through Orca Slicer or by typing your printers IP address into your web browser with the appropriate port number appended.
 
     | Interface | Port |
@@ -135,10 +127,11 @@ hide:
     | :services-mainsail:&nbsp;Mainsail | `4409` |
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
-5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.
 
-    > [!info]
-    > 15 min = ¼ turn.
+> [!question inline end] Minutes?
+> 15 min = ¼ turn.
+
+5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.
 
     In the image below, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise *(looking at it from above)*, or roughly ⅛ of a turn.
 
@@ -146,27 +139,26 @@ hide:
 
 6. [ ] Click retry or repeat the command to check the new level.
 
-    > [!info]
-    > + Click retry or repeat the command to check the new level.
-    > + With this method, it is possible to get each corner to the exact same level.
+    > [!bug]
+    > Sometimes if you do the calibration a few times in a row, you will not get a popup. In this case, the output should be displayed in the console and you can simply restart the printer and fluidd to bring the popup back.
 
 ---
 ## :material-information-outline: Additional Info
 
-> [!info]
-> If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
-
-> [!info]
-> Sometimes if you do the calibration a few times in a row, you will not get a popup. In this case, the output should be displayed in the console and you can simply restart the printer and fluidd to bring the popup back.
-
-> [!warning] Warning!
+> [!warning inline] Factory Loadcell Warning!
 > This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. 
 > Most aftermarket probes are at least 10x more accurate than factory, and it is highly recommended to upgrade before doing this in order to get the best results and minimize the chances of issues.
+>
+> > [!failure] Error: `key60` 
+> > If you are doing this with load cells *(factory probe)* and get a `key60` error *(Internal error command: `BEDMESH_CALIBRATE`)*.
+> > This may be due to too much pressure being applied to the load cells. Try backing off the knobs more and run `SCREWS_TILT_CALCULATE` again.
 
-> [!warning] Warning!
-> If you are doing this with load cells *(factory probe)* and get a `key60` error *(Internal error command: `BEDMESH_CALIBRATE`)*.
-> This may be due to too much pressure being applied to the load cells. Try backing off the knobs more and run `SCREWS_TILT_CALCULATE` again.
+> [!note inline] Bed Warping
+> If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
 
----
-### :material-link-variant: References and Resources
-[Screws Tilt Adjust Docs :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }&emsp;[Manual Bed Leveling Docs :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }&emsp;[Fluidd Access :services-fluidd:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ .md-button }
+> [!links inline] References and Resources
+> [Screws Tilt Adjust :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }
+> 
+> [Bed Leveling :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }
+> 
+> [Fluidd Access :services-fluidd:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ .md-button }

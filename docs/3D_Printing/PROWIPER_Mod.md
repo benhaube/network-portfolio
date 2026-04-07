@@ -6,58 +6,56 @@ hide:
 
 # [[PROWIPER_Mod|PROWIPER© Installation & Configuration]] 
 
----
-> [!info]
-> **Printer:** &nbsp;:devices-creality:&nbsp;[[Kacey_3D-printer|Creality K1C]]
+> [!info] PROWIPER&copy; Info
+> [Creality K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }
 >
-> **Modifications:** Upgraded bed leveling kit with aluminum spacers, PROWIPER&copy; V5 Mount
+> **Modifications:** 
+> 1. Upgraded bed leveling kit with aluminum spacers. 
+> 2. PROWIPER&copy; V5 Mount
 > 
 > **Hardware Required:**
-> + Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` *(in high-temp filament like ASA / ABS)*
+> 1. Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` *(in high-temp filament like ASA / ABS)*
 >
 >     [Printables :simple-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button } 
 >
-> + **Bambu A1** Silicone Brushes
+> 2. **Bambu A1** Silicone Brushes
 >
 >     [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0DRBZK7RZ){ .md-button }
 >
-> + 2x **M3x12mm** self-tapping screws
+> 3. 2x **M3x16mm** self-tapping screws
 >
->     [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BDDYG3){ .md-button }
+>     [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
 
 ---
 ## :material-file-document-edit: Phase 1: Configuration File Edits
-> [!important] 
+
+> [!warning inline end] Important
 > Before uploading the macro, modify `3DPHUB_PROWIPER.CFG` to account for the custom bed height and safe testing speeds.
 
 1. **Set the Mount Type:** 
     + Ensure `variable_brush_mount` is set to `"V5K1C"`.
 2. **Adjust for the Bed Spacer:** 
     + Change `variable_spacer_height` to match the Z-height of the spacer being used. *(e.g., `4`)*
-    > [!note]+ 
-    > This tells the macro to raise the wipe height to prevent toolhead crashes into the raised bed.  
 3. **Tweak Testing Speeds:** 
     + Change `variable_speed` from the default `7500` to a safer `4000` or `5000`.
 4. **Disable Phantom Bed Fans:** 
     + Change `variable_bed_fans_installed` to `"FALSE"` *(unless a specific `bed_fans` pin is defined in your main printer config)*.
 5. **Verify Bottom Clearance:** 
     + Review `variable_bot_clearance` *(default `20`)* and `variable_drop_distance` *(default `15`)*. 
-    > [!caution] 
-    > Ensure dropping the bed 15mm will not cause the new bed leveling hardware to bottom out on the printer chassis.
 
 ## :material-cogs: Phase 2: Klipper Integration
+
+> [!note inline end] Integration Note
+> The script automatically intercepts the stock `CX_NOZZLE_CLEAR` command, meaning standard print starts will natively utilize the new wiping sequence without further macro edits.
 
 1. Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
 2. Upload the newly edited `3DPHUB_PROWIPER.CFG` into this directory.
 3. Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`.
 4. Save and restart Klipper. 
 
-    > [!note]+
-    > The script automatically intercepts the stock `CX_NOZZLE_CLEAR` command, meaning standard print starts will natively utilize the new wiping sequence without further macro edits.
-
-
 ## :material-chip: Phase 3: Slicer & Firmware Clearances
-> [!info]+ 
+
+> [!info inline end] Clearance Info 
 > Because the V5 mount is utilized instead of the low-profile LPF2 mount, a 10mm clearance zone is required to prevent the toolhead from striking the mount during printing or probing.
 
 1. **Klipper Mesh Clearance:** 
@@ -65,8 +63,11 @@ hide:
 2. **Slicer Clearance:** 
     + In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
 
+        ![Excluded Bed Area](../assets/screenshots/excluded-bed-area.png)
+
 ## :material-toggle-switch: Phase 4: Dry Run *(Critical Safety Step)*
-> [!caution] 
+
+> [!warning inline end] Caution
 > **Do not install the physical hardware yet.**
 
 1. Ensure the build plate is completely empty.
@@ -84,7 +85,7 @@ hide:
 ---
 ## :material-file-code-outline: PROWIPER&copy; Mod G-Code File
 
-```gcode title="3DPHUB_PROWIPER.cfg" linenums="1"
+```gcode title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="41 56"
 # _____ ____  ____    _   _ _   _ ____        _   _ _____ _____ 
 #|___ /|  _ \|  _ \  | | | | | | | __ )      | \ | | ____|_   _|
 #  |_ \| | | | |_) | | |_| | | | |  _ \      |  \| |  _|   | |  

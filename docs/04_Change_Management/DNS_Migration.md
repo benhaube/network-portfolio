@@ -4,11 +4,8 @@ hide:
 ---
 ![[pi-hole.svg|150]] ![[arrow-right-bold.svg|100]] ![[technitium.svg|150]]
 
-# [[DNS_Migration|DNS Migration: Pi-hole to Technitium]]
-> [!info]
-> Checklist of steps required to migrate the local-network DNS resolution from *[[Pi-hole]]* to *[[Technitium]]*.
-
 ---
+
 ## :material-file-document: Phase 1: Pre-Migration & Documentation
 1. **Export Pi-hole Data:** 
     + [ ] Run a "Teleporter" backup on your current primary and secondary Pi-holes.

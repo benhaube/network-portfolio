@@ -77,6 +77,8 @@
 *[PCs]: Personal Computers
 *[PCI]: Peripheral Component Interconnect
 *[PCIe]: Peripheral Component Interconnect Express
+*[PCR]: Platform Control Register
+*[PCRs]: Platform Control Registers
 *[PETG]: Polyethylene Terephthalate Glycol
 *[PIN]: Personal Identification Number
 *[PLA]: Polylactic Acid

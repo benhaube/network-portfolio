@@ -81,7 +81,7 @@
 + Monthly check of the [[Immich]] library integrity and a trial restoration of a single Docker container from [[Syncthing]] data.
 + Weekly check of client backup logs for backup errors.
 
-#### Monitoring:
+### Monitoring:
 
 + Server status and service uptime is monitored by [[Beszel_Hub|Beszel Hub]] and [[Uptime_Kuma|Uptime Kuma]] instances. 
 + Email notifications are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible

@@ -10,6 +10,7 @@ hide:
 > Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
 
 ---
+
 ## :material-information-outline: Architecture Overview
 * **DNS Servers:** 
     * Technitium Cluster Primary: *[[Debian_Server_VM|Debian VM]]*
@@ -20,7 +21,7 @@ hide:
     * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard NAS]]
     * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
 
----
+
 ## :material-file-cloud: 1. Technitium DNS Records
 
 Instead of pointing every service to the proxy's IP address directly, we use a single `A` record for the proxy hardware, and `CNAME` aliases for the services. This makes IP migrations easier in the future.
@@ -30,7 +31,6 @@ Instead of pointing every service to the proxy's IP address directly, we use a s
 | `pi-zero.internal` | **A** | `192.168.50.3` | **:material-checkbox-outline:** | The dedicated Caddy reverse proxy host. |
 | `immich.internal` | **CNAME** | `pi-zero.internal` | **:material-close-box-outline:** | Points the Immich domain to the proxy. |
 
----
 ## :material-cloud-cog: 2. Caddy Configuration
 
 **File Location:** 
@@ -54,11 +54,8 @@ immich.internal {
 
 ```mermaid
 graph TD
-	%% --- Class definitions ---
-	%% classDef box fill:#255425,stroke:#4cae4f,stroke-width:2px;
-
-    User[Client Browser]:::box -- "DNS Query: immich.internal" --> DNS[Technitium DNS]:::box
+    User[Client Browser] -- "DNS Query: immich.internal" --> DNS[Technitium DNS]
     DNS -- "Returns CNAME: proxy IP" --> User
-    User -- "HTTP/S Request port 80/443" --> Proxy[Caddy: Pi Zero 2 W]:::box
-    Proxy -- "Forwards Traffic" --> App[Immich: port 2283]:::box
+    User -- "HTTP/S Request port 80/443" --> Proxy[Caddy: Pi Zero 2 W]
+    Proxy -- "Forwards Traffic" --> App[Immich: port 2283]
 ```

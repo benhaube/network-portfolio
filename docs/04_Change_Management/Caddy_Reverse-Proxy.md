@@ -41,7 +41,7 @@ Instead of pointing every service to the proxy's IP address directly, we use a s
 + `#!bash sudo nano /etc/caddy/Caddyfile` *(Open config file in `nano`)*  
 + `#!bash sudo systemctl reload caddy` *(Apply changes)*
 
-```nginx linenums="1"
+```nginx title="/etc/caddy/Caddyfile" linenums="1"
 # Immich Photo Server
 immich.internal {
     reverse_proxy [192.168.50.4]:2283

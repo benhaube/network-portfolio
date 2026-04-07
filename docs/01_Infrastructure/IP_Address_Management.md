@@ -3,14 +3,12 @@ hide:
   - toc
 ---
 ![[ip-network.svg|200]]
-# [[IP_Address_Management|Network IP Address Management (IPAM)]]
-> [!info]+
-> A systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
+# [[IP_Address_Management|IP Address Management]]
+> [!question] What is IPAM?
+> **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
 
 ---
 ## :material-lan: Local Network(s)
-> [!info]+
-> The list of software defined, segmented subnets or VLANs.
 
 | VLAN | SSID | Subnet | Subnet Mask | Gateway | DNS Servers | Domain | Role / Notes |
 | :--- | :--- | :----- | :---------- | :------ | :---------- | :----- | :----------- |
@@ -18,10 +16,7 @@ hide:
 | vlan52 | *Home_Guest* | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.1` | `9.9.9.9` `149.112.112.112` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-account-multiple:&nbsp;Guest |
 | vlan53 | *2G_IoT* | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.1` | `9.9.9.9` `149.122.122.122` *\[[Quad-9](https://quad9.net) (DoT)]* | - | :material-home-automation:&nbsp;IoT |
 
----
 ## :material-router-wireless: Core Infrastructure *(Static & Reserved)*
-> [!info]+
-> Manually assigned IP address information for the core infrastructure of the LAN. *(e.g., servers, routers, access-points)*
 
 | Device Name | VLAN | IP Address | Hostname | Type | Role / Notes |
 | :---------- | :--- | :--------- | :------- | :--- | :----------- |
@@ -34,10 +29,7 @@ hide:
 | :material-router-wireless:&nbsp;[ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md) | vlan50 | `192.168.50.221` | `aimesh-node.internal` | Reserved | AiMesh Node *(Backhaul)* |
 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md) | - | `192.168.100.1` | `hitron-modem.internal` | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
 
----
 ## :material-desktop-tower: Key Clients *(DHCP Reserved)*
-> [!info]+
-> Manually assigned IP address information for key clients on the LAN. *(e.g., desktop PCs, printers, IoT devices)*
 
 | Device Name | VLAN | IP Address | Hostname | Role / Notes |
 | :---------- | :--- | :--------- | :------- | :----------- |
@@ -45,21 +37,16 @@ hide:
 | :material-printer-3d-nozzle:&nbsp;[Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | vlan50 | `192.168.50.153` | `k1c-a71e.internal` | Creality K1C *(Modified)* |
 | :material-server:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(wlan0)* | vlan53 | `DHCP` | - | DHCP, [Home Assistant](../03_Services/Home_Assistant.md)|
 
----
 ## :material-web: Dynamic DNS Provider(s)
-> [!info]+
-> The list of DDNS providers that monitor the leased public IP address for changes  and bind it to a permanent domain name, enabling remote access to the local network.
 
 | Status | Server | Provider | Domain Name | TLS Certificate | Certificate Expire |
 | :----- | :----- | :------- | :---------- | :-------------- | :----------------- |
 | *Active* | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | [ASUS](https://asus.com) | https://remote-access-home-34.asuscomm.com | :simple-letsencrypt:&nbsp;Lets Encrypt | 06-07-2026 |
 
----
 ## :material-vpn: VPN Server(s) / Client(s)
-> [!info]+
-> The active VPN servers and clients that enable remote access to the services hosted on the local network.
 
-:simple-wireguard:&nbsp;**WireGuard @ [[ASUS_RT-BE92U|ASUS RT-BE92U]]**<br>*(the main server)*
+#### :simple-wireguard:&nbsp;WireGuard @ ASUS Router
+&emsp;*(the main server)*
 
 | Client | IP Address | DNS Server(s) | Endpoint |
 | :----- | :--------- | :------------ | :------- |  
@@ -68,7 +55,8 @@ hide:
 | :material-cellphone:&nbsp;Rob's-Phone | `10.6.0.4/32` | `10.6.0.1` *\[Quad-9 (DoT)]* | remote-access-home-34.asuscomm.com:41820 |
 | :material-laptop:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `10.6.0.1` *\[Quad-9 (DoT)]* | remote-access-home-34.asuscomm.com:41820 |
 
-:simple-wireguard:&nbsp;**WireGuard @ [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]**<br>*(the backup server)*
+#### :simple-wireguard:&nbsp;WireGuard @ ZimaOS NAS
+&emsp;*(the backup server)*
 
 | Client | IP Address | DNS Server(s) | Endpoint |
 | :----- | :--------- | :------------ | :------- |  
@@ -78,16 +66,34 @@ hide:
 | :material-cellphone:&nbsp;rob-phone | `10.8.0.5/32` `fd42:42:42::5/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
 
 ---
-## :material-ethernet: MAC Address Tables
-> [!info]+
-> Tables containing devices on the LAN and their hardware MAC addresses.
+<div class="grid cards" markdown>
 
-* [[MAC_Address_Tables|MAC Address Tables]]
+-   :material-ethernet:{ .lg .middle } **MAC Addresses**
 
----
-## :material-sitemap: Network Maps
-> [!info]+
-> Mermaid.js dynamic diagrams of the physical network and logical network.
+    ---
 
-* [Physical Map](../01_Infrastructure/Physical_Map.md)
-* [Logical Map](../01_Infrastructure/Logical_Map.md)
+    [MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
+
+-   :material-sitemap:{ .lg .middle } **Network Diagrams**
+
+    ---
+
+    [Logical Map](../01_Infrastructure/Logical_Map.md){ .md-button }&emsp;[Physical Map](../01_Infrastructure/Physical_Map.md){ .md-button }
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-restore-alert:{ .lg .middle } **Disaster Recovery**
+    
+    ---
+
+    [Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
+
+-   :material-server-security:{ .lg .middle } **Network Security**
+
+    ---
+
+    [Network Security Policy](../01_Infrastructure/Network_Security_Policy.md){ .md-button }
+
+</div>

@@ -5,9 +5,6 @@ hide:
 ![[ethernet.svg|200]]
 # [MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md)
 
-> [!info]+
-> Tables containing devices on the LAN and their hardware MAC addresses.
-
 ---
 ## :material-router-wireless: Network Infrastructure
 
@@ -23,7 +20,6 @@ hide:
 |  |  |  | :material-wifi:&nbsp;*(2.4 GHz)* | `7C:10:C9:DF:13:61` |  |
 |  |  |  | :material-wifi:&nbsp;*(5 GHz)* | `7C:10:C9:DF:13:64` |  |
 
----
 ## :material-security: Trusted Network *(vlan50)*
 
 | Device Type | Location | Hostname | MAC Address | IP Method | IP Address | Interface | WAN Access | Role / Notes |
@@ -53,7 +49,6 @@ hide:
 | :material-cast:&nbsp;Streaming Box | Living-Room | `roku-streaming-stick-4k` | `50:06:F5:53:2A:F2` | DHCP | - | :material-wifi: | **:material-checkbox-outline:** | Roku Streaming Stick 4K (2025), Connected to TV in Living Room |
 | :material-nintendo-game-boy:&nbsp;Game Console | Mobile | `nintendo-switch` | `74:84:69:0B:56:EF` | DHCP | - | :material-wifi: | **:material-checkbox-outline:** | Nintendo Switch OLED |
 
----
 ## :material-home-automation: IoT Network *(vlan53)*
 
 | Device Type | Location | Hostname | MAC Address | IP Method | Interface | WAN Access | Role / Notes |
@@ -76,3 +71,36 @@ hide:
 | :material-lightbulb-variant:&nbsp;Smart Bulb | Living-Room | `table-lamp-1` | `D0:C9:07:05:04:4C` | DHCP | :material-wifi: | **:material-close-box-outline:** | Govee RGBW smart LED bulb for lamp in living room |
 | :material-lightbulb-variant:&nbsp;Smart Bulb | Living-Room | `table-lamp-2` | `D0:C9:07:DB:9C:86` | DHCP | :material-wifi: | **:material-close-box-outline:** | Govee RGBW smart LED bulb for lamp in living room |
 | :material-lightbulb-variant:&nbsp;Smart Bulb | Living-Room | `christmas-tree-lamp` | `D0:C9:07:EF:4D:A4` | DHCP | :material-wifi: | **:material-close-box-outline:** | Govee RGBW smart LED bulb for ceramic Christmas tree decoration |
+
+---
+<div class="grid cards" markdown>
+
+-   :material-ip-network:{ .lg .middle } **IP Address Management**
+
+    ---
+
+    [IPAM](../01_Infrastructure/IP_Address_Management.md){ .md-button }
+
+-   :material-sitemap:{ .lg .middle } **Network Diagrams**
+
+    ---
+
+    [Logical Map](../01_Infrastructure/Logical_Map.md){ .md-button }&emsp;[Physical Map](../01_Infrastructure/Physical_Map.md){ .md-button }
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-restore-alert:{ .lg .middle } **Disaster Recovery**
+    
+    ---
+
+    [Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
+
+-   :material-server-security:{ .lg .middle } **Network Security**
+
+    ---
+
+    [Network Security Policy](../01_Infrastructure/Network_Security_Policy.md){ .md-button }
+
+</div>

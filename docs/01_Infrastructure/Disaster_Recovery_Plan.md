@@ -17,8 +17,17 @@
 ---
 ## :material-cloud-upload-outline: Backup Strategy
 
-> [!info]
-> To prevent data loss, the "3-2-1" backup rule is applied across the infrastructure.
+> [!info inline end] 3-2-1 Backup Strategy
+> To prevent data loss, the **"3-2-1" backup strategy** is applied across the infrastructure.
+> 
+> **Three** copies of the data:
+> + This includes the production copy and two backups
+>
+> **Two** media types:
+> + Data is stored on local drives and a NAS.
+>
+> **One** off-site copy:
+> + The most important data has a copy stored off-site with p-Cloud.
 
 #### :material-sync: On-Site Synchronization:
 
@@ -37,7 +46,6 @@
 
 + Encrypted backups of the Obsidian vaults and key configuration files are synced to a secure cloud provider *([p-Cloud](https://www.p-cloud.com))*.
 
----
 ## :material-restore-alert: Recovery Procedures
 
 #### :material-server-network-off: Node Failure: Primary DNS
@@ -56,7 +64,6 @@
 + **Update DNS:** 
 	+ Point the Cloudflare tunnel or local DNS records to the ZimaOS NAS IP.
 
----
 ## :material-tools: Testing & Maintenance
 
 + **Quarterly "Pull the Plug" Test:** 
@@ -69,3 +76,36 @@
 	+ Email notifications are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
 	+ The ASUS router utilizing the Asuswrt-merlin firmware also has email notifications enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, and router reboots.
 	+ The email address, [admin@haube-pereira.com](mailto:admin@haube-pereira.com), is dedicated to automated notifications from the monitoring software. 
+
+---
+<div class="grid cards" markdown>
+
+-   :material-ethernet:{ .lg .middle } **MAC Addresses**
+
+	---
+
+	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
+
+-   :material-sitemap:{ .lg .middle } **Network Diagrams**
+
+	---
+
+	[Logical Map](../01_Infrastructure/Logical_Map.md){ .md-button }&emsp;[Physical Map](../01_Infrastructure/Physical_Map.md){ .md-button }
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-ip-network:{ .lg .middle } **IP Address Management**
+	
+	---
+
+	[IPAM](../01_Infrastructure/IP_Address_Management.md){ .md-button }
+
+-   :material-server-security:{ .lg .middle } **Network Security**
+
+	---
+
+	[Network Security Policy](../01_Infrastructure/Network_Security_Policy.md){ .md-button }
+
+</div>

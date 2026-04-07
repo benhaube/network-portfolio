@@ -7,16 +7,12 @@
 ---
 ## :material-segment: Network Segmentation *(VLAN Architecture)*
 
-> [!info]
-> The network is divided into three distinct zones to minimize the attack surface.
-
 | Zone | VLAN ID | Description | Access Rules |
 | :--- | :------ | :---------- | :----------- |
 | :material-security:&nbsp;Trusted | *vlan50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound |
 | :material-account-multiple:&nbsp;Guest | *vlan52* | Temporary visitor devices | Internet access only; strictly isolated from all other VLANs |
 | :material-home-automation:&nbsp;IoT | *vlan53* | Smart home hardware *(bulbs, sensors, etc.)* | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
----
 ## :material-wall-fire: Boundary Defense & Remote Access
 
 + **Edge Protection:** 
@@ -29,7 +25,6 @@
 	+ The primary WireGuard server is hosted natively on the main [[ASUS_RT-BE92U|ASUS router]]. 
 	+ The secondary / backup WireGuard server is hosted in a Docker container on the [[ZimaBoard_2_NAS|ZimaOS NAS]]. 
 
----
 ## :material-server-security: DNS Security & Content Filtering
 
 + **Internal Resolution:** 
@@ -39,7 +34,6 @@
 + **Blocking:** 
 	+ Network-wide ad and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
----
 ## :material-security-network: Device & Host Hardening
 
 + **Operating Systems:** 
@@ -64,8 +58,40 @@
 + **3D Infrastructure:** 
 	+ The [[Kacey_3D-printer|Creality K1C]] is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 
----
 ## :material-shield-home: IoT & Smart Home Integrity
 
 + The migration from **Google Home** to **Home Assistant** ensures that IoT devices are managed locally. 
 + By isolating VLAN 53, "phone-home" telemetry from generic IoT hardware is neutralized, preventing potential lateral movement if a device is compromised.
+
+---
+<div class="grid cards" markdown>
+
+-   :material-ethernet:{ .lg .middle } **MAC Addresses**
+
+	---
+
+	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
+
+-   :material-sitemap:{ .lg .middle } **Network Diagrams**
+
+	---
+
+	[Logical Map](../01_Infrastructure/Logical_Map.md){ .md-button }&emsp;[Physical Map](../01_Infrastructure/Physical_Map.md){ .md-button }
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   :material-restore-alert:{ .lg .middle } **Disaster Recovery**
+	
+	---
+
+	[Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
+
+-   :material-ip-network:{ .lg .middle } **IP Address Management**
+
+	---
+
+	[IPAM](../01_Infrastructure/IP_Address_Management.md){ .md-button }
+
+</div>

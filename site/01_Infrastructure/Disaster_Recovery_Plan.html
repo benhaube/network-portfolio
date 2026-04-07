@@ -1053,6 +1053,38 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Node Failure: Primary DNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-failover" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Automated Failover:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reprovisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Reprovisioning:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1065,6 +1097,51 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Node Failure: Reverse Proxy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traffic-rerouting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Traffic Rerouting:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intervention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Intervention:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Update <abbr title="Domain Name Service">DNS</abbr>:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1083,6 +1160,57 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Testing &amp; Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quarterly-pull-the-plug-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Quarterly "Pull the Plug" Test:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Backup Verification:
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backup Verification:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Monitoring:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3858,7 +3986,7 @@
 <li>The most important data has a copy stored off-site with p-Cloud.</li>
 </ul>
 </div>
-<h4 id="on-site-synchronization"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8"/></svg></span> On-Site Synchronization:</h4>
+<h3 id="on-site-synchronization"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8"/></svg></span> On-Site Synchronization:</h3>
 <ul>
 <li><a href="../03_Services/Syncthing.html">Syncthing</a> is utilized across the <a href="../02_Hardware/Raspberry_Pi_4B_Server.html">Raspberry Pi 4B</a>, <a href="../02_Hardware/Raspberry_Pi_Zero_2_W.html">Raspberry Pi Zero</a>, <a href="../02_Hardware/Debian_Server_VM.html">Debian Server</a> and <a href="../02_Hardware/ZimaBoard_2_NAS.html">ZimaOS <abbr title="Network Attached Storage">NAS</abbr></a> nodes to ensure configuration files and Docker volumes are mirrored in real-time.</li>
 <li>Linux <abbr title="Personal Computers">PCs</abbr>, <a href="../02_Hardware/Ben%27s_Desktop.html">ben-workstation</a> and <a href="../02_Hardware/Ben%27s_Laptop.html">ben-laptop</a>, have the <code>/home</code> directory backed up to the ZimaOS <abbr title="Network Attached Storage">NAS</abbr> every weekday at 18:00 and 19:00 UTC-5 using a custom script, <code>home-bkp-nas.sh</code>, that utilizes <a href="../03_Services/NFS.html"><abbr title="Network File System">NFS</abbr></a> and <code>rsync</code>. </li>
@@ -3866,60 +3994,54 @@
 <li>Obsidian vaults are synchronized in real-time with a <a href="../03_Services/Obsidian_LiveSync.html">CouchDB</a> database hosted on the ZimaOS <abbr title="Network Attached Storage">NAS</abbr>, and to a private GitHub repository.</li>
 <li>Android smartphones have <abbr title="Short Message Service">SMS</abbr>/<abbr title="Multimedia Messaging Service">MMS</abbr> &amp; <abbr title="Rich Communication Services">RCS</abbr> messages and critical application configurations backed up while charging to the ZimaOS <abbr title="Network Attached Storage">NAS</abbr> via Syncthing. The backup archives for messages are created locally on the device with the <a href="https://www.synctech.com.au/sms-backup-restore/"><abbr title="Short Message Service">SMS</abbr> Backup &amp; Restore Pro</a> application.</li>
 </ul>
-<h4 id="cold-storage"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m6 2a6 6 0 0 0-6 6c0 3.31 2.69 6 6.1 6l-.88-2.23a1.01 1.01 0 0 1 .37-1.37l.86-.5a1.01 1.01 0 0 1 1.37.37l1.92 2.42A5.98 5.98 0 0 0 18 10a6 6 0 0 0-6-6m0 5a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-5 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m5.09-4.73 2.49 6.31 2.59-1.5-4.22-5.31z"/></svg></span> Cold Storage:</h4>
+<h3 id="cold-storage"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m6 2a6 6 0 0 0-6 6c0 3.31 2.69 6 6.1 6l-.88-2.23a1.01 1.01 0 0 1 .37-1.37l.86-.5a1.01 1.01 0 0 1 1.37.37l1.92 2.42A5.98 5.98 0 0 0 18 10a6 6 0 0 0-6-6m0 5a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-5 9a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m5.09-4.73 2.49 6.31 2.59-1.5-4.22-5.31z"/></svg></span> Cold Storage:</h3>
 <ul>
 <li>Critical database dumps (<a href="../03_Services/Home_Assistant.html">Home Assistant</a>, <a href="../03_Services/Immich.html">Immich</a> PostgreSQL) are exported weekly to the <strong><abbr title="Universal Serial Bus">USB</abbr> Storage (32GB)</strong> attached to the Raspberry Pi 4B server and the <strong><abbr title="Non-Volitile Memory Express">NVMe</abbr> Storage (500GB)</strong> on the ZimaOS <abbr title="Network Attached Storage">NAS</abbr>.</li>
 <li>The configuration of the <a href="../02_Hardware/ASUS_RT-BE92U.html">ASUS RT-BE92U</a> wireless router is exported weekly <em>(Sundays @ 1:00 UTC-5)</em> to the <strong><abbr title="Universal Serial Bus">USB</abbr> Storage <em>(32GB)</em></strong> attached to the Raspberry Pi 4B server and the <strong>Quick-Storage <em>(2TB)</em></strong> on the ZimaOS <abbr title="Network Attached Storage">NAS</abbr> via the <code>backupmon</code> utility included with the <a href="https://www.asuswrt-merlin.net/">Asuswrt-merlin</a> firmware.</li>
 </ul>
-<h4 id="off-site-cloud"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20m-12-2h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-2.07-1.46-3.54Q14.08 6 12 6 9.93 6 8.46 7.46 7 8.93 7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1m5.5-6"/></svg></span> Off-Site / Cloud:</h4>
+<h3 id="off-site-cloud"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20m-12-2h12q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-2.07-1.46-3.54Q14.08 6 12 6 9.93 6 8.46 7.46 7 8.93 7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1m5.5-6"/></svg></span> Off-Site / Cloud:</h3>
 <ul>
 <li>Encrypted backups of the Obsidian vaults and key configuration files are synced to a secure cloud provider <em>(<a href="https://www.p-cloud.com">p-Cloud</a>)</em>.</li>
 </ul>
 <h2 id="recovery-procedures"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 3c-5 0-9 4-9 9H1l3.9 3.9.1.1 4-4H6c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7c-1.9 0-3.7-.8-4.9-2.1l-1.4 1.4C8.3 20 10.5 21 13 21c5 0 9-4 9-9s-4-9-9-9m-1 12h2v2h-2zm0-8h2v6h-2z"/></svg></span> Recovery Procedures</h2>
-<h4 id="node-failure-primary-dns"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h.73L13 17.27zm9 1v1.18L20.82 20zm-1 2.72L19.73 24l-2-2H15a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2.73l-2-2H4a1 1 0 0 1-1-1v-.73l-2-2L2.28 4zM4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.82L7 6.18V5H5.82L3.84 3zm16 8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2.18l-6-6zM9 7h1V5H9zm0 8h1v-.73l-1-1zm-4-2v2h2v-2z"/></svg></span> Node Failure: Primary <abbr title="Domain Name Service">DNS</abbr></h4>
+<h3 id="node-failure-primary-dns"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h.73L13 17.27zm9 1v1.18L20.82 20zm-1 2.72L19.73 24l-2-2H15a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2.73l-2-2H4a1 1 0 0 1-1-1v-.73l-2-2L2.28 4zM4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.82L7 6.18V5H5.82L3.84 3zm16 8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2.18l-6-6zM9 7h1V5H9zm0 8h1v-.73l-1-1zm-4-2v2h2v-2z"/></svg></span> Node Failure: Primary <abbr title="Domain Name Service">DNS</abbr></h3>
+<h4 id="automated-failover">Automated Failover:</h4>
 <ul>
-<li><strong>Automated Failover:</strong> <ul>
 <li>The <a href="../03_Services/Technitium.html">Technitium</a> Secondary <abbr title="Domain Name Service">DNS</abbr> <em>(<a href="../02_Hardware/Raspberry_Pi_4B_Server.html">Raspberry Pi 4B</a>)</em> is configured as a secondary resolver in the <a href="../02_Hardware/ASUS_RT-BE92U.html">ASUS RT-BE92U</a> <abbr title="Dynamic Host Connection Protocol">DHCP</abbr> settings. Clients will automatically fallback to the Pi 4B.    </li>
 </ul>
-</li>
-<li><strong>Reprovisioning:</strong> <ul>
+<h4 id="reprovisioning">Reprovisioning:</h4>
+<ul>
 <li>If the Debian <abbr title="Virtual Machine">VM</abbr> or ZimaOS host is lost, the Debian <abbr title="Virtual Machine">VM</abbr> is restored from the last known good snapshot stored on the <abbr title="Network File System">NFS</abbr> Share.</li>
 </ul>
-</li>
-</ul>
-<h4 id="node-failure-reverse-proxy"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h.73L13 17.27zm9 1v1.18L20.82 20zm-1 2.72L19.73 24l-2-2H15a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2.73l-2-2H4a1 1 0 0 1-1-1v-.73l-2-2L2.28 4zM4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.82L7 6.18V5H5.82L3.84 3zm16 8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2.18l-6-6zM9 7h1V5H9zm0 8h1v-.73l-1-1zm-4-2v2h2v-2z"/></svg></span> Node Failure: Reverse Proxy</h4>
+<h3 id="node-failure-reverse-proxy"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h.73L13 17.27zm9 1v1.18L20.82 20zm-1 2.72L19.73 24l-2-2H15a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2.73l-2-2H4a1 1 0 0 1-1-1v-.73l-2-2L2.28 4zM4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.82L7 6.18V5H5.82L3.84 3zm16 8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2.18l-6-6zM9 7h1V5H9zm0 8h1v-.73l-1-1zm-4-2v2h2v-2z"/></svg></span> Node Failure: Reverse Proxy</h3>
+<h4 id="traffic-rerouting">Traffic Rerouting:</h4>
 <ul>
-<li><strong>Traffic Rerouting:</strong> <ul>
 <li>Since the Pi Zero 2W handles external entries via Caddy, a failure here breaks external <abbr title="Uniform Resource Locators">URLs</abbr>.</li>
 </ul>
-</li>
-<li><strong>Intervention:</strong> <ul>
+<h4 id="intervention">Intervention:</h4>
+<ul>
 <li>Deploy a temporary Caddy Docker container on the <strong>ZimaOS <abbr title="Network Attached Storage">NAS</abbr></strong> using the synced configuration files from <a href="../03_Services/Syncthing.html">Syncthing</a>.</li>
 </ul>
-</li>
-<li><strong>Update <abbr title="Domain Name Service">DNS</abbr>:</strong> <ul>
+<h4 id="update-dns">Update <abbr title="Domain Name Service">DNS</abbr>:</h4>
+<ul>
 <li>Point the Cloudflare tunnel or local <abbr title="Domain Name Service">DNS</abbr> records to the ZimaOS <abbr title="Network Attached Storage">NAS</abbr> <abbr title="Internet Protocol">IP</abbr>.</li>
 </ul>
-</li>
-</ul>
 <h2 id="testing-maintenance"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg></span> Testing &amp; Maintenance</h2>
+<h3 id="quarterly-pull-the-plug-test">Quarterly "Pull the Plug" Test:</h3>
 <ul>
-<li><strong>Quarterly "Pull the Plug" Test:</strong> <ul>
 <li>Physically disconnect the ZimaOS <abbr title="Network Attached Storage">NAS</abbr> to verify the Raspberry Pi 4B picks up all <abbr title="Domain Name Service">DNS</abbr> traffic without user intervention.</li>
 </ul>
-</li>
-<li><strong>Backup Verification:</strong> <ul>
+<h3 id="backup-verification">Backup Verification:</h3>
+<ul>
 <li>Monthly check of the <a href="../03_Services/Immich.html">Immich</a> library integrity and a trial restoration of a single Docker container from <a href="../03_Services/Syncthing.html">Syncthing</a> data.</li>
 <li>Weekly check of client backup logs for backup errors.</li>
 </ul>
-</li>
-<li><strong>Monitoring:</strong><ul>
+<h4 id="monitoring">Monitoring:</h4>
+<ul>
 <li>Server status and service uptime is monitored by <a href="../03_Services/Beszel_Hub.html">Beszel Hub</a> and <a href="../03_Services/Uptime_Kuma.html">Uptime Kuma</a> instances. </li>
 <li>Email notifications are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible</li>
 <li>The ASUS router utilizing the Asuswrt-merlin firmware also has email notifications enabled for firmware / script updates, critical firewall messages, <abbr title="Wide Area Network">WAN</abbr> connection quality degradation / dropouts, and router reboots.</li>
 <li>The email address, <a href="mailto:admin@haube-pereira.com">admin@haube-pereira.com</a>, is dedicated to automated notifications from the monitoring software. </li>
-</ul>
-</li>
 </ul>
 <hr />
 <div class="grid cards">

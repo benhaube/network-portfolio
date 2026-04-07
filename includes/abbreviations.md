@@ -125,5 +125,6 @@
 *[VNC]: Virtual Network Computing
 *[VPN]: Virtual Private Network
 *[VPNs]: Virtual Private Networks
+*[WAF]: Web Application Firewall
 *[WAN]: Wide Area Network
 *[YAML]: Yet Another Markup Language

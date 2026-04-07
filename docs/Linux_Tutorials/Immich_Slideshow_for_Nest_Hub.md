@@ -23,14 +23,14 @@ hide:
         [Fossify Gallery :simple-fdroid:](https://f-droid.org/en/packages/org.fossify.gallery/){ .md-button }
 
 2.  **Deletion *(Desktop)*:**
-    * **Manual:** Go to photos.google.com, :material-mouse-left-click-outline: first photo, scroll down, ++shift++ + :material-mouse-left-click-outline: last photo, ++del++.
+    * **Manual:** Go to :simple-googlephotos:&nbsp;[Google Photos](https://photos.google.com), :material-mouse-left-click: first photo, :material-mouse-move-down:, ++shift++ + :material-mouse-left-click: last photo, ++del++.
     * **Console Script *(Advanced)*:** Open Chrome DevTools ++f12++ --> Console. Paste script to auto-select/delete. 
 3.  **Finalize:** Empty "Trash/Bin" to reclaim storage.
 
 ### :material-file-code-outline: Photo Cleaning Script
 
 ```javascript title="Javascript" linenums="1"
-// Function to delete photos (1)
+// Function to delete photos 
 async function deletePhotos() {
     const deleteSelector = "button[aria-label='Delete']";
     const moveToTrashSelector = "span[text()='Move to trash']"; // May vary based on region/language
@@ -50,7 +50,7 @@ async function deletePhotos() {
     // Wait a moment for UI to update
     await new Promise(r => setTimeout(r, 2000));
 
-    // Click the delete button
+    // Click the delete button (1)
     const deleteBtn = document.querySelector(deleteSelector);
     if (deleteBtn) {
         deleteBtn.click();
@@ -88,8 +88,7 @@ Add these services to your existing Immich stack or a new stack.
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:
-  # 1. The Interface (Displays the clock/weather/photos)
-  immich_frame:
+  immich_frame:  # (1)!
     image: ghcr.io/immichframe/immichframe:latest
     container_name: immich_frame
     environment:
@@ -98,24 +97,28 @@ services:
       - SLIDESHOW_DURATION=60
       - SHOW_CLOCK=true
       - SHOW_WEATHER=true
-      - WEATHER_LOCATION=Owings Mills, MD
-      - ALBUM_UIDS=<UUID_OF_NESTHUB_ALBUM>  # Link to the auto-album below
+      - WEATHER_LOCATION=Reisterstown, MD
+      - ALBUM_UIDS=<UUID_OF_NESTHUB_ALBUM>  # (2)!
     ports:
       - 8081:8080
     restart: always
 
-  # 2. The Logic (Auto-adds faces to the specific album)
-  immich_auto_album:
+  immich_auto_album:  # (3)!
     image: ghcr.io/alangrainger/immich-person-to-album:latest
     container_name: immich_auto_album
     environment:
       - IMMICH_URL=http://<ZIMABOARD_IP>:2283
       - API_KEY=<YOUR_IMMICH_API_KEY_FOR_SYNC>
-      - SYNC_MODE=1  # 1 = Add new photos automatically
+      - SYNC_MODE=1  # (4)!
     volumes:
       - ./config.json:/app/config.json
     restart: always
 ```
+
+1. The Interface *(Displays the clock / weather / photos)*
+2. Link to the auto-album below
+3. The Logic *(Auto-adds faces to the specific album)*
+4. SYNC_MODE=1 adds new photos automatically
 
 ### :material-file-image: Auto Album Config
 Place this in the same folder as your docker-compose file.

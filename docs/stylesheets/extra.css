@@ -90,15 +90,15 @@
 }
 .md-typeset .admonition.links,
 .md-typeset details.links {
-  border-color: rgb(43, 155, 70);
+  border-color: rgb(76, 174, 79);
 }
 .md-typeset .links > .admonition-title,
 .md-typeset .links > summary {
-  background-color: rgba(43, 155, 70, 0.1);
+  background-color: rgba(76, 174, 79, 0.1);
 }
 .md-typeset .links > .admonition-title::before,
 .md-typeset .links > summary::before {
-  background-color: rgb(43, 155, 70);
+  background-color: rgb(76, 174, 79);
   -webkit-mask-image: var(--md-admonition-icon--links);
           mask-image: var(--md-admonition-icon--links);
 }

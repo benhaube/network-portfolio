@@ -33,13 +33,12 @@ hide:
 
 2. Paste the following into the configuration file:
 
-    ```ini title="/etc/msmtprc" linenums="1" hl_lines="11 13 14-15"
+    ```bash title="/etc/msmtprc" linenums="1" hl_lines="11 13-14"
     # Global defaults
     defaults
     auth           on
     tls            on
-    # starttls may be required check your email provider's server settings
-    tls_starttls   off   
+    tls_starttls   off  # (1)!   
     tls_trust_file /etc/ssl/certs/ca-certificates.crt
     syslog         on
 
@@ -55,6 +54,8 @@ hide:
     account default : email
     ```
 
+    1. `starttls` may be required check your email provider's server settings. If it is set to `on`. 
+
 3. Fill in the configuration file with your email address and the correct server information for your email provider. 
 4. Save and close the `/etc/msmtprc` configuration file.
 	+ ++ctrl+o++&ensp;++ctrl+x++
@@ -68,7 +69,7 @@ hide:
 6. Create the hidden file containing the app password for your email login in the **root** user's home directory. 
 
     >[!note]+ Note: 
-    > If you have 2FA enabled on your email account, you will need to create a unique "App password."
+    > If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
     ```bash linenums="1"
     read -s -p "Enter your Email App Password: " EMAIL_PASS && sudo bash -c "echo $EMAIL_PASS > /root/.email_app_password" && echo
@@ -92,13 +93,14 @@ hide:
 
 1. Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
 
-    ```bash linenums="1"
-    # Command to edit pam config file.
-    sudo -e /etc/pam.d/sshd
+    ```bash linenums="1" hl_lines="3"
+    sudo -e /etc/pam.d/sshd  # (1)!
     
-    # Add line to /etc/pam.d/sshd *after* the existing "session" lines.
-    session optional pam_exec.so /usr/local/bin/ssh-login-notify.sh
+    session optional pam_exec.so /usr/local/bin/ssh-login-notify.sh  # (2)!
     ```
+
+    1. Command to edit PAM config file.
+    2. Add line to `/etc/pam.d/sshd` *after* the existing "session" lines.
 
     >[!warning] Warning: 
     > It is important to use `#!bash sudo -e` instead of a direct editor command *(like `sudo nano`)* when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's `$EDITOR` environment variable.
@@ -157,7 +159,7 @@ hide:
     IP="$PAM_RHOST"
     HOST=$(hostname)
     DATE=$(date)
-    RECIPIENT="example@example.com"
+    RECIPIENT="example@example.com"  # (1)!
     SUBJECT="SSH Login on $HOST"
 
     BODY="
@@ -175,6 +177,8 @@ hide:
 
     exit 0
     ```
+
+    1. Change `RECIPIENT=example@example.com` to your email address.  
 
 3. Save and close the file.
 	+ ++ctrl+o++&ensp;++ctrl+x++
@@ -195,7 +199,7 @@ hide:
 3. If, for some reason, the email is not in your inbox, check your spam/junk folders. 
 4. If the email is not in your spam/junk folders, check the logs to see what went wrong.
 
-    ```bash
+    ```bash linenums="1"
     journalctl -t msmtp
     ```
 
@@ -211,20 +215,20 @@ hide:
 > > *Not authorised to send from this header address.*
 > 
 > 1. Open the configuration file in a text editor: 
->     ```bash
+>     ```bash linenums="1"
 >     sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
 >     ```
 > 2. Find *(or add)* the `Sender` line and set it to your authorized email:
->     ```bash
+>     ```bash linenums="1"
 >     Unattended-Upgrade::Sender "your-authorized-email@domain.com";
 >     ```
 > 3. Save and close the config file: 
 >     + ++ctrl+o++&ensp;++ctrl+x++
 > 4. Restart the `unattended-upgrades` Systemd service:
->     ```bash
+>     ```bash linenums="1"
 >     sudo systemctl restart unattended-upgrades.service
 >     ```
 > 5. Test the fix:
->     ```bash
+>     ```bash linenums="1"
 >     sudo unattended-upgrade --dry-run --debug
 >     ```

@@ -23,7 +23,7 @@ hide:
         [Fossify Gallery :simple-fdroid:](https://f-droid.org/en/packages/org.fossify.gallery/){ .md-button }
 
 2.  **Deletion *(Desktop)*:**
-    * **Manual:** Go to :simple-googlephotos:&nbsp;[Google Photos](https://photos.google.com), :material-mouse-left-click: first photo, :material-mouse-move-down:, ++shift++ + :material-mouse-left-click: last photo, ++del++.
+    * **Manual:** Go to :simple-googlephotos:&nbsp;[Google Photos](https://photos.google.com), :material-mouse-left-click: first photo, :material-mouse-scroll-wheel::material-arrow-down-thin:, ++shift++ + :material-mouse-left-click: last photo, ++del++.
     * **Console Script *(Advanced)*:** Open Chrome DevTools ++f12++ --> Console. Paste script to auto-select/delete. 
 3.  **Finalize:** Empty "Trash/Bin" to reclaim storage.
 

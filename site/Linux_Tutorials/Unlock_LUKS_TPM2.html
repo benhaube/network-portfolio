@@ -929,7 +929,7 @@
     
   
     <span class="md-typeset">
-      Network <abbr title="Internet Protocol">IP</abbr> Address Management (<abbr title="IP Address Management">IPAM</abbr>)
+      <abbr title="Internet Protocol">IP</abbr> Address Management
     </span>
   
 
@@ -2845,9 +2845,7 @@
   <span class="md-ellipsis">
     
   
-    <span class="md-typeset">
-      <abbr title="Domain Name Service">DNS</abbr> Migration: Pi-hole to Technitium
-    </span>
+    DNS Migration
   
 
     
@@ -3751,20 +3749,20 @@
 <li>
 <p><strong>Enroll the <abbr title="Trusted Platform Module 2.0">TPM2</abbr> key:</strong></p>
 <ul>
-<li>The <code>systemd-cryptenroll</code> command adds a new random key to one of your <abbr title="Linux Unified Key Setup">LUKS</abbr> key slots and <strong>seals</strong> it with the <abbr title="Trusted Platform Module 2.0">TPM2</abbr>, binding it to a set of <strong>PCRs</strong>.</li>
-<li>The <strong>PCRs</strong> record a cryptographic hash of the boot-time state (<abbr title="Firmware">FW</abbr>, bootloader, kernel, etc.).</li>
-<li>If an attacker alters the boot chain, the <strong>PCR</strong> values change, and the key will not be released.</li>
+<li>The <code>systemd-cryptenroll</code> command adds a new random key to one of your <abbr title="Linux Unified Key Setup">LUKS</abbr> key slots and <strong>seals</strong> it with the <abbr title="Trusted Platform Module 2.0">TPM2</abbr>, binding it to a set of <strong><abbr title="Platform Control Registers">PCRs</abbr></strong>.</li>
+<li>The <strong><abbr title="Platform Control Registers">PCRs</abbr></strong> record a cryptographic hash of the boot-time state (<abbr title="Firmware">FW</abbr>, bootloader, kernel, etc.).</li>
+<li>If an attacker alters the boot chain, the <strong><abbr title="Platform Control Register">PCR</abbr></strong> values change, and the key will not be released.</li>
 <li>Run the enrollment command as <strong>root</strong>. Replace <code>/dev/your_device</code> with your actual device path.</li>
 </ul>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>systemd-cryptenroll<span class="w"> </span>--tpm2-device<span class="o">=</span>auto<span class="w"> </span>--tpm2-pcrs<span class="o">=</span><span class="m">0</span>+4+7+11<span class="w"> </span>/dev/your_device
 </span></code></pre></div></td></tr></table></div>
 <ul>
 <li><code>--tpm2-device=auto</code>: Automatically detects the <abbr title="Trusted Platform Module 2.0">TPM2</abbr> device. </li>
-<li><code>--tpm2-pcrs=0+4+7+11</code>: Specifies the <strong>PCRs</strong> to bind to.<ul>
-<li><strong>PCR 0</strong>: Core system firmware. <em>(<abbr title="Universal Extensible Firmware Interface">UEFI</abbr> / <abbr title="Basic Input / Output System">BIOS</abbr>)</em></li>
-<li><strong>PCR 4</strong>: Boot loader and additional drivers. <em>(<abbr title="Grand Unified Bootloader">GRUB</abbr> / shim)</em> </li>
-<li><strong>PCR 7</strong>: The Secure Boot state. <em>(enabled / disabled, <abbr title="Universal Extensible Firmware Interface">UEFI</abbr> certificates)</em></li>
-<li><strong>PCR 11</strong>: <strong><abbr title="Unified Kernel Image">UKI</abbr></strong> components, kernel image, embedded initrd.</li>
+<li><code>--tpm2-pcrs=0+4+7+11</code>: Specifies the <strong><abbr title="Platform Control Registers">PCRs</abbr></strong> to bind to.<ul>
+<li><strong><abbr title="Platform Control Register">PCR</abbr> 0</strong>: Core system firmware. <em>(<abbr title="Universal Extensible Firmware Interface">UEFI</abbr> / <abbr title="Basic Input / Output System">BIOS</abbr>)</em></li>
+<li><strong><abbr title="Platform Control Register">PCR</abbr> 4</strong>: Boot loader and additional drivers. <em>(<abbr title="Grand Unified Bootloader">GRUB</abbr> / shim)</em> </li>
+<li><strong><abbr title="Platform Control Register">PCR</abbr> 7</strong>: The Secure Boot state. <em>(enabled / disabled, <abbr title="Universal Extensible Firmware Interface">UEFI</abbr> certificates)</em></li>
+<li><strong><abbr title="Platform Control Register">PCR</abbr> 11</strong>: <strong><abbr title="Unified Kernel Image">UKI</abbr></strong> components, kernel image, embedded initrd.</li>
 </ul>
 </li>
 <li>When prompted, enter an <strong>existing passphrase</strong> for your <abbr title="Linux Unified Key Setup">LUKS</abbr> volume to authorize the new key slot.</li>
@@ -3856,14 +3854,14 @@
 <h2 id="important-notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2V9l-6-6zm9 7V4.5l5.5 5.5zm11-3v6h-2V7zm-2 8h2v2h-2z"/></svg></span> Important Notes</h2>
 <details class="warning" open="open">
 <summary>Backup Key</summary>
-<p>Always keep at least one regular passphrase or a <strong>recovery key</strong> for your <abbr title="Linux Unified Key Setup">LUKS</abbr> volume as a backup. If the <abbr title="Trusted Platform Module">TPM</abbr> fails, the <abbr title="Universal Extensible Firmware Interface">UEFI</abbr> is updated, or your boot configuration changes in a way that alters the PCR values, the <abbr title="Trusted Platform Module">TPM</abbr> will not release the key.</p>
+<p>Always keep at least one regular passphrase or a <strong>recovery key</strong> for your <abbr title="Linux Unified Key Setup">LUKS</abbr> volume as a backup. If the <abbr title="Trusted Platform Module">TPM</abbr> fails, the <abbr title="Universal Extensible Firmware Interface">UEFI</abbr> is updated, or your boot configuration changes in a way that alters the <abbr title="Platform Control Register">PCR</abbr> values, the <abbr title="Trusted Platform Module">TPM</abbr> will not release the key.</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a>sudo<span class="w"> </span>systemd-cryptenroll<span class="w"> </span>--recovery-key<span class="w"> </span>/dev/your_device
 </span></code></pre></div></td></tr></table></div>
 </details>
 <details class="tip" open="open">
 <summary>Security</summary>
-<p>This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed PCRs), certain <a href="https://en.wikipedia.org/wiki/Evil_maid_attack">"Evil Maid" attacks</a> might be possible.</p>
-<p>Using a <strong><abbr title="Trusted Platform Module">TPM</abbr> <abbr title="Personal Identification Number">PIN</abbr></strong> in addition to the PCRs can mitigate some of these risks. This can be done by using the flag <code>--tpm2-with-pin=yes</code> with the enrollment command.</p>
+<p>This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed <abbr title="Platform Control Registers">PCRs</abbr>), certain <a href="https://en.wikipedia.org/wiki/Evil_maid_attack">"Evil Maid" attacks</a> might be possible.</p>
+<p>Using a <strong><abbr title="Trusted Platform Module">TPM</abbr> <abbr title="Personal Identification Number">PIN</abbr></strong> in addition to the <abbr title="Platform Control Registers">PCRs</abbr> can mitigate some of these risks. This can be done by using the flag <code>--tpm2-with-pin=yes</code> with the enrollment command.</p>
 <div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a>sudo<span class="w"> </span>systemd-cryptenroll<span class="w"> </span>--tpm2-device<span class="o">=</span>auto<span class="w"> </span>--tpm2-pcrs<span class="o">=</span><span class="m">0</span>+4+7+11<span class="w"> </span>--tpm2-with-pin<span class="o">=</span>yes<span class="w"> </span>/dev/your_device
 </span></code></pre></div></td></tr></table></div>
 </details>
@@ -3877,7 +3875,7 @@
 </span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3"></a>sudo<span class="w"> </span>dracut<span class="w"> </span>-f<span class="w"> </span><span class="c1"># or appropriate command for your system</span>
 </span></code></pre></div></td></tr></table></div>
 <p>If you are using a system that uses <code>dracut</code> to rebuild the <code>initramfs</code> you can automate this process with a script I have written. It is available to download in this GitHub repo:</p>
-<p><a class="md-button" href="https://github.com/benhaube/Update-LUKS-PCRs-script">Update PCRs Script <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span></a></p>
+<p><a class="md-button" href="https://github.com/benhaube/Update-LUKS-PCRs-script">Update <abbr title="Platform Control Registers">PCRs</abbr> Script <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span></a></p>
 </details>
 
 

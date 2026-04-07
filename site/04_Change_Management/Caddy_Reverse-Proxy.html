@@ -929,7 +929,7 @@
     
   
     <span class="md-typeset">
-      Network <abbr title="Internet Protocol">IP</abbr> Address Management (<abbr title="IP Address Management">IPAM</abbr>)
+      <abbr title="Internet Protocol">IP</abbr> Address Management
     </span>
   
 
@@ -2951,9 +2951,7 @@
   <span class="md-ellipsis">
     
   
-    <span class="md-typeset">
-      <abbr title="Domain Name Service">DNS</abbr> Migration: Pi-hole to Technitium
-    </span>
+    DNS Migration
   
 
     
@@ -3730,7 +3728,6 @@
 <p class="admonition-title">Goal</p>
 <p>Route human-readable domain names <em>(e.g., <code>immich.internal</code>)</em> to internal services without needing to specify port numbers.</p>
 </div>
-<hr />
 <h2 id="architecture-overview"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2z"/></svg></span> Architecture Overview</h2>
 <ul>
 <li><strong><abbr title="Domain Name Service">DNS</abbr> Servers:</strong> <ul>
@@ -3793,7 +3790,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="2-caddy-configuration"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 19c0 .34.03.67.08 1H6.5c-1.5 0-2.81-.5-3.89-1.57C1.54 17.38 1 16.09 1 14.58q0-1.95 1.17-3.48C3.34 9.57 4 9.43 5.25 9.15c.42-1.53 1.25-2.77 2.5-3.72S10.42 4 12 4c1.95 0 3.6.68 4.96 2.04S19 9.05 19 11c1.15.13 2.1.63 2.86 1.5.06.05.1.13.14.19-.9-.44-1.92-.69-3-.69-3.87 0-7 3.13-7 7m11.83 1.64-1 1.73c-.07.13-.2.13-.33.13l-1.23-.5c-.27.18-.54.34-.84.47l-.19 1.32c-.02.12-.13.21-.24.21h-2c-.14 0-.24-.09-.26-.21l-.19-1.32c-.31-.12-.59-.29-.85-.47l-1.24.5c-.12 0-.25 0-.31-.13l-1-1.73a.26.26 0 0 1 .06-.32l1.06-.82a4.2 4.2 0 0 1 0-1l-1.06-.82a.25.25 0 0 1-.06-.32l1-1.73c.07-.13.2-.13.31-.13l1.24.5c.26-.18.55-.34.85-.47l.19-1.32A.26.26 0 0 1 18 14h2c.11 0 .22.09.23.21l.19 1.32c.31.12.58.29.85.47l1.23-.5c.13 0 .26 0 .32.13l1 1.73c.06.11.03.24-.06.32l-1.06.82c.03.17.04.33.04.5s-.02.33-.04.5l1.07.82c.09.08.12.21.06.32M20.5 19c0-.83-.68-1.5-1.5-1.5s-1.5.67-1.5 1.5.66 1.5 1.5 1.5 1.5-.67 1.5-1.5"/></svg></span> 2. Caddy Configuration</h2>
 <p><strong>File Location:</strong> </p>
 <ul>
@@ -3804,7 +3800,7 @@
 <li><code class="language-bash highlight">sudo<span class="w"> </span>nano<span class="w"> </span>/etc/caddy/Caddyfile</code> <em>(Open config file in <code>nano</code>)</em>  </li>
 <li><code class="language-bash highlight">sudo<span class="w"> </span>systemctl<span class="w"> </span>reload<span class="w"> </span>caddy</code> <em>(Apply changes)</em></li>
 </ul>
-<div class="language-nginx highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<div class="language-nginx highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/caddy/Caddyfile</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
 <span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Immich Photo Server</span>
@@ -3812,16 +3808,12 @@
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="kn">reverse_proxy</span><span class="w"> </span><span class="s">[192.168.50.4]:2283</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="err">}</span>
 </span></code></pre></div></td></tr></table></div>
-<hr />
 <h2 id="3-traffic-flow"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a2 2 0 0 1-2-2 2 2 0 0 1 2-2c1.11 0 2 .89 2 2a2 2 0 0 1-2 2m0 5a2 2 0 0 1-2-2 2 2 0 0 1 2-2c1.11 0 2 .89 2 2a2 2 0 0 1-2 2m0 5a2 2 0 0 1-2-2 2 2 0 0 1 2-2c1.11 0 2 .89 2 2a2 2 0 0 1-2 2m8-9h-3V8.86c1.72-.45 3-2 3-3.86h-3V4a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v1H4c0 1.86 1.28 3.41 3 3.86V10H4c0 1.86 1.28 3.41 3 3.86V15H4c0 1.86 1.28 3.41 3 3.86V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1.14c1.72-.45 3-2 3-3.86h-3v-1.14c1.72-.45 3-2 3-3.86"/></svg></span> 3. Traffic Flow</h2>
 <pre class="mermaid"><code>graph TD
-    %% --- Class definitions ---
-    %% classDef box fill:#255425,stroke:#4cae4f,stroke-width:2px;
-
-    User[Client Browser]:::box -- "DNS Query: immich.internal" --&gt; DNS[Technitium DNS]:::box
+    User[Client Browser] -- "DNS Query: immich.internal" --&gt; DNS[Technitium DNS]
     DNS -- "Returns CNAME: proxy IP" --&gt; User
-    User -- "HTTP/S Request port 80/443" --&gt; Proxy[Caddy: Pi Zero 2 W]:::box
-    Proxy -- "Forwards Traffic" --&gt; App[Immich: port 2283]:::box</code></pre>
+    User -- "HTTP/S Request port 80/443" --&gt; Proxy[Caddy: Pi Zero 2 W]
+    Proxy -- "Forwards Traffic" --&gt; App[Immich: port 2283]</code></pre>
 
 
 
@@ -3881,13 +3873,13 @@
         
         
           
-          <a href="DNS_Migration.html" class="md-footer__link md-footer__link--next" aria-label="Next: DNS Migration: Pi-hole to Technitium">
+          <a href="DNS_Migration.html" class="md-footer__link md-footer__link--next" aria-label="Next: DNS Migration">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                DNS Migration: Pi-hole to Technitium
+                DNS Migration
               </div>
             </div>
             <div class="md-footer__button md-icon">

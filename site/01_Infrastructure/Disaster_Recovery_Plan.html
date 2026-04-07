@@ -1110,7 +1110,7 @@
     
   
     <span class="md-typeset">
-      Network <abbr title="Internet Protocol">IP</abbr> Address Management (<abbr title="IP Address Management">IPAM</abbr>)
+      <abbr title="Internet Protocol">IP</abbr> Address Management
     </span>
   
 
@@ -3026,9 +3026,7 @@
   <span class="md-ellipsis">
     
   
-    <span class="md-typeset">
-      <abbr title="Domain Name Service">DNS</abbr> Migration: Pi-hole to Technitium
-    </span>
+    DNS Migration
   
 
     
@@ -3844,9 +3842,21 @@
 </table>
 <hr />
 <h2 id="backup-strategy"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20H13q-.82 0-1.41-.59Q11 18.83 11 18v-5.15L9.4 14.4 8 13l4-4 4 4-1.4 1.4-1.6-1.55V18h5.5q1.05 0 1.77-.73.73-.72.73-1.77t-.73-1.77Q19.55 13 18.5 13H17v-2q0-2.07-1.46-3.54Q14.08 6 12 6 9.93 6 8.46 7.46 7 8.93 7 11h-.5q-1.45 0-2.47 1.03Q3 13.05 3 14.5T4.03 17q1.02 1 2.47 1H9v2m3-7"/></svg></span> Backup Strategy</h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>To prevent data loss, the "3-2-1" backup rule is applied across the infrastructure.</p>
+<div class="admonition info inline end">
+<p class="admonition-title">3-2-1 Backup Strategy</p>
+<p>To prevent data loss, the <strong>"3-2-1" backup strategy</strong> is applied across the infrastructure.</p>
+<p><strong>Three</strong> copies of the data:</p>
+<ul>
+<li>This includes the production copy and two backups</li>
+</ul>
+<p><strong>Two</strong> media types:</p>
+<ul>
+<li>Data is stored on local drives and a <abbr title="Network Attached Storage">NAS</abbr>.</li>
+</ul>
+<p><strong>One</strong> off-site copy:</p>
+<ul>
+<li>The most important data has a copy stored off-site with p-Cloud.</li>
+</ul>
 </div>
 <h4 id="on-site-synchronization"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6c0-1 .25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12a8 8 0 0 0 8 8v3l4-4-4-4m0-11V1L8 5l4 4V6a6 6 0 0 1 6 6c0 1-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12a8 8 0 0 0-8-8"/></svg></span> On-Site Synchronization:</h4>
 <ul>
@@ -3865,7 +3875,6 @@
 <ul>
 <li>Encrypted backups of the Obsidian vaults and key configuration files are synced to a secure cloud provider <em>(<a href="https://www.p-cloud.com">p-Cloud</a>)</em>.</li>
 </ul>
-<hr />
 <h2 id="recovery-procedures"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 3c-5 0-9 4-9 9H1l3.9 3.9.1.1 4-4H6c0-3.9 3.1-7 7-7s7 3.1 7 7-3.1 7-7 7c-1.9 0-3.7-.8-4.9-2.1l-1.4 1.4C8.3 20 10.5 21 13 21c5 0 9-4 9-9s-4-9-9-9m-1 12h2v2h-2zm0-8h2v6h-2z"/></svg></span> Recovery Procedures</h2>
 <h4 id="node-failure-primary-dns"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h.73L13 17.27zm9 1v1.18L20.82 20zm-1 2.72L19.73 24l-2-2H15a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2.73l-2-2H4a1 1 0 0 1-1-1v-.73l-2-2L2.28 4zM4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.82L7 6.18V5H5.82L3.84 3zm16 8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2.18l-6-6zM9 7h1V5H9zm0 8h1v-.73l-1-1zm-4-2v2h2v-2z"/></svg></span> Node Failure: Primary <abbr title="Domain Name Service">DNS</abbr></h4>
 <ul>
@@ -3893,7 +3902,6 @@
 </ul>
 </li>
 </ul>
-<hr />
 <h2 id="testing-maintenance"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg></span> Testing &amp; Maintenance</h2>
 <ul>
 <li><strong>Quarterly "Pull the Plug" Test:</strong> <ul>
@@ -3913,6 +3921,35 @@
 </ul>
 </li>
 </ul>
+<hr />
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 15h2v3h2v-3h2v3h2v-3h2v3h2V9h-4V6H9v3H5v9h2zM4.38 3h15.25A2.37 2.37 0 0 1 22 5.38v14.25A2.37 2.37 0 0 1 19.63 22H4.38A2.37 2.37 0 0 1 2 19.63V5.38C2 4.06 3.06 3 4.38 3"/></svg></span> <strong><abbr title="Media Access Control">MAC</abbr> Addresses</strong></p>
+<hr />
+<p><a class="md-button" href="MAC_Address_Tables.html"><abbr title="Media Access Control">MAC</abbr> Address Tables</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 2v6h2v3H5c-1.11 0-2 .89-2 2v3H1v6h6v-6H5v-3h6v3H9v6h6v-6h-2v-3h6v3h-2v6h6v-6h-2v-3c0-1.11-.89-2-2-2h-6V8h2V2z"/></svg></span> <strong>Network Diagrams</strong></p>
+<hr />
+<p><a class="md-button" href="Logical_Map.html">Logical Map</a>&emsp;<a class="md-button" href="Physical_Map.html">Physical Map</a></p>
+</li>
+</ul>
+</div>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 9h-2V7h2zm7 11v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4v2h1a1 1 0 0 1 1 1zM9 5H7v10h2zm2 10h2v-4h2a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4z"/></svg></span> <strong><abbr title="Internet Protocol">IP</abbr> Address Management</strong></p>
+<hr />
+<p><a class="md-button" href="IP_Address_Management.html"><abbr title="IP Address Management">IPAM</abbr></a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v.67l-2.5-1.11-6.5 2.88V15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h8c.06 2.25 1 4.4 2.46 6H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M8 5h1V3H8zm0 8h1v-2H8zm0 8h1v-2H8zM4 3v2h2V3zm0 8v2h2v-2zm0 8v2h2v-2zm13.5-7 4.5 2v3c0 2.78-1.92 5.37-4.5 6-2.58-.63-4.5-3.22-4.5-6v-3zm0 1.94L15 15.06v2.66c0 1.54 1.07 2.98 2.5 3.34z"/></svg></span> <strong>Network Security</strong></p>
+<hr />
+<p><a class="md-button" href="Network_Security_Policy.html">Network Security Policy</a></p>
+</li>
+</ul>
+</div>
 
 
 
@@ -3965,13 +4002,13 @@
         
         
           
-          <a href="IP_Address_Management.html" class="md-footer__link md-footer__link--next" aria-label="Next: Network IP Address Management (IPAM)">
+          <a href="IP_Address_Management.html" class="md-footer__link md-footer__link--next" aria-label="Next: IP Address Management">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Network IP Address Management (IPAM)
+                IP Address Management
               </div>
             </div>
             <div class="md-footer__button md-icon">

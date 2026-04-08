@@ -111,6 +111,9 @@ markdown_extensions:
   - attr_list
   - abbr
   - admonition
+  - toc:
+      permalink: true
+      permalink_title: Permanent link
   - pymdownx.keys
   - pymdownx.details
   - pymdownx.smartsymbols

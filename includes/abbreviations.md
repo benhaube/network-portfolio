@@ -64,6 +64,7 @@
 *[MMC]: MultiMedia Card
 *[MMS]: Multimedia Messaging Service
 *[NAS]: Network Attached Storage
+*[NAT]: Network Address Translation
 *[NFS]: Network File System
 *[NIC]: Network Interface Card
 *[NSP]: Network Security Policy

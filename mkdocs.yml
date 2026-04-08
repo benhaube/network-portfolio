@@ -56,13 +56,17 @@ theme:
       infra: material/router-network
       inventory: material/list-box-outline
       laptop: material/laptop
+      living-room: material/sofa
       map: material/sitemap
+      mini-rack: devices/10-inch-rack
       monitor: material/monitor-eye
       nas: material/nas
       network: material/lan 
       native: material/linux
+      office: material/desk
       pc: material/desktop-classic
       print: material/printer
+      printer-cart: material/printer
       remote: material/remote-desktop
       router: material/router-wireless
       server: material/server
@@ -209,7 +213,9 @@ extra:
     infrastructure: infra
     inventory: inventory
     laptop: laptop
+    living-room: living-room
     map: map
+    mini-rack: mini-rack
     monitor: monitor
     nas: nas
     network: network

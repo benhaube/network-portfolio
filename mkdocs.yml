@@ -220,8 +220,10 @@ extra:
     nas: nas
     network: network
     native: native
+    office: office
     pc: pc
-    printing: print 
+    printing: print
+    printer-cart: printer-cart 
     remote-access: remote
     router: router
     server: server

@@ -4,6 +4,8 @@ tags:
   - switch
   - infrastructure
   - network
+  - office
+  - printer-cart
 hide:
   - toc
 ---
@@ -29,9 +31,6 @@ hide:
 
 ## :material-ethernet: Port Map 
 
-> [!info]-
-> *Since this switch is unmanaged, use this table to track physical cabling.*
-
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
 | **1** | :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | White Cat5e | `enp7s0`, `192.168.50.61` |
@@ -43,9 +42,9 @@ hide:
 ---
 ## :material-tools: Maintenance Notes
 
-> [!TIP] Visual Indicators
+> [!tip inline] Visual Indicators
 > **Green LED:** 10/100/1000 Mb/s Link <br>
 > **Flashing:** Activity
 
-> [!WARNING] Troubleshooting
+> [!warning inline] Troubleshooting
 > Hard reboot required if traffic stalls *(unplug power for 60s)*.

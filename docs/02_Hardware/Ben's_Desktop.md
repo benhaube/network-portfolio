@@ -4,6 +4,7 @@ tags:
   - pc
   - desktop
   - virtual_host
+  - office
 hide:
   - toc
 ---
@@ -14,6 +15,7 @@ hide:
 
 ---
 ## :material-information-outline: Device Overview
+
 * **Role:** My workstation PC
 * **Hostname(s):** `bens-workstation`
 * **Location:** 
@@ -28,14 +30,14 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) (Port 1) |
-| wlp6s0 | `DHCP` | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;*Home (vlan50)* |
+| enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
+| wlp6s0 | `DHCP` | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;Home *(vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--- | :---------- | :---------- | :------ |
-| vlan50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -69,7 +71,7 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :material-remote-desktop:&nbsp;[RDP (Remote Desktop Protocol)](../03_Services/RDP.md) | `3389` | Remote desktop protocol for accessing the desktop over the local network. |
+| *Active* | :material-remote-desktop:&nbsp;[RDP](../03_Services/RDP.md) | `3389` | Remote desktop protocol for accessing the desktop over the local network. |
 
 ---
 ## :material-tools: Maintenance & Notes
@@ -112,7 +114,7 @@ hide:
 
 # --- Configuration ---
 SOURCE_DIR="$HOME/"
-DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/bens-workstation/"
+DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/bens-workstation/" # (1)!
 MOUNT_POINT="/mnt/storage_server/Quick_Storage"
 EXCLUDE_FILE="$HOME/.bkp-exclude-nas"
 LOG_FILE="$HOME/.var/log/backup_log.log"
@@ -166,6 +168,8 @@ fi
 echo "$MSG"
 echo "$MSG" >> "$LOG_FILE"
 ```
+
+1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data! 
 
 2. Place `.bkp-exclude-nas` in the `~/` directory. 
 

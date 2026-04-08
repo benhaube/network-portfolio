@@ -6,6 +6,8 @@ tags:
   - infrastructure
   - docker_host
   - network
+  - office
+  - printer-cart
 hide:
   - toc
 ---
@@ -32,13 +34,13 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| wlan0 | `192.168.50.3` | `2c:cf:67:db:f5:e2` | :material-wifi:&nbsp;*Home (vlan50)* |
+| wlan0 | `192.168.50.3` | `2c:cf:67:db:f5:e2` | :material-wifi:&nbsp;Home *(vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
-| vlan50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -57,7 +59,7 @@ hide:
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
 | *Active* | :services-caddy:&nbsp;[[Caddy]] | `80` `443` | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
 | *Active* | :simple-syncthing:&nbsp;[[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. | 
 
 #### :material-docker: Docker:
@@ -71,7 +73,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!important] Critical Configurations
+> [!important inline] Critical Configurations
 > #### :material-clock-outline: Chrony:
 > * Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
 > 

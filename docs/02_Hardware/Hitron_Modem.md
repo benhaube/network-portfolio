@@ -4,6 +4,8 @@ tags:
   - network
   - infrastructure
   - ISP
+  - living-room
+  - mini-rack
 hide:
   - toc
 ---
@@ -41,7 +43,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!NOTE] Critical Configurations
+> [!note inline] Critical Configurations
 > **:material-network-off: WAN Down:**
 > 
 > * If WAN connection goes down, unplug power from modem for 60-seconds to reboot.

@@ -4,6 +4,7 @@ tags:
   - network
   - server
   - 3D-printer
+  - office
 hide:
   - toc
 ---
@@ -15,14 +16,10 @@ hide:
 ---
 ## :material-information-outline: Basic Information
 
-+ **Model:**
-    + Creality&copy; K1C
-+ **Build Volume:** 
-    + 220x220x250
-+ **Version:** 
-    + v2.0.5
-+ **Create Date:** 
-    + 2023/09/05
++ **Model:** Creality&copy; K1C
++ **Build Volume:** `220x220x250`
++ **Version:** v2.0.5
++ **Create Date:** 2023/09/05
 + **Nozzle MCU:** 
     + *Chip:* GD32F303CBT6
     + *Version:* CR-K1-MAX-NOZZLE-V1.2.0    
@@ -65,7 +62,9 @@ hide:
     + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
-## :material-code-block-brackets: Machine G-code (OrcaSlicer)
+## :material-code-block-brackets: Machine G-code 
+
+**:services-orca-slicer:&nbsp;OrcaSlicer**
 
 ```gcode title="Machine Start" linenums="1"
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]

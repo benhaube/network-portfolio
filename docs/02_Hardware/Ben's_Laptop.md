@@ -3,6 +3,7 @@ tags:
   - hardware
   - pc
   - laptop
+  - mobile
 hide:
   - toc
 ---
@@ -13,6 +14,7 @@ hide:
 
 ---
 ## :material-information-outline: Device Overview
+
 * **Role:** My laptop PC
 * **Hostname(s):** `ben-laptop`
 * **Location:** 
@@ -26,13 +28,13 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| wlp0s20f3 | `DHCP` | `A6:97:E3:D2:F1:C4` | :material-wifi:&nbsp;*Home (vlan50)* |
+| wlp0s20f3 | `DHCP` | `A6:97:E3:D2:F1:C4` | :material-wifi:&nbsp;Home *(vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--- | :---------- | :---------- | :------ |
-| vlan50 | `ben-laptop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `ben-laptop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -92,7 +94,7 @@ hide:
 
 # --- Configuration ---
 SOURCE_DIR="$HOME/"
-DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/ben-laptop/"
+DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/ben-laptop/" # (1)!
 MOUNT_POINT="/mnt/storage_server/Quick_Storage"
 EXCLUDE_FILE="$HOME/.bkp-exclude-nas"
 LOG_FILE="$HOME/.var/log/backup_log.log"
@@ -146,6 +148,8 @@ fi
 echo "$MSG"
 echo "$MSG" >> "$LOG_FILE"
 ```
+
+1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
 
 2. Place `.bkp-exclude-nas` in the `~/` directory.
 

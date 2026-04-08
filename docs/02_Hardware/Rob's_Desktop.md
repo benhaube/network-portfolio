@@ -1,5 +1,5 @@
 ---
-tags: [hardware, pc, desktop]
+tags: [hardware, pc, desktop, office]
 hide:
   - toc
 ---
@@ -26,13 +26,13 @@ hide:
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | Ethernet | `DHCP` | `50:EB:F6:59:74:C3` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
-| Wi-Fi | `DHCP` | `70:A6:CC:B5:F5:4A` | :material-wifi:&nbsp;*Home (vlan50)* |
+| Wi-Fi | `DHCP` | `70:A6:CC:B5:F5:4A` | :material-wifi:&nbsp;Home *(vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
-| vlan50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -53,7 +53,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!NOTE] Critical Configurations
+> [!note inline] Critical Configurations
 > #### :material-clock-outline: Chrony:
 > + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
 

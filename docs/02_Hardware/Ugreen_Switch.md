@@ -4,6 +4,8 @@ tags:
   - switch
   - infrastructure
   - network
+  - living-room
+  - mini-rack
 hide:
   - toc
 ---
@@ -30,9 +32,6 @@ hide:
 
 ## :material-ethernet: Port Map
 
-> [!note]-
-> *Since this switch is unmanaged, use this table to track physical cabling.*
-
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
 | **1** | :material-laptop:&nbsp;[Rob's Laptop](../02_Hardware/Rob's_Laptop.md) | White, Cat5e | Temporary Connection |
@@ -45,7 +44,7 @@ hide:
 ---
 ## :material-tools: Maintenance Notes
 
-> [!TIP] Visual Indicators
+> [!tip inline] Visual Indicators
 > #### Ethernet Ports: 
 > 
 > * **Green LED:** 2500 Mb/s Link 
@@ -54,7 +53,7 @@ hide:
 > #### SFP+ Port: 
 > 
 > * **Green LED:** 10 Gb/s Link 
-> * **Amber LED:** 1000/2500 Mb/s Link
+> * **Amber LED:** 1000 / 2500 Mb/s Link
 
-> [!WARNING] Troubleshooting
+> [!warning inline] Troubleshooting
 > Hard reboot required if traffic stalls *(unplug power for 60s)*.

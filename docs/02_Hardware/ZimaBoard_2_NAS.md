@@ -6,6 +6,8 @@ tags:
   - file-share
   - virtual_host
   - docker_host
+  - living-room
+  - mini-rack
 hide:
   - toc
 ---
@@ -44,8 +46,8 @@ hide:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
-| vlan50 | `storage-server.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
-| vlan50 | `storage-server-2.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `storage-server.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `storage-server-2.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 
 ## :material-folder-open: Storage & Mounts
 

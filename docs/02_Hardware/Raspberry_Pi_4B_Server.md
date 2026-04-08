@@ -6,6 +6,8 @@ tags:
   - infrastructure
   - docker_host
   - network
+  - office
+  - printer-cart
 hide:
   - toc
 ---
@@ -33,14 +35,14 @@ hide:
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | eth0 | `192.168.50.2` | `E4:5F:01:A4:60:07` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
-| wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | :material-wifi:&nbsp;*2G_IoT (vlan53)* |
+| wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | :material-wifi:&nbsp;2G_IoT *(vlan53)* |
 
 #### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
-| vlan50 | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
-| vlan53 | - | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
+| :material-security:&nbsp;vlan50 | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
+| :material-home-automation:&nbsp;vlan53 | - | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -65,7 +67,7 @@ hide:
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
 | *Active* | :material-printer:&nbsp;[CUPS Print Server](../03_Services/CUPS_Print_Server.md) | `631` | Print server for `Brother_HL-L2300D_series` laser printer. |
-| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
 | *Active* | :simple-syncthing:&nbsp;[[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. |
 | *Active* | :services-technitium:&nbsp;[[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. | 
 
@@ -87,7 +89,8 @@ hide:
  
 ---
 ## :material-tools: Maintenance & Notes
-> [!important] Critical Configurations
+
+> [!important inline] Critical Configurations
 > #### :material-clock-outline: Chrony:
 > * Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
 > 

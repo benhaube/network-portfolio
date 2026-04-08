@@ -5,6 +5,7 @@ tags:
   - router
   - infrastructure
   - office
+  - printer-cart
 hide:
   - toc
 ---
@@ -38,7 +39,7 @@ hide:
 
 | VLAN | Domain | DNS Server(s) | Gateway | Subnet | Subnet Mask | Broadcast | DHCP Range |
 | :--: | :----- | :------------ | :------ | :----- | :---------- | :-------- | :--------- |
-| *vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
+| :material-security:&nbsp;*vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 

@@ -4,6 +4,7 @@ tags:
   - network
   - server
   - 3D-printer
+  - office
 hide:
   - toc
 ---
@@ -15,21 +16,21 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
+> [!links inline end]+ More K1C Info
+> *See more detailed information about the Creality&copy; K1C hardware:* 
+>
+> [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
+
 * **Role:** 3D-Printer
 * **Hostname(s):** `k1c-a71e`
 * **Location:** 
     * Office
 * **OS / Firmware:**
     * :devices-creality:&nbsp;Creality&copy; FW Version: 1.3.3.46
-    * :simple-linux:&nbsp;Buildroot 2020.02.1
+    * :material-linux:&nbsp;Buildroot 2020.02.1
     * :services-klipper:&nbsp;Klipper 0.13.0
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
-
-> [!info]+
-> *See more detailed information about the Creality&copy; K1C hardware:* 
->
-> [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
 ## :material-lan: Network Configuration
 
@@ -37,13 +38,13 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| wlan0 | `192.168.50.153` | `FC:EE:28:09:A7:1E` | :material-wifi:&nbsp;*Home (vlan50)* |
+| wlan0 | `192.168.50.153` | `FC:EE:28:09:A7:1E` | :material-wifi:&nbsp;Home *(vlan50)* |
 
 #### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
-| vlan50 | `k1c-a71e.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `k1c-a71e.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -74,7 +75,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!NOTE]+ Modifications:
+> [!note]+ Modifications:
 > #### :material-chip: Firmware:
 > + The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/) for configuration issues.
 > 

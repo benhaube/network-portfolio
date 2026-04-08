@@ -31,7 +31,7 @@ hide:
 ## :material-cpu-64-bit: Resource Allocation
 * **vCPU:** 2 Cores
 * **RAM:** 2 GB
-* **Storage:** 50GB Virtual Disk Image
+* **Storage:** 50 GB VDI
     * *Disk Location on Host:* `/media/nvme0n1p1/VM/debian-vm/cd175b11` 
 
 ## :material-lan: Network Configuration
@@ -46,7 +46,7 @@ hide:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--- | :---------- | :---------- | :------ |
-| vlan50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
+| :material-security:&nbsp;vlan50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
 
 ## :material-web: Services / Docker Containers
 
@@ -54,7 +54,7 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
 | *Active* | :services-technitium:&nbsp;[[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. |
 
 #### :material-docker: Docker:

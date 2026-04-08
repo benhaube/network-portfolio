@@ -7,7 +7,7 @@ tags:
   - remote-access
   - dns
   - IoT
-  - living_room
+  - living-room
 hide:
   - toc
 ---
@@ -41,9 +41,9 @@ hide:
 
 | VLAN | Domain | DNS Server(s) | Gateway | Subnet | Subnet Mask | Broadcast | DHCP Range |
 | :--: | :----- | :------------ | :------ | :----- | :---------- | :-------- | :--------- |
-| *vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
-| *vlan52* | - | `9.9.9.9` `149.112.112.112` | `192.168.52.1` | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.255` | `.2` to `.254` |
-| *vlan53* | - | `9.9.9.9` `149.112.112.112` | `192.168.53.1` | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.255` | `.2` to `.254` |
+| :material-security:&nbsp;*vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
+| :material-account-multiple:&nbsp;*vlan52* | - | `9.9.9.9` `149.112.112.112` | `192.168.52.1` | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.255` | `.2` to `.254` |
+| :material-home-automation:&nbsp;*vlan53* | - | `9.9.9.9` `149.112.112.112` | `192.168.53.1` | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.255` | `.2` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 
@@ -87,7 +87,7 @@ hide:
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
 | *Active* | :material-clock-outline:&nbsp;Chrony | `123` | Network time server. |
-| *Active* | :material-console-network:&nbsp;[SSH (Secure Shell)](../03_Services/SSH.md) | `22` | Remote terminal access. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
 | *Active* | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md) | `41820` | Remote access VPN server. |
 
 ---

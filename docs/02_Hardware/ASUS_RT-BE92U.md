@@ -7,6 +7,7 @@ tags:
   - remote-access
   - dns
   - IoT
+  - living_room
 hide:
   - toc
 ---
@@ -23,7 +24,7 @@ hide:
 * **Location:** 
     * Living-Room
 * **OS / Firmware:** 
-    * :material-router-network-wireless:&nbsp;[asuswrt-merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
+    * :material-router-wireless:&nbsp;[asuswrt-merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 * **Credentials:** 
     * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
@@ -33,7 +34,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| WAN0 | `DHCP` | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5Gb/s WAN/LAN (Port 1) |
+| WAN0 | `DHCP` | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5 Gb/s WAN / LAN (Port 1) |
 | WAN1 | `disabled` | `xx:xx:xx:xx:xx:xx` | - |
 
 #### :material-lan: Local Networks:
@@ -48,23 +49,20 @@ hide:
 
 | SSID | VLAN | IP Address | Frequency | Notes |  
 | :--: | :--: | :--------- | :-------- | :---- |
-| *Home* | *vlan50* | `192.168.50.0/24` | 2.4GHz, 5GHz, 6GHz | Main Wi-Fi Network |
-| *Home_Guest* | *vlan52* | `192.168.52.0/24` | 2.4GHz, 5GHz | Guest Wi-Fi Network |
-| *2G_IoT* | *vlan53* | `192.168.53.0/24` | 2.4GHz | Main IoT Network |
+| *Home* | *vlan50* | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :material-security:&nbsp;Trusted VLAN |
+| *Home_Guest* | *vlan52* | `192.168.52.0/24` | 2.4 GHz, 5 GHz | :material-account-multiple:&nbsp;Guest VLAN |
+| *2G_IoT* | *vlan53* | `192.168.53.0/24` | 2.4 GHz | :material-home-automation:&nbsp;IoT VLAN |
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-> [!info]-
-> *Use this table to track physical cabling.*
-
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
-| 10Gb WAN/LAN 1 | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10 Gb/s Uplink |
-| 2.5Gb WAN/LAN 2 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md) | Black Cat6a | WAN Connection |
-| 2.5Gb LAN 1 | :material-ethernet:&nbsp;Mini-Rack | Black Cat6a | Spare Keystone Jack |
-| 2.5Gb LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
-| 2.5Gb LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
-| 2.5Gb LAN 4 | :material-ethernet:&nbsp;*Empty* | - | - |
+| 10 Gb WAN / LAN 1 | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10 Gb/s Uplink |
+| 2.5 Gb WAN / LAN 2 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md) | Black Cat6a | WAN Connection |
+| 2.5 Gb LAN 1 | :material-ethernet:&nbsp;Mini-Rack | Black Cat6a | Spare Keystone Jack |
+| 2.5 Gb LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
+| 2.5 Gb LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
+| 2.5 Gb LAN 4 | :material-ethernet:&nbsp;*Empty* | - | - |
 
 ## :material-folder-open: Storage & Mounts
 
@@ -95,7 +93,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!note] Critical Configurations
+> [!note inline] Critical Configurations
 > Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
 > 
 > [Documentation](https://github.com/RMerl/asuswrt-merlin.ng/wiki) for asuswrt-merlin.

@@ -122,6 +122,7 @@
 *[UUID]: Universally Unique Identifier
 *[vCPU]: Virtual Central Processing Unit
 *[vCPUs]: Virtual Central Pricessing Units
+*[VDI]: Virtual Disk Image
 *[VLAN]: Virtual Local Area Network
 *[VLANs]: Virtual Local Area Networks
 *[VM]: Virtual Machine

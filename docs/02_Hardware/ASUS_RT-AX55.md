@@ -4,6 +4,7 @@ tags:
   - network
   - router
   - infrastructure
+  - office
 hide:
   - toc
 ---
@@ -14,6 +15,7 @@ hide:
 
 ---
 ## :material-information-outline: Device Overview
+
 * **Role:** AiMesh Node
 * **Hostname(s):** `aimesh-node`
 * **Location:** 
@@ -42,16 +44,13 @@ hide:
 
 | SSID | VLAN | IP Address | Frequency | Notes |  
 | :--: | :--: | :--------- | :-------- | :---- |
-| *Home* | *vlan50* | `192.168.50.0/24` | 2.4GHz, 5GHz | Main Wi-Fi Network |
+| *Home* | *vlan50* | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-> [!info]-
-> *Use this table to track physical cabling.*
-
 | Port | Connected Device | Color / Type | Notes |
 | :--: | :--------------- | :----------- | :---- |
-| WAN 1 | :material-ethernet:&nbsp;*Empty* | - | Wi-Fi 5GHz Backhaul |
+| WAN 1 | :material-ethernet:&nbsp;*Empty* | - | Wi-Fi *(5 GHz)* Backhaul |
 | LAN 1 | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black Cat6a | 1 Gb/s Uplink |
 | LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
 | LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
@@ -59,7 +58,8 @@ hide:
 
 ---
 ## :material-tools: Maintenance & Notes
-> [!NOTE] Critical Configurations
+
+> [!note inline] Critical Configurations
 > **AiMesh Node:**
 > + All settings for AiMesh node are available through the main router's Web UI. See [[ASUS_RT-BE92U|ASUS RT-BE92U]].
 

@@ -32,8 +32,8 @@ theme:
         icon: material/brightness-4
         name: Switch to auto mode
   font:
-    text: Noto Sans
-    code: Noto Sans Mono
+    text: Google Sans Flex
+    code: Google Sans Code
   # -- Icon Settings--
   icon:
     logo: material/file-document-multiple
@@ -164,6 +164,16 @@ plugins:
       log: true
       log_level: warn
   - blog
+  - privacy:
+      enabled: true
+      cache: true
+      cache_dir: .cache/plugins/privacy
+      log: true
+      assets: true
+      assets_fetch: true
+      assets_fetch_dir: assets/external
+      links: true
+      links_noopener: true
 
 # --- Watch directories outside of /docs --- 
 watch:

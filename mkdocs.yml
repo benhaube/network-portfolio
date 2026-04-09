@@ -164,16 +164,6 @@ plugins:
       log: true
       log_level: warn
   - blog
-  - privacy:
-      enabled: true
-      cache: true
-      cache_dir: .cache/plugins/privacy
-      log: true
-      assets: true
-      assets_fetch: true
-      assets_fetch_dir: assets/external
-      links: true
-      links_noopener: true
 
 # --- Watch directories outside of /docs --- 
 watch:

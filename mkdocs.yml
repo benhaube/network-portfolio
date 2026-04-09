@@ -30,7 +30,7 @@ theme:
       accent: light blue
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to auto mode
   font:
     text: Noto Sans
     code: Noto Sans Mono

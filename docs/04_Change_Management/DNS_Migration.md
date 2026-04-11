@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-![[pi-hole.svg|150]]&nbsp;![[arrow-right-bold.svg|100]]&emsp;![[technitium.svg|150]]
+![[pi-hole.svg|150]]&nbsp;![[arrow-right-bold.svg|100]]&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
 
 ---
 

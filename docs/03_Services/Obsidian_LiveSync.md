@@ -50,7 +50,7 @@ services:
         reservations:
           devices: []
     environment:
-      - COUCHDB_PASSWORD=nsuq3BHmzq$$!3488
+      - COUCHDB_PASSWORD=password # (1)!
       - COUCHDB_USER=bhaube
     image: couchdb:3.5.0
     labels:
@@ -139,6 +139,8 @@ x-casaos:
     custom: ""
     en_us: Obsidian Livesync
 ```
+
+1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI. 
 
 #### :material-account: Clients:
 

@@ -11,7 +11,8 @@ tags:
 hide:
   - toc
 ---
-![[raspberry-pi.svg|200]]
+![Raspberry Pi Icon](../assets/icons/raspberry-pi-light.svg#only-light){ width=200 }
+![Raspberry Pi Icon](../assets/icons/raspberry-pi-dark.svg#only-dark){ width=200 }
 
 # [[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
 [Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }

@@ -2,7 +2,8 @@
 hide:
   - toc
 ---
-![[nozzle-cleaning-macro-v2.png|500]]
+![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-light.png#only-light){ width=500 }
+![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-dark.png#only-dark){ width=500 }
 
 # [[Manual_Nozzle_Cleaning_Gcode_Macro|Interactive Manual Nozzle Cleaning Macro]]
 

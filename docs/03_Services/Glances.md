@@ -220,7 +220,7 @@ x-casaos:
 
 #### Config File:
 
-```toml title="glances.conf" linenums="1"
+```ini title="glances.conf" linenums="1"
 ##############################################################################
 # Globals Glances parameters
 ##############################################################################

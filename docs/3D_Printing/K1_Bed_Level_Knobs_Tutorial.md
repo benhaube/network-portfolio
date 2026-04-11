@@ -2,7 +2,8 @@
 hide:
   - toc
 ---
-![[bed-knobs-mod-2.png|400]]
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=400 }
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=400 }
 
 # [[K1_Bed_Level_Knobs_Tutorial|Manual Bed Leveling Mod]]
 

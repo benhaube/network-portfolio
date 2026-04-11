@@ -39,7 +39,7 @@ hide:
 
 #### [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:
 
-```toml title="/etc/samba/smb.conf" linenums="1"
+```ini title="/etc/samba/smb.conf" linenums="1"
 [global]  
  workgroup = WORKGROUP  
  server string = pi-server %v  
@@ -56,7 +56,7 @@ hide:
 
 #### [[ZimaBoard_2_NAS|ZimaOS NAS]] Config:
 
-```toml title="/etc/samba/smb.conf" linenums="1"
+```ini title="/etc/samba/smb.conf" linenums="1"
 # custom config  
   
 [global]  
@@ -75,7 +75,7 @@ include = /etc/samba/casa.%U.conf
 
 + **Individual User Configuration Files:**
 
-    ```toml title="/etc/samba/casa.admin.conf" linenums="1"
+    ```ini title="/etc/samba/casa.admin.conf" linenums="1"
     [ZimaOS-HD]  
     browseable = yes  
     guest ok = No  
@@ -181,7 +181,7 @@ include = /etc/samba/casa.%U.conf
     directory mask = 0777
     ```
     
-    ```toml title="/etc/samba/casa.bhaube.conf" linenums="1"
+    ```ini title="/etc/samba/casa.bhaube.conf" linenums="1"
     [Quick-Storage]  
     browseable = yes  
     guest ok = No  
@@ -196,7 +196,7 @@ include = /etc/samba/casa.%U.conf
     directory mask = 0777
     ```
     
-    ```toml title="/etc/samba/casa.rpereira.conf" linenums="1"    
+    ```ini title="/etc/samba/casa.rpereira.conf" linenums="1"    
     [Quick-Storage]  
     browseable = yes  
     guest ok = No  

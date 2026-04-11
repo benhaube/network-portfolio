@@ -44,7 +44,7 @@ theme:
       3D-printer: material/printer-3d-nozzle
       isp: material/wan
       iot: material/home-automation
-      active: material/check-circle-outline
+      active: material/check
       backup: material/cloud-upload-outline
       dashboard: material/view-dashboard
       desktop: material/desktop-tower
@@ -55,13 +55,14 @@ theme:
       download: material/download
       file-share: material/share
       hardware: material/router-wireless
-      inactive: material/close-circle-outline
+      inactive: material/close
       infra: material/router-network
       inventory: material/list-box-outline
       laptop: material/laptop
       living-room: material/sofa
       map: material/sitemap
       mini-rack: devices/10-inch-rack
+      mobile: material/tablet-cellphone
       monitor: material/monitor-eye
       nas: material/nas
       network: material/lan 

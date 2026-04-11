@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-![[google-photos.svg|150]]&nbsp;![[arrow-right-bold.svg|100]]&nbsp;![[immich.svg|150]]
+![[google-photos.svg|150]]&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&nbsp;![[immich.svg|150]]
 
 # [[Immich_Slideshow_for_Nest_Hub|Project Migration: Google Photos --> Self-Hosted Ecosystem]]
 

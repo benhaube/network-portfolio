@@ -2,9 +2,9 @@
 hide:
   - toc
 ---
-![[pi-hole.svg|150]]&nbsp;![[arrow-right-bold.svg|100]]&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
+![[pi-hole.svg|150]]&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
 
----
+# [[DNS_Migration|DNS Migration]]
 
 ## :material-file-document: Phase 1: Pre-Migration & Documentation
 1. **Export Pi-hole Data:** 

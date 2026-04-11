@@ -54,6 +54,7 @@ theme:
       domain: material/domain
       download: material/download
       file-share: material/share
+      hardware: material/router-wireless
       inactive: material/close-circle-outline
       infra: material/router-network
       inventory: material/list-box-outline
@@ -194,6 +195,7 @@ extra:
     - icon: simple/bluesky
       link: https://bsky.app/profile/rac3r4life.me
   generator: false
+  # Tag definitions for custom tag icons ^^ above ^^
   tags:
     3D-printer: 3D-printer
     ISP: isp

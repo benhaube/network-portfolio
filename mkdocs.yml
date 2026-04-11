@@ -80,7 +80,7 @@ theme:
       switch: material/switch
       tools: material/tools
       video: material/video
-      vh: material/network-pos
+      vh: simple/qemu
       vm: material/network-pos
       vpn: material/vpn
     top: material/arrow-up-bold

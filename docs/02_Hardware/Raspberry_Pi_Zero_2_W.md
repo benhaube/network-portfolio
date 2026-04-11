@@ -74,7 +74,7 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!important inline] Critical Configurations
-> #### :material-clock-outline: Chrony:
+> #### :material-web-clock: Chrony:
 > * Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
 > 
 > #### :material-text-long: Logs:

@@ -77,7 +77,7 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!NOTE]+ Critical Configurations
-> 1. **:material-clock-outline: Chrony:** 
+> 1. **:material-web-clock: Chrony:** 
 >     + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
 > 
 > 2. **:material-cloud-upload-outline: Backup:** 

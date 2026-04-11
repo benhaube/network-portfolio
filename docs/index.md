@@ -45,7 +45,7 @@ hide:
 1. :services-beszel:&ensp;[[Beszel_Agent|Beszel Agent]]: Agent for *[[Beszel_Hub|Beszel Hub]]*, a server utilization monitor. 
 2. :services-beszel:&ensp;[[Beszel_Hub|Beszel Hub]]: A self-hosted server utilization monitor.
 3. :services-caddy:&ensp;[[Caddy]]: Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
-4. :material-clock-outline:&nbsp;[[Chrony|Chrony *(NTP Server)*]]: Advanced, lightweight NTP client and server.
+4. :material-web-clock:&nbsp;[[Chrony|Chrony *(NTP Server)*]]: Advanced, lightweight NTP client and server.
 5. :services-cloudflare:&ensp;[[Cloudflared]]: A secure reverse-proxy tunnel for hosting private services. Currently, *[[Immich]]* and *[[Uptime_Kuma|Uptime Kuma]]* are utilizing this service. 
 6. :material-printer:&ensp;[[CUPS_Print_Server|CUPS Print Server]]: Print server for USB-connected `Brother_HL-L2300D_series` laser printer. 
 7. :services-dockge:&ensp;[[Dockge]]: A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.

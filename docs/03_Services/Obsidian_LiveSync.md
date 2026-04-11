@@ -144,7 +144,7 @@ x-casaos:
 
 #### :material-devices: Clients:
 
-```json linenums="1"
+```json title="<Vault Dir>/.obsidian/plugins/obsidian-livesync/data.json" linenums="1"
 {
   "remoteType": "",
   "useCustomRequestHandler": false,

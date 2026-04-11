@@ -208,14 +208,14 @@ hide:
 
 #### Suppress MOTD:
 
+> [!warning inline end] Warning
+> `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
+
 1. Run this command to clear MOTD file:
 
     ```bash linenums="1"
     sudo truncate -s 0 /etc/motd
     ```
-
-> [!warning] Warning
-> `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
 
 #### Suppress Dynamic MOTD:
 

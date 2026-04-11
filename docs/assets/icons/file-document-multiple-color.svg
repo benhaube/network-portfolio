@@ -5,6 +5,9 @@
    id="svg1"
    sodipodi:docname="file-document-multiple-color.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:export-filename="favicon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -190,6 +193,6 @@
   <path
      d="m 15,7 h 5.5 L 15,1.5 V 7 M 8,0 h 8 l 6,6 v 12 c 0,1.11 -0.89,2 -2,2 H 8 C 6.89,20 6,19.1 6,18 V 2 C 6,0.89 6.89,0 8,0 m 9,16 V 14 H 8 v 2 h 9 m 3,-4 V 10 H 8 v 2 z"
      id="path4"
-     style="display:inline;fill:#02a6f2;fill-opacity:1;filter:url(#filter6)"
+     style="display:inline;fill:#0091eb;fill-opacity:1;filter:url(#filter6)"
      sodipodi:nodetypes="cccccccsssssccccccccccc" />
 </svg>

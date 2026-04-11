@@ -60,8 +60,8 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="45.254834"
-     inkscape:cx="10.915961"
-     inkscape:cy="12.44066"
+     inkscape:cx="10.927009"
+     inkscape:cy="12.462757"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -73,7 +73,7 @@
      style="filter:url(#filter6)">
     <path
        id="path1"
-       style="display:inline;fill:#02a6f2;fill-opacity:1"
+       style="display:inline;fill:#0091eb;fill-opacity:1"
        d="m 11,17 v 2 h 2 v -2 z m -9,3 v 2 h 7 v -2 z m 13,0 v 2 h 7 v -2 z"
        inkscape:label="wire" />
     <path

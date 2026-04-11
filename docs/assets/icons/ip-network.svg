@@ -60,7 +60,7 @@
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#818181"
      inkscape:zoom="22.627417"
-     inkscape:cx="7.9991455"
+     inkscape:cx="8.0212425"
      inkscape:cy="13.258252"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
@@ -82,11 +82,11 @@
        d="m 10.892578,16.427734 v 2.214844 h 2.214844 V 16.427734 Z M 0.9296875,19.75 v 2.212891 h 7.75 V 19.75 Z m 14.3906245,0 v 2.212891 h 7.75 V 19.75 Z" />
     <path
        id="path2"
-       style="display:inline;fill:#02a6f2;fill-opacity:1;stroke-width:0.4;stroke:none;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:round;paint-order:normal;stroke-linecap:round"
+       style="display:inline;fill:#0091eb;fill-opacity:1;stroke-width:0.4;stroke:none;stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:round;paint-order:normal;stroke-linecap:round"
        d="M 6.4648438 0.9296875 C 5.2420493 0.92968756 4.25 1.9217369 4.25 3.1445312 L 4.25 14.214844 C 4.2500001 15.437638 5.2420495 16.427734 6.4648438 16.427734 L 17.535156 16.427734 C 18.75795 16.427734 19.75 15.437638 19.75 14.214844 L 19.75 3.1445312 C 19.75 1.921737 18.75795 0.92968761 17.535156 0.9296875 L 6.4648438 0.9296875 z M 6.4648438 3.1445312 L 8.6796875 3.1445312 L 8.6796875 14.214844 L 6.4648438 14.214844 L 6.4648438 3.1445312 z M 10.892578 3.1445312 L 15.320312 3.1445312 C 16.543107 3.1445313 17.535156 4.1346275 17.535156 5.3574219 L 17.535156 7.5722656 C 17.535156 8.79506 16.543107 9.7851562 15.320312 9.7851562 L 13.107422 9.7851562 L 13.107422 14.214844 L 10.892578 14.214844 L 10.892578 3.1445312 z M 13.107422 5.3574219 L 13.107422 7.5722656 L 15.320312 7.5722656 L 15.320312 5.3574219 L 13.107422 5.3574219 z " />
     <path
        id="path4"
-       style="display:inline;fill:#02a6f2;fill-opacity:0.98823529;stroke-width:0.4;stroke:none;stroke-opacity:1;stroke-dasharray:none"
+       style="display:inline;fill:#0091eb;fill-opacity:0.98823529;stroke-width:0.4;stroke:none;stroke-opacity:1;stroke-dasharray:none"
        d="M 9.7851562 18.642578 C 9.1737592 18.642578 8.6796878 19.138603 8.6796875 19.75 L 8.6796875 21.962891 C 8.6796873 22.574288 9.1737589 23.070312 9.7851562 23.070312 L 14.214844 23.070312 C 14.826242 23.070312 15.320312 22.574289 15.320312 21.962891 L 15.320312 19.75 C 15.320313 19.138603 14.826241 18.642578 14.214844 18.642578 L 13.107422 18.642578 L 10.892578 18.642578 L 9.7851562 18.642578 z " />
   </g>
 </svg>

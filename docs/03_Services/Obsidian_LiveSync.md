@@ -142,7 +142,7 @@ x-casaos:
 
 1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI. 
 
-#### :material-account: Clients:
+#### :material-devices: Clients:
 
 ```json linenums="1"
 {

@@ -49,7 +49,7 @@ hide:
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-#### Pi-hole Config file: `pihole.toml`
+#### Pi-hole Config file:
 
 ```toml title="/etc/pihole/pihole.toml" linenums="1"
 # Pi-hole configuration file (v6.4.1)

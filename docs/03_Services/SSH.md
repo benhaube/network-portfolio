@@ -53,7 +53,7 @@ hide:
 
 ## :material-cog: Configuration 
 
-### :material-server-outline: Servers:
+### :material-server: Servers:
 
 #### SSH Config File:
 
@@ -272,7 +272,7 @@ hide:
 > The SSH servers on the network have email login notifications configured to notify in the case of unwanted access.<br>
 > More information regarding setup and configuration can be found [[Setup_SSH_Login_Email_Notification|here]].
 
-### :material-account: Clients:
+### :material-devices: Clients:
 
 #### Bitwarden SSH Key Agent:
 

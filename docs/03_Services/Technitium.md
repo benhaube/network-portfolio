@@ -51,7 +51,7 @@ curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 
 #### Zones:
 
-```text title="50.168.192.in-addr.arpa"
+```conf title="50.168.192.in-addr.arpa"
 $ORIGIN 50.168.192.in-addr.arpa.
 @                     0         IN  SOA           debian-vm.internal. invalid. 14 900 300 604800 900
 @                     0         IN  FWD           Udp "192.168.50.1" True DefaultProxy 0
@@ -66,7 +66,7 @@ $ORIGIN 50.168.192.in-addr.arpa.
 61                    3600      IN  PTR           bens-workstation.internal.
 ```
 
-```text title="internal"
+```conf title="internal"
 $ORIGIN internal.
 @                     900       IN  SOA           debian-vm admin.haube-pereira.com. 145 900 300 604800 900
 @                     14400     IN  NS            debian-vm
@@ -152,7 +152,7 @@ yt-dlp                900       IN  NSEC          @ CNAME RRSIG NSEC
 yt-dlp                3600      IN  CNAME         pi-zero			;CNAME alias record for yt-dlp pointing to pi-zero.internal
 ```
 
-```text title="cluster-catalog.internal"
+```conf title="cluster-catalog.internal"
 $ORIGIN cluster-catalog.internal.
 @                     0         IN  SOA           invalid. invalid. 11 300 60 604800 900
 @                     0         IN  NS            invalid.

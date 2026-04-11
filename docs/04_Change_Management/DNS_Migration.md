@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-![[pi-hole.svg|150]] ![[arrow-right-bold.svg|100]] ![[technitium.svg|150]]
+![[pi-hole.svg|150]]&nbsp;![[arrow-right-bold.svg|100]]&emsp;![[technitium.svg|150]]
 
 ---
 

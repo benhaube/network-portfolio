@@ -9,7 +9,8 @@ tags:
 hide:
   - toc
 ---
-![[youtube-dl.svg|200]]
+![YouTube-DL Icon](../assets/icons/youtube-dl-light.svg#only-light){ width=200 }
+![YouTube-DL Icon](../assets/icons/youtube-dl.svg#only-dark){ width=200 }
 
 # [[yt-dlp_WebUI|yt-dlp WebUI]]
 [GitHub :material-github:](https://github.com/marcopiovanello/yt-dlp-web-ui){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/marcopiovanello/yt-dlp-web-ui/wiki){ .md-button }

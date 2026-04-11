@@ -45,39 +45,40 @@ hide:
 1. :services-beszel:&ensp;[[Beszel_Agent|Beszel Agent]]: Agent for *[[Beszel_Hub|Beszel Hub]]*, a server utilization monitor. 
 2. :services-beszel:&ensp;[[Beszel_Hub|Beszel Hub]]: A self-hosted server utilization monitor.
 3. :services-caddy:&ensp;[[Caddy]]: Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
-4. :services-cloudflare:&ensp;[[Cloudflared]]: A secure reverse-proxy tunnel for hosting private services. Currently, *[[Immich]]* and *[[Uptime_Kuma|Uptime Kuma]]* are utilizing this service. 
-5. :material-printer:&ensp;[[CUPS_Print_Server|CUPS Print Server]]: Print server for USB-connected `Brother_HL-L2300D_series` laser printer. 
-6. :services-dockge:&ensp;[[Dockge]]: A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
-7. :services-f1-replay-timing:&ensp;[[F1_Replay_Timing|F1 Replay Timing]]: Visualization of real-time track data and telemetry synced to F1 live and replays.
-8. :services-fluidd:&ensp;[[Fluidd]]: A Web UI for managing the 3D-printer.
-9. :services-glance:&ensp;[[Glance]]: A server dashboard Web UI. 
-10. :services-glances:&ensp;[[Glances]]: A `top` / `htop` alternative for the Web browser. 
-11. :simple-homeassistant:&ensp;[[Home_Assistant|Home Assistant]]: A home automation and IoT dashboard.
-12. :services-homebox:&ensp;[[Homebox]]: An inventory and organization system built for the home user.
-13. :services-immich:&ensp;[[Immich]]: Photo gallery and backup service.
-14. :services-it-tools:&ensp;[[IT-Tools]]: Handy tools for network administrators and developers.
-15. :services-klipper:&ensp;[[Moonraker]]: An API for the *[Klipper](https://www.klipper3d.org/)* firmware.
-16. :material-cog-sync:&ensp;[[Nebula-Sync]]: Synchronize settings between *[Pi-hole](https://pi-hole.net)* instances.
-17. :services-nextcloud:&ensp;[[Nextcloud]]: Self-hosted cloud storage and collaboration platform.
-18. :material-folder-network:&ensp;[[NFS|Network File System (NFS)]]: Remote file system access.
-19. :simple-nginx:&ensp;[[Nginx|Nginx (Network Portfolio)]]: The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
-20. :material-ethernet:&ensp;[[ntopng]]: Network traffic probe.
-21. :simple-obsidian:&ensp;[[Obsidian_LiveSync|Obsidian LiveSync]]: A CouchDB database for synchronizing *[Obsidian](https://obsidian.md)* Vaults.
-22. :services-openspeedtest:&ensp;[[OpenSpeedTest]]: An HTML5 network speed test server.
-23. :simple-pihole:&ensp;[[Pi-hole]]: A DNS server and ad/malware blocker.
-24. :services-portainer:&ensp;[[Portainer]]: A *[Docker](https://www.docker.com)* container management platform. 
-25. :services-portainer:&ensp;[[Portainer_Agent|Portainer Agent]]: An agent for connecting remote servers to *[[Portainer]]*.
-26. :services-portracker:&ensp;[[Portracker]]: A self-hosted, real-time port monitoring and discovery tool.
-27. :material-remote-desktop:&ensp;[[RDP|Remote Desktop Protocol (RDP)]]: Remote desktop access over the local network. *(not exposed to the internet)*
-28. :material-folder-network:&ensp;[[SMB|Server Message Block (SMB)]]: Remote file system access.
-29. :services-spoolman:&ensp;[[Spoolman]]: Manage 3D-printer filament inventory.
-30. :material-console-network:&ensp;[[SSH|Secure Shell (SSH)]]: Remote shell access to servers
-31. :simple-syncthing:&ensp;[[Syncthing]]: Open decentralized file synchronization.
-32. :services-technitium:&ensp;[[Technitium]]: An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
-33. :simple-gnubash:&ensp;[[ttydBridge]]: Access the host terminal in a Web browser.
-34. :services-uptime-kuma:&ensp;[[Uptime_Kuma|Uptime Kuma]]: A self-hosted service monitoring tool.
-35. :simple-wireguard:&ensp;[[WireGuard_Server|WireGuard Server]]: A lightweight, secure remote access VPN server.
-36. :services-youtube-dl:&ensp;[[yt-dlp_WebUI|yt-dlp WebUI]]: A Web UI and RPC server for yt-dlp.
+4. :material-clock-outline:&nbsp;[[Chrony|Chrony *(NTP Server)*]]: Advanced, lightweight NTP client and server.
+5. :services-cloudflare:&ensp;[[Cloudflared]]: A secure reverse-proxy tunnel for hosting private services. Currently, *[[Immich]]* and *[[Uptime_Kuma|Uptime Kuma]]* are utilizing this service. 
+6. :material-printer:&ensp;[[CUPS_Print_Server|CUPS Print Server]]: Print server for USB-connected `Brother_HL-L2300D_series` laser printer. 
+7. :services-dockge:&ensp;[[Dockge]]: A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
+8. :services-f1-replay-timing:&ensp;[[F1_Replay_Timing|F1 Replay Timing]]: Visualization of real-time track data and telemetry synced to F1 live and replays.
+9. :services-fluidd:&ensp;[[Fluidd]]: A Web UI for managing the 3D-printer.
+10. :services-glance:&ensp;[[Glance]]: A server dashboard Web UI. 
+11. :services-glances:&ensp;[[Glances]]: A `top` / `htop` alternative for the Web browser. 
+12. :simple-homeassistant:&ensp;[[Home_Assistant|Home Assistant]]: A home automation and IoT dashboard.
+13. :services-homebox:&ensp;[[Homebox]]: An inventory and organization system built for the home user.
+14. :services-immich:&ensp;[[Immich]]: Photo gallery and backup service.
+15. :services-it-tools:&ensp;[[IT-Tools]]: Handy tools for network administrators and developers.
+16. :services-klipper:&ensp;[[Moonraker]]: An API for the *[Klipper](https://www.klipper3d.org/)* firmware.
+17. :material-cog-sync:&ensp;[[Nebula-Sync]]: Synchronize settings between *[Pi-hole](https://pi-hole.net)* instances.
+18. :services-nextcloud:&ensp;[[Nextcloud]]: Self-hosted cloud storage and collaboration platform.
+19. :material-folder-network:&ensp;[[NFS|Network File System (NFS)]]: Remote file system access.
+20. :simple-nginx:&ensp;[[Nginx|Nginx *(Network Portfolio)*]]: The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
+21. :material-ethernet:&ensp;[[ntopng]]: Network traffic probe.
+22. :simple-obsidian:&ensp;[[Obsidian_LiveSync|Obsidian LiveSync *(CouchDB)*]]: A CouchDB database for synchronizing *[Obsidian](https://obsidian.md)* Vaults.
+23. :services-openspeedtest:&ensp;[[OpenSpeedTest]]: An HTML5 network speed test server.
+24. :simple-pihole:&ensp;[[Pi-hole]]: A DNS server and ad/malware blocker.
+25. :services-portainer:&ensp;[[Portainer]]: A *[Docker](https://www.docker.com)* container management platform. 
+26. :services-portainer:&ensp;[[Portainer_Agent|Portainer Agent]]: An agent for connecting remote servers to *[[Portainer]]*.
+27. :services-portracker:&ensp;[[Portracker]]: A self-hosted, real-time port monitoring and discovery tool.
+28. :material-remote-desktop:&ensp;[[RDP]]: Remote desktop access over the local network. *(not exposed to the internet)*
+29. :material-folder-network:&ensp;[[SMB]]: Remote file system access.
+30. :services-spoolman:&ensp;[[Spoolman]]: Manage 3D-printer filament inventory.
+31. :material-console-network:&ensp;[[SSH]]: Remote shell access to servers
+32. :simple-syncthing:&ensp;[[Syncthing]]: Open decentralized file synchronization.
+33. :services-technitium:&ensp;[[Technitium]]: An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
+34. :simple-gnubash:&ensp;[[ttydBridge]]: Access the host terminal in a Web browser.
+35. :services-uptime-kuma:&ensp;[[Uptime_Kuma|Uptime Kuma]]: A self-hosted service monitoring tool.
+36. :simple-wireguard:&ensp;[[WireGuard_Server|WireGuard Server]]: A lightweight, secure remote access VPN server.
+37. :services-youtube-dl:&ensp;[[yt-dlp_WebUI|yt-dlp WebUI]]: A Web UI and RPC server for yt-dlp.
 
 ---
 ## :material-swap-horizontal-bold: Change Management
@@ -102,7 +103,7 @@ hide:
 ### :material-tools: Modifications
 1. :material-cog:&ensp;[[K1_Bed_Level_Knobs_Tutorial|Bed Leveling Knobs]]: Installing a bed leveling modification on the [[Kacey_3D-printer|Creality K1C]].
 2. :material-code-block-tags:&ensp;[[Manual_Nozzle_Cleaning_Gcode_Macro|Manual Nozzle Cleaning G-Code Macro]]: Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
-3. :devices-prowiper:&ensp;[[PROWIPER_Mod|PROWIPER© Mod]]: Installing the PROWIPER© Mod, and editing the required g-code on the [[Kacey_3D-printer|Creality K1C]].
+3. :devices-prowiper:&ensp;[[PROWIPER_Mod|PROWIPER^&copy;^ Mod]]: Installing the PROWIPER© Mod, and editing the required g-code on the [[Kacey_3D-printer|Creality K1C]].
 
 ---
 ## :material-linux: Linux Tutorials

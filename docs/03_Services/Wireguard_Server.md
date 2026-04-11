@@ -11,7 +11,8 @@ tags:
 hide:
   - toc
 ---
-![[wireguard-rounded-square.svg|200]]
+![WireGuard Icon](../assets/icons/wireguard-rounded-square-light.svg#only-light){ width=200 }
+![WireGuard Icon](../assets/icons/wireguard-rounded-square.svg#only-dark){ width=200 }
 
 # [[WireGuard_Server|WireGuard Server]]
 [GitHub :material-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://wg-easy.github.io/wg-easy/latest/){ .md-button }

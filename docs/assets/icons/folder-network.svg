@@ -16,9 +16,9 @@
        inkscape:label="Drop Shadow"
        id="filter6"
        x="-0.036000001"
-       y="-0.036000001"
+       y="-0.056000002"
        width="1.097"
-       height="1.097">
+       height="1.117">
       <feFlood
          result="flood"
          in="SourceGraphic"
@@ -61,7 +61,7 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="45.254834"
      inkscape:cx="10.927009"
-     inkscape:cy="12.462757"
+     inkscape:cy="15.114407"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -81,12 +81,12 @@
        id="path2"
        sodipodi:nodetypes="csccssccscc"
        style="display:inline;fill:#4cae4f;fill-opacity:1"
-       inkscape:label="bottom" />
+       inkscape:label="box" />
     <path
        d="M 3,15 V 5 C 3,3.8954305 3.8954305,3 5,3 h 6 l 2,2 h 6 c 1.104569,0 2,0.8954305 2,2 v 8 c 0,1.104569 -0.895431,2 -2,2 H 13 11 5 C 3.8954305,17 3,16.104569 3,15 Z"
        id="path3"
-       style="display:inline;fill:#4cae4f;fill-opacity:1"
+       style="display:inline;fill:#4cae4f;fill-opacity:1;stroke:#0091eb;stroke-opacity:1;stroke-width:0.8;stroke-dasharray:none"
        sodipodi:nodetypes="sssccssssccss"
-       inkscape:label="top" />
+       inkscape:label="folder" />
   </g>
 </svg>

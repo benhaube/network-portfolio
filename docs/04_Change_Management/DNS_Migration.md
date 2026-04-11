@@ -12,9 +12,9 @@ hide:
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary :simple-raspberrypi:&nbsp;*([[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]])*: `192.168.50.2` 
-    + [ ] Secondary :simple-debian:&nbsp;*([[Debian_Server_VM|Debian Server VM]])*: `192.168.50.6`
-    + [ ] Tertiary/Failover :simple-raspberrypi:&nbsp;*([[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]])*: `192.168.50.3`
+    + [ ] Primary: :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] -- `192.168.50.2` 
+    + [ ] Secondary: :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]] -- `192.168.50.6`
+    + [ ] Tertiary/Failover: :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]] -- `192.168.50.3`
 
 ## :material-dns: Phase 2: Server Provisioning
 

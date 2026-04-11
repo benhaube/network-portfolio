@@ -11,7 +11,8 @@ tags:
 hide:
   - toc
 ---
-![[technitium.svg|200]]
+![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=200 }
+![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=200 }
 
 # [[Technitium|Technitium DNS Server]]
 [GitHub :material-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://technitium.com/dns/help.html){ .md-button }

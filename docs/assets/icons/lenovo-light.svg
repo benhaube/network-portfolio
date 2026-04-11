@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="lenovo-logo-main-red"
+   width="123.999"
+   height="40"
+   viewBox="0 0 123.999 40"
+   version="1.1"
+   sodipodi:docname="lenovo-light.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="3.4514502"
+     inkscape:cx="86.775118"
+     inkscape:cy="24.627329"
+     inkscape:window-width="2560"
+     inkscape:window-height="1368"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="lenovo-logo-main-red" />
+  <g
+     id="masthead-logo-lenovo-red">
+    <g
+       id="LenovoLogo-POS-1Color"
+       transform="translate(0 0)">
+      <rect
+         id="mask"
+         width="124"
+         height="40"
+         transform="translate(0 0)"
+         fill="#fff"
+         style="fill:#0d0d0d;fill-opacity:1" />
+      <path
+         id="logo-red"
+         d="M0,40V0H124V40Zm25.861-14.9H15.93V8.441H11.5V29.105H25.861Zm15.128-9.558A7.986,7.986,0,0,0,34.7,12.931a8.148,8.148,0,0,0-8.424,8.224c0,4.8,3.631,8.224,8.908,8.224a10.475,10.475,0,0,0,7.393-3.039l-2.763-2.122A6.638,6.638,0,0,1,35.254,25.9a4.86,4.86,0,0,1-3.526-1.287L42.9,19.98a8.622,8.622,0,0,0-1.906-4.439Zm19.495,3.71a6.126,6.126,0,0,0-6.463-6.316,6.613,6.613,0,0,0-5.185,2.547V13.192H44.465V29.1h4.371V20.047a3.411,3.411,0,0,1,3.6-3.363,3.5,3.5,0,0,1,3.677,3.363V29.1h4.371v-9.85Zm10.307-6.316a8.23,8.23,0,1,0,8.521,8.224A8.316,8.316,0,0,0,70.791,12.931ZM91.53,13.2,87.581,24.034,83.629,13.2H78.642l6.545,15.9h4.786l6.545-15.9Zm12.892-.269a8.23,8.23,0,1,0,8.521,8.224,8.316,8.316,0,0,0-8.521-8.224Zm0,12.7a4.333,4.333,0,0,1-4.27-4.478,4.186,4.186,0,0,1,4.208-4.479,4.333,4.333,0,0,1,4.27,4.479A4.217,4.217,0,0,1,104.421,25.629Zm-33.63,0a4.333,4.333,0,0,1-4.27-4.478,4.187,4.187,0,0,1,4.212-4.479A4.333,4.333,0,0,1,75,21.151,4.217,4.217,0,0,1,70.791,25.629ZM31.426,17.991a4.064,4.064,0,0,1,3.36-1.584,3.658,3.658,0,0,1,3.387,2.224L30.538,21.8a5.12,5.12,0,0,1,.883-3.808Z"
+         transform="translate(0 0)"
+         fill="#e1251b" />
+    </g>
+  </g>
+</svg>

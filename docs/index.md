@@ -20,10 +20,11 @@ hide:
 ---
 ## :material-router-wireless: Hardware
 
-> [!links inline end] More Creality K1C Info
-> This page has more detailed information about the Creality K1C 3D-printer.
+> [!links inline end] Extra Links
 > 
 > [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
+> 
+> [Hardware Tags :material-tag:](02_Hardware/tags.md){ .md-button }
 
 1. :material-router-wireless:&ensp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]: Main router for the local network.
 2. :material-router-wireless:&ensp;[[ASUS_RT-AX55|ASUS RT-AX55]]: Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
@@ -41,6 +42,10 @@ hide:
 
 ---
 ## :material-web: Services
+
+> [!links inline end] Extra Links
+>
+> [Services Tags :material-tag:](03_Services/tags.md){ .md-button }
 
 1. :services-beszel:&ensp;[[Beszel_Agent|Beszel Agent]]: Agent for *[[Beszel_Hub|Beszel Hub]]*, a server utilization monitor. 
 2. :services-beszel:&ensp;[[Beszel_Hub|Beszel Hub]]: A self-hosted server utilization monitor.

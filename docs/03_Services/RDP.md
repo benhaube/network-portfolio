@@ -31,7 +31,7 @@ hide:
 
 ### :material-cog: Configuration
 
-```toml title="~/.config/krdbserverrc" linenums="1"
+```ini title="~/.config/krdbserverrc" linenums="1"
 [General]  
 Autostart=true  
 Certificate=/home/bhaube/.local/share/krdpserver/krdp.crt  

@@ -21,7 +21,7 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="8"
-     inkscape:cx="72.375"
+     inkscape:cx="72.3125"
      inkscape:cy="62.125"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
@@ -551,7 +551,7 @@
      rx="24"
      fill="#111827"
      id="rect1"
-     style="fill:#02a6f2;fill-opacity:1" />
+     style="fill:#0091eb;fill-opacity:1" />
   <path
      d="m 30,17.5 h 18 a 12,12 0 0 0 24,0 h 18 v 13 l -10,12 v 25 l 30,20 v 15 H 10 v -15 l 30,-20 v -25 l -10,-12 z"
      fill="#33b300"
@@ -573,7 +573,7 @@
      r="3"
      fill="#111827"
      id="circle2"
-     style="fill:#02a6f2;fill-opacity:1;filter:url(#filter11)" />
+     style="fill:#0091eb;fill-opacity:1;filter:url(#filter11)" />
   <circle
      cx="81"
      cy="25"
@@ -587,21 +587,21 @@
      r="3"
      fill="#111827"
      id="circle4"
-     style="fill:#02a6f2;fill-opacity:1;filter:url(#filter13)" />
+     style="fill:#0091eb;fill-opacity:1;filter:url(#filter13)" />
   <path
      d="M 48 38 L 60 46 L 72 38 L 72 44 L 60 52 L 48 44 Z"
      stroke="#111827"
      stroke-width="1"
      stroke-linejoin="round"
      id="path4"
-     style="fill:#02a6f2;fill-opacity:1;stroke:#02a6f2;stroke-opacity:1;filter:url(#filter7)" />
+     style="fill:#0091eb;fill-opacity:1;stroke:#0091eb;stroke-opacity:1;filter:url(#filter7)" />
   <path
      d="M 48 50 L 60 58 L 72 50 L 72 56 L 60 64 L 48 56 Z"
      stroke="#111827"
      stroke-width="1"
      stroke-linejoin="round"
      id="path5"
-     style="fill:#02a6f2;fill-opacity:1;stroke:#02a6f2;stroke-opacity:1;filter:url(#filter9)" />
+     style="fill:#0091eb;fill-opacity:1;stroke:#0091eb;stroke-opacity:1;filter:url(#filter9)" />
   <text
      xml:space="preserve"
      id="text1"
@@ -611,7 +611,7 @@
      y="0"><tspan
        x="11.247965"
        y="59.774657"
-       id="tspan1">K1C</tspan></text>
+       id="tspan2">K1C</tspan></text>
   <rect
      x="12.467934"
      y="89.030441"

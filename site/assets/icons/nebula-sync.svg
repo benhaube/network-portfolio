@@ -3,7 +3,7 @@
    id="mdi-cog-sync-outline"
    viewBox="0 0 24 24"
    version="1.1"
-   sodipodi:docname="cog-sync-outline.svg"
+   sodipodi:docname="nebula-sync.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -98,8 +98,8 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="24.291667"
-     inkscape:cx="9.3241852"
-     inkscape:cy="10.867925"
+     inkscape:cx="9.3241851"
+     inkscape:cy="10.909091"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -114,13 +114,13 @@
        id="path1"
        sodipodi:nodetypes="cccccscccccscccccccc"
        inkscape:label="sync"
-       style="fill:#02a6f2;fill-opacity:1" />
+       style="fill:#0091eb;fill-opacity:1" />
     <path
        d="M 11.7,19 H 11.3 L 10.9,16.4 C 9.7,16.2 8.7,15.5 7.9,14.6 l -2.4,1 -0.8,-1.3 2.1,-1.6 C 6.4,11.5 6.4,10.3 6.8,9.1 L 4.7,7.7 5.5,6.4 7.9,7.4 C 8.7,6.5 9.7,5.9 10.9,5.6 L 11.2,3 h 1.5 l 0.4,2.6 c 1.2,0.2 2.3,0.9 3,1.8 l 2.4,-1 0.8,1.3 -2.1,1.5 c 0.2,0.6 0.3,1.2 0.3,1.8 H 18 c 0.5,0 1,0.1 1.5,0.2 V 11 L 19.4,10 21.5,8.4 C 21.7,8.2 21.7,8 21.6,7.8 l -2,-3.5 C 19.5,4 19.3,4 19,4 L 16.5,5 C 16,4.6 15.4,4.3 14.8,4 L 14.4,1.3 C 14.5,1.2 14.2,1 14,1 H 10 C 9.8,1 9.5,1.2 9.5,1.4 L 9.1,4.1 C 8.5,4.3 8,4.7 7.4,5 L 5,4 C 4.7,4 4.5,4 4.3,4.3 l -2,3.5 C 2.2,8 2.3,8.2 2.5,8.4 l 2.1,1.6 -0.1,1 0.1,1 -2.1,1.7 c -0.2,0.2 -0.2,0.4 -0.1,0.6 l 2,3.5 C 4.5,18 4.7,18 5,18 l 2.5,-1 c 0.5,0.4 1.1,0.7 1.7,1 l 0.4,2.7 c 0,0.2 0.2,0.4 0.5,0.4 h 2.5 C 12.1,20.4 11.9,19.7 11.7,19 M 16,11.3 V 11 C 16,8.8 14.2,7 12,7 9.8,7 8,8.8 8,11 c 0,2.2 1.8,4 4,4 0.7,-1.7 2.2,-3.1 4,-3.7 M 10,11 c 0,-1.1 0.9,-2 2,-2 1.1,0 2,0.9 2,2 0,1.1 -0.9,2 -2,2 -1.1,0 -2,-0.9 -2,-2"
        id="path2"
        sodipodi:nodetypes="ccccccccccccccccccccsccccccccccsscccccccccccccccccscccssscccsssc"
        inkscape:label="gear"
-       style="fill:#02a6f2;fill-opacity:1" />
+       style="fill:#0091eb;fill-opacity:1" />
   </g>
   <linearGradient
      id="pi-hole_svg__a"

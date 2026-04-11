@@ -47,7 +47,7 @@ git config --global http.sslVerify false
 
 #### Config File:
 
-```toml title="moonraker.cfg" linenums="1"
+```ini title="moonraker.cfg" linenums="1"
 [server]
 host: 0.0.0.0
 port: 7125

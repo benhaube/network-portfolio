@@ -3140,6 +3140,51 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Trigger / Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-cleaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Default Cleaning:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-temperature-cleaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Custom Temperature Cleaning:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Completion:
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3166,7 +3211,7 @@
     
   
     <span class="md-typeset">
-      PROWIPER© Installation &amp; Configuration
+      PROWIPER<sup>&copy;</sup> Installation &amp; Configuration
     </span>
   
 
@@ -4018,45 +4063,37 @@
 </span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="w">  </span>WAIT_TEMP_START
 </span></code></pre></div></td></tr></table></div>
 <h2 id="installation-klipper-integration"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg></span> Installation &amp; Klipper Integration<a class="headerlink" href="#installation-klipper-integration" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Establish an <abbr title="Secure Shell">SSH</abbr> connection to the printer and navigate to <code>/usr/data/printer_data/config</code>.</li>
-<li>Open <code>gcode_macro.cfg</code> <em>(or your dedicated macro configuration file)</em>.</li>
-<li>Paste both <code>[gcode_macro]</code> blocks into the file.</li>
-<li>Save the configuration and restart Klipper to apply the changes.</li>
+<ol class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Establish an <abbr title="Secure Shell">SSH</abbr> connection to the printer and navigate to <code>/usr/data/printer_data/config</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Open <code>gcode_macro.cfg</code> <em>(or your dedicated macro configuration file)</em>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Paste both <code>[gcode_macro]</code> blocks into the file.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Save the configuration and restart Klipper to apply the changes.</li>
 </ol>
 <h2 id="trigger-usage"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4m0-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg></span> Trigger / Usage<a class="headerlink" href="#trigger-usage" title="Permanent link">&para;</a></h2>
 <div class="admonition note inline end">
 <p class="admonition-title">Custom Temperature</p>
 <p>Useful if you are switching between <abbr title="Polylactic Acid">PLA</abbr> and higher-temp materials like <abbr title="Acrylonitrile Butadiene Styrene">ABS</abbr> / <abbr title="Acrylonitrile Styrene Acrylate">ASA</abbr>.</p>
 </div>
-<ul>
-<li>
-<p><strong>Default Cleaning:</strong> </p>
-<ul>
-<li>Trigger <code>CLEAN_NOZZLE</code> from your Fluidd dashboard or Guppy Screen macros list. </li>
-<li>The nozzle will heat to the default temperature <em>(<strong>150°C</strong>)</em>.</li>
+<h4 id="default-cleaning">Default Cleaning:<a class="headerlink" href="#default-cleaning" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Trigger <code>CLEAN_NOZZLE</code> from your Fluidd dashboard or Guppy Screen macros list. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> The nozzle will heat to the default temperature <em>(<strong>150°C</strong>)</em>.</li>
 </ul>
-</li>
-<li>
-<p><strong>Custom Temperature Cleaning:</strong> </p>
-<ul>
-<li>You can specify a different temperature through the console by running <code>CLEAN_NOZZLE TEMP=200</code></li>
-</ul>
-</li>
+<h4 id="custom-temperature-cleaning">Custom Temperature Cleaning:<a class="headerlink" href="#custom-temperature-cleaning" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> You can specify a different temperature through the console by running <code>CLEAN_NOZZLE TEMP=200</code></li>
 </ul>
 <div class="admonition note inline end">
 <p class="admonition-title">Completion</p>
 <p>The <code>DONE_CLEANING</code> macro turns off the heater and parks the toolhead safely out of the way.</p>
 <p>The <code>DONE_CLEANING_COOL</code> macro turns off the heater, parks the toolhead safely out of the way, and cools the nozzle.</p>
 </div>
-<ul>
-<li><strong>Completion:</strong> <ul>
-<li>Wait for the <a href="../03_Services/Fluidd.html">Fluidd</a> <abbr title="User Interface">UI</abbr> prompt to appear. </li>
-<li>Scrub the nozzle with your silicone brush. </li>
-<li>Click the <strong>"Park"</strong> button to automatically trigger the <code>DONE_CLEANING</code> macro. </li>
-<li>Click the <strong>"Park &amp; Cool"</strong> button to automatically trigger the <code>DONE_CLEANING_COOL</code> macro. </li>
-</ul>
-</li>
+<h4 id="completion">Completion:<a class="headerlink" href="#completion" title="Permanent link">&para;</a></h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Wait for the <a href="../03_Services/Fluidd.html">Fluidd</a> <abbr title="User Interface">UI</abbr> prompt to appear. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Scrub the nozzle with your silicone brush. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Click the <strong>"Park"</strong> button to automatically trigger the <code>DONE_CLEANING</code> macro. </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Click the <strong>"Park &amp; Cool"</strong> button to automatically trigger the <code>DONE_CLEANING_COOL</code> macro. </li>
 </ul>
 
 
@@ -4117,13 +4154,13 @@
         
         
           
-          <a href="PROWIPER_Mod.html" class="md-footer__link md-footer__link--next" aria-label="Next: PROWIPER© Installation &amp;amp; Configuration">
+          <a href="PROWIPER_Mod.html" class="md-footer__link md-footer__link--next" aria-label="Next: PROWIPER&amp;copy; Installation &amp;amp; Configuration">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                PROWIPER© Installation &amp; Configuration
+                PROWIPER&copy; Installation &amp; Configuration
               </div>
             </div>
             <div class="md-footer__button md-icon">

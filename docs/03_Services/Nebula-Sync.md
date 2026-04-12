@@ -10,7 +10,8 @@ tags:
 hide:
   - toc
 ---
-![[nebula-sync.svg|200]]
+![Nebula Sync Icon](../assets/icons/nebula-sync-light.svg#only-light){ width=200 }
+![Nebula Sync Icon](../assets/icons/nebula-sync-dark.svg#only-dark){ width=200 }
 
 # [[Nebula-Sync]]&emsp;*(Inactive)*
 [GitHub :material-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }

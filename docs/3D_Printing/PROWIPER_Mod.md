@@ -80,21 +80,23 @@ hide:
 1. [ ] Lower the build plate halfway down the Z-axis to create working room.
 2. [ ] Drop the A1 brush into the slot
 3. [ ] Using a 2mm hex driver and the M3x12mm self-tapping screws, install the 4mm spacer and the V5 brush mount into the two existing holes at the back of the Z-axis.
-#### :material-check: Final Verification:
+#### :material-check-decagram: Final Verification:
   + [ ] Use a ruler to visually confirm there is exactly a 1mm gap between the bottom of the printed wiper mount and the build plate. 
 
 ---
 ## :material-file-code-outline: PROWIPER^&copy;^ Mod G-Code File
 
-```gcode title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="41 56"
-# _____ ____  ____    _   _ _   _ ____        _   _ _____ _____ 
-#|___ /|  _ \|  _ \  | | | | | | | __ )      | \ | | ____|_   _|
-#  |_ \| | | | |_) | | |_| | | | |  _ \      |  \| |  _|   | |  
-# ___) | |_| |  __/  |  _  | |_| | |_) |  _  | |\  | |___  | |  
-#|____/|____/|_|     |_| |_|\___/|____/  (_) |_| \_|_____| |_|  
-                                                               
-# PROWIPER BY DAWSON PURCELL @ 3 D P H U B . N E T
-# Free website for finding parts, tutorials and tuning tools
+```gcode title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58"
+#################################################################
+# _____ ____  ____    _   _ _   _ ____        _   _ _____ _____ #
+#|___ /|  _ \|  _ \  | | | | | | | __ )      | \ | | ____|_   _|#
+#  |_ \| | | | |_) | | |_| | | | |  _ \      |  \| |  _|   | |  #
+# ___) | |_| |  __/  |  _  | |_| | |_) |  _  | |\  | |___  | |  #
+#|____/|____/|_|     |_| |_|\___/|____/  (_) |_| \_|_____| |_|  #
+#################################################################                                                               
+# PROWIPER BY DAWSON PURCELL @ 3 D P H U B . N E T              #
+# Free website for finding parts, tutorials and tuning tools    #
+#################################################################
 
 # If you found this tool useful, you can donate to support future development at
 # https://3dphub.net/contribute

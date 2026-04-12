@@ -119,7 +119,7 @@ hide:
 > SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
 > * **Constraint:** Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
 
-> [!attention]+ NAS Protocol Change (SMB --> NFS)
+> [!attention]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
 > **Date:** 2026-02-09 <br>
 > **Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
 > **Affected Clients:** 

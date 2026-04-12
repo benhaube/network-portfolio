@@ -4,7 +4,7 @@ hide:
 ---
 ![[pi-hole.svg|150]]&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
 
-# [[DNS_Migration|DNS Migration]]
+# [[DNS_Migration|DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)]]
 
 ## :material-file-document: Phase 1: Pre-Migration & Documentation
 1. **Export Pi-hole Data:** 
@@ -18,7 +18,7 @@ hide:
 
 ## :material-dns: Phase 2: Server Provisioning
 
-#### :material-debian:&nbsp;Debian VM (ZimaOS):
+### :material-debian:&nbsp;Debian VM (ZimaOS):
 
 1. **Allocate Resources:** 
     + [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
@@ -29,7 +29,7 @@ hide:
 4. **Import Records:** 
     + [ ] Manually add local DNS zones/records from the Pi-hole export.
 
-#### :simple-raspberrypi:&nbsp;Raspberry Pi 4B:
+### :simple-raspberrypi:&nbsp;Raspberry Pi 4B:
 
 1. **Uninstall Pi-hole:**
     + [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.

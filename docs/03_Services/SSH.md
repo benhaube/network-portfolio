@@ -261,7 +261,7 @@ hide:
 
 > [!tip] Don't Forget!
 > + **ZimaOS** does not have SSH enabled after a fresh install. For the [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] the SSH service needs to be enabled first through the [ZimaOS Web UI](http://storage-server.internal/) in the developer options.
->     + Settings --> General --> Developer Mode --> SSH Access 
+>     + Settings :material-arrow-right-thin: General :material-arrow-right-thin: Developer Mode :material-arrow-right-thin: SSH Access 
 >     
 >         ![[zimaos_ssh.png|600]]
 >         

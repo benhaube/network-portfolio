@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 7"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="amd.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   width="24"
+   height="7"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="48.333333"
+     inkscape:cx="11.989655"
+     inkscape:cy="7.0344828"
+     inkscape:window-width="2560"
+     inkscape:window-height="1368"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">AMD</title>
+  <path
+     fill="currentColor"
+     d="m 18.324,0.637 1.559,1.56 h 2.556 V 4.754 L 24,6.314 V 0.637 Z M 2,1.02 0,5.98 H 1.309 L 1.679,4.998 H 3.9 L 4.308,5.98 H 5.646 L 3.432,1.02 Z m 4.209,0 V 5.975 H 7.447 V 2.883 L 8.785,4.445 H 8.973 L 10.311,2.889 V 5.98 h 1.238 V 1.02 H 10.47 L 8.878,2.865 7.287,1.02 Z m 6.283,0 v 4.96 h 2.057 c 1.979,0 2.88,-1.046 2.88,-2.472 0,-1.36 -0.937,-2.488 -2.747,-2.488 z m 1.237,0.91 h 0.792 c 1.17,0 1.63,0.711 1.63,1.57 0,0.728 -0.372,1.572 -1.616,1.572 H 13.729 Z M 2.744,2.203 3.535,4.135 H 2.008 Z M 19.881,2.51 18.277,4.113 v 2.25 h 2.246 l 1.604,-1.607 h -2.246 z"
+     id="path1"
+     style="fill:#ed1c24;fill-opacity:1" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>AMD</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

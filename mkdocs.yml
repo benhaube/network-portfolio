@@ -165,7 +165,10 @@ plugins:
   - social:
       log: true
       log_level: warn
-  - blog
+  - blog:
+      authors: true
+      authors_file: "{blog}/.authors.yml"
+      authors_profiles: true 
 
 # --- Watch directories outside of /docs --- 
 watch:

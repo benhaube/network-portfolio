@@ -61,7 +61,7 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="45.254834"
      inkscape:cx="10.927009"
-     inkscape:cy="15.114407"
+     inkscape:cy="17.766058"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -70,7 +70,7 @@
      inkscape:current-layer="mdi-folder-network" />
   <g
      id="g5"
-     style="filter:url(#filter6)">
+     transform="matrix(1.1588607,0,0,1.1588607,-1.9063284,-2.833417)">
     <path
        id="path1"
        style="display:inline;fill:#0091eb;fill-opacity:1"
@@ -85,7 +85,7 @@
     <path
        d="M 3,15 V 5 C 3,3.8954305 3.8954305,3 5,3 h 6 l 2,2 h 6 c 1.104569,0 2,0.8954305 2,2 v 8 c 0,1.104569 -0.895431,2 -2,2 H 13 11 5 C 3.8954305,17 3,16.104569 3,15 Z"
        id="path3"
-       style="display:inline;fill:#4cae4f;fill-opacity:1;stroke:#0091eb;stroke-opacity:1;stroke-width:0.8;stroke-dasharray:none"
+       style="display:inline;fill:#4cae4f;fill-opacity:1;stroke:#0091eb;stroke-width:0.8;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="sssccssssccss"
        inkscape:label="folder" />
   </g>

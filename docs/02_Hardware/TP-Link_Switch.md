@@ -9,7 +9,7 @@ tags:
 hide:
   - toc
 ---
-![[tp-link.svg|200]]
+![TP-Link Logo](../assets/icons/tp-link.svg){ width=200 }
 
 # [[TP-Link_Switch|TP-Link Switch]]
 [Info :material-information-outline:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }&emsp;[Manual :material-book-information-variant:](../assets/manuals/TL-SG105.pdf){ .md-button }

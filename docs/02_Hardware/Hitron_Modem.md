@@ -9,7 +9,7 @@ tags:
 hide:
   - toc
 ---
-![[wan.svg|200]]
+![WAN Icon](../assets/icons/wan.svg){ width=200 }
 
 # [[Hitron_Modem|Hitron Modem]]
 [Xfinity ![[xfinity-light.svg|20]]](https://login.xfinity.com/login){ .md-button .md-button--primary }&emsp;[Hitron Docs :material-file-document-multiple:](https://us.hitrontech.com/products/consumers/docsis-3-1-cable-modem/){ .md-button }

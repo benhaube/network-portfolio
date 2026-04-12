@@ -8,16 +8,16 @@ tags:
 hide:
   - toc
 ---
-![[creality.svg|200]]
+![Creality Logo](../assets/icons/creality.svg){ width=200 }
 
-# [[Kacey_3D-printer|Kacey (Creality(c) K1C) 3D-Printer]]
+# [[Kacey_3D-printer|Kacey (Creality^&copy;^ K1C) 3D-Printer]]
 [Creality Docs :material-file-document-multiple:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :octicons-terminal-16:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview
 
 > [!links inline end]+ More K1C Info
-> *See more detailed information about the Creality&copy; K1C hardware:* 
+> *See more detailed information about the Creality^&copy;^ K1C hardware:* 
 >
 > [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
@@ -26,7 +26,7 @@ hide:
 * **Location:** 
     * Office
 * **OS / Firmware:**
-    * :devices-creality:&nbsp;Creality&copy; FW Version: 1.3.3.46
+    * :devices-creality:&nbsp;Creality^&copy;^ FW Version: 1.3.3.46
     * :material-linux:&nbsp;Buildroot 2020.02.1
     * :services-klipper:&nbsp;Klipper 0.13.0
 * **Credentials:** 
@@ -93,12 +93,14 @@ hide:
 >     + Changes from a fixed bed to an adjustable bed with aluminum knobs. 
 >     + See the [tutorial](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md) for information about how to install and use the `Screws_Tilt_Adjust` gcode macro. 
 > 
-> + :devices-prowiper:&nbsp;PROWIPER&copy; Mod
+> + :devices-prowiper:&nbsp;PROWIPER^&copy;^ Mod
 >     + Replaces the standard nozzle wiping brush at the back of the build plate.
 >     + See the [[PROWIPER_Mod|tutorial]] for information on how to install and activate the required G-Code macros.
 > 	   
-> > [!warning]
-> > Add these coordinates to "Bed Exclude Area" in :services-orca-slicer: [OrcaSlicer](https://www.orcaslicer.com/) printer settings to avoid collisions during prints:
+> > [!warning] Bed Exclude Area
+> > **:services-orca-slicer: OrcaSlicer:**
+> > 
+> > Add these coordinates to "Bed Exclude Area" in [OrcaSlicer](https://www.orcaslicer.com/) printer settings to avoid collisions during prints:
 > > ``` linenums="1"
 > > 70x210, 150x210, 150x220, 70x220
 > > ```

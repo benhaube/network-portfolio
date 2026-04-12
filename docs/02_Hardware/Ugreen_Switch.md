@@ -9,7 +9,7 @@ tags:
 hide:
   - toc
 ---
-![[ugreen.svg|200]]
+![Ugreen Logo](../assets/icons/ugreen.svg){ width=200 }
 
 # [[Ugreen_Switch|Ugreen Switch]]
 [Manual :material-book-information-variant:](../assets/manuals/Ugreen_CM753.pdf){ .md-button .md-button--primary }

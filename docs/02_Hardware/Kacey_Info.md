@@ -8,15 +8,15 @@ tags:
 hide:
   - toc
 ---
-![[creality.svg|200]]
+![Creality Logo](../assets/icons/creality.svg){ width=200 }
 
-# [[Kacey_Info|More Kacey (Creality(c) K1C) Info]]
+# [[Kacey_Info|More Kacey (Creality^&copy;^ K1C) Info]]
 [Creality Docs :material-file-document-multiple:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :octicons-terminal-16:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---
 ## :material-information-outline: Basic Information
 
-+ **Model:** Creality&copy; K1C
++ **Model:** Creality^&copy;^ K1C
 + **Build Volume:** `220x220x250`
 + **Version:** v2.0.5
 + **Create Date:** 2023/09/05

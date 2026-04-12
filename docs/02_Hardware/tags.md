@@ -1,4 +1,4 @@
-![[hardware.svg|200]]
+![Hardware Icon](../assets/icons/hardware.svg){ width=200 }
 
 # Hardware Tags
 

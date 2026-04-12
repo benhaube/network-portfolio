@@ -147,8 +147,8 @@ Place this in the same folder as your docker-compose file.
 
 1. **Tunnel:** Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081`
 2. **WAF Rules *(Critical)*:**
-    * Go to Cloudflare Dashboard --> Security --> WAF --> Custom Rules.
-    * **Create Rule:** If Hostname equals `frame.rac3r4life.online` --> **Skip** "Super Bot Fight Mode" and "Managed Challenge".
+    * Go to Cloudflare Dashboard :material-arrow-right-thin: Security :material-arrow-right-thin: WAF :material-arrow-right-thin: Custom Rules.
+    * **Create Rule:** If Hostname equals `frame.rac3r4life.online` :material-arrow-right-thin: **Skip** "Super Bot Fight Mode" and "Managed Challenge".
         * _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
 ---

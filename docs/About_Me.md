@@ -4,7 +4,7 @@
 [My Resume :material-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me :material-email:](mailto:ben@haube-pereira.com){ .md-button }
 
 ---
-## :material-engine: :material-arrow-right-bold: :material-lan: From Engines to Infrastructure
+## :material-engine: :material-arrow-right-thin: :material-lan: From Engines to Infrastructure
 
 With 13 years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology and Cybersecurity**.
 

@@ -65,7 +65,7 @@ hide:
 
         ![Excluded Bed Area](../assets/screenshots/excluded-bed-area.png)
 
-## :material-toggle-switch: Phase 4: Dry Run *(Critical Safety Step)*
+## :material-toggle-switch-outline: Phase 4: Dry Run *(Critical Safety Step)*
 
 > [!warning inline end] Caution
 > **Do not install the physical hardware yet.**

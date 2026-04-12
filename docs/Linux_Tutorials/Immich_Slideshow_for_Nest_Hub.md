@@ -4,7 +4,7 @@ hide:
 ---
 ![[google-photos.svg|150]]&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&nbsp;![[immich.svg|150]]
 
-# [[Immich_Slideshow_for_Nest_Hub|Project Migration: Google Photos --> Self-Hosted Ecosystem]]
+# [[Immich_Slideshow_for_Nest_Hub|Project Migration: Google Photos :material-arrow-right-thin: Self-Hosted Ecosystem]]
 
 > [!info]
 > **User:** Ben Haube | **Date:** Feb 5, 2026<br>
@@ -24,7 +24,7 @@ hide:
 
 2.  **Deletion *(Desktop)*:**
     * **Manual:** Go to :simple-googlephotos:&nbsp;[Google Photos](https://photos.google.com), :material-mouse-left-click: first photo, :material-mouse-scroll-wheel::material-arrow-down-thin:, ++shift++ + :material-mouse-left-click: last photo, ++del++.
-    * **Console Script *(Advanced)*:** Open Chrome DevTools ++f12++ --> Console. Paste script to auto-select/delete. 
+    * **Console Script *(Advanced)*:** Open Chrome DevTools ++f12++ :material-arrow-right-thin: Console. Paste script to auto-select/delete. 
 3.  **Finalize:** Empty "Trash/Bin" to reclaim storage.
 
 ### :material-file-code-outline: Photo Cleaning Script

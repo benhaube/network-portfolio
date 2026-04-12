@@ -98,8 +98,8 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="34.176828"
-     inkscape:cx="11.499019"
-     inkscape:cy="15.829439"
+     inkscape:cx="11.484389"
+     inkscape:cy="15.858698"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -108,17 +108,17 @@
      inkscape:current-layer="mdi-router-wireless" />
   <g
      id="g6"
-     transform="matrix(1.0769239,0,0,1.0769239,-1.192318,-1.3538566)">
+     transform="matrix(1.2717299,0,0,1.2717299,-3.2607588,-3.4515183)">
     <path
        d="M 20.2,5.9 21,5.1 C 19.6,3.7 17.8,3 16,3 14.2,3 12.4,3.7 11,5.1 l 0.8,0.8 C 13,4.8 14.5,4.2 16,4.2 c 1.5,0 3,0.6 4.2,1.7 M 19.3,6.7 C 18.4,5.8 17.2,5.3 16,5.3 c -1.2,0 -2.4,0.5 -3.3,1.4 l 0.8,0.8 c 0.7,-0.7 1.6,-1 2.5,-1 0.9,0 1.8,0.3 2.5,1 l 0.8,-0.8"
        id="path2"
        sodipodi:nodetypes="ccsccsccsccscc"
        inkscape:label="wireless-indicator"
-       style="display:inline;fill:#4cae4f;fill-opacity:1;filter:url(#filter6)" />
+       style="display:inline;fill:#4cae4f;fill-opacity:1" />
     <path
        d="M 19,13 H 17 V 9 h -2 v 4 H 5 c -1.1045695,0 -2,0.895431 -2,2 v 4 c 0,1.104569 0.8954305,2 2,2 h 14 c 1.104569,0 2,-0.895431 2,-2 v -4 c 0,-1.104569 -0.895431,-2 -2,-2 M 8,18 H 6 v -2 h 2 v 2 m 3.5,0 h -2 v -2 h 2 v 2 m 3.5,0 h -2 v -2 h 2 z"
        id="path3"
-       style="display:inline;fill:#0091eb;fill-opacity:1;stroke:#4cae4f;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke;filter:url(#filter4)"
+       style="display:inline;fill:#0091eb;fill-opacity:1;stroke:#4cae4f;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        sodipodi:nodetypes="cccccssssssscccccccccccccccc"
        inkscape:label="router" />
   </g>

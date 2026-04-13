@@ -17,18 +17,23 @@ hide:
 ---
 ## :material-information-outline: Physical Overview
 
-* **Role:** Rack Aggregation
-* **Location:**
-    * Living-Room 
-    * Mini-Rack 
-* **Power Source:** Wall wart *(12.0V / 1.0A)*
-* **Specs:**
-    * **Throughput:** 
-        * Unmanaged 
-        * Five 2.5 Gb/s Ports
-        * One SFP+ 10 Gb/s Uplink *(from [[ASUS_RT-BE92U|ASUS RT-BE92U]] router)*
-        * 45 Gb/s Total Switching Capacity
-    * **Jumbo Frames:** Supported *(12 KB)*
+#### Role:
+* Rack Aggregation
+
+#### Location:
+* Living-Room 
+* Mini-Rack 
+
+#### Power Source: 
+* Wall wart *(12.0V / 1.0A)*
+
+#### Specs:
+* **Throughput:** 
+    * Unmanaged 
+    * Five 2.5 Gb/s Ports
+    * One SFP+ 10 Gb/s Uplink *(from [[ASUS_RT-BE92U|ASUS RT-BE92U]] router)*
+    * 45 Gb/s Total Switching Capacity
+* **Jumbo Frames:** Supported *(12 KB)*
 
 ## :material-ethernet: Port Map
 

@@ -16,32 +16,42 @@ hide:
 ---
 ## :material-information-outline: Basic Information
 
-+ **Model:** Creality^&copy;^ K1C
-+ **Build Volume:** `220x220x250`
-+ **Version:** v2.0.5
-+ **Create Date:** 2023/09/05
-+ **Nozzle MCU:** 
-    + *Chip:* GD32F303CBT6
-    + *Version:* CR-K1-MAX-NOZZLE-V1.2.0    
-+ **Leveling MCU:** 
-    + *Chip:* GD32E230F8P6
-    + *Version:* CR-K1-MAX-LEVELING-V1.1.0
-+ **MCU:** 
-    + *Chip:* GD32F303RET6
-    + *Version:* CR4CU220812S12
+#### Model: 
++ Creality^&copy;^ K1C
+
+#### Build Volume: 
++ `220x220x250`
+
+#### Version:
++ v2.0.5
+
+#### Create Date: 
++ 2023/09/05
+
+#### Nozzle MCU: 
++ *Chip:* GD32F303CBT6
++ *Version:* CR-K1-MAX-NOZZLE-V1.2.0    
+
+#### Leveling MCU: 
++ *Chip:* GD32E230F8P6
++ *Version:* CR-K1-MAX-LEVELING-V1.1.0
+
+#### MCU: 
++ *Chip:* GD32F303RET6
++ *Version:* CR4CU220812S12
 
 ## :material-lan: Network
 
 #### :material-printer-3d: Moonraker:
 
-+ URL
++ **URL**
     + <http://k1c-a71e.internal:7125>
-+ API Key
-    + Check :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd" 
++ **API Key**
+    + Check [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd" 
 
 #### :services-fluidd: Fluidd:
 
-+ URL
++ **URL**
     + <http://k1c-a71e.internal>
     + <http://k1c-a71e.internal:4408>
 
@@ -49,16 +59,16 @@ hide:
 
 #### :material-printer-3d: Moonraker:
 
-+ Snapshot URL
++ **Snapshot URL**
     + <http://k1c-a71e.internal:8080/?action=snapshot>
     + <http://localhost:8080/?action=snapshot>
     + <http://127.0.0.1:8080/?action=snapshot>
 
 #### :services-fluidd: Fluidd:
 
-+ Snapshot URL
++ **Snapshot URL**
     + <http://k1c-a71e.internal:8080/?action=snapshot>
-+ Stream URL
++ **Stream URL**
     + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---

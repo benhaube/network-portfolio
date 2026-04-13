@@ -21,14 +21,21 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** Tertiary DNS server *(Pi-hole w/ dnscrypt-proxy)*
-* **Hostname(s):** `pi-zero`
-* **Location:** 
-    * Office
-    * Printer-Cart
-* **OS / Firmware:** &nbsp;:material-debian:&nbsp;[Debian Linux 13](https://www.debian.org/) *(Trixie)*
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-hole"
+#### Role: 
+* Tertiary DNS server *(Pi-hole w/ dnscrypt-proxy)*
+
+#### Hostname(s):
+* `pi-zero`
+
+#### Location: 
+* Office
+* Printer-Cart
+
+#### OS / Firmware:
+* [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
+
+#### Credentials: 
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-hole"
 
 ## :material-lan: Network Configuration
 

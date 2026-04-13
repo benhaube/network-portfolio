@@ -17,12 +17,20 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** My laptop PC
-* **Hostname(s):** `ben-laptop`
-* **Location:** 
-    * Mobile
-* **OS / Firmware:** &nbsp;:material-fedora:&nbsp;[Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
-* **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Laptop"
+#### Role: 
++ My laptop PC
+
+#### Hostname(s): 
++ `ben-laptop`
+
+#### Location: 
++ Mobile
+
+#### OS / Firmware: 
++ [:material-fedora:&nbsp;Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
+
+#### Credentials:
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Laptop"
 
 ## :material-lan: Network Configuration
 

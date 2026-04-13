@@ -17,17 +17,22 @@ hide:
 ---
 ## :material-information-outline: Physical Overview
 
-* **Role:** Core Desktop Switch
-* **Location:** 
-    * Office
-    * Printer-Cart
-* **Power Source:** Wall Wart *(5V / 0.6A)*
-* **Specs:**
-    * **Throughput:** 
-        * Unmanaged Gigabit
-        * Five 1 GbE ports
-        * 10 Gb/s total switching capacity
-    * **Jumbo Frames:** Supported *(16 KB)*
+#### Role: 
+* Core Desktop Switch
+
+#### Location: 
+* Office
+* Printer-Cart
+
+#### Power Source:
+* Wall Wart *(5V / 0.6A)*
+
+#### Specs:
+* **Throughput:** 
+    * Unmanaged Gigabit
+    * Five 1 GbE ports
+    * 10 Gb/s total switching capacity
+* **Jumbo Frames:** Supported *(16 KB)*
 
 ## :material-ethernet: Port Map 
 

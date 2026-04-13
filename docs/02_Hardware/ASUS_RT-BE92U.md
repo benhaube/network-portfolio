@@ -20,14 +20,20 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** Main Router
-* **Hostname(s):** `asusrouter`
-* **Location:** 
-    * Living-Room
-* **OS / Firmware:** 
-    * :material-router-wireless:&nbsp;[asuswrt-merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Asus Router"
+#### Role: 
++ Main Router
+
+#### Hostname(s):
++ `asusrouter`
+
+#### Location:
++ Living-Room
+
+#### OS / Firmware: 
++ [:material-router-wireless:&nbsp;asuswrt-merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
 ## :material-lan: Network Configuration
 

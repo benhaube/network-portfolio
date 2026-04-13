@@ -21,14 +21,21 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** Secondary DNS server *(Technitium Cluster)*, CUPS print server, Home Assistant server
-* **Hostname(s):** `pi-server`
-* **Location:** 
-    * Office
-    * Printer-Cart
-* **OS / Firmware:** &nbsp;:material-debian:&nbsp;[Debian Linux 13](https://www.debian.org/) *(Trixie)*
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-server"
+#### Role: 
+* Secondary DNS server *(Technitium Cluster)*, CUPS print server, Home Assistant server
+
+#### Hostname(s): 
+* `pi-server`
+
+#### Location: 
+* Office
+* Printer-Cart
+
+#### OS / Firmware:
+* [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
+
+#### Credentials: 
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-server"
 
 ## :material-lan: Network Configuration
 
@@ -36,7 +43,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| eth0 | `192.168.50.2` | `E4:5F:01:A4:60:07` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
+| eth0 | `192.168.50.2` | `E4:5F:01:A4:60:07` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
 | wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | :material-wifi:&nbsp;2G_IoT *(vlan53)* |
 
 #### :material-ip-network: IP Configuration:

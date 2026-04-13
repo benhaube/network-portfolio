@@ -20,21 +20,29 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-* **Role:** Primary DNS server *([[Technitium]] Cluster)*
-* **Hostname(s):** `debian-vm`
-* **Hypervisor:** ZimaOS *(KVM / QEMU)*
-* **Operating System:** 
-    * :material-debian:&nbsp;[Debian Linux 13](https://www.debian.org/) *(Trixie)*
-* **Host Node:** 
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com) SSH key: "server-admin@debian-vm"
+#### Role: 
++ Primary DNS server *([[Technitium]] Cluster)*
+
+#### Hostname(s): 
++ `debian-vm`
+
+#### Hypervisor: 
++ ZimaOS *(KVM / QEMU)*
+
+#### Operating System: 
++ [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
+
+#### Host Node: 
++ [:services-zimaos:&nbsp;ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md)
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "server-admin@debian-vm"
 
 ## :material-cpu-64-bit: Resource Allocation
-* **vCPU:** 2 Cores
-* **RAM:** 2 GB
-* **Storage:** 50 GB VDI
-    * *Disk Location on Host:* `/media/nvme0n1p1/VM/debian-vm/cd175b11` 
+
+| vCPU | RAM | Storage | VDI Location |
+| :--: | :-: | :------ | :----------- |
+| 2-Cores | 2 GB | 50 GB | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
 ## :material-lan: Network Configuration
 

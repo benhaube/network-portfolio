@@ -11,13 +11,21 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** Rob's main workstation PC
-* **Hostname(s):** `rob-desktop`
-* **Location:** 
-    * Office 
-    * Desk 
-* **OS / Firmware:** &nbsp;:material-microsoft:&nbsp;[Windows 11 Pro](https://microsoft.com/windows)
-* **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): Secure Notes - "PIN - Rob's Desktop PC"
+#### Role: 
+* Rob's main workstation PC
+
+#### Hostname(s): 
+* `rob-desktop`
+
+#### Location: 
+* Office 
+* Desk 
+
+#### OS / Firmware: 
+* [:material-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
+
+#### Credentials: 
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): Secure Notes - "PIN - Rob's Desktop PC"
 
 ## :material-lan: Network Configuration
 
@@ -25,7 +33,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| Ethernet | `DHCP` | `50:EB:F6:59:74:C3` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
+| Ethernet | `DHCP` | `50:EB:F6:59:74:C3` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
 | Wi-Fi | `DHCP` | `70:A6:CC:B5:F5:4A` | :material-wifi:&nbsp;Home *(vlan50)* |
 
 #### :material-ip-network: IP Configuration:

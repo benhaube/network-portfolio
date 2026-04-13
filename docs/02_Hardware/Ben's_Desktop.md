@@ -16,13 +16,21 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** My workstation PC
-* **Hostname(s):** `bens-workstation`
-* **Location:** 
-    * Office 
-    * Desk
-* **OS / Firmware:** &nbsp;:material-fedora:&nbsp;[Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
-* **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Workstation"
+#### Role: 
++ My workstation PC
+
+#### Hostname(s): 
++ `bens-workstation`
+
+#### Location: 
++ Office 
++ Desk
+
+#### OS / Firmware:
++ [:material-fedora:&nbsp;Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
+
+#### Credentials:
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Workstation"
 
 ## :material-lan: Network Configuration
 
@@ -30,7 +38,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-ethernet:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
+| enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
 | wlp6s0 | `DHCP` | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;Home *(vlan50)* |
 
 #### :material-ip-network: IP Configuration:

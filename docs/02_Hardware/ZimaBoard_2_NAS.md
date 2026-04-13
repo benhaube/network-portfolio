@@ -28,9 +28,9 @@ hide:
 * **Location:** 
     * Living-Room
     * Mini-Rack
-* **OS:**&nbsp;:services-zimaos:&nbsp;ZimaOS 1.5.4 *(Immutable)*
+* **OS / Firmware:** &nbsp;:services-zimaos:&nbsp;ZimaOS 1.5.4 *(Immutable)*
 * **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): 
+    * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
         * "storage-server (Admin)" 
         * "storage-server (bhaube)"  
         * SSH key: "admin@storage-server"
@@ -41,8 +41,8 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| eth0 | `192.168.50.4` | `00:E0:4C:5B:9A:96` | :material-ethernet:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 4)* |
-| eth1 | `192.168.50.5` | `00:E0:4C:5B:9A:95` | :material-ethernet:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 5)* |
+| eth0 | `192.168.50.4` | `00:E0:4C:5B:9A:96` | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 4)* |
+| eth1 | `192.168.50.5` | `00:E0:4C:5B:9A:95` | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 5)* |
 
 #### :material-ip-network: IP Configuration:
 

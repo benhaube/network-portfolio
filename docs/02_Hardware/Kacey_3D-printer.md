@@ -21,16 +21,22 @@ hide:
 >
 > [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
-* **Role:** 3D-Printer
-* **Hostname(s):** `k1c-a71e`
-* **Location:** 
-    * Office
-* **OS / Firmware:**
-    * :devices-creality:&nbsp;Creality^&copy;^ FW Version: 1.3.3.46
-    * :material-linux:&nbsp;Buildroot 2020.02.1
-    * :services-klipper:&nbsp;Klipper 0.13.0
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
+#### Role: 
++ 3D-Printer
+
+#### Hostname(s): 
++ `k1c-a71e`
+
+#### Location: 
++ Office
+
+#### OS / Firmware:
++ :devices-creality:&nbsp;Creality^&copy;^ FW Version: 1.3.3.46
++ :material-linux:&nbsp;Buildroot 2020.02.1
++ :services-klipper:&nbsp;Klipper 0.13.0
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
 
 ## :material-lan: Network Configuration
 

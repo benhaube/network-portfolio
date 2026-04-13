@@ -17,13 +17,18 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** DOCSIS Cable Modem
-* **Location:** 
-    * Living-Room
-    * Mini-Rack
-* **OS / Firmware:** 
-    * Hitron FW version: 7.3.5.3.2b2
-* **Credentials:** N/A
+#### Role:
++ DOCSIS Cable Modem
+
+#### Location: 
++ Living-Room
++ Mini-Rack
+
+#### OS / Firmware: 
++ Hitron FW version: 7.3.5.3.2b2
+
+#### Credentials: 
++ N/A
 
 ## :material-lan: Network Configuration
 
@@ -31,7 +36,7 @@ hide:
 
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
-| **LAN 1** | `192.168.100.1` | `00:1c:73:00:00:99` | :material-ethernet:&nbsp;WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
+| **LAN 1** | `192.168.100.1` | `00:1c:73:00:00:99` | :material-router-wireless:&nbsp;WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
 | **LAN 2** | `down` | `xx:xx:xx:xx:xx:xx` | - |
 
 #### :material-ip-network: IP Configuration:

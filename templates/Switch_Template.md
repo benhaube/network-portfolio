@@ -15,18 +15,24 @@ hide:
 ---
 ## :material-information-outline: Physical Overview
 
-* **Role:** Core Desktop Switch
-* **Location:** 
-* **Power Source:** 
-* **Specs:**
-    * **Throughput:** 
-    * **Jumbo Frames:** Supported / Unsupported
-    * **Managed:** 
+#### Role:
++ Core Desktop Switch
+
+#### Location:
++ [Insert location here]
+ 
+#### Power Source:
++ (e.g., Wall wart 12V / 1A)
+ 
+##### Specs:
++ **Throughput:**
+  + (e.g., 50 Gb/s) 
++ **Jumbo Frames:** 
+  + Supported / Unsupported
++ **Managed:** 
+  + Managed / Unmanaged
 
 ## :material-ethernet: Port Map
-
-> [!note]-
-> *Since this switch is unmanaged, use this table to track physical cabling.*
 
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |

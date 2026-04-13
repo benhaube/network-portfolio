@@ -14,11 +14,20 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** Device role
-* **Hostname(s):** `hostname`
-* **Location:** 
-* **OS / Firmware:** &nbsp;:os-icon:&nbsp;Operating System
-* **Credentials:** &nbsp;:services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Credential Entry"
+#### Role: 
++ Device role
+
+#### Hostname(s): 
++ `hostname`
+
+#### Location:
++ Location 
+
+#### OS / Firmware:
++ :os-icon:&nbsp;Operating System
+
+#### Credentials:
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-lan: Network Configuration
 

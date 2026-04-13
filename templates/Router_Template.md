@@ -15,13 +15,20 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** AiMesh Node
-* **Hostname(s):** `hostname`
-* **Location:** 
-* **OS / Firmware:** 
-    * :material-router-network-wireless:&nbsp;Router_OS
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Credential Entry"
+#### Role: 
++ AiMesh Node
+
+#### Hostname(s):
++ `hostname`
+
+#### Location:
++ Location
+ 
+#### OS / Firmware: 
++ :material-router-network-wireless:&nbsp;Router_OS
+
+#### Credentials:** 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-lan: Network Configuration
 

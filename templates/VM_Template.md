@@ -14,22 +14,29 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-* **Role:** 
-* **Hostname(s):** `hostname`
-* **Hypervisor:** (e.g., KVM / QEMU)
-* **Operating System:** 
-    * :os-icon:&nbsp;[Operating System](https://example.com)
-* **Host Node:** 
-    * :device-icon:&nbsp;[[Device_Template|Device Template]]
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Credential Entry"
+#### Role:
++ [Insert role here] 
+
+#### Hostname(s):
++ `hostname`
+
+#### Hypervisor: 
++ (e.g., KVM / QEMU)
+
+#### Operating System: 
++ :os-icon:&nbsp;[Operating System](https://example.com)
+
+#### Host Node:
++ [:device-icon: Device_Template](Device_Template.md)
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-cpu-64-bit: Resource Allocation
 
-* **vCPU:** (# Cores)
-* **RAM:** (# GB)
-* **Storage:** (# GB) Virtual Disk Image
-    * *Disk Location on Host:* `/path/to/image.qcow2` 
+| vCPU | RAM | Storage | VDI Location |
+| :--: | :-: | :------ | :----------- |
+| #-Cores | # GB | # GB | `path/to/vdi` |
 
 ## :material-lan: Network Configuration
 

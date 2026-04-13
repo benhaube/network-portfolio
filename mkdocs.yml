@@ -54,7 +54,7 @@ theme:
       domain: material/domain
       download: material/download
       file-share: material/share
-      hardware: material/router-wireless
+      hardware: material/devices
       inactive: material/close
       infra: material/router-network
       inventory: material/list-box-outline

@@ -30,3 +30,8 @@
 
 # Log files created by default by the nohup command
 nohup.out
+
+# === .gitignore for MkDocs ===
+
+.cache/*
+site/*

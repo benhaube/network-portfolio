@@ -89,7 +89,7 @@ theme:
     search: material/magnify
     annotation: material/plus-circle
     edit: material/file-edit-outline
-    view: material/file-code-outline
+    view: material/file-eye-outline
   favicon: /assets/icons/favicon.png
   features:
     - navigation.instant

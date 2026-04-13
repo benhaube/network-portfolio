@@ -10,7 +10,7 @@ tags:
 hide:
   - toc
 ---
-![Debian Logo](../assets/icons/debian.svg){ width=200 }![Intel Logo](../assets/icons/intel.svg){ width=100 }
+![Debian Logo](../assets/icons/debian.svg){ width=200 }![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # [[Debian_Server_VM|Debian Server VM]]
 [Debian :material-debian:](https://www.debian.org/){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }

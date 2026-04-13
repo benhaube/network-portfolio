@@ -18,7 +18,7 @@ hide:
 6. :material-sitemap:&ensp;[[Physical_Map|Physical Map]]: *Mermaid.js* flowchart focusing on physical connections.
 
 ---
-## :material-router-wireless: Hardware
+## :material-devices: Hardware
 
 > [!links inline end] Extra Links
 > 

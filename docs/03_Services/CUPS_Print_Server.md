@@ -8,7 +8,7 @@ tags:
 hide:
   - toc
 ---
-![[openprinting-cups.svg|200]]
+![CUPS Open Print Server icon](../assets/icons/cups-service.svg){ width=200 }
 
 # [[CUPS_Print_Server|CUPS Print Server]]
 [GitHub :material-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button }

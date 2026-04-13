@@ -21,19 +21,25 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-* **Role:** Primary NAS & VM Host
-* **Hostname(s):** 
-    * `storage-server` *(eth0)*
-    * `storage-server-2` *(eth1)*
-* **Location:** 
-    * Living-Room
-    * Mini-Rack
-* **OS / Firmware:** &nbsp;:services-zimaos:&nbsp;ZimaOS 1.5.4 *(Immutable)*
-* **Credentials:** 
-    * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-        * "storage-server (Admin)" 
-        * "storage-server (bhaube)"  
-        * SSH key: "admin@storage-server"
+#### Role: 
++ Primary NAS & VM Host
+
+#### Hostname(s): 
++ `storage-server` *(eth0)*
++ `storage-server-2` *(eth1)*
+
+#### Location: 
++ Living-Room
++ Mini-Rack
+
+#### OS / Firmware:
++ :services-zimaos:&nbsp;ZimaOS 1.5.4 *(Immutable)*
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + "storage-server (Admin)" 
+    + "storage-server (bhaube)"  
+    + SSH key: "admin@storage-server"
 
 ## :material-lan: Network Configuration
 

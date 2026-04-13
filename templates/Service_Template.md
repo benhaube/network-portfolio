@@ -15,19 +15,23 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-* **Purpose:** 
-* **Port(s):** `port`
-* **URL / Access:**
-    * <https://example.com>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Credential Entry"
+#### Purpose:
++ [Insert description of service here]
+ 
+#### Port(s): 
++ `port`
+
+#### URL / Access:
++ <https://example.com>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-package-down: Deployment Details
 
-* **Host Device:** &nbsp;:icon-host-device:&nbsp;[[Host_Device]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `container-name`
-* **Image:** `image_name:tag`
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :devices-icon:&nbsp;[Device](Device_Template.md) | :material-docker:&nbsp;Docker Compose | `container-name` | `image_name:tag` |
 
 ### :material-cog: Configuration 
 

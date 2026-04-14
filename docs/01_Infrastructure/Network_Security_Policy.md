@@ -58,7 +58,7 @@
 #### Access Control: 
 
 + [[SSH]] access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
-+ [Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
++ [:services-bitwarden: Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
 	+ Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely.
 	+ The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. 
 	+ The mobile application auto-fills passwords on websites and native applications.

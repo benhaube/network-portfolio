@@ -1,4 +1,5 @@
-![[restore-alert-color.svg|200]]
+![Material Design restore-alert icon](../assets/icons/restore-alert-color.svg){ width=200 }
+
 # [[Disaster_Recovery_Plan|Disaster Recovery Plan]]
 
 > [!info] Objective

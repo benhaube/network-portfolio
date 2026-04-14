@@ -154,6 +154,8 @@ markdown_extensions:
 
 # --- MkDocs Native Plugins ---
 plugins:
+  - meta:
+      enabled: true
   - search
   - roamlinks
   - callouts

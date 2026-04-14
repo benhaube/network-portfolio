@@ -14,10 +14,10 @@ I’ve found that whether it’s a fuel injection system or a network stack, the
 
 I am a firm believer in the **Self-Hosted and Open-Source** movement. My home lab isn’t just a hobby; it’s a sandbox for testing the "Defense in Depth" strategies I’m studying for my IT / Cybersecurity career. 
 
-I prioritize:
+**I prioritize:**
 
 + **Privacy-First Networking:** Using tools like [Technitium DNS](03_Services/Technitium.md) and [Network Attached Storage](02_Hardware/ZimaBoard_2_NAS.md) servers to take back control of my data.
-+ **Immutable Documentation:** Maintaining a "Single Source of Truth" using Markdown and [Obsidian](https://obsidian.md/) to ensure the infrastructure is reproducible and transparent.
++ **Immutable Documentation:** Maintaining a "Single Source of Truth" using **Markdown** with [Obsidian](https://obsidian.md/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) to ensure the infrastructure is reproducible and transparent.
 + **Continuous Learning:** From earning my [**CompTIA^&copy;^**](https://www.comptia.org/en-us/) *(A+ & Linux+)* to mastering Docker orchestration, I am always looking for the next "bottleneck" to solve.
     
 ## :material-racing-helmet: Beyond the Terminal

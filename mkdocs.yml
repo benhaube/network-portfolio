@@ -160,7 +160,7 @@ plugins:
   - tags:
       export: true
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
-  - optimize
+  # - optimize
   - typeset
   - social:
       log: true

@@ -181,6 +181,9 @@ use_directory_urls: false
 
 # --- Extra Settings ---
 extra:
+  status:
+    new: Recently added
+    deprecated: Will be removed soon
   # -- Cookies Consent Message --
   consent:
     title: Cookie consent

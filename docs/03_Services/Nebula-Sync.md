@@ -1,4 +1,5 @@
 ---
+status: deprecated
 tags:
   - inactive
   - service
@@ -12,7 +13,7 @@ hide:
 ---
 ![Nebula Sync Icon](../assets/icons/nebula-sync.svg){ width=200 }
 
-# [[Nebula-Sync]]&emsp;*(Inactive)*
+# [[Nebula-Sync]]
 [GitHub :material-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---

@@ -1,4 +1,5 @@
 ---
+status: deprecated
 tags:
   - inactive
   - service
@@ -11,7 +12,7 @@ hide:
 ![Portainer Icon](../assets/icons/portainer-pink-light.svg#only-light){ width=200 }
 ![Portainer Icon](../assets/icons/portainer-pink-dark.svg#only-dark){ width=200 }
 
-# [[Portainer_Agent|Portainer Agent]]&emsp;*(Inactive)*
+# [[Portainer_Agent|Portainer Agent]]
 [GitHub :material-github:](https://github.com/portainer/portainer-docs){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
 
 ---

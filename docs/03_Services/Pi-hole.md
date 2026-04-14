@@ -1,4 +1,5 @@
 ---
+status: deprecated
 tags:
   - inactive
   - service
@@ -12,7 +13,7 @@ hide:
 ---
 ![Pi-hole Logo](../assets/icons/pi-hole.svg){ width=200 }
 
-# [[Pi-hole]]&emsp;*(Inactive)*
+# [[Pi-hole]]
 [GitHub :material-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button }
 
 ---

@@ -3,9 +3,11 @@ hide:
   - toc
 ---
 ![[ethernet.svg|200]]
+
 # [MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md)
 
 ---
+
 ## :material-router-wireless: Network Infrastructure
 
 | Device Type | Location | Hostname | Interface | MAC Address | Role / Notes |

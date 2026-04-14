@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-![[lock-harddisk.svg|200]]
+![Custom lock-harddisk icon](../assets/icons/lock-harddisk.svg){ width=200 }
 
 # [[Unlock_LUKS_TPM2|Unlocking LUKS Volumes with TPM2]]
 

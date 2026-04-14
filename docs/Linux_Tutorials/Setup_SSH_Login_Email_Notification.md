@@ -2,12 +2,14 @@
 hide:
   - toc
 ---
-![[email-alert.svg|200]]
+![material-email-alert icon](../assets/icons/email-alert.svg){ width=200 }
+
 # [[Setup_SSH_Login_Email_Notification|Setup SSH Login Notification]]
 
 ---
 ## :material-package-variant: Install Required Packages
-> [!info]
+
+> [!info] Dependencies
 > In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
 
 1. For **Debian / Ubuntu** based systems, execute:
@@ -22,7 +24,8 @@ hide:
 ---
 
 ## :material-email: Configure `msmtp` with Your Email Credentials 
-> [!info]
+
+> [!info] Config
 > Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
 
 1. Using the text editor of your choice *(e.g., nano)*, create a configuration file, `/etc/msmtprc`:
@@ -68,14 +71,14 @@ hide:
 
 6. Create the hidden file containing the app password for your email login in the **root** user's home directory. 
 
-    >[!note]+ Note: 
+    >[!tip]+ 2FA / MFA 
     > If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
     ```bash linenums="1"
     read -s -p "Enter your Email App Password: " EMAIL_PASS && sudo bash -c "echo $EMAIL_PASS > /root/.email_app_password" && echo
     ```
 
-    >[!tip]+ Tip: 
+    >[!tip]+ Security Tip 
     > The `read -s` command is used here to securely enter the password without storing it in your shell history.
 
 7. Set the required permissions for the `/root/.email_app_password` file. This is crucial for security, as this file contains the actual login credential.
@@ -88,7 +91,8 @@ hide:
 ---
 
 ## :material-alert: Enable Login Alerts with PAM
-> [!info]
+
+> [!note] PAM
 > **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
 
 1. Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
@@ -102,7 +106,7 @@ hide:
     1. Command to edit PAM config file.
     2. Add line to `/etc/pam.d/sshd` *after* the existing "session" lines.
 
-    >[!warning] Warning: 
+    >[!warning] Warning! 
     > It is important to use `#!bash sudo -e` instead of a direct editor command *(like `sudo nano`)* when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's `$EDITOR` environment variable.
 
     The final file should look like this: 
@@ -141,7 +145,8 @@ hide:
 
 ---
 ## :material-file-code-outline: Creating the Shell Script 
-> [!info]
+
+> [!info] The Script
 > Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
 
 1. Create the shell script file.
@@ -191,7 +196,8 @@ hide:
 ---
 
 ## :material-test-tube: Testing the Setup
-> [!info]
+
+> [!done] Congrats!
 > Congratulations, we are done! You should now have a working email notification set up. You should now recieve an email notification every time a new SSH session is started on your server. Now we will test everything we have configured to make sure it is functioning properly. 
 
 1. Start a new SSH session either on a new tab in your terminal application, or with a different host.
@@ -211,7 +217,7 @@ hide:
 
 > [!TIP]+ Unattended Upgrades Notifications
 > *To use the `msmpt` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error:*
-> > [!error] Error 551 5.7.1: 
+> > [!error] Error 551 5.7.1
 > > *Not authorised to send from this header address.*
 > 
 > 1. Open the configuration file in a text editor: 

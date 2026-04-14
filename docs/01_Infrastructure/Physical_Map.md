@@ -5,8 +5,10 @@ tags:
 hide:
   - toc
 ---
-![[sitemap.svg|100]]
+![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=100 }
+
 # [[Physical_Map|Physical Network Map]]
+
 ---
 
 ```mermaid

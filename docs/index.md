@@ -38,7 +38,7 @@ hide:
 10. :material-desktop-tower:&ensp;[[Rob's_Desktop|Rob's Desktop]]: Rob's main desktop PC located in the office upstairs.
 11. :material-switch:&ensp;[[TP-Link_Switch|TP-Link Switch]]: Core gigabit desktop switch *(5-port)*. 
 12. :material-switch:&ensp;[[Ugreen_Switch|Ugreen Switch]]: Rack-mounted 2.5 gigabit switch in the living room.
-13. :material-nas:&ensp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]: Primary NAS server & VM host. 
+13. :material-nas:&ensp;[[ZimaBoard_2_NAS|ZimaOS NAS]]: Primary NAS server & VM host. 
 
 ---
 ## :material-web: Services
@@ -88,7 +88,7 @@ hide:
 ---
 ## :material-swap-horizontal-bold: Change Management
 
-1. :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[[Caddy_Reverse-Proxy|Caddy Reverse Proxy]]: Preparing the *[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]* to be a *[[Caddy]]* reverse proxy server to give unique domain names to services hosted on the local network.
+1. :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[[Caddy_Reverse-Proxy|Caddy Reverse Proxy]]: Preparing the *[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 Server]]* to be a *[[Caddy]]* reverse proxy server to give unique domain names to services hosted on the local network.
 2. :simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;[[DNS_Migration|DNS Migration]]: Preparing to migrate from *[[Pi-hole]]* to *[[Technitium]]* for DNS queries on the local network. 
 
 ---
@@ -106,9 +106,9 @@ hide:
 4. :material-printer-3d:&ensp;[Moonraker Docs](https://moonraker.readthedocs.io/en/latest/): Moonraker is a Python 3 based web server that exposes APIs with which client applications may use to interact with the 3D printing firmware [Klipper](https://github.com/Klipper3d/klipper).
 
 ### :material-tools: Modifications
-1. :material-cog:&ensp;[[K1_Bed_Level_Knobs_Tutorial|Bed Leveling Knobs]]: Installing a bed leveling modification on the [[Kacey_3D-printer|Creality K1C]].
+1. :material-cog:&ensp;[[K1_Bed_Level_Knobs_Tutorial|Bed Leveling Knobs]]: Installing a bed leveling modification on the [[Kacey_3D-printer|Creality^&copy;^ K1C]].
 2. :material-code-block-tags:&ensp;[[Manual_Nozzle_Cleaning_Gcode_Macro|Manual Nozzle Cleaning G-Code Macro]]: Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
-3. :devices-prowiper:&ensp;[[PROWIPER_Mod|PROWIPER^&copy;^ Mod]]: Installing the PROWIPER© Mod, and editing the required g-code on the [[Kacey_3D-printer|Creality K1C]].
+3. :devices-prowiper:&ensp;[[PROWIPER_Mod|PROWIPER^&copy;^ Mod]]: Installing the PROWIPER© Mod, and editing the required g-code on the [[Kacey_3D-printer|Creality^&copy;^ K1C]].
 
 ---
 ## :material-linux: Linux Tutorials

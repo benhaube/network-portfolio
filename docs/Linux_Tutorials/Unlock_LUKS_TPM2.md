@@ -15,7 +15,7 @@ hide:
 **TPM2 Chip:** Your computer must have an active **TPM2** chip. Most modern hardware does, but you may need to enable in **UEFI** settings.  <br>
 **LUKS2:** Your encrypted volume must be using **LUKS2** format. 
 
->[!note]+
+>[!tip]+
 > You can check this with the following command:
 > 
 > ```bash linenums="1"

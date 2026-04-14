@@ -2,11 +2,11 @@
 hide:
   - toc
 ---
-![[console.svg|200]]
+![material/console icon](../assets/icons/console.svg){ width=200 }
 
 # [[Defining_Terminal_Aliases|Defining Terminal Aliases]]
 
-> [!info]
+> [!question] What are Aliases?
 > When operating in a GNU / Linux terminal environment, aliases are an indispensable necessity to speed up your workflow. You can create an alias to eliminate the need to memorize the required arguments, you can combine several commands into an easy shortcut, you can automatically fix common typos, and many more. This guide will show you how to set up useful terminal aliases on both **Fedora / RHEL** and **Debian / Ubuntu** based GNU / Linux distributions. 
 
 ---
@@ -43,9 +43,9 @@ hide:
     nano ~/.bash_aliases
     ```
 
-4. Write your desired aliases into this file, then ++ctrl+o++ to save the changes and ++ctrl+x++ to exit nano. 
+    + Write your desired aliases into this file, then ++ctrl+o++ to save the changes and ++ctrl+x++ to exit nano. 
 
-5. Now close your terminal window and reopen it, or open a new tab in your terminal application of choice. 
+4. Now close your terminal window and reopen it, or open a new tab in your terminal application of choice. 
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
     + If your aliases were not loaded properly, check the code you entered into the `.bashrc` file for errors. 
 ---

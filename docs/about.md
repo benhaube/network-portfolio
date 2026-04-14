@@ -4,9 +4,10 @@ title: About Me
 hide:
   - toc
 ---
+
 ![My Profile Picture](assets/pictures/profilepic.jpg){ width=300 }
 
-# [[About_Me|About Me & Professional Philosophy]]
+# About Me & Professional Philosophy
 [My Resume :material-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me :material-email:](mailto:ben@haube-pereira.com){ .md-button }
 
 ---

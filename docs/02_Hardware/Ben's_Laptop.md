@@ -1,4 +1,5 @@
 ---
+icon: material/laptop
 tags:
   - hardware
   - pc

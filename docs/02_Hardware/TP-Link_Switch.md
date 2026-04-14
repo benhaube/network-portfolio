@@ -1,4 +1,5 @@
 ---
+icon: material/switch
 tags:
   - hardware
   - switch

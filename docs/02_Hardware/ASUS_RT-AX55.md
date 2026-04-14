@@ -1,4 +1,5 @@
 ---
+icon: material/router-wireless
 tags:
   - hardware
   - network

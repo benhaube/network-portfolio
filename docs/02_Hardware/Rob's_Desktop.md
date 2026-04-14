@@ -1,4 +1,5 @@
 ---
+icon: material/desktop-tower
 tags: [hardware, pc, desktop, office]
 hide:
   - toc

@@ -1,4 +1,5 @@
 ---
+icon: material/server
 tags:
   - hardware
   - virtual_machine

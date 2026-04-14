@@ -1,4 +1,5 @@
 ---
+icon: material/nas
 tags:
   - hardware
   - nas

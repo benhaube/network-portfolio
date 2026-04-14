@@ -1,4 +1,5 @@
 ---
+icon: material/raspberry-pi
 tags:
   - hardware
   - server

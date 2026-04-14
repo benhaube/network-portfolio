@@ -1,4 +1,5 @@
 ---
+icon: material/printer-3d-nozzle
 tags:
   - hardware
   - network

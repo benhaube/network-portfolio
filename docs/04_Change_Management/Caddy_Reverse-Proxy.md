@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-![[caddy.svg|200]]
+![Caddy Logo](../assets/icons/caddy.svg){ width=200 }
 
 # [[Caddy_Reverse-Proxy|Reverse Proxy & DNS Routing]]
 
@@ -13,17 +13,17 @@ hide:
 
 #### DNS Servers:
 
-* Technitium Cluster Primary: *[[Debian_Server_VM|Debian VM]]*
-* Technitium Cluster Secondary: *[[Raspberry_Pi_4B_Server|Raspberry Pi 4B]]*
+* Technitium Cluster Primary: *[:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)*
+* Technitium Cluster Secondary: *[:simple-raspberrypi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)*
 
 #### Reverse Proxy:
 
-* Caddy *([[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]] - Native `apt` Install)*
+* :simple-caddy: Caddy *[:simple-raspberrypi:Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) - Native `apt` Install)*
 
 #### Application Hosts:
 
-* :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard NAS]]
-* :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
+* [:services-zimaos:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
+* [:simple-raspberrypi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
 ---
 
@@ -47,6 +47,8 @@ hide:
 
 + `#!bash sudo nano /etc/caddy/Caddyfile` *(Open config file in `nano`)*  
 + `#!bash sudo systemctl reload caddy` *(Apply changes)*
+
+#### Example Caddyfile:
 
 ```nginx title="/etc/caddy/Caddyfile" linenums="1"
 # Immich Photo Server

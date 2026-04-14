@@ -69,7 +69,7 @@ hide:
 
 > [!note inline] Critical Configurations
 > **AiMesh Node:**
-> + All settings for AiMesh node are available through the main router's Web UI. See [[ASUS_RT-BE92U|ASUS RT-BE92U]].
+> + All settings for AiMesh node are available through the main router's Web UI. See [ASUS RT-BE92U](ASUS_RT-BE92U.md).
 
 #### :material-update: Update Process: 
 

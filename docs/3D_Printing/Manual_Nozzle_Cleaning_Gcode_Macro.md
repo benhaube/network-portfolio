@@ -8,7 +8,7 @@ hide:
 # [[Manual_Nozzle_Cleaning_Gcode_Macro|Interactive Manual Nozzle Cleaning Macro]]
 
 > [!info] 
-> [Creality K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }
+> [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }
 > 
 > **Date Implemented:** 
 > + March 2026
@@ -20,6 +20,39 @@ hide:
 > + Once acknowledged via the UI, it safely cools the heater and parks the toolhead.
 
 ---
+
+## :material-tools: Installation & Klipper Integration
+
+1. [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
+2. [ ] Open `gcode_macro.cfg` *(or your dedicated macro configuration file)*.
+3. [ ] Paste both `[gcode_macro]` blocks into the file.
+4. [ ] Save the configuration and restart Klipper to apply the changes.
+
+## :material-toggle-switch-outline: Trigger / Usage
+
+  > [!note inline end] Custom Temperature 
+  > Useful if you are switching between PLA and higher-temp materials like ABS / ASA.
+
+#### Default Cleaning:
+  + [ ] Trigger `CLEAN_NOZZLE` from your Fluidd dashboard or Guppy Screen macros list. 
+  + [ ] The nozzle will heat to the default temperature *(**150°C**)*.
+
+#### Custom Temperature Cleaning:
+  + [ ] You can specify a different temperature through the console by running `CLEAN_NOZZLE TEMP=200`
+
+  > [!note inline end] Completion
+  > The `DONE_CLEANING` macro turns off the heater and parks the toolhead safely out of the way.
+  >
+  > The `DONE_CLEANING_COOL` macro turns off the heater, parks the toolhead safely out of the way, and cools the nozzle.
+
+#### Completion: 
+  + [ ] Wait for the [[Fluidd]] UI prompt to appear. 
+  + [ ] Scrub the nozzle with your silicone brush. 
+  + [ ] Click the **"Park"** button to automatically trigger the `DONE_CLEANING` macro. 
+  + [ ] Click the **"Park & Cool"** button to automatically trigger the `DONE_CLEANING_COOL` macro. 
+
+---
+
 ## :material-file-code-outline: G-code Macro
 
 ```gcode title="manual-nozzle-clean.cfg" linenums="1"
@@ -91,33 +124,3 @@ gcode:
   # Cool the nozzle to 40 degrees
   WAIT_TEMP_START
 ```
-
-## :material-tools: Installation & Klipper Integration
-
-1. [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
-2. [ ] Open `gcode_macro.cfg` *(or your dedicated macro configuration file)*.
-3. [ ] Paste both `[gcode_macro]` blocks into the file.
-4. [ ] Save the configuration and restart Klipper to apply the changes.
-
-## :material-toggle-switch-outline: Trigger / Usage
-
-  > [!note inline end] Custom Temperature 
-  > Useful if you are switching between PLA and higher-temp materials like ABS / ASA.
-
-#### Default Cleaning:
-  + [ ] Trigger `CLEAN_NOZZLE` from your Fluidd dashboard or Guppy Screen macros list. 
-  + [ ] The nozzle will heat to the default temperature *(**150°C**)*.
-
-#### Custom Temperature Cleaning:
-  + [ ] You can specify a different temperature through the console by running `CLEAN_NOZZLE TEMP=200`
-
-  > [!note inline end] Completion
-  > The `DONE_CLEANING` macro turns off the heater and parks the toolhead safely out of the way.
-  >
-  > The `DONE_CLEANING_COOL` macro turns off the heater, parks the toolhead safely out of the way, and cools the nozzle.
-
-#### Completion: 
-  + [ ] Wait for the [[Fluidd]] UI prompt to appear. 
-  + [ ] Scrub the nozzle with your silicone brush. 
-  + [ ] Click the **"Park"** button to automatically trigger the `DONE_CLEANING` macro. 
-  + [ ] Click the **"Park & Cool"** button to automatically trigger the `DONE_CLEANING_COOL` macro. 

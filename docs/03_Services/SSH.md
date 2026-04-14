@@ -1,5 +1,5 @@
 ---
-icon: material/ssh
+icon: material/console-network
 tags:
   - active
   - service

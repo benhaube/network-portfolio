@@ -2,12 +2,12 @@
 hide:
   - toc
 ---
-![[prowiper.svg|400]]
+![Custom PROWIPER^&copy;^ Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=400 }
 
 # [[PROWIPER_Mod|PROWIPER^&copy;^ Installation & Configuration]] 
 
 > [!info] PROWIPER^&copy;^ Info
-> [Creality K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }
+> [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }
 >
 > **Modifications:** 
 > 1. Upgraded bed leveling kit with aluminum spacers. 
@@ -56,7 +56,7 @@ hide:
 ## :material-chip: Phase 3: Slicer & Firmware Clearances
 
 > [!info inline end] Clearance Info 
-> Because the V5 mount is utilized instead of the low-profile LPF2 mount, a 10mm clearance zone is required to prevent the toolhead from striking the mount during printing or probing.
+> Because the **V5 mount** is utilized instead of the low-profile **LPF2 mount**, a 10mm clearance zone is required to prevent the toolhead from striking the mount during printing or probing.
 
 #### :services-klipper: Klipper Mesh Clearance:
   + [ ] In `printer.cfg`, locate the `[bed_mesh]` section. Reduce the Y-axis value of `mesh_max` by 10 *(e.g., change `220` to `210`)*.
@@ -79,9 +79,11 @@ hide:
 
 1. [ ] Lower the build plate halfway down the Z-axis to create working room.
 2. [ ] Drop the A1 brush into the slot
-3. [ ] Using a 2mm hex driver and the M3x12mm self-tapping screws, install the 4mm spacer and the V5 brush mount into the two existing holes at the back of the Z-axis.
+3. [ ] Using a **2mm hex driver** and the **M3x12mm** self-tapping screws, install the spacer and the V5 brush mount into the two existing holes at the back of the Z-axis.
+
 #### :material-check-decagram: Final Verification:
-  + [ ] Use a ruler to visually confirm there is exactly a 1mm gap between the bottom of the printed wiper mount and the build plate. 
+
++ [ ] Use a ruler to visually confirm there is exactly a 1mm gap between the bottom of the printed wiper mount and the build plate. 
 
 ---
 ## :material-file-code-outline: PROWIPER^&copy;^ Mod G-Code File

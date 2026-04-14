@@ -103,7 +103,9 @@ hide:
 > [!note inline] Critical Configurations
 > Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
 > 
-> [Documentation](https://github.com/RMerl/asuswrt-merlin.ng/wiki) for asuswrt-merlin.
+> **Documentation:**
+>
+> [asuswrt-merlin Docs :material-file-document-multiple:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button }
 
 #### :material-update: Update Process:
 
@@ -112,4 +114,4 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy:
 
-+ Firmware and settings backed up automatically to [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] and [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]].
++ Firmware and settings backed up automatically to [[ZimaBoard_2_NAS|ZimaOS NAS]] and [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]].

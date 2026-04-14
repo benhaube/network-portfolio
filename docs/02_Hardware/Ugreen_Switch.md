@@ -42,8 +42,8 @@ hide:
 | **1** | :material-laptop:&nbsp;Rob's Laptop (`ems1`) | White, Cat5e | Temporary Connection |
 | **2** | :material-ethernet:&nbsp;*Empty* | - | - |
 | **3** | :material-ethernet:&nbsp;*Empty* | - | - |
-| **4** | :material-nas:&nbsp;[ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Blue, 2.5 Gb/s, Cat6A | `eth1`, `192.168.50.5` |
-| **5** | :material-nas:&nbsp;[ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Yellow, 2.5 Gb/s, Cat6A | `eth0`, `192.168.50.4` |
+| **4** | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Blue, 2.5 Gb/s, Cat6A | `eth1`, `192.168.50.5` |
+| **5** | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Yellow, 2.5 Gb/s, Cat6A | `eth0`, `192.168.50.4` |
 | **6** | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red, 10 Gb/s, Cat6A | SFP+ Ethernet Transceiver |
 
 ---

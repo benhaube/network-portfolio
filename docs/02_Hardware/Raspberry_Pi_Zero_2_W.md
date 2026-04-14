@@ -99,4 +99,4 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy:
 
-* Image of MicroSD card stored on [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] `/media/Quick-Storage/Backup` directory.
+* Image of MicroSD card stored on [[ZimaBoard_2_NAS|ZimaOS NAS]] `/media/Quick-Storage/Backup` directory.

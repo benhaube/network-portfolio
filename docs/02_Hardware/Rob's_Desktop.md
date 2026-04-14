@@ -71,4 +71,4 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy: 
 
-+ File backup is handled with Window's built-in backup tool. Files in the user's directory are sent to the [[ZimaBoard_2_NAS|NAS]] via [[SMB]].
++ File backup is handled with Window's built-in backup tool. Files in the user's directory are sent to the [[ZimaBoard_2_NAS|ZimaOS NAS]] via [[SMB]].

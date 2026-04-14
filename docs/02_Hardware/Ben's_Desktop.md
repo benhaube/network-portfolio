@@ -108,7 +108,7 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy:
 
- * `/home` directory backed up every weekday at `18:00` to [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
+ * `/home` directory backed up every weekday at `18:00` to [[ZimaBoard_2_NAS|ZimaOS NAS]]
 
 #### :material-backup-restore: Backup Script Config
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
@@ -327,7 +327,7 @@ WantedBy=default.target
 7. Run the command `#!bash systemctl --user daemon-reload`
 8. Run the command `#!bash systemctl --user enable home-bkp-nas.timer`
 
-#### :material-folder-network: Systemd Files for ZimaOS NAS Mounts (NFS)
+#### :material-folder-network: Systemd Files for ZimaOS NAS Mounts *(NFS)*
 
 ```systemd title="mnt-storage_server-NVMe.mount" linenums="1"
 [Unit]  

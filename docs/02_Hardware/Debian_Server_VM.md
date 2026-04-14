@@ -27,13 +27,13 @@ hide:
 + `debian-vm`
 
 #### Hypervisor: 
-+ ZimaOS *(KVM / QEMU)*
++ [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 
 #### Operating System: 
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### Host Node: 
-+ [:services-zimaos:&nbsp;ZimaBoard 2 NAS](../02_Hardware/ZimaBoard_2_NAS.md)
++ [:services-zimaos:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
 #### Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "server-admin@debian-vm"
@@ -115,4 +115,4 @@ hide:
 #### :material-backup-restore: Recovery:
 
 * If the VM is corrupted there are external snapshots to roll back to. 
-* Also, on the main storage pool on the [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 
+* Also, on the main storage pool on the [[ZimaBoard_2_NAS|ZimaOS NAS]] in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 

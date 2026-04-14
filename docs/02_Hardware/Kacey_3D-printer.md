@@ -31,9 +31,9 @@ hide:
 + Office
 
 #### OS / Firmware:
-+ :devices-creality:&nbsp;Creality^&copy;^ FW Version: 1.3.3.46
-+ :material-linux:&nbsp;Buildroot 2020.02.1
-+ :services-klipper:&nbsp;Klipper 0.13.0
++ [:devices-creality:&nbsp;Creality^&copy;^ FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
++ [:material-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
++ [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
 #### Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*

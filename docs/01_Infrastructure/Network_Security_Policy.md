@@ -1,4 +1,5 @@
-![[server-security.svg|200]]
+![Material Design server-security icon](../assets/icons/server-security.svg){ width=200 }
+
 # [[Network_Security_Policy|Network Security Policy (NSP)]]
 
 > [!info] Security Philosophy

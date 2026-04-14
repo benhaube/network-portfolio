@@ -8,25 +8,32 @@ tags:
 hide:
   - toc
 ---
-![[spoolman.svg|200]]
+![Spoolman logo](../assets/icons/spoolman.svg){ width=200 }
 
 # [[Spoolman]]
 [GitHub :material-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Manage 3D-printer filament inventory, and actively track filament usage.
-* **Port(s):** `7912`
-* **URL / Access:** 
-    * <http://storage-server.internal:7912/>
-    * <https://spoolman.internal>
-* **Credentials:** N/A
+
+#### Purpose:
++ Manage 3D-printer filament inventory, and actively track filament usage.
+
+#### Port(s):
++ `7912`
+
+#### URL / Access: 
++ <http://storage-server.internal:7912/>
++ <https://spoolman.internal>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `spoolman`
-* **Image:** `ghcr.io/donkie/spoolman:0.22.1`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `spoolman` | `ghcr.io/donkie/spoolman:0.22.1` |
 
 ### :material-cog: Configuration 
 

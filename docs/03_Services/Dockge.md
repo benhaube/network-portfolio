@@ -15,26 +15,30 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
-* **Port(s):** `5001`
-* **URL / Access:** 
-    * <http://pi-server.internal:5001>
-    * <http://pi-zero.internal:5001>
-    * <http://debian-vm.internal:5001>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): 
-        * "Dockge @ pi-server"
-        * "Dockge @ pi-zero"
-        * "Dockge @ debian-vm"
+#### Purpose:
++ A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
+
+#### Port(s):
++ `5001`
+
+#### URL / Access: 
++ <http://pi-server.internal:5001>
++ <http://pi-zero.internal:5001>
++ <http://debian-vm.internal:5001>
+
+#### Credentials:** 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + "Dockge @ pi-server"
+    + "Dockge @ pi-zero"
+    + "Dockge @ debian-vm"
 
 ## :material-package-down: Deployment Details
-* **Host Device:** 
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
-    * :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `dockge-dockge-1`
-* **Image:** `louislam/dockge:1`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1` |
+| :simple-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md) | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1` | 
 
 ### :material-cog: Configuration 
 

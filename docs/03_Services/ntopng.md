@@ -10,27 +10,33 @@ tags:
 hide:
   - toc
 ---
-![[ntopng.png|200]]
+![ntopng Logo](../assets/icons/ntopng.png){ width=200 }
 
 # [[ntopng]]
 [GitHub :material-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://www.ntop.org/guides/ntopng/){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Network traffic probe
-* **Port(s):** 
-    * `3000`
-    * `5556`
-* **URL / Access:** 
-    * <http://192.168.50.4:3000>
-    * <http://storage-server.internal:3000>
-* **Credentials:** N/A
+
+#### Purpose:
++ Network traffic probe
+
+#### Port(s): 
++ `3000`
++ `5556`
+
+#### URL / Access: 
++ <http://192.168.50.4:3000>
++ <http://storage-server.internal:3000>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `ntop`
-* **Image:** `ntop/ntopng:latest`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `ntop` | `ntop/ntopng:latest` |
 
 ### :material-cog: Configuration
 

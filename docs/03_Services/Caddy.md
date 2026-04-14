@@ -11,25 +11,32 @@ tags:
 hide:
   - toc
 ---
-![[caddy.svg|200]]
+![Caddy Logo](../assets/icons/caddy.svg){ width=200 }
 
 # [[Caddy]]
 [GitHub :material-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
-* **Port(s):** 
-    * `80`
-    * `443`
-* **URL / Access:** <https://pi-zero.internal>
-* **Credentials:** N/A
+
+#### Purpose: 
++ Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
+
+#### Port(s):
++ `80`
++ `443`
+
+#### URL / Access: 
++ <https://pi-zero.internal>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
-* **Method:** &nbsp;:material-linux:&nbsp;Native Install *(Systemd service)*
-* **Container Name:** `N/A`
-* **Image:** `N/A` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux *(Systemd)* | `N/A` | `N/A` |
 
 ### :material-cog: Configuration 
 

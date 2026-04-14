@@ -18,17 +18,24 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Synchronize settings between [[Pi-hole]] instances.
-* **Port(s):** `N/A`
-* **URL / Access:** N/A
-* **Credentials:** 
-    * :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
+
+#### Purpose:
++ Synchronize settings between [[Pi-hole]] instances.
+
+#### Port(s):
++ `N/A`
+
+#### URL / Access:
++ N/A
+
+#### Credentials: 
++ :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `nebula-sync`
-* **Image:** `ghcr.io/lovelaze/nebula-sync:latest` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;~~[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)~~ | :material-docker:&nbsp;Docker Compose | `nebula-sync` | `ghcr.io/lovelaze/nebula-sync:latest` |
 
 ### :material-cog: Configuration 
 

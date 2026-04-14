@@ -11,24 +11,30 @@ hide:
 ![Portainer Icon](../assets/icons/portainer-pink-light.svg#only-light){ width=200 }
 ![Portainer Icon](../assets/icons/portainer-pink-dark.svg#only-dark){ width=200 }
 
-# [[Portainer]]&emsp;*(Inactive)*
+# [[Portainer|Portainer-EE]]&emsp;*(Inactive)*
 [GitHub :material-github:](https://github.com/portainer/portainer-docs){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Docker container management platform
-* **Port(s):** `9443`
-* **URL / Access:** 
-    * ~~[[https://portainer.internal]]~~
-    * ~~[[https://pi-server.internal:9443]]~~
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Portainer @ pi-server"
+
+#### Purpose:
++ Docker container management platform
+
+#### Port(s):
++ `9443`
+
+#### URL / Access: 
++ ~~[[https://portainer.internal]]~~
++ ~~[[https://pi-server.internal:9443]]~~
+
+#### Credentials:
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Portainer @ pi-server"
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `portainer`
-* **Image:** `portainer/portainer-ee:lts`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;~~[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer` | `portainer/portainer-ee:lts` |
 
 ### :material-cog: Configuration  
 

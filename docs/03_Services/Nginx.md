@@ -15,19 +15,25 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
-* **Port(s):** `8080`
-* **URL / Access:** 
-    * <http://storage-server.internal:8080>
-    * <https://portfolio.rac3r4life.online>
-* **Credentials:** N/A
+
+#### Purpose:
++ The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
+
+#### Port(s):
++ `8080`
+
+#### URL / Access: 
++ <http://storage-server.internal:8080>
++ <https://portfolio.rac3r4life.online>
+
+#### Credentials: 
++ N/A
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** 
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `network-portfolio`
-* **Image:** `nginx:alpine` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `network-portfolio` | `nginx:alpine` |
 
 ### :material-cog: Configuration
 

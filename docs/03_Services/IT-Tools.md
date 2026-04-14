@@ -16,18 +16,25 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Handy tools for network administrators and developers.
-* **Port(s):** `8080`
-* **URL / Access:**
-    * <https://it-tools.internal>
-    * <http://pi-server.internal:8080/>
-* **Credentials:** N/A
+
+#### Purpose:
++ Handy tools for network administrators and developers.
+
+#### Port(s):
++ `8080`
+
+#### URL / Access:
++ <https://it-tools.internal>
++ <http://pi-server.internal:8080/>
+
+#### Credentials: 
++ N/A
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `it-tools`
-* **Image:** `sharevb/it-tools:latest`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `it-tools` | `sharevb/it-tools:latest` |
 
 ### :material-cog: Configuration 
 

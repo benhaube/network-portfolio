@@ -9,26 +9,32 @@ tags:
 hide:
   - toc
 ---
-![[printer-3d.svg|150]] ![[printer-3d-nozzle.svg|150]]
+![Material Design "Printer-3D" icon](../assets/icons/printer-3d.svg){ width=200 }&ensp;![Material Design "Printer-3D-Nozzle" icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }
 
 # [[Moonraker]]
 [GitHub :material-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** An API that allows applications to communicate with the 3D-printing firmware, [Klipper](https://www.klipper3d.org/). 
-* **Port(s):** `7125`
-* **URL / Access:** 
-    * <http://k1c-a71e.internal:7125>
-    * <http://192.168.50.153:7125>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
+
+#### Purpose:
++ An API that allows applications to communicate with the 3D-printing firmware, [Klipper](https://www.klipper3d.org/). 
+
+#### Port(s):
++ `7125`
+
+#### URL / Access: 
++ <http://k1c-a71e.internal:7125>
++ <http://192.168.50.153:7125>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:devices-creality:&nbsp;[[Kacey_3D-printer|Kacey 3D-Printer]]
-* **Method:** &nbsp;:material-linux:&nbsp;Native Install
-* **Container Name:** `N/A`
-* **Image:** `N/A`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :devices-creality:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Liux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration
 

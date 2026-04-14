@@ -18,23 +18,31 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A self-hosted, real-time port monitoring and discovery tool.
-* **Port(s):** `4999`
-* **URL / Access:** 
-    * <http://192.168.50.4:4999>
-    * <http://storage-server.internal:4999>
-* **Credentials:** N/A
+
+#### Purpose:
++ A self-hosted, real-time port monitoring and discovery tool.
+
+#### Port(s):
++ `4999`
+
+#### URL / Access: 
++ <http://192.168.50.4:4999>
++ <http://storage-server.internal:4999>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details 
-* **Host Devices:** 
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-    * :simple-raspberrypi:&nbsp;~~[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]~~
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `portracker`
-* **Image:** `mostafawahied/portracker:latest`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `portracker` | `mostafawahied/portracker:latest` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `portracker` | `mostafawahied/portracker:latest` |
+| :simple-raspberrypi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-docker:&nbsp;Docker Compose | `portracker` | `mostafawahied/portracker:latest` |
 
 ### :material-cog: Configuration  
+
+#### ZimaOS NAS:
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-portracker
@@ -157,6 +165,8 @@ x-casaos:
     en_us: Portracker
 ```
 
+#### Raspberry Pi 4B Server:
+
 ```yaml title="docker-compose.yml" linenums="1"
 services:
   portracker:
@@ -181,6 +191,8 @@ services:
       # Optional: For enhanced TrueNAS features
       # - TRUENAS_API_KEY=your-api-key-here
 ```
+
+#### ~~Raspberry Pi Zero Server:~~
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

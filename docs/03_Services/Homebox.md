@@ -8,26 +8,32 @@ tags:
 hide:
   - toc
 ---
-![[homebox.svg|200]]
+![Homebox Logo](../assets/icons/homebox.svg){ width=200 }
 
 # [[Homebox]]
 [GitHub :material-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://homebox.software/en/quick-start/){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** An inventory and organization system built for the home user.
-* **Port(s):** `3100`
-* **URL / Access:** 
-    * <http://storage-server.internal:3100>
-    * <http://192.168.50.4:3100>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Homebox @ storage-server"
+
+#### Purpose:
++ An inventory and organization system built for the home user.
+
+#### Port(s):
++ `3100`
+
+#### URL / Access: 
++ <http://storage-server.internal:3100>
++ <http://192.168.50.4:3100>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Homebox @ storage-server"
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `homebox`
-* **Image:** `ghcr.io/sysadminsmedia/homebox:latest`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `homebox` | `ghcr.io/sysadminsmedia/homebox:latest` |
 
 ### :material-cog: Configuration
 

@@ -15,25 +15,29 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Visualization of real-time track data and telemetry synced to F1 live and replays.
-* **Port(s):** 
-    * `3000`
-    * `8000`
-* **URL / Access:** 
-    * Backend: <http://storage-server.internal:8000>
-    * Frontend: <http://storage-server.internal:3000>
-* **Credentials:** N/A
+
+#### Purpose: 
++ Visualization of real-time track data and telemetry synced to F1 live and replays.
+
+#### Port(s): 
++ `3000`
++ `8000`
+
+#### URL / Access: 
++ Backend: 
+    + <http://storage-server.internal:8000>
++ Frontend: 
+    + <http://storage-server.internal:3000>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details
-* **Host Device:** 
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose *(Stack)*
-* **Container Names:** 
-    * `f1-backend`
-    * `f1-frontend`
-* **Images:** 
-    * `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`
-    * `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `f1-backend` | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest` |
+|  |  | `f1-backend` | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest` |
 
 ### :material-cog: Configuration 
 

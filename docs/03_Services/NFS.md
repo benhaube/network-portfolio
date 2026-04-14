@@ -11,26 +11,32 @@ tags:
 hide:
   - toc
 ---
-![[folder-network.svg|200]]
+![Material Design "folder-network" icon](../assets/icons/folder-network.svg){ width=200 }
 
 # [[NFS|NFS (Network File System)]]
 [Documentation :material-file-document-multiple:](https://docs.kernel.org/admin-guide/nfs/index.html){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Remote file system access
-* **Port(s):** `2049`
-* **URL / Access:** 
-    * `192.168.50.4:/media/Quick-Storage`
-    * `192.168.50.4:/media/nvme0n1p1`
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "[[SSH]] keys"
+
+#### Purpose:
++ Remote file system access
+
+#### Port(s):
++ `2049`
+
+#### URL / Access: 
++ `192.168.50.4:/media/Quick-Storage`
++ `192.168.50.4:/media/nvme0n1p1`
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "[[SSH]] keys"
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-linux:&nbsp;Native Service
-* **Container Name:** `N/A`
-* **Image:** `N/A` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration 
 

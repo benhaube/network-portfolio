@@ -10,36 +10,41 @@ tags:
 hide:
   - toc
 ---
-![[pi-hole.svg|200]]
+![Pi-hole Logo](../assets/icons/pi-hole.svg){ width=200 }
 
 # [[Pi-hole]]&emsp;*(Inactive)*
 [GitHub :material-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** DNS Blocker
-* **Port(s):** 
-    * `80`
-    * `443`
-    * `53`
-* **URL / Access:** 
-    * ~~[[https://pi-server.internal/admin/login]]~~
-    * ~~[[https://pi-hole.internal/admin/login]]~~
-* **Ports:**
-    * Web: `80`, `443`
-    * DNS: `53`
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): 
-        * "Pi-hole Admin @ (pi-hole)"
-        * "Pi-hole Admin @ (pi-server)"
+
+#### Purpose:
++ DNS Blocker
+
+#### Port(s): 
++ `80`
++ `443`
++ `53`
+
+#### URL / Access: 
++ ~~[[https://pi-server.internal/admin/login]]~~
++ ~~[[https://pi-hole.internal/admin/login]]~~
+
+#### Ports:
++ Web: `80`, `443`
++ DNS: `53`
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + "Pi-hole Admin @ (pi-hole)"
+    + "Pi-hole Admin @ (pi-server)"
 
 ## :material-package-down: Deployment Details  
-* **Host Device:** 
-    * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]~~
-    * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]~~
-* **Method:** &nbsp;:material-linux:&nbsp;Native Linux
-* **Container Name:** `N/A`
-* **Image:** `N/A`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;~~[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)~~ | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :simple-raspberrypi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration
 

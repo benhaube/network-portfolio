@@ -10,39 +10,40 @@ tags:
 hide:
   - toc
 ---
-![[immich.svg|200]]
+![Immich Logo](../assets/icons/immich.svg){ width=200 }
 
 # [[Immich]]
 [GitHub :material-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.immich.app/overview/quick-start/){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Photo gallery and backup service.
-* **Port(s):** `2283`
-* **URL / Access:**
-    * :material-lan: Local Access:
-        * <https://immich.internal>
-        * <http://storage-server.internal:2283>
-    * :material-wan: Remote Access:
-        * <https://immich.rac3r4life.online>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): 
-        * "Immich User"
-        * "Immich Administrator"
+
+#### Purpose:
++ Photo gallery and backup service.
+
+#### Port(s):
++ `2283`
+
+#### URL / Access:
++ :material-lan: Local Access:
+    + <https://immich.internal>
+    + <http://storage-server.internal:2283>
++ :material-web: Remote Access:
+    + <https://immich.rac3r4life.online>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + "Immich User"
+    + "Immich Administrator"
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Names:** 
-    * `immich-server`
-    * `immich-machine-learning`
-    * `immich-redis`
-    * `immich-postgres`
-* **Images:** 
-    * `ghcr.io/immich-app/immich-server:v2.5.0` 
-    * `ghcr.io/immich-app/immich-machine-learning:v2.5.0-openvino`
-    * `redis:6.2-alpine`
-    * `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server` | `ghcr.io/immich-app/immich-server:v2.5.0` |
+|  |  | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.5.0-openvino` |
+|  |  | `immich-redis` | `redis:6.2-alpine` |
+|  |  | `immich-postgres` | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
 
 ### :material-cog: Configuration 
 

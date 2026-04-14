@@ -15,23 +15,28 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A Web UI for managing the 3D-printer.
-* **Port(s):** 
-    * `80`
-    * `4408`
-* **URL / Access:** 
-    * <http://k1c-a71e.internal>
-    * <http://192.168.50.153>
-    * <http://k1c-a71e.internal:4408>
-    * <http://192.168.50.153:4408>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
+
+#### Purpose:
++ A Web UI for managing the 3D-printer.
+
+#### Port(s): 
++ `80`
++ `4408`
+
+#### URL / Access: 
++ <http://k1c-a71e.internal>
++ <http://192.168.50.153>
++ <http://k1c-a71e.internal:4408>
++ <http://192.168.50.153:4408>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:devices-creality:&nbsp;[[Kacey_3D-printer|Kacey (Creality(c) K1C) 3D-Printer]]
-* **Method:** &nbsp;:material-linux:&nbsp;Native Install
-* **Container Name:** `N/A`
-* **Image:** `N/A`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :devices-creality:&nbsp;[Kacey *(Creality^&copy;^ K1C)* 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration
 

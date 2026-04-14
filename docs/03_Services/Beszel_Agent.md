@@ -9,49 +9,93 @@ tags:
 hide:
   - toc
 ---
-![[beszel.svg|200]]
+![Beszel Logo](../assets/icons/beszel.svg){ width=200 }
 
 # [[Beszel_Agent|Beszel Agent]]
 [GitHub :material-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/henrygd/beszel-docs){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Agent for [[Beszel_Hub|Beszel Hub]], a server utilization monitor.  Allows for client servers to connect to hub.
-* **Port(s):** `45867`
-* **URL / Access:** `N/A`
-* **Credentials:** 
-    * :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
+
+#### Purpose: 
++ Agent for [[Beszel_Hub|Beszel Hub]], a server utilization monitor.  Allows for client servers to connect to hub.
+
+#### Port(s): 
++ `45867`
+
+#### URL / Access: 
++ `N/A`
+
+#### Credentials: 
++ :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details
 
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `beszel-agent`
-* **Host Device:** 
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-        * **Image:** `henrygd/beszel-agent`
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-        * **Image:** `henrygd/beszel-agent:alpine`
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:alpine` |
 
 ### :material-cog: Configuration
 
+#### Debian VM Server:
+
 ```yaml title="docker-compose.yml" linenums="1"
-services:  
-  beszel-agent:  
-    image: henrygd/beszel-agent  
-    container_name: beszel-agent  
-    restart: unless-stopped  
-    network_mode: host  
-    volumes:  
-      - /var/run/docker.sock:/var/run/docker.sock:ro  
-      - ./beszel_agent_data:/var/lib/beszel-agent  
-      # monitor other disks / partitions by mounting a folder in /extra-filesystems  
-      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  
-    environment:  
-      LISTEN: 45876  
-      KEY: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI'  
-      TOKEN: 3630d-aee6185c6-f48d6-f03c1cf38  
+services:
+  beszel-agent:
+    healthcheck:
+      test:
+        - CMD
+        - /agent
+        - health
+      interval: 120s
+    image: henrygd/beszel-agent
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./beszel_agent_data:/var/lib/beszel-agent
+      # monitor other disks / partitions by mounting a folder in /extra-filesystems
+      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro
+    environment:
+      LISTEN: 45876
+      KEY: ssh-ed25519
+        AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
+      TOKEN: 1865d0-c55e3f8b-ef571-729963ea8
       HUB_URL: http://pi-server.internal:8090
 ```
+
+#### Raspberry Pi Zero Server:
+
+```yaml title="docker-compose.yml" linenums="1"
+services:
+  beszel-agent:
+    healthcheck:
+      test:
+        - CMD
+        - /agent
+        - health
+      interval: 120s
+    image: henrygd/beszel-agent
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./beszel_agent_data:/var/lib/beszel-agent
+      # monitor other disks / partitions by mounting a folder in /extra-filesystems
+      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro
+    environment:
+      LISTEN: 45876
+      KEY: ssh-ed25519
+        AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
+      TOKEN: 3630d-aee6185c6-f48d6-f03c1cf38
+      HUB_URL: http://pi-server.internal:8090
+```
+
+#### ZimaOS NAS: 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: beszel-agent

@@ -16,22 +16,30 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Agent for [[Portainer]]
-* **Port(s):** `9001`
-* **URL / Access:** 
-    * ~~[[http://pi-zero.internal:9001]]~~
-    * ~~[[http://storage-server.internal:9001]]~~
-* **Credentials:** N/A
+
+#### Purpose:
++ Agent for [[Portainer]]
+
+#### Port(s):
++ `9001`
+
+#### URL / Access: 
++ ~~[[http://pi-zero.internal:9001]]~~
++ ~~[[http://storage-server.internal:9001]]~~
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** 
-    * ~~:simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]~~
-    * ~~:simple-raspberrypi:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]~~
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `portainer_agent`
-* **Image:** `portainer/agent:lts` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| :services-zimaos:&nbsp;~~[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
 ### :material-cog: Configuration  
+
+#### Raspberry Pi Zero Server:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  
@@ -46,6 +54,8 @@ services:
       - /:/host  
     image: portainer/agent:lts
 ```
+
+#### ZimaOS NAS:
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-portainer-agent

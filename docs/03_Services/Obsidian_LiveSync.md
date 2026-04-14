@@ -16,21 +16,27 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** CouchDB database for synchronizing Obsidian Vaults 
-* **Port(s):** `5984`
-* **URL / Access:** 
-    * Settings Web UI: 
-        * <http://storage-server.internal:5984/_utils>
-    * Database:
-        * <http://storage-server.internal:5984/obsidian-vault>
-* **Credentials:** 
-    * :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
+
+#### Purpose:
++ CouchDB database for synchronizing Obsidian Vaults 
+
+#### Port(s):
++ `5984`
+
+#### URL / Access: 
++ Settings Web UI: 
+    + <http://storage-server.internal:5984/_utils>
++ Database:
+    + <http://storage-server.internal:5984/obsidian-vault>
+
+#### Credentials: 
++ :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `obsidian-livesync`
-* **Image:** `couchdb:3.5.0`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `obsidian-livesync` | `couchdb:3.5.0` |
 
 ### :material-cog: Configuration 
 

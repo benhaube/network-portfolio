@@ -17,18 +17,25 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A Web UI and RPC server for `yt-dlp`.
-* **Port(s):** `3033`
-* **URL / Access:** 
-    * <http://storage-server.internal:3033>
-    * <https://yt-dlp.internal>
-* **Credentials:** N/A
+
+#### Purpose:
++ A Web UI and RPC server for `yt-dlp`.
+
+#### Port(s):
++ `3033`
+
+#### URL / Access: 
++ <http://storage-server.internal:3033>
++ <https://yt-dlp.internal>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** :material-docker:&nbsp;Docker Compose
-* **Container Name:** `yt-dlp-webui`
-* **Image:** `marcobaobao/yt-dlp-webui:latest` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
 
 ### :material-cog: Configuration 
 

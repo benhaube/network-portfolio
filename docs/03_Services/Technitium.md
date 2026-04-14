@@ -19,28 +19,32 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
-* **Port(s):**
-    * `53`
-    * `443`
-    * `5380`
-* **URL / Access:** 
-    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
-        * `192.168.50.6:53`
-        * <http://debian-vm.internal:5380>
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-        * `192.168.50.2:53`
-        * <http://pi-server.internal:5380>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Technitium"
 
-## :material-package-down: Deployment Details  
-* **Host Device:** 
-    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:material-linux:&nbsp;Native Install
-* **Container Name:** `N/A`
-* **Image:** `N/A`
+#### Purpose:
++ An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
+
+#### Port(s):
+* `53`
+* `443`
+* `5380`
+
+#### URL / Access: 
+* :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
+    * `192.168.50.6:53`
+    * <http://debian-vm.internal:5380>
+* :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+    * `192.168.50.2:53`
+    * <http://pi-server.internal:5380>
+
+#### Credentials:
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Technitium"
+
+## :material-package-down: Deployment Details
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration 
 

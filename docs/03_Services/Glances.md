@@ -16,20 +16,26 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Glances an Eye on your system. A `top` / `htop` alternative for the Web browser. 
-* **Port(s):** `21208`
-* **URL / Access:** 
-    * <http://pi-server.internal:61208>
-    * <http://storage-server.internal:61208>
-* **Credentials:** N/A
+
+#### Purpose: 
++ Glances an Eye on your system. A `top` / `htop` alternative for the Web browser. 
+
+#### Port(s): 
++ `21208`
+
+#### URL / Access: 
++ <http://pi-server.internal:61208>
++ <http://storage-server.internal:61208>
+
+#### Credentials: 
++ N/A
 
 ## :material-package-down: Deployment Details
-* **Host Device:** 
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-    * :simple-raspberrypi:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `glances`
-* **Image:** `nicolargo/glances:latest-full `
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glances` | `nicolargo/glances:latest-full` |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `glances` | `nicolargo/glances:latest-full` |
 
 ### :material-cog: Configuration
 

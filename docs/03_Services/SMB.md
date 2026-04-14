@@ -10,30 +10,35 @@ tags:
 hide:
   - toc
 ---
-![[folder-network.svg|200]]
+![Material Design folder-network icon](../assets/icons/folder-network.svg){ width=200 }
 
 # [[SMB|SMB (Server Message Block)]]
 [Documentation :material-file-document-multiple:](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-smb/f210069c-7086-4dc2-885e-861d837df688){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Remote file system access.
-* **Port(s):** `445`
-* **URL / Access:** 
-    * `\\storage-server.internal\nvme0n1p1`
-    * `\\storage-server.internal\Quick-Storage`
-    * `\\pi-server.internal\smb-share`
-    * `\\asusrouter.internal\`
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com)
+
+#### Purpose:
++ Remote file system access.
+
+#### Port(s):
++ `445`
+
+#### URL / Access: 
++ `\\storage-server.internal\nvme0n1p1`
++ `\\storage-server.internal\Quick-Storage`
++ `\\pi-server.internal\smb-share`
++ `\\asusrouter.internal\`
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
 
 ## :material-package-down: Deployment Details  
-* **Host Device:** 
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] *(SMB multi-channel)*
-* **Method:** &nbsp;:material-linux:&nbsp;Native Service
-* **Container Name:** `N/A`
-* **Image:** `N/A` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration  
 

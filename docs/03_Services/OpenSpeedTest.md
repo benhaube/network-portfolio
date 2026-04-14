@@ -10,25 +10,32 @@ tags:
 hide:
   - toc
 ---
-![[openspeedtest.svg|200]]
+![OpenSpeedTest Logo](../assets/icons/openspeedtest.svg){ width=200 }
 
 # [[OpenSpeedTest]]
 [GitHub :material-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://openspeedtest.com/selfhosted-speedtest){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** HTML5 Network Speed Test Server. 
-* **Port(s):** `3004`
-* **URL / Access:**
-    * <https://openspeedtest.internal>
-    * <http://storage-server.internal:3004>
-* **Credentials:** N/A
+
+#### Purpose:
++ HTML5 Network Speed Test Server. 
+
+#### Port(s):
++ `3004`
+
+#### URL / Access:
++ <https://openspeedtest.internal>
++ <http://storage-server.internal:3004>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details  
-* **Host Device:** &nbsp;:services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `openspeedtest`
-* **Image:** `openspeedtest/latest:v2.0.6` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `openspeedtest` | `openspeedtest/latest:v2.0.6` |
 
 ### :material-cog: Configuration
 

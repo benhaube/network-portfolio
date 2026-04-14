@@ -19,32 +19,37 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A lightweight, secure remote access VPN server.
-* **Port(s):** 
-    * `41820`
-    * `51820`
-    * `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]])*
-* **URL / Access:** 
-    * :material-vpn:&nbsp;Server Endpoint:
-        * `remote-access-home-34.asuscomm.com:41820` *(for [[ASUS_RT-BE92U|ASUS RT-BE92U]])*
-        * `remote-access-home-34.asuscomm.com:51820` *(for [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]])*
-    * :material-application-cog:&nbsp;Web UI Admin 
-        * <http://storage-server.internal:51821/>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "WireGuard WebUI"
-* **Clients:**
-    * `ben-laptop`
-    * `ben-pixel`
 
-## :material-package-down: Deployment Details 
-* **Host Device:** 
-    * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-* **Method:** 
-    * :material-linux:&nbsp;Native *(for [[ASUS_RT-BE92U|ASUS RT-BE92U]])*
-    * :material-docker:&nbsp;Docker Compose *(for [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]])*
-* **Container Name:** `big-bear-wg-easy-v15`
-* **Image:** `ghcr.io/wg-easy/wg-easy:15`
+#### Purpose:
++ A lightweight, secure remote access VPN server.
+
+#### Port(s): 
++ `41820`
++ `51820`
++ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
+
+#### URL / Access: 
++ :material-vpn:&nbsp;Server Endpoint:
+    + `remote-access-home-34.asuscomm.com:41820` *(for :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md))*
+    + `remote-access-home-34.asuscomm.com:51820` *(for :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
++ :material-application-cog:&nbsp;Web UI Admin 
+    + <http://storage-server.internal:51821/>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "WireGuard WebUI"
+
+#### Clients:
++ `ben-laptop`
++ `ben-pixel`
++ `rob-laptop`
++ `rob-phone`
+
+## :material-package-down: Deployment Details
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :material-cog: Configuration 
 

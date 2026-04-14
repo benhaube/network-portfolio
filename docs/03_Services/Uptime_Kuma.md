@@ -17,22 +17,28 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A fancy self-hosted service monitoring tool.
-* **Port(s):** `3001`
-* **URL / Access:** 
-    * :material-lan:&nbsp;LAN Access
-        * <https://uptime.internal>
-        * <http://pi-server.internal:3001>
-    * :material-wan:&nbsp;WAN Access
-        * <https://uptime.rac3r4life.online>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Uptime Kuma @ pi-server"
+
+#### Purpose:
++ A fancy self-hosted service monitoring tool.
+
+#### Port(s):
++ `3001`
+
+#### URL / Access: 
++ :material-lan:&nbsp;LAN Access
+    + <https://uptime.internal>
+    + <http://pi-server.internal:3001>
++ :material-wan:&nbsp;WAN Access
+    + <https://uptime.rac3r4life.online>
+
+#### Credentials: 
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Uptime Kuma @ pi-server"
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `uptime-kuma`
-* **Image:** `louislam/uptime-kuma:2`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `uptime-kuma` | `louislam/uptime-kuma:2` |
 
 ### :material-cog: Configuration 
 

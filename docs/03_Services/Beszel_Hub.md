@@ -9,26 +9,33 @@ tags:
 hide:
   - toc
 ---
-![[beszel.svg|200]]
+![Beszel Logo](../assets/icons/beszel.svg){ width=200 }
 
 # [[Beszel_Hub|Beszel Hub]]
 [GitHub :material-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/henrygd/beszel-docs){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A lightweight server utilization monitor.
-* **Port(s):** `8090`
-* **URL / Access:**
-    * <https://beszel.internal>
-    * <http://pi-server.internal:8090/>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "Beszel Hub (Admin)"
+
+#### Purpose: 
++ A lightweight server utilization monitor.
+
+#### Port(s): 
++ `8090`
+
+#### URL / Access:
++ <https://beszel.internal>
++ <http://pi-server.internal:8090/>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Beszel Hub (Admin)"
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `beszel`
-* **Image:** `henrygd/beszel:latest`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `beszel-hub` | `henrygd/beszel:latest` |
+|  | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
 
 ### :material-cog: Configuration
 
@@ -36,7 +43,7 @@ hide:
 services:
   beszel:
     image: henrygd/beszel:latest
-    container_name: beszel
+    container_name: beszel-hub
     restart: unless-stopped
     ports:
       - 8090:8090

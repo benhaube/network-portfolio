@@ -18,47 +18,53 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Open decentralized file synchronization.
-* **Port(s):** `8384`
-* **URL / Access:** 
-    * :material-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]]:
-        * <http://bens-workstation.internal:8384>
-        * <http://192.168.50.61:8384>
-    * :material-fedora:&nbsp;[[Ben's_Laptop|Ben's Laptop]]:
-        * <http://127.0.0.1:8384>
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]:
-        * <https://pi-server.internal:8384>
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]:
-        * <https://pi-zero.internal:8384>
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]:
-        * <http://storage-server.internal:8384>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): 
-        * "Syncthing @ storage-server"
-        * "Syncthing @ pi-server"
-        * "Syncthing @ pi-hole"
-        * "Syncthing @ bens-workstation"
-        * "Syncthing @ ben-laptop"
 
-## :material-package-down: Deployment Details  
-* **Host Device:** 
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
-    * :material-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]]
-    * :material-fedora:&nbsp;[[Ben's_Laptop|Ben's Laptop]]
-* **Method:** 
-    * :material-docker:&nbsp;Docker Compose
-        * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]
-            * Container Name: `syncthing`
-            * Image: `linuxserver/syncthing:1.29.7` 
-    * :material-linux:&nbsp;Native Install
-        * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] / [[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]
-            * `#!bash sudo apt install syncthing`
-        * :material-fedora:&nbsp;[[Ben's_Desktop|Ben's Desktop]] / [[Ben's_Laptop|Ben's Laptop]]
-            * `#!bash sudo dnf install syncthing`
+#### Purpose:
++ Open decentralized file synchronization.
+
+#### Port(s):
++ `8384`
+
+#### URL / Access: 
+* :material-fedora:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md):
+    * <http://bens-workstation.internal:8384>
+    * <http://192.168.50.61:8384>
+* :material-fedora:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md):
+    * <http://127.0.0.1:8384>
+* :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md):
+    * <https://pi-server.internal:8384>
+* :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md):
+    * <https://pi-zero.internal:8384>
+* :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md):
+    * <http://storage-server.internal:8384>
+
+#### Credentials: 
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    * "Syncthing @ storage-server"
+    * "Syncthing @ pi-server"
+    * "Syncthing @ pi-hole"
+    * "Syncthing @ bens-workstation"
+    * "Syncthing @ ben-laptop"
+
+## :material-package-down: Deployment Details
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :material-fedora:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-fedora:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `syncthing` | `linuxserver/syncthing:1.29.7` |
 
 ### :material-cog: Configuration  
+
+#### :material-console: Install Commands:
++ :simple-raspberrypi:&nbsp;Raspberry Pi 4B Server / Raspberry Pi Zero Server:
+    + `#!bash sudo apt install -y syncthing`
++ :material-fedora:&nbsp;Ben's Desktop / Ben's Laptop:
+    + `#!bash sudo dnf install -y syncthing syncthingctl-qt6 syncthingplasmoid-qt6`
+
+#### :material-docker: Docker Compose: <br>&emsp;*(ZimaOS NAS)*
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: syncthing

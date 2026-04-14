@@ -10,25 +10,33 @@ tags:
 hide:
   - toc
 ---
-![[glance.svg|200]]
+![Glance Logo](../assets/icons/glance.svg){ width=200 }
 
 # [[Glance]]
 [GitHub :material-github:](https://github.com/glanceapp/glance){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/glanceapp/glance/tree/main/docs){ .md-button }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** A server dashboard Web UI. 
-* **Port(s):** `8580`
-* **URL / Access:**
-    * <https://glance.internal>
-    * <http://pi-server.internal:8580/>
-* **Credentials:** N/A
+
+#### Purpose: 
++ A server dashboard Web UI. 
+
+#### Port(s): 
++ `8580`
+
+#### URL / Access:
++ <https://glance.internal>
++ <http://pi-server.internal:8580/>
+
+#### Credentials:
++ N/A
 
 ## :material-package-down: Deployment Details 
-* **Host Device:** &nbsp;:simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `glance`
-* **Image:** `glanceapp/glance` 
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance` | `glanceapp/glance:latest` |
+|  |  | `f1_api` | `skyallinott/f1_api:latest` |
 
 ### :material-cog: Configuration
 

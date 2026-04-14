@@ -10,46 +10,53 @@ tags:
 hide:
   - toc
 ---
-![[ssh.svg|300]]
+![Material Design ssh icon](../assets/icons/ssh.svg){ width=300 }
 
 # [[SSH|SSH (Secure Shell)]]
 [Documentation :material-file-document-multiple:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Remote shell access to servers
-* **Port(s):** `22`
-* **URL / Access:** 
-    * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
-        * `192.168.50.1:22` 
-        * `asusrouter.internal:22`
-    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
-        * `192.168.50.6:22` 
-        * `debian-vm.internal:22` 
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-        * `192.168.50.2:22` 
-        * `pi-server.internal:22`
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W Server]]
-        * `192.168.50.3:22` 
-        * `pi-zero.internal:22` 
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaOS NAS]]
-        * `192.168.50.4:22` 
-        * `storage-server.internal:22` 
-    * :devices-creality:&nbsp;[[Kacey_3D-printer|Creality K1C 3D-Printer]]
-        * `192.168.50.153:22` 
-        * `k1c-a71e.internal:22` 
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): SSH keys
+
+#### Purpose:
++ Remote shell access to servers
+
+#### Port(s):
++ `22`
+
+#### URL / Access: 
+* :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)
+    * `192.168.50.1:22` 
+    * `asusrouter.internal:22`
+* :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
+    * `192.168.50.6:22` 
+    * `debian-vm.internal:22` 
+* :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+    * `192.168.50.2:22` 
+    * `pi-server.internal:22`
+* :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)
+    * `192.168.50.3:22` 
+    * `pi-zero.internal:22` 
+* :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
+    * `192.168.50.4:22` 
+    * `storage-server.internal:22` 
+* :devices-creality:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md)
+    * `192.168.50.153:22` 
+    * `k1c-a71e.internal:22` 
+
+#### Credentials: 
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): SSH keys
 
 ## :material-package-down: Deployment Details  
-* **Host Device(s):** 
-    * :material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
-    * :material-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]]
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]
-    * :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W Server]]
-    * :services-zimaos:&nbsp;[[ZimaBoard_2_NAS|ZimaOS NAS]]
-    * :devices-creality:&nbsp;[[Kacey_3D-printer|Creality K1C 3D-Printer]]
-* **Method:** &nbsp;:material-linux:&nbsp;Native Linux
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :devices-creality:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ## :material-cog: Configuration 
 

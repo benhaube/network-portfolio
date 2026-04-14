@@ -9,24 +9,31 @@ tags:
 hide:
   - toc
 ---
-![[console.svg|200]]
+![Material Design console icon](../assets/icons/console.svg){ width=200 }
 
 # [[ttydBridge]]
 [GitHub :material-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview
-* **Purpose:** Easily access and use the host terminal in a Web browser.
-* **Port(s):** `2222`
-* **URL / Access:** <http://storage-server.internal:2222>
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "storage-server (Admin)"
+
+#### Purpose:
++ Easily access and use the host terminal in a Web browser.
+
+#### Port(s):
++ `2222`
+
+#### URL / Access:
++ <http://storage-server.internal:2222>
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "storage-server (Admin)"
 
 ## :material-package-down: Deployment Details
-* **Host Device:** &nbsp;:services-zimaos: [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] 
-* **Method:** &nbsp;:material-docker:&nbsp;Docker Compose
-* **Container Name:** `ttydbridge`
-* **Image:** `cp0204/ttydbridge:v0.0.3`
+
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `ttydbridge` | `cp0204/ttydbridge:v0.0.3` |
 
 ### :material-cog: Configuration
 

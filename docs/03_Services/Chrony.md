@@ -8,7 +8,7 @@ tags:
 hide:
   - toc
 ---
-![[chrony.svg|250]]
+![Chrony Icon](../assets/icons/chrony.svg){ width=200 }
 
 # [[Chrony|Chrony *(NTP Server)*]]
 [Gitlab :simple-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://chrony-project.org/documentation.html){ .md-button }
@@ -16,19 +16,25 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-* **Purpose:** Advanced, lightweight NTP client and server.
-* **Port(s):** `123`
-* **URL / Access:**
-    * `asusrouter.internal:123`
-* **Credentials:** 
-    * :services-bitwarden:&nbsp;[Bitwarden](https://vault.bitwarden.com): "ASUS Router"
+#### Purpose: 
++ Advanced, lightweight NTP client and server.
+
+#### Port(s): 
++ `123`
+
+#### URL / Access:
++ `asusrouter.internal:123`
+
+#### Credentials: 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
+    + Admin Login: "ASUS Router"
+    + SSH Key: "Admin@asusrouter"
 
 ## :material-package-down: Deployment Details
 
-* **Host Device:** &nbsp;:material-router-wireless:&nbsp;[[ASUS_RT-BE92U|ASUS RT-BE92U]]
-* **Method:** &nbsp;:material-linux:&nbsp;Native Linux
-* **Container Name:** `N/A`
-* **Image:** `N/A`
+| Host Device | Method | Container Name | Image |
+| :---------- | :----- | :------------- | :---- |
+| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration 
 

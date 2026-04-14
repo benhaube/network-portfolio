@@ -61,7 +61,7 @@ hide:
 
 18. [ ] Place the build plate back on.
 
-![[bed-knobs-mod-complete.jpg|400]]
+![Image of completed bed knobs modification](../assets/pictures/bed-knobs-mod-complete.jpg){ width=400 }
 
 ## :material-chip: Firmware Setup
 
@@ -71,7 +71,7 @@ hide:
 > [Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 > 
 > > [!danger] Default Password
-> > The default `root` password is `creality_2023` *(at least on my K1C)*. 
+> > The default `root` password is `creality_2023` *(at least on my Creality^&copy;^ K1C)*. 
 > > 
 > > It is highly recommended to change this password using the `passwd` command. 
 
@@ -124,8 +124,8 @@ hide:
 
     | Interface | Port |
     | :-------- | :--: |
-    | :services-fluidd:&nbsp;Fluidd | `4408` |
-    | :services-mainsail:&nbsp;Mainsail | `4409` |
+    | :services-fluidd:&nbsp;[Fluidd](../03_Services/Fluidd.md) | `4408` |
+    | :services-mainsail:&nbsp;[Mainsail](https://docs.mainsail.xyz/) | `4409` |
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
 
@@ -136,7 +136,7 @@ hide:
 
     In the image below, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise *(looking at it from above)*, or roughly ⅛ of a turn.
 
-    ![[screws-tilt-adjust.png|400]]
+    ![A screensot of Fluidd UI 'screws-tilt-adjust' dialog](../assets/pictures/screws-tilt-adjust.png){ width=400 }
 
 6. [ ] Click retry or repeat the command to check the new level.
 

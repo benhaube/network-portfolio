@@ -124,7 +124,7 @@ graph TD
         Server_Pi4 -. "USB Storage" .- USB_Ext
 
         %% --- Raspberry Pi Zero Server --- %%
-        subgraph Server_PiZero ["<b>Pi Zero 2 W</b> <i>(.3)</i>"]
+        subgraph Server_PiZero ["<b>Raspberry Pi Zero Server</b> <i>(.3)</i>"]
             MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(Debian Trixie)</i>")]:::storage
             Service_Docker_PiZero("<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"):::service
             Syncthing_PiZero("Syncthing"):::service

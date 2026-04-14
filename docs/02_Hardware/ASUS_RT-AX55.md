@@ -29,7 +29,7 @@ hide:
 + Printer-Cart 
 
 #### OS / Firmware: 
-+ :material-router-wireless:&nbsp;asuswrt *(3.0.0.4.386_53327-g852eb80)*
++ [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3.0.0.4.386_53327-g852eb80)*
 
 #### Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Asus Router"

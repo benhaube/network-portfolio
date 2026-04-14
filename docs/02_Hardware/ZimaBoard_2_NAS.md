@@ -33,7 +33,7 @@ hide:
 + Mini-Rack
 
 #### OS / Firmware:
-+ :services-zimaos:&nbsp;ZimaOS 1.5.4 *(Immutable)*
++ [:services-zimaos:&nbsp;ZimaOS 1.5.4](https://www.zimaspace.com/zimaos) *(Immutable)*
 
 #### Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 

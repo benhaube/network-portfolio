@@ -68,7 +68,7 @@ graph TD
         Modem("<b>Hitron Modem</b><br><i>(DOCSIS 3.1)</i>"):::twoFiveGb
         RouterMain("<b>ASUS RT-BE92U</b><br><i>(Main Router)</i>"):::tenGb
         SwitchAgg("<b>Ugreen Switch</b><br><i>(CM753)</i>"):::tenGb
-        Zima("<b>ZimaBoard 2 NAS</b><br><i>(Storage Server)</i>"):::twoFiveGb
+        Zima("<b>ZimaOS NAS</b><br><i>(Storage Server)</i>"):::twoFiveGb
         VM("<b>Debian Server VM</b><br><i>(Primary DNS)</i>"):::multi
     end
 

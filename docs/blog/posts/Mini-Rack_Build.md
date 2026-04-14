@@ -8,16 +8,18 @@ categories:
 hide:
   - toc
 ---
-![[10-in-rack.svg|400]]
+![Custom icon for my mini-rack made in Inkscape](../assets/icons/10-in-rack.svg){ width=400 }
 
-> [!info] Mini-Rack Build - January, 2026
+> [!info] Mini-Rack Build: Dec, 2025 :material-arrow-right-thin: Jan, 2026
 > **3D-Printed Parts:**
 > 
-> + RackMate bottom horizontal frame - [:simple-printables: Printables](https://www.printables.com/model/1274535-geeekpi-10-inch-server-rack-bottom-horizontal-fram)
-> + ZimaBoard 2 w/SSD mounting bracket - [:simple-printables: Printables](https://www.printables.com/model/1316574-10-inch-rack-panel-for-zimaboard-2)
-> + Vented blank plates *(hexagon pattern)* - [:simple-printables: Printables](https://www.printables.com/model/1149718-grid-rack-panel-1u-ventilation-panel-cover-for-10)
-> + Ugreen CM753 mounting bracket - *(No longer available to download)*
-> 
+> + RackMate bottom horizontal frame 
+> + ZimaBoard 2 w/SSD mounting bracket 
+> + Vented blank plates *(hexagon pattern)* 
+> + Ugreen CM753 mounting bracket *(No longer available to download. Included a similar model in collection linked below.)*
+>
+> [3D-Models :simple-printables:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }
+>
 > **Purchased Parts:**
 > 
 > + [[ZimaBoard_2_NAS|ZimaBoard 2 1664]]
@@ -42,30 +44,30 @@ hide:
 
 ## Printing the Parts
 
-![[k1_zimaboard2.gif|1018]]
+![ZimaBoard 2 rack mount 3D-print timelapse](../assets/timelapse/k1_zimaboard2.gif){ width=1018 }
 
-![[k1_harddrive.gif|1018]]
+![ZimaBoard 2 rack mount drive sleds 3D-print timelapse](../assets/timelapse/k1_harddrive.gif){ width=1018 }
 
-![[k1_ugreen_switch_optimized.gif|1018]]
+![Ugreen switch rack mount 3D-print timelapse](../assets/timelapse/k1_ugreen_switch_optimized.gif){ width=1018 }
 
-![[k1_bottom-frame.gif|1018]]
+![RackMate bottom frame 3D-print timelapse](../assets/timelapse/k1_bottom-frame.gif){ width=1018 }
 
-![[k1_rack-panel.gif|1018]]
+![Blank plate 3D-print timelapse](../assets/timelapse/k1_rack-panel.gif){ width=1018 }
 
-![[zimaboard_frame.jpg|500]]&emsp;![[zimaboard_frame_2.jpg|500]]
+![ZimaBoard rack mount #1](../assets/photos/rack-build/zimaboard_frame.jpg){ width=500 }&emsp;![ZimaBoard rack mount #2](../assets/photos/rack-build/zimaboard_frame_2.jpg){ width=500 }
 
-![[zimaboard_frame_3.jpg|500]]
+![ZimaBoard rack mount #3](../assets/photos/rack-build/zimaboard_frame_3.jpg){ width=500 }
 
 ## Building the Rack
 
-![[rackmate.jpg|500]]&emsp;![[rackmate_2.jpg|500]] 
+![RackMate build #1](../assets/photos/rack-build/rackmate.jpg){ width=500 }&emsp;![RackMate build #2](../assets/photos/rack-build/rackmate_2.jpg){ width=500 }
 
-![[rackmate_3.jpg|500]]&emsp;![[rackmate_4.jpg|500]] 
+![RackMate build #3](../assets/photos/rack-build/rackmate_3.jpg){ width=500 }&emsp;![RackMate build #4](../assets/photos/rack-build/rackmate_4.jpg){ width=500 }
 
-![[rackmate_5.jpg|500]]&emsp;![[rackmate_6.jpg|500]] 
+![RackMate build #5](../assets/photos/rack-build/rackmate_5.jpg){ width=500 }&emsp;![RackMate build #6](../assets/photos/rack-build/rackmate_6.jpg){ width=500 }
 
-![[rackmate_7.jpg|500]]&emsp;![[rackmate_8.jpg|500]] 
+![RackMate build #7](../assets/photos/rack-build/rackmate_7.jpg){ width=500 }&emsp;![RackMate build #8](../assets/photos/rack-build/rackmate_8.jpg){ width=500 }
 
 ## Final Rack Configuration
 
-![[rackmate_final.jpg|500]]&emsp;![[rackmate_final_back.jpg|500]]
+![RackMate build final front](../assets/photos/rack-build/rackmate_final.jpg){ width=500 }&emsp;![RackMate build final rear](../assets/photos/rack-build/rackmate_final_back.jpg){ width=500 }

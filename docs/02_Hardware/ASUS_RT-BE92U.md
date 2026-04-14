@@ -54,11 +54,11 @@ hide:
 
 #### :material-wifi: Wi-Fi Networks:
 
-| SSID | VLAN | IP Address | Frequency | Notes |  
-| :--: | :--: | :--------- | :-------- | :---- |
-| *Home* | *vlan50* | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :material-security:&nbsp;Trusted VLAN |
-| *Home_Guest* | *vlan52* | `192.168.52.0/24` | 2.4 GHz, 5 GHz | :material-account-multiple:&nbsp;Guest VLAN |
-| *2G_IoT* | *vlan53* | `192.168.53.0/24` | 2.4 GHz | :material-home-automation:&nbsp;IoT VLAN |
+| SSID | VLAN | WAN Access | IP Address | Frequency | Notes |  
+| :--: | :--: | :--------: | :--------- | :-------- | :---- |
+| *Home* | *vlan50* | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :material-security:&nbsp;Trusted VLAN |
+| *Home_Guest* | *vlan52* | :material-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz | :material-account-multiple:&nbsp;Guest VLAN |
+| *2G_IoT* | *vlan53* | :material-close: | `192.168.53.0/24` | 2.4 GHz | :material-home-automation:&nbsp;IoT VLAN |
 
 #### :material-ethernet: Physical Ethernet Ports:
 
@@ -66,7 +66,7 @@ hide:
 | :----: | :--------------- | :----------- | :---- |
 | 10 Gb WAN / LAN 1 | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10 Gb/s Uplink |
 | 2.5 Gb WAN / LAN 2 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md) | Black Cat6a | WAN Connection |
-| 2.5 Gb LAN 1 | :material-ethernet:&nbsp;Mini-Rack | Black Cat6a | Spare Keystone Jack |
+| 2.5 Gb LAN 1 | :devices-10-inch-rack:&nbsp;Mini-Rack | Black Cat6a | Spare Keystone Jack |
 | 2.5 Gb LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
 | 2.5 Gb LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
 | 2.5 Gb LAN 4 | :material-ethernet:&nbsp;*Empty* | - | - |

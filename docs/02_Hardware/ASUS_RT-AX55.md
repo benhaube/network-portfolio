@@ -50,9 +50,9 @@ hide:
 
 #### :material-wifi: Wi-Fi Networks:
 
-| SSID | VLAN | IP Address | Frequency | Notes |  
-| :--: | :--: | :--------- | :-------- | :---- |
-| *Home* | *vlan50* | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
+| SSID | VLAN | WAN Access | IP Address | Frequency | Notes |  
+| :--: | :--: | :--------: | :--------- | :-------- | :---- |
+| *Home* | *vlan50* | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
 
 #### :material-ethernet: Physical Ethernet Ports:
 

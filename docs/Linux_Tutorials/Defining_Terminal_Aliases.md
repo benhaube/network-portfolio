@@ -100,7 +100,7 @@ hide:
     nano aliases
     ```
 
-    > [!tip]+
+    > [!tip]+ #!/bin/bash
     > I prefer to put `#!/bin/bash` on the first line of the file. This is not strictly necessary, but it tells your text editor to use proper syntax highlighting for Bash if it is available. 
 
 5. Paste or type in your desired aliases, then ++ctrl+o++ to save the changes and ++ctrl+x++ to exit nano.

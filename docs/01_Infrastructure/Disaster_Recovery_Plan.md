@@ -1,3 +1,6 @@
+---
+icon: material/restore-alert
+---
 ![Material Design restore-alert icon](../assets/icons/restore-alert-color.svg){ width=200 }
 
 # [[Disaster_Recovery_Plan|Disaster Recovery Plan]]

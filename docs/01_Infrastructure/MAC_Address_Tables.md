@@ -1,4 +1,5 @@
 ---
+icon: material/ethernet
 hide:
   - toc
 ---

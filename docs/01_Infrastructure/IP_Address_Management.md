@@ -1,4 +1,5 @@
 ---
+icon: material/ip-network
 hide:
   - toc
 ---

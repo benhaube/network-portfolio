@@ -1,3 +1,6 @@
+---
+icon: material/server-security
+---
 ![Material Design server-security icon](../assets/icons/server-security.svg){ width=200 }
 
 # [[Network_Security_Policy|Network Security Policy (NSP)]]

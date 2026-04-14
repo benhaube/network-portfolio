@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-![[google-photos.svg|150]]&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&nbsp;![[immich.svg|150]]
+![Google Photos Logo](../assets/icons/google-photos.svg){ width=150 }&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&nbsp;![Immich Logo](../assets/icons/immich.svg){ width=150 }
 
 # [[Immich_Slideshow_for_Nest_Hub|Project Migration: Google Photos :material-arrow-right-thin: Self-Hosted Ecosystem]]
 
@@ -13,7 +13,8 @@ hide:
 ---
 
 ## :material-broom: Phase 1: Cleaning Google Photos
-> [!info] Goal
+
+> [!done] Goal
 > Delete cloud data without losing local files.
 
 1.  **Safety First *(Mobile)*:**
@@ -80,10 +81,12 @@ deletePhotos();
 ---
 
 ## :material-dns: Phase 2: Server-Side Setup *(ZimaOS NAS)*
-> [!info] Goal
+
+> [!done] Goal
 > Replicate "Live Albums" and generate the Nest Hub interface.
 
 ### :material-docker: Docker Compose Snippet
+
 Add these services to your existing Immich stack or a new stack.
 
 ```yaml title="docker-compose.yml" linenums="1"
@@ -121,6 +124,7 @@ services:
 4. SYNC_MODE=1 adds new photos automatically
 
 ### :material-file-image: Auto Album Config
+
 Place this in the same folder as your docker-compose file.
 
 ```json title="config.json" linenums="1"
@@ -142,7 +146,8 @@ Place this in the same folder as your docker-compose file.
 ---
 
 ## :material-wan: Phase 3: Network & Cloudflare
-> [!info] Goal
+
+> [!done] Goal
 > Allow Nest Hubs to load the frame securely.
 
 1. **Tunnel:** Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081`
@@ -154,7 +159,8 @@ Place this in the same folder as your docker-compose file.
 ---
 
 ## :material-home-automation: Phase 4: Automation *(Home Assistant on Pi 4)*
-> [!info] Goal
+
+> [!done] Goal
 > Force Nest Hub to show the frame when idle.
 
 **Prerequisite:** Install "DashCast" add-on in [[Home_Assistant|Home Assistant]].

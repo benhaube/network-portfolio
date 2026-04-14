@@ -30,7 +30,7 @@ hide:
 2. :material-router-wireless:&ensp;[[ASUS_RT-AX55|ASUS RT-AX55]]: Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
 3. :material-desktop-tower:&ensp;[[Ben's_Desktop|Ben's Desktop]]: Ben's main desktop PC located in the office upstairs.
 4. :material-laptop:&ensp;[[Ben's_Laptop|Ben's Laptop]]: Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
-5. :material-debian:&ensp;[[Debian_Server_VM|Debian Server VM]]: General purpose Debian Linux server hosted on *[[ZimaBoard_2_NAS|ZimaBoard 2 NAS]]*. 
+5. :material-debian:&ensp;[[Debian_Server_VM|Debian Server VM]]: General purpose Debian Linux server hosted on *[[ZimaBoard_2_NAS|ZimaOS NAS]]*. 
 6. :material-wan:&ensp;[[Hitron_Modem|Hitron Modem]]: DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
 7. :material-printer-3d-nozzle:&ensp;[[Kacey_3D-printer|Kacey 3D-Printer]]: Creality K1C 3D-printer located in the office upstairs. 
 8. :material-server:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
@@ -88,7 +88,7 @@ hide:
 ---
 ## :material-swap-horizontal-bold: Change Management
 
-1. :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[[Caddy_Reverse-Proxy|Caddy Reverse Proxy]]: Preparing the *[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 Server]]* to be a *[[Caddy]]* reverse proxy server to give unique domain names to services hosted on the local network.
+1. :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[[Caddy_Reverse-Proxy|Caddy Reverse Proxy]]: Preparing the *[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]* to be a *[[Caddy]]* reverse proxy server to give unique domain names to services hosted on the local network.
 2. :simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;[[DNS_Migration|DNS Migration]]: Preparing to migrate from *[[Pi-hole]]* to *[[Technitium]]* for DNS queries on the local network. 
 
 ---

@@ -30,7 +30,7 @@ hide:
 + Living-Room
 
 #### OS / Firmware: 
-+ [:material-router-wireless:&nbsp;asuswrt-merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
++ [:material-wizard-hat:&nbsp;asuswrt-merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
 #### Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Asus Router"

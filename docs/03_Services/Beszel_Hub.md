@@ -1,4 +1,5 @@
 ---
+icon: services/beszel
 tags:
   - active
   - service

@@ -1,4 +1,5 @@
 ---
+icon: services/nextcloud
 status: deprecated
 tags:
   - inactive

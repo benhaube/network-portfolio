@@ -1,4 +1,5 @@
 ---
+icon: services/youtube-dl
 tags:
   - active
   - service

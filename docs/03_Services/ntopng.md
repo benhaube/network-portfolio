@@ -1,4 +1,5 @@
 ---
+icon: material/ethernet
 tags:
   - active
   - service

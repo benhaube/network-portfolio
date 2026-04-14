@@ -1,4 +1,5 @@
 ---
+icon: services/homebox
 tags:
   - active
   - service

@@ -1,4 +1,5 @@
 ---
+icon: services/uptime-kuma
 tags:
   - active
   - service

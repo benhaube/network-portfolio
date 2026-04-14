@@ -1,4 +1,5 @@
 ---
+icon: simple/wireguard
 tags:
   - active
   - service

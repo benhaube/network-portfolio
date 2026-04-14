@@ -1,4 +1,5 @@
 ---
+icon: services/immich
 tags:
   - active
   - service

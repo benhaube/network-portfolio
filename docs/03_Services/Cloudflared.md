@@ -1,4 +1,5 @@
 ---
+icon: simple/cloudflare
 tags:
   - active
   - service

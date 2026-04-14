@@ -1,4 +1,5 @@
 ---
+icon: material/ssh
 tags:
   - active
   - service

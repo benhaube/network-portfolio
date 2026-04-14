@@ -1,4 +1,5 @@
 ---
+icon: services/glances
 tags:
   - active
   - service

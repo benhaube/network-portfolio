@@ -1,4 +1,5 @@
 ---
+icon: services/portainer
 status: deprecated
 tags:
   - inactive

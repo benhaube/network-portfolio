@@ -1,4 +1,5 @@
 ---
+icon: material/cog-sync
 status: deprecated
 tags:
   - inactive

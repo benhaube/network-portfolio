@@ -1,4 +1,5 @@
 ---
+icon: material/remote-desktop
 tags:
   - active
   - service

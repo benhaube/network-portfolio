@@ -1,4 +1,5 @@
 ---
+icon: services/openspeedtest
 tags:
   - active
   - service

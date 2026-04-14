@@ -1,4 +1,5 @@
 ---
+icon: services/fluidd
 tags:
   - active
   - service

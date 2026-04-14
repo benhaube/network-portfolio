@@ -1,4 +1,5 @@
 ---
+icon: simple/syncthing
 tags:
   - active
   - service

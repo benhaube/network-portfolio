@@ -1,4 +1,5 @@
 ---
+icon: simple/obsidian
 tags:
   - active
   - service

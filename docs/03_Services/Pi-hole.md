@@ -1,4 +1,5 @@
 ---
+icon: simple/pihole
 status: deprecated
 tags:
   - inactive

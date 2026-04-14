@@ -1,4 +1,5 @@
 ---
+icon: services/spoolman
 tags:
   - active
   - service

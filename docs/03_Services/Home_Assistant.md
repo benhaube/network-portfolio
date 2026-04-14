@@ -1,4 +1,5 @@
 ---
+icon: simple/homeassistant
 tags:
   - active
   - service

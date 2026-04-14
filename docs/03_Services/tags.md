@@ -1,3 +1,6 @@
+---
+icon: material/tag
+---
 ![[web.svg|200]]
 
 # Services Tags

@@ -2,23 +2,24 @@
 hide:
   - toc
 ---
-![[pi-hole.svg|150]]&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
+![Pi-hole Icon](../assets/icons/pi-hole.svg){ width=150 }&nbsp;![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
 
 # [[DNS_Migration|DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)]]
 
 ## :material-file-document: Phase 1: Pre-Migration & Documentation
+
 1. **Export Pi-hole Data:** 
     + [ ] Run a "Teleporter" backup on your current primary and secondary Pi-holes.
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary: :simple-raspberrypi:&nbsp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] :material-arrow-right-thin: `192.168.50.2` 
-    + [ ] Secondary: :simple-debian:&nbsp;[[Debian_Server_VM|Debian Server VM]] :material-arrow-right-thin: `192.168.50.6`
-    + [ ] Tertiary/Failover: :simple-raspberrypi:&nbsp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]] :material-arrow-right-thin: `192.168.50.3`
+    + [ ] Primary: [:simple-raspberrypi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) :material-arrow-right-thin: `192.168.50.2` 
+    + [ ] Secondary: [:simple-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md) :material-arrow-right-thin: `192.168.50.6`
+    + [ ] Tertiary/Failover: [:simple-raspberrypi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) :material-arrow-right-thin: `192.168.50.3`
 
 ## :material-dns: Phase 2: Server Provisioning
 
-### :material-debian:&nbsp;Debian VM (ZimaOS):
+### :material-debian:&nbsp;Debian Server VM *(ZimaOS NAS)*:
 
 1. **Allocate Resources:** 
     + [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
@@ -80,7 +81,7 @@ graph LR
         Map("<b>Map IP Addresses:</b>")
         Primary("<b>Primary</b> (Raspberry Pi 4B): 192.168.50.2")
         Secondary("<b>Secondary</b> (Debian VM): 192.168.50.6")
-        Tertiary("<b>Tertiary/Failover</b> (Raspberry Pi Zero 2W): 192.168.50.3")
+        Tertiary("<b>Tertiary/Failover</b> (Raspberry Pi Zero Server): 192.168.50.3")
     end
     
     %% Connections (Phase_1)
@@ -137,9 +138,9 @@ graph LR
     subgraph Phase_4 ["<b>Phase 4</b>: Network Cutover"]
         direction TB
         DHCP("<b>Update Router DHCP:</b>")
-        DHCP_1("Point DNS 1 to the <b>Debian VM</b> IP.")
-        DHCP_2("Point DNS 2 to the <b>Pi 4B</b> IP.")
-        DHCP_3("<i>(Optional)</i> Point DNS 3 to the <b>Pi Zero</b> IP.")
+        DHCP_1("Point DNS 1 to the <b>Debian Server VM</b> IP.")
+        DHCP_2("Point DNS 2 to the <b>Pi 4B Server</b> IP.")
+        DHCP_3("<i>(Optional)</i> Point DNS 3 to the <b>Pi Zero Server</b> IP.")
         
         Clear_Cache("<b>Clear Local Caches:</b> Flush DNS on your main workstation")
         Test_Resolution("<b>Test Resolution:</b> Run 'dig @[Primary-IP] google.com' and verify the [SERVER] field.")

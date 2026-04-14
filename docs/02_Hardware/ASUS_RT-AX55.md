@@ -58,7 +58,7 @@ hide:
 
 | Port | Connected Device | Color / Type | Notes |
 | :--: | :--------------- | :----------- | :---- |
-| WAN 1 | :material-ethernet:&nbsp;*Empty* | - | Wi-Fi *(5 GHz)* Backhaul |
+| WAN 1 | :material-ethernet:&nbsp;*Empty* | - | :material-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
 | LAN 1 | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black Cat6a | 1 Gb/s Uplink |
 | LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
 | LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |

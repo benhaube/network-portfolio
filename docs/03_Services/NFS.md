@@ -1,5 +1,5 @@
 ---
-icon:
+icon: material/folder-network
 tags:
   - active
   - service

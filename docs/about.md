@@ -1,3 +1,9 @@
+---
+icon: material/account-question
+title: About Me
+hide:
+  - toc
+---
 ![My Profile Picture](assets/pictures/profilepic.jpg){ width=300 }
 
 # [[About_Me|About Me & Professional Philosophy]]

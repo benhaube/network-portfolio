@@ -2,7 +2,8 @@
 hide:
   - toc
 ---
-![[console.svg|200]]
+![material/console icon](../assets/icons/console.svg){ width=200 }
+
 # [[My_Terminal_Aliases|Terminal Aliases]]
 
 > [!info]

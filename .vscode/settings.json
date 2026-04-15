@@ -1,6 +1,5 @@
 {
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "'Noto Sans Mono', monospace",
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
     },
@@ -13,5 +12,6 @@
         "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
         "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping",
         "tag:yaml.org,2002:python/name:material.plugins.tags.tag_name_casefold scalar"
-    ]
+    ],
+    "editor.fontFamily": "'Google Sans Code', monospace"
 }

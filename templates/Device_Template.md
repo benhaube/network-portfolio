@@ -6,7 +6,7 @@ tags:
 hide:
   - toc
 ---
-![[company-logo.svg|200]]
+![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # [[Device_Template|Device Template]]
 [Button :material-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :material-icon:](https://example.com){ .md-button }
@@ -28,6 +28,12 @@ hide:
 
 #### Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
+
+#### Core Specs:
+
+| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
+| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
+|  |  |  |  |  |
 
 ## :material-lan: Network Configuration
 

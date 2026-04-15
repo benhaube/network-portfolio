@@ -7,7 +7,7 @@ tags:
 hide:
   - toc
 ---
-![[service-logo.svg|200]]
+![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # [[Service_Template|Service Template]]
 [GitHub :material-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.github.com/en){ .md-button }

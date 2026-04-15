@@ -7,7 +7,7 @@ tags:
 hide:
   - toc
 ---
-![[company-logo.svg|200]]
+![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # [[Router_Template|Router Template]]
 [Docs :material-file-document-multiple:](https://example.com){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://example.com){ .md-button }

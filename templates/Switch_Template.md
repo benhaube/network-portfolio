@@ -7,7 +7,7 @@ tags:
 hide:
   - toc
 ---
-![[company-logo.svg|200]]
+![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # [[Switch_Template|Switch Template]]
 [Manual :material-book-information-variant:](../assets/manuals/manual.pdf){ .md-button .md-button--primary }

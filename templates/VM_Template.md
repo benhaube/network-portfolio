@@ -6,7 +6,7 @@ tags:
 hide:
   - toc
 ---
-![[os-logo.svg|200]]
+![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # [[VM_Template|VM Template]]
 [OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :material-file-document-multiple:](https://example.com){ .md-button }

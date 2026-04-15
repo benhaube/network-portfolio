@@ -6,7 +6,7 @@ hide:
 ![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=400 }
 ![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=400 }
 
-# [[K1_Bed_Level_Knobs_Tutorial|Manual Bed Leveling Mod]]
+# Manual Bed Leveling Mod
 
 > [!question] Why do this?
 > The K1 series does NOT have automatic bed leveling! This upgrade allows you to fine tune your bed level using the `screws_tilt_calculate` command in Fluidd. This method is superior to tooth skipping and the Creality method. It's quick, easy and accurate.

@@ -14,7 +14,7 @@ hide:
 ---
 ![Caddy Logo](../assets/icons/caddy.svg){ width=200 }
 
-# [[Caddy]]
+# Caddy *(Reverse-Proxy Server)*
 [GitHub :material-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button }
 
 ---

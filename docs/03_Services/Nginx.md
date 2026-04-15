@@ -11,7 +11,7 @@ hide:
 ![Nginx Icon](../assets/icons/nginx-light.svg#only-light){ width=200 }
 ![Nginx Icon](../assets/icons/nginx.svg#only-dark){ width=200 }
 
-# [[Nginx|Nginx (Network Portfolio)]]
+# Nginx (Network Portfolio)
 [GitHub :material-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://nginx.org/en/docs/){ .md-button }
 
 ---

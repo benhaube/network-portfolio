@@ -13,7 +13,7 @@ hide:
 ---
 ![Glance Logo](../assets/icons/glance.svg){ width=200 }
 
-# [[Glance]]
+# Glance
 [GitHub :material-github:](https://github.com/glanceapp/glance){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/glanceapp/glance/tree/main/docs){ .md-button }
 
 ---

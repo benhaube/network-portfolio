@@ -13,7 +13,7 @@ hide:
 ---
 ![Material Design ssh icon](../assets/icons/ssh.svg){ width=300 }
 
-# [[SSH|SSH (Secure Shell)]]
+# SSH (Secure Shell)
 [Documentation :material-file-document-multiple:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---

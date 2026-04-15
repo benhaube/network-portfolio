@@ -11,7 +11,7 @@ hide:
 ---
 ![Home Assistant Logo](../assets/icons/home-assistant.svg){ width=200 }
 
-# [[Home_Assistant|Home Assistant]]
+# Home Assistant
 [GitHub :material-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://www.home-assistant.io/docs/){ .md-button }
 
 ---

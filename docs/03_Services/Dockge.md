@@ -11,7 +11,7 @@ hide:
 ![Dockge Icon](../assets/icons/dockge-light.svg#only-light){ width=200 }
 ![Dockge Icon](../assets/icons/dockge.svg#only-dark){ width=200 }
 
-# [[Dockge]]
+# Dockge
 [GitHub :material-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/louislam/dockge/wiki){ .md-button }
 
 ---

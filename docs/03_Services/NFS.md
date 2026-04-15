@@ -14,7 +14,7 @@ hide:
 ---
 ![Material Design "folder-network" icon](../assets/icons/folder-network.svg){ width=200 }
 
-# [[NFS|NFS (Network File System)]]
+# NFS (Network File System)
 [Documentation :material-file-document-multiple:](https://docs.kernel.org/admin-guide/nfs/index.html){ .md-button .md-button--primary }
 
 ---

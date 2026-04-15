@@ -12,7 +12,7 @@ hide:
 ---
 ![Obsidian Logo](../assets/icons/obsidian.svg){ width=200 }&nbsp;![CouchDB Logo](../assets/icons/couchdb.svg){ width=75 }
 
-# [[Obsidian_LiveSync|Obsidian LiveSync (CouchDB)]]
+# Obsidian LiveSync *(CouchDB)*
 [GitHub :material-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.couchdb.org/en/stable/){ .md-button }
 
 ---

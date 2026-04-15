@@ -14,7 +14,7 @@ hide:
 ![Syncthing Icon](../assets/icons/syncthing-light.svg#only-light){ width=200 }
 ![Syncthing Icon](../assets/icons/syncthing.svg#only-dark){ width=200 }
 
-# [[Syncthing]]
+# Syncthing
 [GitHub :material-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.syncthing.net/){ .md-button }
 
 ---

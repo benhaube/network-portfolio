@@ -12,7 +12,7 @@ hide:
 ![Glances Logo](../assets/icons/glances-light.svg#only-light){ width=200 }
 ![Glances Logo](../assets/icons/glances-dark.svg#only-dark){ width=200 }
 
-# [[Glances]]
+# Glances
 [GitHub :material-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/nicolargo/glances/wiki){ .md-button }
 
 ---

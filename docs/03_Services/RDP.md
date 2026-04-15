@@ -10,7 +10,7 @@ hide:
 ---
 ![Material Design remote-desktop icon](../assets/icons/remote-desktop.svg){ width=200 }
 
-# [[RDP|RDP (Remote Desktop Protocol)]]
+# RDP (Remote Desktop Protocol)
 [Gitlab :simple-gitlab:](https://invent.kde.org/plasma/krdp){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/){ .md-button }
 
 ---

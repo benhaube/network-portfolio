@@ -11,7 +11,7 @@ hide:
 ---
 ![[fluidd.svg|200]]
 
-# [[Fluidd]]
+# Fluidd
 [GitHub :material-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.fluidd.xyz/){ .md-button }
 
 ---

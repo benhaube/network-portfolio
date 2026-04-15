@@ -13,7 +13,7 @@ hide:
 ![Nextcloud Icon](../assets/icons/nextcloud-light.svg#only-light){ width=200 }
 ![Nextcloud Icon](../assets/icons/nextcloud.svg#only-dark){ width=200 }
 
-# [[Nextcloud]]
+# Nextcloud
 [GitHub :material-github:](https://github.com/nextcloud/documentation){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.nextcloud.com/){ .md-button }
 
 ---

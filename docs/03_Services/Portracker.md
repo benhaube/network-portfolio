@@ -14,7 +14,7 @@ hide:
 ![Portracker Icon](../assets/icons/portracker-light.svg#only-light){ width=200 }
 ![Portracker Icon](../assets/icons/portracker-dark.svg#only-dark){ width=200 }
 
-# [[Portracker]]
+# Portracker
 [GitHub :material-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
 
 ---

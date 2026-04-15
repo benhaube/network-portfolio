@@ -13,7 +13,7 @@ hide:
 ![Uptime Kuma Icon](../assets/icons/uptime-kuma-light.svg#only-light){ width=200 }
 ![Uptime Kuma Icon](../assets/icons/uptime-kuma.svg#only-dark){ width=200 }
 
-# [[Uptime_Kuma|Uptime Kuma]]
+# Uptime Kuma
 [GitHub :material-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/louislam/uptime-kuma/wiki){ .md-button }
 
 ---

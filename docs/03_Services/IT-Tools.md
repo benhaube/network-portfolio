@@ -12,7 +12,7 @@ hide:
 ![IT-Tools Icon](../assets/icons/it-tools-light.svg#only-light){ width=200 }
 ![IT-Tools Icon](../assets/icons/it-tools-dark.svg#only-dark){ width=200 }
 
-# [[IT-Tools]]
+# IT-Tools
 [GitHub :material-github:](https://github.com/CorentinTh/it-tools){ .md-button .md-button--primary }
 
 ---

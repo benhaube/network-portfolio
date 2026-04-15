@@ -11,7 +11,7 @@ hide:
 ![F1 Replay Timing Icon](../assets/icons/f1-replay-timing-light.svg#only-light){ width=200 }
 ![F1 Replay Timing Icon](../assets/icons/f1-replay-timing-dark.svg#only-dark){ width=200 }
 
-# [[F1_Replay_Timing|F1 Replay Timing]]
+# F1 Replay Timing
 [GitHub :material-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button }
 
 ---

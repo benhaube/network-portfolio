@@ -13,7 +13,7 @@ hide:
 ---
 ![ntopng Logo](../assets/icons/ntopng.png){ width=200 }
 
-# [[ntopng]]
+# ntopng
 [GitHub :material-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://www.ntop.org/guides/ntopng/){ .md-button }
 
 ---

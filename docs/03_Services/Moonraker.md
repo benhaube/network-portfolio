@@ -12,7 +12,7 @@ hide:
 ---
 ![Material Design "Printer-3D" icon](../assets/icons/printer-3d.svg){ width=200 }&ensp;![Material Design "Printer-3D-Nozzle" icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }
 
-# [[Moonraker]]
+# Moonraker
 [GitHub :material-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button }
 
 ---

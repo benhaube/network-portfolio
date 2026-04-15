@@ -28,6 +28,12 @@ hide:
 #### Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): Secure Notes - "PIN - Rob's Desktop PC"
 
+#### Core Specs:
+
+| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
+| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
+| Core(r) i7 12700K | 12C / 20T | 5.0 GHz | GeForce(r) RTX 3070 | 1725 MHz | 32 GB DDR4 *(3600 MT/s)* |
+
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:

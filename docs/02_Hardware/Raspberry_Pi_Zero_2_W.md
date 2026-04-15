@@ -38,6 +38,12 @@ hide:
 #### Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-hole"
 
+#### Core Specs:
+
+| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
+| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
+| BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz | VideoCore IV | 400 MHz | 512 MB SDRAM |
+
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:

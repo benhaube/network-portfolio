@@ -38,6 +38,12 @@ hide:
 #### Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-server"
 
+#### Core Specs:
+
+| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
+| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
+| BCM2711 *(Armv8-A)* | 4C / 4T *(Cortex-A72)* | 1.5 GHz | VideoCore VI 3D | 500 MHz | 4 GB LPDDR4 *(2400 MT/s)* |
+
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:

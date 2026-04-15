@@ -43,7 +43,7 @@ hide:
 
 | vCPU | RAM | Storage | VDI Location |
 | :--: | :-: | :------ | :----------- |
-| 2C / 2T | 2 GB | 50 GB | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
+| 2C / 2T *(VT-x, VT-d)* | 2 GB | 50 GB | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
 ## :material-lan: Network Configuration
 

@@ -37,7 +37,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| Core(r) i5 1135G7 | 4C / 8T | 4.2 GHz | Iris(r) Xe | 1.3 GHz | 8 GB LPDDR4 *(4267 MT/s)* |
+| Core(r) i5 1135G7 *(x86-64)* | 4C / 8T | 4.2 GHz | Iris(r) Xe | 1.3 GHz | 8 GB LPDDR4 *(4267 MT/s)* |
 
 ## :material-lan: Network Configuration
 

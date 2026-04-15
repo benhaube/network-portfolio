@@ -32,7 +32,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| Core(r) i7 12700K | 12C / 20T | 5.0 GHz | GeForce(r) RTX 3070 | 1725 MHz | 32 GB DDR4 *(3600 MT/s)* |
+| Core(r) i7 12700K *(x86-64)* | 12C / 20T | 5.0 GHz | GeForce(r) RTX 3070 | 1725 MHz | 32 GB DDR4 *(3600 MT/s)* |
 
 ## :material-lan: Network Configuration
 

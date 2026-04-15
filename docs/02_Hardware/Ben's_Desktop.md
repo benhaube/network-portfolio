@@ -37,7 +37,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| Ryzen(r) 7 5800X | 8C / 16T | 4.7 GHz | Radeon(r) 6700XT | 2581 MHz | 32 GB DDR4 *(3600 MT/s)* |
+| Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T | 4.7 GHz | Radeon(r) 6700XT | 2581 MHz | 32 GB DDR4 *(3600 MT/s)* |
 
 ## :material-lan: Network Configuration
 

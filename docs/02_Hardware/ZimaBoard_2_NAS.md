@@ -46,7 +46,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| Intel(r) N150 | 4C / 4T | 3.6 GHz | Intel(r) UHD | 1.0 GHz | 16 GB LPDDR5 *(4800 MT/s)* |
+| Intel(r) N150 *(x86-64)* | 4C / 4T | 3.6 GHz | Intel(r) UHD | 1.0 GHz | 16 GB LPDDR5 *(4800 MT/s)* |
 
 ## :material-lan: Network Configuration
 

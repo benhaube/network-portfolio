@@ -3,7 +3,7 @@ icon: material/server-security
 ---
 ![Material Design server-security icon](../assets/icons/server-security.svg){ width=200 }
 
-# [[Network_Security_Policy|Network Security Policy (NSP)]]
+# Network Security Policy (NSP)
 
 > [!info] Security Philosophy
 > This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.

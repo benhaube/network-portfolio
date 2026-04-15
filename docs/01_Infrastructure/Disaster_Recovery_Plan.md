@@ -3,7 +3,7 @@ icon: material/restore-alert
 ---
 ![Material Design restore-alert icon](../assets/icons/restore-alert-color.svg){ width=200 }
 
-# [[Disaster_Recovery_Plan|Disaster Recovery Plan]]
+# Disaster Recovery Plan
 
 > [!info] Objective
 > The goal of this **DR** plan is to ensure **HA** for critical network services *(DNS, Routing, Security)* and to provide a clear path to data restoration for stateful services *(Immich, Home Assistant, SMB Shares)* in the event of hardware failure or data corruption.

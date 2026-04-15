@@ -8,7 +8,7 @@ hide:
 ---
 ![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=100 }
 
-# [[Physical_Map|Physical Network Map]]
+# Physical Network Map
 
 ---
 

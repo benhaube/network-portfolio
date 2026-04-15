@@ -8,7 +8,7 @@ hide:
 ---
 ![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=100 }
 
-# [[Logical_Map|Logical Network Map]]
+# Logical Network Map
 
 ---
 

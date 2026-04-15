@@ -5,7 +5,7 @@ hide:
 ---
 ![Material Design ip-network icon](../assets/icons/ip-network.svg){ width=200 }
 
-# [[IP_Address_Management|IP Address Management]]
+# IP Address Management
 
 > [!question] What is IPAM?
 > **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.

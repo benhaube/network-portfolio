@@ -5,7 +5,7 @@ hide:
 ---
 ![[ethernet.svg|200]]
 
-# [MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md)
+# MAC Address Tables
 
 ---
 

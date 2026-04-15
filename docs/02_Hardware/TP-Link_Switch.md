@@ -41,7 +41,7 @@ hide:
 | :----: | :--------------- | :----------- | :---- |
 | **1** | :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | White Cat5e | `enp7s0`, `192.168.50.61` |
 | **2** | :material-desktop-tower:&nbsp;[Rob's Desktop](../02_Hardware/Rob's_Desktop.md) | White Cat5e | DHCP |
-| **3** | :material-server:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White Cat5e | `eth0`, `192.168.50.2` |
+| **3** | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White Cat5e | `eth0`, `192.168.50.2` |
 | **4** | :material-ethernet:&nbsp;*Empty* | - | - |
 | **5** | :material-router-wireless:&nbsp;[ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md) | Black Cat5e | Uplink |
 

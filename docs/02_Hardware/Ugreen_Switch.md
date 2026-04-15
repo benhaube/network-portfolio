@@ -10,7 +10,9 @@ tags:
 hide:
   - toc
 ---
-![Material Design switch icon](../assets/icons/switch.svg){ width=200 }&ensp;![Ugreen Logo](../assets/icons/ugreen.svg){ width=50 }
+![Material Design switch icon](../assets/icons/switch.svg){ width=200 }&nbsp;
+![Ugreen Logo](../assets/icons/ugreen-light.svg#only-light){ width=50 }
+![Ugreen Logo](../assets/icons/ugreen-dark.svg#only-dark){ width=50 }
 
 # Ugreen Switch
 [Manual :material-book-information-variant:](../assets/manuals/Ugreen_CM753.pdf){ .md-button .md-button--primary }

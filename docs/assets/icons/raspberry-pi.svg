@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="mdi-raspberry-pi"
-   viewBox="0 0 24 24"
+   viewBox="0 0 24 18"
    version="1.1"
    sodipodi:docname="raspberry-pi.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   width="24"
+   height="18"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +24,7 @@
      inkscape:deskcolor="#505050"
      inkscape:zoom="34.176828"
      inkscape:cx="8.6315793"
-     inkscape:cy="14.3372"
+     inkscape:cy="14.366459"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -32,7 +34,7 @@
   <g
      id="g9"
      inkscape:label="raspberry-pi"
-     transform="matrix(1.1882367,0,0,1.1882367,-2.2588404,-2.8529588)">
+     transform="matrix(1.1882367,0,0,1.1882367,-2.2588404,-5.8529588)">
     <g
        id="g8"
        inkscape:label="ports">

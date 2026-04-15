@@ -36,8 +36,8 @@ hide:
 5. :material-debian:&ensp;[[Debian_Server_VM|Debian Server VM]]: General purpose Debian Linux server hosted on *[[ZimaBoard_2_NAS|ZimaOS NAS]]*. 
 6. :material-wan:&ensp;[[Hitron_Modem|Hitron Modem]]: DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
 7. :material-printer-3d-nozzle:&ensp;[[Kacey_3D-printer|Kacey 3D-Printer]]: Creality K1C 3D-printer located in the office upstairs. 
-8. :material-server:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
-9. :material-server:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]: Second DNS server *(Pi-hole)*.
+8. :material-raspberry-pi:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
+9. :material-raspberry-pi:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero 2 W]]: Second DNS server *(Pi-hole)*.
 10. :material-desktop-tower:&ensp;[[Rob's_Desktop|Rob's Desktop]]: Rob's main desktop PC located in the office upstairs.
 11. :material-switch:&ensp;[[TP-Link_Switch|TP-Link Switch]]: Core gigabit desktop switch *(5-port)*. 
 12. :material-switch:&ensp;[[Ugreen_Switch|Ugreen Switch]]: Rack-mounted 2.5 gigabit switch in the living room.

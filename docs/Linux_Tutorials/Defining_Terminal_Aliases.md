@@ -1,10 +1,11 @@
 ---
+icon: material/console
 hide:
   - toc
 ---
 ![material/console icon](../assets/icons/console.svg){ width=200 }
 
-# [[Defining_Terminal_Aliases|Defining Terminal Aliases]]
+# Defining Terminal Aliases
 
 > [!question] What are Aliases?
 > When operating in a GNU / Linux terminal environment, aliases are an indispensable necessity to speed up your workflow. You can create an alias to eliminate the need to memorize the required arguments, you can combine several commands into an easy shortcut, you can automatically fix common typos, and many more. This guide will show you how to set up useful terminal aliases on both **Fedora / RHEL** and **Debian / Ubuntu** based GNU / Linux distributions. 

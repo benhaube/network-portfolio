@@ -1,10 +1,12 @@
 ---
+icon: services/immich
+title: Immich Slideshow for Nest Hub
 hide:
   - toc
 ---
 ![Google Photos Logo](../assets/icons/google-photos.svg){ width=150 }&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&nbsp;![Immich Logo](../assets/icons/immich.svg){ width=150 }
 
-# [[Immich_Slideshow_for_Nest_Hub|Project Migration: Google Photos :material-arrow-right-thin: Self-Hosted Ecosystem]]
+# Project Migration: Google Photos :material-arrow-right-thin: Self-Hosted Ecosystem
 
 > [!info]
 > **User:** Ben Haube | **Date:** Feb 5, 2026<br>

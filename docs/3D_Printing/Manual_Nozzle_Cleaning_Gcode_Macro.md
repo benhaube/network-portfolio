@@ -1,4 +1,5 @@
 ---
+icon: material/toothbrush
 hide:
   - toc
 ---

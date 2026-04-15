@@ -1,4 +1,5 @@
 ---
+icon: material/cog
 hide:
   - toc
 ---

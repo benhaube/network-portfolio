@@ -1,10 +1,11 @@
 ---
+icon: simple/caddy
 hide:
   - toc
 ---
 ![Caddy Logo](../assets/icons/caddy.svg){ width=200 }
 
-# [[Caddy_Reverse-Proxy|Reverse Proxy & DNS Routing]]
+# Reverse Proxy & DNS Routing
 
 > [!info] Goal
 > Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.

@@ -1,10 +1,11 @@
 ---
+icon: material/dns
 hide:
   - toc
 ---
 ![Pi-hole Icon](../assets/icons/pi-hole.svg){ width=150 }&nbsp;![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
 
-# [[DNS_Migration|DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)]]
+# DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)
 
 ## :material-file-document: Phase 1: Pre-Migration & Documentation
 

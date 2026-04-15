@@ -1,10 +1,11 @@
 ---
+icon: material/email-alert
 hide:
   - toc
 ---
 ![material-email-alert icon](../assets/icons/email-alert.svg){ width=200 }
 
-# [[Setup_SSH_Login_Email_Notification|Setup SSH Login Notification]]
+# Setup SSH Login Notification
 
 ---
 ## :material-package-variant: Install Required Packages

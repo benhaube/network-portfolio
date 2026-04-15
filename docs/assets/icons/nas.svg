@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="mdi-nas"
-   viewBox="0 0 24 24"
+   viewBox="0 0 24 17"
    version="1.1"
    sodipodi:docname="nas.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   width="24"
+   height="17"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +23,7 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="24.166667"
-     inkscape:cx="8.4413793"
+     inkscape:cx="8.4620688"
      inkscape:cy="12.57931"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
@@ -31,7 +33,7 @@
      inkscape:current-layer="mdi-nas" />
   <g
      id="g2"
-     transform="matrix(1.1882758,0,0,1.1882758,-2.2593096,-2.2593096)">
+     transform="matrix(1.1882758,0,0,1.1882758,-2.2593096,-5.7593096)">
     <path
        d="m 8,8 v 8 h 3 V 8 H 8 m 4,0 v 8 h 3 V 8 h -3 m 4,0 v 8 h 3 V 8 H 16 M 9,9 h 1 v 1 H 9 V 9 m 4,0 h 1 v 1 H 13 V 9 m 4,0 h 1 v 1 h -1 z"
        id="path1"

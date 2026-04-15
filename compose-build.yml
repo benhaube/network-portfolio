@@ -1,0 +1,9 @@
+name: Network Documentation Portfolio
+services:
+    mkdocs-custom:
+        stdin_open: true
+        tty: true
+        volumes:
+            - ${PWD}:/docs:Z
+        image: mkdocs-custom
+        command: build

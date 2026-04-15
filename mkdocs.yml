@@ -157,6 +157,7 @@ plugins:
   - meta:
       enabled: true
   - search
+  - awesome-pages
   - roamlinks
   - callouts
   - tags:

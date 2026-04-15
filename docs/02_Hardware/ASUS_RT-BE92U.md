@@ -15,7 +15,7 @@ hide:
 ![ASUS Router Icon](../assets/icons/asus-router-light.svg#only-light){ width=200 }
 ![ASUS Router Icon](../assets/icons/asus-router.svg#only-dark){ width=200 }
 
-# [[ASUS_RT-BE92U|ASUS RT-BE92U]]
+# ASUS RT-BE92U
 [Docs :material-file-document-multiple:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=d50535eb-570b-44c6-87c6-e77cd9e5eb09&sn=T5IG7L216442EU5&from=Myproducts){ .md-button }
 
 ---

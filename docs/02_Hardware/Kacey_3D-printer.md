@@ -11,7 +11,7 @@ hide:
 ---
 ![Creality Logo](../assets/icons/creality.svg){ width=200 }
 
-# [[Kacey_3D-printer|Kacey (Creality^&copy;^ K1C) 3D-Printer]]
+# Kacey (Creality^&copy;^ K1C) 3D-Printer
 [Creality Docs :material-file-document-multiple:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :octicons-terminal-16:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---

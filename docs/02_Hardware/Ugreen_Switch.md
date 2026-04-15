@@ -12,7 +12,7 @@ hide:
 ---
 ![Material Design switch icon](../assets/icons/switch.svg){ width=200 }&ensp;![Ugreen Logo](../assets/icons/ugreen.svg){ width=50 }
 
-# [[Ugreen_Switch|Ugreen Switch]]
+# Ugreen Switch
 [Manual :material-book-information-variant:](../assets/manuals/Ugreen_CM753.pdf){ .md-button .md-button--primary }
 
 ---

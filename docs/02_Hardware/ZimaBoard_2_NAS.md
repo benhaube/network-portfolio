@@ -16,7 +16,7 @@ hide:
 ![ZimaOS Icon](../assets/icons/zimaos-dark.svg#only-dark){ width=200 }
 &ensp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
-# [[ZimaBoard_2_NAS|ZimaOS NAS]]
+# ZimaOS NAS
 [IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :material-file-document-multiple:](https://www.zimaspace.com/docs/zimaos/){ .md-button }
 
 ---

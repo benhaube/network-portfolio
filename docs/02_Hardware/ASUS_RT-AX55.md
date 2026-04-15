@@ -13,7 +13,7 @@ hide:
 ![ASUS Router Icon](../assets/icons/asus-router-light.svg#only-light){ width=200 }
 ![ASUS Router Icon](../assets/icons/asus-router.svg#only-dark){ width=200 }
 
-# [[ASUS_RT-AX55|ASUS RT-AX55]]
+# ASUS RT-AX55
 [Docs :material-file-document-multiple:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=c59d7d6d-28e2-476f-affc-cb81b9846164&sn=MBIG31800578KSJ&from=Myproducts){ .md-button }
 
 ---

@@ -40,6 +40,16 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "WireGuard WebUI"
 
 #### Clients:
+
+**:material-router-wireless:&nbsp;ASUS RT-BE92U:**
+
++ `Ben's-Phone`
++ `Ben's-Laptop`
++ `Rob's-Phone`
++ `Rob's-Laptop`
+
+**:material-nas:&nbsp;ZimaOS NAS:**
+
 + `ben-laptop`
 + `ben-pixel`
 + `rob-laptop`
@@ -50,7 +60,7 @@ hide:
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
 | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :material-cog: Configuration 
 

@@ -35,8 +35,8 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glances` | `nicolargo/glances:latest-full` |
-| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `glances` | `nicolargo/glances:latest-full` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glances` | `nicolargo/glances:latest-full` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `glances` | `nicolargo/glances:latest-full` |
 
 ### :material-cog: Configuration
 

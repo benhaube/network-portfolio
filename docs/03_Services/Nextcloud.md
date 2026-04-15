@@ -35,7 +35,7 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :services-zimaos:&nbsp;~~[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)~~ | :material-docker:&nbsp;Docker Compose | `nextcloud` | `nextcloud:32.0` |
+| :material-nas:&nbsp;~~[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)~~ | :material-docker:&nbsp;Docker Compose | `nextcloud` | `nextcloud:32.0` |
 
 ### :material-cog: Configuration
 

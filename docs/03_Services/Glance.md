@@ -36,12 +36,12 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance` | `glanceapp/glance:latest` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance` | `glanceapp/glance:latest` |
 |  |  | `f1_api` | `skyallinott/f1_api:latest` |
 
 ### :material-cog: Configuration
 
-#### Docker Compose:
+#### :material-docker: Docker Compose:
 
 ```yaml title="docker-compose.yml" linenums="1"
   glance:
@@ -87,7 +87,7 @@ hide:
 4. Specify desired track map color
 5. Optional. main tracks qualis and races (inc. sprints), race tracks races. 
 
-#### Glance Config:
+#### :material-dashboard: Glance Config:
 
 ```yaml title="glance.yml" linenums="1"
 server:

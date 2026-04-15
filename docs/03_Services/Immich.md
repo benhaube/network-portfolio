@@ -41,7 +41,7 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server` | `ghcr.io/immich-app/immich-server:v2.5.0` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server` | `ghcr.io/immich-app/immich-server:v2.5.0` |
 |  |  | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.5.0-openvino` |
 |  |  | `immich-redis` | `redis:6.2-alpine` |
 |  |  | `immich-postgres` | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |

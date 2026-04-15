@@ -34,7 +34,7 @@ hide:
 * :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
     * `192.168.50.6:53`
     * <http://debian-vm.internal:5380>
-* :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+* :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
     * `192.168.50.2:53`
     * <http://pi-server.internal:5380>
 
@@ -46,7 +46,7 @@ hide:
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
 | :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration 
 

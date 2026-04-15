@@ -38,12 +38,12 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
 
 ### :material-cog: Configuration  
 
-#### [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:
+#### :material-raspberry-pi: [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:
 
 ```ini title="/etc/samba/smb.conf" linenums="1"
 [global]  
@@ -60,7 +60,7 @@ hide:
  force user = admin
 ```
 
-#### [[ZimaBoard_2_NAS|ZimaOS NAS]] Config:
+#### :material-nas: [[ZimaBoard_2_NAS|ZimaOS NAS]] Config:
 
 ```ini title="/etc/samba/smb.conf" linenums="1"
 # custom config  

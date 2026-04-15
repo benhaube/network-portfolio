@@ -27,16 +27,16 @@ hide:
 + `8384`
 
 #### URL / Access: 
-* :material-fedora:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md):
+* :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md):
     * <http://bens-workstation.internal:8384>
     * <http://192.168.50.61:8384>
-* :material-fedora:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md):
+* :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md):
     * <http://127.0.0.1:8384>
-* :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md):
+* :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md):
     * <https://pi-server.internal:8384>
-* :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md):
+* :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md):
     * <https://pi-zero.internal:8384>
-* :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md):
+* :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md):
     * <http://storage-server.internal:8384>
 
 #### Credentials: 
@@ -51,16 +51,16 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :material-fedora:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-fedora:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :simple-raspberrypi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :simple-raspberrypi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `syncthing` | `linuxserver/syncthing:1.29.7` |
+| :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `syncthing` | `linuxserver/syncthing:1.29.7` |
 
 ### :material-cog: Configuration  
 
 #### :material-console: Install Commands:
-+ :simple-raspberrypi:&nbsp;Raspberry Pi 4B Server / Raspberry Pi Zero Server:
++ :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server / Raspberry Pi Zero Server:
     + `#!bash sudo apt install -y syncthing`
 + :material-fedora:&nbsp;Ben's Desktop / Ben's Laptop:
     + `#!bash sudo dnf install -y syncthing syncthingctl-qt6 syncthingplasmoid-qt6`

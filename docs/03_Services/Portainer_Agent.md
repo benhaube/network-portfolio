@@ -36,12 +36,12 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :simple-raspberrypi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
-| :services-zimaos:&nbsp;~~[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| :material-raspberry-pi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| :material-nas:&nbsp;~~[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
 ### :material-cog: Configuration  
 
-#### Raspberry Pi Zero Server:
+#### :material-raspberry-pi: Raspberry Pi Zero Server:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  
@@ -57,7 +57,7 @@ services:
     image: portainer/agent:lts
 ```
 
-#### ZimaOS NAS:
+#### :material-nas: ZimaOS NAS:
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-portainer-agent

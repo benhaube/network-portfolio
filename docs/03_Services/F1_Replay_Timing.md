@@ -37,7 +37,7 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `f1-backend` | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `f1-backend` | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest` |
 |  |  | `f1-backend` | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest` |
 
 ### :material-cog: Configuration 

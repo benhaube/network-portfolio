@@ -5,6 +5,10 @@ authors:
 categories:
   - 3D-Printing
   - Networking
+links:
+  - 02_Hardware/Hitron_Modem.md
+  - 02_Hardware/Ugreen_Switch.md
+  - 02_Hardware/ZimaBoard_2_NAS.md
 hide:
   - toc
 ---

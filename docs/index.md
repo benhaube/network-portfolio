@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-![[file-document-multiple-color.svg|200]] 
+![Material Design file-document-multiple customized icon](assets/icons/file-document-multiple-color.svg){ width=200 }&nbsp;![Material Design format-list-bulleted customized icon](assets/icons/format-list-bulleted.svg){ width=50 } 
 
 # Network Documentation Index
 [About Me :material-account-question:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me :material-email:](mailto:ben@haube-pereira.com){ .md-button }

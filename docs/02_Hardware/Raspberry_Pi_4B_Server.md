@@ -12,9 +12,9 @@ tags:
 hide:
   - toc
 ---
-![Raspberry Pi Icon](../assets/icons/raspberry-pi-light.svg#only-light){ width=200 }
-![Raspberry Pi Icon](../assets/icons/raspberry-pi-dark.svg#only-dark){ width=200 }
-![Arm Logo](../assets/icons/arm.svg){ width=50 }
+![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }&nbsp;
+![Raspberry Pi Icon](../assets/icons/raspberry-pi-light.svg#only-light){ width=50 }
+![Raspberry Pi Icon](../assets/icons/raspberry-pi-dark.svg#only-dark){ width=50 }
 
 # Raspberry Pi 4B Server
 [Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }

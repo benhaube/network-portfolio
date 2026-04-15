@@ -8,6 +8,10 @@
 *[CPU]: Central Processing Unit
 *[CPUs]: Central Processing Units
 *[CUPS]: Common UNIX Printing System
+*[DDR]: Double Data Rate
+*[DDR3]: Double Data Rate 3
+*[DDR4]: Double Data Rate 4
+*[DDR5]: Double Data Rate 5
 *[DHCP]: Dynamic Host Connection Protocol
 *[DNS]: Domain Name Service
 *[DDNS]: Dynamic Domain Name Service
@@ -49,6 +53,10 @@
 *[LAN]: Local Area Network
 *[LED]: Light Emitting Diode
 *[LEDs]: Light Emitting Diodes
+*[LPDDR]: Low Profile Double Data Rate
+*[LPDDR3]: Low Profile Double Data Rate 3
+*[LPDDR4]: Low Profile Double Data Rate 4
+*[LPDDR5]: Low Profile Double Data Rate 5
 *[LUKS]: Linux Unified Key Setup
 *[LUKS2]: Linux Unified Key Setup 2
 *[MAC]: Media Access Control
@@ -63,6 +71,7 @@
 *[MITM]: Man in the Middle
 *[MMC]: MultiMedia Card
 *[MMS]: Multimedia Messaging Service
+*[MT/s]: Mega Transfers Per Second
 *[NAS]: Network Attached Storage
 *[NAT]: Network Address Translation
 *[NFS]: Network File System
@@ -95,6 +104,7 @@
 *[SAN]: Storage Area Network
 *[SATA]: Serial Advanced Technology Attachment
 *[SD]: Secure Digital
+*[SDRAM]: Synchronous Dynamic Random-Access Memory
 *[SFP]: Small Form-factor Pluggable
 *[SFP+]: Small Form-factor Pluggable Plus
 *[SMB]: Server Message Block

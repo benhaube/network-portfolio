@@ -31,7 +31,7 @@ hide:
 4. **Import Records:** 
     + [ ] Manually add local DNS zones/records from the Pi-hole export.
 
-### :simple-raspberrypi:&nbsp;Raspberry Pi 4B:
+### :material-raspberry-pi:&nbsp;Raspberry Pi 4B:
 
 1. **Uninstall Pi-hole:**
     + [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.

@@ -27,11 +27,11 @@ hide:
 
 | Device Type | Location | Hostname | MAC Address | IP Method | IP Address | Interface | WAN Access | Role / Notes |
 | :---------- | :------- | :------- | :---------- | :-------- | :--------- | :-------: | :--------: | :----------- |
-| :material-dns:&nbsp;Server *(DNS)* | Office | [pi-server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | `E4:5F:01:A4:60:07` | Static | `192.168.50.2` | :material-ethernet: | :material-check: | Secondary [[Technitium]] DNS server node |
-| :material-server:&nbsp;Server *(Proxy)* | Office | [pi-zero](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | `2C:CF:67:DB:F5:E2` | Static | `192.168.50.3` | :material-wifi: | :material-check:| [[Caddy]] reverse proxy server |
+| :material-raspberry-pi:&nbsp;Server *(DNS)* | Office | [pi-server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | `E4:5F:01:A4:60:07` | Static | `192.168.50.2` | :material-ethernet: | :material-check: | Secondary [[Technitium]] DNS server node |
+| :material-raspberry-pi:&nbsp;Server *(Proxy)* | Office | [pi-zero](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | `2C:CF:67:DB:F5:E2` | Static | `192.168.50.3` | :material-wifi: | :material-check:| [[Caddy]] reverse proxy server |
 | :material-nas:&nbsp;Server *(NAS)* | Living-Room | [storage-server](../02_Hardware/ZimaBoard_2_NAS.md) | `00:E0:4C:5B:9A:96` | Static | `192.168.50.4` | :material-ethernet: | :material-check: | Main file storage server |
 | :material-nas:&nbsp;Server *(NAS)* | Living-Room | [storage-server-2](../02_Hardware/ZimaBoard_2_NAS.md) | `00:E0:4C:5B:9A:95` | Static | `192.168.50.5` | :material-ethernet: | :material-check: | Second NIC for main file storage server |
-| :material-dns:&nbsp;Server *(DNS)* | - | [debian-vm](../02_Hardware/Debian_Server_VM.md) | `52:54:00:28:BB:EA` | Static | `192.168.50.6` | :material-ethernet: | :material-check:| Primary [[Technitium]] DNS server node |
+| :material-debian:&nbsp;Server *(DNS)* | - | [debian-vm](../02_Hardware/Debian_Server_VM.md) | `52:54:00:28:BB:EA` | Static | `192.168.50.6` | :material-ethernet: | :material-check:| Primary [[Technitium]] DNS server node |
 | :material-desktop-tower:&nbsp;Desktop PC | Office | [bens-workstation](../02_Hardware/Ben's_Desktop.md) | `3C:7C:3F:0D:A9:CD` | Static | `192.168.50.61` | :material-ethernet: | :material-check: | Ben's Main desktop PC |
 | :material-desktop-tower:&nbsp;Desktop PC | Office | [bens-workstation](../02_Hardware/Ben's_Desktop.md) | `C2:57:52:3B:6F:D8` | DHCP | - | :material-wifi: | :material-check: | Wi-Fi NIC on Ben's main desktop PC |
 | :material-laptop:&nbsp;Laptop PC | Mobile | [ben-laptop](../02_Hardware/Ben's_Laptop.md) | `A6:97:E3:D2:F1:C4` | DHCP | - | :material-wifi: | :material-check: | Ben's laptop PC |

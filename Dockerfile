@@ -1,2 +1,2 @@
 FROM squidfunk/mkdocs-material
-RUN pip install mkdocs-roamlinks-plugin mkdocs-callouts
+RUN pip install mkdocs-roamlinks-plugin mkdocs-callouts mkdocs-awesome-pages-plugin

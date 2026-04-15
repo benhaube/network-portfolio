@@ -15,6 +15,7 @@ hide:
 ![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }&nbsp;
 ![Raspberry Pi Icon](../assets/icons/raspberry-pi-light.svg#only-light){ width=50 }
 ![Raspberry Pi Icon](../assets/icons/raspberry-pi-dark.svg#only-dark){ width=50 }
+&nbsp;![Arm Logo](../assets/icons/arm.svg){ width=50 }
 
 # Raspberry Pi 4B Server
 [Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }
@@ -42,7 +43,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| BCM2711 *(Armv8-A)* | 4C / 4T *(Cortex-A72)* | 1.5 GHz | VideoCore VI 3D | 500 MHz | 4 GB LPDDR4 *(2400 MT/s)* |
+| :simple-arm:&nbsp;BCM2711 *(Armv8-A)* | 4C / 4T *(Cortex-A72)* | 1.5 GHz | VideoCore VI 3D | 500 MHz | 4 GB LPDDR4 *(2400 MT/s)* |
 
 ## :material-lan: Network Configuration
 

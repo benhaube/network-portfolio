@@ -9,7 +9,7 @@ tags:
 hide:
   - toc
 ---
-![ASUS Logo](../assets/icons/asus-full.svg){ width=300 }&ensp;![AMD Logo](../assets/icons/amd.svg){ width=50 }
+![ASUS Logo](../assets/icons/asus-full.svg){ width=300 }&ensp;![AMD Logo](../assets/icons/amd-small.svg){ width=25 }
 
 # Ben's Desktop PC
 [Fedora Discussion :material-chat-question:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs :material-file-document-multiple:](https://docs.fedoraproject.org//en-US/docs/){ .md-button }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=4b12aa6c-2687-4e62-b1f5-3f68820bb06c&sn=L8M0CS003053JKW&from=Myproducts){ .md-button }
@@ -37,7 +37,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T | 4.7 GHz | Radeon(r) 6700XT | 2581 MHz | 32 GB DDR4 *(3600 MT/s)* |
+| :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T | 4.7 GHz | :brands-amd:&nbsp;Radeon(r) 6700XT | 2581 MHz | 32 GB DDR4 *(3600 MT/s)* |
 
 ## :material-lan: Network Configuration
 

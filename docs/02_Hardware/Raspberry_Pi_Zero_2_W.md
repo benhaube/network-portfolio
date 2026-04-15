@@ -15,6 +15,7 @@ hide:
 ![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }&nbsp;
 ![Raspberry Pi Icon](../assets/icons/raspberry-pi-light.svg#only-light){ width=50 }
 ![Raspberry Pi Icon](../assets/icons/raspberry-pi-dark.svg#only-dark){ width=50 }
+&nbsp;![Arm Logo](../assets/icons/arm.svg){ width=50 }
 
 # Raspberry Pi Zero Server
 [Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }
@@ -42,7 +43,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz | VideoCore IV | 400 MHz | 512 MB SDRAM |
+| :simple-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz | VideoCore IV | 400 MHz | 512 MB SDRAM |
 
 ## :material-lan: Network Configuration
 

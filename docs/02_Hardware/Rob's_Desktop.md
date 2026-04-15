@@ -4,7 +4,7 @@ tags: [hardware, pc, desktop, office]
 hide:
   - toc
 ---
-![ASUS Logo](../assets/icons/asus-full.svg){ width=300 }&ensp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
+![ASUS Logo](../assets/icons/asus-full.svg){ width=300 }&ensp;![Nvidia Logo](../assets/icons/nvidia.svg){ width=30 }&ensp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Rob's Desktop PC
 [Windows :fontawesome-brands-windows:](https://microsoft.com/windows){ .md-button .md-button--primary }&emsp;[Windows Docs :material-file-document-multiple:](https://support.microsoft.com/en-us/windows){ .md-button }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=dc554ee0-d7d2-4018-992d-7267ebccf458&sn=MCM0KK06J149GK4&from=Myproducts){ .md-button }
@@ -32,7 +32,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| Core(r) i7 12700K *(x86-64)* | 12C / 20T | 5.0 GHz | GeForce(r) RTX 3070 | 1725 MHz | 32 GB DDR4 *(3600 MT/s)* |
+| :brands-intel:&nbsp;Core(r) i7 12700K *(x86-64)* | 12C / 20T | 5.0 GHz | :simple-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz | 32 GB DDR4 *(3600 MT/s)* |
 
 ## :material-lan: Network Configuration
 

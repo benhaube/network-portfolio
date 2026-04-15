@@ -15,6 +15,7 @@ hide:
 ![Material Design nas icon](../assets/icons/nas.svg){ width=200 }&nbsp;
 ![ZimaOS Icon](../assets/icons/zimaos-light.svg#only-light){ width=50 }
 ![ZimaOS Icon](../assets/icons/zimaos-dark.svg#only-dark){ width=50 }
+&nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # ZimaOS NAS
 [IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :material-file-document-multiple:](https://www.zimaspace.com/docs/zimaos/){ .md-button }
@@ -46,7 +47,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| Intel(r) N150 *(x86-64)* | 4C / 4T | 3.6 GHz | Intel(r) UHD | 1.0 GHz | 16 GB LPDDR5 *(4800 MT/s)* |
+| :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T | 3.6 GHz | Intel(r) UHD | 1.0 GHz | 16 GB LPDDR5 *(4800 MT/s)* |
 
 ## :material-lan: Network Configuration
 

@@ -1,5 +1,6 @@
 ---
 icon: services/homebox
+status: new
 tags:
   - active
   - service

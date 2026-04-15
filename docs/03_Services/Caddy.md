@@ -1,5 +1,6 @@
 ---
 icon: simple/caddy
+status: new
 tags:
   - active
   - service

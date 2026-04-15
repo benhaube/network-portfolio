@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="mdi-devices"
-   viewBox="0 0 24 24"
+   viewBox="0 0 24 18"
    version="1.1"
    sodipodi:docname="devices.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   width="24"
+   height="18"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +23,8 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="24.166667"
-     inkscape:cx="11.068966"
-     inkscape:cy="8.2758621"
+     inkscape:cx="11.048276"
+     inkscape:cy="8.3172413"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -31,7 +33,7 @@
      inkscape:current-layer="mdi-devices" />
   <g
      id="g6"
-     transform="matrix(1.0780565,0,0,1.0780565,-0.936678,-0.936678)">
+     transform="matrix(1.0780565,0,0,1.0780565,-0.936678,-3.936678)">
     <path
        d="m 22,8 h -6 c -0.5,0 -1,0.5 -1,1 v 10 c 0,0.5 0.5,1 1,1 h 6 c 0.5,0 1,-0.5 1,-1 V 9 C 23,8.5 22.5,8 22,8 m -1,10 h -4 v -8 h 4 z"
        id="path2"

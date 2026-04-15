@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 24 24"
+   viewBox="0 0 24 17"
    version="1.1"
    id="svg1"
    sodipodi:docname="email-alert.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   width="24"
+   height="17"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,11 +14,11 @@
   <defs
      id="defs1">
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter3"
-       x="-0.0206646"
-       y="-0.030996899"
+       x="-0.020664601"
+       y="-0.030996898"
        width="1.0499394"
        height="1.0749092">
       <feFlood
@@ -50,11 +52,11 @@
          id="feComposite3" />
     </filter>
     <filter
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
        id="filter4"
-       x="-0.041329199"
-       y="-0.061993799"
+       x="-0.041329198"
+       y="-0.0619938"
        width="1.0998789"
        height="1.1498183">
       <feFlood
@@ -98,8 +100,8 @@
      inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#999999"
      inkscape:zoom="24.291667"
-     inkscape:cx="-2.9845626"
-     inkscape:cy="9.7564321"
+     inkscape:cx="7.9656946"
+     inkscape:cy="12.638079"
      inkscape:window-width="2560"
      inkscape:window-height="1368"
      inkscape:window-x="0"
@@ -108,16 +110,16 @@
      inkscape:current-layer="svg1" />
   <g
      id="g2"
-     transform="translate(0.385935,0.25729)">
+     transform="translate(0.385935,-3.24271)">
     <path
        d="M 17.421098,7.8713551 9.6783876,12.710549 1.9356775,7.8713551 V 5.9356775 L 9.6783876,10.774871 17.421098,5.9356775 M 17.421098,4 H 1.9356775 C 0.87105489,4 0,4.8710549 0,5.9356775 V 17.549743 c 0,1.064622 0.87105489,1.935677 1.9356775,1.935677 H 17.421098 c 1.064622,0 1.935677,-0.871055 1.935677,-1.935677 V 5.9356775 C 19.356775,4.8710549 18.48572,4 17.421098,4"
        id="path1"
-       style="display:inline;fill:#0091eb;fill-opacity:0.98823529;stroke-width:0.967839"
+       style="display:inline;fill:#0091eb;fill-opacity:0.988235;stroke-width:0.967839"
        sodipodi:nodetypes="cccccccsssssssc" />
     <path
        d="M 23.22813,6.9035163 H 21.292453 V 12.710549 H 23.22813 V 6.9035163 m 0,7.7427097 h -1.935677 v 1.935678 h 1.935677 z"
        id="path2"
-       style="fill:#4cae4f;fill-opacity:0.98823529;stroke-width:0.967839"
+       style="fill:#4cae4f;fill-opacity:0.988235;stroke-width:0.967839"
        sodipodi:nodetypes="cccccccccc" />
   </g>
 </svg>

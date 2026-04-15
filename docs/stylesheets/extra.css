@@ -1,5 +1,11 @@
+/* --- Set maximum page width --- */
 .md-grid {
   max-width: 1500px;
+}
+
+/* --- Make H1 headings use primary theme color --- */
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
 }
 
 /* --- Colors for Logical & Physical Mermaid.js Diagrams --- */

@@ -34,9 +34,9 @@ hide:
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :material-server-network-outline: Host Node: 
-+ [:services-zimaos:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
++ [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
-#### Credentials: 
+#### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "server-admin@debian-vm"
 
 ## :material-cpu-64-bit: Resource Allocation

@@ -101,7 +101,7 @@ hide:
 
 * `/home` directory backed up every weekday at `18:00` to [[ZimaBoard_2_NAS|ZimaOS NAS]]
 
-#### :material-backup-restore: Backup Script Config
+#### :material-file-code-outline: Backup Script Config
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
 ```bash title="home-bkp-nas.sh" linenums="1" hl_lines="44"

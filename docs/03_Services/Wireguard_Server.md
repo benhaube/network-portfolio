@@ -21,39 +21,36 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + A lightweight, secure remote access VPN server.
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s): 
 + `41820`
 + `51820`
-+ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
++ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + :material-vpn:&nbsp;Server Endpoint:
     + `remote-access-home-34.asuscomm.com:41820` *(for :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md))*
-    + `remote-access-home-34.asuscomm.com:51820` *(for :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
-+ :material-application-cog:&nbsp;Web UI Admin 
+    + `remote-access-home-34.asuscomm.com:51820` *(for :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
++ :material-application-cog-outline:&nbsp;Web UI Admin: 
     + <http://storage-server.internal:51821/>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "WireGuard WebUI"
 
-#### Clients:
+#### :material-account: Clients:
 
-**:material-router-wireless:&nbsp;ASUS RT-BE92U:**
-
-+ `Ben's-Phone`
-+ `Ben's-Laptop`
-+ `Rob's-Phone`
-+ `Rob's-Laptop`
-
-**:material-nas:&nbsp;ZimaOS NAS:**
-
-+ `ben-laptop`
-+ `ben-pixel`
-+ `rob-laptop`
-+ `rob-phone`
++ :material-router-wireless:&nbsp;ASUS RT-BE92U:
+    + `Ben's-Phone`
+    + `Ben's-Laptop`
+    + `Rob's-Phone`
+    + `Rob's-Laptop`
++ :material-nas:&nbsp;ZimaOS NAS:
+    + `ben-laptop`
+    + `ben-pixel`
+    + `rob-laptop`
+    + `rob-phone`
 
 ## :material-package-down: Deployment Details
 

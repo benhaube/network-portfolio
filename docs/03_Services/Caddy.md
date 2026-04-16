@@ -21,17 +21,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose: 
+#### :material-comment-eye-outline: Description: 
 + Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `80`
 + `443`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + <https://pi-zero.internal>
 
-#### Credentials:
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details
@@ -42,7 +42,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-#### Install:
+#### :material-download: Install:
 
 1. Add the official Caddy repository. 
 
@@ -73,7 +73,7 @@ hide:
     sudo systemctl reload caddy
     ```
 
-#### The 'Caddyfile' *(configuration file)*:
+#### :material-file-cog: The 'Caddyfile' *(configuration file)*:
 
 ```nginx title="/etc/caddy/caddyfile" linenums="1"
 # The Caddyfile is an easy way to configure your Caddy web server.  

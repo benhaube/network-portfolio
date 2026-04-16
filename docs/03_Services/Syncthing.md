@@ -20,13 +20,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Open decentralized file synchronization.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `8384`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 * :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md):
     * <http://bens-workstation.internal:8384>
     * <http://192.168.50.61:8384>
@@ -39,7 +39,7 @@ hide:
 * :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md):
     * <http://storage-server.internal:8384>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     * "Syncthing @ storage-server"
     * "Syncthing @ pi-server"

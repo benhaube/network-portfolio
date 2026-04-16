@@ -18,17 +18,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Handy tools for network administrators and developers.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `8080`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details 

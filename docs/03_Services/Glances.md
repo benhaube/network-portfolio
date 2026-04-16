@@ -18,17 +18,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose: 
+#### :material-comment-eye-outline: Description: 
 + Glances an Eye on your system. A `top` / `htop` alternative for the Web browser. 
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s): 
 + `21208`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + <http://pi-server.internal:61208>
 + <http://storage-server.internal:61208>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details
@@ -40,7 +40,7 @@ hide:
 
 ### :material-cog: Configuration
 
-#### Docker Compose:
+#### :material-docker: Docker Compose:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  
@@ -226,7 +226,7 @@ x-casaos:
     zh_cn: Glances
 ```
 
-#### Config File:
+#### :material-file-cog: Config File:
 
 ```ini title="glances.conf" linenums="1"
 ##############################################################################

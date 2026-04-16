@@ -18,17 +18,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + An API that allows applications to communicate with the 3D-printing firmware, [Klipper](https://www.klipper3d.org/). 
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `7125`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access:  
 + <http://k1c-a71e.internal:7125>
 + <http://192.168.50.153:7125>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
 
 ## :material-package-down: Deployment Details
@@ -39,7 +39,7 @@ hide:
 
 ### :material-cog: Configuration
 
-#### Install:
+#### :material-download: Install:
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 # Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.
@@ -52,7 +52,7 @@ sh /usr/data/helper-script/helper.sh
 git config --global http.sslVerify false
 ```
 
-#### Config File:
+#### :material-file-cog: Config File:
 
 ```ini title="moonraker.cfg" linenums="1"
 [server]

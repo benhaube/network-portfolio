@@ -19,20 +19,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Photo gallery and backup service.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `2283`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + :material-lan: Local Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
 + :material-web: Remote Access:
     + <https://immich.rac3r4life.online>
 
-#### Credentials: 
+#### :material-key-chain: Credentials:  
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + "Immich User"
     + "Immich Administrator"

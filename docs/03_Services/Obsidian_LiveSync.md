@@ -18,19 +18,19 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + CouchDB database for synchronizing Obsidian Vaults 
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `5984`
 
-#### URL / Access: 
-+ Settings Web UI: 
+#### :material-protocol: URL / Access:  
++ :material-application-cog-outline: Settings Web UI: 
     + <http://storage-server.internal:5984/_utils>
-+ Database:
++ :material-database-outline: Database:
     + <http://storage-server.internal:5984/obsidian-vault>
 
-#### Credentials: 
+#### :material-key-chain: Credentials:  
 + :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details 

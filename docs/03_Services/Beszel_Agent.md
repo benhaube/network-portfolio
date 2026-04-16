@@ -18,16 +18,16 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose: 
+#### :material-comment-eye-outline: Description: 
 + Agent for [[Beszel_Hub|Beszel Hub]], a server utilization monitor.  Allows for client servers to connect to hub.
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s): 
 + `45867`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + `N/A`
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details
@@ -40,7 +40,7 @@ hide:
 
 ### :material-cog: Configuration
 
-#### Debian VM Server:
+#### :material-debian: Debian VM Server:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:
@@ -68,7 +68,7 @@ services:
       HUB_URL: http://pi-server.internal:8090
 ```
 
-#### Raspberry Pi Zero Server:
+#### :material-raspberry-pi: Raspberry Pi Zero Server:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:
@@ -96,7 +96,7 @@ services:
       HUB_URL: http://pi-server.internal:8090
 ```
 
-#### ZimaOS NAS: 
+#### :material-nas: ZimaOS NAS: 
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: beszel-agent

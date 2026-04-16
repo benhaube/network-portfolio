@@ -19,16 +19,17 @@ hide:
 
 ---
 ## :material-information-outline: Overview
-#### Purpose: 
+
+#### :material-comment-eye-outline: Description: 
 + Secure reverse-proxy tunnel for hosting private services on the public internet.
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s): 
 + `14333`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + <http://storage-server.internal:14333>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Cloudflare Dashboard"
 
 ## :material-package-down: Deployment Details

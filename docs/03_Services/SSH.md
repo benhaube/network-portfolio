@@ -19,13 +19,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Remote shell access to servers
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `22`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 * :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)
     * `192.168.50.1:22` 
     * `asusrouter.internal:22`
@@ -45,7 +45,7 @@ hide:
     * `192.168.50.153:22` 
     * `k1c-a71e.internal:22` 
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): SSH keys
 
 ## :material-package-down: Deployment Details  
@@ -61,9 +61,9 @@ hide:
 
 ## :material-cog: Configuration 
 
-### :material-server: Servers:
+### :material-server-outline: Servers:
 
-#### SSH Config File:
+#### :material-file-cog: SSH Config File:
 
 1. Make the required changes to the SSH config file: 
 
@@ -199,7 +199,7 @@ hide:
     sudo systemctl restart sshd
     ```
 
-#### Login Banner:
+#### :material-login: Login Banner:
 
 1. Paste this ASCII message into the banner file:
 
@@ -214,7 +214,7 @@ hide:
     \\\\\---------------------------------------------------------------\\\\\
     ```
 
-#### Suppress MOTD:
+#### :material-message-off-outline: Suppress MOTD:
 
 > [!warning inline end] Warning
 > `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
@@ -225,27 +225,25 @@ hide:
     sudo truncate -s 0 /etc/motd
     ```
 
-#### Suppress Dynamic MOTD:
-
-1. See what dynamic MOTD scripts exist:
+2. See what dynamic MOTD scripts exist:
 
     ```bash linenums="1"
     ls -l /etc/update-motd.d/
     ```
 
-2. Remove executable permission for unwanted scripts:
+3. Remove executable permission for unwanted scripts:
 
     ```bash linenums="1"
     sudo chmod -x /etc/update-motd.d/SCRIPT_TO_REMOVE
     ```
 
-3. To re-enable a script give it execute permission again:
+4. To re-enable a script give it execute permission again:
 
     ```bash linenums="1"
     sudo chmod +x /etc/update-motd.d/SCRIPT_TO_ENABLE
     ```
 
-#### Suppress Last Login: 
+#### :material-logout: Suppress Last Login: 
 
 1. Open the SSH config file with a text editor:
 
@@ -282,7 +280,7 @@ hide:
 
 ### :material-devices: Clients:
 
-#### Bitwarden SSH Key Agent:
+#### :material-key-chain: Bitwarden SSH Key Agent:
 
 1. Paste this line into the client's `~/.bashrc` file to enable the Bitwarden SSH key agent.
 
@@ -290,7 +288,7 @@ hide:
     export SSH_AUTH_SOCK=/home/$USER/.bitwarden-ssh-agent.sock
     ```
 
-#### Client SSH Configuration:
+#### :material-file-cog: Client SSH Configuration:
 
 1. Create the `~/.ssh` directory:
 

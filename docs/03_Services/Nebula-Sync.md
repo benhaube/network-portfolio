@@ -20,16 +20,16 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Synchronize settings between [[Pi-hole]] instances.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `N/A`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + N/A
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
 ## :material-package-down: Deployment Details 

@@ -19,17 +19,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose: 
+#### :material-comment-eye-outline: Description: 
 + A server dashboard Web UI. 
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s):
 + `8580`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + <https://glance.internal>
 + <http://pi-server.internal:8580/>
 
-#### Credentials:
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details 
@@ -87,7 +87,7 @@ hide:
 4. Specify desired track map color
 5. Optional. main tracks qualis and races (inc. sprints), race tracks races. 
 
-#### :material-dashboard: Glance Config:
+#### :material-view-dashboard: Glance Config:
 
 ```yaml title="glance.yml" linenums="1"
 server:

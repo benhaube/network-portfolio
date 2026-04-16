@@ -18,17 +18,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose: 
+#### :material-comment-eye-outline: Description: 
 + A lightweight server utilization monitor.
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s):
 + `8090`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + <https://beszel.internal>
 + <http://pi-server.internal:8090/>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Beszel Hub (Admin)"
 
 ## :material-package-down: Deployment Details 

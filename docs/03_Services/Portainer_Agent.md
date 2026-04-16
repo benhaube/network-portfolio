@@ -19,17 +19,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Agent for [[Portainer]]
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `9001`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access:  
 + ~~[[http://pi-zero.internal:9001]]~~
 + ~~[[http://storage-server.internal:9001]]~~
 
-#### Credentials:
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details 

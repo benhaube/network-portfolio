@@ -19,16 +19,16 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Self-hosted cloud storage and collaboration platform.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `10081`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + ~~[[http://storage-server.internal:10081]]~~
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "storage-server (admin)"
 
 ## :material-package-down: Deployment Details

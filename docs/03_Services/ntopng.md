@@ -19,18 +19,18 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Network traffic probe
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s):
 + `3000`
 + `5556`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + <http://192.168.50.4:3000>
 + <http://storage-server.internal:3000>
 
-#### Credentials:
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details

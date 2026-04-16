@@ -19,20 +19,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + A fancy self-hosted service monitoring tool.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `3001`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + :material-lan:&nbsp;LAN Access
     + <https://uptime.internal>
     + <http://pi-server.internal:3001>
 + :material-wan:&nbsp;WAN Access
     + <https://uptime.rac3r4life.online>
 
-#### Credentials: 
+#### :material-key-chain: Credentials:  
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Uptime Kuma @ pi-server"
 
 ## :material-package-down: Deployment Details 

@@ -18,17 +18,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + An inventory and organization system built for the home user.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `3100`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + <http://storage-server.internal:3100>
 + <http://192.168.50.4:3100>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Homebox @ storage-server"
 
 ## :material-package-down: Deployment Details

@@ -20,17 +20,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + A self-hosted, real-time port monitoring and discovery tool.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `4999`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access:  
 + <http://192.168.50.4:4999>
 + <http://storage-server.internal:4999>
 
-#### Credentials:
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details 
@@ -43,7 +43,7 @@ hide:
 
 ### :material-cog: Configuration  
 
-#### ZimaOS NAS:
+#### :material-nas: ZimaOS NAS:
 
 ```yaml title="docker-compose.yml" linenums="1"
 name: big-bear-portracker
@@ -166,7 +166,7 @@ x-casaos:
     en_us: Portracker
 ```
 
-#### Raspberry Pi 4B Server:
+#### :material-raspberry-pi: Raspberry Pi 4B Server:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:
@@ -193,7 +193,7 @@ services:
       # - TRUENAS_API_KEY=your-api-key-here
 ```
 
-#### ~~Raspberry Pi Zero Server:~~
+#### :material-raspberry-pi: ~~Raspberry Pi Zero Server:~~
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:

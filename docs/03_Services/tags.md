@@ -1,7 +1,7 @@
 ---
 icon: material/tag
 ---
-![[web.svg|200]]
+![Material Design web icon customized](../assets/icons/web.svg){ width=200 }
 
 # Services Tags
 

@@ -20,17 +20,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Remote file system access
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `2049`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + `192.168.50.4:/media/Quick-Storage`
 + `192.168.50.4:/media/nvme0n1p1`
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "[[SSH]] keys"
 
 ## :material-package-down: Deployment Details
@@ -41,14 +41,14 @@ hide:
 
 ### :material-cog: Configuration 
 
-#### Exports File:
+#### :material-file-cog: Exports File:
 
 ```conf title="/etc/exports" linenums="1"
 /media/Quick-Storage *(rw,sync,no_subtree_check)
 /media/nvme0n1p1 *(rw,sync,no_subtree_check)
 ```
 
-#### Command to Apply:
+#### :material-console-line: Command to Apply:
 
 ```bash linenums="1"
 exportfs -a

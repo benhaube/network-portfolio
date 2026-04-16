@@ -19,17 +19,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + Docker container management platform
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s):
 + `9443`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + ~~[[https://portainer.internal]]~~
 + ~~[[https://pi-server.internal:9443]]~~
 
-#### Credentials:
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Portainer @ pi-server"
 
 ## :material-package-down: Deployment Details 

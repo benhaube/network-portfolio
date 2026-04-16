@@ -20,23 +20,18 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + DNS Blocker
 
-#### Port(s): 
-+ `80`
-+ `443`
-+ `53`
-
-#### URL / Access: 
-+ ~~[[https://pi-server.internal/admin/login]]~~
-+ ~~[[https://pi-hole.internal/admin/login]]~~
-
-#### Ports:
+#### :symbols-settings-ethernet: Port(s):
 + Web: `80`, `443`
 + DNS: `53`
 
-#### Credentials: 
+#### :material-protocol: URL / Access:  
++ ~~[[https://pi-server.internal/admin/login]]~~
++ ~~[[https://pi-hole.internal/admin/login]]~~
+
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + "Pi-hole Admin @ (pi-hole)"
     + "Pi-hole Admin @ (pi-server)"
@@ -50,13 +45,13 @@ hide:
 
 ### :material-cog: Configuration
 
-#### Install:
+#### :material-download: Install:
 
 ```bash linenums="1"
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-#### Pi-hole Config file:
+#### :material-file-cog: Pi-hole Config file:
 
 ```toml title="/etc/pihole/pihole.toml" linenums="1"
 # Pi-hole configuration file (v6.4.1)

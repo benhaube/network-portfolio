@@ -22,15 +22,15 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 * `53`
 * `443`
 * `5380`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 * :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
     * `192.168.50.6:53`
     * <http://debian-vm.internal:5380>
@@ -38,7 +38,7 @@ hide:
     * `192.168.50.2:53`
     * <http://pi-server.internal:5380>
 
-#### Credentials:
+#### :material-key-chain: Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Technitium"
 
 ## :material-package-down: Deployment Details
@@ -50,13 +50,13 @@ hide:
 
 ### :material-cog: Configuration 
 
-#### Install:
+#### :material-download: Install:
 
 ```bash title="Command to install Technitium" linenums="1"
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 ```
 
-#### Zones:
+#### :material-network-outline: Zones:
 
 ```conf title="50.168.192.in-addr.arpa"
 $ORIGIN 50.168.192.in-addr.arpa.

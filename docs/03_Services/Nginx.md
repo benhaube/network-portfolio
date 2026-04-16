@@ -17,17 +17,17 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
-#### Port(s):
+#### :symbols-settings-ethernet: Port(s): 
 + `8080`
 
-#### URL / Access: 
+#### :material-protocol: URL / Access: 
 + <http://storage-server.internal:8080>
 + <https://portfolio.rac3r4life.online>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + N/A
 
 ## :material-package-down: Deployment Details 

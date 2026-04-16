@@ -17,16 +17,16 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose: 
+#### :material-comment-eye-outline: Description: 
 + Advanced, lightweight NTP client and server.
 
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s): 
 + `123`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + `asusrouter.internal:123`
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + Admin Login: "ASUS Router"
     + SSH Key: "Admin@asusrouter"
@@ -39,7 +39,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-#### :material-server: Server:
+#### :material-server-outline: Server:
 
 ```conf title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1"
 ###########################################################################

@@ -1,5 +1,6 @@
 ---
 icon: material/tag
+title: Hardware Tags
 ---
 ![Devices Icon](../assets/icons/devices.svg){ width=200 }
 

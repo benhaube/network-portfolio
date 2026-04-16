@@ -1,5 +1,5 @@
 ---
-icon: material/server-outline
+icon: material/debian
 tags:
   - hardware
   - virtual_machine

@@ -1,5 +1,6 @@
 ---
 icon: simple/caddy
+title: Reverse Proxy & DNS Routing
 hide:
   - toc
 ---

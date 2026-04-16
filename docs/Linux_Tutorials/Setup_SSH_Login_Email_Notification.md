@@ -1,5 +1,6 @@
 ---
 icon: material/email-alert
+title: Setup SSH Login Notification
 hide:
   - toc
 ---

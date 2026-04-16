@@ -1,5 +1,6 @@
 ---
 icon: material/cog-sync
+title: Nebula-Sync
 status: deprecated
 tags:
   - inactive

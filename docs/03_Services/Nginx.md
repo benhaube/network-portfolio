@@ -1,5 +1,6 @@
 ---
 icon: simple/nginx
+title: Nginx (Network Portfolio)
 tags:
   - active
   - service

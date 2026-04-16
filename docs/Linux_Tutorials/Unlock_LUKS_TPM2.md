@@ -1,5 +1,6 @@
 ---
 icon: material/lock-open
+title: Unlocking LUKS Volumes w/ TPM2
 hide:
   - toc
 ---

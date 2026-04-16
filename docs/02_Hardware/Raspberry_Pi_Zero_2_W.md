@@ -1,5 +1,6 @@
 ---
 icon: material/raspberry-pi
+title: Raspberry Pi Zero Server
 tags:
   - hardware
   - server

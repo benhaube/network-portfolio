@@ -1,5 +1,6 @@
 ---
 icon: material/switch
+title: TP-Link Switch
 tags:
   - hardware
   - switch

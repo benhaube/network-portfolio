@@ -1,5 +1,6 @@
 ---
 icon: material/sitemap
+title: Logical Network Map
 tags:
   - network
   - map

@@ -1,5 +1,6 @@
 ---
 icon: simple/pihole
+title: Pi-hole DNS Server
 status: deprecated
 tags:
   - inactive

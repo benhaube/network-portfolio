@@ -1,5 +1,6 @@
 ---
 icon: material/cog
+title: Manual Bed Leveling Mod
 hide:
   - toc
 ---

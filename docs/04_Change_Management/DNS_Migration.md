@@ -1,5 +1,6 @@
 ---
 icon: material/dns
+title: DNS Migration
 hide:
   - toc
 ---

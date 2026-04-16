@@ -1,5 +1,6 @@
 ---
 icon: simple/obsidian
+title: Obsidian LiveSync (CouchDB)
 tags:
   - active
   - service

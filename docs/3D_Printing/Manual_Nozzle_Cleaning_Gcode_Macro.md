@@ -1,5 +1,6 @@
 ---
 icon: material/toothbrush
+title: Manual Nozzle Cleaning Macro
 hide:
   - toc
 ---

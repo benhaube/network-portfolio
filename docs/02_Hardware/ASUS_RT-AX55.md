@@ -1,5 +1,6 @@
 ---
 icon: material/router-wireless
+title: ASUS RT-AX55
 tags:
   - hardware
   - network

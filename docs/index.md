@@ -1,5 +1,5 @@
 ---
-title: Index
+title: Home
 icon: material/format-list-bulleted
 hide:
   - toc

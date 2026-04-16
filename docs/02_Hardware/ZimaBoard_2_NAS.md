@@ -1,5 +1,6 @@
 ---
 icon: material/nas
+title: ZimaOS NAS
 tags:
   - hardware
   - nas

@@ -1,5 +1,6 @@
 ---
 icon: material/router-wireless
+title: ASUS RT-BE92U
 tags:
   - hardware
   - network

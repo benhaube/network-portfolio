@@ -1,5 +1,6 @@
 ---
 icon: services/technitium
+title: Technitium DNS Server
 status: new
 tags:
   - active

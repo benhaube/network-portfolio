@@ -1,4 +1,3 @@
-name: Network Documentation Portfolio
 services:
     mkdocs-custom:
         stdin_open: true
@@ -9,3 +8,5 @@ services:
             - ${PWD}:/docs:Z
         image: mkdocs-custom
         command: serve -a 0.0.0.0:8000
+        environment:
+            - NO_MKDOCS_2_WARNING=1

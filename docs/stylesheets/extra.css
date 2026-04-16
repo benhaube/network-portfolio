@@ -8,6 +8,16 @@
   color: var(--md-primary-fg-color);
 }
 
+/* --- Make H2 headings use primary theme color --- */
+.md-typeset h2 {
+  color: var(--md-primary-fg-color);
+}
+
+/* --- Make H3 headings use accent theme color --- */
+.md-typeset h3 {
+  color: var(--md-accent-fg-color);
+}
+
 /* --- Colors for Logical & Physical Mermaid.js Diagrams --- */
 
 /* 1. Default (Light Mode) Variables */

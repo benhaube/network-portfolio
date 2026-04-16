@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Network Documentation Index
 icon: material/format-list-bulleted
 hide:
   - toc

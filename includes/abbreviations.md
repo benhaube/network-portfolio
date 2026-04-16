@@ -71,6 +71,7 @@
 *[MITM]: Man in the Middle
 *[MMC]: MultiMedia Card
 *[MMS]: Multimedia Messaging Service
+*[MOTD]: Message of the Day
 *[MT/s]: Mega Transfers Per Second
 *[NAS]: Network Attached Storage
 *[NAT]: Network Address Translation

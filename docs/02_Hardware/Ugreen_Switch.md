@@ -33,7 +33,7 @@ hide:
 
 * Wall wart *(12.0V / 1.0A)*
 
-#### :material-clipboard-pulse-outline: Specs:
+#### :symbols-monitor-heart: Specs:
 
 * **Throughput:** 
     * Unmanaged 

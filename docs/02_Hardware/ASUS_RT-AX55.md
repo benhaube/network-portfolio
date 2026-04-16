@@ -23,7 +23,7 @@ hide:
 #### :material-toolbox: Role: 
 + AiMesh Node
 
-#### :material-dns-outline: Hostname(s):
+#### :symbols-host: Hostname(s):
 + `aimesh-node`
 
 #### :material-map-marker-outline: Location: 

@@ -16,7 +16,7 @@ hide:
 
 * Rob's main workstation PC
 
-#### :material-dns-outline: Hostname(s):
+#### :symbols-host: Hostname(s):
 
 * `rob-desktop`
 
@@ -33,7 +33,7 @@ hide:
 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): Secure Notes - "PIN - Rob's Desktop PC"
 
-#### :material-cpu-64-bit: Core Specs:
+#### :symbols-memory-alt: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |

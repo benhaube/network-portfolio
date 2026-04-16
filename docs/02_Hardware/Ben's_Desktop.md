@@ -20,7 +20,7 @@ hide:
 #### :material-toolbox: Role: 
 + My workstation PC
 
-#### :material-dns-outline: Hostname(s): 
+#### :symbols-host: Hostname(s):
 + `bens-workstation`
 
 #### :material-map-marker-outline: Location: 
@@ -33,7 +33,7 @@ hide:
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Workstation"
 
-#### :material-cpu-64-bit: Core Specs:
+#### :symbols-memory-alt: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |

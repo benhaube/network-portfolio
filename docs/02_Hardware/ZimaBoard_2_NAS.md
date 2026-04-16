@@ -28,7 +28,7 @@ hide:
 
 + Primary NAS & VM Host
 
-#### :material-dns-outline: Hostname(s):
+#### :symbols-host: Hostname(s):
 
 + `storage-server` *(eth0)*
 + `storage-server-2` *(eth1)*
@@ -49,7 +49,7 @@ hide:
     + "storage-server (bhaube)"  
     + SSH key: "admin@storage-server"
 
-#### :material-cpu-64-bit: Core Specs:
+#### :symbols-memory-alt: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |

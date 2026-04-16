@@ -24,7 +24,7 @@ hide:
 #### :material-toolbox: Role:  
 + Primary DNS server *([[Technitium]] Cluster)*
 
-#### :material-dns-outline: Hostname(s):
+#### :symbols-host: Hostname(s):
 + `debian-vm`
 
 #### :material-network-pos: Hypervisor: 
@@ -39,7 +39,7 @@ hide:
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "server-admin@debian-vm"
 
-## :material-cpu-64-bit: Resource Allocation
+## :symbols-memory-alt: Resource Allocation
 
 | vCPU | RAM | Storage | VDI Location |
 | :--: | :-: | :------ | :----------- |

@@ -26,7 +26,7 @@ hide:
 #### :material-toolbox: Role: 
 + 3D-Printer
 
-#### :material-dns-outline: Hostname(s):
+#### :symbols-host: Hostname(s):
 + `k1c-a71e`
 
 #### :material-map-marker-outline: Location:  

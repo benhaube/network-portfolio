@@ -32,7 +32,7 @@ hide:
 
 * Wall Wart *(5V / 0.6A)*
 
-#### :material-clipboard-pulse-outline: Specs:
+#### :symbols-monitor-heart: Specs:
 
 * **Throughput:** 
     * Unmanaged Gigabit

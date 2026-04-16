@@ -27,7 +27,7 @@ hide:
 #### :material-toolbox: Role: 
 * Tertiary DNS server *(Pi-hole w/ dnscrypt-proxy)*
 
-#### :material-dns-outline: Hostname(s):
+#### :symbols-host: Hostname(s):
 * `pi-zero`
 
 #### :material-map-marker-outline: Location:  
@@ -40,7 +40,7 @@ hide:
 #### :material-key-chain: Credentials:
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-hole"
 
-#### :material-cpu-64-bit: Core Specs:
+#### :symbols-memory-alt: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |

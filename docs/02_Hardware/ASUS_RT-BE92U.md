@@ -25,7 +25,7 @@ hide:
 #### :material-toolbox: Role: 
 + Main Router
 
-#### :material-dns-outline: Hostname(s):
+#### :symbols-host: Hostname(s):
 + `asusrouter`
 
 #### :material-map-marker-outline: Location: 

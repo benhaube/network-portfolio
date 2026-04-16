@@ -79,7 +79,7 @@ bind interfaces only = yes
 include = /etc/samba/casa.%U.conf
 ```
 
-##### :material-account: **Individual User Configuration Files:**
+**:material-account-outline: Individual User Configuration Files:**
 
 ```ini title="/etc/samba/casa.admin.conf" linenums="1"
 [ZimaOS-HD]  

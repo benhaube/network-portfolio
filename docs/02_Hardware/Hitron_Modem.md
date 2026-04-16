@@ -18,17 +18,17 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### Role:
+#### :material-toolbox: Role: 
 + DOCSIS Cable Modem
 
-#### Location: 
+#### :material-map-marker-outline: Location: 
 + Living-Room
 + Mini-Rack
 
-#### OS / Firmware: 
+#### :material-memory: OS / Firmware: 
 + Hitron FW version: 7.3.5.3.2b2
 
-#### Credentials: 
+#### :material-key-chain: Credentials:
 + N/A
 
 ## :material-lan: Network Configuration
@@ -50,11 +50,11 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!note inline] Critical Configurations
-> #### :material-network-off: WAN Down:
+> **:material-network-off: WAN Down:**
 > 
 > * If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
 >   
-> #### :material-application-cog: Access WebUI:
+> **:material-application-cog-outline: Access WebUI:**
 > 
 > * To access the modem's Web UI enter <https://192.168.100.1> or <https://hitron-modem.internal>
 

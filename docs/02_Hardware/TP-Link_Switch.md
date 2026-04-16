@@ -18,17 +18,21 @@ hide:
 ---
 ## :material-information-outline: Physical Overview
 
-#### Role: 
+#### :material-toolbox: Role:
+
 * Core Desktop Switch
 
-#### Location: 
+#### :material-map-marker-outline: Location:
+
 * Office
 * Printer-Cart
 
-#### Power Source:
+#### :material-power-plug: Power Source:
+
 * Wall Wart *(5V / 0.6A)*
 
-#### Specs:
+#### :material-clipboard-pulse-outline: Specs:
+
 * **Throughput:** 
     * Unmanaged Gigabit
     * Five 1 GbE ports

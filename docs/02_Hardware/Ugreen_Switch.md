@@ -20,17 +20,21 @@ hide:
 ---
 ## :material-information-outline: Physical Overview
 
-#### Role:
+#### :material-toolbox: Role: 
+
 * Rack Aggregation
 
-#### Location:
+#### :material-map-marker-outline: Location: 
+
 * Living-Room 
 * Mini-Rack 
 
-#### Power Source: 
+#### :material-power-plug: Power Source: 
+
 * Wall wart *(12.0V / 1.0A)*
 
-#### Specs:
+#### :material-clipboard-pulse-outline: Specs:
+
 * **Throughput:** 
     * Unmanaged 
     * Five 2.5 Gb/s Ports
@@ -53,12 +57,12 @@ hide:
 ## :material-tools: Maintenance Notes
 
 > [!tip inline] Visual Indicators
-> #### Ethernet Ports: 
+> **Ethernet Ports:** 
 > 
 > * **Green LED:** 2500 Mb/s Link 
 > * **Amber LED:** 10/100/1000 Mb/s Link
 >   
-> #### SFP+ Port: 
+> **SFP+ Port:** 
 > 
 > * **Green LED:** 10 Gb/s Link 
 > * **Amber LED:** 1000 / 2500 Mb/s Link

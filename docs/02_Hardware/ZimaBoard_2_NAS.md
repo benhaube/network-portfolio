@@ -23,27 +23,32 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
+
 + Primary NAS & VM Host
 
-#### Hostname(s): 
+#### :material-dns-outline: Hostname(s):
+
 + `storage-server` *(eth0)*
 + `storage-server-2` *(eth1)*
 
-#### Location: 
+#### :material-map-marker-outline: Location: 
+
 + Living-Room
 + Mini-Rack
 
-#### OS / Firmware:
+#### :material-memory: OS / Firmware: 
+
 + [:services-zimaos:&nbsp;ZimaOS 1.5.4](https://www.zimaspace.com/zimaos) *(Immutable)*
 
-#### Credentials: 
+#### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + "storage-server (Admin)" 
     + "storage-server (bhaube)"  
     + SSH key: "admin@storage-server"
 
-#### Core Specs:
+#### :material-cpu-64-bit: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
@@ -67,7 +72,7 @@ hide:
 
 ## :material-folder-open: Storage & Mounts
 
-#### :material-memory: Boot:
+#### :material-chip: Boot:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -144,7 +149,7 @@ hide:
 > 
 > **Performance:** Reduced backup time from ~10m to ~1.5m.
 > 
-> #### :services-zimaos: Server Side *(ZimaOS)*:
+> **:services-zimaos: Server Side *(ZimaOS)*:**
 > 
 > + Config File: `etc/exports`
 > + Exports Entry:
@@ -166,7 +171,7 @@ hide:
 >     systemctl restart nfs-server
 >     ```
 >     
-> #### :material-fedora: Client Side *(Fedora 43)*:
+> **:material-fedora: Client Side *(Fedora 43)*:**
 > 
 > + Package required: `nfs-utils`
 > + Systemd `.mount` unit files: `/etc/systemd/system`

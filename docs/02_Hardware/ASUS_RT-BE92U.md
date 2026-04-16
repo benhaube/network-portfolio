@@ -21,19 +21,19 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
 + Main Router
 
-#### Hostname(s):
+#### :material-dns-outline: Hostname(s):
 + `asusrouter`
 
-#### Location:
+#### :material-map-marker-outline: Location: 
 + Living-Room
 
-#### OS / Firmware: 
+#### :material-memory: OS / Firmware: 
 + [:material-wizard-hat:&nbsp;asuswrt-merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
-#### Credentials: 
+#### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
 ## :material-lan: Network Configuration

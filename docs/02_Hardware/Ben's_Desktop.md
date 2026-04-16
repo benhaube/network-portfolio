@@ -17,23 +17,23 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
 + My workstation PC
 
-#### Hostname(s): 
+#### :material-dns-outline: Hostname(s): 
 + `bens-workstation`
 
-#### Location: 
+#### :material-map-marker-outline: Location: 
 + Office 
 + Desk
 
-#### OS / Firmware:
+#### :material-memory: OS / Firmware:
 + [:material-fedora:&nbsp;Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
 
-#### Credentials:
+#### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Workstation"
 
-#### Core Specs:
+#### :material-cpu-64-bit: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
@@ -92,20 +92,22 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!NOTE]+ Critical Configurations
-> 1. **:material-web-clock: Chrony:** 
->     + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
+> **:material-web-clock: Chrony:** 
+> + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
 > 
-> 2. **:material-cloud-upload-outline: Backup:** 
->     + Home directory backed up every weekday at `18:00` using custom `rsync` script, `home-bkp-nas.sh`. The script is triggered by `systemd` user timer, `home-bkp-nas.timer` which starts `home-bkp-nas.service`. The timer is persistent, so if the PC is asleep at the backup time the backup will start the next time the PC wakes up.
+> **:material-cloud-upload-outline: Backup:** 
+> + Home directory backed up every weekday at `18:00` using custom `rsync` script, `home-bkp-nas.sh`. The script is triggered by `systemd` user timer, `home-bkp-nas.timer` which starts `home-bkp-nas.service`. The timer is persistent, so if the PC is asleep at the backup time the backup will start the next time the PC wakes up.
 > 
-> 3. **:material-lock-open: LUKS Unlocking:** 
->     + The LUKS encrypted boot drive is configured to use the onboard `TPM2` chip for drive encryption. Kernel and firmware upgrades require clearing the registered PCRs and enrolling the new ones. This can be done with a custom script I wrote, `update-pcrs`, which is located in the `/usr/local/bin` directory.
+> **:material-lock-open: LUKS Unlocking:** 
+> + The LUKS encrypted boot drive is configured to use the onboard `TPM2` chip for drive encryption. Kernel and firmware upgrades require clearing the registered PCRs and enrolling the new ones. This can be done with a custom script I wrote, `update-pcrs`, which is located in the `/usr/local/bin` directory.
 > 
->     + The proper command format is: 
->         ```bash linenums="1"
->         sudo update-pcrs /dev/nvme0n1p3
->         ```
->     + More information about the configuration process can be found at: [[Unlock_LUKS_TPM2|Unlock LUKS w/ TPM2]]
+> + The proper command format is:
+>  
+>     ```bash linenums="1"
+>     sudo update-pcrs /dev/nvme0n1p3
+>     ```
+>
+> + More information about the configuration process can be found at: [[Unlock_LUKS_TPM2|Unlock LUKS w/ TPM2]]
 
 #### :material-update: Update Process:
 

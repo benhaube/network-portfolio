@@ -23,23 +23,23 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
 * Tertiary DNS server *(Pi-hole w/ dnscrypt-proxy)*
 
-#### Hostname(s):
+#### :material-dns-outline: Hostname(s):
 * `pi-zero`
 
-#### Location: 
+#### :material-map-marker-outline: Location:  
 * Office
 * Printer-Cart
 
-#### OS / Firmware:
+#### :material-memory: OS / Firmware: 
 * [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
-#### Credentials: 
+#### :material-key-chain: Credentials:
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-hole"
 
-#### Core Specs:
+#### :material-cpu-64-bit: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
@@ -91,13 +91,13 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!important inline] Critical Configurations
-> #### :material-web-clock: Chrony:
+> **:material-web-clock: Chrony:**
 > * Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
 > 
-> #### :material-text-long: Logs:
+> **:material-text-long: Logs:**
 > * Logs are configured with `log2ram` to reduce wear on the MicroSD card.
 > 
-> #### :material-email-alert: Email Notifications:
+> **:material-email-alert: Email Notifications:**
 > * This server has email notifications configured for new SSH sessions and `unattended-upgrades`. See [SSH Login Email Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation.
 
 #### :material-update: Update Process:

@@ -17,29 +17,23 @@ hide:
 ---
 ## :material-information-outline: Basic Information
 
-#### Model: 
-+ Creality^&copy;^ K1C
-
-#### Build Volume: 
-+ `220x220x250`
-
-#### Version:
-+ v2.0.5
-
-#### Create Date: 
-+ 2023/09/05
-
-#### Nozzle MCU: 
-+ *Chip:* GD32F303CBT6
-+ *Version:* CR-K1-MAX-NOZZLE-V1.2.0    
-
-#### Leveling MCU: 
-+ *Chip:* GD32E230F8P6
-+ *Version:* CR-K1-MAX-LEVELING-V1.1.0
-
-#### MCU: 
-+ *Chip:* GD32F303RET6
-+ *Version:* CR4CU220812S12
++ **Model:** 
+  + Creality^&copy;^ K1C
++ **Build Volume:** 
+  + `220x220x250`
++ **Version:**
+  + v2.0.5    
++ **Create Date:** 
+  + 2023/09/05
++ **Nozzle MCU:** 
+  + *Chip:* GD32F303CBT6
+  + *Version:* CR-K1-MAX-NOZZLE-V1.2.0    
++ **Leveling MCU:** 
+  + *Chip:* GD32E230F8P6
+  + *Version:* CR-K1-MAX-LEVELING-V1.1.0
++ **MCU:** 
+  + *Chip:* GD32F303RET6
+  + *Version:* CR4CU220812S12
 
 ## :material-lan: Network
 

@@ -19,20 +19,20 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
 + AiMesh Node
 
-#### Hostname(s):
+#### :material-dns-outline: Hostname(s):
 + `aimesh-node`
 
-#### Location: 
+#### :material-map-marker-outline: Location: 
 + Office
 + Printer-Cart 
 
-#### OS / Firmware: 
+#### :material-memory: OS / Firmware: 
 + [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3.0.0.4.386_53327-g852eb80)*
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Asus Router"
 
 ## :material-lan: Network Configuration

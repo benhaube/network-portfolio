@@ -12,23 +12,28 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
+
 * Rob's main workstation PC
 
-#### Hostname(s): 
+#### :material-dns-outline: Hostname(s):
+
 * `rob-desktop`
 
-#### Location: 
+#### :material-map-marker-outline: Location: 
+
 * Office 
 * Desk 
 
-#### OS / Firmware: 
+#### :material-memory: OS / Firmware: 
+
 * [:material-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
-#### Credentials: 
+#### :material-key-chain: Credentials:
+
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): Secure Notes - "PIN - Rob's Desktop PC"
 
-#### Core Specs:
+#### :material-cpu-64-bit: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
@@ -69,7 +74,7 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!note inline] Critical Configurations
-> #### :material-web-clock: Chrony:
+> **:material-web-clock: Chrony:**
 > + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
 
 #### :material-update: Update Process: 

@@ -1,5 +1,5 @@
 ---
-icon: material/server
+icon: material/server-outline
 tags:
   - hardware
   - virtual_machine
@@ -21,19 +21,19 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Role: 
+#### :material-toolbox: Role:  
 + Primary DNS server *([[Technitium]] Cluster)*
 
-#### Hostname(s): 
+#### :material-dns-outline: Hostname(s):
 + `debian-vm`
 
-#### Hypervisor: 
+#### :material-network-pos: Hypervisor: 
 + [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 
-#### Operating System: 
+#### :material-memory: Operating System: 
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
-#### Host Node: 
+#### :material-server-network-outline: Host Node: 
 + [:services-zimaos:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
 #### Credentials: 
@@ -79,8 +79,8 @@ hide:
 ## :material-tools: Maintenance & Snapshots
 
 > [!important]+ Critical Configurations
-> 1. Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
-> 2. The VM is configured to boot automatically when the host server boots. 
+> + Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
+> + The VM is configured to boot automatically when the host server boots. 
 > 
 >     + If a ZimaOS update breaks this configuration it can be re-applied with the following command on the host machine:
 > 
@@ -94,7 +94,7 @@ hide:
 >         sudo virsh autostart <vm_name> --disable
 >         ```
 >         
-> 3. This server has email notifications configured for new SSH sessions and `unattended-upgrades`. See [[Setup_SSH_Login_Email_Notification|SSH Login Email Notification]] for documentation. 
+> + This server has email notifications configured for new SSH sessions and `unattended-upgrades`. See [[Setup_SSH_Login_Email_Notification|SSH Login Email Notification]] for documentation. 
 
 #### :material-update: Update Policy:
 
@@ -106,8 +106,8 @@ hide:
 * Perform external snapshots before major changes.
 
 > [!warning] Warning!
-> 4. The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
-> 5. To create an external snapshot, run the following command as `root`: 
+> + The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
+> + To create an external snapshot, run the following command as `root`: 
 > 
 >     ```bash linenums="1"
 >     virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic

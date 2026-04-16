@@ -30,15 +30,15 @@ hide:
 #### :material-calendar: Create Date: 
 + 2023/09/05
 
-#### :devices-memory-alt: Nozzle MCU: 
+#### :symbols-memory-alt: Nozzle MCU: 
 + *Chip:* GD32F303CBT6
 + *Version:* CR-K1-MAX-NOZZLE-V1.2.0    
 
-#### :devices-memory-alt: Leveling MCU: 
+#### :symbols-memory-alt: Leveling MCU: 
 + *Chip:* GD32E230F8P6
 + *Version:* CR-K1-MAX-LEVELING-V1.1.0
 
-#### :devices-memory-alt: MCU: 
+#### :symbols-memory-alt: MCU: 
 + *Chip:* GD32F303RET6
 + *Version:* CR4CU220812S12
 

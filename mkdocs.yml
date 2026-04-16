@@ -63,7 +63,7 @@ theme:
       map: material/sitemap
       mini-rack: devices/10-inch-rack
       mobile: material/tablet-cellphone
-      monitor: material/monitor-eye
+      monitor: symbols/monitor-heart
       nas: material/nas
       network: material/lan 
       native: material/linux
@@ -73,7 +73,7 @@ theme:
       printer-cart: material/printer
       remote: material/remote-desktop
       router: material/router-wireless
-      server: material/server
+      server: material/server-outline
       service: material/web
       shell: material/console
       software: material/application

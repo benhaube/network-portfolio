@@ -18,19 +18,19 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Easily access and use the host terminal in a Web browser.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `2222`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <http://storage-server.internal:2222>
 
 #### :material-key-chain: Credentials:  
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "storage-server (Admin)"
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

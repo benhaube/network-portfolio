@@ -21,14 +21,14 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description:  
 + DNS Blocker
 
 #### :symbols-settings-ethernet: Port(s):
 + Web: `80`, `443`
 + DNS: `53`
 
-#### :material-protocol: URL / Access:  
+#### :material-link-variant: URL / Access:  
 + ~~[[https://pi-server.internal/admin/login]]~~
 + ~~[[https://pi-hole.internal/admin/login]]~~
 
@@ -37,7 +37,7 @@ hide:
     + "Pi-hole Admin @ (pi-hole)"
     + "Pi-hole Admin @ (pi-server)"
 
-## :material-package-down: Deployment Details  
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
@@ -46,7 +46,7 @@ hide:
 
 ### :material-cog: Configuration
 
-#### :material-download: Install:
+#### :symbols-install-desktop: Install:
 
 ```bash linenums="1"
 curl -sSL https://install.pi-hole.net | bash

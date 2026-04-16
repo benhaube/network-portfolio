@@ -19,13 +19,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Remote file system access.
 
 #### :symbols-settings-ethernet: Port(s):
 + `445`
 
-#### :material-protocol: URL / Access:  
+#### :material-link-variant: URL / Access:  
 + `\\storage-server.internal\nvme0n1p1`
 + `\\storage-server.internal\Quick-Storage`
 + `\\pi-server.internal\smb-share`
@@ -34,7 +34,7 @@ hide:
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
 
-## :material-package-down: Deployment Details  
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

@@ -22,7 +22,7 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + A lightweight, secure remote access VPN server.
 
 #### :symbols-settings-ethernet: Port(s): 
@@ -30,7 +30,7 @@ hide:
 + `51820`
 + `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + :material-vpn:&nbsp;Server Endpoint:
     + `remote-access-home-34.asuscomm.com:41820` *(for :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md))*
     + `remote-access-home-34.asuscomm.com:51820` *(for :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
@@ -53,7 +53,7 @@ hide:
     + `rob-laptop`
     + `rob-phone`
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

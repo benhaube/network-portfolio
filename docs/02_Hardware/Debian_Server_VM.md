@@ -39,7 +39,7 @@ hide:
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "server-admin@debian-vm"
 
-## :symbols-memory-alt: Resource Allocation
+#### :symbols-memory-alt: Resource Allocation
 
 | vCPU | RAM | Storage | VDI Location |
 | :--: | :-: | :------ | :----------- |

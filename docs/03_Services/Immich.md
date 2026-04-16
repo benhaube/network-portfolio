@@ -19,13 +19,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description:  
 + Photo gallery and backup service.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `2283`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + :material-lan: Local Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
@@ -37,7 +37,7 @@ hide:
     + "Immich User"
     + "Immich Administrator"
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

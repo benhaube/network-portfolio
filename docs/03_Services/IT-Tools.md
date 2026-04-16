@@ -19,20 +19,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Handy tools for network administrators and developers.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `8080`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details 
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

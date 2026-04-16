@@ -20,21 +20,21 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description:  
 + Network traffic probe
 
 #### :symbols-settings-ethernet: Port(s):
 + `3000`
 + `5556`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <http://192.168.50.4:3000>
 + <http://storage-server.internal:3000>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

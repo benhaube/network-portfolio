@@ -17,20 +17,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Manage 3D-printer filament inventory, and actively track filament usage.
 
 #### :symbols-settings-ethernet: Port(s):
 + `7912`
 
-#### :material-protocol: URL / Access:  
+#### :material-link-variant: URL / Access:   
 + <http://storage-server.internal:7912/>
 + <https://spoolman.internal>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details 
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

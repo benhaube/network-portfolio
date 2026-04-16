@@ -17,14 +17,14 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + A Web UI for managing the 3D-printer.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `80`
 + `4408`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <http://k1c-a71e.internal>
 + <http://192.168.50.153>
 + <http://k1c-a71e.internal:4408>
@@ -33,7 +33,7 @@ hide:
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
@@ -41,7 +41,7 @@ hide:
 
 ### :material-cog: Configuration
 
-#### :material-download: Install:
+#### :symbols-install-desktop: Install:
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 # Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.

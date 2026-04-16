@@ -17,14 +17,14 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Visualization of real-time track data and telemetry synced to F1 live and replays.
 
 #### :symbols-settings-ethernet: Port(s):  
 + `3000`
 + `8000`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + Backend: 
     + <http://storage-server.internal:8000>
 + Frontend: 
@@ -33,7 +33,7 @@ hide:
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

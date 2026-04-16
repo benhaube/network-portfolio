@@ -16,20 +16,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Remote desktop access over the local network *(not publicly exposed)*
 
 #### :symbols-settings-ethernet: Port(s):
 + `3389`
 
-#### :material-protocol: URL / Access:  
+#### :material-link-variant: URL / Access:  
 + [rdp://192.168.50.67:3389](rdp://192.168.50.67:3389)
 + [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
 #### :material-key-chain: Credentials: 
 + :material-account-outline:&nbsp;Local User: `bhaube`
 
-## :material-package-down: Deployment Details 
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

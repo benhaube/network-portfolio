@@ -17,13 +17,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description:  
 + A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `5001`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <http://pi-server.internal:5001>
 + <http://pi-zero.internal:5001>
 + <http://debian-vm.internal:5001>
@@ -34,7 +34,7 @@ hide:
     + "Dockge @ pi-zero"
     + "Dockge @ debian-vm"
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

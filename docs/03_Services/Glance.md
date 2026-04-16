@@ -19,20 +19,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + A server dashboard Web UI. 
 
 #### :symbols-settings-ethernet: Port(s):
 + `8580`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access:  
 + <https://glance.internal>
 + <http://pi-server.internal:8580/>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details 
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

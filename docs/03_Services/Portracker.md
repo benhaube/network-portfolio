@@ -20,20 +20,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + A self-hosted, real-time port monitoring and discovery tool.
 
 #### :symbols-settings-ethernet: Port(s):
 + `4999`
 
-#### :material-protocol: URL / Access:  
+#### :material-link-variant: URL / Access:  
 + <http://192.168.50.4:4999>
 + <http://storage-server.internal:4999>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details 
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

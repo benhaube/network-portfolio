@@ -20,13 +20,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Open decentralized file synchronization.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `8384`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access:  
 * :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md):
     * <http://bens-workstation.internal:8384>
     * <http://192.168.50.61:8384>
@@ -47,7 +47,7 @@ hide:
     * "Syncthing @ bens-workstation"
     * "Syncthing @ ben-laptop"
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
@@ -59,7 +59,7 @@ hide:
 
 ### :material-cog: Configuration  
 
-#### :material-console: Install Commands:
+#### :symbols-install-desktop: Install Commands:
 + :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server / Raspberry Pi Zero Server:
     + `#!bash sudo apt install -y syncthing`
 + :material-fedora:&nbsp;Ben's Desktop / Ben's Laptop:

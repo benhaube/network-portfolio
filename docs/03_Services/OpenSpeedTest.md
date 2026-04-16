@@ -19,20 +19,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + HTML5 Network Speed Test Server. 
 
 #### :symbols-settings-ethernet: Port(s):
 + `3004`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access:  
 + <https://openspeedtest.internal>
 + <http://storage-server.internal:3004>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details  
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

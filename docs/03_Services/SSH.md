@@ -19,13 +19,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Remote shell access to servers
 
 #### :symbols-settings-ethernet: Port(s):
 + `22`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 * :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)
     * `192.168.50.1:22` 
     * `asusrouter.internal:22`
@@ -48,7 +48,7 @@ hide:
 #### :material-key-chain: Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): SSH keys
 
-## :material-package-down: Deployment Details  
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

@@ -17,20 +17,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + A home automation and IoT dashboard.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `8123`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <http://pi-server.internal:8123>
 + <https://home-assistant.internal>
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Home Assistant @ pi-server"
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

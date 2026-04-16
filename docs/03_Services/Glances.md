@@ -18,20 +18,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Glances an Eye on your system. A `top` / `htop` alternative for the Web browser. 
 
 #### :symbols-settings-ethernet: Port(s): 
 + `21208`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <http://pi-server.internal:61208>
 + <http://storage-server.internal:61208>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

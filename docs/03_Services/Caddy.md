@@ -21,20 +21,20 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description:  
 + Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `80`
 + `443`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + <https://pi-zero.internal>
 
 #### :material-key-chain: Credentials: 
 + N/A
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
@@ -42,7 +42,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-#### :material-download: Install:
+#### :symbols-install-desktop: Install:
 
 1. Add the official Caddy repository. 
 

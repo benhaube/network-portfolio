@@ -17,13 +17,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Advanced, lightweight NTP client and server.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `123`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + `asusrouter.internal:123`
 
 #### :material-key-chain: Credentials: 
@@ -31,7 +31,7 @@ hide:
     + Admin Login: "ASUS Router"
     + SSH Key: "Admin@asusrouter"
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

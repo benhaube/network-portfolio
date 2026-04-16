@@ -19,13 +19,13 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + A fancy self-hosted service monitoring tool.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `3001`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + :material-lan:&nbsp;LAN Access
     + <https://uptime.internal>
     + <http://pi-server.internal:3001>
@@ -35,7 +35,7 @@ hide:
 #### :material-key-chain: Credentials:  
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Uptime Kuma @ pi-server"
 
-## :material-package-down: Deployment Details 
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

@@ -18,19 +18,19 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### :material-comment-eye-outline: Description: 
+#### :symbols-description: Description: 
 + Agent for [[Beszel_Hub|Beszel Hub]], a server utilization monitor.  Allows for client servers to connect to hub.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `45867`
 
-#### :material-protocol: URL / Access: 
+#### :material-link-variant: URL / Access: 
 + `N/A`
 
 #### :material-key-chain: Credentials: 
 + :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
 
-## :material-package-down: Deployment Details
+## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

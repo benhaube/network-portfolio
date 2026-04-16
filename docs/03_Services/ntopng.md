@@ -1,5 +1,6 @@
 ---
 icon: material/ethernet
+title: ntopng
 tags:
   - active
   - service

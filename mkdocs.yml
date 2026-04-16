@@ -157,7 +157,7 @@ plugins:
   - meta:
       enabled: true
   - search
-  - awesome-pages
+  - awesome-nav
   - roamlinks
   - callouts
   - tags:
@@ -166,7 +166,7 @@ plugins:
   - optimize:
       optimize_exclude:
         - blog/*
-  - typeset
+  # - typeset
   - social:
       log: true
       log_level: warn

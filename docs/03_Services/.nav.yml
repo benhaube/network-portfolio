@@ -1,0 +1,6 @@
+title: Services
+sort:
+  ignore_case: true
+nav:
+  - "*"
+  - tags.md

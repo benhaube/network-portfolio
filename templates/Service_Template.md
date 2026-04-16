@@ -15,16 +15,16 @@ hide:
 ---
 ## :material-information-outline: Overview
 
-#### Purpose:
+#### :material-comment-eye-outline: Description: 
 + [Insert description of service here]
  
-#### Port(s): 
+#### :symbols-settings-ethernet: Port(s): 
 + `port`
 
-#### URL / Access:
+#### :material-protocol: URL / Access: 
 + <https://example.com>
 
-#### Credentials: 
+#### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-package-down: Deployment Details

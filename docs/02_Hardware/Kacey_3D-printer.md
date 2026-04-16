@@ -1,5 +1,6 @@
 ---
 icon: material/printer-3d-nozzle
+title: Kacey (Creality K1C) 3D-Printer
 tags:
   - hardware
   - network

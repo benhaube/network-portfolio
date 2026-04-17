@@ -30,7 +30,7 @@ theme:
       accent: light blue
       toggle:
         icon: material/brightness-4
-        name: Switch to auto mode
+        name: Switch to system preference
   font:
     text: Google Sans Flex
     code: Google Sans Code

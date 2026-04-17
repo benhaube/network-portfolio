@@ -37,7 +37,7 @@ theme:
   # -- Icon Settings--
   icon:
     logo: material/file-document-multiple
-    repo: simple/github
+    repo: fontawesome/brands/git-alt
     # - Icons for Tags -
     tag:
       default: material/tag
@@ -87,6 +87,7 @@ theme:
     previous: material/arrow-left-bold
     next: material/arrow-right-bold
     search: material/magnify
+    share: material/share-variant
     annotation: material/plus-circle
     edit: material/file-edit-outline
     view: material/file-eye-outline
@@ -103,6 +104,7 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
     - content.code.select
     - content.code.annotate
@@ -171,10 +173,11 @@ plugins:
   - optimize:
       optimize_exclude:
         - blog/*
-  # - typeset
   - social:
       log: true
       log_level: warn
+      cards_layout_options:
+        font_family: Google Sans Flex
   - blog:
       authors: true
       authors_file: "{blog}/.authors.yml"
@@ -201,7 +204,7 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
   social:
-    - icon: fontawesome/brands/github
+    - icon: simple/github
       link: https://github.com/benhaube
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/benjamin-haube/
@@ -268,4 +271,5 @@ extra_css:
 
 # --- Project Repository URL & Docs directory ---
 repo_url: https://github.com/benhaube/network-portfolio
+repo_name: benhaube/network-portfolio
 edit_uri: edit/main/docs/

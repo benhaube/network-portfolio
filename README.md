@@ -1,4 +1,4 @@
-![Project Logo](docs/assets/icons/file-document-multiple-color.svg){ width=300 }
+![Project Logo](docs/assets/icons/readme.png)
 
 # Network Documentation & Portfolio 
 *Built with Material for MkDocs*

@@ -20,7 +20,7 @@ hide:
 
 #### Reverse Proxy:
 
-* :simple-caddy: Caddy *([:material-raspberry-pi:Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) - Native `apt` Install)*
+* :simple-caddy: Caddy: *[:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)* -- *(Native `apt` Install)*
 
 #### Application Hosts:
 

@@ -168,8 +168,10 @@ plugins:
   - awesome-nav
   - roamlinks
   - callouts
-  - git-authors:
-      enabled: true
+  # - git-committers:
+      # enabled: true
+      # repository: benhaube/network-portfolio
+      # branch: main
   - tags:
       export: true
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold

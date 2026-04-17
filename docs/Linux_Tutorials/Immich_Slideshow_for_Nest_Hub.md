@@ -169,7 +169,7 @@ Place this in the same folder as your docker-compose file.
 
 **Automation YAML:**
 
-```yaml linenums="1"
+```yaml title="/home-assistant-container/automations.yaml" linenums="1"
 alias: "Living Room Frame Manager"
 trigger:
   - platform: state

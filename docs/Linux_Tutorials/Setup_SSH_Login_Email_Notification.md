@@ -9,7 +9,7 @@ hide:
 # Setup SSH Login Notification
 
 ---
-## :material-package-variant: Install Required Packages
+## :symbols-deployed-code-update: Install Required Packages
 
 > [!info] Dependencies
 > In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
@@ -197,7 +197,7 @@ hide:
 
 ---
 
-## :material-test-tube: Testing the Setup
+## :symbols-labs: Testing the Setup
 
 > [!done] Congrats!
 > Congratulations, we are done! You should now have a working email notification set up. You should now recieve an email notification every time a new SSH session is started on your server. Now we will test everything we have configured to make sure it is functioning properly. 

@@ -19,7 +19,7 @@ icon: material/server-security
 
 ## :material-wall-fire: Boundary Defense & Remote Access
 
-#### :material-shield-alert-outline: Edge Protection: 
+#### :material-security: Edge Protection: 
 
 + An [[ASUS_RT-BE92U|ASUS RT-BE92U]] acts as the primary firewall, utilizing **SPI** and **DoS** protection. 
 
@@ -40,17 +40,17 @@ icon: material/server-security
 
 + A clustered [[Technitium|Technitium DNS]] environment *([[Debian_Server_VM|Debian VM]] & [[Raspberry_Pi_4B_Server|Pi 4B Server]])* handles all local queries.
 
-#### :material-domino-mask: Upstream Privacy:
+#### :symbols-domino-mask: Upstream Privacy:
 
 + Queries are forwarded to [Quad-9](https://quad9.net/) via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
 
-#### :material-block-helper: Blocking:
+#### :symbols-disabled-visible: Blocking:
 
 + Network-wide ad and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
 ## :material-security-network: Device & Host Hardening
 
-#### :material-linux: :material-microsoft: Operating Systems:
+#### :symbols-desktop-landscape: Operating Systems:
 
 + Servers primarily utilize **Debian** and **ZimaOS** *(on the NAS)* for stability and security. 
 	+ Debian Linux *(Stable)* is a rock-solid, unchanging base to build a server on. Packages are not frequently updated with new features, so there is no need to worry about breakages. The 10-year-long service life means you are guaranteed to get security updates for the server's lifetime. 
@@ -59,7 +59,7 @@ icon: material/server-security
 + Client PCs utilize **Fedora *(KDE Plasma Desktop Edition)*** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware *(e.g., the latest CPUs & GPUs)*.
 + Mobile devices *(smartphones and tablets)* utilize **Android**. Only Google Pixel and Samsung Galaxy devices are allowed due to their monthly security patches and long service & support lifespan.   
 
-#### :material-shield-account-variant: Access Control: 
+#### :symbols-shield-person-fill: Access Control: 
 
 + [[SSH]] access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
 + [:services-bitwarden: Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
@@ -79,7 +79,7 @@ icon: material/server-security
 
 + The [[Kacey_3D-printer|Creality K1C]] is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 
-## :material-shield-home: IoT & Smart Home Integrity
+## :symbols-shield-house-fill: IoT & Smart Home Integrity
 
 + The migration from **Google Home** to **Home Assistant** ensures that IoT devices are managed locally. 
 + By isolating VLAN 53, "phone-home" telemetry from generic IoT hardware is neutralized, preventing potential lateral movement if a device is compromised.

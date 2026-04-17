@@ -32,7 +32,7 @@ hide:
 | :material-router-wireless:&nbsp;[ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md) | vlan50 | `192.168.50.221` | `aimesh-node.internal` | Reserved | AiMesh Node *(Backhaul)* |
 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md) | - | `192.168.100.1` | `hitron-modem.internal` | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
 
-## :material-desktop-tower: Key Clients *(DHCP Reserved)*
+## :symbols-devices: Key Clients *(DHCP Reserved)*
 
 | Device Name | VLAN | IP Address | Hostname | Role / Notes |
 | :---------- | :--- | :--------- | :------- | :----------- |
@@ -40,7 +40,7 @@ hide:
 | :material-printer-3d-nozzle:&nbsp;[Kacey *(Creality^&copy;^ K1C)* 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | vlan50 | `192.168.50.153` | `k1c-a71e.internal` | Creality K1C *(Modified)* |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(wlan0)* | vlan53 | `DHCP` | - | DHCP, [Home Assistant](../03_Services/Home_Assistant.md)|
 
-## :material-web: Dynamic DNS Provider(s)
+## :material-web-refresh: Dynamic DNS Provider(s)
 
 | Status | Server | Provider | Domain Name | TLS Certificate | Certificate Expire |
 | :----- | :----- | :------- | :---------- | :-------------- | :----------------- |
@@ -53,9 +53,9 @@ hide:
 
 | Client | IP Address | DNS Server(s) | Endpoint |
 | :----- | :--------- | :------------ | :------- |  
-| :material-cellphone:&nbsp;Ben's-Phone | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:41820 |
+| :symbols-mobile:&nbsp;Ben's-Phone | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:41820 |
 | :material-laptop:&nbsp;Ben's-Laptop | `10.6.0.3/32` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:41820 |
-| :material-cellphone:&nbsp;Rob's-Phone | `10.6.0.4/32` | `10.6.0.1` *\[Quad-9 (DoT)]* | remote-access-home-34.asuscomm.com:41820 |
+| :symbols-mobile:&nbsp;Rob's-Phone | `10.6.0.4/32` | `10.6.0.1` *\[Quad-9 (DoT)]* | remote-access-home-34.asuscomm.com:41820 |
 | :material-laptop:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `10.6.0.1` *\[Quad-9 (DoT)]* | remote-access-home-34.asuscomm.com:41820 |
 
 #### :simple-wireguard:&nbsp;WireGuard @ ZimaOS NAS
@@ -64,9 +64,9 @@ hide:
 | Client | IP Address | DNS Server(s) | Endpoint |
 | :----- | :--------- | :------------ | :------- |  
 | :material-laptop:&nbsp;ben-laptop | `10.8.0.2/32` `fd42:42:42::2/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
-| :material-cellphone:&nbsp;ben-pixel | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
+| :symbols-mobile:&nbsp;ben-pixel | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
 | :material-laptop:&nbsp;rob-laptop | `10.8.0.4/32` `fd42:42:42::4/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
-| :material-cellphone:&nbsp;rob-phone | `10.8.0.5/32` `fd42:42:42::5/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
+| :symbols-mobile:&nbsp;rob-phone | `10.8.0.5/32` `fd42:42:42::5/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
 
 ---
 <div class="grid cards" markdown>

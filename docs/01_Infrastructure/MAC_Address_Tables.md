@@ -43,8 +43,8 @@ hide:
 | :devices-connected-tv:&nbsp;Google TV | Bedroom | `google-tv-bedroom` | `AC:67:84:EC:DF:9D` | DHCP | - | :material-wifi: | :material-check: | Chromecast with Google TV connected to Bedroom TV |
 | :material-watch:&nbsp;Smartwatch | Mobile | `google-pixel-watch-2` | `16:EA:08:E8:93:75` | DHCP | - | :material-wifi: | :material-check: | Ben's Smartwatch, Google Pixel Watch 2 |
 | :devices-nest-audio:&nbsp;Nest Speaker | Office | `nest-speaker` | `1C:53:F9:FA:F6:7C` | DHCP | - | :material-wifi: | :material-check: | Nest Audio in Office |
-| :material-cellphone:&nbsp;Smartphone | Mobile | `bens-phone` | `08:8B:C8:4E:19:7B` | DHCP | - | :material-wifi: | :material-check: | Ben's phone, Google Pixel 9 Pro |
-| :material-cellphone:&nbsp;Smartphone | Mobile | `robs-phone` | `1A:5C:54:48:81:37` | DHCP | - | :material-wifi: | :material-check: | Rob's phone, Samsung Galaxy S25+ |
+| :symbols-mobile:&nbsp;Smartphone | Mobile | `bens-phone` | `08:8B:C8:4E:19:7B` | DHCP | - | :material-wifi: | :material-check: | Ben's phone, Google Pixel 9 Pro |
+| :symbols-mobile:&nbsp;Smartphone | Mobile | `robs-phone` | `1A:5C:54:48:81:37` | DHCP | - | :material-wifi: | :material-check: | Rob's phone, Samsung Galaxy S25+ |
 | :devices-nest-display:&nbsp;Nest Hub | Kitchen | `kitchen-hub` | `3C:8D:20:FC:D4:D1` | DHCP | - | :material-wifi: | :material-check: | Nest Hub smart display in the Kitchen |
 | :devices-nest-display:&nbsp;Nest Hub | Living-Room | `living-room-hub` | `24:E5:0F:D9:44:A9` | DHCP | - | :material-wifi: | :material-check: | Nest Hub smart display in the Living Room |
 | :devices-connected-tv:&nbsp;Google TV | Living-Room | `google-tv-livingroom` | `B8:7B:D4:9D:80:F5` | DHCP | - | :material-wifi: | :material-check: | Google TV Streamer, Connected to the Fire TV in the Living Room |
@@ -56,7 +56,7 @@ hide:
 
 | Device Type | Location | Hostname | MAC Address | IP Method | Interface | WAN Access | Role / Notes |
 | :---------- | :------- | :------- | :---------- | :-------- | :-------: | :--------: | :----------- |
-| :material-robot-vacuum:&nbsp;Robot Vacuum | Living-Room | `roomba-675` | `80:C5:F2:DC:B1:57` | DHCP | :material-wifi: | :material-close: | Roomba 675 robot vacuum |
+| :devices-vacuum-fill:&nbsp;Robot Vacuum | Living-Room | `roomba-675` | `80:C5:F2:DC:B1:57` | DHCP | :material-wifi: | :material-close: | Roomba 675 robot vacuum |
 | :devices-nest-protect:&nbsp;Alarm Hub | Living-Room | `ring-solutions` | `B0:09:DA:1C:92:08` | DHCP | :material-wifi: | :material-check: | Ring Alarm base station |
 | :material-bell-ring-outline:&nbsp;Doorbell Chime | Living-Room | `ring-chime` | `18:7F:88:FD:A6:9D` | DHCP | :material-wifi: | :material-check: | Chime for Ring Doorbell |
 | :devices-nest-thermostat:&nbsp;Nest Thermostat | Living-Room | `nest-thermostat` | `18:B4:30:1D:4F:05` | DHCP | :material-wifi: | :material-check: | Nest Thermostat for HVAC system |

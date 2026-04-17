@@ -168,6 +168,8 @@ plugins:
   - awesome-nav
   - roamlinks
   - callouts
+  - git-authors:
+      enabled: true
   - tags:
       export: true
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold

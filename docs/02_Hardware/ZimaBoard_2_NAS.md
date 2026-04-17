@@ -71,7 +71,7 @@ hide:
 | :material-security:&nbsp;vlan50 | `storage-server.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 | :material-security:&nbsp;vlan50 | `storage-server-2.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 
-## :material-folder-open: Storage & Mounts
+## :symbols-storage: Storage & Mounts
 
 #### :material-chip: Boot:
 

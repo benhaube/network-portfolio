@@ -61,7 +61,7 @@ hide:
 | :material-security:&nbsp;vlan50 | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
 | :material-home-automation:&nbsp;vlan53 | - | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
 
-## :material-folder-open: Storage & Mounts
+## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 

@@ -60,7 +60,7 @@ hide:
 | :--: | :---------- | :---------- | :------ |
 | :material-security:&nbsp;vlan50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :material-folder-open: Storage & Mounts
+## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 

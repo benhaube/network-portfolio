@@ -73,7 +73,7 @@ hide:
 | 2.5 Gb LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
 | 2.5 Gb LAN 4 | :material-ethernet:&nbsp;*Empty* | - | - |
 
-## :material-folder-open: Storage & Mounts
+## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 

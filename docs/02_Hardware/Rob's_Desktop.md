@@ -33,7 +33,7 @@ hide:
 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): Secure Notes - "PIN - Rob's Desktop PC"
 
-#### :symbols-memory-alt: Core Specs:
+#### :symbols-monitor-heart: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |

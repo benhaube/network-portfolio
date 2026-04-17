@@ -49,7 +49,7 @@ hide:
     + "storage-server (bhaube)"  
     + SSH key: "admin@storage-server"
 
-#### :symbols-memory-alt: Core Specs:
+#### :symbols-monitor-heart: Core Specs:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |

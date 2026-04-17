@@ -146,7 +146,7 @@ hide:
     ```
 
 ---
-## :material-note-alert: Important Notes
+## :symbols-note-stack: Important Notes
 
 > [!caution]+ Backup Key
 > Always keep at least one regular passphrase or a **recovery key** for your LUKS volume as a backup. If the TPM fails, the UEFI is updated, or your boot configuration changes in a way that alters the PCR values, the TPM will not release the key.

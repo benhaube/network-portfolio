@@ -19,16 +19,16 @@ icon: material/server-security
 
 ## :material-wall-fire: Boundary Defense & Remote Access
 
-#### Edge Protection: 
+#### :material-shield-alert-outline: Edge Protection: 
 
 + An [[ASUS_RT-BE92U|ASUS RT-BE92U]] acts as the primary firewall, utilizing **SPI** and **DoS** protection. 
 
-#### External Access: 
+#### :material-web-cancel: External Access: 
 
 + Direct port forwarding is strictly prohibited. 
 + Remote access to individual services is facilitated through a [[Cloudflared|Cloudflare Tunnel]], ensuring all incoming traffic is proxied and SSL-encrypted.
 
-#### VPN:
+#### :material-vpn: VPN:
 
 + For administrative tasks, there are two [[Wireguard_Server|WireGuard]] instances providing a secure, encrypted tunnel into the Trusted zone.
 + The primary WireGuard server is hosted natively on the main [[ASUS_RT-BE92U|ASUS router]]. 
@@ -36,21 +36,21 @@ icon: material/server-security
 
 ## :material-server-security: DNS Security & Content Filtering
 
-#### Internal Resolution: 
+#### :material-lan-connect: Internal Resolution: 
 
 + A clustered [[Technitium|Technitium DNS]] environment *([[Debian_Server_VM|Debian VM]] & [[Raspberry_Pi_4B_Server|Pi 4B Server]])* handles all local queries.
 
-#### Upstream Privacy:
+#### :material-domino-mask: Upstream Privacy:
 
 + Queries are forwarded to [Quad-9](https://quad9.net/) via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
 
-#### Blocking:
+#### :material-block-helper: Blocking:
 
 + Network-wide ad and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
 ## :material-security-network: Device & Host Hardening
 
-#### Operating Systems:
+#### :material-linux: :material-microsoft: Operating Systems:
 
 + Servers primarily utilize **Debian** and **ZimaOS** *(on the NAS)* for stability and security. 
 	+ Debian Linux *(Stable)* is a rock-solid, unchanging base to build a server on. Packages are not frequently updated with new features, so there is no need to worry about breakages. The 10-year-long service life means you are guaranteed to get security updates for the server's lifetime. 
@@ -59,7 +59,7 @@ icon: material/server-security
 + Client PCs utilize **Fedora *(KDE Plasma Desktop Edition)*** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware *(e.g., the latest CPUs & GPUs)*.
 + Mobile devices *(smartphones and tablets)* utilize **Android**. Only Google Pixel and Samsung Galaxy devices are allowed due to their monthly security patches and long service & support lifespan.   
 
-#### Access Control: 
+#### :material-shield-account-variant: Access Control: 
 
 + [[SSH]] access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
 + [:services-bitwarden: Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
@@ -69,13 +69,13 @@ icon: material/server-security
 + Local user accounts on the Fedora and Windows 11 PCs do not have administrator privileges. A separate "admin" account is required to make system-level changes. 
 + Services hosted on the network that require login have separate "admin" accounts for administration. The regular user accounts have reduced permissions to increase security. 
 
-#### Updates:
+#### :material-update: Updates:
 
 + Automated security patching is enabled for critical packages on the Debian servers with `unattended-upgrades`. 
 + Weekly manual audits for Docker container image updates *(monitored via [[Dockge]])*.
 + Desktop and Laptop PCs have automatic updates enabled.
 
-#### 3D Infrastructure:
+#### :material-printer-3d: 3D Infrastructure:
 
 + The [[Kacey_3D-printer|Creality K1C]] is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 

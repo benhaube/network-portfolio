@@ -62,5 +62,21 @@ podman compose -f compose-serve.yml up -d  # You can optionally remove the detac
 podman compose -f compose-build.yml up -d
 ```
 
-> [!note]
+> [!tip]
 > Move the resulting `site/` directory onto the Web server of your choice.
+
+### 🙏 Special Thanks
+
+I would like to give special thanks to the following projects whose work was used extensively in this project:
+
++ **Google:**
+    + For their `Google Sans Flex` and `Google Sans Code` fonts
+    + For their icons in the `Material Symbols Font` and `Material Design Icons` collections.
++ **Material for MkDocs:**
+    + For their incredible static website generator.
++ **Simple Icons:**
+    + For their amazing brand icons.
++ **Selfh.st:**
+    + For their awesome, colorful brand icons. 
++ **Mermaid.js:**
+    + For building an amazing tool for rendering beautiful flowcharts. 

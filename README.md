@@ -65,7 +65,7 @@ podman compose -f compose-build.yml up -d
 > [!tip]
 > Move the resulting `site/` directory onto the Web server of your choice.
 
-### 🙏 Special Thanks
+## 🙏 Special Thanks
 
 I would like to give special thanks to the following projects whose work was used extensively in this project:
 

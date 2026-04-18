@@ -9,7 +9,7 @@ This is my personal, self-hosted professional portfolio and network documentatio
 
 ### Clone the Repo
 
-**HTTPS:**
+#### HTTPS:
 
 ```bash
 git clone https://github.com/benhaube/network-portfolio.git
@@ -17,7 +17,7 @@ git clone https://github.com/benhaube/network-portfolio.git
 cd network-portfolio/
 ```
 
-**SSH:**
+#### SSH:
 
 ```bash
 git clone git@github.com:benhaube/network-portfolio.git
@@ -33,16 +33,16 @@ cd network-portfolio/
 > [!tip]
 > The `roamlinks` plugin is very important for this project to ensure all of the internal links function properly. The Markdown files originated from my Obsidian vault. While they have been heavily modified, there are still some links in the Wikilink format. MkDocs / Pymdownx cannot natively handle Wikilinks, so the `roamlinks` plugin is crucial for interpreting these remaining links. 
 
-**Pull Material for MkDocs:**
+#### Pull Material for MkDocs:
 
 ```bash
 podman pull docker.io/squidfunk/mkdocs-material:latest
 ```
 
-**Build Image w/ Extra Plugins:**
+#### Build Image w/ Extra Plugins:
 
 ```bash
-podman build -t mkdocs-custom
+podman build -t mkdocs-custom .
 ```
 
 ### Building / Serving the Site
@@ -50,20 +50,35 @@ podman build -t mkdocs-custom
 > [!note]
 > There are two compose files included in the repo. The `compose-serve.yml` file will spin up the `mkdocs-custom` container and serve the site to http://localhost:8000. It is not recommended to serve the site in this way. It is for testing only. When you are ready to publish your changes you build the site and host it on a separate Web server. I recommend using Nginx.
 
-**Serve Site for Testing:**
+#### Serve Site for Testing:
 
 ```bash
 podman compose -f compose-serve.yml up -d  # You can optionally remove the detach flag `-d` if you want to see the log output for debugging. 
 ```
 
-**Build Site for Deployment:**
+#### Build Site for Deployment:
 
 ```bash
 podman compose -f compose-build.yml up -d
 ```
 
 > [!tip]
-> Move the resulting `site/` directory onto the Web server of your choice.
+> Move the resulting `site/*` directory onto the Web server of your choice.
+
+#### Alternative `podman run` commands:
+
+Podman / Docker compose is the preferred method for starting and stopping the MkDocs container, but you can also use the following `podman run` commands. 
+
+```bash
+podman run --rm -it -p 8000:8000 -v ${PWD}:/docs:Z mkdocs-custom serve -a 0.0.0.0:8000
+```
+
+```bash
+podman run --rm -it -v ${PWD}:/docs:Z mkdocs-custom build
+```
+
+> [!note]
+> The `:Z` or `:z` in the volume definition *(also in the compose.yml files)* is critical for **Fedora / Podman** based workstations that use SE-Linux. The container will not run properly without it. It allows the container to set the appropriate SE-Linux context on each file in the repo directory. 
 
 ## 🙏 Special Thanks
 

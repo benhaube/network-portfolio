@@ -7,7 +7,7 @@ This is my personal, self-hosted professional portfolio and network documentatio
 
 ## Building the Site
 
-#### Clone the Repo
+### Clone the Repo
 
 **HTTPS:**
 
@@ -25,7 +25,7 @@ git clone git@github.com:benhaube/network-portfolio.git
 cd network-portfolio/
 ```
 
-#### Build the Custom Image
+### Build the Custom Image
 
 > [!note] 
 > This project uses plugins for MkDocs that are not included with the standard Docker image. Therefore it is a requirement to pull the standard image and build a new, custom image with those plugins added. The `Dockerfile` contains the 'instructions' for **Docker / Podman** to build the custom image. The two `compose-*.yml` files already have the `localhost/mkdocs-custom` image defined. 

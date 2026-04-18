@@ -1,4 +1,4 @@
-![Project Logo](docs/assets/icons/readme.png)
+![Project Logo](.readme-assets/project-icon.png) ![Screenshot of Index page](.readme-assets/index_screenshot_readme.png)
 
 # Network Documentation & Portfolio 
 *Built with Material for MkDocs*

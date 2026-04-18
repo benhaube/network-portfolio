@@ -92,7 +92,7 @@ theme:
     annotation: material/plus-circle
     edit: material/file-edit-outline
     view: material/file-eye-outline
-  favicon: /assets/icons/favicon.png
+  favicon: /assets/favicon.svg
   features:
     - navigation.instant
     - navigation.instant.progress

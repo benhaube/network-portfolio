@@ -30,6 +30,9 @@ cd network-portfolio/
 > [!note] 
 > This project uses plugins for MkDocs that are not included with the standard Docker image. Therefore it is a requirement to pull the standard image and build a new, custom image with those plugins added. The `Dockerfile` contains the 'instructions' for **Docker / Podman** to build the custom image. The two `compose-*.yml` files already have the `localhost/mkdocs-custom` image defined. 
 
+> [!tip]
+> The `roamlinks` plugin is very important for this project to ensure all of the internal links function properly. The Markdown files originated from my Obsidian vault. While they have been heavily modified, there are still some links in the Wikilink format. MkDocs / Pymdownx cannot natively handle Wikilinks, so the `roamlinks` plugin is crucial for interpreting these remaining links. 
+
 **Pull Material for MkDocs:**
 
 ```bash

@@ -42,7 +42,22 @@ podman pull docker.io/squidfunk/mkdocs-material:latest
 podman build -t mkdocs-custom
 ```
 
-#### Building / Serving the Site
+### Building / Serving the Site
 
 > [!note]
 > There are two compose files included in the repo. The `compose-serve.yml` file will spin up the `mkdocs-custom` container and serve the site to http://localhost:8000. It is not recommended to serve the site in this way. It is for testing only. When you are ready to publish your changes you build the site and host it on a separate Web server. I recommend using Nginx.
+
+**Serve Site for Testing:**
+
+```bash
+podman compose -f compose-serve.yml up -d  # You can optionally remove the detach flag `-d` if you want to see the log output for debugging. 
+```
+
+**Build Site for Deployment:**
+
+```bash
+podman compose -f compose-build.yml up -d
+```
+
+> [!note]
+> Move the resulting `site/` directory onto the Web server of your choise.

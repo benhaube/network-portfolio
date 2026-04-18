@@ -71,6 +71,8 @@ theme:
       native: material/linux
       office: material/desk
       pc: material/desktop-classic
+      podman: simple/podman
+      podman_host: simple/podman
       print: material/printer
       printer-cart: material/printer
       remote: material/remote-desktop
@@ -253,6 +255,8 @@ extra:
     Native: native
     Office: office
     PC: pc
+    Podman: podman
+    Podman Host: podman_host
     Printing: print
     Printer Cart: printer-cart 
     Remote Access: remote

@@ -69,14 +69,14 @@ podman compose -f compose-build.yml up -d
 
 I would like to give special thanks to the following projects whose work was used extensively in this project:
 
-+ **Google:**
++ **[Google](https://fonts.google.com/):**
     + For their `Google Sans Flex` and `Google Sans Code` fonts
     + For their icons in the `Material Symbols Font` and `Material Design Icons` collections.
-+ **Material for MkDocs:**
++ **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/):**
     + For their incredible static website generator.
-+ **Simple Icons:**
++ **[Simple Icons](https://simpleicons.org/):**
     + For their amazing brand icons.
-+ **Selfh.st:**
++ **[Selfh.st](https://selfh.st/icons/):**
     + For their awesome, colorful brand icons. 
-+ **Mermaid.js:**
++ **[Mermaid.js](https://mermaid.js.org/):**
     + For building an amazing tool for rendering beautiful flowcharts. 

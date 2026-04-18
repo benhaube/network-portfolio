@@ -5,12 +5,13 @@ tags:
   - pc
   - laptop
   - mobile
+  - remote-access
 hide:
   - toc
 ---
-![Lenovo Logo](../assets/icons/lenovo-light.svg#only-light){ width=300 }
-![Lenovo Logo](../assets/icons/lenovo-dark.svg#only-dark){ width=300 }
-&ensp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
+![Lenovo Logo](../assets/icons/lenovo-light.svg#only-light){ width=250 }
+![Lenovo Logo](../assets/icons/lenovo-dark.svg#only-dark){ width=250 }
+&nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Ben's Laptop PC
 [Fedora Discussion :material-chat-question:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs :material-file-document-multiple:](https://docs.fedoraproject.org//en-US/docs/){ .md-button }&emsp;[Lenovo Support :material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button }

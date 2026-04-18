@@ -3,13 +3,13 @@ icon: material/cog-sync
 title: Nebula-Sync
 status: deprecated
 tags:
-  - inactive
-  - service
-  - software
-  - docker
-  - dns
-  - infrastructure
-  - network
+  - Inactive
+  - Service
+  - Software
+  - Docker
+  - DNS
+  - Infrastructure
+  - Network
 hide:
   - toc
 ---

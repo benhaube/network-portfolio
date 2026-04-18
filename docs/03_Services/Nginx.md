@@ -2,10 +2,10 @@
 icon: simple/nginx
 title: Nginx (Network Portfolio)
 tags:
-  - active
-  - service
-  - software
-  - docker
+  - Active
+  - Service
+  - Software
+  - Docker
 hide:
   - toc
 ---

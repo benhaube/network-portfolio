@@ -2,11 +2,11 @@
 icon: services/homebox
 status: new
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - inventory
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Inventory
 hide:
   - toc
 ---

@@ -1,12 +1,12 @@
 ---
 icon: services/beszel
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - monitor
-  - infrastructure
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Monitor
+  - Infrastructure
 hide:
   - toc
 ---

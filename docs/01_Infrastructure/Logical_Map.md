@@ -2,8 +2,8 @@
 icon: material/sitemap
 title: Logical Network Map
 tags:
-  - network
-  - map
+  - Network
+  - Map
 hide:
   - toc
 ---

@@ -1,13 +1,13 @@
 ---
 icon: services/openspeedtest
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - network
-  - infrastructure
-  - monitor
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Network
+  - Infrastructure
+  - Monitor
 hide:
   - toc
 ---

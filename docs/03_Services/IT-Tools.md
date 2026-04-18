@@ -2,11 +2,11 @@
 icon: services/it-tools
 title: IT-Tools
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - tools
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Tools
 hide:
   - toc
 ---

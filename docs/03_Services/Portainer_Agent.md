@@ -2,11 +2,11 @@
 icon: services/portainer
 status: deprecated
 tags:
-  - inactive
-  - service
-  - software
-  - docker
-  - download
+  - Inactive
+  - Service
+  - Software
+  - Docker
+  - Download
 hide:
   - toc
 ---

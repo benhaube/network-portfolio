@@ -2,12 +2,12 @@
 icon: services/youtube-dl
 title: yt-dlp Web UI
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - video
-  - download
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Video
+  - Download
 hide:
   - toc
 ---

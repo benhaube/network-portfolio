@@ -39,7 +39,7 @@ theme:
   icon:
     logo: material/file-document-multiple
     repo: fontawesome/brands/git-alt
-    # - Icons for Tags -
+    # -- Icons for Tags --
     tag:
       default: material/tag
       3D-printer: material/printer-3d-nozzle
@@ -60,6 +60,7 @@ theme:
       infra: material/router-network
       inventory: material/list-box-outline
       laptop: material/laptop
+      linux: material/linux
       living-room: material/sofa
       map: material/sitemap
       mini-rack: devices/10-inch-rack
@@ -84,6 +85,7 @@ theme:
       vh: simple/qemu
       vm: material/network-pos
       vpn: material/vpn
+      windows: material/microsoft
     top: material/arrow-up-bold
     previous: material/arrow-left-bold
     next: material/arrow-right-bold
@@ -220,50 +222,52 @@ extra:
     - icon: simple/bluesky
       link: https://bsky.app/profile/rac3r4life.me
   generator: false
-  # Tag definitions for custom tag icons ^^ above ^^
+  # -- Tag definitions for custom tag icons ^^ above ^^ --
   tags:
-    3D-printer: 3D-printer
+    3D-Printer: 3D-printer
     ISP: isp
     IoT: iot
-    active: active
-    backup: backup
-    dashboard: dashboard
-    desktop: desktop
-    dns: dns
-    docker: docker
-    docker_host: docker_host
-    domain: domain
-    download: download
-    file-share: file-share
-    hardware: hardware
-    inactive: inactive
-    infrastructure: infra
-    inventory: inventory
-    laptop: laptop
-    living-room: living-room
-    map: map
-    mini-rack: mini-rack
-    mobile: mobile
-    monitor: monitor
-    nas: nas
-    network: network
-    native: native
-    office: office
-    pc: pc
-    printing: print
-    printer-cart: printer-cart 
-    remote-access: remote
-    router: router
-    server: server
-    service: service
-    shell: shell
-    software: software
-    switch: switch
-    tools: tools
-    video: video
-    virtual_host: vh 
-    virtual_machine: vm 
-    vpn: vpn
+    Active: active
+    Backup: backup
+    Dashboard: dashboard
+    Desktop: desktop
+    DNS: dns
+    Docker: docker
+    Docker Host: docker_host
+    Domain: domain
+    Download: download
+    File Share: file-share
+    Hardware: hardware
+    Inactive: inactive
+    Infrastructure: infra
+    Inventory: inventory
+    Laptop: laptop
+    Linux: linux
+    Living Room: living-room
+    Map: map
+    Mini-Rack: mini-rack
+    Mobile: mobile
+    Monitor: monitor
+    NAS: nas
+    Network: network
+    Native: native
+    Office: office
+    PC: pc
+    Printing: print
+    Printer Cart: printer-cart 
+    Remote Access: remote
+    Router: router
+    Server: server
+    Service: service
+    Shell: shell
+    Software: software
+    Switch: switch
+    Tools: tools
+    Video: video
+    Virtual Host: vh 
+    Virtual Machine: vm 
+    VPN: vpn
+    Windows: windows
 
 # --- Copyright message in site footer w/ cookies consent button ---
 copyright: >

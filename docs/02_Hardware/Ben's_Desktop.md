@@ -1,11 +1,12 @@
 ---
 icon: material/desktop-tower
 tags:
-  - hardware
-  - pc
-  - desktop
-  - virtual_host
-  - office
+  - Hardware
+  - PC
+  - Desktop
+  - Virtual Host
+  - Office
+  - Linux
 hide:
   - toc
 ---

@@ -2,14 +2,14 @@
 icon: simple/caddy
 status: new
 tags:
-  - active
-  - service
-  - software
-  - domain
-  - dns
-  - network
-  - infrastructure
-  - native
+  - Active
+  - Service
+  - Software
+  - Domain
+  - DNS
+  - Network
+  - Infrastructure
+  - Native
 hide:
   - toc
 ---

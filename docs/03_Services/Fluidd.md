@@ -1,11 +1,11 @@
 ---
 icon: services/fluidd
 tags:
-  - active
-  - service
-  - software
-  - 3D-printer
-  - native
+  - Active
+  - Service
+  - Software
+  - 3D-Printer
+  - Native
 hide:
   - toc
 ---

@@ -1,13 +1,14 @@
 ---
 icon: material/debian
 tags:
-  - hardware
-  - virtual_machine
-  - server
-  - dns
-  - infrastructure
-  - docker_host
-  - network
+  - Hardware
+  - Virtual Machine
+  - Server
+  - DNS
+  - Infrastructure
+  - Docker Host
+  - Network
+  - Linux
 hide:
   - toc
 ---

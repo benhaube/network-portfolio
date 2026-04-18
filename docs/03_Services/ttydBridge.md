@@ -1,12 +1,12 @@
 ---
 icon: material/console
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - remote-access
-  - shell
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Remote Access
+  - Shell
 hide:
   - toc
 ---

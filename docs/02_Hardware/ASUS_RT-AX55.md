@@ -2,12 +2,12 @@
 icon: material/router-wireless
 title: ASUS RT-AX55
 tags:
-  - hardware
-  - network
-  - router
-  - infrastructure
-  - office
-  - printer-cart
+  - Hardware
+  - Network
+  - Router
+  - Infrastructure
+  - Office
+  - Printer Cart
 hide:
   - toc
 ---

@@ -1,11 +1,12 @@
 ---
 icon: material/laptop
 tags:
-  - hardware
-  - pc
-  - laptop
-  - mobile
-  - remote-access
+  - Hardware
+  - PC
+  - Laptop
+  - Mobile
+  - Remote Access
+  - Linux
 hide:
   - toc
 ---

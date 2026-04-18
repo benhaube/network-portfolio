@@ -1,10 +1,10 @@
 ---
 icon: services/dockge
 tags:
-  - active
-  - service
-  - software
-  - docker
+  - Active
+  - Service
+  - Software
+  - Docker
 hide:
   - toc
 ---

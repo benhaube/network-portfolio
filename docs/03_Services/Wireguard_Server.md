@@ -2,14 +2,14 @@
 icon: simple/wireguard
 title: WireGuard
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - remote-access
-  - vpn
-  - network
-  - native
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Remote Access
+  - VPN
+  - Network
+  - Native
 hide:
   - toc
 ---

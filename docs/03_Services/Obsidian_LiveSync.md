@@ -2,12 +2,12 @@
 icon: simple/obsidian
 title: Obsidian LiveSync (CouchDB)
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - file-share
-  - remote-access
+  - Active
+  - Service
+  - Software
+  - Docker
+  - File Share
+  - Remote Access
 hide:
   - toc
 ---

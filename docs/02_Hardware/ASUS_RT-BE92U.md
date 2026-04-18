@@ -2,14 +2,14 @@
 icon: material/router-wireless
 title: ASUS RT-BE92U
 tags:
-  - hardware
-  - network
-  - router
-  - infrastructure
-  - remote-access
-  - dns
+  - Hardware
+  - Network
+  - Router
+  - Infrastructure
+  - Remote Access
+  - DNS
   - IoT
-  - living-room
+  - Living Room
 hide:
   - toc
 ---

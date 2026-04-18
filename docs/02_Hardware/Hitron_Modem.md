@@ -1,12 +1,12 @@
 ---
 icon: material/wan
 tags:
-  - hardware
-  - network
-  - infrastructure
+  - Hardware
+  - Network
+  - Infrastructure
   - ISP
-  - living-room
-  - mini-rack
+  - Living Room
+  - Mini-Rack
 hide:
   - toc
 ---

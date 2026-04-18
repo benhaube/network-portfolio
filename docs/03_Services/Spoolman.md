@@ -1,11 +1,11 @@
 ---
 icon: services/spoolman
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - 3D-printer
+  - Active
+  - Service
+  - Software
+  - Docker
+  - 3D-Printer
 hide:
   - toc
 ---

@@ -1,12 +1,12 @@
 ---
 icon: material/switch
 tags:
-  - hardware
-  - switch
-  - infrastructure
-  - network
-  - living-room
-  - mini-rack
+  - Hardware
+  - Switch
+  - Infrastructure
+  - Network
+  - Living Room
+  - Mini-Rack
 hide:
   - toc
 ---

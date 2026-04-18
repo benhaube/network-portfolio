@@ -1,12 +1,12 @@
 ---
 icon: services/uptime-kuma
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - monitor
-  - network
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Monitor
+  - Network
 hide:
   - toc
 ---

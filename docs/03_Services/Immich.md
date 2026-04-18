@@ -1,13 +1,13 @@
 ---
 icon: services/immich
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - file-share
-  - download
-  - backup
+  - Active
+  - Service
+  - Software
+  - Docker
+  - File Share
+  - Download
+  - Backup
 hide:
   - toc
 ---

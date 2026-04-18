@@ -1,14 +1,15 @@
 ---
 icon: material/raspberry-pi
 tags:
-  - hardware
-  - server
-  - dns
-  - infrastructure
-  - docker_host
-  - network
-  - office
-  - printer-cart
+  - Hardware
+  - Server
+  - DNS
+  - Infrastructure
+  - Docker Host
+  - Network
+  - Office
+  - Printer Cart
+  - Linux
 hide:
   - toc
 ---

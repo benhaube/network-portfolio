@@ -2,11 +2,12 @@
 icon: material/printer-3d
 title: More Kacey (Creality K1C) Info
 tags:
-  - hardware
-  - network
-  - server
-  - 3D-printer
-  - office
+  - Hardware
+  - Network
+  - Server
+  - 3D-Printer
+  - Office
+  - Linux
 hide:
   - toc
 ---

@@ -1,11 +1,11 @@
 ---
 icon: services/glances
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - monitor
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Monitor
 hide:
   - toc
 ---

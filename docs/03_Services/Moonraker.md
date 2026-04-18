@@ -1,12 +1,12 @@
 ---
 icon: material/printer-3d
 tags:
-  - active
-  - service
-  - software
-  - 3D-printer
-  - remote-access
-  - native
+  - Active
+  - Service
+  - Software
+  - 3D-Printer
+  - Remote Access
+  - Native
 hide:
   - toc
 ---

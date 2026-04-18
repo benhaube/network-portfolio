@@ -1,11 +1,11 @@
 ---
 icon: material/web-clock
 tags:
-  - active
-  - service
-  - software
-  - native
-  - infrastructure
+  - Active
+  - Service
+  - Software
+  - Native
+  - Infrastructure
 hide:
   - toc
 ---

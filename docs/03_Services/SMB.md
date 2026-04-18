@@ -1,13 +1,13 @@
 ---
 icon: material/folder-network
 tags:
-  - active
-  - service
-  - software
-  - native
-  - file-share
-  - remote-access
-  - backup
+  - Active
+  - Service
+  - Software
+  - Native
+  - File Share
+  - Remote Access
+  - Backup
 hide:
   - toc
 ---

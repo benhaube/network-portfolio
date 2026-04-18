@@ -2,12 +2,12 @@
 icon: material/switch
 title: TP-Link Switch
 tags:
-  - hardware
-  - switch
-  - infrastructure
-  - network
-  - office
-  - printer-cart
+  - Hardware
+  - Switch
+  - Infrastructure
+  - Network
+  - Office
+  - Printer Cart
 hide:
   - toc
 ---

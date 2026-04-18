@@ -1,10 +1,10 @@
 ---
 icon: simple/homeassistant
 tags:
-  - active
-  - service
-  - software
-  - docker
+  - Active
+  - Service
+  - Software
+  - Docker
   - IoT
 hide:
   - toc

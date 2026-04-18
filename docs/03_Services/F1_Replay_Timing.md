@@ -1,10 +1,10 @@
 ---
 icon: simple/f1
 tags:
-  - active
-  - service
-  - software
-  - docker
+  - Active
+  - Service
+  - Software
+  - Docker
 hide:
   - toc
 ---

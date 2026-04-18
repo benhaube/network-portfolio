@@ -1,13 +1,13 @@
 ---
 icon: simple/syncthing
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - download
-  - file-share
-  - native
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Download
+  - File Share
+  - Native
 hide:
   - toc
 ---

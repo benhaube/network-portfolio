@@ -2,13 +2,13 @@
 icon: material/ethernet
 title: ntopng
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - monitor
-  - network
-  - infrastructure
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Monitor
+  - Network
+  - Infrastructure
 hide:
   - toc
 ---

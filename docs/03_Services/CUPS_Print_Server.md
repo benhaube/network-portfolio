@@ -1,11 +1,11 @@
 ---
 icon: material/printer
 tags:
-  - active
-  - service
-  - software
-  - printing
-  - native
+  - Active
+  - Service
+  - Software
+  - Printing
+  - Native
 hide:
   - toc
 ---

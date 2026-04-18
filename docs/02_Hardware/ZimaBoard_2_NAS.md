@@ -2,14 +2,15 @@
 icon: material/nas
 title: ZimaOS NAS
 tags:
-  - hardware
-  - nas
-  - server
-  - file-share
-  - virtual_host
-  - docker_host
-  - living-room
-  - mini-rack
+  - Hardware
+  - NAS
+  - Server
+  - File Share
+  - Virtual Host
+  - Docker Host
+  - Living Room
+  - Mini-Rack
+  - Linux
 hide:
   - toc
 ---

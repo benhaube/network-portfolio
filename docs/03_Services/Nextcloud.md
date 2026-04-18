@@ -2,11 +2,11 @@
 icon: services/nextcloud
 status: deprecated
 tags:
-  - inactive
-  - service
-  - software
-  - docker
-  - file-share
+  - Inactive
+  - Service
+  - Software
+  - Docker
+  - File Share
 hide:
   - toc
 ---

@@ -1,14 +1,14 @@
 ---
 icon: simple/cloudflare
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - remote-access
-  - network
-  - infrastructure
-  - dns
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Remote Access
+  - Network
+  - Infrastructure
+  - DNS
 hide:
   - toc
 ---

@@ -1,10 +1,10 @@
 ---
 icon: material/remote-desktop
 tags:
-  - active
-  - service
-  - software
-  - native
+  - Active
+  - Service
+  - Software
+  - Native
 hide:
   - toc
 ---

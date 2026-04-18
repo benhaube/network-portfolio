@@ -3,14 +3,14 @@ icon: services/technitium
 title: Technitium DNS Server
 status: new
 tags:
-  - active
-  - service
-  - software
-  - dns
-  - infrastructure
-  - network
-  - domain
-  - native
+  - Active
+  - Service
+  - Software
+  - DNS
+  - Infrastructure
+  - Network
+  - Domain
+  - Native
 hide:
   - toc
 ---

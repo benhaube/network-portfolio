@@ -1,13 +1,13 @@
 ---
 icon: material/console-network
 tags:
-  - active
-  - service
-  - software
-  - native
-  - remote-access
-  - shell
-  - infrastructure
+  - Active
+  - Service
+  - Software
+  - Native
+  - Remote Access
+  - Shell
+  - Infrastructure
 hide:
   - toc
 ---

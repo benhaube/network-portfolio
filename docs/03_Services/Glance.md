@@ -1,13 +1,13 @@
 ---
 icon: services/glance
 tags:
-  - active
-  - service
-  - software
-  - docker
-  - dashboard
-  - monitor
-  - network
+  - Active
+  - Service
+  - Software
+  - Docker
+  - Dashboard
+  - Monitor
+  - Network
 hide:
   - toc
 ---

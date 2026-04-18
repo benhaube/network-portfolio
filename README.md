@@ -60,4 +60,4 @@ podman compose -f compose-build.yml up -d
 ```
 
 > [!note]
-> Move the resulting `site/` directory onto the Web server of your choise.
+> Move the resulting `site/` directory onto the Web server of your choice.

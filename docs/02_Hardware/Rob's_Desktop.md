@@ -1,6 +1,11 @@
 ---
 icon: material/desktop-tower
-tags: [hardware, pc, desktop, office]
+tags: 
+  - hardware 
+  - pc 
+  - desktop 
+  - office
+  - Windows
 hide:
   - toc
 ---

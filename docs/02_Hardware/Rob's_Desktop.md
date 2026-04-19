@@ -1,5 +1,6 @@
 ---
 icon: material/desktop-tower
+title: Rob's Desktop PC
 tags: 
   - Hardware 
   - PC 

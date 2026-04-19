@@ -1,5 +1,6 @@
 ---
 icon: material/folder-network
+title: NFS (Network File System)
 tags:
   - Active
   - Service

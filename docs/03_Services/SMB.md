@@ -1,5 +1,6 @@
 ---
 icon: material/folder-network
+title: SMB (Server Message Block)
 tags:
   - Active
   - Service

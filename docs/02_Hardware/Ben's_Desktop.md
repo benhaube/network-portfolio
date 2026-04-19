@@ -1,5 +1,6 @@
 ---
 icon: material/desktop-tower
+title: Ben's Desktop PC
 tags:
   - Hardware
   - PC

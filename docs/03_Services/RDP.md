@@ -1,5 +1,6 @@
 ---
 icon: material/remote-desktop
+title: RDP (Remote Desktop Protocol)
 tags:
   - Active
   - Service

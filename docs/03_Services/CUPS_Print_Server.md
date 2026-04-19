@@ -1,5 +1,6 @@
 ---
 icon: material/printer
+title: CUPS (Open Print Server)
 tags:
   - Active
   - Service
@@ -11,7 +12,7 @@ hide:
 ---
 ![CUPS Open Print Server icon](../assets/icons/cups-service.svg){ width=200 }
 
-# CUPS Print Server
+# CUPS *(Open Print Server)*
 [GitHub :material-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button }
 
 ---

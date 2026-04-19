@@ -1,5 +1,6 @@
 ---
 icon: material/console-network
+title: SSH (Secure Shell)
 tags:
   - Active
   - Service

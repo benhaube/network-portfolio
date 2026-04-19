@@ -1,6 +1,6 @@
 ---
 icon: material/printer-3d
-title: More Kacey (Creality K1C) Info
+title: More Kacey Info
 tags:
   - Hardware
   - Network

@@ -1,5 +1,6 @@
 ---
 icon: material/laptop
+title: Ben's Laptop PC
 tags:
   - Hardware
   - PC

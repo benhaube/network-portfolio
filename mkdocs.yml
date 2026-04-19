@@ -122,6 +122,7 @@ markdown_extensions:
   - attr_list
   - abbr
   - admonition
+  - tables
   - toc:
       permalink: true
       permalink_title: Permanent link

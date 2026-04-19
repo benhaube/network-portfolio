@@ -61,7 +61,7 @@ immich.internal {
 
 ## :material-traffic-light: Traffic Flow
 
-```mermaid
+```mermaid { .pz-ignore }
 graph TD
     User[Client Browser] -- "DNS Query: immich.internal" --> DNS[Technitium DNS]
     DNS -- "Returns CNAME: proxy IP" --> User

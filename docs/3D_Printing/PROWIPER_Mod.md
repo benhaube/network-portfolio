@@ -65,8 +65,8 @@ hide:
 #### :services-orca-slicer: Slicer Clearance:
   + [ ] In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
 
-      ![Excluded Bed Area](../assets/screenshots/excluded-bed-area-light.png#only-light)
-      ![Excluded Bed Area](../assets/screenshots/excluded-bed-area-dark.png#only-dark)
+      ![Excluded Bed Area](../assets/screenshots/excluded-bed-area-light.png#only-light){ .on-glb }
+      ![Excluded Bed Area](../assets/screenshots/excluded-bed-area-dark.png#only-dark){ .on-glb }
 
 ## :material-toggle-switch-outline: Phase 4: Dry Run *(Critical Safety Step)*
 

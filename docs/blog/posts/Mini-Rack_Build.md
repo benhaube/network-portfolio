@@ -48,30 +48,30 @@ hide:
 
 ## Printing the Parts
 
-![ZimaBoard 2 rack mount 3D-print timelapse](../assets/timelapse/k1_zimaboard2.gif){ width=1018 }
+![ZimaBoard 2 rack mount 3D-print timelapse](../assets/timelapse/k1_zimaboard2.gif){ width=1018 .on-glb }
 
-![ZimaBoard 2 rack mount drive sleds 3D-print timelapse](../assets/timelapse/k1_harddrive.gif){ width=1018 }
+![ZimaBoard 2 rack mount drive sleds 3D-print timelapse](../assets/timelapse/k1_harddrive.gif){ width=1018 .on-glb }
 
-![Ugreen switch rack mount 3D-print timelapse](../assets/timelapse/k1_ugreen_switch_optimized.gif){ width=1018 }
+![Ugreen switch rack mount 3D-print timelapse](../assets/timelapse/k1_ugreen_switch_optimized.gif){ width=1018 .on-glb }
 
-![RackMate bottom frame 3D-print timelapse](../assets/timelapse/k1_bottom-frame.gif){ width=1018 }
+![RackMate bottom frame 3D-print timelapse](../assets/timelapse/k1_bottom-frame.gif){ width=1018 .on-glb }
 
-![Blank plate 3D-print timelapse](../assets/timelapse/k1_rack-panel.gif){ width=1018 }
+![Blank plate 3D-print timelapse](../assets/timelapse/k1_rack-panel.gif){ width=1018 .on-glb }
 
-![ZimaBoard rack mount #1](../assets/photos/rack-build/zimaboard_frame.jpg){ width=500 }&emsp;![ZimaBoard rack mount #2](../assets/photos/rack-build/zimaboard_frame_2.jpg){ width=500 }
+![ZimaBoard rack mount #1](../assets/photos/rack-build/zimaboard_frame.jpg){ width=500 .on-glb }&emsp;![ZimaBoard rack mount #2](../assets/photos/rack-build/zimaboard_frame_2.jpg){ width=500 .on-glb }
 
-![ZimaBoard rack mount #3](../assets/photos/rack-build/zimaboard_frame_3.jpg){ width=500 }
+![ZimaBoard rack mount #3](../assets/photos/rack-build/zimaboard_frame_3.jpg){ width=500 .on-glb }
 
 ## Building the Rack
 
-![RackMate build #1](../assets/photos/rack-build/rackmate.jpg){ width=500 }&emsp;![RackMate build #2](../assets/photos/rack-build/rackmate_2.jpg){ width=500 }
+![RackMate build #1](../assets/photos/rack-build/rackmate.jpg){ width=500 .on-glb }&emsp;![RackMate build #2](../assets/photos/rack-build/rackmate_2.jpg){ width=500 .on-glb }
 
-![RackMate build #3](../assets/photos/rack-build/rackmate_3.jpg){ width=500 }&emsp;![RackMate build #4](../assets/photos/rack-build/rackmate_4.jpg){ width=500 }
+![RackMate build #3](../assets/photos/rack-build/rackmate_3.jpg){ width=500 .on-glb }&emsp;![RackMate build #4](../assets/photos/rack-build/rackmate_4.jpg){ width=500 .on-glb }
 
-![RackMate build #5](../assets/photos/rack-build/rackmate_5.jpg){ width=500 }&emsp;![RackMate build #6](../assets/photos/rack-build/rackmate_6.jpg){ width=500 }
+![RackMate build #5](../assets/photos/rack-build/rackmate_5.jpg){ width=500 .on-glb }&emsp;![RackMate build #6](../assets/photos/rack-build/rackmate_6.jpg){ width=500 .on-glb }
 
-![RackMate build #7](../assets/photos/rack-build/rackmate_7.jpg){ width=500 }&emsp;![RackMate build #8](../assets/photos/rack-build/rackmate_8.jpg){ width=500 }
+![RackMate build #7](../assets/photos/rack-build/rackmate_7.jpg){ width=500 .on-glb }&emsp;![RackMate build #8](../assets/photos/rack-build/rackmate_8.jpg){ width=500 .on-glb }
 
 ## Final Rack Configuration
 
-![RackMate build final front](../assets/photos/rack-build/rackmate_final.jpg){ width=500 }&emsp;![RackMate build final rear](../assets/photos/rack-build/rackmate_final_back.jpg){ width=500 }
+![RackMate build final front](../assets/photos/rack-build/rackmate_final.jpg){ width=500 .on-glb }&emsp;![RackMate build final rear](../assets/photos/rack-build/rackmate_final_back.jpg){ width=500 .on-glb }

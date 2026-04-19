@@ -63,7 +63,7 @@ hide:
 
 18. [ ] Place the build plate back on.
 
-![Image of completed bed knobs modification](../assets/pictures/bed-knobs-mod-complete.jpg){ width=400 }
+![Image of completed bed knobs modification](../assets/pictures/bed-knobs-mod-complete.jpg){ width=400 .on-glb }
 
 ## :material-chip: Firmware Setup
 
@@ -138,7 +138,7 @@ hide:
 
     In the image below, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise *(looking at it from above)*, or roughly ⅛ of a turn.
 
-    ![A screensot of Fluidd UI 'screws-tilt-adjust' dialog](../assets/pictures/screws-tilt-adjust.png){ width=400 }
+    ![A screensot of Fluidd UI 'screws-tilt-adjust' dialog](../assets/pictures/screws-tilt-adjust.png){ width=400 .on-glb }
 
 6. [ ] Click retry or repeat the command to check the new level.
 

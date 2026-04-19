@@ -172,6 +172,8 @@ plugins:
   - awesome-nav
   - roamlinks
   - callouts
+  - panzoom:
+      full_screen: true 
   # - git-committers:
       # enabled: true
       # repository: benhaube/network-portfolio
@@ -191,6 +193,21 @@ plugins:
       authors: true
       authors_file: "{blog}/.authors.yml"
       authors_profiles: true 
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_themed: true
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: true
 
 # --- Watch directories outside of /docs --- 
 watch:

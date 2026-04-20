@@ -38,6 +38,7 @@
 *[GUID]: Globally Unique Identifier
 *[HA]: High Availability
 *[HDD]: Hard Drive Disk
+*[HSL]: Hue, Saturation, Lightness
 *[HTML]: Hyper Text Markup Language
 *[HTML5]: Hyper Text Markup Language 5
 *[HVAC]: Heating, Ventilating, and Air Conditioning
@@ -98,7 +99,7 @@
 *[RCS]: Rich Communication Services
 *[RDP]: Remote Desktop Protocol
 *[RFB]: Remote Frame Buffer
-*[RGB]: Red Green Blue
+*[RGB]: Red, Green, Blue
 *[RGBW]: Red Green Blue White
 *[RHEL]: Red Hat Enterprise Linux
 *[RPC]: Remote Proceedure Call

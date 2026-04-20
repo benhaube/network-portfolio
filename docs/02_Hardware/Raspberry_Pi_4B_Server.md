@@ -84,7 +84,7 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :material-printer:&nbsp;[CUPS Print Server](../03_Services/CUPS_Print_Server.md) | `631` | Print server for `Brother_HL-L2300D_series` laser printer. |
+| *Active* | :material-printer:&nbsp;[CUPS](../03_Services/CUPS_Print_Server.md) | `631` | Print server for `Brother_HL-L2300D_series` laser printer. |
 | *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
 | *Active* | :simple-syncthing:&nbsp;[[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. |
 | *Active* | :services-technitium:&nbsp;[[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. | 

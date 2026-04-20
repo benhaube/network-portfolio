@@ -41,7 +41,7 @@ hide:
 
 #### :material-memory: OS / Firmware: 
 
-+ [:services-zimaos:&nbsp;ZimaOS 1.5.4](https://www.zimaspace.com/zimaos) *(Immutable)*
++ [:services-zimaos:&nbsp;ZimaOS v1.6.0](https://www.zimaspace.com/zimaos) *(Immutable)*
 
 #### :material-key-chain: Credentials:
 
@@ -54,7 +54,7 @@ hide:
 
 | CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
 | :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T | 3.6 GHz | Intel(r) UHD | 1.0 GHz | 16 GB LPDDR5 *(4800 MT/s)* |
+| :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T | 3.6 GHz | Intel(r) UHD | 1.0 GHz | 16 GB LPDDR5 *(6400 MHz)* |
 
 ## :material-lan: Network Configuration
 

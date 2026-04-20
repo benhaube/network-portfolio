@@ -83,7 +83,7 @@ hide:
 + :material-console-network:&ensp;[[SSH|SSH *(Secure Shell)*]]: Remote shell access to servers
 + :simple-syncthing:&ensp;[[Syncthing]]: Open decentralized file synchronization.
 + :services-technitium:&ensp;[[Technitium|Technitium DNS Server]]: An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
-+ :simple-gnubash:&ensp;[[ttydBridge]]: Access the host terminal in a Web browser.
++ :material-console:&ensp;[[ttydBridge]]: Access the host terminal in a Web browser.
 + :services-uptime-kuma:&ensp;[[Uptime_Kuma|Uptime Kuma]]: A self-hosted service monitoring tool.
 + :simple-wireguard:&ensp;[[WireGuard_Server|WireGuard Server]]: A lightweight, secure remote access VPN server.
 + :services-youtube-dl:&ensp;[[yt-dlp_WebUI|yt-dlp Web-UI]]: A Web UI and RPC server for yt-dlp.

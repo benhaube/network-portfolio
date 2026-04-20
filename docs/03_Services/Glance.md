@@ -30,7 +30,10 @@ hide:
 + <http://pi-server.internal:8580/>
 
 #### :material-key-chain: Credentials: 
-+ N/A
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + "Glance Admin"
+    + "Glance User (bhaube)"
+    + "Glance User (rpereira)"
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -40,6 +43,20 @@ hide:
 |  |  | `f1_api` | `skyallinott/f1_api:latest` |
 
 ### :material-cog: Configuration
+
+> [!warning] Service Change
+> :material-calendar:&nbsp;**Date:** Monday, April 20 2026 <br>
+> :material-swap-horizontal:&nbsp;**Change:** Enabled user authentication <br>
+> :material-help-circle-outline:&nbsp;**Reason:** Additional security <br>
+>
+> The Glance service now has authentication enabled, therefore login is required to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
+>
+> For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file. To change a user's password you must attach to the container's shell and run the command: `#!bash ./glance password:hash <my-password>`. Then paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again. Restarting the container with `#!bash docker compose restart` will not allow the changes to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`
+
+> [!note] Widgets Directory
+> The Glance dashboard widgets have been moved into thier own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure. Instead of putting every widget on this page you can visit the GitHub repository containing all of the widgets included in these pages. 
+> 
+> [Glance Widgets :material-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
 #### :material-docker: Docker Compose:
 
@@ -58,11 +75,11 @@ hide:
     env_file: .env # (2)!
     labels:
       glance.name: Glance
-      glance.icon: sh:glance
+      glance.icon: si:glance
       glance.url: http://pi-server.internal:8580
       glance.description: Server Dashboard
       glance.id: glance
-    dns:
+    dns:  # (3)!
       - 192.168.50.6
       - 192.168.50.2
 
@@ -70,9 +87,9 @@ hide:
     container_name: f1_api
     image: skyallinott/f1_api:latest
     environment:
-      - TIMEZONE=America/New_York # (3)!
-      - TRACK_COLOUR=#E10600 # (4)!
-      - EVENT_DETAIL=main # (5)!
+      - TIMEZONE=America/New_York # (4)!
+      - TRACK_COLOUR=#E10600 # (5)!
+      - EVENT_DETAIL=main # (6)!
     ports:
       - 4463:4463
     restart: unless-stopped
@@ -83,9 +100,10 @@ hide:
 
 1. Optionally, also mount docker socket if you want to use the docker containers widget
 2. Use `.env` to store tokens / secrets and URLs for Widgets. Do **NOT** put API tokens directly into the Glance pages.
-3. Specify your timezone.
-4. Specify desired track map color
-5. Optional. main tracks qualis and races (inc. sprints), race tracks races. 
+3. It is required to define DNS server IP addresses for the container to resolve `.internal` domain names. 
+4. Specify your timezone.
+5. Specify desired track map color
+6. Optional. main tracks qualis and races (inc. sprints), race tracks races. 
 
 #### :material-view-dashboard: Glance Config:
 
@@ -107,8 +125,8 @@ theme:
 
   presets:
     Neon-Pink:
-      background-color: 240 27 11
-      contrast-multiplier: 1.5
+      background-color: 240 27 11  # (6)!
+      contrast-multiplier: 1.5  # (7)!
       primary-color: 321 100 71
       positive-color: 165 78 51
       negative-color: 360 100 71
@@ -144,6 +162,16 @@ theme:
 
   custom-css-file: /assets/user.css # (3)!
 
+auth:
+  secret-key: <insert-server-secret>  # (4)!
+  users:
+    admin:
+      password-hash: ${ADMIN_PW_HASH} # (5)!
+    bhaube:
+      password-hash: ${BHAUBE_PW_HASH}
+    rpereira:
+      password-hash: ${RPEREIRA_PW_HASH}
+
 pages:
   - $include: pages/home.yml
   - $include: pages/network.yml
@@ -152,7 +180,11 @@ pages:
 
 1. The `/app/assets` directory contains all of the custom icons and CSS used in the Glance pages.
 2. This will be the default theme
-3. **Note:** assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared (Ctrl+F5)
+3. Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared... Refresh & clear cache: ++ctrl+f5++
+4. The Glance Dashboard's server secret is stored in the Bitwarden Vault. (Local Network :material-arrow-right-thin: "Glance Server Secret" )
+5. The `app/.env` file contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the command: `#!bash ./glance password:hash <my-password>`. Then paste the hashed string into the corresponding variable in the `.env` file.
+6. Values for the colors are in **HSL** format. You can use a color picker like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.  
+7. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
 
 ```yaml title="home.yml" linenums="1"
 - name: Home
@@ -205,7 +237,7 @@ pages:
 
         - $include: /app/config/widgets/beszel.yml
         - $include: /app/config/widgets/uptime-kuma-ssh.yml
-        # - $include: /app/config/widgets/wg-easy.yml
+        # - $include: /app/config/widgets/wg-easy.yml  (3)
         - $include: /app/config/widgets/ha-wan.yml
         - $include: /app/config/widgets/ha-bandwidth.yml
         - $include: /app/config/widgets/releases.yml
@@ -235,6 +267,7 @@ pages:
 
 1. Show a title header on mobile web browsers.
 2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
+3. :material-bug: Disabled WireGuard Easy community widget for now due to bugginess. 
 
 ```yaml title="formula1.yml" linenums="1"
 - name: Formula 1
@@ -277,8 +310,3 @@ pages:
 
 1. Show a title header on mobile web browsers.
 2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
-
-> [!note] Widgets Directory
-> The Glance dashboard widgets have been moved into thier own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure. Instead of putting every widget on this page you can visit the GitHub repository containing all of the widgets included in these pages. 
-> 
-> [Glance Widgets :material-github:](https://github.com/benhaube/glance-pages/tree/main/widgets){ .md-button }

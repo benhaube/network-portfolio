@@ -7,6 +7,7 @@
 *[CLI]: Command Line Interface
 *[CPU]: Central Processing Unit
 *[CPUs]: Central Processing Units
+*[CSS]: Cascading Style Sheets
 *[CUPS]: Common UNIX Printing System
 *[DDR]: Double Data Rate
 *[DDR3]: Double Data Rate 3

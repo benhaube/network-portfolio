@@ -20,7 +20,7 @@ hide:
 &nbsp;![Arm Logo](../assets/icons/arm.svg){ width=50 }
 
 # Raspberry Pi Zero Server
-[Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }
+[Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-debian:](https://www.debian.org/doc/){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview

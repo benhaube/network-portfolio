@@ -20,7 +20,7 @@ hide:
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # ZimaOS NAS
-[IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :material-file-document-multiple:](https://www.zimaspace.com/docs/zimaos/){ .md-button }
+[IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :services-zimaos:](https://www.zimaspace.com/docs/zimaos/){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview

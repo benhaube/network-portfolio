@@ -14,7 +14,7 @@ hide:
 ![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d.svg){ width=200 }![Creality Logo](../assets/icons/creality.svg){ width=50 }
 
 # More Kacey (Creality^&copy;^ K1C) Info
-[Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :octicons-terminal-16:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
+[Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---
 ## :material-information-outline: Basic Information

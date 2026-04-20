@@ -17,7 +17,7 @@ hide:
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Debian Server VM
-[Debian :material-debian:](https://www.debian.org/){ .md-button .md-button--primary }&emsp;[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button }
+[Debian Docs :material-file-document-multiple:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

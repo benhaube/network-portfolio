@@ -46,7 +46,7 @@ hide:
 
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
-| **1** | :material-laptop:&nbsp;Rob's Laptop (`ems1`) | White, Cat5e | Temporary Connection |
+| **1** | :material-laptop:&nbsp;[Rob's Laptop](../02_Hardware/Rob's_Laptop.md) | White, Cat5e | Temporary Connection |
 | **2** | :material-ethernet:&nbsp;*Empty* | - | - |
 | **3** | :material-ethernet:&nbsp;*Empty* | - | - |
 | **4** | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | Blue, 2.5 Gb/s, Cat6A | `eth1`, `192.168.50.5` |

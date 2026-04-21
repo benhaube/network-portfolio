@@ -142,14 +142,16 @@ hide:
 > * **Constraint:** Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
 
 > [!attention]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
-> **Date:** 2026-02-09 <br>
-> **Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
-> **Affected Clients:** 
+> :material-calendar: **Date:** 2026-02-09 <br>
+> :material-help-circle-outline: **Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
+> :material-devices: **Affected Clients:** 
 > 
 > + [[Ben's_Desktop|Ben's Desktop]] 
 > + [[Ben's_Laptop|Ben's Laptop]]
 > 
-> **Performance:** Reduced backup time from ~10m to ~1.5m.
+> :symbols-monitor-heart: **Performance:** Reduced backup time from ~10m to ~1.5m.
+>
+> ---
 > 
 > **:services-zimaos: Server Side *(ZimaOS)*:**
 > 

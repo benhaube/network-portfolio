@@ -13,5 +13,6 @@
         "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping",
         "tag:yaml.org,2002:python/name:material.plugins.tags.tag_name_casefold scalar"
     ],
-    "editor.fontFamily": "'Google Sans Code', monospace"
+    "editor.fontFamily": "'Google Sans Code', monospace",
+    "files.autoSaveDelay": 10000
 }

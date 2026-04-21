@@ -50,13 +50,9 @@ hide:
 
 ![ZimaBoard 2 rack mount 3D-print timelapse](../assets/timelapse/k1_zimaboard2.gif){ width=1018 .on-glb }
 
-![ZimaBoard 2 rack mount drive sleds 3D-print timelapse](../assets/timelapse/k1_harddrive.gif){ width=1018 .on-glb }
+![ZimaBoard 2 rack mount drive sleds 3D-print timelapse](../assets/timelapse/k1_harddrive.gif){ width=500 .on-glb }&emsp;![Ugreen switch rack mount 3D-print timelapse](../assets/timelapse/k1_ugreen_switch_optimized.gif){ width=500 .on-glb }
 
-![Ugreen switch rack mount 3D-print timelapse](../assets/timelapse/k1_ugreen_switch_optimized.gif){ width=1018 .on-glb }
-
-![RackMate bottom frame 3D-print timelapse](../assets/timelapse/k1_bottom-frame.gif){ width=1018 .on-glb }
-
-![Blank plate 3D-print timelapse](../assets/timelapse/k1_rack-panel.gif){ width=1018 .on-glb }
+![RackMate bottom frame 3D-print timelapse](../assets/timelapse/k1_bottom-frame.gif){ width=500 .on-glb }&emsp;![Blank plate 3D-print timelapse](../assets/timelapse/k1_rack-panel.gif){ width=500 .on-glb }
 
 ![ZimaBoard rack mount #1](../assets/photos/rack-build/zimaboard_frame.jpg){ width=500 .on-glb }&emsp;![ZimaBoard rack mount #2](../assets/photos/rack-build/zimaboard_frame_2.jpg){ width=500 .on-glb }
 

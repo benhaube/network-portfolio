@@ -29,6 +29,9 @@
 *[Gb/s]: Gigabits Per Second
 *[GB]: Gigabyte
 *[GB/s]: Megabytes Per Second
+*[GDDR4]: Graphics Double Data Rate 4
+*[GDDR5]: Graphics Double Data Rate 5
+*[GDDR6]: Graphics Double Data Rate 6
 *[GE]: General Electric Inc.
 *[GHz]: Gigahertz
 *[GNU]: An extensive collection of free software. A recursive acronym for "GNU's Not Unix."
@@ -142,6 +145,7 @@
 *[VNC]: Virtual Network Computing
 *[VPN]: Virtual Private Network
 *[VPNs]: Virtual Private Networks
+*[VRAM]: Video Random Access Memory
 *[WAF]: Web Application Firewall
 *[WAN]: Wide Area Network
 *[YAML]: Yet Another Markup Language

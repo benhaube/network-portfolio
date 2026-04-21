@@ -43,9 +43,9 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
-| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| :simple-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz | VideoCore IV | 400 MHz | 512 MB SDRAM |
+| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
+| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
+| :simple-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz | 512 MB SDRAM | VideoCore IV | 400 MHz | *Shared* |
 
 ## :material-lan: Network Configuration
 

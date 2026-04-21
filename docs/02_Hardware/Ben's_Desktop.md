@@ -38,9 +38,9 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
-| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T | 4.7 GHz | :brands-amd:&nbsp;Radeon(r) 6700XT | 2581 MHz | 32 GB DDR4 *(3600 MT/s)* |
+| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
+| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
+| :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T | 4.7 GHz | 32 GB DDR4 *(3600 MT/s)* | :brands-amd:&nbsp;Radeon(r) 6600XT | 2581 MHz | 8 GB GDDR6 |
 
 ## :material-lan: Network Configuration
 

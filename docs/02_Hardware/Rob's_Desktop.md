@@ -41,9 +41,10 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
-| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| :brands-intel:&nbsp;Core(r) i7 12700K *(x86-64)* | 12C / 20T | 5.0 GHz | :simple-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz | 32 GB DDR4 *(3600 MT/s)* |
+| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
+| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
+| :brands-intel:&nbsp;Core(r) i7 12700K *(x86-64)* | 12C / 20T | 5.0 GHz | 32 GB DDR4 *(3600 MT/s)* | :brands-intel:&nbsp;UHD 770 Graphics | 1500 MHz | *Shared* |
+|  |  |  |  | :simple-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz | 8 GB GDDR6 |
 
 ## :material-lan: Network Configuration
 

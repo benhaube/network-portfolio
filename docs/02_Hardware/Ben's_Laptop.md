@@ -39,9 +39,9 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
-| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| :brands-intel:&nbsp;Core(r) i5 1135G7 *(x86-64)* | 4C / 8T | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz | 8 GB LPDDR4 *(4267 MT/s)* |
+| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
+| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
+| :brands-intel:&nbsp;Core(r) i5 1135G7 *(x86-64)* | 4C / 8T | 8 GB LPDDR4 *(4267 MT/s)* | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz | *Shared* |
 
 ## :material-lan: Network Configuration
 

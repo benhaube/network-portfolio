@@ -52,9 +52,9 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
-| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-| :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T | 3.6 GHz | Intel(r) UHD | 1.0 GHz | 16 GB LPDDR5 *(6400 MHz)* |
+| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
+| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
+| :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T | 3.6 GHz | 16 GB LPDDR5 *(6400 MHz)* | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz | *Shared* |
 
 ## :material-lan: Network Configuration
 

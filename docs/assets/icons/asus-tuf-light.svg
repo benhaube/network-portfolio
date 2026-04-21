@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="450"
+   height="450"
+   viewBox="0 0 450 450"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="asus-tuf-light.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="2.5911111"
+     inkscape:cx="225.19297"
+     inkscape:cy="178.68782"
+     inkscape:window-width="2560"
+     inkscape:window-height="1368"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <clipPath
+       id="clip-ASUS_TUF_Gaming_Logo">
+      <rect
+         width="450"
+         height="450"
+         id="rect1" />
+    </clipPath>
+  </defs>
+  <g
+     id="ASUS_TUF_Gaming_Logo"
+     data-name="ASUS TUF Gaming Logo"
+     clip-path="url(#clip-ASUS_TUF_Gaming_Logo)"
+     transform="matrix(1.2764576,0,0,1.2764576,-62.204875,-62.20296)">
+    <path
+       id="Path_1670"
+       data-name="Path 1670"
+       d="M 28.642,-55.926 H 0.312 V -45.4 H 7.818 V 0 h 13.317 v -45.4 h 7.506 z m 36,0 H 51.321 v 45.4 H 45.51 v -45.4 H 32.193 V -8.112 L 41.071,0 H 56 l 8.636,-8.112 z m 33.6,0 H 72.408 V 0 h 13.317 v -24.336 h 10.17 v -10.53 H 85.725 V -45.4 h 12.51 z m 56.154,8.112 -9.04,-8.112 H 130.5 l -8.878,8.112 v 39.7 L 130.9,0 h 14.689 l 8.8,-8.112 v -21.06 h -16.626 v 10.53 h 3.309 v 8.112 h -6.134 V -45.4 h 6.134 v 10.452 h 13.317 z m 31.745,-8.112 h -19.29 L 158.693,0 h 12.994 l 1.13,-10.3 h 7.748 L 181.7,0 h 13.07 z m -6.538,35.1 h -5.811 L 175.8,-44.07 h 1.291 z m 64.166,-35.1 h -15.664 l -4.358,27.066 h -1.211 l -4.681,-27.066 H 202.2 V 0 h 12.187 v -35.49 h 0.565 L 220.518,0 h 4.923 l 5.569,-35.49 h 0.565 V 0 h 12.187 z m 22.6,0 H 253.05 V 0 h 13.317 z m 41.682,0 h -12.51 v 26.91 h -0.161 l -8.555,-26.91 H 275.684 V 0 h 12.51 v -27.222 h 0.161 L 296.992,0 h 11.057 z m 41.093,8.112 -9.04,-8.112 h -14.852 l -8.878,8.112 v 39.7 L 325.656,0 h 14.689 l 8.8,-8.112 v -21.06 h -16.629 v 10.53 h 3.309 v 8.112 h -6.134 V -45.4 h 6.134 v 10.452 h 13.317 z"
+       transform="translate(50.273,399.5)"
+       style="fill:#d7a900;fill-opacity:1" />
+    <path
+       id="Path_1671"
+       data-name="Path 1671"
+       d="m 8614,-1622.062 64,-36.938 v 162.028 l -64,36.972 z m -80,125.089 V -1659 l 64,36.939 V -1460 Z m 160,-101.21 64,-36.939 v 54.809 l -64,36.972 z m -240,17.87 V -1704 l 64,36.939 v 123.719 z m 240,-86.747 64,-36.94 v 54.806 l -64,36.974 z"
+       transform="translate(-8381.728,1754.5)"
+       style="fill:#1a1a1a;fill-opacity:1" />
+  </g>
+</svg>

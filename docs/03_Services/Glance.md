@@ -110,10 +110,10 @@ hide:
 >     + **Example:**
 >
 >         ```yaml title="page.yml (example)" linenums="1"
->         - size: full
->           widgets:
->         
->             - $include: /app/config/widgets/search.yml
+>         columns:
+>           - size: full
+>             widgets:         
+>               - $include: /app/config/widgets/search.yml
 >         ```
 >
 > :material-widgets:&nbsp;**Widgets:**

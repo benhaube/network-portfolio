@@ -133,27 +133,38 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!warning] Immutable OS
-> 1. This device runs ZimaOS. Do not attempt to use `apt` to install system packages or change NTP settings (stuck on systemd-timesyncd).
-> 2. The [Entware](https://github.com/Entware/Entware) package manager is installed. Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. Check the [Entware Wiki](https://github.com/Entware/Entware/wiki) for documentation.
+> [!zima inline end] ZimaOS
+> This server runs **ZimaOS**, an "Atomic" *(immutable)* operating system.
+>  
+> + Do not attempt to use `apt` to install or upgrade system packages. 
+> + Do not change NTP settings *(stuck on systemd-timesyncd)*.
+>
+> :material-package-variant:&nbsp;**Entware:**
+> 
+> + The [Entware](https://github.com/Entware/Entware) package manager is installed. 
+> + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
+> + Check the [Entware Wiki](https://github.com/Entware/Entware/wiki) for documentation.
 
-> [!important] SMB Configuration
+> [!tip]+ SMB Multi-Channel
 > SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
-> * **Constraint:** Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
+> 
+> :symbols-asterisk:&nbsp;**Constraint:** 
+> 
+> + Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
 
-> [!attention]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
-> :material-calendar: **Date:** 2026-02-09 <br>
-> :material-help-circle-outline: **Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
-> :material-devices: **Affected Clients:** 
+> [!warning]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
+> :material-calendar:&nbsp;**Date:** 2026-02-09 <br>
+> :material-help-circle-outline:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
+> :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
+> :material-devices:&nbsp;**Affected Clients:** 
 > 
 > + [[Ben's_Desktop|Ben's Desktop]] 
 > + [[Ben's_Laptop|Ben's Laptop]]
 > 
-> :symbols-monitor-heart: **Performance:** Reduced backup time from ~10m to ~1.5m.
 >
 > ---
 > 
-> **:services-zimaos: Server Side *(ZimaOS)*:**
+> :services-zimaos:&nbsp;**Server Side *(ZimaOS)*:**
 > 
 > + Config File: `etc/exports`
 > + Exports Entry:
@@ -175,7 +186,7 @@ hide:
 >     systemctl restart nfs-server
 >     ```
 >     
-> **:material-fedora: Client Side *(Fedora 43)*:**
+> :material-fedora:&nbsp;**Client Side *(Fedora 43)*:**
 > 
 > + Package required: `nfs-utils`
 > + Systemd `.mount` unit files: `/etc/systemd/system`

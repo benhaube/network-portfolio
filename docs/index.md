@@ -39,6 +39,7 @@ hide:
 + :material-raspberry-pi:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
 + :material-raspberry-pi:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]: Second DNS server *(Pi-hole)*.
 + :material-desktop-tower:&ensp;[[Rob's_Desktop|Rob's Desktop PC]]: Rob's main desktop PC located in the office upstairs.
++ :material-laptop:&ensp;[Rob's Laptop](02_Hardware/Rob's_Laptop.md): Rob's laptop PC for work and gaming
 + :material-switch:&ensp;[[TP-Link_Switch|TP-Link Switch]]: Core gigabit desktop switch *(5-port)*. 
 + :material-switch:&ensp;[[Ugreen_Switch|Ugreen Switch]]: Rack-mounted 2.5 gigabit switch in the living room.
 + :material-nas:&ensp;[[ZimaBoard_2_NAS|ZimaOS NAS]]: Primary NAS server & VM host. 

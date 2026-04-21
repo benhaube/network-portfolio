@@ -38,8 +38,8 @@ hide:
 | :material-printer-3d-nozzle:&nbsp;3D-Printer | Office | [k1c-a71e](../02_Hardware/Kacey_3D-printer.md) | `FC:EE:28:09:A7:1E` | Static | `192.168.50.153` | :material-wifi: | :material-check: | Creality K1C 3D-printer |
 | :material-desktop-tower:&nbsp;Desktop PC | Office | [rob-desktop](../02_Hardware/Rob's_Desktop.md) | `50:EB:F6:59:74:C3` | DHCP | - | :material-ethernet: | :material-check: | Rob's main desktop PC |
 | :material-desktop-tower:&nbsp;Desktop PC | Office | [rob-desktop](../02_Hardware/Rob's_Desktop.md) | `70:A6:CC:B5:F5:4A` | DHCP | - | :material-wifi: | :material-check: | Wi-Fi NIC on Rob's main desktop PC |
-| :material-laptop:&nbsp;Laptop PC | Mobile | `ems1` | `E8:9C:25:90:8B:11` | DHCP | - | :material-wifi: | :material-check: | Wi-Fi NIC on Rob's main laptop PC |
-| :material-laptop:&nbsp;Laptop PC | Mobile | `ems1` | `F8:54:F6:C1:88:D2` | DHCP | - | :material-ethernet: | :material-check: | Ethernet NIC on Rob's main laptop PC |
+| :material-laptop:&nbsp;Laptop PC | Mobile | [ems1](../02_Hardware/Rob's_Laptop.md) | `E8:9C:25:90:8B:11` | DHCP | - | :material-ethernet: | :material-check: | Wi-Fi NIC on Rob's main laptop PC |
+| :material-laptop:&nbsp;Laptop PC | Mobile | [ems1](../02_Hardware/Rob's_Laptop.md) | `F8:54:F6:C1:88:D2` | DHCP | - | :material-wifi: | :material-check: | Ethernet NIC on Rob's main laptop PC |
 | :devices-connected-tv:&nbsp;Google TV | Bedroom | `google-tv-bedroom` | `AC:67:84:EC:DF:9D` | DHCP | - | :material-wifi: | :material-check: | Chromecast with Google TV connected to Bedroom TV |
 | :material-watch:&nbsp;Smartwatch | Mobile | `google-pixel-watch-2` | `16:EA:08:E8:93:75` | DHCP | - | :material-wifi: | :material-check: | Ben's Smartwatch, Google Pixel Watch 2 |
 | :devices-nest-audio:&nbsp;Nest Speaker | Office | `nest-speaker` | `1C:53:F9:FA:F6:7C` | DHCP | - | :material-wifi: | :material-check: | Nest Audio in Office |

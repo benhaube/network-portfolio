@@ -54,8 +54,8 @@ hide:
 ## :material-tools: Maintenance Notes
 
 > [!visual inline] Visual Indicators
-> **Green LED:** 10/100/1000 Mb/s Link <br>
-> **Flashing:** Activity
+> :material-led-off:&nbsp;**Green LED:** 10/100/1000 Mb/s<br>
+> :material-led-on:&nbsp;**Flashing:** Activity
 
 > [!warning inline] Troubleshooting
 > Hard reboot required if traffic stalls *(unplug power for 60s)*.

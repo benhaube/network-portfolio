@@ -59,13 +59,13 @@ hide:
 > [!visual inline] Visual Indicators
 > **Ethernet Ports:** 
 > 
-> * **Green LED:** 2500 Mb/s Link 
-> * **Amber LED:** 10/100/1000 Mb/s Link
+> &emsp;:material-led-on:&nbsp;**Green LED:** 2500 Mb/s <br>
+> &emsp;:material-led-on:&nbsp;**Amber LED:** 10/100/1000 Mb/s
 >   
 > **SFP+ Port:** 
 > 
-> * **Green LED:** 10 Gb/s Link 
-> * **Amber LED:** 1000 / 2500 Mb/s Link
+> &emsp;:material-led-on:&nbsp;**Green LED:** 10 Gb/s <br>
+> &emsp;:material-led-on:&nbsp;**Amber LED:** 1000 / 2500 Mb/s
 
 > [!warning inline] Troubleshooting
 > Hard reboot required if traffic stalls *(unplug power for 60s)*.

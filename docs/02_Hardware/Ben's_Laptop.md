@@ -176,7 +176,7 @@ echo "$MSG" >> "$LOG_FILE"
 
 2. Place `.bkp-exclude-nas` in the `~/` directory.
 
-```ini title=".bkp-exclude-nas" linenums="1"
+```conf title=".bkp-exclude-nas" linenums="1"
 # Common system/temp/cache directories
 .cache/
 .local/
@@ -405,7 +405,7 @@ Type=Application
 
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
-```conf title="rclone.conf" linenums="1"
+```ini title="rclone.conf" linenums="1"
 [Google-Drive]
 type = drive
 client_id = <id>.apps.googleusercontent.com

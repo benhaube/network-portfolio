@@ -44,80 +44,71 @@ hide:
 
 ```yaml title="docker-compose.yml" linenums="1"
 services:  
-  glances:  
-    # See all images tags here: https://hub.docker.com/r/nicolargo/glances/tags  
-    image: nicolargo/glances:latest-full  
-    restart: always  
-  
+  glances:    
+    image: nicolargo/glances:latest-full  # (1)
+    restart: always   
     pid: "host"  
     network_mode: "host"  
-  
     read_only: true  
-    privileged: false  
-    # Uncomment next line for SATA or NVME smartctl monitoring  
-    # cap_add:  
-    # Uncomment next line for SATA smartctl monitoring  
-    # - SYS_RAWIO  
-    # Uncomment next line for NVME smartctl monitoring  
-    # - SYS_ADMIN  
+    privileged: false   
+    # cap_add:  (2)
+    # - SYS_RAWIO  (3) 
+    # - SYS_ADMIN  (4)
     # devices:  
     #   - "/dev/nvme0"  
-  
   volumes:  
     - "/:/rootfs:ro"  
     - "/var/run/docker.sock:/var/run/docker.sock:ro"  
     - "/run/user/1000/podman/podman.sock:/run/user/1000/podman/podman.sock:ro"  
     - "./glances.conf:/glances/conf/glances.conf"  
-    - "/var/log:/var/log:ro"  
-    # Uncomment for proper distro information in upper panel.  
-    # Works only for distros that do have this file (most of distros do).  
-    - "/etc/os-release:/etc/os-release:ro"  
-  
+    - "/var/log:/var/log:ro"
+    - "/etc/os-release:/etc/os-release:ro"  # (5)!
   tmpfs:  
-    - /tmp  
-  
+    - /tmp   
   environment:  
-    # Please set to your local timezone (or use local ${TZ} environment variable if set on your host)  
-    - TZ=America/New_York  
+    - TZ=America/New_York  # (6)!
     - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart  
     - PYTHONPYCACHEPREFIX=/tmp/py_caches  
+  # deploy:  (7)
+  #   resources:  
+  #     reservations:  
+  #       devices:  
+  #         - driver: nvidia  
+  #           count: 1  
+  #           capabilities: [gpu]  
   
-#   # Uncomment for GPU compatibility (Nvidia) inside the container  
-#   deploy:  
-#     resources:  
-#       reservations:  
-#         devices:  
-#           - driver: nvidia  
-#             count: 1  
-#             capabilities: [gpu]  
-  
-   # Uncomment to protect Glances WebUI by a login/password (add --password to GLANCES_OPT)  
-   # secrets:  
-   #   - source: glances_password  
-   #     target: /root/.config/glances/<login>.pwd  
-  
+  #  
+  # secrets:  (8)
+  #   - source: glances_password  
+  #     target: /root/.config/glances/<login>.pwd  
 # secrets:  
 #   glances_password:  
 #     file: ./secrets/glances_password
 ```
 
+1. See all images tags here: https://hub.docker.com/r/nicolargo/glances/tags
+2. Uncomment for SATA or NVME smartctl monitoring.
+3. Uncomment for SATA smartctl monitoring.
+4. Uncomment for NVME smartctl monitoring.
+5. Uncomment for proper distro information in upper panel. Works only for distros that do have this file *(most distros do)*.  
+6. Please set to your local timezone *(or use local ${TZ} environment variable if set on your host)*.
+7. Uncomment for GPU compatibility (Nvidia) inside the container.  
+8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.     
+
 ```yaml title="docker-compose.yml" linenums="1"
-name: glances
 services:
   glances:
     cap_add:
       - SYS_RAWIO
       - SYS_ADMIN
     cpu_shares: 90
-    command: []
     container_name: glances
     deploy:
       resources:
         limits:
-          memory: 16508317696
+          memory: 16508235776
         reservations:
           memory: "268435456"
-          devices: []
     devices:
       - /dev/sda:/dev/sda
       - /dev/sdb:/dev/sdb
@@ -161,69 +152,6 @@ services:
       - type: bind
         source: /media/ZimaOS-HD
         target: /media/ZimaOS-HD
-    x-casaos:
-      envs:
-        - container: GLANCES_OPT
-          description:
-            en_us: Glances mode
-            zh_cn: Glances模式
-      ports:
-        - container: "61208"
-          description:
-            en_us: WebUI HTTP Port
-            zh_cn: WebUI HTTP端口
-          protocol: tcp
-        - container: "61209"
-          description:
-            en_us: Glances API port
-            zh_cn: Glances API 端口
-          protocol: tcp
-      volumes:
-        - container: /var/run/docker.sock
-          description:
-            en_us: Docker socket
-            zh_cn: Docker socket
-        - container: /mnt
-          description:
-            en_us: Drivers mount folder
-            zh_cn: 驱动器挂载点
-    network_mode: host
-    privileged: false
-x-casaos:
-  architectures:
-    - amd64
-    - arm64
-  author: joaobosconff
-  category: Utility
-  description:
-    en_us: Glances is an open-source system cross-platform monitoring tool. It
-      allows real-time monitoring of various aspects of your system such as CPU,
-      memory, disk, network usage etc.
-    pt_br: Glances é uma ferramenta de monitoramento de sistema de plataforma
-      cruzada de código aberto. Ele permite o monitoramento em tempo real de
-      vários aspectos do seu sistema, como CPU, memória, disco, uso da rede,
-      etc.
-    zh_cn: Glances 是一个开源的跨平台系统监控工具。它允许实时监控系统的各个方面，如 CPU、内存、磁盘、网络使用情况等。
-  developer: Nicolas Hennion
-  hostname: ""
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Glances/icon.png
-  index: /
-  is_uncontrolled: true
-  main: glances
-  port_map: "61208"
-  scheme: http
-  screenshot_link:
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Glances/screenshot-1.png
-  store_app_id: glances
-  tagline:
-    en_us: Cross-platform monitoring tool.
-    pt_br: Ferramenta de monitoramento multiplataforma.
-    zh_cn: 跨平台监控工具
-  title:
-    custom: ""
-    en_us: Glances
-    pt_br: Glances
-    zh_cn: Glances
 ```
 
 #### :material-file-cog: Config File:

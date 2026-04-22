@@ -254,7 +254,7 @@ pages:
 ```yaml title="home.yml" linenums="1"
 - name: Home
   show-mobile-header: true  # (1)!
-  # hide-desktop-navigation: true # (2)
+  # hide-desktop-navigation: true  (2)
   head-widgets:
 
     - $include: /app/config/widgets/markets.yml
@@ -294,7 +294,7 @@ pages:
 ```yaml title="network.yml" linenums="1"
 - name: Network
   show-mobile-header: true  # (1)!
-  # hide-desktop-navigation: true  # (2)
+  # hide-desktop-navigation: true  (2)
   columns:
 
     - size: small
@@ -337,7 +337,7 @@ pages:
 ```yaml title="formula1.yml" linenums="1"
 - name: Formula 1
   show-mobile-header: true  # (1)!
-  # hide-desktop-navigation: true  # (2)
+  # hide-desktop-navigation: true  (2)
   columns:
 
     - size: small

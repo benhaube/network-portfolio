@@ -145,14 +145,13 @@ hide:
 > + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
 > + Check the [Entware Wiki](https://github.com/Entware/Entware/wiki) for documentation.
 
-> [!tip]+ SMB Multi-Channel
-> SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
-> 
-> :symbols-asterisk:&nbsp;**Constraint:** 
-> 
-> + Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
+> [!config] Critical Configurations
+> :symbols-smb-share:&nbsp;**SMB Multi-Channel:**
+> + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
+> + :symbols-asterisk:&nbsp;**Constraint:** 
+>     + Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
 
-> [!warning]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
+> [!change]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
 > :material-calendar:&nbsp;**Date:** 2026-02-09 <br>
 > :material-help-circle-outline:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
 > :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>

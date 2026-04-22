@@ -44,7 +44,7 @@ hide:
 
 ### :material-cog: Configuration
 
-> [!warning] Service Change
+> [!change] User Authentication
 > :material-calendar:&nbsp;**Date:** Monday, April 20 2026 <br>
 > :material-swap-horizontal:&nbsp;**Change:** Enabled user authentication <br>
 > :material-help-circle-outline:&nbsp;**Reason:** Additional security
@@ -90,7 +90,7 @@ hide:
 >
 > + Shut the container down and start it back up using the same method shown above for user passwords. 
 
-> [!note] Widgets Directory
+> [!change] Widgets Directory
 > :material-calendar:&nbsp;**Date:** Saturday, April 18 2026 <br>
 > :material-swap-horizontal:&nbsp;**Change:** Moved pages and widgets into separate directories. <br>
 > :material-help-circle-outline:&nbsp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.

@@ -82,8 +82,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./beszel_agent_data:/var/lib/beszel-agent
-      # monitor other disks / partitions by mounting a folder in /extra-filesystems
-      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro
+      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  # (1)
       - /mnt/usb-drive/.beszel:/extra-filesystems/sda1__usb-drive:ro
     environment:
       LISTEN: /beszel_socket/beszel.sock
@@ -94,6 +93,8 @@ services:
       - 192.168.50.6
       - 192.168.50.2
 ```
+
+1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
 
 #### :material-console-network: Agents:
 
@@ -113,14 +114,15 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./beszel_agent_data:/var/lib/beszel-agent
-      # monitor other disks / partitions by mounting a folder in /extra-filesystems
-      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro
+      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  (1)
     environment:
       LISTEN: 45876
       KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
       TOKEN: 1865d0-c55e3f8b-ef571-729963ea8
       HUB_URL: http://pi-server.internal:8090
 ```
+
+1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
 
 ```yaml title="Raspberry Pi Zero Server" linenums="1"
 services:
@@ -138,14 +140,15 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./beszel_agent_data:/var/lib/beszel-agent
-      # monitor other disks / partitions by mounting a folder in /extra-filesystems
-      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro
+      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  (1)
     environment:
       LISTEN: 45876
       KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
       TOKEN: 3630d-aee6185c6-f48d6-f03c1cf38
       HUB_URL: http://pi-server.internal:8090
 ```
+
+1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
 
 ```yaml title="ZimaOS NAS" linenums="1"
 name: beszel-agent

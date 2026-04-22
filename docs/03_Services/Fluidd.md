@@ -44,15 +44,16 @@ hide:
 #### :symbols-install-desktop: Install:
 
 ```bash title="Setup Creality Helper Script" linenums="1"
-# Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.
-git clone --depth 1 https://github.com/Guilouz/Creality-Helper-Script.git /usr/data/helper-script
+git clone --depth 1 https://github.com/Guilouz/Creality-Helper-Script.git /usr/data/helper-script  # (1)!
 
-# Then enter the following command to run the helper-script:
-sh /usr/data/helper-script/helper.sh
+sh /usr/data/helper-script/helper.sh  # (2)!
 
-# If you encounter an issue to clone Helper Script repository, enter this command before cloning:
-git config --global http.sslVerify false
+git config --global http.sslVerify false  # (3!)
 ```
+
+1. Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.
+2. Enter this command to run the Creality Helper Script.
+3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
 
 #### :material-file-cog: Config File Backup:
 

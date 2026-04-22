@@ -102,7 +102,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!note inline] Critical Configurations
+> [!config inline] Critical Configurations
 > Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
 > 
 > **Documentation:**

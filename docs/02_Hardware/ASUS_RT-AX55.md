@@ -69,7 +69,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!note inline] Critical Configurations
+> [!config inline] Critical Configurations
 > **:material-hub-outline: AiMesh Node:**
 > + All settings for AiMesh node are available through the main router's Web UI. See [ASUS RT-BE92U](ASUS_RT-BE92U.md).
 

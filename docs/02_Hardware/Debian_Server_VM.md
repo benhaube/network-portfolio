@@ -79,7 +79,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Snapshots
 
-> [!important]+ Critical Configurations
+> [!config]+ Critical Configurations
 > + Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
 > + The VM is configured to boot automatically when the host server boots. 
 > 

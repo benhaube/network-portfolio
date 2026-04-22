@@ -117,8 +117,7 @@ services:
       # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro
     environment:
       LISTEN: 45876
-      KEY: ssh-ed25519
-        AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
+      KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
       TOKEN: 1865d0-c55e3f8b-ef571-729963ea8
       HUB_URL: http://pi-server.internal:8090
 ```
@@ -143,8 +142,7 @@ services:
       # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro
     environment:
       LISTEN: 45876
-      KEY: ssh-ed25519
-        AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
+      KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
       TOKEN: 3630d-aee6185c6-f48d6-f03c1cf38
       HUB_URL: http://pi-server.internal:8090
 ```
@@ -168,8 +166,7 @@ services:
       - /dev/nvme0:/dev/nvme0
     environment:
       - HUB_URL=http://pi-server.internal:8090
-      - KEY=ssh-ed25519
-        AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
+      - KEY=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
       - LISTEN=45876
       - TOKEN=312a40-12e3243-1faf72-8199904e
     image: henrygd/beszel-agent:alpine

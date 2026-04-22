@@ -168,7 +168,7 @@ hide:
 > + Config File: `etc/exports`
 > + Exports Entry:
 > 
->     ```ini title="/etc/exports" linenums="1"
+>     ```conf title="/etc/exports" linenums="1"
 >     /media/Quick-Storage *(rw,sync,no_subtree_check)  
 >     /media/nvme0n1p1 *(rw,sync,no_subtree_check)
 >     ```

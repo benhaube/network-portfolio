@@ -271,7 +271,7 @@ Vaults/
 4. Run the command `#!bash touch ~/.var/log/backup_log.log` to create the empty log file.
 5. Place `home-backup` in the `/etc/logrotate.d/` directory.
 
-```ini title="/etc/logrotate.d/home-backup" linenums="1"
+```nginx title="/etc/logrotate.d/home-backup" linenums="1"
 /home/bhaube/.var/log/backup_log.log {
     weekly
     rotate 4
@@ -393,7 +393,7 @@ WantedBy=multi-user.target
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
 
-```toml title="mount-gocryptfs.desktop" linenums="1"
+```desktop title="mount-gocryptfs.desktop" linenums="1"
 [Desktop Entry]
 Exec=gocryptfs --extpass="kwallet-query -f Passwords -r gocryptfspass kdewallet" ~/.cipher ~/Encrypted-Documents
 Name=mountgocryptfs
@@ -405,7 +405,7 @@ Type=Application
 
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
-```toml title="rclone.conf" linenums="1"
+```conf title="rclone.conf" linenums="1"
 [Google-Drive]
 type = drive
 client_id = <id>.apps.googleusercontent.com
@@ -424,7 +424,7 @@ team_drive =
 
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
 
-```toml title="mount-rclone.desktop" linenums="1"
+```desktop title="mount-rclone.desktop" linenums="1"
 [Desktop Entry]
 Type=Application
 Name=Mount Google Drive

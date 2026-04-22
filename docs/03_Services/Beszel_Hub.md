@@ -82,7 +82,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./beszel_agent_data:/var/lib/beszel-agent
-      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  # (1)
+      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  (1)
       - /mnt/usb-drive/.beszel:/extra-filesystems/sda1__usb-drive:ro
     environment:
       LISTEN: /beszel_socket/beszel.sock

@@ -112,7 +112,7 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :services-beszel:&nbsp;[Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
 | *Active* | :services-cloudflare:&nbsp;[[Cloudflared]] | `14333` | Secure reverse-proxy tunnel for hosting private services on the public internet. |
 | *Active* | :services-f1-replay-timing:&nbsp;[F1 Replay Timing](../03_Services/F1_Replay_Timing.md) | `3000` `8000` | Visualization of real-time track data and telemetry synced to F1 live and replays. |
 | *Active* | :services-glances:&nbsp;[[Glances]] | `61208` | A top/htop alternative. |

@@ -93,8 +93,7 @@ hide:
 
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
-| *Active* | :services-beszel:&nbsp;[Beszel Agent](../03_Services/Beszel_Agent.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-beszel:&nbsp;[Beszel Hub](../03_Services/Beszel_Hub.md) | `8090` | Lightweight server monitoring hub with historical data, docker stats, and alerts. |
+| *Active* | :services-beszel:&nbsp;[Beszel (Hub & Agent)](../03_Services/Beszel_Hub.md) | `8090` `45876` | A lightweight server monitoring hub with historical data, docker stats, and alerts. |
 | *Active* | :services-dockge:&nbsp;[[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
 | *Active* | :simple-f1:&nbsp;[F1 API](../03_Services/Glance.md) | `4463` | Part of the [[Glance]] stack. Supplies Formula 1 data for widgets on Glance dashboard. |
 | *Active* | :services-glance:&nbsp;[[Glance]] | `8580` | A server home-page/dashboard. |
@@ -125,4 +124,4 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy:
 
-* Image of MicroSD card stored on [[ZimaBoard_2_NAS|ZimaBoard 2 NAS]] `/media/Quick-Storage/Backup` directory.
+* Image of MicroSD card stored on [[ZimaBoard_2_NAS|ZimaOS NAS]] `/media/Quick-Storage/Backup` directory.

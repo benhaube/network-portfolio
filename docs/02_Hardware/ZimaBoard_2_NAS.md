@@ -148,7 +148,7 @@ hide:
 > [!config] Critical Configurations
 > :symbols-smb-share:&nbsp;**SMB Multi-Channel:**
 > + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
-> + :symbols-asterisk:&nbsp;**Constraint:** 
+> + **Constraint:** 
 >     + Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
 
 > [!change]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)

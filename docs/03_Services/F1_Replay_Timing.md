@@ -57,7 +57,6 @@ services:
       - /media/nvme0n1p1/AppData/f1-replay-timing/f1cache:/data/fastf1-cache
     networks:
       - host
-
   frontend:
     image: ghcr.io/adn8naiagent/f1replaytiming-frontend:latest
     container_name: f1_frontend
@@ -69,10 +68,8 @@ services:
       - backend
     networks:
       - host
-
 networks:
   - host
-
 volumes:
   f1data:
   f1cache:

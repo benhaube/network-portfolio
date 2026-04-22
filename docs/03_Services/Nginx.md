@@ -46,9 +46,10 @@ services:
     container_name: network-portfolio
     restart: unless-stopped
     ports:
-      # Maps port 8080 on the VM to port 80 inside the container
-      - "8080:80"
+      - "8080:80"  # (1)!
     volumes:
-      # Mounts your site folder as read-only (ro) for extra security
-      - /media/nvme0n1p1/AppData/Network-Portfolio/site:/usr/share/nginx/html:ro
+      - /media/nvme0n1p1/AppData/Network-Portfolio/site:/usr/share/nginx/html:ro  # (2)!
 ```
+
+1. Maps port `8080` on the VM to port `80` inside the container.
+2. Mounts your site folder as read-only *(ro)* for extra security.

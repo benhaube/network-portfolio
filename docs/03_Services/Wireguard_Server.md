@@ -63,32 +63,28 @@ hide:
 ### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
-name: big-bear-wg-easy-v15
 services:
   big-bear-wg-easy-v15:
     cap_add:
       - NET_ADMIN
       - SYS_MODULE
     cpu_shares: 90
-    command: []
     container_name: big-bear-wg-easy-v15
     deploy:
       resources:
         limits:
-          memory: 16508321792
-        reservations:
-          devices: []
+          memory: 16508235776
     environment:
       - INIT_DNS=9.9.9.9,149.112.112.112
       - INIT_ENABLED=true
       - INIT_HOST=https://remote-access-home-34.asuscomm.com
       - INIT_IPV4_CIDR=10.8.0.0/24
       - INIT_IPV6_CIDR=fd42:42:42::/64
-      - INIT_PASSWORD=password # (1)!
+      - INIT_PASSWORD=password  # (1)!
       - INIT_PORT=51820
       - INIT_USERNAME=admin
       - INSECURE=true
-    image: ghcr.io/wg-easy/wg-easy:15
+    image: ghcr.io/wg-easy/wg-easy:15.2
     labels:
       icon: https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/wg-easy-v15/logo.png
     ports:
@@ -113,44 +109,12 @@ services:
         target: /etc/wireguard
         bind:
           create_host_path: true
-    devices: []
     networks:
       - big-bear-wg-easy-v15
     privileged: false
 networks:
   big-bear-wg-easy-v15:
     name: big-bear-wg-easy-v15
-x-casaos:
-  architectures:
-    - amd64
-    - arm64
-  author: BigBearTechWorld
-  category: BigBearCasaOS
-  description:
-    en_us: "WireGuard Easy v15 - Complete rewrite with new features and improved UI.
-      Access your homeserver from anywhere with this modern VPN solution. NOTE:
-      This is v15 which has breaking changes from v14. If you're currently using
-      v14, please backup your configuration before migrating."
-  developer: WeeJeWel
-  hostname: ""
-  icon: https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps/apps/wg-easy-v15/logo.png
-  index: /
-  is_uncontrolled: false
-  main: big-bear-wg-easy-v15
-  port_map: "51821"
-  scheme: http
-  store_app_id: big-bear-wg-easy-v15
-  tagline:
-    en_us: WireGuard VPN server v15 (New Version)
-  thumbnail: ""
-  tips:
-    before_install:
-      en_us: "Read this before installing:
-        https://community.bigbeartechworld.com/t/added-wg-easy-v15-to-bigbearca\
-        saos/5071#p-7701-why-a-new-version-4"
-  title:
-    custom: ""
-    en_us: WireGuard Easy v15
 ```
 
 1. Setting your password here is **NOT** recommended. Leave as the default, and change the password from the Web UI. 

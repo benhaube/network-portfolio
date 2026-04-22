@@ -76,32 +76,29 @@ hide:
 #### :material-file-cog: The 'Caddyfile' *(configuration file)*:
 
 ```nginx title="/etc/caddy/caddyfile" linenums="1"
-# The Caddyfile is an easy way to configure your Caddy web server.  
-#  
-# Unless the file starts with a global options block, the first  
-# uncommented line is always the address of your site.  
-#  
-# To use your own domain name (with automatic HTTPS), first make  
-# sure your domain's A/AAAA DNS records are properly pointed to  
-# this machine's public IP, then replace ":80" below with your  
-# domain name.  
-  
+######################################################################
+## The Caddyfile is an easy way to configure your Caddy web server. ##
+##                                                                  ##
+## Unless the file starts with a global options block, the first    ##
+## uncommented line is always the address of your site.             ##
+##                                                                  ##
+## To use your own domain name (with automatic HTTPS), first make   ##
+## sure your domain's A/AAAA DNS records are properly pointed to    ##
+## this machine's public IP, then replace ":80" below with your     ##
+## domain name.                                                     ##
+######################################################################
+
 :80 {  
-       # Set this path to your site's directory.  
-       root * /usr/share/caddy  
+       root * /usr/share/caddy  # (1)!
   
-       # Enable the static file server.  
-       file_server  
-  
-       # Another common task is to set up a reverse proxy:  
-       # reverse_proxy localhost:8080  
-  
-       # Or serve a PHP site through php-fpm:  
-       # php_fastcgi localhost:9000  
+       file_server  # (2)!
+    
+       # reverse_proxy localhost:8080  (3)
+   
+       # php_fastcgi localhost:9000  (4)
 }  
   
-# Refer to the Caddy docs for more information:  
-# https://caddyserver.com/docs/caddyfile  
+# (5)!
   
 beszel.internal  
    reverse_proxy 192.168.50.2:8090  
@@ -147,3 +144,9 @@ yt-dlp.internal {
    reverse_proxy 192.168.50.4:3033  
 }
 ```
+
+1. Set this path to your site's directory.
+2. Enable the static file server. 
+3. Another common task is to set up a reverse proxy.
+4. Or serve a PHP site through php-fpm.
+5. Refer to the [Caddy Docs](https://caddyserver.com/docs/caddyfile) for more information. 

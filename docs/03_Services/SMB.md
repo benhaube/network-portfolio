@@ -72,9 +72,6 @@ server multi channel support = yes
 interfaces = "192.168.50.4;speed=2500000000,capability=RSS" "192.168.50.5;speed=2500000000,capability=RSS"  
 bind interfaces only = yes  
   
-## debug settings  
-# log level = 10  
-  
 # end custom config  
   
 include = /etc/samba/casa.%U.conf

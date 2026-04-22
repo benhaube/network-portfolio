@@ -46,29 +46,26 @@ hide:
 #### :material-nas: ZimaOS NAS:
 
 ```yaml title="docker-compose.yml" linenums="1"
-name: big-bear-portracker
 services:
   big-bear-portracker:
     cpu_shares: 90
-    command: []
     container_name: big-bear-portracker
     deploy:
       resources:
         limits:
-          memory: 16508252160
+          memory: 16508235776
         reservations:
-          devices: []
     environment:
       - CACHE_TIMEOUT_MS=30000
       - DATABASE_PATH=/data/portracker.db
       - DEBUG=false
       - DISABLE_CACHE=false
-      - INCLUDE_UDP=false
+      - INCLUDE_UDP=true
       - PORT=4999
-      - TRUSTED_LOCAL_EMAIL=your@email.com
+      - TRUSTED_LOCAL_EMAIL=server@haube-pereira.com
     image: mostafawahied/portracker:latest
     labels:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portracker.png
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portracker-light.png
     ports:
       - mode: ingress
         target: 4999
@@ -86,84 +83,6 @@ services:
         target: /var/run/docker.sock
         bind:
           create_host_path: true
-    x-casaos:
-      envs:
-        - container: PORT
-          description:
-            en_us: "Container Variable: PORT"
-        - container: DATABASE_PATH
-          description:
-            en_us: "Container Variable: DATABASE_PATH"
-        - container: TRUSTED_LOCAL_EMAIL
-          description:
-            en_us: "Container Variable: TRUSTED_LOCAL_EMAIL"
-        - container: CACHE_TIMEOUT_MS
-          description:
-            en_us: "Container Variable: CACHE_TIMEOUT_MS"
-        - container: DISABLE_CACHE
-          description:
-            en_us: "Container Variable: DISABLE_CACHE"
-        - container: INCLUDE_UDP
-          description:
-            en_us: "Container Variable: INCLUDE_UDP"
-        - container: DEBUG
-          description:
-            en_us: "Container Variable: DEBUG"
-      ports:
-        - container: "4999"
-          description:
-            en_us: "Container Port: 4999"
-      volumes:
-        - container: /data
-          description:
-            en_us: "Container Path: /data"
-        - container: /var/run/docker.sock
-          description:
-            en_us: "Container Path: /var/run/docker.sock"
-    devices: []
-    cap_add: []
-    networks:
-      - default
-    privileged: false
-networks:
-  default:
-    name: big-bear-portracker_default
-x-casaos:
-  architectures:
-    - amd64
-    - arm64
-  author: BigBearTechWorld
-  category: BigBearCasaOS
-  description:
-    en_us: A self-hosted, real-time port monitoring and discovery tool that
-      automatically discovers and maps network services across systems.
-  developer: Mostafa-Wahied
-  hostname: ""
-  icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portracker.png
-  index: /
-  is_uncontrolled: false
-  main: big-bear-portracker
-  port_map: "4999"
-  scheme: http
-  screenshot_link:
-    - https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/portracker/screenshots/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/portracker/screenshots/screenshot-2.png
-    - https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/portracker/screenshots/screenshot-3.png
-    - https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/portracker/screenshots/screenshot-4.png
-  store_app_id: big-bear-portracker
-  tagline:
-    en_us: Real-time Port Monitoring Tool
-  thumbnail: ""
-  tips:
-    before_install:
-      en_us: >-
-        Portracker is a self-hosted port monitoring tool that automatically
-        discovers network services.
-                        
-        Read this before installing: https://community.bigbeartechworld.com/t/added-portracker-to-bigbearcasaos/5003?u=dragonfire1119
-  title:
-    custom: ""
-    en_us: Portracker
 ```
 
 #### :material-raspberry-pi: Raspberry Pi 4B Server:
@@ -174,24 +93,30 @@ services:
     image: mostafawahied/portracker:latest
     container_name: portracker
     restart: unless-stopped
-    pid: "host"  # Required for port detection
-    # Required permissions for system ports service namespace access
+    pid: "host"  # (1)!
+    # (2)!
     cap_add:
-      - SYS_PTRACE     # Linux hosts: read other PIDs' /proc entries
-      - SYS_ADMIN      # Docker Desktop: allow namespace access for host ports (required for MacOS)
+      - SYS_PTRACE  # (3)!
+      - SYS_ADMIN  # (4)!
     security_opt:
-      - apparmor:unconfined # Required for system ports
+      - apparmor:unconfined  # (5)!
     volumes:
-      # Required for data persistence
-      - ./portracker-data:/data
-      # Required for discovering services running in Docker
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portracker-data:/data  # (6)!
+      - /var/run/docker.sock:/var/run/docker.sock:ro  # (7)!
     ports:
       - "4999:4999"
     # environment:
-      # Optional: For enhanced TrueNAS features
-      # - TRUENAS_API_KEY=your-api-key-here
+      # - TRUENAS_API_KEY=your-api-key-here  (8)
 ```
+
+1. Required for port detection.
+2. Required permissions for system ports service namespace access.
+3. **Linux hosts:** read other PIDs' `/proc` entries.
+4. **Docker Desktop:** allow namespace access for host ports *(required for MacOS)*.
+5. Required for system ports.
+6. Required for data persistence.
+7. Required for discovering services running in Docker.
+8. **Optional:** For enhanced TrueNAS features
 
 #### :material-raspberry-pi: ~~Raspberry Pi Zero Server:~~
 
@@ -201,21 +126,27 @@ services:
     image: mostafawahied/portracker:latest
     container_name: portracker
     restart: unless-stopped
-    pid: "host"  # Required for port detection
-    # Required permissions for system ports service namespace access
+    pid: "host"  # (1)!
+    # (2)!
     cap_add:
-      - SYS_PTRACE     # Linux hosts: read other PIDs' /proc entries
-      - SYS_ADMIN      # Docker Desktop: allow namespace access for host ports (required for MacOS)
+      - SYS_PTRACE  # (3)!
+      - SYS_ADMIN  #(4)!
     security_opt:
-      - apparmor:unconfined # Required for system ports
+      - apparmor:unconfined  # (5)!
     volumes:
-      # Required for data persistence
-      - ./portracker-data:/data
-      # Required for discovering services running in Docker
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portracker-data:/data  # (6)!
+      - /var/run/docker.sock:/var/run/docker.sock:ro  # (7)!
     ports:
       - "4999:4999"
     # environment:
-      # Optional: For enhanced TrueNAS features
-      # - TRUENAS_API_KEY=your-api-key-here
+      # - TRUENAS_API_KEY=your-api-key-here  (8)
 ```
+
+1. Required for port detection.
+2. Required permissions for system ports service namespace access.
+3. **Linux hosts:** read other PIDs' `/proc` entries.
+4. **Docker Desktop:** allow namespace access for host ports *(required for MacOS)*.
+5. Required for system ports.
+6. Required for data persistence.
+7. Required for discovering services running in Docker.
+8. **Optional:** For enhanced TrueNAS features

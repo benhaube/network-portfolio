@@ -40,11 +40,9 @@ hide:
 ### :material-cog: Configuration
 
 ```yaml title="docker-compose.yml" linenums="1"
-name: nextcloud
 services:
   nextcloud:
     cpu_shares: 90
-    command: []
     container_name: nextcloud
     deploy:
       resources:
@@ -52,7 +50,6 @@ services:
           memory: 16508317696
         reservations:
           memory: "536870912"
-          devices: []
     image: nextcloud:32.0
     labels:
       icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/icon.png
@@ -68,111 +65,6 @@ services:
       - type: bind
         source: /DATA/AppData/nextcloud/var/www/html
         target: /var/www/html
-    devices: []
-    cap_add: []
-    environment: []
     network_mode: bridge
     privileged: false
-x-casaos:
-  architectures:
-    - amd64
-    - arm
-    - arm64
-    - "386"
-    - mips64le
-    - ppc64le
-    - s390x
-  author: CasaOS Team
-  category: Cloud
-  description:
-    ar_sa: يضع Nextcloud بياناتك في أصابعك، تحت سيطرتك. احفظ مستنداتك والتقويم وجهات
-      الاتصال والصور على خادم في المنزل أو في أحد مزودينا أو في مركز بيانات تثق
-      به.
-    de_de: Nextcloud stellt Ihre Daten in Ihren Händen, unter Ihrer Kontrolle.
-      Speichern Sie Ihre Dokumente, Kalender, Kontakte und Fotos auf einem
-      Server zu Hause, bei einem unserer Anbieter oder in einem von Ihnen
-      vertrauten Datenzentrum.
-    en_us: >
-      Discover the ultimate solution for remote collaboration with Nextcloud.
-      Unlike traditional office software, Nextcloud seamlessly integrates files,
-      communication, and productivity tools into one platform, enhancing
-      teamwork and streamlining your workflow. Say goodbye to the limitations of
-      conventional tools and embrace a new era of collaboration.
-
-
-      Nextcloud stands out with its robust features tailored for every need. Enjoy secure file storage, real-time communication via Talk, comprehensive groupware, and powerful office integration, all in one place. Experience these top-notch features at an affordable price, making it accessible for everyone to elevate their collaboration game.
-
-
-      Deploying Nextcloud on a Zima private cloud device brings unparalleled convenience. Benefit from unlimited storage, secure data privacy, local network speeds, and multi-device access, ensuring you have everything you need at your fingertips.
-    es_es: Nextcloud pone sus datos a su alcance, bajo su control. Almacene sus
-      documentos, calendario, contactos y fotos en un servidor en casa, en uno
-      de nuestros proveedores o en un centro de datos que confíe.
-    fr_fr: Nextcloud met vos données à votre portée, sous votre contrôle. Stockez
-      vos documents, calendriers, contacts et photos sur un serveur à la maison,
-      chez l'un de nos fournisseurs ou dans un centre de données que vous pouvez
-      faire confiance.
-    hu_hu: A Nextcloud adatait a saját kezében tartja, saját irányítása alatt.
-      Tárolja dokumentumait, naptárát, kapcsolatait és fényképeit otthoni
-      szerverén, szolgáltatóink egyikén vagy megbízható adatközpontjában.
-    it_it: Nextcloud mette i tuoi dati a portata di mano, sotto il tuo controllo.
-      Memorizza i tuoi documenti, calendario, contatti e foto su un server in
-      casa tua, su uno dei nostri fornitori o in un data center che ti fidi.
-    pl_pl: Nextcloud umożliwia przechowywanie danych w Twoim domu, w Twoim zakresie
-      kontroli. Przechowuj dokumenty, kalendarz, kontakty i zdjęcia na serwerze
-      w domu, u jednego z naszych dostawców lub w zaufanym centrum danych.
-    pt_br: O Nextcloud coloca seus dados nas suas mãos, sob o seu controle. Armazene
-      seus documentos, calendário, contatos e fotos em um servidor em casa, em
-      um de nossos provedores ou em um centro de dados que você confia.
-    ru_ru: Nextcloud помещает ваши данные под вашим контролем. Храните свои
-      документы, календарь, контакты и фотографии на сервере дома, у одного из
-      наших поставщиков или в доверенном вам центре данных.
-    sv_se: Nextcloud ger dig kontroll över dina data. Lagra dina dokument, kalender,
-      kontakter och foton på en server hemma, hos en av våra leverantörer eller
-      i ett datacenter du litar på.
-    uk_ua: Nextcloud розташовує ваші дані під вашим контролем. Зберігайте свої
-      документи, календар, контакти та фотографії на сервері вдома, у одного з
-      наших постачальників або у довіреному центрі даних.
-    zh_cn: >
-      发现远程协作的终极解决方案——Nextcloud。不同于传统的办公软件，Nextcloud
-      将文件、通信和生产力工具无缝整合到一个平台中，增强团队合作并简化您的工作流程。告别传统工具的局限，迎接协作新时代。
-
-
-      Nextcloud 以其强大的功能脱颖而出，满足各种需求。享受安全的文件存储，通过 Talk 实现实时通信，综合群件以及强大的办公集成，一切尽在一个平台。体验这些一流功能，以实惠的价格，使每个人都能提升协作水平。
-
-
-      在 Zima 私有云设备上部署 Nextcloud 带来无与伦比的便利。享受无限存储、安全的数据隐私、本地网络速度和多设备访问，确保您所需的一切触手可及。
-  developer: Nextcloud
-  hostname: ""
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/icon.png
-  index: /
-  is_uncontrolled: false
-  main: nextcloud
-  port_map: "10081"
-  scheme: http
-  screenshot_link:
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-2.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-3.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-4.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-5.png
-  store_app_id: nextcloud
-  tagline:
-    ar_sa: منصة الإنتاجية التي تبقيك تحت سيطرتك
-    de_de: Die Produktivitätsplattform, die Sie unter Kontrolle hält
-    en_us: Content collaboration platform
-    es_es: La plataforma de productividad que te mantiene en control
-    fr_fr: La plate-forme de productivité qui vous permet de rester en contrôle
-    hu_hu: A termelékenységi platform, amely megőrzi a kontrollot
-    it_it: La piattaforma di produttività che ti mantiene in controllo
-    pl_pl: Platforma produktywności, która utrzymuje cię w kontroli
-    pt_br: A plataforma de produtividade que mantém você sob controle
-    ru_ru: Платформа производительности, которая держит вас под контролем
-    sv_se: Produktivitetsplattformen som håller dig i kontroll
-    uk_ua: Платформа продуктивності, яка дозволяє вам залишатися під контролем
-    zh_cn: 内容协作平台
-  thumbnail: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/thumbnail.png
-  tips: {}
-  title:
-    custom: ""
-    en_us: Nextcloud
 ```

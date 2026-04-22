@@ -49,16 +49,13 @@ name: big-bear-obsidian-livesync
 services:
   app:
     cpu_shares: 90
-    command: []
     container_name: obsidian-livesync
     deploy:
       resources:
         limits:
-          memory: 16508317696
-        reservations:
-          devices: []
+          memory: 16508235776
     environment:
-      - COUCHDB_PASSWORD=password # (1)!
+      - COUCHDB_PASSWORD=password  # (1)!
       - COUCHDB_USER=bhaube
     image: couchdb:3.5.0
     labels:
@@ -80,72 +77,6 @@ services:
         target: /opt/couchdb/etc/local.ini
         bind:
           create_host_path: true
-    x-casaos:
-      envs:
-        - container: COUCHDB_USER
-          description:
-            en_us: "Container Variable: COUCHDB_USER"
-        - container: COUCHDB_PASSWORD
-          description:
-            en_us: "Container Variable: COUCHDB_PASSWORD"
-      ports:
-        - container: "5984"
-          description:
-            en_us: "Container Port: 5984"
-      volumes:
-        - container: /opt/couchdb/data
-          description:
-            en_us: "Container Path: /opt/couchdb/data"
-        - container: /opt/couchdb/etc/local.ini
-          description:
-            en_us: "Container Path: /opt/couchdb/etc/local.ini"
-    devices: []
-    cap_add: []
-    networks:
-      - default
-    privileged: false
-networks:
-  default:
-    name: big-bear-obsidian-livesync_default
-x-casaos:
-  architectures:
-    - amd64
-    - arm64
-  author: BigBearTechWorld
-  category: BigBearCasaOS
-  description:
-    en_us: Self-hosted database for synchronizing Obsidian vaults.
-  developer: couchdb
-  hostname: ""
-  icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/obsidian.png
-  index: /
-  is_uncontrolled: false
-  main: app
-  port_map: "5984"
-  scheme: http
-  store_app_id: big-bear-obsidian-livesync
-  tagline:
-    en_us: Self-hosted database for synchronizing Obsidian vaults.
-  thumbnail: ""
-  tips:
-    before_install:
-      en_us: >
-        Run this script before installing the big-bear-obsidian-livesync
-        application:
-
-        
-
-        bash -c "$(wget -qLO - https://raw.githubusercontent.com/bigbeartechworld/big-bear-scripts/master/generate-obsidian-livesync-local-ini/run.sh)"
-
-
-
-        Video Tutorial: https://youtu.be/-n1abMPLmFg
-
-
-        After running this script, you need to restart the container.
-  title:
-    custom: ""
-    en_us: Obsidian Livesync
 ```
 
 1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI. 

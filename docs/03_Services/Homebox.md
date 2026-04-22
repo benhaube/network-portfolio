@@ -48,8 +48,7 @@ services:
             - HBOX_LOG_LEVEL=info
             - HBOX_LOG_FORMAT=text
             - HBOX_WEB_MAX_UPLOAD_SIZE=10
-            # Please consider allowing analytics to help us improve Homebox (basic computer information, no personal data)
-            - HBOX_OPTIONS_ALLOW_ANALYTICS=true
+            - HBOX_OPTIONS_ALLOW_ANALYTICS=true  # (1)!
         volumes:
             - /media/nvme0n1p1/AppData/homebox-data:/data/
         ports:
@@ -59,3 +58,5 @@ volumes:
     homebox-data:
         driver: local
 ```
+
+1. Please consider allowing analytics to help us improve Homebox *(basic computer information, no personal data)*.

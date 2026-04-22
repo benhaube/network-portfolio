@@ -45,7 +45,7 @@ hide:
 ```yaml title="docker-compose.yml" linenums="1"
 services:  
   glances:    
-    image: nicolargo/glances:latest-full  # (1)
+    image: nicolargo/glances:latest-full  # (1)!
     restart: always   
     pid: "host"  
     network_mode: "host"  
@@ -86,7 +86,7 @@ services:
 #     file: ./secrets/glances_password
 ```
 
-1. See all images tags here: https://hub.docker.com/r/nicolargo/glances/tags
+1. See all images tags here: <https://hub.docker.com/r/nicolargo/glances/tags>
 2. Uncomment for SATA or NVME smartctl monitoring.
 3. Uncomment for SATA smartctl monitoring.
 4. Uncomment for NVME smartctl monitoring.

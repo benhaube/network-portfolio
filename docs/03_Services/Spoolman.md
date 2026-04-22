@@ -39,24 +39,21 @@ hide:
 ### :material-cog: Configuration 
 
 ```yaml title="docker-compose.yml" linenums="1"
-name: big-bear-spoolman
 services:
   app:
     cpu_shares: 90
-    command: []
     container_name: spoolman
     deploy:
       resources:
         limits:
-          memory: 16508317696
+          memory: 16508235776
         reservations:
-          devices: []
     environment:
       - SPOOLMAN_AUTOMATIC_BACKUP=TRUE
       - SPOOLMAN_DB_TYPE=sqlite
       - SPOOLMAN_LOGGING_LEVEL=INFO
       - TZ=America/New_York
-    image: ghcr.io/donkie/spoolman:0.22.1
+    image: ghcr.io/donkie/spoolman:latest
     labels:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/spoolman.png
     ports:
@@ -71,55 +68,4 @@ services:
         target: /home/app/.local/share/spoolman
         bind:
           create_host_path: true
-    x-casaos:
-      envs:
-        - container: TZ
-          description:
-            en_us: "Container Variable: TZ"
-        - container: SPOOLMAN_DB_TYPE
-          description:
-            en_us: "Container Variable: SPOOLMAN_DB_TYPE"
-        - container: SPOOLMAN_LOGGING_LEVEL
-          description:
-            en_us: "Container Variable: SPOOLMAN_LOGGING_LEVEL"
-        - container: SPOOLMAN_AUTOMATIC_BACKUP
-          description:
-            en_us: "Container Variable: SPOOLMAN_AUTOMATIC_BACKUP"
-      ports:
-        - container: "8000"
-          description:
-            en_us: "Container Port: 8000"
-      volumes:
-        - container: /home/app/.local/share/spoolman
-          description:
-            en_us: "Container Path: /home/app/.local/share/spoolman"
-    devices: []
-    cap_add: []
-    network_mode: bridge
-    privileged: false
-x-casaos:
-  architectures:
-    - amd64
-    - arm64
-  author: BigBearTechWorld
-  category: Utilities
-  description:
-    en_us: Keep track of your inventory of 3D-printer filament spools. Spoolman is a
-      self-hosted web service designed to help you efficiently manage your 3D
-      printer filament spools and monitor their usage.
-  developer: Donkie
-  hostname: ""
-  icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/spoolman.png
-  index: /
-  is_uncontrolled: false
-  main: app
-  port_map: "7912"
-  scheme: http
-  store_app_id: big-bear-spoolman
-  tagline:
-    en_us: Filament spool inventory management for 3D printing
-  thumbnail: https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-universal-apps@main/apps/spoolman/screenshots-1.png
-  title:
-    custom: ""
-    en_us: Spoolman
 ```

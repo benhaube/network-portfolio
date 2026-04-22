@@ -52,7 +52,7 @@ services:
     network_mode: host
     volumes:
       - ntopng_redis:/var/lib/redis
-    # Updated to include eth0 and eth1 while keeping the community flag
+    # (1)!
     command: [ '-i', 'eth0', '-i', 'eth1', '-i', 'tcp://*:5556c', '-F', 'clickhouse', '--disable-login', '1', '--community' ]
     depends_on:
       - clickhouse
@@ -72,3 +72,5 @@ volumes:
   clickhouse_logs:
   ntopng_redis:
 ```
+
+1. Updated to include `eth0` and `eth1` while keeping the `--community` flag.

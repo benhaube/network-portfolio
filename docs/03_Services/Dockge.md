@@ -61,7 +61,7 @@ services:
       - DOCKGE_CONSOLE_ENBLE=true
 ```
 
-1. Host Port : Container Port
+1. Host : Container
 2. If you want to use private registries you need to uncomment this line to share the auth file with Dockge.
-3. READ IT CAREFULLY. If you did it wrong, your data could end up writing into a WRONG PATH. FULL path only, no relative path! Left Stacks Path === Right Stacks Path.
-4. Tell Dockge where is your stacks directory
+3. READ CAREFULLY! If you did it wrong, your data could end up writing into a WRONG PATH.<br>FULL path only, no relative path!<br>Left Stacks Path === Right Stacks Path.
+4. Tell Dockge the location of your stacks directory. 

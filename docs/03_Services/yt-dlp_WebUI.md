@@ -48,8 +48,10 @@ services:
     ports:
       - 3033:3033
     volumes:
-      - /DATA/Downloads/yt-dlp:/downloads # replace <your dir> with a directory on your host system
+      - /DATA/Downloads/yt-dlp:/downloads  # (1)!
     healthcheck:
       test: curl -f http://localhost:3033 || exit 1
     restart: unless-stopped
 ```
+
+1. Replace `<your dir>` with a directory on your host system.

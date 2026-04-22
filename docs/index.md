@@ -74,8 +74,7 @@ hide:
 + :simple-obsidian:&ensp;[[Obsidian_LiveSync|Obsidian LiveSync *(CouchDB)*]]: A CouchDB database for synchronizing *[Obsidian](https://obsidian.md)* Vaults.
 + :services-openspeedtest:&ensp;[[OpenSpeedTest]]: An HTML5 network speed test server.
 + :simple-pihole:&ensp;[[Pi-hole| Pi-hole DNS Server]]: A DNS server and ad/malware blocker.
-+ :services-portainer:&ensp;[[Portainer]]: A *[Docker](https://www.docker.com)* container management platform. 
-+ :services-portainer:&ensp;[[Portainer_Agent|Portainer Agent]]: An agent for connecting remote servers to *[[Portainer]]*.
++ :services-portainer:&ensp;[[Portainer]]: A *[Docker](https://www.docker.com)* container management platform.
 + :services-portracker:&ensp;[[Portracker]]: A self-hosted, real-time port monitoring and discovery tool.
 + :material-remote-desktop:&ensp;[[RDP|RDP *(Remote Desktop Protocol)*]]: Remote desktop access over the local network. *(not exposed to the internet)*
 + :material-folder-network:&ensp;[[SMB|SMB *(Server Message Block)*]]: Remote file system access.

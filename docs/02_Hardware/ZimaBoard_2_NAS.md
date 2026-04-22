@@ -122,7 +122,7 @@ hide:
 | *Inactive* | :material-ethernet:&nbsp;[[ntopng]] | `3000` `5556` | Network traffic probe. |
 | *Active* | :simple-obsidian:&nbsp;[Obsidian LiveSync](../03_Services/Obsidian_LiveSync.md) | `5984` | CouchDB database for synchronizing Obsidian Vaults. |
 | *Active* | :services-openspeedtest:&nbsp;[[OpenSpeedTest]] | `3004` | HTML5 Network Speed Test Server. |
-| *Inactive* | :services-portainer:&nbsp;[Portainer Agent](../03_Services/Portainer_Agent.md) | `9001` | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Inactive* | :services-portainer:&nbsp;[Portainer (Agent)](../03_Services/Portainer.md) | `9001` | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
 | *Active* | :services-portracker:&nbsp;[[Portracker]] | `4999` | A self-hosted, real-time port monitoring and discovery tool. | 
 | *Active* | :services-spoolman:&nbsp;[[Spoolman]] | `7912` | Manage 3D-printer filament spool inventory. |
 | *Active* | :simple-syncthing:&nbsp;[[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. |

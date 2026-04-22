@@ -125,41 +125,42 @@ hide:
 #### :material-docker: Docker Compose:
 
 ```yaml title="docker-compose.yml" linenums="1"
+services:
   glance:
     container_name: glance
-    image: glanceapp/glance
+    image: glanceapp/glance:latest
     restart: unless-stopped
     volumes:
       - ./config:/app/config
       - ./assets:/app/assets
-      - /etc/localtime:/etc/localtime:ro 
-      - /var/run/docker.sock:/var/run/docker.sock:ro # (1)!
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro  # (1)!
     ports:
       - 8580:8580
-    env_file: .env # (2)!
+    env_file: .env  # (2)!
     labels:
       glance.name: Glance
       glance.icon: si:glance
       glance.url: http://pi-server.internal:8580
       glance.description: Server Dashboard
       glance.id: glance
-    dns:  # (3)!
-      - 192.168.50.6
+    dns:   # (3)!
       - 192.168.50.2
-
+      - 192.168.50.6
   f1_api:
     container_name: f1_api
     image: skyallinott/f1_api:latest
     environment:
-      - TIMEZONE=America/New_York # (4)!
-      - TRACK_COLOUR=#E10600 # (5)!
-      - EVENT_DETAIL=main # (6)!
+      - TIMEZONE=America/New_York  # (4)!
+      - TRACK_COLOUR=#E10600  # (5)!
+      - EVENT_DETAIL=main  # (6)!
     ports:
       - 4463:4463
     restart: unless-stopped
     dns:
-      - 192.168.50.6
       - 192.168.50.2
+      - 192.168.50.6
+networks: {}
 ```
 
 1. Optionally, also mount docker socket if you want to use the docker containers widget

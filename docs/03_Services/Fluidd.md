@@ -48,7 +48,7 @@ git clone --depth 1 https://github.com/Guilouz/Creality-Helper-Script.git /usr/d
 
 sh /usr/data/helper-script/helper.sh  # (2)!
 
-git config --global http.sslVerify false  # (3!)
+git config --global http.sslVerify false  # (3)!
 ```
 
 1. Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.

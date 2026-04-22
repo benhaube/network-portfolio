@@ -41,7 +41,7 @@ hide:
 
 #### :material-server-outline: Server:
 
-```conf title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1"
+```nix title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1"
 ###########################################################################
 ### CHRONY.CONF                                                           #
 # This is a chrony configuration file.  You can edit the options that you #
@@ -100,13 +100,13 @@ maxupdateskew 5
 # synchronisation more reliable, uncomment (and edit) the following
 # line.
 
-! minsources 2
+# minsources 2
 
 # If your computer has a good stable clock (e.g. it is not a virtual
 # machine), you might also want to reduce the maximum assumed drift
 # (frequency error) of the clock (the value is specified in ppm).
 
-! maxdrift 100
+# maxdrift 100
 
 ##########################################################################
 ### FILENAMES ETC                                                        #
@@ -122,7 +122,7 @@ driftfile /opt/var/lib/chrony/drift
 # If you want to enable NTP authentication with symmetric keys, you will need
 # to uncomment the following line and edit the file to set up the keys.
 
-! keyfile /opt/etc/chrony/chrony.keys
+# keyfile /opt/etc/chrony/chrony.keys
 
 # chronyd can save the measurement history for the servers to files when
 # it it exits.  This is useful on Linux, if you stop chronyd and restart
@@ -158,7 +158,7 @@ ntsdumpdir /opt/var/lib/chrony
 # (especially backwards), so be careful!                                 #
 ##########################################################################
 
-! makestep 1.0 3
+# makestep 1.0 3
 
 ##########################################################################
 ### LOGGING                                                              #
@@ -169,13 +169,13 @@ ntsdumpdir /opt/var/lib/chrony
 # need help in debugging a problem.                                      #
 ##########################################################################
 
-! logdir /opt/var/log/
-! log measurements statistics tracking
+# logdir /opt/var/log/
+# log measurements statistics tracking
 
 # If you have real time clock support enabled (see below), you might want
 # this line instead:
 
-! log measurements statistics tracking rtc
+# log measurements statistics tracking rtc
 
 ##########################################################################
 ### ACTING AS AN NTP SERVER                                              #
@@ -195,7 +195,7 @@ allow 192.168.0.0/16
 
 # .. but disallow the 192.168.100.* subnet of that,
 
-! deny 192.168.100/24
+# deny 192.168.100/24
 
 # You can have as many allow and deny directives as you need.  The order
 # is unimportant.
@@ -207,7 +207,7 @@ allow 192.168.0.0/16
 # interfaces on your machine.  If you have multiple network interfaces,
 # add a broadcast line for each.
 
-! broadcast 60 192.168.1.255
+# broadcast 60 192.168.1.255
 
 # If you want to present your computer's time for others to synchronise
 # with, even if you don't seem to be synchronised to any NTP servers
@@ -225,12 +225,12 @@ local stratum 10
 # following line.  This will save a bit of memory if you have many
 # clients and it will also disable support for the interleaved mode.
 
-! noclientlog
+# noclientlog
 
 # The clientlog size is limited to 512KB by default.  If you have many
 # clients, you might want to increase the limit.
 
-! clientloglimit 4194304
+# clientloglimit 4194304
 
 # By default, chronyd tries to respond to all valid NTP requests from
 # allowed addresses.  If you want to limit the response rate for NTP
@@ -257,7 +257,7 @@ logchange 0.5
 # several people, you need to set up a mailing list or sendmail alias
 # for them and use the address of that.)
 
-! mailonchange wibble@foo.example.net 0.5
+# mailonchange wibble@foo.example.net 0.5
 
 ##########################################################################
 ### COMMAND ACCESS                                                       #
@@ -268,8 +268,8 @@ logchange 0.5
 # following lines to allow receiving command packets from remote hosts.  #
 ##########################################################################
 
-! bindcmdaddress 0.0.0.0
-! bindcmdaddress ::
+# bindcmdaddress 0.0.0.0
+# bindcmdaddress ::
 
 # Normally, chronyd will only allow connections from chronyc on the same
 # machine as itself.  This is for security.  If you have a subnet
@@ -277,7 +277,7 @@ logchange 0.5
 # it, you could uncomment the following line.  (Edit this to your own
 # situation.)
 
-! cmdallow 192.168/16
+# cmdallow 192.168/16
 
 # You can add as many 'cmdallow' and 'cmddeny' lines as you like.  The
 # syntax and meaning is the same as for 'allow' and 'deny', except that
@@ -286,7 +286,7 @@ logchange 0.5
 # Rate limiting can be enabled also for command packets.  (Note,
 # commands from localhost are never limited.)
 
-! cmdratelimit interval -4 burst 16
+# cmdratelimit interval -4 burst 16
 
 ###############################################################################
 ### REAL TIME SCHEDULER                                                       #
@@ -297,7 +297,7 @@ logchange 0.5
 # command-line switch will override this.                                     #
 ###############################################################################
 
-! sched_priority 1
+# sched_priority 1
 
 ###############################################################################
 ### LOCKING CHRONYD INTO RAM                                                  #
@@ -313,7 +313,7 @@ lock_all
 
 #### :material-devices: Clients:
 
-```conf title="/etc/chrony.conf" linenums="1"
+```nix title="/etc/chrony.conf" linenums="1"
 # These servers were defined in the installation:
 server asusrouter.internal iburst
 

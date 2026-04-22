@@ -56,7 +56,7 @@ hide:
 ---
 ## :material-tools: Maintenance Notes
 
-> [!tip inline] Visual Indicators
+> [!visual inline] Visual Indicators
 > **Ethernet Ports:** 
 > 
 > * **Green LED:** 2500 Mb/s Link 

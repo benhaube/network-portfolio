@@ -53,7 +53,7 @@ hide:
 ---
 ## :material-tools: Maintenance Notes
 
-> [!tip inline] Visual Indicators
+> [!visual inline] Visual Indicators
 > **Green LED:** 10/100/1000 Mb/s Link <br>
 > **Flashing:** Activity
 

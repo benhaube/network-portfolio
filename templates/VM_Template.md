@@ -1,4 +1,6 @@
 ---
+icon: material/network-pos
+title: VM Template
 tags:
   - hardware
   - virtual_machine
@@ -8,35 +10,35 @@ hide:
 ---
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
-# [[VM_Template|VM Template]]
+# VM Template
 [OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :material-file-document-multiple:](https://example.com){ .md-button }
 
 ---
 ## :material-information-outline: Overview
 
-#### Role:
+#### :material-toolbox: Role: 
 + [Insert role here] 
 
-#### Hostname(s):
+#### :symbols-host: Hostname(s):
 + `hostname`
 
-#### Hypervisor: 
+#### :material-network-pos: Hypervisor: 
 + (e.g., KVM / QEMU)
 
-#### Operating System: 
+#### :material-memory: Operating System:
 + :os-icon:&nbsp;[Operating System](https://example.com)
 
-#### Host Node:
+#### :material-server-network-outline: Host Node: 
 + [:device-icon: Device_Template](Device_Template.md)
 
-#### Credentials: 
+#### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
-## :material-cpu-64-bit: Resource Allocation
+#### :symbols-monitor-heart: Resource Allocation:
 
 | vCPU | RAM | Storage | VDI Location |
 | :--: | :-: | :------ | :----------- |
-| #-Cores | # GB | # GB | `path/to/vdi` |
+| #C / #T *(virt-tech)* | # GB | # GB | `path/to/vdi` |
 
 ## :material-lan: Network Configuration
 
@@ -69,7 +71,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Snapshots
 
-> [!important]+ Critical Configurations
+> [!config] Critical Configurations
 > Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
 
 #### :material-update: Update Policy:

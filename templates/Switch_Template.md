@@ -1,4 +1,6 @@
 ---
+icon: material/switch
+title: Switch Template
 tags:
   - hardware
   - switch
@@ -9,22 +11,22 @@ hide:
 ---
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
-# [[Switch_Template|Switch Template]]
+# Switch Template
 [Manual :material-book-information-variant:](../assets/manuals/manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Physical Overview
 
-#### Role:
+#### :material-toolbox: Role: 
 + Core Desktop Switch
 
-#### Location:
+#### :material-map-marker-outline: Location: 
 + [Insert location here]
  
-#### Power Source:
+#### :material-power-plug: Power Source: 
 + (e.g., Wall wart 12V / 1A)
  
-##### Specs:
+#### :symbols-monitor-heart: Specs:
 + **Throughput:**
   + (e.g., 50 Gb/s) 
 + **Jumbo Frames:** 
@@ -46,9 +48,9 @@ hide:
 ---
 ## :material-tools: Maintenance Notes
 
-> [!TIP] Visual Indicators
-> **Green LED:** 10/100/1000 Mbps Link <br>
-> **Flashing:** Activity
+> [!visual inline] Visual Indicators
+> :material-led-off:&nbsp;**Green LED:** 10/100/1000 Mb/s<br>
+> :material-led-on:&nbsp;**Flashing:** Activity
 
-> [!WARNING] Troubleshooting
+> [!warning inline] Troubleshooting
 > Hard reboot required if traffic stalls *(unplug power for 60s)*.

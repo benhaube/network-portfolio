@@ -1,4 +1,6 @@
 ---
+icon: material/router-wireless
+title: Router Template
 tags:
   - hardware
   - network
@@ -9,25 +11,25 @@ hide:
 ---
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
-# [[Router_Template|Router Template]]
+# Router Template
 [Docs :material-file-document-multiple:](https://example.com){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://example.com){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
 + AiMesh Node
 
-#### Hostname(s):
+#### :symbols-host: Hostname(s):
 + `hostname`
 
-#### Location:
+#### :material-map-marker-outline: Location: 
 + Location
  
-#### OS / Firmware: 
+#### :material-memory: OS / Firmware: 
 + :material-router-network-wireless:&nbsp;Router_OS
 
-#### Credentials:** 
+#### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
 ## :material-lan: Network Configuration
@@ -52,9 +54,6 @@ hide:
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-> [!info]-
-> *Use this table to track physical cabling.*
-
 | Port # | Connected Device | Color / Type | Notes |
 | :----: | :--------------- | :----------- | :---- |
 | 10Gb WAN/LAN 1 | :material-ethernet: *Empty* | - | - |
@@ -64,7 +63,7 @@ hide:
 | 2.5Gb LAN 3 | :material-ethernet: *Empty* | - | - |
 | 2.5Gb LAN 4 | :material-ethernet: *Empty* | - | - |
 
-## :material-folder-open: Storage & Mounts
+## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 
@@ -95,7 +94,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!note] Critical Configurations
+> [!config inline] Critical Configurations
 > Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
 
 #### :material-update: Update Process:

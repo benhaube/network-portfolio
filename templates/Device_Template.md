@@ -1,4 +1,6 @@
 ---
+icon: material/devices
+title: Device Template
 tags:
   - hardware
   - network
@@ -8,32 +10,32 @@ hide:
 ---
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
-# [[Device_Template|Device Template]]
+# Device Template
 [Button :material-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :material-icon:](https://example.com){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview
 
-#### Role: 
+#### :material-toolbox: Role: 
 + Device role
 
-#### Hostname(s): 
+#### :symbols-host: Hostname(s): 
 + `hostname`
 
-#### Location:
+#### :material-map-marker-outline: Location: 
 + Location 
 
-#### OS / Firmware:
+#### :material-memory: OS / Firmware:
 + :os-icon:&nbsp;Operating System
 
-#### Credentials:
+#### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
 
-#### Core Specs:
+#### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | GPU | GPU Freq. | RAM |
-| :-- | :-------------- | :-------- | :-- | :-------- | :-- |
-|  |  |  |  |  |
+| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
+| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
+| [CPU] *(architecture)* | #C / #T | # GHz | # GB | [GPU] | # MHz | # GB |
 
 ## :material-lan: Network Configuration
 
@@ -49,7 +51,7 @@ hide:
 | :--- | :---------- | :---------- | :------ |
 | vlan | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
 
-## :material-folder-open: Storage & Mounts
+## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 
@@ -86,7 +88,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!note] Critical Configurations
+> [!config] Critical Configurations
 > Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
 
 #### :material-update: Update Process:

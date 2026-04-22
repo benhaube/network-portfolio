@@ -6,7 +6,7 @@ hide:
 ---
 ![Custom PROWIPER^&copy;^ Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=400 }
 
-# PROWIPER^&copy;^ Mod *(Installation & Configuration)* 
+# PROWIPER^&copy;^ Mod
 
 > [!info] PROWIPER^&copy;^ Info
 > [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }

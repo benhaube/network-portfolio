@@ -123,6 +123,8 @@ markdown_extensions:
   - abbr
   - admonition
   - tables
+  - def_list
+  - footnotes
   - toc:
       permalink: true
       permalink_title: Permanent link

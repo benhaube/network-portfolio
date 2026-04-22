@@ -79,7 +79,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Snapshots
 
-> [!config]+ Critical Configurations
+> [!config] Critical Configurations
 > + Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
 > + The VM is configured to boot automatically when the host server boots. 
 > 
@@ -102,17 +102,17 @@ hide:
 * `#!bash sudo apt update && sudo apt upgrade` *(Standard Debian)*
 * `unattended-upgrades` enabled for critical bug and security fixes.
 
-#### :material-camera: Snapshot Policy:
-
-* Perform external snapshots before major changes.
-
-> [!warning] Warning!
+> [!warning inline] Warning!
 > + The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
 > + To create an external snapshot, run the following command as `root`: 
 > 
 >     ```bash linenums="1"
 >     virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
 >     ```
+
+#### :material-camera: Snapshot Policy:
+
+* Perform external snapshots before major changes.
 
 #### :material-backup-restore: Recovery:
 

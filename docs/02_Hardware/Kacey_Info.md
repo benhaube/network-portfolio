@@ -47,14 +47,12 @@ hide:
 
 #### :material-printer-3d: Moonraker:
 
-+ **URL**
-    + <http://k1c-a71e.internal:7125>
-+ **API Key**
-    + Check [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd" 
++ :material-link-variant:&nbsp;URL: <http://k1c-a71e.internal:7125>
++ :material-key-chain:&nbsp;API Key: [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd" 
 
 #### :services-fluidd: Fluidd:
 
-+ **URL**
++ :material-link-variant:&nbsp;URL:
     + <http://k1c-a71e.internal>
     + <http://k1c-a71e.internal:4408>
 
@@ -62,22 +60,20 @@ hide:
 
 #### :material-printer-3d: Moonraker:
 
-+ **Snapshot URL**
++ :material-link-variant:&nbsp;Snapshot URL:
     + <http://k1c-a71e.internal:8080/?action=snapshot>
     + <http://localhost:8080/?action=snapshot>
     + <http://127.0.0.1:8080/?action=snapshot>
 
 #### :services-fluidd: Fluidd:
 
-+ **Snapshot URL**
-    + <http://k1c-a71e.internal:8080/?action=snapshot>
-+ **Stream URL**
-    + <http://k1c-a71e.internal/webcam/?action=stream>
++ :material-link-variant:&nbsp;Snapshot URL: <http://k1c-a71e.internal:8080/?action=snapshot>
++ :material-link-variant:&nbsp;Stream URL: <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
 ## :material-code-block-brackets: Machine G-code 
 
-**:services-orca-slicer:&nbsp;OrcaSlicer**
+#### :services-orca-slicer: OrcaSlicer:
 
 ```gcode title="Machine Start" linenums="1"
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]

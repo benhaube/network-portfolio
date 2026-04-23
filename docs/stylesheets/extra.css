@@ -21,26 +21,14 @@
 /* Shadow box for tag container on mouse-over */
 .md-tags .md-tag:hover {
 
-    /* Uses an inset shadow to create a 3px stroke without affecting the layout */
     box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
-    
-    /* Add a slight transition for a smoother effect */
     transition: box-shadow 125ms ease-in-out;
 }
 
-
 /* Target the back-to-top button on hover */
 .md-top:hover {
-    /* Prevent the background from turning into a solid color block */
-    /* background-color: var(--md-accent-fg-color); 
     
-    /* Make the arrow icon match the stroke color */
-    /* color: var(--md-typeset-color); 
-    
-    /* Apply the stroke */
     box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
-
-    /* Add a slight transition for a smoother effect */
     transition: box-shadow 0.2s, ease-in-out;
 }
 

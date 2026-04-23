@@ -18,6 +18,15 @@
   color: var(--md-accent-fg-color);
 }
 
+/* Shadow box for tag container on mouse-over */
+.md-tags .md-tag:hover {
+    /* Uses an inset shadow to create a 3px stroke without affecting the layout */
+    box-shadow: inset 0 0 0 3px var(--md-primary-fg-color);
+    
+    /* Add a slight transition for a smoother effect */
+    transition: box-shadow 0.1s ease-in-out;
+}
+
 /* --- Colors for Logical & Physical Mermaid.js Diagrams --- */
 
 /* 1. Default (Light Mode) Variables */

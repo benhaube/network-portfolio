@@ -1,5 +1,5 @@
 ---
-icon: services/immich
+icon: services/immich-frame
 title: Immich Slideshow for Nest Hub
 hide:
   - toc

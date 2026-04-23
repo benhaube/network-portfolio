@@ -26,10 +26,10 @@ hide:
 + `2283`
 
 #### :material-link-variant: URL / Access: 
-+ :material-lan: Local Access:
++ :material-lan: LAN Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
-+ :material-web: Remote Access:
++ :material-web: WAN Access:
     + <https://immich.rac3r4life.online>
 
 #### :material-key-chain: Credentials:  

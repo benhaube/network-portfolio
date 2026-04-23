@@ -1,5 +1,5 @@
 ---
-icon: simple/f1
+icon: services/f1-replay-timing
 tags:
   - Active
   - Service

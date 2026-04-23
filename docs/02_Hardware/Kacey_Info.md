@@ -1,5 +1,5 @@
 ---
-icon: material/printer-3d
+icon: devices/creality
 title: More Kacey Info
 tags:
   - Hardware

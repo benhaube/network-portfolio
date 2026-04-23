@@ -1,5 +1,5 @@
 ---
-icon: material/printer-3d-nozzle
+icon: devices/prowiper
 title: PROWIPER&copy; Mod
 hide:
   - toc
@@ -45,7 +45,7 @@ hide:
 #### Verify Bottom Clearance:
   + [ ] Review `variable_bot_clearance` *(default `20`)* and `variable_drop_distance` *(default `15`)*. 
 
-## :material-cogs: Phase 2: Klipper Integration
+## :services-klipper: Phase 2: Klipper Integration
 
 > [!note inline end] Integration Note
 > The script automatically intercepts the stock `CX_NOZZLE_CLEAR` command, meaning standard print starts will natively utilize the new wiping sequence without further macro edits.

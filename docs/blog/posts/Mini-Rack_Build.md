@@ -1,4 +1,5 @@
 ---
+icon: devices/10-inch-rack
 date: 2026-01-15
 authors: 
   - benhaube

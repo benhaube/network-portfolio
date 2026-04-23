@@ -16,7 +16,7 @@ hide:
 + :material-restore-alert:&ensp;[[Disaster_Recovery_Plan|Disaster Recovery Plan]]: Ensure **HA** for critical network services and to provide a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 + :material-ip-network:&ensp;[[IP_Address_Management|IP Address Management]]: Local network IPAM, VPN and VLAN information.
 + :material-ethernet:&ensp;[[MAC_Address_Tables|MAC Address Tables]]: Tables containing devices on the LAN and their hardware MAC addresses.
-+ :material-server-security:&ensp;[[Network_Security_Policy|Network Security Policy]]: This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
++ :symbols-policy-fill:&ensp;[[Network_Security_Policy|Network Security Policy]]: This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 + :material-sitemap:&ensp;[[Logical_Map|Logical Map]]: *Mermaid.js* flowchart focusing on servers and services. 
 + :material-sitemap:&ensp;[[Physical_Map|Physical Map]]: *Mermaid.js* flowchart focusing on physical connections.
 
@@ -70,7 +70,7 @@ hide:
 + :services-nextcloud:&ensp;[[Nextcloud]]: Self-hosted cloud storage and collaboration platform.
 + :material-folder-network:&ensp;[[NFS|NFS *(Network File System)*]]: Remote file system access.
 + :simple-nginx:&ensp;[[Nginx|Nginx *(Network Portfolio)*]]: The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
-+ :material-ethernet:&ensp;[[ntopng]]: Network traffic probe.
++ :services-ntop:&ensp;[[ntopng]]: Network traffic probe.
 + :simple-obsidian:&ensp;[[Obsidian_LiveSync|Obsidian LiveSync *(CouchDB)*]]: A CouchDB database for synchronizing *[Obsidian](https://obsidian.md)* Vaults.
 + :services-openspeedtest:&ensp;[[OpenSpeedTest]]: An HTML5 network speed test server.
 + :simple-pihole:&ensp;[[Pi-hole| Pi-hole DNS Server]]: A DNS server and ad/malware blocker.
@@ -126,6 +126,6 @@ hide:
 > [Update PCRs :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
 + :material-console:&ensp;[[Defining_Terminal_Aliases|Defining Terminal Aliases]]: How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
-+ :services-immich:&ensp;[[Immich_Slideshow_for_Nest_Hub|Immich Slideshow for Nest Hub]]: How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [[Home_Assistant|Home Assistant]] with Google Cast.
++ :services-immich-frame:&ensp;[[Immich_Slideshow_for_Nest_Hub|Immich Slideshow for Nest Hub]]: How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [[Home_Assistant|Home Assistant]] with Google Cast.
 + :material-email-alert:&ensp;[[Setup_SSH_Login_Email_Notification|Setup SSH Login Email Notification]]: How to set up an email notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`. 
 + :material-lock-open:&ensp;[[Unlock_LUKS_TPM2|Unlocking LUKS2 Volumes with TPM2]]: How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots. 

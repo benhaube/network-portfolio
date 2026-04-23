@@ -1,5 +1,5 @@
 ---
-icon: material/ethernet
+icon: services/ntop
 title: ntopng
 tags:
   - Active
@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![ntopng Logo](../assets/icons/ntopng.png){ width=200 }
+![ntop Logo](../assets/icons/ntop.svg){ width=300 }
 
 # ntopng
 [GitHub :material-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://www.ntop.org/guides/ntopng/){ .md-button }

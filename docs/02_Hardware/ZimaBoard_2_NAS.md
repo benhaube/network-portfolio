@@ -119,7 +119,7 @@ hide:
 | *Active* | :services-homebox:&nbsp;[[Homebox]] | `3100` | An inventory and organization system built for the home user. |
 | *Active* | :services-immich:&nbsp;[[Immich]] | `2283` | Photo gallery and backup service. |
 | *Active* | :simple-nginx:&nbsp;[Nginx (Network Portfolio)](../03_Services/Nginx.md) | `8080` | The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache. |
-| *Inactive* | :material-ethernet:&nbsp;[[ntopng]] | `3000` `5556` | Network traffic probe. |
+| *Inactive* | :services-ntop:&nbsp;[[ntopng]] | `3000` `5556` | Network traffic probe. |
 | *Active* | :simple-obsidian:&nbsp;[Obsidian LiveSync](../03_Services/Obsidian_LiveSync.md) | `5984` | CouchDB database for synchronizing Obsidian Vaults. |
 | *Active* | :services-openspeedtest:&nbsp;[[OpenSpeedTest]] | `3004` | HTML5 Network Speed Test Server. |
 | *Inactive* | :services-portainer:&nbsp;[Portainer (Agent)](../03_Services/Portainer.md) | `9001` | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |

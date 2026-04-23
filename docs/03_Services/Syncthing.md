@@ -65,9 +65,9 @@ hide:
 + :material-fedora:&nbsp;Ben's Desktop / Ben's Laptop:
     + `#!bash sudo dnf install -y syncthing syncthingctl-qt6 syncthingplasmoid-qt6`
 
-#### :material-docker: Docker Compose: <br>&emsp;*(ZimaOS NAS)*
+#### :material-docker: Docker Compose:
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="ZimaOS NAS" linenums="1"
 services:
   syncthing:
     cpu_shares: 90

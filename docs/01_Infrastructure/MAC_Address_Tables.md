@@ -52,7 +52,7 @@ hide:
 | :devices-settop-component:&nbsp;Streaming Box | Living-Room | `roku-streaming-stick-4k` | `50:06:F5:53:2A:F2` | DHCP | - | :material-wifi: | :material-check: | Roku Streaming Stick 4K (2025), Connected to TV in Living Room |
 | :material-nintendo-game-boy:&nbsp;Game Console | Mobile | `nintendo-switch` | `74:84:69:0B:56:EF` | DHCP | - | :material-wifi: | :material-check: | Nintendo Switch OLED |
 
-## :material-home-automation: IoT Network *(vlan53)*
+## :symbols-shield-house-fill: IoT Network *(vlan53)*
 
 | Device Type | Location | Hostname | MAC Address | IP Method | Interface | WAN Access | Role / Notes |
 | :---------- | :------- | :------- | :---------- | :-------- | :-------: | :--------: | :----------- |

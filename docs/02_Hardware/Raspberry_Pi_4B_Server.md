@@ -53,14 +53,14 @@ hide:
 | Interface | IP Address | MAC Address | Connected To |
 | :-------: | :--------- | :---------- | :----------- |
 | eth0 | `192.168.50.2` | `E4:5F:01:A4:60:07` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
-| wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | :material-wifi:&nbsp;2G_IoT *(vlan53)* |
+| wlan0 | `DHCP` | `E4:5F:01:A4:60:07` | :symbols-shield-house-fill:&nbsp;2G_IoT *(vlan53)* |
 
 #### :material-ip-network: IP Configuration:
 
 | VLAN | Hostname(s) | DNS Servers | Gateway |
 | :--: | :---------- | :---------- | :------ |
 | :material-security:&nbsp;vlan50 | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
-| :material-home-automation:&nbsp;vlan53 | - | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
+| :symbols-shield-house-fill:&nbsp;vlan53 | - | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
 
 ## :symbols-storage: Storage & Mounts
 

@@ -51,16 +51,16 @@ hide:
 | VLAN | Domain | DNS Server(s) | Gateway | Subnet | Subnet Mask | Broadcast | DHCP Range |
 | :--: | :----- | :------------ | :------ | :----- | :---------- | :-------- | :--------- |
 | :material-security:&nbsp;*vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
-| :material-account-multiple:&nbsp;*vlan52* | - | `9.9.9.9` `149.112.112.112` | `192.168.52.1` | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.255` | `.2` to `.254` |
-| :material-home-automation:&nbsp;*vlan53* | - | `9.9.9.9` `149.112.112.112` | `192.168.53.1` | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.255` | `.2` to `.254` |
+| :symbols-shield-person-fill:&nbsp;*vlan52* | - | `9.9.9.9` `149.112.112.112` | `192.168.52.1` | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.255` | `.2` to `.254` |
+| :symbols-shield-house-fill:&nbsp;*vlan53* | - | `9.9.9.9` `149.112.112.112` | `192.168.53.1` | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.255` | `.2` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 
 | SSID | VLAN | WAN Access | IP Address | Frequency | Notes |  
 | :--: | :--: | :--------: | :--------- | :-------- | :---- |
 | *Home* | *vlan50* | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :material-security:&nbsp;Trusted VLAN |
-| *Home_Guest* | *vlan52* | :material-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz | :material-account-multiple:&nbsp;Guest VLAN |
-| *2G_IoT* | *vlan53* | :material-close: | `192.168.53.0/24` | 2.4 GHz | :material-home-automation:&nbsp;IoT VLAN |
+| *Home_Guest* | *vlan52* | :material-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz | :symbols-shield-person-fill:&nbsp;Guest VLAN |
+| *2G_IoT* | *vlan53* | :material-close: | `192.168.53.0/24` | 2.4 GHz | :symbols-shield-house-fill:&nbsp;IoT VLAN |
 
 #### :material-ethernet: Physical Ethernet Ports:
 

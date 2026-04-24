@@ -2,8 +2,14 @@
 icon: material/sitemap
 title: Physical Network Map
 tags:
+  - Infrastructure
+  - Hardware
   - Network
   - Map
+  - Router
+  - Server
+  - Switch
+  - VLAN
 hide:
   - toc
 ---

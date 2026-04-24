@@ -1,5 +1,14 @@
 ---
 icon: material/restore-alert
+title: Disaster Recovery Plan
+tags:
+  - Infrastructure
+  - Policy
+  - Security
+  - Backup
+  - DNS
+  - Monitor
+  - Service
 ---
 ![Material Design restore-alert icon](../assets/icons/restore-alert-color.svg){ width=200 }
 

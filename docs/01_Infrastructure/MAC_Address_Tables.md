@@ -1,5 +1,18 @@
 ---
 icon: material/ethernet
+title: MAC Address Tables
+tags:
+  - Infrastructure
+  - Network
+  - Hardware
+  - VLAN
+  - IoT
+  - Router
+  - Server
+  - Mobile
+  - Laptop
+  - Desktop
+  - PC
 hide:
   - toc
 ---

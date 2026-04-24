@@ -1,6 +1,15 @@
 ---
 icon: symbols/policy-fill
 title: Network Security Policy (NSP)
+tags:
+  - Infrastructure
+  - Policy
+  - Security
+  - IoT
+  - VLAN
+  - DNS
+  - VPN
+  - Remote Access
 ---
 ![Material Design server-security icon](../assets/icons/server-security.svg){ width=200 }
 

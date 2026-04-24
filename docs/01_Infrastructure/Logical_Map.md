@@ -4,6 +4,11 @@ title: Logical Network Map
 tags:
   - Network
   - Map
+  - Service
+  - Server
+  - Router
+  - Infrastructure
+  - VLAN
 hide:
   - toc
 ---

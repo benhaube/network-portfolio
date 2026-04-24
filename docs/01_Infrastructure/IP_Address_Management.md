@@ -1,5 +1,20 @@
 ---
 icon: material/ip-network
+title: IP Address Management
+tags:
+  - Infrastructure
+  - Network
+  - Hardware
+  - VLAN
+  - VPN
+  - Remote Access
+  - Hardware
+  - DNS
+  - Server
+  - Router
+  - Desktop
+  - PC
+  - 3D-Printer
 hide:
   - toc
 ---

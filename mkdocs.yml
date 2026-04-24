@@ -73,10 +73,12 @@ theme:
       pc: material/desktop-classic
       podman: simple/podman
       podman_host: simple/podman
+      policy: symbols/policy-fill
       print: material/printer
       printer-cart: material/printer
       remote: material/remote-desktop
       router: material/router-wireless
+      security: material/security
       server: material/server-outline
       service: material/web
       shell: material/console
@@ -85,6 +87,7 @@ theme:
       tools: material/tools
       video: material/video
       vh: simple/qemu
+      vlan: material/security-network
       vm: material/network-pos
       vpn: material/vpn
       windows: material/microsoft
@@ -278,10 +281,12 @@ extra:
     PC: pc
     Podman: podman
     Podman Host: podman_host
+    Policy: policy
     Printing: print
     Printer Cart: printer-cart 
     Remote Access: remote
     Router: router
+    Security: security
     Server: server
     Service: service
     Shell: shell
@@ -290,7 +295,8 @@ extra:
     Tools: tools
     Video: video
     Virtual Host: vh 
-    Virtual Machine: vm 
+    Virtual Machine: vm
+    VLAN: vlan 
     VPN: vpn
     Windows: windows
 

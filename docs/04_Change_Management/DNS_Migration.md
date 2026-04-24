@@ -1,6 +1,12 @@
 ---
 icon: material/dns
 title: DNS Migration
+tags:
+  - DNS
+  - Domain
+  - Infrastructure
+  - Server
+  - Service
 hide:
   - toc
 ---

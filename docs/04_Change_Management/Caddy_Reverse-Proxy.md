@@ -1,6 +1,12 @@
 ---
 icon: simple/caddy
 title: Reverse Proxy & DNS Routing
+tags:
+  - Infrastructure
+  - Server
+  - Service
+  - Domain
+  - DNS
 hide:
   - toc
 ---

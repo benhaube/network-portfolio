@@ -90,7 +90,7 @@ hide:
 ---
 ## :material-swap-horizontal-bold: Change Management
 
-+ :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[[Caddy_Reverse-Proxy|Reverse Proxy & DNS Routing]]: Preparing the *[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]* to be a *[[Caddy]]* reverse proxy server to give unique domain names to services hosted on the local network.
++ :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[Reverse Proxy & DNS Routing](04_Change_Management/Reverse-Proxy.md): Preparing the *[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]* to be a *[[Caddy]]* reverse proxy server to give unique domain names to services hosted on the local network.
 + :simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;[[DNS_Migration|DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)]]: Preparing to migrate from *[[Pi-hole]]* to *[[Technitium]]* for DNS queries on the local network. 
 
 ---

@@ -3,26 +3,30 @@
   max-width: 1355px;
 }
 
-/* Custom class for eabling line wrap on specific code blocks */
-.wrap-code pre > code {
+/* --- Custom class for line-wrap on code blocks --- */
+
+/* 1. Force the code to wrap and break long strings without spaces */
+.md-typeset .wrap-code pre > code {
     white-space: pre-wrap !important;
-    word-break: break-word;
+    word-break: break-word !important; 
+    overflow-wrap: anywhere !important;
+}
+
+/* 2. Constrain the table width when line numbers are enabled */
+.md-typeset .wrap-code .highlighttable {
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+/* 3. Ensure the code cell takes up the remaining space but respects the limit */
+.md-typeset .wrap-code .highlighttable .code {
+    width: 100% !important;
 }
 
 /* --- Make H1 headings use primary theme color --- */
 .md-typeset h1 {
   color: var(--md-primary-fg-color);
 }
-
-/* --- Make H2 headings use primary theme color --- */
-/* .md-typeset h2 {
-/*   color: var(--md-primary-fg-color);
-/* }
-
-/* --- Make H3 headings use accent theme color --- */
-/* .md-typeset h3 {
-/*   color: var(--md-accent-fg-color);
-/* }
 
 /* Shadow box for tag container on mouse-over */
 .md-tags .md-tag:hover {

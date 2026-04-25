@@ -9,8 +9,10 @@ hide:
 
 # Manual Bed Leveling Mod
 
-> [!question] Why do this?
-> The K1 series does NOT have automatic bed leveling! This upgrade allows you to fine tune your bed level using the `screws_tilt_calculate` command in Fluidd. This method is superior to tooth skipping and the Creality method. It's quick, easy and accurate.
+> [!question]
+> **Why do this?**
+>  
+> :     The K1 series does NOT have automatic bed leveling! This upgrade allows you to fine tune your bed level using the `screws_tilt_calculate` command in Fluidd. This method is superior to tooth skipping and the Creality method. It's quick, easy and accurate.
 
 > [!links] Bed Leveling Kit 
 > [AliExpress :brands-aliexpress:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon :fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
@@ -131,8 +133,10 @@ hide:
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
 
-> [!question inline end] Minutes?
-> 15 min = ¼ turn.
+> [!question inline end] 
+> **Minutes?**
+> 
+> :     15 min = ¼ turn.
 
 5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.
 
@@ -145,7 +149,6 @@ hide:
     > [!bug]
     > Sometimes if you do the calibration a few times in a row, you will not get a popup. In this case, the output should be displayed in the console and you can simply restart the printer and fluidd to bring the popup back.
 
----
 ## :material-information-outline: Additional Info
 
 > [!warning inline] Factory Loadcell Warning!
@@ -165,3 +168,5 @@ hide:
 > [Bed Leveling :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }
 > 
 > [Fluidd Access :services-fluidd:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ .md-button }
+
+---

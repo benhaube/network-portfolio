@@ -131,6 +131,7 @@
 *[UEFI]: Universal Extensible Firmware Interface
 *[UI]: User Interface
 *[UKI]: Unified Kernel Image
+*[URI]: Uniform Resource Identifier
 *[URL]: Uniform Resource Locator
 *[URLs]: Uniform Resource Locators
 *[USB]: Universal Serial Bus

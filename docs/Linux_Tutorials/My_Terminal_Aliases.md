@@ -9,9 +9,11 @@ hide:
 # My Terminal Aliases
 
 > [!info]
-> *Here I have assembled a list of aliases that I find useful and include on all of my GNU / Linux PCs and servers. See the guide, **Defining Terminal Aliases**, for instructions on how to use these aliases on your own distribution.*
+> Here I have assembled a list of aliases that I find useful and include on all of my GNU / Linux PCs and servers. See the guide, **Defining Terminal Aliases**, for instructions on how to use these aliases on your own distribution.
 > 
-> [Defining Terminal Aliases :material-console-line:](Defining_Terminal_Aliases.md){ .md-button }
+> :   [Defining Terminal Aliases :material-console:](Defining_Terminal_Aliases.md){ .md-button }
+
+---
 
 ```bash title="~/.bashrc.d/aliases" linenums="1"
 # --- Universal Shortcuts ---
@@ -96,3 +98,5 @@ alias gcm='git commit'
 # --- Print working directory and copy it to the clipboard ---
 alias pwdcp='pwd && pwd | xclip -sel clipboard'
 ```
+
+---

@@ -7,8 +7,10 @@ hide:
 
 # Defining Terminal Aliases
 
-> [!question] What are Aliases?
-> When operating in a GNU / Linux terminal environment, aliases are an indispensable necessity to speed up your workflow. You can create an alias to eliminate the need to memorize the required arguments, you can combine several commands into an easy shortcut, you can automatically fix common typos, and many more. This guide will show you how to set up useful terminal aliases on both **Fedora / RHEL** and **Debian / Ubuntu** based GNU / Linux distributions. 
+> [!question] FAQ
+> **What are terminal aliases?**
+> 
+> :     When operating in a GNU / Linux terminal environment, aliases are an indispensable necessity to speed up your workflow. You can create an alias to eliminate the need to memorize the required arguments, you can combine several commands into an easy shortcut, you can automatically fix common typos, and many more. This guide will show you how to set up useful terminal aliases on both **Fedora / RHEL** and **Debian / Ubuntu** based GNU / Linux distributions. 
 
 ---
 ## :material-debian: For Debian / Ubuntu Based Distributions:
@@ -49,7 +51,6 @@ hide:
 4. Now close your terminal window and reopen it, or open a new tab in your terminal application of choice. 
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
     + If your aliases were not loaded properly, check the code you entered into the `.bashrc` file for errors. 
----
 
 ## :material-fedora: For Fedora / RHEL Based Distributions:
 
@@ -101,7 +102,7 @@ hide:
     nano aliases
     ```
 
-    > [!tip]+ #!/bin/bash
+    > [!tip]- #!/bin/bash
     > I prefer to put `#!/bin/bash` on the first line of the file. This is not strictly necessary, but it tells your text editor to use proper syntax highlighting for Bash if it is available. 
 
 5. Paste or type in your desired aliases, then ++ctrl+o++ to save the changes and ++ctrl+x++ to exit nano.
@@ -110,10 +111,10 @@ hide:
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
     + If your aliases were not loaded properly, check the code you entered into the `.bashrc` file for errors. 
 
----
-
 > [!tip] Recommended Aliases
 >
 > You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
 > 
 > [My Aliases :material-console-line:](My_Terminal_Aliases.md){ .md-button }
+
+---

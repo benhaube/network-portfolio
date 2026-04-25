@@ -11,8 +11,9 @@ hide:
 ---
 ## :symbols-deployed-code-update: Install Required Packages
 
-> [!info] Dependencies
-> In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
+> [!info]+
+> **Dependencies:**
+> :     In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
 
 1. For **Debian / Ubuntu** based systems, execute:
     ```bash linenums="1"
@@ -23,12 +24,12 @@ hide:
     ```bash linenums="1"
     sudo dnf install msmtp msmtp-mta mailx
     ```
----
 
 ## :material-email: Configure `msmtp` with Your Email Credentials 
 
-> [!info] Config
-> Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
+> [!info]+ 
+> **Config File:**
+> :     Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
 
 1. Using the text editor of your choice *(e.g., nano)*, create a configuration file, `/etc/msmtprc`:
 
@@ -90,12 +91,12 @@ hide:
     sudo chown root:root /root/.email_app_password
     ```
 
----
-
 ## :material-alert: Enable Login Alerts with PAM
 
-> [!note] PAM
-> **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
+> [!question]+
+> **What is PAM?**
+>  
+> :     **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
 
 1. Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
 
@@ -145,11 +146,11 @@ hide:
 2. Save the file and exit.
 	+ ++ctrl+o++&ensp;++ctrl+x++
 
----
 ## :material-file-code-outline: Creating the Shell Script 
 
-> [!info] The Script
-> Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
+> [!info]+
+> **The Script:**
+> :     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
 
 1. Create the shell script file.
 
@@ -195,8 +196,6 @@ hide:
     sudo chmod +x /usr/local/bin/ssh-login-notify.sh
     ```
 
----
-
 ## :symbols-labs: Testing the Setup
 
 > [!done] Congrats!
@@ -212,15 +211,15 @@ hide:
     ```
 
 > [!NOTE]+ Troubleshooting Note
-> *If the logs don't immediately indicate a problem, double-check the file permissions on the two sensitive configuration files.*
+> If the logs don't immediately indicate a problem, double-check the file permissions on the two sensitive configuration files.
 >
 > + `/etc/msmtprc`: Must be owned by `root:root` and have permissions set to `600`.
 > + `/root/.email_app_password`: Must be owned by `root:root` and have permissions set to `600`.
 
 > [!TIP]+ Unattended Upgrades Notifications
-> *To use the `msmpt` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error:*
+> To use the `msmpt` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error:
 > > [!error] Error 551 5.7.1
-> > *Not authorised to send from this header address.*
+> > Not authorised to send from this header address.
 > 
 > 1. Open the configuration file in a text editor: 
 >     ```bash linenums="1"
@@ -240,3 +239,5 @@ hide:
 >     ```bash linenums="1"
 >     sudo unattended-upgrade --dry-run --debug
 >     ```
+
+---

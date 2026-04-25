@@ -8,7 +8,7 @@ hide:
 
 # Project Migration: Google Photos :material-arrow-right-thin: Self-Hosted Ecosystem
 
-> [!info]
+> [!info] Project Info
 > **User:** Ben Haube | **Date:** Feb 5, 2026<br>
 > **Infrastructure:** [[ZimaBoard_2_NAS|ZimaOS NAS]] *([[Immich]])*, [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] *([[Home_Assistant]], [[Cloudflared]] Tunnel)*
 
@@ -80,8 +80,6 @@ deletePhotos();
 
 1. If the script selects them but doesn't delete them, just click the :material-trash-can-outline: icon yourself after it does the hard work of selecting everything.
 
----
-
 ## :material-dns: Phase 2: Server-Side Setup *(ZimaOS NAS)*
 
 > [!done] Goal
@@ -145,8 +143,6 @@ Place this in the same folder as your docker-compose file.
 }
 ```
 
----
-
 ## :material-wan: Phase 3: Network & Cloudflare
 
 > [!done] Goal
@@ -157,8 +153,6 @@ Place this in the same folder as your docker-compose file.
     * Go to Cloudflare Dashboard :material-arrow-right-thin: Security :material-arrow-right-thin: WAF :material-arrow-right-thin: Custom Rules.
     * **Create Rule:** If Hostname equals `frame.rac3r4life.online` :material-arrow-right-thin: **Skip** "Super Bot Fight Mode" and "Managed Challenge".
         * _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
-
----
 
 ## :material-home-automation: Phase 4: Automation *(Home Assistant on Pi 4)*
 
@@ -190,3 +184,5 @@ action:
         metadata:
           title: "Immich Frame" 
 ```
+
+---

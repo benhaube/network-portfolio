@@ -151,7 +151,7 @@ hide:
 
 ## :material-information-outline: Additional Info
 
-> [!warning inline] Factory Loadcell Warning!
+> [!warning] Factory Loadcell Warning!
 > This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. 
 > Most aftermarket probes are at least 10x more accurate than factory, and it is highly recommended to upgrade before doing this in order to get the best results and minimize the chances of issues.
 >
@@ -159,10 +159,10 @@ hide:
 > > If you are doing this with load cells *(factory probe)* and get a `key60` error *(Internal error command: `BEDMESH_CALIBRATE`)*.
 > > This may be due to too much pressure being applied to the load cells. Try backing off the knobs more and run `SCREWS_TILT_CALCULATE` again.
 
-> [!note inline] Bed Warping
+> [!note] Bed Warping
 > If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
 
-> [!links inline] References and Resources
+> [!links] References and Resources
 > [Screws Tilt Adjust :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }
 > 
 > [Bed Leveling :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }

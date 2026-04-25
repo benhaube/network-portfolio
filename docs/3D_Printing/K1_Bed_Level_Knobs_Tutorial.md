@@ -151,6 +151,13 @@ hide:
 
 ## :material-information-outline: Additional Info
 
+> [!links inline] References and Resources
+> [Screws Tilt Adjust :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }
+> 
+> [Bed Leveling :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }
+> 
+> [Fluidd Access :services-fluidd:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ .md-button }
+
 > [!warning] Factory Loadcell Warning!
 > This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. 
 > Most aftermarket probes are at least 10x more accurate than factory, and it is highly recommended to upgrade before doing this in order to get the best results and minimize the chances of issues.
@@ -161,12 +168,5 @@ hide:
 
 > [!note] Bed Warping
 > If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
-
-> [!links] References and Resources
-> [Screws Tilt Adjust :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }
-> 
-> [Bed Leveling :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }
-> 
-> [Fluidd Access :services-fluidd:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ .md-button }
 
 ---

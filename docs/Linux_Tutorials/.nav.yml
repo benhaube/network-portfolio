@@ -1,0 +1,7 @@
+title: Linux Tutorials
+sort:
+  ignore_case: true
+nav:
+  - SVG_to_URI.md
+  - Defining_Terminal_Aliases.md
+  - "*"

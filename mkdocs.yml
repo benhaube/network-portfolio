@@ -199,7 +199,15 @@ plugins:
   - blog:
       authors: true
       authors_file: "{blog}/.authors.yml"
-      authors_profiles: true 
+      authors_profiles: true
+      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      post_excerpt_separator: <!-- more -->
+      post_readtime_words_per_minute: 265 
   - glightbox:
       touchNavigation: true
       loop: false

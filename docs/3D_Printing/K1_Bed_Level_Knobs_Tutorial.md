@@ -151,7 +151,9 @@ hide:
 
 ## :material-information-outline: Additional Info
 
-> [!links inline] References and Resources
+> [!links inline] 
+> **References and Resources**
+> 
 > [Screws Tilt Adjust :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }
 > 
 > [Bed Leveling :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }

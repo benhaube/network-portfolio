@@ -121,6 +121,7 @@
 *[SSH]: Secure Shell
 *[SSID]: Service Set Identifier
 *[SSL]: Secure Sockets Layer
+*[SVG]: Scalable Vector Graphics
 *[Tb]: Terabit
 *[Tb/s]: Terabits Per Second
 *[TB]: Terabyte

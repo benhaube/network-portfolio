@@ -53,8 +53,6 @@ hide:
   + [ ] Click the **"Park"** button to automatically trigger the `DONE_CLEANING` macro. 
   + [ ] Click the **"Park & Cool"** button to automatically trigger the `DONE_CLEANING_COOL` macro. 
 
----
-
 ## :material-file-code-outline: G-code Macro
 
 ```gcode title="manual-nozzle-clean.cfg" linenums="1"
@@ -126,3 +124,5 @@ gcode:
   # Cool the nozzle to 40 degrees
   WAIT_TEMP_START
 ```
+
+---

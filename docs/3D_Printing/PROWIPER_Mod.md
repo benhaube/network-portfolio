@@ -87,7 +87,6 @@ hide:
 
 + [ ] Use a ruler to visually confirm there is exactly a 1mm gap between the bottom of the printed wiper mount and the build plate. 
 
----
 ## :material-file-code-outline: PROWIPER^&copy;^ Mod G-Code File
 
 ```gcode title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58"
@@ -721,3 +720,5 @@ gcode:
     G1 Z30
     M104 S0
 ```
+
+---

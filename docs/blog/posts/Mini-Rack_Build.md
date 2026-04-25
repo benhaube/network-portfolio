@@ -1,9 +1,12 @@
 ---
 icon: devices/10-inch-rack
 title: Mini-Rack Build
-date: 2026-01-15
+date: 
+  created: 2026-01-15
+  updated: 
 authors: 
   - benhaube
+draft: false
 categories:
   - 3D-Printing
   - Networking

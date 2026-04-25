@@ -100,6 +100,7 @@
 *[PETG]: Polyethylene Terephthalate Glycol
 *[PIN]: Personal Identification Number
 *[PLA]: Polylactic Acid
+*[PNG]: Portable Network Graphics
 *[QEMU]: The Quick Emulator
 *[RAM]: Random Access Memory
 *[RCS]: Rich Communication Services
@@ -152,4 +153,5 @@
 *[VRAM]: Video Random Access Memory
 *[WAF]: Web Application Firewall
 *[WAN]: Wide Area Network
+*[XML]: Extensible Markup Language
 *[YAML]: Yet Another Markup Language

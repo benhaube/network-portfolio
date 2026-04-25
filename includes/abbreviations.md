@@ -50,6 +50,8 @@
 *[IP]: Internet Protocol
 *[IPAM]: IP Address Management
 *[IT]: Information Technology
+*[JPG]: Joint Photographic Experts Group
+*[JPEG]: Joint Photographic Experts Group
 *[Kb]: Kilobit
 *[Kb/s]: Kilobits Per Second
 *[KB]: Kilobyte

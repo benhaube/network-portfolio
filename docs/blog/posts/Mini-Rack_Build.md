@@ -3,7 +3,7 @@ icon: devices/10-inch-rack
 title: Mini-Rack Build
 date: 
   created: 2026-01-15
-  updated: 
+  updated: 2026-04-25
 authors: 
   - benhaube
 draft: false

@@ -19,9 +19,9 @@ hide:
 
     + Open a terminal window and execute the following command:
 
-    ```bash linenums="1"
-    cp .bashrc .bashrc.bkp 
-    ```
+        ```bash linenums="1"
+        cp .bashrc .bashrc.bkp 
+        ```
 
 2. Check your `.bashrc` file to make sure it includes the following code:
 
@@ -33,12 +33,12 @@ hide:
 
     + Your **Debian / Ubuntu** based distribution should have this code in the `.bashrc` file by default, but in case it doesn't you can open the file in the text editor of your choice *(e.g., nano)* and paste it into the end of the file. 
 
-    ```bash linenums="1"
-    nano .bashrc
-    ```
+        ```bash linenums="1"
+        nano .bashrc
+        ```
         
-    + ++ctrl+o++ to save the changes
-    + ++ctrl+x++ to exit 
+        + ++ctrl+o++ to save the changes
+        + ++ctrl+x++ to exit 
 
 3. Create a new file in your home (`~/`) directory called `.bash_aliases`
 
@@ -58,9 +58,9 @@ hide:
 
     + Open a terminal window and execute the following command:
 
-    ```bash linenums="1"
-    cp .bashrc .bashrc.bkp
-    ```
+        ```bash linenums="1"
+        cp .bashrc .bashrc.bkp
+        ```
 
 2. Check your `.bashrc` file to make sure it includes the following code:
 
@@ -78,16 +78,17 @@ hide:
 
     + Your **Fedora / RHEL** based distribution should have this code in the `.bashrc` file by default, but in case it doesn't you can open the file in the text editor of your choice *(e.g., nano)* and paste it into the end of the file. 
 
-    ```bash linenums="1"
-    nano .bashrc
-    ```
+        ```bash linenums="1"
+        nano .bashrc
+        ```
 
-    + ++ctrl+o++ to save the changes
-    + ++ctrl+x++ to exit 
+        + ++ctrl+o++ to save the changes
+        + ++ctrl+x++ to exit 
 
-    + **Fedora / RHEL** based GNU / Linux distributions use a different method for modifying the `.bashrc` file which I find more intuitive and modular. Instead of modifying the file directly and creating a dedicated `.bash_aliases` file, this code allows you to create a hidden sub-directory within your home (`~/`) directory to house all the modifications in separate files. I find this method to be superior, personally. It allows you to easily enable / disable your modifications, and keeps them far more organized. 
-
-    + You can use this directory to store all future modifications to your `.bashrc` file, not just your aliases. For example, in my `~/.bashrc.d` directory I have files to define paths, change my SSH key agent to Bitwarden, enable the [Starship](https://starship.rs) terminal prompt, enable `fzf`, and to print a custom `fastfetch` profile to show relevant system information every time I open a new terminal.
+    > [!note]
+    > **Fedora / RHEL** based GNU / Linux distributions use a different method for modifying the `.bashrc` file which I find more intuitive and modular. Instead of modifying the file directly and creating a dedicated `.bash_aliases` file, this code allows you to create a hidden sub-directory within your home (`~/`) directory to house all the modifications in separate files. I find this method to be superior, personally. It allows you to easily enable / disable your modifications, and keeps them far more organized. 
+    >
+    > You can use this directory to store all future modifications to your `.bashrc` file, not just your aliases. For example, in my `~/.bashrc.d` directory I have files to define paths, change my SSH key agent to Bitwarden, enable the [Starship](https://starship.rs) terminal prompt, enable `fzf`, and to print a custom `fastfetch` profile to show relevant system information every time I open a new terminal.
 
 3. Make a new directory `.bashrc.d` within your home directory.
 
@@ -102,8 +103,9 @@ hide:
     nano aliases
     ```
 
-    > [!tip]- #!/bin/bash
-    > I prefer to put `#!/bin/bash` on the first line of the file. This is not strictly necessary, but it tells your text editor to use proper syntax highlighting for Bash if it is available. 
+    > [!tip]
+    > **#!/bin/bash**
+    > :     I prefer to put `#!/bin/bash` on the first line of the file. This is not strictly necessary, but it tells your text editor to use proper syntax highlighting for Bash if it is available. 
 
 5. Paste or type in your desired aliases, then ++ctrl+o++ to save the changes and ++ctrl+x++ to exit nano.
 
@@ -111,10 +113,10 @@ hide:
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
     + If your aliases were not loaded properly, check the code you entered into the `.bashrc` file for errors. 
 
-> [!tip] Recommended Aliases
->
-> You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
+> [!tip]
+> **Recommended Aliases:**
+> :     You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
 > 
-> [My Aliases :material-console-line:](My_Terminal_Aliases.md){ .md-button }
+>       [My Aliases :material-console-line:](My_Terminal_Aliases.md){ .md-button }
 
 ---

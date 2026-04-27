@@ -64,8 +64,12 @@ hide:
 
 3. Fill in the configuration file with your email address and the correct server information for your email provider. 
 4. Save and close the `/etc/msmtprc` configuration file.
-	+ ++ctrl+o++&ensp;++ctrl+x++
-5. **Set restrictive permissions for the configuration file.** This file contains sensitive server information, so it must be readable only by root.
+	+ ++ctrl+o++ to save
+	+ ++ctrl+x++ to close
+5. Set restrictive permissions for the configuration file.
+
+    > [!security]
+    > This file contains sensitive server information, so it must be readable only by root.
 
     ```bash linenums="1"
     sudo chmod 600 /etc/msmtprc
@@ -74,14 +78,15 @@ hide:
 
 6. Create the hidden file containing the app password for your email login in the **root** user's home directory. 
 
-    >[!tip]+ 2FA / MFA 
-    > If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
+    >[!tip]+
+    > **2FA / MFA:**  
+    > :    If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
     ```bash linenums="1"
     read -s -p "Enter your Email App Password: " EMAIL_PASS && sudo bash -c "echo $EMAIL_PASS > /root/.email_app_password" && echo
     ```
 
-    >[!tip]+ Security Tip 
+    >[!security] 
     > The `read -s` command is used here to securely enter the password without storing it in your shell history.
 
 7. Set the required permissions for the `/root/.email_app_password` file. This is crucial for security, as this file contains the actual login credential.
@@ -143,8 +148,9 @@ hide:
     session    optional     pam_exec.so /usr/local/bin/ssh-login-notify.sh
     ```
 
-2. Save the file and exit.
-	+ ++ctrl+o++&ensp;++ctrl+x++
+2. Save and close the file.
+	+ ++ctrl+o++ to save
+	+ ++ctrl+x++ to close
 
 ## :material-file-code-outline: Creating the Shell Script 
 
@@ -189,7 +195,8 @@ hide:
     1. Change `RECIPIENT=example@example.com` to your email address.  
 
 3. Save and close the file.
-	+ ++ctrl+o++&ensp;++ctrl+x++
+	+ ++ctrl+o++ to save 
+	+ ++ctrl+x++ to close
 4. Give execute permission to the script.
 
     ```bash linenums="1"
@@ -210,6 +217,8 @@ hide:
     journalctl -t msmtp
     ```
 
+## :symbols-note-stack: Important Notes
+
 > [!NOTE]+ Troubleshooting Note
 > If the logs don't immediately indicate a problem, double-check the file permissions on the two sensitive configuration files.
 >
@@ -218,6 +227,7 @@ hide:
 
 > [!TIP]+ Unattended Upgrades Notifications
 > To use the `msmpt` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error:
+> 
 > > [!error] Error 551 5.7.1
 > > Not authorised to send from this header address.
 > 
@@ -230,7 +240,8 @@ hide:
 >     Unattended-Upgrade::Sender "your-authorized-email@domain.com";
 >     ```
 > 3. Save and close the config file: 
->     + ++ctrl+o++&ensp;++ctrl+x++
+>     + ++ctrl+o++ to save
+>     + ++ctrl+x++ to close
 > 4. Restart the `unattended-upgrades` Systemd service:
 >     ```bash linenums="1"
 >     sudo systemctl restart unattended-upgrades.service

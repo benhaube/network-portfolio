@@ -37,14 +37,27 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
+> [!change]- Image
+> :material-calendar:&nbsp;**Date:** Monday, April 27 2026 <br>
+> :material-swap-horizontal:&nbsp;**Change:** Using a forked Docker image <br>
+> :material-help-circle-outline:&nbsp;**Reason:** Active development, additional features
+>
+> ---
+>
+> :material-cog:&nbsp;**Configuration:**
+> 
+> :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuraiton is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
+> 
+> :material-arrow-down-thin:&nbsp;**[See the new config file below](#__codelineno-5-1)**&nbsp;:material-arrow-down-thin:
+
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance` | `glanceapp/glance:latest` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance` | `panonim/dynacat:latest` |
 |  |  | `f1_api` | `skyallinott/f1_api:latest` |
 
 ### :material-cog: Configuration
 
-> [!change] User Authentication
+> [!change]- User Authentication
 > :material-calendar:&nbsp;**Date:** Monday, April 20 2026 <br>
 > :material-swap-horizontal:&nbsp;**Change:** Enabled user authentication <br>
 > :material-help-circle-outline:&nbsp;**Reason:** Additional security
@@ -90,7 +103,7 @@ hide:
 >
 > + Shut the container down and start it back up using the same method shown above for user passwords. 
 
-> [!change] Widgets Directory
+> [!change]- Widgets Directory
 > :material-calendar:&nbsp;**Date:** Saturday, April 18 2026 <br>
 > :material-swap-horizontal:&nbsp;**Change:** Moved pages and widgets into separate directories. <br>
 > :material-help-circle-outline:&nbsp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
@@ -128,7 +141,7 @@ hide:
 services:
   glance:
     container_name: glance
-    image: glanceapp/glance:latest
+    image: panonim/dynacat:latest  # (7)!
     restart: unless-stopped
     volumes:
       - ./config:/app/config
@@ -152,7 +165,7 @@ services:
     image: skyallinott/f1_api:latest
     environment:
       - TIMEZONE=America/New_York  # (4)!
-      - TRACK_COLOUR=#E10600  # (5)!
+      - TRACK_COLOUR=#B0B0B0  # (5)!
       - EVENT_DETAIL=main  # (6)!
     ports:
       - 4463:4463
@@ -169,43 +182,31 @@ networks: {}
 4. Specify your timezone.
 5. Specify desired track map color
 6. Optional. main tracks qualis and races (inc. sprints), race tracks races. 
+7. Changed image to a fork of Glance with added features.
 
-#### :material-view-dashboard: Glance Config:
+#### :material-file-cog-outline: Glance Config:
 
-```yaml title="glance.yml" linenums="1"
+```yaml title="dynacat.yml" linenums="1"
 server:
   port: 8580
-  assets-path: /app/assets # (1)!
+  assets-path: /app/assets  # (1)!
 
-# branding:
-# app-icon-url: /assets/icons/glance.png
-# hide-footer: true
+branding:
+  app-name: Dashboard
+  # logo-text: G
+  logo-url: /assets/glance.png
+  app-icon-url: /assets/glance.png
+  favicon-url: /assets/glance.svg
+  # hide-footer: true
 
 theme:
-  # (2)!
-  light: true
-  background-color: 0 0 95
-  primary-color: 0 0 10
-  negative-color: 0 90 50
-
   presets:
     Neon-Pink:
-      background-color: 240 27 11  # (6)!
-      contrast-multiplier: 1.5  # (7)!
+      background-color: 240 27 11  # (5)!
+      contrast-multiplier: 1.5  # (6)!
       primary-color: 321 100 71
       positive-color: 165 78 51
       negative-color: 360 100 71
-    Catppuccin-Mocha:
-      background-color: 240 21 15
-      contrast-multiplier: 1.2
-      primary-color: 217 92 83
-      positive-color: 115 54 76
-      negative-color: 347 70 65
-    Gruvbox-Dark:
-      background-color: 0 0 16
-      primary-color: 43 59 81
-      positive-color: 61 66 44
-      negative-color: 6 96 59
     Formula-One:
       background-color: 0 0 5
       contrast-multiplier: 1.5
@@ -225,13 +226,13 @@ theme:
       positive-color: 115 54 76
       negative-color: 347 70 65
 
-  custom-css-file: /assets/user.css # (3)!
+  custom-css-file: /assets/user.css  # (2)!
 
 auth:
-  secret-key: <insert-server-secret>  # (4)!
+  secret-key: <insert-server-secret>  # (3)!
   users:
     admin:
-      password-hash: ${ADMIN_PW_HASH} # (5)!
+      password-hash: ${ADMIN_PW_HASH}  # (4)!
     bhaube:
       password-hash: ${BHAUBE_PW_HASH}
     rpereira:
@@ -244,12 +245,74 @@ pages:
 ```
 
 1. The `/app/assets` directory contains all of the custom icons and CSS used in the Glance pages.
-2. This will be the default theme
-3. Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared... Refresh & clear cache: ++ctrl+f5++
-4. The Glance Dashboard's server secret is stored in the Bitwarden Vault. (Local Network :material-arrow-right-thin: "Glance Server Secret" )
-5. The `app/.env` file contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the command: `#!bash ./glance password:hash <my-password>`. Then paste the hashed string into the corresponding variable in the `.env` file.
-6. Values for the colors are in **HSL** format. You can use a color picker like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.  
-7. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
+2. Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared... Refresh & clear cache: ++ctrl+f5++
+3. The Glance Dashboard's server secret is stored in the Bitwarden Vault. (Local Network :material-arrow-right-thin: "Glance Server Secret" )
+4. The `app/.env` file contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the command: `#!bash ./glance password:hash <my-password>`. Then paste the hashed string into the corresponding variable in the `.env` file.
+5. Values for the colors are in **HSL** format. You can use a color picker like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.  
+6. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
+
+```yaml title="glance.yml" linenums="1"
+server:
+  port: 8580
+  assets-path: /app/assets # (1)!
+
+# branding:
+  # app-icon-url: /assets/icons/glance.png
+  # hide-footer: true
+
+theme:
+  presets:
+    Neon-Pink:
+      background-color: 240 27 11  # (5)!
+      contrast-multiplier: 1.5  # (6)!
+      primary-color: 321 100 71
+      positive-color: 165 78 51
+      negative-color: 360 100 71
+    Formula-One:
+      background-color: 0 0 5
+      contrast-multiplier: 1.5
+      primary-color: 2 100 44
+      positive-color: 112 82 46
+      negative-color: 2 100 44
+    Material-Purple-Enhanced:
+      background-color: 227 46 16
+      contrast-multiplier: 1.3
+      primary-color: 233 76 85
+      positive-color: 115 54 76
+      negative-color: 347 70 65
+    Material-Dark-Forest:
+      background-color: 187 100 8
+      contrast-multiplier: 1.3
+      primary-color: 188 54 83
+      positive-color: 115 54 76
+      negative-color: 347 70 65
+
+  custom-css-file: /assets/user.css # (2)!
+
+auth:
+  secret-key: <insert-server-secret>  # (3)!
+  users:
+    admin:
+      password-hash: ${ADMIN_PW_HASH} # (4)!
+    bhaube:
+      password-hash: ${BHAUBE_PW_HASH}
+    rpereira:
+      password-hash: ${RPEREIRA_PW_HASH}
+
+pages:
+  - $include: pages/home.yml
+  - $include: pages/network.yml
+  - $include: pages/formula1.yml
+```
+
+1. The `/app/assets` directory contains all of the custom icons and CSS used in the Glance pages.
+2. Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared... Refresh & clear cache: ++ctrl+f5++
+3. The Glance Dashboard's server secret is stored in the Bitwarden Vault. (Local Network :material-arrow-right-thin: "Glance Server Secret" )
+4. The `app/.env` file contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the command: `#!bash ./glance password:hash <my-password>`. Then paste the hashed string into the corresponding variable in the `.env` file.
+5. Values for the colors are in **HSL** format. You can use a color picker like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.  
+6. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
+
+#### :material-view-dashboard: Glance Pages:
 
 ```yaml title="home.yml" linenums="1"
 - name: Home

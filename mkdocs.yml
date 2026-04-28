@@ -315,7 +315,7 @@ copyright: >
 
 # --- Extra CSS stylesheets ---
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 # --- Project Repository URL & Docs directory ---
 repo_url: https://github.com/benhaube/network-portfolio

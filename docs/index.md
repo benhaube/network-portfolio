@@ -125,6 +125,7 @@ hide:
 > 
 > [Update PCRs :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
++ :material-svg:&ensp;[Converting an SVG into Data URI](Linux_Tutorials/SVG_to_URI.md): How to convert an SVG into a data URI for use in HTML pages and CSS stylesheets. 
 + :material-console:&ensp;[[Defining_Terminal_Aliases|Defining Terminal Aliases]]: How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 + :services-immich-frame:&ensp;[[Immich_Slideshow_for_Nest_Hub|Immich Slideshow for Nest Hub]]: How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [[Home_Assistant|Home Assistant]] with Google Cast.
 + :material-email-alert:&ensp;[[Setup_SSH_Login_Email_Notification|Setup SSH Login Email Notification]]: How to set up an email notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`. 

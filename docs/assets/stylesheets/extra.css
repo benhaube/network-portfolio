@@ -33,7 +33,7 @@
 /* Dark theme (slate) */
 [data-md-color-scheme="slate"] {
     /* You can tweak the hex or opacity here for better dark mode contrast */
-    --md-code-bg-color: #1B2C3D; 
+    --md-code-bg-color: #111b26; 
 }
 
 /* Padding for copy/select buttons */

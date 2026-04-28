@@ -40,14 +40,14 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-### :material-hub: Hub
+### Hub
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `beszel-hub` | `henrygd/beszel:latest` |
 |  | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
 
-### :material-console-network: Agents
+### Agents
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
@@ -57,7 +57,7 @@ hide:
 
 ### :material-cog: Configuration
 
-#### :material-hub: Hub:
+#### Hub:
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 services:
@@ -96,7 +96,7 @@ services:
 
 1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
 
-#### :material-console-network: Agents:
+#### Agents:
 
 ```yaml title="Debian Server VM" linenums="1"
 services:

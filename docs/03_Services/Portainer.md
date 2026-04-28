@@ -24,16 +24,16 @@ hide:
 + A Docker container management platform and agent for connecting remote servers.
 
 #### :symbols-settings-ethernet: Port(s):
-+ :material-hub:&nbsp;Hub:
++ Hub:
     + `9443`
-+ :material-console-network:&nbsp;Agent:
++ Agent:
     + `9001`
 
 #### :material-link-variant: URL / Access:
-+ :material-hub:&nbsp;Hub: 
++ Hub: 
     + ~~[[https://portainer.internal]]~~
     + ~~[[https://pi-server.internal:9443]]~~
-+ :material-console-network:&nbsp;Agent:
++ Agent:
     + ~~[[http://pi-zero.internal:9001]]~~
     + ~~[[http://storage-server.internal:9001]]~~
 
@@ -42,13 +42,13 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-### :material-hub: Hub
+### Hub
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
 | :material-raspberry-pi:&nbsp;~~[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)~~ | :material-docker:&nbsp;Docker Compose | `portainer` | `portainer/portainer-ee:lts` |
 
-### :material-console-network: Agent
+### Agent
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
@@ -57,7 +57,7 @@ hide:
 
 ### :material-cog: Configuration  
 
-#### :material-hub: Hub:
+#### Hub:
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 services:  
@@ -83,7 +83,7 @@ networks:
     name: portainer_network
 ```
 
-#### :material-console-network: Agent:
+#### Agent:
 
 ```yaml title="Raspberry Pi Zero Server" linenums="1"
 services:  

@@ -64,7 +64,7 @@ hide:
 
 ### :material-server-outline: Servers:
 
-#### :material-file-cog: SSH Config File:
+#### SSH Config File:
 
 1. Make the required changes to the SSH config file: 
 
@@ -200,7 +200,7 @@ hide:
     sudo systemctl restart sshd
     ```
 
-#### :material-login: Login Banner:
+#### Login Banner:
 
 1. Paste this ASCII message into the banner file:
 
@@ -215,7 +215,7 @@ hide:
     \\\\\---------------------------------------------------------------\\\\\
     ```
 
-#### :material-message-off-outline: Suppress MOTD:
+#### Suppress MOTD:
 
 > [!warning inline end] Warning
 > `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
@@ -244,7 +244,7 @@ hide:
     sudo chmod +x /etc/update-motd.d/SCRIPT_TO_ENABLE
     ```
 
-#### :material-logout: Suppress Last Login: 
+#### Suppress Last Login: 
 
 1. Open the SSH config file with a text editor:
 
@@ -281,7 +281,7 @@ hide:
 
 ### :material-devices: Clients:
 
-#### :material-key-chain: Bitwarden SSH Key Agent:
+#### Bitwarden SSH Key Agent:
 
 1. Paste this line into the client's `~/.bashrc` file to enable the Bitwarden SSH key agent.
 
@@ -289,7 +289,7 @@ hide:
     export SSH_AUTH_SOCK=/home/$USER/.bitwarden-ssh-agent.sock
     ```
 
-#### :material-file-cog: Client SSH Configuration:
+#### Client SSH Configuration:
 
 1. Create the `~/.ssh` directory:
 

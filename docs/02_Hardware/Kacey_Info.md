@@ -45,12 +45,12 @@ hide:
 
 ## :material-lan: Network
 
-#### :material-printer-3d: Moonraker:
+#### Moonraker:
 
 + :material-link-variant:&nbsp;URL: <http://k1c-a71e.internal:7125>
 + :material-key-chain:&nbsp;API Key: [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd" 
 
-#### :services-fluidd: Fluidd:
+#### Fluidd:
 
 + :material-link-variant:&nbsp;URL:
     + <http://k1c-a71e.internal>
@@ -58,14 +58,14 @@ hide:
 
 ## :material-camera: Camera
 
-#### :material-printer-3d: Moonraker:
+#### Moonraker:
 
 + :material-link-variant:&nbsp;Snapshot URL:
     + <http://k1c-a71e.internal:8080/?action=snapshot>
     + <http://localhost:8080/?action=snapshot>
     + <http://127.0.0.1:8080/?action=snapshot>
 
-#### :services-fluidd: Fluidd:
+#### Fluidd:
 
 + :material-link-variant:&nbsp;Snapshot URL: <http://k1c-a71e.internal:8080/?action=snapshot>
 + :material-link-variant:&nbsp;Stream URL: <http://k1c-a71e.internal/webcam/?action=stream>

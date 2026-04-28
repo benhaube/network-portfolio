@@ -71,7 +71,7 @@ hide:
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `C:` | NVMe SSD | 926 GB | `SCSI\DISK&VEN_NVME&PROD_WD_PC_SN560_SDDP\5&194EBDF0&0&000000` | `ntfs` | BitLocker |
 
-#### :material-usb: External/Attached:
+#### :material-usb: External / Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

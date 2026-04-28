@@ -66,7 +66,7 @@ hide:
 | `/`, `/home` | NVMe SSD | 929 GB | `/dev/dm-0` | `btrfs` | LUKS2 |
 | `/mnt/1TB_HDD` | SATA HDD | 1 TB | `/dev/mapper/1TB_HDD_crypt` | `btrfs` | LUKS2 |
 
-#### :material-usb: External/Attached:
+#### :material-usb: External / Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

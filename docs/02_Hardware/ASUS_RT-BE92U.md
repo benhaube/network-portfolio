@@ -83,7 +83,7 @@ hide:
 | `/jffs` | - | 44.5 MB | `ubi:jffs2` | `ubifs` | - |
 | `/data` | - | 16.8 MB | `bui:data` | `ubifs` | - |
 
-#### :material-usb: External/Attached:
+#### :material-usb: External / Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

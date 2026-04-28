@@ -65,7 +65,7 @@ hide:
 | `/overlay` | eMMC | 96.8 MB | `/dev/mmcblk0p9` | `ext4` | - |
 | `/rom` | Read-Only Memory | 126.8 MB | `/dev/root` | `squashfs` | - |
 
-#### :material-usb: External/Attached:
+#### :material-usb: External / Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

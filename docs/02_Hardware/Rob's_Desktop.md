@@ -71,7 +71,7 @@ hide:
 | `D:` | SATA HDD | 1.81 TB | `SCSI\DISK&VEN_WDC&PROD_WD2003FZEX-00SRL\4&E91BE7&0&050000` | `ntfs` | - |
 | `G:` | NVMe SSD | 931 GB | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_980\5&EBD909B&0&000000` | `ntfs` | - |
 
-#### :material-usb: External/Attached:
+#### :material-usb: External / Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

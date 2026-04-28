@@ -72,7 +72,7 @@ hide:
 | `/boot/firmware` | MicroSD | 512 MB | `/dev/mmcblk0p1` | `vfat` | - |
 | `/var/log` | RAM | 128 MB | `log2ram` | `tmpfs` | - |
 
-#### :material-usb: External/Attached:
+#### :material-usb: External / Attached:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

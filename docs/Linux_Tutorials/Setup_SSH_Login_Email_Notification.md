@@ -17,12 +17,12 @@ hide:
 
 1. For **Debian / Ubuntu** based systems, execute:
     ```bash linenums="1"
-    sudo apt install msmtp msmtp-mta bsd-mailx
+    sudo apt install msmtp msmtp-mta
     ```
 
 2. For **Fedora / RHEL** based systems, execute: 
     ```bash linenums="1"
-    sudo dnf install msmtp msmtp-mta mailx
+    sudo dnf install msmtp msmtp-mta
     ```
 
 ## :material-email: Configure `msmtp` with Your Email Credentials 
@@ -82,7 +82,7 @@ hide:
     > **2FA / MFA:**  
     > :    If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
-    ```bash linenums="1"
+    ```bash {linenums="1" .wrap-code}
     read -s -p "Enter your Email App Password: " EMAIL_PASS && sudo bash -c "echo $EMAIL_PASS > /root/.email_app_password" && echo
     ```
 
@@ -105,21 +105,26 @@ hide:
 
 1. Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
 
-    ```bash linenums="1" hl_lines="3"
-    sudo -e /etc/pam.d/sshd  # (1)!
-    
-    session optional pam_exec.so /usr/local/bin/ssh-login-notify.sh  # (2)!
+    ```bash title="Edit File" linenums="1"
+    sudo cp /etc/pam.d/sshd /etc/pam.d/sshd.bkp  # (1)! 
+    sudo -e /etc/pam.d/sshd  # (2)!
     ```
 
-    1. Command to edit PAM config file.
-    2. Add line to `/etc/pam.d/sshd` *after* the existing "session" lines.
+    1. Make a backup of the `/etc/pam.d/sshd` file to restore in case you break something.
+    2. Command to edit PAM config file.
+
+    ```bash title="Add to File" linenums="1"
+    session optional pam_exec.so /usr/local/bin/ssh-login-notify.sh  # (1)!
+    ```
+    
+    1. Add line to `/etc/pam.d/sshd` *after* the existing "session" lines.
 
     >[!warning] Warning! 
     > It is important to use `#!bash sudo -e` instead of a direct editor command *(like `sudo nano`)* when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's `$EDITOR` environment variable.
 
     The final file should look like this: 
 
-    ```ini title="/etc/pam.d/sshd" linenums="1" hl_lines="26"
+    ```desktop title="/etc/pam.d/sshd" linenums="1" hl_lines="26"
     # PAM configuration for the Secure Shell service
     # Standard Un*x authentication.
     @include common-auth
@@ -174,7 +179,7 @@ hide:
     HOST=$(hostname)
     DATE=$(date)
     RECIPIENT="example@example.com"  # (1)!
-    SUBJECT="SSH Login on $HOST"
+    SUBJECT="🚨 New SSH session started on $HOST 🚨"
 
     BODY="
     A new SSH session was successfully established.
@@ -192,7 +197,7 @@ hide:
     exit 0
     ```
 
-    1. Change `RECIPIENT=example@example.com` to your email address.  
+    1. Change `RECIPIENT=example@example.com` to the email address where you want to recieve notifications.  
 
 3. Save and close the file.
 	+ ++ctrl+o++ to save 
@@ -200,8 +205,10 @@ hide:
 4. Give execute permission to the script.
 
     ```bash linenums="1"
-    sudo chmod +x /usr/local/bin/ssh-login-notify.sh
+    sudo chmod +x /usr/local/bin/ssh-login-notify.sh  # (1)!
     ```
+
+    1. The 'execute' permission is absolutely necessary to allow the system to execute the script.
 
 ## :symbols-labs: Testing the Setup
 

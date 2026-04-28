@@ -34,7 +34,7 @@ hide:
     | :----------- |
     | `systemd-cryptenroll` |
     | `tpm2-tss` |
-    | `dracut` / `update-initramfs` |
+    | `dracut` *or* `update-initramfs` |
 
 **Initramfs Support:** 
 :    Your system's initial ramdisk **(initramfs)** must be configured to include the necessary components to perform the unlock early in the boot process.
@@ -192,8 +192,10 @@ hide:
 >       ```bash linenums="1"
 >       sudo systemd-cryptenroll --wipe-slot=tpm2 --tpm2-device=auto /dev/your_device
 >       sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+4+7+11 /dev/your_device
->       sudo dracut -f # or appropriate command for your system
+>       sudo dracut -f  # (1)! 
 >       ```
+>
+>       1. Or `sudo update-initramfs -u -k <version>` if you have an **Ubuntu / Debian** system.
 >
 > **Update PCRs Script:**
 > 

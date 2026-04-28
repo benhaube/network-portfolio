@@ -20,12 +20,12 @@ tags:
 ---
 ## :material-priority-high: Service Priority Levels
 
-| Priority | Service | Impact of Failure | Recovery Time Objective *(RTO)* |
-| :------- | :------ | :---------------- | :------------------------------ |
-| Critical | :services-technitium:&nbsp;[[Technitium]] DNS Cluster | Total loss of internet/LAN connectivity. | < 5 Minutes *(Automatic Failover)* |
-| High | :services-caddy:&nbsp;[[Caddy]] Reverse Proxy | Loss of remote access and SSL termination. | < 1 Hour |
-| Medium | :simple-homeassistant:&nbsp;[Home Assistant](../03_Services/Home_Assistant.md) / IoT | Loss of automation and physical device control. | < 4 Hours |
-| Standard | :services-immich:&nbsp;[[Immich]] / Media | Loss of access to personal archives. | < 24 Hours |
+| Priority | Service | Impact of Failure | RTO |
+| :------- | :------ | :---------------- | :-- |
+| Critical | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) DNS Cluster | Total loss of Internet / LAN connectivity. | < 5 Minutes *(Automatic Failover)* |
+| High | [:services-caddy:&nbsp;Caddy](../03_Services/Caddy.md) / [:services-cloudflare-zero-trust:&nbsp;Cloudflare](../03_Services/Cloudflared.md) Reverse Proxy | Loss of remote access and SSL termination. | < 1 Hour |
+| Medium | [:simple-homeassistant:&nbsp;Home Assistant](../03_Services/Home_Assistant.md) / IoT | Loss of automation and physical device control. | < 4 Hours |
+| Standard | [:services-immich:&nbsp;Immich](../03_Services/Immich.md) / Media | Loss of access to personal archives. | < 24 Hours |
 
 ---
 ## :material-cloud-upload-outline: Backup Strategy
@@ -42,7 +42,7 @@ tags:
 > **One** off-site copy:
 > + The most important data has a copy stored off-site with p-Cloud.
 
-### :material-sync: On-Site Synchronization:
+### On-Site Synchronization:
 
 + [[Syncthing]] is utilized across the [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]], [[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server ]], [[Debian_Server_VM|Debian Server VM]] and [[ZimaBoard_2_NAS|ZimaOS NAS]] nodes to ensure configuration files and Docker volumes are mirrored in real-time.
 + Linux PCs, [[Ben's_Desktop|ben-workstation]] and [[Ben's_Laptop|ben-laptop]], have the `/home` directory backed up to the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) every weekday at 18:00 and 19:00 UTC-5 using a custom script, `home-bkp-nas.sh`, that utilizes [[NFS]] and `rsync`. 
@@ -50,18 +50,18 @@ tags:
 + Obsidian vaults are synchronized in real-time with a [[Obsidian_LiveSync|CouchDB]] database hosted on the ZimaOS NAS, and to a private GitHub repository.
 + Android smartphones have **SMS / MMS & RCS** messages and critical application configurations backed up while charging to the ZimaOS NAS via Syncthing. The backup archives for messages are created locally on the device with the [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/) application.
 
-### :material-harddisk: Cold Storage: 
+### Cold Storage: 
 
 + Critical database dumps *([[Home_Assistant|Home Assistant]], [[Immich]] PostgreSQL)* are exported weekly to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **NVMe Storage *(500GB)*** on the ZimaOS NAS.
 + The configuration of the [[ASUS_RT-BE92U|ASUS RT-BE92U]] wireless router is exported weekly *(Sundays @ 1:00 UTC-5)* to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **Quick-Storage *(2TB)*** on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/) firmware.
 
-### :material-cloud-outline: Off-Site / Cloud: 
+### Off-Site / Cloud: 
 
 + Encrypted backups of the Obsidian vaults and key configuration files are synced to a secure cloud provider *([p-Cloud](https://www.p-cloud.com))*.
 
 ## :material-restore-alert: Recovery Procedures
 
-### :material-server-network-off: Node Failure: Primary DNS
+### Node Failure: Primary DNS
 
 #### Automated Failover: 
 
@@ -71,7 +71,7 @@ tags:
 
 + If the Debian VM or ZimaOS host is lost, the Debian VM is restored from the last known good snapshot stored on the [NFS](../03_Services/NFS.md) / [SMB](../03_Services/SMB.md) Share.
 
-### :material-server-network-off: Node Failure: Reverse Proxy
+### Node Failure: Reverse Proxy
 
 #### Traffic Rerouting:
 
@@ -87,16 +87,16 @@ tags:
 
 ## :material-tools: Testing & Maintenance
 
-### :material-power-plug-off: Quarterly "Pull the Plug" Test:
+### Quarterly "Pull the Plug" Test:
 
 + Physically disconnect the ZimaOS NAS to verify the Raspberry Pi 4B picks up all DNS traffic without user intervention.
 
-### :material-check-decagram: Backup Verification:
+### Backup Verification:
 
 + Monthly check of the [[Immich]] library integrity and a trial restoration of a single Docker container from [[Syncthing]] data.
 + Weekly check of client backup logs for backup errors.
 
-### :symbols-monitor-heart: Monitoring:
+### Monitoring:
 
 + Server status and service uptime is monitored by [[Beszel_Hub|Beszel Hub]] and [[Uptime_Kuma|Uptime Kuma]] instances. 
 + Email notifications are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible

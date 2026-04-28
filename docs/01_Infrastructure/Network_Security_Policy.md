@@ -29,16 +29,16 @@ tags:
 
 ## :material-wall-fire: Boundary Defense & Remote Access
 
-#### :material-security: Edge Protection: 
+#### Edge Protection: 
 
 + An [[ASUS_RT-BE92U|ASUS RT-BE92U]] acts as the primary firewall, utilizing **SPI** and **DoS** protection. 
 
-#### :material-web-cancel: External Access: 
+#### External Access: 
 
 + Direct port forwarding is strictly prohibited. 
 + Remote access to individual services is facilitated through a [[Cloudflared|Cloudflare Tunnel]], ensuring all incoming traffic is proxied and SSL-encrypted.
 
-#### :material-vpn: VPN:
+#### VPN:
 
 + For administrative tasks, there are two [[Wireguard_Server|WireGuard]] instances providing a secure, encrypted tunnel into the Trusted zone.
 + The primary WireGuard server is hosted natively on the main [[ASUS_RT-BE92U|ASUS router]]. 
@@ -46,21 +46,21 @@ tags:
 
 ## :material-server-security: DNS Security & Content Filtering
 
-#### :material-lan-connect: Internal Resolution: 
+#### Internal Resolution: 
 
 + A clustered [[Technitium|Technitium DNS]] environment *([[Debian_Server_VM|Debian VM]] & [[Raspberry_Pi_4B_Server|Pi 4B Server]])* handles all local queries.
 
-#### :symbols-domino-mask: Upstream Privacy:
+#### Upstream Privacy:
 
 + Queries are forwarded to [Quad-9](https://quad9.net/) via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
 
-#### :symbols-disabled-visible: Blocking:
+#### Blocking:
 
 + Network-wide ad and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
 ## :material-security-network: Device & Host Hardening
 
-#### :symbols-desktop-landscape: Operating Systems:
+#### Operating Systems:
 
 + Servers primarily utilize **Debian** and **ZimaOS** *(on the NAS)* for stability and security. 
 	+ Debian Linux *(Stable)* is a rock-solid, unchanging base to build a server on. Packages are not frequently updated with new features, so there is no need to worry about breakages. The 10-year-long service life means you are guaranteed to get security updates for the server's lifetime. 
@@ -69,23 +69,23 @@ tags:
 + Client PCs utilize **Fedora *(KDE Plasma Desktop Edition)*** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware *(e.g., the latest CPUs & GPUs)*.
 + Mobile devices *(smartphones and tablets)* utilize **Android**. Only Google Pixel and Samsung Galaxy devices are allowed due to their monthly security patches and long service & support lifespan.   
 
-#### :symbols-shield-person-fill: Access Control: 
+#### Access Control: 
 
 + [[SSH]] access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
-+ [:services-bitwarden: Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
 	+ Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely.
 	+ The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. 
 	+ The mobile application auto-fills passwords on websites and native applications.
 + Local user accounts on the Fedora and Windows 11 PCs do not have administrator privileges. A separate "admin" account is required to make system-level changes. 
 + Services hosted on the network that require login have separate "admin" accounts for administration. The regular user accounts have reduced permissions to increase security. 
 
-#### :material-update: Updates:
+#### Updates:
 
 + Automated security patching is enabled for critical packages on the Debian servers with `unattended-upgrades`. 
-+ Weekly manual audits for Docker container image updates *(monitored via [[Dockge]])*.
++ Weekly manual audits for Docker container image updates *(monitored via &nbsp;[:services-dockge:&thinsp;Dockge](../03_Services/Dockge.md))*.
 + Desktop and Laptop PCs have automatic updates enabled.
 
-#### :material-printer-3d: 3D Infrastructure:
+#### 3D Infrastructure:
 
 + The [[Kacey_3D-printer|Creality K1C]] is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 

@@ -101,13 +101,13 @@ hide:
 > 
 > [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
-### :material-file-document-multiple: Documentation *(External Links)*
+### Documentation *(External Links)*
 + :devices-creality:&ensp;[Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/): Add features to your printer.
 + :services-fluidd:&ensp;[Fluidd Docs](https://docs.fluidd.xyz/): A lightweight & responsive user interface for Klipper.
 + :services-klipper:&ensp;[Klipper Docs](https://www.klipper3d.org/): The Klipper firmware controls 3D-printers. It combines the power of a general purpose computer with one or more micro-controllers.
 + :material-printer-3d:&ensp;[Moonraker Docs](https://moonraker.readthedocs.io/en/latest/): Moonraker is a Python 3 based web server that exposes APIs with which client applications may use to interact with the 3D printing firmware [Klipper](https://github.com/Klipper3d/klipper).
 
-### :material-tools: Modifications
+### Modifications
 + :material-cog:&ensp;[[K1_Bed_Level_Knobs_Tutorial|Manual Bed Leveling Mod]]: Installing a bed leveling modification on the [[Kacey_3D-printer|Creality^&copy;^ K1C]].
 + :material-toothbrush:&ensp;[[Manual_Nozzle_Cleaning_Gcode_Macro|Interactive Manual Nozzle Cleaning Macro]]: Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
 + :devices-prowiper:&ensp;[[PROWIPER_Mod|PROWIPER^&copy;^ Mod]]: Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [[Kacey_3D-printer|Creality^&copy;^ K1C]].

@@ -110,6 +110,7 @@
 *[RGBW]: Red Green Blue White
 *[RHEL]: Red Hat Enterprise Linux
 *[RPC]: Remote Proceedure Call
+*[RTO]: Real Time Objective
 *[SAN]: Storage Area Network
 *[SATA]: Serial Advanced Technology Attachment
 *[SD]: Secure Digital

@@ -84,7 +84,7 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!note]+ Modifications:
+> [!config]+ Modifications
 > **:material-chip: Firmware:**
 > + The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/) for configuration issues.
 > 
@@ -98,27 +98,15 @@ hide:
 > 
 > **:material-printer-3d-nozzle: Hardware:**
 > 
-> + :material-cog:&nbsp;Bed Leveling Knobs
+> + [:material-cog:&nbsp;Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
 >     + Changes from a fixed bed to an adjustable bed with aluminum knobs. 
->     + See the [tutorial](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md) for information about how to install and use the `Screws_Tilt_Adjust` gcode macro. 
-> 
-> + :devices-prowiper:&nbsp;PROWIPER^&copy;^ Mod
+> + [:devices-prowiper:&nbsp;PROWIPER^&copy;^ Mod](../3D_Printing/PROWIPER_Mod.md)
 >     + Replaces the standard nozzle wiping brush at the back of the build plate.
->     + See the [[PROWIPER_Mod|tutorial]] for information on how to install and activate the required G-Code macros.
-> 	   
-> > [!warning] Bed Exclude Area
-> > **:services-orca-slicer: OrcaSlicer:**
-> > 
-> > Add these coordinates to "Bed Exclude Area" in [OrcaSlicer](https://www.orcaslicer.com/) printer settings to avoid collisions during prints:
-> > ``` linenums="1"
-> > 70x210, 150x210, 150x220, 70x220
-> > ```
 > 
 > **:material-code-block-tags: Custom G-Code Macros:**
 > 
-> + :material-toothbrush: Manual Nozzle Cleaning Macro
+> + [:material-toothbrush:&nbsp;Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
 >     + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
->     + See more information and G-Code [[Manual_Nozzle_Cleaning_Gcode_Macro|here]].
 
 #### :material-update: Update Process:
 

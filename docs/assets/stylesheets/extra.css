@@ -3,7 +3,7 @@
   max-width: 1355px;
 }
 
-/* --- Custom class for line-wrap on code blocks --- */
+/* --- Line-wrap on code blocks --- */
 
 /* 1. Force the code to wrap and break long strings without spaces */
 .md-typeset .wrap-code pre > code {
@@ -23,19 +23,49 @@
     width: 100% !important;
 }
 
-/* --- Make H1 headings use primary theme color --- */
-.md-typeset h1 {
-  color: var(--md-primary-fg-color);
+/* --- Code block styling --- */
+
+/* Light theme (default) */
+[data-md-color-scheme="default"] {
+    --md-code-bg-color: #EDF7ED; 
 }
 
-/* Shadow box for tag container on mouse-over */
+/* Dark theme (slate) */
+[data-md-color-scheme="slate"] {
+    /* You can tweak the hex or opacity here for better dark mode contrast */
+    --md-code-bg-color: #1B2C3D; 
+}
+
+/* Padding for copy/select buttons */
+.md-typeset pre>code {
+    padding-right: 6em;
+}
+
+/* --- Customize Typeset --- */
+
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  font-weight: 500;
+}
+
+.md-typeset h2 {
+    font-weight: 500;
+}
+
+.md-typeset h3 {
+    font-weight: 500;
+}
+
+/* --- Tags styling --- */
+
 .md-tags .md-tag:hover {
 
     box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
     transition: box-shadow 125ms ease-in-out;
 }
 
-/* Target the back-to-top button on hover */
+/* --- Back-to-top button styling --- */
+
 .md-top:hover {
     
     box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);

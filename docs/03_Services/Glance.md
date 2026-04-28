@@ -48,7 +48,7 @@ hide:
 > 
 > :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuraiton is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
 > 
-> :material-arrow-down-thin:&nbsp;**[See the new config file below](#__codelineno-5-1)**&nbsp;:material-arrow-down-thin:
+> :material-arrow-down-thin:&nbsp;**[See the new config file below](#glance-config)**&nbsp;:material-arrow-down-thin:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |

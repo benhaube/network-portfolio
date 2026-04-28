@@ -23,9 +23,9 @@ hide:
 + A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
 
 #### :symbols-settings-ethernet: Port(s):
-+ :material-hub:&nbsp;Hub:
++ Hub:
     + `8090`
-+ :material-console-network:&nbsp;Agent:
++ Agent:
     + `45867` 
 
 #### :material-link-variant: URL / Access: 

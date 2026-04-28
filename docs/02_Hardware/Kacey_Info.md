@@ -25,23 +25,23 @@ hide:
 #### :material-cube-outline: Build Volume: 
 + `220x220x250`
 
-#### :symbols-commit: Version:
+#### :symbols-commit: Revision:
 + v2.0.5    
 
 #### :material-calendar: Create Date: 
 + 2023/09/05
 
-#### :symbols-memory-alt: Nozzle MCU: 
-+ *Chip:* GD32F303CBT6
-+ *Version:* CR-K1-MAX-NOZZLE-V1.2.0    
+#### :symbols-memory-alt: Printer MCU:
 
-#### :symbols-memory-alt: Leveling MCU: 
-+ *Chip:* GD32E230F8P6
-+ *Version:* CR-K1-MAX-LEVELING-V1.1.0
-
-#### :symbols-memory-alt: MCU: 
-+ *Chip:* GD32F303RET6
-+ *Version:* CR4CU220812S12
++ **Nozzle**
+    + *Chip:* GD32F303CBT6
+    + *Version:* CR-K1-MAX-NOZZLE-V1.2.0
++ **Leveling**
+    + *Chip:* GD32E230F8P6
+    + *Version:* CR-K1-MAX-LEVELING-V1.1.0
++ **Main**
+    + *Chip:* GD32F303RET6
+    + *Version:* CR4CU220812S12
 
 ## :material-lan: Network
 

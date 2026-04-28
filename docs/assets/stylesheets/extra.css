@@ -43,6 +43,10 @@
 
 /* --- Customize Typeset --- */
 
+.md-typeset mark {
+    background-color: #0091eb73;
+}
+
 .md-typeset h1 {
   color: var(--md-primary-fg-color);
   font-weight: 500;
@@ -54,6 +58,10 @@
 
 .md-typeset h3 {
     font-weight: 500;
+}
+
+.md-typeset hr {
+    margin: 0;
 }
 
 /* --- Tags styling --- */

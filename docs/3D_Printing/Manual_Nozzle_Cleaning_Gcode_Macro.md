@@ -36,7 +36,7 @@ hide:
 
 #### Default Cleaning:
   + [ ] Trigger `CLEAN_NOZZLE` from your Fluidd dashboard or Guppy Screen macros list. 
-  + [ ] The nozzle will heat to the default temperature *(**150°C**)*.
+  + [ ] The nozzle will heat to the default temperature *(**150&deg;C**)*.
 
 #### Custom Temperature Cleaning:
   + [ ] You can specify a different temperature through the console by running `CLEAN_NOZZLE TEMP=200`

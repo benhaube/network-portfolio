@@ -85,7 +85,7 @@ hide:
 
 #### :material-check-decagram: Final Verification:
 
-+ [ ] Use a ruler to visually confirm there is exactly a 1mm gap between the bottom of the printed wiper mount and the build plate. 
++ [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate. 
 
 ## :material-file-code-outline: PROWIPER^&copy;^ Mod G-Code File
 

@@ -131,7 +131,7 @@ hide:
 > Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade. 
 
 1. [ ] Home the printer.
-2. [ ] Preheat the bed to your normal bed temperature for 20 minutes *(60° C for PLA)*.
+2. [ ] Preheat the bed to your normal bed temperature for 20 minutes *(60&deg;C for PLA)*.
 3. [ ] Open up Fluidd or mainsail through Orca Slicer or by typing your printers IP address into your web browser with the appropriate port number appended.
 
     | Interface | Port |
@@ -149,12 +149,13 @@ hide:
 5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.
 
     <figure markdown="span">
-        ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/pictures/screws-tilt-adjust.png){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
-    <figcaption>In the image, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise <i>(looking at it from above)</i>, or roughly &frac18; of a turn.</figcaption>
+        ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-light.png#only-light){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
+        ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-dark.png#only-dark){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
+    <figcaption>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly 1&frasl;16 of a turn.</figcaption>
     </figure>
 
     <div class="glightbox-desc img-desc2">
-    <p>In the image, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise <i>(looking at it from above)</i>, or roughly &frac18; of a turn.</p>
+    <p>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly <sup>1</sup>/<sub>16</sub> of a turn.</p>
     </div>
 
 6. [ ] Click retry or repeat the command to check the new level.

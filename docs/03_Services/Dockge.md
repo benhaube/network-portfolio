@@ -45,7 +45,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-```yaml title="compose.yml" linenums="1"
+```yaml title="Debian Server VM | Raspberry Pi 4B Server | Raspberry Pi Zero Server" linenums="1"
 services:
   dockge:
     image: louislam/dockge:1

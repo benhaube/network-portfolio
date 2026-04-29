@@ -178,8 +178,7 @@ plugins:
   - open-in-new-tab:
       add_icon: false
   - awesome-nav
-  - roamlinks:
-      ignore_codeblocks: true
+  - roamlinks
   - callouts
   - panzoom:
       full_screen: true

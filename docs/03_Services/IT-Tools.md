@@ -40,7 +40,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:  
   it-tools:  
     image: sharevb/it-tools:latest  

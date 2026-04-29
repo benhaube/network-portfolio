@@ -38,7 +38,7 @@ hide:
 
 ### :material-cog: Configuration
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   homeassistant:
     container_name: homeassistant

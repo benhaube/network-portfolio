@@ -34,20 +34,15 @@ hide:
 
 | Host Device | Method | Container Name | Image |
 | :---------- | :----- | :------------- | :---- |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `spoolman` | `ghcr.io/donkie/spoolman:0.22.1` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `spoolman` | `ghcr.io/donkie/spoolman:latest` |
 
 ### :material-cog: Configuration 
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   app:
     cpu_shares: 90
     container_name: spoolman
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
-        reservations:
     environment:
       - SPOOLMAN_AUTOMATIC_BACKUP=TRUE
       - SPOOLMAN_DB_TYPE=sqlite

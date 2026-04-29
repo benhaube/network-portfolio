@@ -44,16 +44,11 @@ hide:
 
 #### :material-server-outline: Server:
 
-```yaml title="docker-compose.yml" linenums="1"
-name: big-bear-obsidian-livesync
+```yaml title="compose.yml" linenums="1"
 services:
   app:
     cpu_shares: 90
     container_name: obsidian-livesync
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
     environment:
       - COUCHDB_PASSWORD=password  # (1)!
       - COUCHDB_USER=bhaube
@@ -83,7 +78,7 @@ services:
 
 #### :material-devices: Clients:
 
-```json title="<Vault Dir>/.obsidian/plugins/obsidian-livesync/data.json" linenums="1"
+```json title=".obsidian/plugins/obsidian-livesync/data.json" linenums="1"
 {
   "remoteType": "",
   "useCustomRequestHandler": false,

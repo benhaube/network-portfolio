@@ -70,10 +70,6 @@ services:
       - SYS_MODULE
     cpu_shares: 90
     container_name: big-bear-wg-easy-v15
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
     environment:
       - INIT_DNS=9.9.9.9,149.112.112.112
       - INIT_ENABLED=true

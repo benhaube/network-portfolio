@@ -42,7 +42,7 @@ hide:
 
 #### :material-docker: Docker Compose:
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="Raspberry Pi 4B Server" linenums="1"
 services:  
   glances:    
     image: nicolargo/glances:latest-full  # (1)!
@@ -52,10 +52,10 @@ services:
     read_only: true  
     privileged: false   
     # cap_add:  (2)
-    # - SYS_RAWIO  (3) 
-    # - SYS_ADMIN  (4)
+      # - SYS_RAWIO  (3) 
+      # - SYS_ADMIN  (4)
     # devices:  
-    #   - "/dev/nvme0"  
+      # - "/dev/nvme0"  
   volumes:  
     - "/:/rootfs:ro"  
     - "/var/run/docker.sock:/var/run/docker.sock:ro"  
@@ -70,20 +70,18 @@ services:
     - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart  
     - PYTHONPYCACHEPREFIX=/tmp/py_caches  
   # deploy:  (7)
-  #   resources:  
-  #     reservations:  
-  #       devices:  
-  #         - driver: nvidia  
-  #           count: 1  
-  #           capabilities: [gpu]  
-  
-  #  
+    # resources:
+      # reservations:
+        # devices:
+          # - driver: nvidia
+            # count: 1
+            # capabilities: [gpu]  
   # secrets:  (8)
-  #   - source: glances_password  
-  #     target: /root/.config/glances/<login>.pwd  
+    # - source: glances_password
+      # target: /root/.config/glances/<login>.pwd
 # secrets:  
-#   glances_password:  
-#     file: ./secrets/glances_password
+  # glances_password:  
+    # file: ./secrets/glances_password
 ```
 
 1. See all images tags here: <https://hub.docker.com/r/nicolargo/glances/tags>
@@ -95,7 +93,7 @@ services:
 7. Uncomment for GPU compatibility (Nvidia) inside the container.  
 8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.     
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="ZimaOS NAS" linenums="1"
 services:
   glances:
     cap_add:
@@ -103,12 +101,6 @@ services:
       - SYS_ADMIN
     cpu_shares: 90
     container_name: glances
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
-        reservations:
-          memory: "268435456"
     devices:
       - /dev/sda:/dev/sda
       - /dev/sdb:/dev/sdb

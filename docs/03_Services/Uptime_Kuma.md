@@ -43,7 +43,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   uptime-kuma:
     image: louislam/uptime-kuma:2

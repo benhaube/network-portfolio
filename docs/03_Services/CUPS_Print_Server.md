@@ -45,7 +45,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-```apacheconf title="cupsd.conf" linenums="1"
+```apacheconf title="/etc/cups/cupsd.conf" linenums="1"
 LogLevel warn  
 PageLogFormat  
 MaxLogSize 1m  

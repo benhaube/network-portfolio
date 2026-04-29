@@ -37,7 +37,7 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-> [!change]- Image
+> [!change]+ Image Migration
 > :material-calendar:&nbsp;**Date:** Monday, April 27 2026 <br>
 > :material-swap-horizontal:&nbsp;**Change:** Using a forked Docker image <br>
 > :material-help-circle-outline:&nbsp;**Reason:** Active development, additional features
@@ -137,7 +137,7 @@ hide:
 
 #### :material-docker: Docker Compose:
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   glance:
     container_name: glance

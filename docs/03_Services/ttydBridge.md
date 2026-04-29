@@ -38,17 +38,11 @@ hide:
 
 ### :material-cog: Configuration
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   ttydbridge:
     cpu_shares: 90
     container_name: ttydbridge
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
-        reservations:
-          memory: "8388608"
     environment:
       - EXEC_DIR=/opt
       - PORT=2222

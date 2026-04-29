@@ -51,14 +51,14 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| Host Device                                                                                                     | Method                             | Container Name | Image |
+| :-------------------------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                                   | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)                 | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)                | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                             | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ## :material-cog: Configuration 
 
@@ -68,7 +68,7 @@ hide:
 
 1. Make the required changes to the SSH config file: 
 
-    ```ini title="/etc/ssh/sshd_config" linenums="1"
+    ```conf title="/etc/ssh/sshd_config" linenums="1"
     # This is the sshd server system-wide configuration file.  See  
     # sshd_config(5) for more information.  
   
@@ -305,48 +305,49 @@ hide:
 
 3. Paste the following into the config file:
 
-    ```ini title="~/.ssh/config" linenums="1"
+    ```bash title="~/.ssh/config" linenums="1"
     # --- GLOBAL SETTINGS for all hosts (*) ---
 
-	# All hosts use Bitwarden SSH key agent
-	Host *
-		IdentityAgent ~/.bitwarden-ssh-agent.sock
-	    # Assume 'admin' is the user for all hosts
-	    #User admin
+    Host *
+        IdentityAgent ~/.bitwarden-ssh-agent.sock  # (1)!
+        # User admin  (2)
 
-	# --- HOST-SPECIFIC SETTINGS ---
+    # --- HOST-SPECIFIC SETTINGS ---
 
-	Host pi-server.internal
-		User admin
-		IdentityFile ~/.ssh/pi-server.pub
-		# -- CRITICAL: Prevents offering all other keys stored in Bitwarden --
-		IdentitiesOnly yes
+    Host pi-server.internal
+        User admin
+        IdentityFile ~/.ssh/pi-server.pub
+        IdentitiesOnly yes  # (3)!
+    
+    Host pi-zero.internal
+        User admin
+        IdentityFile ~/.ssh/pi-zero.pub
+        IdentitiesOnly yes
 
-	Host pi-zero.internal
-		User admin
-		IdentityFile ~/.ssh/pi-zero.pub
-		IdentitiesOnly yes
+    Host asusrouter.internal
+        User Admin
+        IdentityFile ~/.ssh/asusrouter.pub
+        IdentitiesOnly yes
 
-	Host asusrouter.internal
-		User Admin
-		IdentityFile ~/.ssh/asusrouter.pub
-		IdentitiesOnly yes
+    Host storage-server.internal
+        User admin
+        IdentityFile ~/.ssh/storage-server.pub
+        IdentitiesOnly yes
 
-	Host storage-server.internal
-		User admin
-		IdentityFile ~/.ssh/storage-server.pub
-		IdentitiesOnly yes
+    Host debian-vm.internal
+        User server-admin
+        IdentityFile ~/.ssh/debian-vm.pub
+        IdentitiesOnly yes
 
-	Host debian-vm.internal
-		User server-admin
-		IdentityFile ~/.ssh/debian-vm.pub
-		IdentitiesOnly yes
-
-	Host k1c-a71e.internal
-		User root
-		IdentityFile ~/.ssh/k1c-a71e.pub
-		IdentitiesOnly no
+    Host k1c-a71e.internal
+        User root
+        IdentityFile ~/.ssh/k1c-a71e.pub
+        IdentitiesOnly no
     ```
+
+    1. All hosts use Bitwarden SSH key agent
+    2. Assume 'admin' is the user for all hosts 
+    3. CRITICAL: Prevents offering all other keys stored in Bitwarden
 
 4. Create the `IdentityFile` for all of the servers in the `~/.ssh` directory and paste in the public key.
     * **Example:**

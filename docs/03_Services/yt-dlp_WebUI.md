@@ -41,7 +41,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   yt-dlp-webui:
     image: marcobaobao/yt-dlp-webui:latest

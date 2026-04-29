@@ -39,7 +39,7 @@ hide:
 
 ### :material-cog: Configuration
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
     homebox:
         image: ghcr.io/sysadminsmedia/homebox:latest
@@ -55,7 +55,6 @@ services:
             - /media/nvme0n1p1/AppData/homebox-data:/data/
         ports:
             - 3100:7745
-
 volumes:
     homebox-data:
         driver: local

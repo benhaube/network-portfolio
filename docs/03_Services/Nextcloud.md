@@ -39,17 +39,11 @@ hide:
 
 ### :material-cog: Configuration
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   nextcloud:
     cpu_shares: 90
     container_name: nextcloud
-    deploy:
-      resources:
-        limits:
-          memory: 16508317696
-        reservations:
-          memory: "536870912"
     image: nextcloud:32.0
     labels:
       icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/icon.png

@@ -48,16 +48,11 @@ hide:
 
 ### :material-cog: Configuration 
 
-```yaml title="docker-compose.yml" linenums="1"
-name: immich
+```yaml title="compose.yml" linenums="1"
 services:
   database:
     cpu_shares: 90
     container_name: immich-postgres
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
     environment:
       - POSTGRES_DB=immich
       - POSTGRES_INITDB_ARGS=--data-checksums
@@ -81,10 +76,6 @@ services:
   immich-machine-learning:
     cpu_shares: 90
     container_name: immich-machine-learning
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
     devices:
       - /dev/dri:/dev/dri
     environment:
@@ -116,12 +107,6 @@ services:
       redis:
         condition: service_started
         required: true
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
-        reservations:
-          memory: "1073741824"
     devices:
       - /dev/dri:/dev/dri
     environment:
@@ -157,10 +142,6 @@ services:
   redis:
     cpu_shares: 90
     container_name: immich-redis
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
     hostname: immich-redis
     healthcheck:
       test:

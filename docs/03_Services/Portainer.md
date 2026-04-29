@@ -122,9 +122,6 @@ services:
         target: /var/lib/docker/volumes
         bind:
           create_host_path: true
-    deploy:
-        limits:
-          memory: 16508321792
     network_mode: bridge
     privileged: false
     restart: unless-stopped

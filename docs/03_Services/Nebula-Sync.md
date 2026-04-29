@@ -31,7 +31,7 @@ hide:
 + N/A
 
 #### :material-key-chain: Credentials: 
-+ :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
++ :material-docker:&nbsp;Docker Compose: `compose.yml`
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -41,7 +41,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   nebula-sync:
     image: ghcr.io/lovelaze/nebula-sync:latest
@@ -76,7 +76,6 @@ services:
 
       # (3)!
       - SYNC_CONFIG_DNS_EXCLUDE=interface,hostRecord,reply.host.force4,reply.host.IPv4,reply.host.force6,reply.host.IPv6
-      # - SYNC_CONFIG_NTP_EXCLUDE=ipv4.address,ipv6.address
       - SYNC_CONFIG_DATABASE_EXCLUDE=maxDBdays,network.expire
 
     restart: always

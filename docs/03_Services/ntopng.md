@@ -12,9 +12,9 @@ tags:
 hide:
   - toc
 ---
-![ntop Logo](../assets/icons/ntop.svg){ width=300 }
+![ntop Logo](../assets/icons/ntop.svg){ width=250 }&ensp;![ntopng logo](../assets/icons/ntopng.png){ width=50 }
 
-# ntopng
+# ntopng (Traffic Probe)
 [GitHub :material-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://www.ntop.org/guides/ntopng/){ .md-button }
 
 ---
@@ -42,7 +42,7 @@ hide:
 
 ### :material-cog: Configuration
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   ntopng:
     image: ntop/ntopng:latest
@@ -56,7 +56,6 @@ services:
     command: [ '-i', 'eth0', '-i', 'eth1', '-i', 'tcp://*:5556c', '-F', 'clickhouse', '--disable-login', '1', '--community' ]
     depends_on:
       - clickhouse
-
   clickhouse:
     image: clickhouse/clickhouse-server:latest
     hostname: clickhouse
@@ -66,7 +65,6 @@ services:
     volumes:
       - clickhouse_data:/var/lib/clickhouse
       - clickhouse_logs:/var/log/clickhouse-server
-
 volumes:
   clickhouse_data:
   clickhouse_logs:

@@ -21,6 +21,7 @@
 *[DoS]: Denial of Service
 *[DoT]: DNS over TLS
 *[DR]: Disaster Recovery
+*[EMF]: Electro Magentic Field
 *[eMMC]: embedded MultiMedia Card
 *[F1]: Formula 1 (Racing Series)
 *[FW]: Firmware

@@ -223,7 +223,7 @@ plugins:
       auto_themed: true
       auto_caption: false
       caption_position: bottom
-      background: white
+      background: Gainsboro
       shadow: true
       manual: true
 

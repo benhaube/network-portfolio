@@ -109,7 +109,7 @@ hide:
 
 ### Modifications
 + :material-cog:&ensp;[[K1_Bed_Level_Knobs_Tutorial|Manual Bed Leveling Mod]]: Installing a bed leveling modification on the [[Kacey_3D-printer|Creality^&copy;^ K1C]].
-+ :material-toothbrush:&ensp;[[Manual_Nozzle_Cleaning_Gcode_Macro|Interactive Manual Nozzle Cleaning Macro]]: Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
++ :devices-toothbrush-nozzle:&ensp;[[Manual_Nozzle_Cleaning_Gcode_Macro|Interactive Manual Nozzle Cleaning Macro]]: Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
 + :devices-prowiper:&ensp;[[PROWIPER_Mod|PROWIPER^&copy;^ Mod]]: Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [[Kacey_3D-printer|Creality^&copy;^ K1C]].
 
 ---

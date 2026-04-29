@@ -176,7 +176,8 @@ plugins:
       enabled: true
   - search
   - awesome-nav
-  - roamlinks
+  - roamlinks:
+      ignore_codeblocks: true
   - callouts
   - panzoom:
       full_screen: true

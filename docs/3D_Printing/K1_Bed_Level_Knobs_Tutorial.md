@@ -31,7 +31,7 @@ hide:
 > If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
 
 1. [ ] Home the printer.
-2. [ ] Lower the bed ¾ of the way down, so that you have enough room to stand the bed up.
+2. [ ] Lower the bed &frac34; of the way down, so that you have enough room to stand the bed up.
 3. [ ] Shut down the power and disconnect the power.
 4. [ ] You can optionally remove the side panels to make the process easier.
 5. [ ] Slowly and gently move the toolhead to the side, so that you have enough room to work.
@@ -46,7 +46,7 @@ hide:
     > [!danger] Caution!
     > Take care not to put any stress on the wiring.
 
-9. [ ] If you are using printed knobs, remove the black hexagonal spacers and drill them to 4.5mm if you aren’t using other spacers.
+9. [ ] If you are using printed knobs, remove the black hexagonal spacers and drill them to 4.5 mm if you aren’t using other spacers.
 10. [ ] Put the bed springs in place of the spacers.
 11. [ ] Optionally add Loctite 222 or 243 to the bottom third of the new screws to combat vibrations.
 12. [ ] Working at one corner from above, put a screw back through the build plate and spring.
@@ -65,7 +65,15 @@ hide:
 
 18. [ ] Place the build plate back on.
 
-![Image of completed bed knobs modification](../assets/pictures/bed-knobs-mod-complete.jpg){ width=400 .on-glb }
+<figure markdown="span">
+![Completed bed leveling mod.](../assets/pictures/bed-knobs-mod-complete.jpg){ width=800 .on-glb data-title="Completed Modification" data-description=".img-desc1" }
+<figcaption>This is what the completed bed leveling mod should look like. <b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</figcaption>
+</figure>
+
+<div class="glightbox-desc img-desc1">
+<p>This is what the completed bed leveling mod should look like.</p>
+<p><b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</p>
+</div>
 
 ## :material-chip: Firmware Setup
 
@@ -74,8 +82,8 @@ hide:
 >
 > [Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 > 
-> > [!danger] Default Password
-> > The default `root` password is `creality_2023` *(at least on my Creality^&copy;^ K1C)*. 
+> > [!security] Default Password
+> > The default `root` password is `creality_2023` *(at least on my Creality K1C)*. 
 > > 
 > > It is highly recommended to change this password using the `passwd` command. 
 
@@ -128,22 +136,26 @@ hide:
 
     | Interface | Port |
     | :-------- | :--: |
-    | :services-fluidd:&nbsp;[Fluidd](../03_Services/Fluidd.md) | `4408` |
-    | :services-mainsail:&nbsp;[Mainsail](https://docs.mainsail.xyz/) | `4409` |
+    | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md) | `4408` |
+    | [:services-mainsail:&nbsp;Mainsail](https://docs.mainsail.xyz/) | `4409` |
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
 
 > [!question inline end] 
 > **Minutes?**
 > 
-> :     15 min = ¼ turn.
+> :     15 min = &frac14; turn.
 
 5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.
 
     <figure markdown="span">
-        ![A screensot of Fluidd UI 'screws-tilt-adjust' dialog](../assets/pictures/screws-tilt-adjust.png){ width=400 .on-glb }
-    <figcaption>In the image, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise *(looking at it from above)*, or roughly &frac18; of a turn.</figcaption>
+        ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/pictures/screws-tilt-adjust.png){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
+    <figcaption>In the image, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise <i>(looking at it from above)</i>, or roughly &frac18; of a turn.</figcaption>
     </figure>
+
+    <div class="glightbox-desc img-desc2">
+    <p>In the image, the back right corner is 0.1277mm lower than the front left, and to correct it, you would turn it 7 minutes clockwise <i>(looking at it from above)</i>, or roughly &frac18; of a turn.</p>
+    </div>
 
 6. [ ] Click retry or repeat the command to check the new level.
 
@@ -165,7 +177,7 @@ hide:
 > This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. 
 > Most aftermarket probes are at least 10x more accurate than factory, and it is highly recommended to upgrade before doing this in order to get the best results and minimize the chances of issues.
 >
-> > [!failure] Error: `key60` 
+> > [!failure] Error: key60
 > > If you are doing this with load cells *(factory probe)* and get a `key60` error *(Internal error command: `BEDMESH_CALIBRATE`)*.
 > > This may be due to too much pressure being applied to the load cells. Try backing off the knobs more and run `SCREWS_TILT_CALCULATE` again.
 

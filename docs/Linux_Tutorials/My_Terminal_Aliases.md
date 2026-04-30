@@ -4,18 +4,19 @@ title: My Terminal Aliases
 hide:
   - toc
 ---
-![material/console icon](../assets/icons/console.svg){ width=200 }
+![material/console icon](../assets/icons/console.svg){ width=225 }
 
 # My Terminal Aliases
 
-> [!info]
-> Here I have assembled a list of aliases that I find useful and include on all of my GNU / Linux PCs and servers. See the guide, **Defining Terminal Aliases**, for instructions on how to use these aliases on your own distribution.
+> [!links] Related Links
+> **Defining Terminal Aliases:**
+> :   Here I have assembled a list of aliases that I find useful and include on all of my GNU / Linux PCs and servers. See the guide linked below for instructions on how to use these aliases on your own distribution.
 > 
-> :   [Defining Terminal Aliases :material-console:](Defining_Terminal_Aliases.md){ .md-button }
+>     [Defining Terminal Aliases :material-console:](Defining_Terminal_Aliases.md){ .md-button }
 
 ---
 
-```bash title="~/.bashrc.d/aliases" linenums="1"
+```bash title="Bash Aliases" linenums="1"
 # --- Universal Shortcuts ---
 alias c='clear'
 alias s='sudo'
@@ -53,20 +54,20 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# --- dnf shortcuts ---
-alias uninstall='sudo dnf remove'
-alias install='sudo dnf install'
-alias update='sudo dnf update'
-alias distrosync='sudo dnf distro-sync'
-alias autoremove='sudo dnf autoremove'
-alias offupdate='sudo dnf upgrade --offline'
-alias offreboot='sudo dnf offline reboot'
+# --- dnf shortcuts ---  (1)
+# alias uninstall='sudo dnf remove'
+# alias install='sudo dnf install'
+# alias update='sudo dnf update'
+# alias distrosync='sudo dnf distro-sync'
+# alias autoremove='sudo dnf autoremove'
+# alias offupdate='sudo dnf upgrade --offline'
+# alias offreboot='sudo dnf offline reboot'
 
-# --- apt shortcuts ---
-alias uninstall='sudo apt remove'
-alias install='sudo apt install'
-alias update='sudo apt update && sudo apt upgrade'
-alias autoremove='sudo apt autoremove'
+# --- apt shortcuts ---  (2)
+# alias uninstall='sudo apt remove'
+# alias install='sudo apt install'
+# alias update='sudo apt update && sudo apt upgrade'
+# alias autoremove='sudo apt autoremove'
 
 # --- cd shortcuts ---
 alias dl='cd ~/Downloads'
@@ -96,7 +97,11 @@ alias gp='git push'
 alias gcm='git commit'
 
 # --- Print working directory and copy it to the clipboard ---
-alias pwdcp='pwd && pwd | xclip -sel clipboard'
+# alias pwdcp='pwd && pwd | xclip -sel clipboard'  (3)
+# alias pwdcp='pwd && pwd | wl-copy'  (4)
 ```
 
----
+1. Uncomment below this line if you are using **Fedora / RHEL** or another distribution using the `dnf` package manager.
+2. Uncomment below this line if you are using **Debian / Ubuntu** or another distribution using the `apt` package manager. 
+3. Uncomment if you are using a system with the **X11** display server.
+4. Uncomment if you are using a system with the **Wayland** display protocol.

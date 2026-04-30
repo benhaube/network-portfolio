@@ -4,7 +4,7 @@ title: Unlocking LUKS Volumes w/ TPM2
 hide:
   - toc
 ---
-![Custom lock-harddisk icon](../assets/icons/lock-harddisk.svg){ width=200 }
+![Custom lock-harddisk icon](../assets/icons/lock-harddisk.svg){ width=225 }
 
 # Unlocking LUKS Volumes with TPM2
 
@@ -202,5 +202,3 @@ hide:
 > :     If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a Bash script I have written. It is available to download in this GitHub repo:
 >
 >       [Update PCRs Script :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
-
----

@@ -4,16 +4,15 @@ title: Setup SSH Login Notification
 hide:
   - toc
 ---
-![material-email-alert icon](../assets/icons/email-alert.svg){ width=200 }
+![material-email-alert icon](../assets/icons/email-alert.svg){ width=225 }
 
 # Setup SSH Login Notification
 
 ---
 ## :symbols-deployed-code-update: Install Required Packages
 
-> [!info]+
-> **Dependencies:**
-> :     In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
+**Dependencies:**
+:     In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
 
 1. For **Debian / Ubuntu** based systems, execute:
     ```bash linenums="1"
@@ -27,9 +26,8 @@ hide:
 
 ## :material-email: Configure `msmtp` with Your Email Credentials 
 
-> [!info]+ 
-> **Config File:**
-> :     Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
+**Config File:**
+:     Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
 
 1. Using the text editor of your choice *(e.g., nano)*, create a configuration file, `/etc/msmtprc`:
 
@@ -68,23 +66,23 @@ hide:
 	+ ++ctrl+x++ to close
 5. Set restrictive permissions for the configuration file.
 
-    > [!security]
-    > This file contains sensitive server information, so it must be readable only by root.
-
     ```bash linenums="1"
     sudo chmod 600 /etc/msmtprc
     sudo chown root:root /etc/msmtprc
     ```
 
-6. Create the hidden file containing the app password for your email login in the **root** user's home directory. 
+    > [!security]
+    > This file contains sensitive server information, so it must be readable only by root.
 
-    >[!tip]+
-    > **2FA / MFA:**  
-    > :    If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
+6. Create the hidden file containing the app password for your email login in the **root** user's home directory. 
 
     ```bash {linenums="1" .wrap-code}
     read -s -p "Enter your Email App Password: " EMAIL_PASS && sudo bash -c "echo $EMAIL_PASS > /root/.email_app_password" && echo
     ```
+
+    >[!tip]+
+    > **2FA / MFA:**  
+    > :    If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
     >[!security] 
     > The `read -s` command is used here to securely enter the password without storing it in your shell history.
@@ -159,9 +157,8 @@ hide:
 
 ## :material-file-code-outline: Creating the Shell Script 
 
-> [!info]+
-> **The Script:**
-> :     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
+**The Script:**
+:     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
 
 1. Create the shell script file.
 
@@ -213,7 +210,7 @@ hide:
 ## :symbols-labs: Testing the Setup
 
 > [!party] Congrats!
-> Congratulations, we are done! You should now have a working email notification set up. You should now recieve an email notification every time a new SSH session is started on your server. Now we will test everything we have configured to make sure it is functioning properly. 
+> Congratulations, we are done! You now have a working email notification set up. You will recieve an email notification to the address defined in your script every time a new SSH session is successfully established on your server. Now we will test everything we have configured to make sure it is functioning properly. 
 
 1. Start a new SSH session either on a new tab in your terminal application, or with a different host.
 2. Check your recipient email account to see if the email has been sent.
@@ -226,17 +223,23 @@ hide:
 
 ## :symbols-note-stack: Important Notes
 
-> [!NOTE]+ Troubleshooting Note
+> [!note]+ Troubleshooting Note
 > If the logs don't immediately indicate a problem, double-check the file permissions on the two sensitive configuration files.
 >
 > + `/etc/msmtprc`: Must be owned by `root:root` and have permissions set to `600`.
 > + `/root/.email_app_password`: Must be owned by `root:root` and have permissions set to `600`.
 
-> [!TIP]+ Unattended Upgrades Notifications
-> To use the `msmpt` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error:
+> [!tip]+ 
+> **Unattended Upgrades Notifications:**
+> :    To use the `msmpt` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
 > 
-> > [!error] Error 551 5.7.1
-> > Not authorised to send from this header address.
+> > [!error]
+> > **Error 551 5.7.1:** 
+> > :    Not authorised to send from this header address.
+>
+> ---
+>
+> **The Fix:**
 > 
 > 1. Open the configuration file in a text editor: 
 >     ```bash linenums="1"
@@ -257,5 +260,3 @@ hide:
 >     ```bash linenums="1"
 >     sudo unattended-upgrade --dry-run --debug
 >     ```
-
----

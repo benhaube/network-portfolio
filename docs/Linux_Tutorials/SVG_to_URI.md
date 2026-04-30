@@ -4,7 +4,7 @@ title: Converting an SVG into Data URI
 hide:
   - toc
 ---
-![Material Design SVG icon customized](../assets/icons/svg.svg){ width=200 }
+![Material Design SVG icon customized](../assets/icons/svg.svg){ width=225 }
 
 # Converting an SVG into Data URI
 
@@ -46,18 +46,18 @@ cat <your-icon>.svg | node -e "const fs = require('fs'); console.log('data:image
 
 If you want to handle the color and size adjustments without even opening a text editor, you can use `sed` to inject those attributes on the fly and pipe the output directly into the Node.js encoder.
 
-Here is a one-liner that injects a green hex code and a `48x48` size into your standard `<your-icon>.svg` and outputs the final data URI:
++ Here is a one-liner that injects a green hex code and a `48x48` size into your standard `<your-icon>.svg` and outputs the final data URI:
 
-```bash {linenums="1" .wrap-code}
-cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
-```
+    ```bash {linenums="1" .wrap-code}
+    cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
+    ```
 
-> [!note]-
-> `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
+    > [!note]+
+    > `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
 
 ## :material-file-code-outline: Making a Function
 
-This is the perfect use case for a shell alias / function. On Linux we can easily add this to the shell's configuration file (`.bashrc`) so it is always available. Here is how to create a custom `svg2uri` function that reads directly from standard input.
+This is the perfect use case for a shell alias / function. On Linux we can easily add this to the Bash shell's configuration file (`.bashrc`) so it is always available. Here is how to create a custom `svg2uri` function that reads directly from standard input.
 
 #### Add the function to your shell profile:
 
@@ -85,8 +85,8 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
     1. Reads from standard input (stdin) and outputs a URL-encoded SVG Data URI
 
-    > [!note]-
-    > I added a `.trim()` in there just to ensure no invisible newline characters at the end of the file get encoded.
+    > [!note]+
+    > I appended a `.trim()` to the end of the command just to ensure no invisible newline characters at the end of the file get encoded.
 
 3. Save and close the `~/.bashrc` file: 
 
@@ -122,7 +122,6 @@ If you want to skip highlighting and copying the terminal output altogether, you
 
 ```bash linenums="1"
 cat icon.svg | svg2uri | wl-copy  # (1)! 
-
 cat icon.svg | svg2uri | xclip -selection clipboard  # (2)!
 ```
 
@@ -144,5 +143,3 @@ Once you have your generated string, you can drop it directly into your code:
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D...");
 }
 ```
-
----

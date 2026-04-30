@@ -4,9 +4,9 @@ title: Immich Slideshow for Nest Hub
 hide:
   - toc
 ---
-![Google Photos Logo](../assets/icons/google-photos.svg){ width=150 }&nbsp;![material-arrow-right-bold](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&nbsp;![Immich Logo](../assets/icons/immich.svg){ width=150 }
+![Immich Frame icon](../assets/icons/immich-frame.svg){ width=225 }
 
-# Project Migration: Google Photos :material-arrow-right-thin: Self-Hosted Ecosystem
+# Project Migration: Immich Slideshow for Nest Hub
 
 > [!info] Project Info
 > **User:** Ben Haube | **Date:** Feb 5, 2026<br>
@@ -16,19 +16,25 @@ hide:
 
 ## :material-broom: Phase 1: Cleaning Google Photos
 
-> [!done] Goal
-> Delete cloud data without losing local files.
+**Goal:**
+:   Delete cloud data without losing local files.
 
 1.  **Safety First *(Mobile)*:**
-    * Uninstall Google Photos App OR Turn OFF "Backup & Sync".
-    * Install **Fossify Gallery** *(via F-Droid)* for local viewing.
+    + Uninstall Google Photos App OR Turn OFF "Backup & Sync".
+    + Install **Fossify Gallery** *(via F-Droid / Obtainium)* for local viewing.
 
         [Fossify Gallery :simple-fdroid:](https://f-droid.org/en/packages/org.fossify.gallery/){ .md-button }
 
 2.  **Deletion *(Desktop)*:**
-    * **Manual:** Go to :simple-googlephotos:&nbsp;[Google Photos](https://photos.google.com), :material-mouse-left-click: first photo, :material-mouse-scroll-wheel::material-arrow-down-thin:, ++shift++ + :material-mouse-left-click: last photo, ++del++.
-    * **Console Script *(Advanced)*:** Open Chrome DevTools ++f12++ :material-arrow-right-thin: Console. Paste script to auto-select/delete. 
-3.  **Finalize:** Empty "Trash/Bin" to reclaim storage.
+    + **Manual:** 
+        + Go to [:services-google-photos:&thinsp;Google Photos](https://photos.google.com) 
+        + :material-mouse-left-click: first photo, :material-mouse-scroll-wheel::material-arrow-down-thin: 
+        + ++shift++ + :material-mouse-left-click: last photo, ++del++.
+    + **Console Script *(Advanced)*:** 
+        + Open Chrome DevTools ++f12++ :material-arrow-right-thin: Console. 
+        + Paste script to auto-select/delete. 
+3.  **Finalize:** 
+    + Empty "Trash/Bin" to reclaim storage.
 
 ### :material-file-code-outline: Photo Cleaning Script
 
@@ -80,16 +86,16 @@ deletePhotos();
 
 1. If the script selects them but doesn't delete them, just click the :material-trash-can-outline: icon yourself after it does the hard work of selecting everything.
 
-## :material-dns: Phase 2: Server-Side Setup *(ZimaOS NAS)*
+## :material-server-outline: Phase 2: Server-Side Setup *(ZimaOS NAS)*
 
-> [!done] Goal
-> Replicate "Live Albums" and generate the Nest Hub interface.
+**Goal:**
+:   Replicate "Live Albums" and generate the Nest Hub interface.
 
 ### :material-docker: Docker Compose Snippet
 
 Add these services to your existing Immich stack or a new stack.
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="compose.yml" linenums="1"
 services:
   immich_frame:  # (1)!
     image: ghcr.io/immichframe/immichframe:latest
@@ -145,21 +151,23 @@ Place this in the same folder as your docker-compose file.
 
 ## :material-wan: Phase 3: Network & Cloudflare
 
-> [!done] Goal
-> Allow Nest Hubs to load the frame securely.
+**Goal:**
+:   Allow Nest Hubs to load the frame securely.
 
-1. **Tunnel:** Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081`
+1. **Tunnel:** 
+    + Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081` using the [:services-cloudflare:&thinsp;Cloudflare](../03_Services/Cloudflared.md) tunnel.
 2. **WAF Rules *(Critical)*:**
-    * Go to Cloudflare Dashboard :material-arrow-right-thin: Security :material-arrow-right-thin: WAF :material-arrow-right-thin: Custom Rules.
-    * **Create Rule:** If Hostname equals `frame.rac3r4life.online` :material-arrow-right-thin: **Skip** "Super Bot Fight Mode" and "Managed Challenge".
-        * _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
+    + Go to Cloudflare Dashboard :material-arrow-right-thin: Security :material-arrow-right-thin: WAF :material-arrow-right-thin: Custom Rules.
+    + **Create Rule:** If Hostname equals `frame.rac3r4life.online` :material-arrow-right-thin: **Skip** "Super Bot Fight Mode" and "Managed Challenge".
+        + _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
 ## :material-home-automation: Phase 4: Automation *(Home Assistant on Pi 4)*
 
-> [!done] Goal
-> Force Nest Hub to show the frame when idle.
+**Goal:**
+:   Force Nest Hub to show the frame when idle.
 
-**Prerequisite:** Install "DashCast" add-on in [[Home_Assistant|Home Assistant]].
+**Prerequisite:** 
+:   Install "DashCast" add-on in [:material-home-assistant:&thinsp;Home Assistant](../03_Services/Home_Assistant.md).
 
 **Automation YAML:**
 
@@ -184,5 +192,3 @@ action:
         metadata:
           title: "Immich Frame" 
 ```
-
----

@@ -35,9 +35,9 @@ graph
     classDef usb-storage fill: stroke:;
 
     %% --- Ledgend --- %%
-    VLAN50("VLAN50<br><i>(192.168.50.0/24)</i>"):::vlan50
-    VLAN52("VLAN52<br><i>(192.168.52.0/24)</i>"):::vlan52
-    VLAN53("VLAN53<br><i>(192.168.53.0/24)</i>"):::vlan53
+    VLAN50("VLAN50<br><code>192.168.50.0/24</code>"):::vlan50
+    VLAN52("VLAN52<br><code>192.168.52.0/24</code>"):::vlan52
+    VLAN53("VLAN53<br><code>192.168.53.0/24</code>"):::vlan53
     Service("Services"):::service
     OnboardStorage[("Onboard Storage")]:::storage
     USB-Storage[("USB / Virtual Storage")]:::usb-storage
@@ -83,26 +83,26 @@ graph TD
     Router == "Backhaul" ==> AiMesh_Node
 
     %% --- Trusted VLAN --- %%
-    subgraph Trusted_VLAN50 ["<b>VLAN 50: Trusted</b> <i>(192.168.50.x)</i>"]
+    subgraph Trusted_VLAN50 ["<b>VLAN 50:</b> Trusted <code>[192.168.50.x]</code>"]
         direction TB
         
-        Clients("<b>Clients:</b><br>Ben's Desktop<br>Rob's Desktop<br>Laptops<br>Phones<br>Smart TVs"):::vlan50
-        Printer("<b>Creality K1C</b><br><i>(3D-printer)</i>"):::vlan50
+        Clients("<b>Trusted Clients:</b><br>Ben's Desktop<br>Rob's Desktop<br>Laptops<br>Phones<br>Smart TVs"):::vlan50
+        Printer("<b>Creality<sup>&copy;</sup> K1C</b><br><i>(3D-printer)</i>"):::vlan50
         Brother("<b>Brother HL-L2300D</b><br><i>(Laser Printer)</i>"):::vlan50
         USB_Ext[("<b>USB Flash Drive</b><br><i>(32 GB)</i>")]:::usb-storage
 
         %% --- ZimaOS NAS --- %%
-        subgraph Server_Zima ["<b>ZimaOS NAS</b> <i>(.4 / .5)</i>"]
+        subgraph Server_Zima ["<b>ZimaOS NAS</b> <code>[.4 / .5]</code>"]
             Storage_SMB[("<b>RAID: Quick-Storage</b><br><i>(SMB / NFS Shares)</i>")]:::storage
             Storage_NVMe[("<b>nvme0n1p1</b><br><i>(Docker / VM Storage)</i>")]:::storage
             Storage_MMC[("<b>Onboard MMC</b><br><i>(ZimaOS)</i>")]:::storage
-            Service_Docker("<b>Docker Containers:</b><br>Beszel Agent<br>Cloudflared<br>F1 Replay Timing<br>Glances<br>Homebox<br>Immich<br>Nginx<br>ntopng<br>Obsidian LiveSync<br>OpenSpeedTest<br>Portracker<br>Spoolman<br>Syncthing<br>ttydBridge<br>WireGuard<br>yt-dlp WebUI"):::service
+            Service_Docker("<b>Docker Containers:</b><br>Beszel Agent<br>Cloudflared<br>Dockge<br>F1 Replay Timing<br>Glances<br>Homebox<br>Immich<br>Nginx<br>ntopng<br>Obsidian LiveSync<br>OpenSpeedTest<br>Portracker<br>Spoolman<br>Syncthing<br>ttydBridge<br>WireGuard<br>yt-dlp WebUI"):::service
             
             %% --- Debain VM Server --- %%
-            subgraph VM_Debian ["<b>Debian Server VM</b> <i>(.6)</i>"]
+            subgraph VM_Debian ["<b>Debian Server VM</b> <code>[.6]</code>"]
                 DNS_Primary("<b>Primary DNS</b><br><i>(Technitium Cluster)</i>"):::service
                 Service_Docker_VM("<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"):::service
-                Virtual_Disk[("<b>Virtual Disk</b><br><i>(Debian Trixie)</i>")]:::usb-storage
+                Virtual_Disk[("<b>Virtual Disk Image</b><br><i>(Debian Trixie)</i>")]:::usb-storage
             end
         end
         
@@ -115,7 +115,7 @@ graph TD
         Service_Docker -- "Storage" --> Storage_NVMe
 
         %% --- Raspberry Pi 4B Server --- %%
-        subgraph Server_Pi4 ["<b>Raspberry Pi 4B Server</b> <i>(.2)</i>"]
+        subgraph Server_Pi4 ["<b>Raspberry Pi 4B Server</b> <code>[.2]</code>"]
             MicroSD_Pi4[("<b>MicroSD Storage</b><br><i>(Debian Trixie)</i>")]:::storage
             DNS_Secondary("<b>Secondary DNS</b><br><i>(Technitium Cluster)</i>"):::service
             HA("Home Assistant"):::service
@@ -133,7 +133,7 @@ graph TD
         Server_Pi4 -. "USB Storage" .- USB_Ext
 
         %% --- Raspberry Pi Zero Server --- %%
-        subgraph Server_PiZero ["<b>Raspberry Pi Zero Server</b> <i>(.3)</i>"]
+        subgraph Server_PiZero ["<b>Raspberry Pi Zero Server</b> <code>[.3]</code>"]
             MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(Debian Trixie)</i>")]:::storage
             Service_Docker_PiZero("<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"):::service
             Syncthing_PiZero("Syncthing"):::service
@@ -148,12 +148,12 @@ graph TD
     end
 
     %% --- Segregated VLANs --- %%
-    subgraph IoT_VLAN53 ["<b>VLAN 53: IoT Network</b> <i>(192.168.53.x)</i>"]
+    subgraph IoT_VLAN53 ["<b>VLAN 53:</b> IoT <code>[192.168.53.x]</code>"]
         direction TB
         IoTClients("IoT Clients"):::vlan53  
     end
 
-    subgraph Guest_VLAN52 ["<b>VLAN 52: Guest Wi-Fi</b> <i>(192.168.52.x)</i>"]
+    subgraph Guest_VLAN52 ["<b>VLAN 52:</b> Guest <code>[192.168.52.x]</code>"]
         direction TB
         GuestClients("Guest Clients"):::vlan52
     end
@@ -164,7 +164,7 @@ graph TD
     Clients -- "HTTPS" --> Caddy
     Caddy -- "DNS Query" --> DNS_Primary
     Caddy -- "DNS Query" --> DNS_Secondary
-    HA -. "Device Control<br><i>(wlan0)</i>" .- IoT_VLAN53
+    HA -. "Device Control<br><code>wlan0</code>" .- IoT_VLAN53
     Clients -- "SMB / NFS / Backups" --> Storage_SMB
     Clients -- "Photo Backup<br><i>(Immich)</i>" --> Storage_SMB
     Clients -- "Manage" --> HA

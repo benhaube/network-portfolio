@@ -36,7 +36,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network :material-arrow-right-thin: "Beszel Hub (Admin)"
 + :material-docker:&nbsp;Docker Compose: 
-    + `docker-compose.yml`
+    + `compose.yml`
 
 ## :symbols-deployed-code-update: Deployment Details
 

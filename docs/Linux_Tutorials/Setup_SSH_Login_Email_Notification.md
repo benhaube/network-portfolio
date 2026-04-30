@@ -212,7 +212,7 @@ hide:
 
 ## :symbols-labs: Testing the Setup
 
-> [!done] Congrats!
+> [!party] Congrats!
 > Congratulations, we are done! You should now have a working email notification set up. You should now recieve an email notification every time a new SSH session is started on your server. Now we will test everything we have configured to make sure it is functioning properly. 
 
 1. Start a new SSH session either on a new tab in your terminal application, or with a different host.

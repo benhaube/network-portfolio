@@ -89,7 +89,7 @@ hide:
 
 ## :material-file-code-outline: PROWIPER^&copy;^ Mod G-Code File
 
-```gcode title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58"
+```cfg title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58"
 #################################################################
 # _____ ____  ____    _   _ _   _ ____        _   _ _____ _____ #
 #|___ /|  _ \|  _ \  | | | | | | | __ )      | \ | | ____|_   _|#

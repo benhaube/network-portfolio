@@ -65,7 +65,7 @@ hide:
 
 ## :material-file-code-outline: G-code Macro
 
-```gcode title="manual-nozzle-clean.cfg" linenums="1"
+```cfg title="manual-nozzle-clean.cfg" linenums="1"
 ################################
 ##  Manual-Nozzle-Clean v2.0  ##
 ##   Now with more options!   ##

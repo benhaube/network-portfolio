@@ -93,7 +93,7 @@ hide:
 
     **Option 2:** Add this to `printer.cfg`
 
-    ```gcode title="K1/K1C/K1SE" linenums="1"
+    ```cfg title="K1/K1C/K1SE" linenums="1"
     [screws_tilt_adjust]
     screw1: 25,20
     screw1_name: left front
@@ -108,7 +108,7 @@ hide:
     screw_thread: CW-M4
     ```
 
-    ```gcode title="K1 MAX" linenums="1"
+    ```cfg title="K1 MAX" linenums="1"
     [screws_tilt_adjust]
     screw1: 21,21
     screw1_name: left front

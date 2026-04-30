@@ -35,7 +35,7 @@ hide:
 + :material-laptop:&ensp;[[Ben's_Laptop|Ben's Laptop PC]]: Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
 + :material-debian:&ensp;[[Debian_Server_VM|Debian Server VM]]: General purpose Debian Linux server hosted on *[[ZimaBoard_2_NAS|ZimaOS NAS]]*. 
 + :material-wan:&ensp;[[Hitron_Modem|Hitron Modem]]: DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
-+ :material-printer-3d-nozzle:&ensp;[[Kacey_3D-printer|Kacey (Creality^&copy;^) 3D-Printer]]: Creality K1C 3D-printer located in the office upstairs. 
++ :material-printer-3d-nozzle:&ensp;[[Kacey_3D-printer|Kacey 3D-Printer (Creality^&copy;^ K1C)]]: Creality K1C 3D-printer located in the office upstairs. 
 + :material-raspberry-pi:&ensp;[[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]]: Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
 + :material-raspberry-pi:&ensp;[[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server]]: Second DNS server *(Pi-hole)*.
 + :material-desktop-tower:&ensp;[[Rob's_Desktop|Rob's Desktop PC]]: Rob's main desktop PC located in the office upstairs.

@@ -138,6 +138,7 @@ markdown_extensions:
       base_path:
         - .
         - docs/assets/code/mermaid
+        - docs/assets/code/gcode
       auto_append:
         - includes/abbreviations.md
   - pymdownx.betterem

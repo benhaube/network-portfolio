@@ -94,33 +94,11 @@ hide:
     **Option 2:** Add this to `printer.cfg`
 
     ```cfg title="K1/K1C/K1SE" linenums="1"
-    [screws_tilt_adjust]
-    screw1: 25,20
-    screw1_name: left front
-    screw2: 25,190
-    screw2_name: left back
-    screw3: 195,190
-    screw3_name: right back
-    screw4: 195,20
-    screw4_name: right front
-    speed: 100
-    horizontal_move_z: 5
-    screw_thread: CW-M4
+    --8<-- "screw-tilt-k1.cfg"
     ```
 
     ```cfg title="K1 MAX" linenums="1"
-    [screws_tilt_adjust]
-    screw1: 21,21
-    screw1_name: left front
-    screw2: 48,270
-    screw2_name: left back
-    screw3: 250,270
-    screw3_name: right back
-    screw4: 279,21
-    screw4_name: right front
-    speed: 100
-    horizontal_move_z: 5
-    screw_thread: CW-M4
+    --8<-- "screw-tilt-k1max.cfg"
     ```
 
 4. [ ] Save *(if you edited `printer.cfg`)* and restart the printer to apply the changes.
@@ -184,5 +162,3 @@ hide:
 
 > [!note] Bed Warping
 > If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
-
----

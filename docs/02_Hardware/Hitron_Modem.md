@@ -50,11 +50,11 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!config inline] Critical Configurations
-> **:material-network-off: WAN Down:**
+> :material-web-off:&nbsp;**WAN Down:**
 > 
 > * If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
 >   
-> **:material-application-cog-outline: Access WebUI:**
+> :material-application-cog-outline:&nbsp;**Access WebUI:**
 > 
 > * To access the modem's Web UI enter <https://192.168.100.1> or <https://hitron-modem.internal>
 

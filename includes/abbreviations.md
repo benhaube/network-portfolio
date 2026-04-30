@@ -17,6 +17,7 @@
 *[DNS]: Domain Name Service
 *[DDNS]: Dynamic Domain Name Service
 *[DDoS]: Distributed Denial of Service
+*[DOCSIS]: Data Over Cable Service Interface Specification
 *[DoH]: DNS over HTTPS
 *[DoS]: Denial of Service
 *[DoT]: DNS over TLS

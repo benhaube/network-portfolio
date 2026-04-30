@@ -19,7 +19,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ DOCSIS Cable Modem
++ DOCSIS 3.1 Cable Modem
 
 #### :material-map-marker-outline: Location: 
 + Living-Room

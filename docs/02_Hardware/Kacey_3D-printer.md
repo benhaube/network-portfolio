@@ -1,6 +1,6 @@
 ---
 icon: material/printer-3d-nozzle
-title: Kacey (Creality K1C) 3D-Printer
+title: Kacey 3D-Printer (Creality K1C)
 tags:
   - Hardware
   - Network
@@ -13,14 +13,14 @@ hide:
 ---
 ![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }![Creality Logo](../assets/icons/creality.svg){ width=50 }
 
-# Kacey (Creality^&copy;^ K1C) 3D-Printer
+# Kacey 3D-Printer (Creality^&copy;^ K1C)
 [Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview
 
 > [!links inline end]+ More K1C Info
-> *See more detailed information about the Creality^&copy;^ K1C hardware:* 
+> See more detailed information about the Creality^&copy;^ K1C hardware:
 >
 > [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
@@ -78,7 +78,7 @@ hide:
 | Status | Service | Port(s) | Role / Notes |
 | :----: | :------ | :-----: | :----------- |
 | *Active* | :services-fluidd:&nbsp;[[Fluidd]] | `80` `4408` | A Web UI for managing the printer. |
-| *Active* | :services-klipper:&nbsp;[[Moonraker]] | `7125` | An API that allows applications to communicate with the 3D-printing firmware, :services-klipper: [Klipper](https://www.klipper3d.org/).  |
+| *Active* | :services-klipper:&nbsp;[[Moonraker]] | `7125` | An API that allows applications to communicate with the 3D-printing firmware, [:services-klipper:&thinsp;Klipper](https://www.klipper3d.org/).  |
 | *Active* | :material-console-network:&nbsp;[[SSH]] | `22` | Remote terminal access. |
 
 ---
@@ -105,7 +105,7 @@ hide:
 > 
 > **:material-code-block-tags: Custom G-Code Macros:**
 > 
-> + [:material-toothbrush:&nbsp;Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
+> + [:devices-toothbrush-nozzle:&nbsp;Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
 >     + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
 
 #### :material-update: Update Process:

@@ -54,7 +54,7 @@ hide:
 + :services-beszel:&ensp;[[Beszel_Hub|Beszel]]: A lightweight server monitoring hub with historical data, docker stats, and alerts.
 + :services-caddy:&ensp;[[Caddy]]: Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 + :material-web-clock:&nbsp;[[Chrony|Chrony *(NTP Server)*]]: Advanced, lightweight NTP client and server.
-+ :services-cloudflare:&ensp;[[Cloudflared]]: A secure reverse-proxy tunnel for hosting private services. Currently, *[[Immich]]* and *[[Uptime_Kuma|Uptime Kuma]]* are utilizing this service. 
++ :services-cloudflare:&ensp;[[Cloudflared]]: A secure reverse-proxy tunnel for hosting private services on the public Internet.
 + :material-printer:&ensp;[[CUPS_Print_Server|CUPS *(Open Print Server)*]]: Print server for USB-connected `Brother_HL-L2300D_series` laser printer. 
 + :services-dockge:&ensp;[[Dockge]]: A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 + :services-f1-replay-timing:&ensp;[[F1_Replay_Timing|F1 Replay Timing]]: Visualization of real-time track data and telemetry synced to F1 live and replays.

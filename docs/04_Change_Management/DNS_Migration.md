@@ -14,6 +14,8 @@ hide:
 
 # DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)
 
+---
+
 ## :material-file-document: Phase 1: Pre-Migration & Documentation
 
 1. **Export Pi-hole Data:** 
@@ -21,9 +23,9 @@ hide:
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary: [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) :material-arrow-right-thin: `192.168.50.2` 
-    + [ ] Secondary: [:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md) :material-arrow-right-thin: `192.168.50.6`
-    + [ ] Tertiary/Failover: [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) :material-arrow-right-thin: `192.168.50.3`
+    + [ ] Primary: [:material-raspberry-pi:&thinsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) :material-arrow-right-thin: `192.168.50.2` 
+    + [ ] Secondary: [:material-debian:&thinsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md) :material-arrow-right-thin: `192.168.50.6`
+    + [ ] Tertiary/Failover: [:material-raspberry-pi:&thinsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) :material-arrow-right-thin: `192.168.50.3`
 
 ## :material-dns: Phase 2: Server Provisioning
 
@@ -73,9 +75,9 @@ hide:
 1. **Check DoT Status:** 
     + [ ] Run `#!bash dig @[Primary-IP] +short txt proto.on.quad9.net` to ensure the upstream is encrypted.
 2. **Verify Pi Zero Fallback:** 
-    + [ ] Temporarily stop the Technitium service on both the VM and Pi 4B. Confirm the Pi Zero Pi-hole takes over resolution.
+    + [ ] Temporarily stop the Technitium service on both the VM and Pi 4B. Confirm the Pi Zero takes over resolution.
 3. **Audit Dashboard:** 
-    + [ ] Monitor the Technitium dashboard for any unexpected NXDOMAIN responses or high latency.
+    + [ ] Monitor the Technitium dashboard for any unexpected `NXDOMAIN` responses or high latency.
 
 ---
 
@@ -84,12 +86,12 @@ graph LR
     %% Phase 1
     subgraph Phase_1 ["<b>Phase 1:</b> Pre-Migration & Documentation"]
         direction TB
-        Export("<b>Export Pi-hole Data:</b> Run a 'Teleporter' backup on your current primary and secondary Pi-holes.")
-        Document("<b>Document Static Records:</b> Note all local DNS records and DHCP reservations <i>(if Pi-hole is handling DHCP)</i>.")
-        Map("<b>Map IP Addresses:</b>")
-        Primary("<b>Primary</b> (Raspberry Pi 4B): 192.168.50.2")
-        Secondary("<b>Secondary</b> (Debian VM): 192.168.50.6")
-        Tertiary("<b>Tertiary/Failover</b> (Raspberry Pi Zero Server): 192.168.50.3")
+        Export("<b>Export Pi-hole Data:</b><br>Run a 'Teleporter' backup on your current primary and secondary Pi-holes.")
+        Document("<b>Document Static Records:</b><br>Note all local DNS records and DHCP reservations.")
+        Map("<b>Map IP Addresses</b>")
+        Primary("<b>Primary:</b><br><i>(Raspberry Pi 4B)</i><br><code>192.168.50.2</code>")
+        Secondary("<b>Secondary:</b><br><i>(Debian VM)</i><br><code>192.168.50.6</code>")
+        Tertiary("<b>Tertiary/Failover:</b><br><i>(Raspberry Pi Zero Server)</i><br><code>192.168.50.3</code>")
     end
     
     %% Connections (Phase_1)
@@ -103,17 +105,17 @@ graph LR
     %% Phase 2
     subgraph Phase_2 ["<b>Phase 2:</b> Server Provisioning"]
         direction TB
-        subgraph Debian_VM ["<b>Debian VM (ZimaOS):</b>"]
+        subgraph Debian_VM ["<b>Debian VM</b> <i>(ZimaOS NAS)</i>"]
             direction TB
-            Allocate("<b>Allocate Resources:</b> Assign 2 vCPUs and 2GB RAM to the VM.")
-            Install("<b>Install Technitium:</b> Use the installer script or Docker container.")
-            Configure("<b>Configure Upstream:</b> Set Quad9 DoT <i>(9.9.9.9:853 and 149.112.112.112:853)</i>.")
-            Import("<b>Import Records:</b> Manually add local DNS zones/records from the Pi-hole export.")
+            Allocate("<b>Allocate Resources:</b><br>Assign 2 vCPUs and 2GB RAM to the VM.")
+            Install("<b>Install Technitium:</b><br>Use the installer script or Docker container.")
+            Configure("<b>Configure Upstream:</b><br>Set Quad9 DoT<br><code>9.9.9.9:853</code><br><code>149.112.112.112:853</code>")
+            Import("<b>Import Records:</b><br>Manually add local DNS zones/records from the Pi-hole export.")
         end
-        subgraph RasPi_4B ["<b>Raspberry Pi 4B:</b>"]
+        subgraph RasPi_4B ["<b>Raspberry Pi 4B</b>"]
             direction TB
-            Install_Pi("<b>Install Technitium:</b> Match the version running on the Debian VM.")
-            Set_Secondary("<b>Set as Secondary:</b> Configure identical upstream servers.")
+            Install_Pi("<b>Install Technitium:</b><br>Match the version running on the Debian VM.")
+            Set_Secondary("<b>Set as Secondary:</b><br>Configure identical upstream servers.")
         end   
     end
     
@@ -128,11 +130,11 @@ graph LR
     %% Phase 3
     subgraph Phase_3 ["<b>Phase 3:</b> Cluster Synchronization"]
         direction TB
-        Enable_Clustering("<b>Enable Clustering:</b>")
+        Enable_Clustering("<b>Enable Clustering</b>")
         DebianVM_Master("Set the Debian VM as the <b>Master</b>.")
         Pi4B_Slave("Set the Pi 4B as the <b>Slave</b>.")
-        Verify_Sync("<b>Verify Sync:</b> Ensure local zones and blocklists are appearing on both instances.")
-        Tuning("<b>Blocklist Tuning:</b> Add your preferred lists <i>(e.g., OISD, HaGeZi)</i> and verify they are enabled on both.")
+        Verify_Sync("<b>Verify Sync:</b><br>Ensure local zones and blocklists are appearing on both instances.")
+        Tuning("<b>Blocklist Tuning:</b><br>Add your preferred lists <i>(e.g., OISD, HaGeZi)</i> and verify they are enabled on both.")
     end
     
     %% Connections (Phase_3)
@@ -143,15 +145,15 @@ graph LR
     Verify_Sync --> Tuning
     Phase_3 ==> Phase_4
     
-    subgraph Phase_4 ["<b>Phase 4</b>: Network Cutover"]
+    subgraph Phase_4 ["<b>Phase 4:</b> Network Cutover"]
         direction TB
-        DHCP("<b>Update Router DHCP:</b>")
-        DHCP_1("Point DNS 1 to the <b>Debian Server VM</b> IP.")
-        DHCP_2("Point DNS 2 to the <b>Pi 4B Server</b> IP.")
-        DHCP_3("<i>(Optional)</i> Point DNS 3 to the <b>Pi Zero Server</b> IP.")
+        DHCP("<b>Update Router DHCP</b>")
+        DHCP_1("Point DNS 1 to the <b>Debian Server VM</b> IP address.")
+        DHCP_2("Point DNS 2 to the <b>Pi 4B Server</b> IP address.")
+        DHCP_3("<i>(Optional)</i> Point DNS 3 to the <b>Pi Zero Server</b> IP address.")
         
-        Clear_Cache("<b>Clear Local Caches:</b> Flush DNS on your main workstation")
-        Test_Resolution("<b>Test Resolution:</b> Run 'dig @[Primary-IP] google.com' and verify the [SERVER] field.")
+        Clear_Cache("<b>Clear Local Caches:</b><br>Flush DNS on your main workstation")
+        Test_Resolution("<b>Test Resolution:</b><br>Run '<code>dig @[Primary-IP] google.com</code>' and verify the <code>[SERVER]</code> field.")
     end
     
     %% Connections (Phase_4)
@@ -165,9 +167,9 @@ graph LR
     
     subgraph Phase_5 ["<b>Phase 5:</b> Verification & Safety Net"]
         direction TB
-        DoT_Status("<b>Check DoT Status:</b> Ensure upstream is encrypted.")
-        Fallback("<b>Verify Pi Zero Fallback:</b> Temporarily stop the Technitium service on both the VM and Pi 4B. Confirm the Pi Zero Pi-hole takes over resolution.")
-        Audit("<b>Audit</b> Dashboard:</b> Monitor the Technitium dashboard for any unexpected NXDOMAIN responses or high latency.")
+        DoT_Status("<b>Check DoT Status:</b><br>Ensure upstream is encrypted.<br>'<code>dig @[Primary-IP] +short txt proto.on.quad9.net</code>'")
+        Fallback("<b>Verify Pi Zero Fallback:</b><br>Temporarily stop the Technitium service on both the <b>Debian VM</b> and <b>Pi 4B</b>. Confirm the <b>Pi Zero</b> takes over resolution.")
+        Audit("<b>Audit Dashboard:</b><br>Monitor the Technitium dashboard for any unexpected <code>NXDOMAIN</code> responses or high latency.")
     end
     
     %% Connections (Phase_5)

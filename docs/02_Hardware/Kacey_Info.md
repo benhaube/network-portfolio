@@ -13,7 +13,7 @@ hide:
 ---
 ![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d.svg){ width=200 }![Creality Logo](../assets/icons/creality.svg){ width=50 }
 
-# More Kacey (Creality^&copy;^ K1C) Info
+# More Kacey Info
 [Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---
@@ -48,7 +48,8 @@ hide:
 #### Moonraker:
 
 + :material-link-variant:&nbsp;URL: <http://k1c-a71e.internal:7125>
-+ :material-key-chain:&nbsp;API Key: [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd" 
++ :material-key-chain:&nbsp;API Key: 
+    + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): Local Network :material-arrow-right-thin: "Fluidd @ K1C-A71E" 
 
 #### Fluidd:
 

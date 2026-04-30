@@ -14,26 +14,27 @@ hide:
 
 # Reverse Proxy & DNS Routing
 
-> [!info] Goal
-> Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
+> [!info]
+> **Goal:**
+> :   Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
+
+---
 
 ## :material-information-outline: Architecture Overview
 
 #### DNS Servers:
 
-* Technitium Cluster Primary: *[:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)*
-* Technitium Cluster Secondary: *[:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)*
+* Technitium Cluster Primary: *[:material-debian:&thinsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)*
+* Technitium Cluster Secondary: *[:material-raspberry-pi:&thinsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)*
 
 #### Reverse Proxy:
 
-* :simple-caddy: Caddy: *[:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)* -- *(Native `apt` Install)*
+* Caddy: *[:material-raspberry-pi:&thinsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)* &mdash; *(Native `apt` Install)*
 
 #### Application Hosts:
 
 * [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 * [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
-
----
 
 ## :material-file-cloud: Technitium DNS Records
 
@@ -69,8 +70,8 @@ immich.internal {
 
 ```mermaid { .pz-ignore }
 graph TD
-    User[Client Browser] -- "DNS Query: immich.internal" --> DNS[Technitium DNS]
-    DNS -- "Returns CNAME: proxy IP" --> User
-    User -- "HTTP/S Request port 80/443" --> Proxy[Caddy: Pi Zero 2 W]
-    Proxy -- "Forwards Traffic" --> App[Immich: port 2283]
+    User[Client Browser] -- "DNS Query:<br><code>immich.internal</code>" --> DNS[Technitium DNS]
+    DNS -- "Returns CNAME:<br><code>192.168.50.3</code>" --> User
+    User -- "HTTPS Request port: <code>80/443</code>" --> Proxy[<b>Caddy:</b> Pi Zero 2 W]
+    Proxy -- "Forwards Traffic" --> App[<b>Immich:</b> Port <code>2283</code>]
 ```

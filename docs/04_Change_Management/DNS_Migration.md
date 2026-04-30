@@ -79,7 +79,7 @@ hide:
 3. **Audit Dashboard:** 
     + [ ] Monitor the Technitium dashboard for any unexpected `NXDOMAIN` responses or high latency.
 
----
+## :material-sitemap: Flowchart
 
 ```mermaid
 --8<-- "dns_migration.mmd"

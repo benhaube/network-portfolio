@@ -68,7 +68,7 @@ hide:
 
 1. Make the required changes to the SSH config file: 
 
-    ```conf title="/etc/ssh/sshd_config" linenums="1"
+    ```nt title="/etc/ssh/sshd_config" linenums="1"
     # This is the sshd server system-wide configuration file.  See  
     # sshd_config(5) for more information.  
   
@@ -305,7 +305,7 @@ hide:
 
 3. Paste the following into the config file:
 
-    ```bash title="~/.ssh/config" linenums="1"
+    ```kconfig title="~/.ssh/config" linenums="1"
     # --- GLOBAL SETTINGS for all hosts (*) ---
 
     Host *

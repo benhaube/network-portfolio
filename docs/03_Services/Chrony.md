@@ -41,7 +41,7 @@ hide:
 
 #### :material-server-outline: Server:
 
-```nix title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1"
+```nt title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1"
 ###########################################################################
 ### CHRONY.CONF                                                           #
 # This is a chrony configuration file.  You can edit the options that you #
@@ -313,7 +313,7 @@ lock_all
 
 #### :material-devices: Clients:
 
-```nix title="/etc/chrony.conf" linenums="1"
+```nt title="/etc/chrony.conf" linenums="1"
 # These servers were defined in the installation:
 server asusrouter.internal iburst
 

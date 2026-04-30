@@ -46,7 +46,7 @@ hide:
 
 #### :material-raspberry-pi: [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:
 
-```ini title="/etc/samba/smb.conf" linenums="1"
+```linuxconfig title="/etc/samba/smb.conf" linenums="1"
 [global]  
  workgroup = WORKGROUP  
  server string = pi-server %v  
@@ -63,7 +63,7 @@ hide:
 
 #### :material-nas: [[ZimaBoard_2_NAS|ZimaOS NAS]] Config:
 
-```ini title="/etc/samba/smb.conf" linenums="1"
+```linuxconfig title="/etc/samba/smb.conf" linenums="1"
 # custom config  
   
 [global]  
@@ -79,7 +79,7 @@ include = /etc/samba/casa.%U.conf
 
 **:material-account-outline: Individual User Configuration Files:**
 
-```ini title="/etc/samba/casa.admin.conf" linenums="1"
+```linuxconfig title="/etc/samba/casa.admin.conf" linenums="1"
 [ZimaOS-HD]  
 browseable = yes  
 guest ok = No  
@@ -185,7 +185,7 @@ create mask = 0777
 directory mask = 0777
 ```
     
-```ini title="/etc/samba/casa.bhaube.conf" linenums="1"
+```linuxconfig title="/etc/samba/casa.bhaube.conf" linenums="1"
 [Quick-Storage]  
 browseable = yes  
 guest ok = No  
@@ -200,7 +200,7 @@ create mask = 0777
 directory mask = 0777
 ```
     
-```ini title="/etc/samba/casa.rpereira.conf" linenums="1"    
+```linuxconfig title="/etc/samba/casa.rpereira.conf" linenums="1"    
 [Quick-Storage]  
 browseable = yes  
 guest ok = No  

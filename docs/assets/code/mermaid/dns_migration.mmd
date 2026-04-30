@@ -1,0 +1,93 @@
+graph LR
+    %% Phase 1
+    subgraph Phase_1 ["<b>Phase 1:</b> Pre-Migration & Documentation"]
+        direction TB
+        Export("<b>Export Pi-hole Data:</b><br>Run a 'Teleporter' backup on your current primary and secondary Pi-holes.")
+        Document("<b>Document Static Records:</b><br>Note all local DNS records and DHCP reservations.")
+        Map("<b>Map IP Addresses</b>")
+        Primary("<b>Primary:</b><br><i>(Raspberry Pi 4B)</i><br><code>192.168.50.2</code>")
+        Secondary("<b>Secondary:</b><br><i>(Debian VM)</i><br><code>192.168.50.6</code>")
+        Tertiary("<b>Tertiary/Failover:</b><br><i>(Raspberry Pi Zero Server)</i><br><code>192.168.50.3</code>")
+    end
+    
+    %% Connections (Phase_1)
+    Export --> Document
+    Document --> Map
+    Map --> Primary
+    Map --> Secondary
+    Map --> Tertiary
+    Phase_1 ==> Phase_2
+    
+    %% Phase 2
+    subgraph Phase_2 ["<b>Phase 2:</b> Server Provisioning"]
+        direction TB
+        subgraph Debian_VM ["<b>Debian VM</b> <i>(ZimaOS NAS)</i>"]
+            direction TB
+            Allocate("<b>Allocate Resources:</b><br>Assign 2 vCPUs and 2GB RAM to the VM.")
+            Install("<b>Install Technitium:</b><br>Use the installer script or Docker container.")
+            Configure("<b>Configure Upstream:</b><br>Set Quad9 DoT<br><code>9.9.9.9:853</code><br><code>149.112.112.112:853</code>")
+            Import("<b>Import Records:</b><br>Manually add local DNS zones/records from the Pi-hole export.")
+        end
+        subgraph RasPi_4B ["<b>Raspberry Pi 4B</b>"]
+            direction TB
+            Install_Pi("<b>Install Technitium:</b><br>Match the version running on the Debian VM.")
+            Set_Secondary("<b>Set as Secondary:</b><br>Configure identical upstream servers.")
+        end   
+    end
+    
+    %% Connections (Phase_2)
+    Allocate --> Install
+    Install --> Configure
+    Configure --> Import
+    
+    Install_Pi --> Set_Secondary
+    Phase_2 ==> Phase_3
+    
+    %% Phase 3
+    subgraph Phase_3 ["<b>Phase 3:</b> Cluster Synchronization"]
+        direction TB
+        Enable_Clustering("<b>Enable Clustering</b>")
+        DebianVM_Master("Set the Debian VM as the <b>Master</b>.")
+        Pi4B_Slave("Set the Pi 4B as the <b>Slave</b>.")
+        Verify_Sync("<b>Verify Sync:</b><br>Ensure local zones and blocklists are appearing on both instances.")
+        Tuning("<b>Blocklist Tuning:</b><br>Add your preferred lists <i>(e.g., OISD, HaGeZi)</i> and verify they are enabled on both.")
+    end
+    
+    %% Connections (Phase_3)
+    Enable_Clustering --> DebianVM_Master
+    Enable_Clustering --> Pi4B_Slave
+    DebianVM_Master --> Verify_Sync
+    Pi4B_Slave --> Verify_Sync
+    Verify_Sync --> Tuning
+    Phase_3 ==> Phase_4
+    
+    subgraph Phase_4 ["<b>Phase 4:</b> Network Cutover"]
+        direction TB
+        DHCP("<b>Update Router DHCP</b>")
+        DHCP_1("Point DNS 1 to the <b>Debian Server VM</b> IP address.")
+        DHCP_2("Point DNS 2 to the <b>Pi 4B Server</b> IP address.")
+        DHCP_3("<i>(Optional)</i> Point DNS 3 to the <b>Pi Zero Server</b> IP address.")
+        
+        Clear_Cache("<b>Clear Local Caches:</b><br>Flush DNS on your main workstation")
+        Test_Resolution("<b>Test Resolution:</b><br>Run '<code>dig @[Primary-IP] google.com</code>' and verify the <code>[SERVER]</code> field.")
+    end
+    
+    %% Connections (Phase_4)
+    DHCP --> DHCP_1
+    DHCP --> DHCP_2
+    DHCP --> DHCP_3
+    DHCP_1 --> Clear_Cache
+    DHCP_2 --> Clear_Cache
+    Clear_Cache --> Test_Resolution
+    Phase_4 ==> Phase_5
+    
+    subgraph Phase_5 ["<b>Phase 5:</b> Verification & Safety Net"]
+        direction TB
+        DoT_Status("<b>Check DoT Status:</b><br>Ensure upstream is encrypted.<br>'<code>dig @[Primary-IP] +short txt proto.on.quad9.net</code>'")
+        Fallback("<b>Verify Pi Zero Fallback:</b><br>Temporarily stop the Technitium service on both the <b>Debian VM</b> and <b>Pi 4B</b>. Confirm the <b>Pi Zero</b> takes over resolution.")
+        Audit("<b>Audit Dashboard:</b><br>Monitor the Technitium dashboard for any unexpected <code>NXDOMAIN</code> responses or high latency.")
+    end
+    
+    %% Connections (Phase_5)
+    DoT_Status --> Fallback
+    Fallback --> Audit

@@ -1,0 +1,25 @@
+%%{
+  init: {
+    "themeCSS": ".node.isp rect, .node.isp polygon, .node.isp circle, .node.isp path { fill: var(--isp-bg) !important; stroke: var(--isp-border) !important; stroke-width: 2px !important; } .node.multi rect, .node.multi polygon, .node.multi circle, .node.multi path { fill: var(--multi-bg) !important; stroke: var(--multi-border) !important; stroke-width: 2px !important; } .node.tenGb rect, .node.tenGb polygon, .node.tenGb circle, .node.tenGb path { fill: var(--tengb-bg) !important; stroke: var(--tengb-border) !important; stroke-width: 2px !important; } .node.twoFiveGb rect, .node.twoFiveGb polygon, .node.twoFiveGb circle, .node.twoFiveGb path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; } .node.twoFiveGbTemp rect, .node.twoFiveGbTemp polygon, .node.twoFiveGbTemp circle, .node.twoFiveGbTemp path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.gigabit rect, .node.gigabit polygon, .node.gigabit circle, .node.gigabit path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; } .node.gigabitTemp rect, .node.gigabitTemp polygon, .node.gigabitTemp circle, .node.gigabitTemp path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.wifi rect, .node.wifi polygon, .node.wifi circle, .node.wifi path { fill: var(--wifi-bg) !important; stroke: var(--wifi-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+  }
+}%%
+
+graph
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    classDef isp fill: stroke:;
+    classDef multi fill: stroke:;
+    classDef tenGb fill: stroke:;
+    classDef twoFiveGb fill: stroke:;
+    classDef twoFiveGbTemp fill: stroke:;
+    classDef gigabit fill: stroke:;
+    classDef gigabitTemp fill: stroke:;
+    classDef wifi fill: stroke:;
+
+	%% --- Ledgend ---
+	VM("Virtual Machine"):::multi
+	TenGb("10Gb Ethernet"):::tenGb
+	TwoFiveGb("2.5Gb Ethernet"):::twoFiveGb
+	TwoFiveGbTemp("2.5Gb Ethernet<br><i>(Temporary)</i>"):::twoFiveGbTemp
+	Gigabit("1Gb Ethernet"):::gigabit
+	GigabitTemp("1Gb Ethernet<br><i>(Temporary)</i>"):::gigabitTemp
+	WiFi("Wi-Fi"):::wifi

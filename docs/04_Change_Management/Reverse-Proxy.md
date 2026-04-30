@@ -69,9 +69,5 @@ immich.internal {
 ## :material-traffic-light: Traffic Flow
 
 ```mermaid { .pz-ignore }
-graph TD
-    User[Client Browser] -- "DNS Query:<br><code>immich.internal</code>" --> DNS[Technitium DNS]
-    DNS -- "Returns CNAME:<br><code>192.168.50.3</code>" --> User
-    User -- "HTTPS Request port: <code>80/443</code>" --> Proxy[<b>Caddy:</b> Pi Zero 2 W]
-    Proxy -- "Forwards Traffic" --> App[<b>Immich:</b> Port <code>2283</code>]
+--8<-- "traffic_flow.mmd"
 ```

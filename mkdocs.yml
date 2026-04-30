@@ -135,6 +135,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.smartsymbols
   - pymdownx.snippets:
+      base_path:
+        - .
+        - docs/assets/code/mermaid
       auto_append:
         - includes/abbreviations.md
   - pymdownx.betterem

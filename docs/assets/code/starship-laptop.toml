@@ -1,0 +1,280 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Move the directory to the second line
+# format = '$all$directory$character'
+
+# move the rest of the prompt to the right
+# right_format = """$all"""
+
+continuation_prompt = '[❯❯ ](bright-black)'
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+
+[battery]
+format = '[$symbol$percentage ]($style)'
+full_symbol = '󰁹 '
+charging_symbol = '󰂄 '
+discharging_symbol = '󰂃 '
+empty_symbol = '󰂎 '
+
+[[battery.display]]
+threshold = 10
+style = 'bold red'
+charging_symbol = '󰢜 '
+discharging_symbol = '󱃍 '
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'
+charging_symbol = '󰂆 '
+discharging_symbol = '󰁻 '    
+
+[[battery.display]]
+threshold = 30
+style = 'bold yellow'
+charging_symbol = '󰂇 '
+discharging_symbol = '󰁼 '
+
+[[battery.display]]
+threshold = 40
+style = 'bold yellow' 
+charging_symbol = '󰂈 '
+discharging_symbol = '󰁽 '
+
+[[battery.display]]
+threshold = 50
+style = 'bold yellow'
+charging_symbol = '󰢝 '
+discharging_symbol = '󰁾 '
+
+[[battery.display]]
+threshold = 60
+style = 'bold green'
+charging_symbol = '󰂉 '
+discharging_symbol = '󰁿 '
+
+[[battery.display]]
+threshold = 70
+style = 'bold green'
+charging_symbol = '󰢞 '
+discharging_symbol = '󰂀 '
+
+[[battery.display]]
+threshold = 80
+style = 'bold green'
+charging_symbol = '󰂊 '
+discharging_symbol = '󰂁 '
+
+[[battery.display]]
+threshold = 90
+style = 'bold green'  
+charging_symbol = '󰂋 '
+discharging_symbol = '󰂂 '
+
+[[battery.display]]
+threshold = 100
+style = 'bold green'
+charging_symbol = '󰂅 '
+discharging_symbol = '󰁹 '
+
+# Disable the package module, hiding it from the prompt completely
+# [package]
+# disabled = true
+
+# NerdFont Symbols Preset
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[bun]
+symbol = " "
+
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[deno]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+symbol = "  "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
+
+[gradle]
+symbol = " "

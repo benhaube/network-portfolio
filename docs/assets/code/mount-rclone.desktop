@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Mount Google Drive
+Exec=rclone mount Google-Drive: ~/Google-Drive --vfs-cache-mode full --vfs-cache-max-size 10G --vfs-read-chunk-size 32M --daemon
+Icon=google-drive
+Comment=Mount Google Drive via rclone

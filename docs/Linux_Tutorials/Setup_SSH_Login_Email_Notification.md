@@ -38,24 +38,7 @@ hide:
 2. Paste the following into the configuration file:
 
     ```bash title="/etc/msmtprc" linenums="1" hl_lines="11 13-14"
-    # Global defaults
-    defaults
-    auth           on
-    tls            on
-    tls_starttls   off  # (1)!   
-    tls_trust_file /etc/ssl/certs/ca-certificates.crt
-    syslog         on
-
-    # Email account
-    account        email
-    host           smtp.example.com
-    port           465
-    from           example@example.com
-    user           example@example.com
-    passwordeval   "cat /root/.email_app_password"
-
-    # Set default
-    account default : email
+    --8<-- "msmtprc"
     ```
 
     1. `starttls` may be required check your email provider's server settings. If it is set to `on`. 

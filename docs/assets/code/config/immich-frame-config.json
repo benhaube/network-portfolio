@@ -1,0 +1,13 @@
+{
+  "albums": [
+    {
+      "id": "<UUID_OF_NESTHUB_ALBUM>",
+      "people": [
+        "<PERSON_UUID_BEN>",
+        "<PERSON_UUID_PARTNER>",
+        "<PET_UUID_MAX>",
+        "<PET_UUID_BANDIT>"
+      ]
+    }
+  ]
+}

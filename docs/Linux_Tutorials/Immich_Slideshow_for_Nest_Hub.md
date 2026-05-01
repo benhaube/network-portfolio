@@ -54,32 +54,7 @@ hide:
 Add these services to your existing Immich stack or a new stack.
 
 ```yaml title="compose.yml" linenums="1"
-services:
-  immich_frame:  # (1)!
-    image: ghcr.io/immichframe/immichframe:latest
-    container_name: immich_frame
-    environment:
-      - IMMICH_URL=http://<ZIMABOARD_IP>:2283
-      - API_KEY=<YOUR_IMMICH_API_KEY_FOR_FRAME>
-      - SLIDESHOW_DURATION=60
-      - SHOW_CLOCK=true
-      - SHOW_WEATHER=true
-      - WEATHER_LOCATION=Reisterstown, MD
-      - ALBUM_UIDS=<UUID_OF_NESTHUB_ALBUM>  # (2)!
-    ports:
-      - 8081:8080
-    restart: always
-
-  immich_auto_album:  # (3)!
-    image: ghcr.io/alangrainger/immich-person-to-album:latest
-    container_name: immich_auto_album
-    environment:
-      - IMMICH_URL=http://<ZIMABOARD_IP>:2283
-      - API_KEY=<YOUR_IMMICH_API_KEY_FOR_SYNC>
-      - SYNC_MODE=1  # (4)!
-    volumes:
-      - ./config.json:/app/config.json
-    restart: always
+--8<-- "immich-frame.yaml"
 ```
 
 1. The Interface *(Displays the clock / weather / photos)*
@@ -92,19 +67,7 @@ services:
 Place this in the same folder as your docker-compose file.
 
 ```json title="config.json" linenums="1"
-{
-  "albums": [
-    {
-      "id": "<UUID_OF_NESTHUB_ALBUM>",
-      "people": [
-        "<PERSON_UUID_BEN>",
-        "<PERSON_UUID_PARTNER>",
-        "<PET_UUID_MAX>",
-        "<PET_UUID_BANDIT>"
-      ]
-    }
-  ]
-}
+--8<-- "immich-frame-config.json"
 ```
 
 ## :material-wan: Phase 3: Network & Cloudflare
@@ -130,23 +93,5 @@ Place this in the same folder as your docker-compose file.
 **Automation YAML:**
 
 ```yaml title="/home-assistant-container/automations.yaml" linenums="1"
-alias: "Living Room Frame Manager"
-trigger:
-  - platform: state
-    entity_id: media_player.living_room_display
-    to: "off"
-  - platform: state
-    entity_id: media_player.living_room_display
-    to: "idle"
-    for: "00:01:00"
-action:
-  - service: media_player.play_media
-    target:
-      entity_id: media_player.living_room_display
-    data:
-      media_content_id: "[https://frame.rac3r4life.online](https://frame.rac3r4life.online)"
-      media_content_type: "url"
-      extra:
-        metadata:
-          title: "Immich Frame" 
+--8<-- "ha-automations.yaml"
 ```

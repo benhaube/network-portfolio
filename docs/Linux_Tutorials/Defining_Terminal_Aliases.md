@@ -28,9 +28,7 @@ hide:
 2. Check your `~/.bashrc` file to make sure it includes the following code:
 
     ```bash title="~/.bashrc" linenums="1"
-    if [ -f ~/.bash_aliases ]; then
-        ~/.bash_aliases
-    fi
+    --8<-- "debian-bashrc"
     ```
 
     + Your **Debian / Ubuntu** based distribution should have this code in the `~/.bashrc` file by default, but in case it doesn't you can open the file in the text editor of your choice *(e.g., nano)* and paste it into the end of the file. 
@@ -67,15 +65,7 @@ hide:
 2. Check your `~/.bashrc` file to make sure it includes the following code:
 
     ```bash title="~/.bashrc" linenums="1"
-    # User specific aliases and functions
-    if [ -d ~/.bashrc.d ]; then
-        for rc in ~/.bashrc.d/*; do
-            if [ -f "$rc" ]; then
-                . "$rc"
-            fi
-    done
-    fi
-    unset rc
+    --8<-- "fedora-bashrc"
     ```
 
     + Your **Fedora / RHEL** based distribution should have this code in the `~/.bashrc` file by default, but in case it doesn't you can open the file in the text editor of your choice *(e.g., nano)* and paste it into the end of the file. 

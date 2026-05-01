@@ -1,0 +1,32 @@
+services:
+  beszel:
+    image: henrygd/beszel:latest
+    container_name: beszel-hub
+    restart: unless-stopped
+    ports:
+      - 8090:8090
+    volumes:
+      - ./beszel_data:/beszel_data
+      - ./beszel_socket:/beszel_socket
+    dns:
+      - 192.168.50.6
+      - 192.168.50.2
+
+  beszel-agent:
+    image: henrygd/beszel-agent
+    container_name: beszel-agent
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./beszel_agent_data:/var/lib/beszel-agent
+      # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  (1)
+      - /mnt/usb-drive/.beszel:/extra-filesystems/sda1__usb-drive:ro
+    environment:
+      LISTEN: /beszel_socket/beszel.sock
+      KEY: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI'
+      TOKEN: 879-279c30f663-5ff-f7ca42f129c
+      HUB_URL: http://pi-server.internal:8090
+    dns:
+      - 192.168.50.6
+      - 192.168.50.2

@@ -142,6 +142,7 @@ markdown_extensions:
         - docs/assets/code/gcode
         - docs/assets/code/mermaid
         - docs/assets/code/systemd
+        - docs/assets/code/yaml
       auto_append:
         - includes/abbreviations.md
   - pymdownx.betterem

@@ -212,4 +212,3 @@ hide:
 >     ```bash linenums="1"
 >     sudo systemd daemon-reload
 >     ```
-

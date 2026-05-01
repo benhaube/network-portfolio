@@ -137,6 +137,7 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path:
         - .
+        - docs/includes
         - docs/assets/code
         - docs/assets/code/bash
         - docs/assets/code/config
@@ -239,6 +240,9 @@ plugins:
 watch:
   - includes
 
+exclude_docs: |
+  includes/
+  
 # --- Disable directory URLs ---
 use_directory_urls: false
 

@@ -3,6 +3,7 @@
 add_newline = true
 # format = '$all$directory$character'
 # right_format = """$all"""
+
 continuation_prompt = '[❯❯ ](bright-black)'
 
 [character]
@@ -34,18 +35,19 @@ ssh_only = true
 format = '- [$localipv4](bold white) '
 disabled = false
 
+[cmd_duration]
+style = 'bold cyan'
+format = 'took [$duration]($style) '
+
 [os]
 format = "on [($name) $symbol]($style)"
 style = "bold cyan"
 disabled = false
 
-[cmd_duration]
-style = 'bold cyan'
-format = 'took [$duration]($style) '
-
 # [package]
 # disabled = true
 
+# NerdFont Symbols Preset
 [aws]
 symbol = "  "
 

@@ -137,14 +137,7 @@ hide:
 > nano ~/.ssh/authorized_keys
 > ```
 
-> [!zima] Don't Forget!
-> **ZimaOS** does not have SSH enabled after a fresh install. For the [[ZimaBoard_2_NAS|ZimaOS NAS]] the SSH service needs to be enabled first through the [ZimaOS Web UI](http://storage-server.internal/) in the developer options.
-> + Settings :material-arrow-right-thin: General :material-arrow-right-thin: Developer Mode :material-arrow-right-thin: SSH Access 
->     
->       ![[zimaos_ssh.png|600]]
->         
-> + After enabling SSH in the developer options the [[ttydBridge]] application is automatically installed. The SSH service can be configured from there.
-> + Once the SSH server is configured the **ttydBridge** application is no longer needed, but remains installed. This is a good backup to get shell access in case of an SSH configuration issue.
+--8<-- "zima-ssh.md"
 
 > [!help] Email Notification
 > The SSH servers on the network have email login notifications configured to notify in the case of unwanted access.<br>

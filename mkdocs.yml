@@ -139,6 +139,7 @@ markdown_extensions:
         - .
         - docs/assets/code
         - docs/assets/code/bash
+        - docs/assets/code/config
         - docs/assets/code/gcode
         - docs/assets/code/mermaid
         - docs/assets/code/systemd

@@ -75,74 +75,8 @@ hide:
 
 #### :material-file-cog: The 'Caddyfile' *(configuration file)*:
 
-```nginx title="/etc/caddy/caddyfile" linenums="1"
-######################################################################
-## The Caddyfile is an easy way to configure your Caddy web server. ##
-##                                                                  ##
-## Unless the file starts with a global options block, the first    ##
-## uncommented line is always the address of your site.             ##
-##                                                                  ##
-## To use your own domain name (with automatic HTTPS), first make   ##
-## sure your domain's A/AAAA DNS records are properly pointed to    ##
-## this machine's public IP, then replace ":80" below with your     ##
-## domain name.                                                     ##
-######################################################################
-
-:80 {  
-       root * /usr/share/caddy  # (1)!
-  
-       file_server  # (2)!
-    
-       # reverse_proxy localhost:8080  (3)
-   
-       # php_fastcgi localhost:9000  (4)
-}  
-  
-# (5)!
-  
-beszel.internal  
-   reverse_proxy 192.168.50.2:8090  
-}  
-  
-glance.internal {  
-   reverse_proxy 192.168.50.2:8580  
-}  
-  
-home-assistant.internal {  
-   reverse_proxy 192.168.50.2:8123  
-}  
-  
-immich.internal {  
-   reverse_proxy 192.168.50.4:2283  
-}  
-  
-it-tools.internal {  
-   reverse_proxy 192.168.50.2:8080  
-}  
-  
-openspeedtest.internal {  
-   reverse_proxy 192.168.50.4:3004  
-}  
-  
-portainer.internal {  
-   reverse_proxy 192.168.50.2:9443  
-}  
-  
-spoolman.internal {  
-   reverse_proxy 192.168.50.4:7912  
-}  
-  
-technitium.internal {  
-   reverse_proxy 192.168.50.6:5380  
-}  
-  
-uptime.internal {  
-   reverse_proxy 192.168.50.2:3001  
-}  
-  
-yt-dlp.internal {  
-   reverse_proxy 192.168.50.4:3033  
-}
+```nginx title="/etc/caddy/Caddyfile" linenums="1"
+--8<-- "Caddyfile"
 ```
 
 1. Set this path to your site's directory.

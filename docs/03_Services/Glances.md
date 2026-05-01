@@ -43,45 +43,7 @@ hide:
 #### :material-docker: Docker Compose:
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
-services:  
-  glances:    
-    image: nicolargo/glances:latest-full  # (1)!
-    restart: always   
-    pid: "host"  
-    network_mode: "host"  
-    read_only: true  
-    privileged: false   
-    # cap_add:  (2)
-      # - SYS_RAWIO  (3) 
-      # - SYS_ADMIN  (4)
-    # devices:  
-      # - "/dev/nvme0"  
-  volumes:  
-    - "/:/rootfs:ro"  
-    - "/var/run/docker.sock:/var/run/docker.sock:ro"  
-    - "/run/user/1000/podman/podman.sock:/run/user/1000/podman/podman.sock:ro"  
-    - "./glances.conf:/glances/conf/glances.conf"  
-    - "/var/log:/var/log:ro"
-    - "/etc/os-release:/etc/os-release:ro"  # (5)!
-  tmpfs:  
-    - /tmp   
-  environment:  
-    - TZ=America/New_York  # (6)!
-    - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart  
-    - PYTHONPYCACHEPREFIX=/tmp/py_caches  
-  # deploy:  (7)
-    # resources:
-      # reservations:
-        # devices:
-          # - driver: nvidia
-            # count: 1
-            # capabilities: [gpu]  
-  # secrets:  (8)
-    # - source: glances_password
-      # target: /root/.config/glances/<login>.pwd
-# secrets:  
-  # glances_password:  
-    # file: ./secrets/glances_password
+--8<-- "glances-pi-4b.yml"
 ```
 
 1. See all images tags here: <https://hub.docker.com/r/nicolargo/glances/tags>
@@ -94,54 +56,5 @@ services:
 8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.     
 
 ```yaml title="ZimaOS NAS" linenums="1"
-services:
-  glances:
-    cap_add:
-      - SYS_RAWIO
-      - SYS_ADMIN
-    cpu_shares: 90
-    container_name: glances
-    devices:
-      - /dev/sda:/dev/sda
-      - /dev/sdb:/dev/sdb
-      - /dev/nvme0:/dev/nvme0
-      - /dev/md0:/dev/md0
-      - /dev/mmcblk0:/dev/mmcblk0
-    environment:
-      - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart
-      - TZ=America/New_York
-    image: nicolargo/glances:latest-full
-    labels:
-      icon: data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xml%3Aspace%3D%22preserve%22%20id%3D%22Layer_1%22%20x%3D%220%22%20y%3D%220%22%20version%3D%221.1%22%20viewBox%3D%2224.6%201.3%20462.81%20509.4%22%3E%3Cstyle%3E.st0%7Bfill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%2357cb6a%7D%3C%2Fstyle%3E%3Cpath%20d%3D%22M279.4%2061.9c-47.8%200-91.5%2017.3-125.4%2045.9l-39.2-46.3C159.3%2024%20216.7%201.3%20279.4%201.3S399.6%2024%20444%2061.5l-39.2%2046.3C371%2079.1%20327.2%2061.9%20279.4%2061.9%22%20class%3D%22st0%22%2F%3E%3Cpath%20d%3D%22M81.1%20270.6c9.8-32.1%2025.6-60.6%2047.6-85.6-5.3.7-10.5%202.2-15.5%204.5-.3-.2-.5-.3-.7-.5s-.5-.3-.7-.5c18.6-27.8%2042-50.6%2070.1-68.6-16.9-28.2-25.5-58.7-26-91.6%2038.4%206.2%2070.8%2023.4%2097.1%2051.6%2046.8%208.1%2089.2%2026.2%20127.2%2054.1%209.4%206.7%2016.6%2015.2%2021.5%2025.5q3.3%2012%206%2024c3.3%207.3%208.2%2013.5%2014.5%2018.5q12.3%2010.8%2027%2018%2018.6%205.85%2038.1%207.5c.7%209.9-1.9%2018.9-7.5%2027-21.2%2015.9-45.1%2022.1-71.6%2018.5-21.9-3.8-43.8-7.6-65.6-11.5-16.8.5-26.5%209.1-29.1%2026-1.6%2014.1%201.4%2027.1%209%2039.1%203.8%205.9%207.8%2011.5%2012%2017%2011.7%2013.2%2024.3%2025.6%2037.6%2037.1-6.8%201.9-13.8%203.1-21%203.5%207.4%204.4%2016.3%2010%2025.5%2015.8%2015.7%209.9%2032.5%2020.6%2045.6%2027.2-54.3%2031.5-113%2065.4-234.4%2019.6-52.1-19.7-92.4-55.2-106.6-91.8-12.5-31.6-9.9-52.4-.1-84.4m239.4-98.5c24.7%2014.2%2053.2%2011%2053.2%2011s-10.1-28.7-34.7-42.9-54.5-8.6-54.5-8.6%2011.4%2026.2%2036%2040.5%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bfill%3A%23ebebeb%22%2F%3E%3Cpath%20d%3D%22M324%20363.6c-5.7-.3-11.4-.8-17-1.5%2020.8%2015.9%2036.8%2035.6%2048.1%2059.1-4.8-1.6-9.8-2.8-15-3.5%204%209.6%208%2019.3%2012%2029-65.9%2019.2-127.1%209.5-183.7-29-.7-5.7-.7-11.3%200-17%201.3-12.1%203-24.1%205-36.1-9.9%2011.9-17.2%2025.2-22%2040.1l-6.5-6.5c2.9-21.6%209.5-42%2020-61.1-2.3.4-4.6.4-7%200%201.2.9%201.2%201.7%200%202.5-4.7%203.3-9.4%206.7-14%2010%2013.2-28.7%2032.2-52.9%2057.1-72.6%206.9-4.6%2014.3-8.5%2022-11.5%202.1%2013.4%205.6%2026.4%2010.5%2039.1.6%201.6%201.6%203%203%204%209.7-18.2%2021.6-34.9%2035.5-50.1l-1-1c-11.5%206.3-21.7%2014.3-30.5%2024-4-11-6.3-22.4-7-34-.4-.9-1.1-1.6-2-2-15.7%205.5-30.3%2012.8-44.1%2022q8.4-27.15%2025.5-50.1c-1.9-1.1-3.9-1.3-6-.5-6.3%201.9-12.7%203.8-19%205.5v-1c18.5-21.6%2041.8-35%2070.1-40.1-7.5-3.3-15.1-6.2-23-8.5q30.75-.3%2059.1%2012c26%2013%2051.3%2027%2076.1%2042.1%2026.4%2015.4%2054.7%2021.7%2085.1%2019%205.7-2.8%2010.7-2%2015%202.5-17%2013.6-36.3%2018.8-58.1%2015.5-17.8-3.2-35.5-6.8-53.1-11-42.5-9.2-62.7%207.9-60.6%2051.6%201.1%2010.4%203.8%2020.4%208%2030%205.4%2010.1%2011.2%2019.8%2017.5%2029.1M216.9%2075.2c-8.8-4.6-17.8-8.9-27-13l-1%201c4.4%206.9%208.4%2014.1%2012%2021.5-3.6-1-6.9-2.9-10-5.5l-1%201c1.5%206.7%202.8%2013.3%204%2020-11.4-15.6-19.1-32.9-23-52.1%2017.8%204.9%2033.2%2013.9%2046%2027.1%22%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3Bopacity%3A.976%3Bfill%3A%23c1c1c1%22%2F%3E%3Cpath%20d%3D%22M154.1%20107.8C112%20143.5%2085.3%20196.6%2085.3%20256c0%20107.2%2086.9%20194.1%20194.1%20194.1%2040.1%200%2077.2-12.1%20108.1-32.9V311.5h60.6v135.9l-11.6%209.1c-43.3%2034-97.9%2054.2-157.2%2054.2-140.7%200-254.7-114-254.7-254.7%200-78%2035.1-147.8%2090.2-194.5z%22%20class%3D%22st0%22%2F%3E%3Cpath%20d%3D%22M326.1%20168.1v-17.2c-.4.4-1%20.8-1.7%201.3-.6.4-1.3.8-2%201.1s-1.4.7-2.1%201-1.3.5-1.8.7v-5.1c.6-.2%201.3-.6%202-1.1.8-.5%201.5-1%202.3-1.5.7-.6%201.4-1.1%202-1.6q.9-.75%201.2-1.2h5.6v23.7h-5.5z%22%20style%3D%22fill%3A%2357cb6a%22%2F%3E%3C%2Fsvg%3E
-    pid: host
-    ports:
-      - target: 61208
-        published: "61208"
-        protocol: tcp
-      - target: 61209
-        published: "61209"
-        protocol: tcp
-    restart: always
-    volumes:
-      - type: bind
-        source: /var/run/docker.sock
-        target: /var/run/docker.sock
-      - type: bind
-        source: /mnt
-        target: /mnt
-      - type: bind
-        source: /etc/os-release
-        target: /etc/os-release
-      - type: bind
-        source: /media/nvme0n1p1/AppData/glances/glances.conf
-        target: /glances/conf/glances.conf
-      - type: bind
-        source: /media/Quick-Storage
-        target: /media/Quick-Storage
-      - type: bind
-        source: /media/nvme0n1p1
-        target: /media/nvme0n1p1
-      - type: bind
-        source: /media/ZimaOS-HD
-        target: /media/ZimaOS-HD
+--8<-- "glances-zima.yml"
 ```

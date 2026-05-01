@@ -47,170 +47,25 @@ hide:
 #### :material-raspberry-pi: [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:
 
 ```linuxconfig title="/etc/samba/smb.conf" linenums="1"
-[global]  
- workgroup = WORKGROUP  
- server string = pi-server %v  
- security = user  
-  
-[smb-share]  
- comment = Samba Share  
- path = /mnt/usb-drive/smb-share  
- browseable = yes  
- writeable = yes  
- read only = no  
- force user = admin
+--8<-- "smb-pi-4b.conf"
 ```
 
 #### :material-nas: [[ZimaBoard_2_NAS|ZimaOS NAS]] Config:
 
 ```linuxconfig title="/etc/samba/smb.conf" linenums="1"
-# custom config  
-  
-[global]  
-  
-server multi channel support = yes  
-interfaces = "192.168.50.4;speed=2500000000,capability=RSS" "192.168.50.5;speed=2500000000,capability=RSS"  
-bind interfaces only = yes  
-  
-# end custom config  
-  
-include = /etc/samba/casa.%U.conf
+--8<-- "smb-zima.conf"
 ```
 
 **:material-account-outline: Individual User Configuration Files:**
 
 ```linuxconfig title="/etc/samba/casa.admin.conf" linenums="1"
-[ZimaOS-HD]  
-browseable = yes  
-guest ok = No  
-path = /media/ZimaOS-HD/  
-read only = No  
-recycle:repository = /media/ZimaOS-HD/.trash/smb  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777  
-  
-[nvme0n1p1]  
-browseable = yes  
-guest ok = No  
-path = /media/nvme0n1p1  
-read only = No  
-recycle:repository = /media/nvme0n1p1/.trash/smb  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777  
-  
-[Quick-Storage]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777  
-      
-[Downloads]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage/Downloads  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb/Downloads  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777  
- 
-[Documents]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage/Documents  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb/Documents  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777  
-  
-[Backup]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage/Backup  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb/Backup  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777  
-  
-[Gallery]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage/Gallery  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb/Gallery  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777  
-  
-[Media]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage/Media  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb/Media  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777
+--8<-- "casa.admin.conf"
 ```
     
 ```linuxconfig title="/etc/samba/casa.bhaube.conf" linenums="1"
-[Quick-Storage]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777
+--8<-- "casa.bhaube.conf"
 ```
     
 ```linuxconfig title="/etc/samba/casa.rpereira.conf" linenums="1"    
-[Quick-Storage]  
-browseable = yes  
-guest ok = No  
-path = /media/Quick-Storage  
-read only = No  
-recycle:repository = /media/Quick-Storage/.trash/smb  
-recycle:keeptree = yes  
-recycle:versions = yes  
-veto files = /.trash/ /.zima_encrypted_folders/  
-delete veto files = yes  
-create mask = 0777  
-directory mask = 0777
+--8<-- "casa.rpereira.conf"
 ```

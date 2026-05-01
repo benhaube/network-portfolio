@@ -43,32 +43,7 @@ hide:
 ### :material-cog: Configuration
 
 ```yaml title="compose.yml" linenums="1"
-services:
-  ntopng:
-    image: ntop/ntopng:latest
-    hostname: ntop
-    container_name: ntop
-    restart: always
-    network_mode: host
-    volumes:
-      - ntopng_redis:/var/lib/redis
-    # (1)!
-    command: [ '-i', 'eth0', '-i', 'eth1', '-i', 'tcp://*:5556c', '-F', 'clickhouse', '--disable-login', '1', '--community' ]
-    depends_on:
-      - clickhouse
-  clickhouse:
-    image: clickhouse/clickhouse-server:latest
-    hostname: clickhouse
-    container_name: clickhouse
-    restart: always
-    network_mode: host
-    volumes:
-      - clickhouse_data:/var/lib/clickhouse
-      - clickhouse_logs:/var/log/clickhouse-server
-volumes:
-  clickhouse_data:
-  clickhouse_logs:
-  ntopng_redis:
+--8<-- "ntopng.yml"
 ```
 
 1. Updated to include `eth0` and `eth1` while keeping the `--community` flag.

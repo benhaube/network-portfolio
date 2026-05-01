@@ -38,10 +38,6 @@ hide:
 
 ### :material-cog: Configuration
 
-```ini title="~/.config/krdbserverrc" linenums="1"
-[General]  
-Autostart=true  
-Certificate=/home/bhaube/.local/share/krdpserver/krdp.crt  
-CertificateKey=/home/bhaube/.local/share/krdpserver/krdp.key  
-SystemUserEnabled=true
+```ini title="~/.config/krdpserverrc" linenums="1"
+--8<-- "krdpserverrc"
 ```

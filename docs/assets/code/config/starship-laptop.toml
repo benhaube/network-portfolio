@@ -1,15 +1,8 @@
-# Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Inserts a blank line between shell prompts
 add_newline = true
-
-# Move the directory to the second line
 # format = '$all$directory$character'
-
-# move the rest of the prompt to the right
 # right_format = """$all"""
-
 continuation_prompt = '[❯❯ ](bright-black)'
 
 [character]
@@ -83,11 +76,9 @@ style = 'bold green'
 charging_symbol = '󰂅 '
 discharging_symbol = '󰁹 '
 
-# Disable the package module, hiding it from the prompt completely
 # [package]
 # disabled = true
 
-# NerdFont Symbols Preset
 [aws]
 symbol = "  "
 

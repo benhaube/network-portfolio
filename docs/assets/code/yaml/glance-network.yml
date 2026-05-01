@@ -1,0 +1,36 @@
+- name: Network
+  show-mobile-header: true  # (1)!
+  # hide-desktop-navigation: true  (2)
+  columns:
+
+    - size: small
+      widgets:
+
+        - $include: /app/config/widgets/beszel.yml
+        - $include: /app/config/widgets/uptime-kuma-ssh.yml
+        # - $include: /app/config/widgets/wg-easy.yml  (3)
+        - $include: /app/config/widgets/ha-wan.yml
+        - $include: /app/config/widgets/ha-bandwidth.yml
+        - $include: /app/config/widgets/releases.yml
+
+    - size: full
+      widgets:
+
+        - $include: /app/config/widgets/search.yml
+        - $include: /app/config/widgets/network-services.yml
+        - $include: /app/config/widgets/docker-containers.yml
+
+        - type: split-column
+          widgets:
+
+          - $include: /app/config/widgets/technitium.yml
+          - $include: /app/config/widgets/immich-stats.yml
+
+    - size: small
+      widgets:
+
+        - $include: /app/config/widgets/clock.yml
+        - $include: /app/config/widgets/weather.yml
+        - $include: /app/config/widgets/weather-aqi.yml
+        - $include: /app/config/widgets/weather-forecast.yml
+        - $include: /app/config/widgets/calendar.yml

@@ -1,0 +1,37 @@
+# --- GLOBAL SETTINGS for all hosts (*) ---
+
+Host *
+    IdentityAgent ~/.bitwarden-ssh-agent.sock  # (1)!
+    # User admin  (2)
+
+# --- HOST-SPECIFIC SETTINGS ---
+
+Host pi-server.internal
+    User admin
+    IdentityFile ~/.ssh/pi-server.pub
+    IdentitiesOnly yes  # (3)!
+    
+Host pi-zero.internal
+    User admin
+    IdentityFile ~/.ssh/pi-zero.pub
+    IdentitiesOnly yes
+
+Host asusrouter.internal
+    User Admin
+    IdentityFile ~/.ssh/asusrouter.pub
+    IdentitiesOnly yes
+
+Host storage-server.internal
+    User admin
+    IdentityFile ~/.ssh/storage-server.pub
+    IdentitiesOnly yes
+
+Host debian-vm.internal
+    User server-admin
+    IdentityFile ~/.ssh/debian-vm.pub
+    IdentitiesOnly yes
+
+Host k1c-a71e.internal
+    User root
+    IdentityFile ~/.ssh/k1c-a71e.pub
+    IdentitiesOnly no

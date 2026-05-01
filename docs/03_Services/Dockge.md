@@ -46,20 +46,7 @@ hide:
 ### :material-cog: Configuration 
 
 ```yaml title="Debian Server VM | Raspberry Pi 4B Server | Raspberry Pi Zero Server" linenums="1"
-services:
-  dockge:
-    image: louislam/dockge:1
-    restart: unless-stopped
-    ports:
-      - 5001:5001
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./data:/app/data
-      # - /root/.docker/:/root/.docker  (1)
-      - /opt/stacks:/opt/stacks  # (2)!
-    environment:
-      - DOCKGE_STACKS_DIR=/opt/stacks  # (3)!
-      - DOCKGE_CONSOLE_ENBLE=true
+--8<-- "dockge.yaml"
 ```
 
 1. If you want to use private registries you need to uncomment this line to share the auth file with Dockge.
@@ -67,39 +54,5 @@ services:
 3. Tell Dockge the location of your stacks directory.
 
 ```yaml title="ZimaOS NAS" linenums="1" 
-services:
-  app:
-    cpu_shares: 90
-    container_name: dockge
-    environment:
-      - DOCKGE_STACKS_DIR=/DATA/AppData/dockge/stacks
-    image: louislam/dockge:1.5.0
-    ports:
-      - mode: ingress
-        target: 5001
-        published: "5001"
-        protocol: tcp
-    restart: unless-stopped
-    volumes:
-      - type: bind
-        source: /var/run/docker.sock
-        target: /var/run/docker.sock
-        bind:
-          create_host_path: true
-      - type: bind
-        source: /DATA/AppData/dockge/data
-        target: /app/data
-        bind:
-          create_host_path: true
-      - type: bind
-        source: /DATA/AppData/dockge/stacks
-        target: /DATA/AppData/dockge/stacks
-        bind:
-          create_host_path: true
-    networks:
-      - default
-    privileged: false
-networks:
-  default:
-    name: big-bear-dockge_default
+--8<-- "dockge-zima.yaml"
 ```

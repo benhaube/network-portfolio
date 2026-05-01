@@ -1,12 +1,9 @@
 [Unit]
-Description=Run NAS Backup Weekdays at 7PM
+Description=Run NAS Backup Weekdays at 6PM
 
 [Timer]
-# Mon-Fri at 19:00 (7 PM)
-OnCalendar=Mon..Fri 19:00:00
-# If the computer is off/asleep at 6pm, run immediately when it wakes up
+OnCalendar=Mon..Fri 18:00:00
 Persistent=true
-# Randomize delay by 5 mins to prevent exact-second spikes (optional but good practice)
 RandomizedDelaySec=5m
 
 [Install]

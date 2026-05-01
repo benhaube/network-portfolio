@@ -1,0 +1,26 @@
+services:
+  app:
+    container_name: portainer-agent
+    image: portainer/agent:lts
+    labels:
+      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png
+    ports:
+      - mode: ingress
+        target: 9001
+        published: "9001"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /var/lib/docker/volumes
+        target: /var/lib/docker/volumes
+        bind:
+          create_host_path: true
+    network_mode: bridge
+    privileged: false
+    restart: unless-stopped
+    cpu_shares: 90

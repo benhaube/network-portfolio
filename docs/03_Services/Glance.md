@@ -138,42 +138,7 @@ hide:
 #### :material-docker: Docker Compose:
 
 ```yaml title="compose.yml" linenums="1"
-services:
-  glance:
-    container_name: glance
-    image: panonim/dynacat:latest  # (7)!
-    restart: unless-stopped
-    volumes:
-      - ./config:/app/config
-      - ./assets:/app/assets
-      - /etc/localtime:/etc/localtime:ro
-      - /var/run/docker.sock:/var/run/docker.sock:ro  # (1)!
-    ports:
-      - 8580:8580
-    env_file: .env  # (2)!
-    labels:
-      glance.name: Glance
-      glance.icon: si:glance
-      glance.url: http://pi-server.internal:8580
-      glance.description: Server Dashboard
-      glance.id: glance
-    dns:   # (3)!
-      - 192.168.50.2
-      - 192.168.50.6
-  f1_api:
-    container_name: f1_api
-    image: skyallinott/f1_api:latest
-    environment:
-      - TIMEZONE=America/New_York  # (4)!
-      - TRACK_COLOUR=#B0B0B0  # (5)!
-      - EVENT_DETAIL=main  # (6)!
-    ports:
-      - 4463:4463
-    restart: unless-stopped
-    dns:
-      - 192.168.50.2
-      - 192.168.50.6
-networks: {}
+--8<-- "glance-compose.yml"
 ```
 
 1. Optionally, also mount docker socket if you want to use the docker containers widget
@@ -187,61 +152,7 @@ networks: {}
 #### :material-file-cog-outline: Glance Config:
 
 ```yaml title="dynacat.yml" linenums="1"
-server:
-  port: 8580
-  assets-path: /app/assets  # (1)!
-
-branding:
-  app-name: Dashboard
-  # logo-text: G
-  logo-url: /assets/glance.png
-  app-icon-url: /assets/glance.png
-  favicon-url: /assets/glance.svg
-  # hide-footer: true
-
-theme:
-  presets:
-    Neon-Pink:
-      background-color: 240 27 11  # (5)!
-      contrast-multiplier: 1.5  # (6)!
-      primary-color: 321 100 71
-      positive-color: 165 78 51
-      negative-color: 360 100 71
-    Formula-One:
-      background-color: 0 0 5
-      contrast-multiplier: 1.5
-      primary-color: 2 100 44
-      positive-color: 112 82 46
-      negative-color: 2 100 44
-    Material-Purple-Enhanced:
-      background-color: 227 46 16
-      contrast-multiplier: 1.3
-      primary-color: 233 76 85
-      positive-color: 115 54 76
-      negative-color: 347 70 65
-    Material-Dark-Forest:
-      background-color: 187 100 8
-      contrast-multiplier: 1.3
-      primary-color: 188 54 83
-      positive-color: 115 54 76
-      negative-color: 347 70 65
-
-  custom-css-file: /assets/user.css  # (2)!
-
-auth:
-  secret-key: <insert-server-secret>  # (3)!
-  users:
-    admin:
-      password-hash: ${ADMIN_PW_HASH}  # (4)!
-    bhaube:
-      password-hash: ${BHAUBE_PW_HASH}
-    rpereira:
-      password-hash: ${RPEREIRA_PW_HASH}
-
-pages:
-  - $include: pages/home.yml
-  - $include: pages/network.yml
-  - $include: pages/formula1.yml
+--8<-- "dynacat.yml"
 ```
 
 1. The `/app/assets` directory contains all of the custom icons and CSS used in the Glance pages.
@@ -252,57 +163,7 @@ pages:
 6. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
 
 ```yaml title="glance.yml" linenums="1"
-server:
-  port: 8580
-  assets-path: /app/assets # (1)!
-
-# branding:
-  # app-icon-url: /assets/icons/glance.png
-  # hide-footer: true
-
-theme:
-  presets:
-    Neon-Pink:
-      background-color: 240 27 11  # (5)!
-      contrast-multiplier: 1.5  # (6)!
-      primary-color: 321 100 71
-      positive-color: 165 78 51
-      negative-color: 360 100 71
-    Formula-One:
-      background-color: 0 0 5
-      contrast-multiplier: 1.5
-      primary-color: 2 100 44
-      positive-color: 112 82 46
-      negative-color: 2 100 44
-    Material-Purple-Enhanced:
-      background-color: 227 46 16
-      contrast-multiplier: 1.3
-      primary-color: 233 76 85
-      positive-color: 115 54 76
-      negative-color: 347 70 65
-    Material-Dark-Forest:
-      background-color: 187 100 8
-      contrast-multiplier: 1.3
-      primary-color: 188 54 83
-      positive-color: 115 54 76
-      negative-color: 347 70 65
-
-  custom-css-file: /assets/user.css # (2)!
-
-auth:
-  secret-key: <insert-server-secret>  # (3)!
-  users:
-    admin:
-      password-hash: ${ADMIN_PW_HASH} # (4)!
-    bhaube:
-      password-hash: ${BHAUBE_PW_HASH}
-    rpereira:
-      password-hash: ${RPEREIRA_PW_HASH}
-
-pages:
-  - $include: pages/home.yml
-  - $include: pages/network.yml
-  - $include: pages/formula1.yml
+--8<-- "glance.yml"
 ```
 
 1. The `/app/assets` directory contains all of the custom icons and CSS used in the Glance pages.
@@ -315,82 +176,14 @@ pages:
 #### :material-view-dashboard: Glance Pages:
 
 ```yaml title="home.yml" linenums="1"
-- name: Home
-  show-mobile-header: true  # (1)!
-  # hide-desktop-navigation: true  (2)
-  head-widgets:
-
-    - $include: /app/config/widgets/markets.yml
-
-  columns:
-
-    - size: small
-      widgets:
-
-        - $include: /app/config/widgets/nasa-apod.yml
-        - $include: /app/config/widgets/random-fact.yml
-        - $include: /app/config/widgets/bookmarks.yml
-
-    - size: full
-      widgets:
-
-        - $include: /app/config/widgets/search.yml
-        - $include: /app/config/widgets/hacker-news-lobsters-split.yml
-        - $include: /app/config/widgets/rss-home.yml
-        - $include: /app/config/widgets/youtube-home.yml
-        - $include: /app/config/widgets/reddit-home.yml
-
-    - size: small
-      widgets:
-
-        - $include: /app/config/widgets/clock.yml
-        - $include: /app/config/widgets/weather.yml
-        - $include: /app/config/widgets/weather-aqi.yml 
-        - $include: /app/config/widgets/weather-forecast.yml
-        - $include: /app/config/widgets/calendar.yml
-        - $include: /app/config/widgets/releases.yml
+--8<-- "glance-home.yml"
 ```
 
 1. Show a title header on mobile web browsers.
 2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
 
 ```yaml title="network.yml" linenums="1"
-- name: Network
-  show-mobile-header: true  # (1)!
-  # hide-desktop-navigation: true  (2)
-  columns:
-
-    - size: small
-      widgets:
-
-        - $include: /app/config/widgets/beszel.yml
-        - $include: /app/config/widgets/uptime-kuma-ssh.yml
-        # - $include: /app/config/widgets/wg-easy.yml  (3)
-        - $include: /app/config/widgets/ha-wan.yml
-        - $include: /app/config/widgets/ha-bandwidth.yml
-        - $include: /app/config/widgets/releases.yml
-
-    - size: full
-      widgets:
-
-        - $include: /app/config/widgets/search.yml
-        - $include: /app/config/widgets/network-services.yml
-        - $include: /app/config/widgets/docker-containers.yml
-
-        - type: split-column
-          widgets:
-
-          - $include: /app/config/widgets/technitium.yml
-          - $include: /app/config/widgets/immich-stats.yml
-
-    - size: small
-      widgets:
-
-        - $include: /app/config/widgets/clock.yml
-        - $include: /app/config/widgets/weather.yml
-        - $include: /app/config/widgets/weather-aqi.yml
-        - $include: /app/config/widgets/weather-forecast.yml
-        - $include: /app/config/widgets/calendar.yml
+--8<-- "glance-network.yml"
 ```
 
 1. Show a title header on mobile web browsers.
@@ -398,42 +191,7 @@ pages:
 3. :material-bug: Disabled WireGuard Easy community widget for now due to bugginess. 
 
 ```yaml title="formula1.yml" linenums="1"
-- name: Formula 1
-  show-mobile-header: true  # (1)!
-  # hide-desktop-navigation: true  (2)
-  columns:
-
-    - size: small
-      widgets:
-
-        - $include: /app/config/widgets/search.yml
-        - $include: /app/config/widgets/f1-last-race-results.yml
-        - $include: /app/config/widgets/rss-f1.yml
-
-    - size: full
-      widgets:
-
-        - type: split-column
-          widgets:
-
-            - $include: /app/config/widgets/f1-next-race.yml
-            
-            - type: group
-              widgets:
-
-                - $include: /app/config/widgets/f1-driver-standings.yml
-                - $include: /app/config/widgets/f1-constructor-standings.yml
-
-        - $include: /app/config/widgets/reddit-f1.yml
-
-    - size: small
-      widgets:
-
-        - $include: /app/config/widgets/clock.yml
-        - $include: /app/config/widgets/weather.yml
-        - $include: /app/config/widgets/weather-aqi.yml
-        - $include: /app/config/widgets/weather-forecast.yml
-        - $include: /app/config/widgets/calendar.yml
+--8<-- "glance-formula1.yml"
 ```
 
 1. Show a title header on mobile web browsers.

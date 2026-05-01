@@ -3,7 +3,6 @@ Description=Automount for ZimaOS NAS Quick-Storage
   
 [Automount]  
 Where=/mnt/storage_server/Quick_Storage  
-# Unmount if idle for 10 minutes (optional, saves resources)  
 TimeoutIdleSec=600  
   
 [Install]  

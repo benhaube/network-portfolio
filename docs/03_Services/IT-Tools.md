@@ -41,12 +41,5 @@ hide:
 ### :material-cog: Configuration 
 
 ```yaml title="compose.yml" linenums="1"
-services:  
-  it-tools:  
-    image: sharevb/it-tools:latest  
-    pull_policy: always  
-    container_name: it-tools  
-    ports:  
-      - 8080:8080  
-    restart: unless-stopped
+--8<-- "it-tools.yml"
 ```

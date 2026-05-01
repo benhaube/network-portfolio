@@ -1,0 +1,11 @@
+$ORIGIN cluster-catalog.internal.
+@                     0         IN  SOA           invalid. invalid. 11 300 60 604800 900
+@                     0         IN  NS            invalid.
+allow-query.ext       0         IN  APL           1:0.0.0.0/0 2:::/0
+allow-transfer.ext    0         IN  APL           1:192.168.50.2/32
+transfer-tsig-key-names.ext  0         IN  PTR           @
+version               0         IN  TXT           "2"
+3nistvi4astbs.zones   0         IN  PTR           internal.
+zone-type.ext.3nistvi4astbs.zones  0         IN  TXT           "primary"
+88phtvucafiic.zones   0         IN  PTR           50.168.192.in-addr.arpa.
+zone-type.ext.88phtvucafiic.zones  0         IN  TXT           "forwarder"

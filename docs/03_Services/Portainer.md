@@ -60,70 +60,15 @@ hide:
 #### Hub:
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
-services:  
-  portainer:  
-    container_name: portainer  
-    image: portainer/portainer-ee:lts  
-    restart: always  
-    volumes:  
-      - /var/run/docker.sock:/var/run/docker.sock  
-      - portainer_data:/data  
-      - /:/host  
-    ports:  
-      - 9443:9443  
-      - 8000:8000
-    dns:  
-      - 192.168.50.6  
-      - 192.168.50.2    
-volumes:  
-  portainer_data:  
-    name: portainer_data    
-networks:  
-  default:  
-    name: portainer_network
+--8<-- "portainer-pi-4b.yml"
 ```
 
 #### Agent:
 
 ```yaml title="Raspberry Pi Zero Server" linenums="1"
-services:  
-  agent:
-    image: portainer/agent:lts  
-    ports:  
-      - 9001:9001  
-    container_name: portainer_agent  
-    restart: always  
-    volumes:  
-      - /var/run/docker.sock:/var/run/docker.sock  
-      - /var/lib/docker/volumes:/var/lib/docker/volumes  
-      - /:/host  
+--8<-- "portainer-pi-zero.yml"
 ```
 
 ```yaml title="ZimaOS NAS" linenums="1"
-services:
-  app:
-    container_name: portainer-agent
-    image: portainer/agent:lts
-    labels:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png
-    ports:
-      - mode: ingress
-        target: 9001
-        published: "9001"
-        protocol: tcp
-    volumes:
-      - type: bind
-        source: /var/run/docker.sock
-        target: /var/run/docker.sock
-        bind:
-          create_host_path: true
-      - type: bind
-        source: /var/lib/docker/volumes
-        target: /var/lib/docker/volumes
-        bind:
-          create_host_path: true
-    network_mode: bridge
-    privileged: false
-    restart: unless-stopped
-    cpu_shares: 90
+--8<-- "portainer-zima.yml"
 ```

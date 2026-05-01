@@ -168,9 +168,8 @@ hide:
 > + Config File: `etc/exports`
 > + Exports Entry:
 > 
->     ```conf title="/etc/exports" linenums="1"
->     /media/Quick-Storage *(rw,sync,no_subtree_check)  
->     /media/nvme0n1p1 *(rw,sync,no_subtree_check)
+>     ```linuxconfig title="/etc/exports" linenums="1"
+>     --8<-- "exports"
 >     ```
 >     
 > + Command to apply:

@@ -44,20 +44,5 @@ hide:
 ### :material-cog: Configuration 
 
 ```yaml title="compose.yml" linenums="1"
-services:
-  uptime-kuma:
-    image: louislam/uptime-kuma:2
-    container_name: uptime-kuma
-    restart: unless-stopped
-    volumes:
-      - ./data:/app/data
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-    environment:
-      - PUID=1000
-      - PGID=110
-    ports:
-      - "3001:3001"
-    dns:
-      - 192.168.50.6
-      - 192.168.50.2
+--8<-- "uptime-kuma.yml"
 ```

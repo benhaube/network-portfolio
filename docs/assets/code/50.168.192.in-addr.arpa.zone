@@ -1,0 +1,12 @@
+$ORIGIN 50.168.192.in-addr.arpa.
+@                     0         IN  SOA           debian-vm.internal. invalid. 14 900 300 604800 900
+@                     0         IN  FWD           Udp "192.168.50.1" True DefaultProxy 0
+1                     3600      IN  PTR           asusrouter.internal.
+153                   3600      IN  PTR           k1c-a71e.internal.
+2                     3600      IN  PTR           pi-server.internal.
+221                   3600      IN  PTR           aimesh-node.internal.
+3                     3600      IN  PTR           proxy.pi-zero.internal.
+4                     3600      IN  PTR           storage-server.internal.
+5                     3600      IN  PTR           storage-server-2.internal.
+6                     3600      IN  PTR           debian-vm.internal.
+61                    3600      IN  PTR           bens-workstation.internal.

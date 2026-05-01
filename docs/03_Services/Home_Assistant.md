@@ -39,18 +39,5 @@ hide:
 ### :material-cog: Configuration
 
 ```yaml title="compose.yml" linenums="1"
-services:
-  homeassistant:
-    container_name: homeassistant
-    image: "ghcr.io/home-assistant/home-assistant:latest"
-    volumes:
-      - /home-assistant-container:/config
-      - /etc/localtime:/etc/localtime:ro
-      - /run/dbus:/run/dbus:ro
-    restart: unless-stopped
-    privileged: true
-    network_mode: host
-    dns:
-      - 192.168.50.6
-      - 192.168.50.2
+--8<-- "home-assistant.yml"
 ```

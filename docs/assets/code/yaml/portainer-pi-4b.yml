@@ -1,0 +1,21 @@
+services:  
+  portainer:  
+    container_name: portainer  
+    image: portainer/portainer-ee:lts  
+    restart: always  
+    volumes:  
+      - /var/run/docker.sock:/var/run/docker.sock  
+      - portainer_data:/data  
+      - /:/host  
+    ports:  
+      - 9443:9443  
+      - 8000:8000
+    dns:  
+      - 192.168.50.6  
+      - 192.168.50.2    
+volumes:  
+  portainer_data:  
+    name: portainer_data    
+networks:  
+  default:  
+    name: portainer_network

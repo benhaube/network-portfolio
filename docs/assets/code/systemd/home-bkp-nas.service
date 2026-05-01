@@ -1,13 +1,10 @@
 [Unit]
 Description=Daily NAS Backup for Home Directory
-# Verify network is up before starting (checks the system mount)
 ConditionPathIsMountPoint=/mnt/storage_server/Quick_Storage
 
 [Service]
 Type=oneshot
-# Adjust this path if you saved the script somewhere else
 ExecStart=/home/bhaube/.local/bin/home-bkp-nas.sh
-# Nice behavior: runs with lower CPU/IO priority so it doesn't slow down your PC
 Nice=19
 IOSchedulingClass=idle
 

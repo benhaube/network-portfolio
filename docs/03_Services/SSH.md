@@ -27,27 +27,27 @@ hide:
 + `22`
 
 #### :material-link-variant: URL / Access: 
-* :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)
-    * `192.168.50.1:22` 
-    * `asusrouter.internal:22`
-* :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
-    * `192.168.50.6:22` 
-    * `debian-vm.internal:22` 
-* :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
-    * `192.168.50.2:22` 
-    * `pi-server.internal:22`
-* :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)
-    * `192.168.50.3:22` 
-    * `pi-zero.internal:22` 
-* :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
-    * `192.168.50.4:22` 
-    * `storage-server.internal:22` 
-* :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md)
-    * `192.168.50.153:22` 
-    * `k1c-a71e.internal:22` 
++ :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)
+    + `192.168.50.1:22` 
+    + `asusrouter.internal:22`
++ :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
+    + `192.168.50.6:22` 
+    + `debian-vm.internal:22` 
++ :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+    + `192.168.50.2:22` 
+    + `pi-server.internal:22`
++ :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)
+    + `192.168.50.3:22` 
+    + `pi-zero.internal:22` 
++ :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
+    + `192.168.50.4:22` 
+    + `storage-server.internal:22` 
++ :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md)
+    + `192.168.50.153:22` 
+    + `k1c-a71e.internal:22` 
 
 #### :material-key-chain: Credentials: 
-* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): SSH keys
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): SSH keys
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -69,129 +69,7 @@ hide:
 1. Make the required changes to the SSH config file: 
 
     ```nt title="/etc/ssh/sshd_config" linenums="1"
-    # This is the sshd server system-wide configuration file.  See  
-    # sshd_config(5) for more information.  
-  
-    # This sshd was compiled with PATH=/usr/local/bin:/usr/bin:/bin:/usr/games  
-  
-    # The strategy used for options in the default sshd_config shipped with  
-    # OpenSSH is to specify options with their default value where  
-    # possible, but leave them commented.  Uncommented options override the  
-    # default value.  
-  
-    Include /etc/ssh/sshd_config.d/*.conf  
-  
-    #Port 22  
-    #AddressFamily any  
-    #ListenAddress 0.0.0.0  
-    #ListenAddress ::  
-  
-    #HostKey /etc/ssh/ssh_host_rsa_key  
-    #HostKey /etc/ssh/ssh_host_ecdsa_key  
-    #HostKey /etc/ssh/ssh_host_ed25519_key  
-  
-    # Ciphers and keying  
-    #RekeyLimit default none  
-  
-    # Logging  
-    SyslogFacility AUTH  
-    LogLevel INFO  
-  
-    # Authentication:  
-  
-    LoginGraceTime 2m  
-    PermitRootLogin no  
-    StrictModes yes  
-    MaxAuthTries 10  
-    MaxSessions 10  
-  
-    #PubkeyAuthentication yes  
-  
-    # Expect .ssh/authorized_keys2 to be disregarded by default in future.  
-    #AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2  
-  
-    #AuthorizedPrincipalsFile none  
-  
-    #AuthorizedKeysCommand none  
-    #AuthorizedKeysCommandUser nobody  
-  
-    # For this to work you will also need host keys in /etc/ssh/ssh_known_hosts  
-    #HostbasedAuthentication no  
-    # Change to yes if you don't trust ~/.ssh/known_hosts for  
-    # HostbasedAuthentication  
-    #IgnoreUserKnownHosts no  
-    # Don't read the user's ~/.rhosts and ~/.shosts files  
-    #IgnoreRhosts yes  
-  
-    # To disable tunneled clear text passwords, change to "no" here!  
-    PasswordAuthentication no  
-    #PermitEmptyPasswords no  
-  
-    # Change to "yes" to enable keyboard-interactive authentication.  Depending on  
-    # the system's configuration, this may involve passwords, challenge-response,  
-    # one-time passwords or some combination of these and other methods.  
-    # Beware issues with some PAM modules and threads.  
-    KbdInteractiveAuthentication no  
-  
-    # Kerberos options  
-    #KerberosAuthentication no  
-    #KerberosOrLocalPasswd yes  
-    #KerberosTicketCleanup yes  
-    #KerberosGetAFSToken no  
-  
-    # GSSAPI options  
-    #GSSAPIAuthentication no  
-    #GSSAPICleanupCredentials yes  
-    #GSSAPIStrictAcceptorCheck yes  
-    #GSSAPIKeyExchange no  
-  
-    # Set this to 'yes' to enable PAM authentication, account processing,  
-    # and session processing. If this is enabled, PAM authentication will  
-    # be allowed through the KbdInteractiveAuthentication and  
-    # PasswordAuthentication.  Depending on your PAM configuration,  
-    # PAM authentication via KbdInteractiveAuthentication may bypass  
-    # the setting of "PermitRootLogin prohibit-password".  
-    # If you just want the PAM account and session checks to run without  
-    # PAM authentication, then enable this but set PasswordAuthentication  
-    # and KbdInteractiveAuthentication to 'no'.  
-    UsePAM yes  
-  
-    AllowAgentForwarding no  
-    AllowTcpForwarding no  
-    #GatewayPorts no  
-    X11Forwarding no  
-    #X11DisplayOffset 10  
-    #X11UseLocalhost yes  
-    #PermitTTY yes  
-    PrintMotd no  
-    #PrintLastLog yes  
-    #TCPKeepAlive yes  
-    #PermitUserEnvironment no  
-    #Compression delayed  
-    ClientAliveInterval 300  
-    ClientAliveCountMax 3  
-    #UseDNS no  
-    #PidFile /run/sshd.pid  
-    MaxStartups 10:30:60  
-    #PermitTunnel no  
-    #ChrootDirectory none  
-    #VersionAddendum none  
-  
-    # no default banner path  
-    Banner /etc/issue.net  
-  
-    # Allow client to pass locale and color environment variables  
-    AcceptEnv LANG LC_* COLORTERM NO_COLOR  
-  
-    # override default of no subsystems  
-    Subsystem       sftp    /usr/lib/openssh/sftp-server  
-  
-    # Example of overriding settings on a per-user basis  
-    #Match User anoncvs  
-    #       X11Forwarding no  
-    #       AllowTcpForwarding no  
-    #       PermitTTY no  
-    #       ForceCommand cvs server
+    --8<-- "sshd_config"
     ```
 
 2. Restart the SSH service for the change to take effect:
@@ -205,14 +83,7 @@ hide:
 1. Paste this ASCII message into the banner file:
 
     ```text title="/etc/issue.net" linenums="1"
-    /////---------------------------------------------------------------/////  
-    \\\\\                                                               \\\\\  
-    ///// WARNING: This system is for the use of authorized users only! /////  
-    \\\\\   All activities on this system are monitored and recorded.   \\\\\  
-    /////   Unauthorized access is prohibited and will be prosecuted.   /////  
-    \\\\\   Disconnect immediately if you are not an authorized user.   \\\\\  
-    /////                                                               /////  
-    \\\\\---------------------------------------------------------------\\\\\
+    --8<-- "issue.net"
     ```
 
 #### Suppress MOTD:
@@ -306,43 +177,7 @@ hide:
 3. Paste the following into the config file:
 
     ```kconfig title="~/.ssh/config" linenums="1"
-    # --- GLOBAL SETTINGS for all hosts (*) ---
-
-    Host *
-        IdentityAgent ~/.bitwarden-ssh-agent.sock  # (1)!
-        # User admin  (2)
-
-    # --- HOST-SPECIFIC SETTINGS ---
-
-    Host pi-server.internal
-        User admin
-        IdentityFile ~/.ssh/pi-server.pub
-        IdentitiesOnly yes  # (3)!
-    
-    Host pi-zero.internal
-        User admin
-        IdentityFile ~/.ssh/pi-zero.pub
-        IdentitiesOnly yes
-
-    Host asusrouter.internal
-        User Admin
-        IdentityFile ~/.ssh/asusrouter.pub
-        IdentitiesOnly yes
-
-    Host storage-server.internal
-        User admin
-        IdentityFile ~/.ssh/storage-server.pub
-        IdentitiesOnly yes
-
-    Host debian-vm.internal
-        User server-admin
-        IdentityFile ~/.ssh/debian-vm.pub
-        IdentitiesOnly yes
-
-    Host k1c-a71e.internal
-        User root
-        IdentityFile ~/.ssh/k1c-a71e.pub
-        IdentitiesOnly no
+    --8<-- "ssh-client-config"
     ```
 
     1. All hosts use Bitwarden SSH key agent
@@ -350,7 +185,7 @@ hide:
     3. CRITICAL: Prevents offering all other keys stored in Bitwarden
 
 4. Create the `IdentityFile` for all of the servers in the `~/.ssh` directory and paste in the public key.
-    * **Example:**
+    + **Example:**
 
         ```bash linenums="1"
         nano ~/.ssh/[hostname].pub

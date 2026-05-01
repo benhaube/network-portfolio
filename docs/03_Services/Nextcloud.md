@@ -40,25 +40,5 @@ hide:
 ### :material-cog: Configuration
 
 ```yaml title="compose.yml" linenums="1"
-services:
-  nextcloud:
-    cpu_shares: 90
-    container_name: nextcloud
-    image: nextcloud:32.0
-    labels:
-      icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/icon.png
-    ports:
-      - target: 80
-        published: "10081"
-        protocol: tcp
-      - target: 443
-        published: "10443"
-        protocol: tcp
-    restart: unless-stopped
-    volumes:
-      - type: bind
-        source: /DATA/AppData/nextcloud/var/www/html
-        target: /var/www/html
-    network_mode: bridge
-    privileged: false
+--8<-- "nextcloud.yml"
 ```

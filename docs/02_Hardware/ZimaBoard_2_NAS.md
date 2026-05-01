@@ -191,69 +191,21 @@ hide:
 > + Systemd `.mount` unit files: `/etc/systemd/system`
 > 
 >     ```systemd title="mnt-storage_server-Quick_Storage.mount" linenums="1"
->     [Unit]  
->     Description=Mount ZimaOS Quick-Storage via NFS  
->     After=network-online.target  
->     Wants=network-online.target  
->     
->     [Mount]  
->     # The remote share  
->     What=192.168.50.4:/media/Quick-Storage  
->     # The local path  
->     Where=/mnt/storage_server/Quick_Storage  
->     Type=nfs  
->     # Standard NFS options for performance  
->     Options=defaults,noatime,nodiratime,rsize=1048576,wsize=1048576,timeo=14,soft  
->     
->     [Install]  
->     WantedBy=multi-user.target
+>     --8<-- "mnt-storage_server-Quick_Storage.mount"
 >     ```
 >     
 >     ```systemd title="mnt-storage_server-NVMe.mount" linenums="1"
->     [Unit]  
->     Description=Mount ZimaOS Quick-Storage  
->     After=network-online.target  
->     Wants=network-online.target  
->     
->     [Mount]  
->     # The remote share  
->     What=192.168.50.4:/media/nvme0n1p1  
->     # The local path  
->     Where=/mnt/storage_server/NVMe  
->     Type=nfs  
->     # Standard NFS options for performance  
->     Options=defaults,noatime,nodiratime,rsize=1048576,wsize=1048576,timeo=14,soft  
->     
->     [Install]  
->     WantedBy=multi-user.target
+>     --8<-- "mnt-storage_server-NVMe.mount"
 >     ```
 >     
 > + Systemd `.automount` unit files: `/etc/systemd/system`
 > 
 >     ```systemd title="mnt-storage_server-Quick_Storage.automount" linenums="1"
->     [Unit]  
->     Description=Automount for ZimaOS NAS Quick-Storage  
->     
->     [Automount]  
->     Where=/mnt/storage_server/Quick_Storage  
->     # Unmount if idle for 10 minutes (optional, saves resources)  
->     TimeoutIdleSec=600  
->     
->     [Install]  
->     WantedBy=multi-user.target
+>     --8<-- "mnt-storage_server-Quick_Storage.automount"
 >     ```
 >     
 >     ```systemd title="mnt-storage_server-NVMe.automount" linenums="1"
->     [Unit]  
->     Description=Automount for ZimaOS NVMe drive  
->     
->     [Automount]  
->     Where=/mnt/storage_server/NVMe  
->     # Unmount if idle for 10 minutes (optional, saves resources)  
->     TimeoutIdleSec=600  
->     
->     [Install]  
->     WantedBy=multi-user.target
+>     --8<-- "mnt-storage_server-NVMe.automount"
 >     ```
 >     
 > + Systemd daemon reload command:

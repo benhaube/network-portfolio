@@ -1,0 +1,10 @@
+[Unit]  
+Description=Automount for ZimaOS Quick-Storage  
+  
+[Automount]  
+Where=/mnt/storage_server/NVMe  
+# Unmount if idle for 10 minutes (optional, saves resources)  
+TimeoutIdleSec=600  
+  
+[Install]  
+WantedBy=multi-user.target

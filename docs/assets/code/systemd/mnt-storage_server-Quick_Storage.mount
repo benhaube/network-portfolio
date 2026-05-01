@@ -1,0 +1,16 @@
+[Unit]  
+Description=Mount ZimaOS Quick-Storage via NFS  
+After=network-online.target  
+Wants=network-online.target  
+  
+[Mount]  
+# The remote share  
+What=192.168.50.4:/media/Quick-Storage  
+# The local path  
+Where=/mnt/storage_server/Quick_Storage  
+Type=nfs  
+# Standard NFS options for performance  
+Options=defaults,noatime,nodiratime,rsize=1048576,wsize=1048576,timeo=14,soft  
+  
+[Install]  
+WantedBy=multi-user.target

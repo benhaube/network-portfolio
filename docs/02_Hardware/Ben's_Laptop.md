@@ -109,162 +109,15 @@ hide:
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
 ```bash title="home-bkp-nas.sh" linenums="1" hl_lines="44"
-#!/bin/bash
-
-# Backup the /home/ directory to the ZimaOS NAS
-# GOAL: Pure data backup (No symlinks, no ownership retention)
-# Exclusions defined in: /home/bhaube/.bkp-exclude-nas
-
-# --- Configuration ---
-SOURCE_DIR="$HOME/"
-DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/ben-laptop/" # (1)!
-MOUNT_POINT="/mnt/storage_server/Quick_Storage"
-EXCLUDE_FILE="$HOME/.bkp-exclude-nas"
-LOG_FILE="$HOME/.var/log/backup_log.log"
-TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
-
-# --- Environment Validation ---
-# Ensure log rotation is configured to prevent infinite log growth
-LOGROTATE_CONF="/etc/logrotate.d/home-backup"
-if [ ! -f "$LOGROTATE_CONF" ]; then
-    echo "[$TIMESTAMP] WARNING: Logrotate config not found at $LOGROTATE_CONF." | tee -a "$LOG_FILE"
-    echo "[$TIMESTAMP] Logs will grow indefinitely until this is fixed." | tee -a "$LOG_FILE"
-fi
-
-# --- Safety Check: Trigger Automount & Verify ---
-# Access the mount point to wake up systemd automount
-ls "$MOUNT_POINT" > /dev/null 2>&1
-
-# Check if it is actually a mount point
-if ! mountpoint -q "$MOUNT_POINT"; then
-    echo "[$TIMESTAMP] CRITICAL: NAS is not mounted at $MOUNT_POINT. Backup aborted." | tee -a "$LOG_FILE"
-    exit 1
-fi
-
-# Ensure the sub-directory exists on the NAS
-mkdir -p "$DEST_DIR"
-
-# Print status to terminal & log
-echo "[$TIMESTAMP] Starting home directory backup..." | tee -a "$LOG_FILE"
-
-# --- The Rsync Command ---
-# -av: Archive mode + increase verbosity
-# --progress: Show progress during transfer
-# --timeout=60: Sets IO timeout to 60s
-# --delete: Remove files on NAS that were deleted from Source
-rsync -av --progress --timeout=60 --delete --exclude-from="$EXCLUDE_FILE" "$SOURCE_DIR" "$DEST_DIR" >> "$LOG_FILE" 2>&1
-
-# Capture the exit code immediately
-EXIT_CODE=$?
-
-# Update the TIMESTAMP variable
-TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
-
-# Report Status based on captured code
-if [ $EXIT_CODE -eq 0 ]; then
-    MSG="[$TIMESTAMP] Backup completed successfully."
-else
-    MSG="[$TIMESTAMP] Backup **FAILED** with exit code $EXIT_CODE."
-fi
-
-# Print to terminal and append to log
-echo "$MSG"
-echo "$MSG" >> "$LOG_FILE"
+--8<-- "home-bkp-nas.sh"
 ```
 
 1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
 
 2. Place `.bkp-exclude-nas` in the `~/` directory.
 
-```conf title=".bkp-exclude-nas" linenums="1"
-# Common system/temp/cache directories
-.cache/
-.local/
-.thumbnails/
-*/.DS_Store
-lost+found
-
-# Application-specific caches
-.android/
-.antigravity/
-.cargo/
-.conda/
-.docker/
-.gemini/
-.gitlab/
-.gradle/
-.Heaven/
-.icons/
-.java/
-.kde/
-.lmstudio/
-.mcop/
-.net/
-.npm/
-.ollama/
-.pki/
-.putty/
-.qt/
-.redhat/
-.skiko/
-.starship/
-.steam/
-.Superposition/
-.themes/
-.var/
-.vscode-oss/
-.vscode/
-node_modules/
-
-# Virtualization & Containers
-.docker/volumes/
-.vagrant.d/
-*.qcow2
-*.vdi
-*.vmdk
-
-# Cybersecurity & Development
-.msf4/history/
-.msf4/logs/
-.terraform/ 
-**/__pycache__/
-**/target/
-
-# Linux system noise
-.dbus/
-.gvfs/
-.xsession-errors
-**/.Trash-*/
-
-# DIY & 3D-printing
-**/_cache/
-**/temp_gcode/
-
-# Others
-.admin-smbcredentials
-.bitwarden-ssh-agent.sock
-.gitconfig
-.gtkrc-2.0
-.lmstudio-home-pointer
-.packettracer
-.pwsafe.dat
-.python_history
-.rnd
-.smbcredentials
-.steampath
-.trash
-.viminfo
-.wget-hsts
-Android/
-Desktop/
-Downloads/
-Encrypted-Documents/
-Google-Drive/
-Music/
-Public/
-Syncthing/
-Templates/
-Vaults/
+```kconfig title=".bkp-exclude-nas" linenums="1"
+--8<-- ".bkp-exclude-nas"
 ```
 
 3. Run the command `#!bash mkdir -p ~/.var/log` to create the log directory.
@@ -272,51 +125,17 @@ Vaults/
 5. Place `home-backup` in the `/etc/logrotate.d/` directory.
 
 ```nginx title="/etc/logrotate.d/home-backup" linenums="1"
-/home/bhaube/.var/log/backup_log.log {
-    weekly
-    rotate 4
-    compress
-    delaycompress
-    missingok
-    notifempty
-    copytruncate
-}
+--8<-- "logrotate-home-backup"
 ```
 
 6. Place `home-bkp-nas.timer` and `home-bkp-nas.service` in the `~/.config/systemd/user/` directory.
 
 ```systemd title="home-bkp-nas.timer" linenums="1"
-[Unit]
-Description=Run NAS Backup Weekdays at 7PM
-
-[Timer]
-# Mon-Fri at 19:00 (7 PM)
-OnCalendar=Mon..Fri 19:00:00
-# If the computer is off/asleep at 6pm, run immediately when it wakes up
-Persistent=true
-# Randomize delay by 5 mins to prevent exact-second spikes (optional but good practice)
-RandomizedDelaySec=5m
-
-[Install]
-WantedBy=timers.target
+--8<-- "home-bkp-nas.timer"
 ```
 
 ```systemd title="home-bkp-nas.service" linenums="1"
-[Unit]
-Description=Daily NAS Backup for Home Directory
-# Verify network is up before starting (checks the system mount)
-ConditionPathIsMountPoint=/mnt/storage_server/Quick_Storage
-
-[Service]
-Type=oneshot
-# Adjust this path if you saved the script somewhere else
-ExecStart=/home/bhaube/.local/bin/home-bkp-nas.sh
-# Nice behavior: runs with lower CPU/IO priority so it doesn't slow down your PC
-Nice=19
-IOSchedulingClass=idle
-
-[Install]
-WantedBy=default.target
+--8<-- "home-bkp-nas.service"
 ```
 
 7. Run the command `#!bash systemctl --user daemon-reload`
@@ -325,67 +144,19 @@ WantedBy=default.target
 #### :material-folder-network: Systemd Files for ZimaOS NAS Mounts *(NFS)*
 
 ```systemd title="mnt-storage_server-NVMe.mount" linenums="1"
-[Unit]  
-Description=Mount ZimaOS Quick-Storage  
-After=network-online.target  
-Wants=network-online.target  
-  
-[Mount]  
-# The remote share  
-What=192.168.50.4:/media/nvme0n1p1  
-# The local path  
-Where=/mnt/storage_server/NVMe  
-Type=nfs  
-# Standard NFS options for performance  
-Options=defaults,noatime,nodiratime,rsize=1048576,wsize=1048576,timeo=14,soft  
-  
-[Install]  
-WantedBy=multi-user.target
+--8<-- "mnt-storage_server-NVMe.mount"
 ```
 
 ```systemd title="mnt-storage_server-NVMe.automount" linenums="1"
-[Unit]  
-Description=Automount for ZimaOS Quick-Storage  
-  
-[Automount]  
-Where=/mnt/storage_server/NVMe  
-# Unmount if idle for 10 minutes (optional, saves resources)  
-TimeoutIdleSec=600  
-  
-[Install]  
-WantedBy=multi-user.target
+--8<-- "mnt-storage_server-NVMe.automount"
 ```
 
 ```systemd title="mnt-storage_server-Quick_Storage.mount" linenums="1"
-[Unit]  
-Description=Mount ZimaOS Quick-Storage via NFS  
-After=network-online.target  
-Wants=network-online.target  
-  
-[Mount]  
-# The remote share  
-What=192.168.50.4:/media/Quick-Storage  
-# The local path  
-Where=/mnt/storage_server/Quick_Storage  
-Type=nfs  
-# Standard NFS options for performance  
-Options=defaults,noatime,nodiratime,rsize=1048576,wsize=1048576,timeo=14,soft  
-  
-[Install]  
-WantedBy=multi-user.target
+--8<-- "mnt-storage_server-Quick_Storage.mount"
 ```
 
 ```systemd title="mnt-storage_server-Quick_Storage.automount" linenums="1"
-[Unit]  
-Description=Automount for ZimaOS NAS Quick-Storage  
-  
-[Automount]  
-Where=/mnt/storage_server/Quick_Storage  
-# Unmount if idle for 10 minutes (optional, saves resources)  
-TimeoutIdleSec=600  
-  
-[Install]  
-WantedBy=multi-user.target
+--8<-- "mnt-storage_server-Quick_Storage.automount"
 ```
 
 #### :material-folder-lock: Encrypted-Documents Config

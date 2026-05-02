@@ -34,17 +34,17 @@ hide:
 
 #### :material-key-chain: Credentials:  
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + "Immich User"
-    + "Immich Administrator"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich User"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich Administrator"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server` | `ghcr.io/immich-app/immich-server:v2.7.5` |
-|  |  | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.7.5-openvino` |
-|  |  | `immich-redis` | `docker.io/redis:6.2-alpine` |
-|  |  | `immich-postgres` | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
+| Host Device                                                         | Method                                | Container Name            | Image                                                            |
+| :------------------------------------------------------------------ | :------------------------------------ | :------------------------ | :--------------------------------------------------------------- |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server`           | `ghcr.io/immich-app/immich-server:v2.7.5`                        |
+|                                                                     |                                       | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.7.5-openvino`     |
+|                                                                     |                                       | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
+|                                                                     |                                       | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
 
 ### :material-cog: Configuration 
 

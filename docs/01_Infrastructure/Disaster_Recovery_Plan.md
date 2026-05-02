@@ -20,12 +20,12 @@ tags:
 ---
 ## :material-priority-high: Service Priority Levels
 
-| Priority | Service | Impact of Failure | RTO |
-| :------- | :------ | :---------------- | :-- |
-| Critical | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) DNS Cluster | Total loss of Internet / LAN connectivity. | < 5 Minutes *(Automatic Failover)* |
-| High | [:services-caddy:&nbsp;Caddy](../03_Services/Caddy.md) / [:services-cloudflare:&nbsp;Cloudflare](../03_Services/Cloudflared.md) Reverse Proxy | Loss of remote access and SSL termination. | < 1 Hour |
-| Medium | [:simple-homeassistant:&nbsp;Home Assistant](../03_Services/Home_Assistant.md) / IoT | Loss of automation and physical device control. | < 4 Hours |
-| Standard | [:services-immich:&nbsp;Immich](../03_Services/Immich.md) / Media | Loss of access to personal archives. | < 24 Hours |
+| Priority | Service                                                                                                                                       | Impact of Failure                               | RTO                                |
+| :------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :--------------------------------- |
+| Critical | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) DNS Cluster                                                             | Total loss of Internet / LAN connectivity.      | < 5 Minutes *(Automatic Failover)* |
+| High     | [:services-caddy:&nbsp;Caddy](../03_Services/Caddy.md) / [:services-cloudflare:&nbsp;Cloudflare](../03_Services/Cloudflared.md) Reverse Proxy | Loss of remote access and SSL termination.      | < 1 Hour                           |
+| Medium   | [:simple-homeassistant:&nbsp;Home Assistant](../03_Services/Home_Assistant.md) / IoT                                                          | Loss of automation and physical device control. | < 4 Hours                          |
+| Standard | [:services-immich:&nbsp;Immich](../03_Services/Immich.md) / Media                                                                             | Loss of access to personal archives.            | < 24 Hours                         |
 
 ---
 ## :material-cloud-upload-outline: Backup Strategy

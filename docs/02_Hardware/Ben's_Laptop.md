@@ -39,40 +39,40 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
-| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
-| :brands-intel:&nbsp;Core(r) i5 1135G7 *(x86-64)* | 4C / 8T | 8 GB LPDDR4 *(4267 MT/s)* | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz | *Shared* |
+| CPU                                              | Cores / Threads | CPU Freq.                 | RAM     | GPU                            | GPU Freq. | VRAM     |
+| :----------------------------------------------- | :-------------- | :------------------------ | :------ | :----------------------------- | :-------- | :------- |
+| :brands-intel:&nbsp;Core(r) i5 1135G7 *(x86-64)* | 4C / 8T         | 8 GB LPDDR4 *(4267 MT/s)* | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz   | *Shared* |
 
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:
 
-| Interface | IP Address | MAC Address | Connected To |
-| :-------: | :--------- | :---------- | :----------- |
-| wlp0s20f3 | `DHCP` | `A6:97:E3:D2:F1:C4` | :material-wifi:&nbsp;Home *(vlan50)* |
+| Interface   | IP Address | MAC Address         | Connected To                         |
+| :---------: | :--------- | :------------------ | :----------------------------------- |
+| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | :material-wifi:&nbsp;Home *(VLAN50)* |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN | Hostname(s) | DNS Servers | Gateway |
-| :--- | :---------- | :---------- | :------ |
-| :material-security:&nbsp;vlan50 | `ben-laptop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| VLAN                            | Hostname(s)           | DNS Servers                   | Gateway        |
+| :------------------------------ | :-------------------- | :---------------------------- | :------------- |
+| :material-security:&nbsp;VLAN50 | `ben-laptop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/`, `/home` | NVMe SSD | 929 GB | `/dev/dm-0` | `btrfs` | LUKS2 |
+| Mount Point  | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
+| :----------- | :--------- | :------------- | :---------- | :---------- | :--------- |
+| `/`, `/home` | NVMe SSD   | 929 GB         | `/dev/dm-0` | `btrfs`     | LUKS2      |
 
 #### :material-usb: External / Attached:
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/home/bhaube/Encrypted-Documents` | Encrypted Dir | - | `/home/bhaube/.cipher` | `fuse.gocryptfs` | `gocryptfs` |
-| `/home/bhaube/Google-Drive` | Cloud Storage | 2 TB | - | `fuse.rclone` | - |
-| `/mnt/storage_server/Quick_Storage` | NFS | 1.9 TB | `192.168.50.4:/media/Quick-Storage` | `nfs4` | - |        
-| `/mnt/storage_server/NVMe` | NFS | 234 GB | `192.168.50.4:/media/nvme0n1p1` | `nfs4` | - |        
+| Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  | 
+| :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
+| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | -              | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB           | -                                   | `fuse.rclone`    | -           | 
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |        
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |        
 
 ---
 ## :material-tools: Maintenance & Notes

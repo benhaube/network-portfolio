@@ -28,14 +28,14 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + Admin Login: "ASUS Router"
-    + SSH Key: "Admin@asusrouter"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ASUS Router"
+    + SSH Key&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| Host Device                                                                      | Method                             | Container Name | Image |
+| :------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration 
 

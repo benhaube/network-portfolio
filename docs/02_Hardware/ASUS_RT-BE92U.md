@@ -41,37 +41,37 @@ hide:
 
 #### :material-wan: WAN Connection:
 
-| Interface | IP Address | MAC Address | Connected To |
-| :-------: | :--------- | :---------- | :----------- |
-| WAN0 | `DHCP` | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5 Gb/s WAN / LAN (Port 1) |
-| WAN1 | `disabled` | `xx:xx:xx:xx:xx:xx` | - |
+| Interface | IP Address | MAC Address         | Connected To                                         |
+| :-------: | :--------- | :------------------ | :--------------------------------------------------- |
+| WAN0      | `DHCP`     | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5 Gb/s WAN / LAN (Port 1) |
+| WAN1      | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                    |
 
 #### :material-lan: Local Networks:
 
-| VLAN | Domain | DNS Server(s) | Gateway | Subnet | Subnet Mask | Broadcast | DHCP Range |
-| :--: | :----- | :------------ | :------ | :----- | :---------- | :-------- | :--------- |
-| :material-security:&nbsp;*vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
-| :symbols-shield-person-fill:&nbsp;*vlan52* | - | `9.9.9.9` `149.112.112.112` | `192.168.52.1` | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.255` | `.2` to `.254` |
-| :symbols-shield-house-fill:&nbsp;*vlan53* | - | `9.9.9.9` `149.112.112.112` | `192.168.53.1` | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.255` | `.2` to `.254` |
+| VLAN                                     | Domain   | DNS Server(s)                 | Gateway        | Subnet            | Subnet Mask     | Broadcast        | DHCP Range     |
+| :--------------------------------------: | :------- | :---------------------------- | :------------- | :---------------- | :-------------- | :--------------- | :------------- |
+| :material-security:&nbsp;VLAN50          | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
+| :symbols-shield-person-fill:&nbsp;VLAN52 | -        | `9.9.9.9` `149.112.112.112`   | `192.168.52.1` | `192.168.52.0/24` | `255.255.255.0` | `192.168.52.255` | `.2` to `.254` |
+| :symbols-shield-house-fill:&nbsp;VLAN53  | -        | `9.9.9.9` `149.112.112.112`   | `192.168.53.1` | `192.168.53.0/24` | `255.255.255.0` | `192.168.53.255` | `.2` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 
-| SSID | VLAN | WAN Access | IP Address | Frequency | Notes |  
-| :--: | :--: | :--------: | :--------- | :-------- | :---- |
-| *Home* | *vlan50* | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :material-security:&nbsp;Trusted VLAN |
-| *Home_Guest* | *vlan52* | :material-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz | :symbols-shield-person-fill:&nbsp;Guest VLAN |
-| *2G_IoT* | *vlan53* | :material-close: | `192.168.53.0/24` | 2.4 GHz | :symbols-shield-house-fill:&nbsp;IoT VLAN |
+| SSID         | VLAN   | WAN Access       | IP Address        | Frequency             | Notes                                        |  
+| :----------: | :----: | :--------------: | :---------------- | :-------------------- | :------------------------------------------- |
+| *Home*       | VLAN50 | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :material-security:&nbsp;Trusted VLAN        |
+| *Home_Guest* | VLAN52 | :material-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-person-fill:&nbsp;Guest VLAN |
+| *2G_IoT*     | VLAN53 | :material-close: | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-| Port # | Connected Device | Color / Type | Notes |
-| :----: | :--------------- | :----------- | :---- |
-| 10 Gb WAN / LAN 1 | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a | 10 Gb/s Uplink |
-| 2.5 Gb WAN / LAN 2 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md) | Black Cat6a | WAN Connection |
-| 2.5 Gb LAN 1 | :devices-10-inch-rack:&nbsp;Mini-Rack | Black Cat6a | Spare Keystone Jack |
-| 2.5 Gb LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
-| 2.5 Gb LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
-| 2.5 Gb LAN 4 | :material-ethernet:&nbsp;*Empty* | - | - |
+| Port #             | Connected Device                                                          | Color / Type | Notes               |
+| :----------------: | :------------------------------------------------------------------------ | :----------- | :------------------ |
+| 10 Gb WAN / LAN 1  | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md)   | Black Cat6a  | 10 Gb/s Uplink      |
+| 2.5 Gb WAN / LAN 2 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md)        | Black Cat6a  | WAN Connection      |
+| 2.5 Gb LAN 1       | :devices-10-inch-rack:&nbsp;Mini-Rack                                     | Black Cat6a  | Spare Keystone Jack |
+| 2.5 Gb LAN 2       | :material-ethernet:&nbsp;*Empty*                                          | -            | -                   |
+| 2.5 Gb LAN 3       | :material-ethernet:&nbsp;*Empty*                                          | -            | -                   |
+| 2.5 Gb LAN 4       | :material-ethernet:&nbsp;*Empty*                                          | -            | -                   |
 
 ## :symbols-storage: Storage & Mounts
 
@@ -79,25 +79,25 @@ hide:
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/` | eMMC | 49.1 MB | `/dev/root` | `squashfs` | - |
-| `/jffs` | - | 44.5 MB | `ubi:jffs2` | `ubifs` | - |
-| `/data` | - | 16.8 MB | `bui:data` | `ubifs` | - |
+| `/`         | eMMC       | 49.1 MB        | `/dev/root` | `squashfs`  | -          |
+| `/jffs`     | -          | 44.5 MB        | `ubi:jffs2` | `ubifs`     | -          |
+| `/data`     | -          | 16.8 MB        | `bui:data`  | `ubifs`     | -          |
 
 #### :material-usb: External / Attached:
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB | `/dev/sda1` | `ext4` | - |
+| Mount Point           | Drive Type      | Drive Capacity | Device Path | File System | Encryption | 
+| :-------------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
+| `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB        | `/dev/sda1` | `ext4`      | -          |
 
 ## :material-web: Services / Docker Containers
 
 #### :material-linux: Native:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
-| *Active* | :material-web-clock:&nbsp;[Chrony *(NTP Server)*](../03_Services/Chrony.md) | `123` | Advanced, lightweight NTP client and server. |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
-| *Active* | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md) | `41820` | Remote access VPN server. |
+| Status   | Service                                                                     | Port(s) | Role / Notes                                 |
+| :------: | :-------------------------------------------------------------------------- | :-----: | :------------------------------------------- |
+| *Active* | :material-web-clock:&nbsp;[Chrony *(NTP Server)*](../03_Services/Chrony.md) | `123`   | Advanced, lightweight NTP client and server. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)                | `22`    | Remote terminal access.                      |
+| *Active* | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md)     | `41820` | Remote access VPN server.                    |
 
 ---
 ## :material-tools: Maintenance & Notes

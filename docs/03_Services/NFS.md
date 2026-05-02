@@ -32,13 +32,14 @@ hide:
 + `192.168.50.4:/media/nvme0n1p1`
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "[[SSH]] keys"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + "[[SSH]] keys"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| Host Device                                                         | Method                             | Container Name | Image |
+| :------------------------------------------------------------------ | :--------------------------------- | :------------- | :---- |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration 
 

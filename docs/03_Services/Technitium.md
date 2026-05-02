@@ -40,14 +40,15 @@ hide:
     * <http://pi-server.internal:5380>
 
 #### :material-key-chain: Credentials: 
-* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Technitium"
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    * Local Network&ensp;:material-arrow-right-thin:&ensp;"Technitium"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| Host Device                                                                                     | Method                             | Container Name | Image |
+| :---------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                   | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration 
 

@@ -29,13 +29,14 @@ hide:
 + <http://192.168.50.153:7125>
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd @ K1C-A71E"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Liux | `N/A` | `N/A` |
+| Host Device                                                                                                     | Method                            | Container Name | Image |
+| :-------------------------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
+| :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Liux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration
 

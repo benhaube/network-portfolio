@@ -112,9 +112,9 @@ hide:
 2. [ ] Preheat the bed to your normal bed temperature for 20 minutes *(60&deg;C for PLA)*.
 3. [ ] Open up Fluidd or mainsail through Orca Slicer or by typing your printers IP address into your web browser with the appropriate port number appended.
 
-    | Interface | Port |
-    | :-------- | :--: |
-    | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md) | `4408` |
+    | Interface                                                       |  Port  |
+    | :-------------------------------------------------------------- | :----: |
+    | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)       | `4408` |
     | [:services-mainsail:&nbsp;Mainsail](https://docs.mainsail.xyz/) | `4409` |
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.

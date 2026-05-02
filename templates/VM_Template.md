@@ -32,41 +32,42 @@ hide:
 + [:device-icon: Device_Template](Device_Template.md)
 
 #### :material-key-chain: Credentials:
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): .
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
 #### :symbols-monitor-heart: Resource Allocation:
 
-| vCPU | RAM | Storage | VDI Location |
-| :--: | :-: | :------ | :----------- |
-| #C / #T *(virt-tech)* | # GB | # GB | `path/to/vdi` |
+|         vCPU          |  RAM  | Storage | VDI Location  |
+| :-------------------: | :---: | :------ | :------------ |
+| #C / #T *(virt-tech)* | # GB  | # GB    | `path/to/vdi` |
 
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:
 
-| Interface | IP Address | MAC Address | Notes |
-| :-------: | :--------- | :---------- | :---- |
-| enp1s0 | `x.x.x.x` | `XX:XX:XX:XX:XX:XX` | - |
+| Interface | IP Address | MAC Address         | Notes |
+| :-------: | :--------- | :------------------ | :---- |
+|  enp1s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -     |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN | Hostname(s) | DNS Servers | Gateway |
-| :--- | :---------- | :---------- | :------ |
-| vlan | `hostname.internal` | `0.0.0.0` | `x.x.x.1` |
+| VLAN | Hostname(s)         | DNS Servers | Gateway   |
+| :--- | :------------------ | :---------- | :-------- |
+| vlan | `hostname.internal` | `0.0.0.0`   | `x.x.x.1` |
 
 ## :material-web: Services / Docker Containers
 
 #### :material-linux: Native Linux:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX` | - |
+|  Status  | Service                                                  | Port(s) | Role / Notes |
+| :------: | :------------------------------------------------------- | :-----: | :----------- |
+| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 #### :material-docker: Docker:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX` | - |
+|  Status  | Service                                                  | Port(s) | Role / Notes |
+| :------: | :------------------------------------------------------- | :-----: | :----------- |
+| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
 ## :material-tools: Maintenance & Snapshots
@@ -76,12 +77,12 @@ hide:
 
 #### :material-update: Update Policy:
 
-* Update Policy
++ Update Policy
 
 #### :material-camera: Snapshot Policy:
 
-* Snapshot Policy
++ Snapshot Policy
 
 #### :material-backup-restore: Recovery:
 
-* Recovery Policy
++ Recovery Policy

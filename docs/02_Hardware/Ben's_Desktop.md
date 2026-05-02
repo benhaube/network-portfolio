@@ -38,58 +38,58 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
-| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
-| :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T | 4.7 GHz | 32 GB DDR4 *(3600 MHz)* | :brands-amd:&nbsp;Radeon(r) 6600XT | 2581 MHz | 8 GB GDDR6 |
+| CPU                                           | Cores / Threads | CPU Freq. | RAM                     | GPU                                | GPU Freq. | VRAM       |
+| :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
+| :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T        | 4.7 GHz   | 32 GB DDR4 *(3600 MHz)* | :brands-amd:&nbsp;Radeon(r) 6600XT | 2581 MHz  | 8 GB GDDR6 |
 
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:
 
-| Interface | IP Address | MAC Address | Connected To |
-| :-------: | :--------- | :---------- | :----------- |
-| enp7s0 | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
-| wlp6s0 | `DHCP` | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;Home *(vlan50)* |
+| Interface   | IP Address      | MAC Address         | Connected To                                                                         |
+| :---------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------- |
+| `enp7s0`    | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
+| `wlp6s0`    | `DHCP`          | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;Home *(VLAN50)*                                                 |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN | Hostname(s) | DNS Servers | Gateway |
-| :--- | :---------- | :---------- | :------ |
-| :material-security:&nbsp;vlan50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| VLAN                            | Hostname(s)                 | DNS Servers                   | Gateway        |
+| :------------------------------ | :-------------------------- | :---------------------------- | :------------- |
+| :material-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/`, `/home` | NVMe SSD | 929 GB | `/dev/dm-0` | `btrfs` | LUKS2 |
-| `/mnt/1TB_HDD` | SATA HDD | 1 TB | `/dev/mapper/1TB_HDD_crypt` | `btrfs` | LUKS2 |
+| Mount Point    | Drive Type | Drive Capacity | Device Path                 | File System | Encryption | 
+| :------------- | :--------- | :------------- | :-------------------------- | :---------- | :--------- |
+| `/`, `/home`   | NVMe SSD   | 929 GB         | `/dev/dm-0`                 | `btrfs`     | LUKS2      |
+| `/mnt/1TB_HDD` | SATA HDD   | 1 TB           | `/dev/mapper/1TB_HDD_crypt` | `btrfs`     | LUKS2      |
 
 #### :material-usb: External / Attached:
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/run/media/bhaube/External_SSD` | NVMe SSD | 916 GB | `/dev/dm-2` | `ext4` | LUKS2 |  
-| `/home/bhaube/Encrypted-Documents` | Encrypted Dir | - | `/home/bhaube/.cipher` | `fuse.gocryptfs` | `gocryptfs` |
-| `/home/bhaube/Google-Drive` | Cloud Storage | 2 TB | - | `fuse.rclone` | - |
-| `/mnt/storage_server/Quick_Storage` | NFS | 1.9 TB | `192.168.50.4:/media/Quick-Storage` | `nfs4` | - |        
-| `/mnt/storage_server/NVMe` | NFS | 234 GB | `192.168.50.4:/media/nvme0n1p1` | `nfs4` | - |        
+| Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  | 
+| :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
+| `/run/media/bhaube/External_SSD`    | NVMe SSD      | 916 GB         | `/dev/dm-2`                         | `ext4`           | LUKS2       |  
+| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | -              | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB           | -                                   | `fuse.rclone`    | -           |
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |        
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |        
 
 ## :material-web: Services / Docker Containers
 
 #### :material-network-pos: Virtualization:
 
-| Status | Operating System | Network Interface | Disk Image | Role / Notes |
-| :----: | :--------------- | :---------------- | :--------- | :----------- |
-| *Active* | :services-kali:&nbsp;[Kali Linux](https://kali.org) | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2` | Network security and penetration testing tools. | 
-| *Active* | :material-microsoft:&nbsp;[Windows 11](https://microsoft.com/windows) | Virtual Network *(NAT)* | `Windows_11.qcow2` | Windows environment to run Windows software that won't run with WINE. |
+| Status   | Operating System                                                      | Network Interface       | Disk Image                           | Role / Notes                                                          |
+| :------: | :-------------------------------------------------------------------- | :---------------------- | :----------------------------------- | :-------------------------------------------------------------------- |
+| *Active* | :services-kali:&nbsp;[Kali Linux](https://kali.org)                   | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2` | Network security and penetration testing tools.                       | 
+| *Active* | :material-microsoft:&nbsp;[Windows 11](https://microsoft.com/windows) | Virtual Network *(NAT)* | `Windows_11.qcow2`                   | Windows environment to run Windows software that won't run with WINE. |
 
 #### :material-linux: Native Linux:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
-| *Active* | :material-remote-desktop:&nbsp;[RDP](../03_Services/RDP.md) | `3389` | Remote desktop protocol for accessing the desktop over the local network. |
+| Status   | Service                                                     | Port(s) | Role / Notes                                                              |
+| :------: | :---------------------------------------------------------- | :-----: | :------------------------------------------------------------------------ |
+| *Active* | :material-remote-desktop:&nbsp;[RDP](../03_Services/RDP.md) | `3389`  | Remote desktop protocol for accessing the desktop over the local network. |
 
 ---
 ## :material-tools: Maintenance & Notes

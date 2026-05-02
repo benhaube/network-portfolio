@@ -29,13 +29,14 @@ hide:
 + ~~[[http://storage-server.internal:10081]]~~
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "storage-server (admin)"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"storage-server (admin)"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-nas:&nbsp;~~[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)~~ | :material-docker:&nbsp;Docker Compose | `nextcloud` | `nextcloud:32.0` |
+| Host Device                                                             | Method                                | Container Name | Image            |
+| :---------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------- |
+| :material-nas:&nbsp;~~[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)~~ | :material-docker:&nbsp;Docker Compose | `nextcloud`    | `nextcloud:32.0` |
 
 ### :material-cog: Configuration
 

@@ -34,15 +34,15 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + "Pi-hole Admin @ (pi-hole)"
-    + "Pi-hole Admin @ (pi-server)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pi-hole Admin @ (pi-hole)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pi-hole Admin @ (pi-server)"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-raspberry-pi:&nbsp;~~[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)~~ | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-raspberry-pi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
+| Host Device                                                                                          | Method                             | Container Name | Image |
+| :--------------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| :material-raspberry-pi:&nbsp;~~[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)~~  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-raspberry-pi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration
 

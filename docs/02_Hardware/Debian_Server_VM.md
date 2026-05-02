@@ -42,39 +42,39 @@ hide:
 
 #### :symbols-monitor-heart: Resource Allocation:
 
-| vCPU | RAM | Storage | VDI Location |
-| :--: | :-: | :------ | :----------- |
-| 2C / 2T *(VT-x, VT-d)* | 2 GB | 50 GB | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
+| vCPU                   | RAM  | Storage | VDI Location                             |
+| :--------------------: | :--: | :------ | :--------------------------------------- |
+| 2C / 2T *(VT-x, VT-d)* | 2 GB | 50 GB   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:
 
-| Interface | IP Address | MAC Address | Notes |
-| :-------: | :--------- | :---------- | :---- |
-| enp1s0 | `192.168.50.6` | `52:54:00:28:BB:EA` | :material-lan-connect:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
+| Interface   | IP Address     | MAC Address         | Notes                                                                             |
+| :---------: | :------------- | :------------------ | :-------------------------------------------------------------------------------- |
+| `enp1s0`    | `192.168.50.6` | `52:54:00:28:BB:EA` | :material-lan-connect:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN | Hostname(s) | DNS Servers | Gateway |
-| :--- | :---------- | :---------- | :------ |
-| :material-security:&nbsp;vlan50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
+| VLAN                            | Hostname(s)          | DNS Servers | Gateway        |
+| :------------------------------ | :------------------- | :---------- | :------------- |
+| :material-security:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
 
 ## :material-web: Services / Docker Containers
 
 #### :material-linux: Native Linux:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
-| *Active* | :services-technitium:&nbsp;[[Technitium]] | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. |
+| Status   | Service                                                      | Port(s)           | Role / Notes                                                                                                                        |
+| :------: | :----------------------------------------------------------- | :---------------: | :---------------------------------------------------------------------------------------------------------------------------------- |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22`              | Remote terminal access.                                                                                                             |
+| *Active* | :services-technitium:&nbsp;[[Technitium]]                    | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. |
 
 #### :material-docker: Docker:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
+| Status   | Service                                                               | Port(s) | Role / Notes                                                                                           |
+| :------: | :-------------------------------------------------------------------- | :-----: | :----------------------------------------------------------------------------------------------------- |
 | *Active* | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-dockge:&nbsp;[[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
+| *Active* | :services-dockge:&nbsp;[[Dockge]]                                     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
 
 ---
 ## :material-tools: Maintenance & Snapshots

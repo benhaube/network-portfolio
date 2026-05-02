@@ -43,51 +43,51 @@ hide:
 
 #### :symbols-monitor-heart: Core Specs:
 
-| CPU | Cores / Threads | CPU Freq. | RAM | GPU | GPU Freq. | VRAM |
-| :-- | :-------------- | :-------- | :-- | :-- | :-------- | :--- |
-| :simple-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz | 512 MB SDRAM | VideoCore IV | 400 MHz | *Shared* |
+| CPU                                  | Cores / Threads        | CPU Freq. | RAM          | GPU          | GPU Freq. | VRAM     |
+| :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
+| :simple-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz   | 512 MB SDRAM | VideoCore IV | 400 MHz   | *Shared* |
 
 ## :material-lan: Network Configuration
 
 #### :material-ethernet: Network Interface:
 
-| Interface | IP Address | MAC Address | Connected To |
-| :-------: | :--------- | :---------- | :----------- |
-| wlan0 | `192.168.50.3` | `2c:cf:67:db:f5:e2` | :material-wifi:&nbsp;Home *(vlan50)* |
+| Interface | IP Address     | MAC Address         | Connected To                         |
+| :-------: | :------------- | :------------------ | :----------------------------------- |
+| `wlan0`   | `192.168.50.3` | `2c:cf:67:db:f5:e2` | :material-wifi:&nbsp;Home *(VLAN50)* |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN | Hostname(s) | DNS Servers | Gateway |
-| :--: | :---------- | :---------- | :------ |
-| :material-security:&nbsp;vlan50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| VLAN                            | Hostname(s)              | DNS Servers                   | Gateway        |
+| :-----------------------------: | :----------------------- | :---------------------------- | :------------- |
+| :material-security:&nbsp;VLAN50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 
 #### :material-harddisk: Internal Drive(s):
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/` | MicroSD | 29 GB | `/dev/mmcblk0p2` | `ext4` | - |
-| `/boot/firmware` | MicroSD | 512 MB | `/dev/mmcblk0p1` | `vfat` | - |
-| `/var/log` | RAM | 80 MB | `log2ram` | `tmpfs` | - |
+| Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption | 
+| :--------------- | :--------- | :------------- | :--------------- | :---------- | :--------- |
+| `/`              | MicroSD    | 29 GB          | `/dev/mmcblk0p2` | `ext4`      | -          |
+| `/boot/firmware` | MicroSD    | 512 MB         | `/dev/mmcblk0p1` | `vfat`      | -          |
+| `/var/log`       | RAM        | 80 MB          | `log2ram`        | `tmpfs`     | -          |
 
 ## :material-web: Services / Docker Containers
 
 #### :material-linux: Native Linux:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
-| *Active* | :services-caddy:&nbsp;[[Caddy]] | `80` `443` | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22` | Remote terminal access. |
-| *Active* | :simple-syncthing:&nbsp;[[Syncthing]] | `8384` `22000` `21027` | Open decentralized file synchronization. | 
+| Status   | Service                                                      | Port(s)                | Role / Notes                                                                                                                          |
+| :------: | :----------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
+| *Active* | :services-caddy:&nbsp;[[Caddy]]                              | `80` `443`             | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22`                   | Remote terminal access.                                                                                                               |
+| *Active* | :simple-syncthing:&nbsp;[[Syncthing]]                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              | 
 
 #### :material-docker: Docker:
 
-| Status | Service | Port(s) | Role / Notes |
-| :----: | :------ | :-----: | :----------- |
-| *Active* | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-dockge:&nbsp;[[Dockge]] | `5001` | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
-| *Inactive* | :services-portainer:&nbsp;[Portainer (Agent)](../03_Services/Portainer.md) | `9001` | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| Status     | Service                                                                    | Port(s) | Role / Notes                                                                                                                      |
+| :--------: | :------------------------------------------------------------------------- | :-----: | :-------------------------------------------------------------------------------------------------------------------------------- |
+| *Active*   | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md)      | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*.                            |
+| *Active*   | :services-dockge:&nbsp;[[Dockge]]                                          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                                       |
+| *Inactive* | :services-portainer:&nbsp;[Portainer (Agent)](../03_Services/Portainer.md) | `9001`  | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
 
 ---
 ## :material-tools: Maintenance & Notes

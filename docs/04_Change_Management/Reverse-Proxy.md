@@ -41,10 +41,10 @@ hide:
 > [!note]
 > Instead of pointing every service to the proxy's IP address directly, we use a single `A` record for the proxy hardware, and `CNAME` aliases for the services. This makes IP migrations easier in the future.
 
-| Domain / Alias | Record Type | Target / Value | PTR | Description |
-| :--- | :--- | :--- | :---: | :--- |
-| `pi-zero.internal` | **A** | `192.168.50.3` | :material-check: | The dedicated Caddy reverse proxy host. |
-| `immich.internal` | **CNAME** | `pi-zero.internal` | :material-close: | Points the Immich domain to the proxy. |
+| Domain / Alias     | Record Type | Target / Value     |       PTR        | Description                             |
+| :----------------- | :---------- | :----------------- | :--------------: | :-------------------------------------- |
+| `pi-zero.internal` | **A**       | `192.168.50.3`     | :material-check: | The dedicated Caddy reverse proxy host. |
+| `immich.internal`  | **CNAME**   | `pi-zero.internal` | :material-close: | Points the Immich domain to the proxy.  |
 
 ## :material-cloud-cog: Caddy Configuration
 

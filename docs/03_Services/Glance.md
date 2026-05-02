@@ -31,9 +31,9 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + "Glance Admin"
-    + "Glance User (bhaube)"
-    + "Glance User (rpereira)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Admin"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (bhaube)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (rpereira)"
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -50,10 +50,10 @@ hide:
 > 
 > :material-arrow-down-thin:&nbsp;**[See the new config file below](#glance-config)**&nbsp;:material-arrow-down-thin:
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance` | `panonim/dynacat:latest` |
-|  |  | `f1_api` | `skyallinott/f1_api:latest` |
+| Host Device                                                                                     | Method                                | Container Name | Image                       |
+| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
+|                                                                                                 | :material-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
 
 ### :material-cog: Configuration
 

@@ -36,14 +36,14 @@ hide:
 
 ## :material-ethernet: Port Map
 
-| Port # | Connected Device | Color / Type | Notes |
-| :----: | :--------------- | :----------- | :---- |
-| **1** | :material-ethernet: *Empty* | - | - |
-| **2** | :material-ethernet: *Empty* | - | - |
-| **3** | :material-ethernet: *Empty* | - | - |
-| **4** | :material-ethernet: *Empty* | - | - |
-| **5** | :material-ethernet: *Empty* | - | - |
-| **6** | :material-ethernet: *Empty* | - | - |
+| Port # | Connected Device            | Color / Type | Notes |
+| :----: | :-------------------------- | :----------- | :---- |
+| **1**  | :material-ethernet: *Empty* | -            | -     |
+| **2**  | :material-ethernet: *Empty* | -            | -     |
+| **3**  | :material-ethernet: *Empty* | -            | -     |
+| **4**  | :material-ethernet: *Empty* | -            | -     |
+| **5**  | :material-ethernet: *Empty* | -            | -     |
+| **6**  | :material-ethernet: *Empty* | -            | -     |
 
 ---
 ## :material-tools: Maintenance Notes

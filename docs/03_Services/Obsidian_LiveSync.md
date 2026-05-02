@@ -32,12 +32,12 @@ hide:
     + <http://storage-server.internal:5984/obsidian-vault>
 
 #### :material-key-chain: Credentials:  
-+ :material-docker:&nbsp;Docker Compose: `docker-compose.yml`
++ :material-docker:&nbsp;Docker Compose: `compose.yml`
 
 ## :symbols-deployed-code-update: Deployment Details
 
 | Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
+| :------------------------------------------------------------------ | :------------------------------------ | :------------------ | :-------------- |
 | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `obsidian-livesync` | `couchdb:3.5.0` |
 
 ### :material-cog: Configuration 

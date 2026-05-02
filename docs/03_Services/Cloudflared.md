@@ -34,9 +34,9 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `cloudflared` | `wisdomsky/cloudflared-web:2026.3.0` |
+| Host Device                                                         | Method                                | Container Name | Image                                |
+| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :----------------------------------- |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `cloudflared`  | `wisdomsky/cloudflared-web:2026.3.0` |
 
 ### :material-cog: Configuration
 

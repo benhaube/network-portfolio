@@ -41,21 +41,21 @@ hide:
 
 #### :material-key-chain: Credentials: 
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    * "Syncthing @ storage-server"
-    * "Syncthing @ pi-server"
-    * "Syncthing @ pi-hole"
-    * "Syncthing @ bens-workstation"
-    * "Syncthing @ ben-laptop"
+    * Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ storage-server"
+    * Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ pi-server"
+    * Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ pi-hole"
+    * Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
+    * Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ ben-laptop"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A` | `N/A` |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `syncthing` | `linuxserver/syncthing:1.29.7` |
+| Host Device                                                                                      | Method                                | Container Name | Image                          |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------------- |
+| :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                   | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
+| :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                            | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `syncthing`    | `linuxserver/syncthing:1.29.7` |
 
 ### :material-cog: Configuration  
 

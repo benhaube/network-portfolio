@@ -27,12 +27,13 @@ hide:
 + <https://example.com>
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Credential Entry"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
+| Host Device                                      | Method                                | Container Name   | Image            |
+| :----------------------------------------------- | :------------------------------------ | :--------------- | :--------------- |
 | :devices-icon:&nbsp;[Device](Device_Template.md) | :material-docker:&nbsp;Docker Compose | `container-name` | `image_name:tag` |
 
 ### :material-cog: Configuration 

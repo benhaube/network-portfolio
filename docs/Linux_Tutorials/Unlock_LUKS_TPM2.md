@@ -30,10 +30,10 @@ hide:
 **Packages:** 
 :    Ensure you have the necessary packages installed.
 
-    | Dependencies |
-    | :----------- |
-    | `systemd-cryptenroll` |
-    | `tpm2-tss` |
+    | Dependencies                     |
+    | :------------------------------- |
+    | `systemd-cryptenroll`            |
+    | `tpm2-tss`                       |
     | `dracut` *or* `update-initramfs` |
 
 **Initramfs Support:** 
@@ -61,12 +61,12 @@ hide:
         + `#!bash --tpm2-device=auto`: Automatically detects the TPM2 device. 
         + `#!bash --tpm2-pcrs=0+4+7+11`: Specifies the **PCRs** to bind to.
             
-            | PCR # | Function |
-            | :---: | :------- |
-            | 0 | Core system firmware. *(UEFI / BIOS)* |
-            | 4 | Boot loader and additional drivers. *(GRUB / shim)* |
-            | 7 | The Secure Boot state. *(enabled / disabled, UEFI certificates)* |
-            | 11 | **UKI** components, kernel image, embedded initrd. |
+            | PCR # | Function                                                         |
+            | :---: | :--------------------------------------------------------------- |
+            |   0   | Core system firmware. *(UEFI / BIOS)*                            |
+            |   4   | Boot loader and additional drivers. *(GRUB / shim)*              |
+            |   7   | The Secure Boot state. *(enabled / disabled, UEFI certificates)* |
+            |  11   | **UKI** components, kernel image, embedded initrd.               |
 
         + When prompted, enter an **existing passphrase** for your LUKS volume to authorize the new key slot.
 

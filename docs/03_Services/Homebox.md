@@ -29,13 +29,14 @@ hide:
 + <http://192.168.50.4:3100>
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Homebox @ storage-server"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Homebox @ storage-server"
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :---------- | :----- | :------------- | :---- |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `homebox` | `ghcr.io/sysadminsmedia/homebox:latest` |
+| Host Device                                                         | Method                                | Container Name | Image                                   |
+| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------------- |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` |
 
 ### :material-cog: Configuration
 

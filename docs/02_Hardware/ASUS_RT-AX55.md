@@ -40,31 +40,31 @@ hide:
 
 #### :material-wan: WAN Connection:
 
-| Interface | IP Address | MAC Address | Connected To |
-| :-------: | :--------- | :---------- | :----------- |
-| WAN0 | `192.168.50.221` | `7C:10:C9:DF:13:60` | :material-wifi:&nbsp;Backhaul |
+| Interface | IP Address       | MAC Address         | Connected To                  |
+| :-------: | :--------------- | :------------------ | :---------------------------- |
+| WAN0      | `192.168.50.221` | `7C:10:C9:DF:13:60` | :material-wifi:&nbsp;Backhaul |
 
 #### :material-lan: Local Networks:
 
-| VLAN | Domain | DNS Server(s) | Gateway | Subnet | Subnet Mask | Broadcast | DHCP Range |
-| :--: | :----- | :------------ | :------ | :----- | :---------- | :-------- | :--------- |
-| :material-security:&nbsp;*vlan50* | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
+| VLAN                            | Domain   | DNS Server(s)                 | Gateway        | Subnet            | Subnet Mask     | Broadcast        | DHCP Range     |
+| :-----------------------------: | :------- | :---------------------------- | :------------- | :---------------- | :-------------- | :--------------- | :------------- |
+| :material-security:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 
-| SSID | VLAN | WAN Access | IP Address | Frequency | Notes |  
-| :--: | :--: | :--------: | :--------- | :-------- | :---- |
-| *Home* | *vlan50* | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
+| SSID   | VLAN   | WAN Access       | IP Address        | Frequency      | Notes                                 |  
+| :----: | :----: | :--------------: | :---------------- | :------------- | :------------------------------------ |
+| *Home* | VLAN50 | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-| Port | Connected Device | Color / Type | Notes |
-| :--: | :--------------- | :----------- | :---- |
-| WAN 1 | :material-ethernet:&nbsp;*Empty* | - | :material-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
-| LAN 1 | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black Cat6a | 1 Gb/s Uplink |
-| LAN 2 | :material-ethernet:&nbsp;*Empty* | - | - |
-| LAN 3 | :material-ethernet:&nbsp;*Empty* | - | - |
-| LAN 4 | :material-ethernet:&nbsp;*Empty* | - | - |
+| Port  | Connected Device                                                          | Color / Type | Notes                                         |
+| :---: | :------------------------------------------------------------------------ | :----------- | :-------------------------------------------- |
+| WAN 1 | :material-ethernet:&nbsp;*Empty*                                          | -            | :material-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
+| LAN 1 | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black Cat6a  | 1 Gb/s Uplink                                 |
+| LAN 2 | :material-ethernet:&nbsp;*Empty*                                          | -            | -                                             |
+| LAN 3 | :material-ethernet:&nbsp;*Empty*                                          | -            | -                                             |
+| LAN 4 | :material-ethernet:&nbsp;*Empty*                                          | -            | -                                             |
 
 ---
 ## :material-tools: Maintenance & Notes

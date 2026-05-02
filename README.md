@@ -48,7 +48,7 @@ podman build -t mkdocs-custom .
 ### Building / Serving the Site
 
 > [!note]
-> There are two compose files included in the repo. The `compose-serve.yml` file will spin up the `mkdocs-custom` container and serve the site to http://localhost:8000. It is not recommended to serve the site in this way. It is for testing only. When you are ready to publish your changes you build the site and host it on a separate Web server. I recommend using Nginx.
+> There are two compose files included in the repo. The `compose-serve.yml` file will spin up the `mkdocs-custom` container and serve the site to http://localhost:8000. It is not recommended to serve the production site in this way. It is for testing only. When you are ready to publish your changes you build the site and host it on a separate Web server. I recommend using [Nginx](https://github.com/nginx/nginx).
 
 #### Serve Site for Testing:
 
@@ -63,7 +63,7 @@ podman compose -f compose-build.yml up -d
 ```
 
 > [!tip]
-> Move the resulting `site/*` directory onto the Web server of your choice.
+> The container will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
 
 #### Alternative `podman run` commands:
 

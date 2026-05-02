@@ -35,7 +35,6 @@
 *.less            text
 *.ls              text
 *.map             text -diff
-*.mermaid         text -diff
 *.od              text
 *.onlydata        text
 *.php             text diff=php
@@ -62,11 +61,13 @@ Dockerfile        text
 # Documentation
 *.ipynb           text eol=lf
 *.markdown        text diff=markdown
+*.mermaid         text -diff
 *.md              text diff=markdown
 *.mdwn            text diff=markdown
 *.mdown           text diff=markdown
 *.mkd             text diff=markdown
 *.mkdn            text diff=markdown
+*.mmd             text -diff
 *.mdtxt           text
 *.mdtext          text
 *.txt             text
@@ -149,10 +150,10 @@ Procfile          text
 *.psb             binary
 *.psd             binary
 # SVG treated as an asset (binary) by default.
-*.svg             text
+# *.svg             text
 # If you want to treat it as binary,
 # use the following line instead.
-# *.svg           binary
+*.svg             binary
 *.svgz            binary
 *.tif             binary
 *.tiff            binary

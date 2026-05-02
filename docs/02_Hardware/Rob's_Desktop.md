@@ -33,7 +33,7 @@ hide:
 
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Secure Notes&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Desktop PC"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Desktop PC"
 
 #### :symbols-monitor-heart: Core Specs:
 
@@ -76,14 +76,4 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!config inline] Critical Configurations
-> **:material-web-clock: Chrony:**
-> + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
-
-#### :material-update: Update Process: 
-
-+ Automatic OS, software, firmware, and driver updates enabled with Windows Update.
-
-#### :material-cloud-upload-outline: Backup Policy: 
-
-+ File backup is handled with Window's built-in backup tool. Files in the user's directory are sent to the [[ZimaBoard_2_NAS|ZimaOS NAS]] via [[SMB]].
+--8<-- "maintenance-rob-pc.md"

@@ -39,7 +39,8 @@ hide:
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
 #### :material-key-chain: Credentials:
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
 
 ## :material-lan: Network Configuration
 
@@ -47,11 +48,11 @@ hide:
 
 | Interface | IP Address       | MAC Address         | Connected To                         |
 | :-------: | :--------------- | :------------------ | :----------------------------------- |
-| `wlan0`   | `192.168.50.153` | `FC:EE:28:09:A7:1E` | :material-wifi:&nbsp;Home *(VLAN50)* |
+|  `wlan0`  | `192.168.50.153` | `FC:EE:28:09:A7:1E` | :material-wifi:&nbsp;Home *(VLAN50)* |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN                            | Hostname(s)         | DNS Servers                    | Gateway        |
+|              VLAN               | Hostname(s)         | DNS Servers                    | Gateway        |
 | :-----------------------------: | :------------------ | :----------------------------- | :------------- |
 | :material-security:&nbsp;VLAN50 | `k1c-a71e.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 
@@ -59,15 +60,15 @@ hide:
 
 #### :material-harddisk: Internal Drive(s):
 
-| Mount Point | Drive Type       | Drive Capacity | Device Path       | File System | Encryption | 
-| :---------- | :--------------- | :------------- | :---------------- | :---------- | :--------- |
-| `/usr/data` | eMMC             | 6.5 GB         | `/dev/mmcblk0p10` | `ext4`      | -          |
-| `/overlay`  | eMMC             | 96.8 MB        | `/dev/mmcblk0p9`  | `ext4`      | -          |
-| `/rom`      | ROM              | 126.8 MB       | `/dev/root`       | `squashfs`  | -          |
+| Mount Point | Drive Type | Drive Capacity | Device Path       | File System | Encryption |
+| :---------- | :--------- | :------------- | :---------------- | :---------- | :--------- |
+| `/usr/data` | eMMC       | 6.5 GB         | `/dev/mmcblk0p10` | `ext4`      | -          |
+| `/overlay`  | eMMC       | 96.8 MB        | `/dev/mmcblk0p9`  | `ext4`      | -          |
+| `/rom`      | ROM        | 126.8 MB       | `/dev/root`       | `squashfs`  | -          |
 
 #### :material-usb: External / Attached:
 
-| Mount Point       | Drive Type      | Drive Capacity | Device Path | File System | Encryption | 
+| Mount Point       | Drive Type      | Drive Capacity | Device Path | File System | Encryption |
 | :---------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB        | `/dev/sda1` | `vfat`      | -          |
 
@@ -75,11 +76,11 @@ hide:
 
 #### :material-linux: Native Linux:
 
-| Status   | Service                                 | Port(s)     | Role / Notes                                                                                                                                    |
-| :------: | :-------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| *Active* | :services-fluidd:&nbsp;[[Fluidd]]       | `80` `4408` | A Web UI for managing the printer.                                                                                                              |
-| *Active* | :services-klipper:&nbsp;[[Moonraker]]   | `7125`      | An API that allows applications to communicate with the 3D-printing firmware, [:services-klipper:&thinsp;Klipper](https://www.klipper3d.org/).  |
-| *Active* | :material-console-network:&nbsp;[[SSH]] | `22`        | Remote terminal access.                                                                                                                         |
+|  Status  | Service                                 |   Port(s)   | Role / Notes                                                                                                                                   |
+| :------: | :-------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Active* | :services-fluidd:&nbsp;[[Fluidd]]       | `80` `4408` | A Web UI for managing the printer.                                                                                                             |
+| *Active* | :services-klipper:&nbsp;[[Moonraker]]   |   `7125`    | An API that allows applications to communicate with the 3D-printing firmware, [:services-klipper:&thinsp;Klipper](https://www.klipper3d.org/). |
+| *Active* | :material-console-network:&nbsp;[[SSH]] |    `22`     | Remote terminal access.                                                                                                                        |
 
 ---
 ## :material-tools: Maintenance & Notes

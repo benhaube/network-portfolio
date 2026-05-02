@@ -37,14 +37,14 @@ hide:
 
 | Interface | IP Address      | MAC Address         | Connected To                                                                                        |
 | :-------: | :-------------- | :------------------ | :-------------------------------------------------------------------------------------------------- |
-| LAN 1     | `192.168.100.1` | `00:1c:73:00:00:99` | :material-router-wireless:&nbsp;WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
-| LAN 2     | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                                                   |
+|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | :material-router-wireless:&nbsp;WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
+|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                                                   |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN | Hostname(s)             | DNS Servers | Gateway         |
-| :--: | :---------------------- | :---------- | :-------------- |
-| -    | `hitron-modem.internal` | -           | `192.168.100.1` |
+| VLAN  | Hostname(s)             | DNS Servers | Gateway         |
+| :---: | :---------------------- | :---------- | :-------------- |
+|   -   | `hitron-modem.internal` | -           | `192.168.100.1` |
 
 ---
 ## :material-tools: Maintenance & Notes

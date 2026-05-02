@@ -39,7 +39,8 @@ hide:
 * [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :material-key-chain: Credentials:
-* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) SSH key: "admin@pi-hole"
+* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
+    * SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-hole"
 
 #### :symbols-monitor-heart: Core Specs:
 
@@ -53,11 +54,11 @@ hide:
 
 | Interface | IP Address     | MAC Address         | Connected To                         |
 | :-------: | :------------- | :------------------ | :----------------------------------- |
-| `wlan0`   | `192.168.50.3` | `2c:cf:67:db:f5:e2` | :material-wifi:&nbsp;Home *(VLAN50)* |
+|  `wlan0`  | `192.168.50.3` | `2c:cf:67:db:f5:e2` | :material-wifi:&nbsp;Home *(VLAN50)* |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN                            | Hostname(s)              | DNS Servers                   | Gateway        |
+|              VLAN               | Hostname(s)              | DNS Servers                   | Gateway        |
 | :-----------------------------: | :----------------------- | :---------------------------- | :------------- |
 | :material-security:&nbsp;VLAN50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
@@ -65,7 +66,7 @@ hide:
 
 #### :material-harddisk: Internal Drive(s):
 
-| Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption | 
+| Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption |
 | :--------------- | :--------- | :------------- | :--------------- | :---------- | :--------- |
 | `/`              | MicroSD    | 29 GB          | `/dev/mmcblk0p2` | `ext4`      | -          |
 | `/boot/firmware` | MicroSD    | 512 MB         | `/dev/mmcblk0p1` | `vfat`      | -          |
@@ -75,18 +76,18 @@ hide:
 
 #### :material-linux: Native Linux:
 
-| Status   | Service                                                      | Port(s)                | Role / Notes                                                                                                                          |
+|  Status  | Service                                                      |        Port(s)         | Role / Notes                                                                                                                          |
 | :------: | :----------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | :services-caddy:&nbsp;[[Caddy]]                              | `80` `443`             | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) | `22`                   | Remote terminal access.                                                                                                               |
-| *Active* | :simple-syncthing:&nbsp;[[Syncthing]]                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              | 
+| *Active* | :services-caddy:&nbsp;[[Caddy]]                              |       `80` `443`       | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) |          `22`          | Remote terminal access.                                                                                                               |
+| *Active* | :simple-syncthing:&nbsp;[[Syncthing]]                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
 
 #### :material-docker: Docker:
 
-| Status     | Service                                                                    | Port(s) | Role / Notes                                                                                                                      |
+|   Status   | Service                                                                    | Port(s) | Role / Notes                                                                                                                      |
 | :--------: | :------------------------------------------------------------------------- | :-----: | :-------------------------------------------------------------------------------------------------------------------------------- |
-| *Active*   | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md)      | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*.                            |
-| *Active*   | :services-dockge:&nbsp;[[Dockge]]                                          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                                       |
+|  *Active*  | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md)      | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*.                            |
+|  *Active*  | :services-dockge:&nbsp;[[Dockge]]                                          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                                       |
 | *Inactive* | :services-portainer:&nbsp;[Portainer (Agent)](../03_Services/Portainer.md) | `9001`  | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
 
 ---

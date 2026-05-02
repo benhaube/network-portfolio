@@ -35,7 +35,8 @@ hide:
 + [:material-fedora:&nbsp;Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
 
 #### :material-key-chain: Credentials:
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Local User @ Ben's-Laptop"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Laptop"
 
 #### :symbols-monitor-heart: Core Specs:
 
@@ -47,7 +48,7 @@ hide:
 
 #### :material-ethernet: Network Interface:
 
-| Interface   | IP Address | MAC Address         | Connected To                         |
+|  Interface  | IP Address | MAC Address         | Connected To                         |
 | :---------: | :--------- | :------------------ | :----------------------------------- |
 | `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | :material-wifi:&nbsp;Home *(VLAN50)* |
 
@@ -61,18 +62,18 @@ hide:
 
 #### :material-harddisk: Internal Drive(s):
 
-| Mount Point  | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
+| Mount Point  | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :----------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/`, `/home` | NVMe SSD   | 929 GB         | `/dev/dm-0` | `btrfs`     | LUKS2      |
 
 #### :material-usb: External / Attached:
 
-| Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  | 
+| Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  |
 | :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
 | `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | -              | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
-| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB           | -                                   | `fuse.rclone`    | -           | 
-| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |        
-| `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |        
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB           | -                                   | `fuse.rclone`    | -           |
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
 
 ---
 ## :material-tools: Maintenance & Notes

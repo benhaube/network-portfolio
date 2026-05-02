@@ -49,7 +49,8 @@ hide:
 
 + :material-link-variant:&nbsp;URL: <http://k1c-a71e.internal:7125>
 + :material-key-chain:&nbsp;API Key: 
-    + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): Local Network :material-arrow-right-thin: "Fluidd @ K1C-A71E" 
+    + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+        + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd @ K1C-A71E" 
 
 #### Fluidd:
 

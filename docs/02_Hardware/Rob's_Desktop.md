@@ -49,11 +49,11 @@ hide:
 | Interface | IP Address | MAC Address         | Connected To                                                                        |
 | :-------: | :--------- | :------------------ | :---------------------------------------------------------------------------------- |
 | Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
-| Wi-Fi     | `DHCP`     | `70:A6:CC:B5:F5:4A` | :material-wifi:&nbsp;Home *(VLAN50)*                                                |
+|   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | :material-wifi:&nbsp;Home *(VLAN50)*                                                |
 
 #### :material-ip-network: IP Configuration:
 
-| VLAN                            | Hostname(s)            | DNS Servers                   | Gateway        |
+|              VLAN               | Hostname(s)            | DNS Servers                   | Gateway        |
 | :-----------------------------: | :--------------------- | :---------------------------- | :------------- |
 | :material-security:&nbsp;VLAN50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
@@ -61,7 +61,7 @@ hide:
 
 #### :material-harddisk: Internal Drive(s):
 
-| Mount Point | Drive Type | Drive Capacity | Device Path                                                   | File System | Encryption | 
+| Mount Point | Drive Type | Drive Capacity | Device Path                                                   | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------------------------------------------------------ | :---------- | :--------- |
 | `C:`        | NVMe SSD   | 464 GB         | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_970\5&345CC925&0&000000` | `ntfs`      | BitLocker  |
 | `D:`        | SATA HDD   | 1.81 TB        | `SCSI\DISK&VEN_WDC&PROD_WD2003FZEX-00SRL\4&E91BE7&0&050000`   | `ntfs`      | -          |
@@ -69,7 +69,7 @@ hide:
 
 #### :material-usb: External / Attached:
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption | 
+| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -              | `-`         | `-`         | -          |
 

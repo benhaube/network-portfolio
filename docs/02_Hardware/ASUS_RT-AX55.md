@@ -34,7 +34,8 @@ hide:
 + [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3.0.0.4.386_53327-g852eb80)*
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Asus Router"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
 
 ## :material-lan: Network Configuration
 
@@ -42,17 +43,17 @@ hide:
 
 | Interface | IP Address       | MAC Address         | Connected To                  |
 | :-------: | :--------------- | :------------------ | :---------------------------- |
-| WAN0      | `192.168.50.221` | `7C:10:C9:DF:13:60` | :material-wifi:&nbsp;Backhaul |
+|   WAN0    | `192.168.50.221` | `7C:10:C9:DF:13:60` | :material-wifi:&nbsp;Backhaul |
 
 #### :material-lan: Local Networks:
 
-| VLAN                            | Domain   | DNS Server(s)                 | Gateway        | Subnet            | Subnet Mask     | Broadcast        | DHCP Range     |
+|              VLAN               | Domain   | DNS Server(s)                 | Gateway        | Subnet            | Subnet Mask     | Broadcast        | DHCP Range     |
 | :-----------------------------: | :------- | :---------------------------- | :------------- | :---------------- | :-------------- | :--------------- | :------------- |
 | :material-security:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.1` | `192.168.50.0/24` | `255.255.255.0` | `192.168.50.255` | `.6` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 
-| SSID   | VLAN   | WAN Access       | IP Address        | Frequency      | Notes                                 |  
+|  SSID  |  VLAN  |    WAN Access    | IP Address        | Frequency      | Notes                                 |
 | :----: | :----: | :--------------: | :---------------- | :------------- | :------------------------------------ |
 | *Home* | VLAN50 | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
 

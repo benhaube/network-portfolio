@@ -93,5 +93,5 @@ I would like to give special thanks to the following projects whose work was use
     + For their awesome, colorful brand icons. 
 + **[Mermaid.js](https://mermaid.js.org/):**
     + For building an amazing tool for rendering beautiful flowcharts.
-+ **[Vscodium](https://vscodium.com/):**
-    + For their excellent open-source IDE that is used extensively in the development of this website, and in all of my projects.
++ **[VSCodium](https://vscodium.com/):**
+    + For their excellent open-source, MIT-Licensed IDE that lacks Microsoft's spyware / telemetry. I have used it extensively in the development of this website, and daily in all of my projects and network configuration management.

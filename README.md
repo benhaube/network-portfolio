@@ -28,7 +28,7 @@ cd network-portfolio/
 > [!note] 
 > This project uses plugins for MkDocs that are not included with the standard Docker image. Therefore it is a requirement to pull the standard image and build a new, custom image with those plugins added. The `Dockerfile` contains the 'instructions' for **Docker / Podman** to build the custom image. The two `compose-*.yml` files already have the `localhost/mkdocs-custom` image defined. 
 
-> [!tip]
+> [!warning]
 > The `roamlinks` and `callouts` plugins are very important for this project to ensure all of the internal links and admonitions function properly. The Markdown files originated from my Obsidian vault. While they have been heavily modified, there are still some links and admonitions in the Obsidian format.
 
 #### Pull Material for MkDocs:
@@ -92,4 +92,6 @@ I would like to give special thanks to the following projects whose work was use
 + **[Selfh.st](https://selfh.st/icons/):**
     + For their awesome, colorful brand icons. 
 + **[Mermaid.js](https://mermaid.js.org/):**
-    + For building an amazing tool for rendering beautiful flowcharts. 
+    + For building an amazing tool for rendering beautiful flowcharts.
++ **[Vscodium](https://vscodium.com/):**
+    + For their excellent open-source IDE that is used extensively in the development of this website, and in all of my projects.

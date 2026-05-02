@@ -111,6 +111,7 @@
 *[RGB]: Red, Green, Blue
 *[RGBW]: Red Green Blue White
 *[RHEL]: Red Hat Enterprise Linux
+*[ROM]: Read-Only Memory
 *[RPC]: Remote Proceedure Call
 *[RTO]: Recovery Time Objective
 *[SAN]: Storage Area Network

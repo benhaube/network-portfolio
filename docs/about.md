@@ -8,7 +8,7 @@ hide:
 ![My Profile Picture](assets/pictures/profilepic.jpg){ width=300 }
 
 # About Me & Professional Philosophy
-[My Resume :material-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me :material-send-variant:](mailto:ben@haube-pereira.com){ .md-button }
+[My Resume :material-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me :symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button }
 
 ---
 ## :material-engine: :material-arrow-right-thin: :material-lan: From Engines to Infrastructure

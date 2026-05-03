@@ -64,6 +64,15 @@
     margin: 0;
 }
 
+@media screen and (max-width: 719px) {
+  .md-typeset .md-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+
 /* --- Tags styling --- */
 
 .md-tags .md-tag:hover {

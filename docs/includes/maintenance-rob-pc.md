@@ -1,6 +1,7 @@
 !!! config inline "Critical Configurations"
 
     **:material-web-clock: Chrony:**
+    
     + Time synchronizes with local time server running on main router, [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md), using `chrony`.
 
 #### :material-update: Update Process: 

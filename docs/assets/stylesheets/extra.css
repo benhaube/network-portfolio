@@ -32,7 +32,6 @@
 
 /* Dark theme (slate) */
 [data-md-color-scheme="slate"] {
-    /* You can tweak the hex or opacity here for better dark mode contrast */
     --md-code-bg-color: #111b26; 
 }
 
@@ -83,7 +82,7 @@
     transition: box-shadow 125ms ease-in-out;
 }
 
-/* --- Back-to-top button styling --- */
+/* --- Back-to-top styling --- */
 
 .md-top:hover {
     

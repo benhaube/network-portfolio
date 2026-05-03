@@ -64,6 +64,8 @@
     margin: 0;
 }
 
+/* --- Responsive design for .md-button class --- */
+
 @media screen and (max-width: 719px) {
   .md-typeset .md-button {
     display: block;

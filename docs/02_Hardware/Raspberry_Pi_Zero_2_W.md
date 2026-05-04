@@ -93,21 +93,4 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!config inline] Critical Configurations
-> **:material-web-clock: Chrony:**
-> * Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
-> 
-> **:material-text-long: Logs:**
-> * Logs are configured with `log2ram` to reduce wear on the MicroSD card.
-> 
-> **:material-email-alert: Email Notifications:**
-> * This server has email notifications configured for new SSH sessions and `unattended-upgrades`. See [SSH Login Email Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation.
-
-#### :material-update: Update Process:
-
-* `#!bash apt update && apt upgrade` *(Standard Debian)*
-* `unattended-upgrades` enabled for critical bug and security fixes.
-
-#### :material-cloud-upload-outline: Backup Policy:
-
-* Image of MicroSD card stored on [[ZimaBoard_2_NAS|ZimaOS NAS]] `/media/Quick-Storage/Backup` directory.
+--8<-- "maintenance-raspi.md"

@@ -31,7 +31,7 @@ tags:
 
 #### Edge Protection: 
 
-+ An [[ASUS_RT-BE92U|ASUS RT-BE92U]] acts as the primary firewall, utilizing **SPI** and **DoS** protection. 
++ An [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) acts as the primary firewall, utilizing **SPI** and **DoS** protection. 
 
 #### External Access: 
 
@@ -40,15 +40,15 @@ tags:
 
 #### VPN:
 
-+ For administrative tasks, there are two [[Wireguard_Server|WireGuard]] instances providing a secure, encrypted tunnel into the Trusted zone.
-+ The primary WireGuard server is hosted natively on the main [[ASUS_RT-BE92U|ASUS router]]. 
-+ The secondary / backup WireGuard server is hosted in a Docker container on the [[ZimaBoard_2_NAS|ZimaOS NAS]]. 
++ For administrative tasks, there are two [WireGuard](../03_Services/Wireguard_Server.md) instances providing a secure, encrypted tunnel into the Trusted zone.
++ The primary WireGuard server is hosted natively on the main [ASUS router](../02_Hardware/ASUS_RT-BE92U.md). 
++ The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
 
 ## :material-server-security: DNS Security & Content Filtering
 
 #### Internal Resolution: 
 
-+ A clustered [[Technitium|Technitium DNS]] environment *([[Debian_Server_VM|Debian VM]] & [[Raspberry_Pi_4B_Server|Pi 4B Server]])* handles all local queries.
++ A clustered [Technitium DNS](../03_Services/Technitium.md) environment *([Debian Server VM](../02_Hardware/Debian_Server_VM.md) & [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))* handles all local queries.
 
 #### Upstream Privacy:
 
@@ -71,7 +71,7 @@ tags:
 
 #### Access Control: 
 
-+ [[SSH]] access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
++ [SSH](../03_Services/SSH.md) access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
 	+ Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely.
 	+ The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. 

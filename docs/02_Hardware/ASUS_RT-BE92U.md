@@ -117,4 +117,4 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy:
 
-+ Firmware and settings backed up automatically to [[ZimaBoard_2_NAS|ZimaOS NAS]] and [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]].
++ Firmware and settings backed up automatically to [ZimaOS NAS](./ZimaBoard_2_NAS.md) and [Raspberry Pi 4B Server](./Raspberry_Pi_4B_Server.md).

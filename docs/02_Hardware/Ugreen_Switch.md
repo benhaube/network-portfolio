@@ -38,7 +38,7 @@ hide:
 + **Throughput:** 
     + Unmanaged 
     + Five 2.5 Gb/s Ports
-    + One SFP+ 10 Gb/s Uplink *(from [[ASUS_RT-BE92U|ASUS RT-BE92U]] router)*
+    + One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](./ASUS_RT-BE92U.md) router)*
     + 45 Gb/s Total Switching Capacity
 + **Jumbo Frames:** 
     + Supported *(12 KB)*

@@ -40,7 +40,7 @@ hide:
 
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd @ K1C-A71E" *(Password & API Key for [[Fluidd]] / [[Moonraker]])*
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd @ K1C-A71E" *(Password & API Key for [Fluidd](../03_Services/Fluidd.md) / [Moonraker](../03_Services/Moonraker.md))*
 
 ## :material-lan: Network Configuration
 
@@ -76,11 +76,11 @@ hide:
 
 #### :material-linux: Native Linux:
 
-|  Status  | Service                                 |   Port(s)   | Role / Notes                                                                                                                                   |
-| :------: | :-------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| *Active* | :services-fluidd:&nbsp;[[Fluidd]]       | `80` `4408` | A Web UI for managing the printer.                                                                                                             |
-| *Active* | :services-klipper:&nbsp;[[Moonraker]]   |   `7125`    | An API that allows applications to communicate with the 3D-printing firmware, [:services-klipper:&thinsp;Klipper](https://www.klipper3d.org/). |
-| *Active* | :material-console-network:&nbsp;[[SSH]] |    `22`     | Remote terminal access.                                                                                                                        |
+|  Status  | Service                                                          |   Port(s)   | Role / Notes                                                                                                                                   |
+| :------: | :--------------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Active* | :services-fluidd:&nbsp;[Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A Web UI for managing the printer.                                                                                                             |
+| *Active* | :services-klipper:&nbsp;[Moonraker](../03_Services/Moonraker.md) |   `7125`    | An API that allows applications to communicate with the 3D-printing firmware, [:services-klipper:&thinsp;Klipper](https://www.klipper3d.org/). |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)     |    `22`     | Remote terminal access.                                                                                                                        |
 
 ---
 ## :material-tools: Maintenance & Notes
@@ -92,7 +92,7 @@ hide:
 > **:material-application-brackets: Software:**
 > 
 > + :services-fluidd: Fluidd / Moonraker
->     + For information regarding the [[Fluidd]] Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).
+>     + For information regarding the [Fluidd](../03_Services/Fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).
 >     + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
 > + :services-klipper: Klipper
 >     + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
@@ -112,7 +112,7 @@ hide:
 #### :material-update: Update Process:
 
 * Update most software through the [Fluidd](http://k1c-a71e.internal) Web UI.
-* Update Entware packages in terminal via [[SSH]] 
+* Update Entware packages in terminal via [SSH](../03_Services/SSH.md) 
 
 #### :material-cloud-upload-outline: Backup Policy:
 

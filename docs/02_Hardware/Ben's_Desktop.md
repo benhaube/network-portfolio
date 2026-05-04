@@ -97,7 +97,7 @@ hide:
 
 > [!config] Critical Configurations
 > **:material-web-clock: Chrony:** 
-> + Time synchronizes with local time server running on main router, [[ASUS_RT-BE92U|ASUS RT-BE92U]], using `chrony`.
+> + Time synchronizes with local time server running on main router, [ASUS RT-BE92U](./ASUS_RT-BE92U.md), using `chrony`.
 > 
 > **:material-cloud-upload-outline: Backup:** 
 > + Home directory backed up every weekday at `18:00` using custom `rsync` script, `home-bkp-nas.sh`. The script is triggered by `systemd` user timer, `home-bkp-nas.timer` which starts `home-bkp-nas.service`. The timer is persistent, so if the PC is asleep at the backup time the backup will start the next time the PC wakes up.
@@ -111,7 +111,7 @@ hide:
 >     sudo update-pcrs /dev/nvme0n1p3
 >     ```
 >
-> + More information about the configuration process can be found at: [[Unlock_LUKS_TPM2|Unlock LUKS w/ TPM2]]
+> + More information about the configuration process can be found at: [Unlock LUKS w/ TPM2](../Linux_Tutorials/Unlock_LUKS_TPM2.md)
 
 #### :material-update: Update Process:
 
@@ -121,7 +121,7 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy:
 
- * `/home` directory backed up every weekday at `18:00` to [[ZimaBoard_2_NAS|ZimaOS NAS]]
+ * `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md)
 
 #### :material-file-code-outline: Backup Script Config
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.

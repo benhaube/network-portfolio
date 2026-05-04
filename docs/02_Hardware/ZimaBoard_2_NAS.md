@@ -96,37 +96,37 @@ hide:
 
 #### :material-network-pos: Virtualization:
 
-|  Status  | Operating System                                                             | Network Interface | Disk Image       | Role / Notes                                             |
-| :------: | :--------------------------------------------------------------------------- | :---------------- | :--------------- | :------------------------------------------------------- |
-| *Active* | :material-debian:&nbsp;[Debian Linux 13](../02_Hardware/Debian_Server_VM.md) | Bridged (`eth0`)  | `cd175b11.qcow2` | Hosting the network's primary [[Technitium]] DNS server. |
+|  Status  | Operating System                                                             | Network Interface | Disk Image       | Role / Notes                                                                         |
+| :------: | :--------------------------------------------------------------------------- | :---------------- | :--------------- | :----------------------------------------------------------------------------------- |
+| *Active* | :material-debian:&nbsp;[Debian Linux 13](../02_Hardware/Debian_Server_VM.md) | Bridged (`eth0`)  | `cd175b11.qcow2` | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
 
 #### :material-linux: Native Linux:
 
-|  Status  | Service                                 | Port(s) | Role / Notes               |
-| :------: | :-------------------------------------- | :-----: | :------------------------- |
-| *Active* | :material-folder-network:&nbsp;[[NFS]]  | `2049`  | Remote file system access. |
-| *Active* | :material-console-network:&nbsp;[[SSH]] |  `22`   | Remote terminal access.    |
-| *Active* | :material-folder-network:&nbsp;[[SMB]]  |  `445`  | Remote file system access. |
+|  Status  | Service                                                      | Port(s) | Role / Notes               |
+| :------: | :----------------------------------------------------------- | :-----: | :------------------------- |
+| *Active* | :material-folder-network:&nbsp;[NFS](../03_Services/NFS.md)  | `2049`  | Remote file system access. |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) |  `22`   | Remote terminal access.    |
+| *Active* | :material-folder-network:&nbsp;[SMB](../03_Services/SMB.md)  |  `445`  | Remote file system access. |
 
 #### :material-docker: Docker:
 
 |   Status   | Service                                                                                 |        Port(s)         | Role / Notes                                                                                                                      |
 | :--------: | :-------------------------------------------------------------------------------------- | :--------------------: | :-------------------------------------------------------------------------------------------------------------------------------- |
 |  *Active*  | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md)                   |        `45876`         | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*.                            |
-|  *Active*  | :services-cloudflare:&nbsp;[[Cloudflared]]                                              |        `14333`         | Secure reverse-proxy tunnel for hosting private services on the public internet.                                                  |
+|  *Active*  | :services-cloudflare:&nbsp;[Cloudflared](../03_Services/Cloudflared.md)                 |        `14333`         | Secure reverse-proxy tunnel for hosting private services on the public internet.                                                  |
 |  *Active*  | :services-f1-replay-timing:&nbsp;[F1 Replay Timing](../03_Services/F1_Replay_Timing.md) |     `3000` `8000`      | Visualization of real-time track data and telemetry synced to F1 live and replays.                                                |
-|  *Active*  | :services-glances:&nbsp;[[Glances]]                                                     |        `61208`         | A top/htop alternative.                                                                                                           |
-|  *Active*  | :services-homebox:&nbsp;[[Homebox]]                                                     |         `3100`         | An inventory and organization system built for the home user.                                                                     |
-|  *Active*  | :services-immich:&nbsp;[[Immich]]                                                       |         `2283`         | Photo gallery and backup service.                                                                                                 |
+|  *Active*  | :services-glances:&nbsp;[Glances](../03_Services/Glances.md)                            |        `61208`         | A top/htop alternative.                                                                                                           |
+|  *Active*  | :services-homebox:&nbsp;[Homebox](../03_Services/Homebox.md)                            |         `3100`         | An inventory and organization system built for the home user.                                                                     |
+|  *Active*  | :services-immich:&nbsp;[Immich](../03_Services/Immich.md)                               |         `2283`         | Photo gallery and backup service.                                                                                                 |
 |  *Active*  | :simple-nginx:&nbsp;[Nginx (Network Portfolio)](../03_Services/Nginx.md)                |         `8080`         | The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.                |
-| *Inactive* | :services-ntop:&nbsp;[[ntopng]]                                                         |     `3000` `5556`      | Network traffic probe.                                                                                                            |
+| *Inactive* | :services-ntop:&nbsp;[ntopng](../03_Services/ntopng.md)                                 |     `3000` `5556`      | Network traffic probe.                                                                                                            |
 |  *Active*  | :simple-obsidian:&nbsp;[Obsidian LiveSync](../03_Services/Obsidian_LiveSync.md)         |         `5984`         | CouchDB database for synchronizing Obsidian Vaults.                                                                               |
-|  *Active*  | :services-openspeedtest:&nbsp;[[OpenSpeedTest]]                                         |         `3004`         | HTML5 Network Speed Test Server.                                                                                                  |
+|  *Active*  | :services-openspeedtest:&nbsp;[OpenSpeedTest](../03_Services/OpenSpeedTest.md)          |         `3004`         | HTML5 Network Speed Test Server.                                                                                                  |
 | *Inactive* | :services-portainer:&nbsp;[Portainer (Agent)](../03_Services/Portainer.md)              |         `9001`         | Agent for Portainer-EE Docker management server *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-|  *Active*  | :services-portracker:&nbsp;[[Portracker]]                                               |         `4999`         | A self-hosted, real-time port monitoring and discovery tool.                                                                      |
-|  *Active*  | :services-spoolman:&nbsp;[[Spoolman]]                                                   |         `7912`         | Manage 3D-printer filament spool inventory.                                                                                       |
-|  *Active*  | :simple-syncthing:&nbsp;[[Syncthing]]                                                   | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                          |
-|  *Active*  | :material-console:&nbsp;[[ttydBridge]]                                                  |         `2222`         | Easily access and use the host terminal in a web.                                                                                 |
+|  *Active*  | :services-portracker:&nbsp;[Portracker](../03_Services/Portracker.md)                   |         `4999`         | A self-hosted, real-time port monitoring and discovery tool.                                                                      |
+|  *Active*  | :services-spoolman:&nbsp;[Spoolman](../03_Services/Spoolman.md)                         |         `7912`         | Manage 3D-printer filament spool inventory.                                                                                       |
+|  *Active*  | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md)                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                          |
+|  *Active*  | :material-console:&nbsp;[ttydBridge](../03_Services/ttydBridge.md)                      |         `2222`         | Easily access and use the host terminal in a web.                                                                                 |
 |  *Active*  | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md)                 |    `51820` `51821`     | Remote access VPN server.                                                                                                         |
 |  *Active*  | :services-youtube-dl:&nbsp;[yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | A Web UI and RPC server for `yt-dlp`.                                                                                             |
 

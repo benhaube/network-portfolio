@@ -44,15 +44,15 @@ tags:
 
 ### On-Site Synchronization:
 
-+ [[Syncthing]] is utilized across the [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]], [[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server ]], [[Debian_Server_VM|Debian Server VM]] and [[ZimaBoard_2_NAS|ZimaOS NAS]] nodes to ensure configuration files and Docker volumes are mirrored in real-time.
-+ Linux PCs, [[Ben's_Desktop|ben-workstation]] and [[Ben's_Laptop|ben-laptop]], have the `/home` directory backed up to the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) every weekday at 18:00 and 19:00 UTC-5 using a custom script, `home-bkp-nas.sh`, that utilizes [[NFS]] and `rsync`. 
-+ Windows PCs use [[SMB]] and the built-in backup utility in Windows 11 to back up personal data to the ZimaOS NAS. 
-+ Obsidian vaults are synchronized in real-time with a [[Obsidian_LiveSync|CouchDB]] database hosted on the ZimaOS NAS, and to a private GitHub repository.
++ [Syncthing](../03_Services/Syncthing.md) is utilized across the [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]], [[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server ]], [[Debian_Server_VM|Debian Server VM]] and [[ZimaBoard_2_NAS|ZimaOS NAS]] nodes to ensure configuration files and Docker volumes are mirrored in real-time.
++ Linux PCs, [bens-workstation](../02_Hardware/Ben's_Desktop.md) and [ben-laptop](../02_Hardware/Ben's_Laptop.md), have the `/home` directory backed up to the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) every weekday at 18:00 and 19:00 UTC-5 using a custom script, `home-bkp-nas.sh`, that utilizes [NFS](../03_Services/NFS.md) and `rsync`. 
++ Windows PCs use [SMB](../03_Services/SMB.md) and the built-in backup utility in Windows 11 to back up personal data to the ZimaOS NAS. 
++ Obsidian vaults are synchronized in real-time with a [CouchDB](../03_Services/Obsidian_LiveSync.md) database hosted on the ZimaOS NAS, and to a private GitHub repository.
 + Android smartphones have **SMS / MMS & RCS** messages and critical application configurations backed up while charging to the ZimaOS NAS via Syncthing. The backup archives for messages are created locally on the device with the [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/) application.
 
 ### Cold Storage: 
 
-+ Critical database dumps *([[Home_Assistant|Home Assistant]], [[Immich]] PostgreSQL)* are exported weekly to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **NVMe Storage *(500GB)*** on the ZimaOS NAS.
++ Critical database dumps *([Home Assistant](../03_Services/Home_Assistant.md), [Immich](../03_Services/Immich.md) PostgreSQL)* are exported weekly to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **NVMe Storage *(500GB)*** on the ZimaOS NAS.
 + The configuration of the [[ASUS_RT-BE92U|ASUS RT-BE92U]] wireless router is exported weekly *(Sundays @ 1:00 UTC-5)* to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **Quick-Storage *(2TB)*** on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/) firmware.
 
 ### Off-Site / Cloud: 
@@ -65,7 +65,7 @@ tags:
 
 #### Automated Failover: 
 
-+ The [[Technitium]] DNS Node *([[Raspberry_Pi_4B_Server|Raspberry Pi 4B]])* is configured as a secondary resolver in the [[ASUS_RT-BE92U|ASUS RT-BE92U]] DHCP settings. Clients will automatically fallback to the Pi 4B.    
++ The [Technitium](../03_Services/Technitium.md) DNS Node *([Raspberry Pi 4B](../02_Hardware/Raspberry_Pi_4B_Server.md))* is configured as a secondary resolver in the [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) DHCP settings. Clients will automatically fallback to the Pi 4B.    
 
 #### Reprovisioning:
 
@@ -79,7 +79,7 @@ tags:
 
 #### Intervention: 
 
-+ Deploy a temporary Caddy Docker container on the **ZimaOS NAS** using the synced configuration files from [[Syncthing]].
++ Deploy a temporary Caddy Docker container on the **ZimaOS NAS** using the synced configuration files from [Syncthing](../03_Services/Syncthing.md).
 
 #### Update DNS: 
 
@@ -93,7 +93,7 @@ tags:
 
 ### Backup Verification:
 
-+ Monthly check of the [[Immich]] library integrity and a trial restoration of a single Docker container from [[Syncthing]] data.
++ Monthly check of the [Immich](../03_Services/Immich.md) library integrity and a trial restoration of a single Docker container from [Syncthing](../03_Services/Syncthing.md) data.
 + Weekly check of client backup logs for backup errors.
 
 ### Monitoring:

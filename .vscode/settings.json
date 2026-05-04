@@ -16,5 +16,8 @@
         "tag:yaml.org,2002:python/name:material.plugins.tags.tag_name_casefold scalar"
     ],
     "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
-    "files.autoSaveDelay": 10000
+    "files.autoSaveDelay": 10000,
+    "[markdown]": {
+        "editor.wordWrap": "off"
+    }
 }

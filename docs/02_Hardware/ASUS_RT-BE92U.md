@@ -104,11 +104,11 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!config inline] Critical Configurations
-> Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
+> **:material-backup-restore:&nbsp;Backup Restore:**
+> :   Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
 > 
-> **Documentation:**
->
-> [Asuswrt-Merlin Docs :material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button }
+> **:material-file-document:&nbsp;Documentation:**
+> :   [Asuswrt-Merlin :material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button }
 
 #### :material-update: Update Process:
 

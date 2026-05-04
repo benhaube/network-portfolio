@@ -4,13 +4,13 @@ title: PROWIPER&copy; Mod
 hide:
   - toc
 ---
-![Custom PROWIPER^&copy;^ Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=400 }
+![Custom PROWIPER^&copy;^ Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=200 }&ensp;![3DPHUB Logo](../assets/icons/3dphub.svg){ width=50 }
 
 # PROWIPER^&copy;^ Mod
 
+[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+
 > [!info] PROWIPER^&copy;^ Info
-> [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }
->
 > **Modifications:** 
 > 1. Upgraded bed leveling kit with aluminum spacers. 
 > 2. PROWIPER^&copy;^ V5 Mount
@@ -65,8 +65,15 @@ hide:
 #### :services-orca-slicer: Slicer Clearance:
   + [ ] In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
 
-      ![Excluded Bed Area](../assets/screenshots/excluded-bed-area-light.png#only-light){ .on-glb }
-      ![Excluded Bed Area](../assets/screenshots/excluded-bed-area-dark.png#only-dark){ .on-glb }
+<figure markdown="span">
+![Excluded Bed Area](../assets/screenshots/printable-area-light.png#only-light){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
+![Excluded Bed Area](../assets/screenshots/printable-area-dark.png#only-dark){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
+<figcaption><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</figcaption>
+</figure>
+      
+<div class="glightbox-desc printable-area-desc">
+<p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
+</div>
 
 ## :material-toggle-switch-outline: Phase 4: Dry Run *(Critical Safety Step)*
 
@@ -87,7 +94,9 @@ hide:
 
 + [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate. 
 
-## :material-file-code-outline: PROWIPER^&copy;^ Mod G-Code File
+---
+
+## :brands-3dphub: PROWIPER^&copy;^ G-Code
 
 ```cfg title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58"
 --8<-- "3DHUB_PROWIPER.cfg"

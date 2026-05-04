@@ -9,6 +9,7 @@
 *[CPUs]: Central Processing Units
 *[CSS]: Cascading Style Sheets
 *[CUPS]: Common UNIX Printing System
+*[CVE]: Common Vulnerabilities and Exposures
 *[DDR]: Double Data Rate
 *[DDR3]: Double Data Rate 3
 *[DDR4]: Double Data Rate 4

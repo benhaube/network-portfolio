@@ -8,7 +8,7 @@ hide:
 
 # PROWIPER^&copy;^ Mod
 
-[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button }
 
 > [!info] PROWIPER^&copy;^ Info
 > **Modifications:** 

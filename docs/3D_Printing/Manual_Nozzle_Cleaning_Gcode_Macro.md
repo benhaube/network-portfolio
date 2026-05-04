@@ -8,9 +8,9 @@ hide:
 
 # Interactive Manual Nozzle Cleaning Macro
 
+[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button }
+
 > [!info] 
-> [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }
-> 
 > **Date Implemented:** 
 > + March 2026
 > 
@@ -62,6 +62,8 @@ hide:
 <p>The Fluidd UI prompt will appear when the nozzle has reached the specified temperature.</p>
 <p>Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</p>
 </div>
+
+---
 
 ## :material-file-code-outline: G-code Macro
 

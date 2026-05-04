@@ -9,6 +9,8 @@ hide:
 
 # Manual Bed Leveling Mod
 
+[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button }
+
 > [!question]
 > **Why do this?**
 >  
@@ -17,18 +19,21 @@ hide:
 > [!links] Bed Leveling Kit 
 > [AliExpress :brands-aliexpress:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon :fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
 
-> [!note] Root Access Required
-> This project requires you to use the helper script to make changes to the `printer.cfg` file *(located at `/usr/data/printer_data/config/`)* and run macros or commands through a Klipper interface such as Fluidd or Mainsail. On a Creality K1-Series printer, this requires root access. Read the links below for more information.
->
-> [Helper Script :devices-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }&emsp;[Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
-
 ---
 ## :material-tools: Hardware Setup
 
 > [!note inline end] Installation Note
-> If you plan to upgrade your bed to glass, aluminium or graphite, or if you want to increase your chamber temperature for ABS and ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
-> 
-> If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
+> **Graphite Bed & Bed Fans:**
+> :     If you plan to install a graphite heated bed upgrade, or if you want to increase your chamber temperature for ABS / ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
+>
+>       [Graphite Bed Kit :brands-r3men:](https://www.r3men.com/products/graphite-heated-bed-for-creality-k1-k1c-k1se?ref=3dphub){ .md-button }
+>
+>       [Bed Fans Guide :brands-3dphub:](https://3dphub.net/learn/bed-fans-upgrade-guide){ .md-button }
+>
+> **Nylon Knobs:**
+> :     If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
+>
+>       [Nylon Knobs :simple-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
 
 1. [ ] Home the printer.
 2. [ ] Lower the bed &frac34; of the way down, so that you have enough room to stand the bed up.
@@ -77,10 +82,12 @@ hide:
 
 ## :material-chip: Firmware Setup
 
-> [!info inline end] Root SSH Access
-> If you don't know how to do this, refer to the Root Access Guide:
+> [!info inline end] Root Access
+> This project requires Root Access to your Creality K1-series 3D-printer via SSH. If you don't know how to gain root access, refer to the Helper Script and Root Access Guide.
 >
-> [Root Access Guide :material-console:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
+> [Root Access Guide :brands-3dphub:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
+>
+> [Helper Script :devices-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 > 
 > > [!security] Default Password
 > > The default `root` password is `creality_2023` *(at least on my Creality K1C)*. 
@@ -105,17 +112,18 @@ hide:
 
 ## :material-tooltip-question-outline: How to Use
 
-> [!note inline end] Preheating the Bed
-> Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade. 
+> [!note inline end] 
+> **Preheating the Bed:**
+> :     Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade. 
 
 1. [ ] Home the printer.
 2. [ ] Preheat the bed to your normal bed temperature for 20 minutes *(60&deg;C for PLA)*.
 3. [ ] Open up Fluidd or mainsail through Orca Slicer or by typing your printers IP address into your web browser with the appropriate port number appended.
 
-    | Interface                                                       |  Port  |
-    | :-------------------------------------------------------------- | :----: |
-    | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)       | `4408` |
-    | [:services-mainsail:&nbsp;Mainsail](https://docs.mainsail.xyz/) | `4409` |
+    | Interface                         |  Port  |
+    | :-------------------------------- | :----: |
+    | :services-fluidd:&nbsp;Fluidd     | `4408` |
+    | :services-mainsail:&nbsp;Mainsail | `4409` |
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
 
@@ -126,39 +134,39 @@ hide:
 
 5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.
 
-    <figure markdown="span">
-        ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-light.png#only-light){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
-        ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-dark.png#only-dark){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
-    <figcaption>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly 1&frasl;16 of a turn.</figcaption>
-    </figure>
+<figure markdown="span">
+    ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-light.png#only-light){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
+    ![A screensot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-dark.png#only-dark){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
+<figcaption>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly 1&frasl;16 of a turn.</figcaption>
+</figure>
 
-    <div class="glightbox-desc img-desc2">
-    <p>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly <sup>1</sup>/<sub>16</sub> of a turn.</p>
-    </div>
+<div class="glightbox-desc img-desc2">
+<p>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly <sup>1</sup>/<sub>16</sub> of a turn.</p>
+</div>
 
 6. [ ] Click retry or repeat the command to check the new level.
 
     > [!bug]
     > Sometimes if you do the calibration a few times in a row, you will not get a popup. In this case, the output should be displayed in the console and you can simply restart the printer and fluidd to bring the popup back.
 
+---
+
 ## :material-information-outline: Additional Info
 
-> [!links inline] 
-> **References and Resources**
-> 
-> [Screws Tilt Adjust :services-klipper:](https://www.klipper3d.org/G-Codes.html?h=screws#screws_tilt_calculate){ .md-button }
-> 
-> [Bed Leveling :services-klipper:](https://www.klipper3d.org/Manual_Level.html#adjusting-bed-leveling-screws-using-the-bed-probe){ .md-button }
-> 
-> [Fluidd Access :services-fluidd:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ .md-button }
-
-> [!warning] Factory Loadcell Warning!
-> This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. 
-> Most aftermarket probes are at least 10x more accurate than factory, and it is highly recommended to upgrade before doing this in order to get the best results and minimize the chances of issues.
+> [!note inline end] 
+> **Bed Warping:**
+> :     If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
 >
-> > [!failure] Error: key60
-> > If you are doing this with load cells *(factory probe)* and get a `key60` error *(Internal error command: `BEDMESH_CALIBRATE`)*.
-> > This may be due to too much pressure being applied to the load cells. Try backing off the knobs more and run `SCREWS_TILT_CALCULATE` again.
+> ![Bed Mesh Screenshot](../assets/screenshots/bed-mesh.png){ .on-glb width=230 }
 
-> [!note] Bed Warping
-> If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
+> [!warning]
+> **Factory Loadcell:**
+> :     This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. It will run a macro that measures the accuracy of your bed mesh probe by repeatedly probing the same point. Most aftermarket probes are at least 10x more accurate than the factory load cells. It is highly recommended to upgrade before doing this modification in order to get the best results and minimize the chance of issues.
+
+> [!failure] Error
+> **Error `key60`:**
+> :     If you are doing this modification with the factory load cells *(bed mesh probe)* and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
+
+#### :material-link-variant: References and Resources:
+
+[Klipper Docs :services-klipper:](https://www.klipper3d.org){ .md-button }&emsp;[Fluidd Docs :services-fluidd:](https://docs.fluidd.xyz/){ .md-button }&emsp;[Mainsail Docs :services-mainsail:](https://docs.mainsail.xyz/){ .md-button }

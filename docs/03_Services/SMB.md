@@ -47,13 +47,13 @@ hide:
 
 ### :material-cog: Configuration  
 
-#### :material-raspberry-pi: [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] Config:
+#### :material-raspberry-pi: [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) Config:
 
 ```linuxconfig title="/etc/samba/smb.conf" linenums="1"
 --8<-- "smb-pi-4b.conf"
 ```
 
-#### :material-nas: [[ZimaBoard_2_NAS|ZimaOS NAS]] Config:
+#### :material-nas: [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) Config:
 
 ```linuxconfig title="/etc/samba/smb.conf" linenums="1"
 --8<-- "smb-zima.conf"

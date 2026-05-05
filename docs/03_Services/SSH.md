@@ -141,7 +141,7 @@ hide:
 
 > [!help] Email Notification
 > The SSH servers on the network have email login notifications configured to notify in the case of unwanted access.<br>
-> More information regarding setup and configuration can be found [[Setup_SSH_Login_Email_Notification|here]].
+> More information regarding setup and configuration can be found [here](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md).
 
 ### :material-devices: Clients:
 

@@ -33,7 +33,7 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + "[[SSH]] keys"
+    + "[SSH](./SSH.md) Keys"
 
 ## :symbols-deployed-code-update: Deployment Details
 

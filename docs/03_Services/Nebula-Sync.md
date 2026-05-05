@@ -22,7 +22,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Synchronize settings between [[Pi-hole]] instances.
++ Synchronize settings between [Pi-hole](./Pi-hole.md) instances.
 
 #### :symbols-settings-ethernet: Port(s):
 + `N/A`
@@ -37,7 +37,7 @@ hide:
 
 | Host Device                                                                                         | Method                                | Container Name | Image                                 |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
-| :material-raspberry-pi:&nbsp;~~[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)~~ | :material-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
+| :material-raspberry-pi:&nbsp;[~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
 
 ### :material-cog: Configuration 
 

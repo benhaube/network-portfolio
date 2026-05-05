@@ -60,7 +60,8 @@ hide:
 + :services-f1-replay-timing:&ensp;[F1 Replay Timing](./03_Services/F1_Replay_Timing.md): Visualization of real-time track data and telemetry synced to F1 live and replays.
 + :services-fluidd:&ensp;[Fluidd](./03_Services/Fluidd.md): A Web UI for managing the 3D-printer.
 + :services-glance:&ensp;[Glance](./03_Services/Glance.md): A server dashboard Web UI. 
-+ :services-glances:&ensp;[Glances](./03_Services/Glances.md): A `top` / `htop` alternative for the Web browser. 
++ :services-glances:&ensp;[Glances](./03_Services/Glances.md): A `top` / `htop` alternative for the Web browser.
++ :services-gotify-notification:&ensp;[Gotify](./03_Services/Gotify.md): A simple server for sending and receiving messages in real-time per WebSocket. 
 + :simple-homeassistant:&ensp;[Home Assistant](./03_Services/Home_Assistant.md): A home automation and IoT dashboard.
 + :services-homebox:&ensp;[Homebox](./03_Services/Homebox.md): An inventory and organization system built for the home user.
 + :services-immich:&ensp;[Immich](./03_Services/Immich.md): Photo gallery and backup service.

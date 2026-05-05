@@ -17,7 +17,7 @@ hide:
 > **Overview:**
 > + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance. 
 > + It safely homes the axes, moves the toolhead to an accessible front-center position, and heats the nozzle to soften plastic debris. 
-> + It utilizes Klipper's `RESPOND` action commands to spawn a custom UI prompt in [[Fluidd]], pausing the workflow until the nozzle is physically cleaned with a silicone brush. 
+> + It utilizes Klipper's `RESPOND` action commands to spawn a custom UI prompt in [Fluidd](../03_Services/Fluidd.md), pausing the workflow until the nozzle is physically cleaned with a silicone brush. 
 > + Once acknowledged via the UI, it safely cools the heater and parks the toolhead.
 
 ---
@@ -47,7 +47,7 @@ hide:
   > The `DONE_CLEANING_COOL` macro turns off the heater, parks the toolhead safely out of the way, and cools the nozzle.
 
 #### Completion: 
-  + [ ] Wait for the [[Fluidd]] UI prompt to appear. 
+  + [ ] Wait for the [Fluidd](../03_Services/Fluidd.md) UI prompt to appear. 
   + [ ] Scrub the nozzle with your silicone brush. 
   + [ ] Click the **"Park"** button to automatically trigger the `DONE_CLEANING` macro. 
   + [ ] Click the **"Park & Cool"** button to automatically trigger the `DONE_CLEANING_COOL` macro. 

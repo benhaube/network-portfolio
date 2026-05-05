@@ -10,7 +10,7 @@ hide:
 
 > [!info] Project Info
 > **User:** Ben Haube | **Date:** Feb 5, 2026<br>
-> **Infrastructure:** [[ZimaBoard_2_NAS|ZimaOS NAS]] *([[Immich]])*, [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]] *([[Home_Assistant]], [[Cloudflared]] Tunnel)*
+> **Infrastructure:** [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))*, [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
 
 ---
 

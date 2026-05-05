@@ -39,7 +39,7 @@ hide:
 | :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
 | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                  | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)      | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| :material-raspberry-pi:&nbsp;~~[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)~~ | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| :material-raspberry-pi:&nbsp;[~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 
 ### :material-cog: Configuration  
 

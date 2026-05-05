@@ -157,8 +157,8 @@ hide:
 > :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
 > :material-devices:&nbsp;**Affected Clients:** 
 > 
-> + [[Ben's_Desktop|Ben's Desktop]] 
-> + [[Ben's_Laptop|Ben's Laptop]]
+> + [Ben's Desktop PC](./Ben's_Desktop.md) 
+> + [Ben's Laptop PC](./Ben's_Laptop.md)
 > 
 >
 > ---

@@ -44,7 +44,7 @@ tags:
 
 ### On-Site Synchronization:
 
-+ [Syncthing](../03_Services/Syncthing.md) is utilized across the [[Raspberry_Pi_4B_Server|Raspberry Pi 4B Server]], [[Raspberry_Pi_Zero_2_W|Raspberry Pi Zero Server ]], [[Debian_Server_VM|Debian Server VM]] and [[ZimaBoard_2_NAS|ZimaOS NAS]] nodes to ensure configuration files and Docker volumes are mirrored in real-time.
++ [Syncthing](../03_Services/Syncthing.md) is utilized across the [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md), [Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md), [Debian Server VM](../02_Hardware/Debian_Server_VM.md) and [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) nodes to ensure configuration files and Docker volumes are mirrored in real-time.
 + Linux PCs, [bens-workstation](../02_Hardware/Ben's_Desktop.md) and [ben-laptop](../02_Hardware/Ben's_Laptop.md), have the `/home` directory backed up to the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) every weekday at 18:00 and 19:00 UTC-5 using a custom script, `home-bkp-nas.sh`, that utilizes [NFS](../03_Services/NFS.md) and `rsync`. 
 + Windows PCs use [SMB](../03_Services/SMB.md) and the built-in backup utility in Windows 11 to back up personal data to the ZimaOS NAS. 
 + Obsidian vaults are synchronized in real-time with a [CouchDB](../03_Services/Obsidian_LiveSync.md) database hosted on the ZimaOS NAS, and to a private GitHub repository.
@@ -53,7 +53,7 @@ tags:
 ### Cold Storage: 
 
 + Critical database dumps *([Home Assistant](../03_Services/Home_Assistant.md), [Immich](../03_Services/Immich.md) PostgreSQL)* are exported weekly to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **NVMe Storage *(500GB)*** on the ZimaOS NAS.
-+ The configuration of the [[ASUS_RT-BE92U|ASUS RT-BE92U]] wireless router is exported weekly *(Sundays @ 1:00 UTC-5)* to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **Quick-Storage *(2TB)*** on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/) firmware.
++ The configuration of the [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) wireless router is exported weekly *(Sundays @ 1:00 UTC-5)* to the **USB Storage *(32GB)*** attached to the Raspberry Pi 4B server and the **Quick-Storage *(2TB)*** on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/) firmware.
 
 ### Off-Site / Cloud: 
 
@@ -98,7 +98,7 @@ tags:
 
 ### Monitoring:
 
-+ Server status and service uptime is monitored by [[Beszel_Hub|Beszel Hub]] and [[Uptime_Kuma|Uptime Kuma]] instances. 
++ Server status and service uptime is monitored by [Beszel Hub](../03_Services/Beszel_Hub.md) and [Uptime Kuma](../03_Services/Uptime_Kuma.md) instances. 
 + Email notifications are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
 + The ASUS router utilizing the Asuswrt-merlin firmware also has email notifications enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, and router reboots.
 + All three Debian-based servers send email notifications when new [SSH](../03_Services/SSH.md) sessions are started, and when `unattended-upgrades` completes a package upgrade. 

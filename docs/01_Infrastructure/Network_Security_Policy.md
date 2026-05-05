@@ -36,7 +36,7 @@ tags:
 #### External Access: 
 
 + Direct port forwarding is strictly prohibited. 
-+ Remote access to individual services is facilitated through a [[Cloudflared|Cloudflare Tunnel]], ensuring all incoming traffic is proxied and SSL-encrypted.
++ Remote access to individual services is facilitated through a [Cloudflare Tunnel](../03_Services/Cloudflared.md), ensuring all incoming traffic is proxied and SSL-encrypted.
 
 #### VPN:
 
@@ -87,7 +87,7 @@ tags:
 
 #### 3D Infrastructure:
 
-+ The [[Kacey_3D-printer|Creality K1C]] is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
++ The [Creality K1C](../02_Hardware/Kacey_3D-printer.md) is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 
 ## :symbols-shield-house-fill: IoT & Smart Home Integrity
 

@@ -12,7 +12,7 @@ hide:
 > 
 > :     When operating in a GNU / Linux terminal environment, aliases are an indispensable necessity to speed up your workflow. You can create an alias to eliminate the need to memorize the required arguments, you can combine several commands into an easy shortcut, you can automatically fix common typos, and many more. This guide will show you how to set up useful terminal aliases on both **Fedora / RHEL** and **Debian / Ubuntu** based GNU / Linux distributions. 
 
-[:material-arrow-down-thin:&nbsp;Jump to **Fedora / RHEL** Instructions&nbsp;:material-arrow-down-thin:](#fedora-rhel-based-distributions)
+[:material-arrow-down-thin:&thinsp;Jump to **Fedora / RHEL** Instructions&thinsp;:material-arrow-down-thin:](#fedora-rhel-based-distributions)
 
 ---
 ## :material-debian: Debian / Ubuntu Based Distributions:

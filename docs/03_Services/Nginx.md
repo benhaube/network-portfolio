@@ -44,4 +44,4 @@ hide:
 ```
 
 1. Maps port `8080` on the VM to port `80` inside the container.
-2. Mounts your site folder as read-only *(ro)* for extra security.
+2. Mounts your site folder as read-only (ro) for extra security.

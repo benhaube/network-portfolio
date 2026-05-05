@@ -95,7 +95,7 @@ hide:
     2. Command to edit PAM config file.
 
     ```bash title="Add to File" linenums="1"
-    session optional pam_exec.so /usr/local/bin/ssh-login-notify.sh  # (1)!
+    session     optional     pam_exec.so /usr/local/bin/ssh-login-notify.sh  # (1)!
     ```
     
     1. Add line to `/etc/pam.d/sshd` *after* the existing "session" lines.
@@ -109,7 +109,7 @@ hide:
     --8<-- "pam-sshd"
     ```
 
-2. Save and close the file.
+2. Save and close the file:
 	+ ++ctrl+o++ to save
 	+ ++ctrl+x++ to close
 
@@ -118,7 +118,7 @@ hide:
 **The Script:**
 :     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
 
-1. Create the shell script file.
+1. Create the shell script:
 
     ```bash linenums="1"
     sudo nano /usr/local/bin/ssh-login-notify.sh
@@ -132,10 +132,10 @@ hide:
 
     1. Change `RECIPIENT=example@example.com` to the email address where you want to recieve notifications.  
 
-3. Save and close the file.
+3. Save and close the file:
 	+ ++ctrl+o++ to save 
 	+ ++ctrl+x++ to close
-4. Give execute permission to the script.
+4. Give execute permission to the script:
 
     ```bash linenums="1"
     sudo chmod +x /usr/local/bin/ssh-login-notify.sh  # (1)!
@@ -156,6 +156,58 @@ hide:
     ```bash linenums="1"
     journalctl -t msmtp
     ```
+
+## :material-alert-octagram: Bonus
+
+**Gotify:**
+:   If you have a [Gotify](../03_Services/Gotify.md) instance, you can use it to send instantaneous push notifications when a new SSH session is established using the same method. However, since Gotify uses a dead-simple REST API, literally anything that can execute a standard `curl` command or send an HTTP `POST` request can trigger a push notification. That means there are no extra configurations or packages required. Just a simple Bash script using the tools built into every Linux distribution. 
+
+1. Open your Gotify Web-UI dashboard, create a new App named "SSH", and take note of the App token. We will paste the App token into the Bash script. 
+2. Create the shell script:
+
+    ```bash linenums="1"
+    sudo nano /usr/local/bin/gotify-ssh-alert.sh
+    ```
+
+3. Paste the following code into your script file, and replace the variables `TOKEN` and `URL` with your actual Gotify App token and URL.
+
+    ```bash title="gotify-ssh-alert.sh" linenums="1" hl_lines="9 10"
+    --8<-- "gotify-ssh-alert.sh"
+    ```
+
+    1. Only trigger the alert when a session is opened, ignoring logouts or credential checks.
+    2. Replace variables with your actual Gotify App token and URL.
+    3. Send the `POST` request to Gotify.
+
+4. Save and close the file:
+	+ ++ctrl+o++ to save 
+	+ ++ctrl+x++ to close
+5. Set restrictive permissions, allow execution, and ensure `root` ownership of the `gotify-ssh-alert.sh` file:
+    + This is an important security step because the script contains the secret token that authenticates with the Gotify server.
+
+    ```bash linenums="1"
+    sudo chmod 700 /usr/local/bin/gotify-ssh-alert.sh
+    sudo chown root:root /usr/local/bin/gotify-ssh-alert.sh
+    ```
+
+6. Add this line to the `/etc/pam.d/sshd` file: 
+    + If you need help editing the configuration file... [:material-arrow-up-thin:&thinsp;see the instructions above&thinsp;:material-arrow-up-thin:](#enable-login-alerts-with-pam)
+
+    ```bash linenums="1"
+    session     optional     pam_exec.so /usr/local/bin/gotify-ssh-alert.sh  # (1)!
+    ```
+    
+    1. Add line to `/etc/pam.d/sshd` *after* the existing "session" lines.
+
+<figure markdown="span">
+![Gotify SSH alert screenshot light](../assets/screenshots/gotify-ssh-alert-light.png#only-light){ .on-glb width=500 data-title="Example Alert:" data-description=".gotify-ssh-desc" }
+![Gotify SSH alert screenshot dark](../assets/screenshots/gotify-ssh-alert-dark.png#only-dark){ .on-glb width=500 data-title="Example Alert:" data-description=".gotify-ssh-desc" }
+<figcaption><b>Example Alert:</b> Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</figcaption>
+</figure>
+
+<div class="glightbox-desc gotify-ssh-desc">
+<p>Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</p>
+</div>
 
 ## :symbols-note-stack: Important Notes
 

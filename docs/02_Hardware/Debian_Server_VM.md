@@ -65,10 +65,11 @@ hide:
 
 #### :material-linux: Native Linux:
 
-|  Status  | Service                                                               |      Port(s)      | Role / Notes                                                                                                                        |
-| :------: | :-------------------------------------------------------------------- | :---------------: | :---------------------------------------------------------------------------------------------------------------------------------- |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)          |       `22`        | Remote terminal access.                                                                                                             |
-| *Active* | :services-technitium:&nbsp;[Technitium](../03_Services/Technitium.md) | `53` `443` `5380` | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. |
+|  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                                                        |
+| :------: | :-------------------------------------------------------------------- | :--------------------: | :---------------------------------------------------------------------------------------------------------------------------------- |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)          |          `22`          | Remote terminal access.                                                                                                             |
+| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                            |
+| *Active* | :services-technitium:&nbsp;[Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. |
 
 #### :material-docker: Docker:
 
@@ -96,12 +97,18 @@ hide:
 >         sudo virsh autostart <vm_name> --disable
 >         ```
 >         
-> + This server has email notifications configured for new SSH sessions and `unattended-upgrades`. See [SSH Login Email Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation. 
+> + This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation. 
 
 #### :material-update: Update Policy:
 
-* `#!bash sudo apt update && sudo apt upgrade` *(Standard Debian)*
-* `unattended-upgrades` enabled for critical bug and security fixes.
++ The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically.
++ Manual OS updates can be applied with the `apt` package manager. *(Standard Debian)*
+  
+    ```bash linenums="1"
+    sudo apt update && sudo apt upgrade
+    ```
+
++ Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_Services/Dockge.md)
 
 > [!warning inline] Warning!
 > + The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
@@ -113,9 +120,9 @@ hide:
 
 #### :material-camera: Snapshot Policy:
 
-* Perform external snapshots before major changes.
++ Perform external snapshots before major changes.
 
 #### :material-backup-restore: Recovery:
 
-* If the VM is corrupted there are external snapshots to roll back to. 
-* Also, on the main storage pool on the [ZimaOS NAS](./ZimaBoard_2_NAS.md) in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 
++ If the VM is corrupted there are external snapshots to roll back to. 
++ Also, on the main storage pool on the [ZimaOS NAS](./ZimaBoard_2_NAS.md) in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 

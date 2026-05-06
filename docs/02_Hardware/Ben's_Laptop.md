@@ -75,6 +75,20 @@ hide:
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
 
+## :material-web: Services / Docker Containers
+
+#### :material-network-pos: Virtualization:
+
+|  Status  | OS                                                  | Virtual NIC             | Virtual Disk Image                   | Role / Notes                                    |
+| :------: | :-------------------------------------------------- | :---------------------- | :----------------------------------- | :---------------------------------------------- |
+| *Active* | :services-kali:&nbsp;[Kali Linux](https://kali.org) | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2` | Network security and penetration testing tools. |
+
+#### :material-linux: Native Linux:
+
+|  Status  | Service                                                          |        Port(s)         | Role / Notes                             |
+| :------: | :--------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
+| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
+
 ---
 ## :material-tools: Maintenance & Notes
 

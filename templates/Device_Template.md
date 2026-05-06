@@ -30,7 +30,7 @@ hide:
 
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
 #### :symbols-monitor-heart: Core Specs:
 
@@ -70,7 +70,7 @@ hide:
 
 #### :material-network-pos: Virtualization:
 
-|  Status  | Operating System                         | Network Interface       | Disk Image         | Role / Notes |
+|  Status  | OS                                       | Virtual NIC             | Virtual Disk Image | Role / Notes |
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |
 | *Active* | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network *(NAT)* | `disk-image.qcow2` | -            |
 

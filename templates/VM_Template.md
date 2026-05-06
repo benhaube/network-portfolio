@@ -33,7 +33,7 @@ hide:
 
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): .
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
 #### :symbols-monitor-heart: Resource Allocation:
 

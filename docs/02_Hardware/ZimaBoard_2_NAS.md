@@ -169,7 +169,7 @@ hide:
 > + Config File: `etc/exports`
 > + Exports Entry:
 > 
->     ```linuxconfig title="/etc/exports" linenums="1"
+>     ```linuxconfig title="<code>/etc/exports</code>" linenums="1"
 >     --8<-- "exports"
 >     ```
 >     
@@ -190,21 +190,21 @@ hide:
 > + Package required: `nfs-utils`
 > + Systemd `.mount` unit files: `/etc/systemd/system`
 > 
->     ```systemd title="mnt-storage_server-Quick_Storage.mount" linenums="1"
+>     ```systemd title="<code>mnt-storage_server-Quick_Storage.mount</code>" linenums="1"
 >     --8<-- "mnt-storage_server-Quick_Storage.mount"
 >     ```
 >     
->     ```systemd title="mnt-storage_server-NVMe.mount" linenums="1"
+>     ```systemd title="<code>mnt-storage_server-NVMe.mount</code>" linenums="1"
 >     --8<-- "mnt-storage_server-NVMe.mount"
 >     ```
 >     
 > + Systemd `.automount` unit files: `/etc/systemd/system`
 > 
->     ```systemd title="mnt-storage_server-Quick_Storage.automount" linenums="1"
+>     ```systemd title="<code>mnt-storage_server-Quick_Storage.automount</code>" linenums="1"
 >     --8<-- "mnt-storage_server-Quick_Storage.automount"
 >     ```
 >     
->     ```systemd title="mnt-storage_server-NVMe.automount" linenums="1"
+>     ```systemd title="<code>mnt-storage_server-NVMe.automount</code>" linenums="1"
 >     --8<-- "mnt-storage_server-NVMe.automount"
 >     ```
 >     

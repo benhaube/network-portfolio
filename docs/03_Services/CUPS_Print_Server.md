@@ -46,6 +46,6 @@ hide:
 
 ### :material-cog: Configuration 
 
-```apacheconf title="/etc/cups/cupsd.conf" linenums="1"
+```apacheconf title="<code>/etc/cups/cupsd.conf</code>" linenums="1"
 --8<-- "cupsd.conf"
 ```

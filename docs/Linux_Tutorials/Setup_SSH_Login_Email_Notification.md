@@ -37,7 +37,7 @@ hide:
 
 2. Paste the following into the configuration file:
 
-    ```bash title="/etc/msmtprc" linenums="1" hl_lines="11 13-14"
+    ```bash title="<code>/etc/msmtprc</code>" linenums="1" hl_lines="11 13-14"
     --8<-- "msmtprc"
     ```
 
@@ -105,7 +105,7 @@ hide:
 
     The final file should look like this: 
 
-    ```desktop title="/etc/pam.d/sshd" linenums="1" hl_lines="26"
+    ```desktop title="<code>/etc/pam.d/sshd</code>" linenums="1" hl_lines="26"
     --8<-- "pam-sshd"
     ```
 
@@ -126,7 +126,7 @@ hide:
 
 2. Paste the following into your script file, and replace `example@example.com` with the email address to which you would like the notifications to be sent. 
 
-    ```bash title="ssh-login-notify.sh" linenums="1" hl_lines="7"
+    ```bash title="<code>ssh-login-notify.sh</code>" linenums="1" hl_lines="7"
     --8<-- "ssh-login-notify.sh"
     ```
 
@@ -171,7 +171,7 @@ hide:
 
 3. Paste the following code into your script file, and replace the variables `TOKEN` and `URL` with your actual Gotify App token and URL.
 
-    ```bash title="gotify-ssh-alert.sh" linenums="1" hl_lines="9 10"
+    ```bash title="<code>gotify-ssh-alert.sh</code>" linenums="1" hl_lines="9 10"
     --8<-- "gotify-ssh-alert.sh"
     ```
 

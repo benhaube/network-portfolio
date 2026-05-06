@@ -45,7 +45,7 @@ hide:
 
 #### :material-file-cog: Exports File:
 
-```linuxconfig title="/etc/exports" linenums="1"
+```linuxconfig title="<code>/etc/exports</code>" linenums="1"
 --8<-- "exports"
 ```
 

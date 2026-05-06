@@ -54,6 +54,6 @@ hide:
 
 #### :material-file-cog: Config File Backup:
 
-```json {title="backup-fluidd.json" linenums="1" .wrap-code}
+```json {title="<code>backup-fluidd.json</code>" linenums="1" .wrap-code}
 --8<-- "fluidd.json"
 ```

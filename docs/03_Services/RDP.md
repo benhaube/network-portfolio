@@ -38,6 +38,6 @@ hide:
 
 ### :material-cog: Configuration
 
-```ini title="~/.config/krdpserverrc" linenums="1"
+```ini title="<code>~/.config/krdpserverrc</code>" linenums="1"
 --8<-- "krdpserverrc"
 ```

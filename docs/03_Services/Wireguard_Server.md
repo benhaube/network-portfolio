@@ -63,7 +63,7 @@ hide:
 
 ### :material-cog: Configuration 
 
-```yaml title="docker-compose.yml" linenums="1"
+```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "wireguard.yml"
 ```
 

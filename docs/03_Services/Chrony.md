@@ -41,12 +41,12 @@ hide:
 
 #### :material-server-outline: Server:
 
-```nt title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1"
+```nt title="<code>/opt/share/ntpmerlin.d/chrony.conf</code>" linenums="1"
 --8<-- "chrony.conf"
 ```
 
 #### :material-devices: Clients:
 
-```nt title="/etc/chrony.conf" linenums="1"
+```nt title="<code>/etc/chrony.conf</code>" linenums="1"
 --8<-- "chrony-client.conf"
 ```

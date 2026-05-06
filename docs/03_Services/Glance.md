@@ -137,7 +137,7 @@ hide:
 
 #### :material-docker: Docker Compose:
 
-```yaml title="compose.yml" linenums="1"
+```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "glance-compose.yml"
 ```
 
@@ -151,7 +151,7 @@ hide:
 
 #### :material-file-cog-outline: Glance Config:
 
-```yaml title="dynacat.yml" linenums="1"
+```yaml title="<code>dynacat.yml</code>" linenums="1"
 --8<-- "dynacat.yml"
 ```
 
@@ -162,7 +162,7 @@ hide:
 5. Values for the colors are in **HSL** format. You can use a color picker like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.  
 6. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
 
-```yaml title="glance.yml" linenums="1"
+```yaml title="<code>glance.yml</code>" linenums="1"
 --8<-- "glance.yml"
 ```
 
@@ -175,14 +175,14 @@ hide:
 
 #### :material-view-dashboard: Glance Pages:
 
-```yaml title="home.yml" linenums="1"
+```yaml title="<code>home.yml</code>" linenums="1"
 --8<-- "glance-home.yml"
 ```
 
 1. Show a title header on mobile web browsers.
 2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
 
-```yaml title="network.yml" linenums="1"
+```yaml title="<code>network.yml</code>" linenums="1"
 --8<-- "glance-network.yml"
 ```
 
@@ -190,7 +190,7 @@ hide:
 2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
 3. :material-bug: Disabled WireGuard Easy community widget for now due to bugginess. 
 
-```yaml title="formula1.yml" linenums="1"
+```yaml title="<code>formula1.yml</code>" linenums="1"
 --8<-- "glance-formula1.yml"
 ```
 

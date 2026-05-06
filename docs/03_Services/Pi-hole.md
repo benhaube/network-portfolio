@@ -54,7 +54,7 @@ curl -sSL https://install.pi-hole.net | bash
 
 #### :material-file-cog: Pi-hole Config file:
 
-```toml title="/etc/pihole/pihole.toml" linenums="1"
+```toml title="<code>/etc/pihole/pihole.toml</code>" linenums="1"
 --8<-- "pihole.toml"
 ```
 

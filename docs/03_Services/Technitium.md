@@ -60,14 +60,14 @@ curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 
 #### :material-network-outline: Zones:
 
-```zone title="50.168.192.in-addr.arpa.zone"
+```zone title="<code>50.168.192.in-addr.arpa.zone</code>"
 --8<-- "50.168.192.in-addr.arpa.zone"
 ```
 
-```zone title="cluster-catalog.internal.zone"
+```zone title="<code>cluster-catalog.internal.zone</code>"
 --8<-- "cluster-catalog.internal.zone"
 ```
 
-```zone title="internal.zone"
+```zone title="<code>internal.zone</code>"
 --8<-- "internal.zone"
 ```

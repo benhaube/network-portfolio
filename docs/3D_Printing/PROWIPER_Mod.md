@@ -98,6 +98,6 @@ hide:
 
 ## :brands-3dphub: PROWIPER^&copy;^ G-Code
 
-```cfg title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58"
+```cfg title="<code>3DPHUB_PROWIPER.cfg</code>" linenums="1" hl_lines="43 58"
 --8<-- "3DHUB_PROWIPER.cfg"
 ```

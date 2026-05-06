@@ -59,7 +59,7 @@ hide:
 
 #### Example Caddyfile:
 
-```nginx title="/etc/caddy/Caddyfile" linenums="1"
+```nginx title="<code>/etc/caddy/Caddyfile</code>" linenums="1"
 # Immich Photo Server
 immich.internal {
     reverse_proxy [192.168.50.4]:2283

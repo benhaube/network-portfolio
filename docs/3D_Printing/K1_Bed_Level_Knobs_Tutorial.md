@@ -100,7 +100,7 @@ hide:
 
     **Option 2:** Add this to `printer.cfg`
 
-    ```cfg title="K1/K1C/K1SE" linenums="1"
+    ```cfg title="K1 / K1C / K1SE" linenums="1"
     --8<-- "screw-tilt-k1.cfg"
     ```
 

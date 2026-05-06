@@ -52,7 +52,7 @@ hide:
 
 #### :material-file-cog: Config File:
 
-```ini title="moonraker.cfg" linenums="1"
+```ini title="<code>moonraker.cfg</code>" linenums="1"
 --8<-- "moonraker.cfg"
 ```
 

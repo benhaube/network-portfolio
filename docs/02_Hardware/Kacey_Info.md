@@ -114,34 +114,34 @@ M600
 
 ## :services-klipper: Klipper Configuration Files
 
-```cfg title="printer.cfg" linenums="1"
+```cfg title="<code>printer.cfg</code>" linenums="1"
 --8<-- "printer.cfg"
 ```
 
-```cfg title="printer_params.cfg" linenums="1"
+```cfg title="<code>printer_params.cfg</code>" linenums="1"
 --8<-- "printer_params.cfg"
 ```
 
-```cfg title="moonraker.conf" linenums="1"
+```cfg title="<code>moonraker.conf</code>" linenums="1"
 --8<-- "moonraker.conf"
 ```
 
-```cfg title="octoeverywhere-system.cfg" linenums="1"
+```cfg title="<code>octoeverywhere-system.cfg</code>" linenums="1"
 --8<-- "octoeverywhere-system.cfg"
 ```
 
-```gcode title="M600-custom.cfg" linenums="1"
+```gcode title="<code>M600-custom.cfg</code>" linenums="1"
 --8<-- "M600-custom.cfg"
 ```
 
-```gcode title="sesorless.cfg" linenums="1"
+```gcode title="<code>sesorless.cfg</code>" linenums="1"
 --8<-- "sensorless.cfg"
 ```
 
-```gcode title="spoolman.cfg" linenums="1"
+```gcode title="<code>spoolman.cfg</code>" linenums="1"
 --8<-- "spoolman.cfg"
 ```
 
-```gcode title="gcode-macros.cfg" linenums="1"
+```gcode title="<code>gcode-macros.cfg</code>" linenums="1"
 --8<-- "gcode-macros.cfg"
 ```

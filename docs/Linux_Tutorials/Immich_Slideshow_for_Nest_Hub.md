@@ -53,7 +53,7 @@ hide:
 
 Add these services to your existing Immich stack or a new stack.
 
-```yaml title="compose.yml" linenums="1"
+```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "immich-frame.yaml"
 ```
 
@@ -66,7 +66,7 @@ Add these services to your existing Immich stack or a new stack.
 
 Place this in the same folder as your docker-compose file.
 
-```json title="config.json" linenums="1"
+```json title="<code>config.json</code>" linenums="1"
 --8<-- "immich-frame-config.json"
 ```
 
@@ -92,6 +92,6 @@ Place this in the same folder as your docker-compose file.
 
 **Automation YAML:**
 
-```yaml title="/home-assistant-container/automations.yaml" linenums="1"
+```yaml title="<code>/home-assistant-container/automations.yaml</code>" linenums="1"
 --8<-- "ha-automations.yaml"
 ```

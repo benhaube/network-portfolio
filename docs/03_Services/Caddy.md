@@ -75,7 +75,7 @@ hide:
 
 #### :material-file-cog: The 'Caddyfile' *(configuration file)*:
 
-```nginx title="/etc/caddy/Caddyfile" linenums="1"
+```nginx title="<code>/etc/caddy/Caddyfile</code>" linenums="1"
 --8<-- "Caddyfile"
 ```
 

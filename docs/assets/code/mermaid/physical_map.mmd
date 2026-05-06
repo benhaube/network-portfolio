@@ -33,13 +33,13 @@ graph TD
     %% --- Office / Printer Cart --- %%
     subgraph Office ["<b>Office / Printer Cart</b>"]
         direction TB
-        MeshNode("<b>ASUS RT-AX55</b><br><i>(AiMesh Node)</i>"):::gigabit
+        MeshNode("<b>ASUS RT-AX55</b><br><i>(AiMesh<sup>&copy;</sup> Node)</i>"):::gigabit
         SwitchOffice("<b>TP-Link Switch</b><br><i>(SG105)</i>"):::gigabit
         DesktopBen("Ben's Desktop"):::gigabit
         DesktopRob("Rob's Desktop"):::gigabit
         Pi4("<b>Raspberry Pi 4B</b><br><i>(Server / DNS)</i>"):::gigabit
         PiZero("<b>Pi Zero 2 W</b><br><i>(Caddy Reverse Proxy)</i>"):::wifi
-        Printer3D("<b>Creality K1C</b><br><i>(3D-printer)</i>"):::wifi
+        Printer3D("<b>Creality<sup>&copy;</sup> K1C</b><br><i>(3D-printer)</i>"):::wifi
     end
 
     %% --- Mobile / Wi-Fi --- %%
@@ -52,13 +52,13 @@ graph TD
     end
 
     %% --- IoT Network (VLAN53) --- %%
-    subgraph IoT ["<b>IoT Network</b> <i>(VLAN 53)</i>"]
+    subgraph IoT ["<b>IoT Network</b> <i>(VLAN53)</i>"]
         direction TB
         IoTDevices("IoT Devices"):::wifi
     end
 
     %% --- Guest Wi-Fi (VLAN52) --- %%
-    subgraph Guest ["<b>Guest Wi-Fi</b> <i>(VLAN 52)</i>"]
+    subgraph Guest ["<b>Guest Wi-Fi</b> <i>(VLAN52)</i>"]
         direction TB
         GuestDevices("Guest Devices"):::wifi
     end
@@ -67,10 +67,10 @@ graph TD
 
     %% --- WAN / Uplinks --- %%
     ISP ==> Modem
-    Modem == "<b>WAN</b> <i>(2.5Gb)</i>" ==> RouterMain
+    Modem == "<b>WAN</b> <i>(2.5 GbE)</i>" ==> RouterMain
 
     %% --- 10Gb Core Backbone --- %%
-    RouterMain == "<b>10Gb SFP+</b> <i>(Red Cat6a)</i>" ==> SwitchAgg
+    RouterMain == "<b>10 Gb SFP+</b> <i>(Red Cat6a)</i>" ==> SwitchAgg
 
     %% --- Living Room Connections --- %%
     SwitchAgg -- "<b>Port 1</b> <i>(White Cat5e)</i>" --> LaptopRob
@@ -81,7 +81,7 @@ graph TD
     Zima -.- VM
 
     %% --- Wireless Backhaul to AiMesh Node --- %%
-    RouterMain == "Wi-Fi 5GHz Backhaul" ==> MeshNode
+    RouterMain == "Wi-Fi 5 GHz Backhaul" ==> MeshNode
 
     %% --- Office Connections --- %%
     MeshNode == "<b>LAN 1</b> <i>(Black Cat6a)</i>" ==> SwitchOffice
@@ -93,6 +93,6 @@ graph TD
     RouterMain -. "VLAN52" .- GuestDevices
     RouterMain -. "VLAN53" .- IoTDevices
     MeshNode -. "VLAN50" .- PiZero
-    RouterMain -. "VLAN53<br><i>(wlan0)</i>" .- Pi4
+    RouterMain -. "VLAN53<br><code>(wlan0)</code>" .- Pi4
     MeshNode -. "VLAN50" .- Printer3D
-    RouterMain -. "VLAN 50" .- Mobile
+    RouterMain -. "VLAN50" .- Mobile

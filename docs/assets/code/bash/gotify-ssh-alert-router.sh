@@ -7,7 +7,6 @@ if [ -n "$SSH_CONNECTION" ]; then
   # (3)!
   TOKEN="YourNewAppTokenHere"
   URL="https://gotify.yourdomain.com/message?token=$TOKEN"
-  
   TITLE="Router Login: $(uname -n)"
   MESSAGE="Successful SSH login to router from IP: $CLIENT_IP"
   

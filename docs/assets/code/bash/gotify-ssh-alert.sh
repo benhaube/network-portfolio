@@ -8,7 +8,6 @@ fi
 # (2)!
 TOKEN="YourAppTokenHere"
 URL="https://gotify.yourdomain.com/message?token=$TOKEN"
-
 TITLE="SSH Login Alert: ${PAM_USER}@$(hostname)"
 MESSAGE="User '${PAM_USER}' successfully logged in via '${PAM_SERVICE}' from IP: '${PAM_RHOST}'."
 

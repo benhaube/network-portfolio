@@ -176,7 +176,7 @@ hide:
     ```
 
     1. Only trigger the alert when a session is opened, ignoring logouts or credential checks.
-    2. Replace variables with your actual Gotify App token and URL.
+    2. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
     3. Send the `POST` request to Gotify.
 
 4. Save and close the file:

@@ -64,6 +64,10 @@ hide:
 
 ### :material-server-outline: Servers:
 
+> [!help] New Session Notification
+> The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
+> See, [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md), for configuration information.
+
 #### SSH Config File:
 
 1. Make the required changes to the SSH config file: 
@@ -138,10 +142,6 @@ hide:
 > ```
 
 --8<-- "zima-ssh.md"
-
-> [!help] Email Notification
-> The SSH servers on the network have email login notifications configured to notify in the case of unwanted access.<br>
-> More information regarding setup and configuration can be found [here](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md).
 
 ### :material-devices: Clients:
 

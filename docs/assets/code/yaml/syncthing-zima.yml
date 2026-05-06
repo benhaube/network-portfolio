@@ -2,12 +2,6 @@ services:
   syncthing:
     cpu_shares: 90
     container_name: syncthing
-    deploy:
-      resources:
-        limits:
-          memory: 16508235776
-        reservations:
-          memory: "268435456"
     environment:
       - PGID=1000
       - PUID=1000

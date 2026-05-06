@@ -134,9 +134,11 @@
 *[Tb/s]: Terabits Per Second
 *[TB]: Terabyte
 *[TB/s]: Terabytes Per Second
+*[TCP]: Transmission Control Protocol
 *[TLS]: Transport Layer Security
 *[TPM]: Trusted Platform Module
 *[TPM2]: Trusted Platform Module 2.0
+*[UDP]: User Datagram Protocol
 *[UEFI]: Universal Extensible Firmware Interface
 *[UI]: User Interface
 *[UKI]: Unified Kernel Image

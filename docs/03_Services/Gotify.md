@@ -47,3 +47,15 @@ hide:
 ```
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
+
+#### :material-application-cog: Configured Applications:
+
+| Application                                                              | Host Device                                                         | Role / Notes                                                                                                                     |
+| :----------------------------------------------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------- |
+| :services-beszel:&nbsp;[Beszel Hub](../03_Services/Beszel_Hub.md)        | [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Recieve notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc. |
+| :services-uptime-kuma:&nbsp;[Uptime Kuma](../03_Services/Uptime_Kuma.md) | [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Recieve notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.               |
+| :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)             | [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                    | Recieve notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.      |
+|                                                                          | [Debian Server VM](../02_Hardware/Debian_Server_VM.md)              |                                                                                                                                  |
+|                                                                          | [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  |                                                                                                                                  |
+|                                                                          | [Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) |                                                                                                                                  |
+|                                                                          | [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                     |                                                                                                                                  |

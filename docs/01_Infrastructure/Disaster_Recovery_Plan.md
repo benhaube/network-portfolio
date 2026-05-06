@@ -99,9 +99,10 @@ tags:
 ### Monitoring:
 
 + Server status and service uptime is monitored by [Beszel Hub](../03_Services/Beszel_Hub.md) and [Uptime Kuma](../03_Services/Uptime_Kuma.md) instances. 
-+ Email notifications and push notifications with [Gotify](../03_Services/Gotify.md) are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
+    + Email notifications and push notifications with [Gotify](../03_Services/Gotify.md) are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
 + The ASUS router utilizing the Asuswrt-merlin firmware also has email notifications enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, and router reboots.
-+ All three Debian-based servers send email notifications when new [SSH](../03_Services/SSH.md) sessions are started, and when `unattended-upgrades` completes a package upgrade. 
++ All three Debian-based servers send **email & push** notifications when new [SSH](../03_Services/SSH.md) sessions are started, and when `unattended-upgrades` completes a package upgrade.
++ The [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) sends push notifications with [Gotify](../03_Services/Gotify.md) when new SSH sessions are successfully established. 
 + The email address, [admin@haube-pereira.com](mailto:admin@haube-pereira.com), is dedicated to automated notifications from the monitoring software. 
 
 ---

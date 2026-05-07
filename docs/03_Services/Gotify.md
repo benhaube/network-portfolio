@@ -50,19 +50,52 @@ hide:
 
 #### :material-application-cog: Configured Applications:
 
-| Application                                                              | Host Device                                                                                      | Role / Notes                                                                                                                     |
-| :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| :services-beszel:&nbsp;[Beszel Hub](../03_Services/Beszel_Hub.md)        | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Recieve notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc. |
-| :services-uptime-kuma:&nbsp;[Uptime Kuma](../03_Services/Uptime_Kuma.md) | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Recieve notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.               |
-| :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)             | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                 | Recieve notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.      |
-|                                                                          | :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    |                                                                                                                                  |
-|                                                                          | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  |                                                                                                                                  |
-|                                                                          | :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) |                                                                                                                                  |
-|                                                                          | :services-zimaos:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                           |                                                                                                                                  |
+| Application                                                                     | Host Device                                                                                      | Role / Notes                                                                                                                     |
+| :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
+| :services-beszel:&nbsp;[Beszel Alerts](../03_Services/Beszel_Hub.md)            | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Receive notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc. |
+| :services-uptime-kuma:&nbsp;[Uptime Kuma Alerts](../03_Services/Uptime_Kuma.md) | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Receive notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.               |
+| :material-console-network:&nbsp;[SSH Session Alerts](../03_Services/SSH.md)     | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                 | Receive notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.      |
+| -                                                                               | :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | -                                                                                                                                |
+| -                                                                               | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | -                                                                                                                                |
+| -                                                                               | :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | -                                                                                                                                |
+| -                                                                               | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | -                                                                                                                                |
+| :material-router-wireless:&nbsp;[Router Alets](../02_Hardware/ASUS_RT-BE92U.md) | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                 | Receive notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, and `connmon` events.     |
 
-#### :material-console-network: SSH Notification Script:
+#### :services-beszel: Beszel Alerts:
 
-1. Create the script file: 
+1. Open the [Beszel Hub](../03_Services/Beszel_Hub.md) settings menu, go to the **"Notifications"** sub-menu, and enter the following URL into the **"Webhook / Push Notifications"** section.
+   
+    ```text linenums="1"
+    gotify://gotify.rac3r4life.online/<YourAppToken>
+    ```
+
+2. Click the **"Test URL"** button to send a test notification and verify functionality.
+
+#### :services-uptime-kuma: Uptime Kuma Alerts:
+
+![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
+![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
+
+1. Open the [Uptime Kuma](../03_Services/Uptime_Kuma.md) settings menu, and enter the **"Notifications"** sub-menu.
+2. Click the **"Set Up Notification"** button.
+3. In the **"Notification Type"** drop-down menu, select the option **"Gotify"**.
+4. Give your new notification a name in the **"Friendly Name"** field.
+5. Enter your unique app token in the **"Application Token"** field.
+6. Enter your Gotify server address in the **"Server URL"** field.
+
+    ```text linenums="1"
+    https://gotify.rac3r4life.online
+    ```
+
+7. Set your desired notification priority in the **"Priority"** field.
+8. Click the **"Test"** button before saving to confirm your settings are functional.
+9. *Optional:*
+    + Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
+    + Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors. 
+
+#### :material-console-network: SSH Session Alerts:
+
+1. Create the script: 
 
     ```bash title="Debian Servers&emsp;<code>/usr/local/bin/</code>" linenums="1"
     sudo nano /usr/local/bin/gotify-ssh-alert.sh
@@ -136,3 +169,89 @@ hide:
     ```
 
     3. Add this single line to the bottom of the file.<br><br>**Note:** The `&` symbol at the end is crucial. It runs the script in the background so it doesn't hang or delay your SSH login prompt while it waits for the `curl` command to reach the Gotify server.
+
+#### :material-router-wireless: Router Alerts:
+
+##### WAN IP Change
+
+1. Create the custom script:
+
+    ```sh linenums="1"
+    nano /jffs/scripts/ddns-start
+    ```
+
+2. Paste this code into the file, then save and close.
+
+    ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="4 5"
+    --8<-- "ddns-start.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    2. `$1` is the new IP passed by the router.
+
+3. Make the script executable:
+
+    ```sh linenums="1"
+    chmod +x /jffs/scripts/ddns-start
+    ```
+
+##### Backupmon Alerts
+
+1. Create the custom wrapper script:
+
+    ```sh linenums="1"
+    nano /jffs/scripts/gotify-backupmon.sh
+    ```
+
+2. Paste this code into the file, then save and close.
+
+    ```sh title="<code>/jffs/scripts/gotify-backupmon.sh</code>" linenums="1" hl_lines="4 5"
+    --8<-- "gotify-backupmon.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    2. Execute `backupmon` silently.
+    3. Check the exit status of the backup script, and send the appropriate notification.
+
+3. Make the script executable:
+
+    ```sh linenums="1"
+    chmod +x /jffs/scripts/gotify-backupmon.sh
+    ```
+
+4. Open the `crontab` editor, and replace the existing `backupmon` script with your custom wrapper script.
+
+    ```sh linenums="1"
+    crontab -e
+    ```
+
+    ```sh linenums="1"
+    30 2 * * * sh /jffs/scripts/gotify-backupmon.sh #RunBackupMon#
+    ```
+
+##### Connmon Alerts
+
+1. Create the script: 
+
+    ```sh linenums="1"
+    nano /opt/share/connmon.d/userscripts.d/gotify-connmon.sh
+    ```
+
+2. Paste this code into the file, then save and close.
+
+    ```sh title="<code>/opt/share/connmon.d/userscripts.d/gotify-connmon.sh</code>" linenums="1" hl_lines="4 5"
+    --8<-- "gotify-connmon.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    2. Default title and priority.
+    3. Catch-all for any undefined triggers.
+    4. Send the `POST` request to Gotify.
+
+3. Make the script executable:
+
+    ```sh linenums="1"
+    chmod +x /opt/share/connmon.d/userscripts.d/gotify-connmon.sh
+    ```
+
+4. Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, conmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.

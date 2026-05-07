@@ -135,7 +135,7 @@ hide:
 ## :material-tools: Maintenance & Notes
 
 > [!zima inline end] ZimaOS
-> This server runs **ZimaOS**, an "Atomic" *(immutable)* operating system.
+> This server runs **ZimaOS**, an "Atomic" *(a.k.a., immutable)* operating system.
 >  
 > + Do not attempt to use `apt` to install or upgrade system packages. 
 > + Do not change NTP settings *(stuck on systemd-timesyncd)*.

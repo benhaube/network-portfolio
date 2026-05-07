@@ -112,51 +112,55 @@ hide:
 
 #### :material-update: Update Process:
 
-* `#!bash sudo dnf offline-upgrade download` 
-* `#!bash sudo dnf offline reboot`
-* `#!bash flatpak update`
++ `#!bash sudo dnf offline-upgrade download` 
++ `#!bash sudo dnf offline reboot`
++ `#!bash flatpak update`
 
 #### :material-cloud-upload-outline: Backup Policy:
 
-* `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md)
++ `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md)
 
-#### :material-file-code-outline: Backup Script Config
+#### :material-file-code-outline: Backup Script Config:
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
-```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="44"
---8<-- "home-bkp-nas.sh"
-```
+    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="44"
+    --8<-- "home-bkp-nas.sh"
+    ```
 
-1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
+    1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
 
 2. Place `.bkp-exclude-nas` in the `~/` directory.
 
-```kconfig title="<code>.bkp-exclude-nas</code>" linenums="1"
---8<-- ".bkp-exclude-nas"
-```
+    ```kconfig title="<code>.bkp-exclude-nas</code>" linenums="1"
+    --8<-- ".bkp-exclude-nas"
+    ```
 
 3. Run the command `#!bash mkdir -p ~/.var/log` to create the log directory.
 4. Run the command `#!bash touch ~/.var/log/backup_log.log` to create the empty log file.
 5. Place `home-backup` in the `/etc/logrotate.d/` directory.
 
-```nginx title="<code>/etc/logrotate.d/home-backup</code>" linenums="1"
---8<-- "logrotate-home-backup"
-```
+    ```nginx title="<code>/etc/logrotate.d/home-backup</code>" linenums="1"
+    --8<-- "logrotate-home-backup"
+    ```
 
 6. Place `home-bkp-nas.timer` and `home-bkp-nas.service` in the `~/.config/systemd/user/` directory.
 
-```systemd title="<code>home-bkp-nas.timer</code>" linenums="1"
---8<-- "home-bkp-nas.timer"
-```
+    ```systemd title="<code>home-bkp-nas.timer</code>" linenums="1"
+    --8<-- "home-bkp-nas.timer"
+    ```
 
-```systemd title="<code>home-bkp-nas.service</code>" linenums="1"
---8<-- "home-bkp-nas.service"
-```
+    ```systemd title="<code>home-bkp-nas.service</code>" linenums="1"
+    --8<-- "home-bkp-nas.service"
+    ```
 
-7. Run the command `#!bash systemctl --user daemon-reload`
-8. Run the command `#!bash systemctl --user enable home-bkp-nas.timer`
+7. Run the following commands to reload the systemd daemons and enable the timer:
 
-#### :material-folder-network: Systemd Files for ZimaOS NAS Mounts *(NFS)*
+    ```bash linenums="1"
+    systemctl --user daemon-reload
+    systemctl --user enable home-bkp-nas.timer
+    ```
+
+#### :material-folder-network: Systemd Files for ZimaOS NAS Mounts:
 
 ```systemd title="<code>mnt-storage_server-NVMe.mount</code>" linenums="1"
 --8<-- "mnt-storage_server-NVMe.mount"
@@ -174,45 +178,45 @@ hide:
 --8<-- "mnt-storage_server-Quick_Storage.automount"
 ```
 
-#### :material-folder-lock: Encrypted-Documents Config
+#### :material-folder-lock: Encrypted-Documents Config:
 
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
 
-```desktop title="<code>mount-gocryptfs.desktop</code>" linenums="1"
---8<-- "mount-gocryptfs.desktop"
-```
+    ```desktop title="<code>mount-gocryptfs.desktop</code>" linenums="1"
+    --8<-- "mount-gocryptfs.desktop"
+    ```
 
-#### :material-google-drive: Rclone Google Drive Config
+#### :material-google-drive: Rclone Google Drive Config:
 
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
-```ini title="<code>rclone.conf</code>" linenums="1"
---8<-- "rclone.conf"
-```
+    ```ini title="<code>rclone.conf</code>" linenums="1"
+    --8<-- "rclone.conf"
+    ```
 
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
 
-```desktop title="<code>mount-rclone.desktop</code>" linenums="1"
---8<-- "mount-rclone.desktop"
-```
+    ```desktop title="<code>mount-rclone.desktop</code>" linenums="1"
+    --8<-- "mount-rclone.desktop"
+    ```
 
-#### :material-console-line: Starship.rs Terminal Prompt
+#### :material-console-line: Starship.rs Terminal Prompt:
 
 1. Install the latest version.
 
-```bash linenums="1"
-curl -sS https://starship.rs/install.sh | sh
-```
+    ```bash linenums="1"
+    curl -sS https://starship.rs/install.sh | sh
+    ```
 
 2. Add init script to shell's config file. 
 
-```bash linenums="1"
-eval "$(starship init bash)"
-```
+    ```bash linenums="1"
+    eval "$(starship init bash)"
+    ```
 
-3. Move custom config file to `~/.config/starship.toml`.
+3. Place the custom config file in the `~/.config` directory.
 
-```toml title="<code>starship.toml</code>" linenums="1"
---8<-- "starship-laptop.toml"
-```
+    ```toml title="<code>starship.toml</code>" linenums="1"
+    --8<-- "starship-laptop.toml"
+    ```

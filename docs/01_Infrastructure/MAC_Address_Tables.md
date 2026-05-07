@@ -95,7 +95,7 @@ hide:
 
     ---
 
-    [IPAM](../01_Infrastructure/IP_Address_Management.md){ .md-button }
+    [IP Address Management](../01_Infrastructure/IP_Address_Management.md){ .md-button }
 
 -   :material-sitemap:{ .lg .middle } **Network Diagrams**
 

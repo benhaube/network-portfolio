@@ -22,8 +22,9 @@ hide:
 
 # IP Address Management
 
-> [!question] What is IPAM?
-> **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
+> [!question] FAQ
+> **What is IPAM?**
+> :    **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
 
 ---
 ## :material-lan: Local Network(s)

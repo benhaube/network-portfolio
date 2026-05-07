@@ -14,8 +14,9 @@ tags:
 
 # Disaster Recovery Plan
 
-> [!info] Objective
-> The goal of this **DR** plan is to ensure **HA** for critical network services *(DNS, Routing, Security)* and to provide a clear path to data restoration for stateful services *(Immich, Home Assistant, SMB Shares)* in the event of hardware failure or data corruption.
+> [!info] 
+> **Objective:**
+> :    The goal of this **DR** plan is to ensure **HA** for critical network services *(DNS, Routing, Security)* and to provide a clear path to data restoration for stateful services *(Immich, Home Assistant, SMB Shares)* in the event of hardware failure or data corruption.
 
 ---
 ## :material-priority-high: Service Priority Levels
@@ -128,7 +129,7 @@ tags:
 	
 	---
 
-	[IPAM](../01_Infrastructure/IP_Address_Management.md){ .md-button }
+	[IP Address Management](../01_Infrastructure/IP_Address_Management.md){ .md-button }
 
 -   :material-server-security:{ .lg .middle } **Network Security**
 

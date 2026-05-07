@@ -1,6 +1,6 @@
 ---
 icon: symbols/policy-fill
-title: Network Security Policy (NSP)
+title: Network Security Policy
 tags:
   - Infrastructure
   - Policy
@@ -13,10 +13,11 @@ tags:
 ---
 ![Material Design server-security icon](../assets/icons/server-security.svg){ width=200 }
 
-# Network Security Policy (NSP)
+# Network Security Policy
 
-> [!info] Security Philosophy
-> This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
+> [!info] 
+> **Security Philosophy:**
+> :    This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 ---
 ## :material-segment: Network Segmentation *(VLAN Architecture)*
@@ -123,6 +124,6 @@ tags:
 
 	---
 
-	[IPAM](../01_Infrastructure/IP_Address_Management.md){ .md-button }
+	[IP Address Management](../01_Infrastructure/IP_Address_Management.md){ .md-button }
 
 </div>

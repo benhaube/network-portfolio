@@ -50,6 +50,8 @@
 *[HSL]: Hue, Saturation, Lightness
 *[HTML]: Hyper Text Markup Language
 *[HTML5]: Hyper Text Markup Language 5
+*[HTTP]: Hypertext Transfer Protocol
+*[HTTPS]: Hypertext Transfer Protocol Secure
 *[HVAC]: Heating, Ventilating, and Air Conditioning
 *[IoT]: Internet of Things
 *[IP]: Internet Protocol

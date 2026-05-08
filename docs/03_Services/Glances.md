@@ -19,7 +19,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Glances an Eye on your system. A `top` / `htop` alternative for the Web browser. 
++ Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 
 #### :symbols-settings-ethernet: Port(s): 
 + `21208`

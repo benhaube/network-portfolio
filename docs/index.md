@@ -60,7 +60,7 @@ hide:
 + :services-f1-replay-timing:&ensp;[F1 Replay Timing](./03_Services/F1_Replay_Timing.md): Visualization of real-time track data and telemetry synced to F1 live and replays.
 + :services-fluidd:&ensp;[Fluidd](./03_Services/Fluidd.md): A free and open-source Klipper web interface for managing your 3d printer.
 + :services-glance:&ensp;[Glance](./03_Services/Glance.md): A self-hosted dashboard that puts all your feeds in one place. 
-+ :services-glances:&ensp;[Glances](./03_Services/Glances.md): A `top` / `htop` alternative for the Web browser.
++ :services-glances:&ensp;[Glances](./03_Services/Glances.md): Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems. 
 + :services-gotify-notification:&ensp;[Gotify](./03_Services/Gotify.md): A simple server for sending and receiving messages in real-time per WebSocket. 
 + :simple-homeassistant:&ensp;[Home Assistant](./03_Services/Home_Assistant.md): A home automation and IoT dashboard.
 + :services-homebox:&ensp;[Homebox](./03_Services/Homebox.md): An inventory and organization system built for the home user.

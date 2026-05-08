@@ -43,13 +43,15 @@ hide:
 
 ### :material-cog: Configuration 
 
-#### :material-file-cog: Exports File:
+#### :material-server-outline: Server:
+
+##### Exports Entry
 
 ```linuxconfig title="<code>/etc/exports</code>" linenums="1"
 --8<-- "exports"
 ```
 
-#### :material-console-line: Command to Apply:
+##### Command to Apply
 
 ```bash linenums="1"
 exportfs -a
@@ -60,3 +62,40 @@ exportfs -a
 ```bash linenums="1"
 systemctl restart nfs-server
 ```
+
+#### :symbols-devices: Clients:
+
+##### Systemd Unit Files
+
++ Systemd `.mount` unit files:
+    + Place files in the `/etc/systemd/system` directory.
+
+    ```systemd title="<code>mnt-storage_server-NVMe.mount</code>" linenums="1"
+    --8<-- "mnt-storage_server-NVMe.mount"
+    ```
+
+    ```systemd title="<code>mnt-storage_server-Quick_Storage.mount</code>" linenums="1"
+    --8<-- "mnt-storage_server-Quick_Storage.mount"
+    ```
+
++ Systemd `.automount` unit files:
+    + Place files in the `/etc/systemd/system` directory.
+
+    ```systemd title="<code>mnt-storage_server-NVMe.automount</code>" linenums="1"
+    --8<-- "mnt-storage_server-NVMe.automount"
+    ```
+
+    ```systemd title="<code>mnt-storage_server-Quick_Storage.automount</code>" linenums="1"
+    --8<-- "mnt-storage_server-Quick_Storage.automount"
+    ```
+
+##### Command to Apply
+
++ Run the Systemd daemon-reload command to apply the configuration files.
+
+    ```bash linenums="1"
+    sudo systemctl daemon-reload
+    ```
+
++ Add a shortcut to the `/mnt/storage_server` directory in the "Places" pane in the Dolphin file manager for quick GUI access. The remote file systems will mount automatically when you visit the directory.
+    + Running the CLI command, `ls /mnt/storage-server`, will also trigger the auto-mount. 

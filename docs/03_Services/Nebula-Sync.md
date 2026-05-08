@@ -22,7 +22,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Synchronize settings between [Pi-hole](./Pi-hole.md) instances.
++ Synchronize configuration between multiple [Pi-hole](./Pi-hole.md) instances.
 
 #### :symbols-settings-ethernet: Port(s):
 + `N/A`

@@ -20,7 +20,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ Photo gallery and backup service.
++ High performance self-hosted photo and video management solution. 
 
 #### :symbols-settings-ethernet: Port(s): 
 + `2283`

@@ -64,7 +64,7 @@ hide:
 + :services-gotify-notification:&ensp;[Gotify](./03_Services/Gotify.md): A simple server for sending and receiving messages in real-time per WebSocket. 
 + :simple-homeassistant:&ensp;[Home Assistant](./03_Services/Home_Assistant.md): Open-source home automation that puts local control and privacy first.
 + :services-homebox:&ensp;[Homebox](./03_Services/Homebox.md): An inventory and organization system built for the home user.
-+ :services-immich:&ensp;[Immich](./03_Services/Immich.md): Photo gallery and backup service.
++ :services-immich:&ensp;[Immich](./03_Services/Immich.md): High performance self-hosted photo and video management solution.
 + :services-it-tools:&ensp;[IT-Tools](./03_Services/IT-Tools.md): Handy tools for network administrators and developers.
 + :services-klipper:&ensp;[Moonraker](./03_Services/Moonraker.md): An API for the *[Klipper](https://www.klipper3d.org/)* firmware.
 + :material-cog-sync:&ensp;[Nebula-Sync](./03_Services/Nebula-Sync.md): Synchronize settings between *[Pi-hole](https://pi-hole.net)* instances.

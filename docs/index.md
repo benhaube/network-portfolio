@@ -75,7 +75,7 @@ hide:
 + :simple-obsidian:&ensp;[Obsidian LiveSync *(CouchDB)*](./03_Services/Obsidian_LiveSync.md): Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 + :services-openspeedtest:&ensp;[OpenSpeedTest](./03_Services/OpenSpeedTest.md): A free & open-source HTML5 network performance estimation tool.
 + :simple-pihole:&ensp;[Pi-hole DNS Server](./03_Services/Pi-hole.md): A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
-+ :services-portainer:&ensp;[Portainer-EE](./03_Services/Portainer.md): A *[Docker](https://www.docker.com)* container management platform.
++ :services-portainer:&ensp;[Portainer-EE](./03_Services/Portainer.md): A lightweight service delivery platform for containerized applications. 
 + :services-portracker:&ensp;[Portracker](./03_Services/Portracker.md): A self-hosted, real-time port monitoring and discovery tool.
 + :material-remote-desktop:&ensp;[RDP *(Remote Desktop Protocol)*](./03_Services/RDP.md): Remote desktop access over the local network. *(not exposed to the internet)*
 + :material-folder-network:&ensp;[SMB *(Server Message Block)*](./03_Services/RDP.md): Remote file system access.

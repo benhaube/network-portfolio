@@ -21,7 +21,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A Docker container management platform and agent for connecting remote servers.
++ A lightweight service delivery platform for containerized applications. 
 
 #### :symbols-settings-ethernet: Port(s):
 + Hub:

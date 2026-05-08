@@ -101,7 +101,7 @@ hide:
 |  *Active*  | :services-glances:&nbsp;[Glances](../03_Services/Glances.md)                   |       `61208`        | A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.                    |
 |  *Active*  | :simple-homeassistant:&nbsp;[Home Assistant](../03_Services/Home_Assistant.md) |        `8123`        | Open-source home automation that puts local control and privacy first.                                      |
 |  *Active*  | :services-it-tools:&nbsp;[IT-Tools](../03_Services/IT-Tools.md)                |        `8080`        | Collection of handy online tools for developers, with great UX.                                             |
-| *Inactive* | :services-portainer:&nbsp;[Portainer-EE](../03_Services/Portainer.md)          | `8000` `9000` `9443` | A Docker container management platform.                                                                     |
+| *Inactive* | :services-portainer:&nbsp;[Portainer-EE](../03_Services/Portainer.md)          | `8000` `9000` `9443` | A lightweight service delivery platform for containerized applications.                                     |
 |  *Active*  | :services-portracker:&nbsp;[[Portracker]]                                      |        `4999`        | A self-hosted, real-time port monitoring and discovery tool.                                                |
 |  *Active*  | :services-uptime-kuma:&nbsp;[Uptime Kuma](../03_Services/Uptime_Kuma.md)       |        `3001`        | A fancy self-hosted monitoring tool.                                                                        |
  

@@ -128,7 +128,7 @@ hide:
 
 + While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_Services/Gotify.md) server to send instant push notifications for events that may require an urgent response.
 
-##### SSH Notification Script
+##### SSH Session Alerts
 
 + A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and cliet IP address.
 + To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_Services/Gotify.md#ssh-session-alerts) section on the Gotify service documentation page.

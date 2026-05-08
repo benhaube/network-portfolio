@@ -102,11 +102,11 @@ hide:
 
 #### :material-linux: Native Linux:
 
-|  Status  | Service                                                      | Port(s) | Role / Notes               |
-| :------: | :----------------------------------------------------------- | :-----: | :------------------------- |
-| *Active* | :material-folder-network:&nbsp;[NFS](../03_Services/NFS.md)  | `2049`  | Remote file system access. |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) |  `22`   | Remote terminal access.    |
-| *Active* | :material-folder-network:&nbsp;[SMB](../03_Services/SMB.md)  |  `445`  | Remote file system access. |
+|  Status  | Service                                                      | Port(s) | Role / Notes                                                                                   |
+| :------: | :----------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
+| *Active* | :material-folder-network:&nbsp;[NFS](../03_Services/NFS.md)  | `2049`  | Remote file system access.                                                                     |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md) |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | :material-folder-network:&nbsp;[SMB](../03_Services/SMB.md)  |  `445`  | Remote file system access.                                                                     |
 
 #### :material-docker: Docker:
 

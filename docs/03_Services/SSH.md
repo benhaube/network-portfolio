@@ -21,7 +21,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Remote shell access to servers
++ Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
 #### :symbols-settings-ethernet: Port(s):
 + `22`

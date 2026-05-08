@@ -59,6 +59,7 @@
 *[IT]: Information Technology
 *[JPG]: Joint Photographic Experts Group
 *[JPEG]: Joint Photographic Experts Group
+*[JSON]: JavaScript Object Notation
 *[Kb]: Kilobit
 *[Kb/s]: Kilobits Per Second
 *[KB]: Kilobyte

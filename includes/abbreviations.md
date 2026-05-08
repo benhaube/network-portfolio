@@ -1,15 +1,22 @@
 *[2FA]: Two Factor Authentication
 *[ABS]: Acrylonitrile Butadiene Styrene
+*[ACPI]: Advanced Configuration and Power Interface
 *[API]: Application Programming Interface
 *[APIs]: Application Programming Interfaces
 *[ASA]: Acrylonitrile Styrene Acrylate
 *[ASCII]: American Standard Code for Information Interchange
 *[BIOS]: Basic Input / Output System
 *[BSD]: Berkeley Software Distribution
+*[BTRFS]: B-Tree File System
 *[CAD]: Computer Aided Design
+*[CDN]: Content Delivery Network
+*[CI/CD]: Continuous Integration and Continuous Deployment
 *[CLI]: Command Line Interface
+*[CORS]: Cross-Origin Resource Sharing
 *[CPU]: Central Processing Unit
 *[CPUs]: Central Processing Units
+*[CSP]: Content Security Policy
+*[CSRF]: Cross-Site Request Forgery
 *[CSS]: Cascading Style Sheets
 *[CUPS]: Common UNIX Printing System
 *[CVE]: Common Vulnerabilities and Exposures
@@ -18,6 +25,7 @@
 *[DDR4]: Double Data Rate 4
 *[DDR5]: Double Data Rate 5
 *[DHCP]: Dynamic Host Connection Protocol
+*[DNF]: Dandified YUM
 *[DNS]: Domain Name Service
 *[DDNS]: Dynamic Domain Name Service
 *[DDoS]: Distributed Denial of Service
@@ -26,9 +34,15 @@
 *[DoS]: Denial of Service
 *[DoT]: DNS over TLS
 *[DR]: Disaster Recovery
+*[EDR]: Endpoint Detection and Response
 *[EMF]: Electro Magentic Field
 *[eMMC]: embedded MultiMedia Card
+*[EXT4]: Fourth Extended Filesystem
 *[F1]: Formula 1 (Racing Series)
+*[FDM]: Fused Deposition Modeling
+*[FFF]: Fused Filament Fabrication
+*[FOSS]: Free and Open Source Software
+*[FQDN]: Fully Qualified Domain Name
 *[FW]: Firmware
 *[GbE]: Gigabit Ethernet
 *[Gb]: Gigabit
@@ -56,19 +70,24 @@
 *[HTTP]: Hypertext Transfer Protocol
 *[HTTPS]: Hypertext Transfer Protocol Secure
 *[HVAC]: Heating, Ventilating, and Air Conditioning
+*[IAM]: Identity and Access Management
+*[IDS]: Intrusion Detection System
 *[IMAP]: Internet Message Access Protocol
 *[IoT]: Internet of Things
 *[IP]: Internet Protocol
 *[IPAM]: IP Address Management
+*[IPS]: Intrusion Prevention System
 *[ISP]: Internet Service Provider
 *[IT]: Information Technology
 *[JPG]: Joint Photographic Experts Group
 *[JPEG]: Joint Photographic Experts Group
 *[JSON]: JavaScript Object Notation
+*[JWT]: JSON Web Token
 *[Kb]: Kilobit
 *[Kb/s]: Kilobits Per Second
 *[KB]: Kilobyte
 *[KB/s]: Kilobytes Per Second
+*[KDE]: K Desktop Environment
 *[KVM]: Kernel Virtual Machine
 *[LAN]: Local Area Network
 *[LED]: Light Emitting Diode
@@ -79,6 +98,7 @@
 *[LPDDR5]: Low Profile Double Data Rate 5
 *[LUKS]: Linux Unified Key Setup
 *[LUKS2]: Linux Unified Key Setup 2
+*[LXC]: Linux Containers
 *[MAC]: Media Access Control
 *[Mb]: Megabit
 *[Mb/s]: Megabits Per Second
@@ -102,6 +122,7 @@
 *[NVM]: Non-Volitile Memory
 *[NVMe]: Non-Volitile Memory Express
 *[OLED]: Organic Light Emitting Diode
+*[OOM]: Out of Memory
 *[OS]: Operating System
 *[PAM]: Pluggable Authentication Module
 *[PC]: Personal Computer
@@ -116,8 +137,10 @@
 *[PNG]: Portable Network Graphics
 *[QEMU]: The Quick Emulator
 *[RAM]: Random Access Memory
+*[RBAC]: Role-Based Access Control
 *[RCS]: Rich Communication Services
 *[RDP]: Remote Desktop Protocol
+*[REST]: Representational State Transfer
 *[RFB]: Remote Frame Buffer
 *[RGB]: Red, Green, Blue
 *[RGBW]: Red Green Blue White
@@ -125,22 +148,28 @@
 *[ROM]: Read-Only Memory
 *[RPC]: Remote Proceedure Call
 *[RTO]: Recovery Time Objective
+*[SAML]: Security Assertion Markup Language
 *[SAN]: Storage Area Network
 *[SATA]: Serial Advanced Technology Attachment
 *[SD]: Secure Digital
 *[SDRAM]: Synchronous Dynamic Random-Access Memory
+*[SELinux]: Security-Enhanced Linux
 *[SFP]: Small Form-factor Pluggable
 *[SFP+]: Small Form-factor Pluggable Plus
+*[SIEM]: Security Information and Event Management
+*[SLA]: Stereolithography Apparatus
 *[SMB]: Server Message Block
 *[SMS]: Short Message Service
 *[SMTP]: Simple Mail Transfer Protocol
+*[SNI]: Server Name Indication
 *[SPI]: Stateful Packet Inspection
 *[SSD]: Solid State Drive
 *[SSH]: Secure Shell
 *[SSID]: Service Set Identifier
 *[SSL]: Secure Sockets Layer
-*[STEP]: Standard for the Exchange of Product Data (file format)
-*[STL]: Stereolithography (file format)
+*[SSO]: Single Sign-On
+*[STEP]: Standard for the Exchange of Product Data _(file format)_
+*[STL]: Stereolithography _(file format)_
 *[SVG]: Scalable Vector Graphics
 *[Tb]: Terabit
 *[Tb/s]: Terabits Per Second
@@ -148,8 +177,11 @@
 *[TB/s]: Terabytes Per Second
 *[TCP]: Transmission Control Protocol
 *[TLS]: Transport Layer Security
+*[TOTP]: Time-based One-Time Password
 *[TPM]: Trusted Platform Module
 *[TPM2]: Trusted Platform Module 2.0
+*[TPU]: Thermoplastic Polyurethane
+*[TTL]: Time to Live
 *[TUI]: Terminal User Interface
 *[UDP]: User Datagram Protocol
 *[UEFI]: Universal Extensible Firmware Interface
@@ -169,10 +201,13 @@
 *[VLANs]: Virtual Local Area Networks
 *[VM]: Virtual Machine
 *[VNC]: Virtual Network Computing
+*[VPC]: Virtual Private Cloud
 *[VPN]: Virtual Private Network
 *[VPNs]: Virtual Private Networks
 *[VRAM]: Video Random Access Memory
 *[WAF]: Web Application Firewall
 *[WAN]: Wide Area Network
+*[XDR]: Extended Detection and Response
 *[XML]: Extensible Markup Language
+*[XSS]: Cross-Site Scripting
 *[YAML]: Yet Another Markup Language

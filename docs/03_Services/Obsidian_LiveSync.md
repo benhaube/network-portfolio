@@ -20,7 +20,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ CouchDB database for synchronizing Obsidian Vaults 
++ Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
 #### :symbols-settings-ethernet: Port(s):
 + `5984`

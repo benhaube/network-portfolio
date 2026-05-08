@@ -5,6 +5,7 @@
 *[ASA]: Acrylonitrile Styrene Acrylate
 *[ASCII]: American Standard Code for Information Interchange
 *[BIOS]: Basic Input / Output System
+*[BSD]: Berkeley Software Distribution
 *[CLI]: Command Line Interface
 *[CPU]: Central Processing Unit
 *[CPUs]: Central Processing Units

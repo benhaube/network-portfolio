@@ -18,7 +18,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A home automation and IoT dashboard.
++ Open-source home automation that puts local control and privacy first.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `8123`

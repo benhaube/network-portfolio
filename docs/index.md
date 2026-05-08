@@ -62,7 +62,7 @@ hide:
 + :services-glance:&ensp;[Glance](./03_Services/Glance.md): A self-hosted dashboard that puts all your feeds in one place. 
 + :services-glances:&ensp;[Glances](./03_Services/Glances.md): Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems. 
 + :services-gotify-notification:&ensp;[Gotify](./03_Services/Gotify.md): A simple server for sending and receiving messages in real-time per WebSocket. 
-+ :simple-homeassistant:&ensp;[Home Assistant](./03_Services/Home_Assistant.md): A home automation and IoT dashboard.
++ :simple-homeassistant:&ensp;[Home Assistant](./03_Services/Home_Assistant.md): Open-source home automation that puts local control and privacy first.
 + :services-homebox:&ensp;[Homebox](./03_Services/Homebox.md): An inventory and organization system built for the home user.
 + :services-immich:&ensp;[Immich](./03_Services/Immich.md): Photo gallery and backup service.
 + :services-it-tools:&ensp;[IT-Tools](./03_Services/IT-Tools.md): Handy tools for network administrators and developers.

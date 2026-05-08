@@ -151,8 +151,12 @@ hide:
 > + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
 > + **Constraint:** 
 >     + Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
+>
+> ---
+>
+> See the ["Configuration"](../03_Services/SMB.md#configuration) section of the SMB service documentation page for server configuration details.
 
-> [!change]+ NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
+> [!change] NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
 > :material-calendar:&nbsp;**Date:** 2026-02-09 <br>
 > :material-help-circle-outline:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
 > :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
@@ -164,52 +168,4 @@ hide:
 >
 > ---
 > 
-> :services-zimaos:&nbsp;**Server Side *(ZimaOS)*:**
-> 
-> + Config File: `etc/exports`
-> + Exports Entry:
-> 
->     ```linuxconfig title="<code>/etc/exports</code>" linenums="1"
->     --8<-- "exports"
->     ```
->     
-> + Command to apply:
-> 
->     ```bash linenums="1"
->     exportfs -ra
->     ```
->     
->     **or**
->     
->     ```bash linenums="1"
->     systemctl restart nfs-server
->     ```
->     
-> :material-fedora:&nbsp;**Client Side *(Fedora 43)*:**
-> 
-> + Package required: `nfs-utils`
-> + Systemd `.mount` unit files: `/etc/systemd/system`
-> 
->     ```systemd title="<code>mnt-storage_server-Quick_Storage.mount</code>" linenums="1"
->     --8<-- "mnt-storage_server-Quick_Storage.mount"
->     ```
->     
->     ```systemd title="<code>mnt-storage_server-NVMe.mount</code>" linenums="1"
->     --8<-- "mnt-storage_server-NVMe.mount"
->     ```
->     
-> + Systemd `.automount` unit files: `/etc/systemd/system`
-> 
->     ```systemd title="<code>mnt-storage_server-Quick_Storage.automount</code>" linenums="1"
->     --8<-- "mnt-storage_server-Quick_Storage.automount"
->     ```
->     
->     ```systemd title="<code>mnt-storage_server-NVMe.automount</code>" linenums="1"
->     --8<-- "mnt-storage_server-NVMe.automount"
->     ```
->     
-> + Systemd daemon reload command:
-> 
->     ```bash linenums="1"
->     sudo systemctl daemon-reload
->     ```
+> See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 

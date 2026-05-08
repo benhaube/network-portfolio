@@ -57,6 +57,7 @@
 *[IoT]: Internet of Things
 *[IP]: Internet Protocol
 *[IPAM]: IP Address Management
+*[ISP]: Internet Service Provider
 *[IT]: Information Technology
 *[JPG]: Joint Photographic Experts Group
 *[JPEG]: Joint Photographic Experts Group

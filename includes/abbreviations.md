@@ -42,6 +42,7 @@
 *[GPUs]: Graphics Processing Units
 *[GRUB]: Grand Unified Bootloader
 *[GRUB2]: Grand Unified Bootloader 2
+*[GUI]: Graphical User Interface
 *[GUID]: Globally Unique Identifier
 *[HA]: High Availability
 *[HDD]: Hard Drive Disk

@@ -72,12 +72,12 @@ hide:
 
 > [!config inline] Critical Configurations
 > **:material-hub-outline: AiMesh Node:**
-> :   All settings for AiMesh node are available through the main router's Web UI. See [ASUS RT-BE92U](ASUS_RT-BE92U.md).
+> :    The AiMesh Node acts like a "dumb" wireless access point. All available settings for the AiMesh node are available through the main router's Web-UI. See [ASUS RT-BE92U](ASUS_RT-BE92U.md).
 
 #### :material-update: Update Process: 
 
-+ Automatic firmware and script updates enabled. 
++ Automatic firmware updates are enabled. The firmware version and status is available through the main router's Web-UI.  
 
 #### :material-cloud-upload-outline: Backup Policy: 
 
-+ No settings backup needed for AiMesh node. 
++ No backup is needed for AiMesh node. 

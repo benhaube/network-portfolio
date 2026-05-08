@@ -18,7 +18,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A free and open-source Klipper web interface for managing your 3d printer.
++ A free and open-source Klipper web interface for managing your 3D-printer.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `80`

@@ -116,7 +116,7 @@ hide:
 ## :material-file-code-outline: Creating the Shell Script 
 
 **The Script:**
-:     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMPT server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
+:     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMTP server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
 
 1. Create the shell script:
 
@@ -219,7 +219,7 @@ hide:
 
 > [!tip]+ 
 > **Unattended Upgrades Notifications:**
-> :    To use the `msmpt` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
+> :    To use the `msmtp` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
 > 
 > > [!error]
 > > **Error 551 5.7.1:** 

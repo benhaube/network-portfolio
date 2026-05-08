@@ -21,7 +21,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ Network traffic probe
++ Web-based traffic and security network traffic monitoring. 
 
 #### :symbols-settings-ethernet: Port(s):
 + `3000`

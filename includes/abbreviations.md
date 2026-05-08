@@ -41,6 +41,7 @@
 *[GE]: General Electric Inc.
 *[GHz]: Gigahertz
 *[GNU]: An extensive collection of free software. A recursive acronym for "GNU's Not Unix."
+*[GPLv3]: GNU Public License version 3
 *[GPU]: Graphics Processing Unit
 *[GPUs]: Graphics Processing Units
 *[GRUB]: Grand Unified Bootloader

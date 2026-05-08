@@ -211,5 +211,5 @@ hide:
 > + Systemd daemon reload command:
 > 
 >     ```bash linenums="1"
->     sudo systemd daemon-reload
+>     sudo systemctl daemon-reload
 >     ```

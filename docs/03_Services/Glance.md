@@ -20,7 +20,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A server dashboard Web UI. 
++ A self-hosted dashboard that puts all your feeds in one place. 
 
 #### :symbols-settings-ethernet: Port(s):
 + `8580`

@@ -92,18 +92,18 @@ hide:
 
 #### :material-docker: Docker:
 
-|   Status   | Service                                                                        |       Port(s)        | Role / Notes                                                                                                   |
-| :--------: | :----------------------------------------------------------------------------- | :------------------: | :------------------------------------------------------------------------------------------------------------- |
-|  *Active*  | :services-beszel:&nbsp;[Beszel (Hub & Agent)](../03_Services/Beszel_Hub.md)    |    `8090` `45876`    | A lightweight server monitoring hub with historical data, docker stats, and alerts.                            |
-|  *Active*  | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)                      |        `5001`        | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                    |
-|  *Active*  | :simple-f1:&nbsp;[F1 API](../03_Services/Glance.md)                            |        `4463`        | Part of the [Glance](../03_Services/Glance.md) stack. Supplies Formula 1 data for widgets on Glance dashboard. |
-|  *Active*  | :services-glance:&nbsp;[Glance](../03_Services/Glance.md)                      |        `8580`        | A server home-page/dashboard.                                                                                  |
-|  *Active*  | :services-glances:&nbsp;[Glances](../03_Services/Glances.md)                   |       `61208`        | A top/htop alternative.                                                                                        |
-|  *Active*  | :simple-homeassistant:&nbsp;[Home Assistant](../03_Services/Home_Assistant.md) |        `8123`        | Smart home management dashboard.                                                                               |
-|  *Active*  | :services-it-tools:&nbsp;[IT-Tools](../03_Services/IT-Tools.md)                |        `8080`        | Collection of handy online tools for developers, with great UX.                                                |
-| *Inactive* | :services-portainer:&nbsp;[Portainer-EE](../03_Services/Portainer.md)          | `8000` `9000` `9443` | A Docker container management platform.                                                                        |
-|  *Active*  | :services-portracker:&nbsp;[[Portracker]]                                      |        `4999`        | A self-hosted, real-time port monitoring and discovery tool.                                                   |
-|  *Active*  | :services-uptime-kuma:&nbsp;[Uptime Kuma](../03_Services/Uptime_Kuma.md)       |        `3001`        | A fancy self-hosted monitoring tool.                                                                           |
+|   Status   | Service                                                                        |       Port(s)        | Role / Notes                                                                                                |
+| :--------: | :----------------------------------------------------------------------------- | :------------------: | :---------------------------------------------------------------------------------------------------------- |
+|  *Active*  | :services-beszel:&nbsp;[Beszel (Hub & Agent)](../03_Services/Beszel_Hub.md)    |    `8090` `45876`    | A lightweight server monitoring hub with historical data, docker stats, and alerts.                         |
+|  *Active*  | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)                      |        `5001`        | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                 |
+|  *Active*  | :simple-f1:&nbsp;[F1 API](../03_Services/Glance.md)                            |        `4463`        | Part of the [Glance](../03_Services/Glance.md) stack. Supplies F1 data for widgets on the Glance dashboard. |
+|  *Active*  | :services-glance:&nbsp;[Glance](../03_Services/Glance.md)                      |        `8580`        | A self-hosted dashboard that puts all your feeds in one place.                                              |
+|  *Active*  | :services-glances:&nbsp;[Glances](../03_Services/Glances.md)                   |       `61208`        | A top/htop alternative.                                                                                     |
+|  *Active*  | :simple-homeassistant:&nbsp;[Home Assistant](../03_Services/Home_Assistant.md) |        `8123`        | Smart home management dashboard.                                                                            |
+|  *Active*  | :services-it-tools:&nbsp;[IT-Tools](../03_Services/IT-Tools.md)                |        `8080`        | Collection of handy online tools for developers, with great UX.                                             |
+| *Inactive* | :services-portainer:&nbsp;[Portainer-EE](../03_Services/Portainer.md)          | `8000` `9000` `9443` | A Docker container management platform.                                                                     |
+|  *Active*  | :services-portracker:&nbsp;[[Portracker]]                                      |        `4999`        | A self-hosted, real-time port monitoring and discovery tool.                                                |
+|  *Active*  | :services-uptime-kuma:&nbsp;[Uptime Kuma](../03_Services/Uptime_Kuma.md)       |        `3001`        | A fancy self-hosted monitoring tool.                                                                        |
  
 ---
 ## :material-tools: Maintenance & Notes

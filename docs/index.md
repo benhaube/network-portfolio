@@ -84,7 +84,7 @@ hide:
 + :simple-syncthing:&ensp;[Syncthing](./03_Services/Syncthing.md): Open decentralized file synchronization.
 + :services-technitium:&ensp;[Technitium DNS Server](./03_Services/Technitium.md): An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 + :material-console:&ensp;[ttydBridge](./03_Services/ttydBridge.md): A DockerApp makes it easy to use the host terminal in the Web.
-+ :services-uptime-kuma:&ensp;[Uptime Kuma](./03_Services/Uptime_Kuma.md): A self-hosted service monitoring tool.
++ :services-uptime-kuma:&ensp;[Uptime Kuma](./03_Services/Uptime_Kuma.md): A fancy self-hosted monitoring tool.
 + :simple-wireguard:&ensp;[WireGuard Server](./03_Services/Wireguard_Server.md): A lightweight, secure remote access VPN server.
 + :services-youtube-dl:&ensp;[yt-dlp Web-UI](./03_Services/yt-dlp_WebUI.md): A Web UI and RPC server for yt-dlp.
 

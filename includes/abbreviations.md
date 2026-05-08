@@ -139,6 +139,7 @@
 *[TLS]: Transport Layer Security
 *[TPM]: Trusted Platform Module
 *[TPM2]: Trusted Platform Module 2.0
+*[TUI]: Terminal User Interface
 *[UDP]: User Datagram Protocol
 *[UEFI]: Universal Extensible Firmware Interface
 *[UI]: User Interface

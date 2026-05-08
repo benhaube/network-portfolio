@@ -73,7 +73,7 @@ hide:
 + :simple-nginx:&ensp;[Nginx *(Network Portfolio)*](./03_Services/Nginx.md): The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 + :services-ntop:&ensp;[ntopng](./03_Services/ntopng.md): Web-based traffic and security network traffic monitoring. 
 + :simple-obsidian:&ensp;[Obsidian LiveSync *(CouchDB)*](./03_Services/Obsidian_LiveSync.md): Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
-+ :services-openspeedtest:&ensp;[OpenSpeedTest](./03_Services/OpenSpeedTest.md): An HTML5 network speed test server.
++ :services-openspeedtest:&ensp;[OpenSpeedTest](./03_Services/OpenSpeedTest.md): A free & open-source HTML5 network performance estimation tool.
 + :simple-pihole:&ensp;[Pi-hole DNS Server](./03_Services/Pi-hole.md): A DNS server and ad/malware blocker.
 + :services-portainer:&ensp;[Portainer-EE](./03_Services/Portainer.md): A *[Docker](https://www.docker.com)* container management platform.
 + :services-portracker:&ensp;[Portracker](./03_Services/Portracker.md): A self-hosted, real-time port monitoring and discovery tool.

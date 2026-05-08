@@ -20,7 +20,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ HTML5 Network Speed Test Server. 
++ A free & open-source HTML5 network performance estimation tool.
 
 #### :symbols-settings-ethernet: Port(s):
 + `3004`

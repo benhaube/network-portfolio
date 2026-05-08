@@ -98,7 +98,7 @@ hide:
 | :------: | :-------------------------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
 | *Active* | :material-web-clock:&nbsp;[Chrony *(NTP Server)*](../03_Services/Chrony.md) |  `123`  | Advanced, lightweight NTP client and server.                                                   |
 | *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)                |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md)     | `41820` | Remote access VPN server.                                                                      |
+| *Active* | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md)     | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.       |
 
 ---
 ## :material-tools: Maintenance & Notes

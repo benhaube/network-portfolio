@@ -23,7 +23,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A lightweight, secure remote access VPN server.
++ An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `41820`

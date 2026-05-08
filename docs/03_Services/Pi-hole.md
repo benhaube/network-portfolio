@@ -22,7 +22,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ DNS Blocker
++ A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
 #### :symbols-settings-ethernet: Port(s):
 + Web: `80`, `443`

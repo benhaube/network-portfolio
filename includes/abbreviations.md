@@ -56,6 +56,7 @@
 *[HTTP]: Hypertext Transfer Protocol
 *[HTTPS]: Hypertext Transfer Protocol Secure
 *[HVAC]: Heating, Ventilating, and Air Conditioning
+*[IMAP]: Internet Message Access Protocol
 *[IoT]: Internet of Things
 *[IP]: Internet Protocol
 *[IPAM]: IP Address Management

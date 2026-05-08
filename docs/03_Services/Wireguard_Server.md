@@ -41,7 +41,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard WebUI"
 
-#### :material-account: Clients:
+#### :symbols-devices: Clients:
 
 + :material-router-wireless:&nbsp;ASUS RT-BE92U:
     + `Ben's-Phone`

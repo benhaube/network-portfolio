@@ -54,7 +54,7 @@ hide:
 --8<-- "couchdb-local.ini"
 ```
 
-#### :material-devices: Clients:
+#### :symbols-devices: Clients:
 
 ```json title="<code>.obsidian/plugins/obsidian-livesync/data.json</code>" linenums="1"
 --8<-- "obsidian-livesync_data.json"

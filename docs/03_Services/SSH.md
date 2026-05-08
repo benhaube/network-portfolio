@@ -60,15 +60,15 @@ hide:
 | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                             | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-## :material-cog: Configuration 
+### :material-cog: Configuration 
 
-### :material-server-outline: Servers:
+#### :material-server-outline: Servers:
 
 > [!help] New Session Notification
 > The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
 > See, [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md), for configuration information.
 
-#### SSH Config File:
+##### SSH Config File
 
 1. Make the required changes to the SSH config file: 
 
@@ -82,7 +82,7 @@ hide:
     sudo systemctl restart sshd
     ```
 
-#### Login Banner:
+##### Login Banner
 
 1. Paste this ASCII message into the banner file:
 
@@ -90,7 +90,7 @@ hide:
     --8<-- "issue.net"
     ```
 
-#### Suppress MOTD:
+##### Suppress MOTD
 
 > [!warning inline end] Warning
 > `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
@@ -119,7 +119,7 @@ hide:
     sudo chmod +x /etc/update-motd.d/SCRIPT_TO_ENABLE
     ```
 
-#### Suppress Last Login: 
+##### Suppress Last Login
 
 1. Open the SSH config file with a text editor:
 
@@ -143,9 +143,9 @@ hide:
 
 --8<-- "zima-ssh.md"
 
-### :material-devices: Clients:
+#### :symbols-devices: Clients:
 
-#### Bitwarden SSH Key Agent:
+##### Bitwarden SSH Key Agent
 
 1. Paste this line into the client's `~/.bashrc` file to enable the Bitwarden SSH key agent.
 
@@ -153,7 +153,7 @@ hide:
     export SSH_AUTH_SOCK=/home/$USER/.bitwarden-ssh-agent.sock
     ```
 
-#### Client SSH Configuration:
+##### SSH Config File
 
 1. Create the `~/.ssh` directory:
 

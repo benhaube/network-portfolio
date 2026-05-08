@@ -45,7 +45,7 @@ hide:
 --8<-- "chrony.conf"
 ```
 
-#### :material-devices: Clients:
+#### :symbols-devices: Clients:
 
 ```nt title="<code>/etc/chrony.conf</code>" linenums="1"
 --8<-- "chrony-client.conf"

@@ -103,18 +103,47 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!config inline] Critical Configurations
+> [!config inline end] Critical Configurations
 > **:material-backup-restore:&nbsp;Backup Restore:**
-> :   Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. 
-> 
-> **:material-file-document:&nbsp;Documentation:**
-> :   [Asuswrt-Merlin :material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button }
+> :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) and the [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md). 
+>
+> **:material-web-clock:&nbsp;NTP Server:**
+> :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
 
 #### :material-update: Update Process:
 
-+ Automatic firmware and script update email notifications enabled. 
-+ For Entware packages use the command, `opkg update`, or update with `amtm` script.
++ Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router) tool.
++ Email notifications enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM) and script updates.
+    + Notification emails are sent to: <mailto:admin@haube-pereira.com> 
++ For Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
 #### :material-cloud-upload-outline: Backup Policy:
 
-+ Firmware and settings backed up automatically to [ZimaOS NAS](./ZimaBoard_2_NAS.md) and [Raspberry Pi 4B Server](./Raspberry_Pi_4B_Server.md).
++ The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays *(at 3:00 UTC-5)* to [ZimaOS NAS](./ZimaBoard_2_NAS.md) and [Raspberry Pi 4B Server](./Raspberry_Pi_4B_Server.md) using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON) script.
++ **Backup Directory:**
+    + ZimaOS NAS: `/media/Quick-Storage/Backup/router`
+    + Pi 4B Server: `/mnt/usb-drive/smb-share/router`
+
+#### :services-gotify-notification: Gotify Push Notifications:
+
++ While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_Services/Gotify.md) server to send instant push notifications for events that may require an urgent response.
+
+##### SSH Notification Script
+
++ A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and cliet IP address.
++ To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_Services/Gotify.md#ssh-session-alerts) section on the Gotify service documentation page.
+
+##### WAN IP Change
+
++ Whenever the WAN IP address changes or the WAN connection drops then reconnets; a push notification is sent through the Gotify server. 
++ To see the script and detailed configuration information, see the ["WAN IP Change"](../03_Services/Gotify.md#wan-ip-change) section of the Gotify service documentation page.  
+
+##### BACKUPMON Alerts
+
++ Every time the BACKUPMON utility completes a backup of the router's NVRAM, JFFS partition, and external USB drive an alert is sent to the Gotify server. The push notification details the success or failure of the backup.
++ To see the script and detailed configuration information, see the ["BACKUPMON Alerts"](../03_Services/Gotify.md#backupmon-alerts) section of the Gotify service documentation page.
+
+##### Connmon Alerts
+
++ The Connmon utility monitors the router's WAN connection by measuring the ping, jitter, and line quality. Whenever the tests fail *(lost connection)* or the measured values are greater than the set threshold an alert is sent to the Gotify server.
++ To see the script and detailed configuration information, see the ["Conmon Alerts"](../03_Services/Gotify.md#connmon-alerts) section of the Gotify service documentation page.

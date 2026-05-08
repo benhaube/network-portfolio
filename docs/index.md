@@ -82,7 +82,7 @@ hide:
 + :services-spoolman:&ensp;[Spoolman](./03_Services/Spoolman.md): Keep track of your inventory of 3D-printer filament spools. 
 + :material-console-network:&ensp;[SSH *(Secure Shell)*](./03_Services/SSH.md): Provides secure encrypted communications between two untrusted hosts over an insecure network.
 + :simple-syncthing:&ensp;[Syncthing](./03_Services/Syncthing.md): Open decentralized file synchronization.
-+ :services-technitium:&ensp;[Technitium DNS Server](./03_Services/Technitium.md): An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
++ :services-technitium:&ensp;[Technitium DNS Server](./03_Services/Technitium.md): An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 + :material-console:&ensp;[ttydBridge](./03_Services/ttydBridge.md): Access the host terminal in a Web browser.
 + :services-uptime-kuma:&ensp;[Uptime Kuma](./03_Services/Uptime_Kuma.md): A self-hosted service monitoring tool.
 + :simple-wireguard:&ensp;[WireGuard Server](./03_Services/Wireguard_Server.md): A lightweight, secure remote access VPN server.

@@ -24,7 +24,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
++ An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
 #### :symbols-settings-ethernet: Port(s): 
 * `53`

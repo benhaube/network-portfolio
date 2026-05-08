@@ -76,11 +76,11 @@ hide:
 
 #### :material-linux: Native Linux:
 
-|  Status  | Service                                                          |   Port(s)   | Role / Notes                                                                                                                                   |
-| :------: | :--------------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| *Active* | :services-fluidd:&nbsp;[Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A free and open-source Klipper web interface for managing your 3d printer.                                                                     |
-| *Active* | :services-klipper:&nbsp;[Moonraker](../03_Services/Moonraker.md) |   `7125`    | An API that allows applications to communicate with the 3D-printing firmware, [:services-klipper:&thinsp;Klipper](https://www.klipper3d.org/). |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)     |    `22`     | Remote terminal access.                                                                                                                        |
+|  Status  | Service                                                          |   Port(s)   | Role / Notes                                                               |
+| :------: | :--------------------------------------------------------------- | :---------: | :------------------------------------------------------------------------- |
+| *Active* | :services-fluidd:&nbsp;[Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A free and open-source Klipper web interface for managing your 3d printer. |
+| *Active* | :services-klipper:&nbsp;[Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper](https://www.klipper3d.org/).                  |
+| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)     |    `22`     | Remote terminal access.                                                    |
 
 ---
 ## :material-tools: Maintenance & Notes

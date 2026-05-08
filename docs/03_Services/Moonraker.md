@@ -19,7 +19,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ An API that allows applications to communicate with the 3D-printing firmware, [Klipper](https://www.klipper3d.org/). 
++ Web API server for [Klipper](https://www.klipper3d.org/). 
 
 #### :symbols-settings-ethernet: Port(s):
 + `7125`

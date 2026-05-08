@@ -66,7 +66,7 @@ hide:
 + :services-homebox:&ensp;[Homebox](./03_Services/Homebox.md): An inventory and organization system built for the home user.
 + :services-immich:&ensp;[Immich](./03_Services/Immich.md): High performance self-hosted photo and video management solution.
 + :services-it-tools:&ensp;[IT-Tools](./03_Services/IT-Tools.md): Handy tools for network administrators and developers.
-+ :services-klipper:&ensp;[Moonraker](./03_Services/Moonraker.md): An API for the *[Klipper](https://www.klipper3d.org/)* firmware.
++ :services-klipper:&ensp;[Moonraker](./03_Services/Moonraker.md): Web API server for *[Klipper](https://www.klipper3d.org/)*.
 + :material-cog-sync:&ensp;[Nebula-Sync](./03_Services/Nebula-Sync.md): Synchronize settings between *[Pi-hole](https://pi-hole.net)* instances.
 + :services-nextcloud:&ensp;[Nextcloud](./03_Services/Nextcloud.md): Self-hosted cloud storage and collaboration platform.
 + :material-folder-network:&ensp;[NFS *(Network File System)*](./03_Services/NFS.md): Remote file system access.

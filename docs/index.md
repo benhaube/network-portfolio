@@ -55,7 +55,7 @@ hide:
 + :services-caddy:&ensp;[Caddy](./03_Services/Caddy.md): Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 + :material-web-clock:&nbsp;[Chrony *(NTP Server)*](./03_Services/Chrony.md): Advanced, lightweight NTP client and server.
 + :services-cloudflare:&ensp;[Cloudflared](./03_Services/Cloudflared.md): A secure reverse-proxy tunnel for hosting private services on the public Internet.
-+ :material-printer:&ensp;[CUPS *(Open Print Server)*](./03_Services/CUPS_Print_Server.md): Print server for USB-connected `Brother_HL-L2300D_series` laser printer. 
++ :material-printer:&ensp;[CUPS *(Open Print Server)*](./03_Services/CUPS_Print_Server.md): A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 + :services-dockge:&ensp;[Dockge](./03_Services/Dockge.md): A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 + :services-f1-replay-timing:&ensp;[F1 Replay Timing](./03_Services/F1_Replay_Timing.md): Visualization of real-time track data and telemetry synced to F1 live and replays.
 + :services-fluidd:&ensp;[Fluidd](./03_Services/Fluidd.md): A Web UI for managing the 3D-printer.

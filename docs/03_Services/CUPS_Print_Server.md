@@ -19,7 +19,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ Print server for `Brother_HL-L2300D_series` laser printer.
++ A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `631`

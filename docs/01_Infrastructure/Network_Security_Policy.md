@@ -32,7 +32,9 @@ tags:
 
 #### Edge Protection: 
 
-+ An [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) acts as the primary firewall, utilizing **SPI** and **DoS** protection. 
++ An [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) acts as the primary firewall, utilizing **SPI** and **DoS / DDoS** protection.
++ The two-way **IPS** built into the ASUS router uses SPI to protect any device connected to the network from spam, DoS / DDoS attacks, and from malicious packets entering or exiting the network. 
++ The Asuswrt-Merlin firmware extends the basic functionality of the built-in firewall with [Skynet](https://github.com/Adamm00/IPSet_ASUS). It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
 
 #### External Access: 
 

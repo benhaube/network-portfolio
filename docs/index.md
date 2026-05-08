@@ -79,7 +79,7 @@ hide:
 + :services-portracker:&ensp;[Portracker](./03_Services/Portracker.md): A self-hosted, real-time port monitoring and discovery tool.
 + :material-remote-desktop:&ensp;[RDP *(Remote Desktop Protocol)*](./03_Services/RDP.md): Remote desktop access over the local network. *(not exposed to the internet)*
 + :material-folder-network:&ensp;[SMB *(Server Message Block)*](./03_Services/RDP.md): Remote file system access.
-+ :services-spoolman:&ensp;[Spoolman](./03_Services/Spoolman.md): Manage 3D-printer filament inventory.
++ :services-spoolman:&ensp;[Spoolman](./03_Services/Spoolman.md): Keep track of your inventory of 3D-printer filament spools. 
 + :material-console-network:&ensp;[SSH *(Secure Shell)*](./03_Services/SSH.md): Remote shell access to servers
 + :simple-syncthing:&ensp;[Syncthing](./03_Services/Syncthing.md): Open decentralized file synchronization.
 + :services-technitium:&ensp;[Technitium DNS Server](./03_Services/Technitium.md): An open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.

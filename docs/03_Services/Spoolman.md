@@ -18,7 +18,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Manage 3D-printer filament inventory, and actively track filament usage.
++ Keep track of your inventory of 3D-printer filament spools. 
 
 #### :symbols-settings-ethernet: Port(s):
 + `7912`

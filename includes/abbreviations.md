@@ -6,6 +6,7 @@
 *[ASCII]: American Standard Code for Information Interchange
 *[BIOS]: Basic Input / Output System
 *[BSD]: Berkeley Software Distribution
+*[CAD]: Computer Aided Design
 *[CLI]: Command Line Interface
 *[CPU]: Central Processing Unit
 *[CPUs]: Central Processing Units
@@ -136,6 +137,8 @@
 *[SSH]: Secure Shell
 *[SSID]: Service Set Identifier
 *[SSL]: Secure Sockets Layer
+*[STEP]: Standard for the Exchange of Product Data (file format)
+*[STL]: Stereolithography (file format)
 *[SVG]: Scalable Vector Graphics
 *[Tb]: Terabit
 *[Tb/s]: Terabits Per Second

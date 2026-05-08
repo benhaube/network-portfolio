@@ -92,29 +92,37 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!config] Critical Configurations
-> **:material-web-clock: Chrony:** 
-> + Time synchronizes with local time server running on main router, [ASUS RT-BE92U](./ASUS_RT-BE92U.md), using `chrony`.
-> 
-> **:material-cloud-upload-outline: Backup:** 
-> + Home directory backed up every weekday at `18:00` using custom `rsync` script, `home-bkp-nas.sh`. The script is triggered by `systemd` user timer, `home-bkp-nas.timer` which starts `home-bkp-nas.service`. The timer is persistent, so if the PC is asleep at the backup time the backup will start the next time the PC wakes up.
-> 
-> **:material-lock-open: LUKS Unlocking:** 
-> + The LUKS encrypted boot drive is configured to use the onboard `TPM2` chip for drive encryption. Kernel and firmware upgrades require clearing the registered PCRs and enrolling the new ones. This can be done with a custom script I wrote, `update-pcrs`, which is located in the `/usr/local/bin` directory.
-> 
-> + The proper command format is:
->  
->     ```bash linenums="1"
->     sudo update-pcrs /dev/nvme0n1p3
->     ```
->
-> + More information about the configuration process can be found at: [Unlock LUKS w/ TPM2](../Linux_Tutorials/Unlock_LUKS_TPM2.md) 
+--8<-- "critical-conf-ben-pc.md"
 
 #### :material-update: Update Process:
 
-+ `#!bash sudo dnf offline-upgrade download` 
-+ `#!bash sudo dnf offline reboot`
-+ `#!bash flatpak update`
+##### Automatic Updates
+
++ Automatic offline updates for OS packages and firmware are enabled through the KDE Plasma desktop environment, and will be applied weekly. When OS updates need to reboot the system, a notification will appear in the system tray.
++ Flatpak applications will also update automatically through KDE Discover, and they do not requrie a system reboot.
++ To perform manual updates for the OS packages, firmware, and Flatpak applications you can use the CLI.
+
+##### Manual Updates
+
++ To update Fedora RPM packages manually with the CLI run the following commands:
+
+    ```bash linenums="1"
+    sudo dnf upgrade -y --refresh --offline
+    sudo dnf offline reboot -y
+    ```
+
++ To update firmware manually with the CLI run the following commands:
+
+    ```bash linenums="1"
+    sudo fwupdmgr get-updates
+    sudo fwupdmgr update
+    ```
+
++ To update Flatpak apps manually with the CLI run the following command:
+
+    ```bash linenums="1"
+    sudo flatpak update -y
+    ```
 
 #### :material-cloud-upload-outline: Backup Policy:
 

@@ -127,7 +127,7 @@ hide:
 |  *Active*  | :services-portracker:&nbsp;[Portracker](../03_Services/Portracker.md)                   |         `4999`         | A self-hosted, real-time port monitoring and discovery tool.                                                       |
 |  *Active*  | :services-spoolman:&nbsp;[Spoolman](../03_Services/Spoolman.md)                         |         `7912`         | Keep track of your inventory of 3D-printer filament spools.                                                        |
 |  *Active*  | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md)                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                           |
-|  *Active*  | :material-console:&nbsp;[ttydBridge](../03_Services/ttydBridge.md)                      |         `2222`         | Easily access and use the host terminal in a web.                                                                  |
+|  *Active*  | :material-console:&nbsp;[ttydBridge](../03_Services/ttydBridge.md)                      |         `2222`         | A DockerApp makes it easy to use the host terminal in the Web.                                                     |
 |  *Active*  | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md)                 |    `51820` `51821`     | Remote access VPN server.                                                                                          |
 |  *Active*  | :services-youtube-dl:&nbsp;[yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | A Web UI and RPC server for `yt-dlp`.                                                                              |
 

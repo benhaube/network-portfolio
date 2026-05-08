@@ -19,7 +19,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Easily access and use the host terminal in a Web browser.
++ A DockerApp makes it easy to use the host terminal in the Web.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `2222`

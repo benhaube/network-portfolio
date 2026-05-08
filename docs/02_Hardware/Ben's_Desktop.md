@@ -122,9 +122,18 @@ hide:
 
 #### :material-cloud-upload-outline: Backup Policy:
 
-+ `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md)
++ `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggerd by Systemd.
++ With the `Persistent=true` value set in the Systemd `.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
 
-#### :material-file-code-outline: Backup Script Config:
+#### :material-folder-network: ZimaOS NAS Mounts:
+
++ On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. *(e.g., photos / code)* 
+    + Other benefits from the switch to NFS include: Full compatibility for file ownership and permissions, and compatibility for sym-links. The `rsync` command in the backup script has been modified to reflect this change.
+    + This change only applies to PCs using the Linux OS. The Windows and Android clients still utilize SMB with multi-chanel enabled.
++ See the ["Clients"](../03_Services/NFS.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
+
+#### :material-file-code-outline: Backup Script:
+
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
     ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="44"
@@ -164,25 +173,8 @@ hide:
     systemctl --user enable home-bkp-nas.timer
     ```
 
-#### :material-folder-network: Systemd Files for ZimaOS NAS Mounts:
+#### :material-folder-lock: Encrypted-Documents:
 
-```systemd title="<code>mnt-storage_server-NVMe.mount</code>" linenums="1"
---8<-- "mnt-storage_server-NVMe.mount"
-```
-
-```systemd title="<code>mnt-storage_server-NVMe.automount</code>" linenums="1"
---8<-- "mnt-storage_server-NVMe.automount"
-```
-
-```systemd title="<code>mnt-storage_server-Quick_Storage.mount</code>" linenums="1"
---8<-- "mnt-storage_server-Quick_Storage.mount"
-```
-
-```systemd title="<code>mnt-storage_server-Quick_Storage.automount</code>" linenums="1"
---8<-- "mnt-storage_server-Quick_Storage.automount"
-```
-
-#### :material-folder-lock: Encrypted-Documents Config:
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
 
@@ -190,7 +182,7 @@ hide:
     --8<-- "mount-gocryptfs.desktop"
     ```
 
-#### :material-google-drive: Rclone Google Drive Config:
+#### :material-google-drive: Rclone Google Drive Mount:
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
     ```ini title="<code>rclone.conf</code>" linenums="1"
@@ -203,7 +195,10 @@ hide:
     --8<-- "mount-rclone.desktop"
     ```
 
-#### :material-console-line: Starship.rs Terminal Prompt
+#### :material-console-line: Starship Terminal Prompt:
+
+--8<-- "starship-note.md"
+
 1. Install the latest version.
 
     ```bash linenums="1"

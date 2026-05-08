@@ -15,7 +15,7 @@ hide:
 ![Portainer Icon](../assets/icons/portainer-pink-dark.svg#only-dark){ width=200 }
 
 # Portainer-EE
-[GitHub :material-github:](https://github.com/portainer/portainer-docs){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
+[GitHub :material-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
 
 ---
 ## :material-information-outline: Overview

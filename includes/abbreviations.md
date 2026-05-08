@@ -3,6 +3,7 @@
 *[API]: Application Programming Interface
 *[APIs]: Application Programming Interfaces
 *[ASA]: Acrylonitrile Styrene Acrylate
+*[ASCII]: American Standard Code for Information Interchange
 *[BIOS]: Basic Input / Output System
 *[CLI]: Command Line Interface
 *[CPU]: Central Processing Unit
@@ -148,6 +149,7 @@
 *[URL]: Uniform Resource Locator
 *[URLs]: Uniform Resource Locators
 *[USB]: Universal Serial Bus
+*[UTF]: Unicode Transformation Format
 *[UNIX]: An operating system analogous to DOS and Windows, supporting multiple concurrent users.
 *[UUID]: Universally Unique Identifier
 *[vCPU]: Virtual Central Processing Unit

@@ -195,7 +195,7 @@ hide:
     chmod +x /jffs/scripts/ddns-start
     ```
 
-##### Backupmon Alerts
+##### BACKUPMON Alerts
 
 1. Create the custom wrapper script:
 

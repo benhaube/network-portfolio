@@ -2,4 +2,4 @@ graph TD
     User[Client Browser] -- "DNS Query:<br><code>immich.internal</code>" --> DNS[Technitium DNS]
     DNS -- "Returns CNAME:<br><code>pi-zero.internal</code>" --> User
     User -- "HTTPS Request: port <code>443</code>" --> Proxy[Caddy: Pi Zero 2 W]
-    Proxy -- "Forwards Traffic" --> App[Immich: Port <code>2283</code>]
+    Proxy -- "Forwards Traffic" --> App[Immich: port <code>2283</code>]

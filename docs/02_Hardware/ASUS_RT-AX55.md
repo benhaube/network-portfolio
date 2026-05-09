@@ -31,7 +31,7 @@ hide:
 + Printer-Cart 
 
 #### :material-memory: OS / Firmware: 
-+ [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3.0.0.4.386_53327-g852eb80)*
++ [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 

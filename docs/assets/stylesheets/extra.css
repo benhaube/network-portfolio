@@ -99,9 +99,9 @@
     --edge-line: #202020;
 
     /* Subgraph & Edge Label Variables */
-    --subgraph-bg: #f5f6f7;
+    --subgraph-bg: #f1f2f380;
     --subgraph-border: #cccccc;
-    --edge-bg: #ffffff; 
+    --edge-bg: #FFFFFF; 
     --edge-text: #202020;
 
     /* Logical Diagram Variables */
@@ -138,9 +138,9 @@
     --edge-line: #BFC1C7;
 
     /* Subgraph & Edge Label Variables */
-    --subgraph-bg: #2e303e;
+    --subgraph-bg: #2e303e80;
     --subgraph-border: #4a4d5e;
-    --edge-bg: #222428; 
+    --edge-bg: #1E2129; 
     --edge-text: #BFC1C7;
 
     /* Logical Diagram Variables */

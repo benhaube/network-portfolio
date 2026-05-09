@@ -116,7 +116,7 @@ Now you can pipe any SVG directly into your new command.
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
     ```
 
-#### Bonus: Send it straight to your clipboard
+#### Bonus:
 
 If you want to skip highlighting and copying the terminal output altogether, you can pipe the final output directly to your system's clipboard. On Linux you have either `xclip` *(X11)* or `wl-copy` *(Wayland)* available: 
 

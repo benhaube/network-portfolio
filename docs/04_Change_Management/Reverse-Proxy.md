@@ -66,6 +66,8 @@ immich.internal {
 }
 ```
 
+---
+
 ## :material-traffic-light: Traffic Flow
 
 ```mermaid { .pz-ignore }

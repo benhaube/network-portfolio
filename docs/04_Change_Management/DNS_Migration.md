@@ -29,7 +29,7 @@ hide:
 
 ## :material-dns: Phase 2: Server Provisioning
 
-### :material-debian:&nbsp;Debian Server VM *(ZimaOS NAS)*:
+#### Debian Server VM *(ZimaOS NAS)*:
 
 1. **Allocate Resources:** 
     + [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
@@ -40,7 +40,7 @@ hide:
 4. **Import Records:** 
     + [ ] Manually add local DNS zones/records from the Pi-hole export.
 
-### :material-raspberry-pi:&nbsp;Raspberry Pi 4B:
+#### Raspberry Pi 4B:
 
 1. **Uninstall Pi-hole:**
     + [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.
@@ -78,6 +78,8 @@ hide:
     + [ ] Temporarily stop the Technitium service on both the VM and Pi 4B. Confirm the Pi Zero takes over resolution.
 3. **Audit Dashboard:** 
     + [ ] Monitor the Technitium dashboard for any unexpected `NXDOMAIN` responses or high latency.
+
+---
 
 ## :material-sitemap: Flowchart
 

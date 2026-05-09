@@ -1,5 +1,14 @@
+%%{
+  init: {
+    "themeCSS": ".node.text-box rect, .node.text-box polygon, .node.text-box circle, .node.text-box path { fill: var(--md-mermaid-node-bg-color) !important; stroke: var(--md-mermaid-node-fg-color) !important; stroke-width: 2px !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+  }
+}%%
+
 graph TD
-    User[Client Browser] -- "DNS Query:<br><code>immich.internal</code>" --> DNS[Technitium DNS]
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    classDef text-box fill: stroke:;
+
+    User(Client Browser):::text-box -- "DNS Query:<br><code>immich.internal</code>" --> DNS(Technitium DNS):::text-box
     DNS -- "Returns CNAME:<br><code>pi-zero.internal</code>" --> User
-    User -- "HTTPS Request: port <code>443</code>" --> Proxy[Caddy: Pi Zero 2 W]
-    Proxy -- "Forwards Traffic" --> App[Immich: port <code>2283</code>]
+    User -- "HTTPS Request: port <code>443</code>" --> Proxy(Caddy: Pi Zero 2 W):::text-box
+    Proxy -- "Forwards Traffic" --> App(Immich: port <code>2283</code>):::text-box

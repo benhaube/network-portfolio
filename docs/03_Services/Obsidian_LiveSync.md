@@ -31,8 +31,9 @@ hide:
 + :material-database-outline: Database:
     + <http://storage-server.internal:5984/obsidian-vault>
 
-#### :material-key-chain: Credentials:  
-+ :material-docker:&nbsp;Docker Compose: `compose.yml`
+#### :material-key-chain: Credentials:
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Obsidian LiveSync"
 
 ## :symbols-deployed-code-update: Deployment Details
 

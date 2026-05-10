@@ -33,7 +33,8 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + "[SSH](./SSH.md) Keys"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@storage-server"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"bhaube@storage-server"
 
 ## :symbols-deployed-code-update: Deployment Details
 

@@ -34,8 +34,8 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pi-hole Admin @ (pi-hole)"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pi-hole Admin @ (pi-server)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pihole Admin @ pi-zero"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pihole Admin @ pi-server"
 
 ## :symbols-deployed-code-update: Deployment Details
 

@@ -29,7 +29,7 @@ hide:
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ASUS Router"
-    + SSH Key&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"
+    + SSH Key&ensp;:material-arrow-right-thin:&ensp;"admin@asusrouter"
 
 ## :symbols-deployed-code-update: Deployment Details
 

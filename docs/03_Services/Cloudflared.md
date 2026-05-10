@@ -30,7 +30,8 @@ hide:
 + <http://storage-server.internal:14333>
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): "Cloudflare Dashboard"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Software&ensp;:material-arrow-right-thin:&ensp;"Cloudflare Dashboard"
 
 ## :symbols-deployed-code-update: Deployment Details
 

@@ -34,6 +34,7 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Admin"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (bhaube)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (rpereira)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
 
 ## :symbols-deployed-code-update: Deployment Details
 

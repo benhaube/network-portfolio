@@ -31,8 +31,8 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (admin) @ storage-server"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (bhaube) @ storage-server"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (admin)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (bhaube)"
 
 ## :symbols-deployed-code-update: Deployment Details
 

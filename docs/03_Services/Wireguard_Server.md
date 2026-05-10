@@ -39,7 +39,8 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard WebUI"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Admin"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Metrics"
 
 #### :symbols-devices: Clients:
 

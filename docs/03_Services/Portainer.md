@@ -39,7 +39,7 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Portainer @ pi-server"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Portainer"
 
 ## :symbols-deployed-code-update: Deployment Details
 

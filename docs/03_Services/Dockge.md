@@ -30,9 +30,10 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ debian-vm"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ pi-server"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ pi-zero"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ debian-vm"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ storage-server"
 
 ## :symbols-deployed-code-update: Deployment Details
 

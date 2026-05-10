@@ -32,7 +32,7 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd @ K1C-A71E"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
 
 ## :symbols-deployed-code-update: Deployment Details
 

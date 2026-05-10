@@ -47,7 +47,13 @@ hide:
     + `k1c-a71e.internal:22` 
 
 #### :material-key-chain: Credentials: 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): SSH keys
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"server-admin@debian-vm"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-server"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-zero"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"admin@storage-server"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"root@k1c-a71e"
 
 ## :symbols-deployed-code-update: Deployment Details
 

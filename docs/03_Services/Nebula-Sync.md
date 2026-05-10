@@ -31,7 +31,8 @@ hide:
 + N/A
 
 #### :material-key-chain: Credentials: 
-+ :material-docker:&nbsp;Docker Compose: `compose.yml`
++ :material-docker:&nbsp;Docker Compose: 
+    + `compose.yml`
 
 ## :symbols-deployed-code-update: Deployment Details
 

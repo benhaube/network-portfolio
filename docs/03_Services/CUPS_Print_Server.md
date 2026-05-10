@@ -36,7 +36,7 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"CUPS Server"&emsp;:material-information-outline:{ title="Login needed for Administration, but anyone on the local network can print." }
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"CUPS Admin"&emsp;:material-information-outline:{ title="Login needed for Administration, but anyone on the local network can print." }
 
 ## :symbols-deployed-code-update: Deployment Details
 

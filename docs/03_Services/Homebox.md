@@ -30,7 +30,7 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Homebox @ storage-server"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Homebox"
 
 ## :symbols-deployed-code-update: Deployment Details
 

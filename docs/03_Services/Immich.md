@@ -34,8 +34,8 @@ hide:
 
 #### :material-key-chain: Credentials:  
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich Admin"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich User"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich Administrator"
 
 ## :symbols-deployed-code-update: Deployment Details
 

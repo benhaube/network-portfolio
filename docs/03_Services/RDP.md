@@ -27,8 +27,9 @@ hide:
 + [rdp://192.168.50.67:3389](rdp://192.168.50.67:3389)
 + [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
-#### :material-key-chain: Credentials: 
-+ :material-account-outline:&nbsp;Local User: `bhaube`
+#### :material-key-chain: Credentials:
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):  
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 
 ## :symbols-deployed-code-update: Deployment Details
 

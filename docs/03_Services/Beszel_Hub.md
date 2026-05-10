@@ -34,9 +34,7 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Beszel Hub (Admin)"
-+ :material-docker:&nbsp;Docker Compose: 
-    + `compose.yml`
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Beszel Hub"
 
 ## :symbols-deployed-code-update: Deployment Details
 

@@ -34,9 +34,9 @@ hide:
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"storage-server (Admin)"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"storage-server (bhaube)" 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"storage-server (rpereira)" 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)" 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)" 
 
 ## :symbols-deployed-code-update: Deployment Details
 

@@ -36,6 +36,7 @@ hide:
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"
 
 ## :material-lan: Network Configuration
 

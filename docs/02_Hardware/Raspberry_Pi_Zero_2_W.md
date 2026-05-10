@@ -40,7 +40,7 @@ hide:
 
 #### :material-key-chain: Credentials:
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    * SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-hole"
+    * SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-zero"
 
 #### :symbols-monitor-heart: Core Specs:
 

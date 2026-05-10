@@ -40,7 +40,8 @@ hide:
 
 #### :material-key-chain: Credentials:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd @ K1C-A71E" *(Password & API Key for [Fluidd](../03_Services/Fluidd.md) / [Moonraker](../03_Services/Moonraker.md))*
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"root@k1c-a71e"
 
 ## :material-lan: Network Configuration
 

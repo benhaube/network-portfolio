@@ -41,13 +41,14 @@ hide:
 
 #### :material-memory: OS / Firmware: 
 
-+ [:services-zimaos:&nbsp;ZimaOS v1.6.0](https://www.zimaspace.com/zimaos) *(Immutable)*
++ [:services-zimaos:&nbsp;ZimaOS v1.6.1](https://www.zimaspace.com/zimaos) *(Immutable)*
 
 #### :material-key-chain: Credentials:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"storage-server (Admin)" 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"storage-server (bhaube)"  
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)" 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)"   
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@storage-server"
 
 #### :symbols-monitor-heart: Core Specs:

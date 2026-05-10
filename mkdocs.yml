@@ -49,6 +49,7 @@ theme:
       backup: material/cloud-upload-outline
       dashboard: material/view-dashboard
       desktop: material/desktop-tower
+      development: simple/git
       dns: material/dns
       docker: material/docker
       docker_host: material/docker
@@ -280,6 +281,7 @@ extra:
     Backup: backup
     Dashboard: dashboard
     Desktop: desktop
+    Development: development
     DNS: dns
     Docker: docker
     Docker Host: docker_host

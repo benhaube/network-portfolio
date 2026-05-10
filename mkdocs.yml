@@ -55,7 +55,7 @@ theme:
       docker_host: material/docker
       domain: material/domain
       download: material/download
-      file-share: material/share
+      file-share: material/share-variant
       hardware: material/devices
       inactive: material/close
       infra: material/router-network

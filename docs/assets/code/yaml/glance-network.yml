@@ -19,12 +19,9 @@
         - $include: /app/config/widgets/search.yml
         - $include: /app/config/widgets/network-services.yml
         - $include: /app/config/widgets/docker-containers.yml
-
-        - type: split-column
-          widgets:
-
-          - $include: /app/config/widgets/technitium.yml
-          - $include: /app/config/widgets/immich-stats.yml
+        # - $include: /app/config/widgets/dns-stats.yml
+        - $include: /app/config/widgets/immich-stats.yml
+        - $include: /app/config/widgets/technitium.yml
 
     - size: small
       widgets:

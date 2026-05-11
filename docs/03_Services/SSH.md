@@ -153,7 +153,21 @@ hide:
 
 ##### Bitwarden SSH Key Agent
 
-1. Paste this line into the client's `~/.bashrc` file to enable the Bitwarden SSH key agent.
+![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent.png){ width=350 align=right }
+
+1. Download the appropriate version of the Bitwarden desktop application from the [GitHub Releases](https://github.com/bitwarden/clients/releases) page.
+2. Install the package: 
+
+    ```bash title="Fedora / RHEL" linenums="1"
+    sudo rpm -i <package-name.rpm>
+    ```
+
+    ```bash title="Debian" linenums="1"
+    sudo dpkg -i <package-name.deb>
+    ```
+
+3. Make sure to enable **"Start automatically on login"** and **"Enable SSH agent"** in the Bitwarden application's settings. 
+4. Paste this line into the client's `~/.bashrc` file to enable the Bitwarden SSH key agent.
 
     ```bash linenums="1"
     export SSH_AUTH_SOCK=/home/$USER/.bitwarden-ssh-agent.sock

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Backup the /home/ directory to the ZimaOS NAS
-# GOAL: Pure data backup (No symlinks, no ownership retention)
-# Exclusions defined in: /home/bhaube/.bkp-exclude-nas
-
 # --- Configuration ---
 SOURCE_DIR="$HOME/"
 DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/<client-hostname>/" # (1)!

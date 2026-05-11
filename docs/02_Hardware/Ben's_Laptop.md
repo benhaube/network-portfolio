@@ -129,6 +129,20 @@ hide:
 + `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggerd by Systemd.
 + With the `Persistent=true` value set in the Systemd `.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
 
+#### :material-console-network: SSH Client:
+
+##### Bitwarden Key Agent
+
++ Bitwarden is utilized to securely store SSH keys. 
++ To enable the agent you need to install the Bitwarden desktop application and edit the `.bashrc` file.
++ See ["Bitwarden SSH Key Agent"](../03_Services/SSH.md#bitwarden-ssh-key-agent) for documentation.
+
+##### Config File
+
++ Key-based authentication is enabled for [SSH](../03_Services/SSH.md) sessions on all servers on the network, and password authentication is disabled. 
++ To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
++ See ["SSH Config File"](../03_Services/SSH.md#ssh-config-file_1) for documentation.  
+
 #### :material-folder-network: ZimaOS NAS Mounts:
 
 + On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. *(e.g., photos / code)* 

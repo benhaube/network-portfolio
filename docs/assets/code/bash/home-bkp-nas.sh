@@ -75,12 +75,13 @@ else
 fi
 
 # Send the push notification
+# Uses the same '$MSG' variable defined for the system log
 # -sS: Silent mode but still shows errors if it fails
 # -F: Formats the data as multipart/form-data for Gotify
 curl -sS -X POST "$GOTIFY_URL" \
     -H "X-Gotify-Key: $GOTIFY_TOKEN" \
     -F "title=$GOTIFY_TITLE" \
-    -F "message=$MSG" \  # (3)!
+    -F "message=$MSG" \
     -F "extras={\"client::display\": {\"contentType\": \"text/markdown\"}}" \
     -F "priority=$GOTIFY_PRIORITY" >> "$LOG_FILE" 2>&1
 

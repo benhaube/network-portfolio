@@ -42,7 +42,7 @@ Host Pi-Zero
     IdentityFile ~/.ssh/pi-zero.pub
     IdentitiesOnly yes
 
-Host Gitea
+Host storage-server.internal
     HostName storage-server.internal
     Port 222
     User git

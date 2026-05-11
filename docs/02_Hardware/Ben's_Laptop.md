@@ -154,7 +154,7 @@ hide:
 
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
-    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="6 40 61 62"
+    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="5 40 61 62"
     --8<-- "home-bkp-nas.sh"
     ```
 

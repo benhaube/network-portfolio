@@ -59,3 +59,30 @@ fi
 # Print to terminal and append to log
 echo "$MSG"
 echo "$MSG" >> "$LOG_FILE"
+
+# --- Gotify Notification ---
+# (2)!
+GOTIFY_URL="https://gotify.yourdomain.com/message"
+GOTIFY_TOKEN="YourGotifyToken"
+
+# Adjust the push notification title and priority based on the exit code
+if [ $EXIT_CODE -eq 0 ]; then
+    GOTIFY_TITLE="NAS Backup: Success"
+    GOTIFY_PRIORITY=4 # Normal priority
+else
+    GOTIFY_TITLE="NAS Backup: FAILED"
+    GOTIFY_PRIORITY=8 # High priority
+fi
+
+# Send the push notification
+# -sS: Silent mode but still shows errors if it fails
+# -F: Formats the data as multipart/form-data for Gotify
+curl -sS -X POST "$GOTIFY_URL" \
+    -H "X-Gotify-Key: $GOTIFY_TOKEN" \
+    -F "title=$GOTIFY_TITLE" \
+    -F "message=$MSG" \
+    -F "extras={\"client::display\": {\"contentType\": \"text/markdown\"}}" \
+    -F "priority=$GOTIFY_PRIORITY" >> "$LOG_FILE" 2>&1
+
+# Log that the notification was attempted
+echo "[$TIMESTAMP] Gotify notification triggered." >> "$LOG_FILE"

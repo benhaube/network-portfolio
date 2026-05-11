@@ -6,32 +6,57 @@ Host *
 
 # --- HOST-SPECIFIC SETTINGS ---
 
-Host pi-server.internal
+Host Pi-Server
+    HostName pi-server.internal
     User admin
     IdentityFile ~/.ssh/pi-server.pub
     IdentitiesOnly yes  # (3)!
-    
-Host pi-zero.internal
-    User admin
-    IdentityFile ~/.ssh/pi-zero.pub
-    IdentitiesOnly yes
 
-Host asusrouter.internal
+Host ASUS-Router
+    HostName asusrouter.internal
     User Admin
     IdentityFile ~/.ssh/asusrouter.pub
     IdentitiesOnly yes
 
-Host storage-server.internal
+Host ZimaOS-NAS
+    HostName storage-server-2.internal
     User admin
     IdentityFile ~/.ssh/storage-server.pub
     IdentitiesOnly yes
 
-Host debian-vm.internal
+Host Debian-VM
+    HostName debian-vm.internal
     User server-admin
     IdentityFile ~/.ssh/debian-vm.pub
     IdentitiesOnly yes
 
-Host k1c-a71e.internal
+Host Creality-K1C
+    HostName k1c-a71e.internal
     User root
     IdentityFile ~/.ssh/k1c-a71e.pub
     IdentitiesOnly no
+
+Host Pi-Zero
+    HostName pi-zero.internal
+    User admin
+    IdentityFile ~/.ssh/pi-zero.pub
+    IdentitiesOnly yes
+
+Host Gitea
+    HostName storage-server.internal
+    Port 222
+    User git
+    IdentityFile ~/.ssh/gitea.pub
+    IdentitiesOnly yes
+
+Host Gitlab
+    HostName gitlab.com
+    User git
+    IdentityFile ~/.ssh/gitlab.pub
+    IdentitiesOnly yes
+
+Host GitHub
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github.pub
+    IdentitiesOnly yes

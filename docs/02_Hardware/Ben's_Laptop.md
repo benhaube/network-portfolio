@@ -140,11 +140,12 @@ hide:
 
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
-    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="44"
+    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="9 44 65 66"
     --8<-- "home-bkp-nas.sh"
     ```
 
     1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
+    2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
 
 2. Place `.bkp-exclude-nas` in the `~/` directory.
 

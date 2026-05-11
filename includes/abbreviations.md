@@ -54,7 +54,7 @@
 *[GDDR6]: Graphics Double Data Rate 6
 *[GE]: General Electric Inc.
 *[GHz]: Gigahertz
-*[GNU]: An extensive collection of free software. A recursive acronym for "GNU's Not Unix."
+*[GNU]: An extensive collection of free software. Recursive acronym: "GNU's Not Unix."
 *[GPLv3]: GNU Public License version 3
 *[GPU]: Graphics Processing Unit
 *[GPUs]: Graphics Processing Units
@@ -207,6 +207,7 @@
 *[VRAM]: Video Random Access Memory
 *[WAF]: Web Application Firewall
 *[WAN]: Wide Area Network
+*[WINE]: A compatibility layer to run software written for Windows on GNU / Linux. Recursive acronym: "WINE is not an Emulator".
 *[XDR]: Extended Detection and Response
 *[XML]: Extensible Markup Language
 *[XSS]: Cross-Site Scripting

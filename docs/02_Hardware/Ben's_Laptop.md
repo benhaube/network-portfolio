@@ -23,7 +23,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ My laptop PC
++ Ben's laptop PC
 
 #### :symbols-host: Hostname(s):
 + `ben-laptop`

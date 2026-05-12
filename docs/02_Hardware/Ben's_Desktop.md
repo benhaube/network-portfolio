@@ -21,7 +21,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ My workstation PC
++ Ben's main workstation PC
 
 #### :symbols-host: Hostname(s):
 + `bens-workstation`

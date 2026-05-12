@@ -2,10 +2,10 @@
 icon: material/router-wireless
 title: Router Template
 tags:
-  - hardware
-  - network
-  - router
-  - infrastructure
+  - Hardware
+  - Network
+  - Router
+  - Infrastructure
 hide:
   - toc
 ---

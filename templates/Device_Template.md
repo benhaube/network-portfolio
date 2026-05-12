@@ -2,9 +2,9 @@
 icon: material/devices
 title: Device Template
 tags:
-  - hardware
-  - network
-  - server
+  - Hardware
+  - Network
+  - Server
 hide:
   - toc
 ---

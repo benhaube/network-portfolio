@@ -2,10 +2,10 @@
 icon: material/switch
 title: Switch Template
 tags:
-  - hardware
-  - switch
-  - infrastructure
-  - network
+  - Hardware
+  - Switch
+  - Infrastructure
+  - Network
 hide:
   - toc
 ---

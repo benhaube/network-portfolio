@@ -2,10 +2,10 @@
 icon: material/web
 title: Service Template
 tags:
-  - active
-  - service
-  - software
-  - docker
+  - Active
+  - Service
+  - Software
+  - Docker
 hide:
   - toc
 ---

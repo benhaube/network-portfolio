@@ -2,9 +2,9 @@
 icon: material/network-pos
 title: VM Template
 tags:
-  - hardware
-  - virtual_machine
-  - server
+  - Hardware
+  - Virtual Machine
+  - Server
 hide:
   - toc
 ---

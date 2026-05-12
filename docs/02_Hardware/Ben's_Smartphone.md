@@ -43,9 +43,9 @@ hide:
 
 ## :symbols-monitor-heart: Core Specs
 
-| CPU                                                   | Cores / Threads      | CPU Freq.                             | RAM           | GPU                              | GPU Freq. | VRAM   |
-| :---------------------------------------------------- | :------------------- | :------------------------------------ | :------------ | :------------------------------- | :-------- | :----- |
-| :material-memory:&nbsp;Google Tensor G4 *(arm64-v8a)* | 8C / 8T / 3-Clusters | C1 1950 MHz, C2 2600 MHz, C3 3105 MHz | 16 GB LPDDR5X | :material-memory:&nbsp;Mali-G715 | -         | Shared |
+| CPU                                                   | Cores / Threads      | CPU Freq.                                                  | RAM           | GPU                              | GPU Freq. | VRAM   |
+| :---------------------------------------------------- | :------------------- | :--------------------------------------------------------- | :------------ | :------------------------------- | :-------- | :----- |
+| :material-memory:&nbsp;Google Tensor G4 *(arm64-v8a)* | 8C / 8T / 3-Clusters | Cluster-1 1950 MHz, Cluster-2 2600 MHz, Cluster-3 3105 MHz | 16 GB LPDDR5X | :material-memory:&nbsp;Mali-G715 | -         | Shared |
 
 ## :material-lan: Network Configuration
 

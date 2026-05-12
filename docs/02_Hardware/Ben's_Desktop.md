@@ -37,6 +37,19 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 
+#### :material-security: Device Security:
++ Firmware:
+    + IOMMU
+    + Linux kernel lockdown
+    + Pre-boot DMA protection
+    + SMAP
+    + SMM locked down
+    + TPM v2.0
+    + UEFI Secure Boot
++ Software:
+    + LUKS2 drive encryption
+    + FIDO2-based MFA  
+
 ## :symbols-monitor-heart: Core Specs
 
 | CPU                                           | Cores / Threads | CPU Freq. | RAM                     | GPU                                | GPU Freq. | VRAM       |

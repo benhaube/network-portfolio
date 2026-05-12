@@ -38,6 +38,27 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Laptop"
 
+#### :material-security: Device Security:
++ HSI-4
++ Firmware: 
+    + BIOS rollback protection
+    + IOMMU
+    + Linux kernel lockdown
+    + Pre-boot DMA protection
+    + SMAP
+    + Suspend-to-idle: enabled
+    + Suspend-to-RAM: disabled
+    + TPM v2.0
+    + UEFI memory protection
+    + UEFI Secure Boot
++ Software:
+    + Linux swap encryption
+    + LUKS2 drive encryption
+    + FIDO2-based MFA for local user 
++ Biometric:
+    + :material-fingerprint:&nbsp;Fingerprint
+    + :material-face-recognition:&nbsp;IR facial recognition
+
 ## :symbols-monitor-heart: Core Specs
 
 | CPU                                              | Cores / Threads | CPU Freq.                 | RAM     | GPU                            | GPU Freq. | VRAM     |

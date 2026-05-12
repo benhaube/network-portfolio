@@ -38,6 +38,7 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 
 #### :material-security: Device Security:
++ HSI-1
 + Firmware:
     + IOMMU
     + Linux kernel lockdown
@@ -47,8 +48,9 @@ hide:
     + TPM v2.0
     + UEFI Secure Boot
 + Software:
+    + Linux swap encryption
     + LUKS2 drive encryption
-    + FIDO2-based MFA  
+    + FIDO2-based MFA for local user  
 
 ## :symbols-monitor-heart: Core Specs
 

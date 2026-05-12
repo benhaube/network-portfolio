@@ -37,7 +37,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 
-#### :symbols-monitor-heart: Core Specs:
+## :symbols-monitor-heart: Core Specs
 
 | CPU                                           | Cores / Threads | CPU Freq. | RAM                     | GPU                                | GPU Freq. | VRAM       |
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
@@ -45,18 +45,15 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address      | MAC Address         | Connected To                                                                         |
 | :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------- |
 | `enp7s0`  | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
 | `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;Home *(VLAN50)*                                                 |
 
-#### :material-ip-network: IP Configuration:
-
-| VLAN                            | Hostname(s)                 | DNS Servers                   | Gateway        |
-| :------------------------------ | :-------------------------- | :---------------------------- | :------------- |
-| :material-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                            | FQDN                        | DNS Servers                   | Gateway        |
+| :-------: | :------------------------------ | :-------------------------- | :---------------------------- | :------------- |
+| `enp7s0`  | :material-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| `wlp6s0`  | :material-security:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 

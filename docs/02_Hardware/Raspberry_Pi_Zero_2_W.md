@@ -42,7 +42,7 @@ hide:
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     * SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-zero"
 
-#### :symbols-monitor-heart: Core Specs:
+## :symbols-monitor-heart: Core Specs
 
 | CPU                                  | Cores / Threads        | CPU Freq. | RAM          | GPU          | GPU Freq. | VRAM     |
 | :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
@@ -50,17 +50,13 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address     | MAC Address         | Connected To                         |
 | :-------: | :------------- | :------------------ | :----------------------------------- |
 |  `wlan0`  | `192.168.50.3` | `2c:cf:67:db:f5:e2` | :material-wifi:&nbsp;Home *(VLAN50)* |
 
-#### :material-ip-network: IP Configuration:
-
-|              VLAN               | Hostname(s)              | DNS Servers                   | Gateway        |
-| :-----------------------------: | :----------------------- | :---------------------------- | :------------- |
-| :material-security:&nbsp;VLAN50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN               | FQDN                     | DNS Servers                   | Gateway        |
+| :-------: | :-----------------------------: | :----------------------- | :---------------------------- | :------------- |
+|  `wlan0`  | :material-security:&nbsp;VLAN50 | `proxy.pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 

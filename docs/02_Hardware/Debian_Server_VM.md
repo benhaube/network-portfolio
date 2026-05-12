@@ -41,7 +41,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"server-admin@debian-vm"
 
-#### :symbols-monitor-heart: Resource Allocation:
+## :symbols-monitor-heart: Resource Allocation:
 
 |          vCPU          |  RAM  | Storage | VDI Location                             |
 | :--------------------: | :---: | :------ | :--------------------------------------- |
@@ -49,17 +49,13 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address     | MAC Address         | Notes                                                                             |
 | :-------: | :------------- | :------------------ | :-------------------------------------------------------------------------------- |
 | `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :material-lan-connect:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
-#### :material-ip-network: IP Configuration:
-
-| VLAN                            | Hostname(s)          | DNS Servers | Gateway        |
-| :------------------------------ | :------------------- | :---------- | :------------- |
-| :material-security:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
+| Interface | VLAN                            | FQDN                 | DNS Servers | Gateway        |
+| :-------: | :------------------------------ | :------------------- | :---------- | :------------- |
+| `enp1s0`  | :material-security:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
 
 ## :material-web: Services / Docker Containers
 

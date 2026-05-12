@@ -47,14 +47,14 @@ hide:
 
 #### Moonraker:
 
-+ :material-link-variant:&nbsp;URL: <http://k1c-a71e.internal:7125>
-+ :material-key-chain:&nbsp;API Key: 
++ URL: <http://k1c-a71e.internal:7125>
++ API Key: 
     + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
         + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
 
 #### Fluidd:
 
-+ :material-link-variant:&nbsp;URL:
++ URL:
     + <http://k1c-a71e.internal>
     + <http://k1c-a71e.internal:4408>
 
@@ -62,15 +62,15 @@ hide:
 
 #### Moonraker:
 
-+ :material-link-variant:&nbsp;Snapshot URL:
++ Snapshot URL:
     + <http://k1c-a71e.internal:8080/?action=snapshot>
     + <http://localhost:8080/?action=snapshot>
     + <http://127.0.0.1:8080/?action=snapshot>
 
 #### Fluidd:
 
-+ :material-link-variant:&nbsp;Snapshot URL: <http://k1c-a71e.internal:8080/?action=snapshot>
-+ :material-link-variant:&nbsp;Stream URL: <http://k1c-a71e.internal/webcam/?action=stream>
++ Snapshot URL: <http://k1c-a71e.internal:8080/?action=snapshot>
++ Stream URL: <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
 ## :material-code-block-brackets: Machine G-code 

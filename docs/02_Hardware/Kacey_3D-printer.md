@@ -45,17 +45,13 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address       | MAC Address         | Connected To                         |
 | :-------: | :--------------- | :------------------ | :----------------------------------- |
 |  `wlan0`  | `192.168.50.153` | `FC:EE:28:09:A7:1E` | :material-wifi:&nbsp;Home *(VLAN50)* |
 
-#### :material-ip-network: IP Configuration:
-
-|              VLAN               | Hostname(s)         | DNS Servers                    | Gateway        |
-| :-----------------------------: | :------------------ | :----------------------------- | :------------- |
-| :material-security:&nbsp;VLAN50 | `k1c-a71e.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN               | FQDN                | DNS Servers                    | Gateway        |
+| :-------: | :-----------------------------: | :------------------ | :----------------------------- | :------------- |
+|  `wlan0`  | :material-security:&nbsp;VLAN50 | `k1c-a71e.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 

@@ -37,7 +37,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Laptop PC"
 
-#### :symbols-monitor-heart: Core Specs:
+## :symbols-monitor-heart: Core Specs
 
 | CPU                                            | Cores / Threads | CPU Freq. | RAM                      | GPU                                              | GPU Freq. | VRAM       |
 | :--------------------------------------------- | :-------------- | :-------- | :----------------------- | :----------------------------------------------- | :-------- | :--------- |
@@ -46,18 +46,15 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address | MAC Address         | Connected To                                                                                             |
 | :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
 | Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port-1)*, Temporary connection |
 |   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | :material-wifi:&nbsp;Home *(VLAN50)*                                                                     |
 
-#### :material-ip-network: IP Configuration:
-
-|              VLAN               | Hostname(s)     | DNS Servers                   | Gateway        |
-| :-----------------------------: | :-------------- | :---------------------------- | :------------- |
-| :material-security:&nbsp;VLAN50 | `ems1.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN               | FQDN | DNS Servers                   | Gateway        |
+| :-------: | :-----------------------------: | :--- | :---------------------------- | :------------- |
+| Ethernet  | :material-security:&nbsp;VLAN50 | `-`  | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|   Wi-Fi   | :material-security:&nbsp;VLAN50 | `-`  | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 

@@ -41,7 +41,7 @@ hide:
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     * SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-server"
 
-#### :symbols-monitor-heart: Core Specs:
+## :symbols-monitor-heart: Core Specs
 
 | CPU                                   | Cores / Threads        | CPU Freq. | RAM                       | GPU             | GPU Freq. | VRAM     |
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
@@ -49,19 +49,15 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address     | MAC Address         | Connected To                                                                         |
 | :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------- |
 |  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
 |  `wlan0`  | `DHCP`         | `E4:5F:01:A4:60:07` | :symbols-shield-house-fill:&nbsp;2G_IoT *(VLAN53)*                                   |
 
-#### :material-ip-network: IP Configuration:
-
-|                  VLAN                   | Hostname(s)          | DNS Servers                  | Gateway        |
-| :-------------------------------------: | :------------------- | :--------------------------- | :------------- |
-|     :material-security:&nbsp;VLAN50     | `pi-server.internal` | `127.0.0.1`                  | `192.168.50.1` |
-| :symbols-shield-house-fill:&nbsp;VLAN53 | -                    | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
+| Interface |                  VLAN                   | FQDN                 | DNS Servers                  | Gateway        |
+| :-------: | :-------------------------------------: | :------------------- | :--------------------------- | :------------- |
+|  `eth0`   |     :material-security:&nbsp;VLAN50     | `pi-server.internal` | `127.0.0.1`                  | `192.168.50.1` |
+|  `wlan0`  | :symbols-shield-house-fill:&nbsp;VLAN53 | `-`                  | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
 
 ## :symbols-storage: Storage & Mounts
 

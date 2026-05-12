@@ -35,7 +35,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Desktop PC"
 
-#### :symbols-monitor-heart: Core Specs:
+## :symbols-monitor-heart: Core Specs
 
 | CPU                                              | Cores / Threads | CPU Freq. | RAM                     | GPU                                      | GPU Freq. | VRAM       |
 | :----------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------------- | :-------- | :--------- |
@@ -44,18 +44,15 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address | MAC Address         | Connected To                                                                        |
 | :-------: | :--------- | :------------------ | :---------------------------------------------------------------------------------- |
 | Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
 |   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | :material-wifi:&nbsp;Home *(VLAN50)*                                                |
 
-#### :material-ip-network: IP Configuration:
-
-|              VLAN               | Hostname(s)            | DNS Servers                   | Gateway        |
-| :-----------------------------: | :--------------------- | :---------------------------- | :------------- |
-| :material-security:&nbsp;VLAN50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN               | FQDN | DNS Servers                   | Gateway        |
+| :-------: | :-----------------------------: | :--- | :---------------------------- | :------------- |
+| Ethernet  | :material-security:&nbsp;VLAN50 | `-`  | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|   Wi-Fi   | :material-security:&nbsp;VLAN50 | `-`  | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 

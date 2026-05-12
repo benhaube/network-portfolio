@@ -186,6 +186,7 @@
 *[TUI]: Terminal User Interface
 *[UDP]: User Datagram Protocol
 *[UEFI]: Universal Extensible Firmware Interface
+*[UFS]: Universal Flash Storage
 *[UI]: User Interface
 *[UKI]: Unified Kernel Image
 *[URI]: Uniform Resource Identifier

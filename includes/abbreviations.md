@@ -26,6 +26,7 @@
 *[DDR4]: Double Data Rate 4
 *[DDR5]: Double Data Rate 5
 *[DHCP]: Dynamic Host Connection Protocol
+*[DMA]: Direct Memory Access
 *[DNF]: Dandified YUM
 *[DNS]: Domain Name Service
 *[DDNS]: Dynamic Domain Name Service
@@ -42,6 +43,7 @@
 *[F1]: Formula 1 (Racing Series)
 *[FDM]: Fused Deposition Modeling
 *[FFF]: Fused Filament Fabrication
+*[FIDO2]: Fast Identity Online 2
 *[FOSS]: Free and Open Source Software
 *[FQDN]: Fully Qualified Domain Name
 *[FW]: Firmware
@@ -74,6 +76,7 @@
 *[IAM]: Identity and Access Management
 *[IDS]: Intrusion Detection System
 *[IMAP]: Internet Message Access Protocol
+*[IOMMU]: Input-Output Memory Management Unit
 *[IoT]: Internet of Things
 *[IP]: Internet Protocol
 *[IPAM]: IP Address Management
@@ -114,6 +117,7 @@
 *[MITM]: Man in the Middle
 *[MMC]: MultiMedia Card
 *[MMS]: Multimedia Messaging Service
+*[MMU]: Memory Management Unit
 *[MOTD]: Message of the Day
 *[MT/s]: Mega Transfers Per Second
 *[NAS]: Network Attached Storage
@@ -161,9 +165,11 @@
 *[SFP+]: Small Form-factor Pluggable Plus
 *[SIEM]: Security Information and Event Management
 *[SLA]: Stereolithography Apparatus
+*[SMAP]: Supervisor Mode Access Prevention
 *[SMB]: Server Message Block
 *[SMS]: Short Message Service
 *[SMTP]: Simple Mail Transfer Protocol
+*[SMM]: System Management Mode
 *[SNI]: Server Name Indication
 *[SPI]: Stateful Packet Inspection
 *[SSD]: Solid State Drive

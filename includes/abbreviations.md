@@ -67,6 +67,7 @@
 *[GUID]: Globally Unique Identifier
 *[HA]: High Availability
 *[HDD]: Hard Drive Disk
+*[HSI]: Host Security ID
 *[HSL]: Hue, Saturation, Lightness
 *[HTML]: Hyper Text Markup Language
 *[HTML5]: Hyper Text Markup Language 5
@@ -81,6 +82,7 @@
 *[IP]: Internet Protocol
 *[IPAM]: IP Address Management
 *[IPS]: Intrusion Prevention System
+*[IR]: Infrared
 *[ISP]: Internet Service Provider
 *[IT]: Information Technology
 *[JPG]: Joint Photographic Experts Group

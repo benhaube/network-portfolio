@@ -79,7 +79,7 @@ hide:
 | :------: | :------------------------------------------------------- | :---------------------- | :----------------- | :--------------------------------- |
 | *Active* | :material-debian:&nbsp;[Debian](https://www.debian.org/) | Virtual Network *(NAT)* | `-`                | Android Virtualization Environment |
 
-#### :material-linux: Native Linux:
+#### :brands-android-robot: Native Android:
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                             |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :--------------------------------------- |

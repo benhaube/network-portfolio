@@ -1,6 +1,7 @@
 *[2FA]: Two Factor Authentication
 *[ABS]: Acrylonitrile Butadiene Styrene
 *[ACPI]: Advanced Configuration and Power Interface
+*[ADB]: Android Debugging Bridge
 *[API]: Application Programming Interface
 *[APIs]: Application Programming Interfaces
 *[ASA]: Acrylonitrile Styrene Acrylate

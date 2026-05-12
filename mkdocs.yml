@@ -244,7 +244,6 @@ watch:
 
 exclude_docs: |
   includes/
-  Ben's_Smartphone.md
   
 # --- Disable directory URLs ---
 use_directory_urls: false

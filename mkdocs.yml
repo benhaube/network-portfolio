@@ -46,6 +46,7 @@ theme:
       isp: material/wan
       iot: material/home-automation
       active: material/check
+      android: brands/android-robot
       backup: material/cloud-upload-outline
       dashboard: material/view-dashboard
       desktop: material/desktop-tower
@@ -278,6 +279,7 @@ extra:
     ISP: isp
     IoT: iot
     Active: active
+    Android: android
     Backup: backup
     Dashboard: dashboard
     Desktop: desktop

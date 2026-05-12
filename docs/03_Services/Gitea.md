@@ -32,7 +32,7 @@ hide:
 + Web-UI:
     + <http://storage-server.internal:3080>
 + SSH: 
-    + <git@storage-server.internal>
+    + `git@storage-server.internal`
 
 #### :material-key-chain: Credentials: 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 

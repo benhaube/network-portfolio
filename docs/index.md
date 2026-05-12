@@ -33,6 +33,7 @@ hide:
 + :material-router-wireless:&ensp;[ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md): Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
 + :material-desktop-tower:&ensp;[Ben's Desktop PC](./02_Hardware/Ben's_Desktop.md): Ben's main desktop PC located in the office upstairs.
 + :material-laptop:&ensp;[Ben's Laptop PC](./02_Hardware/Ben's_Laptop.md): Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
++ :symbols-mobile:&ensp;[Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md): Ben's main mobile device. Connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
 + :material-debian:&ensp;[Debian Server VM](./02_Hardware/Debian_Server_VM.md): General purpose Debian Linux server hosted on *[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md)*. 
 + :material-wan:&ensp;[Hitron Modem](./02_Hardware/Hitron_Modem.md): DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
 + :material-printer-3d-nozzle:&ensp;[Kacey 3D-Printer (Creality^&copy;^ K1C)](./02_Hardware/Kacey_3D-printer.md): Creality K1C 3D-printer located in the office upstairs. 

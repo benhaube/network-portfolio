@@ -57,25 +57,5 @@ hide:
 >     + `/media/nvme0n1p1/AppData/dockge/stacks/gitea/gitea`
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
-networks:
-  gitea:
-    external: false
-
-services:
-  server:
-    image: docker.gitea.com/gitea:latest
-    container_name: gitea
-    environment:
-      - USER_UID=1000
-      - USER_GID=1000
-    restart: always
-    networks:
-      - gitea
-    volumes:
-      - ./gitea:/data
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
-    ports:
-      - "3080:3000"
-      - "222:22"
+--8<-- "gitea.yml"
 ```

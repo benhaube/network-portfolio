@@ -48,7 +48,7 @@ hide:
 |   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5 Gb/s WAN / LAN (Port 1) |
 |   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                    |
 
-#### :material-lan: Local Networks:
+#### :material-lan: Virtual Local Networks:
 
 |                   VLAN                   | Domain   | DNS Server(s)                 | Gateway        | Subnet            | Subnet Mask     | Broadcast        | DHCP Range     |
 | :--------------------------------------: | :------- | :---------------------------- | :------------- | :---------------- | :-------------- | :--------------- | :------------- |

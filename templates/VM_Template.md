@@ -35,7 +35,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): .
     + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
-#### :symbols-monitor-heart: Resource Allocation:
+## :symbols-monitor-heart: Resource Allocation
 
 |         vCPU          |  RAM  | Storage | VDI Location  |
 | :-------------------: | :---: | :------ | :------------ |
@@ -43,17 +43,13 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address | MAC Address         | Notes |
 | :-------: | :--------- | :------------------ | :---- |
 |  enp1s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -     |
 
-#### :material-ip-network: IP Configuration:
-
-| VLAN | Hostname(s)         | DNS Servers | Gateway   |
-| :--- | :------------------ | :---------- | :-------- |
-| vlan | `hostname.internal` | `0.0.0.0`   | `x.x.x.1` |
+| Interface | VLAN   | FQDN                | DNS Servers | Gateway   |
+| :-------: | :----- | :------------------ | :---------- | :-------- |
+|  enp1s0   | VLAN50 | `hostname.internal` | `0.0.0.0`   | `x.x.x.1` |
 
 ## :material-web: Services / Docker Containers
 

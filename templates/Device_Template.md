@@ -32,7 +32,10 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
-#### :symbols-monitor-heart: Core Specs:
+#### :material-security: Device Security:
++ Hardware / Software security features (e.g., TPM2)
+
+## :symbols-monitor-heart: Core Specs
 
 | CPU                    | Cores / Threads | CPU Freq. | RAM  | GPU   | GPU Freq. | VRAM |
 | :--------------------- | :-------------- | :-------- | :--- | :---- | :-------- | :--- |
@@ -40,17 +43,13 @@ hide:
 
 ## :material-lan: Network Configuration
 
-#### :material-ethernet: Network Interface:
-
 | Interface | IP Address | MAC Address         | Connected To |
 | :-------: | :--------- | :------------------ | :----------- |
 |  enp7s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -            |
 
-#### :material-ip-network: IP Configuration:
-
-| VLAN | Hostname(s)        | DNS Servers         | Gateway   |
-| :--- | :----------------- | :------------------ | :-------- |
-| vlan | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
+| Interface | VLAN   | FQDN               | DNS Servers         | Gateway   |
+| :-------: | :----- | :----------------- | :------------------ | :-------- |
+|  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
 
 ## :symbols-storage: Storage & Mounts
 

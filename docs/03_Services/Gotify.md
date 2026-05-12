@@ -263,7 +263,7 @@ hide:
 1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
 
     ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="3 4"
-    --8<-- "home-bkp-nas.sh:63"
+    --8<-- "home-bkp-nas.sh:59"
     ```
 
     1. Placeholder

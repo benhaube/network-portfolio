@@ -41,7 +41,7 @@ hide:
 | :-------: | :--------- | :------------------ | :----------- |
 |   WAN0    | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -            |
 
-#### :material-lan: Local Networks:
+#### :material-lan: Virtual Local Networks:
 
 |  VLAN  | Domain | DNS Server(s)       | Gateway   | Subnet       | Subnet Mask | Broadcast   | DHCP Range     |
 | :----: | :----- | :------------------ | :-------- | :----------- | :---------- | :---------- | :------------- |

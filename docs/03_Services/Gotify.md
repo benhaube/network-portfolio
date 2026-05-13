@@ -8,6 +8,7 @@ tags:
   - Software
   - Docker
   - Monitor
+  - New
 hide:
   - toc
 ---

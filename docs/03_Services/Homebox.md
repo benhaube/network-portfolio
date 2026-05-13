@@ -7,6 +7,7 @@ tags:
   - Software
   - Docker
   - Inventory
+  - New
 hide:
   - toc
 ---

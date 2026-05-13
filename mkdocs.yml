@@ -70,8 +70,9 @@ theme:
       mobile: material/tablet-cellphone
       monitor: symbols/monitor-heart
       nas: material/nas
-      network: material/lan 
       native: material/linux
+      network: material/lan 
+      new: material/alert-decagram
       office: material/desk
       pc: material/desktop-classic
       podman: simple/podman
@@ -252,7 +253,7 @@ use_directory_urls: false
 # --- Extra Settings ---
 extra:
   status:
-    new: Recently added
+    new: Recently Added
     deprecated: Deprecated
     inactive: Inactive
   # -- Cookies Consent Message --
@@ -305,8 +306,9 @@ extra:
     Mobile: mobile
     Monitor: monitor
     NAS: nas
-    Network: network
     Native: native
+    Network: network
+    New: new
     Office: office
     PC: pc
     Podman: podman

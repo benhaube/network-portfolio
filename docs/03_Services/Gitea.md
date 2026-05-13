@@ -4,6 +4,7 @@ status: new
 title: Gitea
 tags:
   - Active
+  - Backup
   - Service
   - Software
   - Docker

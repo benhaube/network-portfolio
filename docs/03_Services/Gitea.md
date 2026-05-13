@@ -51,6 +51,7 @@ hide:
 | Host Device                                                         | Method                                | Container Name | Image                           |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------------ |
 | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gitea`        | `docker.gitea.com/gitea:latest` |
+|                                                                     | :material-docker:&nbsp;Docker Compose | `gitea_runner` | `gitea/act_runner:latest`       |
 
 ### :material-cog: Configuration 
 

@@ -3,7 +3,7 @@ icon: simple/pihole
 title: Pi-hole DNS Server
 status: deprecated
 tags:
-  - Inactive
+  - Deprecated
   - Service
   - Software
   - DNS

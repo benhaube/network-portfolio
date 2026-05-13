@@ -49,6 +49,7 @@ theme:
       android: brands/android-robot
       backup: material/cloud-upload-outline
       dashboard: material/view-dashboard
+      deprecated: material/trash-can
       desktop: material/desktop-tower
       development: simple/git
       dns: material/dns
@@ -283,6 +284,7 @@ extra:
     Android: android
     Backup: backup
     Dashboard: dashboard
+    Deprecated: deprecated
     Desktop: desktop
     Development: development
     DNS: dns

@@ -34,10 +34,10 @@ hide:
 + :material-desktop-tower:&ensp;[Ben's Workstation](./02_Hardware/Ben's_Desktop.md): Ben's main workstation located in the office upstairs.
 + :material-laptop:&ensp;[Ben's Laptop](./02_Hardware/Ben's_Laptop.md): Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
 + :symbols-mobile:&ensp;[Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md): Ben's main mobile device. Connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
-+ :material-debian:&ensp;[Debian Server](./02_Hardware/Debian_Server_VM.md): Primary DNS server *([Technitium](../03_Services/Technitium.md) Cluster)*. Hosted on *[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md)*. 
++ :material-debian:&ensp;[Debian Server](./02_Hardware/Debian_Server_VM.md): Primary DNS server *([Technitium](03_Services/Technitium.md) Cluster)*. Hosted on *[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md)*. 
 + :material-wan:&ensp;[Hitron Modem](./02_Hardware/Hitron_Modem.md): DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
 + :material-printer-3d-nozzle:&ensp;[Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md): Creality K1C 3D-printer located in the office upstairs. 
-+ :material-raspberry-pi:&ensp;[Raspberry Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md): Secondary DNS server *([Technitium](../03_Services/Technitium.md) Cluster)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
++ :material-raspberry-pi:&ensp;[Raspberry Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md): Secondary DNS server *([Technitium](03_Services/Technitium.md) Cluster)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
 + :material-raspberry-pi:&ensp;[Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md): Caddy reverse-proxy server.
 + :material-desktop-tower:&ensp;[Rob's Workstation](./02_Hardware/Rob's_Desktop.md): Rob's main workstation located in the office upstairs.
 + :material-laptop:&ensp;[Rob's Laptop](02_Hardware/Rob's_Laptop.md): Rob's laptop PC for work and gaming

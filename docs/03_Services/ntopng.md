@@ -1,8 +1,9 @@
 ---
 icon: services/ntop
+status: inactive
 title: ntopng
 tags:
-  - Active
+  - Inactive
   - Service
   - Software
   - Docker

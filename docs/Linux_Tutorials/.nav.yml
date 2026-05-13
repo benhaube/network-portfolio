@@ -3,5 +3,7 @@ sort:
   ignore_case: true
 nav:
   - SVG_to_URI.md
+  - Unlock_LUKS_TPM2.md
   - Defining_Terminal_Aliases.md
+  - My_Terminal_Aliases.md
   - "*"

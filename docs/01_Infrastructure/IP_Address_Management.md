@@ -1,6 +1,7 @@
 ---
 icon: material/ip-network
 title: IP Address Management
+subtitle: Organized IP Address Space
 tags:
   - Infrastructure
   - Network

@@ -1,6 +1,7 @@
 ---
 icon: material/restore-alert
 title: Disaster Recovery Plan
+subtitle: Maintain High Availability
 tags:
   - Infrastructure
   - Policy

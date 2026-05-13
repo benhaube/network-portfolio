@@ -1,6 +1,7 @@
 ---
 icon: material/sitemap
 title: Logical Network Map
+subtitle: Focusing on Servers and Services
 tags:
   - Network
   - Map
@@ -15,6 +16,7 @@ hide:
 ![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=100 }
 
 # Logical Network Map
+*Focusing on Servers and Services*
 
 ---
 

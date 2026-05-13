@@ -73,10 +73,10 @@ hide:
 
 #### :material-docker: Docker:
 
-|  Status  | Service                                                               | Port(s) | Role / Notes                                                                                           |
-| :------: | :-------------------------------------------------------------------- | :-----: | :----------------------------------------------------------------------------------------------------- |
-| *Active* | :services-beszel:&nbsp;[Beszel (Agent)](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)             | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
+|  Status  | Service                                                       | Port(s) | Role / Notes                                                                                           |
+| :------: | :------------------------------------------------------------ | :-----: | :----------------------------------------------------------------------------------------------------- |
+| *Active* | :services-beszel:&nbsp;[Beszel](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
 
 ---
 ## :material-tools: Maintenance & Snapshots

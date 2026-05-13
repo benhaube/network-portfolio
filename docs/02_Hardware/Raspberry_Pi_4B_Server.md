@@ -92,7 +92,7 @@ hide:
 
 |   Status   | Service                                                                        |       Port(s)        | Role / Notes                                                                                                |
 | :--------: | :----------------------------------------------------------------------------- | :------------------: | :---------------------------------------------------------------------------------------------------------- |
-|  *Active*  | :services-beszel:&nbsp;[Beszel (Hub & Agent)](../03_Services/Beszel_Hub.md)    |    `8090` `45876`    | A lightweight server monitoring hub with historical data, docker stats, and alerts.                         |
+|  *Active*  | :services-beszel:&nbsp;[Beszel Hub](../03_Services/Beszel_Hub.md)              |    `8090` `45876`    | A lightweight server monitoring hub with historical data, docker stats, and alerts.                         |
 |  *Active*  | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)                      |        `5001`        | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                 |
 |  *Active*  | :simple-f1:&nbsp;[F1 API](../03_Services/Glance.md)                            |        `4463`        | Part of the [Glance](../03_Services/Glance.md) stack. Supplies F1 data for widgets on the Glance dashboard. |
 |  *Active*  | :services-glance:&nbsp;[Glance](../03_Services/Glance.md)                      |        `8580`        | A self-hosted dashboard that puts all your feeds in one place.                                              |

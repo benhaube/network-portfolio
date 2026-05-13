@@ -14,6 +14,7 @@ tags:
 ![Material Design restore-alert icon](../assets/icons/restore-alert-color.svg){ width=200 }
 
 # Disaster Recovery Plan
+*Maintain High Availability*
 
 > [!info] 
 > **Objective:**

@@ -22,6 +22,7 @@ hide:
 ![Material Design ip-network icon](../assets/icons/ip-network.svg){ width=200 }
 
 # IP Address Management
+*Organized IP Address Space*
 
 > [!question] FAQ
 > **What is IPAM?**

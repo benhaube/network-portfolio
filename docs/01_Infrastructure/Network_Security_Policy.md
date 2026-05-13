@@ -15,6 +15,7 @@ tags:
 ![Material Design server-security icon](../assets/icons/server-security.svg){ width=200 }
 
 # Network Security Policy
+*The Principle of Least Privilege*
 
 > [!info] 
 > **Security Philosophy:**

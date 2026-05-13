@@ -20,6 +20,7 @@ hide:
 ![Material Ethernet Icon customized](../assets/icons/ethernet.svg){ width=200 }
 
 # MAC Address Tables
+*Hardware MAC Addresses*
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 icon: material/switch
 title: TP-Link Switch
+subtitle: Model SG105
 tags:
   - Hardware
   - Switch
@@ -14,6 +15,8 @@ hide:
 ![Material Design switch icon](../assets/icons/switch.svg){ width=200 }&ensp;![TP-Link Logo](../assets/icons/tp-link.svg){ width=50 }
 
 # TP-Link Switch
+*Model SG105*
+
 [Hardware Info :material-book-information-variant:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }&emsp;[Manual :material-book-information-variant:](../assets/manuals/TL-SG105.pdf){ .md-button }
 
 ---

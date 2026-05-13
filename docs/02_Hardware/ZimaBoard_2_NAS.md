@@ -1,6 +1,7 @@
 ---
 icon: material/nas
 title: ZimaOS NAS
+subtitle: Rack-Mount ZimaBoard 2
 tags:
   - Hardware
   - NAS
@@ -20,6 +21,8 @@ hide:
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # ZimaOS NAS
+*Rack-Mount ZimaBoard 2*
+
 [IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :services-zimaos:](https://www.zimaspace.com/docs/zimaos/){ .md-button }
 
 ---

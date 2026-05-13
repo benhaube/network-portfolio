@@ -1,6 +1,7 @@
 ---
 icon: material/raspberry-pi
 title: Raspberry Pi Zero Server
+subtitle: Reverse-Proxy Server
 tags:
   - Hardware
   - Server
@@ -26,7 +27,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-* Tertiary DNS server *(Pi-hole w/ dnscrypt-proxy)*
+* Caddy reverse-proxy server
 
 #### :symbols-host: Hostname(s):
 * `pi-zero`

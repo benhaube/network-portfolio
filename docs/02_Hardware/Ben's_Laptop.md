@@ -1,6 +1,7 @@
 ---
 icon: material/laptop
-title: Ben's Laptop PC
+title: Ben's Laptop
+subtitle: ThinkPad X1 Carbon
 tags:
   - Hardware
   - PC
@@ -16,7 +17,9 @@ hide:
 ![Lenovo Logo](../assets/icons/lenovo-dark.svg#only-dark){ width=250 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
-# Ben's Laptop PC
+# Ben's Laptop
+*ThinkPad X1 Carbon*
+
 [Fedora Discussion :material-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs :material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button }&emsp;[Lenovo Support :material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button }
 
 ---

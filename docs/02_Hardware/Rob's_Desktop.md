@@ -1,6 +1,7 @@
 ---
 icon: material/desktop-tower
-title: Rob's Desktop PC
+title: Rob's Workstation
+subtitle: High-Performance Desktop PC
 tags: 
   - Hardware 
   - PC 
@@ -12,14 +13,16 @@ hide:
 ---
 ![ASUS Logo](../assets/icons/asus-full.svg){ width=250 }![Nvidia Logo](../assets/icons/nvidia.svg){ width=25 }&ensp;![Intel Logo](../assets/icons/intel.svg){ width=40 }
 
-# Rob's Desktop PC
+# Rob's Workstation
+*High-Performance Desktop PC*
+
 [Windows Docs :material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=dc554ee0-d7d2-4018-992d-7267ebccf458&sn=MCM0KK06J149GK4&from=Myproducts){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Rob's main workstation PC
++ Rob's main workstation / gaming PC
 
 #### :symbols-host: Hostname(s):
 + `rob-desktop`

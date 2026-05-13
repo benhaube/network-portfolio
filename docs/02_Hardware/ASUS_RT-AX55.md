@@ -1,6 +1,7 @@
 ---
 icon: material/router-wireless
 title: ASUS RT-AX55
+subtitle: AiMesh Node
 tags:
   - Hardware
   - Network

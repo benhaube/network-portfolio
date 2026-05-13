@@ -1,6 +1,7 @@
 ---
 icon: material/laptop
-title: Rob's Laptop PC
+title: Rob's Laptop
+subtitle: ASUS TUF Gaming Laptop
 tags: 
   - Hardware 
   - PC 
@@ -15,7 +16,9 @@ hide:
 ![ASUS TUF Gaming Logo](../assets/icons/asus-tuf-dark.svg#only-dark){ width=200 }
 &ensp;![AMD Logo](../assets/icons/amd-small.svg){ width=20 }&ensp;![Nvidia Logo](../assets/icons/nvidia.svg){ width=25 }
 
-# Rob's Laptop PC
+# Rob's Laptop
+*ASUS TUF Gaming Laptop*
+
 [Windows Docs :material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/){ .md-button }
 
 ---

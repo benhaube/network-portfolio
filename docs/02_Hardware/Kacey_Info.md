@@ -1,6 +1,7 @@
 ---
 icon: devices/creality
 title: More Kacey Info
+subtitle: Detailed Configuration Info
 tags:
   - Hardware
   - Network

@@ -1,5 +1,7 @@
 ---
 icon: material/switch
+title: Ugreen Switch
+subtitle: Model UM106X
 tags:
   - Hardware
   - Switch
@@ -15,6 +17,8 @@ hide:
 ![Ugreen Logo](../assets/icons/ugreen-dark.svg#only-dark){ width=50 }
 
 # Ugreen Switch
+*Model UM106X*
+
 [Manual :material-book-information-variant:](../assets/manuals/Ugreen_CM753.pdf){ .md-button .md-button--primary }
 
 ---

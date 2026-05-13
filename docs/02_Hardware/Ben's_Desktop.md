@@ -1,6 +1,7 @@
 ---
 icon: material/desktop-tower
-title: Ben's Desktop PC
+title: Ben's Workstation
+subtitle: High-Performance Desktop PC
 tags:
   - Hardware
   - PC
@@ -14,7 +15,9 @@ hide:
 ---
 ![ASUS Logo](../assets/icons/asus-full.svg){ width=250 }&ensp;![AMD Logo](../assets/icons/amd-small.svg){ width=25 }
 
-# Ben's Desktop PC
+# Ben's Workstation
+*High-Performance Desktop PC*
+
 [Fedora Discussion :material-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs :material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=4b12aa6c-2687-4e62-b1f5-3f68820bb06c&sn=L8M0CS003053JKW&from=Myproducts){ .md-button }
 
 ---

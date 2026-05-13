@@ -1,6 +1,7 @@
 ---
 icon: material/printer-3d-nozzle
-title: Kacey 3D-Printer (Creality K1C)
+title: Kacey 3D-Printer
+subtitle: Modified Creality K1C
 tags:
   - Hardware
   - Network
@@ -13,7 +14,9 @@ hide:
 ---
 ![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }![Creality Logo](../assets/icons/creality.svg){ width=50 }
 
-# Kacey 3D-Printer (Creality^&copy;^ K1C)
+# Kacey 3D-Printer
+*Modified Creality^&copy;^ K1C*
+
 [Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
 ---

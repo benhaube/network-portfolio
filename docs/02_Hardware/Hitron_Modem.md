@@ -1,5 +1,7 @@
 ---
 icon: material/wan
+title: Hitron Modem
+subtitle: DOCSIS 3.1 Cable Modem
 tags:
   - Hardware
   - Network

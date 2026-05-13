@@ -1,5 +1,7 @@
 ---
 icon: material/raspberry-pi
+title: Raspberry Pi 4B Server
+subtitle: Secondary DNS Server
 tags:
   - Hardware
   - Server

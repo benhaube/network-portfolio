@@ -1,12 +1,13 @@
 ---
 icon: material/tag
 title: Hardware Tags
+subtitle: An Index of Relevant Tags
 ---
 ![Devices Icon](../assets/icons/devices.svg){ width=200 }
 
 # Hardware Tags
 
-Following is a list of relevant tags:
+Following is an index of relevant tags:
 
 ---
 

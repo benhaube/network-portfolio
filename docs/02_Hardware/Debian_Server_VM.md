@@ -1,5 +1,7 @@
 ---
 icon: material/debian
+title: Debian Server
+subtitle: Primary DNS Server
 tags:
   - Hardware
   - Virtual Machine
@@ -16,7 +18,9 @@ hide:
 ![Debian Server Logo](../assets/icons/debian-server-dark.svg#only-dark){ width=200 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
-# Debian Server VM
+# Debian Server
+*Virtual Machine*
+
 [Debian Docs :material-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---

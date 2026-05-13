@@ -18,7 +18,7 @@ hide:
 
 ---
 
-## :material-file-document: Phase 1: Pre-Migration & Documentation
+## :material-file-document: Pre-Migration & Documentation
 
 1. **Export Pi-hole Data:** 
     + [ ] Run a "Teleporter" backup on your current primary and secondary Pi-holes.
@@ -29,9 +29,9 @@ hide:
     + [ ] Secondary: [:material-debian:&thinsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md) :material-arrow-right-thin: `192.168.50.6`
     + [ ] Tertiary/Failover: [:material-raspberry-pi:&thinsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) :material-arrow-right-thin: `192.168.50.3`
 
-## :material-dns: Phase 2: Server Provisioning
+## :material-dns: Server Provisioning
 
-#### Debian Server VM *(ZimaOS NAS)*:
+#### Debian Server:
 
 1. **Allocate Resources:** 
     + [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
@@ -51,7 +51,7 @@ hide:
 3. **Set as Secondary:** 
     + [ ] Configure identical upstream servers.
 
-## :material-cog-sync: Phase 3: Cluster Synchronization
+## :material-cog-sync: Cluster Synchronization
 
 1. **Enable Clustering:** 
     + [ ] Set the Debian VM as the **Master**.
@@ -61,7 +61,7 @@ hide:
 3. **Blocklist Tuning:** 
     + [ ] Add your preferred lists *(e.g., OISD, HaGeZi)* and verify they are enabled on both.
 
-## :material-toggle-switch-outline: Phase 4: Network Cutover
+## :material-toggle-switch-outline: Network Cutover
 
 1. **Update Router DHCP:** 
     + [ ] Point DNS 1 to the Debian VM IP.
@@ -72,7 +72,7 @@ hide:
 3. **Test Resolution:** 
     + [ ] Run `#!bash dig @[Primary-IP] google.com` and verify the `SERVER` field.
 
-## :material-web-check: Phase 5: Verification & Safety Net
+## :material-web-check: Verification & Safety Net
 
 1. **Check DoT Status:** 
     + [ ] Run `#!bash dig @[Primary-IP] +short txt proto.on.quad9.net` to ensure the upstream is encrypted.

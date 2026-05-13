@@ -31,7 +31,7 @@ hide:
 >     [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
 
 ---
-## :material-file-document-edit: Phase 1: Configuration File Edits
+## :material-file-document-edit: Configuration File Edits
 
 > [!warning inline end] Important
 > Before uploading the macro, modify `3DPHUB_PROWIPER.CFG` to account for the custom bed height and safe testing speeds.
@@ -47,7 +47,7 @@ hide:
 #### Verify Bottom Clearance:
   + [ ] Review `variable_bot_clearance` *(default `20`)* and `variable_drop_distance` *(default `15`)*. 
 
-## :services-klipper: Phase 2: Klipper Integration
+## :services-klipper: Klipper Integration
 
 > [!note inline end] Integration Note
 > The script automatically intercepts the stock `CX_NOZZLE_CLEAR` command, meaning standard print starts will natively utilize the new wiping sequence without further macro edits.
@@ -57,7 +57,7 @@ hide:
 3. [ ] Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`.
 4. [ ] Save and restart Klipper. 
 
-## :material-chip: Phase 3: Slicer & Firmware Clearances
+## :material-chip: Slicer & Firmware Clearances
 
 > [!info inline end] Clearance Info 
 > Because the **V5 mount** is utilized instead of the low-profile **LPF2 mount**, a 10mm clearance zone is required to prevent the toolhead from striking the mount during printing or probing.
@@ -77,7 +77,7 @@ hide:
 <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
 </div>
 
-## :material-toggle-switch-outline: Phase 4: Dry Run *(Critical Safety Step)*
+## :material-toggle-switch-outline: Dry Run *(Critical Safety Step)*
 
 > [!warning inline end] Caution
 > **Do not install the physical hardware yet.**
@@ -86,13 +86,13 @@ hide:
 2. [ ] Trigger the `WIPE_NOZZLE` macro via Fluidd or Guppy Screen.
 3. [ ] Observe the toolhead to verify it moves to the correct coordinates safely without risking a collision.
 
-## :material-tools: Phase 5: Physical Installation
+## :material-tools: Physical Installation
 
 1. [ ] Lower the build plate halfway down the Z-axis to create working room.
 2. [ ] Drop the A1 brush into the slot
 3. [ ] Using a **2mm hex driver** and the **M3x12mm** self-tapping screws, install the spacer and the V5 brush mount into the two existing holes at the back of the Z-axis.
 
-#### :material-check-decagram: Final Verification:
+## :material-check-decagram: Final Verification
 
 + [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate. 
 

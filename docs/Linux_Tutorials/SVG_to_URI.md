@@ -1,12 +1,14 @@
 ---
 icon: material/svg
-title: Converting an SVG into Data URI
+title: Convert an SVG to Data URI
+subtitle: For HTML and CSS
 hide:
   - toc
 ---
 ![Material Design SVG icon customized](../assets/icons/svg.svg){ width=225 }
 
-# Converting an SVG into Data URI
+# Convert an SVG to Data URI
+*For HTML and CSS*
 
 > [!question]+ FAQ
 > **What is an SVG?**

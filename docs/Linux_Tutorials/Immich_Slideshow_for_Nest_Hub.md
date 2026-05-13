@@ -1,12 +1,14 @@
 ---
 icon: services/immich-frame
-title: Immich Slideshow for Nest Hub
+title: Project Migration
+subtitle: Immich Slideshow for Nest Hub
 hide:
   - toc
 ---
 ![Immich Frame icon](../assets/icons/immich-frame.svg){ width=225 }
 
-# Project Migration: Immich Slideshow for Nest Hub
+# Project Migration
+*Immich Slideshow for Nest Hub*
 
 > [!info] Project Info
 > **User:** Ben Haube | **Date:** Feb 5, 2026<br>

@@ -1,11 +1,14 @@
 ---
 icon: material/console
+title: Defining Bash Aliases
+subtitle: Increase Productivity
 hide:
   - toc
 ---
 ![material/console icon](../assets/icons/console.svg){ width=225 }
 
-# Defining Terminal Aliases
+# Defining Bash Aliases
+*Increase Productivity*
 
 > [!question] FAQ
 > **What are terminal aliases?**

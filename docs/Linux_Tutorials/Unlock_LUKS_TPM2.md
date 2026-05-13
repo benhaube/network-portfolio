@@ -1,12 +1,14 @@
 ---
 icon: material/lock-open
-title: Unlocking LUKS Volumes w/ TPM2
+title: Decrypt LUKS with TPM2
+subtitle: Speeding Up the Boot Process
 hide:
   - toc
 ---
 ![Custom lock-harddisk icon](../assets/icons/lock-harddisk.svg){ width=225 }
 
-# Unlocking LUKS Volumes with TPM2
+# Decrypt LUKS with TPM2
+*Speeding Up the Boot Process*
 
 > [!info] 
 > Unlocking your LUKS volume with a **TPM2** provides a secure way to enable automatic decryption during boot, usually eliminating the need to type a passphrase unless the system state changes. The most common and recommended way to achieve this on modern Linux systems, especially those using LUKS2 and systemd, is by using the `systemd-cryptenroll` tool.

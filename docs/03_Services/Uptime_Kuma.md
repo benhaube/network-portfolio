@@ -1,5 +1,8 @@
 ---
 icon: services/uptime-kuma
+title: Uptime Kuma
+subtitle: A Fancy Monitoring Tool
+description: A fancy self-hosted service monitoring tool.
 tags:
   - Active
   - Service

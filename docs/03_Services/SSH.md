@@ -1,6 +1,8 @@
 ---
 icon: material/console-network
-title: SSH (Secure Shell)
+title: SSH
+subtitle: Secure Shell
+description: Provides secure encrypted communications between two untrusted hosts over an insecure network.
 tags:
   - Active
   - Service
@@ -14,7 +16,9 @@ hide:
 ---
 ![Material Design ssh icon](../assets/icons/ssh.svg){ width=300 }
 
-# SSH (Secure Shell)
+# SSH
+*Secure Shell*
+
 [Documentation :material-file-document-multiple:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---

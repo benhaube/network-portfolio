@@ -1,5 +1,8 @@
 ---
 icon: services/fluidd
+title: Fluidd
+subtitle: The Klipper UI
+description: A free and open-source Klipper web interface for managing your 3D-printer.
 tags:
   - Active
   - Service

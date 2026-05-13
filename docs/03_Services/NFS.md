@@ -1,6 +1,8 @@
 ---
 icon: material/folder-network
-title: NFS (Network File System)
+title: NFS
+subtitle: Network File System
+description: Remote file system access for Linux.
 tags:
   - Active
   - Service
@@ -22,7 +24,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Remote file system access
++ Remote file system access for Linux.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `2049`

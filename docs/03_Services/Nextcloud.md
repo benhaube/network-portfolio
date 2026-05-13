@@ -1,5 +1,8 @@
 ---
 icon: services/nextcloud
+title: Nextcloud
+subtitle: Private Cloud
+description: Self-hosted cloud storage and collaboration platform.
 status: deprecated
 tags:
   - Deprecated
@@ -14,7 +17,7 @@ hide:
 ![Nextcloud Icon](../assets/icons/nextcloud.svg#only-dark){ width=200 }
 
 # Nextcloud
-[GitHub :material-github:](https://github.com/nextcloud/documentation){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.nextcloud.com/){ .md-button }
+[GitHub :material-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.nextcloud.com/){ .md-button }
 
 ---
 ## :material-information-outline: Overview

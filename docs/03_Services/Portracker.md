@@ -1,5 +1,8 @@
 ---
 icon: services/portracker
+title: Portracker
+subtitle: Port Monitoring & Discovery
+description: A self-hosted, real-time port monitoring and discovery tool.
 tags:
   - Active
   - Service

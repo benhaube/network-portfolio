@@ -2,6 +2,8 @@
 icon: services/gotify-notification
 status: new
 title: Gotify
+subtitle: Push Notifications
+description: A simple server for sending and receiving messages in real-time per WebSocket.
 tags:
   - Active
   - Service

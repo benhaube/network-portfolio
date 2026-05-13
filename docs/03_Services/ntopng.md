@@ -2,6 +2,8 @@
 icon: services/ntop
 status: inactive
 title: ntopng
+subtitle: Network Traffic Probe
+description: Web-based traffic and security network traffic monitoring.
 tags:
   - Inactive
   - Service
@@ -15,7 +17,9 @@ hide:
 ---
 ![ntop Logo](../assets/icons/ntop.svg){ width=250 }&ensp;![ntopng logo](../assets/icons/ntopng.png){ width=50 }
 
-# ntopng (Traffic Probe)
+# ntopng
+*Network Traffic Probe*
+
 [GitHub :material-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://www.ntop.org/guides/ntopng/){ .md-button }
 
 ---

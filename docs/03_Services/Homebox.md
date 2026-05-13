@@ -1,5 +1,8 @@
 ---
 icon: services/homebox
+title: Homebox
+subtitle: Inventory Management
+description: An inventory and organization system built for the home user.
 status: new
 tags:
   - Active

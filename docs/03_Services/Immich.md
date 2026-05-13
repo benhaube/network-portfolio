@@ -1,5 +1,8 @@
 ---
 icon: services/immich
+title: Immich
+subtitle: Bye Bye, Google Photos
+description: High performance self-hosted photo and video management solution.
 tags:
   - Active
   - Service

@@ -1,6 +1,8 @@
 ---
 icon: services/youtube-dl
 title: yt-dlp Web-UI
+subtitle: Download Videos from YouTube
+description: A Web UI and RPC server for `yt-dlp`.
 tags:
   - Active
   - Service

@@ -1,5 +1,8 @@
 ---
 icon: services/openspeedtest
+title: OpenSpeedTest
+subtitle: Test Network Performance
+description: A free & open-source HTML5 network performance estimation tool.
 tags:
   - Active
   - Service

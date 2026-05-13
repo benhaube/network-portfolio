@@ -1,6 +1,8 @@
 ---
 icon: material/printer
-title: CUPS (Open Print Server)
+title: CUPS
+subtitle: Open Print Server
+description: A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 tags:
   - Active
   - Service

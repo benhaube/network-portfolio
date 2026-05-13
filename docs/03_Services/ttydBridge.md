@@ -1,5 +1,8 @@
 ---
 icon: material/console
+title: ttydBridge
+subtitle: The Terminal on the Web
+description: A DockerApp makes it easy to use the host terminal on the Web.
 tags:
   - Active
   - Service
@@ -19,7 +22,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A DockerApp makes it easy to use the host terminal in the Web.
++ A DockerApp makes it easy to use the host terminal on the Web.
 
 #### :symbols-settings-ethernet: Port(s): 
 + `2222`

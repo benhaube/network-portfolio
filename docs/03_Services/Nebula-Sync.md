@@ -1,6 +1,8 @@
 ---
 icon: material/cog-sync
 title: Nebula-Sync
+subtitle: Synchronize Pi-hole
+description: Synchronize configuration between multiple Pi-hole instances.
 status: deprecated
 tags:
   - Deprecated

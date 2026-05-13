@@ -1,5 +1,7 @@
 ---
 icon: services/spoolman
+title: Spoolman
+subtitle: Filament Inventory Management
 tags:
   - Active
   - Service

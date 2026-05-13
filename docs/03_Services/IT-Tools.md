@@ -1,6 +1,8 @@
 ---
 icon: services/it-tools
 title: IT-Tools
+subtitle: Handy Tools for Devs
+description: Handy tools for network administrators and developers.
 tags:
   - Active
   - Service

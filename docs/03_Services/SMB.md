@@ -1,6 +1,8 @@
 ---
 icon: material/folder-network
-title: SMB (Server Message Block)
+title: SMB
+subtitle: Server Message Block
+description: Remote file system access.
 tags:
   - Active
   - Service
@@ -14,7 +16,9 @@ hide:
 ---
 ![Material Design folder-network icon](../assets/icons/folder-network.svg){ width=200 }
 
-# SMB (Server Message Block)
+# SMB
+*Server Message Block*
+
 [Documentation :material-file-document-multiple:](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-smb/f210069c-7086-4dc2-885e-861d837df688){ .md-button .md-button--primary }
 
 ---

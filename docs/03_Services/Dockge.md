@@ -1,5 +1,8 @@
 ---
 icon: services/dockge
+title: Dockge
+subtitle: Docker Management
+description: A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 tags:
   - Active
   - Service

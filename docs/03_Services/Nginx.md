@@ -1,6 +1,8 @@
 ---
 icon: simple/nginx
-title: Nginx (Network Documentation)
+title: Nginx
+subtitle: Network Documentation
+description: The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 tags:
   - Active
   - Service
@@ -12,7 +14,9 @@ hide:
 ![Nginx Icon](../assets/icons/nginx-light.svg#only-light){ width=200 }
 ![Nginx Icon](../assets/icons/nginx.svg#only-dark){ width=200 }
 
-# Nginx (Network Documentation)
+# Nginx
+*Network Documentation*
+
 [GitHub :material-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://nginx.org/en/docs/){ .md-button }
 
 ---

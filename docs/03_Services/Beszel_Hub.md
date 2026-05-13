@@ -1,6 +1,8 @@
 ---
 icon: services/beszel
 title: Beszel
+subtitle: Server Monitoring
+description: A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
 tags:
   - Active
   - Service

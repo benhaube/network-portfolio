@@ -1,5 +1,8 @@
 ---
 icon: material/web-clock
+title: Chrony
+subtitle: NTP Server
+description: Advanced, lightweight NTP client and server.
 tags:
   - Active
   - Service

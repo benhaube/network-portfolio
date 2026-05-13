@@ -1,5 +1,8 @@
 ---
 icon: simple/caddy
+title: Caddy
+subtitle: Reverse-Proxy Server
+description: Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 status: new
 tags:
   - Active
@@ -74,7 +77,7 @@ hide:
     sudo systemctl reload caddy
     ```
 
-#### :material-file-cog: The 'Caddyfile' *(configuration file)*:
+#### :material-file-cog: The 'Caddyfile':
 
 ```nginx title="<code>/etc/caddy/Caddyfile</code>" linenums="1"
 --8<-- "Caddyfile"

@@ -1,5 +1,8 @@
 ---
 icon: simple/syncthing
+title: Syncthing
+subtitle: File Synchronization
+description: Open decentralized file synchronization.
 tags:
   - Active
   - Backup

@@ -1,5 +1,8 @@
 ---
 icon: services/klipper
+title: Moonraker
+subtitle: The Klipper Web API
+description: Web API server for Klipper. 
 tags:
   - Active
   - Service

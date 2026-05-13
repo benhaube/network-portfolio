@@ -1,5 +1,8 @@
 ---
 icon: services/glance
+title: Glance
+subtitle: Server Dashboard
+description: A self-hosted dashboard that puts all your feeds in one place. 
 tags:
   - Active
   - Service

@@ -1,5 +1,8 @@
 ---
 icon: simple/homeassistant
+title: Home Assistant
+subtitle: Awaken Your Home
+description: Open-source home automation that puts local control and privacy first.
 tags:
   - Active
   - Service

@@ -1,6 +1,8 @@
 ---
 icon: simple/pihole
-title: Pi-hole DNS Server
+title: Pi-hole
+subtitle: A DNS Sinkhole
+description: A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 status: deprecated
 tags:
   - Deprecated

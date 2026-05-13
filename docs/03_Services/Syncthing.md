@@ -2,6 +2,7 @@
 icon: simple/syncthing
 tags:
   - Active
+  - Backup
   - Service
   - Software
   - Docker

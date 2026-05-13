@@ -3,7 +3,7 @@
 # --- Site Name and URL ---
 site_name: Network Documentation & Portfolio
 site_url: https://portfolio.rac3r4life.online
-site_description:  My personal, self-hosted portfolio website and blog made with Material for MkDocs.
+site_description:  My personal, self-hosted network documentation, professional portfolio, and blog website. Designed to showcase my knowledge and capabilities in IT and network security, and to make managing my homelab easier.
 
 # --- Theme Settings ---
 theme:

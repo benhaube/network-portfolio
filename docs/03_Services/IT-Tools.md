@@ -17,6 +17,8 @@ hide:
 ![IT-Tools Icon](../assets/icons/it-tools-dark.svg#only-dark){ width=200 }
 
 # IT-Tools
+*Handy Tools for Devs*
+
 [GitHub :material-github:](https://github.com/CorentinTh/it-tools){ .md-button .md-button--primary }
 
 ---

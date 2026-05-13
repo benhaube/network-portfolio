@@ -17,6 +17,8 @@ hide:
 ![Portainer Icon](../assets/icons/portainer-pink-dark.svg#only-dark){ width=200 }
 
 # Portainer-EE
+*Container Management*
+
 [GitHub :material-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
 
 ---

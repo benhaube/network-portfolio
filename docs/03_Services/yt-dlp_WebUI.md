@@ -17,6 +17,8 @@ hide:
 ![YouTube-DL Icon](../assets/icons/youtube-dl.svg#only-dark){ width=200 }
 
 # yt-dlp Web-UI
+*Download Videos from YouTube*
+
 [GitHub :material-github:](https://github.com/marcopiovanello/yt-dlp-web-ui){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/marcopiovanello/yt-dlp-web-ui/wiki){ .md-button }
 
 ---

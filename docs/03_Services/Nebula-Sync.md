@@ -18,6 +18,8 @@ hide:
 ![Nebula Sync Icon](../assets/icons/nebula-sync.svg){ width=200 }
 
 # Nebula-Sync
+*Synchronize Pi-hole*
+
 [GitHub :material-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---

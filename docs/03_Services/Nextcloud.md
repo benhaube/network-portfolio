@@ -17,6 +17,8 @@ hide:
 ![Nextcloud Icon](../assets/icons/nextcloud.svg#only-dark){ width=200 }
 
 # Nextcloud
+*Private Cloud*
+
 [GitHub :material-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.nextcloud.com/){ .md-button }
 
 ---

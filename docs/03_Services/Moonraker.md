@@ -16,6 +16,8 @@ hide:
 ![Klipper logo](../assets/icons/klipper.svg){ width=250 }
 
 # Moonraker
+*The Klipper Web API*
+
 [GitHub :material-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button }
 
 ---

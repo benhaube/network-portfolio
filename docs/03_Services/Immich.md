@@ -17,6 +17,8 @@ hide:
 ![Immich Logo](../assets/icons/immich.svg){ width=200 }
 
 # Immich
+*Bye Bye, Google Photos*
+
 [GitHub :material-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.immich.app/overview/quick-start/){ .md-button }
 
 ---

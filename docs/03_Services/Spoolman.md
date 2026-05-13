@@ -14,6 +14,8 @@ hide:
 ![Spoolman logo](../assets/icons/spoolman.svg){ width=200 }
 
 # Spoolman
+*Filament Inventory Management*
+
 [GitHub :material-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button }
 
 ---

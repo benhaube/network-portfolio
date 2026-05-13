@@ -16,6 +16,8 @@ hide:
 ![Material Design console icon](../assets/icons/console.svg){ width=200 }
 
 # ttydBridge
+*The Terminal on the Web*
+
 [GitHub :material-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }
 
 ---

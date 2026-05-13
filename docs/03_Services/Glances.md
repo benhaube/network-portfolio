@@ -16,6 +16,8 @@ hide:
 ![Glances Logo](../assets/icons/glances-dark.svg#only-dark){ width=200 }
 
 # Glances
+*An Eye on Your System*
+
 [GitHub :material-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/nicolargo/glances/wiki){ .md-button }
 
 ---

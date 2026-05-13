@@ -18,6 +18,8 @@ hide:
 ![Portracker Icon](../assets/icons/portracker-dark.svg#only-dark){ width=200 }
 
 # Portracker
+*Port Monitoring & Discovery*
+
 [GitHub :material-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
 
 ---

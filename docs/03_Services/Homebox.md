@@ -17,6 +17,8 @@ hide:
 ![Homebox Logo](../assets/icons/homebox.svg){ width=200 }
 
 # Homebox
+*Inventory Management*
+
 [GitHub :material-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://homebox.software/en/quick-start/){ .md-button }
 
 ---

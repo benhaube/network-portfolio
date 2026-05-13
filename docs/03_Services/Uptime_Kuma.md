@@ -17,6 +17,8 @@ hide:
 ![Uptime Kuma Icon](../assets/icons/uptime-kuma.svg#only-dark){ width=200 }
 
 # Uptime Kuma
+*A Fancy Monitoring Tool*
+
 [GitHub :material-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/louislam/uptime-kuma/wiki){ .md-button }
 
 ---

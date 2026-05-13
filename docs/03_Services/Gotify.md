@@ -17,6 +17,8 @@ hide:
 ![Gotify logo](../assets/icons/gotify-logo.png){ width=200 }
 
 # Gotify
+*Push Notifications*
+
 [GitHub :material-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://gotify.net/docs/){ .md-button }
 
 ---

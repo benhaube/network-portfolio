@@ -2,7 +2,7 @@
 icon: services/nextcloud
 status: deprecated
 tags:
-  - Inactive
+  - Deprecated
   - Service
   - Software
   - Docker

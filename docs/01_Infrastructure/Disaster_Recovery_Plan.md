@@ -1,7 +1,7 @@
 ---
 icon: material/restore-alert
 title: Disaster Recovery Plan
-subtitle: Maintain High Availability
+subtitle: Maintaining High Availability
 tags:
   - Infrastructure
   - Policy
@@ -14,7 +14,7 @@ tags:
 ![Material Design restore-alert icon](../assets/icons/restore-alert-color.svg){ width=200 }
 
 # Disaster Recovery Plan
-*Maintain High Availability*
+*Maintaining High Availability*
 
 > [!info] 
 > **Objective:**

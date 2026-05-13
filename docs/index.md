@@ -31,16 +31,16 @@ hide:
 
 + :material-router-wireless:&ensp;[ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md): Main router for the local network.
 + :material-router-wireless:&ensp;[ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md): Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
-+ :material-desktop-tower:&ensp;[Ben's Desktop PC](./02_Hardware/Ben's_Desktop.md): Ben's main desktop PC located in the office upstairs.
-+ :material-laptop:&ensp;[Ben's Laptop PC](./02_Hardware/Ben's_Laptop.md): Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
++ :material-desktop-tower:&ensp;[Ben's Workstation](./02_Hardware/Ben's_Desktop.md): Ben's main workstation located in the office upstairs.
++ :material-laptop:&ensp;[Ben's Laptop](./02_Hardware/Ben's_Laptop.md): Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
 + :symbols-mobile:&ensp;[Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md): Ben's main mobile device. Connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
-+ :material-debian:&ensp;[Debian Server VM](./02_Hardware/Debian_Server_VM.md): General purpose Debian Linux server hosted on *[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md)*. 
++ :material-debian:&ensp;[Debian Server](./02_Hardware/Debian_Server_VM.md): General purpose Debian Linux server hosted on *[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md)*. 
 + :material-wan:&ensp;[Hitron Modem](./02_Hardware/Hitron_Modem.md): DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
-+ :material-printer-3d-nozzle:&ensp;[Kacey 3D-Printer (Creality^&copy;^ K1C)](./02_Hardware/Kacey_3D-printer.md): Creality K1C 3D-printer located in the office upstairs. 
++ :material-printer-3d-nozzle:&ensp;[Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md): Creality K1C 3D-printer located in the office upstairs. 
 + :material-raspberry-pi:&ensp;[Raspberry Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md): Main DNS server *(Pi-hole)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
 + :material-raspberry-pi:&ensp;[Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md): Second DNS server *(Pi-hole)*.
-+ :material-desktop-tower:&ensp;[Rob's Desktop PC](./02_Hardware/Rob's_Desktop.md): Rob's main desktop PC located in the office upstairs.
-+ :material-laptop:&ensp;[Rob's Laptop PC](02_Hardware/Rob's_Laptop.md): Rob's laptop PC for work and gaming
++ :material-desktop-tower:&ensp;[Rob's Workstation](./02_Hardware/Rob's_Desktop.md): Rob's main workstation located in the office upstairs.
++ :material-laptop:&ensp;[Rob's Laptop](02_Hardware/Rob's_Laptop.md): Rob's laptop PC for work and gaming
 + :material-switch:&ensp;[TP-Link Switch](./02_Hardware/TP-Link_Switch.md): Core gigabit desktop switch *(5-port)*. 
 + :material-switch:&ensp;[Ugreen Switch](./02_Hardware/Ugreen_Switch.md): Rack-mounted 2.5 gigabit switch in the living room.
 + :material-nas:&ensp;[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md): Primary NAS server & VM host. 
@@ -54,9 +54,9 @@ hide:
 
 + :services-beszel:&ensp;[Beszel](./03_Services/Beszel_Hub.md): A lightweight server monitoring hub with historical data, docker stats, and alerts.
 + :services-caddy:&ensp;[Caddy](./03_Services/Caddy.md): Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
-+ :material-web-clock:&nbsp;[Chrony *(NTP Server)*](./03_Services/Chrony.md): Advanced, lightweight NTP client and server.
++ :material-web-clock:&nbsp;[Chrony](./03_Services/Chrony.md): Advanced, lightweight NTP client and server.
 + :services-cloudflare:&ensp;[Cloudflared](./03_Services/Cloudflared.md): A secure reverse-proxy tunnel for hosting private services on the public Internet.
-+ :material-printer:&ensp;[CUPS *(Open Print Server)*](./03_Services/CUPS_Print_Server.md): A standards-based, open-source printing system for Linux and other Unix-like operating systems.
++ :material-printer:&ensp;[CUPS](./03_Services/CUPS_Print_Server.md): A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 + :services-dockge:&ensp;[Dockge](./03_Services/Dockge.md): A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 + :services-f1-replay-timing:&ensp;[F1 Replay Timing](./03_Services/F1_Replay_Timing.md): Visualization of real-time track data and telemetry synced to F1 live and replays.
 + :services-fluidd:&ensp;[Fluidd](./03_Services/Fluidd.md): A free and open-source Klipper web interface for managing your 3D-printer.
@@ -71,20 +71,20 @@ hide:
 + :services-klipper:&ensp;[Moonraker](./03_Services/Moonraker.md): Web API server for *[Klipper](https://www.klipper3d.org/)*.
 + :material-cog-sync:&ensp;[Nebula-Sync](./03_Services/Nebula-Sync.md): Synchronize configuration between multiple *[Pi-hole](https://pi-hole.net)* instances.
 + :services-nextcloud:&ensp;[Nextcloud](./03_Services/Nextcloud.md): Self-hosted cloud storage and collaboration platform.
-+ :material-folder-network:&ensp;[NFS *(Network File System)*](./03_Services/NFS.md): Remote file system access.
-+ :simple-nginx:&ensp;[Nginx *(Network Portfolio)*](./03_Services/Nginx.md): The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
++ :material-folder-network:&ensp;[NFS](./03_Services/NFS.md): Remote file system access.
++ :simple-nginx:&ensp;[Nginx](./03_Services/Nginx.md): The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 + :services-ntop:&ensp;[ntopng](./03_Services/ntopng.md): Web-based traffic and security network traffic monitoring. 
-+ :simple-obsidian:&ensp;[Obsidian LiveSync *(CouchDB)*](./03_Services/Obsidian_LiveSync.md): Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
++ :simple-obsidian:&ensp;[Obsidian LiveSync](./03_Services/Obsidian_LiveSync.md): Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 + :services-openspeedtest:&ensp;[OpenSpeedTest](./03_Services/OpenSpeedTest.md): A free & open-source HTML5 network performance estimation tool.
-+ :simple-pihole:&ensp;[Pi-hole DNS Server](./03_Services/Pi-hole.md): A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
++ :simple-pihole:&ensp;[Pi-hole](./03_Services/Pi-hole.md): A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 + :services-portainer:&ensp;[Portainer-EE](./03_Services/Portainer.md): A lightweight service delivery platform for containerized applications. 
 + :services-portracker:&ensp;[Portracker](./03_Services/Portracker.md): A self-hosted, real-time port monitoring and discovery tool.
-+ :material-remote-desktop:&ensp;[RDP *(Remote Desktop Protocol)*](./03_Services/RDP.md): Remote desktop access over the local network. *(not exposed to the internet)*
-+ :material-folder-network:&ensp;[SMB *(Server Message Block)*](./03_Services/RDP.md): Remote file system access.
++ :material-remote-desktop:&ensp;[RDP](./03_Services/RDP.md): Remote desktop access over the local network. *(not exposed to the internet)*
++ :material-folder-network:&ensp;[SMB](./03_Services/RDP.md): Remote file system access.
 + :services-spoolman:&ensp;[Spoolman](./03_Services/Spoolman.md): Keep track of your inventory of 3D-printer filament spools. 
-+ :material-console-network:&ensp;[SSH *(Secure Shell)*](./03_Services/SSH.md): Provides secure encrypted communications between two untrusted hosts over an insecure network.
++ :material-console-network:&ensp;[SSH](./03_Services/SSH.md): Provides secure encrypted communications between two untrusted hosts over an insecure network.
 + :simple-syncthing:&ensp;[Syncthing](./03_Services/Syncthing.md): Open decentralized file synchronization.
-+ :services-technitium:&ensp;[Technitium DNS Server](./03_Services/Technitium.md): An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
++ :services-technitium:&ensp;[Technitium](./03_Services/Technitium.md): An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 + :material-console:&ensp;[ttydBridge](./03_Services/ttydBridge.md): A DockerApp makes it easy to use the host terminal in the Web.
 + :services-uptime-kuma:&ensp;[Uptime Kuma](./03_Services/Uptime_Kuma.md): A fancy self-hosted monitoring tool.
 + :simple-wireguard:&ensp;[WireGuard Server](./03_Services/Wireguard_Server.md): An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
@@ -94,7 +94,7 @@ hide:
 ## :material-swap-horizontal-bold: Change Management
 
 + :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md): Preparing the *[Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md)* to be a *[Caddy](./03_Services/Caddy.md)* reverse proxy server to give unique domain names to services hosted on the local network.
-+ :simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;[DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)](./04_Change_Management/DNS_Migration.md): Preparing to migrate from *[Pi-hole](./03_Services/Pi-hole.md)* to *[Technitium](./03_Services/Technitium.md)* for DNS queries on the local network. 
++ :simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;[DNS Migration](./04_Change_Management/DNS_Migration.md): Preparing to migrate from *[Pi-hole](./03_Services/Pi-hole.md)* to *[Technitium](./03_Services/Technitium.md)* for DNS queries on the local network. 
 
 ---
 ## :material-printer-3d-nozzle: 3D Printing
@@ -112,7 +112,7 @@ hide:
 
 ### Modifications
 + :material-cog:&ensp;[Manual Bed Leveling Mod](./3D_Printing/K1_Bed_Level_Knobs_Tutorial.md): Installing a bed leveling modification on the [Creality^&copy;^ K1C](./02_Hardware/Kacey_3D-printer.md).
-+ :devices-toothbrush-nozzle:&ensp;[Interactive Manual Nozzle Cleaning Macro](./3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md): Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
++ :devices-toothbrush-nozzle:&ensp;[Nozzle Cleaning Macro](./3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md): Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
 + :devices-prowiper:&ensp;[PROWIPER^&copy;^ Mod](./3D_Printing/PROWIPER_Mod.md): Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality^&copy;^ K1C](./02_Hardware/Kacey_3D-printer.md).
 
 ---

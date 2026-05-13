@@ -16,13 +16,15 @@ hide:
 ![ASUS Router Icon](../assets/icons/asus-router.svg#only-dark){ width=200 }
 
 # ASUS RT-AX55
+*AiMesh Node*
+
 [Router Web-UI :material-application-cog:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Asuswrt-Merlin :material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=c59d7d6d-28e2-476f-affc-cb81b9846164&sn=MBIG31800578KSJ&from=Myproducts){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ AiMesh Node
++ AiMesh node in the office on the 2nd floor. Extending the Wi-Fi network. 
 
 #### :symbols-host: Hostname(s):
 + `aimesh-node`

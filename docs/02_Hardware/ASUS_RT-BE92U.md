@@ -1,7 +1,7 @@
 ---
 icon: material/router-wireless
 title: ASUS RT-BE92U
-subtitle: Main Router
+subtitle: Wireless Router
 tags:
   - Hardware
   - Network
@@ -18,13 +18,15 @@ hide:
 ![ASUS Router Icon](../assets/icons/asus-router.svg#only-dark){ width=200 }
 
 # ASUS RT-BE92U
+*Wireless Router*
+
 [Router Web-UI :material-application-cog:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Asuswrt-Merlin :material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=d50535eb-570b-44c6-87c6-e77cd9e5eb09&sn=T5IG7L216442EU5&from=Myproducts){ .md-button }
 
 ---
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Main Router
++ The main wireless router and firewall for the local network.
 
 #### :symbols-host: Hostname(s):
 + `asusrouter`

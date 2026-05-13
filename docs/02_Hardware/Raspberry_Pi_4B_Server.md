@@ -21,6 +21,8 @@ hide:
 &nbsp;![Arm Logo](../assets/icons/arm.svg){ width=50 }
 
 # Raspberry Pi 4B Server
+*Secondary DNS Server*
+
 [Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :material-debian:](https://www.debian.org/doc/){ .md-button }
 
 ---

@@ -15,6 +15,8 @@ hide:
 ![WAN Icon](../assets/icons/wan.svg){ width=200 }
 
 # Hitron Modem
+*DOCSIS 3.1 Cable Modem*
+
 [Xfinity Account :brands-xfinity:](https://login.xfinity.com/login){ .md-button .md-button--primary }
 
 ---

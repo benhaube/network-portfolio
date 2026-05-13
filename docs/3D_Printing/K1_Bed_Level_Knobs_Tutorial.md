@@ -1,6 +1,7 @@
 ---
 icon: material/cog
 title: Manual Bed Leveling Mod
+subtitle: Fine Tune Your Bed Level
 hide:
   - toc
 ---
@@ -8,6 +9,7 @@ hide:
 ![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=400 }
 
 # Manual Bed Leveling Mod
+*Fine Tune Your Bed Level*
 
 [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button }
 

@@ -1,12 +1,14 @@
 ---
 icon: devices/toothbrush-nozzle
-title: Manual Nozzle Cleaning Macro
+title: Nozzle Cleaning Macro
+subtitle: Manually Clean Your Nozzle
 hide:
   - toc
 ---
 ![Toothbrush Nozzle Icon](../assets/icons/toothbrush-nozzle.svg){ width=300 }
 
-# Interactive Manual Nozzle Cleaning Macro
+# Nozzle Cleaning Macro
+*Manually Clean Your Nozzle*
 
 [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button }
 

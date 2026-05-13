@@ -1,6 +1,7 @@
 ---
 icon: simple/caddy
 title: Reverse Proxy & DNS Routing
+subtitle: Domain Names for Local Services
 tags:
   - Infrastructure
   - Server
@@ -13,6 +14,7 @@ hide:
 ![Caddy Logo](../assets/icons/caddy.svg){ width=200 }
 
 # Reverse Proxy & DNS Routing
+*Domain Names for Local Services*
 
 > [!info]
 > **Goal:**

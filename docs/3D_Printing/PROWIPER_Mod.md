@@ -1,12 +1,14 @@
 ---
 icon: devices/prowiper
 title: PROWIPER&copy; Mod
+subtitle: Improved Nozzle Brush Routine
 hide:
   - toc
 ---
 ![Custom PROWIPER^&copy;^ Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=200 }&ensp;![3DPHUB Logo](../assets/icons/3dphub.svg){ width=50 }
 
 # PROWIPER^&copy;^ Mod
+*Improved Nozzle Brush Routine*
 
 [Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button }
 

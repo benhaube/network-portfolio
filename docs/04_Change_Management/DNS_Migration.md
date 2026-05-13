@@ -1,6 +1,7 @@
 ---
 icon: material/dns
 title: DNS Migration
+subtitle: From Pi-hole to Technitium
 tags:
   - DNS
   - Domain
@@ -12,7 +13,8 @@ hide:
 ---
 ![Pi-hole Icon](../assets/icons/pi-hole.svg){ width=150 }&nbsp;![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }&emsp;![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=150 }![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=150 }
 
-# DNS Migration (Pi-hole :material-arrow-right-thin: Technitium)
+# DNS Migration
+*From Pi-hole to Technitium*
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 icon: services/portainer
 title: Portainer-EE
-status: deprecated
+status: inactive
 tags:
   - Inactive
   - Service

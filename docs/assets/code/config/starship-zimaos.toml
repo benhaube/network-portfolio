@@ -1,0 +1,75 @@
+#:schema https://starship.rs/config-schema.json
+
+add_newline = true
+# format = '$all$directory$character'
+# right_format = """$all"""
+continuation_prompt = '[❯❯ ](#b58900)'
+
+[character]
+success_symbol = '[❯](bold #859900)'
+error_symbol = '[❯](bold #dc322f)'
+
+[username]
+style_user = 'bold #93a1a1'
+style_root = 'bold #dc322f'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = true
+ssh_symbol = " "
+format = '@ [$ssh_symbol$hostname](bold #b58900) '
+disabled = false
+
+[directory]
+style = 'bold #93a1a1'
+truncation_length = 8
+truncation_symbol = '…/'
+read_only = " 󰌾"
+read_only_style = 'bold #dc322f'
+
+[localip]
+ssh_only = false
+format = '- [$localipv4](bold #b58900) '
+disabled = false
+
+[os]
+format = "on [($name) $symbol]($style)"
+style = "bold #b58900"
+disabled = false
+
+[os.symbols]
+Android = " "
+CentOS = " "
+Debian = " "
+Fedora = " "
+Kali = " "
+Linux = " "
+openSUSE = " "
+Redhat = " "
+RedHatEnterprise = " "
+SUSE = " "
+Windows = "󰍲 "
+
+[cmd_duration]
+style = 'bold #b58900'
+format = 'took [$duration]($style) '
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[memory_usage]
+symbol = "󰍛 "
+
+[package]
+symbol = "󰏗 "
+
+[python]
+symbol = " "

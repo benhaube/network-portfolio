@@ -7,7 +7,7 @@ subtitle: An Index of Relevant Tags
 
 # Infrastructure Tags
 
-Following is an index of relevant tags:
+*Following is an index of relevant tags:*
 
 ---
 

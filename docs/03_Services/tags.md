@@ -7,7 +7,7 @@ subtitle: An Index of Relevant Tags
 
 # Services Tags
 
-Following is an index of relevant tags:
+*Following is an index of relevant tags:*
 
 ---
 

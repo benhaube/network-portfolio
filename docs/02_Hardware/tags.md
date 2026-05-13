@@ -7,7 +7,7 @@ subtitle: An Index of Relevant Tags
 
 # Hardware Tags
 
-Following is an index of relevant tags:
+*Following is an index of relevant tags:*
 
 ---
 

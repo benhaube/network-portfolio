@@ -15,7 +15,9 @@ hide:
 ---
 ![Beszel Logo](../assets/icons/beszel.svg){ width=200 }
 
-# Beszel (Hub & Agent)
+# Beszel
+*Server Monitoring*
+
 [GitHub :material-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/henrygd/beszel-docs){ .md-button }
 
 ---

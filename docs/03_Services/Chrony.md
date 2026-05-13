@@ -14,7 +14,9 @@ hide:
 ---
 ![Chrony Icon](../assets/icons/chrony.svg){ width=200 }
 
-# Chrony (NTP Server)
+# Chrony
+*NTP Server*
+
 [Gitlab :simple-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://chrony-project.org/documentation.html){ .md-button }
 
 ---

@@ -39,6 +39,17 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (admin)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (bhaube)"
 
+#### :material-message-alert: Notifications:
+
+| Application&emsp;:material-information-outline:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                          |
+| :---------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| :services-beszel:&nbsp;[Beszel Alerts](#beszel-alerts)                                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc. |
+| :services-uptime-kuma:&nbsp;[Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.               |
+| :material-console-network:&nbsp;[SSH Alerts](#ssh-alerts)                                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.      |
+| :material-router-wireless:&nbsp;[Router Alerts](#router-alerts)                                                                                 | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, and `connmon` events.     |
+| :material-cloud-upload-outline:&nbsp;[Backup Alerts](#backup-alerts)                                                                            | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                    |
+| :services-homebox:&nbsp;[Homebox Alerts](#homebox-alerts)                                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                        |
+
 ## :symbols-deployed-code-update: Deployment Details
 
 | Host Device                                                         | Method                                | Container Name | Image                  |
@@ -47,26 +58,13 @@ hide:
 
 ### :material-cog: Configuration 
 
+#### :material-docker: Docker Compose:
+
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "gotify.yml"
 ```
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
-
-#### :material-application-cog: Configured Applications:
-
-| Application                                                                          | Host Device                                                                                      | Role / Notes                                                                                                                     |
-| :----------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
-| :services-beszel:&nbsp;[Beszel Alerts](#beszel-alerts)                               | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Receive notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc. |
-| :services-uptime-kuma:&nbsp;[Uptime Kuma Alerts](#uptime-kuma-alerts)                | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | Receive notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.               |
-| :material-console-network:&nbsp;[SSH Session Alerts](#ssh-session-alerts)            | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                 | Receive notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.      |
-| -                                                                                    | :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | -                                                                                                                                |
-| -                                                                                    | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | -                                                                                                                                |
-| -                                                                                    | :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | -                                                                                                                                |
-| -                                                                                    | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | -                                                                                                                                |
-| :material-router-wireless:&nbsp;[Router Alets](#router-alerts)                       | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                 | Receive notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, and `connmon` events.     |
-| :material-cloud-upload-outline:&nbsp;[Home Directory Backup](#home-directory-backup) | :material-desktop-tower:&nbsp;[Ben's Desktop PC](../02_Hardware/Ben's_Desktop.md)                | Receive notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                    |
-| -                                                                                    | :material-laptop:&nbsp;[Ben's Laptop PC](../02_Hardware/Ben's_Laptop.md)                         | -                                                                                                                                |
 
 #### :services-beszel: Beszel Alerts:
 
@@ -100,7 +98,7 @@ hide:
     + Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
     + Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors. 
 
-#### :material-console-network: SSH Session Alerts:
+#### :material-console-network: SSH Alerts:
 
 1. Create the script: 
 
@@ -263,7 +261,7 @@ hide:
 
 4. Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, conmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.
 
-#### :material-cloud-upload-outline: Home Directory Backup
+#### :material-cloud-upload-outline: Backup Alerts
 
 1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
 
@@ -275,3 +273,22 @@ hide:
     2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
 
 2. That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup. 
+
+#### :services-homebox: Homebox Alerts
+
+![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
+![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
+
+1. Log into the Homebox Web application.
+2. Click the arrow to expand the "Collections" menu on the left side-bar, then click "Notifiers."
+3. Click the "Create" button.
+4. Fill out the name and URL fields. 
+
+    **URL Format:**
+
+    ```text linenums="1"
+    gotify://gotify.rac3r4life.online/<YourAppToken>
+    ```
+
+5. Click the "Test" button to send a test notification.
+6. Click "Submit" to save the new notification.

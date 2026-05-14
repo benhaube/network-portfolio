@@ -77,7 +77,7 @@ fi
 curl -sS -X POST "$GOTIFY_URL" \
     -H "X-Gotify-Key: $GOTIFY_TOKEN" \
     -F "title=$GOTIFY_TITLE" \
-    -F "message=$MSG" \
+    -F "message=$HOSTNAME: $MSG" \
     -F "extras={\"client::display\": {\"contentType\": \"text/markdown\"}}" \
     -F "priority=$GOTIFY_PRIORITY" >> "$LOG_FILE" 2>&1
 

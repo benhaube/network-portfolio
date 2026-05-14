@@ -23,7 +23,7 @@ hide:
 # ZimaOS NAS
 *Rack-Mount ZimaBoard 2*
 
-[IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :services-zimaos:](https://www.zimaspace.com/docs/zimaos/){ .md-button }
+[IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :services-zimaos:](https://www.zimaspace.com/docs/zimaos/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Device Overview

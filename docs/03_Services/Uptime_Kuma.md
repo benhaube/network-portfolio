@@ -19,7 +19,7 @@ hide:
 # Uptime Kuma
 *A Fancy Monitoring Tool*
 
-[GitHub :material-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/louislam/uptime-kuma/wiki){ .md-button }
+[GitHub :material-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/louislam/uptime-kuma/wiki){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

@@ -18,7 +18,7 @@ hide:
 # Glances
 *An Eye on Your System*
 
-[GitHub :material-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/nicolargo/glances/wiki){ .md-button }
+[GitHub :material-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/nicolargo/glances/wiki){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

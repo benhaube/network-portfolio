@@ -15,7 +15,7 @@ hide:
 # Ben's Smartphone
 *Google Pixel 9 Pro*
 
-[Android Help :brands-android-robot:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Pixel Care+ :symbols-shield-heart:](https://store.google.com/us/my-devices?hl=en-US){ .md-button }
+[Android Help :brands-android-robot:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Pixel Care+ :symbols-shield-heart:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

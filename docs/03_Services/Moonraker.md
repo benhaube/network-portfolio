@@ -18,7 +18,7 @@ hide:
 # Moonraker
 *The Klipper Web API*
 
-[GitHub :material-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button }
+[GitHub :material-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

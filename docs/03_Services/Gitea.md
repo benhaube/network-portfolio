@@ -22,7 +22,7 @@ hide:
 # Gitea
 *Git with a Cup of Tea*
 
-[GitHub :material-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.gitea.com/){ .md-button }
+[GitHub :material-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.gitea.com/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

@@ -17,7 +17,7 @@ hide:
 # Chrony
 *NTP Server*
 
-[Gitlab :simple-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://chrony-project.org/documentation.html){ .md-button }
+[Gitlab :simple-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://chrony-project.org/documentation.html){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

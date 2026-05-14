@@ -16,7 +16,7 @@ hide:
 # Rob's Workstation
 *High-Performance Desktop PC*
 
-[Windows Docs :material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=dc554ee0-d7d2-4018-992d-7267ebccf458&sn=MCM0KK06J149GK4&from=Myproducts){ .md-button }
+[Windows Docs :material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=dc554ee0-d7d2-4018-992d-7267ebccf458&sn=MCM0KK06J149GK4&from=Myproducts){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Device Overview

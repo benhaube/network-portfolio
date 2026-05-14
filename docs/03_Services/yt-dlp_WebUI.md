@@ -19,7 +19,7 @@ hide:
 # yt-dlp Web-UI
 *Download Videos from YouTube*
 
-[GitHub :material-github:](https://github.com/marcopiovanello/yt-dlp-web-ui){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/marcopiovanello/yt-dlp-web-ui/wiki){ .md-button }
+[GitHub :material-github:](https://github.com/marcopiovanello/yt-dlp-web-ui){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/marcopiovanello/yt-dlp-web-ui/wiki){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

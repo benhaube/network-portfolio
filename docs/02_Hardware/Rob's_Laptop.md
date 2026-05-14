@@ -19,7 +19,7 @@ hide:
 # Rob's Laptop
 *ASUS TUF Gaming Laptop*
 
-[Windows Docs :material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/){ .md-button }
+[Windows Docs :material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Device Overview

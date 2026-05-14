@@ -10,7 +10,7 @@ hide:
 # Nozzle Cleaning Macro
 *Manually Clean Your Nozzle*
 
-[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button }
+[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }
 
 > [!info] 
 > **Date Implemented:** 

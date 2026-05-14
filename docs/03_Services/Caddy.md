@@ -22,7 +22,7 @@ hide:
 # Caddy
 *Reverse-Proxy Server*
 
-[GitHub :material-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button }
+[GitHub :material-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

@@ -23,7 +23,7 @@ hide:
 # Technitium
 *Autoritative & Recursive DNS*
 
-[GitHub :material-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://technitium.com/dns/help.html){ .md-button }
+[GitHub :material-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://technitium.com/dns/help.html){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

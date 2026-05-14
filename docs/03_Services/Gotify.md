@@ -19,7 +19,7 @@ hide:
 # Gotify
 *Push Notifications*
 
-[GitHub :material-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://gotify.net/docs/){ .md-button }
+[GitHub :material-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://gotify.net/docs/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

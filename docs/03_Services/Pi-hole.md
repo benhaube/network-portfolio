@@ -20,7 +20,7 @@ hide:
 # Pi-hole
 *A DNS Sinkhole*
 
-[GitHub :material-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button }
+[GitHub :material-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

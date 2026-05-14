@@ -21,7 +21,7 @@ hide:
 # WireGuard
 *A Simple, Modern VPN*
 
-[GitHub :material-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://wg-easy.github.io/wg-easy/latest/){ .md-button }
+[GitHub :material-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

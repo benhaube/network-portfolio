@@ -17,7 +17,7 @@ hide:
 # Nginx
 *Network Documentation*
 
-[GitHub :material-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://nginx.org/en/docs/){ .md-button }
+[GitHub :material-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

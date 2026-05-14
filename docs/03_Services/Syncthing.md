@@ -21,7 +21,7 @@ hide:
 # Syncthing
 *File Synchronization*
 
-[GitHub :material-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.syncthing.net/){ .md-button }
+[GitHub :material-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.syncthing.net/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

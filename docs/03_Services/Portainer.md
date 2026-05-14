@@ -19,7 +19,7 @@ hide:
 # Portainer-EE
 *Container Management*
 
-[GitHub :material-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button }
+[GitHub :material-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

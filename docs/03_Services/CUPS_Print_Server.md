@@ -17,7 +17,7 @@ hide:
 # CUPS
 *Open Print Server*
 
-[GitHub :material-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button }
+[GitHub :material-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

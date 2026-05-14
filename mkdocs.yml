@@ -341,6 +341,10 @@ copyright: >
 extra_css:
   - assets/stylesheets/extra.css
 
+# extra_javascript:
+  # - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  # - assets/javascripts/tablesort.js
+
 # --- Project Repository URL & Docs directory ---
 repo_url: https://github.com/benhaube/network-portfolio
 repo_name: benhaube/network-portfolio

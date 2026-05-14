@@ -1,11 +1,11 @@
 ---
-icon: material/email-alert
+icon: material/message-alert
 title: Setup SSH Login Notification
 subtitle: With Email SMTP and Gotify
 hide:
   - toc
 ---
-![material-email-alert icon](../assets/icons/email-alert.svg){ width=225 }
+![material message-alert icon](../assets/icons/message-alert.svg){ width=225 }
 
 # Setup SSH Login Notification
 *With Email SMTP and Gotify*

@@ -127,6 +127,7 @@
 *[NAT]: Network Address Translation
 *[NFS]: Network File System
 *[NIC]: Network Interface Card
+*[NICs]: Network Interface Cards
 *[NSP]: Network Security Policy
 *[NTP]: Network Time Protocol
 *[NVM]: Non-Volitile Memory

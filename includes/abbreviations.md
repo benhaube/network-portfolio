@@ -9,6 +9,7 @@
 *[BIOS]: Basic Input / Output System
 *[BSD]: Berkeley Software Distribution
 *[BTRFS]: B-Tree File System
+*[CA]: Certificate Authority
 *[CAD]: Computer Aided Design
 *[CDN]: Content Delivery Network
 *[CI/CD]: Continuous Integration and Continuous Deployment

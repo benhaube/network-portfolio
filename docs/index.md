@@ -259,5 +259,8 @@ hide:
 :services-immich-frame:&ensp;[Immich Slideshow for Nest Hub](./Linux_Tutorials/Immich_Slideshow_for_Nest_Hub.md): 
 :    How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [Home Assistant](./03_Services/Home_Assistant.md) with Google Cast.
 
+:material-file-certificate-outline:&ensp;[Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md):
+:    How to generate self-signed SSL certificates for use in testing, development, and internal web servers.
+
 :material-message-alert:&ensp;[Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md): 
 :    How to set up an email and push notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`, and a Gotify server. 

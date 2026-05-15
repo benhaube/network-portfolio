@@ -15,7 +15,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design nas icon](../assets/icons/nas.svg){ width=200 }&nbsp;
+![Material Design nas icon](../assets/icons/10-in-rack.svg){ width=200 }
 ![ZimaOS Icon](../assets/icons/zimaos-light.svg#only-light){ width=50 }
 ![ZimaOS Icon](../assets/icons/zimaos-dark.svg#only-dark){ width=50 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }

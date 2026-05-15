@@ -100,7 +100,7 @@ theme:
     next: material/arrow-right-bold
     search: material/magnify
     share: material/share-variant
-    annotation: material/plus-circle
+    annotation: material/chevron-right-circle
     edit: material/file-edit-outline
     view: material/file-eye-outline
   favicon: /assets/favicon.svg

@@ -135,7 +135,7 @@ hide:
 ##### SSH Session Alerts
 
 + A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and cliet IP address.
-+ To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_Services/Gotify.md#ssh-session-alerts) section on the Gotify service documentation page.
++ To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_Services/Gotify.md#ssh-alerts) section on the Gotify service documentation page.
 
 ##### WAN IP Change
 

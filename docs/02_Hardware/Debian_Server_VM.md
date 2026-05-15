@@ -27,7 +27,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :material-toolbox: Role:  
-+ The primary DNS server in the [Technitium](03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md).
++ The primary DNS server in the [Technitium](../03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./ZimaBoard_2_NAS.md).
 
 #### :symbols-host: Hostname(s):
 + `debian-vm`

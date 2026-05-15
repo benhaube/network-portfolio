@@ -45,7 +45,7 @@ After installing OpenSSL, next we need to generate a private key. Private keys a
 1. Use the following command to generate a new 2048-bit RSA private key: 
 
     ```bash linenums="1"
-    openssl genrsa -out <example>.key 2048  # (1)!
+    openssl genrsa -out <example.key> 2048  # (1)!
     ```
 
     1. Replace `example.key` with your preferred file name.
@@ -57,7 +57,7 @@ Now that we have a private key, we need to create a Certificate Signing Request.
 1. Use the following command to create the CSR:
 
     ```bash linenums="1"
-    openssl req -new -key <example>.key -out example.csr  # (1)!
+    openssl req -new -key <example.key> -out <example.csr>  # (1)!
     ```
 
     1. Replace `example.key` with the file name of the key you generated previously, and replace `example.csr` with your preferred file name for the CSR. I usually give them both the same file name to keep it simple.
@@ -69,7 +69,7 @@ Now that we have the private key and the CSR we have the pieces we need to gener
 1. Use the following command to generate a self-signed certificate: 
 
     ```bash linenums="1"
-    openssl x509 -req -days 365 -in <example>.csr -signkey <example>.key -out <example>.crt  # (1)!
+    openssl x509 -req -days 365 -in <example.csr> -signkey <example.key> -out <example.crt>  # (1)!
     ```
 
     1. Replace `example.csr` and `example.key` with the file names you chose previously, and replace `example.crt` with your preferred file name for the certificate. Again, I usually use the same file name for everything to keep it simple. 
@@ -85,6 +85,6 @@ Now that we have the private key and the CSR we have the pieces we need to gener
 
 ## :material-file-cog-outline: Configure the Web Server
 
-The process to configure your Web server to use your new self-signed certificate will vary depending on the server you are using *(e.g., Nginx, Apache, etc.)*. Check the documentation for your specific Web server, the update the configuration file with the directory path of your certificate. 
+The process to configure your Web server to use your new self-signed certificate will vary depending on the server you are using. *(e.g., Nginx, Apache, etc.)* Check the documentation for your specific Web server, then update the configuration file with the directory path of your certificate. 
 
 Self-signed certificates should never be used for production environments, but they are great for testing, development, and internal servers. Just keep in mind that you will recieve warnings in your web browser that say you have an invalid certificate. This is because we have signed our certificate ourselves. The browsers have a certificate store full of trusted root Certificate Authorities, and your self-signed certificate does not match any of them. You can at least tell your browser to quit warning you about the certificate. 

@@ -22,16 +22,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Keep track of your inventory of 3D-printer filament spools. 
+
+:    Keep track of your inventory of 3D-printer filament spools. 
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `7912`
 
 #### :material-link-variant: URL / Access:   
+
 + <http://storage-server.internal:7912/>
 + <https://spoolman.internal>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

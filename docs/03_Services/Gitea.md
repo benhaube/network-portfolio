@@ -28,19 +28,23 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD.
+
+:    Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD.
  
 #### :symbols-settings-ethernet: Port(s): 
+
 + `3080`
 + `222`
 
 #### :material-link-variant: URL / Access: 
+
 + Web-UI:
     + <http://storage-server.internal:3080>
 + SSH: 
     + `git@storage-server.internal`
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gitea (admin)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gitea (benhaube)"

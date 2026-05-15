@@ -21,22 +21,28 @@ hide:
 ## :material-information-outline: Overview
 
 #### :material-toolbox: Role: 
-+ Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
+
+:    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
 #### :symbols-host: Hostname(s): 
+
 + `bens-phone`
 
 #### :material-map-marker-outline: Location: 
+
 + Mobile
 
 #### :material-memory: OS / Firmware:
+
 + [:brands-android-robot:&nbsp;Android 16](https://www.android.com/)
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Email&ensp;:material-arrow-right-thin:&ensp;"Google"
 
 #### :material-security: Device Security:
+
 + Titan M2 security chip *(FIDO2 / WebAuthn)*
 + Full-disk encryption
 + 8-digit PIN

@@ -25,18 +25,23 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./Ugreen_Switch.md).
+
+:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./Ugreen_Switch.md).
 
 #### :symbols-host: Hostname(s):
+
 + `ems1`
 
 #### :material-map-marker-outline: Location: 
+
 + Mobile
 
 #### :material-memory: OS / Firmware: 
+
 + [:material-microsoft:&nbsp;Windows 11 Home](https://microsoft.com/windows)
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Laptop PC"
 

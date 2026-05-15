@@ -24,19 +24,24 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
+
+:    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
 #### :symbols-host: Hostname(s):
+
 + `aimesh-node`
 
 #### :material-map-marker-outline: Location: 
+
 + Office
 + Printer-Cart 
 
 #### :material-memory: OS / Firmware: 
+
 + [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"

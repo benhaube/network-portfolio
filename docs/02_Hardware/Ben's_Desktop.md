@@ -24,23 +24,29 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
+
+:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
 #### :symbols-host: Hostname(s):
+
 + `bens-workstation`
 
 #### :material-map-marker-outline: Location: 
+
 + Office 
 + Desk
 
 #### :material-memory: OS / Firmware:
+
 + [:material-fedora:&nbsp;Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 
 #### :material-security: Device Security:
+
 + HSI-1
 + Firmware:
     + IOMMU

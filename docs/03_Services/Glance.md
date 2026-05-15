@@ -25,16 +25,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A self-hosted dashboard that puts all your feeds in one place. 
+
+:    A self-hosted dashboard that puts all your feeds in one place. 
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `8580`
 
 #### :material-link-variant: URL / Access:  
+
 + <https://glance.internal>
 + <http://pi-server.internal:8580/>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Admin"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (bhaube)"

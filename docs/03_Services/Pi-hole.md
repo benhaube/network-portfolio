@@ -26,17 +26,21 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
+
+:    A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + Web: `80`, `443`
 + DNS: `53`
 
 #### :material-link-variant: URL / Access:  
+
 + ~~[[https://pi-server.internal/admin/login]]~~
 + ~~[[https://pi-hole.internal/admin/login]]~~
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pihole Admin @ pi-zero"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pihole Admin @ pi-server"

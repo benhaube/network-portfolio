@@ -24,18 +24,22 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
+
+:    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `5984`
 
 #### :material-link-variant: URL / Access:  
+
 + :material-application-cog-outline: Settings Web UI: 
     + <http://storage-server.internal:5984/_utils>
 + :material-database-outline: Database:
     + <http://storage-server.internal:5984/obsidian-vault>
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Obsidian LiveSync"
 

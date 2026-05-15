@@ -23,17 +23,21 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
+
+:    A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `5001`
 
 #### :material-link-variant: URL / Access: 
+
 + <http://pi-server.internal:5001>
 + <http://pi-zero.internal:5001>
 + <http://debian-vm.internal:5001>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ debian-vm"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ pi-server"

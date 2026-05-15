@@ -23,15 +23,19 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Advanced, lightweight NTP client and server.
+
+:    Advanced, lightweight NTP client and server.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `123`
 
 #### :material-link-variant: URL / Access: 
+
 + `asusrouter.internal:123`
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ASUS Router"
     + SSH Key&ensp;:material-arrow-right-thin:&ensp;"admin@asusrouter"

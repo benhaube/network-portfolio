@@ -28,16 +28,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
+
+:    Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `80`
 + `443`
 
 #### :material-link-variant: URL / Access: 
+
 + <https://pi-zero.internal>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

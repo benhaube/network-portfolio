@@ -22,16 +22,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Remote desktop access over the local network *(not publicly exposed)*
+
+:    Remote desktop access over the local network *(not publicly exposed)*
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `3389`
 
 #### :material-link-variant: URL / Access:  
+
 + [rdp://192.168.50.67:3389](rdp://192.168.50.67:3389)
 + [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):  
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 

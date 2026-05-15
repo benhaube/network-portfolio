@@ -27,14 +27,17 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Open decentralized file synchronization.
+
+:    Open decentralized file synchronization.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `8384` *(TCP)*
 + `22000` *(TCP / UDP)*
 + `21027` *(UDP)*
 
 #### :material-link-variant: URL / Access:  
+
 + :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md):
     + <https://bens-workstation.internal:8384>
     + <https://192.168.50.61:8384>
@@ -56,6 +59,7 @@ hide:
     + <http://192.168.50.5:8384>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ ben-laptop" 
@@ -78,6 +82,7 @@ hide:
 ### :material-cog: Configuration  
 
 #### :symbols-install-desktop: Install Commands:
+
 + :material-fedora:&nbsp;Ben's Desktop / Ben's Laptop:
 
     ```bash linenums="1"

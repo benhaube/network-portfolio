@@ -27,21 +27,27 @@ hide:
 ## :material-information-outline: Overview
 
 #### :material-toolbox: Role:  
-+ The primary DNS server in the [Technitium](../03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./ZimaBoard_2_NAS.md).
+
+:    The primary DNS server in the [Technitium](../03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./ZimaBoard_2_NAS.md).
 
 #### :symbols-host: Hostname(s):
+
 + `debian-vm`
 
 #### :material-network-pos: Hypervisor: 
+
 + [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 
 #### :material-memory: Operating System: 
+
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :material-server-network-outline: Host Node: 
+
 + [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"server-admin@debian-vm"
 

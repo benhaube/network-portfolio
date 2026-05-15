@@ -26,16 +26,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A self-hosted, real-time port monitoring and discovery tool.
+
+:    A self-hosted, real-time port monitoring and discovery tool.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `4999`
 
 #### :material-link-variant: URL / Access:  
+
 + <http://192.168.50.4:4999>
 + <http://storage-server.internal:4999>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

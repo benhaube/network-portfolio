@@ -26,16 +26,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Remote file system access for Linux.
+
+:    Remote file system access for Linux.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `2049`
 
 #### :material-link-variant: URL / Access: 
+
 + `192.168.50.4:/media/Quick-Storage`
 + `192.168.50.4:/media/nvme0n1p1`
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@storage-server"
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"bhaube@storage-server"

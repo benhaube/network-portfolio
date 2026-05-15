@@ -29,14 +29,17 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
+
+:    An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 * `53`
 * `443`
 * `5380`
 
 #### :material-link-variant: URL / Access:  
+
 * :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
     * `192.168.50.6:53`
     * <http://debian-vm.internal:5380>
@@ -45,6 +48,7 @@ hide:
     * <http://pi-server.internal:5380>
 
 #### :material-key-chain: Credentials: 
+
 * [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     * Local Network&ensp;:material-arrow-right-thin:&ensp;"Technitium"
 

@@ -25,16 +25,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A Web UI and RPC server for `yt-dlp`.
+
+:    A Web UI and RPC server for `yt-dlp`.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `3033`
 
 #### :material-link-variant: URL / Access:  
+
 + <http://storage-server.internal:3033>
 + <https://yt-dlp.internal>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

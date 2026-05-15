@@ -26,15 +26,19 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Synchronize configuration between multiple [Pi-hole](./Pi-hole.md) instances.
+
+:    Synchronize configuration between multiple [Pi-hole](./Pi-hole.md) instances.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `N/A`
 
 #### :material-link-variant: URL / Access: 
+
 + N/A
 
 #### :material-key-chain: Credentials: 
+
 + :material-docker:&nbsp;Docker Compose: 
     + `compose.yml`
 

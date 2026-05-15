@@ -23,16 +23,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Open-source home automation that puts local control and privacy first.
+
+:    Open-source home automation that puts local control and privacy first.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `8123`
 
 #### :material-link-variant: URL / Access: 
+
 + <http://pi-server.internal:8123>
 + <https://home-assistant.internal>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Home Assistant"
 

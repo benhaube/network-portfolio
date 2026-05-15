@@ -23,16 +23,20 @@ hide:
 ## :material-information-outline: Basic Information
 
 #### :symbols-description: Model: 
-+ Creality^&copy;^ K1C
+
+:    Creality^&copy;^ K1C
 
 #### :material-cube-outline: Build Volume: 
-+ `220x220x250`
+
+:    `220x220x250`
 
 #### :symbols-commit: Revision:
-+ v2.0.5    
+
+:    v2.0.5    
 
 #### :material-calendar: Create Date: 
-+ 2023/09/05
+
+:    2023/09/05
 
 #### :symbols-memory-alt: Printer MCU:
 

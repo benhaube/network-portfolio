@@ -25,16 +25,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Handy tools for network administrators and developers.
+
+:    Handy tools for network administrators and developers.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `8080`
 
 #### :material-link-variant: URL / Access: 
+
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

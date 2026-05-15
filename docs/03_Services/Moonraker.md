@@ -24,16 +24,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ Web API server for [Klipper](https://www.klipper3d.org/). 
+
+:    Web API server for [Klipper](https://www.klipper3d.org/). 
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `7125`
 
 #### :material-link-variant: URL / Access:  
+
 + <http://k1c-a71e.internal:7125>
 + <http://192.168.50.153:7125>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
 

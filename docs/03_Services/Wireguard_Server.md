@@ -27,14 +27,17 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
+
+:    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `41820`
 + `51820`
 + `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
 
 #### :material-link-variant: URL / Access: 
+
 + :material-vpn:&nbsp;Server Endpoint:
     + `remote-access-home-34.asuscomm.com:41820` *(for :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md))*
     + `remote-access-home-34.asuscomm.com:51820` *(for :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
@@ -42,6 +45,7 @@ hide:
     + <http://storage-server.internal:51821/>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Admin"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Metrics"

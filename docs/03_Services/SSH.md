@@ -25,12 +25,15 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Provides secure encrypted communications between two untrusted hosts over an insecure network.
+
+:    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `22`
 
 #### :material-link-variant: URL / Access: 
+
 + :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)
     + `192.168.50.1:22` 
     + `asusrouter.internal:22`
@@ -51,6 +54,7 @@ hide:
     + `k1c-a71e.internal:22` 
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH keys&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"
     + SSH keys&ensp;:material-arrow-right-thin:&ensp;"server-admin@debian-vm"

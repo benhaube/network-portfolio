@@ -25,16 +25,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A simple server for sending and receiving messages in real-time per WebSocket. *(Includes a sleek Web-UI)*
+
+:    A simple server for sending and receiving messages in real-time per WebSocket. *(Includes a sleek Web-UI)*
  
 #### :symbols-settings-ethernet: Port(s): 
+
 + `8180`
 
 #### :material-link-variant: URL / Access: 
+
 + <http://storage-server.internal:8180> &mdash; *Local Network Web-UI only*
 + <https://gotify.rac3r4life.online> &mdash; *Use for notification WebSocket*
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (admin)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (bhaube)"

@@ -25,12 +25,15 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description:  
-+ High performance self-hosted photo and video management solution. 
+
+:    High performance self-hosted photo and video management solution. 
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `2283`
 
 #### :material-link-variant: URL / Access: 
+
 + :material-lan: LAN Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
@@ -38,6 +41,7 @@ hide:
     + <https://immich.rac3r4life.online>
 
 #### :material-key-chain: Credentials:  
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich Admin"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich User"

@@ -23,19 +23,23 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A free and open-source Klipper web interface for managing your 3D-printer.
+
+:    A free and open-source Klipper web interface for managing your 3D-printer.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `80`
 + `4408`
 
 #### :material-link-variant: URL / Access: 
+
 + <http://k1c-a71e.internal>
 + <http://192.168.50.153>
 + <http://k1c-a71e.internal:4408>
 + <http://192.168.50.153:4408>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
 

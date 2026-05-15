@@ -23,16 +23,20 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
+
+:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
 #### :material-map-marker-outline: Location: 
+
 + Living-Room
 + Mini-Rack
 
 #### :material-memory: OS / Firmware: 
+
 + Hitron FW version: 7.3.5.3.2b2
 
 #### :material-key-chain: Credentials:
+
 + N/A
 
 ## :material-lan: Network Configuration

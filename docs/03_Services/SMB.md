@@ -25,18 +25,22 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Remote file system access.
+
+:    Remote file system access.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `445`
 
 #### :material-link-variant: URL / Access:  
+
 + `\\storage-server.internal\nvme0n1p1`
 + `\\storage-server.internal\Quick-Storage`
 + `\\pi-server.internal\smb-share`
 + `\\asusrouter.internal\`
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)" 

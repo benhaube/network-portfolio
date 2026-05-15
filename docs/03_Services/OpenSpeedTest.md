@@ -25,16 +25,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A free & open-source HTML5 network performance estimation tool.
+
+:    A free & open-source HTML5 network performance estimation tool.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `3004`
 
 #### :material-link-variant: URL / Access:  
+
 + <https://openspeedtest.internal>
 + <http://storage-server.internal:3004>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

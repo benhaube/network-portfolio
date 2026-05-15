@@ -24,19 +24,23 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
+
+:    A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + Hub:
     + `8090`
 + Agent:
     + `45867` 
 
 #### :material-link-variant: URL / Access: 
+
 + <https://beszel.internal>
 + <http://pi-server.internal:8090/>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Beszel Hub"
 

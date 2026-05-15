@@ -22,19 +22,24 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
+
+:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
 #### :symbols-host: Hostname(s):
+
 + `rob-desktop`
 
 #### :material-map-marker-outline: Location: 
+
 + Office 
 + Desk 
 
 #### :material-memory: OS / Firmware: 
+
 + [:material-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Desktop PC"
 

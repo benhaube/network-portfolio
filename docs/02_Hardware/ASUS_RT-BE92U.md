@@ -25,19 +25,24 @@ hide:
 ---
 ## :material-information-outline: Device Overview
 
-#### :material-toolbox: Role: 
-+ The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
+#### :material-toolbox: Role:
+
+:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 #### :symbols-host: Hostname(s):
+
 + `asusrouter`
 
 #### :material-map-marker-outline: Location: 
+
 + Living-Room
 
 #### :material-memory: OS / Firmware: 
+
 + [:material-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"

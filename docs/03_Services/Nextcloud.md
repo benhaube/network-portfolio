@@ -25,15 +25,19 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Self-hosted cloud storage and collaboration platform.
+
+:    Self-hosted cloud storage and collaboration platform.
 
 #### :symbols-settings-ethernet: Port(s):
+
 + `10081`
 
 #### :material-link-variant: URL / Access: 
+
 + ~~[[http://storage-server.internal:10081]]~~
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Nextcloud (admin)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Nextcloud (bhaube)"

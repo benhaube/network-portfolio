@@ -24,15 +24,18 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A DockerApp makes it easy to use the host terminal on the Web.
+:    A DockerApp makes it easy to use the host terminal on the Web.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `2222`
 
 #### :material-link-variant: URL / Access: 
+
 + <http://storage-server.internal:2222>
 
 #### :material-key-chain: Credentials:  
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 

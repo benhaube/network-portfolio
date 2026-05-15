@@ -28,20 +28,25 @@ hide:
 > [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
 #### :material-toolbox: Role: 
-+ The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
+
+:    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
 #### :symbols-host: Hostname(s):
+
 + `k1c-a71e`
 
 #### :material-map-marker-outline: Location:  
+
 + Office
 
 #### :material-memory: OS / Firmware: 
+
 + [:devices-creality:&nbsp;Creality^&copy;^ FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
 + [:material-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"root@k1c-a71e"
@@ -87,6 +92,7 @@ hide:
 
 > [!config]+ Modifications
 > **:material-chip: Firmware:**
+> 
 > + The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/) for configuration issues.
 > 
 > **:material-application-brackets: Software:**

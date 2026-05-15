@@ -25,15 +25,18 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ A lightweight service delivery platform for containerized applications. 
+
+:    A lightweight service delivery platform for containerized applications. 
 
 #### :symbols-settings-ethernet: Port(s):
+
 + Hub:
     + `9443`
 + Agent:
     + `9001`
 
 #### :material-link-variant: URL / Access:
+
 + Hub: 
     + ~~<https://portainer.internal>~~
     + ~~<https://pi-server.internal:9443>~~
@@ -42,6 +45,7 @@ hide:
     + ~~<http://storage-server.internal:9001>~~
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Portainer"
 

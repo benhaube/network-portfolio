@@ -29,21 +29,26 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-* A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`).
+
+:    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`).
 
 #### :symbols-host: Hostname(s):
-* `pi-zero`
+
++ `pi-zero`
 
 #### :material-map-marker-outline: Location:  
-* Office
-* Printer-Cart
+
++ Office
++ Printer-Cart
 
 #### :material-memory: OS / Firmware: 
-* [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
+
++ [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :material-key-chain: Credentials:
-* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    * SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-zero"
+
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-zero"
 
 ## :symbols-monitor-heart: Core Specs
 

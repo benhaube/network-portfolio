@@ -29,21 +29,26 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-* The secondary DNS server in the [Technitium](../03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
+
+:    The secondary DNS server in the [Technitium](../03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
 #### :symbols-host: Hostname(s):
-* `pi-server`
+
++ `pi-server`
 
 #### :material-map-marker-outline: Location:  
-* Office
-* Printer-Cart
+
++ Office
++ Printer-Cart
 
 #### :material-memory: OS / Firmware: 
-* [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
+
++ [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :material-key-chain: Credentials:
-* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    * SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-server"
+
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-server"
 
 ## :symbols-monitor-heart: Core Specs
 

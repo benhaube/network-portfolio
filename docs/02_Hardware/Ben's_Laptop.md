@@ -26,22 +26,28 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
+
+:    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
 
 #### :symbols-host: Hostname(s):
+
 + `ben-laptop`
 
 #### :material-map-marker-outline: Location: 
+
 + Mobile
 
 #### :material-memory: OS / Firmware:  
+
 + [:material-fedora:&nbsp;Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Laptop"
 
 #### :material-security: Device Security:
+
 + HSI-4
 + Firmware: 
     + BIOS rollback protection

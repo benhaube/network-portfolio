@@ -23,16 +23,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
+
+:    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `8080`
 
 #### :material-link-variant: URL / Access: 
+
 + <http://storage-server.internal:8080>
 + <https://portfolio.rac3r4life.online>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

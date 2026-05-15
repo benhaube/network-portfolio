@@ -24,16 +24,20 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
+
+:    Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 
 #### :symbols-settings-ethernet: Port(s): 
+
 + `21208`
 
 #### :material-link-variant: URL / Access: 
+
 + <http://pi-server.internal:61208>
 + <http://storage-server.internal:61208>
 
 #### :material-key-chain: Credentials: 
+
 + N/A
 
 ## :symbols-deployed-code-update: Deployment Details

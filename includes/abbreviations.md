@@ -18,6 +18,7 @@
 *[CPU]: Central Processing Unit
 *[CPUs]: Central Processing Units
 *[CSP]: Content Security Policy
+*[CSR]: Certificate Signing Request
 *[CSRF]: Cross-Site Request Forgery
 *[CSS]: Cascading Style Sheets
 *[CUPS]: Common UNIX Printing System

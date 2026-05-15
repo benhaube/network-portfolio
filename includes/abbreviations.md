@@ -46,6 +46,7 @@
 *[FIDO2]: Fast Identity Online 2
 *[FOSS]: Free and Open Source Software
 *[FQDN]: Fully Qualified Domain Name
+*[FQDNs]: Fully Qualified Domain Names
 *[FW]: Firmware
 *[GbE]: Gigabit Ethernet
 *[Gb]: Gigabit

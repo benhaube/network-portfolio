@@ -21,7 +21,7 @@ hide:
 ## :material-information-outline: Overview
 
 #### :material-toolbox: Role: 
-+ Ben's primary mobile device.
++ Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
 #### :symbols-host: Hostname(s): 
 + `bens-phone`

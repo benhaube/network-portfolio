@@ -24,7 +24,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ AiMesh node in the office on the 2nd floor. Extending the Wi-Fi network. 
++ A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
 #### :symbols-host: Hostname(s):
 + `aimesh-node`

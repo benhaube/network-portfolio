@@ -22,7 +22,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Rob's main workstation / gaming PC
++ Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 #### :symbols-host: Hostname(s):
 + `rob-desktop`

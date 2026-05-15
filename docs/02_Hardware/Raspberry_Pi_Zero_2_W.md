@@ -29,7 +29,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-* Caddy reverse-proxy server
+* A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`).
 
 #### :symbols-host: Hostname(s):
 * `pi-zero`

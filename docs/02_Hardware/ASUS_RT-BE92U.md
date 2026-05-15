@@ -26,7 +26,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ The main wireless router and firewall for the local network.
++ The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 #### :symbols-host: Hostname(s):
 + `asusrouter`

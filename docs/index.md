@@ -14,22 +14,22 @@ hide:
 ## :material-lan: Infrastructure
 
 :material-restore-alert:&ensp;[Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md): 
-:    Ensure **HA** for critical network services and to provide a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
+:    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
 :material-ip-network:&ensp;[IP Address Management](./01_Infrastructure/IP_Address_Management.md): 
-:    Local network IPAM, VPN and VLAN information.
+:    This page contains information about IPAM, VPNs, and VLANs encompassed by the local network.
 
 :material-ethernet:&ensp;[MAC Address Tables](./01_Infrastructure/MAC_Address_Tables.md): 
-:    Tables containing devices on the LAN and their hardware MAC addresses.
+:    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 
 :symbols-policy-fill:&ensp;[Network Security Policy](./01_Infrastructure/Network_Security_Policy.md): 
 :    This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 :material-sitemap:&ensp;[Logical Network Map](./01_Infrastructure/Logical_Map.md): 
-:    *Mermaid.js* flowchart focusing on servers and services. 
+:    A *Mermaid.js* flowchart focusing on servers, services, and their connections. 
 
 :material-sitemap:&ensp;[Physical Network Map](./01_Infrastructure/Physical_Map.md): 
-:    *Mermaid.js* flowchart focusing on physical connections.
+:    A *Mermaid.js* flowchart focusing on physical devices and their connections.
 
 ---
 ## :material-devices: Hardware
@@ -40,50 +40,54 @@ hide:
 > 
 > [Hardware Tags :material-tag:](02_Hardware/tags.md){ .md-button }
 
+### Core Infrastructure
+
 :material-router-wireless:&ensp;[ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md): 
-:    The main wireless router and firewall for the local network.
+:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 :material-router-wireless:&ensp;[ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md): 
-:    Secondary router in the office upstairs, acting as an "*AiMesh*" node. 
-
-:material-desktop-tower:&ensp;[Ben's Workstation](./02_Hardware/Ben's_Desktop.md): 
-:    Ben's main workstation located in the office upstairs.
-
-:material-laptop:&ensp;[Ben's Laptop](./02_Hardware/Ben's_Laptop.md): 
-:    Ben's main laptop PC. Mobile device connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
-
-:symbols-mobile:&ensp;[Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md): 
-:    Ben's main mobile device. Connected to the Trusted Wi-Fi network *(SSID: `Home`)*.
+:    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
 :material-debian:&ensp;[Debian Server](./02_Hardware/Debian_Server_VM.md): 
-:    Primary DNS server *([Technitium](03_Services/Technitium.md) Cluster)*. Hosted on *[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md)*. 
+:    The primary DNS server in the [Technitium](03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md). 
 
 :material-wan:&ensp;[Hitron Modem](./02_Hardware/Hitron_Modem.md): 
-:    DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. 
-
-:material-printer-3d-nozzle:&ensp;[Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md): 
-:    Creality K1C 3D-printer located in the office upstairs. 
+:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
 :material-raspberry-pi:&ensp;[Raspberry Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md): 
-:    Secondary DNS server *([Technitium](03_Services/Technitium.md) Cluster)*, CUPS print server, Home Assistant server, and other *[Docker](https://www.docker.com/)* containers. 
+:    The secondary DNS server in the [Technitium](03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 :material-raspberry-pi:&ensp;[Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md): 
-:    Caddy reverse-proxy server.
-
-:material-desktop-tower:&ensp;[Rob's Workstation](./02_Hardware/Rob's_Desktop.md): 
-:    Rob's main workstation located in the office upstairs.
-
-:material-laptop:&ensp;[Rob's Laptop](02_Hardware/Rob's_Laptop.md): 
-:    Rob's laptop PC for work and gaming
+:    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`). 
 
 :material-switch:&ensp;[TP-Link Switch](./02_Hardware/TP-Link_Switch.md): 
-:    Core gigabit desktop switch *(5-port)*. 
+:    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
 :material-switch:&ensp;[Ugreen Switch](./02_Hardware/Ugreen_Switch.md): 
-:    Rack-mounted 2.5 gigabit switch in the living room.
+:    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
 :material-nas:&ensp;[ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md): 
-:    Primary NAS server & VM host. 
+:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
+
+### Key Clients
+
+:material-desktop-tower:&ensp;[Ben's Workstation](./02_Hardware/Ben's_Desktop.md): 
+:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
+
+:material-laptop:&ensp;[Ben's Laptop](./02_Hardware/Ben's_Laptop.md): 
+:    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
+
+:symbols-mobile:&ensp;[Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md): 
+:    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
+
+:material-printer-3d-nozzle:&ensp;[Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md): 
+:    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
+
+:material-desktop-tower:&ensp;[Rob's Workstation](./02_Hardware/Rob's_Desktop.md): 
+:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
+
+:material-laptop:&ensp;[Rob's Laptop](02_Hardware/Rob's_Laptop.md): 
+:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./02_Hardware/Ugreen_Switch.md).
 
 ---
 ## :material-web: Services
@@ -141,10 +145,10 @@ hide:
 :    Handy tools for network administrators and developers.
 
 :services-klipper:&ensp;[Moonraker](./03_Services/Moonraker.md): 
-:    Web API server for *[Klipper](https://www.klipper3d.org/)*.
+:    Web API server for [Klipper](https://www.klipper3d.org/).
 
 :material-cog-sync:&ensp;[Nebula-Sync](./03_Services/Nebula-Sync.md): 
-:    Synchronize configuration between multiple *[Pi-hole](https://pi-hole.net)* instances.
+:    Synchronize configuration between multiple [Pi-hole](https://pi-hole.net) instances.
 
 :services-nextcloud:&ensp;[Nextcloud](./03_Services/Nextcloud.md): 
 :    Self-hosted cloud storage and collaboration platform.
@@ -207,7 +211,7 @@ hide:
 ## :material-swap-horizontal-bold: Change Management
 
 :simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;[Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md): 
-:    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique domain names to services hosted on the local network.
+:    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
 :simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;[DNS Migration](./04_Change_Management/DNS_Migration.md): 
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 
@@ -221,13 +225,13 @@ hide:
 > [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
 :material-cog:&ensp;[Manual Bed Leveling Mod](./3D_Printing/K1_Bed_Level_Knobs_Tutorial.md): 
-:    Installing a bed leveling modification on the [Creality^&copy;^ K1C](./02_Hardware/Kacey_3D-printer.md).
+:    Installing a bed leveling modification on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md). 
 
 :devices-toothbrush-nozzle:&ensp;[Nozzle Cleaning Macro](./3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md): 
 :    Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
 
 :devices-prowiper:&ensp;[PROWIPER^&copy;^ Mod](./3D_Printing/PROWIPER_Mod.md): 
-:    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality^&copy;^ K1C](./02_Hardware/Kacey_3D-printer.md).
+:    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md).
 
 ---
 ## :material-linux: Linux Tutorials

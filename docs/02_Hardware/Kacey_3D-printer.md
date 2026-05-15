@@ -28,7 +28,7 @@ hide:
 > [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
 #### :material-toolbox: Role: 
-+ 3D-Printer
++ The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
 #### :symbols-host: Hostname(s):
 + `k1c-a71e`

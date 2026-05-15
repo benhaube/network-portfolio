@@ -29,7 +29,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-* Secondary DNS server *(Technitium Cluster)*, CUPS print server, Home Assistant server
+* The secondary DNS server in the [Technitium](03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 #### :symbols-host: Hostname(s):
 * `pi-server`

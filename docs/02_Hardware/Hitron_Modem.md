@@ -23,7 +23,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ DOCSIS 3.1 Cable Modem
++ The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
 #### :material-map-marker-outline: Location: 
 + Living-Room

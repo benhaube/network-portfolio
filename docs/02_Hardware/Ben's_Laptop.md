@@ -26,7 +26,7 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Ben's laptop PC
++ Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
 
 #### :symbols-host: Hostname(s):
 + `ben-laptop`

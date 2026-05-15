@@ -24,7 +24,7 @@ hide:
 
 #### :material-toolbox: Role:
 
-+ Core Desktop Switch
++ A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
 #### :material-map-marker-outline: Location:
 

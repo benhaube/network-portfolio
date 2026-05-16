@@ -39,7 +39,7 @@ hide:
 
 #### :material-memory: OS / Firmware:  
 
-+ [:material-fedora:&nbsp;Fedora Linux 43](https://fedoraproject.org) *(KDE Plasma Desktop Edition)*
++ [:material-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
 #### :material-key-chain: Credentials:
 

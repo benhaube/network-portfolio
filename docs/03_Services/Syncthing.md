@@ -42,7 +42,9 @@ hide:
     + <https://bens-workstation.internal:8384>
     + <https://192.168.50.61:8384>
 + :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md):
-    + <http://localhost:8384>
+    + <https://localhost:8384>
++ :symbols-mobile:&nbsp;[Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md):
+    + <https://localhost:8384>
 + :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md):
     + <https://debian-vm.internal:8384>
     + <https://192.168.50.6:8384>
@@ -62,7 +64,8 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ ben-laptop" 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ ben-laptop"
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-phone" 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ debian-vm" 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ pi-server"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ pi-zero"
@@ -74,6 +77,7 @@ hide:
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------------- |
 | :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                   | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
 | :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                            | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
+| :symbols-mobile:&nbsp;[Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                     | :brands-android:&nbsp;Native Android  | `N/A`          | `N/A`                          |
 | :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
@@ -106,6 +110,10 @@ hide:
     sudo systemctl enable syncthing@admin.service
     sudo systemctl start syncthing@admin.service
     ```
+
++ :symbols-mobile:&nbsp;Ben's Smartphone:
+
+    [Syncthing-Fork :simple-fdroid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
 #### :material-docker: Docker Compose:
 

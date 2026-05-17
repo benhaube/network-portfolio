@@ -55,10 +55,10 @@ hide:
     + <https://pi-zero.internal:8384>
     + <https://192.168.50.3:8384>
 + :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md):
-    + <http://storage-server.internal:8384>
-    + <http://storage-server-2.internal:8384>
-    + <http://192.168.50.4:8384>
-    + <http://192.168.50.5:8384>
+    + <https://storage-server.internal:8384>
+    + <https://storage-server-2.internal:8384>
+    + <https://192.168.50.4:8384>
+    + <https://192.168.50.5:8384>
 
 #### :material-key-chain: Credentials: 
 
@@ -73,15 +73,15 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device                                                                                      | Method                                | Container Name | Image                          |
-| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------------- |
-| :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                   | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
-| :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                            | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
-| :symbols-mobile:&nbsp;[Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                     | :brands-android:&nbsp;Native Android  | `N/A`          | `N/A`                          |
-| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux    | `N/A`          | `N/A`                          |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `syncthing`    | `linuxserver/syncthing:latest` |
+| Host Device                                                                                      | Method                                     | Container Name | Image                          |
+| :----------------------------------------------------------------------------------------------- | :----------------------------------------- | :------------- | :----------------------------- |
+| :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                   | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                            | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| :symbols-mobile:&nbsp;[Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                     | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
+| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
 
 ### :material-cog: Configuration  
 

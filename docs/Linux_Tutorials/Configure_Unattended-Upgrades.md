@@ -14,7 +14,7 @@ hide:
 
 > [!question] FAQ
 > **What Are Unattended-Upgrades?**
-> :    The [<code>unattended-upgrades</code>](https://packages.debian.org/stable/unattended-upgrades) package enables automatic security patches and critical software updates on your Debian server with no manual intervention required by the system administrator. This helps to protect your server from new CVE attack vectors, ensures bug fixes are applied quickly durring maintenance windows, and relieves burden from patch management, allowing the system administrator to focus on other things. By the end of this tutorial, you will have `unattended-upgrades` configured with Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
+> :    The [<code>unattended-upgrades</code>](https://packages.debian.org/stable/unattended-upgrades) package enables automatic security patches and critical software updates on your Debian server with no manual intervention required by the system administrator. This helps to protect your server from new CVE attack vectors, ensures bug fixes are applied quickly during maintenance windows, and relieves burden from patch management, allowing the system administrator to focus on other things. By the end of this tutorial, you will have `unattended-upgrades` configured with Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
 
 > [!note]+
 > **Relevant Versions:**
@@ -176,7 +176,7 @@ The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the
 Below is a table containing the options included with the `unattended-upgrade` command. You can also see the options by checking the [manual page](https://manpages.debian.org/trixie/unattended-upgrades/unattended-upgrade.8.en.html) using the command: `#!bash man unattended-upgrade`
 
 > [!note inline end]+
-> You can use the options, `--dry-run` and `--debug`, after making configuration changes to verify your settings are working properly before deploying and rylying on the automatic updates.
+> You can use the options, `--dry-run` and `--debug`, after making configuration changes to verify your settings are working properly before deploying and relying on the automatic updates.
 
 | Option                       | Description                                                                   |
 | :--------------------------- | :---------------------------------------------------------------------------- |
@@ -231,7 +231,7 @@ Unattended-Upgrade::Origins-Pattern {
 
 The `Package-Blacklist` section uses Python regular expressions to exclude specific packages from automatic upgrades.
 
-1. Here are some examles: 
+1. Here are some examples: 
 
     ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
     Unattended-Upgrade::Package-Blacklist {
@@ -247,7 +247,7 @@ The `Package-Blacklist` section uses Python regular expressions to exclude speci
     ```
 
     1. Matches all packages starting with `linux-`. *(e.g., Linux Kernel packages)*
-    2. Use `$` to explicitely define the end of a package name. Without the `$`, "`libc6`" would match all of them.
+    2. Use `$` to explicitly define the end of a package name. Without the `$`, "`libc6`" would match all of them.
     3. Special characters need escaping.
     4. The following matches packages like `xen-system-amd64`, `xen-utils-4.1`, `xenstore-utils` and `libxenstore3.0`. Prevents updating core system libraries that could affect running applications.
     5. Prevents automatic updates to database servers that need coordinated maintenance windows.
@@ -384,7 +384,7 @@ It is highly recommended to do a 'dry-run' after making changes to the configura
     sudo cat /var/log/unattended-upgrades/unattended-upgrades.log
     ```
 
-2. Here is an example log output showing a successfull automatic upgrade run:
+2. Here is an example log output showing a successful automatic upgrade run:
 
     ```text title="<code>unattended-upgrades.log</code>" linenums="1"
     2026-05-19 06:25:15,546 INFO Starting unattended upgrades script

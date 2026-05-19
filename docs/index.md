@@ -247,6 +247,9 @@ hide:
 > 
 >      [Update PCRs :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
+:material-update:&ensp;[Automatic Updates for Debian Servers](./Linux_Tutorials/Configure_Unattended-Upgrades.md)
+:    How to install and configure the `unattended-upgrades` package on your Debian server to enable automatic updates. This tutorial will help you configure Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
+
 :material-svg:&ensp;[Convert an SVG to Data URI](Linux_Tutorials/SVG_to_URI.md): 
 :    How to convert an SVG into a data URI for use in HTML pages and CSS stylesheets. 
 

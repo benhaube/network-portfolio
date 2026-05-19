@@ -124,6 +124,7 @@
 *[MMS]: Multimedia Messaging Service
 *[MMU]: Memory Management Unit
 *[MOTD]: Message of the Day
+*[MTA]: Mail Transfer Agent
 *[MT/s]: Mega Transfers Per Second
 *[NAS]: Network Attached Storage
 *[NAT]: Network Address Translation

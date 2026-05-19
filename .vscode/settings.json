@@ -19,5 +19,8 @@
     "files.autoSaveDelay": 10000,
     "[markdown]": {
         "editor.wordWrap": "off"
-    }
+    },
+    "cSpell.words": [
+        "Kacey"
+    ]
 }

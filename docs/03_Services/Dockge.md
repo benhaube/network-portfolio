@@ -55,6 +55,40 @@ hide:
 
 ### :material-cog: Configuration 
 
+#### :material-monitor-arrow-down-variant: Install Dockge:
+
+1. Create the directories that store your stacks and stores Dockge's stack:
+
+    ``bash linenums="1"
+    mkdir -p /opt/stacks /opt/dockge
+    cd /opt/dockge
+    ```
+
+2. Download the `compose.yaml` file:
+
+    ```bash linenums="1"
+    curl https://raw.githubusercontent.com/louislam/dockge/master/compose.yaml --output compose.yaml
+    ```
+
+3. Start the server:
+
+    ```bash linenums="1"
+    docker compose up -d
+    ```
+
+    Dockge is now running on http://localhost:5001
+
+#### :material-update: Update Dockge: 
+
+1. To update Dockge, run the following commands: 
+
+    ```bash linenums="1"
+    cd /opt/dockge
+    docker compose pull && docker compose up -d
+    ```
+
+#### :material-docker: Docker Compose:
+
 ```yaml title="Debian Server VM | Raspberry Pi 4B Server | Raspberry Pi Zero Server" linenums="1"
 --8<-- "dockge.yaml"
 ```

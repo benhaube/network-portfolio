@@ -35,6 +35,7 @@ hide:
 + <http://pi-server.internal:5001>
 + <http://pi-zero.internal:5001>
 + <http://debian-vm.internal:5001>
++ <http://storage-server.internal:5001>
 
 #### :material-key-chain: Credentials: 
 

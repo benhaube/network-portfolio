@@ -59,7 +59,7 @@ hide:
 
 1. Create the directories that store your stacks and stores Dockge's stack:
 
-    ``bash linenums="1"
+    ```bash linenums="1"
     mkdir -p /opt/stacks /opt/dockge
     cd /opt/dockge
     ```

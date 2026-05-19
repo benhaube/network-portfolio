@@ -2,6 +2,7 @@ title: Linux Tutorials
 sort:
   ignore_case: true
 nav:
+  - Configure_Unattended-Upgrades.md
   - SVG_to_URI.md
   - Unlock_LUKS_TPM2.md
   - Defining_Terminal_Aliases.md

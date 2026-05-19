@@ -76,7 +76,7 @@ hide:
     docker compose up -d
     ```
 
-    Dockge is now running on http://localhost:5001
+    Dockge is now running on: <http://localhost:5001>
 
 #### :material-update: Update Dockge: 
 

@@ -20,29 +20,39 @@ graph TD
     %% --- ISP --- %%
     ISP(("<b>ISP</b><br><i>(Xfinity)</i>")):::isp
 
-    %% --- Living Room / Mini-Rack --- %%
-    subgraph Living_Room ["<b>Living Room / Mini-Rack</b>"]
+    %% --- Living Room & Mini-Rack --- %%
+    subgraph Living_Room ["<b>Living Room</b>"]
         direction TB
-        Modem("<b>Hitron Modem</b><br><i>(DOCSIS 3.1)</i>"):::twoFiveGb
+        subgraph Mini_Rack ["<b>Mini-Rack</b>"]
+            direction TB
+            Modem("<b>Hitron Modem</b><br><i>(DOCSIS 3.1)</i>"):::twoFiveGb
+            SwitchAgg("<b>Ugreen Switch</b><br><i>(UM106X)</i>"):::tenGb
+            Zima("<b>ZimaOS NAS</b><br><i>(Storage Server)</i>"):::twoFiveGb
+            VM("<b>Debian Server VM</b><br><i>(Primary DNS)</i>"):::multi
+        end
         RouterMain("<b>ASUS RT-BE92U</b><br><i>(Main Router)</i>"):::tenGb
-        SwitchAgg("<b>Ugreen Switch</b><br><i>(UM106X)</i>"):::tenGb
-        Zima("<b>ZimaOS NAS</b><br><i>(Storage Server)</i>"):::twoFiveGb
-        VM("<b>Debian Server VM</b><br><i>(Primary DNS)</i>"):::multi
+        SwitchTV("<b>LiteWave Switch</b><br><i>(LS1005G)</i>"):::gigabit
+        GoogleTV("Google TV Streamer"):::gigabit
+        %%FireTV("Amazon Fire TV"):::gigabit
+        %%Nintendo("Nintendo Switch Dock"):::gigabit
     end
 
-    %% --- Office / Printer Cart --- %%
-    subgraph Office ["<b>Office / Printer Cart</b>"]
+    %% --- Office & Printer Cart --- %%
+    subgraph Office ["<b>Office</b>"]
         direction TB
-        MeshNode("<b>ASUS RT-AX55</b><br><i>(AiMesh<sup>&copy;</sup> Node)</i>"):::gigabit
-        SwitchOffice("<b>TP-Link Switch</b><br><i>(SG105)</i>"):::gigabit
+        subgraph PrinterCart ["<b>Printer Cart</b>"]
+            direction TB
+            MeshNode("<b>ASUS RT-AX55</b><br><i>(AiMesh<sup>&copy;</sup> Node)</i>"):::gigabit
+            SwitchOffice("<b>TP-Link Switch</b><br><i>(SG105)</i>"):::gigabit
+            Pi4("<b>Raspberry Pi 4B</b><br><i>(Server / DNS)</i>"):::gigabit
+            PiZero("<b>Pi Zero 2 W</b><br><i>(Caddy Reverse Proxy)</i>"):::wifi
+        end
         DesktopBen("Ben's Desktop"):::gigabit
         DesktopRob("Rob's Desktop"):::gigabit
-        Pi4("<b>Raspberry Pi 4B</b><br><i>(Server / DNS)</i>"):::gigabit
-        PiZero("<b>Pi Zero 2 W</b><br><i>(Caddy Reverse Proxy)</i>"):::wifi
         Printer3D("<b>Creality<sup>&copy;</sup> K1C</b><br><i>(3D-printer)</i>"):::wifi
     end
 
-    %% --- Mobile / Wi-Fi --- %%
+    %% --- Mobile & Wi-Fi --- %%
     subgraph Mobile ["<b>Mobile / Wi-Fi</b> <i>(VLAN50)</i>"]
         direction TB
         LaptopBen("Ben's Laptop"):::wifi
@@ -65,31 +75,35 @@ graph TD
 
 %% --- Connections --- %%
 
-    %% --- WAN / Uplinks --- %%
+    %% --- WAN & Uplinks --- %%
     ISP ==> Modem
     Modem == "<b>WAN</b> <i>(2.5 GbE)</i>" ==> RouterMain
 
-    %% --- 10Gb Core Backbone --- %%
-    RouterMain == "<b>10 Gb SFP+</b> <i>(Red Cat6a)</i>" ==> SwitchAgg
+    %% --- Backhaul --- %%
+    RouterMain == "Backhaul" ==> MeshNode
 
-    %% --- Living Room Connections --- %%
+    %% --- Router to Switch --- %%
+    RouterMain == "<b>10 Gb SFP+</b><br><i>(Red Cat6a)</i>" ==> SwitchAgg
+    RouterMain == "<b>Port 1</b> <i>(White Cat6)</i>" ==> SwitchTV
+    MeshNode == "<b>Port 5</b> <i>(Black Cat6a)</i>" ==> SwitchOffice
+
+    %% --- Virtual Machines --- %%
+    Zima -. "KVM / QEMU" .- VM
+
+    %% --- Living Room --- %%
     SwitchAgg -- "<b>Port 1</b> <i>(White Cat5e)</i>" --> LaptopRob
     SwitchAgg -- "<b>Port 4</b> <i>(Blue Cat6a)</i>" --> Zima
     SwitchAgg -- "<b>Port 5</b> <i>(Yellow Cat6a)</i>" --> Zima
+    SwitchTV -- "<b>Port 2</b> <i>(Black Cat6a)</i>" --> GoogleTV
+    %%SwitchTV -- "<b>Port 3</b> <i>(Black Cat5e)</i>" --> FireTV
+    %%SwitchTV -- "<b>Port 4</b> <i>(Black Cat5e)</i>" --> Nintendo
 
-    %% --- Virtual Connections --- %%
-    Zima -.- VM
-
-    %% --- Wireless Backhaul to AiMesh Node --- %%
-    RouterMain == "Wi-Fi 5 GHz Backhaul" ==> MeshNode
-
-    %% --- Office Connections --- %%
-    MeshNode == "<b>LAN 1</b> <i>(Black Cat6a)</i>" ==> SwitchOffice
+    %% --- Office --- %%
     SwitchOffice -- "<b>Port 1</b> <i>(White Cat5e)</i>" --> DesktopBen
     SwitchOffice -- "<b>Port 2</b> <i>(White Cat5e)</i>" --> DesktopRob
     SwitchOffice -- "<b>Port 3</b> <i>(White Cat5e)</i>" --> Pi4
 
-    %% Wi-Fi Connections --- %%
+    %% --- Wi-Fi --- %%
     RouterMain -. "VLAN52" .- GuestDevices
     RouterMain -. "VLAN53" .- IoTDevices
     MeshNode -. "VLAN50" .- PiZero

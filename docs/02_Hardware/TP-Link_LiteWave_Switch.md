@@ -52,7 +52,7 @@ hide:
 | Port # | Connected Device                                                    | Color / Type  | Notes  |
 | :----: | :------------------------------------------------------------------ | :------------ | :----- |
 | **1**  | :material-router-wireless:&nbsp;[ASUS RT-BE92U](./ASUS_RT-BE92U.md) | White / Cat6  | Uplink |
-| **2**  | :devices-google-tv-remote:&nbsp;Google TV Streamer                  | Black / Cat6A | `DHCP` |
+| **2**  | :symbols-tv-assistant:&nbsp;Google TV Streamer                      | Black / Cat6A | `DHCP` |
 | **3**  | :material-ethernet:&nbsp;*Empty*                                    | -             | -      |
 | **4**  | :material-ethernet:&nbsp;*Empty*                                    | -             | -      |
 | **5**  | :material-ethernet:&nbsp;*Empty*                                    | -             | -      |

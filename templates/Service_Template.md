@@ -1,6 +1,7 @@
 ---
 icon: material/web
 title: Service Template
+subtitle: Subtitle
 tags:
   - Active
   - Service
@@ -12,6 +13,8 @@ hide:
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # Service Template
+*Subtitle*
+
 [GitHub :material-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.github.com/en){ .md-button }
 
 ---

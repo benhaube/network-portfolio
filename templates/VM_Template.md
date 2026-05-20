@@ -1,6 +1,7 @@
 ---
 icon: material/network-pos
 title: VM Template
+subtitle: Subtitle
 tags:
   - Hardware
   - Virtual Machine
@@ -11,6 +12,8 @@ hide:
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # VM Template
+*Subtitle*
+
 [OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :material-file-document-multiple:](https://example.com){ .md-button }
 
 ---

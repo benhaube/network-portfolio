@@ -1,6 +1,7 @@
 ---
 icon: material/router-wireless
 title: Router Template
+subtitle: Subtitle
 tags:
   - Hardware
   - Network
@@ -12,6 +13,8 @@ hide:
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # Router Template
+*Subtitle*
+
 [Docs :material-file-document-multiple:](https://example.com){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://example.com){ .md-button }
 
 ---

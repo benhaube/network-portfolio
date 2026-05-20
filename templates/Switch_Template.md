@@ -1,6 +1,7 @@
 ---
 icon: material/switch
 title: Switch Template
+subtitle: Subtitle
 tags:
   - Hardware
   - Switch
@@ -12,6 +13,8 @@ hide:
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # Switch Template
+*Subtitle*
+
 [Manual :material-book-information-variant:](../assets/manuals/manual.pdf){ .md-button .md-button--primary }
 
 ---

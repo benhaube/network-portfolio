@@ -1,6 +1,7 @@
 ---
 icon: material/devices
 title: Device Template
+subtitle: Subtitle
 tags:
   - Hardware
   - Network
@@ -11,6 +12,8 @@ hide:
 ![Icon](../assets/icons/<icon>.svg){ width=200 }
 
 # Device Template
+*Subtitle*
+
 [Button :material-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :material-icon:](https://example.com){ .md-button }
 
 ---

@@ -21,20 +21,23 @@ hide:
 ## :material-information-outline: Physical Overview
 
 #### :material-toolbox: Role: 
-+ Core Desktop Switch
+:    Core Desktop Switch
 
 #### :material-map-marker-outline: Location: 
+
 + [Insert location here]
  
 #### :material-power-plug: Power Source: 
+
 + (e.g., Wall wart 12V / 1A)
  
 #### :symbols-monitor-heart: Specs:
-+ **Throughput:**
+
++ Throughput:
   + (e.g., 50 Gb/s) 
-+ **Jumbo Frames:** 
++ Jumbo Frames: 
   + Supported / Unsupported
-+ **Managed:** 
++ Managed: 
   + Managed / Unmanaged
 
 ## :material-ethernet: Port Map

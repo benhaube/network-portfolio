@@ -21,18 +21,22 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ AiMesh Node
+:    AiMesh Node
 
 #### :symbols-host: Hostname(s):
+
 + `hostname`
 
 #### :material-map-marker-outline: Location: 
+
 + Location
  
 #### :material-memory: OS / Firmware: 
+
 + :material-router-network-wireless:&nbsp;Router_OS
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 

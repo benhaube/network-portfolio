@@ -20,22 +20,28 @@ hide:
 ## :material-information-outline: Device Overview
 
 #### :material-toolbox: Role: 
-+ Device role
+
+:    Device role
 
 #### :symbols-host: Hostname(s): 
+
 + `hostname`
 
 #### :material-map-marker-outline: Location: 
+
 + Location 
 
 #### :material-memory: OS / Firmware:
+
 + :os-icon:&nbsp;Operating System
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
 #### :material-security: Device Security:
+
 + Hardware / Software security features (e.g., TPM2)
 
 ## :symbols-monitor-heart: Core Specs

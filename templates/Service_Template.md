@@ -21,15 +21,18 @@ hide:
 ## :material-information-outline: Overview
 
 #### :symbols-description: Description: 
-+ [Insert description of service here]
+:    [Insert description of service here]
  
 #### :symbols-settings-ethernet: Port(s): 
+
 + `port`
 
 #### :material-link-variant: URL / Access: 
+
 + <https://example.com>
 
 #### :material-key-chain: Credentials: 
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 

@@ -20,21 +20,26 @@ hide:
 ## :material-information-outline: Overview
 
 #### :material-toolbox: Role: 
-+ [Insert role here] 
+:    [Insert role here] 
 
 #### :symbols-host: Hostname(s):
+
 + `hostname`
 
 #### :material-network-pos: Hypervisor: 
+
 + (e.g., KVM / QEMU)
 
 #### :material-memory: Operating System:
+
 + :os-icon:&nbsp;[Operating System](https://example.com)
 
 #### :material-server-network-outline: Host Node: 
+
 + [:device-icon: Device_Template](Device_Template.md)
 
 #### :material-key-chain: Credentials:
+
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): .
     + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 

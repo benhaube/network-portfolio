@@ -60,6 +60,9 @@ hide:
 :material-raspberry-pi:&ensp;[Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md): 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`). 
 
+:material-switch:&ensp;[TP-Link LiteWave Switch](./02_Hardware/TP-Link_LiteWave_Switch.md):
+:    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
+
 :material-switch:&ensp;[TP-Link Switch](./02_Hardware/TP-Link_Switch.md): 
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 

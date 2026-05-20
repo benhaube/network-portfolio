@@ -17,7 +17,7 @@ hide:
 # TP-Link Switch
 *Model SG105*
 
-[Hardware Info :material-book-information-variant:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }&emsp;[Manual :material-book-information-variant:](../assets/manuals/TL-SG105.pdf){ .md-button .md-button--primary }
+[Manual :material-book-information-variant:](../assets/manuals/TL-SG105.pdf){ .md-button .md-button--primary }&emsp;[Datasheet :material-file-chart:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Physical Overview
@@ -37,22 +37,23 @@ hide:
 
 #### :symbols-monitor-heart: Specs:
 
-+ **Throughput:** 
-    + Unmanaged Gigabit
++ Throughput: 
     + Five 1 GbE ports
     + 10 Gb/s total switching capacity
-+ **Jumbo Frames:** 
++ Jumbo Frames: 
     + Supported *(16 KB)*
++ Managed:
+    + No &mdash; Unmanaged
 
 ## :material-ethernet: Port Map 
 
-| Port # | Connected Device                                                                                | Color / Type | Notes                     |
-| :----: | :---------------------------------------------------------------------------------------------- | :----------- | :------------------------ |
-| **1**  | :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                  | White Cat5e  | `enp7s0`, `192.168.50.61` |
-| **2**  | :material-desktop-tower:&nbsp;[Rob's Desktop](../02_Hardware/Rob's_Desktop.md)                  | White Cat5e  | `DHCP`                    |
-| **3**  | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White Cat5e  | `eth0`, `192.168.50.2`    |
-| **4**  | :material-ethernet:&nbsp;*Empty*                                                                | -            | -                         |
-| **5**  | :material-router-wireless:&nbsp;[ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)                  | Black Cat5e  | Uplink                    |
+| Port # | Connected Device                                                                                | Color / Type  | Notes                     |
+| :----: | :---------------------------------------------------------------------------------------------- | :------------ | :------------------------ |
+| **1**  | :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                  | White / Cat5e | `enp7s0`, `192.168.50.61` |
+| **2**  | :material-desktop-tower:&nbsp;[Rob's Desktop](../02_Hardware/Rob's_Desktop.md)                  | White / Cat5e | `DHCP`                    |
+| **3**  | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White / Cat5e | `eth0`, `192.168.50.2`    |
+| **4**  | :material-ethernet:&nbsp;*Empty*                                                                | -             | -                         |
+| **5**  | :material-router-wireless:&nbsp;[ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)                  | Black / Cat6A | Uplink                    |
 
 ---
 ## :material-tools: Maintenance Notes

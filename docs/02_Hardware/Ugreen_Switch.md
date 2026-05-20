@@ -39,24 +39,25 @@ hide:
 
 #### :symbols-monitor-heart: Specs:
 
-+ **Throughput:** 
-    + Unmanaged 
++ Throughput: 
     + Five 2.5 Gb/s Ports
     + One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](./ASUS_RT-BE92U.md) router)*
     + 45 Gb/s Total Switching Capacity
-+ **Jumbo Frames:** 
++ Jumbo Frames: 
     + Supported *(12 KB)*
++ Managed:
+    + No &mdash; Unmanaged
 
 ## :material-ethernet: Port Map
 
-| Port # | Connected Device                                                                 | Color / Type            | Notes                     |
-| :----: | :------------------------------------------------------------------------------- | :---------------------- | :------------------------ |
-| **1**  | :material-laptop:&nbsp;[Rob's Laptop](../02_Hardware/Rob's_Laptop.md)            | White, Cat5e            | Temporary Connection      |
-| **2**  | :material-ethernet:&nbsp;*Empty*                                                 | -                       | -                         |
-| **3**  | :material-ethernet:&nbsp;*Empty*                                                 | -                       | -                         |
-| **4**  | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | Blue, 2.5 Gb/s, Cat6A   | `eth1`, `192.168.50.5`    |
-| **5**  | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | Yellow, 2.5 Gb/s, Cat6A | `eth0`, `192.168.50.4`    |
-| **6**  | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red, 10 Gb/s, Cat6A     | SFP+ Ethernet Transceiver |
+| Port # | Connected Device                                                                 | Color / Type   | Notes                              |
+| :----: | :------------------------------------------------------------------------------- | :------------- | :--------------------------------- |
+| **1**  | :material-laptop:&nbsp;[Rob's Laptop](../02_Hardware/Rob's_Laptop.md)            | White / Cat5e  | 2.5 Gb/s, Temporary Connection     |
+| **2**  | :material-ethernet:&nbsp;*Empty*                                                 | -              | -                                  |
+| **3**  | :material-ethernet:&nbsp;*Empty*                                                 | -              | -                                  |
+| **4**  | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | Blue / Cat6A   | 2.5 Gb/s, `eth1`, `192.168.50.5`   |
+| **5**  | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | Yellow / Cat6A | 2.5 Gb/s, `eth0`, `192.168.50.4`   |
+| **6**  | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red / Cat6A    | 10 Gb/s, SFP+ Ethernet Transceiver |
 
 ---
 ## :material-tools: Maintenance Notes

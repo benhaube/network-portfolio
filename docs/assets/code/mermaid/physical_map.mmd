@@ -33,8 +33,8 @@ graph TD
         RouterMain("<b>ASUS RT-BE92U</b><br><i>(Main Router)</i>"):::tenGb
         SwitchTV("<b>LiteWave Switch</b><br><i>(LS1005G)</i>"):::gigabit
         GoogleTV("Google TV Streamer"):::gigabit
-        %%FireTV("Amazon Fire TV"):::gigabit
-        %%Nintendo("Nintendo Switch Dock"):::gigabit
+        SmartTV("TCL Smart TV"):::gigabit
+        Nintendo("Nintendo Switch Dock"):::gigabit
     end
 
     %% --- Office & Printer Cart --- %%
@@ -95,8 +95,8 @@ graph TD
     SwitchAgg -- "<b>Port 4</b> <i>(Blue Cat6a)</i>" --> Zima
     SwitchAgg -- "<b>Port 5</b> <i>(Yellow Cat6a)</i>" --> Zima
     SwitchTV -- "<b>Port 2</b> <i>(Black Cat6a)</i>" --> GoogleTV
-    %%SwitchTV -- "<b>Port 3</b> <i>(Black Cat5e)</i>" --> FireTV
-    %%SwitchTV -- "<b>Port 4</b> <i>(Black Cat5e)</i>" --> Nintendo
+    SwitchTV -- "<b>Port 3</b> <i>(Black Cat5e)</i>" --> SmartTV
+    SwitchTV -- "<b>Port 4</b> <i>(Black Cat5e)</i>" --> Nintendo
 
     %% --- Office --- %%
     SwitchOffice -- "<b>Port 1</b> <i>(White Cat5e)</i>" --> DesktopBen

@@ -89,6 +89,7 @@ theme:
       software: material/application
       switch: material/switch
       tools: material/tools
+      tv-stand: material/buffet
       video: material/video
       vh: simple/qemu
       vlan: material/security-network
@@ -325,6 +326,7 @@ extra:
     Software: software
     Switch: switch
     Tools: tools
+    TV Stand: tv-stand
     Video: video
     Virtual Host: vh 
     Virtual Machine: vm

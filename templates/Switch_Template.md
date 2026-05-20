@@ -10,7 +10,7 @@ tags:
 hide:
   - toc
 ---
-![Icon](../assets/icons/<icon>.svg){ width=200 }
+![Material Design switch icon](../assets/icons/switch.svg){ width=200 }
 
 # Switch Template
 *Subtitle*

@@ -24,7 +24,7 @@ hide:
 
 #### :material-toolbox: Role: 
 
-:    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the entertainment center in the living room. Located on the back of the entertainment center, attached with Velcro. 
+:    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro. 
 
 #### :material-map-marker-outline: Location: 
 

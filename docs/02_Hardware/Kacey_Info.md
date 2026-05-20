@@ -40,13 +40,13 @@ hide:
 
 #### :symbols-memory-alt: Printer MCU:
 
-+ **Nozzle**
++ Nozzle
     + *Chip:* GD32F303CBT6
     + *Version:* CR-K1-MAX-NOZZLE-V1.2.0
-+ **Leveling**
++ Leveling
     + *Chip:* GD32E230F8P6
     + *Version:* CR-K1-MAX-LEVELING-V1.1.0
-+ **Main**
++ Main
     + *Chip:* GD32F303RET6
     + *Version:* CR4CU220812S12
 

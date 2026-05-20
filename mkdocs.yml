@@ -89,7 +89,7 @@ theme:
       software: material/application
       switch: material/switch
       tools: material/tools
-      tv-stand: material/buffet
+      tv-stand: symbols/tv
       video: material/video
       vh: simple/qemu
       vlan: material/security-network

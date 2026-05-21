@@ -25,11 +25,11 @@ tags:
 ## :material-segment: Network Segmentation 
 &emsp;&emsp;*VLAN Architecture*
 
-| Zone                                    | VLAN ID  | Description                                            | Access Rules                                                                                                  |
-| :-------------------------------------- | :------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| :material-security:&nbsp;Trusted        | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                        |
-| :symbols-shield-person-fill:&nbsp;Guest | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                  |
-| :symbols-shield-house-fill:&nbsp;IoT    | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
+| Zone                                                                                 | VLAN ID  | Description                                            | Access Rules                                                                                                  |
+| :----------------------------------------------------------------------------------- | :------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| [:material-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)          | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                        |
+| [:symbols-shield-person-fill:&nbsp;Guest](./IP_Address_Management.md#local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                  |
+| [:symbols-shield-house-fill:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)          | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ## :material-wall-fire: Boundary Defense & Remote Access
 

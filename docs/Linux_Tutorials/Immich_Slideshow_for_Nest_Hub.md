@@ -46,7 +46,8 @@ hide:
 
 1. If the script selects them but doesn't delete them, just click the :material-trash-can-outline: icon yourself after it does the hard work of selecting everything.
 
-## :material-server-outline: Phase 2: Server-Side Setup *(ZimaOS NAS)*
+## :material-server-outline: Phase 2: Server-Side Setup 
+&emsp;&emsp;*ZimaOS NAS*
 
 **Goal:**
 :   Replicate "Live Albums" and generate the Nest Hub interface.
@@ -84,7 +85,8 @@ Place this in the same folder as your docker-compose file.
     + **Create Rule:** If Hostname equals `frame.rac3r4life.online` :material-arrow-right-thin: **Skip** "Super Bot Fight Mode" and "Managed Challenge".
         + _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
-## :material-home-automation: Phase 4: Automation *(Home Assistant on Pi 4)*
+## :material-home-automation: Phase 4: Automation 
+&emsp;&emsp;*Home Assistant on Pi 4*
 
 **Goal:**
 :   Force Nest Hub to show the frame when idle.

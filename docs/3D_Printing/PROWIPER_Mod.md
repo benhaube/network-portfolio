@@ -77,7 +77,8 @@ hide:
 <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
 </div>
 
-## :material-toggle-switch-outline: Dry Run *(Critical Safety Step)*
+## :material-toggle-switch-outline: Dry Run 
+&emsp;&emsp;*Critical Safety Step*
 
 > [!warning inline end] Caution
 > **Do not install the physical hardware yet.**

@@ -132,3 +132,56 @@ hide:
 
 + If the VM is corrupted there are external snapshots to roll back to. 
 + Also, on the main storage pool on the [ZimaOS NAS](./ZimaBoard_2_NAS.md) in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 
+
+<br>
+
+#### :material-login: Fastfetch Login Preset:
+
+Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
+
+1. Install Fastfetch: 
+
+    ```bash linenums="1"
+    sudo apt update
+    sudo apt install fastfetch
+    ```
+
+2. Copy the `login.jsonc` preset file into the presets directory:
+
+    ```bash linenums="1"
+    sudo cp login.jsonc /usr/share/fastfetch/presets
+    ```
+
+3. Add the `fastfetch` command to the `~/.bashrc` file: 
+
+    ```bash linenums="1"
+    fastfetch -c login
+    ```
+
+##### Fastfetch Preset File
+
+```json title="<code>/usr/share/fastfetch/presets/login.jsonc</code>" linenums="1" 
+--8<-- "fastfetch-login-debian-vm.jsonc"
+```
+
+#### :material-console-line: Starship Terminal Prompt:
+
+--8<-- "starship-note.md"
+
+1. Install the latest version:
+
+    ```bash linenums="1"
+    curl -sS https://starship.rs/install.sh | sh
+    ```
+
+2. Add init script to shell's config file: 
+
+    ```bash linenums="1"
+    eval "$(starship init bash)"
+    ```
+
+3. Place the custom config file in the `~/.config` directory:
+
+    ```toml title="<code>starship.toml</code>" linenums="1"
+    --8<-- "starship-debian-vm.toml"
+    ```

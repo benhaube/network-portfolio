@@ -40,17 +40,7 @@ style = "bold #b58900"
 disabled = false
 
 [os.symbols]
-Android = " "
-CentOS = " "
-Debian = " "
-Fedora = " "
-Kali = " "
 Linux = " "
-openSUSE = " "
-Redhat = " "
-RedHatEnterprise = " "
-SUSE = " "
-Windows = "󰍲 "
 
 [cmd_duration]
 style = 'bold #b58900'
@@ -67,9 +57,3 @@ tag_symbol = '  '
 
 [memory_usage]
 symbol = "󰍛 "
-
-[package]
-symbol = "󰏗 "
-
-[python]
-symbol = " "

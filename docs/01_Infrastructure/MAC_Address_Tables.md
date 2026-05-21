@@ -38,7 +38,8 @@ hide:
 |                                                 |             |                                                             | :material-wifi:&nbsp;*(2.4 GHz)* | `7C:10:C9:DF:13:61` |                                   |
 |                                                 |             |                                                             | :material-wifi:&nbsp;*(5 GHz)*   | `7C:10:C9:DF:13:64` |                                   |
 
-## :material-security: Trusted Network *(VLAN50)*
+## :material-security: Trusted Network 
+&emsp;&emsp;*VLAN50*
 
 | Device Type                                    | Location    | Hostname                                                           | MAC Address         |      Interface      |    WAN Access    | Role / Notes                                                         |
 | :--------------------------------------------- | :---------- | :----------------------------------------------------------------- | :------------------ | :-----------------: | :--------------: | :------------------------------------------------------------------- |
@@ -69,7 +70,8 @@ hide:
 | :devices-chromecast-fill:&nbsp;Streaming Stick | Living-Room | `roku-streaming-stick-4k`                                          | `50:06:F5:53:2A:F2` |   :material-wifi:   | :material-check: | Roku Streaming Stick 4K (2025), Connected to TV in Living Room       |
 | :material-nintendo-game-boy:&nbsp;Game Console | Mobile      | `nintendo-switch`                                                  | `74:84:69:0B:56:EF` |   :material-wifi:   | :material-check: | Nintendo Switch OLED                                                 |
 
-## :symbols-shield-house-fill: IoT Network *(VLAN53)*
+## :symbols-shield-house-fill: IoT Network 
+&emsp;&emsp;*VLAN53*
 
 | Device Type                                       | Location    | Hostname              | MAC Address         |    Interface    |    WAN Access    | Role / Notes                                                                                         |
 | :------------------------------------------------ | :---------- | :-------------------- | :------------------ | :-------------: | :--------------: | :--------------------------------------------------------------------------------------------------- |

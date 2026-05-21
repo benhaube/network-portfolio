@@ -29,15 +29,16 @@ hide:
 > :    **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
 
 ---
-## :material-lan: Local Network(s)
+## :material-lan: Local Networks
 
-| VLAN   | SSID         | Subnet            | DNS Servers                   | Domain   | WAN Access *(default)* | Role / Notes                            |
-| :----- | :----------- | :---------------- | :---------------------------- | :------- | :--------------------: | :-------------------------------------- |
-| VLAN50 | *Home*       | `192.168.50.0/24` | `192.168.50.6` `192.168.50.2` | internal |    :material-check:    | :material-security:&nbsp;Trusted        |
-| VLAN52 | *Home_Guest* | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        |    :material-check:    | :symbols-shield-person-fill:&nbsp;Guest |
-| VLAN53 | *2G_IoT*     | `192.168.53.0/24` | `9.9.9.9` `149.122.122.122`   | -        |    :material-close:    | :symbols-shield-house-fill:&nbsp;IoT    |
+| VLAN   | SSID         | Subnet            | DNS Servers                   | Domain   |    WAN Access    | Role / Notes                            |
+| :----- | :----------- | :---------------- | :---------------------------- | :------- | :--------------: | :-------------------------------------- |
+| VLAN50 | *Home*       | `192.168.50.0/24` | `192.168.50.6` `192.168.50.2` | internal | :material-check: | :material-security:&nbsp;Trusted        |
+| VLAN52 | *Home_Guest* | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        | :material-check: | :symbols-shield-person-fill:&nbsp;Guest |
+| VLAN53 | *2G_IoT*     | `192.168.53.0/24` | `9.9.9.9` `149.122.122.122`   | -        | :material-close: | :symbols-shield-house-fill:&nbsp;IoT    |
 
-## :material-router-wireless: Core Infrastructure *(Static & Reserved)*
+## :material-router-wireless: Core Infrastructure 
+&emsp;&emsp;*Static & Reserved*
 
 | Device                                                                                     | VLAN   | IP Address       | Hostname           | Type     | Role / Notes                                                                                                              |
 | :----------------------------------------------------------------------------------------- | :----- | :--------------- | :----------------- | :------- | :------------------------------------------------------------------------------------------------------------------------ |
@@ -50,7 +51,8 @@ hide:
 | :material-router-wireless:&nbsp;[ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)             | VLAN50 | `192.168.50.221` | `aimesh-node`      | Reserved | AiMesh Node *(Backhaul)*                                                                                                  |
 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md)                         | -      | `192.168.100.1`  | `hitron-modem`     | Static   | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
 
-## :symbols-devices: Key Clients *(DHCP Reserved)*
+## :symbols-devices: Key Clients 
+&emsp;&emsp;*DHCP Reserved*
 
 | Device                                                                                              | VLAN   | IP Address       | Hostname           | Role / Notes                                             |
 | :-------------------------------------------------------------------------------------------------- | :----- | :--------------- | :----------------- | :------------------------------------------------------- |
@@ -58,18 +60,18 @@ hide:
 | :material-printer-3d-nozzle:&nbsp;[Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)            | VLAN50 | `192.168.50.153` | `k1c-a71e`         | Creality K1C *(Modified)*                                |
 | :material-raspberry-pi:&nbsp;[Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(wlan0)* | VLAN53 | `DHCP`           | -                  | DHCP, [Home Assistant](../03_Services/Home_Assistant.md) |
 
-## :material-web-refresh: Dynamic DNS Provider(s)
+## :material-web-refresh: Dynamic DNS Providers
 
 | Status   | Server                                                                           | Provider                 | Domain Name                                | TLS Certificate                        | Certificate Expire |
 | :------- | :------------------------------------------------------------------------------- | :----------------------- | :----------------------------------------- | :------------------------------------- | :----------------- |
 | *Active* | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | [ASUS](https://asus.com) | https://remote-access-home-34.asuscomm.com | :simple-letsencrypt:&nbsp;Lets Encrypt | 06-07-2026         |
 
-## :material-vpn: VPN Server(s) / Client(s)
+## :material-vpn: VPN Servers / Clients
 
 #### :simple-wireguard:&nbsp;WireGuard @ ASUS Router
-&emsp;*(the main server)*
+&emsp;&nbsp;*Main Server*
 
-| Client                              | IP Address    | DNS Server(s)                 | Endpoint                                 |
+| Client                              | IP Address    | DNS Servers                   | Endpoint                                 |
 | :---------------------------------- | :------------ | :---------------------------- | :--------------------------------------- |
 | :symbols-mobile:&nbsp;Ben's-Phone   | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:41820 |
 | :material-laptop:&nbsp;Ben's-Laptop | `10.6.0.3/32` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:41820 |
@@ -77,9 +79,9 @@ hide:
 | :material-laptop:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `10.6.0.1` *\[Quad-9 (DoT)]*  | remote-access-home-34.asuscomm.com:41820 |
 
 #### :simple-wireguard:&nbsp;WireGuard @ ZimaOS NAS
-&emsp;*(the backup server)*
+&emsp;&nbsp;*Backup Server*
 
-| Client                            | IP Address                        | DNS Server(s)                 | Endpoint                                 |
+| Client                            | IP Address                        | DNS Servers                   | Endpoint                                 |
 | :-------------------------------- | :-------------------------------- | :---------------------------- | :--------------------------------------- |
 | :material-laptop:&nbsp;ben-laptop | `10.8.0.2/32` `fd42:42:42::2/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
 | :symbols-mobile:&nbsp;ben-pixel   | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |

@@ -101,12 +101,12 @@
 *[LAN]: Local Area Network
 *[LED]: Light Emitting Diode
 *[LEDs]: Light Emitting Diodes
-*[LPDDR]: Low Profile Double Data Rate
-*[LPDDR3]: Low Profile Double Data Rate 3
-*[LPDDR4]: Low Profile Double Data Rate 4
-*[LPDDR4X]: Low Profile Double Data Rate 4
-*[LPDDR5]: Low Profile Double Data Rate 5
-*[LPDDR5X]: Low Profile Double Data Rate 5
+*[LPDDR]: Low Power Double Data Rate
+*[LPDDR3]: Low Power Double Data Rate 3
+*[LPDDR4]: Low Power Double Data Rate 4
+*[LPDDR4X]: Low Power Double Data Rate 4X
+*[LPDDR5]: Low Power Double Data Rate 5
+*[LPDDR5X]: Low Power Double Data Rate 5X
 *[LUKS]: Linux Unified Key Setup
 *[LUKS2]: Linux Unified Key Setup 2
 *[LXC]: Linux Containers

@@ -16,6 +16,7 @@ services:
     container_name: network-utils-ws
     ports:
       - 8000:8000
+    restart: unless-stopped
     networks:
       - it-tools_default
 networks:

@@ -245,19 +245,19 @@ hide:
 
 --8<-- "starship-note.md"
 
-1. Install the latest version.
+1. Install the latest version:
 
     ```bash linenums="1"
     curl -sS https://starship.rs/install.sh | sh
     ```
 
-2. Add init script to shell's config file. 
+2. Add init script to shell's config file: 
 
     ```bash linenums="1"
     eval "$(starship init bash)"
     ```
 
-3. Place the custom config file in the `~/.config` directory.
+3. Place the custom config file in the `~/.config` directory:
 
     ```toml title="<code>starship.toml</code>" linenums="1"
     --8<-- "starship-laptop.toml"

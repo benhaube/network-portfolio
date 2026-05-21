@@ -170,3 +170,67 @@ hide:
 > ---
 > 
 > See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 
+
+#### :material-login: Fastfetch Login Preset:
+
+1. Download the latest `fastfetch` release from [GitHub]() and decompress the archive: 
+
+    ```bash linenums="1"
+    sudo wget https://github.com/fastfetch-cli/fastfetch/releases/download/[release-version]/fastfetch-linux-amd64.zip
+    sudo unzip fastfetch-linux-amd64.zip
+    ```
+
+2. Manually install `fastfetch` into `/opt/bin` directory: 
+
+    ```bash linenums="1" 
+    sudo cp fastfetch-linux-amd64/usr/bin/fastfetch /opt/bin
+    sudo cp -r fastfetch-linux-amd64/usr/share/fastfetch /opt/share
+    sudop cp -r fastfetch-linux-amd64/usr/share/bash-completion /opt/share
+    ```
+
+3. Copy the `login.jsonc` preset file into the presets directory:
+
+    ```bash linenums="1"
+    sudo cp login.jsonc /usr/share/fastfetch/presets
+    ```
+
+4. Add the `fastfetch` command to the `~/.bashrc` file: 
+
+    ```bash linenums="1"
+    fastfetch -c login
+    ```
+
+##### Fastfetch Preset File
+
+```json title="<code>/usr/share/fastfetch/presets/login.jsonc</code>" linenums="1" 
+--8<-- "fastfetch-login-storage-server.jsonc"
+```
+
+#### :material-console-line: Starship Terminal Prompt:
+
+--8<-- "starship-note.md"
+
+1. Install the latest version:
+
+    ```bash linenums="1" 
+    sudo curl -sS https://starship.rs/install.sh
+    sudo sh install.sh -b /opt/bin
+    ```
+
+2. Add init script to `~/.bashrc`: 
+
+    ```bash linenums="1"
+    eval "$(starship init bash)"
+    ```
+
+3. Copy the `starship.toml` config file into the `~/.config` directory: 
+
+    ```bash linenums="1"
+    sudo cp starship.toml .config/
+    ```
+
+##### Starship Config File
+
+```toml title="<code>~/.config/starship.toml</code>" linenums="1"
+--8<-- "starship-zimaos.toml"
+```

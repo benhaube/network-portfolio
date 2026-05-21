@@ -261,3 +261,32 @@ hide:
     ```toml title="<code>starship.toml</code>" linenums="1"
     --8<-- "starship-desktop.toml"
     ```
+
+#### :material-login: Fastfetch Login Preset:
+
+Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
+
+1. Install Fastfetch: 
+
+    ```bash linenums="1"
+    sudo dnf upgrade
+    sudo dnf install fastfetch
+    ```
+
+2. Copy the `login.jsonc` preset file into the presets directory:
+
+    ```bash linenums="1"
+    sudo cp login.jsonc /usr/share/fastfetch/presets
+    ```
+
+3. Add the `fastfetch` command to the `~/.bashrc.d/env` file: 
+
+    ```bash linenums="1"
+    fastfetch -c login
+    ```
+
+##### Fastfetch Preset File
+
+```json title="<code>/usr/share/fastfetch/presets/login.jsonc</code>" linenums="1" 
+--8<-- "fastfetch-login-desktop.jsonc"
+```

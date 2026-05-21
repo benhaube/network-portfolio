@@ -30,3 +30,34 @@
 + Data and configurations from Docker services are backed up to [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
     + Path: `/media/Quick-Storage/Backup/<hostname>/stacks`
 + Critical configuration files are backed up to the attached USB flash drive and the secure cloud storage provider, [p-Cloud](https://www.pcloud.com/).
+
+<br>
+
+#### :material-login: Fastfetch Login Preset:
+
+Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
+
+1. Install Fastfetch: 
+
+    ```bash linenums="1"
+    sudo apt update
+    sudo apt install fastfetch
+    ```
+
+2. Copy the `login.jsonc` preset file into the presets directory:
+
+    ```bash linenums="1"
+    sudo cp login.jsonc /usr/share/fastfetch/presets
+    ```
+
+3. Add the `fastfetch` command to the `~/.bashrc` file: 
+
+    ```bash linenums="1"
+    fastfetch -c login
+    ```
+
+##### Fastfetch Preset File
+
+```json title="<code>/usr/share/fastfetch/presets/login.jsonc</code>" linenums="1" 
+--8<-- "fastfetch-login-pi-server.jsonc"
+```

@@ -18,7 +18,7 @@ hide:
 # Beszel
 *Server Monitoring*
 
-[GitHub :material-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/henrygd/beszel-docs){ .md-button .md-button--primary }
+[GitHub :material-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

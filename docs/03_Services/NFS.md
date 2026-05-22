@@ -20,7 +20,7 @@ hide:
 # NFS
 *Network File System*
 
-[Documentation :material-file-document-multiple:](https://docs.kernel.org/admin-guide/nfs/index.html){ .md-button .md-button--primary }
+[Documentation :material-file-document-multiple:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

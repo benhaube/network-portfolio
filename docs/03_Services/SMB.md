@@ -19,7 +19,7 @@ hide:
 # SMB
 *Server Message Block*
 
-[Documentation :material-file-document-multiple:](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-smb/f210069c-7086-4dc2-885e-861d837df688){ .md-button .md-button--primary }
+[Documentation :material-file-document-multiple:](https://wiki.samba.org/index.php/Main_Page){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

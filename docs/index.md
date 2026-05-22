@@ -208,7 +208,7 @@ hide:
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
 :services-youtube-dl:&ensp;[yt-dlp Web-UI](./03_Services/yt-dlp_WebUI.md): 
-:    A Web UI and RPC server for yt-dlp.
+:    High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
 ---
 ## :material-swap-horizontal-bold: Change Management

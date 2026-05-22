@@ -7,7 +7,7 @@ services:
       - /DATA/Downloads/yt-dlp:/downloads  # (1)!
       - /DATA/AppData/dockge/stacks/yt-dlp-webui/config:/config  # (2)!
     environment:
-      - JWT_SECRET=your-secret
+      - JWT_SECRET=your-secret  # (3)!
     restart: unless-stopped
     healthcheck:
       test: curl -f http://localhost:3033 || exit 1

@@ -26,7 +26,7 @@ hide:
 
 #### :symbols-description: Description: 
 
-:    A Web UI and RPC server for `yt-dlp`.
+:    High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
 #### :symbols-settings-ethernet: Port(s):
 
@@ -39,7 +39,8 @@ hide:
 
 #### :material-key-chain: Credentials: 
 
-+ N/A
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"yt-dlp-webui"
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -49,8 +50,44 @@ hide:
 
 ### :material-cog: Configuration 
 
+1. Create the configuration directory:
+
+    ```bash linenums="1"
+    sudo mkdir -p /DATA/AppData/dockge/stacks/yt-dlp-webui/data
+    ```
+
+2. Enter that directory and create the `config.yml` configuration file:
+
+    ```bash linenums="1"
+    cd /DATA/AppData/dockge/stacks/yt-dlp-webui/data
+    sudo nano config.yml
+    ```
+  
+3. Paste the following code into the file, then save and close: 
+
+    ```yaml title="<code>config.yml</code>" linenums="1"
+    --8<-- "yt-dlp-webui-config.yml"
+    ```
+
+    1. Replace with a strong password for your user. 
+
+4. Start the container with the Docker compose file, then run this command to obtain your JWT:
+
+    ```bash linenums="1"
+    curl -H "Content-Type: application/json" \
+      -X POST \
+      -d '{"username":"your-username","password":"your-password"}' \
+      http://storage-server.internal:3033/auth/login
+    ```
+
+5. Paste the JWT into the environment variable, `JWT_SECRET`, in your Docker compose file and restart the container.
+
+#### :material-docker: Docker Compose File
+
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "yt-dlp.yml"
 ```
 
-1. Replace `<your dir>` with a directory on your host system.
+1. Replace with the directory on your host system where you want the videos to be downloaded.
+2. **Optional:** Setting the directory for the configuration file is optional, but recommended. Create the configuration file, `config.yml`, in the directory on the host system.
+3. Replace with the JWT you obtained with the command above. 

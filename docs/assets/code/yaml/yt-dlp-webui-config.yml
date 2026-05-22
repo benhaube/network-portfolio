@@ -9,7 +9,7 @@ queue_size: 4
 # Authentication
 require_auth: true
 username: admin
-password: your-password
+password: your-password  # (1)!
 
 # Persistence
 session_file_path: /config              

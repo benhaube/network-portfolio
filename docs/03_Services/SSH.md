@@ -34,22 +34,24 @@ hide:
 
 #### :material-link-variant: URL / Access: 
 
-+ :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)
++ :material-router-wireless:&nbsp;ASUS RT-BE92U
     + `192.168.50.1:22` 
     + `asusrouter.internal:22`
-+ :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)
++ :material-debian:&nbsp;Debian Server
     + `192.168.50.6:22` 
     + `debian-vm.internal:22` 
-+ :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
++ :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server
     + `192.168.50.2:22` 
     + `pi-server.internal:22`
-+ :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)
++ :material-raspberry-pi:&nbsp;Raspberry Pi Zero Server
     + `192.168.50.3:22` 
     + `pi-zero.internal:22` 
-+ :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
-    + `192.168.50.4:22` 
++ :material-nas:&nbsp;ZimaOS NAS
+    + `192.168.50.4:22`
+    + `192.168.50.5:22` 
     + `storage-server.internal:22` 
-+ :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md)
+    + `storage-server-2.internal:22`
++ :material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer
     + `192.168.50.153:22` 
     + `k1c-a71e.internal:22` 
 
@@ -65,14 +67,14 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device                                                                                                     | Method                             | Container Name | Image |
-| :-------------------------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                                   | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)                 | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)                | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                             | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| :material-printer-3d-nozzle:&nbsp;[Kacey (Creality^&copy;^ K1C) 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                                      | Method                             | Container Name | Image |
+| :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                 | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-debian:&nbsp;[Debian Server](../02_Hardware/Debian_Server_VM.md)                       | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| :material-printer-3d-nozzle:&nbsp;[Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)         | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration 
 

@@ -38,23 +38,23 @@ hide:
 
 #### :material-link-variant: URL / Access:  
 
-+ :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md):
++ :material-desktop-tower:&nbsp;Ben's Desktop
     + <https://bens-workstation.internal:8384>
     + <https://192.168.50.61:8384>
-+ :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md):
++ :material-laptop:&nbsp;Ben's Laptop
     + <https://localhost:8384>
-+ :symbols-mobile:&nbsp;[Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md):
++ :symbols-mobile:&nbsp;Ben's Smartphone
     + <https://localhost:8384>
-+ :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md):
++ :material-debian:&nbsp;Debian Server
     + <https://debian-vm.internal:8384>
     + <https://192.168.50.6:8384>
-+ :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md):
++ :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server
     + <https://pi-server.internal:8384>
     + <https://192.168.50.2:8384>
-+ :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md):
++ :material-raspberry-pi:&nbsp;Raspberry Pi Zero Server
     + <https://pi-zero.internal:8384>
     + <https://192.168.50.3:8384>
-+ :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md):
++ :material-nas:&nbsp;ZimaOS NAS
     + <https://storage-server.internal:8384>
     + <https://storage-server-2.internal:8384>
     + <https://192.168.50.4:8384>
@@ -78,7 +78,7 @@ hide:
 | :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                   | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | :material-laptop:&nbsp;[Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                            | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | :symbols-mobile:&nbsp;[Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                     | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
-| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| :material-debian:&nbsp;[Debian Server](../02_Hardware/Debian_Server_VM.md)                       | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
@@ -95,7 +95,7 @@ hide:
     sudo systemctl start syncthing@bhaube.service
     ```
 
-+ :material-debian:&nbsp;Debian Server VM:
++ :material-debian:&nbsp;Debian Server:
 
     ```bash linenums="1"
     sudo apt install -y syncthing

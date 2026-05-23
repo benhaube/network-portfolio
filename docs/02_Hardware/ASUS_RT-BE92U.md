@@ -74,14 +74,14 @@ hide:
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-|       Port #       | Connected Device                                                        | Color / Type | Notes               |
-| :----------------: | :---------------------------------------------------------------------- | :----------- | :------------------ |
-| 10 Gb WAN / LAN 1  | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) | Black Cat6a  | 10 Gb/s Uplink      |
-| 2.5 Gb WAN / LAN 2 | :material-wan:&nbsp;[Hitron Modem](../02_Hardware/Hitron_Modem.md)      | Black Cat6a  | WAN Connection      |
-|    2.5 Gb LAN 1    | :devices-10-inch-rack:&nbsp;Mini-Rack                                   | Black Cat6a  | Spare Keystone Jack |
-|    2.5 Gb LAN 2    | :material-ethernet:&nbsp;*Empty*                                        | -            | -                   |
-|    2.5 Gb LAN 3    | :material-ethernet:&nbsp;*Empty*                                        | -            | -                   |
-|    2.5 Gb LAN 4    | :material-ethernet:&nbsp;*Empty*                                        | -            | -                   |
+|       Port #       | Connected Device                                                              | Color / Type | Notes               |
+| :----------------: | :---------------------------------------------------------------------------- | :----------- | :------------------ |
+| 10 Gb WAN / LAN 1  | :material-switch:&nbsp;[Ugreen Switch](./Ugreen_Switch.md)                    | Black Cat6a  | 10 Gb/s Uplink      |
+| 2.5 Gb WAN / LAN 2 | :material-wan:&nbsp;[Hitron Modem](./Hitron_Modem.md)                         | Black Cat6a  | WAN Connection      |
+|    2.5 Gb LAN 1    | :devices-10-inch-rack:&nbsp;<a href="./tags.html#tag:mini-rack">Mini-Rack</a> | Black Cat6a  | Spare Keystone Jack |
+|    2.5 Gb LAN 2    | :material-ethernet:&nbsp;*Empty*                                              | -            | -                   |
+|    2.5 Gb LAN 3    | :material-ethernet:&nbsp;*Empty*                                              | -            | -                   |
+|    2.5 Gb LAN 4    | :material-ethernet:&nbsp;*Empty*                                              | -            | -                   |
 
 ## :symbols-storage: Storage & Mounts
 

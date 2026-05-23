@@ -44,12 +44,17 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device                                                         | Method                                | Container Name | Image                                |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :----------------------------------- |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `cloudflared`  | `wisdomsky/cloudflared-web:2026.3.0` |
+| Host Device                                                                                     | Method                                | Container Name      | Image                              |
+| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :--------------------------------- |
+| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
+| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                             | :material-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
 
 ### :material-cog: Configuration
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml title="Raspberry Pi 4B Server" linenums="1"
+--8<-- "cloudflared-pi-server.yml"
+```
+
+```yaml title="ZimaOS NAS" linenums="1"
 --8<-- "cloudflared.yaml"
 ```

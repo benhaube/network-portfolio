@@ -46,14 +46,14 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-### Hub
+##### Hub
 
 | Host Device                                                                                     | Method                                | Container Name | Image                         |
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :---------------------------- |
 | :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel:latest`       |
 |                                                                                                 | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
 
-### Agents
+##### Agents
 
 | Host Device                                                                                      | Method                                | Container Name | Image                         |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :---------------------------- |
@@ -63,7 +63,21 @@ hide:
 
 ### :material-cog: Configuration
 
-#### Hub:
+#### :material-key: Generate API Tokens:
+
+:    Run the following command in a terminal on a client machine to generate API tokens.
+
+    ```bash linenums="1"
+    curl -X POST "http://pi-server.internal:8090/api/collections/users/auth-with-password" \
+      -H "Content-Type: application/json" \
+      -d '{"identity":"user@example.com","password":"your-password"}'  # (1)!
+    ```
+
+    1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
+
+#### :material-docker: Docker Compose:
+
+##### Hub
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 --8<-- "beszel-pi-4b.yaml"
@@ -71,7 +85,7 @@ hide:
 
 1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
 
-#### Agents:
+##### Agents
 
 ```yaml title="Debian Server VM" linenums="1"
 --8<-- "beszel-debian-vm.yaml"

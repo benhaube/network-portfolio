@@ -205,6 +205,9 @@ plugins:
   - tags:
       export: true
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
+      tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - optimize:
       optimize_exclude:
         - blog/*

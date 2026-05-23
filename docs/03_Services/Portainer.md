@@ -51,13 +51,13 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-### Hub
+##### Hub
 
 | Host Device                                                                                         | Method                                | Container Name | Image                        |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
 | :material-raspberry-pi:&nbsp;[~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
 
-### Agent
+##### Agent
 
 | Host Device                                                                                          | Method                                | Container Name    | Image                 |
 | :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
@@ -66,13 +66,13 @@ hide:
 
 ### :material-cog: Configuration  
 
-#### Hub:
+##### Hub
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 --8<-- "portainer-pi-4b.yml"
 ```
 
-#### Agent:
+##### Agent
 
 ```yaml title="Raspberry Pi Zero Server" linenums="1"
 --8<-- "portainer-pi-zero.yml"

@@ -50,6 +50,8 @@ hide:
 
 ### :material-cog: Configuration 
 
+#### :material-progress-wrench: Preparation:  
+
 1. Create the configuration directory:
 
     ```bash linenums="1"
@@ -74,15 +76,16 @@ hide:
 4. Start the container with the Docker compose file, then run this command to obtain your JWT:
 
     ```bash linenums="1"
-    curl -H "Content-Type: application/json" \
-      -X POST \
-      -d '{"username":"your-username","password":"your-password"}' \
-      http://storage-server.internal:3033/auth/login
+    curl -X POST "http://storage-server.internal:3033/auth/login" \
+      -H "Content-Type: application/json" \
+      -d '{"username":"your-username","password":"your-password"}'  # (1)!
     ```
+
+    1. Replace **"your-username"** and **"your-password"** with the values you set in your configuration file, `config.yml`.
 
 5. Paste the JWT into the environment variable, `JWT_SECRET`, in your Docker compose file and restart the container.
 
-#### :material-docker: Docker Compose File
+#### :material-docker: Docker Compose:
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "yt-dlp.yml"

@@ -75,6 +75,25 @@
   }
 }
 
+/* --- Disable image floating on mobile screens --- */
+
+@media screen and (max-width: 768px) {
+  .md-typeset img[align="right"],
+  .md-typeset img[align="left"],
+  .md-typeset img[style*="float: right"] {
+    float: none !important;
+    display: block;
+    margin: 1.5rem auto; 
+    max-width: 100%; 
+  }
+}
+
+/* Force light/dark mode images to stay hidden based on the active Material theme */
+[data-md-color-scheme="slate"] .md-typeset img[src$="#only-light"],
+[data-md-color-scheme="default"] .md-typeset img[src$="#only-dark"] {
+  display: none !important;
+}
+
 /* --- Tags styling --- */
 
 .md-tags .md-tag:hover {

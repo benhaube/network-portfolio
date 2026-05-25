@@ -114,7 +114,7 @@ hide:
 :material-printer:&ensp;[CUPS](./03_Services/CUPS_Print_Server.md): 
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
-:services-addr:&ensp;[DDNS](./03_Services/DDNS.md):
+:material-web-refresh:&ensp;[DDNS](./03_Services/DDNS.md):
 :    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools).
 
 :services-dockge:&ensp;[Dockge](./03_Services/Dockge.md): 

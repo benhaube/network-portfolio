@@ -1,5 +1,5 @@
 ---
-icon: services/addr
+icon: material/web-refresh
 title: DDNS
 subtitle: Provided by addr.tools
 tags:
@@ -14,12 +14,12 @@ tags:
 hide:
   - toc
 ---
-![addr.tools icon](../assets/icons/addr-tools.svg){ width=200 }
+![Material Design 'web-refresh' icon ](../assets/icons/ddns.svg){ width=200 }
 
 # DDNS
 *Provided by addr.tools*
 
-[GitHub :material-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://myaddr.tools/){ .md-button .md-button--primary }
+[GitHub :material-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools :services-addr:](https://addr.tools){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview
@@ -110,7 +110,7 @@ hide:
     chmod +x auth_hook.sh deploy_cert.sh
     ```
 
-4. Run the Certbot command to get the TLS certificate from LetsEncrypt: 
+4. Run the Certbot command to get the TLS certificate from Lets Encrypt: 
 
     ```bash linenums="1"
     sudo certbot certonly \

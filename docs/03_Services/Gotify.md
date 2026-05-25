@@ -191,12 +191,16 @@ hide:
 
 2. Paste this code into the file, then save and close.
 
+    > [!note inline end]
+    > The `ddns-start` script also contains the code to update the [DDNS](./DDNS.md) service. 
+
     ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="4 5"
     --8<-- "ddns-start.sh"
     ```
 
     1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
     2. `$1` is the new IP passed by the router.
+    3. Replace the `KEY` variable with the key provided by addr.tools for your domain name.
 
 3. Make the script executable:
 

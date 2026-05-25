@@ -54,39 +54,39 @@ hide:
 ## :symbols-devices: Key Clients 
 &emsp;&emsp;*DHCP Reserved*
 
-| Device                                                                                              | VLAN   | IP Address       | Hostname           | Role / Notes                                             |
-| :-------------------------------------------------------------------------------------------------- | :----- | :--------------- | :----------------- | :------------------------------------------------------- |
-| :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                      | VLAN50 | `192.168.50.61`  | `bens-workstation` | Fedora Linux 43 *(KDE Plasma Desktop Edition)*           |
-| :material-printer-3d-nozzle:&nbsp;[Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)            | VLAN50 | `192.168.50.153` | `k1c-a71e`         | Creality K1C *(Modified)*                                |
-| :material-raspberry-pi:&nbsp;[Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(wlan0)* | VLAN53 | `DHCP`           | -                  | DHCP, [Home Assistant](../03_Services/Home_Assistant.md) |
+| Device                                                                                              | VLAN   | IP Address       | Hostname           | Role / Notes                                                                  |
+| :-------------------------------------------------------------------------------------------------- | :----- | :--------------- | :----------------- | :---------------------------------------------------------------------------- |
+| :material-desktop-tower:&nbsp;[Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                      | VLAN50 | `192.168.50.61`  | `bens-workstation` | Fedora Linux 43 *(KDE Plasma Desktop Edition)*                                |
+| :material-printer-3d-nozzle:&nbsp;[Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)            | VLAN50 | `192.168.50.153` | `k1c-a71e`         | Creality K1C *(Modified)*                                                     |
+| :material-raspberry-pi:&nbsp;[Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(wlan0)* | VLAN53 | `DHCP`           | -                  | DHCP, Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ## :material-web-refresh: Dynamic DNS Providers
 
-| Status   | Server                                                                           | Provider                 | Domain Name                                | TLS Certificate                        | Certificate Expire |
-| :------- | :------------------------------------------------------------------------------- | :----------------------- | :----------------------------------------- | :------------------------------------- | :----------------- |
-| *Active* | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | [ASUS](https://asus.com) | https://remote-access-home-34.asuscomm.com | :simple-letsencrypt:&nbsp;Lets Encrypt | 06-07-2026         |
+| Status   | Server                                                                           | Provider                        | FQDN                            | TLS Certificate                        | Certificate Expire |
+| :------- | :------------------------------------------------------------------------------- | :------------------------------ | :------------------------------ | :------------------------------------- | :----------------- |
+| *Active* | :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :services-addr:&nbsp;addr.tools | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
 
 ## :material-vpn: VPN Servers / Clients
 
 #### :simple-wireguard:&nbsp;WireGuard @ ASUS Router
 &emsp;&nbsp;*Main Server*
 
-| Client                              | IP Address    | DNS Servers                   | Endpoint                                 |
-| :---------------------------------- | :------------ | :---------------------------- | :--------------------------------------- |
-| :symbols-mobile:&nbsp;Ben's-Phone   | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:41820 |
-| :material-laptop:&nbsp;Ben's-Laptop | `10.6.0.3/32` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:41820 |
-| :symbols-mobile:&nbsp;Rob's-Phone   | `10.6.0.4/32` | `10.6.0.1` *\[Quad-9 (DoT)]*  | remote-access-home-34.asuscomm.com:41820 |
-| :material-laptop:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `10.6.0.1` *\[Quad-9 (DoT)]*  | remote-access-home-34.asuscomm.com:41820 |
+| Client                              | IP Address    | DNS Servers                   | Endpoint                    |
+| :---------------------------------- | :------------ | :---------------------------- | :-------------------------- |
+| :symbols-mobile:&nbsp;Ben's-Phone   | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
+| :material-laptop:&nbsp;Ben's-Laptop | `10.6.0.3/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
+| :symbols-mobile:&nbsp;Rob's-Phone   | `10.6.0.4/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
+| :material-laptop:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
 
 #### :simple-wireguard:&nbsp;WireGuard @ ZimaOS NAS
 &emsp;&nbsp;*Backup Server*
 
-| Client                            | IP Address                        | DNS Servers                   | Endpoint                                 |
-| :-------------------------------- | :-------------------------------- | :---------------------------- | :--------------------------------------- |
-| :material-laptop:&nbsp;ben-laptop | `10.8.0.2/32` `fd42:42:42::2/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
-| :symbols-mobile:&nbsp;ben-pixel   | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
-| :material-laptop:&nbsp;rob-laptop | `10.8.0.4/32` `fd42:42:42::4/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
-| :symbols-mobile:&nbsp;rob-phone   | `10.8.0.5/32` `fd42:42:42::5/128` | `192.168.50.6` `192.168.50.2` | remote-access-home-34.asuscomm.com:51820 |
+| Client                            | IP Address                        | DNS Servers                   | Endpoint                    |
+| :-------------------------------- | :-------------------------------- | :---------------------------- | :-------------------------- |
+| :material-laptop:&nbsp;ben-laptop | `10.8.0.2/32` `fd42:42:42::2/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
+| :symbols-mobile:&nbsp;ben-pixel   | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
+| :material-laptop:&nbsp;rob-laptop | `10.8.0.4/32` `fd42:42:42::4/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
+| :symbols-mobile:&nbsp;rob-phone   | `10.8.0.5/32` `fd42:42:42::5/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
 
 ---
 <div class="grid cards" markdown>

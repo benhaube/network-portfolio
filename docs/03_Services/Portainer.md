@@ -55,14 +55,14 @@ hide:
 
 | Host Device                                                                                         | Method                                | Container Name | Image                        |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| :material-raspberry-pi:&nbsp;[~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
+| [:material-raspberry-pi:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
 
 ##### Agent
 
 | Host Device                                                                                          | Method                                | Container Name    | Image                 |
 | :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
-| :material-raspberry-pi:&nbsp;[~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
-| :material-nas:&nbsp;[~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| [:material-raspberry-pi:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| [:material-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
 ### :material-cog: Configuration  
 

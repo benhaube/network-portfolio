@@ -58,10 +58,10 @@ hide:
 
 ## :material-lan: Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                                         |
-| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------- |
-|  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)* |
-|  `wlan0`  | `DHCP`         | `E4:5F:01:A4:60:07` | :symbols-shield-house-fill:&nbsp;2G_IoT *(VLAN53)*                                   |
+| Interface | IP Address     | MAC Address         | Connected To                                                                                                       |
+| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------- |
+|  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)*                               |
+|  `wlan0`  | `DHCP`         | `E4:5F:01:A4:60:07` | [:symbols-shield-house-fill:&nbsp;2G_IoT](../01_Infrastructure/IP_Address_Management.md#local-networks) *(VLAN53)* |
 
 | Interface |                  VLAN                   | FQDN                 | DNS Servers                  | Gateway        |
 | :-------: | :-------------------------------------: | :------------------- | :--------------------------- | :------------- |
@@ -90,26 +90,26 @@ hide:
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                    |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :---------------------------------------------------------------------------------------------- |
-| *Active* | :material-printer:&nbsp;[CUPS](../03_Services/CUPS_Print_Server.md)   |         `631`          | A standards-based, open-source printing system for Linux and other Unix-like operating systems. |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)          |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.  |
-| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                        |
-| *Active* | :services-technitium:&nbsp;[Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                   |
+| *Active* | [:material-printer:&nbsp;CUPS](../03_Services/CUPS_Print_Server.md)   |         `631`          | A standards-based, open-source printing system for Linux and other Unix-like operating systems. |
+| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)          |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.  |
+| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                        |
+| *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                   |
 
 #### :material-docker: Docker:
 
 |   Status   | Service                                                                        |       Port(s)        | Role / Notes                                                                                                |
 | :--------: | :----------------------------------------------------------------------------- | :------------------: | :---------------------------------------------------------------------------------------------------------- |
-|  *Active*  | :services-beszel:&nbsp;[Beszel Hub](../03_Services/Beszel_Hub.md)              |    `8090` `45876`    | A lightweight server monitoring hub with historical data, docker stats, and alerts.                         |
-|  *Active*  | :services-cloudflare:&nbsp;[Cloudflared](../03_Services/Cloudflared.md)        |        `N/A`         | Secure reverse-proxy tunnel for hosting private services on the public internet.                            |
-|  *Active*  | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)                      |        `5001`        | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                 |
-|  *Active*  | :simple-f1:&nbsp;[F1 API](../03_Services/Glance.md)                            |        `4463`        | Part of the [Glance](../03_Services/Glance.md) stack. Supplies F1 data for widgets on the Glance dashboard. |
-|  *Active*  | :services-glance:&nbsp;[Glance](../03_Services/Glance.md)                      |        `8580`        | A self-hosted dashboard that puts all your feeds in one place.                                              |
-|  *Active*  | :services-glances:&nbsp;[Glances](../03_Services/Glances.md)                   |       `61208`        | A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.                    |
-|  *Active*  | :simple-homeassistant:&nbsp;[Home Assistant](../03_Services/Home_Assistant.md) |        `8123`        | Open-source home automation that puts local control and privacy first.                                      |
-|  *Active*  | :services-it-tools:&nbsp;[IT-Tools](../03_Services/IT-Tools.md)                |        `8080`        | Collection of handy online tools for developers, with great UX.                                             |
-| *Inactive* | :services-portainer:&nbsp;[Portainer-EE](../03_Services/Portainer.md)          | `8000` `9000` `9443` | A lightweight service delivery platform for containerized applications.                                     |
-|  *Active*  | :services-portracker:&nbsp;[[Portracker]]                                      |        `4999`        | A self-hosted, real-time port monitoring and discovery tool.                                                |
-|  *Active*  | :services-uptime-kuma:&nbsp;[Uptime Kuma](../03_Services/Uptime_Kuma.md)       |        `3001`        | A fancy self-hosted monitoring tool.                                                                        |
+|  *Active*  | [:services-beszel:&nbsp;Beszel Hub](../03_Services/Beszel_Hub.md)              |    `8090` `45876`    | A lightweight server monitoring hub with historical data, docker stats, and alerts.                         |
+|  *Active*  | [:services-cloudflare:&nbsp;Cloudflared](../03_Services/Cloudflared.md)        |        `N/A`         | Secure reverse-proxy tunnel for hosting private services on the public internet.                            |
+|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)                      |        `5001`        | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                 |
+|  *Active*  | [:simple-f1:&nbsp;F1 API](../03_Services/Glance.md)                            |        `4463`        | Part of the [Glance](../03_Services/Glance.md) stack. Supplies F1 data for widgets on the Glance dashboard. |
+|  *Active*  | [:services-glance:&nbsp;Glance](../03_Services/Glance.md)                      |        `8580`        | A self-hosted dashboard that puts all your feeds in one place.                                              |
+|  *Active*  | [:services-glances:&nbsp;Glances](../03_Services/Glances.md)                   |       `61208`        | A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.                    |
+|  *Active*  | [:simple-homeassistant:&nbsp;Home Assistant](../03_Services/Home_Assistant.md) |        `8123`        | Open-source home automation that puts local control and privacy first.                                      |
+|  *Active*  | [:services-it-tools:&nbsp;IT-Tools](../03_Services/IT-Tools.md)                |        `8080`        | Collection of handy online tools for developers, with great UX.                                             |
+| *Inactive* | [:services-portainer:&nbsp;Portainer-EE](../03_Services/Portainer.md)          | `8000` `9000` `9443` | A lightweight service delivery platform for containerized applications.                                     |
+|  *Active*  | [:services-portracker:&nbsp;Portracker](../03_Services/Portracker.md)          |        `4999`        | A self-hosted, real-time port monitoring and discovery tool.                                                |
+|  *Active*  | [:services-uptime-kuma:&nbsp;Uptime Kuma](../03_Services/Uptime_Kuma.md)       |        `3001`        | A fancy self-hosted monitoring tool.                                                                        |
  
 ---
 ## :material-tools: Maintenance & Notes

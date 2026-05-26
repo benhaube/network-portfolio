@@ -40,10 +40,10 @@ hide:
 
 #### :material-link-variant: URL / Access:  
 
-* :material-debian:&nbsp;[Debian Server](../02_Hardware/Debian_Server_VM.md)
+* :material-debian:&nbsp;Debian Server
     * `192.168.50.6` &mdash; First DNS server
     * <http://debian-vm.internal:5380>
-* :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+* :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server
     * `192.168.50.2` &mdash; Second DNS server
     * <http://pi-server.internal:5380>
 
@@ -56,8 +56,8 @@ hide:
 
 | Host Device                                                                                     | Method                             | Container Name | Image |
 | :---------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| :material-debian:&nbsp;[Debian Server](../02_Hardware/Debian_Server_VM.md)                      | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:material-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                      | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration 
 

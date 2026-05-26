@@ -73,16 +73,16 @@ hide:
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                   |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)          |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
-| *Active* | :services-technitium:&nbsp;[Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                  |
+| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)          |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
+| *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                  |
 
 #### :material-docker: Docker:
 
 |  Status  | Service                                                       | Port(s) | Role / Notes                                                                                           |
 | :------: | :------------------------------------------------------------ | :-----: | :----------------------------------------------------------------------------------------------------- |
-| *Active* | :services-beszel:&nbsp;[Beszel](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
+| *Active* | [:services-beszel:&nbsp;Beszel](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
 
 ---
 ## :material-tools: Maintenance & Snapshots

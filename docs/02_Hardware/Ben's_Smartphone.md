@@ -86,13 +86,13 @@ hide:
 
 |  Status  | OS                                                       | Virtual NIC             | Virtual Disk Image | Role / Notes                       |
 | :------: | :------------------------------------------------------- | :---------------------- | :----------------- | :--------------------------------- |
-| *Active* | :material-debian:&nbsp;[Debian](https://www.debian.org/) | Virtual Network *(NAT)* | `-`                | Android Virtualization Environment |
+| *Active* | [:material-debian:&nbsp;Debian](https://www.debian.org/) | Virtual Network *(NAT)* | `-`                | Android Virtualization Environment |
 
 #### :brands-android-robot: Native Android:
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                             |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
-| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
+| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
 
 ---
 ## :material-tools: Maintenance & Notes

@@ -56,7 +56,7 @@ hide:
 
 | Interface | IP Address | MAC Address         | Connected To                                                                                             |
 | :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
-| Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | :material-switch:&nbsp;[Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port-1)*, Temporary connection |
+| Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port-1)*, Temporary connection |
 |   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | :material-wifi:&nbsp;Home *(VLAN50)*                                                                     |
 
 | Interface |              VLAN               | FQDN | DNS Servers                   | Gateway        |

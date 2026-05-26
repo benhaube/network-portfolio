@@ -83,9 +83,9 @@ hide:
 
 |  Status  | Service                                                          |   Port(s)   | Role / Notes                                                                                   |
 | :------: | :--------------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | :services-fluidd:&nbsp;[Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
-| *Active* | :services-klipper:&nbsp;[Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper](https://www.klipper3d.org/).                                      |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)     |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
+| *Active* | [:services-klipper:&nbsp;Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper](https://www.klipper3d.org/).                                      |
+| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)     |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
 ## :material-tools: Maintenance & Notes
@@ -97,11 +97,11 @@ hide:
 > 
 > **:material-application-brackets: Software:**
 > 
-> + :services-fluidd: Fluidd / Moonraker
->     + For information regarding the [Fluidd](../03_Services/Fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).
->     + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
-> + :services-klipper: Klipper
+> + :services-fluidd: Fluidd 
+>     + For information regarding the [Fluidd](../03_Services/Fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).    
+> + :services-klipper: Klipper / Moonraker
 >     + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
+>     + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
 > 
 > **:material-printer-3d-nozzle: Hardware:**
 > 

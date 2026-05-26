@@ -51,7 +51,7 @@ hide:
 
 | Port # | Connected Device                                                    | Color / Type  | Notes                      |
 | :----: | :------------------------------------------------------------------ | :------------ | :------------------------- |
-| **1**  | :material-router-wireless:&nbsp;[ASUS RT-BE92U](./ASUS_RT-BE92U.md) | White / Cat6  | Uplink                     |
+| **1**  | [:material-router-wireless:&nbsp;ASUS RT-BE92U](./ASUS_RT-BE92U.md) | White / Cat6  | Uplink                     |
 | **2**  | :symbols-tv-assistant:&nbsp;Google TV Streamer                      | Black / Cat6A | `DHCP` `B8:7B:D4:9D:80:F7` |
 | **3**  | :symbols-tv:&nbsp;TCL Smart TV                                      | Black / Cat5e | `DHCP` `4C:53:FD:6A:81:D5` |
 | **4**  | :material-nintendo-switch:&nbsp;Nintendo Switch Dock                | Black / Cat5e | `DHCP`                     |

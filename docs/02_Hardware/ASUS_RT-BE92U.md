@@ -76,9 +76,9 @@ hide:
 
 |       Port #       | Connected Device                                                              | Color / Type | Notes               |
 | :----------------: | :---------------------------------------------------------------------------- | :----------- | :------------------ |
-| 10 Gb WAN / LAN 1  | :material-switch:&nbsp;[Ugreen Switch](./Ugreen_Switch.md)                    | Black Cat6a  | 10 Gb/s Uplink      |
-| 2.5 Gb WAN / LAN 2 | :material-wan:&nbsp;[Hitron Modem](./Hitron_Modem.md)                         | Black Cat6a  | WAN Connection      |
-|    2.5 Gb LAN 1    | :devices-10-inch-rack:&nbsp;<a href="./tags.html#tag:mini-rack">Mini-Rack</a> | Black Cat6a  | Spare Keystone Jack |
+| 10 Gb WAN / LAN 1  | [:material-switch:&nbsp;Ugreen Switch](./Ugreen_Switch.md)                    | Black Cat6a  | 10 Gb/s Uplink      |
+| 2.5 Gb WAN / LAN 2 | [:material-wan:&nbsp;Hitron Modem](./Hitron_Modem.md)                         | Black Cat6a  | WAN Connection      |
+|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:devices-10-inch-rack:&nbsp;Mini-Rack</a> | Black Cat6a  | Spare Keystone Jack |
 |    2.5 Gb LAN 2    | :material-ethernet:&nbsp;*Empty*                                              | -            | -                   |
 |    2.5 Gb LAN 3    | :material-ethernet:&nbsp;*Empty*                                              | -            | -                   |
 |    2.5 Gb LAN 4    | :material-ethernet:&nbsp;*Empty*                                              | -            | -                   |
@@ -105,10 +105,10 @@ hide:
 
 |  Status  | Service                                                                 | Port(s) | Role / Notes                                                                                                                                                                                            |
 | :------: | :---------------------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | :material-web-clock:&nbsp;[Chrony](../03_Services/Chrony.md)            |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
-| *Active* | :material-web-refresh:&nbsp;[DDNS](../03_Services/DDNS.md)              |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools). |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)            |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
-| *Active* | :simple-wireguard:&nbsp;[WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
+| *Active* | [:material-web-clock:&nbsp;Chrony](../03_Services/Chrony.md)            |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
+| *Active* | [:material-web-refresh:&nbsp;DDNS](../03_Services/DDNS.md)              |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools). |
+| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)            |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
+| *Active* | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
 
 ---
 ## :material-tools: Maintenance & Notes

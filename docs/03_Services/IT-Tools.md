@@ -45,7 +45,7 @@ hide:
 
 | Host Device                                                                                     | Method                                | Container Name     | Image                             |
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :----------------- | :-------------------------------- |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
+| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
 |                                                                                                 | :material-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
 
 ### :material-cog: Configuration 

@@ -44,7 +44,7 @@ hide:
 
 | Host Device                                                                      | Method                             | Container Name | Image |
 | :------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration 
 

@@ -82,17 +82,17 @@ hide:
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                                                                                                                          |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | :services-caddy:&nbsp;[Caddy](../03_Services/Caddy.md)           |       `80` `443`       | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | :material-console-network:&nbsp;[SSH](../03_Services/SSH.md)     |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
-| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
+| *Active* | [:services-caddy:&nbsp;Caddy](../03_Services/Caddy.md)           |       `80` `443`       | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
+| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)     |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
+| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
 
 #### :material-docker: Docker:
 
 |   Status   | Service                                                            | Port(s) | Role / Notes                                                                                           |
 | :--------: | :----------------------------------------------------------------- | :-----: | :----------------------------------------------------------------------------------------------------- |
-|  *Active*  | :services-beszel:&nbsp;[Beszel](../03_Services/Beszel_Hub.md)      | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-|  *Active*  | :services-dockge:&nbsp;[Dockge](../03_Services/Dockge.md)          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
-| *Inactive* | :services-portainer:&nbsp;[Portainer](../03_Services/Portainer.md) | `9001`  | A lightweight service delivery platform for containerized applications.                                |
+|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_Services/Beszel_Hub.md)      | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
+| *Inactive* | [:services-portainer:&nbsp;Portainer](../03_Services/Portainer.md) | `9001`  | A lightweight service delivery platform for containerized applications.                                |
 
 ---
 ## :material-tools: Maintenance & Notes

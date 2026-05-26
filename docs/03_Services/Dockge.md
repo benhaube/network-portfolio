@@ -49,10 +49,10 @@ hide:
 
 | Host Device                                                                                      | Method                                | Container Name    | Image                   |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :---------------------- |
-| :material-debian:&nbsp;[Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |  
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
+| [:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |  
+| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
 
 ### :material-cog: Configuration 
 

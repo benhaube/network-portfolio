@@ -34,13 +34,13 @@ hide:
 
 + `41820`
 + `51820`
-+ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
++ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;ZimaOS NAS)*
 
 #### :material-link-variant: URL / Access: 
 
 + :material-vpn:&nbsp;Server Endpoint:
-    + `remote-access-home-34.asuscomm.com:41820` *(for :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md))*
-    + `remote-access-home-34.asuscomm.com:51820` *(for :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md))*
+    + `rac3r4life.myaddr.dev:41820` *(for :material-router-wireless:&nbsp;ASUS RT-BE92U)*
+    + `rac3r4life.myaddr.dev:51820` *(for :material-nas:&nbsp;ZimaOS NAS)*
 + :material-application-cog-outline:&nbsp;Web UI Admin: 
     + <http://storage-server.internal:51821/>
 
@@ -67,8 +67,8 @@ hide:
 
 | Host Device                                                                      | Method                                | Container Name         | Image                        |
 | :------------------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
-| :material-router-wireless:&nbsp;[ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
-| :material-nas:&nbsp;[ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
+| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :material-cog: Configuration 
 

@@ -71,7 +71,7 @@ hide:
 
 | Interface | IP Address      | MAC Address         | Connected To                                                                         |
 | :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------- |
-| `enp7s0`  | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | :material-switch:&nbsp;[TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
+| `enp7s0`  | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
 | `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;Home *(VLAN50)*                                                 |
 
 | Interface | VLAN                            | FQDN                        | DNS Servers                   | Gateway        |
@@ -104,16 +104,16 @@ hide:
 
 |  Status  | OS                                                                               | Virtual NIC             | Virtual Disk Image                                | Role / Notes                                                          |
 | :------: | :------------------------------------------------------------------------------- | :---------------------- | :------------------------------------------------ | :-------------------------------------------------------------------- |
-| *Active* | :services-fedora-coreos:&nbsp;[Fedora CoreOS](https://fedoraproject.org/coreos/) | Virtual Network *(NAT)* | `fedora-coreos-43.20260316.3.1-qemu.x86_64.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
-| *Active* | :services-kali:&nbsp;[Kali Linux](https://kali.org)                              | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2`              | Network security and penetration testing tools.                       |
-| *Active* | :material-microsoft:&nbsp;[Windows 11](https://microsoft.com/windows)            | Virtual Network *(NAT)* | `Windows_11.qcow2`                                | Windows environment to run Windows software that won't run with WINE. |
+| *Active* | [:services-fedora-coreos:&nbsp;Fedora CoreOS](https://fedoraproject.org/coreos/) | Virtual Network *(NAT)* | `fedora-coreos-43.20260316.3.1-qemu.x86_64.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
+| *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org)                              | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2`              | Network security and penetration testing tools.                       |
+| *Active* | [:material-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)            | Virtual Network *(NAT)* | `Windows_11.qcow2`                                | Windows environment to run Windows software that won't run with WINE. |
 
 #### :material-linux: Native Linux:
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                                                              |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------ |
-| *Active* | :material-remote-desktop:&nbsp;[RDP](../03_Services/RDP.md)      |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
-| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                  |
+| *Active* | [:material-remote-desktop:&nbsp;RDP](../03_Services/RDP.md)      |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
+| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                  |
 
 ---
 ## :material-tools: Maintenance & Notes

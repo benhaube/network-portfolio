@@ -62,7 +62,7 @@ hide:
 
 | Host Device                                                                                     | Method                                | Container Name | Image                       |
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
+| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
 |                                                                                                 | :material-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
 
 ### :material-cog: Configuration

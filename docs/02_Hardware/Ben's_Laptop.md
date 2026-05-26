@@ -107,13 +107,13 @@ hide:
 
 |  Status  | OS                                                  | Virtual NIC             | Virtual Disk Image                   | Role / Notes                                    |
 | :------: | :-------------------------------------------------- | :---------------------- | :----------------------------------- | :---------------------------------------------- |
-| *Active* | :services-kali:&nbsp;[Kali Linux](https://kali.org) | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2` | Network security and penetration testing tools. |
+| *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org) | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2` | Network security and penetration testing tools. |
 
 #### :material-linux: Native Linux:
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                             |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
-| *Active* | :simple-syncthing:&nbsp;[Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
+| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
 
 ---
 ## :material-tools: Maintenance & Notes

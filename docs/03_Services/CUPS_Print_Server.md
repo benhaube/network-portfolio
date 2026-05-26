@@ -51,7 +51,7 @@ hide:
 
 | Host Device                                                                                     | Method                             | Container Name | Image |
 | :---------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| :material-raspberry-pi:&nbsp;[Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :material-cog: Configuration 
 

@@ -234,3 +234,26 @@ hide:
 ```toml title="<code>~/.config/starship.toml</code>" linenums="1"
 --8<-- "starship-zimaos.toml"
 ```
+
+#### :services-zfw: ZFW Firewall:
+
+**About:**
+
+:    Host firewall for ZimaOS — a standalone module with a web UI and a live security dashboard. Default-drop INPUT allowlist + DOCKER-USER blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection. 
+
+##### Install
+
+1. Download the latest release from [GitHub](https://github.com/chicohaager/zfw).
+2. Copy the compressed archive into the `/tmp` directory on the server:
+
+    ```bash linenums="1"
+    scp zfw-<version>-amd64.tar.gz root@<host>:/tmp/
+    ```
+
+3. Extract the archive, enter the directory, and run the `install.sh` script:
+
+    ```bash linenums="1"
+    ssh root@<host> 'cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-* && sh install.sh'
+    ```
+
+The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` *(root:root, 0700)*, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place. Open it from the ZimaOS dashboard *(tile: ZFW Firewall)*, or directly at `http://<host>/modules/zfw/index.html`.

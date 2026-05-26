@@ -173,6 +173,8 @@ hide:
 
 #### :material-login: Fastfetch Login Preset:
 
+##### Install
+
 1. Download the latest `fastfetch` release from [GitHub]() and decompress the archive: 
 
     ```bash linenums="1"
@@ -188,13 +190,15 @@ hide:
     sudop cp -r fastfetch-linux-amd64/usr/share/bash-completion /opt/share
     ```
 
-3. Copy the `login.jsonc` preset file into the presets directory:
+##### Configure
+
+1. Copy the `login.jsonc` preset file into the presets directory:
 
     ```bash linenums="1"
     sudo cp login.jsonc /usr/share/fastfetch/presets
     ```
 
-4. Add the `fastfetch` command to the `~/.bashrc` file: 
+2. Add the `fastfetch` command to the `~/.bashrc` file: 
 
     ```bash linenums="1"
     fastfetch -c login
@@ -209,6 +213,8 @@ hide:
 #### :material-console-line: Starship Terminal Prompt:
 
 --8<-- "starship-note.md"
+
+##### Install
 
 1. Install the latest version:
 
@@ -237,9 +243,9 @@ hide:
 
 #### :services-zfw: ZFW Firewall:
 
-**About:**
+##### About
 
-:    Host firewall for ZimaOS — a standalone module with a web UI and a live security dashboard. Default-drop INPUT allowlist + DOCKER-USER blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection. 
+:    Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live security dashboard. Default-drop INPUT allowlist + DOCKER-USER blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection. 
 
 ##### Install
 
@@ -255,5 +261,7 @@ hide:
     ```bash linenums="1"
     ssh root@<host> 'cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-* && sh install.sh'
     ```
-
-The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` *(root:root, 0700)*, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place. Open it from the ZimaOS dashboard *(tile: ZFW Firewall)*, or directly at `http://<host>/modules/zfw/index.html`.
+> [!note]
+> The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` *(root:root, 0700)*, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place. 
+> 
+> Open it from the [ZimaOS dashboard](http://storage-server.internal) *(tile: ZFW Firewall)*, or directly at `http://<host>/modules/zfw/index.html`.

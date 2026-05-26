@@ -58,10 +58,10 @@ hide:
 
 ## :material-lan: Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                                                                       |
-| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------- |
-|  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)*                               |
-|  `wlan0`  | `DHCP`         | `E4:5F:01:A4:60:07` | [:symbols-shield-house-fill:&nbsp;2G_IoT](../01_Infrastructure/IP_Address_Management.md#local-networks) *(VLAN53)* |
+| Interface | IP Address     | MAC Address         | Connected To                                                                            |
+| :-------: | :------------- | :------------------ | :-------------------------------------------------------------------------------------- |
+|  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)*    |
+|  `wlan0`  | `DHCP`         | `E4:5F:01:A4:60:07` | [:symbols-shield-house-fill:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)* |
 
 | Interface |                  VLAN                   | FQDN                 | DNS Servers                  | Gateway        |
 | :-------: | :-------------------------------------: | :------------------- | :--------------------------- | :------------- |

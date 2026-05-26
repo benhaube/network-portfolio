@@ -72,7 +72,7 @@ hide:
 | Interface | IP Address      | MAC Address         | Connected To                                                                         |
 | :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------- |
 | `enp7s0`  | `192.168.50.61` | `3C:7C:3F:0D:A9:CD` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
-| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | :material-wifi:&nbsp;Home *(VLAN50)*                                                 |
+| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*            |
 
 | Interface | VLAN                            | FQDN                        | DNS Servers                   | Gateway        |
 | :-------: | :------------------------------ | :-------------------------- | :---------------------------- | :------------- |

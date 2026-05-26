@@ -58,9 +58,9 @@ hide:
 
 ## :material-lan: Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                         |
-| :-------: | :--------- | :------------------ | :----------------------------------- |
-|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | :material-wifi:&nbsp;Home *(VLAN50)* |
+| Interface | IP Address | MAC Address         | Connected To                                                              |
+| :-------: | :--------- | :------------------ | :------------------------------------------------------------------------ |
+|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
 | Interface | VLAN                            | FQDN | DNS Servers                   | Gateway        |
 | :-------: | :------------------------------ | :--- | :---------------------------- | :------------- |

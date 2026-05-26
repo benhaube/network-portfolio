@@ -76,9 +76,9 @@ hide:
 
 ## :material-lan: Network Configuration
 
-|  Interface  | IP Address | MAC Address         | Connected To                         |
-| :---------: | :--------- | :------------------ | :----------------------------------- |
-| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | :material-wifi:&nbsp;Home *(VLAN50)* |
+|  Interface  | IP Address | MAC Address         | Connected To                                                              |
+| :---------: | :--------- | :------------------ | :------------------------------------------------------------------------ |
+| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
 |  Interface  | VLAN                            | FQDN | DNS Servers                   | Gateway        |
 | :---------: | :------------------------------ | :--- | :---------------------------- | :------------- |

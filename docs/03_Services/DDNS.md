@@ -14,7 +14,8 @@ tags:
 hide:
   - toc
 ---
-![Material Design 'web-refresh' icon ](../assets/icons/ddns.svg){ width=200 }
+![Material Design 'web-refresh' icon ](../assets/icons/ddns-light.svg#only-light){ width=200 }
+![Material Design 'web-refresh' icon ](../assets/icons/ddns.svg#only-dark){ width=200 }
 
 # DDNS
 *Provided by addr.tools*

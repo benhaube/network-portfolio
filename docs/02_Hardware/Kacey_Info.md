@@ -40,13 +40,13 @@ hide:
 
 #### :symbols-memory-alt: Printer MCU:
 
-+ Nozzle
++ Nozzle:
     + *Chip:* GD32F303CBT6
     + *Version:* CR-K1-MAX-NOZZLE-V1.2.0
-+ Leveling
++ Leveling:
     + *Chip:* GD32E230F8P6
     + *Version:* CR-K1-MAX-LEVELING-V1.1.0
-+ Main
++ Main:
     + *Chip:* GD32F303RET6
     + *Version:* CR4CU220812S12
 
@@ -54,7 +54,8 @@ hide:
 
 #### Moonraker:
 
-+ URL: <http://k1c-a71e.internal:7125>
++ URL: 
+    + <http://k1c-a71e.internal:7125>
 + API Key: 
     + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
         + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
@@ -76,8 +77,10 @@ hide:
 
 #### Fluidd:
 
-+ Snapshot URL: <http://k1c-a71e.internal:8080/?action=snapshot>
-+ Stream URL: <http://k1c-a71e.internal/webcam/?action=stream>
++ Snapshot URL: 
+    + <http://k1c-a71e.internal:8080/?action=snapshot>
++ Stream URL: 
+    + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
 ## :material-code-block-brackets: Machine G-code 

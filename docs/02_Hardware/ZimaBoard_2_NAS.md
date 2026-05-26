@@ -241,7 +241,7 @@ hide:
 --8<-- "starship-zimaos.toml"
 ```
 
-#### :services-zfw: ZFW Firewall:
+#### :material-wall-fire: ZFW Firewall:
 
 ##### About
 

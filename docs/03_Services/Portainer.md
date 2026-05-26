@@ -13,8 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Portainer Icon](../assets/icons/portainer-pink-light.svg#only-light){ width=200 }
-![Portainer Icon](../assets/icons/portainer-pink-dark.svg#only-dark){ width=200 }
+![Portainer Icon](../assets/icons/portainer-pink.svg){ width=200 }
 
 # Portainer-EE
 *Container Management*

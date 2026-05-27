@@ -58,7 +58,7 @@ theme:
       domain: material/domain
       download: material/download
       file-share: material/share-variant
-      hardware: material/devices
+      hardware: symbols/devices
       inactive: material/close-circle
       infra: material/router-network
       inventory: material/list-box-outline
@@ -90,8 +90,8 @@ theme:
       switch: material/switch
       tools: material/tools
       tv-stand: symbols/tv
-      video: material/video
-      vh: simple/qemu
+      video: material/movie
+      vh: symbols/host
       vlan: material/security-network
       vm: material/network-pos
       vpn: material/vpn

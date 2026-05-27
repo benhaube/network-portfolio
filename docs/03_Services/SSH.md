@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design ssh icon](../assets/icons/ssh.svg){ width=300 }
+![Material Design ssh icon](../assets/icons/ssh.svg){ width=200 }
 
 # SSH
 *Secure Shell*

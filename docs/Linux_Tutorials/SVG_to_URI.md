@@ -5,7 +5,7 @@ subtitle: For HTML and CSS
 hide:
   - toc
 ---
-![Material Design SVG icon customized](../assets/icons/svg.svg){ width=225 }
+![Material Design SVG icon customized](../assets/icons/svg.svg){ width=200 }
 
 # Convert an SVG to Data URI
 *For HTML and CSS*

@@ -12,8 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Chrony Icon](../assets/icons/chrony-light.svg#only-light){ width=200 }
-![Chrony Icon](../assets/icons/chrony.svg#only-dark){ width=200 }
+![Chrony Icon](../assets/icons/chrony.svg){ width=200 }
 
 # Chrony
 *NTP Server*

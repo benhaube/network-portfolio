@@ -5,7 +5,7 @@ subtitle: Increase Productivity
 hide:
   - toc
 ---
-![material/console icon](../assets/icons/console.svg){ width=225 }
+![material/console icon](../assets/icons/console.svg){ width=200 }
 
 # Defining Bash Aliases
 *Increase Productivity*

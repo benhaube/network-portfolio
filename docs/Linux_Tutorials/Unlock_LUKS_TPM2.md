@@ -5,7 +5,7 @@ subtitle: Speeding Up the Boot Process
 hide:
   - toc
 ---
-![Custom lock-harddisk icon](../assets/icons/lock-harddisk.svg){ width=225 }
+![Custom lock-harddisk icon](../assets/icons/lock-harddisk.svg){ width=200 }
 
 # Decrypt LUKS with TPM2
 *Speeding Up the Boot Process*

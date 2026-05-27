@@ -15,7 +15,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design "folder-network" icon](../assets/icons/folder-network.svg){ width=200 }
+![Material Design folder-network icon](../assets/icons/folder-network.svg){ width=200 }
 
 # NFS
 *Network File System*

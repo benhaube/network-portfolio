@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Gotify logo](../assets/icons/gotify-logo.png){ width=200 }
+![Gotify logo](../assets/icons/gotify-logo.svg){ width=200 }
 
 # Gotify
 *Push Notifications*

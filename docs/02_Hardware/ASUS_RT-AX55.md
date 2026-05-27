@@ -12,8 +12,7 @@ tags:
 hide:
   - toc
 ---
-![ASUS Router Icon](../assets/icons/asus-router-light.svg#only-light){ width=200 }
-![ASUS Router Icon](../assets/icons/asus-router.svg#only-dark){ width=200 }
+![Material Design 'router-wireless' icon](../assets/icons/router-wireless.svg){ width=200 }
 
 # ASUS RT-AX55
 *AiMesh Node*

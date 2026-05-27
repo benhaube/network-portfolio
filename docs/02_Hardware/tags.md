@@ -3,7 +3,7 @@ icon: material/tag
 title: Hardware Tags
 subtitle: An Index of Relevant Tags
 ---
-![Devices Icon](../assets/icons/devices.svg){ width=200 }
+![Devices Icon](../assets/icons/devices-alt.svg){ width=200 }
 
 # Hardware Tags
 

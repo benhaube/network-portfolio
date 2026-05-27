@@ -5,7 +5,7 @@ subtitle: A Great Start
 hide:
   - toc
 ---
-![material/console icon](../assets/icons/console.svg){ width=225 }
+![material/console icon](../assets/icons/console.svg){ width=200 }
 
 # My Bash Aliases
 *A Great Start*

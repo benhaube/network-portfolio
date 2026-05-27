@@ -13,7 +13,8 @@ tags:
 hide:
   - toc
 ---
-![Klipper logo](../assets/icons/klipper.svg){ width=250 }
+![Klipper logo](../assets/icons/klipper-light.svg#only-light){ width=250 }
+![Klipper logo](../assets/icons/klipper.svg#only-dark){ width=250 }
 
 # Moonraker
 *The Klipper Web API*

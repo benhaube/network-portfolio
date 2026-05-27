@@ -5,7 +5,7 @@ subtitle: Manually Clean Your Nozzle
 hide:
   - toc
 ---
-![Toothbrush Nozzle Icon](../assets/icons/toothbrush-nozzle.svg){ width=300 }
+![Toothbrush Nozzle Icon](../assets/icons/toothbrush-nozzle.svg){ width=200 }
 
 # Nozzle Cleaning Macro
 *Manually Clean Your Nozzle*

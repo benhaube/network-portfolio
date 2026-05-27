@@ -5,7 +5,7 @@ subtitle: Immich Slideshow for Nest Hub
 hide:
   - toc
 ---
-![Immich Frame icon](../assets/icons/immich-frame.svg){ width=225 }
+![Immich Frame icon](../assets/icons/immich-frame.svg){ width=200 }
 
 # Project Migration
 *Immich Slideshow for Nest Hub*

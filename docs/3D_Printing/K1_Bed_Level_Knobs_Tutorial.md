@@ -5,8 +5,8 @@ subtitle: Fine Tune Your Bed Level
 hide:
   - toc
 ---
-![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=400 }
-![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=400 }
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=300 }
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=300 }
 
 # Manual Bed Leveling Mod
 *Fine Tune Your Bed Level*

@@ -10,8 +10,9 @@ hide:
 # Decrypt LUKS with TPM2
 *Speeding Up the Boot Process*
 
-> [!info] 
-> Unlocking your LUKS volume with a **TPM2** provides a secure way to enable automatic decryption during boot, usually eliminating the need to type a passphrase unless the system state changes. The most common and recommended way to achieve this on modern Linux systems, especially those using LUKS2 and systemd, is by using the `systemd-cryptenroll` tool.
+!!! info
+
+    Unlocking your LUKS volume with a **TPM2** provides a secure way to enable automatic decryption during boot, usually eliminating the need to type a passphrase unless the system state changes. The most common and recommended way to achieve this on modern Linux systems, especially those using LUKS2 and systemd, is by using the `systemd-cryptenroll` tool.
 
 ---
 ## :material-check-decagram: Prerequisites:
@@ -95,8 +96,9 @@ hide:
 
 4. **Configure Grub:**
     
-    > [!warning]+
-    > If your encrypted volume contains the **root filesystem**, you will need to add this option to the **kernel command line** in your bootloader configuration file.
+    ???+ warning
+    
+        If your encrypted volume contains the **root filesystem**, you will need to add this option to the **kernel command line** in your bootloader configuration file.
 
     + Open `/etc/default/grub` with a text editor as a superuser. *(e.g., using `nano` or `vim`)*
 
@@ -157,42 +159,40 @@ hide:
 
 ## :symbols-note-stack: Important Notes
 
-> [!security]+ Security
-> **Security vs. Convenience:**
-> 
-> :     This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed PCRs), certain ["Evil Maid" attacks](https://en.wikipedia.org/wiki/Evil_maid_attack) might be possible.
->
-> **Backup Key:**
->
-> :     Always keep at least one regular passphrase or a **recovery key** for your LUKS volume as a backup. If the TPM fails, the UEFI is updated, or your boot configuration changes in a way that alters the PCR values, the TPM will not release the key.
->
->       ```bash linenums="1"
->       sudo systemd-cryptenroll --recovery-key /dev/your_device
->       ```
-> 
-> **TPM PIN:**
-> 
-> :     Using a **TPM PIN** in addition to the PCRs can mitigate some of these risks. This can be done by using the flag `--tpm2-with-pin=yes` with the enrollment command.
-> 
->       ```bash linenums="1"
->       sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+4+7+11 --tpm2-with-pin=yes /dev/your_device
->       ```
+???+ security
 
-> [!tip]+ 
-> **Wiping the slot:**
-> 
-> :     If you update your firmware, kernel, or bootloader and the automatic unlock stops working, you will need to use your backup passphrase and then wipe and re-enroll the TPM key. 
-> 
->       ```bash linenums="1"
->       sudo systemd-cryptenroll --wipe-slot=tpm2 --tpm2-device=auto /dev/your_device
->       sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+4+7+11 /dev/your_device
->       sudo dracut -f  # (1)! 
->       ```
->
->       1. Or `sudo update-initramfs -u -k <version>` if you have an **Ubuntu / Debian** system.
->
-> **Update PCRs Script:**
-> 
-> :     If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a Bash script I have written. It is available to download in this GitHub repo:
->
->       [Update PCRs Script :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
+    **Security vs. Convenience:** 
+    :    This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed PCRs), certain ["Evil Maid" attacks](https://en.wikipedia.org/wiki/Evil_maid_attack) might be possible.
+
+    **Backup Key:**
+    :    Always keep at least one regular passphrase or a **recovery key** for your LUKS volume as a backup. If the TPM fails, the UEFI is updated, or your boot configuration changes in a way that alters the PCR values, the TPM will not release the key.
+
+        ```bash linenums="1"
+        sudo systemd-cryptenroll --recovery-key /dev/your_device
+        ```
+ 
+    **TPM PIN:**
+    :    Using a **TPM PIN** in addition to the PCRs can mitigate some of these risks. This can be done by using the flag `--tpm2-with-pin=yes` with the enrollment command.
+
+        ```bash linenums="1"
+        sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+4+7+11 --tpm2-with-pin=yes /dev/your_device
+        ```
+
+???+ tip
+
+    **Wiping the slot:**
+    :    If you update your firmware, kernel, or bootloader and the automatic unlock stops working, you will need to use your backup passphrase and then wipe and re-enroll the TPM key. 
+ 
+        ```bash linenums="1"
+        sudo systemd-cryptenroll --wipe-slot=tpm2 --tpm2-device=auto /dev/your_device
+        sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+4+7+11 /dev/your_device
+        sudo dracut -f  # (1)! 
+        ```
+
+        1. Or `sudo update-initramfs -u -k <version>` if you have an **Ubuntu / Debian** system.
+
+    **Update PCRs Script:** 
+    :    If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a Bash script I have written.<br>
+         It is available to download in this **GitHub** repo:
+
+        [Update PCRs Script :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }

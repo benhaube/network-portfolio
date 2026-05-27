@@ -80,9 +80,12 @@ hide:
 
 #### :material-server-outline: Servers:
 
-> [!help] New Session Notification
-> The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
-> See, [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md), for configuration information.
+!!! tip 
+
+    **New Session Notification:**
+    :    The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
+
+        [SSH Login Notification :material-message-alert:](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md){ .md-button }
 
 ##### SSH Config File
 
@@ -108,8 +111,9 @@ hide:
 
 ##### Suppress MOTD
 
-> [!warning inline end] Warning
-> `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
+!!! warning inline end 
+
+    `truncate -s 0` is safer than `> /etc/motd` as it preserves permissions if the file doesn't exist.
 
 1. Run this command to clear MOTD file:
 
@@ -150,12 +154,13 @@ hide:
     sudo systemctl restart sshd
     ```
 
-> [!important]
-> Don't forget to paste the **public key** in a text file for passwordless login:
-> 
-> ```bash
-> nano ~/.ssh/authorized_keys
-> ```
+!!! danger "Important"
+
+    Don't forget to paste the **public key** in a text file for passwordless login:
+ 
+    ```bash
+    nano ~/.ssh/authorized_keys
+    ```
 
 --8<-- "zima-ssh.md"
 

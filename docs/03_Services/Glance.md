@@ -48,18 +48,19 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-> [!change]+ Image Migration
-> :material-calendar:&nbsp;**Date:** Monday, April 27 2026 <br>
-> :material-swap-horizontal:&nbsp;**Change:** Using a forked Docker image <br>
-> :material-help-circle-outline:&nbsp;**Reason:** Active development, additional features
->
-> ---
->
-> :material-cog:&nbsp;**Configuration:**
-> 
-> :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuraiton is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
-> 
-> [:material-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:material-arrow-down-thin:](#glance-config)
+???+ change "Image Migration"
+
+    :material-calendar:&nbsp;**Date:** Monday, April 27 2026 <br>
+    :material-swap-horizontal:&nbsp;**Change:** Using a forked Docker image <br>
+    :material-help-circle-outline:&nbsp;**Reason:** Active development, additional features
+
+    ---
+
+    :material-cog:&nbsp;**Configuration:**
+ 
+    :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuraiton is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
+ 
+    [:material-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:material-arrow-down-thin:](#glance-config)
 
 | Host Device                                                                                     | Method                                | Container Name | Image                       |
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
@@ -68,83 +69,90 @@ hide:
 
 ### :material-cog: Configuration
 
-> [!change]- User Authentication
-> :material-calendar:&nbsp;**Date:** Monday, April 20 2026 <br>
-> :material-swap-horizontal:&nbsp;**Change:** Enabled user authentication <br>
-> :material-help-circle-outline:&nbsp;**Reason:** Additional security
->
-> ---
->
-> :material-account:&nbsp;**Users:**
-> 
-> + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
->
-> :material-form-textbox-password:&nbsp;**Passwords:**
->
-> > [!tip inline end]
-> > Restarting the container with `#!bash docker compose restart` will not allow changes to the `.env` file to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`.
->
-> + For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file. 
-> + To change a user's password, attach to the container's shell and run the following command: 
->
->     ```bash linenums="1"
->     ./glance password:hash <my-password>
->     ```
-> 
-> + Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again. 
->      
-> :material-key-chain:&nbsp;**Server Secret:**
-> 
-> + The "Server Secret" needs to be set in the `glance.yml` configuration file. 
-> + To generate a new server secret, attach to the container's shell and run the following command: 
-> 
->     ```bash linenums="1"
->     ./glance secret:make
->     ```
-> 
-> + Copy and paste the generated string into the `glance.yml` file. 
->
->     + **Example:**
->
->         ```yaml title="glance.yml (snippet)" linenums="1"
->         auth:
->           secret-key: <insert-server-secret>
->           users:
->         ```
->
-> + Shut the container down and start it back up using the same method shown above for user passwords. 
+??? change "User Authentication"
 
-> [!change]- Widgets Directory
-> :material-calendar:&nbsp;**Date:** Saturday, April 18 2026 <br>
-> :material-swap-horizontal:&nbsp;**Change:** Moved pages and widgets into separate directories. <br>
-> :material-help-circle-outline:&nbsp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
->
-> ---
->
-> > [!tip inline end]
-> > Changes to the YAML files in the `config/pages` and `config/widgets` directories are recognized by the container instantly. However, you may need to clear the browser cache when you reload the page. 
-> > 
-> > **Reload and clear cache:**<br>++ctrl+f5++ 
-> 
-> :material-cog:&nbsp;**Configuration:**
-> 
-> + The Glance dashboard widgets have been moved into thier own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. 
-> + Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure. 
->     
->     + **Example:**
->
->         ```yaml title="page.yml (example)" linenums="1"
->         columns:
->           - size: full
->             widgets:         
->               - $include: /app/config/widgets/search.yml
->         ```
->
-> :material-widgets:&nbsp;**Widgets:**
-> 
-> + To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository. 
-> 
->     [Glance Widgets :material-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
+    :material-calendar:&nbsp;**Date:** Monday, April 20 2026 <br>
+    :material-swap-horizontal:&nbsp;**Change:** Enabled user authentication <br>
+    :material-help-circle-outline:&nbsp;**Reason:** Additional security
+
+    ---
+
+    :material-account:&nbsp;**Users:**
+ 
+    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
+
+    :material-form-textbox-password:&nbsp;**Passwords:**
+
+    !!! tip inline end
+    
+        Restarting the container with `#!bash docker compose restart` will not allow changes to the `.env` file to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`.
+
+    + For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file. 
+    + To change a user's password, attach to the container's shell and run the following command: 
+
+        ```bash linenums="1"
+        ./glance password:hash <my-password>
+        ```
+ 
+    + Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again. 
+      
+    :material-key-chain:&nbsp;**Server Secret:**
+ 
+    + The "Server Secret" needs to be set in the `glance.yml` configuration file. 
+    + To generate a new server secret, attach to the container's shell and run the following command: 
+   
+        ```bash linenums="1"
+        ./glance secret:make
+        ```
+ 
+    + Copy and paste the generated string into the `glance.yml` file. 
+
+        + **Example:**
+
+            ```yaml title="glance.yml (snippet)" linenums="1"
+            auth:
+            secret-key: <insert-server-secret>
+            users:
+            ```
+
+    + Shut the container down and start it back up using the same method shown above for user passwords. 
+
+
+??? change "Widgets Directory"
+
+    :material-calendar:&nbsp;**Date:** Saturday, April 18 2026 <br>
+    :material-swap-horizontal:&nbsp;**Change:** Moved pages and widgets into separate directories. <br>
+    :material-help-circle-outline:&nbsp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
+
+    ---
+
+    !!! tip inline end
+        
+        Changes to the YAML files in the `config/pages` and `config/widgets` directories are recognized by the container instantly. However, you may need to clear the browser cache when you reload the page. 
+ 
+        **Reload and clear cache:**<br>++ctrl+f5++ 
+ 
+    :material-cog:&nbsp;**Configuration:**
+
+    + The Glance dashboard widgets have been moved into thier own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. 
+    + Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure. 
+     
+        + **Example:**
+
+            ```yaml title="page.yml (example)" linenums="1"
+            columns:
+              
+              - size: full
+                widgets:         
+                  
+                  - $include: /app/config/widgets/search.yml
+            ```
+
+    :material-widgets:&nbsp;**Widgets:**
+ 
+    + To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository. 
+ 
+        [Glance Widgets :material-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
 #### :material-docker: Docker Compose:
 

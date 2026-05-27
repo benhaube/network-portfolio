@@ -56,8 +56,9 @@ hide:
     sudo chown root:root /etc/msmtprc
     ```
 
-    > [!security]
-    > This file contains sensitive server information, so it must be readable only by root.
+    !!! security
+
+        This file contains sensitive server information, so it must be readable only by root.
 
 6. Create the hidden file containing the app password for your email login in the **root** user's home directory. 
 
@@ -65,12 +66,14 @@ hide:
     read -s -p "Enter your Email App Password: " EMAIL_PASS && sudo bash -c "echo $EMAIL_PASS > /root/.email_app_password" && echo
     ```
 
-    >[!tip]+
-    > **2FA / MFA:**  
-    > :    If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
+    ???+ tip
+    
+        **2FA / MFA:**  
+        :    If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
-    >[!security] 
-    > The `read -s` command is used here to securely enter the password without storing it in your shell history.
+    !!! security 
+    
+        The `read -s` command is used here to securely enter the password without storing it in your shell history.
 
 7. Set the required permissions for the `/root/.email_app_password` file. This is crucial for security, as this file contains the actual login credential.
 
@@ -81,10 +84,10 @@ hide:
 
 ## :material-alert: Enable Login Alerts with PAM
 
-> [!question]+
-> **What is PAM?**
->  
-> :     **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
+???+ question
+
+    **What is PAM?**
+    :     **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
 
 1. Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
 
@@ -102,8 +105,9 @@ hide:
     
     1. Add line to `/etc/pam.d/sshd` *after* the existing "session" lines.
 
-    >[!warning] Warning! 
-    > It is important to use `#!bash sudo -e` instead of a direct editor command *(like `sudo nano`)* when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's `$EDITOR` environment variable.
+    !!! warning  
+    
+        It is important to use `#!bash sudo -e` instead of a direct editor command *(like `sudo nano`)* when editing system configuration files. This ensures the file is checked for errors before it is saved, using the editor specified by your system's `$EDITOR` environment variable.
 
     The final file should look like this: 
 
@@ -147,8 +151,9 @@ hide:
 
 ## :symbols-labs: Testing the Setup
 
-> [!party] Congrats!
-> Congratulations, we are done! You now have a working email notification set up. You will recieve an email notification to the address defined in your script every time a new SSH session is successfully established on your server. Now we will test everything we have configured to make sure it is functioning properly. 
+!!! party "Congrats!"
+
+    Congratulations, we are done! You now have a working email notification set up. You will recieve an email notification to the address defined in your script every time a new SSH session is successfully established on your server. Now we will test everything we have configured to make sure it is functioning properly. 
 
 1. Start a new SSH session either on a new tab in your terminal application, or with a different host.
 2. Check your recipient email account to see if the email has been sent.
@@ -213,40 +218,51 @@ hide:
 
 ## :symbols-note-stack: Important Notes
 
-> [!note]+ Troubleshooting Note
-> If the logs don't immediately indicate a problem, double-check the file permissions on the two sensitive configuration files.
->
-> + `/etc/msmtprc`: Must be owned by `root:root` and have permissions set to `600`.
-> + `/root/.email_app_password`: Must be owned by `root:root` and have permissions set to `600`.
+???+ note "Troubleshooting Note"
 
-> [!tip]+ 
-> **Unattended Upgrades Notifications:**
-> :    To use the `msmtp` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
-> 
-> > [!error]
-> > **Error 551 5.7.1:** 
-> > :    Not authorised to send from this header address.
->
-> ---
->
-> **The Fix:**
-> 
-> 1. Open the configuration file in a text editor: 
->     ```bash linenums="1"
->     sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
->     ```
-> 2. Find *(or add)* the `Sender` line and set it to your authorized email:
->     ```bash linenums="1"
->     Unattended-Upgrade::Sender "your-authorized-email@domain.com";
->     ```
-> 3. Save and close the config file: 
->     + ++ctrl+o++ to save
->     + ++ctrl+x++ to close
-> 4. Restart the `unattended-upgrades` Systemd service:
->     ```bash linenums="1"
->     sudo systemctl restart unattended-upgrades.service
->     ```
-> 5. Test the fix:
->     ```bash linenums="1"
->     sudo unattended-upgrade --dry-run --debug
->     ```
+    If the logs don't immediately indicate a problem, double-check the file permissions on the two sensitive configuration files.
+    
+    + `/etc/msmtprc`: Must be owned by `root:root` and have permissions set to `600`.
+    + `/root/.email_app_password`: Must be owned by `root:root` and have permissions set to `600`.
+
+???+ tip
+
+    **Unattended Upgrades Notifications:**
+    :    To use the `msmtp` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
+ 
+    !!! failure "Error"
+
+        **Error 551 5.7.1:** 
+        :    Not authorised to send from this header address.
+
+    ---
+    **The Fix:**
+ 
+    1. Open the configuration file in a text editor: 
+   
+        ```bash linenums="1"
+        sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+        ```
+   
+    2. Find *(or add)* the `Sender` line and set it to your authorized email:
+ 
+        ```bash linenums="1"
+        Unattended-Upgrade::Sender "your-authorized-email@domain.com";
+        ```
+
+    3. Save and close the config file: 
+        
+        + ++ctrl+o++ to save
+        + ++ctrl+x++ to close
+   
+    4. Restart the `unattended-upgrades` Systemd service:
+
+        ```bash linenums="1"
+        sudo systemctl restart unattended-upgrades.service
+        ```
+
+    5. Test the fix:
+    
+        ```bash linenums="1"
+        sudo unattended-upgrade --dry-run --debug
+        ```

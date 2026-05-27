@@ -10,14 +10,13 @@ hide:
 # Convert an SVG to Data URI
 *For HTML and CSS*
 
-> [!question]+ FAQ
-> **What is an SVG?**
-> 
-> :   An SVG file is an XML-based vector graphics format for defining two-dimensional graphics. SVG icons are great because they can be resized without losing any quality since, unlike a standard image, they are just a plain text file instructing the computer how to draw the desired graphic on the screen. This also means their file size is tiny making them great for web applications. Using an SVG in place of a JPG / JPEG or PNG will speed up your page loading times and save bandwidth. 
->
-> **Why convert it into a data URI?**
-> 
-> :   Sometimes it might be useful to convert an SVG into a data URI for use in a CSS stylesheet instead of inserting the SVG directly into the HTML. This tutorial will show you how to convert an SVG into a data URI in your Linux CLI, and how to create a custom function, `svg2uri`, so you do not need to manually type the long command every time. 
+???+ question "FAQ"
+
+    **What is an SVG?**
+    :   An SVG file is an XML-based vector graphics format for defining two-dimensional graphics. SVG icons are great because they can be resized without losing any quality since, unlike a standard image, they are just a plain text file instructing the computer how to draw the desired graphic on the screen. This also means their file size is tiny making them great for web applications. Using an SVG in place of a JPG / JPEG or PNG will speed up your page loading times and save bandwidth. 
+
+    **Why convert it into a data URI?** 
+    :   Sometimes it might be useful to convert an SVG into a data URI for use in a CSS stylesheet instead of inserting the SVG directly into the HTML. This tutorial will show you how to convert an SVG into a data URI in your Linux CLI, and how to create a custom function, `svg2uri`, so you do not need to manually type the long command every time. 
 
 ---
 
@@ -54,8 +53,9 @@ If you want to handle the color and size adjustments without even opening a text
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
     ```
 
-    > [!note]+
-    > `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
+    ???+ note
+    
+        `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
 
 ## :material-file-code-outline: Making a Function
 
@@ -63,12 +63,13 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
 #### Add the function to your shell profile:
 
-> [!tip inline end]
-> If you have a lot of different aliases / functions it can be beneficial to add them into your distribution's dedicated file to keep your `.bashrc` file cleaner. 
-> 
-> You can check out instructions on how to do this for **Debian / Fedora** based distributions in my tutorial: 
->
-> [Defining Aliases :material-console:](Defining_Terminal_Aliases.md){ .md-button }
+!!! tip inline end
+
+    If you have a lot of different aliases / functions it can be beneficial to add them into your distribution's dedicated file to keep your `.bashrc` file cleaner. 
+ 
+    You can check out instructions on how to do this for **Debian / Fedora** based distributions in my tutorial: 
+
+    [Defining Aliases :material-console:](Defining_Terminal_Aliases.md){ .md-button }
 
 1. Open your terminal profile configuration *(usually `~/.bashrc` if you are using Bash, or `~/.zshrc` if you are using Zsh)* in your preferred editor:
 
@@ -87,8 +88,9 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
     1. Reads from standard input (stdin) and outputs a URL-encoded SVG Data URI
 
-    > [!note]+
-    > I appended a `.trim()` to the end of the command just to ensure no invisible newline characters at the end of the file get encoded.
+    ???+ note
+
+        I appended a `.trim()` to the end of the command just to ensure no invisible newline characters at the end of the file get encoded.
 
 3. Save and close the `~/.bashrc` file: 
 

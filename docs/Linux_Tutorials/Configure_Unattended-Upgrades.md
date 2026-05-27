@@ -12,21 +12,24 @@ hide:
 # Automatic Updates for Debian
 *Using Unattended-Upgrades*
 
-> [!question] FAQ
-> **What Are Unattended-Upgrades?**
-> :    The [<code>unattended-upgrades</code>](https://packages.debian.org/stable/unattended-upgrades) package enables automatic security patches and critical software updates on your Debian server with no manual intervention required by the system administrator. This helps to protect your server from new CVE attack vectors, ensures bug fixes are applied quickly during maintenance windows, and relieves burden from patch management, allowing the system administrator to focus on other things. By the end of this tutorial, you will have `unattended-upgrades` configured with Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
+!!! question "FAQ"
 
-> [!note]+
-> **Relevant Versions:**
-> :    This tutorial applies to **Debian 13** *(Trixie)*, **Debian 12** *(Bookworm)*, and **Debian 11** *(Bullseye)*. The command output examples are based on **Debian 13** *(Trixie)*, and your output may vary based on your version. However, the commands should work identically on all supported versions of Debian. 
+    **What Are Unattended-Upgrades?**
+    :    The [<code>unattended-upgrades</code>](https://packages.debian.org/stable/unattended-upgrades) package enables automatic security patches and critical software updates on your Debian server with no manual intervention required by the system administrator. This helps to protect your server from new CVE attack vectors, ensures bug fixes are applied quickly during maintenance windows, and relieves burden from patch management, allowing the system administrator to focus on other things. By the end of this tutorial, you will have `unattended-upgrades` configured with Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
+
+???+ note
+
+    **Relevant Versions:**
+    :    This tutorial applies to **Debian 13** *(Trixie)*, **Debian 12** *(Bookworm)*, and **Debian 11** *(Bullseye)*. The command output examples are based on **Debian 13** *(Trixie)*, and your output may vary based on your version. However, the commands should work identically on all supported versions of Debian. 
 
 ---
 
 ## :material-monitor-arrow-down-variant: Install the Packages
 
-> [!note inline end]
-> **Minimal & Server Installs:**
-> :    A full Debian install will probably have this package installed by default, however, server and minimal installs may not, and will require installing the package with the command above.
+!!! note inline end
+
+    **Minimal & Server Installs:**
+    :    A full Debian install will probably have this package installed by default, however, server and minimal installs may not, and will require installing the package with the command above.
 
 1. Update the package index: 
 
@@ -83,9 +86,10 @@ There are two optional packages you can install to extend the functionality of `
     All upgrades installed
     ```
 
-    > [!note]+
-    > **What to Look For:**
-    > :    The command output will show the codename for your version of Debian *(bullseye, bookworm, or trixie)*. and depending on what needs to be upgraded you may see different packages. The important things to look for are "Allowed origins" matching your release name, and "All upgrades installed." 
+    ???+ note
+    
+        **What to Look For:**
+        :    The command output will show the codename for your version of Debian *(bullseye, bookworm, or trixie)*. and depending on what needs to be upgraded you may see different packages. The important things to look for are "Allowed origins" matching your release name, and "All upgrades installed." 
 
 ## :material-timer-outline: Manage the Systemd Timers
 
@@ -175,8 +179,9 @@ The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the
 
 Below is a table containing the options included with the `unattended-upgrade` command. You can also see the options by checking the [manual page](https://manpages.debian.org/trixie/unattended-upgrades/unattended-upgrade.8.en.html) using the command: `#!bash man unattended-upgrade`
 
-> [!note inline end]+
-> You can use the options, `--dry-run` and `--debug`, after making configuration changes to verify your settings are working properly before deploying and relying on the automatic updates.
+???+ note inline end
+
+    You can use the options, `--dry-run` and `--debug`, after making configuration changes to verify your settings are working properly before deploying and relying on the automatic updates.
 
 | Option                       | Description                                                                   |
 | :--------------------------- | :---------------------------------------------------------------------------- |
@@ -209,8 +214,9 @@ The configuration file, `/etc/apt/apt.conf.d/50unattended-upgrades`, dictates wh
 
 The `Origins-Pattern` section of the configuration file dictates which repositories are eligible for automatic updates. By default, only security updates are allowed to apply automatically. You can uncomment the other included origins to enable additional repositories.
 
-> [!note inline end]
-> The variable, `${distro_codename}`, automatically expands to your Debian release *(Bullseye, Bookworm, or Trixie)*. This makes the configuration portable across versions.
+???+ note inline end
+
+    The variable, `${distro_codename}`, automatically expands to your Debian release *(Bullseye, Bookworm, or Trixie)*. This makes the configuration portable across versions.
 
 ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
 Unattended-Upgrade::Origins-Pattern {
@@ -254,8 +260,9 @@ The `Package-Blacklist` section uses Python regular expressions to exclude speci
 
 ### Email Notifications
 
-> [!note inline end]
-> Email notifications require a working MTA on your system. I usually prefer the `msmtp` package for configuring SMTP email servers. You can see more detailed configuration information on my other tutorial, [Setup SSH Login Notification](./Setup_SSH_Login_Email_Notification.md).
+!!! note inline end
+
+    Email notifications require a working MTA on your system. I usually prefer the `msmtp` package for configuring SMTP email servers. You can see more detailed configuration information on my other tutorial, [Setup SSH Login Notification](./Setup_SSH_Login_Email_Notification.md).
 
 There are three main options to control email behavior.
 
@@ -343,8 +350,9 @@ These options are intended for laptops and metered internet connections.
 
 ### Additional Options
 
-> [!note inline end]
-> Enabling `Allow-Downgrade` has been known to cause system instability. This option should only be used when you have a specific need. *(e.g., rolling back a problematic upgrade)*
+!!! note inline end
+
+    Enabling `Allow-Downgrade` has been known to cause system instability. This option should only be used when you have a specific need. *(e.g., rolling back a problematic upgrade)*
 
 Other useful settings in the configuration file:
 
@@ -372,11 +380,12 @@ It is highly recommended to do a 'dry-run' after making changes to the configura
 
 ## :material-text-search: Monitor Upgrade Logs
 
-> [!info]
-> The `unattended-upgrades` service maintains dedicated log files in the directory, `/var/log/unattended-upgrades/`.
-> 
-> + `unattended-upgrades.log` contains the main upgrade activity log.
-> + `unattended-upgrades-dpkg.log` contains `dpkg` output during package installation.
+!!! info
+
+    The `unattended-upgrades` service maintains dedicated log files in the directory, `/var/log/unattended-upgrades/`.
+ 
+    + `unattended-upgrades.log` contains the main upgrade activity log.
+    + `unattended-upgrades-dpkg.log` contains `dpkg` output during package installation.
 
 1. View the recent log activity: 
 

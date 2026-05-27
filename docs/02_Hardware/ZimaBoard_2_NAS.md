@@ -135,41 +135,42 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!zima inline end] ZimaOS
-> This server runs **ZimaOS**, an "Atomic" *(a.k.a., immutable)* operating system.
->  
-> + Do not attempt to use `apt` to install or upgrade system packages. 
-> + Do not change NTP settings *(stuck on systemd-timesyncd)*.
->
-> :material-package-variant:&nbsp;**Entware:**
-> 
-> + The [Entware](https://github.com/Entware/Entware) package manager is installed. 
-> + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
-> + Check the [Entware Wiki](https://github.com/Entware/Entware/wiki) for documentation.
+!!! zima inline end "ZimaOS"
 
-> [!config] Critical Configurations
-> :symbols-smb-share:&nbsp;**SMB Multi-Channel:**
-> + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
-> + **Constraint:** 
->     + Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
->
-> ---
->
-> See the ["Configuration"](../03_Services/SMB.md#configuration) section of the SMB service documentation page for server configuration details.
+    This server runs **ZimaOS**, an "Atomic" *(a.k.a., immutable)* operating system.
+  
+    + Do not attempt to use `apt` to install or upgrade system packages. 
+    + Do not change NTP settings *(stuck on systemd-timesyncd)*.
 
-> [!change] NAS Protocol Change (SMB :material-arrow-right-thin: NFS)
-> :material-calendar:&nbsp;**Date:** 2026-02-09 <br>
-> :material-help-circle-outline:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
-> :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
-> :material-devices:&nbsp;**Affected Clients:** 
-> 
-> + [Ben's Desktop PC](./Ben's_Desktop.md) 
-> + [Ben's Laptop PC](./Ben's_Laptop.md)
-> 
->
-> ---
-> 
-> See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 
+    :material-package-variant:&nbsp;**Entware:**
+ 
+    + The [Entware](https://github.com/Entware/Entware) package manager is installed. 
+    + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
+    + Check the [Entware Wiki](https://github.com/Entware/Entware/wiki) for documentation.
+
+!!! config "Critical Configurations"
+
+    :symbols-smb-share:&nbsp;**SMB Multi-Channel:**
+    
+    + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
+    + **Constraint:** 
+        + Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
+
+    ---
+    See the ["Configuration"](../03_Services/SMB.md#configuration) section of the SMB service documentation page for server configuration details.
+
+!!! change "NAS Protocol Change (SMB :material-arrow-right-thin: NFS)"
+    
+    :material-calendar:&nbsp;**Date:** 2026-02-09 <br>
+    :material-help-circle-outline:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
+    :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
+    :material-devices:&nbsp;**Affected Clients:** 
+ 
+    + [Ben's Desktop PC](./Ben's_Desktop.md) 
+    + [Ben's Laptop PC](./Ben's_Laptop.md)
+
+    --- 
+    See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 
 
 #### :material-login: Fastfetch Login Preset:
 
@@ -261,7 +262,9 @@ hide:
     ```bash linenums="1"
     ssh root@<host> 'cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-* && sh install.sh'
     ```
-> [!note]
-> The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` *(root:root, 0700)*, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place. 
-> 
-> Open it from the [ZimaOS dashboard](http://storage-server.internal) *(tile: ZFW Firewall)*, or directly at `http://<host>/modules/zfw/index.html`.
+
+!!! note
+
+    The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` *(root:root, 0700)*, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place. 
+ 
+    Open it from the [ZimaOS dashboard](http://storage-server.internal) *(ZFW Firewall)*, or directly at `http://<host>/modules/zfw/index.html`.

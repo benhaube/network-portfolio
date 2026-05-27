@@ -97,28 +97,29 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!config inline end] Critical Configurations
-> :material-vpn:&nbsp;**VPN:**
->
-> + The [WireGuard](../03_Services/Wireguard_Server.md) VPN is used for remote access to the LAN.
-> + [ASUS RT-BE92U](./ASUS_RT-BE92U.md) is the primary server, and [ZimaOS NAS](./ZimaBoard_2_NAS.md) is the secondary / backup server.
-> + The VPN is configured through the WireGuard application, and has both profiles loaded. The default profile connects to the ASUS router
->
-> :services-gotify-notification:&nbsp;**Gotify:**
->
-> + The [Gotify](../03_Services/Gotify.md) application is installed for instant push notifications regarding the essential network infrastructure.
-> + Log into the app with the "admin" user. 
->
-> :material-email:&nbsp;**Email Client:**
->
-> + The standard Gmail app has been disabled and replaced with [Thunderbird](https://www.thunderbird.net/en-US/mobile/) *(formerly K9-Mail)* on this mobile device. 
-> + Account and app settings are backed up to the [ZimaOS NAS](./ZimaBoard_2_NAS.md) with [Syncthing](../03_Services/Syncthing.md)
->
-> :material-calendar:&nbsp;**Calendar & Tasks:**
-> 
-> + The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar](https://github.com/FossifyOrg/Calendar) and [Tasks.org](https://tasks.org/) *(Installed via F-Droid)*. 
-> + Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/) application.
-> + The calendar and tasks serivce is hosted by [Fastmail](https://fastmail.com). 
+!!! config inline end "Critical Configurations"
+
+    :material-vpn:&nbsp;**VPN:**
+
+    + The [WireGuard](../03_Services/Wireguard_Server.md) VPN is used for remote access to the LAN.
+    + [ASUS RT-BE92U](./ASUS_RT-BE92U.md) is the primary server, and [ZimaOS NAS](./ZimaBoard_2_NAS.md) is the secondary / backup server.
+    + The VPN is configured through the WireGuard application, and has both profiles loaded. The default profile connects to the ASUS router
+
+    :services-gotify-notification:&nbsp;**Gotify:**
+
+    + The [Gotify](../03_Services/Gotify.md) application is installed for instant push notifications regarding the essential network infrastructure.
+    + Log into the app with the "admin" user. 
+
+    :material-email:&nbsp;**Email Client:**
+
+    + The standard Gmail app has been disabled and replaced with [Thunderbird](https://www.thunderbird.net/en-US/mobile/) *(formerly K9-Mail)* on this mobile device. 
+    + Account and app settings are backed up to the [ZimaOS NAS](./ZimaBoard_2_NAS.md) with [Syncthing](../03_Services/Syncthing.md)
+
+    :material-calendar:&nbsp;**Calendar & Tasks:**
+ 
+    + The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar](https://github.com/FossifyOrg/Calendar) and [Tasks.org](https://tasks.org/) *(Installed via F-Droid)*. 
+    + Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/) application.
+    + The calendar and tasks serivce is hosted by [Fastmail](https://fastmail.com). 
 
 #### :material-update: Update Process:
 

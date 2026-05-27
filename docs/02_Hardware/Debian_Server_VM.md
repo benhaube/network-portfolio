@@ -87,23 +87,24 @@ hide:
 ---
 ## :material-tools: Maintenance & Snapshots
 
-> [!config] Critical Configurations
-> + Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
-> + The VM is configured to boot automatically when the host server boots. 
-> 
->     + If a ZimaOS update breaks this configuration it can be re-applied with the following command on the host machine:
-> 
->         ```bash linenums="1"
->         sudo virsh autostart <vm_name>
->         ```
->         
->     + To disable the 'autostart' feature: (not recommended)
-> 
->         ```bash linenums="1"
->         sudo virsh autostart <vm_name> --disable
->         ```
->         
-> + This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation. 
+!!! config "Critical Configurations"
+
+    + Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
+    + The VM is configured to boot automatically when the host server boots. 
+
+        + If a ZimaOS update breaks this configuration it can be re-applied with the following command on the host machine:
+
+            ```bash linenums="1"
+            sudo virsh autostart <vm_name>
+            ```
+
+        + To disable the 'autostart' feature: (not recommended)
+ 
+            ```bash linenums="1"
+            sudo virsh autostart <vm_name> --disable
+            ```
+          
+    + This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation. 
 
 #### :material-update: Update Policy:
 
@@ -116,13 +117,14 @@ hide:
 
 + Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_Services/Dockge.md)
 
-> [!warning inline] Warning!
-> + The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
-> + To create an external snapshot, run the following command as `root`: 
-> 
->     ```bash linenums="1"
->     virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
->     ```
+!!! warning inline "Warning!"
+
+    + The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
+    + To create an external snapshot, run the following command as `root`: 
+ 
+        ```bash linenums="1"
+        virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
+        ```
 
 #### :material-camera: Snapshot Policy:
 

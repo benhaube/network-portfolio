@@ -54,6 +54,16 @@ hide:
 
 ### :material-cog: Configuration
 
+!!! tip
+
+    **Configure DoH / DoT with Pi-hole:**
+    :    For secure, encrypted recursive DNS queries, configure `dnscrypt-proxy`. 
+
+        * [Pi-hole w/ dnscrypt-proxy](https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/)
+
+    **Synchronize Pi-hole Settings:**
+    :    To synchronize the settings from the primary Pi-hole instance to a second instance use [Nebula-Sync](./Nebula-Sync.md). 
+
 #### :symbols-install-desktop: Install:
 
 ```bash linenums="1"
@@ -65,10 +75,3 @@ curl -sSL https://install.pi-hole.net | bash
 ```toml title="<code>/etc/pihole/pihole.toml</code>" linenums="1"
 --8<-- "pihole.toml"
 ```
-
-> [!tip]+ Configure DoH / DoT with Pi-hole
-> For secure, encrypted recursive DNS queries, configure `dnscrypt-proxy`. 
-> * [Pi-hole w/ dnscrypt-proxy](https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/)
-
-> [!tip]+ Synchronize Pi-hole Settings
-> To synchronize the settings from the primary Pi-hole instance to a second instance use [Nebula-Sync](./Nebula-Sync.md). 

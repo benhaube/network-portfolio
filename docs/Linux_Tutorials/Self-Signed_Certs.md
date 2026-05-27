@@ -11,9 +11,10 @@ hide:
 
 *SSL for Your Local Server*
 
-> [!question] FAQ
-> **What is an SSL certificate?**
-> :    SSL certificates provide encryption for Web servers and applications... the 'S' in HTTPS. Self-Signed SSL certificates can be useful for testing, developmet, and for encrypting connections to internal Web servers. However, they should not be used for hosting services or applications publicly. For that use, you will need to obtain a certificate signed by a reputable CA. My favorite way to obtain a free SSL certificate signed by a CA is LetsEncrypt. On this page is a step-by-step guide to creatinng your own self-signed SSL certificate using the Linux command line.
+!!! question "FAQ"
+
+    **What is an SSL certificate?**
+    :    SSL certificates provide encryption for Web servers and applications... the 'S' in HTTPS. Self-Signed SSL certificates can be useful for testing, developmet, and for encrypting connections to internal Web servers. However, they should not be used for hosting services or applications publicly. For that use, you will need to obtain a certificate signed by a reputable CA. My favorite way to obtain a free SSL certificate signed by a CA is LetsEncrypt. On this page is a step-by-step guide to creatinng your own self-signed SSL certificate using the Linux command line.
 
 ---
 

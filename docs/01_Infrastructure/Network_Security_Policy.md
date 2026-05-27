@@ -17,9 +17,10 @@ tags:
 # Network Security Policy
 *The Principle of Least Privilege*
 
-> [!info] 
-> **Security Philosophy:**
-> :    This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
+!!! info 
+
+	**Security Philosophy:**
+	:    This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 ---
 ## :material-segment: Network Segmentation 

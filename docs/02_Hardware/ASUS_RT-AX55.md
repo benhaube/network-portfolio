@@ -78,9 +78,10 @@ hide:
 ---
 ## :material-tools: Maintenance & Notes
 
-> [!config inline] Critical Configurations
-> **:material-hub-outline: AiMesh Node:**
-> :    The AiMesh Node acts like a "dumb" wireless access point. All available settings for the AiMesh node are available through the main router's Web-UI. See [ASUS RT-BE92U](ASUS_RT-BE92U.md).
+!!! config inline "Critical Configurations"
+
+    **:material-hub-outline: AiMesh Node:**
+    :    The AiMesh Node acts like a "dumb" wireless access point. All available settings for the AiMesh node are available through the main router's Web-UI. See [ASUS RT-BE92U](ASUS_RT-BE92U.md).
 
 #### :material-update: Update Process: 
 

@@ -16,9 +16,10 @@ hide:
 # Reverse Proxy & DNS Routing
 *Domain Names for Local Services*
 
-> [!info]
-> **Goal:**
-> :   Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
+!!! info
+
+    **Goal:**
+    :   Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
 
 ---
 
@@ -40,8 +41,9 @@ hide:
 
 ## :material-file-cloud: Technitium DNS Records
 
-> [!note]
-> Instead of pointing every service to the proxy's IP address directly, we use a single `A` record for the proxy hardware, and `CNAME` aliases for the services. This makes IP migrations easier in the future.
+!!! note
+
+    Instead of pointing every service to the proxy's IP address directly, we use a single `A` record for the proxy hardware, and `CNAME` aliases for the services. This makes IP migrations easier in the future.
 
 | Domain / Alias     | Record Type | Target / Value     |       PTR        | Description                             |
 | :----------------- | :---------- | :----------------- | :--------------: | :-------------------------------------- |

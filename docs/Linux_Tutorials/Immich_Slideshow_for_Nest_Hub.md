@@ -10,9 +10,13 @@ hide:
 # Project Migration
 *Immich Slideshow for Nest Hub*
 
-> [!info] Project Info
-> **User:** Ben Haube | **Date:** Feb 5, 2026<br>
-> **Infrastructure:** [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))*, [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
+!!! info "Project Info"
+
+    **User:** Ben Haube | **Date:** Feb 5, 2026<br>
+    **Infrastructure:** 
+    
+    + [:material-nas: ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))* 
+    + [:material-raspberry-pi: Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
 
 ---
 

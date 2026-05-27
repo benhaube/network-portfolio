@@ -16,9 +16,10 @@ tags:
 # Disaster Recovery Plan
 *Maintaining High Availability*
 
-> [!info] 
-> **Objective:**
-> :    The goal of this **DR** plan is to ensure **HA** for critical network services *(DNS, Routing, Security)* and to provide a clear path to data restoration for stateful services *(Immich, Home Assistant, SMB Shares)* in the event of hardware failure or data corruption.
+!!! info
+
+    **Objective:**
+    :    The goal of this **DR** plan is to ensure **HA** for critical network services *(DNS, Routing, Security)* and to provide a clear path to data restoration for stateful services *(Immich, Home Assistant, SMB Shares)* in the event of hardware failure or data corruption.
 
 ---
 ## :material-priority-high: Service Priority Levels
@@ -33,17 +34,21 @@ tags:
 ---
 ## :material-cloud-upload-outline: Backup Strategy
 
-> [!info inline end] 3-2-1 Backup Strategy
-> To prevent data loss, the **"3-2-1" backup strategy** is applied across the infrastructure.
-> 
-> **Three** copies of the data:
-> + This includes the production copy and two backups
->
-> **Two** media types:
-> + Data is stored on local drives and a NAS.
->
-> **One** off-site copy:
-> + The most important data has a copy stored off-site with p-Cloud.
+!!! info inline end "3-2-1 Backup Strategy"
+    
+    To prevent data loss, the **"3-2-1" backup strategy** is applied across the infrastructure.
+
+    **Three** copies of the data:
+
+    + This includes the production copy and two backups
+
+    **Two** media types:
+
+    + Data is stored on local drives and a NAS.
+
+    **One** off-site copy:
+    
+    + The most important data has a copy stored off-site with p-Cloud.
 
 ### On-Site Synchronization:
 

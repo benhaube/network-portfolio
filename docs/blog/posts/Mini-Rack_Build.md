@@ -20,35 +20,36 @@ hide:
 ---
 ![Custom icon for my mini-rack made in Inkscape](../assets/icons/10-in-rack.svg){ width=400 }
 
-> [!info] Mini-Rack Build: Dec, 2025 :material-arrow-right-thin: Jan, 2026
-> **3D-Printed Parts:**
-> 
-> + RackMate bottom horizontal frame 
-> + ZimaBoard 2 w/SSD mounting bracket 
-> + Vented blank plates *(hexagon pattern)* 
-> + Ugreen CM753 mounting bracket *(No longer available to download. Included a similar model in collection linked below.)*
->
-> [3D-Models :simple-printables:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }
->
-> **Purchased Parts:**
-> 
-> + [ZimaBoard 2 1664](../../02_Hardware/ZimaBoard_2_NAS.md)
-> + [Ugreen UM106X Switch](../../02_Hardware/Ugreen_Switch.md)
-> + [Hitron Modem](../../02_Hardware/Hitron_Modem.md)
-> + GeeekPi: DeskPi Rack-Mate T0 *(4U - 10" Rack)*
-> + One SFP+ :material-arrow-right-thin: 10GbE transciever
-> + Two Cat6a Keystone jacks
-> + Three GeeekPi 6" Cat6a patch cables
-> + Three Monoprice 3' Cat6a patch cables
-> + One PCIe 4.0 :material-arrow-right-thin: NVMe add-in card
-> + One SK-Hynix 500GB NVMe SSD *(for Docker / VM storage, pulled from [ThinkPad](../../02_Hardware/Ben's_Laptop.md) after storage upgrade)*
-> + Two Crucial BX500 4TB SATA SSDs in RAID1 *(for mass network attached storage)*
-> + One 30 cm SATA extension cable
-> + One PWM Fan controller
-> + Two server-grade 5000 RPM, 80 mm Arctic PWM fans
-> + Black rack screws
->
-> [Amazon List :fontawesome-brands-amazon:](https://www.amazon.com/hz/wishlist/ls/4BBKVMBF22TH?ref_=wl_share){ .md-button }
+!!! info "Mini-Rack Build: Dec, 2025 :material-arrow-right-thin: Jan, 2026"
+
+    **3D-Printed Parts:**
+ 
+    + RackMate bottom horizontal frame 
+    + ZimaBoard 2 w/SSD mounting bracket 
+    + Vented blank plates *(hexagon pattern)* 
+    + Ugreen CM753 mounting bracket *(No longer available to download. Included a similar model in collection linked below.)*
+  
+    [3D-Models :simple-printables:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }
+
+    **Purchased Parts:**
+ 
+    + [ZimaBoard 2 1664](../../02_Hardware/ZimaBoard_2_NAS.md)
+    + [Ugreen UM106X Switch](../../02_Hardware/Ugreen_Switch.md)
+    + [Hitron Modem](../../02_Hardware/Hitron_Modem.md)
+    + GeeekPi: DeskPi Rack-Mate T0 *(4U - 10" Rack)*
+    + One SFP+ :material-arrow-right-thin: 10GbE transciever
+    + Two Cat6a Keystone jacks
+    + Three GeeekPi 6" Cat6a patch cables
+    + Three Monoprice 3' Cat6a patch cables
+    + One PCIe 4.0 :material-arrow-right-thin: NVMe add-in card
+    + One SK-Hynix 500GB NVMe SSD *(for Docker / VM storage, pulled from [ThinkPad](../../02_Hardware/Ben's_Laptop.md) after storage upgrade)*
+    + Two Crucial BX500 4TB SATA SSDs in RAID1 *(for mass network attached storage)*
+    + One 30 cm SATA extension cable
+    + One PWM Fan controller
+    + Two server-grade 5000 RPM, 80 mm Arctic PWM fans
+    + Black rack screws
+
+    [Amazon List :fontawesome-brands-amazon:](https://www.amazon.com/hz/wishlist/ls/4BBKVMBF22TH?ref_=wl_share){ .md-button }
 
 ---
 

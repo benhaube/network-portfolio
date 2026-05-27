@@ -191,8 +191,9 @@ hide:
 
 2. Paste this code into the file, then save and close.
 
-    > [!note inline end]
-    > The `ddns-start` script also contains the code to update the [DDNS](./DDNS.md) service. 
+    !!! note inline end
+    
+        The `ddns-start` script also contains the code to update the [DDNS](./DDNS.md) service. 
 
     ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="5 13 14"
     --8<-- "ddns-start.sh"

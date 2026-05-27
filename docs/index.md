@@ -34,11 +34,11 @@ hide:
 ---
 ## :material-devices: Hardware
 
-> [!links inline end] Extra Links
-> 
-> [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
-> 
-> [Hardware Tags :material-tag:](02_Hardware/tags.md){ .md-button }
+!!! links inline end "Extra Links"
+
+    [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
+
+    [Hardware Tags :material-tag:](02_Hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
@@ -95,9 +95,9 @@ hide:
 ---
 ## :material-web: Services
 
-> [!links inline end] Extra Links
->
-> [Services Tags :material-tag:](03_Services/tags.md){ .md-button }
+!!! links inline end "Extra Links"
+
+    [Services Tags :material-tag:](03_Services/tags.md){ .md-button }
 
 [:services-beszel:&ensp;Beszel](./03_Services/Beszel_Hub.md): 
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts.
@@ -225,10 +225,10 @@ hide:
 ---
 ## :material-printer-3d-nozzle: 3D Printing
 
-> [!links inline end] Check out my 3D Models!
-> All of my 3D models are published to Printables, and shared with the GPLv3 open-source licence. Every model has STEP and FreeCAD files included for easy editing.
-> 
-> [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
+!!! links inline end "Check out my 3D Models!"
+    All of my 3D models are published to Printables, and shared with the GPLv3 open-source licence. Every model has STEP and FreeCAD files included for easy editing.
+
+    [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
 [:material-cog:&ensp;Manual Bed Leveling Mod](./3D_Printing/K1_Bed_Level_Knobs_Tutorial.md): 
 :    Installing a bed leveling modification on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md). 
@@ -242,16 +242,16 @@ hide:
 ---
 ## :material-linux: Linux Tutorials
 
-> [!links inline end] Extra Links
-> **My Favorite Bash Aliases:**
-> :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
-> 
->      [My Bash Aliases :material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
->
-> **Update PCRs Script:**
-> :    In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
-> 
->      [Update PCRs :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
+!!! links inline end "Extra Links"
+    **My Favorite Bash Aliases:**
+    :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
+
+        [My Bash Aliases :material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
+
+    **Update PCRs Script:**
+    :    In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
+
+        [Update PCRs :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
 [:material-update:&ensp;Automatic Updates for Debian Servers](./Linux_Tutorials/Configure_Unattended-Upgrades.md)
 :    How to install and configure the `unattended-upgrades` package on your Debian server to enable automatic updates. This tutorial will help you configure Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.

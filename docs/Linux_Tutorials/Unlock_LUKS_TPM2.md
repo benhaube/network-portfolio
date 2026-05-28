@@ -23,12 +23,13 @@ hide:
 **LUKS2:** 
 :    Your encrypted volume must be using **LUKS2** format. 
 
-    > [!tip]+
-    > Check the **LUKS** version your encrypted volume is using with this command:
-    > 
-    > ```bash linenums="1"
-    > cryptsetup luksDump /dev/your_device
-    > ```
+    ???+ tip
+    
+        Check the **LUKS** version your encrypted volume is using with this command:
+     
+        ```bash linenums="1"
+        cryptsetup luksDump /dev/your_device
+        ```
 
 **Packages:** 
 :    Ensure you have the necessary packages installed.
@@ -116,10 +117,10 @@ hide:
         GRUB_CMDLINE_LINUX="quiet splash rd.luks.options=tpm2-device=auto"
         ```
      
-        > [!note]+
-        > **Configuration Syntax:**
-        >
-        > :    Some distributions may require a separate option for the UUID, such as `rd.luks.options=UUID-OF-YOUR-LUKS-PARTITION=tpm2-device=auto`. Check your distribution's documentation for the exact syntax if the simpler option above doesn't work. I needed to use this syntax on Fedora.
+        ???+ note
+        
+            **Configuration Syntax:**
+            :    Some distributions may require a separate option for the UUID, such as `rd.luks.options=UUID-OF-YOUR-LUKS-PARTITION=tpm2-device=auto`. Check your distribution's documentation for the exact syntax if the simpler option above doesn't work. I needed to use this syntax on Fedora.
 
     + **Save and close** the `/etc/default/grub` file.
         + ++ctrl+o++ to save

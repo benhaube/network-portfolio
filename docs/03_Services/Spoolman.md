@@ -32,6 +32,7 @@ hide:
 #### :material-link-variant: URL / Access:   
 
 + <http://storage-server.internal:7912/>
++ <http://storage-server-2.internal:7912/>
 + <https://spoolman.internal>
 
 #### :material-key-chain: Credentials: 

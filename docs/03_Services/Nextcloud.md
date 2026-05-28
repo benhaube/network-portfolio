@@ -34,7 +34,8 @@ hide:
 
 #### :material-link-variant: URL / Access: 
 
-+ ~~[[http://storage-server.internal:10081]]~~
++ ~~<http://storage-server.internal:10081>~~
++ ~~<http://storage-server-2.internal:10081>~~
 
 #### :material-key-chain: Credentials: 
 

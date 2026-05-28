@@ -34,7 +34,7 @@ hide:
 
 #### :symbols-host: Hostname(s):
 
-+ `zimaos-nas`
++ `ZimaOS-NAS`
 
 #### :material-map-marker-outline: Location: 
 

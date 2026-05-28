@@ -32,25 +32,25 @@ hide:
 ---
 ## :material-lan: Local Networks
 
-| VLAN   | SSID         | Subnet            | DNS Servers                   | Domain   |    WAN Access    | Role / Notes                            |
-| :----- | :----------- | :---------------- | :---------------------------- | :------- | :--------------: | :-------------------------------------- |
-| VLAN50 | *Home*       | `192.168.50.0/24` | `192.168.50.6` `192.168.50.2` | internal | :material-check: | :material-security:&nbsp;Trusted        |
-| VLAN52 | *Home_Guest* | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        | :material-check: | :symbols-shield-person-fill:&nbsp;Guest |
-| VLAN53 | *2G_IoT*     | `192.168.53.0/24` | `9.9.9.9` `149.122.122.122`   | -        | :material-close: | :symbols-shield-house-fill:&nbsp;IoT    |
+| VLAN   | SSID         | Subnet            | DNS Servers                   | Domain   |    WAN Access    | Role / Notes                                 |
+| :----- | :----------- | :---------------- | :---------------------------- | :------- | :--------------: | :------------------------------------------- |
+| VLAN50 | *Home*       | `192.168.50.0/24` | `192.168.50.6` `192.168.50.2` | internal | :material-check: | :material-security:&nbsp;Trusted VLAN        |
+| VLAN52 | *Home_Guest* | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        | :material-check: | :symbols-shield-person-fill:&nbsp;Guest VLAN |
+| VLAN53 | *2G_IoT*     | `192.168.53.0/24` | `9.9.9.9` `149.122.122.122`   | -        | :material-close: | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
 ## :material-router-wireless: Core Infrastructure 
 &emsp;&emsp;*Static & Reserved*
 
-| Device                                                                                     | VLAN   | IP Address       | Hostname           | Type     | Role / Notes                                                                                                              |
-| :----------------------------------------------------------------------------------------- | :----- | :--------------- | :----------------- | :------- | :------------------------------------------------------------------------------------------------------------------------ |
-| [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)           | -      | `192.168.50.1`   | `asusrouter`       | Static   | Main Gateway, NTP Master, DHCP Server                                                                                     |
-| [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | VLAN50 | `192.168.50.2`   | `pi-server`        | Static   | DNS Secondary *([Technitium](../03_Services/Technitium.md) cluster)*, [CUPS](../03_Services/CUPS_Print_Server.md)         |
-| [:material-raspberry-pi:&nbsp;Ras-Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | VLAN50 | `192.168.50.3`   | `pi-zero`          | Static   | Caddy reverse proxy server for local domain names                                                                         |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.4`   | `storage-server`   | Static   | Main File Server *(eth0)*                                                                                                 |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.5`   | `storage-server-2` | Static   | SMB Multi-channel Path *(eth1)*                                                                                           |
-| [:material-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | VLAN50 | `192.168.50.6`   | `debian-vm`        | Reserved | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
-| [:material-router-wireless:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)             | VLAN50 | `192.168.50.221` | `aimesh-node`      | Reserved | AiMesh Node *(Backhaul)*                                                                                                  |
-| [:material-wan:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)                         | -      | `192.168.100.1`  | `hitron-modem`     | Static   | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
+| Device                                                                                     | VLAN   | IP Address       | Hostname        | Type     | Role / Notes                                                                                                              |
+| :----------------------------------------------------------------------------------------- | :----- | :--------------- | :-------------- | :------- | :------------------------------------------------------------------------------------------------------------------------ |
+| [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)           | -      | `192.168.50.1`   | `RT-BE92U-FAF0` | Static   | Main Gateway, NTP Master, DHCP Server                                                                                     |
+| [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | VLAN50 | `192.168.50.2`   | `pi-server`     | Static   | DNS Secondary *([Technitium](../03_Services/Technitium.md) cluster)*, [CUPS](../03_Services/CUPS_Print_Server.md)         |
+| [:material-raspberry-pi:&nbsp;Ras-Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | VLAN50 | `192.168.50.3`   | `pi-zero`       | Static   | Caddy reverse proxy server for local domain names                                                                         |
+| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.4`   | `ZimaOS-NAS`    | Static   | Main File Server, Primary Ethernet connection *(eth0)*                                                                    |
+| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.5`   | `ZimaOS-NAS`    | Static   | SMB Multi-channel Path, Secondary Ethernet Connection *(eth1)*                                                            |
+| [:material-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | VLAN50 | `192.168.50.6`   | `debian-vm`     | Reserved | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
+| [:material-router-wireless:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)             | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Reserved | AiMesh Node *(Backhaul)*                                                                                                  |
+| [:material-wan:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)                         | -      | `192.168.100.1`  | `N/A`           | Static   | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
 
 ## :symbols-devices: Key Clients 
 &emsp;&emsp;*DHCP Reserved*
@@ -59,7 +59,7 @@ hide:
 | :-------------------------------------------------------------------------------------------------- | :----- | :--------------- | :----------------- | :---------------------------------------------------------------------------- |
 | [:material-desktop-tower:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                      | VLAN50 | `192.168.50.61`  | `bens-workstation` | Fedora Linux 43 *(KDE Plasma Desktop Edition)*                                |
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)            | VLAN50 | `192.168.50.153` | `k1c-a71e`         | Creality K1C *(Modified)*                                                     |
-| [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(wlan0)* | VLAN53 | `DHCP`           | -                  | DHCP, Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
+| [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(wlan0)* | VLAN53 | `DHCP`           | `pi-server`        | DHCP, Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ## :material-web-refresh: Dynamic DNS Providers
 

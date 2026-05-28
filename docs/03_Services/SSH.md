@@ -53,7 +53,7 @@ hide:
     + `storage-server-2.internal:22`
 + :material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer
     + `192.168.50.153:22` 
-    + `k1c-a71e.internal:22` 
+    + `kacey.internal:22` 
 
 #### :material-key-chain: Credentials: 
 

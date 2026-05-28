@@ -38,6 +38,7 @@ hide:
 
 + <http://192.168.50.4:3000>
 + <http://storage-server.internal:3000>
++ <http://storage-server-2.internal:3000>
 
 #### :material-key-chain: Credentials: 
 

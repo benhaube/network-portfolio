@@ -34,7 +34,7 @@ hide:
 
 #### :material-link-variant: URL / Access:  
 
-+ <http://k1c-a71e.internal:7125>
++ <http://kacey.internal:7125>
 + <http://192.168.50.153:7125>
 
 #### :material-key-chain: Credentials: 

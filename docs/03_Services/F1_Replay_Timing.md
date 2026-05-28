@@ -37,6 +37,7 @@ hide:
     + <http://storage-server.internal:8000>
 + Frontend: 
     + <http://storage-server.internal:3000>
+    + <http://storage-server-2.internal:3000>
 
 #### :material-key-chain: Credentials: 
 

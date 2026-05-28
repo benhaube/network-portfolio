@@ -30,7 +30,7 @@ hide:
 
 #### :symbols-host: Hostname(s):
 
-+ `asusrouter`
++ `RT-BE92U-FAF0`
 
 #### :material-map-marker-outline: Location: 
 

@@ -33,9 +33,9 @@ hide:
 
 #### :material-link-variant: URL / Access: 
 
-+ <http://k1c-a71e.internal>
++ <http://kacey.internal>
 + <http://192.168.50.153>
-+ <http://k1c-a71e.internal:4408>
++ <http://kacey.internal:4408>
 + <http://192.168.50.153:4408>
 
 #### :material-key-chain: Credentials: 

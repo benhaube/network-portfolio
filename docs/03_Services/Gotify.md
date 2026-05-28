@@ -35,6 +35,7 @@ hide:
 #### :material-link-variant: URL / Access: 
 
 + <http://storage-server.internal:8180> &mdash; *Local Network Web-UI only*
++ <http://storage-server-2.internal:8180> &mdash; *Local Network Web-UI only*
 + <https://gotify.rac3r4life.online> &mdash; *Use for notification WebSocket*
 
 #### :material-key-chain: Credentials: 

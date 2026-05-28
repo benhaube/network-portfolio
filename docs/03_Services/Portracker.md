@@ -35,8 +35,16 @@ hide:
 
 #### :material-link-variant: URL / Access:  
 
+Raspberry Pi 4B Server:
+
++ <http://192.168.50.2:4999>
++ <http://pi-server.internal:4999>
+
+ZimaOS NAS:
+
 + <http://192.168.50.4:4999>
 + <http://storage-server.internal:4999>
++ <http://storage-server-2.internal:4999>
 
 #### :material-key-chain: Credentials: 
 

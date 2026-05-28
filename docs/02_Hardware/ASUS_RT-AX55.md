@@ -28,7 +28,7 @@ hide:
 
 #### :symbols-host: Hostname(s):
 
-+ `aimesh-node`
++ `RT-AX55-1360`
 
 #### :material-map-marker-outline: Location: 
 

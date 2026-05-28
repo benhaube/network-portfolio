@@ -33,6 +33,7 @@ hide:
 #### :material-link-variant: URL / Access: 
 
 + <http://storage-server.internal:8080>
++ <http://storage-server-2.internal:8080>
 + <https://portfolio.rac3r4life.online>
 
 #### :material-key-chain: Credentials: 

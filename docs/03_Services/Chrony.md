@@ -32,6 +32,7 @@ hide:
 
 #### :material-link-variant: URL / Access: 
 
++ `192.168.50.1:123`
 + `asusrouter.internal:123`
 
 #### :material-key-chain: Credentials: 

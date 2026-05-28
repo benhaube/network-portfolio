@@ -37,6 +37,7 @@ hide:
 + :material-lan: LAN Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
+    + <http://storage-server-2.internal:2283>
 + :material-web: WAN Access:
     + <https://immich.rac3r4life.online>
 

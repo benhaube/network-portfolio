@@ -35,6 +35,7 @@ hide:
 #### :material-link-variant: URL / Access: 
 
 + <http://storage-server.internal:3100>
++ <http://storage-server-2.internal:3100>
 + <http://192.168.50.4:3100>
 
 #### :material-key-chain: Credentials: 

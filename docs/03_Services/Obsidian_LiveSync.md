@@ -35,8 +35,10 @@ hide:
 
 + :material-application-cog-outline: Settings Web UI: 
     + <http://storage-server.internal:5984/_utils>
+    + <http://storage-server-2.internal:5984/_utils>
 + :material-database-outline: Database:
     + <http://storage-server.internal:5984/obsidian-vault>
+    + <http://storage-server-2.internal:5984/obsidian-vault>
 
 #### :material-key-chain: Credentials:
 

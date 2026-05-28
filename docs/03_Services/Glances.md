@@ -35,6 +35,7 @@ hide:
 
 + <http://pi-server.internal:61208>
 + <http://storage-server.internal:61208>
++ <http://storage-server-2.internal:61208>
 
 #### :material-key-chain: Credentials: 
 

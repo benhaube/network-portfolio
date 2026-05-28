@@ -36,6 +36,7 @@ hide:
 
 + <https://openspeedtest.internal>
 + <http://storage-server.internal:3004>
++ http://storage-server-2.internal:3004>
 
 #### :material-key-chain: Credentials: 
 

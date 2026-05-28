@@ -35,6 +35,7 @@ hide:
 #### :material-link-variant: URL / Access:  
 
 + <http://storage-server.internal:3033>
++ <http://storage-server-2.internal:3033>
 + <https://yt-dlp.internal>
 
 #### :material-key-chain: Credentials: 

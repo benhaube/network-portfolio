@@ -43,6 +43,7 @@ hide:
     + `rac3r4life.myaddr.dev:51820` *(for :material-nas:&nbsp;ZimaOS NAS)*
 + :material-application-cog-outline:&nbsp;Web UI Admin: 
     + <http://storage-server.internal:51821/>
+    + <http://storage-server-2.internal:51821/>
 
 #### :material-key-chain: Credentials: 
 

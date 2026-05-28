@@ -40,6 +40,7 @@ hide:
 
 + Web-UI:
     + <http://storage-server.internal:3080>
+    + <http://storage-server-2.internal:3080>
 + SSH: 
     + `git@storage-server.internal`
 

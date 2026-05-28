@@ -34,8 +34,7 @@ hide:
 
 #### :symbols-host: Hostname(s):
 
-+ `storage-server` *(`eth0`)*
-+ `storage-server-2` *(`eth1`)*
++ `zimaos-nas`
 
 #### :material-map-marker-outline: Location: 
 

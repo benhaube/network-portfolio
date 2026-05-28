@@ -32,12 +32,12 @@
 
 /* Light theme (default) */
 [data-md-color-scheme="default"] {
-    --md-code-bg-color: #EDF7ED; 
+    --md-code-bg-color: #E5F4FD; 
 }
 
 /* Dark theme (slate) */
 [data-md-color-scheme="slate"] {
-    --md-code-bg-color: #111b26; 
+    --md-code-bg-color: #0A1A25; 
 }
 
 /* --- Customize Typeset --- */

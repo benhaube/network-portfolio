@@ -63,20 +63,32 @@ hide:
 
 #### :symbols-install-desktop: Install:
 
-```bash title="Command to install Technitium" linenums="1"
+```bash title="Command to install & update Technitium" linenums="1"
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 ```
 
-#### :material-network-outline: Zones:
+#### :material-content-save-cog: Settings Backup:
 
-```zone title="<code>50.168.192.in-addr.arpa.zone</code>"
+:    The settings for both Technitium DNS server nodes are backed up in `.tar.gz` archives and stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). Listed below are the directories where each settings backup archive are located. Each archive name has the server's FQDN and the date & time of the settings export. *(e.g., `pi-server.internal_2026-05-29_16-00-14_backup.tar.gz`)*
+
+```text title="Debian Server <i>(primary node)</i>"
+/DATA/Quick_Storage/Backup/debian-vm/Technituim/
+```
+
+```text title="Raspberry Pi 4B Server <i>(secondary node)</i>"
+/DATA/Quick_Storage/Backup/pi-server/Technitium/
+```
+
+#### :material-file-code: Zones:
+
+```zone title="<code>50.168.192.in-addr.arpa.zone</code>" linenums="1"
 --8<-- "50.168.192.in-addr.arpa.zone"
 ```
 
-```zone title="<code>cluster-catalog.internal.zone</code>"
+```zone title="<code>cluster-catalog.internal.zone</code>" linenums="1"
 --8<-- "cluster-catalog.internal.zone"
 ```
 
-```zone title="<code>internal.zone</code>"
+```zone title="<code>internal.zone</code>" linenums="1"
 --8<-- "internal.zone"
 ```

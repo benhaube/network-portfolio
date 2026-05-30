@@ -50,7 +50,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"root@k1c-a71e"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"Kacey (root)"
 
 ## :material-lan: Network Configuration
 

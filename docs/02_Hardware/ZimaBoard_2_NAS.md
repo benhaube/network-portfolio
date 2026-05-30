@@ -51,7 +51,7 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)" 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)"   
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@storage-server"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-monitor-heart: Core Specs
 

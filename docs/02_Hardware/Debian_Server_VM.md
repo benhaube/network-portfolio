@@ -49,7 +49,7 @@ hide:
 #### :material-key-chain: Credentials:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"server-admin@debian-vm"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"debian-vm (server-admin)"
 
 ## :symbols-monitor-heart: Resource Allocation:
 

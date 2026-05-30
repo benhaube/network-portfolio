@@ -58,12 +58,12 @@ hide:
 #### :material-key-chain: Credentials: 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"server-admin@debian-vm"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-server"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"admin@pi-zero"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"admin@storage-server"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"root@k1c-a71e"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE92U (Admin)"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"debian-vm (server-admin)"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"pi-server (admin)"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"pi-zero (admin)"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
+    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"Kacey (root)"
 
 ## :symbols-deployed-code-update: Deployment Details
 

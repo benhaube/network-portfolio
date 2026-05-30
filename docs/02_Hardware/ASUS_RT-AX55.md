@@ -43,7 +43,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"Admin@asusrouter"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE91U (Admin)"
 
 ## :material-lan: Network Configuration
 

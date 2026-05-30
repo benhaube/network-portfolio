@@ -41,8 +41,8 @@ hide:
 #### :material-key-chain: Credentials: 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"admin@storage-server"
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"bhaube@storage-server"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
+    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)"
 
 ## :symbols-deployed-code-update: Deployment Details
 

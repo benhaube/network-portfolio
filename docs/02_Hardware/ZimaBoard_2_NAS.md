@@ -66,10 +66,10 @@ hide:
 |  `eth0`   | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 4)* |
 |  `eth1`   | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 5)* |
 
-| Interface |              VLAN               | FQDN                        | DNS Servers                    | Gateway        |
-| :-------: | :-----------------------------: | :-------------------------- | :----------------------------- | :------------- |
-|  `eth0`   | :material-security:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
-|  `eth1`   | :material-security:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6`, `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN               | FQDN                        | DNS Servers                   | Gateway        |
+| :-------: | :-----------------------------: | :-------------------------- | :---------------------------- | :------------- |
+|  `eth0`   | :material-security:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|  `eth1`   | :material-security:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 

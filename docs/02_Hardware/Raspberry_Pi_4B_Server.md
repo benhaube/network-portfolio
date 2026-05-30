@@ -34,7 +34,8 @@ hide:
 
 #### :symbols-host: Hostname(s):
 
-+ `pi-server`
++ `pi-server` *(VLAN50 / `eth0`)*
++ `home-assistant` *(VLAN53 / `wlan0`)*
 
 #### :material-map-marker-outline: Location:  
 
@@ -58,15 +59,15 @@ hide:
 
 ## :material-lan: Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                                            |
-| :-------: | :------------- | :------------------ | :-------------------------------------------------------------------------------------- |
-|  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 3)*    |
-|  `wlan0`  | `DHCP`         | `E4:5F:01:A4:60:07` | [:symbols-shield-house-fill:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)* |
+| Interface | IP Address     | MAC Address         | Connected To                                                                                 |
+| :-------: | :------------- | :------------------ | :------------------------------------------------------------------------------------------- |
+|  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(port 3, VLAN50)* |
+|  `wlan0`  | `192.168.53.2` | `E4:5F:01:A4:60:08` | [:material-wifi:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)*                  |
 
 | Interface |                  VLAN                   | FQDN                 | DNS Servers                  | Gateway        |
 | :-------: | :-------------------------------------: | :------------------- | :--------------------------- | :------------- |
 |  `eth0`   |     :material-security:&nbsp;VLAN50     | `pi-server.internal` | `127.0.0.1`                  | `192.168.50.1` |
-|  `wlan0`  | :symbols-shield-house-fill:&nbsp;VLAN53 | `-`                  | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
+|  `wlan0`  | :symbols-shield-house-fill:&nbsp;VLAN53 | `N/A`                | `9.9.9.9`, `149.112.112.112` | `192.168.53.1` |
 
 ## :symbols-storage: Storage & Mounts
 

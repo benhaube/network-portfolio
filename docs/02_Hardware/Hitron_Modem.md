@@ -33,7 +33,7 @@ hide:
 
 #### :material-memory: OS / Firmware: 
 
-+ Hitron FW version: 7.3.5.3.2b2
++ Hitron FW version: `7.3.5.3.2b2`
 
 #### :material-key-chain: Credentials:
 

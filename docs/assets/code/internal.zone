@@ -1,37 +1,37 @@
 $ORIGIN internal.
-@                      900       IN  SOA           debian-vm admin.haube-pereira.com. 649 900 300 604800 900
+@                      900       IN  SOA           debian-vm admin.haube-pereira.com. 872 900 300 604800 900
 @                      14400     IN  NS            debian-vm			;Cluster managed record. Do not update or delete.
 @                      14400     IN  NS            pi-server			;Cluster managed record. Do not update or delete.
 @                      900       IN  RRSIG         47 13 1 900 1780779461 1779566261 18697 @ sS8PDzTijGTooXSeIt+krp4kocEyxQ8rNIz0qFq1Jcv2DhzJR4z7qOYfNZTnCIV8K5sljZmDFc0qqar1Zqt+Ew==
 @                      3600      IN  RRSIG         48 13 1 3600 1780795662 1779582462 45234 @ 3FUKR77hgcN8gHdnpyf4t4mkZ8FXoBPEPMM3E8yFyyxBEdTeFYKCDozVQBrlpUvXu/P39zly4Ff4ug7/WRXP3w==
-@                      14400     IN  RRSIG         2 13 1 14400 1780954573 1779741373 18697 @ zCMLpljcZgf6gc4stICq2M8HQGNlrTVASpM93lPN2Afpq/VuaBdKdm35lDQUOnw2RiJC5tTqr0CoJ33F2cWtEA==
-@                      900       IN  RRSIG         6 13 1 900 1781205973 1779992773 18697 @ GITq/PGVVSuX3aNzBVBQ6jaMG0qSjd+8Ogg2/hZ6egs7ELZJCzlya6Q44/6D45YAt8Gqhucztd+uWzjJYmZZug==
+@                      14400     IN  RRSIG         2 13 1 14400 1781208875 1779995675 18697 @ FM4O2xNZUMO1ZLyO29QxnGJHeeAZAvY71jsJRAyPiLIZv+jd4RySRdc314AHZK08nCsLpAO5glPfkBwtbTvPEQ==
+@                      900       IN  RRSIG         6 13 1 900 1781373202 1780160002 18697 @ zvs/+SPAG/hktgdQ1XJHzVtXsqEFIWS8Xnw07K/Z1qtxrHhU5089Rxp53Gu4+eWfeu1GH2Q8a1t7kbKNfqQp2w==
 @                      900       IN  NSEC          aimesh-node NS SOA RRSIG NSEC DNSKEY
 @                      3600      IN  DNSKEY        257 3 13 eEMVM1L3iA0WzqohRkkGpRwbOWcDQIKTOXQvWFhJ4rLJrC94JKrHx1CkAk4KUcd+XnjQTkeBmShXKVHWcBOETw==
 @                      3600      IN  DNSKEY        256 3 13 jeil8FVcIoG+3mvX6kbfR+b4dKE/wwdUZc10ga2AUyPzMv4ac3B17ylavYQvXhXY7Q9S+egh9dOornNdvFUqOA==
-aimesh-node            3600      IN  A             192.168.50.221
-aimesh-node            3600      IN  RRSIG         1 13 2 3600 1780779461 1779566261 18697 @ D5LC+fDqkqcjHN9flgkVI9K4iYR99C5fax+habvcZ3R2hbKUyd1wiD9qHi1LamfORhzq8ZFBrVeJQfDQqJjgZg==
+aimesh-node            3600      IN  A             192.168.50.221			;Wi-Fi mesh node, ASUS RT-AX55
 aimesh-node            900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ Sj6sywxg6X6KG2hLqVzu2/G0wSqMXo5wjMyJMxougrKfCpnjhVixCrdl23/5JZG+sa4FBuIe6lcFhRRqqlp35g==
+aimesh-node            3600      IN  RRSIG         1 13 2 3600 1781373083 1780159883 18697 @ IUQs2CRLokPT/+aNak2Klkw3wzd+YB/s1/bqMuBa37acwErMW9AZONyPmeHde8KJxbJ/pzvVl4c+XlieQ7z1+Q==
 aimesh-node            900       IN  NSEC          asusrouter A RRSIG NSEC
-asusrouter             3600      IN  A             192.168.50.1
-asusrouter             3600      IN  RRSIG         1 13 2 3600 1780779461 1779566261 18697 @ TkVsN8WmY4y3ZguvcL0LdiJBkety5zPRqbdBkrEF3CdUvZWa5bYDfMReVDo86jCEWfWX1xtqVSiVys6E7iqMHA==
+asusrouter             3600      IN  A             192.168.50.1			;Main router, ASUS RT-BE92U
 asusrouter             900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ li5RDZA870Wmkp5gg0Gqoq+7lIINm/nk6h10nA3J1RvrXTVJIte+MshKlBKMR5ehVzqvMAYnpU1lMxKhrI5r7w==
+asusrouter             3600      IN  RRSIG         1 13 2 3600 1781373053 1780159853 18697 @ rpcScBue5PMl6cSJYw6TFVYpNMjT08DwFMbdFbDk0R5j6Eh6NwtB/KHIh7CSf+W7eBgb0TbLOE/fSc5bepGcAA==
 asusrouter             900       IN  NSEC          bens-workstation A RRSIG NSEC
-bens-workstation       3600      IN  A             192.168.50.61
-bens-workstation       3600      IN  RRSIG         1 13 2 3600 1780779461 1779566261 18697 @ LScZp7kiYLeGyxWdXuFfkP1Xr00r3lPK8lMAd2w4muInBbFiset1nOge/DUSE4FdrkFv6fNlPfQpZNuo3gZYIg==
+bens-workstation       3600      IN  A             192.168.50.10			;Ben's desktop workstation PC.
 bens-workstation       900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ HznqE7WImvsYfjJA1NKOdXS3LvP2xE/+p1q1FVpnIqNEm74Vy2WbsPv6WSnYDwQwTfrcbhisb9IMI8erDV/1Ig==
+bens-workstation       3600      IN  RRSIG         1 13 2 3600 1781373023 1780159823 18697 @ HLOujLnO4pSNVdBg4/yGOMl3Wkl9ljYxMfmF0ov4BZDqNvfRQJcVH28CSedvbqyzdOlrn+ebMusGKJ9z+/biWg==
 bens-workstation       900       IN  NSEC          beszel A RRSIG NSEC
 beszel                 3600      IN  RRSIG         5 13 2 3600 1780779461 1779566261 18697 @ xx0M4UulVz03LhtqvDCz8UxNbQTat7qFTOmKp2IPI8TT6N2mlnTs7qVonQ70Dlc87Q3Cyr916P3hlrLwYm7CcA==
-beszel                 900       IN  RRSIG         47 13 2 900 1780938654 1779725454 18697 @ mhKgbqbjksWxrIR3Ee/Ocy/t++qdY8NDEpo3bKdvTdMirywsYdnDoqyeFAKwxwRmb8jPt5oTzpLdWD37CNJ5LQ==
+beszel                 900       IN  RRSIG         47 13 2 900 1781208860 1779995660 18697 @ Wv3VWnBXBtimWe/GNtNx0CnE5E0P+iemYFO8EDfgwCxd9Arav2eqkvzni4/C60KP/yi3EB/aHYJ4Rqie2aZwVA==
 beszel                 3600      IN  CNAME         pi-zero			;CNAME alias record for Beszel pointing to pi-zero.internal Caddy reverse proxy server.
 beszel                 900       IN  NSEC          debian-vm CNAME RRSIG NSEC
 debian-vm              3600      IN  A             192.168.50.6			;Cluster managed record. Do not update or delete.
-debian-vm              3600      IN  RRSIG         1 13 2 3600 1780938654 1779725454 18697 @ QSwjDhHza4skFUwmJdMG+Pi/1dHIFLYoC4/jB61tN5VJa5p0IzLW3wmMlPbiF7B8X0NdrrTPy2H0jzYYchPtYQ==
-debian-vm              900       IN  RRSIG         47 13 2 900 1780938654 1779725454 18697 @ sJlutyq6MYvYMBcryMvn3MAOk9i5aNF9TyrGk52RtezlRzCNwzM0KpBYvzBVmUmVDOv5/CvjofO/OCf+5zQKmw==
+debian-vm              3600      IN  RRSIG         1 13 2 3600 1781208860 1779995660 18697 @ s7IXVS4z6gLoF3vhKA+tGKRlmTew8NQivgjr9z5a3NLN/nOSdM/hHi2/A1UBN4eSqTQ9i7i3RV6bNdCrHNHH6w==
+debian-vm              900       IN  RRSIG         47 13 2 900 1781208860 1779995660 18697 @ 657zaWmremTHQyHBEabHNMgvqk51upTBAh6t5aOEMoaiHOK0LID9OmUSN3+Ro8C6SP8hXiuyy8rS4ZEPnEbWkw==
 debian-vm              900       IN  NSEC          _53443._tcp.debian-vm A RRSIG NSEC
 _53443._tcp.debian-vm  3600      IN  TLSA          3 1 1 B33177A9C6F10FEC429A9E44C2AAB37386339B13892B2CEC5C3D5E91C4E6D69D			;Cluster managed record. Do not update or delete.
-_53443._tcp.debian-vm  3600      IN  RRSIG         52 13 4 3600 1780938654 1779725454 18697 @ OKuaYHpMiNQE5pss4C0KINsqv8cs2n7DCkZvpvVDcnRkEkMqERnHoBMA1bV86f1rC0vP8W8+eRTaic4C+qcDOQ==
-_53443._tcp.debian-vm  900       IN  RRSIG         47 13 4 900 1780938654 1779725454 18697 @ S9fzk2OMP3VZC5k1rl9BGIyOnMpFMzQ0SMW8KgccS8h28yeSexHtKrIXONiD10n2HawHNYU8OMB5JoWgzmj89A==
+_53443._tcp.debian-vm  3600      IN  RRSIG         52 13 4 3600 1781208860 1779995660 18697 @ aYjSZMuglMnvw+Q8rDzjpeqHDBUftqSaJGVYC+i0SS9HWqUagL4hyuvUWf3dBIfcwrGyCgmBHRN+Ja+Xhm+7og==
+_53443._tcp.debian-vm  900       IN  RRSIG         47 13 4 900 1781208860 1779995660 18697 @ 4bVyKelPgaxXcW3cUhLxflaMavy7RGvtCAUNtyXofz69V6yMdyqJSAU7DN8ItHTzzJ7NDwlUci/6kgIVRSh+qw==
 _53443._tcp.debian-vm  900       IN  NSEC          gitea RRSIG NSEC TLSA
 gitea                  3600      IN  RRSIG         5 13 2 3600 1780779461 1779566261 18697 @ CBzWzndDx9RA7x85+cJVD+PTn4hlLhYtcJRBGEnEBCWPMf+SYYoPSt36F09KDRuVDlmJoVq/jslUOr183krVjQ==
 gitea                  900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ jSfyvjq72/8ZfXnjBbZBCT26OhGuJa4IDsrDbhjzuorgmZtxOet1kV5MEXBA6wUsaz+fo07wzckFyUUFn6uEDQ==
@@ -53,25 +53,25 @@ it-tools               3600      IN  RRSIG         5 13 2 3600 1780779461 177956
 it-tools               900       IN  RRSIG         47 13 2 900 1781205973 1779992773 18697 @ Pzjjbc4LUCYF3SfIhvZJSI8z08xeCaA4DucKW97emzSb6SooocUxJ7jFMjP81/Caxgdz7NzUEg/h2f4U40/75A==
 it-tools               3600      IN  CNAME         pi-zero			;CNAME alias record for IT-Tools pointing to pi-zero.internal Caddy reverse proxy server.
 it-tools               900       IN  NSEC          kacey CNAME RRSIG NSEC
-kacey                  3600      IN  A             192.168.50.153
-kacey                  3600      IN  RRSIG         1 13 2 3600 1781205973 1779992773 18697 @ R/hPPKGqHX3SkkqJyHfcucjAMBlhij+b3JNwa4R6LL4465lA7VUvovEEayoyYciR8GsvGwsIaB+GhjH4iJc/VQ==
+kacey                  3600      IN  A             192.168.50.15			;Creality K1C 3D-printer.
 kacey                  900       IN  RRSIG         47 13 2 900 1781205973 1779992773 18697 @ AX+nlkwK/NmKwqDj5WP4inlM3uZUASOoL+qJNuzq0vAhp2L8U8VBn5K299Dh2nKLYobCsoS5ZOyBLHv4AYd5TQ==
+kacey                  3600      IN  RRSIG         1 13 2 3600 1781372999 1780159799 18697 @ xOxgtlcZqydEUA8rHfURL/xo2HOUuOslJ53x37tq5Au1AGri52xcZFQvRGbS5dzs/FNqgYwGPFLiYRjjGWy9Rg==
 kacey                  900       IN  NSEC          openspeedtest A RRSIG NSEC
 openspeedtest          3600      IN  RRSIG         5 13 2 3600 1780779461 1779566261 18697 @ NoxRAlmPDKerU1iSReKWGqI0/Eb5Ti98Fo0EsKahWheiYdsr6C7f5OJoX0cKgfCsvez8ZSJoMyAryTWBMHOPsA==
-openspeedtest          900       IN  RRSIG         47 13 2 900 1780954573 1779741373 18697 @ n02qv267+AGg4Vwc/lr5Y/kqQxx4pc4pF/4ZPMR87iHKxVxfnte3vJL9/0jUXW33G+yzzhEYzBEkVXKJBrph2A==
+openspeedtest          900       IN  RRSIG         47 13 2 900 1781208875 1779995675 18697 @ XNvxPiDE2K+yq3J7fR45qH7/xsoHkBSnrYI+cpTWz7PQjKV2FVUQgYt+ktwgeyyjFoo+Gut8Ve0LBPun91R7WQ==
 openspeedtest          3600      IN  CNAME         pi-zero			;CNAME alias for OpenSpeedTest server pointing to pi-zero.internal Caddy reverse proxy server.
 openspeedtest          900       IN  NSEC          pi-server CNAME RRSIG NSEC
 pi-server              3600      IN  A             192.168.50.2			;Cluster managed record. Do not update or delete.
-pi-server              3600      IN  RRSIG         1 13 2 3600 1780954573 1779741373 18697 @ +jrJzWcO8tNt/xqA3T7vh0SYW12UZfv66wbDREr0jFNiTWtC6CWWIqB/6i6FkDz/JnEQvCTzUrTNGfg/18IYBg==
-pi-server              900       IN  RRSIG         47 13 2 900 1780954573 1779741373 18697 @ Uz9gAJ6l3BMwjVP5aM0KOg2yXjSbZNoDKqPdoBIl4WON5O1fKhlCKJAS6aiFddxgV5kzRfo/z1EGEvF9EeEPxA==
+pi-server              3600      IN  RRSIG         1 13 2 3600 1781208875 1779995675 18697 @ ZvUj8+R6labfqjPEAr9wC12bruniIX4m1OliBW8DLhE//UkUvjMCC/ESPW2pv1NigVoXGsY55kKB6ntnseDtwA==
+pi-server              900       IN  RRSIG         47 13 2 900 1781208875 1779995675 18697 @ DtgtZorURxb5HuZV0wLcgrTaRcLjB5rzjTT7xD5A6GFuenPl+laChw1Gv4Sfesgiz8Vz2OIlMZNtUkARpyPmVw==
 pi-server              900       IN  NSEC          _53443._tcp.pi-server A RRSIG NSEC
 _53443._tcp.pi-server  3600      IN  TLSA          3 1 1 68BBAC03794E45710202F0F17C7604FFDFAFCE7C2E1439E4C067425E2862F88D			;Cluster managed record. Do not update or delete.
-_53443._tcp.pi-server  3600      IN  RRSIG         52 13 4 3600 1780954573 1779741373 18697 @ aEM955R3QHEMl+Iq8SOY72s968hyVBPNMVzqK+vYMDKMRKdIJkRWdHkeBfU7JopYCqdAxGyIs4IBKdQCOpWB5A==
-_53443._tcp.pi-server  900       IN  RRSIG         47 13 4 900 1780954573 1779741373 18697 @ haYNnYc2a+qxB2QlnJAcLcGnsNJlk+rsLeUEAVesCBvq9H8mmTrpjpoGXn4pgcAbhNCEewE+JleFAY7iZ/MNLw==
+_53443._tcp.pi-server  3600      IN  RRSIG         52 13 4 3600 1781208875 1779995675 18697 @ AWWijn+WZISgbaH145ddminrp1NJzdK+j8qFSwzYO6zovBigH4C6jquGA7/zwKeRVfemnB/34Mr9rGAkTtgqYw==
+_53443._tcp.pi-server  900       IN  RRSIG         47 13 4 900 1781208875 1779995675 18697 @ MrZqMvhdzbj1LhkjYG66zMaw2sqWc4UYR2bDtPX5E6ZWZI36Cuvx0xU1Q6GJ9rJWnlSeh2PUJwwGpPLiPwDIJA==
 _53443._tcp.pi-server  900       IN  NSEC          pi-zero RRSIG NSEC TLSA
-pi-zero                3600      IN  A             192.168.50.3
-pi-zero                3600      IN  RRSIG         1 13 2 3600 1780779461 1779566261 18697 @ qmBYd6e9Rg7Y5sgSWj/HqK9WSBFSPicu76BU2aLALndiUAc2xR1Ceo5ubhvOYtUJtLlUMzAymnEPuiJSqg3y1Q==
+pi-zero                3600      IN  A             192.168.50.3			;Raspberry Pi Zero 2W, Caddy reverse-proxy server
 pi-zero                900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ kJB7BFLw9sQrUzKDz/+DKyLf3IxaQ2NECHPK79U89nxmFjICEMBoVQx3PusnEzZ3nMNFpiyK9AsuTqMOboQw/g==
+pi-zero                3600      IN  RRSIG         1 13 2 3600 1781373129 1780159929 18697 @ NudWaQBbJ13Kq6rUXMJqg05T99vfxaTMwG267/8wMVebbAzldPI+tjoqnx3slTyULY04u1jokn4IeFDUxj7WQg==
 pi-zero                900       IN  NSEC          portainer A RRSIG NSEC
 portainer              3600      IN  RRSIG         5 13 2 3600 1780779461 1779566261 18697 @ zHxFxPCsVLEh+NcEytkBjn77TmJdAhFoFiyl1S61XSVy4C43M8ZoVAdz7bboNDWoc1sBPM0oGniDkHieGhVYEw==
 portainer              900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ t6BU00J6SSL+Od0BrRWs3aE8YRLxnz8t3u9pnDxOjawY2a7/aUM4xFwYmuQVJyPca4fRU/Y4LT94vtMQ8gAa9g==
@@ -81,13 +81,13 @@ spoolman               3600      IN  RRSIG         5 13 2 3600 1780779461 177956
 spoolman               900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ I16vsp8u6WYpYhe2F4K3h/I4WonelcIwhWlMwPEDzxfi4Q5KLg1iwfQmDgxnPRIv3pGYxSI7v3NrS1SMXlxIaw==
 spoolman               3600      IN  CNAME         pi-zero			;CNAME record for Spoolman server pointing to pi-zero.internal Caddy reverse proxy server.
 spoolman               900       IN  NSEC          storage-server CNAME RRSIG NSEC
-storage-server         3600      IN  A             192.168.50.4
-storage-server         3600      IN  RRSIG         1 13 2 3600 1780779461 1779566261 18697 @ NIDuXKEofeZErl0OyLRDzfcMWO7ebgIbVskXUN1z8VAt+mY6EUrnGGkeqkL8C9LtUyKegDwmQUN/nm1n9eks8A==
+storage-server         3600      IN  A             192.168.50.4			;ZimaOS NAS connection #1, eth0
 storage-server         900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ aHnVeybhbdpooPSYVnfnkRz4FrCI4ArVh5AIX06iOq8XsTq6VWKR8gCteGRf/FsdLq59UjV1h+PJ7iBs96JObg==
+storage-server         3600      IN  RRSIG         1 13 2 3600 1781373202 1780160002 18697 @ b8OLULFmUqkr5Q7efjRjw+mXvfUX5xgudEiTCKI7HhMl3qFabdh2RuCksmKZ1qzwpPtKWyzVLge66oodpMC4VA==
 storage-server         900       IN  NSEC          storage-server-2 A RRSIG NSEC
-storage-server-2       3600      IN  A             192.168.50.5
-storage-server-2       3600      IN  RRSIG         1 13 2 3600 1780779461 1779566261 18697 @ 98ixJJN4wV9mDZzdxveUjg0hSGfWIQerf2MazkkNnRGr+dS90gN519Bt9T0SxSurRI+CLdfnqAbItGInTomz6g==
+storage-server-2       3600      IN  A             192.168.50.5			;ZimaOS NAS connection #2, eth1
 storage-server-2       900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ nTUspjhMKrjhaS/8YC4XnzQoz2f+FTLrKljlzD7mLRNmu4jy1SCb3ODl/W1+Fvm6QxUe8lIzSj9Hj/B+pkX/gg==
+storage-server-2       3600      IN  RRSIG         1 13 2 3600 1781373193 1780159993 18697 @ ye3XmHZ9DvpDiVlFJtbJUunpQECHVfsgkndRQ9xDAQv/ElJx5gUjWIGJISuSTj0S5pTa5l/zYfj+2PKbTn5E9A==
 storage-server-2       900       IN  NSEC          technitium A RRSIG NSEC
 technitium             3600      IN  RRSIG         5 13 2 3600 1780779461 1779566261 18697 @ 2H0HkLQlYOW42d1+g/HjVeEW+DOYK2j2TAduITUgVDOBLsCw5XBXqv/rB42e1wdLDJrLvz93TAv8uyUFoF4EZw==
 technitium             900       IN  RRSIG         47 13 2 900 1780779461 1779566261 18697 @ T4hzNG/Q+YJTmaGgxK9/qxUm6G9UF3sOqLvWO5lnrwl7VRH3tN5wGlN1mM+Uzvao1oYVkhAfi5wZhFCjx3127w==

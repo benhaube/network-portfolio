@@ -57,10 +57,10 @@ hide:
 | Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
 |   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*           |
 
-| Interface |              VLAN               | FQDN | DNS Servers                   | Gateway        |
-| :-------: | :-----------------------------: | :--- | :---------------------------- | :------------- |
-| Ethernet  | :material-security:&nbsp;VLAN50 | `-`  | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|   Wi-Fi   | :material-security:&nbsp;VLAN50 | `-`  | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN               | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :-----------------------------: | :---- | :---------------------------- | :------------- |
+| Ethernet  | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|   Wi-Fi   | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage: Storage & Mounts
 

@@ -49,7 +49,7 @@ hide:
 
 | Port # | Connected Device                                                                                | Color / Type  | Notes                                        |
 | :----: | :---------------------------------------------------------------------------------------------- | :------------ | :------------------------------------------- |
-| **1**  | [:material-desktop-tower:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                  | White / Cat5e | `enp7s0` `192.168.50.61` `3C:7C:3F:0D:A9:CD` |
+| **1**  | [:material-desktop-tower:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                  | White / Cat5e | `enp7s0` `192.168.50.10` `3C:7C:3F:0D:A9:CD` |
 | **2**  | [:material-desktop-tower:&nbsp;Rob's Desktop](../02_Hardware/Rob's_Desktop.md)                  | White / Cat5e | `DHCP` `50:EB:F6:59:74:C3`                   |
 | **3**  | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White / Cat5e | `eth0` `192.168.50.2` `E4:5F:01:A4:60:07`    |
 | **4**  | :material-ethernet:&nbsp;*Empty*                                                                | -             | -                                            |

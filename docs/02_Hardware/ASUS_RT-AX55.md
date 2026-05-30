@@ -55,9 +55,9 @@ hide:
 
 #### :material-lan: Virtual Local Networks:
 
-|              VLAN               | Domain   | DNS Server(s)                 | Subnet            | Gateway        | Broadcast        | DHCP Range     |
-| :-----------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :------------- |
-| :material-security:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.6` to `.254` |
+|              VLAN               | Domain   | DNS Server(s)                 | Subnet            | Gateway        | Broadcast        | DHCP Range      |
+| :-----------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
+| :material-security:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 
@@ -67,13 +67,13 @@ hide:
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-| Port  | Connected Device                                                          | Color / Type | Notes                                         |
-| :---: | :------------------------------------------------------------------------ | :----------- | :-------------------------------------------- |
-| WAN 1 | :material-ethernet:&nbsp;*Empty*                                          | -            | :material-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
-| LAN 1 | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black Cat6a  | 1 Gb/s Uplink                                 |
-| LAN 2 | :material-ethernet:&nbsp;*Empty*                                          | -            | -                                             |
-| LAN 3 | :material-ethernet:&nbsp;*Empty*                                          | -            | -                                             |
-| LAN 4 | :material-ethernet:&nbsp;*Empty*                                          | -            | -                                             |
+| Port  | Connected Device                                                          | Color / Type  | Notes                                         |
+| :---: | :------------------------------------------------------------------------ | :------------ | :-------------------------------------------- |
+| WAN 1 | :material-ethernet:&nbsp;*Empty*                                          | -             | :material-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
+| LAN 1 | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black / Cat6a | 1 Gb/s Uplink                                 |
+| LAN 2 | :material-ethernet:&nbsp;*Empty*                                          | -             | -                                             |
+| LAN 3 | :material-ethernet:&nbsp;*Empty*                                          | -             | -                                             |
+| LAN 4 | :material-ethernet:&nbsp;*Empty*                                          | -             | -                                             |
 
 ---
 ## :material-tools: Maintenance & Notes

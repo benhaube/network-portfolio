@@ -84,6 +84,7 @@
 *[IoT]: Internet of Things
 *[IP]: Internet Protocol
 *[IPAM]: IP Address Management
+*[IPP]: Internet Printing Protocol
 *[IPS]: Intrusion Prevention System
 *[IR]: Infrared
 *[ISP]: Internet Service Provider
@@ -116,6 +117,7 @@
 *[MB]: Megabyte
 *[MB/s]: Megabytes Per Second
 *[MCU]: Micro Controller Unit
+*[mDNS]: Multicast Domain Name System
 *[MFA]: Multi-Factor Authentication
 *[MHz]: Megahertz
 *[MicroSD]: Micro Secure Digital

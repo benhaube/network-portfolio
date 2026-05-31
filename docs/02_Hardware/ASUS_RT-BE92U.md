@@ -73,14 +73,14 @@ hide:
 
 #### :material-ethernet: Physical Ethernet Ports:
 
-|       Port #       | Connected Device                                                              | Color / Type  | Notes               |
-| :----------------: | :---------------------------------------------------------------------------- | :------------ | :------------------ |
-| 10 Gb WAN / LAN 1  | [:material-switch:&nbsp;Ugreen Switch](./Ugreen_Switch.md)                    | Black / Cat6a | 10 Gb/s Uplink      |
-| 2.5 Gb WAN / LAN 2 | [:material-wan:&nbsp;Hitron Modem](./Hitron_Modem.md)                         | Black / Cat6a | WAN Connection      |
-|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:devices-10-inch-rack:&nbsp;Mini-Rack</a> | Black / Cat6a | Spare Keystone Jack |
-|    2.5 Gb LAN 2    | :material-ethernet:&nbsp;*Empty*                                              | -             | -                   |
-|    2.5 Gb LAN 3    | :material-ethernet:&nbsp;*Empty*                                              | -             | -                   |
-|    2.5 Gb LAN 4    | :material-ethernet:&nbsp;*Empty*                                              | -             | -                   |
+|       Port #       | Connected Device                                                               | Color / Type  | Notes               |
+| :----------------: | :----------------------------------------------------------------------------- | :------------ | :------------------ |
+| 10 Gb WAN / LAN 1  | [:material-switch:&nbsp;Ugreen Switch](./Ugreen_Switch.md)                     | Black / Cat6a | 10 Gb/s Uplink      |
+| 2.5 Gb WAN / LAN 2 | [:material-wan:&nbsp;Hitron Modem](./Hitron_Modem.md)                          | Black / Cat6a | WAN Connection      |
+|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:devices-10-inch-rack:&nbsp;Mini-Rack</a>  | Black / Cat6a | Spare Keystone Jack |
+|    2.5 Gb LAN 2    | [:material-switch:&nbsp;TP-Link LiteWave Switch](./TP-Link_LiteWave_Switch.md) | White / Cat6  | 1 Gb/s Uplink       |
+|    2.5 Gb LAN 3    | :material-ethernet:&nbsp;*Empty*                                               | -             | -                   |
+|    2.5 Gb LAN 4    | :material-ethernet:&nbsp;*Empty*                                               | -             | -                   |
 
 ## :symbols-storage: Storage & Mounts
 

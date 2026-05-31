@@ -66,13 +66,15 @@ hide:
 
     **Ethernet Ports:** 
  
-    &emsp;:material-led-on:&nbsp;**Green LED:** 2500 Mb/s <br>
-    &emsp;:material-led-on:&nbsp;**Amber LED:** 10/100/1000 Mb/s
+    &emsp;:material-led:&nbsp;**Green LED:** 2500 Mb/s <br>
+    &emsp;:material-led:&nbsp;**Amber LED:** 10/100/1000 Mb/s
+    &emsp;:material-led-on:&nbsp;**Flashing:** Activity
    
     **SFP+ Port:** 
  
-    &emsp;:material-led-on:&nbsp;**Green LED:** 10 Gb/s <br>
-    &emsp;:material-led-on:&nbsp;**Amber LED:** 1000 / 2500 Mb/s
+    &emsp;:material-led:&nbsp;**Green LED:** 10 Gb/s <br>
+    &emsp;:material-led:&nbsp;**Amber LED:** 1000 / 2500 Mb/s
+    &emsp;:material-led-on:&nbsp;**Flashing:** Activity
 
 !!! warning inline "Troubleshooting"
 

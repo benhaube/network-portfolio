@@ -32,14 +32,13 @@ hide:
 
 #### :material-link-variant: URL / Access: 
 
-+ <http://pi-server.internal:631>
-+ <http://192.168.50.2:631>
++ <https://192.168.50.2:631>
 
 #### :material-printer-settings: Printer URL: 
 
 + IPP:
-    + `ipp://pi-server.local:631/printers/Brother_HL-L2300D_series`
-+ Bonjour:
+    + `ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
++ mDNS:
     + `dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
 
 #### :material-key-chain: Credentials: 

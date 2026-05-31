@@ -69,6 +69,7 @@ hide:
 | :symbols-tv:&nbsp;Smart TV                     | Living-Room | `amazon-fire-tv`                                                  | `4C:53:FD:6A:81:D5` | :material-ethernet: | :material-check: | 55" TCL Smart TV in Living Room                                      |
 | :devices-chromecast-fill:&nbsp;Streaming Stick | Living-Room | `roku-streaming-stick-4k`                                         | `50:06:F5:53:2A:F2` |   :material-wifi:   | :material-check: | Roku Streaming Stick 4K (2025), Connected to TV in Living Room       |
 | :material-nintendo-switch:&nbsp;Game Console   | Mobile      | `nintendo-switch`                                                 | `74:84:69:0B:56:EF` |   :material-wifi:   | :material-check: | Nintendo Switch OLED                                                 |
+| :material-nintendo-switch:&nbsp;Game Console   | Living-Room | `nintendo-switch`                                                 | `74:84:69:34:69:78` | :material-ethernet: | :material-check: | Nintendo Switch OLED docking station for TV in Living Room           |
 
 ## :symbols-shield-house-fill: IoT Network 
 &emsp;&emsp;*VLAN53*

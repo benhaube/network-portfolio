@@ -32,7 +32,7 @@ hide:
 ---
 ## :material-lan: Local Networks
 
-| VLAN                                                             | SSID                                                           | Subnet            | DNS Servers                   | Domain   |    WAN Access    | Role / Notes                                 |
+| VLAN                                                             | SSID                                                           | CIDR              | DNS Servers                   | Domain   |    WAN Access    | Role / Notes                                 |
 | :--------------------------------------------------------------- | :------------------------------------------------------------- | :---------------- | :---------------------------- | :------- | :--------------: | :------------------------------------------- |
 | [VLAN50](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*Home*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks)       | `192.168.50.0/24` | `192.168.50.6` `192.168.50.2` | internal | :material-check: | :material-security:&nbsp;Trusted VLAN        |
 | [VLAN52](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*Home_Guest*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks) | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        | :material-check: | :symbols-shield-person-fill:&nbsp;Guest VLAN |
@@ -72,7 +72,7 @@ hide:
 #### :simple-wireguard:&nbsp;WireGuard @ ASUS Router
 &emsp;&nbsp;*Main Server*
 
-| Client                              | IP Address    | DNS Servers                   | Endpoint                    |
+| Client                              | CIDR          | DNS Servers                   | Endpoint                    |
 | :---------------------------------- | :------------ | :---------------------------- | :-------------------------- |
 | :symbols-mobile:&nbsp;Ben's-Phone   | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
 | :material-laptop:&nbsp;Ben's-Laptop | `10.6.0.3/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
@@ -82,7 +82,7 @@ hide:
 #### :simple-wireguard:&nbsp;WireGuard @ ZimaOS NAS
 &emsp;&nbsp;*Backup Server*
 
-| Client                            | IP Address                        | DNS Servers                   | Endpoint                    |
+| Client                            | CIDR                              | DNS Servers                   | Endpoint                    |
 | :-------------------------------- | :-------------------------------- | :---------------------------- | :-------------------------- |
 | :material-laptop:&nbsp;ben-laptop | `10.8.0.2/32` `fd42:42:42::2/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
 | :symbols-mobile:&nbsp;ben-pixel   | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |

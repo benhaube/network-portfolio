@@ -55,13 +55,13 @@ hide:
 
 #### :material-lan: Virtual Local Networks:
 
-|              VLAN               | Domain   | DNS Server(s)                 | Subnet            | Gateway        | Broadcast        | DHCP Range      |
+|              VLAN               | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
 | :-----------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
 | :material-security:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
 
 #### :material-wifi: Wi-Fi Networks:
 
-|  SSID  |  VLAN  |    WAN Access    | IP Address        | Frequency      | Notes                                 |
+|  SSID  |  VLAN  |    WAN Access    | CIDR              | Frequency      | Notes                                 |
 | :----: | :----: | :--------------: | :---------------- | :------------- | :------------------------------------ |
 | *Home* | VLAN50 | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
 

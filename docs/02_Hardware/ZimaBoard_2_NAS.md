@@ -163,7 +163,7 @@ hide:
     :material-calendar:&nbsp;**Date:** 2026-02-09 <br>
     :material-help-circle-outline:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
     :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
-    :material-devices:&nbsp;**Affected Clients:** 
+    :symbols-devices:&nbsp;**Affected Clients:** 
  
     + [Ben's Desktop PC](./Ben's_Desktop.md) 
     + [Ben's Laptop PC](./Ben's_Laptop.md)

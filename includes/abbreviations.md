@@ -13,6 +13,7 @@
 *[CAD]: Computer Aided Design
 *[CDN]: Content Delivery Network
 *[CI/CD]: Continuous Integration and Continuous Deployment
+*[CIDR]: Classless Inter-Domain Routing
 *[CLI]: Command Line Interface
 *[CORS]: Cross-Origin Resource Sharing
 *[CPU]: Central Processing Unit

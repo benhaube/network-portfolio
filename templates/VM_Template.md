@@ -26,7 +26,7 @@ hide:
 
 + `hostname`
 
-#### :material-network-pos: Hypervisor: 
+#### :symbols-stacks: Hypervisor: 
 
 + (e.g., KVM / QEMU)
 

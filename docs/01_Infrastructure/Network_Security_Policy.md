@@ -1,5 +1,5 @@
 ---
-icon: symbols/policy-fill
+icon: material/server-security
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 tags:
@@ -51,7 +51,7 @@ tags:
 + The primary WireGuard server is hosted natively on the main [ASUS router](../02_Hardware/ASUS_RT-BE92U.md). 
 + The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
 
-## :material-server-security: DNS Security & Content Filtering
+## :material-dns: DNS Security & Content Filtering
 
 #### Internal Resolution: 
 

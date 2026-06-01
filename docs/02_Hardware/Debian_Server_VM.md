@@ -34,7 +34,7 @@ hide:
 
 + `debian-vm`
 
-#### :material-network-pos: Hypervisor: 
+#### :symbols-stacks: Hypervisor: 
 
 + [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 

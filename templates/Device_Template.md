@@ -76,7 +76,7 @@ hide:
 
 ## :material-web: Services / Docker Containers
 
-#### :material-network-pos: Virtualization:
+#### :symbols-stacks: Virtualization:
 
 |  Status  | OS                                       | Virtual NIC             | Virtual Disk Image | Role / Notes |
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |

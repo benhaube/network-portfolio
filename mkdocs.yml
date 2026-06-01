@@ -60,7 +60,7 @@ theme:
       file-share: material/share-variant
       hardware: symbols/devices
       inactive: material/close-circle
-      infra: material/router-network
+      infra: material/server-network
       inventory: material/list-box-outline
       laptop: material/laptop
       linux: material/linux
@@ -90,10 +90,10 @@ theme:
       switch: material/switch
       tools: material/tools
       tv-stand: symbols/tv
-      video: material/movie
+      video: material/movie-open
       vh: symbols/host
       vlan: material/security-network
-      vm: material/network-pos
+      vm: symbols/stacks
       vpn: material/vpn
       windows: material/microsoft
     top: material/arrow-up-bold

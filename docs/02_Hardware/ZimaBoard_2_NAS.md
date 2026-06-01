@@ -93,7 +93,7 @@ hide:
 + SMB  *(with Multichannel enabled)*
 + NFS *(for Linux PCs)*
 
-#### :material-network-pos: Virtualization:
+#### :symbols-stacks: Virtualization:
 
 |  Status  | OS                                                                           | Virtual NIC      | Virtual Disk Image | Role / Notes                                                                         |
 | :------: | :--------------------------------------------------------------------------- | :--------------- | :----------------- | :----------------------------------------------------------------------------------- |
@@ -241,7 +241,7 @@ hide:
 --8<-- "starship-zimaos.toml"
 ```
 
-#### :material-wall-fire: ZFW Firewall:
+#### :material-wall-fire: Zima Firewall:
 
 ##### About
 

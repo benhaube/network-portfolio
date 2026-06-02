@@ -8,4 +8,4 @@ services:
     ports:
       - "8080:80"  # (1)!
     volumes:
-      - /media/nvme0n1p1/AppData/Network-Portfolio/site:/usr/share/nginx/html:ro  # (2)!
+      - /DATA/AppData/Network-Portfolio/site:/usr/share/nginx/html:ro  # (2)!

@@ -48,18 +48,18 @@ hide:
 
 ##### Hub
 
-| Host Device                                                                                     | Method                                | Container Name | Image                         |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :---------------------------- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel:latest`       |
-|                                                                                                 | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
+| Host Device                                                                                     | Method                                | Container Name | Image                  |
+| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
+| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
+|                                                                                                 | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
 
 ##### Agents
 
-| Host Device                                                                                      | Method                                | Container Name | Image                         |
-| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :---------------------------- |
-| [:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:latest` |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent:alpine` |
+| Host Device                                                                                      | Method                                | Container Name | Image                        |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
+| [:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)                    | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
 ### :material-cog: Configuration
 

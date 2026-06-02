@@ -79,7 +79,7 @@ hide:
 
     :material-account:&nbsp;**Users:**
  
-    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
+    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [[Bitwarden Vault](https://vault.bitwarden.com)](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
     :material-form-textbox-password:&nbsp;**Passwords:**
 
@@ -160,13 +160,13 @@ hide:
 --8<-- "glance-compose.yml"
 ```
 
-1. Optionally, also mount docker socket if you want to use the docker containers widget
-2. Use `.env` to store tokens / secrets and URLs for Widgets. Do **NOT** put API tokens directly into the Glance pages.
-3. It is required to define DNS server IP addresses for the container to resolve `.internal` domain names. 
+1. **Optional:** Mount docker socket if you want to use the docker containers widget
+2. Use the file, `.env`, to store tokens / secrets and URLs for Widgets. Do **NOT** put API tokens directly into the Glance pages.
+3. It is required to define DNS server IP addresses for the container to resolve custom `.internal` FQDN. 
 4. Specify your timezone.
 5. Specify desired track map color
-6. Optional. main tracks qualis and races (inc. sprints), race tracks races. 
-7. Changed image to a fork of Glance with added features.
+6. **Optional:** "Main" tracks qualifying sessions and races *(inc. sprints)*. "Race" tracks **only** races. 
+7. Changed the Docker image to **Dynacat**, a fork of Glance with added features.
 
 #### :material-file-cog-outline: Glance Config:
 
@@ -174,23 +174,71 @@ hide:
 --8<-- "dynacat.yml"
 ```
 
-1. The `/app/assets` directory contains all of the custom icons and CSS used in the Glance pages.
-2. Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared... Refresh & clear cache: ++ctrl+f5++
-3. The Glance Dashboard's server secret is stored in the Bitwarden Vault. (Local Network :material-arrow-right-thin: "Glance Server Secret" )
-4. The `app/.env` file contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the command: `#!bash ./glance password:hash <my-password>`. Then paste the hashed string into the corresponding variable in the `.env` file.
-5. Values for the colors are in **HSL** format. You can use a color picker like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.  
-6. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
+1. The directory, `/app/assets`, contains all of the custom icons and CSS used in the Glance pages.
+2.    Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared...
+      
+      **Refresh & clear cache:**
+      
+      + Use the key combination, ++ctrl+f5++
+
+3.    The Glance Dashboard's server secret is stored in the Bitwarden Vault.
+
+      [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
+
+      + Local Network&nbsp;:material-arrow-right-thin:&nbsp;"Glance Server Secret"
+
+4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
+
+      ```sh linenums="1"
+      ./glance password:hash <my-password>
+      ```
+      
+      Then paste the hashed string into the corresponding variable in the `.env` file.
+
+5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.
+ 
+      :services-it-tools:&nbsp;**IT-Tools:**
+      
+      + Another service hosted on this local network, [IT-Tools](./IT-Tools.md), also has a great [color converter](http://pi-server.internal:8080/color-converter).  
+
+6.    Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% **lighter / darker** depending on the scheme. 
+
+      Use this if you think that some of the text on the page is too dark and hard to read
 
 ```yaml title="<code>glance.yml</code>" linenums="1"
 --8<-- "glance.yml"
 ```
 
-1. The `/app/assets` directory contains all of the custom icons and CSS used in the Glance pages.
-2. Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared... Refresh & clear cache: ++ctrl+f5++
-3. The Glance Dashboard's server secret is stored in the Bitwarden Vault. (Local Network :material-arrow-right-thin: "Glance Server Secret" )
-4. The `app/.env` file contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the command: `#!bash ./glance password:hash <my-password>`. Then paste the hashed string into the corresponding variable in the `.env` file.
-5. Values for the colors are in **HSL** format. You can use a color picker like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.  
-6. Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% *lighter / darker* depending on the scheme. Use this if you think that some of the text on the page is too dark and hard to read
+1. The directory, `/app/assets`, contains all of the custom icons and CSS used in the Glance pages.
+2.    Assets are cached by the browser, changes to the CSS file will not be reflected until the browser cache is cleared...
+      
+      **Refresh & clear cache:**
+      
+      + Use the key combination, ++ctrl+f5++
+
+3.    The Glance Dashboard's server secret is stored in the Bitwarden Vault.
+
+      [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
+
+      + Local Network&nbsp;:material-arrow-right-thin:&nbsp;"Glance Server Secret"
+
+4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
+
+      ```sh linenums="1"
+      ./glance password:hash <my-password>
+      ```
+      
+      Then paste the hashed string into the corresponding variable in the `.env` file.
+
+5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.
+ 
+      :services-it-tools:&nbsp;**IT-Tools:**
+      
+      + Another service hosted on this local network, [IT-Tools](./IT-Tools.md), also has a great [color converter](http://pi-server.internal:8080/color-converter).  
+
+6.    Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% **lighter / darker** depending on the scheme. 
+
+      Use this if you think that some of the text on the page is too dark and hard to read
 
 #### :material-view-dashboard: Glance Pages:
 
@@ -198,20 +246,22 @@ hide:
 --8<-- "glance-home.yml"
 ```
 
-1. Show a title header on mobile web browsers.
-2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
+1. Show a title header on mobile device web browsers.
+2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
 
 ```yaml title="<code>network.yml</code>" linenums="1"
 --8<-- "glance-network.yml"
 ```
 
-1. Show a title header on mobile web browsers.
-2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
-3. :material-bug: Disabled WireGuard Easy community widget for now due to bugginess. 
+1. Show a title header on mobile device web browsers.
+2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
+3.    :material-bug:&nbsp;**Bug:** 
+
+      + Disabled **WireGuard** community widget for now due to bugs causing page instability and other issues. 
 
 ```yaml title="<code>formula1.yml</code>" linenums="1"
 --8<-- "glance-formula1.yml"
 ```
 
-1. Show a title header on mobile web browsers.
-2. Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look.
+1. Show a title header on mobile device web browsers.
+2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.

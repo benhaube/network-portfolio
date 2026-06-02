@@ -121,7 +121,11 @@ hide:
     nano /jffs/scripts/gotify-ssh-alert.sh  # (1)!
     ```
 
-    1. **Asuswrt-Merlin** uses an embedded Linux environment *(BusyBox)* and relies on a lightweight SSH server called **Dropbear** instead of **OpenSSH**. Because of this, it does not use Pluggable Authentication Modules (PAM) at all.<br><br>Furthermore, the base filesystem on the router is read-only or wiped on reboot, so any changes made outside of the designated `/jffs/` partition are lost when the router restarts.<br><br>**Asuswrt-Merlin** has a built-in feature for custom scripting via the `JFFS` partition. Instead of a PAM trigger, we can use the router's profile configuration to fire the script off whenever an interactive shell session is spawned.
+    1.    **Asuswrt-Merlin** uses an embedded Linux environment *(BusyBox)* and relies on a lightweight SSH server called **Dropbear** instead of **OpenSSH**. Because of this, it does not use Pluggable Authentication Modules (PAM) at all.
+   
+          Furthermore, the base filesystem on the router is read-only or wiped on reboot, so any changes made outside of the designated `/jffs/` partition are lost when the router restarts.
+          
+          **Asuswrt-Merlin** has a built-in feature for custom scripting via the `JFFS` partition. Instead of a PAM trigger, we can use the router's profile configuration to fire the script off whenever an interactive shell session is spawned.
 
 2. Paste the following code into the `nano` text editor:
 
@@ -137,10 +141,10 @@ hide:
     --8<-- "gotify-ssh-alert-router.sh"
     ```
 
-    1. Only proceed if the session was initiated via SSH.
-    2. Extract the client IP from the `SSH_CONNECTION` variable.
-    3. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
-    4. Send the `POST` request to Gotify.
+    4. Only proceed if the session was initiated via SSH.
+    5. Extract the client IP from the `SSH_CONNECTION` variable.
+    6. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    7. Send the `POST` request to Gotify.
 
 3. Set restrictive permissions, allow execution, and ensure `root` ownership of the `gotify-ssh-alert.sh` file:
 
@@ -178,7 +182,9 @@ hide:
     /jffs/scripts/gotify-ssh-alert.sh &  # (1)!
     ```
 
-    3. Add this single line to the bottom of the file.<br><br>**Note:** The `&` symbol at the end is crucial. It runs the script in the background so it doesn't hang or delay your SSH login prompt while it waits for the `curl` command to reach the Gotify server.
+    3.    Add this single line to the bottom of the file.
+    
+          **Note:** The `&` symbol at the end is crucial. It runs the script in the background so it doesn't hang or delay your SSH login prompt while it waits for the `curl` command to reach the Gotify server.
 
 #### :material-router-wireless: Router Alerts:
 

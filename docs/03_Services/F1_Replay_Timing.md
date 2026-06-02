@@ -56,5 +56,12 @@ hide:
 --8<-- "f1-replay-timing.yaml"
 ```
 
-1. Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. Use the IP address or URL of the host server. 
-2. Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. Use the IP address or URL of the host server. 
+1.    :material-alert:&nbsp;**Warning!**
+
+      + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
+      + Use the IP address or URL of the host server. 
+
+2.    :material-alert:&nbsp;**Warning!**
+
+      + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
+      + Use the IP address or URL of the host server. 

@@ -103,7 +103,13 @@ hide:
     --8<-- "deploy_cert.sh"
     ```
 
-    1. You may need to install the SFTP server on the router with Entware using the following command:<br><br>`opkg install openssh-sftp-server`<br><br>Otherwise, add the `-O` flag to both `scp` commands to use SSH instead of SFTP.
+    3.    You may need to install the SFTP server on the router with Entware using the following command:
+   
+         ```sh linenums="1"
+         opkg install openssh-sftp-server
+         ```
+         
+         Otherwise, add the `-O` flag to both `scp` commands to use SSH instead of SFTP.
 
 3. Make the scripts executable:
 

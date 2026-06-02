@@ -83,7 +83,7 @@ hide:
 --8<-- "beszel-pi-4b.yaml"
 ```
 
-1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
+1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
 ##### Agents
 
@@ -91,13 +91,13 @@ hide:
 --8<-- "beszel-debian-vm.yaml"
 ```
 
-1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
+1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
 ```yaml title="Raspberry Pi Zero Server" linenums="1"
 --8<-- "beszel-pi-zero.yaml"
 ```
 
-1. Monitor other disks / partitions by mounting a folder in /extra-filesystems.
+1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
 ```yaml title="ZimaOS NAS" linenums="1"
 --8<-- "beszel-zima.yaml"

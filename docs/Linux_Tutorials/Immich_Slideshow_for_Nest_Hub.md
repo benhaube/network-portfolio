@@ -67,7 +67,7 @@ Add these services to your existing Immich stack or a new stack.
 1. The Interface *(Displays the clock / weather / photos)*
 2. Link to the auto-album below
 3. The Logic *(Auto-adds faces to the specific album)*
-4. SYNC_MODE=1 adds new photos automatically
+4. `SYNC_MODE=1` adds new photos automatically.
 
 ### :material-file-image: Auto Album Config
 

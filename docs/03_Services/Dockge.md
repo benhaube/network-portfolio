@@ -95,7 +95,14 @@ hide:
 ```
 
 1. If you want to use private registries you need to uncomment this line to share the auth file with Dockge.
-2. READ CAREFULLY! If you did it wrong, your data could end up writing into a WRONG PATH.<br>FULL path only, no relative path!<br>Left Stacks Path === Right Stacks Path.
+
+2.    :material-alert:&nbsp;**READ CAREFULLY!** 
+   
+      If you did it wrong, your data could end up writing into a WRONG PATH.
+      
+      + FULL path only, no relative path!
+      + Left Stacks Path === Right Stacks Path.
+
 3. Tell Dockge the location of your stacks directory.
 
 ```yaml title="ZimaOS NAS" linenums="1" 

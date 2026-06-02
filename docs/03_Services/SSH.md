@@ -210,7 +210,9 @@ hide:
 
     1. All hosts use Bitwarden SSH key agent
     2. Assume 'admin' is the user for all hosts 
-    3. CRITICAL: Prevents offering all other keys stored in Bitwarden
+    3.    :material-alert:&nbsp;**CRITICAL:** 
+          
+          Prevents offering all other keys stored in Bitwarden
 
 4. Create the `IdentityFile` for all of the servers in the `~/.ssh` directory and paste in the public key.
     + **Example:**

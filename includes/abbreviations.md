@@ -173,6 +173,7 @@
 *[SELinux]: Security-Enhanced Linux
 *[SFP]: Small Form-factor Pluggable
 *[SFP+]: Small Form-factor Pluggable Plus
+*[SFTP]: Secure File Transfer Protocol
 *[SIEM]: Security Information and Event Management
 *[SLA]: Stereolithography Apparatus
 *[SMAP]: Supervisor Mode Access Prevention

@@ -18,6 +18,7 @@
 
         - $include: /app/config/widgets/search.yml
         - $include: /app/config/widgets/network-services.yml
+        - $include: /app/config/widgets/zimaos-modules.yml
         - $include: /app/config/widgets/docker-containers.yml
         # - $include: /app/config/widgets/dns-stats.yml
         - $include: /app/config/widgets/immich-stats.yml

@@ -24,8 +24,8 @@ services:
       - /mnt/usb-drive/.beszel:/extra-filesystems/sda1__usb-drive:ro
     environment:
       LISTEN: /beszel_socket/beszel.sock
-      KEY: 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI'
-      TOKEN: 879-279c30f663-5ff-f7ca42f129c
+      KEY: your-server-key
+      TOKEN: your-token
       HUB_URL: http://pi-server.internal:8090
     dns:
       - 192.168.50.6

@@ -16,6 +16,6 @@ services:
       # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  (1)
     environment:
       LISTEN: 45876
-      KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/q0pQSR0NXnA93R74Vdmv05DMmk+OWX36W1KFK31EI
-      TOKEN: 3630d-aee6185c6-f48d6-f03c1cf38
+      KEY: your-server-key
+      TOKEN: your-token
       HUB_URL: http://pi-server.internal:8090

@@ -46,14 +46,14 @@ hide:
 
 #### :material-message-alert: Notifications:
 
-| Application&emsp;:material-information-outline:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                          |
-| :---------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc. |
-| [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.               |
-| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.      |
-| [:material-router-wireless:&nbsp;Router Alerts](#router-alerts)                                                                                 | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, and `connmon` events.     |
-| [:material-cloud-upload-outline:&nbsp;Backup Alerts](#backup-alerts)                                                                            | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                    |
-| [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                        |
+| Application&emsp;:material-information-outline:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
+| :---------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
+| [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
+| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.                     |
+| [:material-router-wireless:&nbsp;Router Alerts](#router-alerts)                                                                                 | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
+| [:material-cloud-upload-outline:&nbsp;Backup Alerts](#backup-alerts)                                                                            | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
+| [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -190,6 +190,10 @@ hide:
 
 ##### WAN IP Change
 
+!!! note inline end
+    
+    The `ddns-start` script also contains the code to update the [DDNS](./DDNS.md) service. 
+
 1. Create the custom script:
 
     ```sh linenums="1"
@@ -197,10 +201,6 @@ hide:
     ```
 
 2. Paste this code into the file, then save and close.
-
-    !!! note inline end
-    
-        The `ddns-start` script also contains the code to update the [DDNS](./DDNS.md) service. 
 
     ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="5 13 14"
     --8<-- "ddns-start.sh"
@@ -276,6 +276,52 @@ hide:
     ```
 
 4. Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, conmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.
+
+##### DHCP Event Alerts
+
+1. Verify the default script `dnsmasq` is currently using for its DHCP script:
+
+    ```sh linenums="1"
+    cat /etc/dnsmasq.conf | grep dhcp-script
+    ```
+
+    !!! note
+
+        It should return `dhcp-script=/sbin/dhcpc_lease`. If you are running add-ons that have already modified this, note the script path being used.
+
+2. Create a `dnsmasq.postconf` script to modify the `dnsmasq` configuration dynamically before the service starts:
+
+    ```sh title="<code>/jffs/scripts/dnsmasq.postconf</code>" linenums="1"
+    --8<-- "dnsmasq.postconf"
+    ```
+
+    1. Replaces the default Asuswrt-Merlin script with the custom wrapper script
+
+3. Create the custom wrapper script:
+
+    :    This script will act as the middleman. Dnsmasq passes four arguments to this script automatically: Action *(`add`, `old`, or `del`)*, MAC address, IP address, and Hostname.
+
+    ```sh title="<code>/jffs/scripts/dhcp-event.sh</code>" linenums="1" hl_lines="14 15"
+    --8<-- "dhcp-event.sh"
+    ```
+
+    1. ALWAYS execute the default Asuswrt-Merlin script first.
+    2. Extract the arguments passed by dnsmasq.
+    3. Only trigger the Gotify notification on new lease additions.
+    4. Assign a placeholder if the device doesn't broadcast a hostname.
+    5. Fire the payload via curl using Markdown formatting.
+
+4. Apply permissions and restart `dnsmasq` service:
+
+    ```sh linenums="1"
+    chmod +x /jffs/scripts/dnsmasq.postconf
+    chmod +x /jffs/scripts/dhcp-event.sh
+    service restart_dnsmasq
+    ```
+
+    !!! tip
+
+        To test it, simply disconnect a device from the network, manually delete its lease from the Asuswrt-Merlin UI *(or wait for it to expire)*, and reconnect it to force an `add` event.
 
 #### :material-cloud-upload-outline: Backup Alerts
 

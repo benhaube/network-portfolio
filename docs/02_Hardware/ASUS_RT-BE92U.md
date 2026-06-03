@@ -157,3 +157,9 @@ hide:
 
 + The Connmon utility monitors the router's WAN connection by measuring the ping, jitter, and line quality. Whenever the tests fail *(lost connection)* or the measured values are greater than the set threshold an alert is sent to the Gotify server.
 + To see the script and detailed configuration information, see the ["Conmon Alerts"](../03_Services/Gotify.md#connmon-alerts) section of the Gotify service documentation page.
+
+##### DHCP Event Alerts
+
++ The router's DHCP server assigns IP addresses to all devices that connect to the local network using the `dnsmasq` service. This service has a native `dhcp-script` configuration flag that triggers exactly when a lease is created, renewed, or deleted. The catch is that Asuswrt-Merlin already uses this flag to run its own internal script *(`/sbin/dhcpc_lease`)*, which populates the router's UI Network Map. If you simply overwrite the flag with a standard custom config, you'll break Asuswrt's internal tracking.
++ The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command.
++ To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_Services/Gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.

@@ -20,7 +20,7 @@ hide:
 # Nebula-Sync
 *Synchronize Pi-hole*
 
-[GitHub :material-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
+[GitHub :simple-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

@@ -20,7 +20,7 @@ hide:
 # Portracker
 *Port Monitoring & Discovery*
 
-[GitHub :material-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
+[GitHub :simple-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

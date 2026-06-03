@@ -20,7 +20,7 @@ hide:
 # Glance
 *Server Dashboard*
 
-[GitHub :material-github:](https://github.com/glanceapp/glance){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://github.com/glanceapp/glance/tree/main/docs){ .md-button .md-button--primary }
+[GitHub :simple-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

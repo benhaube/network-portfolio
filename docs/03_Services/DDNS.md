@@ -19,7 +19,7 @@ hide:
 # DDNS
 *Provided by addr.tools*
 
-[GitHub :material-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools :services-addr:](https://addr.tools){ .md-button .md-button--primary }
+[GitHub :simple-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools :services-addr:](https://addr.tools){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

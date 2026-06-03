@@ -18,7 +18,7 @@ hide:
 # ttydBridge
 *The Terminal on the Web*
 
-[GitHub :material-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }
+[GitHub :simple-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

@@ -21,7 +21,7 @@ hide:
 # Debian Server
 *Virtual Machine*
 
-[Debian Docs :material-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Debian Docs :simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

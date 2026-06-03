@@ -17,7 +17,7 @@ hide:
 # TP-Link LiteWave Switch
 *Model LS1005G*
 
-[Manual :material-book-information-variant:](../assets/manuals/LiteWave-Switch-Install-Guide.pdf){ .md-button .md-button--primary }&emsp;[Datasheet :material-file-chart:](../assets/manuals/LiteWave-Switch-Datasheet.pdf){ .md-button .md-button--primary }
+[Manual :material-book-information-variant:](../assets/manuals/LiteWave-Switch-Install-Guide.pdf){ .md-button .md-button--primary }&emsp;[Datasheet :material-book-information-variant:](../assets/manuals/LiteWave-Switch-Datasheet.pdf){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Physical Overview

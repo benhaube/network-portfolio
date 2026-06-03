@@ -19,7 +19,7 @@ hide:
 # IT-Tools
 *Handy Tools for Devs*
 
-[GitHub :material-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }
+[GitHub :simple-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

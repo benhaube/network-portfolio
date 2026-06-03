@@ -17,7 +17,7 @@ hide:
 # Dockge
 *Docker Management*
 
-[GitHub :material-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
+[GitHub :simple-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Overview

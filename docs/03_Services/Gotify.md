@@ -48,12 +48,12 @@ hide:
 
 | Application&emsp;:material-information-outline:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
 | :---------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
-| [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
-| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.                     |
-| [:material-router-wireless:&nbsp;Router Alerts](#router-alerts)                                                                                 | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
 | [:material-cloud-upload-outline:&nbsp;Backup Alerts](#backup-alerts)                                                                            | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
+| [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
 | [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
+| [:material-router-wireless:&nbsp;Router Alerts](#router-alerts)                                                                                 | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
+| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.                     |
+| [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -71,6 +71,19 @@ hide:
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
 
+#### :material-cloud-upload-outline: Backup Alerts
+
+1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
+
+    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="3 4"
+    --8<-- "home-bkp-nas.sh:59"
+    ```
+
+    1. Placeholder
+    2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
+
+2. That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup. 
+
 #### :services-beszel: Beszel Alerts:
 
 1. Open the [Beszel Hub](../03_Services/Beszel_Hub.md) settings menu, go to the **"Notifications"** sub-menu, and enter the following URL into the **"Webhook / Push Notifications"** section.
@@ -81,27 +94,165 @@ hide:
 
 2. Click the **"Test URL"** button to send a test notification and verify functionality.
 
-#### :services-uptime-kuma: Uptime Kuma Alerts:
+#### :services-homebox: Homebox Alerts
 
-![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
-![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
+![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
+![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
 
-1. Open the [Uptime Kuma](../03_Services/Uptime_Kuma.md) settings menu, and enter the **"Notifications"** sub-menu.
-2. Click the **"Set Up Notification"** button.
-3. In the **"Notification Type"** drop-down menu, select the option **"Gotify"**.
-4. Give your new notification a name in the **"Friendly Name"** field.
-5. Enter your unique app token in the **"Application Token"** field.
-6. Enter your Gotify server address in the **"Server URL"** field.
+1. Log into the Homebox Web application.
+2. Click the arrow to expand the "Collections" menu on the left side-bar, then click "Notifiers."
+3. Click the "Create" button.
+4. Fill out the name and URL fields. 
+
+    **URL Format:**
 
     ```text linenums="1"
-    https://gotify.rac3r4life.online
+    gotify://gotify.rac3r4life.online/<YourAppToken>
     ```
 
-7. Set your desired notification priority in the **"Priority"** field.
-8. Click the **"Test"** button before saving to confirm your settings are functional.
-9. *Optional:*
-    + Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
-    + Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors. 
+5. Click the "Test" button to send a test notification.
+6. Click "Submit" to save the new notification.
+
+#### :material-router-wireless: Router Alerts:
+
+##### WAN IP Change
+
+!!! note inline end
+    
+    The `ddns-start` script also contains the code to update the [DDNS](./DDNS.md) service. 
+
+1. Create the custom script:
+
+    ```sh linenums="1"
+    nano /jffs/scripts/ddns-start
+    ```
+
+2. Paste this code into the file, then save and close.
+
+    ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="5 13 14"
+    --8<-- "ddns-start.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    2. `$1` is the new IP passed by the router.
+    3.    Replace the `KEY` variable with the key provided by addr.tools for your domain name. The Key is stored in the Bitwarden vault.
+          
+          [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
+
+          + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
+
+3. Make the script executable:
+
+    ```sh linenums="1"
+    chmod +x /jffs/scripts/ddns-start
+    ```
+
+##### BACKUPMON Alerts
+
+1. Create the custom wrapper script:
+
+    ```sh linenums="1"
+    nano /jffs/scripts/gotify-backupmon.sh
+    ```
+
+2. Paste this code into the file, then save and close.
+
+    ```sh title="<code>/jffs/scripts/gotify-backupmon.sh</code>" linenums="1" hl_lines="4 5"
+    --8<-- "gotify-backupmon.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    2. Execute `backupmon` silently.
+    3. Check the exit status of the backup script, and send the appropriate notification.
+
+3. Make the script executable:
+
+    ```sh linenums="1"
+    chmod +x /jffs/scripts/gotify-backupmon.sh
+    ```
+
+4. Open the `crontab` editor, and replace the existing `backupmon` script with your custom wrapper script.
+
+    ```sh linenums="1"
+    crontab -e
+    ```
+
+    ```sh linenums="1"
+    30 2 * * 0 sh /jffs/scripts/gotify-backupmon.sh #RunBackupMon#
+    ```
+
+##### Connmon Alerts
+
+1. Create the script: 
+
+    ```sh linenums="1"
+    nano /opt/share/connmon.d/userscripts.d/gotify-connmon.sh
+    ```
+
+2. Paste this code into the file, then save and close.
+
+    ```sh title="<code>/opt/share/connmon.d/userscripts.d/gotify-connmon.sh</code>" linenums="1" hl_lines="4 5"
+    --8<-- "gotify-connmon.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    2. Default title and priority.
+    3. Catch-all for any undefined triggers.
+    4. Send the `POST` request to Gotify.
+
+3. Make the script executable:
+
+    ```sh linenums="1"
+    chmod +x /opt/share/connmon.d/userscripts.d/gotify-connmon.sh
+    ```
+
+4. Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, conmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.
+
+##### DHCP Event Alerts
+
+1. Verify the default script `dnsmasq` is currently using for its DHCP script:
+
+    ```sh linenums="1"
+    cat /etc/dnsmasq.conf | grep dhcp-script
+    ```
+
+    !!! note
+
+        It should return `dhcp-script=/sbin/dhcpc_lease`. If you are running add-ons that have already modified this, note the script path being used.
+
+2. Create a `dnsmasq.postconf` script to modify the `dnsmasq` configuration dynamically before the service starts:
+
+    ```sh title="<code>/jffs/scripts/dnsmasq.postconf</code>" linenums="1"
+    --8<-- "dnsmasq.postconf"
+    ```
+
+    1. Replaces the default Asuswrt-Merlin script with the custom wrapper script
+
+3. Create the custom wrapper script:
+
+    :    This script will act as the middleman. Dnsmasq passes four arguments to this script automatically: Action *(`add`, `old`, or `del`)*, MAC address, IP address, and Hostname.
+
+    ```sh title="<code>/jffs/scripts/dhcp-event.sh</code>" linenums="1" hl_lines="14 15"
+    --8<-- "dhcp-event.sh"
+    ```
+
+    1. ALWAYS execute the default Asuswrt-Merlin script first.
+    2. Extract the arguments passed by dnsmasq.
+    3. Only trigger the Gotify notification on new lease additions.
+    4. Assign a placeholder if the device doesn't broadcast a hostname.
+    5. Fire the payload via curl using Markdown formatting.
+
+4. Apply permissions and restart `dnsmasq` service:
+
+    ```sh linenums="1"
+    chmod +x /jffs/scripts/dnsmasq.postconf
+    chmod +x /jffs/scripts/dhcp-event.sh
+    service restart_dnsmasq
+    ```
+
+    !!! tip
+
+        To test it, simply disconnect a device from the network, manually delete its lease from the Asuswrt-Merlin UI *(or wait for it to expire)*, and reconnect it to force an `add` event.
 
 #### :material-console-network: SSH Alerts:
 
@@ -186,171 +337,24 @@ hide:
     
           **Note:** The `&` symbol at the end is crucial. It runs the script in the background so it doesn't hang or delay your SSH login prompt while it waits for the `curl` command to reach the Gotify server.
 
-#### :material-router-wireless: Router Alerts:
+#### :services-uptime-kuma: Uptime Kuma Alerts:
 
-##### WAN IP Change
+![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
+![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
 
-!!! note inline end
-    
-    The `ddns-start` script also contains the code to update the [DDNS](./DDNS.md) service. 
-
-1. Create the custom script:
-
-    ```sh linenums="1"
-    nano /jffs/scripts/ddns-start
-    ```
-
-2. Paste this code into the file, then save and close.
-
-    ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="5 13 14"
-    --8<-- "ddns-start.sh"
-    ```
-
-    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
-    2. `$1` is the new IP passed by the router.
-    3. Replace the `KEY` variable with the key provided by addr.tools for your domain name.
-
-3. Make the script executable:
-
-    ```sh linenums="1"
-    chmod +x /jffs/scripts/ddns-start
-    ```
-
-##### BACKUPMON Alerts
-
-1. Create the custom wrapper script:
-
-    ```sh linenums="1"
-    nano /jffs/scripts/gotify-backupmon.sh
-    ```
-
-2. Paste this code into the file, then save and close.
-
-    ```sh title="<code>/jffs/scripts/gotify-backupmon.sh</code>" linenums="1" hl_lines="4 5"
-    --8<-- "gotify-backupmon.sh"
-    ```
-
-    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
-    2. Execute `backupmon` silently.
-    3. Check the exit status of the backup script, and send the appropriate notification.
-
-3. Make the script executable:
-
-    ```sh linenums="1"
-    chmod +x /jffs/scripts/gotify-backupmon.sh
-    ```
-
-4. Open the `crontab` editor, and replace the existing `backupmon` script with your custom wrapper script.
-
-    ```sh linenums="1"
-    crontab -e
-    ```
-
-    ```sh linenums="1"
-    30 2 * * * sh /jffs/scripts/gotify-backupmon.sh #RunBackupMon#
-    ```
-
-##### Connmon Alerts
-
-1. Create the script: 
-
-    ```sh linenums="1"
-    nano /opt/share/connmon.d/userscripts.d/gotify-connmon.sh
-    ```
-
-2. Paste this code into the file, then save and close.
-
-    ```sh title="<code>/opt/share/connmon.d/userscripts.d/gotify-connmon.sh</code>" linenums="1" hl_lines="4 5"
-    --8<-- "gotify-connmon.sh"
-    ```
-
-    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
-    2. Default title and priority.
-    3. Catch-all for any undefined triggers.
-    4. Send the `POST` request to Gotify.
-
-3. Make the script executable:
-
-    ```sh linenums="1"
-    chmod +x /opt/share/connmon.d/userscripts.d/gotify-connmon.sh
-    ```
-
-4. Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, conmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.
-
-##### DHCP Event Alerts
-
-1. Verify the default script `dnsmasq` is currently using for its DHCP script:
-
-    ```sh linenums="1"
-    cat /etc/dnsmasq.conf | grep dhcp-script
-    ```
-
-    !!! note
-
-        It should return `dhcp-script=/sbin/dhcpc_lease`. If you are running add-ons that have already modified this, note the script path being used.
-
-2. Create a `dnsmasq.postconf` script to modify the `dnsmasq` configuration dynamically before the service starts:
-
-    ```sh title="<code>/jffs/scripts/dnsmasq.postconf</code>" linenums="1"
-    --8<-- "dnsmasq.postconf"
-    ```
-
-    1. Replaces the default Asuswrt-Merlin script with the custom wrapper script
-
-3. Create the custom wrapper script:
-
-    :    This script will act as the middleman. Dnsmasq passes four arguments to this script automatically: Action *(`add`, `old`, or `del`)*, MAC address, IP address, and Hostname.
-
-    ```sh title="<code>/jffs/scripts/dhcp-event.sh</code>" linenums="1" hl_lines="14 15"
-    --8<-- "dhcp-event.sh"
-    ```
-
-    1. ALWAYS execute the default Asuswrt-Merlin script first.
-    2. Extract the arguments passed by dnsmasq.
-    3. Only trigger the Gotify notification on new lease additions.
-    4. Assign a placeholder if the device doesn't broadcast a hostname.
-    5. Fire the payload via curl using Markdown formatting.
-
-4. Apply permissions and restart `dnsmasq` service:
-
-    ```sh linenums="1"
-    chmod +x /jffs/scripts/dnsmasq.postconf
-    chmod +x /jffs/scripts/dhcp-event.sh
-    service restart_dnsmasq
-    ```
-
-    !!! tip
-
-        To test it, simply disconnect a device from the network, manually delete its lease from the Asuswrt-Merlin UI *(or wait for it to expire)*, and reconnect it to force an `add` event.
-
-#### :material-cloud-upload-outline: Backup Alerts
-
-1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
-
-    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="3 4"
-    --8<-- "home-bkp-nas.sh:59"
-    ```
-
-    1. Placeholder
-    2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
-
-2. That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup. 
-
-#### :services-homebox: Homebox Alerts
-
-![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
-![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
-
-1. Log into the Homebox Web application.
-2. Click the arrow to expand the "Collections" menu on the left side-bar, then click "Notifiers."
-3. Click the "Create" button.
-4. Fill out the name and URL fields. 
-
-    **URL Format:**
+1. Open the [Uptime Kuma](../03_Services/Uptime_Kuma.md) settings menu, and enter the **"Notifications"** sub-menu.
+2. Click the **"Set Up Notification"** button.
+3. In the **"Notification Type"** drop-down menu, select the option **"Gotify"**.
+4. Give your new notification a name in the **"Friendly Name"** field.
+5. Enter your unique app token in the **"Application Token"** field.
+6. Enter your Gotify server address in the **"Server URL"** field.
 
     ```text linenums="1"
-    gotify://gotify.rac3r4life.online/<YourAppToken>
+    https://gotify.rac3r4life.online
     ```
 
-5. Click the "Test" button to send a test notification.
-6. Click "Submit" to save the new notification.
+7. Set your desired notification priority in the **"Priority"** field.
+8. Click the **"Test"** button before saving to confirm your settings are functional.
+9. *Optional:*
+    + Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
+    + Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors. 

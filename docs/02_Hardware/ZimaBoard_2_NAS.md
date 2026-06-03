@@ -30,7 +30,7 @@ hide:
 
 #### :material-toolbox: Role: 
 
-:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
+:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. It has an *x86-64* Intel N150 quad-core CPU *(3.6 GHz)* and 16 GB of LPDDR5 *(6400 MHz)* RAM, and it is located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
 #### :symbols-host: Hostname(s):
 
@@ -195,7 +195,7 @@ hide:
 1. Copy the `login.jsonc` preset file into the presets directory:
 
     ```bash linenums="1"
-    sudo cp login.jsonc /usr/share/fastfetch/presets
+    sudo cp login.jsonc /opt/share/fastfetch/presets
     ```
 
 2. Add the `fastfetch` command to the `~/.bashrc` file: 
@@ -241,6 +241,39 @@ hide:
 --8<-- "starship-zimaos.toml"
 ```
 
+#### :material-progress-clock: Zima Cron:
+
+##### About
+
+:    A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support. 
+
+##### Install
+
+1. Download the latest release from [GitHub](https://github.com/chicohaager/cron).
+2. Copy the `cron.raw` package into the `/tmp` directory on the server:
+
+    ```bash linenums="1"
+    scp cron.raw root@storage-server.internal:/tmp/
+    ```
+
+3. Install the package:
+
+    ```bash linenums="1"
+    sudo zpkg install /tmp/cron.raw
+    ```
+
+!!! note
+
+    **Data Location:**
+
+    :    The task configurations and logs are stored in `/DATA/AppData/cron/`
+
+    **Persistence:**
+
+    :    Tasks are persisted to disk and automatically restored after system restart using the Systemd unit, `cron.service`. This fixes the known issue where tasks did not continue after a reboot in previous versions.
+
+    Open it from the [ZimaOS dashboard](http://storage-server.internal) *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
+
 #### :material-wall-fire: Zima Firewall:
 
 ##### About
@@ -253,17 +286,17 @@ hide:
 2. Copy the compressed archive into the `/tmp` directory on the server:
 
     ```bash linenums="1"
-    scp zfw-<version>-amd64.tar.gz root@<host>:/tmp/
+    scp zfw-<version>-amd64.tar.gz root@storage-server.internal:/tmp/
     ```
 
 3. Extract the archive, enter the directory, and run the `install.sh` script:
 
     ```bash linenums="1"
-    ssh root@<host> 'cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-* && sh install.sh'
+    ssh root@storage-server.internal 'cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-* && sh install.sh'
     ```
 
 !!! note
 
     The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` *(root:root, 0700)*, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place. 
  
-    Open it from the [ZimaOS dashboard](http://storage-server.internal) *(ZFW Firewall)*, or directly at `http://<host>/modules/zfw/index.html`.
+    Open it from the [ZimaOS dashboard](http://storage-server.internal) *(ZFW Firewall)*, or directly at <http://storage-server.internal/modules/zfw/index.html>.

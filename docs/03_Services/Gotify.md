@@ -54,6 +54,7 @@ hide:
 | [:material-router-wireless:&nbsp;Router Alerts](#router-alerts)                                                                                 | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
 | [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.                     |
 | [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
+| [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -389,4 +390,94 @@ hide:
 8. Click the **"Test"** button before saving to confirm your settings are functional.
 9. *Optional:*
     + Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
-    + Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors. 
+    + Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors.
+
+#### :services-zimaos: ZimaOS Alerts
+
+:    The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
+
+    [Zima Cron :simple-github:](https://github.com/chicohaager/cron){ .md-button }
+
+##### AppData Backup
+
+1. Create the custom script in the `/DATA/Scripts` directory:
+
+    ```bash linenums="1"
+    sudo nano /DATA/Scripts/appdata_backup.sh
+    ```
+
+2. Paste the following code into the file:
+
+    ```bash title="<code>/DATA/Scripts/appdata_backup.sh</code>" linenums="1" hl_lines="4 5"
+    --8<-- "appdata_backup.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+
+3. Set the execute permission: 
+
+    ```bash linenums="1"
+    sudo chmod +x /DATA/Scripts/appdata_backup.sh
+    ```
+
+4. Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
+
+    ```bash linenums="1"
+    bash /DATA/Scripts/appdata-backup.sh
+    ```
+
+##### Docker Cleanup
+
+1. Create the custom script in the `/DATA/Scripts` directory:
+
+    ```bash linenums="1"
+    sudo nano /DATA/Scripts/docker_cleanup.sh
+    ```
+
+2. Paste the following code into the file:
+
+    ```bash title="<code>/DATA/Scripts/docker_cleanup.sh</code>" linenums="1" hl_lines="4 5"
+    --8<-- "docker_cleanup.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+
+3. Set the execute permission: 
+
+    ```bash linenums="1"
+    sudo chmod +x /DATA/Scripts/docker_cleanup.sh
+    ```
+
+4. Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
+
+    ```bash linenums="1"
+    bash /DATA/Scripts/docker_cleanup.sh
+    ```
+
+##### Temp Files Cleanup
+
+1. Create the custom script in the `/DATA/Scripts` directory:
+
+    ```bash linenums="1"
+    sudo nano /DATA/Scripts/temp_files_clean.sh
+    ```
+
+2. Paste the following code into the file:
+
+    ```bash title="<code>/DATA/Scripts/temp_files_clean.sh</code>" linenums="1" hl_lines="4 5"
+    --8<-- "temp_files_clean.sh"
+    ```
+
+    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+
+3. Set the execute permission: 
+
+    ```bash linenums="1"
+    sudo chmod +x /DATA/Scripts/temp_files_clean.sh
+    ```
+
+4. Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
+
+    ```bash linenums="1"
+    bash /DATA/Scripts/temp_files_clean.sh
+    ```

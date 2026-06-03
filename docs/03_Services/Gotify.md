@@ -171,15 +171,47 @@ hide:
     chmod +x /jffs/scripts/gotify-backupmon.sh
     ```
 
-4. Open the `crontab` editor, and replace the existing `backupmon` script with your custom wrapper script.
+4. Edit the `services-start` script to add the custom wrapper script to the `crontab` after every reboot.
 
-    ```sh linenums="1"
-    crontab -e
-    ```
+    + Open the script in the `nano` text editor:
+  
+        ```sh linenums="1"
+        nano /jffs/scripts/services-start
+        ```
 
-    ```sh linenums="1"
-    30 2 * * 0 sh /jffs/scripts/gotify-backupmon.sh #RunBackupMon#
-    ```
+    + Append the following code to the bottom of the script:
+
+        ```sh title="<code>/jffs/scripts/services-start</code>" linenums="1"
+        # (1)!
+        (
+            sleep 15
+            cru a RunBackupMonGotify "30 2 * * 0 sh /jffs/scripts/gotify-backupmon.sh"
+        ) &
+        ```
+
+        1. Append your custom cron job safely in the background.
+
+        !!! tip
+
+            Make sure the option, **"Schedule Backups"**, is disabled in the BACKUPMON settings to avoid conflicting / duplicate cron jobs in the `crontab`. With this setting enabled, the `crontab` will contain a line to run the BACKUPMON script on its own *(outside the Gotify wrapper script)*.
+
+5. Verify the `services-start` script is working, and adding the custom cron job properly.
+
+    !!! note inline end
+
+        You should see your job ID and schedule listed in the output. Now, when the router reboots, it will automatically rerun `services-start` and handle the manual entry for you.
+
+    + Run the `services-start` script manually:
+  
+        ```sh linenums="1"
+        /jffs/scripts/services-start
+        ```
+
+    + Verify your cron job was successfully added to the `crontab`:
+
+        ```sh linenums="1"
+        cru l
+        ```
 
 ##### Connmon Alerts
 

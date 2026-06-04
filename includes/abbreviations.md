@@ -79,6 +79,7 @@
 *[HTTPS]: Hypertext Transfer Protocol Secure
 *[HVAC]: Heating, Ventilating, and Air Conditioning
 *[IAM]: Identity and Access Management
+*[ICMP]: Internet Control Message Protocol
 *[IDS]: Intrusion Detection System
 *[IMAP]: Internet Message Access Protocol
 *[IOMMU]: Input-Output Memory Management Unit
@@ -150,6 +151,7 @@
 *[PCRs]: Platform Control Registers
 *[PETG]: Polyethylene Terephthalate Glycol
 *[PIN]: Personal Identification Number
+*[PING]: Pinging involves sending an ICMP echo request to the target host and waiting for an ICMP echo reply.
 *[PLA]: Polylactic Acid
 *[PNG]: Portable Network Graphics
 *[QEMU]: The Quick Emulator

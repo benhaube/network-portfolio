@@ -71,13 +71,13 @@ curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 
 :    The settings for both Technitium DNS server nodes are backed up in `.tar.gz` archives and stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). Listed below are the directories where each settings backup archive are located. Each archive name has the server's FQDN and the date & time of the settings export. *(e.g., `pi-server.internal_2026-05-29_16-00-14_backup.tar.gz`)*
 
-```text title="Debian Server <i>(primary node)</i>"
-/DATA/Quick_Storage/Backup/debian-vm/Technituim/
-```
+    ```text title="Debian Server <i>(primary node)</i>"
+    /DATA/Quick_Storage/Backup/debian-vm/Technituim/
+    ```
 
-```text title="Raspberry Pi 4B Server <i>(secondary node)</i>"
-/DATA/Quick_Storage/Backup/pi-server/Technitium/
-```
+    ```text title="Raspberry Pi 4B Server <i>(secondary node)</i>"
+    /DATA/Quick_Storage/Backup/pi-server/Technitium/
+    ```
 
 #### :material-file-code: Zones:
 

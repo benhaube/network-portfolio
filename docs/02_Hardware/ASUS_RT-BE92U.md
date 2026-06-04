@@ -136,7 +136,7 @@ hide:
 
 #### :services-gotify-notification: Gotify Push Notifications:
 
-+ While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_Services/Gotify.md) server to send instant push notifications for events that may require an urgent response.
+:    While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_Services/Gotify.md) server to send instant push notifications for events that may require an urgent response.
 
 ##### SSH Session Alerts
 

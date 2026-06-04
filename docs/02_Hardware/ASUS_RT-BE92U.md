@@ -163,3 +163,65 @@ hide:
 + The router's DHCP server assigns IP addresses to all devices that connect to the local network using the `dnsmasq` service. This service has a native `dhcp-script` configuration flag that triggers exactly when a lease is created, renewed, or deleted. The catch is that Asuswrt-Merlin already uses this flag to run its own internal script *(`/sbin/dhcpc_lease`)*, which populates the router's UI Network Map. If you simply overwrite the flag with a standard custom config, you'll break Asuswrt's internal tracking.
 + The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command.
 + To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_Services/Gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.
+
+#### :material-web-check: WAN Check Script
+
+##### About
+
+The `ChkWAN.sh` script can monitor the connection status of the WAN interface, and if the status is found to be unacceptable, can perform one of the following:
+
++ Report the status of the WAN connection.
++ Attempt to restart the WAN interface.
++ Reboot the router.
+
+On this router the `ChkWAN.sh` script is configured to PING the following IP addresses and restart the WAN interface if no ICMP echo reply is recieved from ANY of the addresses. 
+
++ `9.9.9.9` *(Quad9)*
++ `149.112.112.112` *(Quad9)*
++ `8.8.8.8` *(Google)*
++ `1.1.1.1` *(Cloudflare)*
+
+##### Configure
+
+1. Download the `ChkWAN.sh` script to the router and give it permission to execute:
+
+    ```sh linenums="1"
+    curl --retry 3 "https://raw.githubusercontent.com/MartineauUK/Chk-WAN/master/ChkWAN.sh" -o "/jffs/scripts/ChkWAN.sh" && chmod 755 "/jffs/scripts/ChkWAN.sh"
+    ```
+
+2. Manually test the script with the default PING method, and the script will simply passively report the status, rather proactively restart the WAN or reboot:
+
+    ```sh linenums="1"
+    ./ChkWAN.sh noaction once nowait
+    ```
+
+3. Add the following code to the `wan-event` script contained in the `/jffs/scripts` directory: 
+
+    ```sh title="<code>/jffs/scripts/wan-event</code>" linenums="1"
+    if [ "$2" == "connected" ]; then
+      # Manually create the cron job to preserve custom arguments
+      cru a WAN_Check "*/5 * * * * /jffs/scripts/ChkWAN.sh wan ping=9.9.9.9,149.112.112.112,8.8.8.8,1.1.1.1"
+    fi
+    ```
+
+    !!! note
+
+        This code adds an entry to the crontab that runs the `ChkWAN.sh` script every five minutes. It will PING the five listed IP addresses, and if none of the PING requests get a reply the script restarts the WAN interface. The reason for adding this code to the `wan-event` script is to ensure the schedule is added to the crontab every time the router reboots or the WAN re-connects.
+
+4. Trigger the `wan-event` script to add the crontab entry:
+
+    ```sh linenums="1"
+    sh /jffs/scripts/wan-event wan0 connected
+    ```
+
+5. Check the crontab for the `ChkWAN.sh` entry:
+
+    ```sh linenums="1"
+    cru l
+    ```
+
+    You should see the following line in the crontab:
+
+    ```text linenums="1"
+    */5 * * * * /jffs/scripts/ChkWAN.sh wan ping=9.9.9.9,149.112.112.112,8.8.8.8,1.1.1.1 #WAN_Check#
+    ```

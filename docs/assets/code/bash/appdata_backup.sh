@@ -4,7 +4,7 @@
 TOKEN="YourGotifyToken"
 URL="https://gotify.rac3r4life.online/message?token=$TOKEN"
 
-mkdir -p /media/Quick-Storage/Backup/ZimaOS-NAS/AppData && tar -czf /media/Quick-Storage/Backup/ZimaOS-NAS/AppData/appdata_"$(date +%Y%m%d_%H%M%S)".tar.gz -C /DATA AppData
+mkdir -p /media/Quick-Storage/Backup/ZimaOS-NAS/AppData && tar -czf /media/Quick-Storage/Backup/ZimaOS-NAS/AppData/appdata_"$(date +%Y%m%d_%H%M%S)".tar.gz -C /media/nvme0n1p1 AppData
 
 if [ $? -eq 0 ]; then
   curl -s -X POST "$URL" -F "title=AppData Backup" -F "message=The AppData directory backup has been completed successfully." -F "priority=4" > /dev/null

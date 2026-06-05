@@ -17,8 +17,7 @@ tags:
 hide:
   - toc
 ---
-![Technitium Icon](../assets/icons/technitium-light.svg#only-light){ width=200 }
-![Technitium Icon](../assets/icons/technitium.svg#only-dark){ width=200 }
+![Technitium Icon](../assets/icons/technitium.svg){ width=200 }
 
 # Technitium
 *Autoritative & Recursive DNS*

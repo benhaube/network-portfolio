@@ -13,8 +13,7 @@ tags:
 hide:
   - toc
 ---
-![YouTube-DL Icon](../assets/icons/youtube-dl-light.svg#only-light){ width=200 }
-![YouTube-DL Icon](../assets/icons/youtube-dl.svg#only-dark){ width=200 }
+![YouTube-DL Icon](../assets/icons/youtube-dl.svg){ width=200 }
 
 # yt-dlp Web-UI
 *Download Videos from YouTube*

@@ -27,7 +27,7 @@ hide:
 
 #### :symbols-host: Hostname(s):
 
-+ `rob-desktop`
++ `Rob-Desktop`
 
 #### :material-map-marker-outline: Location: 
 

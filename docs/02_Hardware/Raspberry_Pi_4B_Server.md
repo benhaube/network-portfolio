@@ -16,8 +16,7 @@ hide:
   - toc
 ---
 ![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }&nbsp;
-![Raspberry Pi Icon](../assets/icons/raspberry-pi-light.svg#only-light){ width=50 }
-![Raspberry Pi Icon](../assets/icons/raspberry-pi-dark.svg#only-dark){ width=50 }
+![Raspberry Pi Icon](../assets/icons/raspberry-pi-logo.svg){ width=50 }
 &nbsp;![Arm Logo](../assets/icons/arm.svg){ width=50 }
 
 # Raspberry Pi 4B Server

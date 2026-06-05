@@ -13,8 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Lenovo Logo](../assets/icons/lenovo-light.svg#only-light){ width=250 }
-![Lenovo Logo](../assets/icons/lenovo-dark.svg#only-dark){ width=250 }
+![Lenovo Logo](../assets/icons/lenovo.svg){ width=250 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Ben's Laptop

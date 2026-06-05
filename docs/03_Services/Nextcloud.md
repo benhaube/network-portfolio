@@ -13,8 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Nextcloud Icon](../assets/icons/nextcloud-light.svg#only-light){ width=200 }
-![Nextcloud Icon](../assets/icons/nextcloud.svg#only-dark){ width=200 }
+![Nextcloud Icon](../assets/icons/nextcloud.svg){ width=200 }
 
 # Nextcloud
 *Private Cloud*

@@ -15,8 +15,7 @@ tags:
 hide:
   - toc
 ---
-![WireGuard Icon](../assets/icons/wireguard-light.svg#only-light){ width=200 }
-![WireGuard Icon](../assets/icons/wireguard.svg#only-dark){ width=200 }
+![WireGuard Icon](../assets/icons/wireguard.svg){ width=200 }
 
 # WireGuard
 *A Simple, Modern VPN*

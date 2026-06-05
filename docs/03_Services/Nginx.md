@@ -11,8 +11,7 @@ tags:
 hide:
   - toc
 ---
-![Nginx Icon](../assets/icons/nginx-light.svg#only-light){ width=200 }
-![Nginx Icon](../assets/icons/nginx.svg#only-dark){ width=200 }
+![Nginx Icon](../assets/icons/nginx.svg){ width=200 }
 
 # Nginx
 *Network Documentation*

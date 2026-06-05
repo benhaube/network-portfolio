@@ -15,7 +15,7 @@ tags:
 hide:
   - toc
 ---
-![ntop Logo](../assets/icons/ntop.svg){ width=250 }&ensp;![ntopng logo](../assets/icons/ntopng.png){ width=50 }
+![ntop Logo](../assets/icons/ntop.svg){ width=250 }
 
 # ntopng
 *Network Traffic Probe*

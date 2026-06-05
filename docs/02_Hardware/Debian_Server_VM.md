@@ -14,8 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Debian Server Logo](../assets/icons/debian-server-light.svg#only-light){ width=200 }
-![Debian Server Logo](../assets/icons/debian-server-dark.svg#only-dark){ width=200 }
+![Debian Logo](../assets/icons/debian.svg){ width=200 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Debian Server

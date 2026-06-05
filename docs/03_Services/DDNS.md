@@ -68,7 +68,11 @@ hide:
 
     1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
     2. `$1` is the new IP passed by the router.
-    3. Replace the `KEY` variable with the key provided by addr.tools for your domain name.
+    3.    Replace the `KEY` variable with the key provided by addr.tools for your domain name. The Key is stored in the Bitwarden vault.
+          
+          [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
+
+          + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
 
 3. Make the script executable:
 
@@ -96,7 +100,12 @@ hide:
     --8<-- "auth_hook.sh"
     ```
 
-    1. Replace the `MY_KEY` variable with the key provided by addr.tools for your domain name.
+    1.    Replace the `KEY` variable with the key provided by addr.tools for your domain name. The Key is stored in the Bitwarden vault.
+          
+          [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
+
+          + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
+    
     2. The validation string provided by Certbot.
 
     ```bash title="<code>deploy_cert.sh</code>" linenums="1" hl_lines="3 4"

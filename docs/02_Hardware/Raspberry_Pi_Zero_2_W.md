@@ -22,7 +22,7 @@ hide:
 # Raspberry Pi Zero Server
 *Reverse-Proxy Server*
 
-[Raspberry Pi Docs :simple-raspberrypi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Raspberry Pi Docs :brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Device Overview

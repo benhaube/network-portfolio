@@ -17,7 +17,7 @@ hide:
 # Kacey 3D-Printer
 *Modified Creality K1C*
 
-[Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer :services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
+[Creality Docs :brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer :services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Device Overview
@@ -26,7 +26,7 @@ hide:
 
     See more detailed information about the Creality K1C hardware:
 
-    [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
+    [More Kacey Info :brands-creality:](Kacey_Info.md){ .md-button }
 
 #### :material-toolbox: Role: 
 
@@ -42,7 +42,7 @@ hide:
 
 #### :material-memory: OS / Firmware: 
 
-+ [:devices-creality:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
++ [:brands-creality:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
 + [:material-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
@@ -109,12 +109,12 @@ hide:
  
     + [:material-cog:&nbsp;Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
         + Changes from a fixed bed to an adjustable bed with aluminum knobs. 
-    + [:devices-prowiper:&nbsp;PROWIPER^&copy;^ Mod](../3D_Printing/PROWIPER_Mod.md)
+    + [:symbols-prowiper:&nbsp;PROWIPER^&copy;^ Mod](../3D_Printing/PROWIPER_Mod.md)
         + Replaces the standard nozzle wiping brush at the back of the build plate.
  
     **:material-code-block-tags: Custom G-Code Macros:**
 
-    + [:devices-toothbrush-nozzle:&nbsp;Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
+    + [:symbols-toothbrush-nozzle:&nbsp;Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
         + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
 
 #### :material-update: Update Process:

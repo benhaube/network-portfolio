@@ -1,5 +1,5 @@
 ---
-icon: devices/prowiper
+icon: symbols/prowiper
 title: PROWIPER&copy; Mod
 subtitle: Improved Nozzle Brush Routine
 hide:
@@ -10,7 +10,7 @@ hide:
 # PROWIPER^&copy;^ Mod
 *Improved Nozzle Brush Routine*
 
-[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality^&copy;^ K1C :brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! info "PROWIPER^&copy;^ Info"
 
@@ -23,7 +23,7 @@ hide:
 
     1. Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` *(in high-temp filament like ASA / ABS)*
    
-        [Printables :simple-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button } 
+        [Printables :brands-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button } 
 
     2. **Bambu A1** Silicone Brushes
 

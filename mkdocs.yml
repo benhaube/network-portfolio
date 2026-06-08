@@ -38,7 +38,7 @@ theme:
   # -- Icon Settings--
   icon:
     logo: material/file-document-multiple
-    repo: fontawesome/brands/git-alt
+    repo: symbols/git
     # -- Icons for Tags --
     tag:
       default: material/tag
@@ -66,7 +66,7 @@ theme:
       linux: material/linux
       living-room: material/sofa
       map: material/sitemap
-      mini-rack: devices/10-inch-rack
+      mini-rack: symbols/10-inch-rack
       mobile: material/tablet-cellphone
       monitor: symbols/monitor-heart
       nas: material/nas
@@ -273,15 +273,15 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
   social:
-    - icon: simple/github
+    - icon: brands/github
       link: https://github.com/benhaube
-    - icon: fontawesome/brands/linkedin
+    - icon: brands/linkedin
       link: https://www.linkedin.com/in/benjamin-haube/
-    - icon: simple/printables
+    - icon: brands/printables
       link: https://www.printables.com/@rac3r4life
-    - icon: simple/gravatar
+    - icon: brands/gravatar
       link: https://benhaube.link
-    - icon: simple/bluesky
+    - icon: brands/bluesky
       link: https://bsky.app/profile/rac3r4life.me
   generator: false
   # -- Tag definitions for custom tag icons ^^ above ^^ --

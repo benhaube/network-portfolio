@@ -11,7 +11,7 @@ hide:
 # Manual Bed Leveling Mod
 *Fine Tune Your Bed Level*
 
-[Creality^&copy;^ K1C :devices-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality^&copy;^ K1C :brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! question
 
@@ -37,7 +37,7 @@ hide:
     **Nylon Knobs:**
     :     If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
 
-        [Nylon Knobs :simple-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
+        [Nylon Knobs :brands-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
 
 1. [ ] Home the printer.
 2. [ ] Lower the bed &frac34; of the way down, so that you have enough room to stand the bed up.
@@ -96,7 +96,7 @@ hide:
 
     [Root Access Guide :brands-3dphub:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 
-    [Helper Script :devices-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
+    [Helper Script :brands-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
  
     !!! security "Default Password"
 
@@ -106,7 +106,7 @@ hide:
 
 1. [ ] Turn the printer on.
 2. [ ] SSH into the printer.
-3. [ ] **Option 1:** Run the [Helper Script :devices-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
+3. [ ] **Option 1:** Run the [Helper Script :brands-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
 
     **Option 2:** Add this to `printer.cfg`
 

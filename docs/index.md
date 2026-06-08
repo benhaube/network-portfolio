@@ -36,7 +36,7 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    [More Kacey Info :devices-creality:](02_Hardware/Kacey_Info.md){ .md-button }
+    [More Kacey Info :brands-creality:](02_Hardware/Kacey_Info.md){ .md-button }
 
     [Hardware Tags :material-tag:](02_Hardware/tags.md){ .md-button }
 
@@ -228,15 +228,15 @@ hide:
 !!! links inline end "Check out my 3D Models!"
     All of my 3D models are published to Printables, and shared with the GPLv3 open-source licence. Every model has STEP and FreeCAD files included for easy editing.
 
-    [Printables :simple-printables:](https://www.printables.com/@rac3r4life){ .md-button }
+    [Printables :brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
 [:material-cog:&ensp;Manual Bed Leveling Mod](./3D_Printing/K1_Bed_Level_Knobs_Tutorial.md): 
 :    Installing a bed leveling modification on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md). 
 
-[:devices-toothbrush-nozzle:&ensp;Nozzle Cleaning Macro](./3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md): 
+[:symbols-toothbrush-nozzle:&ensp;Nozzle Cleaning Macro](./3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md): 
 :    Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
 
-[:devices-prowiper:&ensp;PROWIPER^&copy;^ Mod](./3D_Printing/PROWIPER_Mod.md): 
+[:symbols-prowiper:&ensp;PROWIPER^&copy;^ Mod](./3D_Printing/PROWIPER_Mod.md): 
 :    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md).
 
 ---

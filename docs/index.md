@@ -32,7 +32,7 @@ hide:
 :    A *Mermaid.js* flowchart focusing on physical devices and their connections.
 
 ---
-## :material-devices: Hardware
+## :symbols-devices: Hardware
 
 !!! links inline end "Extra Links"
 

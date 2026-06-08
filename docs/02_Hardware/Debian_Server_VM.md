@@ -39,7 +39,7 @@ hide:
 
 #### :material-memory: Operating System: 
 
-+ [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
++ [:material-debian:&nbsp;Debian Linux](https://www.debian.org/) *(trixie)*
 
 #### :material-server-network-outline: Host Node: 
 

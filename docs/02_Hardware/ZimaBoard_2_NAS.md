@@ -95,9 +95,9 @@ hide:
 
 #### :symbols-stacks: Virtualization:
 
-|  Status  | OS                                                                           | Virtual NIC      | Virtual Disk Image | Role / Notes                                                                         |
-| :------: | :--------------------------------------------------------------------------- | :--------------- | :----------------- | :----------------------------------------------------------------------------------- |
-| *Active* | [:material-debian:&nbsp;Debian Linux 13](../02_Hardware/Debian_Server_VM.md) | Bridged (`eth0`) | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
+|  Status  | OS                                                                             | Virtual NIC | Virtual Disk Image | Role / Notes                                                                         |
+| :------: | :----------------------------------------------------------------------------- | :---------- | :----------------- | :----------------------------------------------------------------------------------- |
+| *Active* | [:material-debian:&nbsp;Debian *(trixie)*](../02_Hardware/Debian_Server_VM.md) | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
 
 #### :material-linux: Native Linux:
 

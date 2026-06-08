@@ -102,11 +102,11 @@ hide:
 
 #### :symbols-stacks: Virtualization:
 
-|  Status  | OS                                                                               | Virtual NIC             | Virtual Disk Image                                | Role / Notes                                                          |
-| :------: | :------------------------------------------------------------------------------- | :---------------------- | :------------------------------------------------ | :-------------------------------------------------------------------- |
-| *Active* | [:services-fedora-coreos:&nbsp;Fedora CoreOS](https://fedoraproject.org/coreos/) | Virtual Network *(NAT)* | `fedora-coreos-43.20260316.3.1-qemu.x86_64.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
-| *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org)                              | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2`              | Network security and penetration testing tools.                       |
-| *Active* | [:material-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)            | Virtual Network *(NAT)* | `Windows_11.qcow2`                                | Windows environment to run Windows software that won't run with WINE. |
+|  Status  | OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes                                                          |
+| :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
+| *Active* | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
+| *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
+| *Active* | [:material-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)     | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
 #### :material-linux: Native Linux:
 

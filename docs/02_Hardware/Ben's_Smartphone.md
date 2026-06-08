@@ -84,9 +84,9 @@ hide:
 
 #### :symbols-stacks: Virtualization:
 
-|  Status  | OS                                                       | Virtual NIC             | Virtual Disk Image | Role / Notes                       |
-| :------: | :------------------------------------------------------- | :---------------------- | :----------------- | :--------------------------------- |
-| *Active* | [:material-debian:&nbsp;Debian](https://www.debian.org/) | Virtual Network *(NAT)* | `-`                | Android Virtualization Environment |
+|  Status  | OS                                                       | Virtual NIC | Virtual Disk Image | Role / Notes                       |
+| :------: | :------------------------------------------------------- | :---------- | :----------------- | :--------------------------------- |
+| *Active* | [:material-debian:&nbsp;Debian](https://www.debian.org/) | NAT         | `-`                | Android Virtualization Environment |
 
 #### :brands-android-robot: Native Android:
 

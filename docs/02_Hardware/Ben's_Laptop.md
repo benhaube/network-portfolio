@@ -104,9 +104,9 @@ hide:
 
 #### :symbols-stacks: Virtualization:
 
-|  Status  | OS                                                  | Virtual NIC             | Virtual Disk Image                   | Role / Notes                                    |
-| :------: | :-------------------------------------------------- | :---------------------- | :----------------------------------- | :---------------------------------------------- |
-| *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org) | Virtual Network *(NAT)* | `kali-linux-2025.4-qemu-amd64.qcow2` | Network security and penetration testing tools. |
+|  Status  | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes                                    |
+| :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
+| *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
 #### :material-linux: Native Linux:
 

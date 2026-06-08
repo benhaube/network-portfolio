@@ -216,7 +216,7 @@ hide:
 ---
 ## :material-swap-horizontal-bold: Change Management
 
-[:simple-raspberrypi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md): 
+[:brands-raspberry-pi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md): 
 :    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
 [:simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md): 

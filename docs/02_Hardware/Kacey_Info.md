@@ -17,7 +17,7 @@ hide:
 # More Kacey Info
 *Detailed Configuration Info*
 
-[Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }
+[Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer :services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Basic Information

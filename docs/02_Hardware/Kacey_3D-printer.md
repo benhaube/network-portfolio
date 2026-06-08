@@ -15,16 +15,16 @@ hide:
 ![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }![Creality Logo](../assets/icons/creality.svg){ width=50 }
 
 # Kacey 3D-Printer
-*Modified Creality^&copy;^ K1C*
+*Modified Creality K1C*
 
-[Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Creality Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }
+[Creality Docs :devices-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer :services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
 ## :material-information-outline: Device Overview
 
 ???+ links inline end "More K1C Info"
 
-    See more detailed information about the Creality^&copy;^ K1C hardware:
+    See more detailed information about the Creality K1C hardware:
 
     [More Kacey Info :devices-creality:](Kacey_Info.md){ .md-button }
 
@@ -42,7 +42,7 @@ hide:
 
 #### :material-memory: OS / Firmware: 
 
-+ [:devices-creality:&nbsp;Creality^&copy;^ FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
++ [:devices-creality:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
 + [:material-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 

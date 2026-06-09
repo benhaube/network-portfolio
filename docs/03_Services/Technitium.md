@@ -33,23 +33,24 @@ hide:
 
 #### :symbols-settings-ethernet: Port(s): 
 
-* `53`
-* `443`
-* `5380`
++ `53`
++ `443`
++ `5380`
 
 #### :material-link-variant: URL / Access:  
 
-* :material-debian:&nbsp;Debian Server
-    * `192.168.50.6` &mdash; First DNS server
-    * <http://debian-vm.internal:5380>
-* :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server
-    * `192.168.50.2` &mdash; Second DNS server
-    * <http://pi-server.internal:5380>
++ :material-debian:&nbsp;Debian Server
+    + `192.168.50.6` &mdash; First DNS server
+    + <http://debian-vm.internal:5380>
++ :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server
+    + `192.168.50.2` &mdash; Second DNS server
+    + <http://pi-server.internal:5380>
 
 #### :material-key-chain: Credentials: 
 
-* [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    * Local Network&ensp;:material-arrow-right-thin:&ensp;"Technitium"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Technitium"
++ [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
 ## :symbols-deployed-code-update: Deployment Details
 

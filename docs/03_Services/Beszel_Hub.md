@@ -43,6 +43,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Beszel Hub"
++ [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
 ## :symbols-deployed-code-update: Deployment Details
 

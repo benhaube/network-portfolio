@@ -47,6 +47,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Portainer"
++ [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
 ## :symbols-deployed-code-update: Deployment Details
 

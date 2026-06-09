@@ -42,6 +42,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Software&ensp;:material-arrow-right-thin:&ensp;"Cloudflare Dashboard"
++ [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
 ## :symbols-deployed-code-update: Deployment Details
 

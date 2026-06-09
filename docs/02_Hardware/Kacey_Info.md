@@ -140,18 +140,18 @@ M600
 --8<-- "octoeverywhere-system.cfg"
 ```
 
-```gcode title="<code>M600-custom.cfg</code>" linenums="1"
+```cfg title="<code>M600-custom.cfg</code>" linenums="1"
 --8<-- "M600-custom.cfg"
 ```
 
-```gcode title="<code>sesorless.cfg</code>" linenums="1"
+```cfg title="<code>sesorless.cfg</code>" linenums="1"
 --8<-- "sensorless.cfg"
 ```
 
-```gcode title="<code>spoolman.cfg</code>" linenums="1"
+```cfg title="<code>spoolman.cfg</code>" linenums="1"
 --8<-- "spoolman.cfg"
 ```
 
-```gcode title="<code>gcode-macros.cfg</code>" linenums="1"
+```cfg title="<code>gcode-macros.cfg</code>" linenums="1"
 --8<-- "gcode-macros.cfg"
 ```

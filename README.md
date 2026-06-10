@@ -4,9 +4,7 @@
 
 This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel. 
 
-<p align="center">
-  <img src=".readme-assets/index-screenshot-readme.png" alt="Screenshot of Index page." />
-</p>
+![Screenshot of Index page](.readme-assets/index-screenshot-readme.png)
 
 ## Clone the Repo
 

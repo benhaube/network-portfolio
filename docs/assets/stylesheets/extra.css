@@ -149,6 +149,8 @@
     --gigabit-border: #2e7d32;
     --wifi-bg: #f3e5f5;
     --wifi-border: #7b1fa2;
+    --usb-bg: #e1f5fe;
+    --usb-border: #01579b;
 }
 
 /* 2. Slate (Dark Mode) Variables */
@@ -188,6 +190,8 @@
     --gigabit-border: #2e7d32;
     --wifi-bg: #241026;
     --wifi-border: #7b1fa2;
+    --usb-bg: #00111D;
+    --usb-border: #01579b;
 }
 
 /* --- Custom Admonitions --- */

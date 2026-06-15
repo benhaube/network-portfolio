@@ -1,10 +1,10 @@
 %%{
   init: {
-    "themeCSS": ".node.isp rect, .node.isp polygon, .node.isp circle, .node.isp path { fill: var(--isp-bg) !important; stroke: var(--isp-border) !important; stroke-width: 2px !important; } .node.multi rect, .node.multi polygon, .node.multi circle, .node.multi path { fill: var(--multi-bg) !important; stroke: var(--multi-border) !important; stroke-width: 2px !important; } .node.tenGb rect, .node.tenGb polygon, .node.tenGb circle, .node.tenGb path { fill: var(--tengb-bg) !important; stroke: var(--tengb-border) !important; stroke-width: 2px !important; } .node.twoFiveGb rect, .node.twoFiveGb polygon, .node.twoFiveGb circle, .node.twoFiveGb path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; } .node.twoFiveGbTemp rect, .node.twoFiveGbTemp polygon, .node.twoFiveGbTemp circle, .node.twoFiveGbTemp path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.gigabit rect, .node.gigabit polygon, .node.gigabit circle, .node.gigabit path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; } .node.gigabitTemp rect, .node.gigabitTemp polygon, .node.gigabitTemp circle, .node.gigabitTemp path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.wifi rect, .node.wifi polygon, .node.wifi circle, .node.wifi path { fill: var(--wifi-bg) !important; stroke: var(--wifi-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+    "themeCSS": ".node.isp rect, .node.isp polygon, .node.isp circle, .node.isp path { fill: var(--isp-bg) !important; stroke: var(--isp-border) !important; stroke-width: 2px !important; } .node.multi rect, .node.multi polygon, .node.multi circle, .node.multi path { fill: var(--multi-bg) !important; stroke: var(--multi-border) !important; stroke-width: 2px !important; } .node.tenGb rect, .node.tenGb polygon, .node.tenGb circle, .node.tenGb path { fill: var(--tengb-bg) !important; stroke: var(--tengb-border) !important; stroke-width: 2px !important; } .node.twoFiveGb rect, .node.twoFiveGb polygon, .node.twoFiveGb circle, .node.twoFiveGb path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; } .node.twoFiveGbTemp rect, .node.twoFiveGbTemp polygon, .node.twoFiveGbTemp circle, .node.twoFiveGbTemp path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.gigabit rect, .node.gigabit polygon, .node.gigabit circle, .node.gigabit path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; } .node.gigabitTemp rect, .node.gigabitTemp polygon, .node.gigabitTemp circle, .node.gigabitTemp path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.wifi rect, .node.wifi polygon, .node.wifi circle, .node.wifi path { fill: var(--wifi-bg) !important; stroke: var(--wifi-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.usb rect, .node.usb polygon, .node.usb circle, .node.usb path { fill: var(--usb-bg) !important; stroke: var(--usb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
   }
 }%%
 
-graph TD
+graph
     %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
     classDef isp fill: stroke:;
     classDef multi fill: stroke:;
@@ -14,6 +14,7 @@ graph TD
     classDef gigabit fill: stroke:;
     classDef gigabitTemp fill: stroke:;
     classDef wifi fill: stroke:;
+    classDef usb fill: stroke:;
     
 %% --- Nodes --- %%
 
@@ -26,11 +27,11 @@ graph TD
         subgraph Mini_Rack ["<b>Mini-Rack</b>"]
             direction TB
             Modem("<b>Hitron Modem</b><br><i>(DOCSIS 3.1)</i>"):::twoFiveGb
+            RouterMain("<b>ASUS RT-BE92U</b><br><i>(Main Router)</i>"):::tenGb
             SwitchAgg("<b>Ugreen Switch</b><br><i>(UM106X)</i>"):::tenGb
             Zima("<b>ZimaOS NAS</b><br><i>(Storage Server)</i>"):::twoFiveGb
             VM("<b>Debian Server VM</b><br><i>(Primary DNS)</i>"):::multi
         end
-        RouterMain("<b>ASUS RT-BE92U</b><br><i>(Main Router)</i>"):::tenGb
         SwitchTV("<b>LiteWave Switch</b><br><i>(LS1005G)</i>"):::gigabit
         GoogleTV("Google TV Streamer"):::gigabit
         SmartTV("TCL Smart TV"):::gigabit
@@ -46,6 +47,7 @@ graph TD
             SwitchOffice("<b>TP-Link Switch</b><br><i>(SG105)</i>"):::gigabit
             Pi4("<b>Raspberry Pi 4B</b><br><i>(Server / DNS)</i>"):::gigabit
             PiZero("<b>Pi Zero 2 W</b><br><i>(Caddy Reverse Proxy)</i>"):::wifi
+            BrLaser("<b>Brother HL-L2300D</b><br><i>(Laser Printer)</i>"):::usb
         end
         DesktopBen("Ben's Desktop"):::gigabit
         DesktopRob("Rob's Desktop"):::gigabit
@@ -97,6 +99,7 @@ graph TD
     SwitchTV -- "<b>Port 2</b> <i>(Black Cat6a)</i>" --> GoogleTV
     SwitchTV -- "<b>Port 3</b> <i>(Black Cat5e)</i>" --> SmartTV
     SwitchTV -- "<b>Port 4</b> <i>(Black Cat5e)</i>" --> Nintendo
+    BrLaser -. "USB" .- Pi4
 
     %% --- Office --- %%
     SwitchOffice -- "<b>Port 1</b> <i>(White Cat5e)</i>" --> DesktopBen

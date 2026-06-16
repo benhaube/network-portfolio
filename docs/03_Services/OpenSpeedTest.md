@@ -36,7 +36,7 @@ hide:
 
 + <https://openspeedtest.internal>
 + <http://storage-server.internal:3004>
-+ http://storage-server-2.internal:3004>
++ <http://storage-server-2.internal:3004>
 
 #### :material-key-chain: Credentials: 
 
@@ -44,9 +44,9 @@ hide:
 
 ## :symbols-deployed-code-update: Deployment Details
 
-| Host Device                                                         | Method                                | Container Name  | Image                         | 
-| :------------------------------------------------------------------ | :------------------------------------ | :-------------- | :---------------------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `openspeedtest` | `openspeedtest/latest:v2.0.6` |
+| Host Device                                                         | Method                                | Container Name  | Image                  |
+| :------------------------------------------------------------------ | :------------------------------------ | :-------------- | :--------------------- |
+| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `openspeedtest` | `openspeedtest/latest` |
 
 ### :material-cog: Configuration
 

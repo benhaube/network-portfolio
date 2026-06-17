@@ -64,6 +64,52 @@
     margin: 0;
 }
 
+/* --- Customize buttons --- */
+
+.md-typeset .md-button {
+  border-radius: 2rem;
+  border-color: transparent;
+  color: var(--md-typeset-color);
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+  padding: .3em 0.7em;
+  transition: color 250ms, background-color 250ms, border-color 250ms
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: transparent;
+  color: var(--md-primary-bg-color)
+}
+
+.md-typeset .md-button:focus,
+.md-typeset .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  border-color: transparent;
+  color: var(--md-accent-bg-color)
+}
+
+/* --- Customize search box --- */
+
+.md-search__form {
+  border-radius:2rem;
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__form {
+  border-radius:0.5rem 0.5rem 0 0;
+}
+
+[dir=ltr] .md-search__output {
+  border-bottom-left-radius:0.5rem;
+}
+[dir=ltr] .md-search__output,
+[dir=rtl] .md-search__output {
+  border-bottom-right-radius:0.5rem;
+}
+[dir=rtl] .md-search__output {
+  border-bottom-left-radius:.5rem
+}
+
 /* --- Responsive design for '.md-button' --- */
 
 @media screen and (max-width: 719px) {
@@ -107,7 +153,7 @@
 .md-top:hover {
     
     box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
-    transition: box-shadow 0.2s, ease-in-out;
+    transition: box-shadow 125ms, ease-in-out;
 }
 
 /* --- Colors for Mermaid.js --- */

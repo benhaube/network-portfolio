@@ -28,6 +28,49 @@
     padding-right: 6em;
 }
 
+/* --- Code block border radius --- */
+
+.highlight span.filename {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.highlighttable .linenos {
+  border-bottom-left-radius: 0.4rem;
+	border-top-left-radius: 0.4rem;
+}
+
+.md-typeset .highlighttable > tbody > tr > .code > div > pre > code {
+	border-bottom-right-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+}
+
+.md-code__nav {
+  border-radius: 0.4rem;
+}
+
+/* --- Panzoom customizations --- */
+
+.panzoom-box {
+    border-radius: 0.4rem !important;
+}
+
+.panzoom-info-box-bottom {
+    background-color: var(--md-code-bg-color) !important;
+}
+
+.panzoom-nav {
+    border-radius: 0.4rem !important;
+    gap: 0.2rem !important;
+    padding: 0.2rem !important;
+}
+
+/* --- Table border radius --- */
+
+.md-typeset table:not([class]) {
+	border-radius: 0.4rem;
+}
+
 /* --- Customize Material Theme Colors --- */
 
 /* Light theme (default) */
@@ -144,17 +187,18 @@
 
 .md-tags .md-tag:hover {
 
-    box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
+    box-shadow: var(--md-shadow-z2);
     transition: box-shadow 125ms ease-in-out;
 }
 
 /* --- Back-to-top button styling --- */
-
+/*
 .md-top:hover {
     
     box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
     transition: box-shadow 125ms, ease-in-out;
 }
+*/
 
 /* --- Colors for Mermaid.js --- */
 
@@ -245,6 +289,24 @@
 }
 
 /* --- Custom Admonitions --- */
+
+/* Admonition border radius */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius:.4rem;
+}
+
+[dir=ltr] .md-typeset .admonition-title,
+[dir=ltr] .md-typeset summary,
+[dir=rtl] .md-typeset .admonition-title,
+[dir=rtl] .md-typeset summary {
+  border-top-right-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+}
+
+.md-typeset details:not([open]) {
+	border-radius: 0.4rem;
+}
 
 /* Admonition: `Links` */
 :root {

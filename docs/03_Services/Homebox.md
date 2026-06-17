@@ -56,3 +56,11 @@ hide:
 ```
 
 1. Please consider allowing analytics to help us improve Homebox *(basic computer information, no personal data)*.
+2.     Use a strong random string for the pepper in production, it will be used to hash API keys and make them more secure. 
+
+       To generate a random string use the following command:
+       
+      
+       ```bash linenums="1"
+       openssl rand -base64 48
+       ```

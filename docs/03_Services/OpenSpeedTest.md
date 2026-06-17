@@ -53,3 +53,6 @@ hide:
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "openspeedtest.yml"
 ```
+
+1. Use port `3000` for HTTP
+2. Use port `3001` for HTTPS

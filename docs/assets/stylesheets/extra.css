@@ -55,11 +55,19 @@
   border-radius: 0.4rem;
 }
 
-/* --- Image border radius */
+/* --- JPG and PNG Image border radius */
 
-img {
-	border-style: none;
-	border-radius: 0.4rem;
+img[src$=".png" i],
+img[src$=".png#only-light" i],
+img[src$=".png#only-dark" i],
+img[src$=".jpg" i],
+img[src$=".jpg#only-light" i],
+img[src$=".jpg#only-dark" i],
+img[src$=".jpeg" i],
+img[src$=".jpeg#only-light" i],
+img[src$=".jpeg#only-dark" i] {
+  border-style: none;
+  border-radius: 0.4rem;
 }
 
 /* --- Panzoom customizations --- */
@@ -137,7 +145,7 @@ img {
   background-color: var(--md-default-fg-color--lightest);
   font-weight: 600;
   padding: .3em 0.7em;
-  transition: color 250ms, background-color 250ms, border-color 250ms
+  transition: color 250ms, background-color 250ms, border-color 250ms !important;
 }
 
 .md-typeset .md-button--primary {
@@ -151,6 +159,24 @@ img {
   background-color: var(--md-accent-fg-color);
   border-color: transparent;
   color: var(--md-accent-bg-color)
+}
+
+[dir=ltr] .md-content__button {
+  margin-left:.25rem;
+}
+[dir=rtl] .md-content__button {
+  margin-right:.25rem
+}
+.md-content__button {
+  margin:.4rem 0;
+  background: var(--md-default-fg-color--lightest);
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+}
+.md-content__button:hover {
+  background: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color) !important;
+  transition: color 250ms, background-color 250ms !important;
 }
 
 /* --- Customize search box --- */

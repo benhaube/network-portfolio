@@ -49,10 +49,12 @@
   border-radius: 0.4rem;
 }
 
-/* --- Tooltip border radius --- */
+/* --- Tooltip customization --- */
 
 .md-tooltip {
   border-radius: 0.4rem;
+  max-width: 20rem;
+  width: fit-content;
 }
 
 /* --- JPG and PNG Image border radius */
@@ -198,6 +200,10 @@ img[src$=".jpeg#only-dark" i] {
 }
 [dir=rtl] .md-search__output {
   border-bottom-left-radius:.5rem
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__input:valid~.md-search__options>.md-icon:hover {
+  color: var(--md-accent-fg-color)
 }
 
 /* --- Responsive design for '.md-button' --- */

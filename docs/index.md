@@ -8,10 +8,10 @@ hide:
 ![Material Design file-document-multiple customized icon](assets/icons/file-document-multiple-color.svg){ width=250 }&nbsp;![Material Design format-list-bulleted customized icon](assets/icons/format-list-bulleted.svg){ width=50 } 
 
 # Network Documentation & Portfolio
-[About Me :material-account-question:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me :symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
+[About Me&ensp;:material-account-question:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :material-lan: Infrastructure
+## :material-lan:&ensp;Infrastructure
 
 [:material-restore-alert:&ensp;Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
@@ -32,13 +32,13 @@ hide:
 :    A *Mermaid.js* flowchart focusing on physical devices and their connections.
 
 ---
-## :symbols-devices: Hardware
+## :symbols-devices:&ensp;Hardware
 
 !!! links inline end "Extra Links"
 
-    [More Kacey Info :brands-creality:](02_Hardware/Kacey_Info.md){ .md-button }
+    [More Kacey Info&ensp;:brands-creality:](02_Hardware/Kacey_Info.md){ .md-button }
 
-    [Hardware Tags :material-tag:](02_Hardware/tags.md){ .md-button }
+    [Hardware Tags&ensp;:material-tag:](02_Hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
@@ -93,11 +93,11 @@ hide:
 :    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./02_Hardware/Ugreen_Switch.md).
 
 ---
-## :material-web: Services
+## :material-web:&ensp;Services
 
 !!! links inline end "Extra Links"
 
-    [Services Tags :material-tag:](03_Services/tags.md){ .md-button }
+    [Services Tags&ensp;:material-tag:](03_Services/tags.md){ .md-button }
 
 [:services-beszel:&ensp;Beszel](./03_Services/Beszel_Hub.md)
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts.
@@ -214,7 +214,7 @@ hide:
 :    High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
 ---
-## :material-swap-horizontal-bold: Change Management
+## :material-swap-horizontal-bold:&ensp;Change Management
 
 [:brands-raspberry-pi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
 :    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
@@ -223,12 +223,12 @@ hide:
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 
 
 ---
-## :material-printer-3d-nozzle: 3D Printing
+## :material-printer-3d-nozzle:&ensp;3D Printing
 
 !!! links inline end "Check out my 3D Models!"
     All of my 3D models are published to Printables, and shared with the GPLv3 open-source licence. Every model has STEP and FreeCAD files included for easy editing.
 
-    [Printables :brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
+    [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
 [:material-cog:&ensp;Manual Bed Leveling Mod](./3D_Printing/K1_Bed_Level_Knobs_Tutorial.md) 
 :    Installing a bed leveling modification on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md). 
@@ -240,18 +240,18 @@ hide:
 :    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md).
 
 ---
-## :material-linux: Linux Tutorials
+## :material-linux:&ensp;Linux Tutorials
 
 !!! links inline end "Extra Links"
     **My Favorite Bash Aliases:**
     :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
 
-        [My Bash Aliases :material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
+        [My Bash Aliases&ensp;:material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
 
     **Update PCRs Script:**
     :    In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
 
-        [Update PCRs :simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
+        [Update PCRs&ensp;:simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
 [:material-update:&ensp;Automatic Updates for Debian Servers](./Linux_Tutorials/Configure_Unattended-Upgrades.md)
 :    How to install and configure the `unattended-upgrades` package on your Debian server to enable automatic updates. This tutorial will help you configure Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.

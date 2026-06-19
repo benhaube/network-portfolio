@@ -23,29 +23,29 @@ hide:
 # ZimaOS NAS
 *Rack-Mount ZimaBoard 2*
 
-[IceWhale Community :services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs :services-zimaos:](https://www.zimaspace.com/docs/zimaos/){ .md-button .md-button--primary }
+[IceWhale Community&ensp;:services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs&ensp;:services-zimaos:](https://www.zimaspace.com/docs/zimaos/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline:&ensp;Device Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. It has an *x86-64* Intel N150 quad-core CPU *(3.6 GHz)* and 16 GB of LPDDR5 *(6400 MHz)* RAM, and it is located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname(s)
 
 + `ZimaOS-NAS`
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location 
 
 + Living-Room
 + Mini-Rack
 
-#### :material-memory: OS / Firmware: 
+#### :material-memory:&ensp;OS / Firmware
 
 + [:services-zimaos:&nbsp;ZimaOS v1.6.1](https://www.zimaspace.com/zimaos) *(Immutable)*
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)" 
@@ -53,13 +53,13 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)"   
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 
-## :symbols-monitor-heart: Core Specs
+## :symbols-monitor-heart:&ensp;Core Specs
 
 | CPU                                 | Cores / Threads | CPU Freq. | RAM                       | GPU                              | GPU Freq. | VRAM     |
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 *(6400 MHz)* | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | *Shared* |
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Connected To                                                                       |
 | :-------: | :------------- | :------------------ | :--------------------------------------------------------------------------------- |
@@ -71,35 +71,35 @@ hide:
 |  `eth0`   | :material-security:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 |  `eth1`   | :material-security:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage: Storage & Mounts
+## :symbols-storage:&ensp;Storage & Mounts
 
-#### :material-chip: Boot:
+#### :material-chip:&ensp;Boot
 
 | Mount Point | Drive Type | Drive Capacity | Device Path    | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------- | :---------- | :--------- |
 | `/`         | eMMC       | 64 GB          | `/dev/mmcblk0` | `ext4`      | -          |
 
-#### :material-harddisk: Data:
+#### :material-harddisk:&ensp;Data
 
 | Mount Point            | Drive Type         | Drive Capacity | Device Path    | File System | Encryption |
 | :--------------------- | :----------------- | :------------- | :------------- | :---------- | :--------- |
 | `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB           | `/dev/md0`     | `btrfs`     | -          |
 | `/media/nvme0n1p1`     | NVMe SSD           | 250 GB         | `/dev/nvme0n1` | `ext4`      | -          |
 
-## :material-web: Services / Docker Containers
+## :material-web:&ensp;Services / Docker Containers
 
-#### :material-folder-network: File Sharing:
+#### :material-folder-network:&ensp;File Sharing
 
 + SMB  *(with Multichannel enabled)*
 + NFS *(for Linux PCs)*
 
-#### :symbols-stacks: Virtualization:
+#### :symbols-stacks:&ensp;Virtualization
 
 |  Status  | OS                                                                             | Virtual NIC | Virtual Disk Image | Role / Notes                                                                         |
 | :------: | :----------------------------------------------------------------------------- | :---------- | :----------------- | :----------------------------------------------------------------------------------- |
 | *Active* | [:material-debian:&nbsp;Debian *(trixie)*](../02_Hardware/Debian_Server_VM.md) | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
 
-#### :material-linux: Native Linux:
+#### :material-linux:&ensp;Native Linux
 
 |  Status  | Service                                                      | Port(s) | Role / Notes                                                                                   |
 | :------: | :----------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
@@ -107,7 +107,7 @@ hide:
 | *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md) |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 | *Active* | [:material-folder-network:&nbsp;SMB](../03_Services/SMB.md)  |  `445`  | Remote file system access.                                                                     |
 
-#### :material-docker: Docker:
+#### :material-docker:&ensp;Docker
 
 |   Status   | Service                                                                                 |        Port(s)         | Role / Notes                                                                                                                                        |
 | :--------: | :-------------------------------------------------------------------------------------- | :--------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -133,7 +133,7 @@ hide:
 |  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                       |
 
 ---
-## :material-tools: Maintenance & Notes
+## :material-tools:&ensp;Maintenance & Notes
 
 !!! zima inline end "ZimaOS"
 
@@ -172,7 +172,7 @@ hide:
     --- 
     See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 
 
-#### :material-login: Fastfetch Login Preset:
+#### :material-login:&ensp;Fastfetch Login Preset
 
 ##### Install
 
@@ -211,7 +211,7 @@ hide:
 --8<-- "fastfetch-login-storage-server.jsonc"
 ```
 
-#### :material-console-line: Starship Terminal Prompt:
+#### :material-console-line:&ensp;Starship Terminal Prompt
 
 --8<-- "starship-note.md"
 
@@ -242,7 +242,7 @@ hide:
 --8<-- "starship-zimaos.toml"
 ```
 
-#### :material-progress-clock: Zima Cron:
+#### :material-progress-clock:&ensp;Zima Cron
 
 ##### About
 
@@ -275,7 +275,7 @@ hide:
 
     Open it from the [ZimaOS dashboard](http://storage-server.internal) *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
 
-#### :services-zfw-inverted: Zima Firewall:
+#### :services-zfw-inverted:&ensp;Zima Firewall
 
 ##### About
 

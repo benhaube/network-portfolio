@@ -1,0 +1,24 @@
+/* --- Customize search box --- */
+
+.md-search__form {
+  border-radius:2rem;
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__form {
+  border-radius:0.5rem 0.5rem 0 0;
+}
+
+[dir=ltr] .md-search__output {
+  border-bottom-left-radius:0.5rem;
+}
+[dir=ltr] .md-search__output,
+[dir=rtl] .md-search__output {
+  border-bottom-right-radius:0.5rem;
+}
+[dir=rtl] .md-search__output {
+  border-bottom-left-radius:.5rem
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__input:valid~.md-search__options>.md-icon:hover {
+  color: var(--md-accent-fg-color)
+}

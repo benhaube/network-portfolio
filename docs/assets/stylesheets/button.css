@@ -1,0 +1,59 @@
+/* --- Customize buttons --- */
+
+.md-typeset .md-button {
+  border-radius: 2rem;
+  border-color: transparent;
+  color: var(--md-typeset-color);
+  background-color: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+  padding: .3em 0.7em;
+  transition: color 250ms, background-color 250ms, border-color 250ms !important;
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: transparent;
+  color: var(--md-primary-bg-color)
+}
+
+.md-typeset .md-button:focus,
+.md-typeset .md-button:hover {
+  background-color: var(--md-accent-fg-color);
+  border-color: transparent;
+  color: var(--md-accent-bg-color)
+}
+
+[dir=ltr] .md-content__button {
+  margin-left:.25rem;
+}
+[dir=rtl] .md-content__button {
+  margin-right:.25rem
+}
+.md-content__button {
+  margin:.4rem 0;
+  background: var(--md-default-fg-color--lightest);
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+}
+.md-content__button:hover {
+  background: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color) !important;
+  transition: color 250ms, background-color 250ms !important;
+}
+
+/* --- Back-to-top button styling --- */
+/*
+.md-top:hover {
+    
+    box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
+    transition: box-shadow 125ms, ease-in-out;
+}
+*/
+
+/* --- Tag button styling --- */
+
+.md-tags .md-tag:hover {
+
+    box-shadow: var(--md-shadow-z2);
+    transition: box-shadow 125ms ease-in-out;
+}

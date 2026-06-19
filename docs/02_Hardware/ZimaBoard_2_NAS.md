@@ -275,7 +275,7 @@ hide:
 
     Open it from the [ZimaOS dashboard](http://storage-server.internal) *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
 
-#### :material-wall-fire: Zima Firewall:
+#### :services-zfw-inverted: Zima Firewall:
 
 ##### About
 

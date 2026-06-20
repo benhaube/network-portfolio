@@ -5,7 +5,7 @@ subtitle: Increase Productivity
 hide:
   - toc
 ---
-![material/console icon](../assets/icons/console.svg){ width=200 }
+![Material Design Console icon](../assets/icons/console.svg){ width=200 }
 
 # Defining Bash Aliases
 *Increase Productivity*
@@ -18,7 +18,7 @@ hide:
 [:material-arrow-down-thin:&thinsp;Jump to **Fedora / RHEL** Instructions&thinsp;:material-arrow-down-thin:](#fedora-rhel-based-distributions)
 
 ---
-## :material-debian: Debian / Ubuntu Based Distributions:
+## :material-debian:&ensp;Debian / Ubuntu Based Distributions
 
 1. Create a backup of your `.bashrc` file contained in your home (`~/`) directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize. 
 
@@ -40,8 +40,8 @@ hide:
         nano ~/.bashrc
         ```
         
-        + ++ctrl+o++ to save the changes
-        + ++ctrl+x++ to exit 
+        + ++ctrl+o++&ensp;to save
+        + ++ctrl+x++&ensp;to exit 
 
 3. Create a new file in your home (`~/`) directory called `.bash_aliases`
 
@@ -55,7 +55,7 @@ hide:
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
     + If your aliases were not loaded properly, check the code you entered into the `~/.bashrc` file for errors. 
 
-## :material-fedora: Fedora / RHEL Based Distributions:
+## :material-fedora:&ensp;Fedora / RHEL Based Distributions
 
 1. Create a backup of your `.bashrc` file contained in your home *(`~/`)* directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize. 
 
@@ -77,8 +77,8 @@ hide:
         nano ~/.bashrc
         ```
 
-        + ++ctrl+o++ to save the changes
-        + ++ctrl+x++ to exit 
+        + ++ctrl+o++&ensp;to save
+        + ++ctrl+x++&ensp;to exit 
 
     !!! note
     
@@ -115,4 +115,4 @@ hide:
     **Recommended Aliases:**
     :     You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
  
-        [My Aliases :material-console:](My_Terminal_Aliases.md){ .md-button }
+        [My Aliases&ensp;:material-console:](My_Terminal_Aliases.md){ .md-button }

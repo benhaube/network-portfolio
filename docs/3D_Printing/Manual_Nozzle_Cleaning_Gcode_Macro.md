@@ -10,7 +10,7 @@ hide:
 # Nozzle Cleaning Macro
 *Manually Clean Your Nozzle*
 
-[Creality^&copy;^ K1C :brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }
+[Creality K1C&ensp;:brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }
 
 !!! info
 
@@ -27,24 +27,28 @@ hide:
 
 ---
 
-## :material-tools: Installation & Klipper Integration
+## :material-tools:&ensp;Installation & Klipper Integration
 
 1. [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
-2. [ ] Open `gcode_macro.cfg` *(or your dedicated macro configuration file)*.
-3. [ ] Paste both `[gcode_macro]` blocks into the file.
+2. [ ] Upload the newly edited `manual-nozzle-clean-v2.cfg` into this directory.
+3. [ ] Open `printer.cfg` and add the following line: `[include manual-nozzle-clean-v2.cfg]`
 4. [ ] Save the configuration and restart Klipper to apply the changes.
 
-## :material-toggle-switch-outline: Trigger / Usage
+    ```cfg title="<code>printer.cfg</code>" linenums="1" hl_lines="31"
+    --8<-- "printer.cfg::31"
+    ```
+
+## :material-toggle-switch-outline:&ensp;Trigger / Usage
 
 !!! note inline end "Custom Temperature" 
   
     Useful if you are switching between PLA and higher-temp materials like ABS / ASA.
 
-#### Default Cleaning:
+#### Default Cleaning
   + [ ] Trigger `CLEAN_NOZZLE` from your Fluidd dashboard or Guppy Screen macros list. 
   + [ ] The nozzle will heat to the default temperature *(**150&deg;C**)*.
 
-#### Custom Temperature Cleaning:
+#### Custom Temperature Cleaning
   + [ ] You can specify a different temperature through the console by running `CLEAN_NOZZLE TEMP=200`
 
 !!! note inline end "Completion"
@@ -53,7 +57,7 @@ hide:
   
     The `DONE_CLEANING_COOL` macro turns off the heater, parks the toolhead safely out of the way, and cools the nozzle.
 
-#### Completion: 
+#### Completion 
   + [ ] Wait for the [Fluidd](../03_Services/Fluidd.md) UI prompt to appear. 
   + [ ] Scrub the nozzle with your silicone brush. 
   + [ ] Click the **"Park"** button to automatically trigger the `DONE_CLEANING` macro. 
@@ -72,8 +76,8 @@ hide:
 
 ---
 
-## :material-file-code-outline: G-code Macro
+## :material-file-code-outline:&ensp;G-code Macro
 
-```cfg title="<code>manual-nozzle-clean.cfg</code>" linenums="1"
+```cfg title="<code>manual-nozzle-clean-v2.cfg</code>" linenums="1"
 --8<-- "manual-nozzle-clean.cfg"
 ```

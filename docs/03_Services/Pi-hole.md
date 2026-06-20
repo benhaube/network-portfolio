@@ -20,39 +20,39 @@ hide:
 # Pi-hole
 *A DNS Sinkhole*
 
-[GitHub :simple-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description:  
+#### :symbols-description:&ensp;Description:  
 
 :    A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + Web: `80`, `443`
 + DNS: `53`
 
-#### :material-link-variant: URL / Access:  
+#### :material-link-variant:&ensp;URL / Access  
 
 + ~~[[https://pi-server.internal/admin/login]]~~
 + ~~[[https://pi-hole.internal/admin/login]]~~
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pihole Admin @ pi-zero"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pihole Admin @ pi-server"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                          | Method                             | Container Name | Image |
 | :--------------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
 !!! tip
 
@@ -64,13 +64,13 @@ hide:
     **Synchronize Pi-hole Settings:**
     :    To synchronize the settings from the primary Pi-hole instance to a second instance use [Nebula-Sync](./Nebula-Sync.md). 
 
-#### :symbols-install-desktop: Install:
+#### :symbols-install-desktop:&ensp;Install
 
 ```bash linenums="1"
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-#### :material-file-cog: Pi-hole Config file:
+#### :material-file-cog:&ensp;Pi-hole Config File
 
 ```toml title="<code>/etc/pihole/pihole.toml</code>" linenums="1"
 --8<-- "pihole.toml"

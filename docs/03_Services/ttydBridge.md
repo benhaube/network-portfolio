@@ -18,35 +18,35 @@ hide:
 # ttydBridge
 *The Terminal on the Web*
 
-[GitHub :simple-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 :    A DockerApp makes it easy to use the host terminal on the Web.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `2222`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <http://storage-server.internal:2222>
 + <http://storage-server-2.internal:2222>
 
-#### :material-key-chain: Credentials:  
+#### :material-key-chain:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                         | Method                                | Container Name | Image                      |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `ttydbridge`   | `cp0204/ttydbridge:v0.0.3` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "ttydBridge.yml"

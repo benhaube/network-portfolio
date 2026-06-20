@@ -19,36 +19,36 @@ hide:
 # IT-Tools
 *Handy Tools for Devs*
 
-[GitHub :simple-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    Handy tools for network administrators and developers.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `8080`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + N/A
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                     | Method                                | Container Name     | Image                             |
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :----------------- | :-------------------------------- |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
 |                                                                                                 | :material-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "it-tools.yml"

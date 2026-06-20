@@ -1,18 +1,18 @@
 !!! config inline "Critical Configurations"
 
-    **:material-web-clock: Chrony:**
+    **:material-web-clock:&ensp;Chrony:**
 
     :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with [Chrony](../03_Services/Chrony.md). The Chrony service is hosted on the main router, [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md).
    
-    **:material-text-long: Logs:**
+    **:material-text-long:&ensp;Logs:**
 
     :    Logs are configured with `log2ram` to reduce wear on the MicroSD card.
  
-    **:material-email-alert: Email Notifications:**
+    **:symbols-mail-asterisk:&ensp;Email Notifications:**
 
     :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation.
 
-#### :material-update: Update Process:
+#### :material-update:&ensp;Update Process
 
 + The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically.
 + Manual OS updates can be applied with the `apt` package manager. *(Standard Debian)*
@@ -23,7 +23,7 @@
 
 + Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_Services/Dockge.md)
 
-#### :material-cloud-upload-outline: Backup Policy:
+#### :material-cloud-upload-outline:&ensp;Backup Policy
 
 + An image of the MicroSD card is stored on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
     + Path: `/media/Quick-Storage/Backup/<hostname>`
@@ -33,7 +33,7 @@
 
 <br>
 
-#### :material-login: Fastfetch Login Preset:
+#### :material-login:&ensp;Fastfetch Login Preset
 
 Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
 
@@ -62,7 +62,7 @@ Prints a customized Fastfetch preset with relevant information every time a new 
 --8<-- "fastfetch-login-pi-server.jsonc"
 ```
 
-#### :material-console-line: Starship Terminal Prompt:
+#### :material-console-line:&ensp;Starship Terminal Prompt
 
 --8<-- "starship-note.md"
 

@@ -22,41 +22,41 @@ hide:
 # Raspberry Pi 4B Server
 *Secondary DNS Server*
 
-[Raspberry Pi Docs :brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline:&ensp;Device Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    The secondary DNS server in the [Technitium](../03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname
 
 + `pi-server` *(VLAN50 / `eth0`)*
 + `home-assistant` *(VLAN53 / `wlan0`)*
 
-#### :material-map-marker-outline: Location:  
+#### :material-map-marker-outline:&ensp;Location  
 
 + Office
 + Printer-Cart
 
-#### :material-memory: OS / Firmware: 
+#### :material-memory:&ensp;OS / Firmware
 
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"pi-server (admin)"
 
-## :symbols-monitor-heart: Core Specs
+## :symbols-monitor-heart:&ensp;Core Specs
 
 | CPU                                   | Cores / Threads        | CPU Freq. | RAM                       | GPU             | GPU Freq. | VRAM     |
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
 | :simple-arm:&nbsp;BCM2711 *(Armv8-A)* | 4C / 4T *(Cortex-A72)* | 1.5 GHz   | 4 GB LPDDR4 *(2400 MT/s)* | VideoCore VI 3D | 500 MHz   | *Shared* |
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Connected To                                                                                 |
 | :-------: | :------------- | :------------------ | :------------------------------------------------------------------------------------------- |
@@ -68,9 +68,9 @@ hide:
 |  `eth0`   |     :material-security:&nbsp;VLAN50     | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
 |  `wlan0`  | :symbols-shield-house-fill:&nbsp;VLAN53 | `N/A`                | `127.0.0.1` | `192.168.53.1` |
 
-## :symbols-storage: Storage & Mounts
+## :symbols-storage:&ensp;Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s):
+#### :material-harddisk:&ensp;Internal Drive(s)
 
 | Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption |
 | :--------------- | :--------- | :------------- | :--------------- | :---------- | :--------- |
@@ -78,15 +78,15 @@ hide:
 | `/boot/firmware` | MicroSD    | 512 MB         | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 128 MB         | `log2ram`        | `tmpfs`     | -          |
 
-#### :material-usb: External / Attached:
+#### :material-usb:&ensp;External / Attached
 
 | Mount Point      | Drive Type      | Drive Capacity | Device Path | File System | Encryption |
 | :--------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/mnt/usb-drive` | USB Flash Drive | 28.7 GB        | `/dev/sda1` | `ext4`      | -          |
 
-## :material-web: Services / Docker Containers
+## :material-web:&ensp;Services / Docker Containers
 
-#### :material-linux: Native Linux:
+#### :material-linux:&ensp;Native Linux
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                    |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :---------------------------------------------------------------------------------------------- |
@@ -95,7 +95,7 @@ hide:
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                        |
 | *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                   |
 
-#### :material-docker: Docker:
+#### :material-docker:&ensp;Docker
 
 |   Status   | Service                                                                        |       Port(s)        | Role / Notes                                                                                                |
 | :--------: | :----------------------------------------------------------------------------- | :------------------: | :---------------------------------------------------------------------------------------------------------- |
@@ -112,6 +112,6 @@ hide:
 |  *Active*  | [:services-uptime-kuma:&nbsp;Uptime Kuma](../03_Services/Uptime_Kuma.md)       |        `3001`        | A fancy self-hosted monitoring tool.                                                                        |
  
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 --8<-- "maintenance-raspi.md"

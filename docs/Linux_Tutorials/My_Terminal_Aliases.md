@@ -15,7 +15,7 @@ hide:
     **Defining Bash Aliases:**
     :    Here I have assembled a list of aliases that I find useful and include on all of my GNU / Linux PCs and servers. See the guide linked below for instructions on how to use these aliases on your own distribution.
  
-        [Defining Bash Aliases :material-console:](Defining_Terminal_Aliases.md){ .md-button }
+        [Defining Bash Aliases&ensp;:material-console:](Defining_Terminal_Aliases.md){ .md-button }
 
 ---
 

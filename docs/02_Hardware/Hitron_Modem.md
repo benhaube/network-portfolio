@@ -17,29 +17,29 @@ hide:
 # Hitron Modem
 *DOCSIS 3.1 Cable Modem*
 
-[Xfinity Account :brands-xfinity:](https://login.xfinity.com/login){ .md-button .md-button--primary }
+[Xfinity Account&ensp;:brands-xfinity:](https://login.xfinity.com/login){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline&ensp;Device Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location
 
 + Living-Room
 + Mini-Rack
 
-#### :material-memory: OS / Firmware: 
+#### :material-memory:&ensp;OS / Firmware
 
 + Hitron FW version: `7.3.5.3.2b2`
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + N/A
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
 | Interface | IP Address      | MAC Address         | Connected To                                                                     |
 | :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------- |
@@ -47,22 +47,22 @@ hide:
 |   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                                |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 !!! config inline "Critical Configurations"
 
-    :material-web-off:&nbsp;**WAN Down:**
+    :material-web-off:&ensp;**WAN Down:**
  
     * If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
    
-    :material-application-cog-outline:&nbsp;**Access WebUI:**
+    :material-application-cog-outline:&ensp;**Access WebUI:**
  
     * To access the modem's Web UI enter <https://192.168.100.1> or <https://hitron-modem.internal>
 
-#### :material-update: Update Process: 
+#### :material-update:&ensp;Update Process 
 
 + N/A
 
-#### :material-cloud-upload-outline: Backup Policy: 
+#### :material-cloud-upload-outline:&ensp;Backup Policy 
 
 + N/A

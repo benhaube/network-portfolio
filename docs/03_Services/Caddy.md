@@ -22,37 +22,37 @@ hide:
 # Caddy
 *Reverse-Proxy Server*
 
-[GitHub :simple-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description:  
+#### :symbols-description:&ensp;Description
 
 :    Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `80`
 + `443`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <https://pi-zero.internal>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + N/A
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                      | Method                                         | Container Name | Image |
 | :----------------------------------------------------------------------------------------------- | :--------------------------------------------- | :------------- | :---- |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
-#### :symbols-install-desktop: Install:
+#### :symbols-install-desktop:&ensp;Install
 
 1. Add the official Caddy repository. 
 
@@ -83,7 +83,7 @@ hide:
     sudo systemctl reload caddy
     ```
 
-#### :material-file-cog: The 'Caddyfile':
+#### :material-file-cog:&ensp;The 'Caddyfile'
 
 ```nginx title="<code>/etc/caddy/Caddyfile</code>" linenums="1"
 --8<-- "Caddyfile"

@@ -19,20 +19,20 @@ hide:
 # SSH
 *Secure Shell*
 
-[Documentation :material-file-document-multiple:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
+[Documentation&ensp;:material-file-document-multiple:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `22`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access 
 
 + :material-router-wireless:&nbsp;ASUS RT-BE92U
     + `192.168.50.1:22` 
@@ -55,7 +55,7 @@ hide:
     + `192.168.50.153:22` 
     + `kacey.internal:22` 
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE92U (Admin)"
@@ -65,7 +65,7 @@ hide:
     + SSH keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
     + SSH keys&ensp;:material-arrow-right-thin:&ensp;"Kacey (root)"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                      | Method                             | Container Name | Image |
 | :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
@@ -76,16 +76,16 @@ hide:
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)         | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
-#### :material-server-outline: Servers:
+#### :material-server-outline:&ensp;Servers
 
 !!! tip 
 
     **New Session Notification:**
     :    The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
 
-        [SSH Login Notification :material-message-alert:](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md){ .md-button }
+        [SSH Login Notification&ensp;:symbols-feedback:](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md){ .md-button }
 
 ##### SSH Config File
 
@@ -164,7 +164,7 @@ hide:
 
 --8<-- "zima-ssh.md"
 
-#### :symbols-devices: Clients:
+#### :symbols-devices:&ensp;Clients
 
 ##### Bitwarden SSH Key Agent
 

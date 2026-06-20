@@ -24,7 +24,7 @@ hide:
 
 ---
 
-## :material-monitor-arrow-down-variant: Install the Packages
+## :material-monitor-arrow-down-variant:&ensp;Install the Packages
 
 !!! note inline end
 
@@ -43,7 +43,7 @@ hide:
     sudo apt install unattended-upgrades
     ```
 
-### Install Optional Packages: 
+### Install Optional Packages 
 
 There are two optional packages you can install to extend the functionality of `unattended-upgrades`.
 
@@ -67,7 +67,7 @@ There are two optional packages you can install to extend the functionality of `
         sudo apt install powermgmt-base -y
         ```
 
-## :material-check-decagram-outline: Verify the Installation
+## :symbols-release-alert:&ensp;Verify the Installation
 
 1. Run a 'dry-run' test to confirm the package is working and to see which origins are allowed:
 
@@ -91,7 +91,7 @@ There are two optional packages you can install to extend the functionality of `
         **What to Look For:**
         :    The command output will show the codename for your version of Debian *(bullseye, bookworm, or trixie)*. and depending on what needs to be upgraded you may see different packages. The important things to look for are "Allowed origins" matching your release name, and "All upgrades installed." 
 
-## :material-timer-outline: Manage the Systemd Timers
+## :material-timer-outline:&ensp;Manage the Systemd Timers
 
 Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd timers to schedule the automatic updates. There are two timers that work together to handle updating the system's packages.
 
@@ -107,7 +107,7 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
     + Installs the previously downloaded security updates via `unattended-upgrades`.
     + Has a built-in, randomized delay of up to 60-minutes.
 
-### Check the Timer Status:
+### Check the Timer Status
 
 1. Check the status of `apt-daily.timer`:
 
@@ -162,7 +162,7 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
     Wed 2026-05-20 06:13:41 EDT   19h Tue 2026-05-19 06:25:12 EDT 4h 46min ago apt-daily-upgrade.timer apt-daily-upgrade.service
     ```
 
-## :material-linux: Manage the Systemd Service
+## :material-linux:&ensp;Manage the Systemd Service
 
 The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the upgrades are complete before the system powers off. Below is a table containing common Systemd service management commands.
 
@@ -175,7 +175,7 @@ The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the
 | Enable on boot       | `sudo systemctl enable unattended-upgrades`  |
 | Restart the service  | `sudo systemctl restart unattended-upgrades` |
 
-## :material-console: CLI Options
+## :material-console:&ensp;CLI Options
 
 Below is a table containing the options included with the `unattended-upgrade` command. You can also see the options by checking the [manual page](https://manpages.debian.org/trixie/unattended-upgrades/unattended-upgrade.8.en.html) using the command: `#!bash man unattended-upgrade`
 
@@ -194,7 +194,7 @@ Below is a table containing the options included with the `unattended-upgrade` c
 | `--minimal-upgrade-steps`    | Upgrade in minimal steps (and allow interrupting with `SIGTERM`). *(default)* |
 | `--no-minimal-upgrade-steps` | Upgrade all packages together instead of in smaller sets.                     |
 
-## :material-cogs: Configure Unattended-Upgrades
+## :material-cogs:&ensp;Configure Unattended-Upgrades
 
 The configuration file, `/etc/apt/apt.conf.d/50unattended-upgrades`, dictates which packages get upgraded automatically, notification settings, reboot behavior, and logging. Editing this configuration file allows you to customize all of these features. The file uses the `apt` syntax, meaning the comment characters, `//`, in front of an option will disable that option. In order to enable the option, remove those leading characters.    
 
@@ -378,7 +378,7 @@ It is highly recommended to do a 'dry-run' after making changes to the configura
     sudo unattended-upgrades --dry-run --debug
     ```
 
-## :material-text-search: Monitor Upgrade Logs
+## :material-text-search:&ensp;Monitor Upgrade Logs
 
 !!! info
 
@@ -440,7 +440,7 @@ It is highly recommended to do a 'dry-run' after making changes to the configura
     journalctl -u unattended-upgrades --since today
     ```
 
-## :material-tools: Troubleshoot Issues
+## :material-tools:&ensp;Troubleshoot Issues
 
 ### Upgrades Not Running Automatically
 
@@ -500,7 +500,7 @@ Syntax errors in the configuration file will cause `unattended-upgrades` to fail
     sudo unattended-upgrades --dry-run --debug 2>&1 | head -20
     ```
 
-## :material-eraser-variant: Remove Unattended-Upgrades
+## :material-eraser-variant:&ensp;Remove Unattended-Upgrades
 
 1. To remove `unattended-upgrades` and optional packages installed previously, run the following command:
 

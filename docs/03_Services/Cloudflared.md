@@ -20,38 +20,38 @@ hide:
 # Cloudflared
 *Reverse-Proxy Server*
 
-[GitHub :simple-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard :services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description
 
 :    Secure reverse-proxy tunnel for hosting private services on the public internet.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `14333`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <http://storage-server.internal:14333>
 + <http://storage-server-2.internal:14333>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Software&ensp;:material-arrow-right-thin:&ensp;"Cloudflare Dashboard"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                     | Method                                | Container Name      | Image                              |
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :--------------------------------- |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                             | :material-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 --8<-- "cloudflared-pi-server.yml"

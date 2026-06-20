@@ -11,7 +11,7 @@ hide:
 # Manual Bed Leveling Mod
 *Fine Tune Your Bed Level*
 
-[Creality^&copy;^ K1C :brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality K1C&ensp;:brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! question
 
@@ -20,24 +20,24 @@ hide:
 
 !!! links "Bed Leveling Kit" 
 
-    [AliExpress :brands-aliexpress:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon :fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
+    [AliExpress&ensp;:brands-aliexpress:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon&ensp;:fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
 
 ---
-## :material-tools: Hardware Setup
+## :material-tools:&ensp;Hardware Setup
 
 !!! note inline end "Installation Note"
 
     **Graphite Bed & Bed Fans:**
     :     If you plan to install a graphite heated bed upgrade, or if you want to increase your chamber temperature for ABS / ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
 
-        [Graphite Bed Kit :brands-r3men:](https://www.r3men.com/products/graphite-heated-bed-for-creality-k1-k1c-k1se?ref=3dphub){ .md-button }
+        [Graphite Bed Kit&ensp;:brands-r3men:](https://www.r3men.com/products/graphite-heated-bed-for-creality-k1-k1c-k1se?ref=3dphub){ .md-button }
 
-        [Bed Fans Guide :brands-3dphub:](https://3dphub.net/learn/bed-fans-upgrade-guide){ .md-button }
+        [Bed Fans Guide&ensp;:brands-3dphub:](https://3dphub.net/learn/bed-fans-upgrade-guide){ .md-button }
 
     **Nylon Knobs:**
     :     If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
 
-        [Nylon Knobs :brands-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
+        [Nylon Knobs&ensp;:brands-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
 
 1. [ ] Home the printer.
 2. [ ] Lower the bed &frac34; of the way down, so that you have enough room to stand the bed up.
@@ -88,15 +88,15 @@ hide:
 <p><b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</p>
 </div>
 
-## :material-chip: Firmware Setup
+## :material-chip:&ensp;Firmware Setup
 
 !!! info inline end "Root Access"
 
     This project requires Root Access to your Creality K1-series 3D-printer via SSH. If you don't know how to gain root access, refer to the Helper Script and Root Access Guide.
 
-    [Root Access Guide :brands-3dphub:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
+    [Root Access Guide&ensp;:brands-3dphub:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 
-    [Helper Script :brands-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
+    [Helper Script&ensp;:brands-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
  
     !!! security "Default Password"
 
@@ -106,7 +106,7 @@ hide:
 
 1. [ ] Turn the printer on.
 2. [ ] SSH into the printer.
-3. [ ] **Option 1:** Run the [Helper Script :brands-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
+3. [ ] **Option 1:** Run the [Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
 
     **Option 2:** Add this to `printer.cfg`
 
@@ -120,7 +120,7 @@ hide:
 
 4. [ ] Save *(if you edited `printer.cfg`)* and restart the printer to apply the changes.
 
-## :material-tooltip-question-outline: How to Use
+## :material-tooltip-question-outline:&ensp;How to Use
 
 !!! note inline end 
 
@@ -163,7 +163,7 @@ hide:
 
 ---
 
-## :material-information-outline: Additional Info
+## :material-information-outline:&ensp;Additional Info
 
 !!! note inline end
 
@@ -182,6 +182,6 @@ hide:
     **Error `key60`:**
     :     If you are doing this modification with the factory load cells *(bed mesh probe)* and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
 
-#### :material-link-variant: References and Resources:
+#### :material-link-variant:&ensp;References and Resources
 
-[Klipper Docs :services-klipper:](https://www.klipper3d.org){ .md-button }&emsp;[Fluidd Docs :services-fluidd:](https://docs.fluidd.xyz/){ .md-button }&emsp;[Mainsail Docs :services-mainsail:](https://docs.mainsail.xyz/){ .md-button }
+[Klipper Docs&ensp;:services-klipper:](https://www.klipper3d.org){ .md-button }&emsp;[Fluidd Docs&ensp;:services-fluidd:](https://docs.fluidd.xyz/){ .md-button }&emsp;[Mainsail Docs&ensp;:services-mainsail:](https://docs.mainsail.xyz/){ .md-button }

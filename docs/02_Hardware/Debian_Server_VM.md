@@ -20,43 +20,43 @@ hide:
 # Debian Server
 *Virtual Machine*
 
-[Debian Docs :simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :material-toolbox: Role:  
+#### :material-toolbox:&ensp;Role 
 
 :    The primary DNS server in the [Technitium](../03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./ZimaBoard_2_NAS.md).
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname
 
 + `debian-vm`
 
-#### :symbols-stacks: Hypervisor: 
+#### :symbols-stacks:&ensp;Hypervisor 
 
 + [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 
-#### :material-memory: Operating System: 
+#### :material-memory:&ensp;Operating System 
 
 + [:material-debian:&nbsp;Debian Linux](https://www.debian.org/) *(trixie)*
 
-#### :material-server-network-outline: Host Node: 
+#### :material-server-network-outline:&ensp;Host Node 
 
 + [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"debian-vm (server-admin)"
 
-## :symbols-monitor-heart: Resource Allocation:
+## :symbols-monitor-heart:&ensp;Resource Allocation
 
 |          vCPU          |  RAM  | Storage | VDI Location                             |
 | :--------------------: | :---: | :------ | :--------------------------------------- |
 | 2C / 2T *(VT-x, VT-d)* | 2 GB  | 50 GB   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Notes                                                                             |
 | :-------: | :------------- | :------------------ | :-------------------------------------------------------------------------------- |
@@ -66,9 +66,9 @@ hide:
 | :-------: | :------------------------------ | :------------------- | :---------- | :------------- |
 | `enp1s0`  | :material-security:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
 
-## :material-web: Services / Docker Containers
+## :material-web:&ensp;Services / Docker Containers
 
-#### :material-linux: Native Linux:
+#### :material-linux:&ensp;Native Linux
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                   |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :--------------------------------------------------------------------------------------------- |
@@ -84,7 +84,7 @@ hide:
 | *Active* | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
 
 ---
-## :material-tools: Maintenance & Snapshots
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 !!! config "Critical Configurations"
 
@@ -105,7 +105,7 @@ hide:
           
     + This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation. 
 
-#### :material-update: Update Policy:
+#### :material-update:&ensp;Update Policy
 
 + The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically.
 + Manual OS updates can be applied with the `apt` package manager. *(Standard Debian)*
@@ -125,18 +125,18 @@ hide:
         virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
         ```
 
-#### :material-camera: Snapshot Policy:
+#### :material-camera:&ensp;Snapshot Policy
 
 + Perform external snapshots before major changes.
 
-#### :material-backup-restore: Recovery:
+#### :material-backup-restore:&ensp;Recovery
 
 + If the VM is corrupted there are external snapshots to roll back to. 
 + Also, on the main storage pool on the [ZimaOS NAS](./ZimaBoard_2_NAS.md) in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 
 
 <br>
 
-#### :material-login: Fastfetch Login Preset:
+#### :material-login:&ensp;Fastfetch Login Preset
 
 Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
 
@@ -165,7 +165,7 @@ Prints a customized Fastfetch preset with relevant information every time a new 
 --8<-- "fastfetch-login-debian-vm.jsonc"
 ```
 
-#### :material-console-line: Starship Terminal Prompt:
+#### :material-console-line:&ensp;Starship Terminal Prompt
 
 --8<-- "starship-note.md"
 

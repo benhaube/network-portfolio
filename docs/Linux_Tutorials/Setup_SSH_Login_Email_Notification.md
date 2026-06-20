@@ -11,7 +11,7 @@ hide:
 *With Email SMTP and Gotify*
 
 ---
-## :symbols-deployed-code-update: Install Required Packages
+## :symbols-deployed-code-update:&ensp;Install Required Packages
 
 **Dependencies:**
 :     In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
@@ -26,7 +26,7 @@ hide:
     sudo dnf install msmtp msmtp-mta
     ```
 
-## :symbols-mail-lock: Configure `msmtp` with Your Email Credentials 
+## :symbols-mail-lock:&ensp;Configure Your Email Credentials 
 
 **Config File:**
 :     Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
@@ -47,8 +47,8 @@ hide:
 
 3. Fill in the configuration file with your email address and the correct server information for your email provider. 
 4. Save and close the `/etc/msmtprc` configuration file.
-	+ ++ctrl+o++ to save
-	+ ++ctrl+x++ to close
+	+ ++ctrl+o++&ensp;to save
+	+ ++ctrl+x++&ensp;to close
 5. Set restrictive permissions for the configuration file.
 
     ```bash linenums="1"
@@ -82,7 +82,7 @@ hide:
     sudo chown root:root /root/.email_app_password
     ```
 
-## :symbols-feedback: Enable Login Alerts with PAM
+## :symbols-feedback:&ensp;Enable Login Alerts with PAM
 
 ???+ question
 
@@ -116,10 +116,10 @@ hide:
     ```
 
 2. Save and close the file:
-	+ ++ctrl+o++ to save
-	+ ++ctrl+x++ to close
+	+ ++ctrl+o++&ensp;to save
+	+ ++ctrl+x++&ensp;to close
 
-## :material-file-code-outline: Creating the Shell Script 
+## :material-file-code-outline:&ensp;Creating the Shell Script 
 
 **The Script:**
 :     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMTP server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
@@ -139,8 +139,8 @@ hide:
     1. Change `RECIPIENT=example@example.com` to the email address where you want to recieve notifications.  
 
 3. Save and close the file:
-	+ ++ctrl+o++ to save 
-	+ ++ctrl+x++ to close
+	+ ++ctrl+o++&ensp;to save 
+	+ ++ctrl+x++&ensp;to close
 4. Give execute permission to the script:
 
     ```bash linenums="1"
@@ -149,7 +149,7 @@ hide:
 
     1. The 'execute' permission is absolutely necessary to allow the system to execute the script.
 
-## :symbols-labs: Testing the Setup
+## :symbols-labs:&ensp;Testing the Setup
 
 !!! party "Congrats!"
 
@@ -164,7 +164,7 @@ hide:
     journalctl -t msmtp
     ```
 
-## :material-alert-octagram: Bonus
+## :symbols-release-alert:&ensp;Bonus
 
 **Gotify:**
 :   If you have a [Gotify](../03_Services/Gotify.md) instance, you can use it to send instantaneous push notifications when a new SSH session is established using the same method. However, since Gotify uses a dead-simple REST API, literally anything that can execute a standard `curl` command or send an HTTP `POST` request can trigger a push notification. That means there are no extra configurations or packages required. Just a simple Bash script using the tools built into every Linux distribution. 
@@ -187,8 +187,8 @@ hide:
     3. Send the `POST` request to Gotify.
 
 4. Save and close the file:
-	+ ++ctrl+o++ to save 
-	+ ++ctrl+x++ to close
+	+ ++ctrl+o++&ensp;to save 
+	+ ++ctrl+x++&ensp;to close
 5. Set restrictive permissions, allow execution, and ensure `root` ownership of the `gotify-ssh-alert.sh` file:
     + This is an important security step because the script contains the secret token that authenticates with the Gotify server.
 
@@ -216,7 +216,7 @@ hide:
 <p>Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</p>
 </div>
 
-## :symbols-note-stack-fill: Important Notes
+## :symbols-note-stack-fill:&ensp;Important Notes
 
 ???+ note "Troubleshooting Note"
 
@@ -252,8 +252,8 @@ hide:
 
     3. Save and close the config file: 
         
-        + ++ctrl+o++ to save
-        + ++ctrl+x++ to close
+        + ++ctrl+o++&ensp;to save
+        + ++ctrl+x++&ensp;to close
    
     4. Restart the `unattended-upgrades` Systemd service:
 

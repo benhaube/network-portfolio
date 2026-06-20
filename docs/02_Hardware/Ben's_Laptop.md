@@ -19,33 +19,33 @@ hide:
 # Ben's Laptop
 *ThinkPad X1 Carbon*
 
-[Fedora Discussion :material-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs :material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[Lenovo Support :material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button .md-button--primary }
+[Fedora Discussion&ensp;:material-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[Lenovo Support&ensp;:material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline:&ensp;Device Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname
 
 + `ben-laptop`
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location 
 
 + Mobile
 
-#### :material-memory: OS / Firmware:  
+#### :material-memory:&ensp;OS / Firmware
 
 + [:material-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Laptop"
 
-#### :material-security: Device Security:
+#### :material-security:&ensp;Device Security
 
 + HSI-4
 + Firmware: 
@@ -67,13 +67,13 @@ hide:
     + :material-fingerprint:&nbsp;Fingerprint
     + :material-face-recognition:&nbsp;IR facial recognition
 
-## :symbols-monitor-heart: Core Specs
+## :symbols-monitor-heart:&ensp;Core Specs
 
 | CPU                                              | Cores / Threads | CPU Freq.                 | RAM     | GPU                            | GPU Freq. | VRAM     |
 | :----------------------------------------------- | :-------------- | :------------------------ | :------ | :----------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;Core(r) i5 1135G7 *(x86-64)* | 4C / 8T         | 8 GB LPDDR4 *(4267 MT/s)* | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz   | *Shared* |
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
 |  Interface  | IP Address | MAC Address         | Connected To                                                              |
 | :---------: | :--------- | :------------------ | :------------------------------------------------------------------------ |
@@ -83,15 +83,15 @@ hide:
 | :---------: | :------------------------------ | :---- | :---------------------------- | :------------- |
 | `wlp0s20f3` | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage: Storage & Mounts
+## :symbols-storage:&ensp;Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s):
+#### :material-harddisk:&ensp;Internal Drive(s)
 
 | Mount Point  | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :----------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/`, `/home` | NVMe SSD   | 929 GB         | `/dev/dm-0` | `btrfs`     | LUKS2      |
 
-#### :material-usb: External / Attached:
+#### :material-usb:&ensp;External / Attached
 
 | Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  |
 | :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
@@ -100,26 +100,26 @@ hide:
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
 
-## :material-web: Services / Docker Containers
+## :material-web:&ensp;Services / Docker Containers
 
-#### :symbols-stacks: Virtualization:
+#### :symbols-stacks:&ensp;Virtualization
 
 |  Status  | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes                                    |
 | :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
-#### :material-linux: Native Linux:
+#### :material-linux:&ensp;Native Linux
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                             |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 --8<-- "critical-conf-ben-pc.md"
 
-#### :material-update: Update Process:
+#### :material-update:&ensp;Update Process
 
 ##### Automatic Updates
 
@@ -149,12 +149,12 @@ hide:
     sudo flatpak update -y
     ```
 
-#### :material-cloud-upload-outline: Backup Policy:
+#### :material-cloud-upload-outline:&ensp;Backup Policy
 
 + The `/home` directory backed up every weekday at `18:30` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggerd by Systemd.
 + With the `Persistent=true` value set in the Systemd `.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
 
-#### :material-console-network: SSH Client:
+#### :material-console-network:&ensp;SSH Client
 
 ##### Bitwarden Key Agent
 
@@ -168,14 +168,14 @@ hide:
 + To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
 + See ["SSH Config File"](../03_Services/SSH.md#ssh-config-file_1) for documentation.  
 
-#### :material-folder-network: ZimaOS NAS Mounts:
+#### :material-folder-network:&ensp;ZimaOS NAS Mounts
 
 + On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. *(e.g., photos / code)* 
     + Other benefits from the switch to NFS include: Full compatibility for file ownership and permissions, and compatibility for sym-links. The `rsync` command in the backup script has been modified to reflect this change.  
     + This change only applies to PCs using the Linux OS. The Windows and Android clients still utilize SMB with multi-chanel enabled.
 + See the ["Clients"](../03_Services/NFS.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
 
-#### :material-file-code-outline: Backup Script:
+#### :material-file-code-outline:&ensp;Backup Script
 
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
@@ -217,7 +217,7 @@ hide:
     systemctl --user enable home-bkp-nas.timer
     ```
 
-#### :material-folder-lock: Encrypted-Documents:
+#### :material-folder-lock:&ensp;Encrypted-Documents
 
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
@@ -226,7 +226,7 @@ hide:
     --8<-- "mount-gocryptfs.desktop"
     ```
 
-#### :material-google-drive: Rclone Google Drive Mount:
+#### :symbols-google-drive:&ensp;Rclone Google Drive Mount
 
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
@@ -240,7 +240,7 @@ hide:
     --8<-- "mount-rclone.desktop"
     ```
 
-#### :material-console-line: Starship Terminal Prompt:
+#### :material-console-line:&ensp;Starship Terminal Prompt
 
 --8<-- "starship-note.md"
 
@@ -262,7 +262,7 @@ hide:
     --8<-- "starship-laptop.toml"
     ```
 
-#### :material-login: Fastfetch Login Preset:
+#### :material-login:&ensp;Fastfetch Login Preset
 
 Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
 

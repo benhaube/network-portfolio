@@ -19,38 +19,38 @@ hide:
 # Moonraker
 *The Klipper Web API*
 
-[GitHub :simple-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description:  
+#### :symbols-description:&ensp;Description  
 
 :    Web API server for [Klipper](https://www.klipper3d.org/). 
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `7125`
 
-#### :material-link-variant: URL / Access:  
+#### :material-link-variant:&ensp;URL / Access  
 
 + <http://kacey.internal:7125>
 + <http://192.168.50.153:7125>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                              | Method                            | Container Name | Image |
 | :--------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Liux | `N/A`          | `N/A` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
-#### :symbols-install-desktop: Install:
+#### :symbols-install-desktop:&ensp;Install
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 --8<-- "install-helper-script.sh"
@@ -60,7 +60,7 @@ hide:
 2. Enter this command to run the Creality Helper Script.
 3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
 
-#### :material-file-cog: Config File:
+#### :material-file-cog:&ensp;Config File
 
 ```ini title="<code>moonraker.cfg</code>" linenums="1"
 --8<-- "moonraker.cfg"

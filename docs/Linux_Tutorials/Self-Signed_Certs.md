@@ -18,7 +18,7 @@ hide:
 
 ---
 
-## :material-monitor-arrow-down-variant: Install OpenSSL
+## :material-monitor-arrow-down-variant:&ensp;Install OpenSSL
 
 The first step is to install the OpenSSL package, providing the tools necessary for generating SSL certificates. Most Linux distributions already have this package in their repos, so installing the package is a simple command away with the built-in package manager. 
 
@@ -39,7 +39,7 @@ The first step is to install the OpenSSL package, providing the tools necessary 
     sudo dnf install openssl
     ```
 
-## :material-key: Generate a Private Key
+## :material-key:&ensp;Generate a Private Key
 
 After installing OpenSSL, next we need to generate a private key. Private keys are an essential component of an SSL certificate because they encrypt and decrypt the data. Make sure you keep the private key in a secure location. It is crucial for maintaining the security of your certificate.
 
@@ -51,7 +51,7 @@ After installing OpenSSL, next we need to generate a private key. Private keys a
 
     1. Replace `example.key` with your preferred file name.
 
-## :material-draw-pen: Certificate Signing Request
+## :material-draw-pen:&ensp;Certificate Signing Request
 
 Now that we have a private key, we need to create a Certificate Signing Request. The CSR contains information about your server and organization. When you run the command you will be asked to enter a bunch of details. *(e.g., country, state, locality, organization name, common name (domain name), and email address)* Make sure you enter these details properly because they will be used to create the certificate. Especially, the domain name. It is very important for the domain name to match the server the certificate will be used for. 
 
@@ -63,7 +63,7 @@ Now that we have a private key, we need to create a Certificate Signing Request.
 
     1. Replace `example.key` with the file name of the key you generated previously, and replace `example.csr` with your preferred file name for the CSR. I usually give them both the same file name to keep it simple.
 
-## :material-file-certificate-outline: Generate the Certificate
+## :material-file-certificate:&ensp;Generate the Certificate
 
 Now that we have the private key and the CSR we have the pieces we need to generate a self-signed certificate. 
 
@@ -84,7 +84,7 @@ Now that we have the private key and the CSR we have the pieces we need to gener
     | `-signkey`  | Specifies the private key that will be used to sign the certificate.                              |
     | `-out`      | Specifies the file name for the output signed certificate file.                                   |
 
-## :material-file-cog-outline: Configure the Web Server
+## :material-file-cog:&ensp;Configure the Web Server
 
 The process to configure your Web server to use your new self-signed certificate will vary depending on the server you are using. *(e.g., Nginx, Apache, etc.)* Check the documentation for your specific Web server, then update the configuration file with the directory path of your certificate. 
 

@@ -19,32 +19,32 @@ hide:
 # Gotify
 *Push Notifications*
 
-[GitHub :simple-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://gotify.net/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://gotify.net/docs/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    A simple server for sending and receiving messages in real-time per WebSocket. *(Includes a sleek Web-UI)*
  
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `8180`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <http://storage-server.internal:8180> &mdash; *Local Network Web-UI only*
 + <http://storage-server-2.internal:8180> &mdash; *Local Network Web-UI only*
 + <https://gotify.rac3r4life.online> &mdash; *Use for notification WebSocket*
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (admin)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (bhaube)"
 
-#### :material-message-alert: Notifications:
+#### :symbols-feedback:&ensp;Notifications
 
 | Application&emsp;:material-information-outline:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
 | :---------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,15 +56,15 @@ hide:
 | [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
 | [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                         | Method                                | Container Name | Image                  |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :--------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gotify`       | `gotify/server:latest` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
-#### :material-docker: Docker Compose:
+#### :material-docker:&ensp;Docker Compose
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "gotify.yml"
@@ -72,7 +72,7 @@ hide:
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
 
-#### :material-cloud-upload-outline: Backup Alerts
+#### :material-cloud-upload-outline:&ensp;Backup Alerts
 
 1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
 
@@ -85,7 +85,7 @@ hide:
 
 2. That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup. 
 
-#### :services-beszel: Beszel Alerts:
+#### :services-beszel:&ensp;Beszel Alerts
 
 1. Open the [Beszel Hub](../03_Services/Beszel_Hub.md) settings menu, go to the **"Notifications"** sub-menu, and enter the following URL into the **"Webhook / Push Notifications"** section.
    
@@ -95,7 +95,7 @@ hide:
 
 2. Click the **"Test URL"** button to send a test notification and verify functionality.
 
-#### :services-homebox: Homebox Alerts
+#### :services-homebox:&ensp;Homebox Alerts
 
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
@@ -114,7 +114,7 @@ hide:
 5. Click the "Test" button to send a test notification.
 6. Click "Submit" to save the new notification.
 
-#### :material-router-wireless: Router Alerts:
+#### :material-router-wireless:&ensp;Router Alerts
 
 ##### WAN IP Change
 
@@ -138,7 +138,7 @@ hide:
     2. `$1` is the new IP passed by the router.
     3.    Replace the `KEY` variable with the key provided by addr.tools for your domain name. The Key is stored in the Bitwarden vault.
           
-          [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
+          [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
           + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
 
@@ -287,7 +287,7 @@ hide:
 
         To test it, simply disconnect a device from the network, manually delete its lease from the Asuswrt-Merlin UI *(or wait for it to expire)*, and reconnect it to force an `add` event.
 
-#### :material-console-network: SSH Alerts:
+#### :material-console-network:&ensp;SSH Alerts
 
 1. Create the script: 
 
@@ -360,17 +360,17 @@ hide:
     session     optional     /lib/security/pam_exec.so     /opt/bin/gotify-ssh-alert.sh  # (1)!
     ```
 
-    2. Add line to `/etc/pam.d/sshd` after the existing "session" lines.    
+    1. Add line to `/etc/pam.d/sshd` after the existing "session" lines.    
 
     ```sh title="ASUS Router&emsp;<code>/jffs/configs/profile.add</code>" linenums="1"
     /jffs/scripts/gotify-ssh-alert.sh &  # (1)!
     ```
 
-    3.    Add this single line to the bottom of the file.
+    1.    Add this single line to the bottom of the file.
     
           **Note:** The `&` symbol at the end is crucial. It runs the script in the background so it doesn't hang or delay your SSH login prompt while it waits for the `curl` command to reach the Gotify server.
 
-#### :services-uptime-kuma: Uptime Kuma Alerts:
+#### :services-uptime-kuma:&ensp;Uptime Kuma Alerts
 
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
@@ -392,11 +392,11 @@ hide:
     + Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
     + Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors.
 
-#### :services-zimaos: ZimaOS Alerts
+#### :services-zimaos:&ensp;ZimaOS Alerts
 
 :    The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
 
-    [Zima Cron :simple-github:](https://github.com/chicohaager/cron){ .md-button }
+    [Zima Cron&ensp;:simple-github:](https://github.com/chicohaager/cron){ .md-button }
 
 ##### AppData Backup
 

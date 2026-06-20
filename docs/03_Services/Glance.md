@@ -20,25 +20,25 @@ hide:
 # Glance
 *Server Dashboard*
 
-[GitHub :simple-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description
 
 :    A self-hosted dashboard that puts all your feeds in one place. 
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `8580`
 
-#### :material-link-variant: URL / Access:  
+#### :material-link-variant:&ensp;URL / Access
 
 + <https://glance.internal>
 + <http://pi-server.internal:8580/>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Admin"
@@ -46,17 +46,17 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (rpereira)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 ???+ change "Image Migration"
 
-    :material-calendar:&nbsp;**Date:** Monday, April 27 2026 <br>
-    :material-swap-horizontal:&nbsp;**Change:** Using a forked Docker image <br>
-    :material-help-circle-outline:&nbsp;**Reason:** Active development, additional features
+    :symbols-calendar-event:&ensp;**Date:** Monday, April 27 2026 <br>
+    :material-swap-horizontal:&ensp;**Change:** Using a forked Docker image <br>
+    :material-help-circle-outline:&ensp;**Reason:** Active development, additional features
 
     ---
 
-    :material-cog:&nbsp;**Configuration:**
+    :material-cog:&ensp;**Configuration:**
  
     :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuraiton is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
  
@@ -67,21 +67,21 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
 |                                                                                                 | :material-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
 ??? change "User Authentication"
 
-    :material-calendar:&nbsp;**Date:** Monday, April 20 2026 <br>
-    :material-swap-horizontal:&nbsp;**Change:** Enabled user authentication <br>
-    :material-help-circle-outline:&nbsp;**Reason:** Additional security
+    :symbols-calendar-event:&ensp;**Date:** Monday, April 20 2026 <br>
+    :material-swap-horizontal:&ensp;**Change:** Enabled user authentication <br>
+    :material-help-circle-outline:&ensp;**Reason:** Additional security
 
     ---
 
-    :material-account:&nbsp;**Users:**
+    :material-account:&ensp;**Users:**
  
     + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [[Bitwarden Vault](https://vault.bitwarden.com)](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
-    :material-form-textbox-password:&nbsp;**Passwords:**
+    :material-form-textbox-password:&ensp;**Passwords:**
 
     !!! tip inline end
     
@@ -96,7 +96,7 @@ hide:
  
     + Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again. 
       
-    :material-key-chain:&nbsp;**Server Secret:**
+    :material-key-chain:&ensp;**Server Secret:**
  
     + The "Server Secret" needs to be set in the `glance.yml` configuration file. 
     + To generate a new server secret, attach to the container's shell and run the following command: 
@@ -120,9 +120,9 @@ hide:
 
 ??? change "Widgets Directory"
 
-    :material-calendar:&nbsp;**Date:** Saturday, April 18 2026 <br>
-    :material-swap-horizontal:&nbsp;**Change:** Moved pages and widgets into separate directories. <br>
-    :material-help-circle-outline:&nbsp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
+    :symbols-calendar-event:&ensp;**Date:** Saturday, April 18 2026 <br>
+    :material-swap-horizontal:&ensp;**Change:** Moved pages and widgets into separate directories. <br>
+    :material-help-circle-outline:&ensp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
 
     ---
 
@@ -132,7 +132,7 @@ hide:
  
         **Reload and clear cache:**<br>++ctrl+f5++ 
  
-    :material-cog:&nbsp;**Configuration:**
+    :material-cog:&ensp;**Configuration:**
 
     + The Glance dashboard widgets have been moved into thier own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. 
     + Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure. 
@@ -148,13 +148,13 @@ hide:
                   - $include: /app/config/widgets/search.yml
             ```
 
-    :material-widgets:&nbsp;**Widgets:**
+    :material-widgets:&ensp;**Widgets:**
  
     + To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository. 
  
-        [Glance Widgets :material-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
+        [Glance Widgets&ensp;:material-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
-#### :material-docker: Docker Compose:
+#### :material-docker:&ensp;Docker Compose
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "glance-compose.yml"
@@ -168,7 +168,7 @@ hide:
 6. **Optional:** "Main" tracks qualifying sessions and races *(inc. sprints)*. "Race" tracks **only** races. 
 7. Changed the Docker image to **Dynacat**, a fork of Glance with added features.
 
-#### :material-file-cog-outline: Glance Config:
+#### :material-file-cog-outline:&ensp;Glance Config
 
 ```yaml title="<code>dynacat.yml</code>" linenums="1"
 --8<-- "dynacat.yml"
@@ -197,7 +197,7 @@ hide:
 
 5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.
  
-      :services-it-tools:&nbsp;**IT-Tools:**
+      :services-it-tools:&ensp;**IT-Tools:**
       
       + Another service hosted on this local network, [IT-Tools](./IT-Tools.md), also has a great [color converter](http://pi-server.internal:8080/color-converter).  
 
@@ -232,7 +232,7 @@ hide:
 
 5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212) to convert colors from other formats.
  
-      :services-it-tools:&nbsp;**IT-Tools:**
+      :services-it-tools:&ensp;**IT-Tools:**
       
       + Another service hosted on this local network, [IT-Tools](./IT-Tools.md), also has a great [color converter](http://pi-server.internal:8080/color-converter).  
 
@@ -240,7 +240,7 @@ hide:
 
       Use this if you think that some of the text on the page is too dark and hard to read
 
-#### :material-view-dashboard: Glance Pages:
+#### :material-view-dashboard:&ensp;Glance Pages
 
 ```yaml title="<code>home.yml</code>" linenums="1"
 --8<-- "glance-home.yml"
@@ -255,7 +255,7 @@ hide:
 
 1. Show a title header on mobile device web browsers.
 2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
-3.    :material-bug:&nbsp;**Bug:** 
+3.    :material-bug:&ensp;**Bug:** 
 
       + Disabled **WireGuard** community widget for now due to bugs causing page instability and other issues. 
 

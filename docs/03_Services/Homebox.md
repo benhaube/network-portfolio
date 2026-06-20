@@ -19,37 +19,37 @@ hide:
 # Homebox
 *Inventory Management*
 
-[GitHub :simple-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://homebox.software/en/quick-start/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://homebox.software/en/quick-start/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    An inventory and organization system built for the home user.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `3100`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access 
 
 + <http://storage-server.internal:3100>
 + <http://storage-server-2.internal:3100>
 + <http://192.168.50.4:3100>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Homebox"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                         | Method                                | Container Name | Image                                   |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "homebox.yml"

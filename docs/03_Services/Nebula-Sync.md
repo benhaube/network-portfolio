@@ -20,35 +20,35 @@ hide:
 # Nebula-Sync
 *Synchronize Pi-hole*
 
-[GitHub :simple-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    Synchronize configuration between multiple [Pi-hole](./Pi-hole.md) instances.
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `N/A`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + N/A
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + :material-docker:&nbsp;Docker Compose: 
     + `compose.yml`
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                         | Method                                | Container Name | Image                                 |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "nebula-sync.yml"

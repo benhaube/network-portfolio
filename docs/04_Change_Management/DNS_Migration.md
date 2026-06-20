@@ -20,20 +20,20 @@ hide:
 
 ---
 
-## :material-file-document: Pre-Migration & Documentation
+## :material-file-document:&ensp;Pre-Migration & Documentation
 
 1. **Export Pi-hole Data:** 
     + [ ] Run a "Teleporter" backup on your current primary and secondary Pi-holes.
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary: [:material-raspberry-pi:&thinsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) :material-arrow-right-thin: `192.168.50.2` 
-    + [ ] Secondary: [:material-debian:&thinsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md) :material-arrow-right-thin: `192.168.50.6`
-    + [ ] Tertiary/Failover: [:material-raspberry-pi:&thinsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) :material-arrow-right-thin: `192.168.50.3`
+    + [ ] Primary:&ensp;[:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)&ensp;:material-arrow-right-thin:&ensp;`192.168.50.2` 
+    + [ ] Secondary:&ensp;[:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)&ensp;:material-arrow-right-thin:&ensp;`192.168.50.6`
+    + [ ] Tertiary/Failover:&ensp;[:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:material-arrow-right-thin:&ensp;`192.168.50.3`
 
-## :material-dns: Server Provisioning
+## :material-dns:&ensp;Server Provisioning
 
-#### Debian Server:
+#### Debian Server
 
 1. **Allocate Resources:** 
     + [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
@@ -44,7 +44,7 @@ hide:
 4. **Import Records:** 
     + [ ] Manually add local DNS zones/records from the Pi-hole export.
 
-#### Raspberry Pi 4B:
+#### Raspberry Pi 4B
 
 1. **Uninstall Pi-hole:**
     + [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.
@@ -53,7 +53,7 @@ hide:
 3. **Set as Secondary:** 
     + [ ] Configure identical upstream servers.
 
-## :material-cog-sync: Cluster Synchronization
+## :material-cog-sync:&ensp;Cluster Synchronization
 
 1. **Enable Clustering:** 
     + [ ] Set the Debian VM as the **Master**.
@@ -63,7 +63,7 @@ hide:
 3. **Blocklist Tuning:** 
     + [ ] Add your preferred lists *(e.g., OISD, HaGeZi)* and verify they are enabled on both.
 
-## :material-toggle-switch-outline: Network Cutover
+## :material-toggle-switch-outline:&ensp;Network Cutover
 
 1. **Update Router DHCP:** 
     + [ ] Point DNS 1 to the Debian VM IP.
@@ -74,7 +74,7 @@ hide:
 3. **Test Resolution:** 
     + [ ] Run `#!bash dig @[Primary-IP] google.com` and verify the `SERVER` field.
 
-## :material-web-check: Verification & Safety Net
+## :material-web-check:&ensp;Verification & Safety Net
 
 1. **Check DoT Status:** 
     + [ ] Run `#!bash dig @[Primary-IP] +short txt proto.on.quad9.net` to ensure the upstream is encrypted.
@@ -85,7 +85,7 @@ hide:
 
 ---
 
-## :material-sitemap: Flowchart
+## :material-sitemap:&ensp;Flowchart
 
 ```mermaid
 --8<-- "dns_migration.mmd"

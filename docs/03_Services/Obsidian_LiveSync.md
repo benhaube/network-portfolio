@@ -18,20 +18,20 @@ hide:
 # Obsidian LiveSync
 *Sync with CouchDB*
 
-[GitHub :simple-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `5984`
 
-#### :material-link-variant: URL / Access:  
+#### :material-link-variant:&ensp;URL / Access  
 
 + :material-application-cog-outline: Settings Web UI: 
     + <http://storage-server.internal:5984/_utils>
@@ -40,20 +40,20 @@ hide:
     + <http://storage-server.internal:5984/obsidian-vault>
     + <http://storage-server-2.internal:5984/obsidian-vault>
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Obsidian LiveSync"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device | Method | Container Name | Image |
+| Host Device                                                         | Method                                | Container Name      | Image           |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------------ | :-------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `obsidian-livesync` | `couchdb:3.5.0` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
-#### :material-server-outline: Server:
+#### :material-server-outline:&ensp;Server
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "obsidian-livesync.yml"
@@ -65,7 +65,7 @@ hide:
 --8<-- "couchdb-local.ini"
 ```
 
-#### :symbols-devices: Clients:
+#### :symbols-devices:&ensp;Clients
 
 ```json title="<code>.obsidian/plugins/obsidian-livesync/data.json</code>" linenums="1"
 --8<-- "obsidian-livesync_data.json"

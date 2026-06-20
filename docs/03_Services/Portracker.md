@@ -20,20 +20,20 @@ hide:
 # Portracker
 *Port Monitoring & Discovery*
 
-[GitHub :simple-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `4999`
 
-#### :material-link-variant: URL / Access:  
+#### :material-link-variant:&ensp;URL / Access
 
 Raspberry Pi 4B Server:
 
@@ -46,11 +46,11 @@ ZimaOS NAS:
 + <http://storage-server.internal:4999>
 + <http://storage-server-2.internal:4999>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + N/A
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                          | Method                                | Container Name | Image                             |
 | :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
@@ -58,7 +58,7 @@ ZimaOS NAS:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)      | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 
-### :material-cog: Configuration  
+### :material-cog:&ensp;Configuration  
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 --8<-- "portracker-pi-4b.yml"

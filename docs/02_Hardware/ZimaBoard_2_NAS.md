@@ -32,7 +32,7 @@ hide:
 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. It has an *x86-64* Intel N150 quad-core CPU *(3.6 GHz)* and 16 GB of LPDDR5 *(6400 MHz)* RAM, and it is located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
-#### :symbols-host:&ensp;Hostname(s)
+#### :symbols-host:&ensp;Hostname
 
 + `ZimaOS-NAS`
 
@@ -133,7 +133,7 @@ hide:
 |  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                       |
 
 ---
-## :material-tools:&ensp;Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 !!! zima inline end "ZimaOS"
 

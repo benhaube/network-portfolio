@@ -19,36 +19,36 @@ hide:
 # DDNS
 *Provided by addr.tools*
 
-[GitHub :simple-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools :services-addr:](https://addr.tools){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools&ensp;:services-addr:](https://addr.tools){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description
 :    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools).
  
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `N/A`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <https://rac3r4life.myaddr.dev>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                      | Method                             | Container Name | Image |
 | :------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
 | [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
-#### :material-console-line: Router Script:
+#### :material-console-line:&ensp;Router Script
 
 1. Create a script on the router in the `/jffs/scripts` directory to update the IP every time it changes:
 
@@ -86,7 +86,7 @@ hide:
     ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ width=700 }
 </figure>
 
-#### :material-file-certificate-outline: TLS Certificate:
+#### :material-file-certificate-outline:&ensp;TLS Certificate
 
 1. Install the `certbot` package on a separate PC:
 

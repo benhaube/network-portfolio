@@ -22,21 +22,21 @@ hide:
 # Gitea
 *Git with a Cup of Tea*
 
-[GitHub :simple-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.gitea.com/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.gitea.com/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description
 
 :    Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD.
  
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `3080`
 + `222`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + Web-UI:
     + <http://storage-server.internal:3080>
@@ -44,21 +44,21 @@ hide:
 + SSH: 
     + `git@storage-server.internal`
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gitea (admin)"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gitea (benhaube)"
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"Gitea"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                         | Method                                | Container Name | Image                           |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------------ |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gitea`        | `docker.gitea.com/gitea:latest` |
 |                                                                     | :material-docker:&nbsp;Docker Compose | `gitea_runner` | `gitea/act_runner:latest`       |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
 !!! note
 

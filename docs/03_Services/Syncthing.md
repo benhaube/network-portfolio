@@ -20,22 +20,22 @@ hide:
 # Syncthing
 *File Synchronization*
 
-[GitHub :simple-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.syncthing.net/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.syncthing.net/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    Open decentralized file synchronization.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `8384` *(TCP)*
 + `22000` *(TCP / UDP)*
 + `21027` *(UDP)*
 
-#### :material-link-variant: URL / Access:  
+#### :material-link-variant:&ensp;URL / Access  
 
 + :material-desktop-tower:&nbsp;Ben's Desktop
     + <https://bens-workstation.internal:8384>
@@ -59,7 +59,7 @@ hide:
     + <https://192.168.50.4:8384>
     + <https://192.168.50.5:8384>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
@@ -70,7 +70,7 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ pi-zero"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ storage-server"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                      | Method                                     | Container Name | Image                          |
 | :----------------------------------------------------------------------------------------------- | :----------------------------------------- | :------------- | :----------------------------- |
@@ -82,9 +82,9 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
 
-### :material-cog: Configuration  
+### :material-cog:&ensp;Configuration  
 
-#### :symbols-install-desktop: Install Commands:
+#### :symbols-install-desktop:&ensp;Install Commands
 
 + :material-fedora:&nbsp;Ben's Desktop / Ben's Laptop:
 
@@ -112,9 +112,9 @@ hide:
 
 + :symbols-mobile:&nbsp;Ben's Smartphone:
 
-    [Syncthing-Fork :simple-fdroid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
+    [Syncthing-Fork&ensp;:simple-fdroid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
-#### :material-docker: Docker Compose:
+#### :material-docker:&ensp;Docker Compose
 
 ```yaml title="ZimaOS NAS" linenums="1"
 --8<-- "syncthing-zima.yml"

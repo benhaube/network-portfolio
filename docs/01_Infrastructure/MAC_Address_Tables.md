@@ -24,7 +24,7 @@ hide:
 
 ---
 
-## :material-router-wireless: Network Infrastructure
+## :material-router-wireless:&ensp;Network Infrastructure
 
 | Device Type                                     | Location    | Hostname                                                      | Interface                        | MAC Address         | Role / Notes                      |
 | :---------------------------------------------- | :---------- | :------------------------------------------------------------ | :------------------------------- | :------------------ | :-------------------------------- |
@@ -38,8 +38,8 @@ hide:
 |                                                 |             |                                                               | :material-wifi:&nbsp;*2.4 GHz*   | `7C:10:C9:DF:13:61` |                                   |
 |                                                 |             |                                                               | :material-wifi:&nbsp;*5 GHz*     | `7C:10:C9:DF:13:64` |                                   |
 
-## :material-security: Trusted Network 
-&emsp;&emsp;*VLAN50*
+## :material-security:&ensp;Trusted Network 
+&emsp;&emsp;&ensp;*VLAN50*
 
 | Device Type                                    | Location    | Hostname                                                          | MAC Address         |      Interface      |    WAN Access    | Role / Notes                                                         |
 | :--------------------------------------------- | :---------- | :---------------------------------------------------------------- | :------------------ | :-----------------: | :--------------: | :------------------------------------------------------------------- |
@@ -71,8 +71,8 @@ hide:
 | :material-nintendo-switch:&nbsp;Game Console   | Mobile      | `nintendo-switch`                                                 | `74:84:69:0B:56:EF` |   :material-wifi:   | :material-check: | Nintendo Switch OLED                                                 |
 | :material-nintendo-switch:&nbsp;Game Console   | Living-Room | `nintendo-switch`                                                 | `74:84:69:34:69:78` | :material-ethernet: | :material-check: | Nintendo Switch OLED docking station for TV in Living Room           |
 
-## :symbols-shield-house-fill: IoT Network 
-&emsp;&emsp;*VLAN53*
+## :symbols-shield-house-fill:&ensp;IoT Network 
+&emsp;&emsp;&ensp;*VLAN53*
 
 | Device Type                                       | Location    | Hostname                                                                | MAC Address         |    Interface    |    WAN Access    | Role / Notes                                                    |
 | :------------------------------------------------ | :---------- | :---------------------------------------------------------------------- | :------------------ | :-------------: | :--------------: | :-------------------------------------------------------------- |
@@ -98,13 +98,13 @@ hide:
 ---
 <div class="grid cards" markdown>
 
--   :material-ip-network:{ .lg .middle } **IP Address Management**
+-   :material-ip-network:{ .lg .middle }&emsp;**IP Address Management**
 
     ---
 
     [IP Address Management](../01_Infrastructure/IP_Address_Management.md){ .md-button }
 
--   :material-sitemap:{ .lg .middle } **Network Diagrams**
+-   :material-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
 
     ---
 
@@ -114,13 +114,13 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-restore-alert:{ .lg .middle } **Disaster Recovery**
+-   :material-restore-alert:{ .lg .middle }&emsp;**Disaster Recovery**
     
     ---
 
     [Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
 
--   :material-server-security:{ .lg .middle } **Network Security**
+-   :material-server-security:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

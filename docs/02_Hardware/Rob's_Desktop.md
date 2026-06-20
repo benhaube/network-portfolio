@@ -16,41 +16,41 @@ hide:
 # Rob's Workstation
 *High-Performance Desktop PC*
 
-[Windows Docs :material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=dc554ee0-d7d2-4018-992d-7267ebccf458&sn=MCM0KK06J149GK4&from=Myproducts){ .md-button .md-button--primary }
+[Windows Docs&ensp;:material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=dc554ee0-d7d2-4018-992d-7267ebccf458&sn=MCM0KK06J149GK4&from=Myproducts){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline:&ensp;Device Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname
 
 + `Rob-Desktop`
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location
 
 + Office 
 + Desk 
 
-#### :material-memory: OS / Firmware: 
+#### :material-memory:&ensp;OS / Firmware
 
 + [:material-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Desktop PC"
 
-## :symbols-monitor-heart: Core Specs
+## :symbols-monitor-heart:&ensp;Core Specs
 
 | CPU                                              | Cores / Threads | CPU Freq. | RAM                     | GPU                                      | GPU Freq. | VRAM       |
 | :----------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------------- | :-------- | :--------- |
 | :brands-intel:&nbsp;Core(r) i7 12700K *(x86-64)* | 12C / 20T       | 5.0 GHz   | 32 GB DDR4 *(3600 MHz)* | :brands-intel:&nbsp;UHD 770 Graphics     | 1500 MHz  | *Shared*   |
 |                                                  |                 |           |                         | :simple-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz  | 8 GB GDDR6 |
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To                                                                        |
 | :-------: | :--------- | :------------------ | :---------------------------------------------------------------------------------- |
@@ -62,9 +62,9 @@ hide:
 | Ethernet  | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 |   Wi-Fi   | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage: Storage & Mounts
+## :symbols-storage:&ensp;Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s):
+#### :material-harddisk:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path                                                   | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------------------------------------------------------ | :---------- | :--------- |
@@ -72,13 +72,13 @@ hide:
 | `D:`        | SATA HDD   | 1.81 TB        | `SCSI\DISK&VEN_WDC&PROD_WD2003FZEX-00SRL\4&E91BE7&0&050000`   | `ntfs`      | -          |
 | `G:`        | NVMe SSD   | 931 GB         | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_980\5&EBD909B&0&000000`  | `ntfs`      | -          |
 
-#### :material-usb: External / Attached:
+#### :material-usb:&ensp;External / Attached
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -              | `-`         | `-`         | -          |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 --8<-- "maintenance-rob-pc.md"

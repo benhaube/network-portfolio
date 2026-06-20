@@ -19,20 +19,20 @@ hide:
 # Immich
 *Bye Bye, Google Photos*
 
-[GitHub :simple-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description:  
+#### :symbols-description:&ensp;Description  
 
 :    High performance self-hosted photo and video management solution. 
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `2283`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + :material-lan: LAN Access:
     + <https://immich.internal>
@@ -41,13 +41,13 @@ hide:
 + :material-web: WAN Access:
     + <https://immich.rac3r4life.online>
 
-#### :material-key-chain: Credentials:  
+#### :material-key-chain:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich Admin"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich User"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                         | Method                                | Container Name            | Image                                                            |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------------------ | :--------------------------------------------------------------- |
@@ -56,7 +56,7 @@ hide:
 |                                                                     |                                       | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
 |                                                                     |                                       | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "immich.yml"

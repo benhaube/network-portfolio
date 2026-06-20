@@ -19,43 +19,43 @@ hide:
 # ASUS RT-BE92U
 *Wireless Router*
 
-[Router Web-UI :material-application-cog:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Asuswrt-Merlin :material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=d50535eb-570b-44c6-87c6-e77cd9e5eb09&sn=T5IG7L216442EU5&from=Myproducts){ .md-button .md-button--primary }
+[Router Web-UI&ensp;:material-application-cog:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Asuswrt-Merlin&ensp;:material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=d50535eb-570b-44c6-87c6-e77cd9e5eb09&sn=T5IG7L216442EU5&from=Myproducts){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline:&ensp;Device Overview
 
-#### :material-toolbox: Role:
+#### :material-toolbox:&ensp;Role
 
 :    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname
 
 + `RT-BE92U-FAF0`
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location 
 
 + Living-Room
 
-#### :material-memory: OS / Firmware: 
+#### :material-memory:&ensp;OS / Firmware
 
 + [:material-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE91U (Admin)"
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
-#### :material-wan: WAN Connection:
+#### :material-wan:&ensp;WAN Connection
 
 | Interface | IP Address | MAC Address         | Connected To                                           |
 | :-------: | :--------- | :------------------ | :----------------------------------------------------- |
 |   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5 Gb/s WAN / LAN *(port 1)* |
 |   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                      |
 
-#### :material-lan: Virtual Local Networks:
+#### :material-lan:&ensp;Virtual Local Networks
 
 |                   VLAN                   | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
 | :--------------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
@@ -63,7 +63,7 @@ hide:
 | :symbols-shield-person-fill:&nbsp;VLAN52 | -        | `9.9.9.9` `149.112.112.112`   | `192.168.52.0/24` | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`  |
 | :symbols-shield-house-fill:&nbsp;VLAN53  | -        | `9.9.9.9` `149.112.112.112`   | `192.168.53.0/24` | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`  |
 
-#### :material-wifi: Wi-Fi Networks:
+#### :material-wifi:&ensp;Wi-Fi Networks
 
 |     SSID     |  VLAN  |    WAN Access    | CIDR              | Frequency             | Notes                                        |
 | :----------: | :----: | :--------------: | :---------------- | :-------------------- | :------------------------------------------- |
@@ -71,7 +71,7 @@ hide:
 | *Home_Guest* | VLAN52 | :material-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-person-fill:&nbsp;Guest VLAN |
 |   *2G_IoT*   | VLAN53 | :material-close: | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
-#### :material-ethernet: Physical Ethernet Ports:
+#### :material-ethernet:&ensp;Physical Ethernet Ports
 
 |       Port #       | Connected Device                                                               | Color / Type  | Notes               |
 | :----------------: | :----------------------------------------------------------------------------- | :------------ | :------------------ |
@@ -82,9 +82,9 @@ hide:
 |    2.5 Gb LAN 3    | :material-ethernet:&nbsp;*Empty*                                               | -             | -                   |
 |    2.5 Gb LAN 4    | :material-ethernet:&nbsp;*Empty*                                               | -             | -                   |
 
-## :symbols-storage: Storage & Mounts
+## :symbols-storage:&ensp;Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s):
+#### :material-harddisk:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -92,15 +92,15 @@ hide:
 | `/jffs`     | -          | 44.5 MB        | `ubi:jffs2` | `ubifs`     | -          |
 | `/data`     | -          | 16.8 MB        | `bui:data`  | `ubifs`     | -          |
 
-#### :material-usb: External / Attached:
+#### :material-usb:&ensp;External / Attached
 
 | Mount Point           | Drive Type      | Drive Capacity | Device Path | File System | Encryption |
 | :-------------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB        | `/dev/sda1` | `ext4`      | -          |
 
-## :material-web: Services / Docker Containers
+## :material-web:&ensp;Services / Docker Containers
 
-#### :material-linux: Native:
+#### :material-linux:&ensp;Native
 
 |  Status  | Service                                                                 | Port(s) | Role / Notes                                                                                                                                                                                            |
 | :------: | :---------------------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -110,31 +110,31 @@ hide:
 | *Active* | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 !!! config inline end "Critical Configurations"
 
-    **:material-backup-restore:&nbsp;Backup Restore:**
+    **:material-backup-restore:&ensp;Backup Restore:**
     :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) and the [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md). 
 
-    **:material-web-clock:&nbsp;NTP Server:**
+    **:material-web-clock:&ensp;NTP Server:**
     :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
 
-#### :material-update: Update Process:
+#### :material-update:&ensp;Update Process
 
 + Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router) tool.
 + Email notifications enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM) and script updates.
     + Notification emails are sent to: <mailto:admin@haube-pereira.com> 
 + For Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
-#### :material-cloud-upload-outline: Backup Policy:
+#### :material-cloud-upload-outline:&ensp;Backup Policy
 
 + The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays *(at 3:00 UTC-5)* to [ZimaOS NAS](./ZimaBoard_2_NAS.md) and [Raspberry Pi 4B Server](./Raspberry_Pi_4B_Server.md) using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON) script.
 + **Backup Directory:**
     + ZimaOS NAS: `/media/Quick-Storage/Backup/router`
     + Pi 4B Server: `/mnt/usb-drive/smb-share/router`
 
-#### :services-gotify-notification: Gotify Push Notifications:
+#### :services-gotify-notification:&ensp;Gotify Push Notifications
 
 :    While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_Services/Gotify.md) server to send instant push notifications for events that may require an urgent response.
 
@@ -164,7 +164,7 @@ hide:
 + The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command.
 + To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_Services/Gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.
 
-#### :material-web-check: WAN Check Script
+#### :material-web-check:&ensp;WAN Check Script
 
 ##### About
 

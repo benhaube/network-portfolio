@@ -20,39 +20,39 @@ hide:
 # NFS
 *Network File System*
 
-[Documentation :material-file-document-multiple:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
+[Documentation&ensp;:material-file-document-multiple:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    Remote file system access for Linux.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `2049`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access 
 
 + `192.168.50.4:/media/Quick-Storage`
 + `192.168.50.4:/media/nvme0n1p1`
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                         | Method                             | Container Name | Image |
 | :------------------------------------------------------------------ | :--------------------------------- | :------------- | :---- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
-#### :material-server-outline: Server:
+#### :material-server-outline:&ensp;Server
 
 ##### Exports Entry
 
@@ -72,7 +72,7 @@ exportfs -a
 systemctl restart nfs-server
 ```
 
-#### :symbols-devices: Clients:
+#### :symbols-devices:&ensp;Clients
 
 ##### Systemd Unit Files
 

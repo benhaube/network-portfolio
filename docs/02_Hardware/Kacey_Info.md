@@ -17,28 +17,28 @@ hide:
 # More Kacey Info
 *Detailed Configuration Info*
 
-[Creality Docs :brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script :material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer :services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
+[Creality Docs&ensp;:brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer :services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Basic Information
+## :material-information-outline:&ensp;Basic Information
 
-#### :symbols-description: Model: 
+#### :symbols-description:&ensp;Model 
 
 :    Creality^&copy;^ K1C
 
-#### :material-cube-outline: Build Volume: 
+#### :material-cube-outline:&ensp;Build Volume
 
 :    `220x220x250`
 
-#### :symbols-commit: Revision:
+#### :symbols-commit:&ensp;Revision
 
 :    v2.0.5    
 
-#### :material-calendar: Create Date: 
+#### :material-calendar:&ensp;Create Date
 
 :    2023/09/05
 
-#### :symbols-memory-alt: Printer MCU:
+#### :symbols-memory-alt:&ensp;Printer MCU
 
 + Nozzle:
     + *Chip:* GD32F303CBT6
@@ -50,9 +50,9 @@ hide:
     + *Chip:* GD32F303RET6
     + *Version:* CR4CU220812S12
 
-## :material-lan: Network
+## :material-lan:&ensp;Network
 
-#### Moonraker:
+#### Moonraker
 
 + URL: 
     + <http://k1c-a71e.internal:7125>
@@ -60,22 +60,22 @@ hide:
     + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
         + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
 
-#### Fluidd:
+#### Fluidd
 
 + URL:
     + <http://k1c-a71e.internal>
     + <http://k1c-a71e.internal:4408>
 
-## :material-camera: Camera
+## :material-camera:&ensp;Camera
 
-#### Moonraker:
+#### Moonraker
 
 + Snapshot URL:
     + <http://k1c-a71e.internal:8080/?action=snapshot>
     + <http://localhost:8080/?action=snapshot>
     + <http://127.0.0.1:8080/?action=snapshot>
 
-#### Fluidd:
+#### Fluidd
 
 + Snapshot URL: 
     + <http://k1c-a71e.internal:8080/?action=snapshot>
@@ -83,9 +83,9 @@ hide:
     + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
-## :material-code-block-brackets: Machine G-code 
+## :material-code-block-brackets:&ensp;Machine G-code 
 
-#### :services-orca-slicer: OrcaSlicer:
+#### :services-orca-slicer:&ensp;OrcaSlicer
 
 ```gcode title="Machine Start" linenums="1"
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
@@ -122,7 +122,7 @@ M600
 M600
 ```
 
-## :services-klipper: Klipper Configuration Files
+## :services-klipper:&ensp;Klipper Configuration Files
 
 ```cfg title="<code>printer.cfg</code>" linenums="1"
 --8<-- "printer.cfg"

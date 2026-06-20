@@ -17,25 +17,25 @@ hide:
 # TP-Link LiteWave Switch
 *Model LS1005G*
 
-[Manual :material-book-information-variant:](../assets/manuals/LiteWave-Switch-Install-Guide.pdf){ .md-button .md-button--primary }&emsp;[Datasheet :material-book-information-variant:](../assets/manuals/LiteWave-Switch-Datasheet.pdf){ .md-button .md-button--primary }
+[Manual&ensp;:material-book-information-variant:](../assets/manuals/LiteWave-Switch-Install-Guide.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:material-book-information-variant:](../assets/manuals/LiteWave-Switch-Datasheet.pdf){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Physical Overview
+## :material-information-outline:&ensp;Physical Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro. 
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location 
 
 + Living Room
 + TV Stand
  
-#### :material-power-plug: Power Source: 
+#### :material-power-plug:&ensp;Power Source 
 
 + Wall Wart *(5V / 0.6A)*
  
-#### :symbols-monitor-heart: Specs:
+#### :symbols-monitor-heart:&ensp;Specs
 
 + Throughput:
     + Five 1 GbE ports
@@ -47,7 +47,7 @@ hide:
 + Hardware Revision:
     + v5.46
 
-## :material-ethernet: Port Map
+## :material-ethernet:&ensp;Port Map
 
 | Port # | Connected Device                                                                                                   | Color / Type  | Notes                      |
 | :----: | :----------------------------------------------------------------------------------------------------------------- | :------------ | :------------------------- |
@@ -59,12 +59,12 @@ hide:
 | **6**  | :material-ethernet:&nbsp;*Empty*                                                                                   | -             | -                          |
 
 ---
-## :material-tools: Maintenance Notes
+## :symbols-note-stack-fill:&ensp;Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 
-    :material-led-off:&nbsp;**Green LED:** 10/100/1000 Mb/s<br>
-    :material-led-on:&nbsp;**Flashing:** Activity
+    :material-led-off:&ensp;**Green LED:** 10/100/1000 Mb/s<br>
+    :material-led-on:&ensp;**Flashing:** Activity
 
 !!! warning inline "Troubleshooting"
 

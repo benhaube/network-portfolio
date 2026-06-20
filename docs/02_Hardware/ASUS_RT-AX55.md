@@ -17,55 +17,55 @@ hide:
 # ASUS RT-AX55
 *AiMesh Node*
 
-[Router Web-UI :material-application-cog:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Asuswrt-Merlin :material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[ASUS Support :material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=c59d7d6d-28e2-476f-affc-cb81b9846164&sn=MBIG31800578KSJ&from=Myproducts){ .md-button .md-button--primary }
+[Router Web-UI&ensp;:material-application-cog:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Asuswrt-Merlin&ensp;:material-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=c59d7d6d-28e2-476f-affc-cb81b9846164&sn=MBIG31800578KSJ&from=Myproducts){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline:&ensp;Device Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname
 
 + `RT-AX55-1360`
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location
 
 + Office
 + Printer-Cart 
 
-#### :material-memory: OS / Firmware: 
+#### :material-memory:&ensp;OS / Firmware
 
 + [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE91U (Admin)"
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
-#### :material-wan: WAN Connection:
+#### :material-wan:&ensp;WAN Connection
 
 | Interface | IP Address       | MAC Address         | Connected To                  |
 | :-------: | :--------------- | :------------------ | :---------------------------- |
 |   WAN0    | `192.168.50.221` | `7C:10:C9:DF:13:60` | :material-wifi:&nbsp;Backhaul |
 
-#### :material-lan: Virtual Local Networks:
+#### :material-lan:&ensp;Virtual Local Networks
 
 |              VLAN               | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
 | :-----------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
 | :material-security:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
 
-#### :material-wifi: Wi-Fi Networks:
+#### :material-wifi:&ensp;Wi-Fi Networks
 
 |  SSID  |  VLAN  |    WAN Access    | CIDR              | Frequency      | Notes                                 |
 | :----: | :----: | :--------------: | :---------------- | :------------- | :------------------------------------ |
 | *Home* | VLAN50 | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :material-security:&nbsp;Trusted VLAN |
 
-#### :material-ethernet: Physical Ethernet Ports:
+#### :material-ethernet:&ensp;Physical Ethernet Ports
 
 | Port  | Connected Device                                                          | Color / Type  | Notes                                         |
 | :---: | :------------------------------------------------------------------------ | :------------ | :-------------------------------------------- |
@@ -76,17 +76,17 @@ hide:
 | LAN 4 | :material-ethernet:&nbsp;*Empty*                                          | -             | -                                             |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 !!! config inline "Critical Configurations"
 
-    **:material-hub-outline: AiMesh Node:**
+    **:material-hub-outline:&ensp;AiMesh Node:**
     :    The AiMesh Node acts like a "dumb" wireless access point. All available settings for the AiMesh node are available through the main router's Web-UI. See [ASUS RT-BE92U](ASUS_RT-BE92U.md).
 
-#### :material-update: Update Process: 
+#### :material-update:&ensp;Update Process
 
 + Automatic firmware updates are enabled. The firmware version and status is available through the main router's Web-UI.  
 
-#### :material-cloud-upload-outline: Backup Policy: 
+#### :material-cloud-upload-outline:&ensp;Backup Policy
 
 + No backup is needed for AiMesh node. 

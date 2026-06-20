@@ -23,7 +23,7 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 
 ### My priorities are...
 
-**Privacy-First Networking&thinsp;:** 
+**Privacy-First Networking:** 
 :    Using tools like [Technitium](03_Services/Technitium.md) DNS and [Network Attached Storage](02_Hardware/ZimaBoard_2_NAS.md) servers to take back control of my data.
 
 **Immutable Documentation:** 

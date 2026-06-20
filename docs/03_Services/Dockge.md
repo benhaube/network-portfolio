@@ -17,27 +17,27 @@ hide:
 # Dockge
 *Docker Management*
 
-[GitHub :simple-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description:  
+#### :symbols-description:&ensp;Description
 
 :    A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `5001`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <http://pi-server.internal:5001>
 + <http://pi-zero.internal:5001>
 + <http://debian-vm.internal:5001>
 + <http://storage-server.internal:5001>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ debian-vm"
@@ -45,7 +45,7 @@ hide:
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ pi-zero"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ storage-server"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                      | Method                                | Container Name    | Image                   |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :---------------------- |
@@ -54,9 +54,9 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
-#### :material-monitor-arrow-down-variant: Install Dockge:
+#### :material-monitor-arrow-down-variant:&ensp;Install Dockge
 
 1. Create the directories that store your stacks and stores Dockge's stack:
 
@@ -79,7 +79,7 @@ hide:
 
     Dockge is now running on: <http://localhost:5001>
 
-#### :material-update: Update Dockge: 
+#### :material-update:&ensp;Update Dockge
 
 1. To update Dockge, run the following commands: 
 
@@ -88,7 +88,7 @@ hide:
     docker compose pull && docker compose up -d
     ```
 
-#### :material-docker: Docker Compose:
+#### :material-docker:&ensp;Docker Compose
 
 ```yaml title="Debian Server VM | Raspberry Pi 4B Server | Raspberry Pi Zero Server" linenums="1"
 --8<-- "dockge.yaml"

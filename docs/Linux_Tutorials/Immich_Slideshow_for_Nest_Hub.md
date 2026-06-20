@@ -15,48 +15,47 @@ hide:
     **User:** Ben Haube | **Date:** Feb 5, 2026<br>
     **Infrastructure:** 
     
-    + [:material-nas: ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))* 
-    + [:material-raspberry-pi: Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
+    + [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))* 
+    + [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
 
 ---
 
-## :material-broom: Phase 1: Cleaning Google Photos
+## :material-broom:&ensp;Cleaning Google Photos
 
 **Goal:**
 :   Delete cloud data without losing local files.
 
 1.  **Safety First *(Mobile)*:**
-    + Uninstall Google Photos App OR Turn OFF "Backup & Sync".
+    + Uninstall Google Photos App **OR** Turn OFF "Backup & Sync".
     + Install **Fossify Gallery** *(via F-Droid / Obtainium)* for local viewing.
 
-        [Fossify Gallery :simple-fdroid:](https://f-droid.org/en/packages/org.fossify.gallery/){ .md-button }
+        [Fossify Gallery&ensp;:symbols-image:](https://f-droid.org/en/packages/org.fossify.gallery/){ .md-button }
 
 2.  **Deletion *(Desktop)*:**
     + **Manual:** 
-        + Go to [:services-google-photos:&thinsp;Google Photos](https://photos.google.com) 
-        + :material-mouse-left-click: first photo, :material-mouse-scroll-wheel::material-arrow-down-thin: 
-        + ++shift++ + :material-mouse-left-click: last photo, ++del++.
+        + **Go to:**&ensp;[:services-google-photos:&nbsp;Google Photos](https://photos.google.com) 
+        + :material-mouse-left-click:&nbsp;first photo&emsp;:material-arrow-right-thin:&emsp;:material-mouse-scroll-wheel::material-arrow-down-thin:&emsp;:material-arrow-right-thin:&emsp;++shift++&nbsp;+&nbsp;:material-mouse-left-click:&nbsp;last photo&emsp;:material-arrow-right-thin:&emsp;++del++
     + **Console Script *(Advanced)*:** 
-        + Open Chrome DevTools ++f12++ :material-arrow-right-thin: Console. 
+        + Open Chrome DevTools:&ensp;++f12++&ensp;:material-arrow-right-thin:&ensp;Console. 
         + Paste script to auto-select/delete. 
-3.  **Finalize:** 
+1.  **Finalize:** 
     + Empty "Trash/Bin" to reclaim storage.
 
-### :material-file-code-outline: Photo Cleaning Script
+### :material-file-code-outline:&ensp;Photo Cleaning Script
 
 ```javascript title="Javascript" linenums="1"
 --8<-- "clean-google-photos.js"
 ```
 
-1. If the script selects them but doesn't delete them, just click the :material-trash-can-outline: icon yourself after it does the hard work of selecting everything.
+1. If the script selects them but doesn't delete them, just click the :symbols-delete: icon yourself after it does the hard work of selecting everything.
 
-## :material-server-outline: Phase 2: Server-Side Setup 
-&emsp;&emsp;*ZimaOS NAS*
+## :material-server-outline:&ensp;Server-Side Setup 
+&emsp;&emsp;&ensp;*ZimaOS NAS*
 
 **Goal:**
 :   Replicate "Live Albums" and generate the Nest Hub interface.
 
-### :material-docker: Docker Compose Snippet
+### :material-docker:&ensp;Docker Compose Snippet
 
 Add these services to your existing Immich stack or a new stack.
 
@@ -69,7 +68,7 @@ Add these services to your existing Immich stack or a new stack.
 3. The Logic *(Auto-adds faces to the specific album)*
 4. `SYNC_MODE=1` adds new photos automatically.
 
-### :material-file-image: Auto Album Config
+### :material-file-image:&ensp;Auto Album Config
 
 Place this in the same folder as your docker-compose file.
 
@@ -77,26 +76,26 @@ Place this in the same folder as your docker-compose file.
 --8<-- "immich-frame-config.json"
 ```
 
-## :material-wan: Phase 3: Network & Cloudflare
+## :material-wan:&ensp;Network & Cloudflare
 
 **Goal:**
 :   Allow Nest Hubs to load the frame securely.
 
 1. **Tunnel:** 
-    + Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081` using the [:services-cloudflare:&thinsp;Cloudflare](../03_Services/Cloudflared.md) tunnel.
+    + Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081` using the [Cloudflare](../03_Services/Cloudflared.md) tunnel.
 2. **WAF Rules *(Critical)*:**
-    + Go to Cloudflare Dashboard :material-arrow-right-thin: Security :material-arrow-right-thin: WAF :material-arrow-right-thin: Custom Rules.
-    + **Create Rule:** If Hostname equals `frame.rac3r4life.online` :material-arrow-right-thin: **Skip** "Super Bot Fight Mode" and "Managed Challenge".
+    + **Go to:**&ensp;Cloudflare Dashboard&ensp;:material-arrow-right-thin:&ensp;Security&ensp;:material-arrow-right-thin:&ensp;WAF&ensp;:material-arrow-right-thin:&ensp;Custom Rules
+    + **Create Rule:**&ensp;If Hostname equals `frame.rac3r4life.online`&ensp;:material-arrow-right-thin:&ensp;**Skip** "Super Bot Fight Mode" and "Managed Challenge"
         + _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
-## :material-home-automation: Phase 4: Automation 
-&emsp;&emsp;*Home Assistant on Pi 4*
+## :material-home-automation:&ensp;Automation 
+&emsp;&emsp;&ensp;*Home Assistant on Pi 4*
 
 **Goal:**
 :   Force Nest Hub to show the frame when idle.
 
 **Prerequisite:** 
-:   Install "DashCast" add-on in [:material-home-assistant:&thinsp;Home Assistant](../03_Services/Home_Assistant.md).
+:   Install "DashCast" add-on in [Home Assistant](../03_Services/Home_Assistant.md).
 
 **Automation YAML:**
 

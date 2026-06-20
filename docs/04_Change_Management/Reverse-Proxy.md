@@ -23,23 +23,23 @@ hide:
 
 ---
 
-## :material-information-outline: Architecture Overview
+## :material-information-outline:&ensp;Architecture Overview
 
-#### DNS Servers:
+#### DNS Servers
 
-* Technitium Cluster Primary: *[:material-debian:&thinsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)*
-* Technitium Cluster Secondary: *[:material-raspberry-pi:&thinsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)*
+* Technitium Cluster Primary:&ensp;[:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)
+* Technitium Cluster Secondary:&ensp;[:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
-#### Reverse Proxy:
+#### Reverse Proxy
 
-* Caddy: *[:material-raspberry-pi:&thinsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)* &mdash; *(Native `apt` Install)*
+* Caddy:&ensp;[:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) &mdash; *(Native `apt` Install)*
 
-#### Application Hosts:
+#### Application Hosts
 
 * [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 * [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
-## :material-file-cloud: Technitium DNS Records
+## :material-file-cloud:&ensp;Technitium DNS Records
 
 !!! note
 
@@ -50,18 +50,18 @@ hide:
 | `pi-zero.internal` | **A**       | `192.168.50.3`     | :material-check: | The dedicated Caddy reverse proxy host. |
 | `immich.internal`  | **CNAME**   | `pi-zero.internal` | :material-close: | Points the Immich domain to the proxy.  |
 
-## :material-cloud-cog: Caddy Configuration
+## :material-cloud-cog:&ensp;Caddy Configuration
 
-#### File Location: 
+#### File Location 
 
 + `/etc/caddy/Caddyfile` 
 
-#### Commands: 
+#### Commands 
 
 + `#!bash sudo nano /etc/caddy/Caddyfile` *(Open config file in `nano`)*  
 + `#!bash sudo systemctl reload caddy` *(Apply changes)*
 
-#### Example Caddyfile:
+#### Example Caddyfile
 
 ```nginx title="<code>/etc/caddy/Caddyfile</code>" linenums="1"
 # Immich Photo Server
@@ -72,7 +72,7 @@ immich.internal {
 
 ---
 
-## :material-traffic-light: Traffic Flow
+## :material-traffic-light:&ensp;Traffic Flow
 
 ```mermaid { .pz-ignore }
 --8<-- "traffic_flow.mmd"

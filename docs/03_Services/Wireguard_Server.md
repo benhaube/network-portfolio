@@ -20,22 +20,22 @@ hide:
 # WireGuard
 *A Simple, Modern VPN*
 
-[GitHub :simple-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `41820`
 + `51820`
 + `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;ZimaOS NAS)*
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access 
 
 + :material-vpn:&nbsp;Server Endpoint:
     + `rac3r4life.myaddr.dev:41820` *(for :material-router-wireless:&nbsp;ASUS RT-BE92U)*
@@ -44,13 +44,13 @@ hide:
     + <http://storage-server.internal:51821/>
     + <http://storage-server-2.internal:51821/>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Admin"
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Metrics"
 
-#### :symbols-devices: Clients:
+#### :symbols-devices:&ensp;Clients
 
 + :material-router-wireless:&nbsp;ASUS RT-BE92U:
     + `Ben's-Phone`
@@ -63,14 +63,14 @@ hide:
     + `rob-laptop`
     + `rob-phone`
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                      | Method                                | Container Name         | Image                        |
 | :------------------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
 | [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "wireguard.yml"

@@ -19,25 +19,25 @@ hide:
 # Ugreen Switch
 *Model UM106X*
 
-[Manual :material-book-information-variant:](../assets/manuals/Ugreen_CM106X_Manual.pdf){ .md-button .md-button--primary }&emsp;[Datasheet :material-book-information-variant:](../assets/manuals/Ugreen_CM106X_Datasheet.pdf){ .md-button .md-button--primary }
+[Manual&ensp;:material-book-information-variant:](../assets/manuals/Ugreen_CM106X_Manual.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:material-book-information-variant:](../assets/manuals/Ugreen_CM106X_Datasheet.pdf){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Physical Overview
+## :material-information-outline:&ensp;Physical Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role
 
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
-#### :material-map-marker-outline: Location: 
+#### :material-map-marker-outline:&ensp;Location 
 
 + Living-Room 
 + Mini-Rack 
 
-#### :material-power-plug: Power Source: 
+#### :material-power-plug:&ensp;Power Source
 
 + Wall wart *(12.0V / 1.0A)*
 
-#### :symbols-monitor-heart: Specs:
+#### :symbols-monitor-heart:&ensp;Specs
 
 + Throughput: 
     + Five 2.5 Gb/s Ports
@@ -48,7 +48,7 @@ hide:
 + Managed:
     + No &mdash; Unmanaged
 
-## :material-ethernet: Port Map
+## :material-ethernet:&ensp;Port Map
 
 | Port # | Connected Device                                                                 | Color / Type   | Notes                                                      |
 | :----: | :------------------------------------------------------------------------------- | :------------- | :--------------------------------------------------------- |
@@ -60,21 +60,21 @@ hide:
 | **6**  | [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red / Cat6A    | 10 Gb/s &mdash; SFP+ Ethernet Transceiver                  |
 
 ---
-## :material-tools: Maintenance Notes
+## :symbols-note-stack-fill:&ensp;Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 
     **Ethernet Ports:** 
  
-    &emsp;:material-led-off:&nbsp;**Green LED:** 2500 Mb/s <br>
-    &emsp;:material-led-off:&nbsp;**Amber LED:** 10/100/1000 Mb/s <br>
-    &emsp;:material-led-on:&nbsp;**Flashing:** Activity
+    :material-led-off:&ensp;**Green LED:** 2500 Mb/s <br>
+    :material-led-off:&ensp;**Amber LED:** 10/100/1000 Mb/s <br>
+    :material-led-on:&ensp;**Flashing:** Activity
    
     **SFP+ Port:** 
  
-    &emsp;:material-led-off:&nbsp;**Green LED:** 10 Gb/s <br>
-    &emsp;:material-led-off:&nbsp;**Amber LED:** 1000 / 2500 Mb/s <br>
-    &emsp;:material-led-on:&nbsp;**Flashing:** Activity
+    :material-led-off:&ensp;**Green LED:** 10 Gb/s <br>
+    :material-led-off:&ensp;**Amber LED:** 1000 / 2500 Mb/s <br>
+    :material-led-on:&ensp;**Flashing:** Activity
 
 !!! warning inline "Troubleshooting"
 

@@ -1,57 +1,57 @@
 ---
 icon: symbols/prowiper
-title: PROWIPER&copy; Mod
+title: PROWIPER Mod
 subtitle: Improved Nozzle Brush Routine
 hide:
   - toc
 ---
-![Custom PROWIPER^&copy;^ Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=200 }&ensp;![3DPHUB Logo](../assets/icons/3dphub.svg){ width=50 }
+![Custom PROWIPER Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=200 }&ensp;![3DPHUB Logo](../assets/icons/3dphub.svg){ width=50 }
 
-# PROWIPER^&copy;^ Mod
+# PROWIPER Mod
 *Improved Nozzle Brush Routine*
 
-[Creality^&copy;^ K1C :brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd :services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net :brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality K1C&ensp;:brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
-!!! info "PROWIPER^&copy;^ Info"
+!!! info "PROWIPER Info"
 
     **Modifications:** 
 
     1. Upgraded bed leveling kit with aluminum spacers. 
-    2. PROWIPER^&copy;^ V5 Mount
+    2. PROWIPER V5 Mount
  
     **Hardware Required:**
 
-    1. Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` *(in high-temp filament like ASA / ABS)*
+    3. Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` *(in high-temp filament like ASA / ABS)*
    
-        [Printables :brands-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button } 
+        [Printables&ensp;:brands-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button } 
 
-    2. **Bambu A1** Silicone Brushes
+    4. **Bambu A1** Silicone Brushes
 
-        [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0DRBZK7RZ){ .md-button }
+        [Amazon&ensp;:fontawesome-brands-amazon:](https://www.amazon.com/dp/B0DRBZK7RZ){ .md-button }
 
-    3. 2x **M3x16mm** self-tapping screws
+    5. 2x **M3x16mm** self-tapping screws
 
-        [Amazon :fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
+        [Amazon&ensp;:fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
 
 ---
-## :material-file-document-edit: Configuration File Edits
+## :material-file-document-edit:&ensp;Configuration File Edits
 
 !!! warning inline end "Important"
 
     Before uploading the macro, modify `3DPHUB_PROWIPER.CFG` to account for the custom bed height and safe testing speeds.
 
-#### Set the Mount Type: 
+#### Set the Mount Type 
   + [ ] Ensure `variable_brush_mount` is set to `"V5K1C"`.
-#### Adjust for the Bed Spacer:
+#### Adjust for the Bed Spacer
   + [ ] Change `variable_spacer_height` to match the Z-height of the spacer being used. *(e.g., `4`)*
 #### Tweak Testing Speeds:
   + [ ] Change `variable_speed` from the default `7500` to a safer `4000` or `5000`.
-#### Disable Phantom Bed Fans:
+#### Disable Phantom Bed Fans
   + [ ] Change `variable_bed_fans_installed` to `"FALSE"` *(unless a specific `bed_fans` pin is defined in your main printer config)*.
-#### Verify Bottom Clearance:
+#### Verify Bottom Clearance
   + [ ] Review `variable_bot_clearance` *(default `20`)* and `variable_drop_distance` *(default `15`)*. 
 
-## :services-klipper: Klipper Integration
+## :services-klipper:&ensp;Klipper Integration
 
 !!! note inline end "Integration Note"
 
@@ -59,18 +59,27 @@ hide:
 
 1. [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
 2. [ ] Upload the newly edited `3DPHUB_PROWIPER.CFG` into this directory.
-3. [ ] Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`.
+3. [ ] Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`
 4. [ ] Save and restart Klipper. 
 
-## :material-chip: Slicer & Firmware Clearances
+    ```cfg title="<code>printer.cfg</code>" linenums="1" hl_lines="30"
+    --8<-- "printer.cfg::31"
+    ```
+
+## :material-chip:&ensp;Slicer & Firmware Clearances
 
 !!! info inline end "Clearance Info"
 
     Because the **V5 mount** is utilized instead of the low-profile **LPF2 mount**, a 10mm clearance zone is required to prevent the toolhead from striking the mount during printing or probing.
 
-#### :services-klipper: Klipper Mesh Clearance:
+#### Klipper Mesh Clearance
   + [ ] In `printer.cfg`, locate the `[bed_mesh]` section. Reduce the Y-axis value of `mesh_max` by 10 *(e.g., change `220` to `210`)*.
-#### :services-orca-slicer: Slicer Clearance:
+
+    ```cfg title="<code>printer.cfg</code>" linenums="1" hl_lines="4"
+    --8<-- "printer.cfg:350:356"
+    ```
+
+#### Slicer Clearance
   + [ ] In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
 
 <figure markdown="span">
@@ -83,8 +92,8 @@ hide:
 <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
 </div>
 
-## :material-toggle-switch-outline: Dry Run 
-&emsp;&emsp;*Critical Safety Step*
+## :material-toggle-switch-outline:&ensp;Dry Run 
+&emsp;&emsp;&ensp;*Critical Safety Step*
 
 !!! warning inline end "Caution"
 
@@ -94,19 +103,19 @@ hide:
 2. [ ] Trigger the `WIPE_NOZZLE` macro via Fluidd or Guppy Screen.
 3. [ ] Observe the toolhead to verify it moves to the correct coordinates safely without risking a collision.
 
-## :material-tools: Physical Installation
+## :material-tools:&ensp;Physical Installation
 
 1. [ ] Lower the build plate halfway down the Z-axis to create working room.
 2. [ ] Drop the A1 brush into the slot
 3. [ ] Using a **2mm hex driver** and the **M3x12mm** self-tapping screws, install the spacer and the V5 brush mount into the two existing holes at the back of the Z-axis.
 
-## :material-check-decagram: Final Verification
+## :symbols-release-alert:&ensp;Final Verification
 
 + [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate. 
 
 ---
 
-## :brands-3dphub: PROWIPER^&copy;^ G-Code
+## :brands-3dphub:&ensp;PROWIPER G-Code
 
 ```cfg title="<code>3DPHUB_PROWIPER.cfg</code>" linenums="1" hl_lines="43 58"
 --8<-- "3DHUB_PROWIPER.cfg"

@@ -17,21 +17,21 @@ hide:
 # F1 Replay Timing
 *All of the Data*
 
-[GitHub :simple-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Issues :material-progress-alert:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Issues&ensp;:material-progress-alert:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description
 
 :    Visualization of real-time track data and telemetry synced to F1 live and replays.
 
-#### :symbols-settings-ethernet: Port(s):  
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + `3000`
 + `8000`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + Backend: 
     + <http://storage-server.internal:8000>
@@ -39,18 +39,18 @@ hide:
     + <http://storage-server.internal:3000>
     + <http://storage-server-2.internal:3000>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + N/A
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                         | Method                                | Container Name | Image                                                 |
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :---------------------------------------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `f1-backend`   | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`  |
 |                                                                     |                                       | `f1-frontend`  | `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest` |
 
-### :material-cog: Configuration 
+### :material-cog:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "f1-replay-timing.yaml"

@@ -22,40 +22,40 @@ hide:
 # Raspberry Pi Zero Server
 *Reverse-Proxy Server*
 
-[Raspberry Pi Docs :brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs :simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Device Overview
+## :material-information-outline:&ensp;Device Overview
 
-#### :material-toolbox: Role: 
+#### :material-toolbox:&ensp;Role 
 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`).
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host:&ensp;Hostname
 
 + `pi-zero`
 
-#### :material-map-marker-outline: Location:  
+#### :material-map-marker-outline:&ensp;Location
 
 + Office
 + Printer-Cart
 
-#### :material-memory: OS / Firmware: 
+#### :material-memory:&ensp;OS / Firmware
 
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
-#### :material-key-chain: Credentials:
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"pi-zero (admin)"
 
-## :symbols-monitor-heart: Core Specs
+## :symbols-monitor-heart:&ensp;Core Specs
 
 | CPU                                  | Cores / Threads        | CPU Freq. | RAM          | GPU          | GPU Freq. | VRAM     |
 | :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
 | :simple-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz   | 512 MB SDRAM | VideoCore IV | 400 MHz   | *Shared* |
 
-## :material-lan: Network Configuration
+## :material-lan:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Connected To                                                              |
 | :-------: | :------------- | :------------------ | :------------------------------------------------------------------------ |
@@ -65,9 +65,9 @@ hide:
 | :-------: | :-----------------------------: | :----------------- | :---------------------------- | :------------- |
 |  `wlan0`  | :material-security:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage: Storage & Mounts
+## :symbols-storage:&ensp;Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s):
+#### :material-harddisk:&ensp;Internal Drive(s)
 
 | Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption |
 | :--------------- | :--------- | :------------- | :--------------- | :---------- | :--------- |
@@ -75,9 +75,9 @@ hide:
 | `/boot/firmware` | MicroSD    | 512 MB         | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 80 MB          | `log2ram`        | `tmpfs`     | -          |
 
-## :material-web: Services / Docker Containers
+## :material-web:&ensp;Services / Docker Containers
 
-#### :material-linux: Native Linux:
+#### :material-linux:&ensp;Native Linux
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                                                                                                                          |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
@@ -85,7 +85,7 @@ hide:
 | *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)     |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
 
-#### :material-docker: Docker:
+#### :material-docker:&ensp;Docker
 
 |   Status   | Service                                                            | Port(s) | Role / Notes                                                                                           |
 | :--------: | :----------------------------------------------------------------- | :-----: | :----------------------------------------------------------------------------------------------------- |
@@ -94,6 +94,6 @@ hide:
 | *Inactive* | [:services-portainer:&nbsp;Portainer](../03_Services/Portainer.md) | `9001`  | A lightweight service delivery platform for containerized applications.                                |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 --8<-- "maintenance-raspi.md"

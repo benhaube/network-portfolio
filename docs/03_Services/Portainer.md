@@ -18,23 +18,23 @@ hide:
 # Portainer-EE
 *Container Management*
 
-[GitHub :simple-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.portainer.io/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.portainer.io/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    A lightweight service delivery platform for containerized applications. 
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + Hub:
     + `9443`
 + Agent:
     + `9001`
 
-#### :material-link-variant: URL / Access:
+#### :material-link-variant:&ensp;URL / Access
 
 + Hub: 
     + ~~<https://portainer.internal>~~
@@ -43,13 +43,13 @@ hide:
     + ~~<http://pi-zero.internal:9001>~~
     + ~~<http://storage-server.internal:9001>~~
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Portainer"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 ##### Hub
 
@@ -64,7 +64,7 @@ hide:
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 | [:material-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
-### :material-cog: Configuration  
+### :material-cog:&ensp;Configuration  
 
 ##### Hub
 

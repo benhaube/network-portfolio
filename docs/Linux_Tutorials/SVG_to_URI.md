@@ -20,7 +20,7 @@ hide:
 
 ---
 
-## :material-check-decagram: Prerequisites
+## :symbols-release-alert:&ensp;Prerequisites
 
 To complte this tutorial you will need the following packages:
 
@@ -28,7 +28,7 @@ To complte this tutorial you will need the following packages:
 + `wl-copy` *(On Wayland-based systems)*
 + `xclip` *(On Xorg-based systems)*
 
-## :material-console: The Command
+## :material-console:&ensp;The Command
 
 You can simply use the command below if you only need to do one icon, but if you have several icons *(or just want to have an easy way to do it in the future)* you can follow the instructions to define a function.
 
@@ -36,14 +36,14 @@ You can simply use the command below if you only need to do one icon, but if you
 cat <your-icon>.svg | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
 ```
 
-### Changing the Color / Size
+### Changing the Color & Size
 
 + You can change the color by adding a `fill` attribute to either the main `<svg>` tag or the specific `<path>` tag. 
     + You can use standard hex codes, RGB values, or CSS color names.
 + To scale the icon up or down, leave the `viewBox` alone and explicitly define the `width` and `height` attributes.
     + Material Design icons, for example, typically use a `viewBox="0 0 24 24"`.
 
-#### The CLI Power-User Route:
+#### The CLI Power-User Route
 
 If you want to handle the color and size adjustments without even opening a text editor, you can use `sed` to inject those attributes on the fly and pipe the output directly into the Node.js encoder.
 
@@ -55,13 +55,13 @@ If you want to handle the color and size adjustments without even opening a text
 
     ???+ note
     
-        `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
+        The expression `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
 
-## :material-file-code-outline: Making a Function
+## :material-file-code:&ensp;Making a Function
 
 This is the perfect use case for a shell alias / function. On Linux we can easily add this to the Bash shell's configuration file (`.bashrc`) so it is always available. Here is how to create a custom `svg2uri` function that reads directly from standard input.
 
-#### Add the function to your shell profile:
+#### Add to Shell Profile
 
 !!! tip inline end
 
@@ -69,7 +69,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
  
     You can check out instructions on how to do this for **Debian / Fedora** based distributions in my tutorial: 
 
-    [Defining Aliases :material-console:](Defining_Terminal_Aliases.md){ .md-button }
+    [Defining Aliases&ensp;:material-console:](Defining_Terminal_Aliases.md){ .md-button }
 
 1. Open your terminal profile configuration *(usually `~/.bashrc` if you are using Bash, or `~/.zshrc` if you are using Zsh)* in your preferred editor:
 
@@ -104,7 +104,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
     source ~/.bashrc
     ```
 
-#### Using the Function:
+#### Using the Function
 
 Now you can pipe any SVG directly into your new command. 
 
@@ -120,7 +120,7 @@ Now you can pipe any SVG directly into your new command.
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
     ```
 
-#### Bonus:
+#### Bonus!
 
 If you want to skip highlighting and copying the terminal output altogether, you can pipe the final output directly to your system's clipboard. On Linux you have either `xclip` *(X11)* or `wl-copy` *(Wayland)* available: 
 
@@ -132,9 +132,9 @@ cat icon.svg | svg2uri | xclip -selection clipboard  # (2)!
 1. For Wayland *(The default on most modern Linux distributions)*
 2. For X11 *(A legacy display server used mostly on older Linux installs)*
 
-Now you can just ++ctrl+v++ the output into whatever CSS / HTML file you are working on. 
+Now you can just ++ctrl+v++ *(paste)* the output into whatever CSS / HTML file you are working on. 
 
-## :material-wrench: Using the Output
+## :material-wrench:&ensp;Using the Output
 
 Once you have your generated string, you can drop it directly into your code:
 

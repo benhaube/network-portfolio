@@ -18,34 +18,34 @@ hide:
 # Beszel
 *Server Monitoring*
 
-[GitHub :simple-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description 
 
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
 
-#### :symbols-settings-ethernet: Port(s):
+#### :symbols-settings-ethernet:&ensp;Port(s)
 
 + Hub:
     + `8090`
 + Agent:
     + `45867` 
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access 
 
 + <https://beszel.internal>
 + <http://pi-server.internal:8090/>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Beszel Hub"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 ##### Hub
 
@@ -62,9 +62,9 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
-#### :material-key: Generate API Tokens:
+#### :material-key:&ensp;Generate API Tokens
 
 :    Run the following command in a terminal on a client machine to generate API tokens.
 
@@ -76,7 +76,7 @@ hide:
 
     1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
 
-#### :material-docker: Docker Compose:
+#### :material-docker:&ensp;Docker Compose
 
 ##### Hub
 

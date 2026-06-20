@@ -17,41 +17,41 @@ hide:
 # Fluidd
 *The Klipper UI*
 
-[GitHub :simple-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.fluidd.xyz/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.fluidd.xyz/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :material-information-outline:&ensp;Overview
 
-#### :symbols-description: Description: 
+#### :symbols-description:&ensp;Description
 
 :    A free and open-source Klipper web interface for managing your 3D-printer.
 
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet:&ensp;Port(s) 
 
 + `80`
 + `4408`
 
-#### :material-link-variant: URL / Access: 
+#### :material-link-variant:&ensp;URL / Access
 
 + <http://kacey.internal>
 + <http://192.168.50.153>
 + <http://kacey.internal:4408>
 + <http://192.168.50.153:4408>
 
-#### :material-key-chain: Credentials: 
+#### :material-key-chain:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                              | Method                             | Container Name | Image |
 | :--------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog: Configuration
+### :material-cog:&ensp;Configuration
 
-#### :symbols-install-desktop: Install:
+#### :symbols-install-desktop:&ensp;Install
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 --8<-- "install-helper-script.sh"
@@ -61,7 +61,7 @@ hide:
 2. Enter this command to run the Creality Helper Script.
 3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
 
-#### :material-file-cog: Config File Backup:
+#### :material-file-cog:&ensp;Config File Backup
 
 ```json {title="<code>backup-fluidd.json</code>" linenums="1" .wrap-code}
 --8<-- "fluidd.json"

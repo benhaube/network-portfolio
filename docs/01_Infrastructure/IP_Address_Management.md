@@ -30,7 +30,7 @@ hide:
     :    **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
 
 ---
-## :material-lan: Local Networks
+## :material-lan:&ensp;Local Networks
 
 | VLAN                                                             | SSID                                                           | CIDR              | DNS Servers                   | Domain   |    WAN Access    | Role / Notes                                 |
 | :--------------------------------------------------------------- | :------------------------------------------------------------- | :---------------- | :---------------------------- | :------- | :--------------: | :------------------------------------------- |
@@ -38,8 +38,8 @@ hide:
 | [VLAN52](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*Home_Guest*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks) | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        | :material-check: | :symbols-shield-person-fill:&nbsp;Guest VLAN |
 | [VLAN53](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*2G_IoT*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks)     | `192.168.53.0/24` | `9.9.9.9` `149.122.122.122`   | -        | :material-close: | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
-## :material-router-wireless: Core Infrastructure 
-&emsp;&emsp;*Static & Reserved*
+## :material-router-wireless:&ensp;Core Infrastructure 
+&emsp;&emsp;&ensp;*Static & Reserved*
 
 | Device                                                                                     | VLAN   | IP Address       | Hostname        | Type   | Role / Notes                                                                                                              |
 | :----------------------------------------------------------------------------------------- | :----- | :--------------- | :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------ |
@@ -52,8 +52,8 @@ hide:
 | [:material-router-wireless:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)             | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                  |
 | [:material-wan:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)                         | -      | `192.168.100.1`  | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
 
-## :symbols-devices: Key Clients 
-&emsp;&emsp;*DHCP Reserved*
+## :symbols-devices:&ensp;Key Clients 
+&emsp;&emsp;&ensp;*DHCP Reserved*
 
 | Device                                                                                                | VLAN   | IP Address      | Hostname           | Role / Notes                                                            |
 | :---------------------------------------------------------------------------------------------------- | :----- | :-------------- | :----------------- | :---------------------------------------------------------------------- |
@@ -61,16 +61,16 @@ hide:
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)              | VLAN50 | `192.168.50.15` | `k1c-a71e`         | Creality K1C *(Modified)*                                               |
 | [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(`wlan0`)* | VLAN53 | `192.168.53.2`  | `pi-server`        | Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
 
-## :material-web-refresh: Dynamic DNS Providers
+## :material-web-refresh:&ensp;Dynamic DNS Providers
 
 | Status   | Provider                        | Server                                                                           | FQDN                            | TLS Certificate                        | Certificate Expire |
 | :------- | :------------------------------ | :------------------------------------------------------------------------------- | :------------------------------ | :------------------------------------- | :----------------- |
 | *Active* | :services-addr:&nbsp;addr.tools | [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
 
-## :material-vpn: VPN Servers / Clients
+## :material-vpn:&ensp;VPN Servers / Clients
 
-#### :simple-wireguard:&nbsp;WireGuard @ ASUS Router
-&emsp;&nbsp;*Main Server*
+#### :simple-wireguard:&ensp;WireGuard @ ASUS Router
+&emsp;&ensp;*Main Server*
 
 | Client                              | CIDR          | DNS Servers                   | Endpoint                    |
 | :---------------------------------- | :------------ | :---------------------------- | :-------------------------- |
@@ -79,8 +79,8 @@ hide:
 | :symbols-mobile:&nbsp;Rob's-Phone   | `10.6.0.4/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
 | :material-laptop:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
 
-#### :simple-wireguard:&nbsp;WireGuard @ ZimaOS NAS
-&emsp;&nbsp;*Backup Server*
+#### :simple-wireguard:&ensp;WireGuard @ ZimaOS NAS
+&emsp;&ensp;*Backup Server*
 
 | Client                            | CIDR                              | DNS Servers                   | Endpoint                    |
 | :-------------------------------- | :-------------------------------- | :---------------------------- | :-------------------------- |
@@ -92,13 +92,13 @@ hide:
 ---
 <div class="grid cards" markdown>
 
--   :material-ethernet:{ .lg .middle } **MAC Addresses**
+-   :material-ethernet:{ .lg .middle }&emsp;**MAC Addresses**
 
     ---
 
     [MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :material-sitemap:{ .lg .middle } **Network Diagrams**
+-   :material-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
 
     ---
 
@@ -108,13 +108,13 @@ hide:
 
 <div class="grid cards" markdown>
 
--   :material-restore-alert:{ .lg .middle } **Disaster Recovery**
+-   :material-restore-alert:{ .lg .middle }&emsp;**Disaster Recovery**
     
     ---
 
     [Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
 
--   :material-server-security:{ .lg .middle } **Network Security**
+-   :material-server-security:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

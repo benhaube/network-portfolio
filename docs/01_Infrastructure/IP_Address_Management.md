@@ -38,18 +38,18 @@ hide:
 | [VLAN52](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*Home_Guest*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks) | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        | :material-check: | :symbols-shield-person-fill:&nbsp;Guest VLAN |
 | [VLAN53](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*2G_IoT*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks)     | `192.168.53.0/24` | `9.9.9.9` `149.122.122.122`   | -        | :material-close: | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
-## :material-router-wireless:&ensp;Core Infrastructure 
+## :symbols-router:&ensp;Core Infrastructure 
 &emsp;&emsp;&ensp;*Static & Reserved*
 
 | Device                                                                                     | VLAN   | IP Address       | Hostname        | Type   | Role / Notes                                                                                                              |
 | :----------------------------------------------------------------------------------------- | :----- | :--------------- | :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------ |
-| [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)           | -      | `192.168.50.1`   | `RT-BE92U-FAF0` | Static | Main Gateway, NTP Master, DHCP Server                                                                                     |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                     | -      | `192.168.50.1`   | `RT-BE92U-FAF0` | Static | Main Gateway, NTP Master, DHCP Server                                                                                     |
 | [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | VLAN50 | `192.168.50.2`   | `pi-server`     | Static | DNS Secondary *([Technitium](../03_Services/Technitium.md) cluster)*, [CUPS](../03_Services/CUPS_Print_Server.md)         |
 | [:material-raspberry-pi:&nbsp;Ras-Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | VLAN50 | `192.168.50.3`   | `pi-zero`       | Static | Caddy reverse proxy server for local domain names                                                                         |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.4`   | `ZimaOS-NAS`    | Static | Main File Server, Primary Ethernet connection *(eth0)*                                                                    |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.5`   | `ZimaOS-NAS`    | Static | SMB Multi-channel Path, Secondary Ethernet Connection *(eth1)*                                                            |
 | [:material-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | VLAN50 | `192.168.50.6`   | `debian-vm`     | Static | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
-| [:material-router-wireless:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)             | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                  |
+| [:symbols-router:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)                       | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                  |
 | [:material-wan:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)                         | -      | `192.168.100.1`  | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
 
 ## :symbols-devices:&ensp;Key Clients 
@@ -63,9 +63,9 @@ hide:
 
 ## :material-web-refresh:&ensp;Dynamic DNS Providers
 
-| Status   | Provider                        | Server                                                                           | FQDN                            | TLS Certificate                        | Certificate Expire |
-| :------- | :------------------------------ | :------------------------------------------------------------------------------- | :------------------------------ | :------------------------------------- | :----------------- |
-| *Active* | :services-addr:&nbsp;addr.tools | [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
+| Status   | Provider                        | Server                                                                 | FQDN                            | TLS Certificate                        | Certificate Expire |
+| :------- | :------------------------------ | :--------------------------------------------------------------------- | :------------------------------ | :------------------------------------- | :----------------- |
+| *Active* | :services-addr:&nbsp;addr.tools | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
 
 ## :material-vpn:&ensp;VPN Servers / Clients
 

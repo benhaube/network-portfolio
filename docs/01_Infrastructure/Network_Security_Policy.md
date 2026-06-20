@@ -89,7 +89,7 @@ tags:
 #### Updates
 
 + Automated security patching is enabled for critical packages on the Debian servers with `unattended-upgrades`. 
-+ Weekly manual audits for Docker container image updates *(monitored via &nbsp;[:services-dockge:&thinsp;Dockge](../03_Services/Dockge.md))*.
++ Weekly manual audits for Docker container image updates *(monitored via &nbsp;[:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md))*.
 + Desktop and Laptop PCs have automatic updates enabled.
 
 #### 3D Infrastructure

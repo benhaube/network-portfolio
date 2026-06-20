@@ -42,10 +42,10 @@ hide:
 
 ### Core Infrastructure
 
-[:material-router-wireless:&ensp;ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md)
+[:symbols-router:&ensp;ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md)
 :    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-[:material-router-wireless:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
+[:symbols-router:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
 [:material-debian:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)

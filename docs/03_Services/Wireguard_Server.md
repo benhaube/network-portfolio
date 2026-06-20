@@ -38,7 +38,7 @@ hide:
 #### :material-link-variant:&ensp;URL / Access 
 
 + :material-vpn:&nbsp;Server Endpoint:
-    + `rac3r4life.myaddr.dev:41820` *(for :material-router-wireless:&nbsp;ASUS RT-BE92U)*
+    + `rac3r4life.myaddr.dev:41820` *(for :symbols-router:&nbsp;ASUS RT-BE92U)*
     + `rac3r4life.myaddr.dev:51820` *(for :material-nas:&nbsp;ZimaOS NAS)*
 + :material-application-cog-outline:&nbsp;Web UI Admin: 
     + <http://storage-server.internal:51821/>
@@ -52,7 +52,7 @@ hide:
 
 #### :symbols-devices:&ensp;Clients
 
-+ :material-router-wireless:&nbsp;ASUS RT-BE92U:
++ :symbols-router:&nbsp;ASUS RT-BE92U:
     + `Ben's-Phone`
     + `Ben's-Laptop`
     + `Rob's-Phone`
@@ -65,10 +65,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                      | Method                                | Container Name         | Image                        |
-| :------------------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
-| [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| Host Device                                                            | Method                                | Container Name         | Image                        |
+| :--------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
+| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)    | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :material-cog:&ensp;Configuration 
 

@@ -1,5 +1,5 @@
 ---
-icon: material/router-wireless
+icon: symbols/router
 title: ASUS RT-BE92U
 subtitle: Wireless Router
 tags:

@@ -41,10 +41,10 @@ hide:
 
 ## :material-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                     |
-| :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------- |
-|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:material-router-wireless:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
-|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                                |
+| Interface | IP Address      | MAC Address         | Connected To                                                           |
+| :-------: | :-------------- | :------------------ | :--------------------------------------------------------------------- |
+|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
+|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                      |
 
 ---
 ## :symbols-note-stack-fill:&ensp;Maintenance & Notes

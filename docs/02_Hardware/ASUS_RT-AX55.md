@@ -1,5 +1,5 @@
 ---
-icon: material/router-wireless
+icon: symbols/router
 title: ASUS RT-AX55
 subtitle: AiMesh Node
 tags:
@@ -37,7 +37,7 @@ hide:
 
 #### :material-memory:&ensp;OS / Firmware
 
-+ [:material-router-wireless:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
++ [:symbols-router:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
 
 #### :material-key-chain:&ensp;Credentials
 

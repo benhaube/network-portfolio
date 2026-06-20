@@ -81,7 +81,7 @@ theme:
       print: material/printer
       printer-cart: material/printer
       remote: material/remote-desktop
-      router: material/router-wireless
+      router: symbols/router
       security: material/security
       server: material/server-outline
       service: material/web

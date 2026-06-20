@@ -1,11 +1,11 @@
 ---
-icon: material/message-alert
+icon: symbols/feedback
 title: Setup SSH Login Notification
 subtitle: With Email SMTP and Gotify
 hide:
   - toc
 ---
-![material message-alert icon](../assets/icons/message-alert.svg){ width=200 }
+![Material email-asterisk icon](../assets/icons/email-alert.svg){ width=200 }&nbsp;![material message-alert icon](../assets/icons/message-alert.svg){ width=75 }
 
 # Setup SSH Login Notification
 *With Email SMTP and Gotify*
@@ -26,7 +26,7 @@ hide:
     sudo dnf install msmtp msmtp-mta
     ```
 
-## :material-email: Configure `msmtp` with Your Email Credentials 
+## :symbols-mail-lock: Configure `msmtp` with Your Email Credentials 
 
 **Config File:**
 :     Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
@@ -82,7 +82,7 @@ hide:
     sudo chown root:root /root/.email_app_password
     ```
 
-## :material-alert: Enable Login Alerts with PAM
+## :symbols-feedback: Enable Login Alerts with PAM
 
 ???+ question
 
@@ -216,7 +216,7 @@ hide:
 <p>Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</p>
 </div>
 
-## :symbols-note-stack: Important Notes
+## :symbols-note-stack-fill: Important Notes
 
 ???+ note "Troubleshooting Note"
 

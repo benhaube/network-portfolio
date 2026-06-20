@@ -21,7 +21,7 @@
   width: fit-content;
 }
 
-/* --- JPG and PNG Image border radius */
+/* --- Image border radius (exclude SVG) */
 
 img[src$=".png" i],
 img[src$=".png#only-light" i],
@@ -31,7 +31,8 @@ img[src$=".jpg#only-light" i],
 img[src$=".jpg#only-dark" i],
 img[src$=".jpeg" i],
 img[src$=".jpeg#only-light" i],
-img[src$=".jpeg#only-dark" i] {
+img[src$=".jpeg#only-dark" i],
+img[src$=".gif" i] {
   border-style: none;
   border-radius: 0.4rem;
 }

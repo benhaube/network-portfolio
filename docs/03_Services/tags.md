@@ -1,5 +1,5 @@
 ---
-icon: material/tag
+icon: symbols/tag
 title: Services Tags
 subtitle: An Index of Relevant Tags
 ---

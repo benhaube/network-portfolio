@@ -38,7 +38,7 @@ hide:
 
     [More Kacey Info&ensp;:brands-creality:](02_Hardware/Kacey_Info.md){ .md-button }
 
-    [Hardware Tags&ensp;:material-tag:](02_Hardware/tags.md){ .md-button }
+    [Hardware Tags&ensp;:symbols-tag:](02_Hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
@@ -97,7 +97,7 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    [Services Tags&ensp;:material-tag:](03_Services/tags.md){ .md-button }
+    [Services Tags&ensp;:symbols-tag:](03_Services/tags.md){ .md-button }
 
 [:services-beszel:&ensp;Beszel](./03_Services/Beszel_Hub.md)
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts.
@@ -271,5 +271,5 @@ hide:
 [:material-file-certificate-outline:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)
 :    How to generate self-signed SSL certificates for use in testing, development, and internal web servers.
 
-[:material-message-alert:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 
+[:symbols-feedback:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 
 :    How to set up an email and push notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`, and a Gotify server. 

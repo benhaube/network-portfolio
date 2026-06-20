@@ -41,7 +41,7 @@ theme:
     repo: symbols/git
     # -- Icons for Tags --
     tag:
-      default: material/tag
+      default: symbols/tag
       3D-printer: material/printer-3d-nozzle
       isp: material/wan
       iot: material/home-automation

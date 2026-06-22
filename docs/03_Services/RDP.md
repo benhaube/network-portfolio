@@ -16,10 +16,10 @@ hide:
 # RDP
 *Remote Desktop Protocol*
 
-[Gitlab&ensp;:simple-gitlab:](https://invent.kde.org/plasma/krdp){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/){ .md-button .md-button--primary }
+[Gitlab&ensp;:simple-gitlab:](https://invent.kde.org/plasma/krdp){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/KDE/krdp){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -29,12 +29,12 @@ hide:
 
 + `3389`
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + [rdp://192.168.50.67:3389](rdp://192.168.50.67:3389)
 + [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):  
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
@@ -45,7 +45,7 @@ hide:
 | :----------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
 | [:material-desktop-tower:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```ini title="<code>~/.config/krdpserverrc</code>" linenums="1"
 --8<-- "krdpserverrc"

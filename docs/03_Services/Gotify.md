@@ -19,10 +19,10 @@ hide:
 # Gotify
 *Push Notifications*
 
-[GitHub&ensp;:simple-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://gotify.net/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://gotify.net/docs/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -32,13 +32,13 @@ hide:
 
 + `8180`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://storage-server.internal:8180> &mdash; *Local Network Web-UI only*
 + <http://storage-server-2.internal:8180> &mdash; *Local Network Web-UI only*
 + <https://gotify.rac3r4life.online> &mdash; *Use for notification WebSocket*
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (admin)"
@@ -46,15 +46,15 @@ hide:
 
 #### :symbols-feedback:&ensp;Notifications
 
-| Application&emsp;:material-information-outline:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [:material-cloud-upload-outline:&nbsp;Backup Alerts](#backup-alerts)                                                                            | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
-| [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
-| [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
-| [:material-router-wireless:&nbsp;Router Alerts](#router-alerts)                                                                                 | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
-| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.                     |
-| [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
-| [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
+| Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [:symbols-backup:&nbsp;Backup Alerts](#backup-alerts)                                                                           | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
+| [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
+| [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
+| [:symbols-router:&nbsp;Router Alerts](#router-alerts)                                                                           | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
+| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.                     |
+| [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
+| [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
@@ -62,7 +62,7 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :--------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gotify`       | `gotify/server:latest` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 #### :material-docker:&ensp;Docker Compose
 
@@ -72,7 +72,7 @@ hide:
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
 
-#### :material-cloud-upload-outline:&ensp;Backup Alerts
+#### :symbols-backup:&ensp;Backup Alerts
 
 1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
 
@@ -114,7 +114,7 @@ hide:
 5. Click the "Test" button to send a test notification.
 6. Click "Submit" to save the new notification.
 
-#### :material-router-wireless:&ensp;Router Alerts
+#### :symbols-router:&ensp;Router Alerts
 
 ##### WAN IP Change
 
@@ -396,7 +396,7 @@ hide:
 
 :    The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
 
-    [Zima Cron&ensp;:simple-github:](https://github.com/chicohaager/cron){ .md-button }
+    [Zima Cron&ensp;:symbols-cron:](https://github.com/chicohaager/cron){ .md-button }
 
 ##### AppData Backup
 

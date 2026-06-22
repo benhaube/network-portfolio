@@ -18,10 +18,10 @@ hide:
 # Beszel
 *Server Monitoring*
 
-[GitHub&ensp;:simple-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -34,12 +34,12 @@ hide:
 + Agent:
     + `45867` 
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + <https://beszel.internal>
 + <http://pi-server.internal:8090/>
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Beszel Hub"
@@ -62,9 +62,9 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
-#### :material-key:&ensp;Generate API Tokens
+#### :symbols-key:&ensp;Generate API Tokens
 
 :    Run the following command in a terminal on a client machine to generate API tokens.
 

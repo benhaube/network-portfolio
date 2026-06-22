@@ -18,10 +18,10 @@ hide:
 # Glances
 *An Eye on Your System*
 
-[GitHub&ensp;:simple-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://glances.readthedocs.io/en/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://glances.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -31,13 +31,13 @@ hide:
 
 + `21208`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://pi-server.internal:61208>
 + <http://storage-server.internal:61208>
 + <http://storage-server-2.internal:61208>
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + N/A
 
@@ -48,7 +48,7 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                             | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 #### :material-docker:&ensp;Docker Compose
 
@@ -56,13 +56,13 @@ hide:
 --8<-- "glances-pi-4b.yml"
 ```
 
-1. See all images tags here: <https://hub.docker.com/r/nicolargo/glances/tags>
+1. See all image tags here:&ensp;[:material-docker:&nbsp;Docker Hub](https://hub.docker.com/r/nicolargo/glances/tags)
 2. Uncomment for SATA or NVME smartctl monitoring.
 3. Uncomment for SATA smartctl monitoring.
 4. Uncomment for NVME smartctl monitoring.
 5. Uncomment for proper distro information in upper panel. Works only for distros that do have this file *(most distros do)*.  
-6. Please set to your local timezone *(or use local ${TZ} environment variable if set on your host)*.
-7. Uncomment for GPU compatibility (Nvidia) inside the container.  
+6. Please set to your local timezone *(or use local `${TZ}` environment variable if set on your host)*.
+7. Uncomment for GPU compatibility *(Nvidia)* inside the container.  
 8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.     
 
 ```yaml title="ZimaOS NAS" linenums="1"

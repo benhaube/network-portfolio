@@ -20,10 +20,10 @@ hide:
 # Syncthing
 *File Synchronization*
 
-[GitHub&ensp;:simple-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.syncthing.net/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.syncthing.net/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -35,12 +35,12 @@ hide:
 + `22000` *(TCP / UDP)*
 + `21027` *(UDP)*
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + :material-desktop-tower:&nbsp;Ben's Desktop
     + <https://bens-workstation.internal:8384>
     + <https://192.168.50.61:8384>
-+ :material-laptop:&nbsp;Ben's Laptop
++ :symbols-laptop:&nbsp;Ben's Laptop
     + <https://localhost:8384>
 + :symbols-mobile:&nbsp;Ben's Smartphone
     + <https://localhost:8384>
@@ -59,7 +59,7 @@ hide:
     + <https://192.168.50.4:8384>
     + <https://192.168.50.5:8384>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
@@ -75,18 +75,18 @@ hide:
 | Host Device                                                                                      | Method                                     | Container Name | Image                          |
 | :----------------------------------------------------------------------------------------------- | :----------------------------------------- | :------------- | :----------------------------- |
 | [:material-desktop-tower:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                   | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
-| [:material-laptop:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                            | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| [:symbols-laptop:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                             | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | [:symbols-mobile:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                     | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
 | [:material-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                       | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
 
-### :material-cog:&ensp;Configuration  
+### :symbols-settings:&ensp;Configuration  
 
 #### :symbols-install-desktop:&ensp;Install Commands
 
-+ :material-fedora:&nbsp;Ben's Desktop / Ben's Laptop:
++ :material-fedora:&nbsp;Fedora / RHEL:
 
     ```bash linenums="1"
     sudo dnf install -y syncthing
@@ -94,7 +94,7 @@ hide:
     sudo systemctl start syncthing@bhaube.service
     ```
 
-+ :material-debian:&nbsp;Debian Server:
++ :material-debian:&nbsp;Debian 13 *(trixie)*:
 
     ```bash linenums="1"
     sudo apt install -y syncthing
@@ -102,7 +102,7 @@ hide:
     sudo systemctl start syncthing@server-admin.service
     ```
 
-+ :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server / Raspberry Pi Zero Server:
++ :brands-raspberry-pi:&nbsp;Raspberry Pi OS Lite *(also Debian 13)*:
 
     ```bash linenums="1"
     sudo apt install -y syncthing
@@ -110,7 +110,7 @@ hide:
     sudo systemctl start syncthing@admin.service
     ```
 
-+ :symbols-mobile:&nbsp;Ben's Smartphone:
++ :brands-android-robot:&nbsp;Android:
 
     [Syncthing-Fork&ensp;:simple-fdroid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 

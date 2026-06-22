@@ -17,24 +17,24 @@ hide:
 # More Kacey Info
 *Detailed Configuration Info*
 
-[Creality Docs&ensp;:brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:material-console:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer :services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
+[Creality Docs&ensp;:brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Basic Information
+## :symbols-info:&ensp;Basic Information
 
 #### :symbols-description:&ensp;Model 
 
 :    Creality^&copy;^ K1C
 
-#### :material-cube-outline:&ensp;Build Volume
+#### :symbols-deployed-code:&ensp;Build Volume
 
 :    `220x220x250`
 
-#### :symbols-commit:&ensp;Revision
+#### :symbols-graph-8:&ensp;Revision
 
 :    v2.0.5    
 
-#### :material-calendar:&ensp;Create Date
+#### :symbols-calendar-today:&ensp;Create Date
 
 :    2023/09/05
 
@@ -50,7 +50,7 @@ hide:
     + *Chip:* GD32F303RET6
     + *Version:* CR4CU220812S12
 
-## :material-lan:&ensp;Network
+## :symbols-lan:&ensp;Network
 
 #### Moonraker
 

@@ -22,10 +22,10 @@ hide:
 # Caddy
 *Reverse-Proxy Server*
 
-[GitHub&ensp;:simple-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description
 
@@ -36,11 +36,11 @@ hide:
 + `80`
 + `443`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://pi-zero.internal>
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + N/A
 
@@ -50,7 +50,7 @@ hide:
 | :----------------------------------------------------------------------------------------------- | :--------------------------------------------- | :------------- | :---- |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 #### :symbols-install-desktop:&ensp;Install
 
@@ -83,7 +83,7 @@ hide:
     sudo systemctl reload caddy
     ```
 
-#### :material-file-cog:&ensp;The 'Caddyfile'
+#### :symbols-file-config:&ensp;The 'Caddyfile'
 
 ```nginx title="<code>/etc/caddy/Caddyfile</code>" linenums="1"
 --8<-- "Caddyfile"

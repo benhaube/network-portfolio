@@ -1,5 +1,5 @@
 ---
-icon: material/laptop
+icon: symbols/laptop
 title: Ben's Laptop
 subtitle: ThinkPad X1 Carbon
 tags:
@@ -19,12 +19,12 @@ hide:
 # Ben's Laptop
 *ThinkPad X1 Carbon*
 
-[Fedora Discussion&ensp;:material-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[Lenovo Support&ensp;:material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button .md-button--primary }
+[Fedora Discussion&ensp;:symbols-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[Lenovo Support&ensp;:material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :material-toolbox:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
 
@@ -32,20 +32,20 @@ hide:
 
 + `ben-laptop`
 
-#### :material-map-marker-outline:&ensp;Location 
+#### :symbols-location:&ensp;Location 
 
 + Mobile
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + [:material-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Laptop"
 
-#### :material-security:&ensp;Device Security
+#### :symbols-security:&ensp;Device Security
 
 + HSI-4
 + Firmware: 
@@ -64,8 +64,8 @@ hide:
     + LUKS2 drive encryption
     + FIDO2-based MFA for local user 
 + Biometric:
-    + :material-fingerprint:&nbsp;Fingerprint
-    + :material-face-recognition:&nbsp;IR facial recognition
+    + :symbols-fingerprint:&nbsp;Fingerprint
+    + :symbols-facial-recognition:&nbsp;IR facial recognition
 
 ## :symbols-monitor-heart:&ensp;Core Specs
 
@@ -73,15 +73,15 @@ hide:
 | :----------------------------------------------- | :-------------- | :------------------------ | :------ | :----------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;Core(r) i5 1135G7 *(x86-64)* | 4C / 8T         | 8 GB LPDDR4 *(4267 MT/s)* | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz   | *Shared* |
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-|  Interface  | IP Address | MAC Address         | Connected To                                                              |
-| :---------: | :--------- | :------------------ | :------------------------------------------------------------------------ |
-| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
+|  Interface  | IP Address | MAC Address         | Connected To                                                             |
+| :---------: | :--------- | :------------------ | :----------------------------------------------------------------------- |
+| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
-|  Interface  | VLAN                            | FQDN  | DNS Servers                   | Gateway        |
-| :---------: | :------------------------------ | :---- | :---------------------------- | :------------- |
-| `wlp0s20f3` | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|  Interface  | VLAN                           | FQDN  | DNS Servers                   | Gateway        |
+| :---------: | :----------------------------- | :---- | :---------------------------- | :------------- |
+| `wlp0s20f3` | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage:&ensp;Storage & Mounts
 
@@ -91,7 +91,7 @@ hide:
 | :----------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/`, `/home` | NVMe SSD   | 929 GB         | `/dev/dm-0` | `btrfs`     | LUKS2      |
 
-#### :material-usb:&ensp;External / Attached
+#### :symbols-usb:&ensp;External / Attached
 
 | Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  |
 | :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
@@ -119,7 +119,7 @@ hide:
 
 --8<-- "critical-conf-ben-pc.md"
 
-#### :material-update:&ensp;Update Process
+#### :symbols-update:&ensp;Update Process
 
 ##### Automatic Updates
 
@@ -149,7 +149,7 @@ hide:
     sudo flatpak update -y
     ```
 
-#### :material-cloud-upload-outline:&ensp;Backup Policy
+#### :symbols-backup:&ensp;Backup Policy
 
 + The `/home` directory backed up every weekday at `18:30` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggerd by Systemd.
 + With the `Persistent=true` value set in the Systemd `.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
@@ -168,14 +168,14 @@ hide:
 + To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
 + See ["SSH Config File"](../03_Services/SSH.md#ssh-config-file_1) for documentation.  
 
-#### :material-folder-network:&ensp;ZimaOS NAS Mounts
+#### :symbols-smb-share:&ensp;ZimaOS NAS Mounts
 
 + On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. *(e.g., photos / code)* 
     + Other benefits from the switch to NFS include: Full compatibility for file ownership and permissions, and compatibility for sym-links. The `rsync` command in the backup script has been modified to reflect this change.  
     + This change only applies to PCs using the Linux OS. The Windows and Android clients still utilize SMB with multi-chanel enabled.
 + See the ["Clients"](../03_Services/NFS.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
 
-#### :material-file-code-outline:&ensp;Backup Script
+#### :symbols-code:&ensp;Backup Script
 
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
@@ -217,7 +217,7 @@ hide:
     systemctl --user enable home-bkp-nas.timer
     ```
 
-#### :material-folder-lock:&ensp;Encrypted-Documents
+#### :symbols-lock:&ensp;Encrypted-Documents
 
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
@@ -240,7 +240,7 @@ hide:
     --8<-- "mount-rclone.desktop"
     ```
 
-#### :material-console-line:&ensp;Starship Terminal Prompt
+#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
 
 --8<-- "starship-note.md"
 
@@ -262,7 +262,7 @@ hide:
     --8<-- "starship-laptop.toml"
     ```
 
-#### :material-login:&ensp;Fastfetch Login Preset
+#### :symbols-login:&ensp;Fastfetch Login Preset
 
 Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
 

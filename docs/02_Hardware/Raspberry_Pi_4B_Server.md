@@ -25,9 +25,9 @@ hide:
 [Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :material-toolbox:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    The secondary DNS server in the [Technitium](../03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
@@ -36,16 +36,16 @@ hide:
 + `pi-server` *(VLAN50 / `eth0`)*
 + `home-assistant` *(VLAN53 / `wlan0`)*
 
-#### :material-map-marker-outline:&ensp;Location  
+#### :symbols-location:&ensp;Location  
 
 + Office
 + Printer-Cart
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"pi-server (admin)"
@@ -56,16 +56,16 @@ hide:
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
 | :simple-arm:&nbsp;BCM2711 *(Armv8-A)* | 4C / 4T *(Cortex-A72)* | 1.5 GHz   | 4 GB LPDDR4 *(2400 MT/s)* | VideoCore VI 3D | 500 MHz   | *Shared* |
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Connected To                                                                                 |
 | :-------: | :------------- | :------------------ | :------------------------------------------------------------------------------------------- |
 |  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(port 3, VLAN50)* |
-|  `wlan0`  | `192.168.53.2` | `E4:5F:01:A4:60:08` | [:material-wifi:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)*                  |
+|  `wlan0`  | `192.168.53.2` | `E4:5F:01:A4:60:08` | [:symbols-wifi:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)*                   |
 
 | Interface |                  VLAN                   | FQDN                 | DNS Servers | Gateway        |
 | :-------: | :-------------------------------------: | :------------------- | :---------- | :------------- |
-|  `eth0`   |     :material-security:&nbsp;VLAN50     | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
+|  `eth0`   |     :symbols-security:&nbsp;VLAN50      | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
 |  `wlan0`  | :symbols-shield-house-fill:&nbsp;VLAN53 | `N/A`                | `127.0.0.1` | `192.168.53.1` |
 
 ## :symbols-storage:&ensp;Storage & Mounts
@@ -78,7 +78,7 @@ hide:
 | `/boot/firmware` | MicroSD    | 512 MB         | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 128 MB         | `log2ram`        | `tmpfs`     | -          |
 
-#### :material-usb:&ensp;External / Attached
+#### :symbols-usb:&ensp;External / Attached
 
 | Mount Point      | Drive Type      | Drive Capacity | Device Path | File System | Encryption |
 | :--------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
@@ -90,8 +90,8 @@ hide:
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                    |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :---------------------------------------------------------------------------------------------- |
-| *Active* | [:material-printer:&nbsp;CUPS](../03_Services/CUPS_Print_Server.md)   |         `631`          | A standards-based, open-source printing system for Linux and other Unix-like operating systems. |
-| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)          |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.  |
+| *Active* | [:symbols-print:&nbsp;CUPS](../03_Services/CUPS_Print_Server.md)      |         `631`          | A standards-based, open-source printing system for Linux and other Unix-like operating systems. |
+| *Active* | [:symbols-smb-share:&nbsp;SSH](../03_Services/SSH.md)                 |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.  |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                        |
 | *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                   |
 

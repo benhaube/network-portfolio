@@ -19,10 +19,10 @@ hide:
 # DDNS
 *Provided by addr.tools*
 
-[GitHub&ensp;:simple-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools&ensp;:services-addr:](https://addr.tools){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools&ensp;:services-addr:](https://addr.tools){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description
 :    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools).
@@ -31,11 +31,11 @@ hide:
 
 + `N/A`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://rac3r4life.myaddr.dev>
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
@@ -46,9 +46,9 @@ hide:
 | :--------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
-#### :material-console-line:&ensp;Router Script
+#### :symbols-terminal-alt:&ensp;Router Script
 
 1. Create a script on the router in the `/jffs/scripts` directory to update the IP every time it changes:
 
@@ -70,7 +70,7 @@ hide:
     2. `$1` is the new IP passed by the router.
     3.    Replace the `KEY` variable with the key provided by addr.tools for your domain name. The Key is stored in the Bitwarden vault.
           
-          [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
+          [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
           + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
 
@@ -86,7 +86,7 @@ hide:
     ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ width=700 }
 </figure>
 
-#### :material-file-certificate-outline:&ensp;TLS Certificate
+#### :symbols-license:&ensp;TLS Certificate
 
 1. Install the `certbot` package on a separate PC:
 
@@ -102,7 +102,7 @@ hide:
 
     1.    Replace the `KEY` variable with the key provided by addr.tools for your domain name. The Key is stored in the Bitwarden vault.
           
-          [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
+          [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
           + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
     

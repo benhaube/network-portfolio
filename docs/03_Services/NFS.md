@@ -1,5 +1,5 @@
 ---
-icon: material/folder-network
+icon: symbols/smb-share
 title: NFS
 subtitle: Network File System
 description: Remote file system access for Linux.
@@ -15,15 +15,15 @@ tags:
 hide:
   - toc
 ---
-![Material Design folder-network icon](../assets/icons/folder-network.svg){ width=200 }
+![Material Design SMB icon](../assets/icons/smb-share.svg){ width=200 }
 
 # NFS
 *Network File System*
 
-[Documentation&ensp;:material-file-document-multiple:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-documentation:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -33,12 +33,12 @@ hide:
 
 + `2049`
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + `192.168.50.4:/media/Quick-Storage`
 + `192.168.50.4:/media/nvme0n1p1`
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
@@ -50,9 +50,9 @@ hide:
 | :------------------------------------------------------------------ | :--------------------------------- | :------------- | :---- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
-#### :material-server-outline:&ensp;Server
+#### :symbols-server:&ensp;Server
 
 ##### Exports Entry
 

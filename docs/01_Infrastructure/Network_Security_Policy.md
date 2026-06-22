@@ -1,5 +1,5 @@
 ---
-icon: material/server-security
+icon: symbols/policy-fill
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 tags:
@@ -23,12 +23,12 @@ tags:
 	:    This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 ---
-## :material-segment:&ensp;Network Segmentation 
+## :symbols-segment:&ensp;Network Segmentation 
 &emsp;&emsp;&ensp;*VLAN Architecture*
 
 | Zone                                                                                 | VLAN ID  | Description                                            | Access Rules                                                                                                  |
 | :----------------------------------------------------------------------------------- | :------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| [:material-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)          | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                        |
+| [:symbols-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)           | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                        |
 | [:symbols-shield-person-fill:&nbsp;Guest](./IP_Address_Management.md#local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                  |
 | [:symbols-shield-house-fill:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)          | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
@@ -51,7 +51,7 @@ tags:
 + The primary WireGuard server is hosted natively on the main [ASUS router](../02_Hardware/ASUS_RT-BE92U.md). 
 + The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
 
-## :material-dns:&ensp;DNS Security & Content Filtering
+## :symbols-dns:&ensp;DNS Security & Content Filtering
 
 #### Internal Resolution
 
@@ -65,7 +65,7 @@ tags:
 
 + Network-wide ad and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
-## :material-security-network:&ensp;Device & Host Hardening
+## :symbols-security:&ensp;Device & Host Hardening
 
 #### Operating Systems
 
@@ -110,7 +110,7 @@ tags:
 
 	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :material-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
 
 	---
 
@@ -120,7 +120,7 @@ tags:
 
 <div class="grid cards" markdown>
 
--   :material-restore-alert:{ .lg .middle }&emsp;**Disaster Recovery**
+-   :symbols-restore:{ .lg .middle }&emsp;**Disaster Recovery**
 	
 	---
 

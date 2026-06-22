@@ -17,10 +17,10 @@ hide:
 # Fluidd
 *The Klipper UI*
 
-[GitHub&ensp;:simple-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.fluidd.xyz/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.fluidd.xyz/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description
 
@@ -31,14 +31,14 @@ hide:
 + `80`
 + `4408`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://kacey.internal>
 + <http://192.168.50.153>
 + <http://kacey.internal:4408>
 + <http://192.168.50.153:4408>
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
@@ -49,7 +49,7 @@ hide:
 | :--------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 #### :symbols-install-desktop:&ensp;Install
 
@@ -61,7 +61,7 @@ hide:
 2. Enter this command to run the Creality Helper Script.
 3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
 
-#### :material-file-cog:&ensp;Config File Backup
+#### :symbols-backup:&ensp;Config File Backup
 
 ```json {title="<code>backup-fluidd.json</code>" linenums="1" .wrap-code}
 --8<-- "fluidd.json"

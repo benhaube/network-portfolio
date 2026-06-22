@@ -18,12 +18,12 @@ hide:
 # Ben's Workstation
 *High-Performance Desktop PC*
 
-[Fedora Discussion&ensp;:material-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=4b12aa6c-2687-4e62-b1f5-3f68820bb06c&sn=L8M0CS003053JKW&from=Myproducts){ .md-button .md-button--primary }
+[Fedora Discussion&ensp;:symbols-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=4b12aa6c-2687-4e62-b1f5-3f68820bb06c&sn=L8M0CS003053JKW&from=Myproducts){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :material-toolbox:&ensp;Role
+#### :symbols-toolbox:&ensp;Role
 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
@@ -31,21 +31,21 @@ hide:
 
 + `bens-workstation`
 
-#### :material-map-marker-outline:&ensp;Location
+#### :symbols-location:&ensp;Location
 
 + Office 
 + Desk
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + [:material-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 
-#### :material-security:&ensp;Device Security
+#### :symbols-security:&ensp;Device Security
 
 + HSI-1
 + Firmware:
@@ -67,17 +67,17 @@ hide:
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
 | :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T        | 4.7 GHz   | 32 GB DDR4 *(3600 MHz)* | :brands-amd:&nbsp;Radeon(r) 6600XT | 2581 MHz  | 8 GB GDDR6 |
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
 | Interface | IP Address      | MAC Address         | Connected To                                                                         |
 | :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------- |
 | `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
-| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*            |
+| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*             |
 
-| Interface | VLAN                            | FQDN                        | DNS Servers                   | Gateway        |
-| :-------: | :------------------------------ | :-------------------------- | :---------------------------- | :------------- |
-| `enp7s0`  | :material-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-| `wlp6s0`  | :material-security:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                           | FQDN                        | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------- | :-------------------------- | :---------------------------- | :------------- |
+| `enp7s0`  | :symbols-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| `wlp6s0`  | :symbols-security:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage:&ensp;Storage & Mounts
 
@@ -88,7 +88,7 @@ hide:
 | `/`, `/home`   | NVMe SSD   | 929 GB         | `/dev/dm-0`                 | `btrfs`     | LUKS2      |
 | `/mnt/1TB_HDD` | SATA HDD   | 1 TB           | `/dev/mapper/1TB_HDD_crypt` | `btrfs`     | LUKS2      |
 
-#### :material-usb:&ensp;External / Attached
+#### :symbols-usb:&ensp;External / Attached
 
 | Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  |
 | :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
@@ -120,7 +120,7 @@ hide:
 
 --8<-- "critical-conf-ben-pc.md"
 
-#### :material-update:&ensp;Update Process
+#### :symbols-update:&ensp;Update Process
 
 ##### Automatic Updates
 
@@ -150,7 +150,7 @@ hide:
     sudo flatpak update -y
     ```
 
-#### :material-cloud-upload-outline:&ensp;Backup Policy
+#### :symbols-backup:&ensp;Backup Policy
 
 + The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggerd by Systemd.
 + With the `Persistent=true` value set in the Systemd `.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
@@ -169,14 +169,14 @@ hide:
 + To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
 + See ["SSH Config File"](../03_Services/SSH.md#ssh-config-file_1) for documentation.  
 
-#### :material-folder-network:&ensp;ZimaOS NAS Mounts
+#### :symbols-smb-share:&ensp;ZimaOS NAS Mounts
 
 + On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. *(e.g., photos / code)* 
     + Other benefits from the switch to NFS include: Full compatibility for file ownership and permissions, and compatibility for sym-links. The `rsync` command in the backup script has been modified to reflect this change.
     + This change only applies to PCs using the Linux OS. The Windows and Android clients still utilize SMB with multi-chanel enabled.
 + See the ["Clients"](../03_Services/NFS.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
 
-#### :material-file-code-outline:&ensp;Backup Script
+#### :symbols-code:&ensp;Backup Script
 
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
@@ -218,7 +218,7 @@ hide:
     systemctl --user enable home-bkp-nas.timer
     ```
 
-#### :material-folder-lock:&ensp;Encrypted-Documents
+#### :symbols-lock:&ensp;Encrypted-Documents
 
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 
@@ -240,7 +240,7 @@ hide:
     --8<-- "mount-rclone.desktop"
     ```
 
-#### :material-console-line:&ensp;Starship Terminal Prompt
+#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
 
 --8<-- "starship-note.md"
 
@@ -262,7 +262,7 @@ hide:
     --8<-- "starship-desktop.toml"
     ```
 
-#### :material-login:&ensp;Fastfetch Login Preset
+#### :symbols-login:&ensp;Fastfetch Login Preset
 
 Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
 

@@ -1,5 +1,5 @@
 ---
-icon: material/dns
+icon: symbols/dns
 title: DNS Migration
 subtitle: From Pi-hole to Technitium
 tags:
@@ -20,7 +20,7 @@ hide:
 
 ---
 
-## :material-file-document:&ensp;Pre-Migration & Documentation
+## :symbols-description:&ensp;Pre-Migration & Documentation
 
 1. **Export Pi-hole Data:** 
     + [ ] Run a "Teleporter" backup on your current primary and secondary Pi-holes.
@@ -31,7 +31,7 @@ hide:
     + [ ] Secondary:&ensp;[:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)&ensp;:material-arrow-right-thin:&ensp;`192.168.50.6`
     + [ ] Tertiary/Failover:&ensp;[:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:material-arrow-right-thin:&ensp;`192.168.50.3`
 
-## :material-dns:&ensp;Server Provisioning
+## :symbols-dns:&ensp;Server Provisioning
 
 #### Debian Server
 
@@ -53,7 +53,7 @@ hide:
 3. **Set as Secondary:** 
     + [ ] Configure identical upstream servers.
 
-## :material-cog-sync:&ensp;Cluster Synchronization
+## :symbols-settings-sync:&ensp;Cluster Synchronization
 
 1. **Enable Clustering:** 
     + [ ] Set the Debian VM as the **Master**.
@@ -63,7 +63,7 @@ hide:
 3. **Blocklist Tuning:** 
     + [ ] Add your preferred lists *(e.g., OISD, HaGeZi)* and verify they are enabled on both.
 
-## :material-toggle-switch-outline:&ensp;Network Cutover
+## :symbols-toggle-on-outline:&ensp;Network Cutover
 
 1. **Update Router DHCP:** 
     + [ ] Point DNS 1 to the Debian VM IP.
@@ -85,7 +85,7 @@ hide:
 
 ---
 
-## :material-sitemap:&ensp;Flowchart
+## :symbols-sitemap:&ensp;Flowchart
 
 ```mermaid
 --8<-- "dns_migration.mmd"

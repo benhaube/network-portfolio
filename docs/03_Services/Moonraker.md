@@ -19,10 +19,10 @@ hide:
 # Moonraker
 *The Klipper Web API*
 
-[GitHub&ensp;:simple-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description  
 
@@ -32,12 +32,12 @@ hide:
 
 + `7125`
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + <http://kacey.internal:7125>
 + <http://192.168.50.153:7125>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
@@ -48,7 +48,7 @@ hide:
 | :--------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Liux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 #### :symbols-install-desktop:&ensp;Install
 
@@ -60,7 +60,7 @@ hide:
 2. Enter this command to run the Creality Helper Script.
 3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
 
-#### :material-file-cog:&ensp;Config File
+#### :symbols-file-config:&ensp;Config File
 
 ```ini title="<code>moonraker.cfg</code>" linenums="1"
 --8<-- "moonraker.cfg"

@@ -17,10 +17,10 @@ hide:
 # F1 Replay Timing
 *All of the Data*
 
-[GitHub&ensp;:simple-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Issues&ensp;:material-progress-alert:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Issues&ensp;:symbols-adjust:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description
 
@@ -31,7 +31,7 @@ hide:
 + `3000`
 + `8000`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + Backend: 
     + <http://storage-server.internal:8000>
@@ -39,7 +39,7 @@ hide:
     + <http://storage-server.internal:3000>
     + <http://storage-server-2.internal:3000>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + N/A
 
@@ -50,18 +50,18 @@ hide:
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `f1-backend`   | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`  |
 |                                                                     |                                       | `f1-frontend`  | `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "f1-replay-timing.yaml"
 ```
 
-1.    :material-alert:&nbsp;**Warning!**
+1.    :symbols-warning:&nbsp;**Warning!**
 
       + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
       + Use the IP address or URL of the host server. 
 
-2.    :material-alert:&nbsp;**Warning!**
+2.    :symbols-warning:&nbsp;**Warning!**
 
       + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
       + Use the IP address or URL of the host server. 

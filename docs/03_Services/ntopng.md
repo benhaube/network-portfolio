@@ -20,10 +20,10 @@ hide:
 # ntopng
 *Network Traffic Probe*
 
-[GitHub&ensp;:simple-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://www.ntop.org/guides/ntopng/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://www.ntop.org/guides/ntopng/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description  
 
@@ -34,13 +34,13 @@ hide:
 + `3000`
 + `5556`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://192.168.50.4:3000>
 + <http://storage-server.internal:3000>
 + <http://storage-server-2.internal:3000>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + N/A
 
@@ -50,7 +50,7 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `ntop`         | `ntop/ntopng:latest` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "ntopng.yml"

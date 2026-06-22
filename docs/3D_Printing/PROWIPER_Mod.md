@@ -34,7 +34,7 @@ hide:
         [Amazon&ensp;:fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
 
 ---
-## :material-file-document-edit:&ensp;Configuration File Edits
+## :symbols-edit-document:&ensp;Configuration File Edits
 
 !!! warning inline end "Important"
 
@@ -66,7 +66,7 @@ hide:
     --8<-- "printer.cfg::31"
     ```
 
-## :material-chip:&ensp;Slicer & Firmware Clearances
+## :symbols-firmware:&ensp;Slicer & Firmware Clearances
 
 !!! info inline end "Clearance Info"
 
@@ -92,7 +92,7 @@ hide:
 <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
 </div>
 
-## :material-toggle-switch-outline:&ensp;Dry Run 
+## :symbols-toggle-on-outline:&ensp;Dry Run 
 &emsp;&emsp;&ensp;*Critical Safety Step*
 
 !!! warning inline end "Caution"
@@ -103,7 +103,7 @@ hide:
 2. [ ] Trigger the `WIPE_NOZZLE` macro via Fluidd or Guppy Screen.
 3. [ ] Observe the toolhead to verify it moves to the correct coordinates safely without risking a collision.
 
-## :material-tools:&ensp;Physical Installation
+## :symbols-wrench:&ensp;Physical Installation
 
 1. [ ] Lower the build plate halfway down the Z-axis to create working room.
 2. [ ] Drop the A1 brush into the slot

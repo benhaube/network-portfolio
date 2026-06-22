@@ -17,21 +17,21 @@ hide:
 # TP-Link Switch
 *Model SG105*
 
-[Manual&ensp;:material-book-information-variant:](../assets/manuals/TL-SG105.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:material-book-information-variant:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }
+[Manual&ensp;:symbols-quick-reference:](../assets/manuals/TL-SG105.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:symbols-quick-reference:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Physical Overview
+## :symbols-info:&ensp;Physical Overview
 
-#### :material-toolbox:&ensp;Role
+#### :symbols-toolbox:&ensp;Role
 
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
-#### :material-map-marker-outline:&ensp;Location
+#### :symbols-location:&ensp;Location
 
 + Office
 + Printer-Cart
 
-#### :material-power-plug:&ensp;Power Source
+#### :symbols-power:&ensp;Power Source
 
 + Wall Wart *(5V / 0.6A)*
 

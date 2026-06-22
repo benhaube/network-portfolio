@@ -1,6 +1,6 @@
 ---
 title: Index
-icon: material/format-list-bulleted
+icon: symbols/list-bulleted
 hide:
   - toc
 ---
@@ -8,12 +8,12 @@ hide:
 ![Material Design file-document-multiple customized icon](assets/icons/file-document-multiple-color.svg){ width=250 }&nbsp;![Material Design format-list-bulleted customized icon](assets/icons/format-list-bulleted.svg){ width=50 } 
 
 # Network Documentation & Portfolio
-[About Me&ensp;:material-account-question:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
+[About Me&ensp;:symbols-person-search:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :material-lan:&ensp;Infrastructure
+## :symbols-lan:&ensp;Infrastructure
 
-[:material-restore-alert:&ensp;Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md)
+[:symbols-restore:&ensp;Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
 [:material-ip-network:&ensp;IP Address Management](./01_Infrastructure/IP_Address_Management.md)
@@ -22,13 +22,13 @@ hide:
 [:material-ethernet:&ensp;MAC Address Tables](./01_Infrastructure/MAC_Address_Tables.md)
 :    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 
-[:material-server-security:&ensp;Network Security Policy](./01_Infrastructure/Network_Security_Policy.md) 
+[:symbols-policy-fill:&ensp;Network Security Policy](./01_Infrastructure/Network_Security_Policy.md) 
 :    This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
-[:material-sitemap:&ensp;Logical Network Map](./01_Infrastructure/Logical_Map.md)
+[:symbols-sitemap:&ensp;Logical Network Map](./01_Infrastructure/Logical_Map.md)
 :    A *Mermaid.js* flowchart focusing on servers, services, and their connections. 
 
-[:material-sitemap:&ensp;Physical Network Map](./01_Infrastructure/Physical_Map.md)
+[:symbols-sitemap:&ensp;Physical Network Map](./01_Infrastructure/Physical_Map.md)
 :    A *Mermaid.js* flowchart focusing on physical devices and their connections.
 
 ---
@@ -77,7 +77,7 @@ hide:
 [:material-desktop-tower:&ensp;Ben's Workstation](./02_Hardware/Ben's_Desktop.md) 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
-[:material-laptop:&ensp;Ben's Laptop](./02_Hardware/Ben's_Laptop.md)
+[:symbols-laptop:&ensp;Ben's Laptop](./02_Hardware/Ben's_Laptop.md)
 :    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
 
 [:symbols-mobile:&ensp;Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md)
@@ -89,11 +89,11 @@ hide:
 [:material-desktop-tower:&ensp;Rob's Workstation](./02_Hardware/Rob's_Desktop.md) 
 :    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
-[:material-laptop:&ensp;Rob's Laptop](02_Hardware/Rob's_Laptop.md) 
+[:symbols-laptop:&ensp;Rob's Laptop](02_Hardware/Rob's_Laptop.md) 
 :    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./02_Hardware/Ugreen_Switch.md).
 
 ---
-## :material-web:&ensp;Services
+## :symbols-web:&ensp;Services
 
 !!! links inline end "Extra Links"
 
@@ -111,7 +111,7 @@ hide:
 [:services-cloudflare:&ensp;Cloudflared](./03_Services/Cloudflared.md)
 :    A secure reverse-proxy tunnel for hosting private services on the public Internet.
 
-[:material-printer:&ensp;CUPS](./03_Services/CUPS_Print_Server.md)
+[:symbols-print:&ensp;CUPS](./03_Services/CUPS_Print_Server.md)
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
 [:material-web-refresh:&ensp;DDNS](./03_Services/DDNS.md)
@@ -153,13 +153,13 @@ hide:
 [:services-klipper:&ensp;Moonraker](./03_Services/Moonraker.md)
 :    Web API server for [Klipper](https://www.klipper3d.org/).
 
-[:material-cog-sync:&ensp;Nebula-Sync](./03_Services/Nebula-Sync.md)
+[:symbols-settings-sync:&ensp;Nebula-Sync](./03_Services/Nebula-Sync.md)
 :    Synchronize configuration between multiple [Pi-hole](https://pi-hole.net) instances.
 
 [:services-nextcloud:&ensp;Nextcloud](./03_Services/Nextcloud.md)
 :    Self-hosted cloud storage and collaboration platform.
 
-[:material-folder-network:&ensp;NFS](./03_Services/NFS.md) 
+[:symbols-smb-share:&ensp;NFS](./03_Services/NFS.md) 
 :    Remote file system access.
 
 [:simple-nginx:&ensp;Nginx](./03_Services/Nginx.md)
@@ -186,7 +186,7 @@ hide:
 [:material-remote-desktop:&ensp;RDP](./03_Services/RDP.md)
 :    Remote desktop access over the local network. *(not exposed to the internet)*
 
-[:material-folder-network:&ensp;SMB](./03_Services/RDP.md)
+[:symbols-smb-share:&ensp;SMB](./03_Services/SMB.md)
 :    Remote file system access.
 
 [:services-spoolman:&ensp;Spoolman](./03_Services/Spoolman.md)
@@ -201,7 +201,7 @@ hide:
 [:services-technitium:&ensp;Technitium](./03_Services/Technitium.md)
 :    An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-[:material-console:&ensp;ttydBridge](./03_Services/ttydBridge.md)
+[:symbols-terminal:&ensp;ttydBridge](./03_Services/ttydBridge.md)
 :    A DockerApp makes it easy to use the host terminal in the Web.
 
 [:services-uptime-kuma:&ensp;Uptime Kuma](./03_Services/Uptime_Kuma.md)
@@ -214,7 +214,7 @@ hide:
 :    High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
 ---
-## :material-swap-horizontal-bold:&ensp;Change Management
+## :symbols-swap-horizontal:&ensp;Change Management
 
 [:brands-raspberry-pi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
 :    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
@@ -230,7 +230,7 @@ hide:
 
     [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
-[:material-cog:&ensp;Manual Bed Leveling Mod](./3D_Printing/K1_Bed_Level_Knobs_Tutorial.md) 
+[:symbols-settings:&ensp;Manual Bed Leveling Mod](./3D_Printing/K1_Bed_Level_Knobs_Tutorial.md) 
 :    Installing a bed leveling modification on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md). 
 
 [:symbols-toothbrush-nozzle:&ensp;Nozzle Cleaning Macro](./3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md) 
@@ -246,29 +246,29 @@ hide:
     **My Favorite Bash Aliases:**
     :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
 
-        [My Bash Aliases&ensp;:material-console:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
+        [My Bash Aliases&ensp;:symbols-terminal:](Linux_Tutorials/My_Terminal_Aliases.md){ .md-button }
 
     **Update PCRs Script:**
     :    In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
 
         [Update PCRs&ensp;:simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
-[:material-update:&ensp;Automatic Updates for Debian Servers](./Linux_Tutorials/Configure_Unattended-Upgrades.md)
+[:symbols-update:&ensp;Automatic Updates for Debian Servers](./Linux_Tutorials/Configure_Unattended-Upgrades.md)
 :    How to install and configure the `unattended-upgrades` package on your Debian server to enable automatic updates. This tutorial will help you configure Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
 
 [:material-svg:&ensp;Convert an SVG to Data URI](Linux_Tutorials/SVG_to_URI.md) 
 :    How to convert an SVG into a data URI for use in HTML pages and CSS stylesheets. 
 
-[:material-lock-open:&ensp;Decrypt LUKS with TPM2](./Linux_Tutorials/Unlock_LUKS_TPM2.md) 
+[:symbols-encrypted-outline:&ensp;Decrypt LUKS with TPM2](./Linux_Tutorials/Unlock_LUKS_TPM2.md) 
 :    How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots. 
 
-[:material-console:&ensp;Defining Bash Aliases](./Linux_Tutorials/Defining_Terminal_Aliases.md) 
+[:symbols-terminal:&ensp;Defining Bash Aliases](./Linux_Tutorials/Defining_Terminal_Aliases.md) 
 :    How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 
 [:services-immich-frame:&ensp;Immich Slideshow for Nest Hub](./Linux_Tutorials/Immich_Slideshow_for_Nest_Hub.md)
 :    How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [Home Assistant](./03_Services/Home_Assistant.md) with Google Cast.
 
-[:material-file-certificate-outline:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)
+[:symbols-license:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)
 :    How to generate self-signed SSL certificates for use in testing, development, and internal web servers.
 
 [:symbols-feedback:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 

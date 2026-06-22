@@ -25,9 +25,9 @@ hide:
 [Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :material-toolbox:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`).
 
@@ -35,16 +35,16 @@ hide:
 
 + `pi-zero`
 
-#### :material-map-marker-outline:&ensp;Location
+#### :symbols-location:&ensp;Location
 
 + Office
 + Printer-Cart
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"pi-zero (admin)"
@@ -55,15 +55,15 @@ hide:
 | :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
 | :simple-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz   | 512 MB SDRAM | VideoCore IV | 400 MHz   | *Shared* |
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                              |
-| :-------: | :------------- | :------------------ | :------------------------------------------------------------------------ |
-|  `wlan0`  | `192.168.50.3` | `2c:cf:67:db:f5:e2` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address     | MAC Address         | Connected To                                                             |
+| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------- |
+|  `wlan0`  | `192.168.50.3` | `2c:cf:67:db:f5:e2` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
-| Interface |              VLAN               | FQDN               | DNS Servers                   | Gateway        |
-| :-------: | :-----------------------------: | :----------------- | :---------------------------- | :------------- |
-|  `wlan0`  | :material-security:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN              | FQDN               | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------: | :----------------- | :---------------------------- | :------------- |
+|  `wlan0`  | :symbols-security:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage:&ensp;Storage & Mounts
 

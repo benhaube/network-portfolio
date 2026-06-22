@@ -19,10 +19,10 @@ hide:
 # IT-Tools
 *Handy Tools for Devs*
 
-[GitHub&ensp;:simple-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/sharevb/it-tools){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -32,12 +32,12 @@ hide:
 
 + `8080`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + N/A
 
@@ -48,7 +48,7 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
 |                                                                                                 | :material-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "it-tools.yml"

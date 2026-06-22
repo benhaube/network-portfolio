@@ -20,10 +20,10 @@ hide:
 # Pi-hole
 *A DNS Sinkhole*
 
-[GitHub&ensp;:simple-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description:  
 
@@ -34,12 +34,12 @@ hide:
 + Web: `80`, `443`
 + DNS: `53`
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + ~~[[https://pi-server.internal/admin/login]]~~
 + ~~[[https://pi-hole.internal/admin/login]]~~
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Pihole Admin @ pi-zero"
@@ -52,7 +52,7 @@ hide:
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 !!! tip
 
@@ -70,7 +70,7 @@ hide:
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-#### :material-file-cog:&ensp;Pi-hole Config File
+#### :symbols-file-config:&ensp;Pi-hole Config File
 
 ```toml title="<code>/etc/pihole/pihole.toml</code>" linenums="1"
 --8<-- "pihole.toml"

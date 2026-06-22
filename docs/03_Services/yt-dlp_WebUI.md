@@ -18,10 +18,10 @@ hide:
 # yt-dlp Web-UI
 *Download Videos from YouTube*
 
-[Docker Hub&ensp;:simple-docker:](https://hub.docker.com/r/marcobaobao/yt-dlp-webui){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://deepwiki.com/qokelate/yt-dlp-webui/2-getting-started){ .md-button .md-button--primary }
+[Docker Hub&ensp;:simple-docker:](https://hub.docker.com/r/marcobaobao/yt-dlp-webui){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/qokelate/yt-dlp-webui/2-getting-started){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -31,13 +31,13 @@ hide:
 
 + `3033`
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + <http://storage-server.internal:3033>
 + <http://storage-server-2.internal:3033>
 + <https://yt-dlp.internal>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"yt-dlp-webui"
@@ -48,9 +48,9 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
-#### :material-progress-wrench:&ensp;Preparation  
+#### :symbols-reset-wrench:&ensp;Preparation  
 
 1. Create the configuration directory:
 

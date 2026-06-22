@@ -17,21 +17,21 @@ hide:
 # TP-Link LiteWave Switch
 *Model LS1005G*
 
-[Manual&ensp;:material-book-information-variant:](../assets/manuals/LiteWave-Switch-Install-Guide.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:material-book-information-variant:](../assets/manuals/LiteWave-Switch-Datasheet.pdf){ .md-button .md-button--primary }
+[Manual&ensp;:symbols-quick-reference:](../assets/manuals/LiteWave-Switch-Install-Guide.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:symbols-quick-reference:](../assets/manuals/LiteWave-Switch-Datasheet.pdf){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Physical Overview
+## :symbols-info:&ensp;Physical Overview
 
-#### :material-toolbox:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro. 
 
-#### :material-map-marker-outline:&ensp;Location 
+#### :symbols-location:&ensp;Location 
 
 + Living Room
 + TV Stand
  
-#### :material-power-plug:&ensp;Power Source 
+#### :symbols-power:&ensp;Power Source 
 
 + Wall Wart *(5V / 0.6A)*
  

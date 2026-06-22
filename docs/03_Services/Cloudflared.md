@@ -20,10 +20,10 @@ hide:
 # Cloudflared
 *Reverse-Proxy Server*
 
-[GitHub&ensp;:simple-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description
 
@@ -33,12 +33,12 @@ hide:
 
 + `14333`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://storage-server.internal:14333>
 + <http://storage-server-2.internal:14333>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Software&ensp;:material-arrow-right-thin:&ensp;"Cloudflare Dashboard"
@@ -51,7 +51,7 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                             | :material-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 --8<-- "cloudflared-pi-server.yml"

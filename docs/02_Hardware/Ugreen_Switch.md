@@ -19,21 +19,21 @@ hide:
 # Ugreen Switch
 *Model UM106X*
 
-[Manual&ensp;:material-book-information-variant:](../assets/manuals/Ugreen_CM106X_Manual.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:material-book-information-variant:](../assets/manuals/Ugreen_CM106X_Datasheet.pdf){ .md-button .md-button--primary }
+[Manual&ensp;:symbols-quick-reference:](../assets/manuals/Ugreen_CM106X_Manual.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:symbols-quick-reference:](../assets/manuals/Ugreen_CM106X_Datasheet.pdf){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Physical Overview
+## :symbols-info:&ensp;Physical Overview
 
-#### :material-toolbox:&ensp;Role
+#### :symbols-toolbox:&ensp;Role
 
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
-#### :material-map-marker-outline:&ensp;Location 
+#### :symbols-location:&ensp;Location 
 
 + Living-Room 
 + Mini-Rack 
 
-#### :material-power-plug:&ensp;Power Source
+#### :symbols-power:&ensp;Power Source
 
 + Wall wart *(12.0V / 1.0A)*
 
@@ -52,7 +52,7 @@ hide:
 
 | Port # | Connected Device                                                       | Color / Type   | Notes                                                      |
 | :----: | :--------------------------------------------------------------------- | :------------- | :--------------------------------------------------------- |
-| **1**  | [:material-laptop:&nbsp;Rob's Laptop](../02_Hardware/Rob's_Laptop.md)  | White / Cat5e  | 2.5 Gb/s &mdash; Temporary Connection `E8:9C:25:90:8B:11`  |
+| **1**  | [:symbols-laptop:&nbsp;Rob's Laptop](../02_Hardware/Rob's_Laptop.md)   | White / Cat5e  | 2.5 Gb/s &mdash; Temporary Connection `E8:9C:25:90:8B:11`  |
 | **2**  | :material-ethernet:&nbsp;*Empty*                                       | -              | -                                                          |
 | **3**  | :material-ethernet:&nbsp;*Empty*                                       | -              | -                                                          |
 | **4**  | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)    | Blue / Cat6A   | 2.5 Gb/s &mdash; `eth1` `192.168.50.5` `00:E0:4C:5B:9A:95` |

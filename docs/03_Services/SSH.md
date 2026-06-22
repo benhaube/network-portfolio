@@ -19,10 +19,10 @@ hide:
 # SSH
 *Secure Shell*
 
-[Documentation&ensp;:material-file-document-multiple:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-documentation:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -32,7 +32,7 @@ hide:
 
 + `22`
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + :symbols-router:&nbsp;ASUS RT-BE92U
     + `192.168.50.1:22` 
@@ -55,7 +55,7 @@ hide:
     + `192.168.50.153:22` 
     + `kacey.internal:22` 
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE92U (Admin)"
@@ -76,9 +76,9 @@ hide:
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)         | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
-#### :material-server-outline:&ensp;Servers
+#### :symbols-server:&ensp;Servers
 
 !!! tip 
 

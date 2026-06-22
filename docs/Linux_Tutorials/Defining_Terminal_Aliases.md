@@ -1,5 +1,5 @@
 ---
-icon: material/console
+icon: symbols/terminal
 title: Defining Bash Aliases
 subtitle: Increase Productivity
 hide:
@@ -49,7 +49,7 @@ hide:
     nano ~/.bash_aliases
     ```
 
-    + Write your desired aliases into this file, then ++ctrl+o++ to save the changes and ++ctrl+x++ to exit nano. 
+    + Write your desired aliases into this file, then&ensp;++ctrl+o++&ensp;to save the changes and&ensp;++ctrl+x++&ensp;to exit nano. 
 
 4. Now run the command `#!bash source ~/.bashrc`, or open a new tab in your terminal application of choice. 
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
@@ -104,7 +104,7 @@ hide:
         **#!/bin/bash**
         :     I prefer to put `#!/bin/bash` on the first line of the file. This is not strictly necessary, but it tells your text editor to use proper syntax highlighting for Bash if it is available. An alternative would be to give the file the `.sh` file extension. However, if you do not care about syntax highlighting in your text editor, then neither are necessary.
 
-5. Paste or type in your desired aliases, then ++ctrl+o++ to save the changes and ++ctrl+x++ to exit nano.
+5. Paste or type in your desired aliases, then&ensp;++ctrl+o++&ensp;to save the changes and&ensp;++ctrl+x++&ensp;to exit nano.
 
 6. Now run the command `#!bash source ~/.bashrc`, or open a new tab in your terminal application of choice. 
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
@@ -115,4 +115,4 @@ hide:
     **Recommended Aliases:**
     :     You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
  
-        [My Aliases&ensp;:material-console:](My_Terminal_Aliases.md){ .md-button }
+        [My Aliases&ensp;:symbols-terminal:](My_Terminal_Aliases.md){ .md-button }

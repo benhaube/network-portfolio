@@ -18,9 +18,9 @@ hide:
 [Android&ensp;:brands-android-robot:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Pixel Care+&ensp;:symbols-shield-heart:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
-#### :material-toolbox:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
@@ -28,27 +28,27 @@ hide:
 
 + `ben-s-phone`
 
-#### :material-map-marker-outline:&ensp;Location
+#### :symbols-location:&ensp;Location
 
 + Mobile
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + [:brands-android-robot:&nbsp;Android 16](https://www.android.com/)
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Email&ensp;:material-arrow-right-thin:&ensp;"Google"
 
-#### :material-security:&ensp;Device Security
+#### :symbols-security:&ensp;Device Security
 
 + Titan M2 security chip *(FIDO2 / WebAuthn)*
 + Full-disk encryption
 + 8-digit PIN
 + Biometric:
-    + :material-fingerprint:&nbsp;Fingerprint
-    + :material-face-recognition:&nbsp;Facial Recognition
+    + :symbols-fingerprint:&nbsp;Fingerprint
+    + :symbols-facial-recognition:&nbsp;Facial Recognition
 
 ## :symbols-monitor-heart:&ensp;Core Specs
 
@@ -56,15 +56,15 @@ hide:
 | :--------------------------------------------------------- | :-------------------- | :---------------------------------------------------------------------------- | :------------ | :------------------------------------ | :-------- | :----- |
 | :brands-google-tensor:&nbsp;Google Tensor G4 *(arm64-v8a)* | 8C / 8T<br>3-Clusters | **Cluster-1:** 1950 MHz<br>**Cluster-2:** 2600 MHz<br>**Cluster-3:** 3105 MHz | 16 GB LPDDR5X | :brands-google-tensor:&nbsp;Mali-G715 | -         | Shared |
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                              |
-| :-------: | :--------- | :------------------ | :------------------------------------------------------------------------ |
-|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address | MAC Address         | Connected To                                                             |
+| :-------: | :--------- | :------------------ | :----------------------------------------------------------------------- |
+|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
-| Interface | VLAN                            | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :------------------------------ | :---- | :---------------------------- | :------------- |
-|   Wi-Fi   | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                           | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------- | :---- | :---------------------------- | :------------- |
+|   Wi-Fi   | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage:&ensp;Storage & Mounts
 
@@ -74,7 +74,7 @@ hide:
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------------------- |
 | `N/A`       | UFS 3.1    | 128 GB         | `N/A`       | `N/A`       | Full Device Encryption |
 
-#### :material-usb:&ensp;External/Attached
+#### :symbols-usb:&ensp;External/Attached
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -121,7 +121,7 @@ hide:
     + Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/) application.
     + The calendar and tasks serivce is hosted by [Fastmail](https://fastmail.com). 
 
-#### :material-update:&ensp;Update Process
+#### :symbols-update:&ensp;Update Process
 
 ##### Android OS
 
@@ -133,7 +133,7 @@ hide:
 + Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps).
 + Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/) app store and the [Obtainium](https://obtainium.imranr.dev/) application.
 
-#### :material-cloud-upload-outline:&ensp;Backup Policy
+#### :symbols-backup:&ensp;Backup Policy
 
 ##### Google Cloud Backup
 

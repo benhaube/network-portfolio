@@ -1,5 +1,5 @@
 ---
-icon: material/sitemap
+icon: symbols/sitemap
 title: Physical Network Map
 subtitle: Focusing on Physical Connections
 tags:

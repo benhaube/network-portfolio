@@ -1,5 +1,5 @@
 ---
-icon: material/restore-alert
+icon: symbols/restore
 title: Disaster Recovery Plan
 subtitle: Maintaining High Availability
 tags:
@@ -11,7 +11,7 @@ tags:
   - Monitor
   - Service
 ---
-![Material Design restore-alert icon](../assets/icons/restore-alert-color.svg){ width=200 }
+![Material Design restore icon](../assets/icons/restore.svg){ width=200 }
 
 # Disaster Recovery Plan
 *Maintaining High Availability*
@@ -22,7 +22,7 @@ tags:
     :    The goal of this **DR** plan is to ensure **HA** for critical network services *(DNS, Routing, Security)* and to provide a clear path to data restoration for stateful services *(Immich, Home Assistant, SMB Shares)* in the event of hardware failure or data corruption.
 
 ---
-## :material-priority-high:&ensp;Service Priority Levels
+## :symbols-priority:&ensp;Service Priority Levels
 
 | Priority | Service                                                                                                                                       | Impact of Failure                               | RTO                                |
 | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :--------------------------------- |
@@ -32,7 +32,7 @@ tags:
 | Standard | [:services-immich:&nbsp;Immich](../03_Services/Immich.md) / Media                                                                             | Loss of access to personal archives.            | < 24 Hours                         |
 
 ---
-## :material-cloud-upload-outline:&ensp;Backup Strategy
+## :symbols-backup:&ensp;Backup Strategy
 
 !!! info inline end "3-2-1 Backup Strategy"
     
@@ -67,7 +67,7 @@ tags:
 
 + Encrypted backups of the Obsidian vaults and key configuration files are synced to a secure cloud provider *([p-Cloud](https://www.p-cloud.com))*.
 
-## :material-restore-alert:&ensp;Recovery Procedures
+## :symbols-restore:&ensp;Recovery Procedures
 
 ### Node Failure &mdash; Primary DNS
 
@@ -93,7 +93,7 @@ tags:
 
 + Point the Cloudflare tunnel or local DNS records to the ZimaOS NAS IP.
 
-## :material-tools:&ensp;Testing & Maintenance
+## :symbols-reset-wrench:&ensp;Testing & Maintenance
 
 ### Quarterly "Pull the Plug" Test
 
@@ -122,7 +122,7 @@ tags:
 
 	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :material-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
 
 	---
 
@@ -138,7 +138,7 @@ tags:
 
 	[IP Address Management](../01_Infrastructure/IP_Address_Management.md){ .md-button }
 
--   :material-server-security:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-policy-fill:{ .lg .middle }&emsp;**Network Security**
 
 	---
 

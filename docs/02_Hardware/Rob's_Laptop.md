@@ -1,5 +1,5 @@
 ---
-icon: material/laptop
+icon: symbols/laptop
 title: Rob's Laptop
 subtitle: ASUS TUF Gaming Laptop
 tags: 
@@ -22,9 +22,9 @@ hide:
 [Windows Docs&ensp;:material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :material-toolbox:&ensp;Role
+#### :symbols-toolbox:&ensp;Role
 
 :    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./Ugreen_Switch.md).
 
@@ -32,15 +32,15 @@ hide:
 
 + `ems1`
 
-#### :material-map-marker-outline:&ensp;Location 
+#### :symbols-location:&ensp;Location 
 
 + Mobile
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + [:material-microsoft:&nbsp;Windows 11 Home](https://microsoft.com/windows)
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Laptop PC"
@@ -52,17 +52,17 @@ hide:
 | :brands-amd:&nbsp;Ryzen(r) 9 7940HS *(x86-64)* | 8C / 16T        | 4.0 GHz   | 16 GB DDR5 *(4800 MT/s)* | :brands-amd:&nbsp;Radeon(r) 780M                 | 2700 MHz  | *Shared*   |
 |                                                |                 |           |                          | :simple-nvidia:&nbsp;GeForce RTX 4070 *(mobile)* | 2175 MHz  | 8 GB GDDR6 |
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To                                                                                             |
 | :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
 | Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port-1)*, Temporary connection |
-|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:material-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*                                |
+|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*                                 |
 
-| Interface |              VLAN               | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :-----------------------------: | :---- | :---------------------------- | :------------- |
-| Ethernet  | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|   Wi-Fi   | :material-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN              | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------: | :---- | :---------------------------- | :------------- |
+| Ethernet  | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|   Wi-Fi   | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage:&ensp;Storage & Mounts
 
@@ -72,7 +72,7 @@ hide:
 | :---------- | :--------- | :------------- | :------------------------------------------------------------- | :---------- | :--------- |
 | `C:`        | NVMe SSD   | 926 GB         | `SCSI\DISK&VEN_NVME&PROD_WD_PC_SN560_SDDP\5&194EBDF0&0&000000` | `ntfs`      | BitLocker  |
 
-#### :material-usb:&ensp;External / Attached
+#### :symbols-usb:&ensp;External / Attached
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

@@ -1,5 +1,5 @@
 ---
-icon: material/cog-sync
+icon: symbols/settings-sync
 title: Nebula-Sync
 subtitle: Synchronize Pi-hole
 description: Synchronize configuration between multiple Pi-hole instances.
@@ -15,15 +15,15 @@ tags:
 hide:
   - toc
 ---
-![Nebula Sync Icon](../assets/icons/nebula-sync.svg){ width=200 }
+![Nebula Sync Icon](../assets/icons/settings-sync.svg){ width=200 }
 
 # Nebula-Sync
 *Synchronize Pi-hole*
 
-[GitHub&ensp;:simple-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -33,11 +33,11 @@ hide:
 
 + `N/A`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + N/A
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + :material-docker:&nbsp;Docker Compose: 
     + `compose.yml`
@@ -48,7 +48,7 @@ hide:
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "nebula-sync.yml"

@@ -19,10 +19,10 @@ hide:
 # Immich
 *Bye Bye, Google Photos*
 
-[GitHub&ensp;:simple-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description  
 
@@ -32,16 +32,16 @@ hide:
 
 + `2283`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
-+ :material-lan: LAN Access:
++ :symbols-lan: LAN Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
     + <http://storage-server-2.internal:2283>
 + :material-web: WAN Access:
     + <https://immich.rac3r4life.online>
 
-#### :material-key-chain:&ensp;Credentials  
+#### :symbols-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich Admin"
@@ -56,7 +56,7 @@ hide:
 |                                                                     |                                       | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
 |                                                                     |                                       | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "immich.yml"

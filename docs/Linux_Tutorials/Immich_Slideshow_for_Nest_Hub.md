@@ -20,7 +20,7 @@ hide:
 
 ---
 
-## :material-broom:&ensp;Cleaning Google Photos
+## :symbols-delete:&ensp;Cleaning Google Photos
 
 **Goal:**
 :   Delete cloud data without losing local files.
@@ -38,10 +38,10 @@ hide:
     + **Console Script *(Advanced)*:** 
         + Open Chrome DevTools:&ensp;++f12++&ensp;:material-arrow-right-thin:&ensp;Console. 
         + Paste script to auto-select/delete. 
-1.  **Finalize:** 
+3.  **Finalize:** 
     + Empty "Trash/Bin" to reclaim storage.
 
-### :material-file-code-outline:&ensp;Photo Cleaning Script
+### :symbols-code:&ensp;Photo Cleaning Script
 
 ```javascript title="Javascript" linenums="1"
 --8<-- "clean-google-photos.js"
@@ -49,7 +49,7 @@ hide:
 
 1. If the script selects them but doesn't delete them, just click the :symbols-delete: icon yourself after it does the hard work of selecting everything.
 
-## :material-server-outline:&ensp;Server-Side Setup 
+## :symbols-server:&ensp;Server-Side Setup 
 &emsp;&emsp;&ensp;*ZimaOS NAS*
 
 **Goal:**
@@ -68,7 +68,7 @@ Add these services to your existing Immich stack or a new stack.
 3. The Logic *(Auto-adds faces to the specific album)*
 4. `SYNC_MODE=1` adds new photos automatically.
 
-### :material-file-image:&ensp;Auto Album Config
+### :symbols-image:&ensp;Auto Album Config
 
 Place this in the same folder as your docker-compose file.
 
@@ -88,7 +88,7 @@ Place this in the same folder as your docker-compose file.
     + **Create Rule:**&ensp;If Hostname equals `frame.rac3r4life.online`&ensp;:material-arrow-right-thin:&ensp;**Skip** "Super Bot Fight Mode" and "Managed Challenge"
         + _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
-## :material-home-automation:&ensp;Automation 
+## :symbols-home-automation:&ensp;Automation 
 &emsp;&emsp;&ensp;*Home Assistant on Pi 4*
 
 **Goal:**

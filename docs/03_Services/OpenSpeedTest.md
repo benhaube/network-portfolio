@@ -19,10 +19,10 @@ hide:
 # OpenSpeedTest
 *Test Network Performance*
 
-[GitHub&ensp;:simple-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://openspeedtest.com/selfhosted-speedtest){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/openspeedtest/Speed-Test){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -32,13 +32,13 @@ hide:
 
 + `3004`
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + <https://openspeedtest.internal>
 + <http://storage-server.internal:3004>
 + <http://storage-server-2.internal:3004>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + N/A
 
@@ -48,7 +48,7 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :-------------- | :--------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `openspeedtest` | `openspeedtest/latest` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "openspeedtest.yml"

@@ -1,5 +1,5 @@
 ---
-icon: material/sitemap
+icon: symbols/sitemap
 title: Logical Network Map
 subtitle: Focusing on Servers and Services
 tags:

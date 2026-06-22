@@ -18,10 +18,10 @@ hide:
 # Portainer-EE
 *Container Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.portainer.io/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.portainer.io/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -34,7 +34,7 @@ hide:
 + Agent:
     + `9001`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + Hub: 
     + ~~<https://portainer.internal>~~
@@ -43,7 +43,7 @@ hide:
     + ~~<http://pi-zero.internal:9001>~~
     + ~~<http://storage-server.internal:9001>~~
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Portainer"
@@ -64,7 +64,7 @@ hide:
 | [:material-raspberry-pi:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 | [:material-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
-### :material-cog:&ensp;Configuration  
+### :symbols-settings:&ensp;Configuration  
 
 ##### Hub
 

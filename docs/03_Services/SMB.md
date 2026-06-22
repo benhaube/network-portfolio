@@ -1,5 +1,5 @@
 ---
-icon: material/folder-network
+icon: symbols/smb-share
 title: SMB
 subtitle: Server Message Block
 description: Remote file system access.
@@ -14,15 +14,15 @@ tags:
 hide:
   - toc
 ---
-![Material Design folder-network icon](../assets/icons/folder-network.svg){ width=200 }
+![Material Design SMB icon](../assets/icons/smb-share.svg){ width=200 }
 
 # SMB
 *Server Message Block*
 
-[Documentation&ensp;:material-file-document-multiple:](https://wiki.samba.org/index.php/Main_Page){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-documentation:](https://wiki.samba.org/index.php/Main_Page){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -32,14 +32,14 @@ hide:
 
 + `445`
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + `\\storage-server.internal\nvme0n1p1`
 + `\\storage-server.internal\Quick-Storage`
 + `\\pi-server.internal\smb-share`
 + `\\asusrouter.internal\`
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
@@ -53,7 +53,7 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                             | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
-### :material-cog:&ensp;Configuration  
+### :symbols-settings:&ensp;Configuration  
 
 #### :material-raspberry-pi:&ensp;Raspberry Pi 4B Server
 

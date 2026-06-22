@@ -20,10 +20,10 @@ hide:
 # Glance
 *Server Dashboard*
 
-[GitHub&ensp;:simple-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description
 
@@ -33,12 +33,12 @@ hide:
 
 + `8580`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://glance.internal>
 + <http://pi-server.internal:8580/>
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Admin"
@@ -51,12 +51,12 @@ hide:
 ???+ change "Image Migration"
 
     :symbols-calendar-event:&ensp;**Date:** Monday, April 27 2026 <br>
-    :material-swap-horizontal:&ensp;**Change:** Using a forked Docker image <br>
-    :material-help-circle-outline:&ensp;**Reason:** Active development, additional features
+    :symbols-swap-horizontal:&ensp;**Change:** Using a forked Docker image <br>
+    :symbols-help:&ensp;**Reason:** Active development, additional features
 
     ---
 
-    :material-cog:&ensp;**Configuration:**
+    :symbols-settings:&ensp;**Configuration:**
  
     :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuraiton is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
  
@@ -67,21 +67,21 @@ hide:
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
 |                                                                                                 | :material-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ??? change "User Authentication"
 
     :symbols-calendar-event:&ensp;**Date:** Monday, April 20 2026 <br>
-    :material-swap-horizontal:&ensp;**Change:** Enabled user authentication <br>
-    :material-help-circle-outline:&ensp;**Reason:** Additional security
+    :symbols-swap-horizontal:&ensp;**Change:** Enabled user authentication <br>
+    :symbols-help:&ensp;**Reason:** Additional security
 
     ---
 
-    :material-account:&ensp;**Users:**
+    :symbols-person:&ensp;**Users:**
  
-    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [[Bitwarden Vault](https://vault.bitwarden.com)](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
+    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
-    :material-form-textbox-password:&ensp;**Passwords:**
+    :symbols-password:&ensp;**Passwords:**
 
     !!! tip inline end
     
@@ -96,7 +96,7 @@ hide:
  
     + Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again. 
       
-    :material-key-chain:&ensp;**Server Secret:**
+    :symbols-key:&ensp;**Server Secret:**
  
     + The "Server Secret" needs to be set in the `glance.yml` configuration file. 
     + To generate a new server secret, attach to the container's shell and run the following command: 
@@ -121,8 +121,8 @@ hide:
 ??? change "Widgets Directory"
 
     :symbols-calendar-event:&ensp;**Date:** Saturday, April 18 2026 <br>
-    :material-swap-horizontal:&ensp;**Change:** Moved pages and widgets into separate directories. <br>
-    :material-help-circle-outline:&ensp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
+    :symbols-swap-horizontal:&ensp;**Change:** Moved pages and widgets into separate directories. <br>
+    :symbols-help:&ensp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
 
     ---
 
@@ -132,7 +132,7 @@ hide:
  
         **Reload and clear cache:**<br>++ctrl+f5++ 
  
-    :material-cog:&ensp;**Configuration:**
+    :symbols-settings:&ensp;**Configuration:**
 
     + The Glance dashboard widgets have been moved into thier own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. 
     + Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure. 
@@ -148,7 +148,7 @@ hide:
                   - $include: /app/config/widgets/search.yml
             ```
 
-    :material-widgets:&ensp;**Widgets:**
+    :symbols-widgets:&ensp;**Widgets:**
  
     + To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository. 
  
@@ -168,7 +168,7 @@ hide:
 6. **Optional:** "Main" tracks qualifying sessions and races *(inc. sprints)*. "Race" tracks **only** races. 
 7. Changed the Docker image to **Dynacat**, a fork of Glance with added features.
 
-#### :material-file-cog-outline:&ensp;Glance Config
+#### :symbols-cogs:&ensp;Glance Config
 
 ```yaml title="<code>dynacat.yml</code>" linenums="1"
 --8<-- "dynacat.yml"
@@ -179,13 +179,13 @@ hide:
       
       **Refresh & clear cache:**
       
-      + Use the key combination, ++ctrl+f5++
+      + Use the key combination,&ensp;++ctrl+f5++
 
 3.    The Glance Dashboard's server secret is stored in the Bitwarden Vault.
 
       [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
-      + Local Network&nbsp;:material-arrow-right-thin:&nbsp;"Glance Server Secret"
+      + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
 
 4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 
@@ -214,13 +214,13 @@ hide:
       
       **Refresh & clear cache:**
       
-      + Use the key combination, ++ctrl+f5++
+      + Use the key combination,&ensp;++ctrl+f5++
 
 3.    The Glance Dashboard's server secret is stored in the Bitwarden Vault.
 
-      [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
+      [:services-bitwarden:&bnsp;**Bitwarden:**](https://vault.bitwarden.com)
 
-      + Local Network&nbsp;:material-arrow-right-thin:&nbsp;"Glance Server Secret"
+      + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
 
 4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 
@@ -240,7 +240,7 @@ hide:
 
       Use this if you think that some of the text on the page is too dark and hard to read
 
-#### :material-view-dashboard:&ensp;Glance Pages
+#### :symbols-space-dashboard:&ensp;Glance Pages
 
 ```yaml title="<code>home.yml</code>" linenums="1"
 --8<-- "glance-home.yml"
@@ -255,7 +255,7 @@ hide:
 
 1. Show a title header on mobile device web browsers.
 2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
-3.    :material-bug:&ensp;**Bug:** 
+3.    :symbols-bug-report:&ensp;**Bug:** 
 
       + Disabled **WireGuard** community widget for now due to bugs causing page instability and other issues. 
 

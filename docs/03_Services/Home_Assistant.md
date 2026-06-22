@@ -17,10 +17,10 @@ hide:
 # Home Assistant
 *Awaken Your Home*
 
-[GitHub&ensp;:simple-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://www.home-assistant.io/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://www.home-assistant.io/docs/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -30,12 +30,12 @@ hide:
 
 + `8123`
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + <http://pi-server.internal:8123>
 + <https://home-assistant.internal>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Home Assistant"
@@ -46,7 +46,7 @@ hide:
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "home-assistant.yml"

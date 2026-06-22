@@ -1,29 +1,33 @@
-/* --- Line-wrap for code blocks --- */
+/* ----------------------------- * 
+ * Line-wrape for Code Blocks    *
+ * ----------------------------- */
 
-/* 1. Force the code to wrap and break long strings without spaces */
+/* Force the code to wrap and break long strings without spaces */
 .md-typeset .wrap-code pre > code {
     white-space: pre-wrap !important;
     word-break: break-word !important; 
     overflow-wrap: anywhere !important;
 }
 
-/* 2. Constrain the table width when line numbers are enabled */
+/* Constrain the table width when line numbers are enabled */
 .md-typeset .wrap-code .highlighttable {
     table-layout: fixed !important;
     width: 100% !important;
 }
 
-/* 3. Ensure the code cell takes up the remaining space but respects the limit */
+/* Ensure the code cell takes up the remaining space but respects the limit */
 .md-typeset .wrap-code .highlighttable .code {
     width: 100% !important;
 }
 
-/* 4. Padding for copy/select buttons */
+/* Padding for copy/select buttons */
 .md-typeset pre>code {
     padding-right: 6em;
 }
 
-/* --- Code block border radius --- */
+/* -------------------------- *
+ * Code block border radius   *
+ * -------------------------- */
 
 .highlight span.filename {
   border-top-left-radius: 0.4rem;
@@ -44,4 +48,13 @@
 
 .md-code__nav {
   border-radius: 0.4rem;
+}
+
+/* -------------------------- *
+ * Annotation Button          *
+ * -------------------------- */
+
+/* Increase button rotation (default 45deg) */
+.md-tooltip--active + .md-annotation__index::after {
+	transform: rotate(90deg);
 }

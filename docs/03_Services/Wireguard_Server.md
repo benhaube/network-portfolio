@@ -20,10 +20,10 @@ hide:
 # WireGuard
 *A Simple, Modern VPN*
 
-[GitHub&ensp;:simple-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -35,16 +35,16 @@ hide:
 + `51820`
 + `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;ZimaOS NAS)*
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-links:&ensp;URL / Access 
 
 + :material-vpn:&nbsp;Server Endpoint:
     + `rac3r4life.myaddr.dev:41820` *(for :symbols-router:&nbsp;ASUS RT-BE92U)*
     + `rac3r4life.myaddr.dev:51820` *(for :material-nas:&nbsp;ZimaOS NAS)*
-+ :material-application-cog-outline:&nbsp;Web UI Admin: 
++ :symbols-cogs:&nbsp;Web UI Admin: 
     + <http://storage-server.internal:51821/>
     + <http://storage-server-2.internal:51821/>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Admin"
@@ -70,7 +70,7 @@ hide:
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)    | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "wireguard.yml"

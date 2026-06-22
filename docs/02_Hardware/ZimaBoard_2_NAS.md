@@ -26,9 +26,9 @@ hide:
 [IceWhale Community&ensp;:services-icewhale:](https://community.zimaspace.com/){ .md-button .md-button--primary }&emsp;[ZimaOS Docs&ensp;:services-zimaos:](https://www.zimaspace.com/docs/zimaos/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :material-toolbox:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. It has an *x86-64* Intel N150 quad-core CPU *(3.6 GHz)* and 16 GB of LPDDR5 *(6400 MHz)* RAM, and it is located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
@@ -36,16 +36,16 @@ hide:
 
 + `ZimaOS-NAS`
 
-#### :material-map-marker-outline:&ensp;Location 
+#### :symbols-location:&ensp;Location 
 
 + Living-Room
 + Mini-Rack
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + [:services-zimaos:&nbsp;ZimaOS v1.6.1](https://www.zimaspace.com/zimaos) *(Immutable)*
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)" 
@@ -59,21 +59,21 @@ hide:
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 *(6400 MHz)* | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | *Shared* |
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Connected To                                                                       |
 | :-------: | :------------- | :------------------ | :--------------------------------------------------------------------------------- |
 |  `eth0`   | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 4)* |
 |  `eth1`   | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 5)* |
 
-| Interface |              VLAN               | FQDN                        | DNS Servers                   | Gateway        |
-| :-------: | :-----------------------------: | :-------------------------- | :---------------------------- | :------------- |
-|  `eth0`   | :material-security:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|  `eth1`   | :material-security:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |              VLAN              | FQDN                        | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------: | :-------------------------- | :---------------------------- | :------------- |
+|  `eth0`   | :symbols-security:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|  `eth1`   | :symbols-security:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-storage:&ensp;Storage & Mounts
 
-#### :material-chip:&ensp;Boot
+#### :symbols-firmware:&ensp;Boot
 
 | Mount Point | Drive Type | Drive Capacity | Device Path    | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------- | :---------- | :--------- |
@@ -88,7 +88,7 @@ hide:
 
 ## :material-web:&ensp;Services / Docker Containers
 
-#### :material-folder-network:&ensp;File Sharing
+#### :symbols-smb-share:&ensp;File Sharing
 
 + SMB  *(with Multichannel enabled)*
 + NFS *(for Linux PCs)*
@@ -103,9 +103,9 @@ hide:
 
 |  Status  | Service                                                      | Port(s) | Role / Notes                                                                                   |
 | :------: | :----------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:material-folder-network:&nbsp;NFS](../03_Services/NFS.md)  | `2049`  | Remote file system access.                                                                     |
+| *Active* | [:symbols-smb-share:&nbsp;NFS](../03_Services/NFS.md)        | `2049`  | Remote file system access.                                                                     |
 | *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md) |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:material-folder-network:&nbsp;SMB](../03_Services/SMB.md)  |  `445`  | Remote file system access.                                                                     |
+| *Active* | [:symbols-smb-share:&nbsp;SMB](../03_Services/SMB.md)        |  `445`  | Remote file system access.                                                                     |
 
 #### :material-docker:&ensp;Docker
 
@@ -128,7 +128,7 @@ hide:
 |  *Active*  | [:services-portracker:&nbsp;Portracker](../03_Services/Portracker.md)                   |         `4999`         | A self-hosted, real-time port monitoring and discovery tool.                                                                                        |
 |  *Active*  | [:services-spoolman:&nbsp;Spoolman](../03_Services/Spoolman.md)                         |         `7912`         | Keep track of your inventory of 3D-printer filament spools.                                                                                         |
 |  *Active*  | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                                            |
-|  *Active*  | [:material-console:&nbsp;ttydBridge](../03_Services/ttydBridge.md)                      |         `2222`         | A DockerApp makes it easy to use the host terminal in the Web.                                                                                      |
+|  *Active*  | [:symbols-terminal:&nbsp;ttydBridge](../03_Services/ttydBridge.md)                      |         `2222`         | A DockerApp makes it easy to use the host terminal in the Web.                                                                                      |
 |  *Active*  | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md)                 |    `51820` `51821`     | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                            |
 |  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                       |
 
@@ -142,7 +142,7 @@ hide:
     + Do not attempt to use `apt` to install or upgrade system packages. 
     + Do not change NTP settings *(stuck on systemd-timesyncd)*.
 
-    :material-package-variant:&nbsp;**Entware:**
+    :symbols-package:&nbsp;**Entware:**
  
     + The [Entware](https://github.com/Entware/Entware) package manager is installed. 
     + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
@@ -161,8 +161,8 @@ hide:
 
 !!! change "NAS Protocol Change (SMB :material-arrow-right-thin: NFS)"
     
-    :material-calendar:&nbsp;**Date:** 2026-02-09 <br>
-    :material-help-circle-outline:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
+    :symbols-calendar-event:&nbsp;**Date:** 2026-02-09 <br>
+    :symbols-info:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
     :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
     :symbols-devices:&nbsp;**Affected Clients:** 
  
@@ -172,7 +172,7 @@ hide:
     --- 
     See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 
 
-#### :material-login:&ensp;Fastfetch Login Preset
+#### :symbols-login:&ensp;Fastfetch Login Preset
 
 ##### Install
 
@@ -211,7 +211,7 @@ hide:
 --8<-- "fastfetch-login-storage-server.jsonc"
 ```
 
-#### :material-console-line:&ensp;Starship Terminal Prompt
+#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
 
 --8<-- "starship-note.md"
 
@@ -242,7 +242,7 @@ hide:
 --8<-- "starship-zimaos.toml"
 ```
 
-#### :material-progress-clock:&ensp;Zima Cron
+#### :symbols-cron:&ensp;Zima Cron
 
 ##### About
 
@@ -275,7 +275,7 @@ hide:
 
     Open it from the [ZimaOS dashboard](http://storage-server.internal) *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
 
-#### :services-zfw-inverted:&ensp;Zima Firewall
+#### :symbols-security:&ensp;Zima Firewall
 
 ##### About
 

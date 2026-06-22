@@ -16,10 +16,10 @@ hide:
 # Spoolman
 *Filament Inventory Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -29,13 +29,13 @@ hide:
 
 + `7912`
 
-#### :material-link-variant:&ensp;URL / Access   
+#### :symbols-link:&ensp;URL / Access   
 
 + <http://storage-server.internal:7912/>
 + <http://storage-server-2.internal:7912/>
 + <https://spoolman.internal>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + N/A
 
@@ -45,7 +45,7 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `spoolman`     | `ghcr.io/donkie/spoolman:latest` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "spoolman.yml"

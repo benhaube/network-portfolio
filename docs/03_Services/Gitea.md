@@ -10,7 +10,6 @@ tags:
   - Service
   - Software
   - Docker
-  - Tools
   - File Share
   - Development
   - New
@@ -22,10 +21,10 @@ hide:
 # Gitea
 *Git with a Cup of Tea*
 
-[GitHub&ensp;:simple-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.gitea.com/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.gitea.com/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description
 
@@ -36,7 +35,7 @@ hide:
 + `3080`
 + `222`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + Web-UI:
     + <http://storage-server.internal:3080>
@@ -44,7 +43,7 @@ hide:
 + SSH: 
     + `git@storage-server.internal`
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gitea (admin)"
@@ -58,14 +57,14 @@ hide:
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gitea`        | `docker.gitea.com/gitea:latest` |
 |                                                                     | :material-docker:&nbsp;Docker Compose | `gitea_runner` | `gitea/act_runner:latest`       |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 !!! note
 
-    **Deployed with Dockge:**
+    :services-dockge:&ensp;**Deployed with Dockge:**
     :    This service is deployed and managed by [Dockge](./Dockge.md). To pull updated images, start the service, stop the service, modify the environment variables, and modify the `compose.yml` file, visit the [Dockge Web-UI](http://pi-server.internal:5001). Alternatively, SSH into the ZimaOS NAS and edit the `compose.yml` and `.env` files directly. 
 
-    **Data Directory:**
+    :symbols-folder:&ensp;**Data Directory:**
     :    The data for the `gitea` container is stored in the `dockge/stacks` directory, and is owned by `root:root`. 
     
         + `/media/nvme0n1p1/AppData/dockge/stacks/gitea/gitea`

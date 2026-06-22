@@ -18,10 +18,10 @@ hide:
 # Obsidian LiveSync
 *Sync with CouchDB*
 
-[GitHub&ensp;:simple-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -31,16 +31,16 @@ hide:
 
 + `5984`
 
-#### :material-link-variant:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
-+ :material-application-cog-outline: Settings Web UI: 
++ :symbols-cogs: Settings Web UI: 
     + <http://storage-server.internal:5984/_utils>
     + <http://storage-server-2.internal:5984/_utils>
-+ :material-database-outline: Database:
++ :symbols-database: Database:
     + <http://storage-server.internal:5984/obsidian-vault>
     + <http://storage-server-2.internal:5984/obsidian-vault>
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Obsidian LiveSync"
@@ -51,9 +51,9 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :------------------ | :-------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `obsidian-livesync` | `couchdb:3.5.0` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
-#### :material-server-outline:&ensp;Server
+#### :symbols-server:&ensp;Server
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "obsidian-livesync.yml"

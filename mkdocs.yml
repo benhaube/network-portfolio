@@ -9,12 +9,14 @@ site_description:  My personal, self-hosted network documentation, professional 
 theme:
   name: material
   custom_dir: overrides
+  favicon: /assets/favicon.svg
+  logo: /assets/logo.svg
   # -- Light, Dark, and Automatic toggles --
   palette:
     # - Toggle for automatic mode -
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-auto
+        icon: symbols/brightness-auto
         name: Switch to light mode
     # - Toggle for light mode - 
     - media: "(prefers-color-scheme: light)"
@@ -22,7 +24,7 @@ theme:
       primary: green
       accent: light blue
       toggle:
-        icon: material/brightness-7
+        icon: symbols/brightness-7
         name: Switch to dark mode
     # - Toggle for dark mode -
     - media: "(prefers-color-scheme: dark)"
@@ -30,81 +32,91 @@ theme:
       primary: green
       accent: light blue
       toggle:
-        icon: material/brightness-4
+        icon: symbols/brightness-4
         name: Switch to system preference
   font:
     text: Google Sans
     code: Google Sans Code
   # -- Icon Settings--
   icon:
-    logo: material/file-document-multiple
     repo: symbols/git
+    admonition:
+      abstract: symbols/assignment
+      note: symbols/sticky-note
+      info: symbols/info-fill
+      bug: symbols/bug-report
+      question: symbols/help-fill
+      warning: symbols/warning
+      tip: symbols/flame
+      failure: symbols/close
+      success: symbols/check
+      quote: symbols/quote
+      example: symbols/labs
     # -- Icons for Tags --
     tag:
       default: symbols/tag
       3D-printer: material/printer-3d-nozzle
-      isp: material/wan
-      iot: material/home-automation
-      active: material/check-circle
+      isp: symbols/web
+      iot: symbols/home-automation
+      active: symbols/check-circle
       android: brands/android-robot
-      backup: material/cloud-upload-outline
-      dashboard: material/view-dashboard
-      deprecated: material/trash-can
+      backup: symbols/backup
+      dashboard: symbols/space-dashboard
+      deprecated: symbols/delete
       desktop: material/desktop-tower
-      development: simple/git
-      dns: material/dns
+      development: symbols/graph-8
+      dns: symbols/dns
       docker: material/docker
       docker_host: material/docker
-      domain: material/domain
-      download: material/download
-      file-share: material/share-variant
+      domain: symbols/domain
+      download: symbols/download
+      file-share: symbols/share
       hardware: symbols/devices
-      inactive: material/close-circle
-      infra: material/server-network
-      inventory: material/list-box-outline
-      laptop: material/laptop
+      inactive: symbols/close-circle
+      infra: symbols/network-node
+      inventory: symbols/assignment
+      laptop: symbols/laptop
       linux: material/linux
-      living-room: material/sofa
-      map: material/sitemap
+      living-room: symbols/sofa
+      map: symbols/sitemap
       mini-rack: symbols/10-inch-rack
-      mobile: material/tablet-cellphone
+      mobile: symbols/devices-mobile
       monitor: symbols/monitor-heart
       nas: material/nas
       native: material/linux
-      network: material/lan 
-      new: material/alert-decagram
-      office: material/desk
-      pc: material/desktop-classic
+      network: symbols/lan 
+      new: symbols/release-alert
+      office: symbols/desk
+      pc: symbols/desktop-windows
       podman: simple/podman
       podman_host: simple/podman
       policy: symbols/policy-fill
-      print: material/printer
-      printer-cart: material/printer
+      print: symbols/print
+      printer-cart: symbols/print
       remote: material/remote-desktop
       router: symbols/router
-      security: material/security
-      server: material/server-outline
-      service: material/web
-      shell: material/console
-      software: material/application
+      security: symbols/security
+      server: symbols/server
+      service: symbols/web
+      shell: symbols/terminal
+      software: symbols/iframe
       switch: material/switch
-      tools: material/tools
+      tools: symbols/construction
       tv-stand: symbols/tv
       video: material/movie-open
       vh: symbols/host
-      vlan: material/security-network
+      vlan: symbols/lan-outline
       vm: symbols/stacks
       vpn: material/vpn
       windows: material/microsoft
-    top: material/arrow-up-bold
-    previous: material/arrow-left-bold
-    next: material/arrow-right-bold
-    search: material/magnify
-    share: material/share-variant
-    annotation: material/arrow-right-circle
-    edit: material/file-edit-outline
-    view: material/file-eye-outline
-  favicon: /assets/favicon.svg
+    top: symbols/arrow-double-up
+    previous: symbols/arrow-left
+    next: symbols/arrow-right
+    search: symbols/search
+    share: symbols/share
+    annotation: symbols/expand-circle
+    edit: symbols/edit-document
+    view: symbols/code-xml
   features:
     - navigation.instant
     - navigation.instant.progress

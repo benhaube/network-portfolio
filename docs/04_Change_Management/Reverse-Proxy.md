@@ -23,7 +23,7 @@ hide:
 
 ---
 
-## :material-information-outline:&ensp;Architecture Overview
+## :symbols-info:&ensp;Architecture Overview
 
 #### DNS Servers
 
@@ -39,7 +39,7 @@ hide:
 * [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 * [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
-## :material-file-cloud:&ensp;Technitium DNS Records
+## :symbols-cloud-sync:&ensp;Technitium DNS Records
 
 !!! note
 
@@ -50,7 +50,7 @@ hide:
 | `pi-zero.internal` | **A**       | `192.168.50.3`     | :material-check: | The dedicated Caddy reverse proxy host. |
 | `immich.internal`  | **CNAME**   | `pi-zero.internal` | :material-close: | Points the Immich domain to the proxy.  |
 
-## :material-cloud-cog:&ensp;Caddy Configuration
+## :symbols-cogs:&ensp;Caddy Configuration
 
 #### File Location 
 
@@ -72,7 +72,7 @@ immich.internal {
 
 ---
 
-## :material-traffic-light:&ensp;Traffic Flow
+## :symbols-traffic:&ensp;Traffic Flow
 
 ```mermaid { .pz-ignore }
 --8<-- "traffic_flow.mmd"

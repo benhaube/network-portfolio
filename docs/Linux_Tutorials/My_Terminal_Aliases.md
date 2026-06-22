@@ -1,5 +1,5 @@
 ---
-icon: material/console
+icon: symbols/terminal
 title: My Bash Aliases
 subtitle: A Great Start
 hide:
@@ -15,7 +15,7 @@ hide:
     **Defining Bash Aliases:**
     :    Here I have assembled a list of aliases that I find useful and include on all of my GNU / Linux PCs and servers. See the guide linked below for instructions on how to use these aliases on your own distribution.
  
-        [Defining Bash Aliases&ensp;:material-console:](Defining_Terminal_Aliases.md){ .md-button }
+        [Defining Bash Aliases&ensp;:symbols-terminal:](Defining_Terminal_Aliases.md){ .md-button }
 
 ---
 

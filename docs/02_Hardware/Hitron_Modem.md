@@ -20,26 +20,26 @@ hide:
 [Xfinity Account&ensp;:brands-xfinity:](https://login.xfinity.com/login){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline&ensp;Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :material-toolbox:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
-#### :material-map-marker-outline:&ensp;Location
+#### :symbols-location:&ensp;Location
 
 + Living-Room
 + Mini-Rack
 
-#### :material-memory:&ensp;OS / Firmware
+#### :symbols-memory:&ensp;OS / Firmware
 
 + Hitron FW version: `7.3.5.3.2b2`
 
-#### :material-key-chain:&ensp;Credentials
+#### :symbols-key:&ensp;Credentials
 
 + N/A
 
-## :material-lan:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
 | Interface | IP Address      | MAC Address         | Connected To                                                           |
 | :-------: | :-------------- | :------------------ | :--------------------------------------------------------------------- |
@@ -59,10 +59,10 @@ hide:
  
     * To access the modem's Web UI enter <https://192.168.100.1> or <https://hitron-modem.internal>
 
-#### :material-update:&ensp;Update Process 
+#### :symbols-update:&ensp;Update Process 
 
 + N/A
 
-#### :material-cloud-upload-outline:&ensp;Backup Policy 
+#### :symbols-backup:&ensp;Backup Policy 
 
 + N/A

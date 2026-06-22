@@ -1,4 +1,4 @@
 ---
-icon: material/text
+icon: symbols/notes
 ---
 # Blog

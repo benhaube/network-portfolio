@@ -18,10 +18,10 @@ hide:
 # Nextcloud
 *Private Cloud*
 
-[GitHub&ensp;:simple-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://docs.nextcloud.com/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.nextcloud.com/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -31,12 +31,12 @@ hide:
 
 + `10081`
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + ~~<http://storage-server.internal:10081>~~
 + ~~<http://storage-server-2.internal:10081>~~
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Nextcloud (admin)"
@@ -48,7 +48,7 @@ hide:
 | :---------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------- |
 | [:material-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `nextcloud`    | `nextcloud:32.0` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "nextcloud.yml"

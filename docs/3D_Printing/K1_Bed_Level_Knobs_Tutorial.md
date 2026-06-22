@@ -1,5 +1,5 @@
 ---
-icon: material/cog
+icon: symbols/settings
 title: Manual Bed Leveling Mod
 subtitle: Fine Tune Your Bed Level
 hide:
@@ -23,7 +23,7 @@ hide:
     [AliExpress&ensp;:brands-aliexpress:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon&ensp;:fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
 
 ---
-## :material-tools:&ensp;Hardware Setup
+## :symbols-wrench:&ensp;Hardware Setup
 
 !!! note inline end "Installation Note"
 
@@ -88,7 +88,7 @@ hide:
 <p><b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</p>
 </div>
 
-## :material-chip:&ensp;Firmware Setup
+## :symbols-firmware:&ensp;Firmware Setup
 
 !!! info inline end "Root Access"
 
@@ -120,7 +120,7 @@ hide:
 
 4. [ ] Save *(if you edited `printer.cfg`)* and restart the printer to apply the changes.
 
-## :material-tooltip-question-outline:&ensp;How to Use
+## :symbols-help:&ensp;How to Use
 
 !!! note inline end 
 
@@ -163,7 +163,7 @@ hide:
 
 ---
 
-## :material-information-outline:&ensp;Additional Info
+## :symbols-info:&ensp;Additional Info
 
 !!! note inline end
 
@@ -182,6 +182,6 @@ hide:
     **Error `key60`:**
     :     If you are doing this modification with the factory load cells *(bed mesh probe)* and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
 
-#### :material-link-variant:&ensp;References and Resources
+#### :symbols-link:&ensp;References and Resources
 
 [Klipper Docs&ensp;:services-klipper:](https://www.klipper3d.org){ .md-button }&emsp;[Fluidd Docs&ensp;:services-fluidd:](https://docs.fluidd.xyz/){ .md-button }&emsp;[Mainsail Docs&ensp;:services-mainsail:](https://docs.mainsail.xyz/){ .md-button }

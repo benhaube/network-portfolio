@@ -28,7 +28,7 @@ To complte this tutorial you will need the following packages:
 + `wl-copy` *(On Wayland-based systems)*
 + `xclip` *(On Xorg-based systems)*
 
-## :material-console:&ensp;The Command
+## :symbols-terminal-alt:&ensp;The Command
 
 You can simply use the command below if you only need to do one icon, but if you have several icons *(or just want to have an easy way to do it in the future)* you can follow the instructions to define a function.
 
@@ -57,7 +57,7 @@ If you want to handle the color and size adjustments without even opening a text
     
         The expression `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
 
-## :material-file-code:&ensp;Making a Function
+## :symbols-code:&ensp;Making a Function
 
 This is the perfect use case for a shell alias / function. On Linux we can easily add this to the Bash shell's configuration file (`.bashrc`) so it is always available. Here is how to create a custom `svg2uri` function that reads directly from standard input.
 
@@ -69,7 +69,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
  
     You can check out instructions on how to do this for **Debian / Fedora** based distributions in my tutorial: 
 
-    [Defining Aliases&ensp;:material-console:](Defining_Terminal_Aliases.md){ .md-button }
+    [Defining Aliases&ensp;:symbols-terminal:](Defining_Terminal_Aliases.md){ .md-button }
 
 1. Open your terminal profile configuration *(usually `~/.bashrc` if you are using Bash, or `~/.zshrc` if you are using Zsh)* in your preferred editor:
 
@@ -94,9 +94,9 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
 3. Save and close the `~/.bashrc` file: 
 
-    ++ctrl+o++ to save the file 
+    ++ctrl+o++&ensp;to save
     
-    ++ctrl+x++ to close the file
+    ++ctrl+x++&ensp;to close
 
 4. Reload the connfiguration:
 
@@ -132,9 +132,9 @@ cat icon.svg | svg2uri | xclip -selection clipboard  # (2)!
 1. For Wayland *(The default on most modern Linux distributions)*
 2. For X11 *(A legacy display server used mostly on older Linux installs)*
 
-Now you can just ++ctrl+v++ *(paste)* the output into whatever CSS / HTML file you are working on. 
+Now you can just&ensp;++ctrl+v++&ensp;*(paste)* the output into whatever CSS / HTML file you are working on. 
 
-## :material-wrench:&ensp;Using the Output
+## :symbols-wrench:&ensp;Using the Output
 
 Once you have your generated string, you can drop it directly into your code:
 

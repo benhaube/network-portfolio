@@ -27,7 +27,7 @@ hide:
 
 ---
 
-## :material-tools:&ensp;Installation & Klipper Integration
+## :symbols-reset-wrench:&ensp;Installation & Klipper Integration
 
 1. [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
 2. [ ] Upload the newly edited `manual-nozzle-clean-v2.cfg` into this directory.
@@ -38,7 +38,7 @@ hide:
     --8<-- "printer.cfg::31"
     ```
 
-## :material-toggle-switch-outline:&ensp;Trigger / Usage
+## :symbols-toggle-on-outline:&ensp;Trigger / Usage
 
 !!! note inline end "Custom Temperature" 
   
@@ -76,7 +76,7 @@ hide:
 
 ---
 
-## :material-file-code-outline:&ensp;G-code Macro
+## :symbols-code:&ensp;G-code Macro
 
 ```cfg title="<code>manual-nozzle-clean-v2.cfg</code>" linenums="1"
 --8<-- "manual-nozzle-clean.cfg"

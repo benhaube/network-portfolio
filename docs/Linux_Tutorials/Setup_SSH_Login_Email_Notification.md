@@ -119,7 +119,7 @@ hide:
 	+ ++ctrl+o++&ensp;to save
 	+ ++ctrl+x++&ensp;to close
 
-## :material-file-code-outline:&ensp;Creating the Shell Script 
+## :symbols-code:&ensp;Creating the Shell Script 
 
 **The Script:**
 :     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMTP server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.

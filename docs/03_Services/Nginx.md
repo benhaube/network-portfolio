@@ -16,10 +16,10 @@ hide:
 # Nginx
 *Network Documentation*
 
-[GitHub&ensp;:simple-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -29,13 +29,13 @@ hide:
 
 + `8080`
 
-#### :material-link-variant:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://storage-server.internal:8080>
 + <http://storage-server-2.internal:8080>
 + <https://portfolio.rac3r4life.online>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + N/A
 
@@ -45,7 +45,7 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :---------------------- | :------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `network-documentation` | `nginx:alpine` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "nginx.yml"

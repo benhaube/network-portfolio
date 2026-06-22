@@ -19,10 +19,10 @@ hide:
 # Uptime Kuma
 *A Fancy Monitoring Tool*
 
-[GitHub&ensp;:simple-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://github.com/louislam/uptime-kuma/wiki){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://github.com/louislam/uptime-kuma/wiki){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -32,15 +32,15 @@ hide:
 
 + `3001`
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
-+ :material-lan:&nbsp;LAN Access
++ :symbols-lan:&nbsp;LAN Access
     + <https://uptime.internal>
     + <http://pi-server.internal:3001>
 + :material-wan:&nbsp;WAN Access
     + <https://uptime.rac3r4life.online>
 
-#### :material-key-chain:&ensp;Credentials  
+#### :symbols-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Uptime Kuma"
@@ -51,7 +51,7 @@ hide:
 | :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------- |
 | [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `uptime-kuma`  | `louislam/uptime-kuma:2` |
 
-### :material-cog:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "uptime-kuma.yml"

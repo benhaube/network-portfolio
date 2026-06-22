@@ -1,5 +1,5 @@
 ---
-icon: material/account-question
+icon: symbols/person-search
 title: About Me
 hide:
   - toc
@@ -8,10 +8,10 @@ hide:
 ![My Profile Picture](assets/pictures/profilepic.jpg){ width=300 }
 
 # About Me & Professional Philosophy
-[My Resume&ensp;:material-briefcase-clock:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
+[My Resume&ensp;:symbols-work-history:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :material-engine:&nbsp;:material-arrow-right-thin:&nbsp;:material-lan:&ensp;From Engines to Infrastructure
+## :material-engine:&nbsp;:material-arrow-right-thin:&nbsp;:symbols-lan:&ensp;From Engines to Infrastructure
 
 With thirteen years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology** and **Cybersecurity**.
 
@@ -32,7 +32,7 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 **Continuous Learning:** 
 :    From earning my [CompTIA^&copy;^](https://www.comptia.org/en-us/) *(A+ & Linux+)* to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
     
-## :material-racing-helmet:&ensp;Beyond the Terminal
+## :symbols-motorsports:&ensp;Beyond the Terminal
 
 When I’m not hardening my network or managing services, you can usually find me...
 

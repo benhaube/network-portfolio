@@ -19,10 +19,10 @@ hide:
 # Homebox
 *Inventory Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:material-file-document-multiple:](https://homebox.software/en/quick-start/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-description:](https://homebox.software/en/quick-start/){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline:&ensp;Overview
+## :symbols-info:&ensp;Overview
 
 #### :symbols-description:&ensp;Description 
 
@@ -32,13 +32,13 @@ hide:
 
 + `3100`
 
-#### :material-link-variant:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + <http://storage-server.internal:3100>
 + <http://storage-server-2.internal:3100>
 + <http://192.168.50.4:3100>
 
-#### :material-key-chain:&ensp;Credentials 
+#### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:material-arrow-right-thin:&ensp;"Homebox"
@@ -49,7 +49,7 @@ hide:
 | :------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------------- |
 | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` |
 
-### :material-cog:&ensp;Configuration
+### :symbols-settings:&ensp;Configuration
 
 ```yaml title="<code>compose.yml</code>" linenums="1"
 --8<-- "homebox.yml"

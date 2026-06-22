@@ -61,9 +61,9 @@ hide:
 
 #### :symbols-android-wifi-lock:&ensp;Wi-Fi Networks
 
-|  SSID  |  VLAN  |    WAN Access    | CIDR              | Frequency      | Notes                                |
-| :----: | :----: | :--------------: | :---------------- | :------------- | :----------------------------------- |
-| *Home* | VLAN50 | :material-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :symbols-security:&nbsp;Trusted VLAN |
+|  SSID  |  VLAN  |   WAN Access    | CIDR              | Frequency      | Notes                                |
+| :----: | :----: | :-------------: | :---------------- | :------------- | :----------------------------------- |
+| *Home* | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :symbols-security:&nbsp;Trusted VLAN |
 
 #### :material-ethernet:&ensp;Physical Ethernet Ports
 

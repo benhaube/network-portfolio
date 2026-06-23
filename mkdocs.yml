@@ -116,7 +116,7 @@ theme:
     search: symbols/search
     share: symbols/share
     annotation: symbols/expand-circle
-    edit: symbols/edit-document
+    edit: symbols/edit-square-outline
     view: symbols/code-xml
   features:
     - navigation.instant

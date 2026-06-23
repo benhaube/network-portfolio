@@ -1,30 +1,36 @@
-/* --- Customize Material Theme Colors --- */
+/* -------------------------- *
+ * Material Theme Colors      *
+ * -------------------------- */
 
 /* Light theme (default) */
 [data-md-color-scheme="default"] {
+    /* Change the code block background color */
     --md-code-bg-color: #E5F4FD; 
 }
 
 /* Dark theme (slate) */
 [data-md-color-scheme="slate"] {
+    /* Change the code block background color */
     --md-code-bg-color: #0A1A25; 
 }
 
-/* --- Colors for Mermaid.js --- */
+/* -------------------------- *
+ * Mermaid.js Diagrams        *
+ * -------------------------- */
 
-/* 1. Default (Light Mode) Variables */
+/* Default (Light Mode) Variables */
 :root {
     /* Text & Lines */
     --node-text: #202020;
     --edge-line: #202020;
 
-    /* Subgraph & Edge Label Variables */
+    /* Subgraph & Edge Label */
     --subgraph-bg: #f1f2f380;
     --subgraph-border: #cccccc;
     --edge-bg: #FFFFFF; 
     --edge-text: #202020;
 
-    /* Logical Diagram Variables */
+    /* Logical Diagram */
     --vlan50-bg: #e8f5e9;
     --vlan50-border: #2e7d32;
     --vlan52-bg: #fff3e0;
@@ -38,7 +44,7 @@
     --usb-bg: #ffebee;
     --usb-border: #c62828;
 
-    /* Physical Diagram Variables */
+    /* Physical Diagram */
     --isp-bg: #ffebee;
     --isp-border: #c62828;
     --multi-bg: #e1f5fe;
@@ -55,19 +61,19 @@
     --usb-border: #c62828;
 }
 
-/* 2. Slate (Dark Mode) Variables */
+/* Slate (Dark Mode) Variables */
 [data-md-color-scheme="slate"] {
     /* Text & Lines */
     --node-text: #BFC1C7;
     --edge-line: #BFC1C7;
 
-    /* Subgraph & Edge Label Variables */
+    /* Subgraph & Edge Label */
     --subgraph-bg: #2e303e80;
     --subgraph-border: #4a4d5e;
     --edge-bg: #1E2129; 
     --edge-text: #BFC1C7;
 
-    /* Logical Diagram Variables */
+    /* Logical Diagram */
     --vlan50-bg: #001200;
     --vlan50-border: #2e7d32;
     --vlan52-bg: #180900;
@@ -81,7 +87,7 @@
     --usb-bg: #22090E;
     --usb-border: #c62828;
 
-    /* Physical Diagram Variables */
+    /* Physical Diagram */
     --isp-bg: #22090E;
     --isp-border: #c62828;
     --multi-bg: #00111D;

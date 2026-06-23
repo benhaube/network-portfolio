@@ -1,26 +1,34 @@
-/* --- Customize Typeset --- */
+/* -------------------------- *
+ * General Typeset Changes    *
+ * -------------------------- */
 
-/* Highlited text color */
+/* Change the background-color for highlited text */
 .md-typeset mark {
     background-color: #0091eb73;
 }
 
-/* Headings */
+/* Reduce the margin for horizontal rules to 0 */
+.md-typeset hr {
+    margin: 0;
+}
+
+/* -------------------------- *
+ * Customize Headings         *
+ * -------------------------- */
+
+/* Modify H1 headings to use the primary color, reduce the margin below, and reduce the font weight to 500 */
 .md-typeset h1 {
   color: var(--md-primary-fg-color);
   margin-bottom: 0.2rem;
   font-weight: 500;
 }
 
+/* Set the font weight for H2 headings to 500 */
 .md-typeset h2 {
     font-weight: 500;
 }
 
+/* Set the font weight for H3 headings to 500 */
 .md-typeset h3 {
     font-weight: 500;
-}
-
-/* Horizontal rule */
-.md-typeset hr {
-    margin: 0;
 }

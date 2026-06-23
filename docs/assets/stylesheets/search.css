@@ -1,36 +1,49 @@
-/* --- Customize search box --- */
+/* -------------------------- *
+ * Heading Search Box         *
+ * -------------------------- */
 
+/* Set the background color and border radius */
 .md-search__form {
-  background-color:var(--md-default-fg-color--lightest);
-  border-radius:.4rem;
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
   cursor: pointer;
 }
+
+/* Set the hover background color */
 .md-search__form:hover {
-  background-color:var(--md-default-fg-color--lighter);
+  background-color: var(--md-default-fg-color--lighter);
 }
 
+/* Set the color of the placeholder 'Search' text */
 .md-search__input::placeholder {
   color: var(--md-default-fg-color--light);
 }
+
+/* Set the color of the search icon */
 .md-search__input + .md-search__icon {
   color: var(--md-default-fg-color--light);
 }
 
-[data-md-toggle=search]:checked~.md-header .md-search__form {
-  border-radius:0.5rem 0.5rem 0 0;
+/* -------------------------- *
+ * Search Output Dialog Box   *
+ * -------------------------- */
+
+/* Set the color of the Share & Close icons in the search output dialog */
+[data-md-toggle=search]:checked~.md-header .md-search__input:valid~.md-search__options>.md-icon:hover {
+  color: var(--md-accent-fg-color)
 }
 
+/* Give the search output dialog rounded corners */
+[data-md-toggle=search]:checked~.md-header .md-search__form {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
 [dir=ltr] .md-search__output {
-  border-bottom-left-radius:0.5rem;
+  border-bottom-left-radius: 0.4rem;
 }
 [dir=ltr] .md-search__output,
 [dir=rtl] .md-search__output {
-  border-bottom-right-radius:0.5rem;
+  border-bottom-right-radius: 0.4rem;
 }
 [dir=rtl] .md-search__output {
-  border-bottom-left-radius:.5rem
-}
-
-[data-md-toggle=search]:checked~.md-header .md-search__input:valid~.md-search__options>.md-icon:hover {
-  color: var(--md-accent-fg-color)
+  border-bottom-left-radius: 0.4rem
 }

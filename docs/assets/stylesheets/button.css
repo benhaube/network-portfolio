@@ -1,5 +1,18 @@
-/* --- Customize buttons --- */
+/* ---------------------------------------- *
+ * Customize buttons                        *
+ * ---------------------------------------- *
+ * This code changes the button shape from  * 
+ * rectangles to ovals, reduces the font    * 
+ * weight to 600, reduces the padding, and  * 
+ * adds a 250ms transition animation.       * 
+ *                                          *
+ * Page 'view' and 'edit' buttons are given * 
+ * a rounded square container, and the      * 
+ * hover animation is set to 250ms to match * 
+ * the other button behavior.               *
+ * ---------------------------------------- */
 
+/* Regular buttons */
 .md-typeset .md-button {
   border-radius: 2rem;
   border-color: transparent;
@@ -7,15 +20,17 @@
   background-color: var(--md-default-fg-color--lightest);
   font-weight: 600;
   padding: .3em 0.7em;
-  transition: color 250ms, background-color 250ms, border-color 250ms !important;
+  transition: color 250ms, background-color 250ms, border-color 250ms ease-in-out !important;
 }
 
+/* Primary color buttons */
 .md-typeset .md-button--primary {
   background-color: var(--md-primary-fg-color);
   border-color: transparent;
   color: var(--md-primary-bg-color)
 }
 
+/* Buttons hover */
 .md-typeset .md-button:focus,
 .md-typeset .md-button:hover {
   background-color: var(--md-accent-fg-color);
@@ -23,6 +38,7 @@
   color: var(--md-accent-bg-color)
 }
 
+/* Page 'view' & 'edit' buttons */
 [dir=ltr] .md-content__button {
   margin-left:.25rem;
 }
@@ -35,37 +51,52 @@
   padding: 0.2rem;
   border-radius: 0.4rem;
 }
+/* Hover */
 .md-content__button:hover {
   background: var(--md-accent-fg-color);
   color: var(--md-accent-bg-color) !important;
   box-shadow: var(--md-shadow-z2);
-  transition: color 250ms, background-color 250ms, box-shadow 250ms !important;
+  transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out !important;
 }
 
-/* --- Back-to-top button styling --- */
+/* ---------------------------------------- *
+ * Back-to-top button                       *
+ * ---------------------------------------- *
+ * This code gives the 'Back-to-Top' button *
+ * a translucent background with blur to    * 
+ * modernize the UI and match the effect    * 
+ * seen on Zensical.                        *
+ * ---------------------------------------- */
 
+/* Translucency and blur */
 .md-top {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
 	background-color: var(--md-default-bg-color--light);
 }
-
+/* Hover color w/ translucency and blur */
 .md-top:hover {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
   background-color: var(--md-accent-fg-color--transparent);
 }
-
+/* Text color on hover for default (light) theme */
 [data-md-color-scheme="default"] {
   .md-top:hover {
     color: var(--md-default-fg-color)
   }
 }
 
-/* --- Tag button styling --- */
+/* ---------------------------------------- *
+ * Tag buttons                              *
+ * ---------------------------------------- *
+ * This code gives tag buttons a box-shadow * 
+ * and a 250ms transition to match the      *
+ * other buttons on the site.               * 
+ * ---------------------------------------- */
 
+/* Add box shadow and transition on hover */
 .md-tags .md-tag:hover {
-
     box-shadow: var(--md-shadow-z2);
-    transition: box-shadow 125ms ease-in-out;
+    transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out;
 }

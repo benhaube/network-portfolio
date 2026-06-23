@@ -1,4 +1,6 @@
-/* --- Import CSS files --- */
+/* -------------------------- *
+ * Import external CSS files  *
+ * -------------------------- */
 
 @import url(admonition.css);
 @import url(button.css);
@@ -8,18 +10,24 @@
 @import url(search.css);
 @import url(typeset.css);
 
-/* --- Set maximum page width --- */
+/* -------------------------- *
+ * General Customization      *
+ * -------------------------- */
+
+/* --- Set the max page width --- */
 .md-grid {
   max-width: 1355px;
 }
 
-/* --- Header customization --- */
+/* -------------------------- *
+ * Customize Page Header      *
+ * -------------------------- */   
 
+/* Replicate Zensical header with translucency and blur */
 .md-header {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
 	background-color: var(--md-default-bg-color--light);
-	box-shadow: 0 0 .2rem #0000,0 .2rem .4rem #0000;
 	color: var(--md-default-fg-color);
 	display: block;
 	left: 0;
@@ -29,6 +37,7 @@
 	z-index: 4;
 }
 
+/* Remove background color from navigation tabs, add box-shadow, and change the text color */
 .md-tabs {
     box-shadow: 0 -.05rem 0 inset var(--md-default-fg-color--lightest);
     background-color: transparent;
@@ -40,11 +49,17 @@
     z-index: 3;
 }
 
+/* -------------------------- * 
+ * Customize Nav Drawer       *
+ * -------------------------- */
+
+/* Change the background and text colors of the title card */
 .md-nav--primary .md-nav__title[for="__drawer"] {
 	background-color: var(--md-default-fg-color--lightest);
 	color: var(--md-default-fg-color--light);
 }
 
+/* Change the background and text colors of the code repository card */
 @media screen and (max-width: 59.9844em) {
   .md-nav__source {
     background-color: var(--md-default-fg-color--lightest);
@@ -54,16 +69,21 @@
   }
 }
 
-/* --- Tooltip customization --- */
+/* -------------------------- *
+ * Adjust Border Radius       *
+ * -------------------------- */
 
+ /* Give tooltip and code annotation boxes rounded corners, and makes the width fit the content */
 .md-tooltip {
+  -webkit-backdrop-filter: blur(.4rem);
+	backdrop-filter: blur(.4rem);
+	background-color: var(--md-default-bg-color--light);
   border-radius: 0.4rem;
   max-width: 20rem;
   width: fit-content;
 }
 
-/* --- Image border radius (exclude SVG) */
-
+/* Give PNG, JPG, JPEG, and GIF images rounded corners (exclude SVG icons) */
 img[src$=".png" i],
 img[src$=".png#only-light" i],
 img[src$=".png#only-dark" i],
@@ -78,22 +98,23 @@ img[src$=".gif" i] {
   border-radius: 0.4rem;
 }
 
-/* --- Table border radius --- */
-
+/* Give data tables rounded corners */
 .md-typeset table:not([class]) {
 	border-radius: 0.4rem;
 }
 
-/* --- Grid Card border radius --- */
-
+/* Give "grid cards" rounded corners */
 .md-typeset .grid.cards>ol>li,
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
   border-radius: 0.4rem;
 }
 
-/* --- Responsive design for '.md-button' --- */
+/* -------------------------- *
+ * Responsive Design          *
+ * -------------------------- */
 
+/* Make buttons with the '.md-button' class use the full screen width on mobile screens (below 719px wide) */
 @media screen and (max-width: 719px) {
   .md-typeset .md-button {
     display: block;
@@ -103,8 +124,7 @@ img[src$=".gif" i] {
   }
 }
 
-/* --- Disable image floating on mobile screens --- */
-
+/* Disable image floating on mobile screens (below 768px wide) */
 @media screen and (max-width: 768px) {
   .md-typeset img[align="right"],
   .md-typeset img[align="left"],
@@ -115,23 +135,27 @@ img[src$=".gif" i] {
     max-width: 100%; 
   }
 }
-
-/* Force light/dark mode images to stay hidden based on the active Material theme */
+/* Force light/dark mode images to stay hidden based on the active Material theme on mobile screens */
 [data-md-color-scheme="slate"] .md-typeset img[src$="#only-light"],
 [data-md-color-scheme="default"] .md-typeset img[src$="#only-dark"] {
   display: none !important;
 }
 
-/* --- Panzoom customizations --- */
+/* -------------------------- *
+ * Customize Panzoom Plugin   *
+ * -------------------------- */
 
+/* Give the Panzoom box rounded corners */
 .panzoom-box {
     border-radius: 0.4rem !important;
 }
 
+/* Make the background color behind the help message match the Panzoom box */
 .panzoom-info-box-bottom {
     background-color: var(--md-code-bg-color) !important;
 }
 
+/* Adjust padding and border radius of the Panzoom navigation buttons to match regular code blocks */
 .panzoom-nav {
     border-radius: 0.4rem !important;
     gap: 0.2rem !important;

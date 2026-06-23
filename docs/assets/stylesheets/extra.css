@@ -70,18 +70,31 @@
 }
 
 /* -------------------------- *
- * Adjust Border Radius       *
+ * Adjust Tooltips            *
  * -------------------------- */
 
  /* Give tooltip and code annotation boxes rounded corners, and makes the width fit the content */
 .md-tooltip {
-  -webkit-backdrop-filter: blur(.4rem);
-	backdrop-filter: blur(.4rem);
+  -webkit-backdrop-filter: blur(.4rem) !important;
+	backdrop-filter: blur(.4rem) !important;
 	background-color: var(--md-default-bg-color--light);
   border-radius: 0.4rem;
   max-width: 20rem;
-  width: fit-content;
+  width: auto;
 }
+
+.md-tooltip--inline .md-tooltip__inner {
+	background-color: var(--md-default-bg-color);
+  border-radius: 0.4rem;
+}
+
+.md-tooltip2__inner {
+  border-radius: 0.4rem;
+}
+
+/* -------------------------- *
+ * Adjust Border Radius       *
+ * -------------------------- */
 
 /* Give PNG, JPG, JPEG, and GIF images rounded corners (exclude SVG icons) */
 img[src$=".png" i],

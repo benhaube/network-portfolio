@@ -125,7 +125,7 @@ hide:
         virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
         ```
 
-#### :material-camera:&ensp;Snapshot Policy
+#### :symbols-screenshot-region:&ensp;Snapshot Policy
 
 + Perform external snapshots before major changes.
 

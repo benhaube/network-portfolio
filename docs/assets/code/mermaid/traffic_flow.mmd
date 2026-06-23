@@ -6,9 +6,9 @@
 
 graph TD
     %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
-    classDef text-box fill: stroke:;
+    classDef text-box fill: stroke: rx:0.4rem, ry:0.4rem;
 
-    User(Client Browser):::text-box -- "DNS Query:<br><code>immich.internal</code>" --> DNS(Technitium DNS):::text-box
+    User[Client Browser]:::text-box -- "DNS Query:<br><code>immich.internal</code>" --> DNS[Technitium DNS]:::text-box
     DNS -- "Returns CNAME:<br><code>pi-zero.internal</code>" --> User
-    User -- "HTTPS Request: port <code>443</code>" --> Proxy(Caddy: Pi Zero 2 W):::text-box
-    Proxy -- "Forwards Traffic" --> App(Immich: port <code>2283</code>):::text-box
+    User -- "HTTPS Request: port <code>443</code>" --> Proxy[Caddy: Pi Zero 2 W]:::text-box
+    Proxy -- "Forwards Traffic" --> App[Immich: port <code>2283</code>]:::text-box

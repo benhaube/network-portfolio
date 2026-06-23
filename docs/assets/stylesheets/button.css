@@ -38,7 +38,8 @@
 .md-content__button:hover {
   background: var(--md-accent-fg-color);
   color: var(--md-accent-bg-color) !important;
-  transition: color 250ms, background-color 250ms !important;
+  box-shadow: var(--md-shadow-z2);
+  transition: color 250ms, background-color 250ms, box-shadow 250ms !important;
 }
 
 /* --- Back-to-top button styling --- */

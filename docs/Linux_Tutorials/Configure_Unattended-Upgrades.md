@@ -220,12 +220,15 @@ The `Origins-Pattern` section of the configuration file dictates which repositor
 
 ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
 Unattended-Upgrade::Origins-Pattern {
-//  "origin=Debian,codename=${distro_codename}-updates"; (1)
-//  "origin=Debian,codename=${distro_codename}-proposed-updates"; (2)
+    //  (1)!
+//  "origin=Debian,codename=${distro_codename}-updates";
+    //  (2)!
+//  "origin=Debian,codename=${distro_codename}-proposed-updates"; 
     "origin=Debian,codename=${distro_codename},label=Debian";
     "origin=Debian,codename=${distro_codename},label=Debian-Security";
     "origin=Debian,codename=${distro_codename}-security,label=Debian-Security";
-//  "o=Debian Backports,n=${distro_codename}-backports,l=Debian Backports"; (3)
+    //  (3)!
+//  "o=Debian Backports,n=${distro_codename}-backports,l=Debian Backports"; 
 };
 ```
 

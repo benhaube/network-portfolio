@@ -78,7 +78,7 @@ hide:
 | :---------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB        | `/dev/sda1` | `vfat`      | -          |
 
-## :material-web:&ensp;Services / Docker Containers
+## :symbols-web:&ensp;Services / Docker Containers
 
 #### :material-linux:&ensp;Native Linux
 

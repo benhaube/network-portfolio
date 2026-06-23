@@ -100,7 +100,7 @@ hide:
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
 
-## :material-web:&ensp;Services / Docker Containers
+## :symbols-web:&ensp;Services / Docker Containers
 
 #### :symbols-stacks:&ensp;Virtualization
 

@@ -80,7 +80,7 @@ hide:
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -              | `-`         | `-`         | -          |
 
-## :material-web:&ensp;Services / Docker Containers
+## :symbols-web:&ensp;Services / Docker Containers
 
 #### :symbols-stacks:&ensp;Virtualization
 

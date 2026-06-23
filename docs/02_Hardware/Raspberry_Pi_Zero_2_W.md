@@ -75,7 +75,7 @@ hide:
 | `/boot/firmware` | MicroSD    | 512 MB         | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 80 MB          | `log2ram`        | `tmpfs`     | -          |
 
-## :material-web:&ensp;Services / Docker Containers
+## :symbols-web:&ensp;Services / Docker Containers
 
 #### :material-linux:&ensp;Native Linux
 

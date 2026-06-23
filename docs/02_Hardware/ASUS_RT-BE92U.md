@@ -98,7 +98,7 @@ hide:
 | :-------------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB        | `/dev/sda1` | `ext4`      | -          |
 
-## :material-web:&ensp;Services / Docker Containers
+## :symbols-web:&ensp;Services / Docker Containers
 
 #### :material-linux:&ensp;Native
 

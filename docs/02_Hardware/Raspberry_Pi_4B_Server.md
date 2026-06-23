@@ -84,7 +84,7 @@ hide:
 | :--------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/mnt/usb-drive` | USB Flash Drive | 28.7 GB        | `/dev/sda1` | `ext4`      | -          |
 
-## :material-web:&ensp;Services / Docker Containers
+## :symbols-web:&ensp;Services / Docker Containers
 
 #### :material-linux:&ensp;Native Linux
 

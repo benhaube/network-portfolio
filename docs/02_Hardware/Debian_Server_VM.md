@@ -66,7 +66,7 @@ hide:
 | :-------: | :----------------------------- | :------------------- | :---------- | :------------- |
 | `enp1s0`  | :symbols-security:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
 
-## :material-web:&ensp;Services / Docker Containers
+## :symbols-web:&ensp;Services / Docker Containers
 
 #### :material-linux:&ensp;Native Linux
 

@@ -109,13 +109,13 @@ hide:
 2. [ ] Drop the A1 brush into the slot
 3. [ ] Using a **2mm hex driver** and the **M3x12mm** self-tapping screws, install the spacer and the V5 brush mount into the two existing holes at the back of the Z-axis.
 
-## :symbols-release-alert:&ensp;Final Verification
+## :symbols-verified:&ensp;Final Verification
 
 + [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate. 
 
 ---
 
-## :brands-3dphub:&ensp;PROWIPER G-Code
+## :symbols-frame-source:&ensp;PROWIPER G-Code
 
 ```cfg title="<code>3DPHUB_PROWIPER.cfg</code>" linenums="1" hl_lines="43 58"
 --8<-- "3DHUB_PROWIPER.cfg"

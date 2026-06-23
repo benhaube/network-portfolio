@@ -35,8 +35,8 @@
     --service-border: #0277bd;
     --storage-bg: #ffebee;
     --storage-border: #c62828;
-    --usb-bg: #e1f5fe;
-    --usb-border: #01579b;
+    --usb-bg: #ffebee;
+    --usb-border: #c62828;
 
     /* Physical Diagram Variables */
     --isp-bg: #ffebee;
@@ -51,8 +51,8 @@
     --gigabit-border: #2e7d32;
     --wifi-bg: #f3e5f5;
     --wifi-border: #7b1fa2;
-    --usb-bg: #e1f5fe;
-    --usb-border: #01579b;
+    --usb-bg: #ffebee;
+    --usb-border: #c62828;
 }
 
 /* 2. Slate (Dark Mode) Variables */
@@ -78,8 +78,8 @@
     --service-border: #0277bd;
     --storage-bg: #22090E;
     --storage-border: #c62828;
-    --usb-bg: #00111D;
-    --usb-border: #01579b;
+    --usb-bg: #22090E;
+    --usb-border: #c62828;
 
     /* Physical Diagram Variables */
     --isp-bg: #22090E;
@@ -94,6 +94,6 @@
     --gigabit-border: #2e7d32;
     --wifi-bg: #241026;
     --wifi-border: #7b1fa2;
-    --usb-bg: #00111D;
-    --usb-border: #01579b;
+    --usb-bg: #22090E;
+    --usb-border: #c62828;
 }

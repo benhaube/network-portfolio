@@ -52,6 +52,7 @@ theme:
       success: symbols/check
       quote: symbols/quote
       example: symbols/labs
+      danger: symbols/electric-bolt
     # -- Icons for Tags --
     tag:
       default: symbols/tag

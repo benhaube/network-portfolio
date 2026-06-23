@@ -1,7 +1,19 @@
 /* --- Customize search box --- */
 
 .md-search__form {
-  border-radius:2rem;
+  background-color:var(--md-default-fg-color--lightest);
+  border-radius:.4rem;
+  cursor: pointer;
+}
+.md-search__form:hover {
+  background-color:var(--md-default-fg-color--lighter);
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+}
+.md-search__input + .md-search__icon {
+  color: var(--md-default-fg-color--light);
 }
 
 [data-md-toggle=search]:checked~.md-header .md-search__form {

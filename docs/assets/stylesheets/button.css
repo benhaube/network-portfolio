@@ -43,13 +43,24 @@
 }
 
 /* --- Back-to-top button styling --- */
-/*
-.md-top:hover {
-    
-    box-shadow: var(--md-shadow-z2), inset 0 0 0 2px var(--md-primary-fg-color);
-    transition: box-shadow 125ms, ease-in-out;
+
+.md-top {
+  -webkit-backdrop-filter: blur(.4rem);
+	backdrop-filter: blur(.4rem);
+	background-color: var(--md-default-bg-color--light);
 }
-*/
+
+.md-top:hover {
+  -webkit-backdrop-filter: blur(.4rem);
+	backdrop-filter: blur(.4rem);
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+[data-md-color-scheme="default"] {
+  .md-top:hover {
+    color: var(--md-default-fg-color)
+  }
+}
 
 /* --- Tag button styling --- */
 

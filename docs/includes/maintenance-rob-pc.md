@@ -11,3 +11,4 @@
 #### :symbols-backup:&ensp;Backup Policy 
 
 + File backup is handled with Window's built-in backup tool. Files in the user's directory are sent to the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) via [SMB](../03_Services/SMB.md).
++ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).

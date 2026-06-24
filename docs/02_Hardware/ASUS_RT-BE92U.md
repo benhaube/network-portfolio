@@ -133,6 +133,7 @@ hide:
 + **Backup Directory:**
     + ZimaOS NAS: `/media/Quick-Storage/Backup/router`
     + Pi 4B Server: `/mnt/usb-drive/smb-share/router`
++ Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
 #### :services-gotify-notification:&ensp;Gotify Push Notifications
 

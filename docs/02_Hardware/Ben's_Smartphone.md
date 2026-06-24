@@ -135,10 +135,11 @@ hide:
 
 #### :symbols-backup:&ensp;Backup Policy
 
-##### Google Cloud Backup
+##### Cloud Backup
 
 + Google's cloud backup service is used to back up **device settings** and **apps & app data** for applications installed via the Google Play Store. 
 + Other backup services provided by Google, like photos, call history, and SMS / MMS & RCS messages are disabled to maintain privacy and control of sensitive data.
++ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
 ##### Photos & Videos
 

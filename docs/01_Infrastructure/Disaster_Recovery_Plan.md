@@ -48,7 +48,7 @@ tags:
 
     **One** off-site copy:
     
-    + The most important data has a copy stored off-site with p-Cloud.
+    + The most important data has a copy stored off-site with Backblaze B2.
 
 ### On-Site Synchronization
 
@@ -65,7 +65,7 @@ tags:
 
 ### Off-Site / Cloud 
 
-+ Encrypted backups of the Obsidian vaults and key configuration files are synced to a secure cloud provider *([p-Cloud](https://www.p-cloud.com))*.
++ Encrypted backups of the Obsidian vaults, application data, and key configuration files are synced to the secure cloud provider *([Backblaze B2](https://www.backblaze.com/cloud-storage))*.
 
 ## :symbols-restore:&ensp;Recovery Procedures
 

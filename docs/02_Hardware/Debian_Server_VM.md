@@ -128,6 +128,7 @@ hide:
 #### :symbols-screenshot-region:&ensp;Snapshot Policy
 
 + Perform external snapshots before major changes.
++ The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
 #### :symbols-restore:&ensp;Recovery
 

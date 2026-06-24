@@ -4,7 +4,13 @@
 
 This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel. 
 
-![Screenshot of Index page](./.readme-assets/index-screenshot-readme.png)
+![Screenshot of Index page](./.readme-assets/index-screenshot.png)
+
+![Screenshot of header bar](./.readme-assets/header-screenshot.png)
+
+#### Update: 2026/06/24
+
+The **comprehensive visual overhaul** of the site is now complete! I have updated and modernized the visual appearance of the site with custom CSS and new, rounded Material icons. The goal was to emulate the modern look of the new Zensical static site generation tool which is the successor to Material for MkDocs. Unfortunately, after doing some testing with Zensical I determined that it is not currently feasable to migrate this project. It is still missing some features I rely on for this site *(e.g., the blog and panzoom plugins)*.  I figured while I wait for Zensical to develop I could modernize the visual appearance of my MkDocs site by replicating the design as closely as possible.
 
 ## Clone the Repo
 

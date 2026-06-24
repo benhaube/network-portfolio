@@ -97,7 +97,7 @@ hide:
  
     + The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/) for configuration issues.
  
-    :material-application-brackets:&ensp;**Software:**
+    :symbols-package:&ensp;**Software:**
  
     + :services-fluidd:&nbsp;Fluidd 
         + For information regarding the [Fluidd](../03_Services/Fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).    
@@ -112,7 +112,7 @@ hide:
     + [:symbols-prowiper:&nbsp;PROWIPER^&copy;^ Mod](../3D_Printing/PROWIPER_Mod.md)
         + Replaces the standard nozzle wiping brush at the back of the build plate.
  
-    :material-code-block-tags:&ensp;**Custom G-Code Macros:**
+    :symbols-frame-source:&ensp;**Custom G-Code Macros:**
 
     + [:symbols-toothbrush-nozzle:&nbsp;Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
         + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.

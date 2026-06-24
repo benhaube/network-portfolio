@@ -54,9 +54,9 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                             |
-| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------- |
-|  `wlan0`  | `192.168.50.15` | `FC:EE:28:09:A7:1E` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address      | MAC Address         | Connected To                                                                          |
+| :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------------ |
+|  `wlan0`  | `192.168.50.15` | `FC:EE:28:09:A7:1E` | [:symbols-android-wifi-lock:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
 | Interface |              VLAN              | FQDN             | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------: | :--------------- | :---------------------------- | :------------- |

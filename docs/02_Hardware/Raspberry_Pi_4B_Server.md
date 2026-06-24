@@ -61,7 +61,7 @@ hide:
 | Interface | IP Address     | MAC Address         | Connected To                                                                                 |
 | :-------: | :------------- | :------------------ | :------------------------------------------------------------------------------------------- |
 |  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(port 3, VLAN50)* |
-|  `wlan0`  | `192.168.53.2` | `E4:5F:01:A4:60:08` | [:symbols-wifi:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)*                   |
+|  `wlan0`  | `192.168.53.2` | `E4:5F:01:A4:60:08` | [:symbols-android-wifi-lock:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)*      |
 
 | Interface |                  VLAN                   | FQDN                 | DNS Servers | Gateway        |
 | :-------: | :-------------------------------------: | :------------------- | :---------- | :------------- |

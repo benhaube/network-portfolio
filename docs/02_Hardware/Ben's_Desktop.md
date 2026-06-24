@@ -69,10 +69,10 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                         |
-| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------- |
-| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
-| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*             |
+| Interface | IP Address      | MAC Address         | Connected To                                                                          |
+| :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------------ |
+| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)*  |
+| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-android-wifi-lock:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
 | Interface | VLAN                           | FQDN                        | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------- | :-------------------------- | :---------------------------- | :------------- |

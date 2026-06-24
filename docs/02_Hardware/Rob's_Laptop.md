@@ -57,7 +57,7 @@ hide:
 | Interface | IP Address | MAC Address         | Connected To                                                                                             |
 | :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
 | Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port-1)*, Temporary connection |
-|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*                                 |
+|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-android-wifi-lock:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*                    |
 
 | Interface |              VLAN              | FQDN  | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------: | :---- | :---------------------------- | :------------- |

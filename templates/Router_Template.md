@@ -15,52 +15,52 @@ hide:
 # Router Template
 *Subtitle*
 
-[Docs :material-file-document-multiple:](https://example.com){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://example.com){ .md-button }
+[Docs :symbols-documentation:](https://example.com){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://example.com){ .md-button }
 
 ---
-## :material-information-outline: Device Overview
+## :symbols-info: Device Overview
 
-#### :material-toolbox: Role: 
+#### :symbols-toolbox: Role
 :    AiMesh Node
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host: Hostname(s)
 
 + `hostname`
 
-#### :material-map-marker-outline: Location: 
+#### :symbols-location: Location
 
 + Location
  
-#### :material-memory: OS / Firmware: 
+#### :symbols-memory: OS / Firmware
 
-+ :material-router-network-wireless:&nbsp;Router_OS
++ :symbols-router:&nbsp;Router_OS
 
-#### :material-key-chain: Credentials:
+#### :symbols-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
-## :material-lan: Network Configuration
+## :symbols-lan: Network Configuration
 
-#### :material-wan: WAN Connection:
+#### :symbols-wan: WAN Connection
 
 | Interface | IP Address | MAC Address         | Connected To |
 | :-------: | :--------- | :------------------ | :----------- |
 |   WAN0    | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -            |
 
-#### :material-lan: Virtual Local Networks:
+#### :symbols-lan-outline: Virtual Local Networks
 
 |  VLAN  | Domain | DNS Server(s)       | Gateway   | Subnet       | Subnet Mask | Broadcast   | DHCP Range     |
 | :----: | :----- | :------------------ | :-------- | :----------- | :---------- | :---------- | :------------- |
 | *vlan* | domain | `x.x.x.x` `x.x.x.x` | `x.x.x.x` | `x.x.x.x/xx` | `255.x.x.x` | `x.x.x.255` | `.x` to `.xxx` |
 
-#### :material-wifi: Wi-Fi Networks:
+#### :symbols-android-wifi-lock: Wi-Fi Networks
 
 |  SSID  |  VLAN  | IP Address   | Frequency | Notes |
 | :----: | :----: | :----------- | :-------- | :---- |
 | *SSID* | *vlan* | `x.x.x.x/xx` | -         | -     |
 
-#### :material-ethernet: Physical Ethernet Ports:
+#### :material-ethernet: Physical Ethernet Ports
 
 |     Port #      | Connected Device            | Color / Type | Notes |
 | :-------------: | :-------------------------- | :----------- | :---- |
@@ -73,42 +73,43 @@ hide:
 
 ## :symbols-storage: Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s):
+#### :material-harddisk: Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System   | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :------------ | :--------- |
 | `/mount/point` | -          | -              | `/dev/path` | `file-ststem` | -          |
 
-#### :material-usb: External/Attached:
+#### :symbols-usb: External/Attached
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System   | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :------------ | :--------- |
 | `/mount/point` | -          | -              | `/dev/path` | `file-ststem` | -          |
 
-## :material-web: Services / Docker Containers
+## :symbols-web: Services / Docker Containers
 
-#### :material-linux: Native:
+#### :material-linux: Native
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
-#### :material-docker: Docker:
+#### :material-docker: Docker
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill: Maintenance & Notes
 
-> [!config inline] Critical Configurations
-> Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
+!!! config "Critical Configurations"
 
-#### :material-update: Update Process:
+    Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
+
+#### :symbols-update: Update Process
 
 * Update Process
 
-#### :material-cloud-upload-outline: Backup Policy:
+#### :symbols-backup: Backup Policy
 
 * Backup policy

@@ -17,30 +17,30 @@ hide:
 [Button :material-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :material-icon:](https://example.com){ .md-button }
 
 ---
-## :material-information-outline: Device Overview
+## :symbols-info: Device Overview
 
-#### :material-toolbox: Role: 
+#### :symbols-toolbox: Role
 
 :    Device role
 
-#### :symbols-host: Hostname(s): 
+#### :symbols-host: Hostname
 
 + `hostname`
 
-#### :material-map-marker-outline: Location: 
+#### :symbols-location: Location
 
 + Location 
 
-#### :material-memory: OS / Firmware:
+#### :symbols-memory: OS / Firmware
 
 + :os-icon:&nbsp;Operating System
 
-#### :material-key-chain: Credentials:
+#### :symbols-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
-#### :material-security: Device Security:
+#### :symbols-security: Device Security
 
 + Hardware / Software security features (e.g., TPM2)
 
@@ -48,9 +48,9 @@ hide:
 
 | CPU                    | Cores / Threads | CPU Freq. | RAM  | GPU   | GPU Freq. | VRAM |
 | :--------------------- | :-------------- | :-------- | :--- | :---- | :-------- | :--- |
-| [CPU] *(architecture)* | #C / #T         | # GHz     | # GB | [GPU] | # MHz     | # GB |
+|  CPU *(architecture)*  | #C / #T         | # GHz     | # GB |  GPU  | # MHz     | # GB |
 
-## :material-lan: Network Configuration
+## :symbols-lan: Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To |
 | :-------: | :--------- | :------------------ | :----------- |
@@ -62,48 +62,49 @@ hide:
 
 ## :symbols-storage: Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s):
+#### :material-harddisk: Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
 
-#### :material-usb: External/Attached:
+#### :symbols-usb: External/Attached
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
 
-## :material-web: Services / Docker Containers
+## :symbols-web: Services / Docker Containers
 
-#### :symbols-stacks: Virtualization:
+#### :symbols-stacks: Virtualization
 
 |  Status  | OS                                       | Virtual NIC             | Virtual Disk Image | Role / Notes |
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |
 | *Active* | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network *(NAT)* | `disk-image.qcow2` | -            |
 
-#### :material-linux: Native Linux:
+#### :material-linux: Native Linux
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
-#### :material-docker: Docker:
+#### :material-docker: Docker
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :material-tools: Maintenance & Notes
+## :symbols-note-stack-fill: Maintenance & Notes
 
-> [!config] Critical Configurations
-> Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
+!!! config "Critical Configurations"
 
-#### :material-update: Update Process:
+    Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
+
+#### :symbols-update: Update Process
 
 + Update Process
 
-#### :material-cloud-upload-outline: Backup Policy:
+#### :symbols-backup: Backup Policy
 
 + Backup policy

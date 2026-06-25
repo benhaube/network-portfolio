@@ -14,34 +14,34 @@ hide:
 # VM Template
 *Subtitle*
 
-[OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :material-file-document-multiple:](https://example.com){ .md-button }
+[OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :symbols-documentation:](https://example.com){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Overview
+## :symbols-info: Overview
 
-#### :material-toolbox: Role: 
-:    [Insert role here] 
+#### :symbols-toolbox: Role
+:    Insert role here 
 
-#### :symbols-host: Hostname(s):
+#### :symbols-host: Hostname
 
 + `hostname`
 
-#### :symbols-stacks: Hypervisor: 
+#### :symbols-stacks: Hypervisor
 
 + (e.g., KVM / QEMU)
 
-#### :material-memory: Operating System:
+#### :symbols-memory: Operating System
 
 + :os-icon:&nbsp;[Operating System](https://example.com)
 
-#### :material-server-network-outline: Host Node: 
+#### :symbols-network-node: Host Node
 
 + [:device-icon: Device_Template](Device_Template.md)
 
-#### :material-key-chain: Credentials:
+#### :symbols-key: Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): .
-    + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
++ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    + Folder&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
 ## :symbols-monitor-heart: Resource Allocation
 
@@ -49,7 +49,7 @@ hide:
 | :-------------------: | :---: | :------ | :------------ |
 | #C / #T *(virt-tech)* | # GB  | # GB    | `path/to/vdi` |
 
-## :material-lan: Network Configuration
+## :symbols-lan: Network Configuration
 
 | Interface | IP Address | MAC Address         | Notes |
 | :-------: | :--------- | :------------------ | :---- |
@@ -59,34 +59,35 @@ hide:
 | :-------: | :----- | :------------------ | :---------- | :-------- |
 |  enp1s0   | VLAN50 | `hostname.internal` | `0.0.0.0`   | `x.x.x.1` |
 
-## :material-web: Services / Docker Containers
+## :symbols-web: Services / Docker Containers
 
-#### :material-linux: Native Linux:
+#### :material-linux: Native Linux
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
-#### :material-docker: Docker:
+#### :material-docker: Docker
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :material-tools: Maintenance & Snapshots
+## :symbols-note-stack-fill: Maintenance & Snapshots
 
-> [!config] Critical Configurations
-> Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
+!!! config "Critical Configurations"
 
-#### :material-update: Update Policy:
+    Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
+
+#### :symbols-update: Update Policy
 
 + Update Policy
 
-#### :material-camera: Snapshot Policy:
+#### :symbols-screenshot-region: Snapshot Policy
 
 + Snapshot Policy
 
-#### :material-backup-restore: Recovery:
+#### :symbols-restore: Recovery
 
 + Recovery Policy

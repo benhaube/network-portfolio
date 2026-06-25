@@ -15,26 +15,26 @@ hide:
 # Service Template
 *Subtitle*
 
-[GitHub :material-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :material-file-document-multiple:](https://docs.github.com/en){ .md-button }
+[GitHub :material-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation:](https://docs.github.com/en){ .md-button }
 
 ---
-## :material-information-outline: Overview
+## :symbols-info: Overview
 
-#### :symbols-description: Description: 
-:    [Insert description of service here]
+#### :symbols-description: Description
+:    Insert description of service here
  
-#### :symbols-settings-ethernet: Port(s): 
+#### :symbols-settings-ethernet: Port(s)
 
 + `port`
 
-#### :material-link-variant: URL / Access: 
+#### :symbols-link: URL / Access
 
 + <https://example.com>
 
-#### :material-key-chain: Credentials: 
+#### :symbols-key: Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + [Folder]&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
 
 ## :symbols-deployed-code-update: Deployment Details
 
@@ -42,7 +42,7 @@ hide:
 | :----------------------------------------------- | :------------------------------------ | :--------------- | :--------------- |
 | :devices-icon:&nbsp;[Device](Device_Template.md) | :material-docker:&nbsp;Docker Compose | `container-name` | `image_name:tag` |
 
-### :material-cog: Configuration 
+### :symbols-settings: Configuration 
 
 ```bash title="" linenums="1"
 # Paste your docker-compose.yaml or docker run command here!

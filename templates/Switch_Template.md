@@ -15,23 +15,23 @@ hide:
 # Switch Template
 *Subtitle*
 
-[Manual :material-book-information-variant:](../assets/manuals/manual.pdf){ .md-button .md-button--primary }
+[Manual :symbols-quick-reference:](../assets/manuals/manual.pdf){ .md-button .md-button--primary }
 
 ---
-## :material-information-outline: Physical Overview
+## :symbols-info: Physical Overview
 
-#### :material-toolbox: Role: 
+#### :symbols-toolbox: Role
 :    Core Desktop Switch
 
-#### :material-map-marker-outline: Location: 
+#### :symbols-location: Location
 
-+ [Insert location here]
++ Insert location here
  
-#### :material-power-plug: Power Source: 
+#### :symbols-power: Power Source
 
 + (e.g., Wall wart 12V / 1A)
  
-#### :symbols-monitor-heart: Specs:
+#### :symbols-monitor-heart: Specs
 
 + Throughput:
   + (e.g., 50 Gb/s) 
@@ -52,11 +52,13 @@ hide:
 | **6**  | :material-ethernet:&nbsp;*Empty* | -            | -     |
 
 ---
-## :material-tools: Maintenance Notes
+## :symbols-note-stack-fill: Maintenance Notes
 
-> [!visual inline] Visual Indicators
-> :material-led-off:&nbsp;**Green LED:** 10/100/1000 Mb/s<br>
-> :material-led-on:&nbsp;**Flashing:** Activity
+!!! visual inline "Visual Indicators"
 
-> [!warning inline] Troubleshooting
-> Hard reboot required if traffic stalls *(unplug power for 60s)*.
+    :material-led-off:&nbsp;**Green LED:** 10/100/1000 Mb/s<br>
+    :material-led-on:&nbsp;**Flashing:** Activity
+
+!!! warning inline "Troubleshooting"
+
+    Hard reboot required if traffic stalls *(unplug power for 60s)*.

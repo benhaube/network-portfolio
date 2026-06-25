@@ -10,7 +10,7 @@
 /* -------------------------- *
  * Enable Line-Wrap           *
  * -------------------------- *
- * Use the '.wrap-code' class *
+ * Use the {.wrap-code} class *
  * on code blocks when you    * 
  * want to enable line-wrap.  *
  * -------------------------- */
@@ -42,7 +42,7 @@
  * website.                   *
  * -------------------------- */
 
-/* Title bar */
+/* Title Bar: Give the code block title bar rounded corners */
 .highlight span.filename {
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
@@ -50,19 +50,19 @@
   border-bottom-right-radius: 0.4rem;
 }
 
-/* Line number column */
+/* Line Numbers: Round the top-left and bottom-left corners */
 .highlighttable .linenos {
   border-bottom-left-radius: 0.4rem;
 	border-top-left-radius: 0.4rem;
 }
 
-/* Code body */
+/* Code Body: Round the bottom-left and bottom right corners */
 .md-typeset .highlighttable > tbody > tr > .code > div > pre > code {
 	border-bottom-right-radius: 0.4rem;
 	border-top-right-radius: 0.4rem;
 }
 
-/* Highlight & Copy button box */
+/* Code Nav Buttons: Give the box rounded corners */
 .md-code__nav {
   border-radius: 0.4rem;
 }
@@ -77,7 +77,7 @@
  * 45deg to 90deg.            *
  * -------------------------- */
 
-/* Increase the button rotation when active (default 45deg) */
+/* Increase the button rotation when active to 90deg (default 45deg) */
 .md-tooltip--active + .md-annotation__index::after {
 	transform: rotate(90deg);
 }

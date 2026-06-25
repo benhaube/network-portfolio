@@ -14,7 +14,7 @@
  * General Customization      *
  * -------------------------- */
 
-/* --- Set the max page width --- */
+/* --- Max Page Width --- */
 .md-grid {
   max-width: 1355px;
 }
@@ -36,13 +36,11 @@
 	top: 0;
 	z-index: 4;
 }
-
 /* Replicate the box-shadow from the Zensical header */
 .md-header--shadow {
   box-shadow: 0 .05rem 0 var(--md-default-fg-color--lightest);
   transition: transform .25s cubic-bezier(.1,.7,.1,1)
 }
-
 /* Remove background color from navigation tabs, add box-shadow, and change the text color */
 .md-tabs {
     box-shadow: 0 -.05rem 0 inset var(--md-default-fg-color--lightest);
@@ -54,6 +52,16 @@
     width: 100%;
     z-index: 3;
 }
+/* Add a bottom border to the active navigation tab */
+.md-tabs__item--active {
+  border-bottom:.05rem solid var(--md-default-fg-color);
+  font-weight:500;
+  position:relative;
+  transition:border-bottom .25s
+}
+.md-tabs[hidden] .md-tabs__item--active {
+  border-bottom:.05rem solid #0000
+}
 
 /* -------------------------- * 
  * Customize Nav Drawer       *
@@ -64,7 +72,6 @@
 	background-color: var(--md-default-fg-color--lightest);
 	color: var(--md-default-fg-color--light);
 }
-
 /* Change the background and text colors of the code repository card */
 @media screen and (max-width: 59.9844em) {
   .md-nav__source {
@@ -75,11 +82,48 @@
   }
 }
 
+/* Disabled -- Work in progress: Styling the navigation pane to replicate Zensical */
+/*.md-nav__link {
+  align-items:flex-start;
+  border-radius:.4rem;
+  cursor:pointer;
+  display:flex;
+  gap:.6rem;
+  margin-left:.2rem;
+  margin-right:.2rem;
+  padding:.35rem .8rem;
+  transition:color .25s,background-color .25s
+}
+.md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
+  background: var(--md-accent-fg-color--transparent);
+	color: var(--md-accent-fg-color);
+}
+
+[dir=ltr] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+  margin-left:1.1rem;
+}
+[dir=rtl] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+  margin-right:1.1rem
+}
+[dir=ltr] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+  border-left:.05rem solid var(--md-default-fg-color--lightest)
+}
+[dir=rtl] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+  border-right:.05rem solid var(--md-default-fg-color--lightest)
+}
+.md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+  display:block;
+  margin-bottom:.5em;
+  margin-top:.5em;
+  opacity:1;
+  visibility:visible
+}*/
+
 /* -------------------------- *
  * Adjust Tooltips            *
  * -------------------------- */
 
- /* Give tooltip and code annotation boxes rounded corners, and makes the width fit the content */
+/* Give code annotation boxes rounded corners, translucent background with blur, and make the width fit the content */
 .md-tooltip {
   -webkit-backdrop-filter: blur(.4rem) !important;
 	backdrop-filter: blur(.4rem) !important;
@@ -88,12 +132,11 @@
   max-width: 20rem;
   width: auto;
 }
-
+/* Covers other tooltips like page status, abbreviations, etc. */
 .md-tooltip--inline .md-tooltip__inner {
 	background-color: var(--md-default-bg-color);
   border-radius: 0.4rem;
 }
-
 .md-tooltip2__inner {
   border-radius: 0.4rem;
 }

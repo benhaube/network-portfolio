@@ -12,7 +12,11 @@
  * the other button behavior.               *
  * ---------------------------------------- */
 
-/* Regular buttons */
+/* ----------------- * 
+ * Regular Buttons:  *
+ * ----------------- */
+ 
+/* Remove border, make pill-shaped, change text color, change background color, adjust font size and weight, adjust padding, add transition */
 .md-typeset .md-button {
   border-radius: 1.2rem;
   border: none;
@@ -24,14 +28,22 @@
   transition: color 250ms, background-color 250ms, border-color 250ms ease-in-out !important;
 }
 
-/* Primary color buttons */
+/* ----------------- * 
+ * Primary Buttons:  *
+ * ----------------- */
+
+/* Set background color, set text color, remove border */
 .md-typeset .md-button--primary {
   background-color: var(--md-primary-fg-color);
   border: none;
   color: var(--md-primary-bg-color)
 }
 
-/* Buttons hover */
+/* ----------------- * 
+ * Button Hover:     *
+ * ----------------- */
+
+/* Set background color, remove border, set text color */
 .md-typeset .md-button:focus,
 .md-typeset .md-button:hover {
   background-color: var(--md-accent-fg-color);
@@ -39,26 +51,32 @@
   color: var(--md-accent-bg-color)
 }
 
-/* Page 'view' & 'edit' buttons */
+/* ---------------------------- *
+ * Page 'view' & 'edit' buttons *
+ * ---------------------------- */
+
+/* Set the margin from the edge of the page */
 [dir=ltr] .md-content__button {
-  margin-left:.4rem;
+  margin-left: .4rem;
 }
 [dir=rtl] .md-content__button {
-  margin-right:.4rem
+  margin-right: .4rem
 }
+/* Set margin between buttons, give buttons a background with rounded corners, set icon padding, set margin from top of page */
 .md-content__button {
-  margin:.4rem 0;
+  margin: .4rem 0;
   background: var(--md-default-fg-color--lightest);
-  padding: 0.3rem;
-  border-radius: 0.4rem;
-  margin-top: 0.7rem;
+  padding: .3rem;
+  border-radius: .4rem;
+  margin-top: .7rem;
 }
+/* Set the size of the icon */
 .md-content__button svg {
   display: flex;
   height: .9rem;
   width: .9rem;
 }
-/* Hover */
+/* Hover: Set the background and icon color, add a 250ms transition */
 .md-content__button:hover {
   background: var(--md-accent-fg-color--transparent);
   color: var(--md-accent-fg-color) !important;
@@ -74,6 +92,7 @@
  * seen on Zensical.                        *
  * ---------------------------------------- */
 
+/* Change background color (translucent), add blur, adjust size, move button to bottom of the page */
 .md-top {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
@@ -85,13 +104,14 @@
   padding: .5rem .9rem .5rem .7rem;
   top: auto !important;
 }
+/* Adjust the size and spacing of the double-arrows icon */
 .md-top svg {
 	display: inline-block;
 	height: .9rem;
 	vertical-align: -.5em;
 	width: .9rem;
 }
-/* Hover color */
+/* Hover: Set the background color and text/icon color */
 .md-top:hover {
   background-color: var(--md-accent-fg-color);
   color: var(--md-accent-bg-color)
@@ -110,7 +130,7 @@
     box-shadow: var(--md-shadow-z2);
     transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out;
 }
-/* Reduce the border radius */
+/* Change from pill-shaped to rounded rectangle to match Zensical aesthetic */
 .md-typeset .md-tag {
   border-radius: .4rem;
 }

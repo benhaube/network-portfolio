@@ -2,21 +2,21 @@
  * Material Theme Colors      *
  * -------------------------- */
 
-/* Light theme (default) */
+/* --- Light theme (default) --- */
 [data-md-color-scheme="default"] {
     /* Change the code block background color */
     --md-code-bg-color: #E5F4FD;
-    /* Change the box shadow properties to match Zensical */
+    /* Change the box-shadow properties to match Zensical */
     --md-shadow-z1: 0 0.2rem 0.5rem #0000000d,0 0 0.05rem #0000001a;
     --md-shadow-z2: 0 0.2rem 0.5rem #0000001a,0 0 0.05rem #00000040;
     --md-shadow-z3: 0 0.2rem 0.5rem #0003,0 0 0.05rem #00000059; 
 }
 
-/* Dark theme (slate) */
+/* --- Dark theme (slate) --- */
 [data-md-color-scheme="slate"] {
     /* Change the code block background color */
     --md-code-bg-color: #0A1A25; 
-    /* Change the box shadow properties to match Zensical */
+    /* Change the box-shadow properties to match Zensical */
     --md-shadow-z1: 0 0.2rem 0.5rem #0000000d,0 0 0.05rem #ffffff1a;
     --md-shadow-z2: 0 0.2rem 0.5rem #00000040,0 0 0.05rem #ffffff59;
     --md-shadow-z3: 0 0.5rem 2rem #0006,0 0 0.05rem #00000059;
@@ -26,7 +26,7 @@
  * Mermaid.js Diagrams        *
  * -------------------------- */
 
-/* Default (Light Mode) Variables */
+/* --- Default (Light Mode) Variables --- */
 :root {
     /* Text & Lines */
     --node-text: #202020;
@@ -69,7 +69,7 @@
     --usb-border: #c62828;
 }
 
-/* Slate (Dark Mode) Variables */
+/* --- Slate (Dark Mode) Variables --- */
 [data-md-color-scheme="slate"] {
     /* Text & Lines */
     --node-text: #BFC1C7;

@@ -4,7 +4,7 @@
 
 /* Change the background-color for highlited text */
 .md-typeset mark {
-    background-color: #0091eb73;
+    background-color: var(--md-code-hl-color--light);
 }
 
 /* Reduce the margin for horizontal rules to 0 */

@@ -77,7 +77,7 @@ There are two optional packages you can install to extend the functionality of `
 
 2. Check the command output for allowed origins and to see what packages would have been updated: 
 
-    ```shell-session linenums="1"
+    ```shell-session title="Expected Output" linenums="1"
     Starting unattended upgrades script
     Allowed origins are: origin=Debian,codename=trixie,label=Debian, origin=Debian,codename=trixie,label=Debian-Security, origin=Debian,codename=trixie-security,label=Debian-Security
     Initial blacklist:
@@ -115,9 +115,7 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
     systemctl status apt-daily.timer
     ```
 
-    *Expected Output:*
-
-    ```shell-session linenums="1"
+    ```shell-session title="Expected Output" linenums="1"
     ● apt-daily.timer - Daily apt download activities
          Loaded: loaded (/usr/lib/systemd/system/apt-daily.timer; enabled; preset: enabled)
          Active: active (waiting) since Fri 2026-01-23 12:44:18 EST; 3 months 23 days ago
@@ -134,9 +132,7 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
     systemctl status apt-daily-upgrade.timer
     ```
 
-    *Expected Output:*
-
-    ```shell-session linenums="1"
+    ```shell-session title="Expected Output" linenums="1"
     ● apt-daily-upgrade.timer - Daily apt upgrade and clean activities
          Loaded: loaded (/usr/lib/systemd/system/apt-daily-upgrade.timer; enabled; preset: enabled)
          Active: active (waiting) since Fri 2026-01-23 12:44:18 EST; 3 months 23 days ago
@@ -153,9 +149,7 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
     systemctl list-timers apt-daily*
     ```
 
-    *Expected Output:*
-
-    ```shell-session linenums="1"
+    ```shell-session title="Expected Output" linenums="1"
     NEXT                         LEFT LAST                              PASSED UNIT                    ACTIVATES
     ----------------------------------------------------------------------------------------------------------------------------                
     Tue 2026-05-19 11:57:20 EDT 45min Mon 2026-05-18 21:29:30 EDT      13h ago apt-daily.timer         apt-daily.service

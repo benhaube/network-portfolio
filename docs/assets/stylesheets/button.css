@@ -14,19 +14,20 @@
 
 /* Regular buttons */
 .md-typeset .md-button {
-  border-radius: 2rem;
-  border-color: transparent;
-  color: var(--md-typeset-color);
+  border-radius: 1.2rem;
+  border: none;
+  color: var(--md-default-fg-color--light);
   background-color: var(--md-default-fg-color--lightest);
+  font-size:.875em;
   font-weight: 600;
-  padding: .3em 0.7em;
+  padding: .625em 2em;
   transition: color 250ms, background-color 250ms, border-color 250ms ease-in-out !important;
 }
 
 /* Primary color buttons */
 .md-typeset .md-button--primary {
   background-color: var(--md-primary-fg-color);
-  border-color: transparent;
+  border: none;
   color: var(--md-primary-bg-color)
 }
 
@@ -40,23 +41,28 @@
 
 /* Page 'view' & 'edit' buttons */
 [dir=ltr] .md-content__button {
-  margin-left:.25rem;
+  margin-left:.4rem;
 }
 [dir=rtl] .md-content__button {
-  margin-right:.25rem
+  margin-right:.4rem
 }
 .md-content__button {
   margin:.4rem 0;
   background: var(--md-default-fg-color--lightest);
-  padding: 0.2rem;
+  padding: 0.3rem;
   border-radius: 0.4rem;
+  margin-top: 0.7rem;
+}
+.md-content__button svg {
+  display: flex;
+  height: .9rem;
+  width: .9rem;
 }
 /* Hover */
 .md-content__button:hover {
-  background: var(--md-accent-fg-color);
-  color: var(--md-accent-bg-color) !important;
-  box-shadow: var(--md-shadow-z2);
-  transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out !important;
+  background: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color) !important;
+  transition: color 250ms, background-color 250ms, ease-in-out !important;
 }
 
 /* ---------------------------------------- *
@@ -68,23 +74,27 @@
  * seen on Zensical.                        *
  * ---------------------------------------- */
 
-/* Translucency and blur */
 .md-top {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
 	background-color: var(--md-default-bg-color--light);
+  border-radius: 1.6rem;
+  bottom: 1.6rem;
+  display: flex;
+  gap: .4rem;
+  padding: .5rem .9rem .5rem .7rem;
+  top: auto !important;
 }
-/* Hover color w/ translucency and blur */
+.md-top svg {
+	display: inline-block;
+	height: .9rem;
+	vertical-align: -.5em;
+	width: .9rem;
+}
+/* Hover color */
 .md-top:hover {
-  -webkit-backdrop-filter: blur(.4rem);
-	backdrop-filter: blur(.4rem);
-  background-color: var(--md-accent-fg-color--transparent);
-}
-/* Text color on hover for default (light) theme */
-[data-md-color-scheme="default"] {
-  .md-top:hover {
-    color: var(--md-default-fg-color)
-  }
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color)
 }
 
 /* ---------------------------------------- *
@@ -99,4 +109,8 @@
 .md-tags .md-tag:hover {
     box-shadow: var(--md-shadow-z2);
     transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out;
+}
+/* Reduce the border radius */
+.md-typeset .md-tag {
+  border-radius: .4rem;
 }

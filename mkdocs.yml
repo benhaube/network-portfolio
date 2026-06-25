@@ -41,29 +41,29 @@ theme:
   icon:
     repo: symbols/git
     admonition:
-      abstract: symbols/assignment
-      note: symbols/sticky-note
-      info: symbols/info-fill
-      bug: symbols/bug-report
-      question: symbols/help-fill
-      warning: symbols/warning
-      tip: symbols/flame
-      failure: symbols/close
+      note: symbols/attach-file
+      abstract: symbols/notebook-text
+      info: symbols/info
+      tip: symbols/flame-outline
       success: symbols/check
-      quote: symbols/quote
+      question: symbols/help
+      warning: symbols/warning-outline
+      failure: symbols/error-alt
+      danger: symbols/electric-bolt-outline
+      bug: symbols/bug-report-outline
       example: symbols/labs
-      danger: symbols/electric-bolt
+      quote: symbols/quote
     # -- Icons for Tags --
     tag:
       default: symbols/tag
       3D-printer: material/printer-3d-nozzle
       isp: symbols/web
       iot: symbols/home-automation
-      active: symbols/check-circle
+      active: symbols/check-circle-outline
       android: brands/android-robot
       backup: symbols/backup
       dashboard: symbols/space-dashboard
-      deprecated: symbols/delete
+      deprecated: symbols/delete-outline
       desktop: material/desktop-tower
       development: symbols/graph-8
       dns: symbols/dns
@@ -73,7 +73,7 @@ theme:
       download: symbols/download
       file-share: symbols/share
       hardware: symbols/devices
-      inactive: symbols/close-circle
+      inactive: symbols/close-circle-outline
       infra: symbols/network-node
       inventory: symbols/assignment
       laptop: symbols/laptop
@@ -86,7 +86,7 @@ theme:
       nas: material/nas
       native: material/linux
       network: symbols/lan 
-      new: symbols/release-alert
+      new: symbols/release-alert-outline
       office: symbols/desk
       pc: symbols/desktop-windows
       podman: simple/podman

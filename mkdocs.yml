@@ -71,7 +71,7 @@ theme:
       docker_host: material/docker
       domain: symbols/domain
       download: symbols/download
-      file-share: symbols/share
+      file-share: symbols/smb-share
       hardware: symbols/devices
       inactive: symbols/close-circle-outline
       infra: symbols/network-node

@@ -130,7 +130,7 @@ hide:
 |  *Active*  | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                                            |
 |  *Active*  | [:symbols-terminal:&nbsp;ttydBridge](../03_Services/ttydBridge.md)                      |         `2222`         | A DockerApp makes it easy to use the host terminal in the Web.                                                                                      |
 |  *Active*  | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md)                 |    `51820` `51821`     | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                            |
-|  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                       |
+|  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                       |
 
 ---
 ## :symbols-note-stack-fill:&ensp;Maintenance & Notes
@@ -188,7 +188,7 @@ hide:
     ```bash linenums="1" 
     sudo cp fastfetch-linux-amd64/usr/bin/fastfetch /opt/bin
     sudo cp -r fastfetch-linux-amd64/usr/share/fastfetch /opt/share
-    sudop cp -r fastfetch-linux-amd64/usr/share/bash-completion /opt/share
+    sudo cp -r fastfetch-linux-amd64/usr/share/bash-completion /opt/share
     ```
 
 ##### Configure

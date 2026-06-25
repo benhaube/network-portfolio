@@ -119,7 +119,7 @@ hide:
  
     + The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar](https://github.com/FossifyOrg/Calendar) and [Tasks.org](https://tasks.org/) *(Installed via F-Droid)*. 
     + Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/) application.
-    + The calendar and tasks serivce is hosted by [Fastmail](https://fastmail.com). 
+    + The calendar and tasks service is hosted by [Fastmail](https://fastmail.com). 
 
 #### :symbols-update:&ensp;Update Process
 

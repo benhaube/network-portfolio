@@ -1,7 +1,7 @@
 ---
 icon: services/technitium
 title: Technitium
-subtitle: Autoritative & Recursive DNS
+subtitle: authoritative & Recursive DNS
 description: An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 status: new
 tags:
@@ -20,7 +20,7 @@ hide:
 ![Technitium Icon](../assets/icons/technitium.svg){ width=200 }
 
 # Technitium
-*Autoritative & Recursive DNS*
+*Authoritative & Recursive DNS*
 
 [GitHub&ensp;:simple-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }
 

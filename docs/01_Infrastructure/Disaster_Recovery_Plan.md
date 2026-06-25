@@ -75,7 +75,7 @@ tags:
 
 + The [Technitium](../03_Services/Technitium.md) DNS Node *([Raspberry Pi 4B](../02_Hardware/Raspberry_Pi_4B_Server.md))* is configured as a secondary resolver in the [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) DHCP settings. Clients will automatically fallback to the Pi 4B.    
 
-#### Reprovisioning
+#### Re-provisioning
 
 + If the Debian VM or ZimaOS host is lost, the Debian VM is restored from the last known good snapshot stored on the [NFS](../03_Services/NFS.md) / [SMB](../03_Services/SMB.md) Share.
 

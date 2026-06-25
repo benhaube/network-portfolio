@@ -211,7 +211,7 @@ hide:
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
 [:services-youtube-dl:&ensp;yt-dlp Web-UI](./03_Services/yt-dlp_WebUI.md)
-:    High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.
+:    High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
 ---
 ## :symbols-swap-horizontal:&ensp;Change Management
@@ -226,7 +226,7 @@ hide:
 ## :material-printer-3d-nozzle:&ensp;3D Printing
 
 !!! links inline end "Check out my 3D Models!"
-    All of my 3D models are published to Printables, and shared with the GPLv3 open-source licence. Every model has STEP and FreeCAD files included for easy editing.
+    All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.
 
     [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 

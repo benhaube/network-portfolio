@@ -144,7 +144,7 @@ M600
 --8<-- "M600-custom.cfg"
 ```
 
-```cfg title="<code>sesorless.cfg</code>" linenums="1"
+```cfg title="<code>sensorless.cfg</code>" linenums="1"
 --8<-- "sensorless.cfg"
 ```
 

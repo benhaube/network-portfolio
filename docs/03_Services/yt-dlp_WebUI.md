@@ -25,7 +25,7 @@ hide:
 
 #### :symbols-description:&ensp;Description 
 
-:    High performance extendeable Web-UI and RPC server for `yt-dlp` with low impact on resources.
+:    High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 

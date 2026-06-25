@@ -94,7 +94,7 @@ hide:
     sudo dnf install -y certbot
     ```
 
-2. Create the two shell scripts needed to optain the Certbot validation record and transfer the TLS certificate / key to the router:
+2. Create the two shell scripts needed to obtain the Certbot validation record and transfer the TLS certificate / key to the router:
 
     ```bash title="<code>auth_hook.sh</code>" linenums="1" hl_lines="5"
     --8<-- "auth_hook.sh"

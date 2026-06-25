@@ -37,7 +37,7 @@ hide:
     + [Ugreen UM106X Switch](../../02_Hardware/Ugreen_Switch.md)
     + [Hitron Modem](../../02_Hardware/Hitron_Modem.md)
     + GeeekPi: DeskPi Rack-Mate T0 *(4U - 10" Rack)*
-    + One SFP+&ensp;:material-arrow-right-thin:&ensp;10GbE transciever
+    + One SFP+&ensp;:material-arrow-right-thin:&ensp;10GbE transceiver
     + Two Cat6a Keystone jacks
     + Three GeeekPi 6" Cat6a patch cables
     + Three Monoprice 3' Cat6a patch cables

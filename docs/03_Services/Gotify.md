@@ -52,7 +52,7 @@ hide:
 | [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
 | [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
 | [:symbols-router:&nbsp;Router Alerts](#router-alerts)                                                                           | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
-| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and cliet IP address.                     |
+| [:material-console-network:&nbsp;SSH Alerts](#ssh-alerts)                                                                       | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and client IP address.                    |
 | [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
 | [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
 
@@ -239,7 +239,7 @@ hide:
     chmod +x /opt/share/connmon.d/userscripts.d/gotify-connmon.sh
     ```
 
-4. Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, conmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.
+4. Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, connmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.
 
 ##### DHCP Event Alerts
 

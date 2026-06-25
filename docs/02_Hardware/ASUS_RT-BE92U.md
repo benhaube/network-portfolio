@@ -141,12 +141,12 @@ hide:
 
 ##### SSH Session Alerts
 
-+ A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and cliet IP address.
++ A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and client IP address.
 + To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_Services/Gotify.md#ssh-alerts) section on the Gotify service documentation page.
 
 ##### WAN IP Change
 
-+ Whenever the WAN IP address changes or the WAN connection drops then reconnets; a push notification is sent through the Gotify server. 
++ Whenever the WAN IP address changes or the WAN connection drops then reconnects; a push notification is sent through the Gotify server. 
 + To see the script and detailed configuration information, see the ["WAN IP Change"](../03_Services/Gotify.md#wan-ip-change) section of the Gotify service documentation page.  
 
 ##### BACKUPMON Alerts
@@ -157,7 +157,7 @@ hide:
 ##### Connmon Alerts
 
 + The Connmon utility monitors the router's WAN connection by measuring the ping, jitter, and line quality. Whenever the tests fail *(lost connection)* or the measured values are greater than the set threshold an alert is sent to the Gotify server.
-+ To see the script and detailed configuration information, see the ["Conmon Alerts"](../03_Services/Gotify.md#connmon-alerts) section of the Gotify service documentation page.
++ To see the script and detailed configuration information, see the ["Connmon Alerts"](../03_Services/Gotify.md#connmon-alerts) section of the Gotify service documentation page.
 
 ##### DHCP Event Alerts
 
@@ -175,7 +175,7 @@ The `ChkWAN.sh` script can monitor the connection status of the WAN interface, a
 + Attempt to restart the WAN interface.
 + Reboot the router.
 
-On this router the `ChkWAN.sh` script is configured to PING the following IP addresses and restart the WAN interface if no ICMP echo reply is recieved from ANY of the addresses. 
+On this router the `ChkWAN.sh` script is configured to PING the following IP addresses and restart the WAN interface if no ICMP echo reply is received from ANY of the addresses. 
 
 + `9.9.9.9` *(Quad9)*
 + `149.112.112.112` *(Quad9)*

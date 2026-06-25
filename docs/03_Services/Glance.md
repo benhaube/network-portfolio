@@ -58,7 +58,7 @@ hide:
 
     :symbols-settings:&ensp;**Configuration:**
  
-    :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuraiton is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
+    :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuration is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
  
     [:material-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:material-arrow-down-thin:](#glance-config)
 
@@ -79,7 +79,7 @@ hide:
 
     :symbols-person:&ensp;**Users:**
  
-    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are curretly three user accounts: `admin`, `bhaube`, and `rpereira`. 
+    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are currently three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
     :symbols-password:&ensp;**Passwords:**
 
@@ -134,7 +134,7 @@ hide:
  
     :symbols-settings:&ensp;**Configuration:**
 
-    + The Glance dashboard widgets have been moved into thier own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. 
+    + The Glance dashboard widgets have been moved into their own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. 
     + Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure. 
      
         + **Example:**
@@ -218,7 +218,7 @@ hide:
 
 3.    The Glance Dashboard's server secret is stored in the Bitwarden Vault.
 
-      [:services-bitwarden:&bnsp;**Bitwarden:**](https://vault.bitwarden.com)
+      [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
 
       + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
 

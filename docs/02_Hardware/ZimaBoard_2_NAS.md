@@ -142,7 +142,7 @@ hide:
     + Do not attempt to use `apt` to install or upgrade system packages. 
     + Do not change NTP settings *(stuck on systemd-timesyncd)*.
 
-    :symbols-package:&nbsp;**Entware:**
+    :symbols-package:&ensp;**Entware:**
  
     + The [Entware](https://github.com/Entware/Entware) package manager is installed. 
     + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
@@ -150,7 +150,7 @@ hide:
 
 !!! config "Critical Configurations"
 
-    :symbols-smb-share:&nbsp;**SMB Multi-Channel:**
+    :symbols-smb-share:&ensp;**SMB Multi-Channel:**
     
     + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
     + **Constraint:** 
@@ -161,10 +161,10 @@ hide:
 
 !!! change "NAS Protocol Change (SMB :material-arrow-right-thin: NFS)"
     
-    :symbols-calendar-event:&nbsp;**Date:** 2026-02-09 <br>
-    :symbols-info:&nbsp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
-    :symbols-monitor-heart:&nbsp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
-    :symbols-devices:&nbsp;**Affected Clients:** 
+    :symbols-calendar-event:&ensp;**Date:** 2026-02-09 <br>
+    :symbols-info:&ensp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
+    :symbols-monitor-heart:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
+    :symbols-devices:&ensp;**Affected Clients:** 
  
     + [Ben's Desktop PC](./Ben's_Desktop.md) 
     + [Ben's Laptop PC](./Ben's_Laptop.md)
@@ -265,11 +265,11 @@ hide:
 
 !!! note
 
-    **Data Location:**
+    :symbols-folder-data:&ensp;**Data Location:**
 
     :    The task configurations and logs are stored in `/DATA/AppData/cron/`
 
-    **Persistence:**
+    :symbols-restart:&ensp;**Persistence:**
 
     :    Tasks are persisted to disk and automatically restored after system restart using the Systemd unit, `cron.service`. This fixes the known issue where tasks did not continue after a reboot in previous versions.
 

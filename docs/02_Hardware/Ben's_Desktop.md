@@ -125,7 +125,7 @@ hide:
 ##### Automatic Updates
 
 + Automatic offline updates for OS packages and firmware are enabled through the KDE Plasma desktop environment, and will be applied weekly. When OS updates need to reboot the system, a notification will appear in the system tray.
-+ Flatpak applications will also update automatically through KDE Discover, and they do not requrie a system reboot.
++ Flatpak applications will also update automatically through KDE Discover, and they do not require a system reboot.
 + To perform manual updates for the OS packages, firmware, and Flatpak applications you can use the CLI.
 
 ##### Manual Updates
@@ -152,7 +152,7 @@ hide:
 
 #### :symbols-backup:&ensp;Backup Policy
 
-+ The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggerd by Systemd.
++ The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggered by Systemd.
 + With the `Persistent=true` value set in the Systemd `.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
 + Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 

@@ -6,7 +6,6 @@
 .md-search__form {
   background-color: var(--md-default-fg-color--lightest);
   border-radius: 0.4rem;
-  cursor: pointer;
 }
 
 /* Set the hover background color */
@@ -36,6 +35,7 @@
 /* Give the search output dialog rounded corners */
 [data-md-toggle=search]:checked~.md-header .md-search__form {
   border-radius: 0.4rem 0.4rem 0 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lighter);
 }
 [dir=ltr] .md-search__output {
   border-bottom-left-radius: 0.4rem;

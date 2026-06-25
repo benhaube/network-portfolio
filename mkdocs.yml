@@ -75,7 +75,7 @@ theme:
       hardware: symbols/devices
       inactive: symbols/close-circle-outline
       infra: symbols/network-node
-      inventory: symbols/assignment
+      inventory: symbols/inventory
       laptop: symbols/laptop
       linux: material/linux
       living-room: symbols/sofa

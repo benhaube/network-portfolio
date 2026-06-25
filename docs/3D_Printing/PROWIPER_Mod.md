@@ -75,7 +75,7 @@ hide:
 #### Klipper Mesh Clearance
   + [ ] In `printer.cfg`, locate the `[bed_mesh]` section. Reduce the Y-axis value of `mesh_max` by 10 *(e.g., change `220` to `210`)*.
 
-    ```cfg title="<code>printer.cfg</code>" linenums="1" hl_lines="4"
+    ```cfg title="<code>printer.cfg</code>" linenums="350" hl_lines="4"
     --8<-- "printer.cfg:350:356"
     ```
 

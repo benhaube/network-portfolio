@@ -29,14 +29,14 @@
 /* --- Default (Light Mode) Variables --- */
 :root {
     /* Text & Lines */
-    --node-text: #202020;
-    --edge-line: #202020;
+    --node-text: var(--md-code-fg-color);
+    --edge-line: var(--md-code-fg-color);
 
     /* Subgraph & Edge Label */
-    --subgraph-bg: #f1f2f380;
-    --subgraph-border: #cccccc;
-    --edge-bg: #FFFFFF; 
-    --edge-text: #202020;
+    --subgraph-bg: var(--md-default-bg-color--lighter);
+    --subgraph-border: var(--md-default-fg-color--lighter);
+    --edge-bg: var(--md-default-bg-color); 
+    --edge-text: var(--md-code-fg-color);
 
     /* Logical Diagram */
     --vlan50-bg: #e8f5e9;
@@ -72,14 +72,14 @@
 /* --- Slate (Dark Mode) Variables --- */
 [data-md-color-scheme="slate"] {
     /* Text & Lines */
-    --node-text: #BFC1C7;
-    --edge-line: #BFC1C7;
+    --node-text: var(--md-code-fg-color);
+    --edge-line: var(--md-code-fg-color);
 
     /* Subgraph & Edge Label */
-    --subgraph-bg: #2e303e80;
-    --subgraph-border: #4a4d5e;
-    --edge-bg: #1E2129; 
-    --edge-text: #BFC1C7;
+    --subgraph-bg: var(--md-default-bg-color--lighter);
+    --subgraph-border: var(--md-default-fg-color--lighter);
+    --edge-bg: var(--md-default-bg-color);
+    --edge-text: var(--md-code-fg-color);
 
     /* Logical Diagram */
     --vlan50-bg: #001200;

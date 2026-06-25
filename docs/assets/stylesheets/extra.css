@@ -37,6 +37,12 @@
 	z-index: 4;
 }
 
+/* Replicate the box-shadow from the Zensical header */
+.md-header--shadow {
+  box-shadow: 0 .05rem 0 var(--md-default-fg-color--lightest);
+  transition: transform .25s cubic-bezier(.1,.7,.1,1)
+}
+
 /* Remove background color from navigation tabs, add box-shadow, and change the text color */
 .md-tabs {
     box-shadow: 0 -.05rem 0 inset var(--md-default-fg-color--lightest);
@@ -121,6 +127,34 @@ img[src$=".gif" i] {
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
   border-radius: 0.4rem;
+}
+
+/* -------------------------- *
+ * Cookie Consent Form        *
+ * -------------------------- */
+
+/* Replicte the Zensical cookie consent form */
+.md-consent__inner {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: transparent;
+}
+.md-consent__form {
+  animation: consent .5s cubic-bezier(.1,.7,.1,1) both;
+  background-color: var(--md-default-bg-color);
+  border: 0;
+  border-radius: 0.8rem;
+  box-shadow: var(--md-shadow-z3);
+  margin: 0.4rem;
+  overflow: auto;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem
 }
 
 /* -------------------------- *

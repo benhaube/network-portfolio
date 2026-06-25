@@ -53,3 +53,8 @@ hide:
 
 1. Maps port `8080` on the VM to port `80` inside the container.
 2. Mounts your site folder as read-only (ro) for extra security.
+3. Mounts your site folder as read-only (ro) for extra security.
+
+```nginx title="<code>default.conf</code>" linenums="1"
+--8<-- "nginx.conf"
+```

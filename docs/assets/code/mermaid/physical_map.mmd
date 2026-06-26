@@ -24,10 +24,11 @@ flowchart-elk TD
     %% --- Living Room & Mini-Rack --- %%
     subgraph Living_Room ["<b>Living Room</b>"]
         direction TB
-        subgraph Mini_Rack ["<b>Mini-Rack</b>"]
+        subgraph Mini_Rack ["<b>10in Mini-Rack</b>"]
             direction TB
             Modem["<b>Hitron Modem</b><br><i>(DOCSIS 3.1)</i>"]:::twoFiveGb
             RouterMain["<b>ASUS RT-BE92U</b><br><i>(Main Router)</i>"]:::tenGb
+            tenGbKeystone["Keystone Jack"]:::tenGb
             SwitchAgg["<b>Ugreen Switch</b><br><i>(UM106X)</i>"]:::tenGb
             Zima["<b>ZimaOS NAS</b><br><i>(Storage Server)</i>"]:::twoFiveGb
             VM["<b>Debian Server</b><br><i>(Primary DNS)</i>"]:::multi
@@ -85,7 +86,8 @@ flowchart-elk TD
     RouterMain == "Backhaul" ==> MeshNode
 
     %% --- Router to Switch --- %%
-    RouterMain == "<b>10 Gb SFP+</b><br><i>(Red Cat6a)</i>" ==> SwitchAgg
+    RouterMain == "<b>10 GbE</b><br><i>(Black Cat6a)</i>" ==> tenGbKeystone
+    tenGbKeystone == "<b>10Gb SFP+ Transceiver</b><br><i>(Red Cat6a)</i>" ==> SwitchAgg
     RouterMain == "<b>Port 1</b><br><i>(White Cat6)</i>" ==> SwitchTV
     MeshNode == "<b>Port 5</b><br><i>(Black Cat6a)</i>" ==> SwitchOffice
 

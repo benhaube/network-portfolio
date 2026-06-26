@@ -21,7 +21,7 @@ hide:
 ---
 
 ```mermaid { .pz-ignore }
---8<-- "logical_map_ledgend.mmd"
+--8<-- "logical_map_legend.mmd"
 ```
 
 ```mermaid

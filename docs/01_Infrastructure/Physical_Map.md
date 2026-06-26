@@ -22,7 +22,7 @@ hide:
 ---
 
 ```mermaid { .pz-ignore }
---8<-- "physical_map_ledgend.mmd"
+--8<-- "physical_map_legend.mmd"
 ```
 
 ```mermaid

@@ -242,7 +242,8 @@ img[src$=".gif" i] {
 
 /* Make the background color behind the help message match the Panzoom box */
 .panzoom-info-box-bottom {
-    background-color: var(--md-code-bg-color) !important;
+    background: var(--md-code-bg-color) !important;
+    z-index: auto !important;
 }
 
 /* Adjust padding and border radius of the Panzoom navigation buttons to match regular code blocks */

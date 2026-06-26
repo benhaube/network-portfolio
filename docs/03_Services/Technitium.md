@@ -39,7 +39,7 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ :material-debian:&nbsp;Debian Server
++ :symbols-server:&nbsp;Debian Server
     + `192.168.50.6` &mdash; First DNS server
     + <http://debian-vm.internal:5380>
 + :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server

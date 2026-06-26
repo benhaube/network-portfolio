@@ -37,7 +37,7 @@ hide:
 + :symbols-router:&nbsp;ASUS RT-BE92U
     + `192.168.50.1:22` 
     + `asusrouter.internal:22`
-+ :material-debian:&nbsp;Debian Server
++ :symbols-server:&nbsp;Debian Server
     + `192.168.50.6:22` 
     + `debian-vm.internal:22` 
 + :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server

@@ -44,7 +44,7 @@ hide:
     + <https://localhost:8384>
 + :symbols-mobile:&nbsp;Ben's Smartphone
     + <https://localhost:8384>
-+ :material-debian:&nbsp;Debian Server
++ :symbols-server:&nbsp;Debian Server
     + <https://debian-vm.internal:8384>
     + <https://192.168.50.6:8384>
 + :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server

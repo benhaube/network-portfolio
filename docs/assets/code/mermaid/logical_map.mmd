@@ -4,7 +4,7 @@
   }
 }%%
 
-graph TD
+flowchart-elk TD
     %% --- Dummy Class Definitions (To register the classes on the SVGs) --- %%
     classDef vlan50 fill: stroke: rx:0.4rem, ry:0.4rem;
     classDef vlan52 fill: stroke: rx:0.4rem, ry:0.4rem;
@@ -26,14 +26,14 @@ graph TD
     end
 
     %% --- AiMesh Node --- %%
-    subgraph AiMesh_Node["<b>ASUS RT-AX55</b> <i>(AiMesh Node)</i>"]
+    subgraph AiMesh_Node["<b>ASUS RT-AX55</b> <i>(Mesh Node)</i>"]
         direction TB
         AiMesh_JFFS[("JFFS")]:::storage
         AiMesh_NVRAM[("NVRAM")]:::storage
     end
 
     %% --- Trusted VLAN --- %%
-    subgraph Trusted_VLAN50 ["<b>VLAN 50:</b> Trusted <code>[192.168.50.x]</code>"]
+    subgraph Trusted_VLAN50 ["<b>VLAN50:</b> Trusted <code>[192.168.50.x]</code>"]
         direction TB
         
         Clients["<b>Trusted Clients:</b><br>Ben's Desktop<br>Rob's Desktop<br>Laptops<br>Phones<br>Smart TVs"]:::vlan50
@@ -49,7 +49,7 @@ graph TD
             Service_Docker["<b>Docker Containers:</b><br>Beszel Agent<br>Cloudflared<br>Dockge<br>F1 Replay Timing<br>Gitea<br>Glances<br>Gotify<br>Homebox<br>Immich<br>Nginx<br>ntopng<br>Obsidian LiveSync<br>OpenSpeedTest<br>Portracker<br>Spoolman<br>Syncthing<br>ttydBridge<br>WireGuard<br>yt-dlp WebUI"]:::service
             
             %% --- Debain VM Server --- %%
-            subgraph VM_Debian ["<b>Debian Server VM</b> <code>[.6]</code>"]
+            subgraph VM_Debian ["<b>Debian Server</b> <code>[.6]</code>"]
                 DNS_Primary["<b>Primary DNS</b><br><i>(Technitium Cluster)</i>"]:::service
                 Syncthing_VM["Syncthing"]:::service
                 Service_Docker_VM["<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"]:::service
@@ -58,7 +58,7 @@ graph TD
         end
 
         %% --- Raspberry Pi 4B Server --- %%
-        subgraph Server_Pi4 ["<b>Raspberry Pi 4B Server</b> <code>[.2]</code>"]
+        subgraph Server_Pi4 ["<b>Ras-Pi 4B Server</b> <code>[.2]</code>"]
             MicroSD_Pi4[("<b>MicroSD Storage</b><br><i>(Debian Trixie)</i>")]:::storage
             DNS_Secondary["<b>Secondary DNS</b><br><i>(Technitium Cluster)</i>"]:::service
             HA["Home Assistant"]:::service
@@ -68,7 +68,7 @@ graph TD
         end
 
         %% --- Raspberry Pi Zero Server --- %%
-        subgraph Server_PiZero ["<b>Raspberry Pi Zero Server</b> <code>[.3]</code>"]
+        subgraph Server_PiZero ["<b>Ras-Pi Zero Server</b> <code>[.3]</code>"]
             MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(Debian Trixie)</i>")]:::storage
             Service_Docker_PiZero["<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"]:::service
             Syncthing_PiZero["Syncthing"]:::service
@@ -77,13 +77,13 @@ graph TD
     end
 
     %% --- IoT VLAN --- %%
-    subgraph IoT_VLAN53 ["<b>VLAN 53:</b> IoT <code>[192.168.53.x]</code>"]
+    subgraph IoT_VLAN53 ["<b>VLAN53:</b> IoT <code>[192.168.53.x]</code>"]
         direction TB
         IoTClients["IoT Clients"]:::vlan53  
     end
 
     %% --- Guest VLAN --- %%
-    subgraph Guest_VLAN52 ["<b>VLAN 52:</b> Guest <code>[192.168.52.x]</code>"]
+    subgraph Guest_VLAN52 ["<b>VLAN52:</b> Guest <code>[192.168.52.x]</code>"]
         direction TB
         GuestClients["Guest Clients"]:::vlan52
     end

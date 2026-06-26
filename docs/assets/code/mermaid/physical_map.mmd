@@ -4,7 +4,7 @@
   }
 }%%
 
-graph
+flowchart-elk TD
     %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
     classDef isp fill: stroke:;
     classDef multi fill: stroke: rx:0.4rem, ry:0.4rem;
@@ -43,7 +43,7 @@ graph
         direction TB
         subgraph PrinterCart ["<b>Printer Cart</b>"]
             direction TB
-            MeshNode["<b>ASUS RT-AX55</b><br><i>(AiMesh<sup>&copy;</sup> Node)</i>"]:::gigabit
+            MeshNode["<b>ASUS RT-AX55</b><br><i>(Mesh Node)</i>"]:::gigabit
             SwitchOffice["<b>TP-Link Switch</b><br><i>(SG105)</i>"]:::gigabit
             Pi4["<b>Raspberry Pi 4B</b><br><i>(Server / DNS)</i>"]:::gigabit
             PiZero["<b>Pi Zero 2 W</b><br><i>(Caddy Reverse Proxy)</i>"]:::wifi

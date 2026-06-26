@@ -34,7 +34,7 @@
 
     /* Subgraph & Edge Label */
     --subgraph-bg: var(--md-default-bg-color--lighter);
-    --subgraph-border: var(--md-default-fg-color--lighter);
+    --subgraph-border: var(--md-default-fg-color--lightest);
     --edge-bg: var(--md-default-bg-color); 
     --edge-text: var(--md-code-fg-color);
 
@@ -51,6 +51,8 @@
     --storage-border: #c62828;
     --usb-bg: #ffebee;
     --usb-border: #c62828;
+    --os-bg: #fff9c4;
+    --os-border: #fbc02d;
 
     /* Physical Diagram */
     --isp-bg: #ffebee;
@@ -77,7 +79,7 @@
 
     /* Subgraph & Edge Label */
     --subgraph-bg: var(--md-default-bg-color--lighter);
-    --subgraph-border: var(--md-default-fg-color--lighter);
+    --subgraph-border: var(--md-default-fg-color--lightest);
     --edge-bg: var(--md-default-bg-color);
     --edge-text: var(--md-code-fg-color);
 
@@ -94,6 +96,8 @@
     --storage-border: #c62828;
     --usb-bg: #22090E;
     --usb-border: #c62828;
+    --os-bg: #110C00;
+    --os-border: #fbc02d;
 
     /* Physical Diagram */
     --isp-bg: #22090E;

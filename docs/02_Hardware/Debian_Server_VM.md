@@ -1,5 +1,5 @@
 ---
-icon: material/debian
+icon: symbols/server
 title: Debian Server
 subtitle: Primary DNS Server
 tags:
@@ -14,7 +14,8 @@ tags:
 hide:
   - toc
 ---
-![Debian Logo](../assets/icons/debian.svg){ width=200 }
+![Material Server icon](../assets/icons/server.svg){ width=200 }
+&nbsp;![Debian Logo](../assets/icons/debian.svg){ width=50 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Debian Server

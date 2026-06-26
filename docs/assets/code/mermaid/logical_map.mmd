@@ -1,6 +1,6 @@
 %%{
   init: {
-    "themeCSS": ".node.vlan50 rect, .node.vlan50 polygon, .node.vlan50 circle, .node.vlan50 path { fill: var(--vlan50-bg) !important; stroke: var(--vlan50-border) !important; stroke-width: 2px !important; } .node.vlan52 rect, .node.vlan52 polygon, .node.vlan52 circle, .node.vlan52 path { fill: var(--vlan52-bg) !important; stroke: var(--vlan52-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.vlan53 rect, .node.vlan53 polygon, .node.vlan53 circle, .node.vlan53 path { fill: var(--vlan53-bg) !important; stroke: var(--vlan53-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.service rect, .node.service polygon, .node.service circle, .node.service path { fill: var(--service-bg) !important; stroke: var(--service-border) !important; stroke-width: 2px !important; } .node.storage rect, .node.storage polygon, .node.storage circle, .node.storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; } .node.usb-storage rect, .node.usb-storage polygon, .node.usb-storage circle, .node.usb-storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.usb rect, .node.usb polygon, .node.usb circle, .node.usb path { fill: var(--usb-bg) !important; stroke: var(--usb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+    "themeCSS": ".node.vlan50 rect, .node.vlan50 polygon, .node.vlan50 circle, .node.vlan50 path { fill: var(--vlan50-bg) !important; stroke: var(--vlan50-border) !important; stroke-width: 2px !important; } .node.vlan52 rect, .node.vlan52 polygon, .node.vlan52 circle, .node.vlan52 path { fill: var(--vlan52-bg) !important; stroke: var(--vlan52-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.vlan53 rect, .node.vlan53 polygon, .node.vlan53 circle, .node.vlan53 path { fill: var(--vlan53-bg) !important; stroke: var(--vlan53-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.service rect, .node.service polygon, .node.service circle, .node.service path { fill: var(--service-bg) !important; stroke: var(--service-border) !important; stroke-width: 2px !important; } .node.storage rect, .node.storage polygon, .node.storage circle, .node.storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; } .node.usb-storage rect, .node.usb-storage polygon, .node.usb-storage circle, .node.usb-storage path { fill: var(--storage-bg) !important; stroke: var(--storage-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.usb rect, .node.usb polygon, .node.usb circle, .node.usb path { fill: var(--usb-bg) !important; stroke: var(--usb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.os rect, .node.os polygon, .node.os circle, .node.os path { fill: var(--os-bg) !important; stroke: var(--os-border) !important; stroke-width: 2px !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
   }
 }%%
 
@@ -13,21 +13,25 @@ flowchart-elk TD
     classDef storage fill: stroke:;
     classDef usb-storage fill: stroke:;
     classDef usb fill: stroke: rx:0.4rem, ry:0.4rem;
+    classDef os fill: stroke: rx:0.4rem, ry:0.4rem;
 
 %% --- Nodes --- %%
 
     %% --- Main Router --- %%
     subgraph Router ["<b>ASUS RT-BE92U</b> <i>(Main Router)</i>"]
         direction TB
+        Asuswrt_Merlin["<b>Firmware:</b><br>Asuswrt-Merlin"]:::os
         Services["<b>Services:</b><br>Chrony<br>SMB<br>SSH<br>WireGuard"]:::service
-        Router_USB[("USB Storage")]:::usb-storage
-        Router_JFFS[("JFFS")]:::storage
-        RouterNVRAM[("NVRAM")]:::storage
+        Router_USB[("USB Storage<br><i>(28.3 GB)</i>")]:::usb-storage
+        Router_Swap[("Swap<br><i>(2 GB)</i>")]:::storage
+        Router_JFFS[("JFFS<br><i>(45 MB)</i>")]:::storage
+        RouterNVRAM[("NVRAM<br><i>(256 KB)</i>")]:::storage
     end
 
     %% --- AiMesh Node --- %%
     subgraph AiMesh_Node["<b>ASUS RT-AX55</b> <i>(Mesh Node)</i>"]
         direction TB
+        Asuswrt["<b>Firmware:</b><br>Asuswrt"]:::os
         AiMesh_JFFS[("JFFS")]:::storage
         AiMesh_NVRAM[("NVRAM")]:::storage
     end
@@ -43,9 +47,10 @@ flowchart-elk TD
 
         %% --- ZimaOS NAS --- %%
         subgraph Server_Zima ["<b>ZimaOS NAS</b> <code>[.4 / .5]</code>"]
-            Storage_SMB[("<b>RAID: Quick-Storage</b><br><i>(SMB / NFS Shares)</i>")]:::storage
-            Storage_NVMe[("<b>nvme0n1p1</b><br><i>(Docker / VM Storage)</i>")]:::storage
-            Storage_MMC[("<b>Onboard MMC</b><br><i>(ZimaOS)</i>")]:::storage
+            Storage_SMB[("<b>RAID: Quick-Storage</b><br><i>(4 TB)</i>")]:::storage
+            Storage_NVMe[("<b>nvme0n1p1</b><br><i>(500 GB)</i>")]:::storage
+            Storage_MMC[("<b>Onboard MMC</b><br><i>(64 GB)</i>")]:::storage
+            ZimaOS["<b>Operating System:</b><br>ZimaOS v1.6.1"]:::os
             Service_Docker["<b>Docker Containers:</b><br>Beszel Agent<br>Cloudflared<br>Dockge<br>F1 Replay Timing<br>Gitea<br>Glances<br>Gotify<br>Homebox<br>Immich<br>Nginx<br>ntopng<br>Obsidian LiveSync<br>OpenSpeedTest<br>Portracker<br>Spoolman<br>Syncthing<br>ttydBridge<br>WireGuard<br>yt-dlp WebUI"]:::service
             
             %% --- Debain VM Server --- %%
@@ -53,13 +58,15 @@ flowchart-elk TD
                 DNS_Primary["<b>Primary DNS</b><br><i>(Technitium Cluster)</i>"]:::service
                 Syncthing_VM["Syncthing"]:::service
                 Service_Docker_VM["<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"]:::service
-                Virtual_Disk[("<b>Virtual Disk Image</b><br><i>(Debian Trixie)</i>")]:::usb-storage
+                OS_DebianVM["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
+                Virtual_Disk[("<b>Virtual Disk Image</b><br><i>(50 GB)</i>")]:::usb-storage
             end
         end
 
         %% --- Raspberry Pi 4B Server --- %%
         subgraph Server_Pi4 ["<b>Ras-Pi 4B Server</b> <code>[.2]</code>"]
-            MicroSD_Pi4[("<b>MicroSD Storage</b><br><i>(Debian Trixie)</i>")]:::storage
+            MicroSD_Pi4[("<b>MicroSD Storage</b><br><i>(128 GB)</i>")]:::storage
+            OS_Pi4["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
             DNS_Secondary["<b>Secondary DNS</b><br><i>(Technitium Cluster)</i>"]:::service
             HA["Home Assistant"]:::service
             Print["CUPS Print Server"]:::service
@@ -69,7 +76,8 @@ flowchart-elk TD
 
         %% --- Raspberry Pi Zero Server --- %%
         subgraph Server_PiZero ["<b>Ras-Pi Zero Server</b> <code>[.3]</code>"]
-            MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(Debian Trixie)</i>")]:::storage
+            MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(64 GB)</i>")]:::storage
+            OS_PiZero["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
             Service_Docker_PiZero["<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"]:::service
             Syncthing_PiZero["Syncthing"]:::service
             Caddy["<b>Caddy Reverse Proxy</b><br><i>(Unique domain names for local services)</i>"]:::service
@@ -91,23 +99,34 @@ flowchart-elk TD
 %% --- Connections --- %%
 
     %% --- Main Router storage connections --- %%
+    Asuswrt_Merlin -- "Settings" --> RouterNVRAM
+    Asuswrt_Merlin -- "Scripts / Logs" --> Router_JFFS
+    Asuswrt_Merlin -- "Scripts / Logs" --> Router_USB
+    Asuswrt_Merlin -- "RAM Swap" --> Router_Swap
     Services -- "Storage" --> Router_USB
     Services -- "Storage" --> Router_JFFS
+    Router_USB -- "Partition" --> Router_Swap
 
     %% --- AiMesh Node Connections --- %%
+    Asuswrt -- "Settings" --> AiMesh_NVRAM
+    Asuswrt -- "Storage / Logs" --> AiMesh_JFFS
     Router == "Backhaul" ==> AiMesh_Node
 
     %% --- Debian VM storage connections --- %%
     DNS_Primary -- "Storage" --> Virtual_Disk
     Syncthing_VM -- "Storage" --> Virtual_Disk
     Service_Docker_VM -- "Storage" --> Virtual_Disk
+    OS_DebianVM -- "Storage" --> Virtual_Disk
 
     %% --- ZimaOS NAS storage connections --- %%
-    VM_Debian -- "Storage" --> Storage_NVMe
+    Virtual_Disk  -- "Storage" --> Storage_NVMe
     Service_Docker -- "Storage" --> Storage_NVMe
+    Service_Docker -- "Immich Library" --> Storage_SMB
+    ZimaOS -- "Storage" --> Storage_MMC
 
     %% --- Pi 4B storage connections --- %%
     DNS_Secondary -- "Storage" --> MicroSD_Pi4
+    OS_Pi4 -- "Storage" --> MicroSD_Pi4
     HA -- "Storage" --> MicroSD_Pi4
     Service_Docker_Pi4 -- "Storage" --> MicroSD_Pi4
     Print -- "Storage" --> MicroSD_Pi4
@@ -118,6 +137,7 @@ flowchart-elk TD
     Service_Docker_PiZero -- "Storage" --> MicroSD_PiZero
     Caddy -- "Storage" --> MicroSD_PiZero
     Syncthing_PiZero -- "Storage" --> MicroSD_PiZero
+    OS_PiZero -- "Storage" --> MicroSD_PiZero
 
     %% --- Trusted VLAN Connections --- %%
     Clients -- "DNS Query" --> DNS_Primary
@@ -125,7 +145,7 @@ flowchart-elk TD
     Clients -- "HTTPS" --> Caddy
     Caddy -- "DNS Query" --> DNS_Primary
     Caddy -- "DNS Query" --> DNS_Secondary
-    HA -. "Device Control<br><code>wlan0</code>" .- IoT_VLAN53
+    IoT_VLAN53 -. "Device Control<br><code>wlan0</code>" .- HA
     Clients -- "SMB / NFS / Backups" --> Storage_SMB
     Clients -- "Photo Backup<br><i>(Immich)</i>" --> Storage_SMB
     Clients -- "Manage" --> HA

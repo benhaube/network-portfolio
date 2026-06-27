@@ -28,15 +28,18 @@ flowchart-elk TD
             direction TB
             Modem["<b>Hitron Modem</b><br><i>(DOCSIS 3.1)</i>"]:::twoFiveGb
             RouterMain["<b>ASUS RT-BE92U</b><br><i>(Main Router)</i>"]:::tenGb
-            tenGbKeystone["Keystone Jack"]:::tenGb
+            tenGbKeystone["<b>Keystone Jack</b><br><i>(10Gb Ethernet)</i>"]:::tenGb
+            twoFiveGbKeystone["<b>Keystone Jack</b><br><i>(2.5Gb Ethernet)</i>"]:::twoFiveGb
             SwitchAgg["<b>Ugreen Switch</b><br><i>(UM106X)</i>"]:::tenGb
             Zima["<b>ZimaOS NAS</b><br><i>(Storage Server)</i>"]:::twoFiveGb
             VM["<b>Debian Server</b><br><i>(Primary DNS)</i>"]:::multi
         end
-        SwitchTV["<b>LiteWave Switch</b><br><i>(LS1005G)</i>"]:::gigabit
-        GoogleTV["Google TV<br>Streamer"]:::gigabit
-        SmartTV["TCL Smart TV"]:::gigabit
-        Nintendo["Nintendo<br>Switch Dock"]:::gigabit
+        subgraph TV_Stand ["<b>TV Stand</b>"]
+            SwitchTV["<b>LiteWave Switch</b><br><i>(LS1005G)</i>"]:::gigabit
+            GoogleTV["Google TV<br>Streamer"]:::gigabit
+            SmartTV["TCL Smart TV"]:::gigabit
+            Nintendo["Nintendo<br>Switch Dock"]:::gigabit
+        end
     end
 
     %% --- Office & Printer Cart --- %%
@@ -47,16 +50,22 @@ flowchart-elk TD
             MeshNode["<b>ASUS RT-AX55</b><br><i>(Mesh Node)</i>"]:::gigabit
             SwitchOffice["<b>TP-Link Switch</b><br><i>(SG105)</i>"]:::gigabit
             Pi4["<b>Pi 4B Server</b><br><i>(Server / DNS)</i>"]:::gigabit
-            PiZero["<b>Pi Zero Server</b><br><i>(Caddy Reverse Proxy)</i>"]:::wifi
+            PiZero["<b>Pi Zero 2W Server</b><br><i>(Caddy Reverse Proxy)</i>"]:::wifi
             BrLaser["<b>Brother HL-L2300D</b><br><i>(Laser Printer)</i>"]:::usb
         end
-        DesktopBen["Ben's Desktop"]:::gigabit
-        DesktopRob["Rob's Desktop"]:::gigabit
-        Printer3D["<b>Creality<sup>&copy;</sup> K1C</b><br><i>(3D-printer)</i>"]:::wifi
+        subgraph Desk_1 ["<b>Desk #1</b>"]
+            DesktopBen["Ben's Desktop"]:::gigabit
+        end
+        subgraph Desk_2 ["<b>Desk #2</b>"]
+            DesktopRob["Rob's Desktop"]:::gigabit
+        end
+        subgraph PrinterCart_3D ["<b>3D-Printer Cart</b>"]
+            Printer3D["<b>Creality<sup>&copy;</sup> K1C</b><br><i>(3D-printer)</i>"]:::wifi
+        end
     end
 
-    %% --- Mobile & Wi-Fi --- %%
-    subgraph Mobile ["<b>Mobile / Wi-Fi</b> <i>(VLAN50)</i>"]
+    %% --- Mobile Devices --- %%
+    subgraph Mobile ["<b>Mobile Devices</b> <i>(VLAN50)</i>"]
         direction TB
         LaptopBen["Ben's Laptop"]:::wifi
         LaptopRob["Rob's Laptop"]:::twoFiveGbTemp
@@ -79,16 +88,17 @@ flowchart-elk TD
 %% --- Connections --- %%
 
     %% --- WAN & Uplinks --- %%
-    ISP == "Coax Cable<br><i>(RG-11)</i>" ==> Modem
-    Modem == "<b>WAN</b><br><i>(2.5 GbE)</i>" ==> RouterMain
+    ISP == "Coax Cable<br><i>(Black RG-11)</i>" ==> Modem
+    Modem == "<b>Port 2: 2.5 GbE</b><br><i>(Black Cat6a)</i>" ==> RouterMain
 
     %% --- Backhaul --- %%
     RouterMain == "Backhaul" ==> MeshNode
 
     %% --- Router to Switch --- %%
-    RouterMain == "<b>10 GbE</b><br><i>(Black Cat6a)</i>" ==> tenGbKeystone
+    RouterMain == "<b>Port 1: 10 GbE</b><br><i>(Black Cat6a)</i>" ==> tenGbKeystone
+    RouterMain == "<b>Port 3: 2.5 GbE</b><br><i>(Black Cat6a)</i>" ==> twoFiveGbKeystone
     tenGbKeystone == "<b>10Gb SFP+ Transceiver</b><br><i>(Red Cat6a)</i>" ==> SwitchAgg
-    RouterMain == "<b>Port 1</b><br><i>(White Cat6)</i>" ==> SwitchTV
+    RouterMain == "<b>Port 4</b><br><i>(White Cat6)</i>" ==> SwitchTV
     MeshNode == "<b>Port 5</b><br><i>(Black Cat6a)</i>" ==> SwitchOffice
 
     %% --- Virtual Machines --- %%
@@ -101,17 +111,17 @@ flowchart-elk TD
     SwitchTV -- "<b>Port 2</b><br><i>(Black Cat6a)</i>" --> GoogleTV
     SwitchTV -- "<b>Port 3</b><br><i>(Black Cat5e)</i>" --> SmartTV
     SwitchTV -- "<b>Port 4</b><br><i>(Black Cat5e)</i>" --> Nintendo
-    BrLaser -. "USB" .- Pi4
 
     %% --- Office --- %%
     SwitchOffice -- "<b>Port 1</b><br><i>(White Cat5e)</i>" --> DesktopBen
     SwitchOffice -- "<b>Port 2</b><br><i>(White Cat5e)</i>" --> DesktopRob
     SwitchOffice -- "<b>Port 3</b><br><i>(White Cat5e)</i>" --> Pi4
+    Pi4 -. "USB" .- BrLaser
 
     %% --- Wi-Fi --- %%
-    RouterMain -. "VLAN52" .- GuestDevices
-    RouterMain -. "VLAN53" .- IoTDevices
+    RouterMain -. "VLAN52" .- Guest
+    RouterMain -. "VLAN53" .- IoT
     MeshNode -. "VLAN50" .- PiZero
-    RouterMain -. "VLAN53<br><code>(wlan0)</code>" .- Pi4
+    MeshNode -. "VLAN53<br><code>[wlan0]</code>" .- Pi4
     MeshNode -. "VLAN50" .- Printer3D
     RouterMain -. "VLAN50" .- Mobile

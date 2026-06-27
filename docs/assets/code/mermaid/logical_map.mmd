@@ -64,7 +64,7 @@ flowchart-elk TD
         end
 
         %% --- Raspberry Pi 4B Server --- %%
-        subgraph Server_Pi4 ["<b>Ras-Pi 4B Server</b> <code>[.2]</code>"]
+        subgraph Server_Pi4 ["<b>Pi 4B Server</b> <code>[.2]</code>"]
             MicroSD_Pi4[("<b>MicroSD Storage</b><br><i>(128 GB)</i>")]:::storage
             OS_Pi4["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
             DNS_Secondary["<b>Secondary DNS</b><br><i>(Technitium Cluster)</i>"]:::service
@@ -75,7 +75,7 @@ flowchart-elk TD
         end
 
         %% --- Raspberry Pi Zero Server --- %%
-        subgraph Server_PiZero ["<b>Ras-Pi Zero Server</b> <code>[.3]</code>"]
+        subgraph Server_PiZero ["<b>Pi Zero 2W Server</b> <code>[.3]</code>"]
             MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(64 GB)</i>")]:::storage
             OS_PiZero["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
             Service_Docker_PiZero["<b>Docker Containers:</b><br>Beszel Agent<br>Dockge"]:::service

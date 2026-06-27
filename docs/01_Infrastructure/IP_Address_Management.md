@@ -30,7 +30,7 @@ hide:
     :    **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
 
 ---
-## :symbols-lan:&ensp;Local Networks
+## :symbols-lan-outline:&ensp;Virtual Local Networks
 
 | VLAN                                                             | SSID                                                           | CIDR              | DNS Servers                   | Domain   |   WAN Access    | Role / Notes                                 |
 | :--------------------------------------------------------------- | :------------------------------------------------------------- | :---------------- | :---------------------------- | :------- | :-------------: | :------------------------------------------- |

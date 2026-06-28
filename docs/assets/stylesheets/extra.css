@@ -296,3 +296,13 @@ img[src$=".gif" i] {
     /* Match background with regular code blocks */
     background: var(--md-code-bg-color--light) !important;
 }
+
+/* -------------------------- *
+ * Customize Glightbox Plugin *
+ * -------------------------- */
+
+/* Blur the translucent black overlay */
+ .goverlay {
+  background: #000;
+  backdrop-filter: blur(.3rem) !important;
+}

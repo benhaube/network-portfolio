@@ -88,7 +88,7 @@ There are two optional packages you can install to extend the functionality of `
 
     ???+ note
     
-        **What to Look For:**
+        :symbols-binoculars:&ensp;**What to Look For:**
         :    The command output will show the codename for your version of Debian *(bullseye, bookworm, or trixie)*. and depending on what needs to be upgraded you may see different packages. The important things to look for are "Allowed origins" matching your release name, and "All upgrades installed." 
 
 ## :symbols-timer-outline:&ensp;Manage the Systemd Timers

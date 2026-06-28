@@ -1,9 +1,20 @@
-/* -------------------------- *
- * Material Theme Colors      *
- * -------------------------- */
+/* --------------------- *
+ * Material Theme Colors *
+ * --------------------- */
 
 /* --- Light theme (default) --- */
+:root,
 [data-md-color-scheme="default"] {
+    /* Change the default foreground and background colors to match Zensical */
+    --md-hue:225deg;
+    --md-default-fg-color:#000000de;
+    --md-default-fg-color--light:#0000008c;
+    --md-default-fg-color--lighter:#00000052;
+    --md-default-fg-color--lightest:#0000000d;
+    --md-default-bg-color:#fff;
+    --md-default-bg-color--light:#ffffffb3;
+    --md-default-bg-color--lighter:#ffffff4d;
+    --md-default-bg-color--lightest:#ffffff1f;
     /* Change the code block background color */
     --md-code-bg-color: #E5F4FD;
     /* Change the box-shadow properties to match Zensical */
@@ -14,6 +25,15 @@
 
 /* --- Dark theme (slate) --- */
 [data-md-color-scheme="slate"] {
+    /* Change the default foreground and background colors to match Zensical */
+    --md-default-fg-color:hsla(var(--md-hue),15%,90%,0.82);
+    --md-default-fg-color--light:hsla(var(--md-hue),15%,90%,0.56);
+    --md-default-fg-color--lighter:hsla(var(--md-hue),15%,90%,0.32);
+    --md-default-fg-color--lightest:hsla(var(--md-hue),15%,90%,0.12);
+    --md-default-bg-color:hsla(var(--md-hue),15%,5%,1);
+    --md-default-bg-color--light:hsla(var(--md-hue),15%,5%,0.54);
+    --md-default-bg-color--lighter:hsla(var(--md-hue),15%,5%,0.26);
+    --md-default-bg-color--lightest:hsla(var(--md-hue),15%,5%,0.07);
     /* Change the code block background color */
     --md-code-bg-color: #0A1A25; 
     /* Change the box-shadow properties to match Zensical */
@@ -22,12 +42,13 @@
     --md-shadow-z3: 0 0.5rem 2rem #0006,0 0 0.05rem #00000059;
 }
 
-/* -------------------------- *
- * Mermaid.js Diagrams        *
- * -------------------------- */
+/* ------------------- *
+ * Mermaid.js Diagrams *
+ * ------------------- */
 
 /* --- Default (Light Mode) Variables --- */
-:root {
+:root,
+[data-md-color-scheme="default"] {
     /* Text & Lines */
     --node-text: var(--md-code-fg-color);
     --edge-line: var(--md-code-fg-color);

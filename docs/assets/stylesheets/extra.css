@@ -137,16 +137,22 @@ html .md-footer-meta.md-typeset a:hover {
 
 /* Change the background and text colors of the title card */
 .md-nav--primary .md-nav__title[for="__drawer"] {
-	background-color: var(--md-default-fg-color--lightest);
+	background-color: var(--md-accent-fg-color--transparent);
 	color: var(--md-default-fg-color--light);
 }
 /* Change the background and text colors of the code repository card */
 @media screen and (max-width: 59.9844em) {
   .md-nav__source {
-    background-color: var(--md-default-fg-color--lightest);
+    background-color: var(--md-accent-fg-color--transparent);
     color: var(--md-default-fg-color--light);
     display: block;
     padding: 0 .2rem;
+  }
+}
+@media screen and (max-width: 76.2344em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--md-accent-fg-color--transparent);
+    color: var(--md-default-fg-color--light);
   }
 }
 /* Set inactive page icon opacity to 50% */

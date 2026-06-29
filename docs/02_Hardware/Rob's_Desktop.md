@@ -2,8 +2,7 @@
 icon: material/desktop-tower
 title: Rob's Workstation
 subtitle: High-Performance Desktop PC
-tags: 
-  - Hardware 
+tags:  
   - PC 
   - Desktop 
   - Office

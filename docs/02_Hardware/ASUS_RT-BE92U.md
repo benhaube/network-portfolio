@@ -3,7 +3,6 @@ icon: symbols/router
 title: ASUS RT-BE92U
 subtitle: Wireless Router
 tags:
-  - Hardware
   - Network
   - Router
   - Infrastructure

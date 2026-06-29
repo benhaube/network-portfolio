@@ -3,7 +3,6 @@ icon: symbols/laptop
 title: Ben's Laptop
 subtitle: ThinkPad X1 Carbon
 tags:
-  - Hardware
   - PC
   - Laptop
   - Mobile

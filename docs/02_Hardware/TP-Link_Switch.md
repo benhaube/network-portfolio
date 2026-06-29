@@ -3,7 +3,6 @@ icon: material/switch
 title: TP-Link Switch
 subtitle: Model SG105
 tags:
-  - Hardware
   - Switch
   - Infrastructure
   - Network

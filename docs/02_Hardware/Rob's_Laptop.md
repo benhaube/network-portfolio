@@ -3,7 +3,6 @@ icon: symbols/laptop
 title: Rob's Laptop
 subtitle: ASUS TUF Gaming Laptop
 tags: 
-  - Hardware 
   - PC 
   - Laptop 
   - Mobile

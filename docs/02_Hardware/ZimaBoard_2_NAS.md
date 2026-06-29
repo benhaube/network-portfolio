@@ -3,7 +3,6 @@ icon: material/nas
 title: ZimaOS NAS
 subtitle: Rack-Mount ZimaBoard 2
 tags:
-  - Hardware
   - NAS
   - File Share
   - Virtual Host

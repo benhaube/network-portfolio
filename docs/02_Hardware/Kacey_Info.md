@@ -3,7 +3,6 @@ icon: brands/creality
 title: More Kacey Info
 subtitle: Detailed Configuration Info
 tags:
-  - Hardware
   - Network
   - Server
   - 3D-Printer

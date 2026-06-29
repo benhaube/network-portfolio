@@ -3,7 +3,6 @@ icon: material/switch
 title: TP-Link LiteWave Switch
 subtitle: Model LS1005G
 tags:
-  - Hardware
   - Switch
   - Infrastructure
   - Network

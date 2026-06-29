@@ -3,7 +3,6 @@ icon: material/switch
 title: Ugreen Switch
 subtitle: Model UM106X
 tags:
-  - Hardware
   - Switch
   - Infrastructure
   - Network

@@ -3,7 +3,6 @@ icon: material/printer-3d-nozzle
 title: Kacey 3D-Printer
 subtitle: Modified Creality K1C
 tags:
-  - Hardware
   - Network
   - Server
   - 3D-Printer

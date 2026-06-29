@@ -3,7 +3,6 @@ icon: symbols/mobile
 title: Ben's Smartphone
 subtitle: Google Pixel 9 Pro
 tags:
-  - Hardware
   - Mobile
   - Android
   - Remote Access

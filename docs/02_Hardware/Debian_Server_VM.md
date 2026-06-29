@@ -3,7 +3,6 @@ icon: symbols/server
 title: Debian Server
 subtitle: Primary DNS Server
 tags:
-  - Hardware
   - Virtual Machine
   - Server
   - DNS

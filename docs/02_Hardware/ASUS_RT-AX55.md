@@ -3,7 +3,6 @@ icon: symbols/router
 title: ASUS RT-AX55
 subtitle: AiMesh Node
 tags:
-  - Hardware
   - Network
   - Router
   - Infrastructure

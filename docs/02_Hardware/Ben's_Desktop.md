@@ -3,7 +3,6 @@ icon: material/desktop-tower
 title: Ben's Workstation
 subtitle: High-Performance Desktop PC
 tags:
-  - Hardware
   - PC
   - Desktop
   - Virtual Host

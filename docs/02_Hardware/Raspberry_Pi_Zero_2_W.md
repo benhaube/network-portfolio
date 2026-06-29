@@ -3,7 +3,6 @@ icon: material/raspberry-pi
 title: Raspberry Pi Zero Server
 subtitle: Reverse-Proxy Server
 tags:
-  - Hardware
   - Server
   - DNS
   - Infrastructure

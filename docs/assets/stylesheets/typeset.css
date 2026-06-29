@@ -2,14 +2,27 @@
  * General Typeset Changes    *
  * -------------------------- */
 
+.md-typeset {
+    font-size: .75rem;
+    letter-spacing: -.01em;
+    line-height: 1.8;
+    overflow-wrap: break-word
+}
 /* Change the background-color for highlited text */
 .md-typeset mark {
     background-color: var(--md-code-hl-color--light);
 }
-
-/* Reduce the margin for horizontal rules to 0 */
-.md-typeset hr {
-    margin: 0;
+/* Reproduce keyboard plugin style from Zensical */
+.md-typeset kbd {
+    background: transparent;
+    border-radius: .2rem;
+    box-shadow: 0 0 0 .05rem var(--md-typeset-kbd-border-color),0 .15rem 0 var(--md-typeset-kbd-border-color);
+    color: var(--md-default-fg-color);
+    display: inline-block;
+    font-size: .75em;
+    padding: 0 .6666666667em;
+    vertical-align: text-top;
+    word-break: break-word
 }
 
 /* -------------------------- *
@@ -22,13 +35,18 @@
   margin-bottom: 0.2rem;
   font-weight: 500;
 }
-
 /* Set the font weight for H2 headings to 500 */
 .md-typeset h2 {
     font-weight: 500;
 }
-
 /* Set the font weight for H3 headings to 500 */
 .md-typeset h3 {
     font-weight: 500;
+}
+/* Give headings more contrast in dark theme */
+[data-md-color-scheme=slate] .md-header__title,
+[data-md-color-scheme=slate] h2,
+[data-md-color-scheme=slate] h3,
+[data-md-color-scheme=slate] h4 {
+    color: hsla(var(--md-hue),0%,100%,1)
 }

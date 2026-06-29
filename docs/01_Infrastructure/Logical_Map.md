@@ -8,7 +8,6 @@ tags:
   - Service
   - Server
   - Router
-  - Infrastructure
   - VLAN
 hide:
   - toc

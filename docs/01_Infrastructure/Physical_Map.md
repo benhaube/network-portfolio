@@ -3,8 +3,6 @@ icon: symbols/graph-2
 title: Physical Network Map
 subtitle: Focusing on Physical Connections
 tags:
-  - Infrastructure
-  - Hardware
   - Network
   - Map
   - Router

@@ -3,7 +3,6 @@ icon: symbols/restore
 title: Disaster Recovery Plan
 subtitle: Maintaining High Availability
 tags:
-  - Infrastructure
   - Policy
   - Security
   - Backup

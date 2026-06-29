@@ -3,9 +3,7 @@ icon: material/ethernet
 title: MAC Address Tables
 subtitle: Hardware MAC Addresses
 tags:
-  - Infrastructure
   - Network
-  - Hardware
   - VLAN
   - IoT
   - Router

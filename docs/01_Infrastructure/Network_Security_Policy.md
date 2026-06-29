@@ -3,7 +3,6 @@ icon: symbols/policy-fill
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 tags:
-  - Infrastructure
   - Policy
   - Security
   - IoT

@@ -2,12 +2,6 @@
  * General Typeset Changes    *
  * -------------------------- */
 
-.md-typeset {
-    font-size: .75rem;
-    letter-spacing: -.01em;
-    line-height: 1.8;
-    overflow-wrap: break-word
-}
 /* Change the background-color for highlited text */
 .md-typeset mark {
     background-color: var(--md-code-hl-color--light);

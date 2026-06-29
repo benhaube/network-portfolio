@@ -1,6 +1,6 @@
-/* ------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Import external CSS files *
- * ------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @import url(admonition.css);
 @import url(button.css);
@@ -10,11 +10,11 @@
 @import url(search.css);
 @import url(typeset.css);
 
-/* --------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~ *
  * General Customization *
- * --------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~ */
 
-/* --- Built-in Site Icons --- */
+/* ~~~ Built-in Site Icons ~~~ */
 :root {
   --md-toc-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-280q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360h480q17 0 28.5 11.5T680-320q0 17-11.5 28.5T640-280H160Zm0-160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h480q17 0 28.5 11.5T680-480q0 17-11.5 28.5T640-440H160Zm0-160q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680h480q17 0 28.5 11.5T680-640q0 17-11.5 28.5T640-600H160Zm640 320q-17 0-28.5-11.5T760-320q0-17 11.5-28.5T800-360q17 0 28.5 11.5T840-320q0 17-11.5 28.5T800-280Zm0-160q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440Zm0-160q-17 0-28.5-11.5T760-640q0-17 11.5-28.5T800-680q17 0 28.5 11.5T840-640q0 17-11.5 28.5T800-600Z"/></svg>');
   --md-tasklist-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>');
@@ -38,14 +38,14 @@
   --md-path-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>');
 }
 
-/* --- Max Page Width --- */
+/* ~~~ Max Page Width ~~~ */
 .md-grid {
   max-width: 1355px;
 }
 
-/* --------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Page Header *
- * --------------------- */   
+ * ~~~~~~~~~~~~~~~~~~~~~ */   
 
 /* Replicate Zensical header with translucency and blur */
 .md-header {
@@ -76,17 +76,59 @@
     width: 100%;
     z-index: 3;
 }
-/* Add a bottom border to the active navigation tab */
+
+/* ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ *
+ * Begin: New tab indicator (animated)    *
+ * ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ *
+ * Needs 'tab-indicator.js' to function!  *
+ * ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ */
+
+/* Make the container relative so our absolute indicator tracks properly */
+.md-tabs__list {
+    position: relative; 
+}
+/* The Active Tab (Removed border, kept text color) */
 .md-tabs__item--active {
-  border-bottom:.05rem solid var(--md-default-fg-color);
-  font-weight:500;
-  position:relative;
-  transition:border-bottom .25s
+    color: #FFF;
+    font-weight: 500;
+}
+/* The New Sliding Indicator */
+.md-tabs__sliding-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* Matches the old tab indicator thickness */
+    height: 0.05rem; 
+    background-color: #FFF;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 4;
+    /* Prevents it from interfering with clicks */
+    pointer-events: none;
+}
+
+/* ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ *
+ * End: New tab indicator (animated)  *
+ * ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ */
+
+/* --><--><--><--><--><--><--><--><--><--><-- *
+ * Begin: Old tab indicator (not animated)    *
+ * --><--><--><--><--><--><--><--><--><--><-- *
+ * Uncomment, delete animated CSS, and remove *
+ * the 'tab-indicator.js' file to restore.    *
+ * --><--><--><--><--><--><--><--><--><--><-- */
+
+/* Add a bottom border to the active navigation tab *
+.md-tabs__item--active {
+  border-bottom: .05rem solid #FFF;
+  color: #FFF;
+  font-weight: 500;
+  position: relative;
+  transition: border-bottom .25s, ease-in;
 }
 .md-tabs[hidden] .md-tabs__item--active {
   border-bottom:.05rem solid #0000
 }
-/* Adjust site title text spacing */
+/* Adjust site title text spacing *
 .md-header__title {
   flex-grow: 1;
   font-size: .9rem;
@@ -102,9 +144,13 @@
   margin-right: .4rem
 }
 
-/* --------------------- *
+/* --><--><--><--><--><-- *
+ * End: Old tab indicator *
+ * --><--><--><--><--><-- */
+
+/* ~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Page Footer *
- * --------------------- */   
+ * ~~~~~~~~~~~~~~~~~~~~~ */   
 
 /* Footer background / border */
 .md-footer {
@@ -131,9 +177,9 @@ html .md-footer-meta.md-typeset a:hover {
   color:var(--md-accent-fg-color)
 }
 
-/* -------------------- * 
+/* ~~~~~~~~~~~~~~~~~~~~ * 
  * Customize Navigation *
- * -------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~ */
 
 /* Change the background and text colors of the title card */
 .md-nav--primary .md-nav__title[for="__drawer"] {
@@ -164,8 +210,14 @@ html .md-footer-meta.md-typeset a:hover {
   opacity: 1;
 }
 
-/* Disabled -- Work in progress: Styling the navigation pane to replicate Zensical */
-/*.md-nav__link {
+/* --><--><--><--><--><--><--><-- *
+ * Disabled -- work in progress!  *
+ * --><--><--><--><--><--><--><-- *
+ * Styling the navigation pane    *
+ * to replicate Zensical.         *
+ * --><--><--><--><--><--><--><-- */
+/*
+.md-nav__link {
   align-items:flex-start;
   border-radius:.4rem;
   cursor:pointer;
@@ -199,11 +251,12 @@ html .md-footer-meta.md-typeset a:hover {
   margin-top:.5em;
   opacity:1;
   visibility:visible
-}*/
+}
+*/
 
-/* ---------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~ *
  * Adjust Tooltip Styling *
- * ---------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Give code annotation boxes rounded corners, translucent background with blur, and make the width fit the content */
 .md-tooltip {
@@ -223,9 +276,9 @@ html .md-footer-meta.md-typeset a:hover {
   border-radius: 0.4rem;
 }
 
-/* -------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~ *
  * Adjust Image Styling *
- * -------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~ */
 
 /* Give PNG, JPG, JPEG, and GIF images rounded corners (exclude SVG icons) */
 img[src$=".png" i],
@@ -242,18 +295,18 @@ img[src$=".gif" i] {
   border-radius: 0.4rem;
 }
 
-/* -------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~ *
  * Adjust Table Styling *
- * -------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~ */
 
 /* Give data tables rounded corners */
 .md-typeset table:not([class]) {
 	border-radius: 0.4rem;
 }
 
-/* ------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Adjust Grid Cards Styling *
- * ------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Give "grid cards" rounded corners */
 .md-typeset .grid.cards>ol>li,
@@ -262,9 +315,9 @@ img[src$=".gif" i] {
   border-radius: 0.4rem;
 }
 
-/* ------------------- *
+/* ~~~~~~~~~~~~~~~~~~~ *
  * Cookie Consent Form *
- * ------------------- */
+ * ~~~~~~~~~~~~~~~~~~~ */
 
 /* Replicte the Zensical cookie consent form */
 .md-consent__inner {
@@ -290,9 +343,9 @@ img[src$=".gif" i] {
   padding-right: 1.2rem
 }
 
-/* ----------------- *
+/* ~~~~~~~~~~~~~~~~~ *
  * Responsive Design *
- * ----------------- */
+ * ~~~~~~~~~~~~~~~~~ */
 
 /* Make buttons with the '.md-button' class use the full screen width on mobile screens (below 719px wide) */
 @media screen and (max-width: 719px) {
@@ -320,9 +373,9 @@ img[src$=".gif" i] {
   display: none !important;
 }
 
-/* ------------------------ *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Panzoom Plugin *
- * ------------------------ */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Give the Panzoom box rounded corners */
 .panzoom-box {
@@ -342,9 +395,9 @@ img[src$=".gif" i] {
     background: var(--md-code-bg-color--light) !important;
 }
 
-/* -------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Glightbox Plugin *
- * -------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Blur the translucent black overlay */
  .goverlay {

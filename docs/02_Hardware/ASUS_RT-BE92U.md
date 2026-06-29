@@ -38,7 +38,7 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:material-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
++ [:symbols-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
 #### :symbols-key:&ensp;Credentials
 

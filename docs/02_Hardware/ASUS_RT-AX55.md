@@ -37,7 +37,7 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:symbols-router:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
++ [:symbols-wizard-hat:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
 
 #### :symbols-key:&ensp;Credentials
 

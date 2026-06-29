@@ -5,7 +5,6 @@ subtitle: Rack-Mount ZimaBoard 2
 tags:
   - Hardware
   - NAS
-  - Server
   - File Share
   - Virtual Host
   - Docker Host

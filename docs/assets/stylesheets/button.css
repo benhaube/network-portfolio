@@ -78,9 +78,10 @@
 }
 /* Hover: Set the background and icon color, add a 250ms transition */
 .md-content__button:hover {
+  box-shadow: var(--md-shadow-z2);
   background: var(--md-accent-fg-color--transparent);
   color: var(--md-accent-fg-color) !important;
-  transition: color 250ms, background-color 250ms, ease-in-out !important;
+  transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out !important;
 }
 
 /* ---------------------------------------- *
@@ -125,12 +126,18 @@
  * other buttons on the site.               * 
  * ---------------------------------------- */
 
-/* Add box shadow and transition on hover */
-.md-tags .md-tag:hover {
-    box-shadow: var(--md-shadow-z2);
-    transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out;
-}
 /* Change from pill-shaped to rounded rectangle to match Zensical aesthetic */
 .md-typeset .md-tag {
   border-radius: .4rem;
+}
+/* Change background, text, and icon colors on hover */
+.md-typeset .md-tag-icon[href]:focus::before, .md-typeset .md-tag-icon[href]:hover::before {
+  background-color: var(--md-accent-fg-color);
+  transition: background-color 250ms ease-in-out;
+}
+.md-typeset .md-tag[href]:focus, .md-typeset .md-tag[href]:hover {
+  box-shadow: var(--md-shadow-z2);
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color);
+  transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out;
 }

@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 ![Material Server icon](../assets/icons/server.svg){ width=200 }
-&nbsp;![Debian Logo](../assets/icons/debian.svg){ width=50 }
+&ensp;![Debian Logo](../assets/icons/debian.svg){ width=50 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Debian Server

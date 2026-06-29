@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design sitemap icon](../assets/icons/sitemap-alt.svg){ width=100 }
+![Material Design sitemap icon](../assets/icons/sitemap-alt.svg){ width=150 }
 
 # Physical Network Map
 *Focusing on Physical Connections*

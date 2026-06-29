@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design sitemap icon](../assets/icons/sitemap-alt.svg){ width=100 }
+![Material Design sitemap icon](../assets/icons/sitemap-alt.svg){ width=150 }
 
 # Logical Network Map
 *Focusing on Servers and Services*

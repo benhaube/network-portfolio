@@ -17,7 +17,7 @@ hide:
 # ASUS RT-AX55
 *AiMesh Node*
 
-[Router Settings&ensp;:symbols-settings:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Manual&ensp;:symbols-notebook-text:](../assets/manuals/RT-AX55_Manual.pdf){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=c59d7d6d-28e2-476f-affc-cb81b9846164&sn=MBIG31800578KSJ&from=Myproducts){ .md-button .md-button--primary }
+[Asuswrt-Merlin Docs&ensp;:symbols-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[Router Settings&ensp;:symbols-settings:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Manual&ensp;:symbols-notebook-text:](../assets/manuals/RT-AX55_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview

@@ -14,12 +14,12 @@ tags:
 hide:
   - toc
 ---
-![Material Design 'router-wireless' icon](../assets/icons/router-wireless.svg){ width=200 }
+![Material Design 'router-wireless' icon](../assets/icons/router-wireless-merlin.svg){ width=200 }
 
 # ASUS RT-BE92U
 *Wireless Router*
 
-[Router Settings&ensp;:symbols-settings:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Manual&ensp;:symbols-notebook-text:](../assets/manuals/RT-BE92U_Manual.pdf){ .md-button .md-button--primary }&emsp;[ASUS Support&ensp;:material-lifebuoy:](https://account.asus.com/us/myproductedit.aspx?rowguid=d50535eb-570b-44c6-87c6-e77cd9e5eb09&sn=T5IG7L216442EU5&from=Myproducts){ .md-button .md-button--primary }
+[Asuswrt-Merlin Docs&ensp;:symbols-wizard-hat:](https://github.com/RMerl/asuswrt-merlin.ng/wiki){ .md-button .md-button--primary }&emsp;[Router Settings&ensp;:symbols-settings:](https://asusrouter.internal:8443/Main_Login.asp){ .md-button .md-button--primary }&emsp;[Manual&ensp;:symbols-notebook-text:](../assets/manuals/RT-BE92U_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview

@@ -18,7 +18,7 @@ hide:
 # Ben's Workstation
 *High-Performance Desktop PC*
 
-[Fedora Discussion&ensp;:symbols-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
+[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550-PLUS_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview

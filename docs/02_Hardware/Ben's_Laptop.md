@@ -19,7 +19,7 @@ hide:
 # Ben's Laptop
 *ThinkPad X1 Carbon*
 
-[Fedora Discussion&ensp;:symbols-forum:](https://discussion.fedoraproject.org){ .md-button .md-button--primary }&emsp;[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[Lenovo Support&ensp;:material-lifebuoy:](https://account.lenovo.com/us/en/signin?returnurl=https%3A%2F%2Fsupport.lenovo.com%2Fus%2Fen%2F&source=b2cuser&linkTrack=account:support:home){ .md-button .md-button--primary }
+[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Guide&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_user_guide.pdf){ .md-button .md-button--primary }&emsp;[Maintenance Manual&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_maintenance_manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview

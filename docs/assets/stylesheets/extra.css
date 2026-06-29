@@ -62,6 +62,21 @@
 .md-tabs[hidden] .md-tabs__item--active {
   border-bottom:.05rem solid #0000
 }
+/* Adjust site title text spacing */
+.md-header__title {
+  flex-grow: 1;
+  font-size: .9rem;
+  height: 2.4rem;
+  letter-spacing: -.025em;
+}
+[dir=ltr] .md-header__title {
+  margin-left: .4rem;
+  margin-right: .4rem
+}
+[dir=rtl] .md-header__title {
+  margin-left: .4rem;
+  margin-right: .4rem
+}
 
 /* --------------------- *
  * Customize Page Footer *

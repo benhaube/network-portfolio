@@ -19,7 +19,7 @@ hide:
 
 ???+ note
 
-    **Relevant Versions:**
+    :symbols-graph-8:&ensp;**Relevant Versions:**
     :    This tutorial applies to **Debian 13** *(Trixie)*, **Debian 12** *(Bookworm)*, and **Debian 11** *(Bullseye)*. The command output examples are based on **Debian 13** *(Trixie)*, and your output may vary based on your version. However, the commands should work identically on all supported versions of Debian. 
 
 ---
@@ -28,7 +28,7 @@ hide:
 
 !!! note inline end
 
-    **Minimal & Server Installs:**
+    :symbols-deployed-code-update:&ensp;**Minimal & Server Installs:**
     :    A full Debian install will probably have this package installed by default, however, server and minimal installs may not, and will require installing the package with the command above.
 
 1. Update the package index: 

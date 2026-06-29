@@ -1,5 +1,5 @@
 ---
-icon: symbols/sitemap
+icon: symbols/graph-2
 title: Physical Network Map
 subtitle: Focusing on Physical Connections
 tags:
@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=100 }
+![Material Design sitemap icon](../assets/icons/sitemap-alt.svg){ width=100 }
 
 # Physical Network Map
 *Focusing on Physical Connections*

@@ -1,5 +1,5 @@
 ---
-icon: symbols/sitemap
+icon: symbols/graph-2
 title: Logical Network Map
 subtitle: Focusing on Servers and Services
 tags:
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=100 }
+![Material Design sitemap icon](../assets/icons/sitemap-alt.svg){ width=100 }
 
 # Logical Network Map
 *Focusing on Servers and Services*

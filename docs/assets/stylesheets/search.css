@@ -1,37 +1,33 @@
-/* -------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Heading Search Box         *
- * -------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Set the background color and border radius */
 .md-search__form {
   background-color: var(--md-default-fg-color--lightest);
   border-radius: 0.4rem;
 }
-
 /* Set the hover background color */
 .md-search__form:hover {
   background-color: var(--md-default-fg-color--lighter);
 }
-
 /* Set the color of the placeholder 'Search' text */
 .md-search__input::placeholder {
   color: var(--md-default-fg-color--light);
 }
-
 /* Set the color of the search icon */
 .md-search__input + .md-search__icon {
   color: var(--md-default-fg-color--light);
 }
 
-/* -------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Search Output Dialog Box   *
- * -------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Set the color of the Share & Close icons in the search output dialog */
 [data-md-toggle=search]:checked~.md-header .md-search__input:valid~.md-search__options>.md-icon:hover {
   color: var(--md-accent-fg-color)
 }
-
 /* Give the search output dialog rounded corners */
 [data-md-toggle=search]:checked~.md-header .md-search__form {
   border-radius: 0.4rem 0.4rem 0 0;

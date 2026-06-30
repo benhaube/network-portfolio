@@ -1,6 +1,6 @@
-/* -------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * General Typeset Changes    *
- * -------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Change the background-color for highlited text */
 .md-typeset mark {
@@ -19,9 +19,9 @@
     word-break: break-word
 }
 
-/* -------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Headings         *
- * -------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Modify H1 headings to use the primary color, reduce the margin below, and reduce the font weight to 500 */
 .md-typeset h1 {

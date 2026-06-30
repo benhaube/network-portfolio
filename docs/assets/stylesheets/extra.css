@@ -14,7 +14,8 @@
  * General Customization *
  * ~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~ Built-in Site Icons ~~~ */
+/* ~~~ Built-in Site Icons (can't be changed in mkdocs.yml) ~~~ */
+
 :root {
   --md-toc-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-280q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360h480q17 0 28.5 11.5T680-320q0 17-11.5 28.5T640-280H160Zm0-160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h480q17 0 28.5 11.5T680-480q0 17-11.5 28.5T640-440H160Zm0-160q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680h480q17 0 28.5 11.5T680-640q0 17-11.5 28.5T640-600H160Zm640 320q-17 0-28.5-11.5T760-320q0-17 11.5-28.5T800-360q17 0 28.5 11.5T840-320q0 17-11.5 28.5T800-280Zm0-160q-17 0-28.5-11.5T760-480q0-17 11.5-28.5T800-520q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440Zm0-160q-17 0-28.5-11.5T760-640q0-17 11.5-28.5T800-680q17 0 28.5 11.5T840-640q0 17-11.5 28.5T800-600Z"/></svg>');
   --md-tasklist-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>');
@@ -39,6 +40,7 @@
 }
 
 /* ~~~ Max Page Width ~~~ */
+
 .md-grid {
   max-width: 1355px;
 }
@@ -76,51 +78,10 @@
     width: 100%;
     z-index: 3;
 }
-
-/* ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ *
- * Begin: New tab indicator (animated)    *
- * ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ *
- * Needs 'tab-indicator.js' to function!  *
- * ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ */
-
-/* Make the container relative so our absolute indicator tracks properly */
-.md-tabs__list {
-    position: relative; 
-}
-/* The Active Tab (Removed border, kept text color) */
+/* Add a bottom border to the active navigation tab */
 .md-tabs__item--active {
-    color: #FFF;
-    font-weight: 500;
-}
-/* The New Sliding Indicator */
-.md-tabs__sliding-indicator {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /* Matches the old tab indicator thickness */
-    height: 0.05rem; 
-    background-color: #FFF;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 4;
-    /* Prevents it from interfering with clicks */
-    pointer-events: none;
-}
-
-/* ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ *
- * End: New tab indicator (animated)  *
- * ~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~<>~~ */
-
-/* --><--><--><--><--><--><--><--><--><--><-- *
- * Begin: Old tab indicator (not animated)    *
- * --><--><--><--><--><--><--><--><--><--><-- *
- * Uncomment, delete animated CSS, and remove *
- * the 'tab-indicator.js' file to restore.    *
- * --><--><--><--><--><--><--><--><--><--><-- */
-
-/* Add a bottom border to the active navigation tab *
-.md-tabs__item--active {
-  border-bottom: .05rem solid #FFF;
-  color: #FFF;
+  border-bottom: .05rem solid var(--md-default-fg-color);
+  color: var(--md-default-fg-color);
   font-weight: 500;
   position: relative;
   transition: border-bottom .25s, ease-in;
@@ -128,7 +89,7 @@
 .md-tabs[hidden] .md-tabs__item--active {
   border-bottom:.05rem solid #0000
 }
-/* Adjust site title text spacing *
+/* Adjust site title text spacing */
 .md-header__title {
   flex-grow: 1;
   font-size: .9rem;
@@ -144,15 +105,12 @@
   margin-right: .4rem
 }
 
-/* --><--><--><--><--><-- *
- * End: Old tab indicator *
- * --><--><--><--><--><-- */
-
 /* ~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Page Footer *
  * ~~~~~~~~~~~~~~~~~~~~~ */   
 
-/* Footer background / border */
+/* ~~~ Footer background / border ~~~ */
+
 .md-footer {
   background-color: var(--md-default-bg-color);
   border-top: .05rem solid var(--md-default-fg-color--lightest);
@@ -161,14 +119,18 @@
 .md-footer-meta {
   background-color: var(--md-default-fg-color--lightest)
 }
-/* Footer copyright text color */
+
+/* ~~~ Footer copyright text color ~~~ */
+
 .md-copyright {
   color: var(--md-default-fg-color--light);
 }
 .md-copyright__highlight {
   color: var(--md-default-fg-color);
 }
-/* Footer link text color */ 
+
+/* ~~~ Footer link text color ~~~ */ 
+
 html .md-footer-meta.md-typeset a {
   color: var(--md-default-fg-color);
 }
@@ -181,12 +143,21 @@ html .md-footer-meta.md-typeset a:hover {
  * Customize Navigation *
  * ~~~~~~~~~~~~~~~~~~~~ */
 
-/* Change the background and text colors of the title card */
+/* ~~~ Title Card Background ~~~ */
+
 .md-nav--primary .md-nav__title[for="__drawer"] {
 	background-color: var(--md-accent-fg-color--transparent);
 	color: var(--md-default-fg-color--light);
 }
-/* Change the background and text colors of the code repository card */
+@media screen and (max-width: 76.2344em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--md-accent-fg-color--transparent);
+    color: var(--md-default-fg-color--light);
+  }
+}
+
+/* ~~~ Repo Card Background ~~~ */
+
 @media screen and (max-width: 59.9844em) {
   .md-nav__source {
     background-color: var(--md-accent-fg-color--transparent);
@@ -195,17 +166,15 @@ html .md-footer-meta.md-typeset a:hover {
     padding: 0 .2rem;
   }
 }
-@media screen and (max-width: 76.2344em) {
-  .md-nav--primary .md-nav__title {
-    background-color: var(--md-accent-fg-color--transparent);
-    color: var(--md-default-fg-color--light);
-  }
-}
-/* Set inactive page icon opacity to 50% */
+
+/* ~~~ Inactive Page Icon Opacity ~~~ */
+
 .md-nav__link svg {
   opacity: .5;
 }
-/* Set active page icon opacity to 100% */
+
+/* ~~~ Active Page Icon Opacity ~~~ */
+
 .md-nav__item .md-nav__link--active svg {
   opacity: 1;
 }
@@ -216,6 +185,7 @@ html .md-footer-meta.md-typeset a:hover {
  * Styling the navigation pane    *
  * to replicate Zensical.         *
  * --><--><--><--><--><--><--><-- */
+
 /*
 .md-nav__link {
   align-items:flex-start;
@@ -258,7 +228,8 @@ html .md-footer-meta.md-typeset a:hover {
  * Adjust Tooltip Styling *
  * ~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Give code annotation boxes rounded corners, translucent background with blur, and make the width fit the content */
+/* ~~~ Code Annotation Boxes ~~~ */
+
 .md-tooltip {
   -webkit-backdrop-filter: blur(.4rem) !important;
 	backdrop-filter: blur(.4rem) !important;
@@ -267,7 +238,9 @@ html .md-footer-meta.md-typeset a:hover {
   max-width: 20rem;
   width: auto;
 }
-/* Covers other tooltips like page status, abbreviations, etc. */
+
+/* ~~~ Other Tooltips ~~~ */
+
 .md-tooltip--inline .md-tooltip__inner {
 	background-color: var(--md-default-bg-color);
   border-radius: 0.4rem;
@@ -280,7 +253,8 @@ html .md-footer-meta.md-typeset a:hover {
  * Adjust Image Styling *
  * ~~~~~~~~~~~~~~~~~~~~ */
 
-/* Give PNG, JPG, JPEG, and GIF images rounded corners (exclude SVG icons) */
+/* ~~~ Border Radius ~~~ */
+
 img[src$=".png" i],
 img[src$=".png#only-light" i],
 img[src$=".png#only-dark" i],
@@ -299,7 +273,8 @@ img[src$=".gif" i] {
  * Adjust Table Styling *
  * ~~~~~~~~~~~~~~~~~~~~ */
 
-/* Give data tables rounded corners */
+/* ~~~ Border Radius ~~~ */
+
 .md-typeset table:not([class]) {
 	border-radius: 0.4rem;
 }
@@ -308,7 +283,8 @@ img[src$=".gif" i] {
  * Adjust Grid Cards Styling *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Give "grid cards" rounded corners */
+/* ~~~ Border Radius ~~~ */
+
 .md-typeset .grid.cards>ol>li,
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
@@ -377,16 +353,21 @@ img[src$=".gif" i] {
  * Customize Panzoom Plugin *
  * ~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Give the Panzoom box rounded corners */
+/* ~~~ Border Radius ~~~ */
+
 .panzoom-box {
     border-radius: 0.4rem !important;
 }
-/* Make the background color behind the help message match the Panzoom box */
+
+/* ~~~ Help Message Background Color ~~~ */
+
 .panzoom-info-box-bottom {
     background: var(--md-code-bg-color) !important;
     z-index: auto !important;
 }
-/* Adjust padding and border radius of the Panzoom navigation buttons to match regular code blocks */
+
+/* ~~~ Button Box ~~~ */
+
 .panzoom-nav {
     border-radius: 0.3rem !important;
     gap: 0.2rem !important;
@@ -399,8 +380,9 @@ img[src$=".gif" i] {
  * Customize Glightbox Plugin *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Blur the translucent black overlay */
- .goverlay {
+/* ~~~ Overlay Blur ~~~ */
+
+.goverlay {
   background: #000;
   backdrop-filter: blur(.3rem) !important;
 }

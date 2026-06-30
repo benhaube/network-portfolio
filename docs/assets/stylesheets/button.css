@@ -1,6 +1,6 @@
-/* ---------------------------------------- *
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Customize buttons                        *
- * ---------------------------------------- *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * This code changes the button shape from  * 
  * rectangles to ovals, reduces the font    * 
  * weight to 600, reduces the padding, and  * 
@@ -10,11 +10,9 @@
  * a rounded square container, and the      * 
  * hover animation is set to 250ms to match * 
  * the other button behavior.               *
- * ---------------------------------------- */
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ----------------- * 
- * Regular Buttons:  *
- * ----------------- */
+/* ~~~ Regular Buttons ~~~ */
  
 /* Remove border, make pill-shaped, change text color, change background color, adjust font size and weight, adjust padding, add transition */
 .md-typeset .md-button {
@@ -28,9 +26,7 @@
   transition: color 250ms, background-color 250ms, border-color 250ms ease-in-out !important;
 }
 
-/* ----------------- * 
- * Primary Buttons:  *
- * ----------------- */
+/* ~~~ Primary Buttons ~~~ */
 
 /* Set background color, set text color, remove border */
 .md-typeset .md-button--primary {
@@ -39,9 +35,7 @@
   color: var(--md-primary-bg-color)
 }
 
-/* ----------------- * 
- * Button Hover:     *
- * ----------------- */
+/* ~~~ Button Hover ~~~ */
 
 /* Set background color, remove border, set text color */
 .md-typeset .md-button:focus,
@@ -51,9 +45,7 @@
   color: var(--md-accent-bg-color)
 }
 
-/* ---------------------------- *
- * Page 'view' & 'edit' buttons *
- * ---------------------------- */
+/* ~~~ Page 'view' & 'edit' buttons ~~~ */
 
 /* Set the margin from the edge of the page */
 [dir=ltr] .md-content__button {
@@ -84,14 +76,7 @@
   transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out !important;
 }
 
-/* ---------------------------------------- *
- * Back-to-top button                       *
- * ---------------------------------------- *
- * This code gives the 'Back-to-Top' button *
- * a translucent background with blur to    * 
- * modernize the UI and match the effect    * 
- * seen on Zensical.                        *
- * ---------------------------------------- */
+/* ~~~ Back-to-top button ~~~ */ 
 
 /* Change background color (translucent), add blur, adjust size, move button to bottom of the page */
 .md-top {
@@ -118,13 +103,7 @@
   color: var(--md-accent-bg-color)
 }
 
-/* ---------------------------------------- *
- * Tag buttons                              *
- * ---------------------------------------- *
- * This code gives tag buttons a box-shadow * 
- * and a 250ms transition to match the      *
- * other buttons on the site.               * 
- * ---------------------------------------- */
+/* ~~~ Tag buttons ~~~ */ 
 
 /* Change from pill-shaped to rounded rectangle to match Zensical aesthetic */
 .md-typeset .md-tag {

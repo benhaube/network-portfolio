@@ -4,10 +4,18 @@
     </a>
 </p>
 <p align="center">
-    <img alt="Static Badge" src="https://img.shields.io/badge/License-GFDL_v1.3-%234CAE4F?link=https%3A%2F%2Fgithub.com%2Fbenhaube%2Fnetwork-portfolio%2Fblob%2Fmain%2FLICENSE.txt">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Material_for_MkDocs-repo-%23526CFE?logo=materialformkdocs&logoColor=%23526CFE&link=https%3A%2F%2Fgithub.com%2Fsquidfunk%2Fmkdocs-material">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Lucide%20Icons-repo-%23F56565?logo=lucide&logoColor=%23F56565&link=https%3A%2F%2Fgithub.com%2Flucide-icons%2Flucide">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Google_Fonts-Icons-%234285F4?logo=googlefonts&logoColor=%234285F4&link=https%3A%2F%2Ffonts.google.com%2Ficons">
+    <a href="https://github.com/benhaube/network-portfolio/blob/main/LICENSE.txt">
+        <img alt="Static Badge" src="https://img.shields.io/badge/License-GFDL_v1.3-%234CAE4F?link=https%3A%2F%2Fgithub.com%2Fbenhaube%2Fnetwork-portfolio%2Fblob%2Fmain%2FLICENSE.txt">
+    </a>
+    <a href="https://github.com/squidfunk/mkdocs-material">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Material_for_MkDocs-repo-%23526CFE?logo=materialformkdocs&logoColor=%23526CFE&link=https%3A%2F%2Fgithub.com%2Fsquidfunk%2Fmkdocs-material">
+    </a>
+    <a href="https://github.com/lucide-icons/lucide">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Lucide%20Icons-repo-%23F56565?logo=lucide&logoColor=%23F56565&link=https%3A%2F%2Fgithub.com%2Flucide-icons%2Flucide">
+    </a>
+    <a href="https://fonts.google.com/icons">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Google_Fonts-Icons-%234285F4?logo=googlefonts&logoColor=%234285F4&link=https%3A%2F%2Ffonts.google.com%2Ficons">
+    </a>
 </p>
 <p align="center">
     <a href="https://github.com/benhaube/network-portfolio/#clone-the-repo">Clone the Repository</a>

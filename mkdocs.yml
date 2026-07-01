@@ -1,24 +1,25 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-# --- Site Name and URL ---
+# ~~~ Site Settings ~~~
+
+site_author: Benjamin Haube
 site_name: Network Documentation & Portfolio
 site_url: https://portfolio.rac3r4life.online
 site_description:  My personal, self-hosted network documentation, professional portfolio, and blog website. Designed to showcase my knowledge and capabilities in IT and network security, and to make managing my homelab easier.
 
-# --- Theme Settings ---
+# ~~~ Theme Settings ~~~
+
 theme:
   name: material
   custom_dir: overrides
   favicon: /assets/favicon.svg
   logo: /assets/favicon.svg
-  # -- Light, Dark, and Automatic toggles --
+  # Theme toggles (auto/light/dark)
   palette:
-    # - Toggle for automatic mode -
     - media: "(prefers-color-scheme)"
       toggle:
         icon: symbols/brightness-auto
         name: Switch to light mode
-    # - Toggle for light mode - 
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: green
@@ -26,7 +27,6 @@ theme:
       toggle:
         icon: symbols/brightness-7
         name: Switch to dark mode
-    # - Toggle for dark mode -
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: green
@@ -37,7 +37,9 @@ theme:
   font:
     text: Google Sans
     code: Google Sans Code
-  # -- Icon Settings--
+  
+  # ~~~ Icon Settings ~~~
+  
   icon:
     repo: symbols/git
     admonition:
@@ -53,7 +55,6 @@ theme:
       bug: symbols/bug-report-outline
       example: symbols/labs
       quote: symbols/quote
-    # -- Icons for Tags --
     tag:
       default: symbols/tag-outline
       3D-printer: material/printer-3d
@@ -138,7 +139,8 @@ theme:
     - content.action.view
     - content.tooltips
 
-# --- Markdown Extensions & Settings ---
+# ~~~ Python Markdown Extensions ~~~
+
 markdown_extensions:
   - attr_list
   - abbr
@@ -199,7 +201,8 @@ markdown_extensions:
         kwds:
           case: lower
           
-# --- MkDocs Native Plugins ---
+# ~~~ MkDocs Native Plugins ~~~
+
 plugins:
   - meta:
       enabled: true
@@ -212,10 +215,6 @@ plugins:
   - panzoom:
       full_screen: true
       always_show_hint: true 
-  # - git-committers:
-      # enabled: true
-      # repository: benhaube/network-portfolio
-      # branch: main
   - tags:
       export: true
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold
@@ -258,23 +257,24 @@ plugins:
       shadow: true
       manual: true
 
-# --- Watch directories outside of /docs --- 
+# ~~~ Watch directories outside of /docs ~~~
+
 watch:
   - includes
-
 exclude_docs: |
   includes/
   
-# --- Disable directory URLs ---
+# ~~~ Disable directory URLs ~~~
+
 use_directory_urls: false
 
-# --- Extra Settings ---
+# ~~~ Extra Settings ~~~
+
 extra:
   status:
     new: Recently Added
     deprecated: Deprecated
     inactive: Inactive
-  # -- Cookies Consent Message --
   consent:
     actions:
       - accept
@@ -298,7 +298,9 @@ extra:
     - icon: brands/bluesky
       link: https://bsky.app/profile/rac3r4life.me
   generator: false
-  # -- Tag definitions for custom tag icons ^^ above ^^ --
+  
+  # ~~~ Tag Definitions ~~~
+  
   tags:
     3D-Printer: 3D-printer
     ISP: isp
@@ -355,22 +357,24 @@ extra:
     VPN: vpn
     Windows: windows
 
-# --- Copyright message in site footer w/ cookies consent button ---
+# ~~~ Copyright Message ~~~
+
 copyright: >
   Copyright&copy; 2026 Benjamin Haube -
   <a href="#__consent">Change cookie settings</a>
 
-# --- Extra CSS stylesheets ---
-extra_css:
-  - assets/stylesheets/extra.css
+# ~~~ Extra CSS / Javascript ~~~
 
+extra_css:
+  # Other CSS files are imported into the main 'extra.css' file.
+  - assets/stylesheets/extra.css
 extra_javascript:
   - assets/javascripts/mermaid.mjs
-  # - assets/javascripts/tab-indicator.js
   # - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   # - assets/javascripts/tablesort.js
 
-# --- Project Repository URL & Docs directory ---
+# ~~~ Git Repo URL & Docs directory ~~~
+
 repo_url: https://github.com/benhaube/network-portfolio
 repo_name: benhaube/network-portfolio
 edit_uri: edit/main/docs/

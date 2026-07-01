@@ -1,5 +1,5 @@
 ---
-icon: material/network-pos
+icon: symbols/stacks
 title: VM Template
 subtitle: Subtitle
 tags:

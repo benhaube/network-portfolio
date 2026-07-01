@@ -1,5 +1,5 @@
 ---
-icon: material/router-wireless
+icon: symbols/router-outline
 title: Router Template
 subtitle: Subtitle
 tags:
@@ -15,7 +15,7 @@ hide:
 # Router Template
 *Subtitle*
 
-[Docs :symbols-documentation:](https://example.com){ .md-button .md-button--primary }&emsp;[Support :material-lifebuoy:](https://example.com){ .md-button }
+[Docs :symbols-documentation:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Device Overview
@@ -33,7 +33,7 @@ hide:
  
 #### :symbols-memory: OS / Firmware
 
-+ :symbols-router:&nbsp;Router_OS
++ :symbols-router-outline:&nbsp;Router_OS
 
 #### :symbols-key: Credentials
 
@@ -60,16 +60,16 @@ hide:
 | :----: | :----: | :----------- | :-------- | :---- |
 | *SSID* | *vlan* | `x.x.x.x/xx` | -         | -     |
 
-#### :material-ethernet: Physical Ethernet Ports
+#### :symbols-ethernet-port-outline: Physical Ethernet Ports
 
-|     Port #      | Connected Device            | Color / Type | Notes |
-| :-------------: | :-------------------------- | :----------- | :---- |
-| 10Gb WAN/LAN 1  | :material-ethernet: *Empty* | -            | -     |
-| 2.5Gb WAN/LAN 2 | :material-ethernet: *Empty* | -            | -     |
-|   2.5Gb LAN 1   | :material-ethernet: *Empty* | -            | -     |
-|   2.5Gb LAN 2   | :material-ethernet: *Empty* | -            | -     |
-|   2.5Gb LAN 3   | :material-ethernet: *Empty* | -            | -     |
-|   2.5Gb LAN 4   | :material-ethernet: *Empty* | -            | -     |
+|     Port #      | Connected Device                        | Color / Type | Notes |
+| :-------------: | :-------------------------------------- | :----------- | :---- |
+| 10Gb WAN/LAN 1  | :symbols-ethernet-port-outline: *Empty* | -            | -     |
+| 2.5Gb WAN/LAN 2 | :symbols-ethernet-port-outline: *Empty* | -            | -     |
+|   2.5Gb LAN 1   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
+|   2.5Gb LAN 2   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
+|   2.5Gb LAN 3   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
+|   2.5Gb LAN 4   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
 
 ## :symbols-storage: Storage & Mounts
 

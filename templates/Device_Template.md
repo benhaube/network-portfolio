@@ -1,5 +1,5 @@
 ---
-icon: material/devices
+icon: symbols/devices
 title: Device Template
 subtitle: Subtitle
 tags:
@@ -14,7 +14,7 @@ hide:
 # Device Template
 *Subtitle*
 
-[Button :material-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :material-icon:](https://example.com){ .md-button }
+[Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Device Overview
@@ -46,15 +46,15 @@ hide:
 
 ## :symbols-monitor-heart: Core Specs
 
-| CPU                    | Cores / Threads | CPU Freq. | RAM  | GPU   | GPU Freq. | VRAM |
-| :--------------------- | :-------------- | :-------- | :--- | :---- | :-------- | :--- |
-|  CPU *(architecture)*  | #C / #T         | # GHz     | # GB |  GPU  | # MHz     | # GB |
+| CPU                  | Cores / Threads | CPU Freq. | RAM  | GPU  | GPU Freq. | VRAM |
+| :------------------- | :-------------- | :-------- | :--- | :--- | :-------- | :--- |
+| CPU *(architecture)* | #C / #T         | # GHz     | # GB | GPU  | # MHz     | # GB |
 
 ## :symbols-lan: Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To |
-| :-------: | :--------- | :------------------ | :----------- |
-|  enp7s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -            |
+| Interface | IP Address | MAC Address         | Connected To                          |
+| :-------: | :--------- | :------------------ | :------------------------------------ |
+|  enp7s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port-outline:&nbsp; |
 
 | Interface | VLAN   | FQDN               | DNS Servers         | Gateway   |
 | :-------: | :----- | :----------------- | :------------------ | :-------- |
@@ -84,15 +84,15 @@ hide:
 
 #### :material-linux: Native Linux
 
-|  Status  | Service                                                  | Port(s) | Role / Notes |
-| :------: | :------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                   | Port(s) | Role / Notes |
+| :------: | :-------------------------------------------------------- | :-----: | :----------- |
+| *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 #### :material-docker: Docker
 
-|  Status  | Service                                                  | Port(s) | Role / Notes |
-| :------: | :------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                   | Port(s) | Role / Notes |
+| :------: | :-------------------------------------------------------- | :-----: | :----------- |
+| *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
 ## :symbols-note-stack-fill: Maintenance & Notes

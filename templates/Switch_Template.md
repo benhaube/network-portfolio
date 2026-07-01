@@ -1,5 +1,5 @@
 ---
-icon: material/switch
+icon: symbols/ethernet-port-outline
 title: Switch Template
 subtitle: Subtitle
 tags:
@@ -10,12 +10,12 @@ tags:
 hide:
   - toc
 ---
-![Material Design switch icon](../assets/icons/switch.svg){ width=200 }
+![Material Design switch icon](../assets/icons/ethernet.svg){ width=200 }
 
 # Switch Template
 *Subtitle*
 
-[Manual :symbols-quick-reference:](../assets/manuals/manual.pdf){ .md-button .md-button--primary }
+[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Physical Overview
@@ -40,16 +40,16 @@ hide:
 + Managed: 
   + Managed / Unmanaged
 
-## :material-ethernet: Port Map
+## :symbols-ethernet-port-outline: Port Map
 
-| Port # | Connected Device                 | Color / Type | Notes |
-| :----: | :------------------------------- | :----------- | :---- |
-| **1**  | :material-ethernet:&nbsp;*Empty* | -            | -     |
-| **2**  | :material-ethernet:&nbsp;*Empty* | -            | -     |
-| **3**  | :material-ethernet:&nbsp;*Empty* | -            | -     |
-| **4**  | :material-ethernet:&nbsp;*Empty* | -            | -     |
-| **5**  | :material-ethernet:&nbsp;*Empty* | -            | -     |
-| **6**  | :material-ethernet:&nbsp;*Empty* | -            | -     |
+| Port # | Connected Device                             | Color / Type | Notes |
+| :----: | :------------------------------------------- | :----------- | :---- |
+| **1**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
+| **2**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
+| **3**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
+| **4**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
+| **5**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
+| **6**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
 
 ---
 ## :symbols-note-stack-fill: Maintenance Notes

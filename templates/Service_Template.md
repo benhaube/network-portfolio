@@ -1,5 +1,5 @@
 ---
-icon: material/web
+icon: symbols/web
 title: Service Template
 subtitle: Subtitle
 tags:
@@ -15,7 +15,7 @@ hide:
 # Service Template
 *Subtitle*
 
-[GitHub :material-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation:](https://docs.github.com/en){ .md-button }
+[GitHub :material-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation:](https://docs.github.com/en){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Overview

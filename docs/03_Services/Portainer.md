@@ -6,8 +6,11 @@ description: A lightweight service delivery platform for containerized applicati
 status: inactive
 tags:
   - Inactive
+  - Dashboard
   - Docker
   - Download
+  - Shell
+  - Tools
 hide:
   - toc
 ---

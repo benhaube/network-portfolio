@@ -5,6 +5,7 @@ subtitle: Awaken Your Home
 description: Open-source home automation that puts local control and privacy first.
 tags:
   - Active
+  - Dashboard
   - Docker
   - IoT
 hide:

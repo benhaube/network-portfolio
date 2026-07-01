@@ -5,6 +5,7 @@ subtitle: Remote Desktop Protocol
 description: Remote desktop access over the local network
 tags:
   - Active
+  - Infrastructure
   - Native
   - Remote Access
 hide:

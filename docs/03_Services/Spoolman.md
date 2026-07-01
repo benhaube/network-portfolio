@@ -5,6 +5,7 @@ subtitle: Filament Inventory Management
 tags:
   - Active
   - Docker
+  - Inventory
   - 3D-Printer
 hide:
   - toc

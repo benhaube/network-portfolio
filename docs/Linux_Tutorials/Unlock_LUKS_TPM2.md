@@ -192,7 +192,7 @@ hide:
 
         1. Or `sudo update-initramfs -u -k <version>` if you have an **Ubuntu / Debian** system.
 
-    :symbols-terminal-alt:&ensp;**Update PCRs Script:** 
+    :symbols-frame-source:&ensp;**Update PCRs Script:** 
     :    If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a Bash script I have written.<br>
          It is available to download in this **GitHub** repo:
 

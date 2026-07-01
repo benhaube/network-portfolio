@@ -5,9 +5,8 @@ subtitle: Using Unattended-Upgrades
 hide:
   - toc
 ---
-![Material Design 'update' icon](../assets/icons/update.svg){ width=150 }&nbsp;
-![Material Design 'arrow-right-bold' light icon](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![Material Design 'arrow-right-bold' dark icon](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }
-&nbsp;![Material Design 'debian' icon](../assets/icons/debian-accent-color.svg){ width=130 }
+![Google Symbols 'update' icon](../assets/icons/update.svg){ width=200 }&nbsp;
+![Material 'debian' icon](../assets/icons/debian.svg){ width=50 }
 
 # Automatic Updates for Debian
 *Using Unattended-Upgrades*

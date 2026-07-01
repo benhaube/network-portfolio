@@ -5,7 +5,7 @@ subtitle: With Email SMTP and Gotify
 hide:
   - toc
 ---
-![Material email-asterisk icon](../assets/icons/email-alert.svg){ width=200 }&nbsp;![material message-alert icon](../assets/icons/message-alert.svg){ width=75 }
+![Material email-asterisk icon](../assets/icons/email-alert.svg){ width=200 }&nbsp;![material message-alert icon](../assets/icons/message-alert.svg){ width=50 }
 
 # Setup SSH Login Notification
 *With Email SMTP and Gotify*

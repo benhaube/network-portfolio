@@ -18,7 +18,7 @@
     </a>
 </p>
 <p align="center">
-    <a href="https://github.com/benhaube/network-portfolio/#clone-the-repo">Clone the Repository</a>
+    <a href="#clone-the-repo">Clone the Repository</a>
     ·
     <a href="https://github.com/benhaube/network-portfolio/#using-docker">Build Using Docker</a>
     ·

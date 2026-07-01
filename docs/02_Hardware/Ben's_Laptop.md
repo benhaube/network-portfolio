@@ -154,7 +154,7 @@ hide:
 + With the `Persistent=true` value set in the Systemd `.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
 + Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
-#### :material-console-network:&ensp;SSH Client
+#### :symbols-terminal:&ensp;SSH Client
 
 ##### Bitwarden Key Agent
 
@@ -175,7 +175,7 @@ hide:
     + This change only applies to PCs using the Linux OS. The Windows and Android clients still utilize SMB with multi-chanel enabled.
 + See the ["Clients"](../03_Services/NFS.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
 
-#### :symbols-code:&ensp;Backup Script
+#### :symbols-frame-source:&ensp;Backup Script
 
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
@@ -217,7 +217,7 @@ hide:
     systemctl --user enable home-bkp-nas.timer
     ```
 
-#### :symbols-lock:&ensp;Encrypted-Documents
+#### :symbols-encrypted-outline:&ensp;Encrypted-Documents
 
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 

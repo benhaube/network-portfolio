@@ -5,8 +5,6 @@ subtitle: Server Monitoring
 description: A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Monitor
   - Infrastructure
@@ -49,18 +47,18 @@ hide:
 
 ##### Hub
 
-| Host Device                                                                                     | Method                                | Container Name | Image                  |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
-|                                                                                                 | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
+| Host Device                                                                                      | Method                                | Container Name | Image                  |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
+|                                                                                                  | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
 
 ##### Agents
 
-| Host Device                                                                                      | Method                                | Container Name | Image                        |
-| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)                     | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
+| Host Device                                                                                       | Method                                | Container Name | Image                        |
+| :------------------------------------------------------------------------------------------------ | :------------------------------------ | :------------- | :--------------------------- |
+| [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)              | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :material-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
 ### :symbols-settings:&ensp;Configuration
 

@@ -5,8 +5,6 @@ subtitle: A Fancy Monitoring Tool
 description: A fancy self-hosted service monitoring tool.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Monitor
   - Network
@@ -37,7 +35,7 @@ hide:
 + :symbols-lan:&nbsp;LAN Access
     + <https://uptime.internal>
     + <http://pi-server.internal:3001>
-+ :material-wan:&nbsp;WAN Access
++ :symbols-web:&nbsp;WAN Access
     + <https://uptime.rac3r4life.online>
 
 #### :symbols-key:&ensp;Credentials  
@@ -47,9 +45,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                                | Container Name | Image                    |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `uptime-kuma`  | `louislam/uptime-kuma:2` |
+| Host Device                                                                                      | Method                                | Container Name | Image                    |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `uptime-kuma`  | `louislam/uptime-kuma:2` |
 
 ### :symbols-settings:&ensp;Configuration 
 

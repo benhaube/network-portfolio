@@ -6,8 +6,6 @@ description: An inventory and organization system built for the home user.
 status: new
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Inventory
   - New
@@ -45,9 +43,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                         | Method                                | Container Name | Image                                   |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` |
+| Host Device                                                        | Method                                | Container Name | Image                                   |
+| :----------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

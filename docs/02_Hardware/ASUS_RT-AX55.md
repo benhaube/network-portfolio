@@ -1,5 +1,5 @@
 ---
-icon: symbols/router
+icon: symbols/router-outline
 title: ASUS RT-AX55
 subtitle: AiMesh Node
 tags:
@@ -46,7 +46,7 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-#### :material-wan:&ensp;WAN Connection
+#### :symbols-web:&ensp;WAN Connection
 
 | Interface | IP Address       | MAC Address         | Connected To                 |
 | :-------: | :--------------- | :------------------ | :--------------------------- |
@@ -64,15 +64,15 @@ hide:
 | :----: | :----: | :-------------: | :---------------- | :------------- | :----------------------------------- |
 | *Home* | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :symbols-security:&nbsp;Trusted VLAN |
 
-#### :material-ethernet:&ensp;Physical Ethernet Ports
+#### :symbols-ethernet-port-outline:&ensp;Physical Ethernet Ports
 
-| Port  | Connected Device                                                          | Color / Type  | Notes                                        |
-| :---: | :------------------------------------------------------------------------ | :------------ | :------------------------------------------- |
-| WAN 1 | :material-ethernet:&nbsp;*Empty*                                          | -             | :symbols-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
-| LAN 1 | [:material-switch:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black / Cat6a | 1 Gb/s Uplink                                |
-| LAN 2 | :material-ethernet:&nbsp;*Empty*                                          | -             | -                                            |
-| LAN 3 | :material-ethernet:&nbsp;*Empty*                                          | -             | -                                            |
-| LAN 4 | :material-ethernet:&nbsp;*Empty*                                          | -             | -                                            |
+| Port  | Connected Device                                                                        | Color / Type  | Notes                                        |
+| :---: | :-------------------------------------------------------------------------------------- | :------------ | :------------------------------------------- |
+| WAN 1 | :symbols-ethernet-port-outline:&nbsp;*Empty*                                            | -             | :symbols-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
+| LAN 1 | [:symbols-ethernet-port-outline:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) | Black / Cat6a | 1 Gb/s Uplink                                |
+| LAN 2 | :symbols-ethernet-port-outline:&nbsp;*Empty*                                            | -             | -                                            |
+| LAN 3 | :symbols-ethernet-port-outline:&nbsp;*Empty*                                            | -             | -                                            |
+| LAN 4 | :symbols-ethernet-port-outline:&nbsp;*Empty*                                            | -             | -                                            |
 
 ---
 ## :symbols-note-stack-fill:&ensp;Maintenance & Notes

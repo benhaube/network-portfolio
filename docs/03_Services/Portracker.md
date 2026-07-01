@@ -5,8 +5,6 @@ subtitle: Port Monitoring & Discovery
 description: A self-hosted, real-time port monitoring and discovery tool.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Monitor
   - Network
@@ -52,11 +50,11 @@ ZimaOS NAS:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                          | Method                                | Container Name | Image                             |
-| :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                  | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)      | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:material-raspberry-pi:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| Host Device                                                                                           | Method                                | Container Name | Image                             |
+| :---------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                    | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)      | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 

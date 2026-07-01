@@ -1,5 +1,5 @@
 ---
-icon: material/switch
+icon: symbols/ethernet-port-outline
 title: Ugreen Switch
 subtitle: Model UM106X
 tags:
@@ -11,7 +11,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design switch icon](../assets/icons/switch.svg){ width=200 }&nbsp;
+![Material Design switch icon](../assets/icons/ethernet.svg){ width=200 }&nbsp;
 ![Ugreen Logo](../assets/icons/ugreen-light.svg#only-light){ width=50 }
 ![Ugreen Logo](../assets/icons/ugreen-dark.svg#only-dark){ width=50 }
 
@@ -47,16 +47,16 @@ hide:
 + Managed:
     + No &mdash; Unmanaged
 
-## :material-ethernet:&ensp;Port Map
+## :symbols-ethernet-port-outline:&ensp;Port Map
 
-| Port # | Connected Device                                                       | Color / Type   | Notes                                                      |
-| :----: | :--------------------------------------------------------------------- | :------------- | :--------------------------------------------------------- |
-| **1**  | [:symbols-laptop:&nbsp;Rob's Laptop](../02_Hardware/Rob's_Laptop.md)   | White / Cat5e  | 2.5 Gb/s &mdash; Temporary Connection `E8:9C:25:90:8B:11`  |
-| **2**  | :material-ethernet:&nbsp;*Empty*                                       | -              | -                                                          |
-| **3**  | :material-ethernet:&nbsp;*Empty*                                       | -              | -                                                          |
-| **4**  | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)    | Blue / Cat6A   | 2.5 Gb/s &mdash; `eth1` `192.168.50.5` `00:E0:4C:5B:9A:95` |
-| **5**  | [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)    | Yellow / Cat6A | 2.5 Gb/s &mdash; `eth0` `192.168.50.4` `00:E0:4C:5B:9A:96` |
-| **6**  | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red / Cat6A    | 10 Gb/s &mdash; SFP+ Ethernet Transceiver                  |
+| Port # | Connected Device                                                               | Color / Type   | Notes                                                      |
+| :----: | :----------------------------------------------------------------------------- | :------------- | :--------------------------------------------------------- |
+| **1**  | [:symbols-laptop:&nbsp;Rob's Laptop](../02_Hardware/Rob's_Laptop.md)           | White / Cat5e  | 2.5 Gb/s &mdash; Temporary Connection `E8:9C:25:90:8B:11`  |
+| **2**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                   | -              | -                                                          |
+| **3**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                   | -              | -                                                          |
+| **4**  | [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | Blue / Cat6A   | 2.5 Gb/s &mdash; `eth1` `192.168.50.5` `00:E0:4C:5B:9A:95` |
+| **5**  | [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | Yellow / Cat6A | 2.5 Gb/s &mdash; `eth0` `192.168.50.4` `00:E0:4C:5B:9A:96` |
+| **6**  | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red / Cat6A    | 10 Gb/s &mdash; SFP+ Ethernet Transceiver                  |
 
 ---
 ## :symbols-note-stack-fill:&ensp;Maintenance Notes

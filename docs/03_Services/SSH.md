@@ -1,12 +1,10 @@
 ---
-icon: material/console-network
+icon: symbols/terminal
 title: SSH
 subtitle: Secure Shell
 description: Provides secure encrypted communications between two untrusted hosts over an insecure network.
 tags:
   - Active
-  - Service
-  - Software
   - Native
   - Remote Access
   - Shell
@@ -14,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design ssh icon](../assets/icons/ssh.svg){ width=200 }
+![Material Design ssh icon](../assets/icons/console.svg){ width=200 }
 
 # SSH
 *Secure Shell*
@@ -34,24 +32,24 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ :symbols-router:&nbsp;ASUS RT-BE92U
++ :symbols-router-outline:&nbsp;ASUS RT-BE92U
     + `192.168.50.1:22` 
     + `asusrouter.internal:22`
-+ :symbols-server:&nbsp;Debian Server
++ :symbols-server-outline:&nbsp;Debian Server
     + `192.168.50.6:22` 
     + `debian-vm.internal:22` 
-+ :material-raspberry-pi:&nbsp;Raspberry Pi 4B Server
++ :symbols-server-outline:&nbsp;Raspberry Pi 4B Server
     + `192.168.50.2:22` 
     + `pi-server.internal:22`
-+ :material-raspberry-pi:&nbsp;Raspberry Pi Zero Server
++ :symbols-server-outline:&nbsp;Raspberry Pi Zero Server
     + `192.168.50.3:22` 
     + `pi-zero.internal:22` 
-+ :material-nas:&nbsp;ZimaOS NAS
++ :symbols-nas:&nbsp;ZimaOS NAS
     + `192.168.50.4:22`
     + `192.168.50.5:22` 
     + `storage-server.internal:22` 
     + `storage-server-2.internal:22`
-+ :material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer
++ :brands-creality-v2:&nbsp;Kacey 3D-Printer
     + `192.168.50.153:22` 
     + `kacey.internal:22` 
 
@@ -67,18 +65,18 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                      | Method                             | Container Name | Image |
-| :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                           | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                        | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                              | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)         | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                                       | Method                             | Container Name | Image |
+| :------------------------------------------------------------------------------------------------ | :--------------------------------- | :------------- | :---- |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                    | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)                  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-server:&ensp;Servers
+#### :symbols-server-outline:&ensp;Servers
 
 !!! tip 
 

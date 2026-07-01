@@ -5,8 +5,6 @@ subtitle: Bye Bye, Google Photos
 description: High performance self-hosted photo and video management solution.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - File Share
   - Download
@@ -38,7 +36,7 @@ hide:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
     + <http://storage-server-2.internal:2283>
-+ :material-web: WAN Access:
++ :symbols-web: WAN Access:
     + <https://immich.rac3r4life.online>
 
 #### :symbols-key:&ensp;Credentials  
@@ -49,12 +47,12 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                         | Method                                | Container Name            | Image                                                            |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------------------ | :--------------------------------------------------------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server`           | `ghcr.io/immich-app/immich-server:v2.7.5`                        |
-|                                                                     |                                       | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.7.5-openvino`     |
-|                                                                     |                                       | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
-|                                                                     |                                       | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
+| Host Device                                                        | Method                                | Container Name            | Image                                                            |
+| :----------------------------------------------------------------- | :------------------------------------ | :------------------------ | :--------------------------------------------------------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server`           | `ghcr.io/immich-app/immich-server:v2.7.5`                        |
+|                                                                    |                                       | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.7.5-openvino`     |
+|                                                                    |                                       | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
+|                                                                    |                                       | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
 
 ### :symbols-settings:&ensp;Configuration 
 

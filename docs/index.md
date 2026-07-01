@@ -16,13 +16,13 @@ hide:
 [:symbols-restore:&ensp;Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
-[:material-ip-network:&ensp;IP Address Management](./01_Infrastructure/IP_Address_Management.md)
+[:symbols-ip-outline:&ensp;IP Address Management](./01_Infrastructure/IP_Address_Management.md)
 :    This page contains information about IPAM, VPNs, and VLANs encompassed by the local network.
 
-[:material-ethernet:&ensp;MAC Address Tables](./01_Infrastructure/MAC_Address_Tables.md)
+[:symbols-ethernet-port-outline:&ensp;MAC Address Tables](./01_Infrastructure/MAC_Address_Tables.md)
 :    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 
-[:symbols-policy-fill:&ensp;Network Security Policy](./01_Infrastructure/Network_Security_Policy.md) 
+[:symbols-policy:&ensp;Network Security Policy](./01_Infrastructure/Network_Security_Policy.md) 
 :    This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 [:symbols-graph-2:&ensp;Logical Network Map](./01_Infrastructure/Logical_Map.md)
@@ -36,45 +36,45 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    [More Kacey Info&ensp;:brands-creality:](02_Hardware/Kacey_Info.md){ .md-button }
+    [More Kacey Info&ensp;:brands-creality-v2:](02_Hardware/Kacey_Info.md){ .md-button }
 
-    [Hardware Tags&ensp;:symbols-tag:](02_Hardware/tags.md){ .md-button }
+    [Hardware Tags&ensp;:symbols-tag-outline:](02_Hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
-[:symbols-router:&ensp;ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md)
+[:symbols-router-outline:&ensp;ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md)
 :    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-[:symbols-router:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
+[:symbols-router-outline:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
-[:symbols-server:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)
+[:symbols-server-outline:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)
 :    The primary DNS server in the [Technitium](03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md). 
 
-[:material-wan:&ensp;Hitron Modem](./02_Hardware/Hitron_Modem.md)
+[:symbols-web:&ensp;Hitron Modem](./02_Hardware/Hitron_Modem.md)
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
-[:material-raspberry-pi:&ensp;Raspberry Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md)
+[:symbols-server-outline:&ensp;Raspberry Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md)
 :    The secondary DNS server in the [Technitium](03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
-[:material-raspberry-pi:&ensp;Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) 
+[:symbols-server-outline:&ensp;Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`). 
 
-[:material-switch:&ensp;TP-Link LiteWave Switch](./02_Hardware/TP-Link_LiteWave_Switch.md)
+[:symbols-ethernet-port-outline:&ensp;TP-Link LiteWave Switch](./02_Hardware/TP-Link_LiteWave_Switch.md)
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
 
-[:material-switch:&ensp;TP-Link Switch](./02_Hardware/TP-Link_Switch.md)
+[:symbols-ethernet-port-outline:&ensp;TP-Link Switch](./02_Hardware/TP-Link_Switch.md)
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
-[:material-switch:&ensp;Ugreen Switch](./02_Hardware/Ugreen_Switch.md)
+[:symbols-ethernet-port-outline:&ensp;Ugreen Switch](./02_Hardware/Ugreen_Switch.md)
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
-[:material-nas:&ensp;ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md) 
+[:symbols-nas:&ensp;ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md) 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
 ### Key Clients
 
-[:material-desktop-tower:&ensp;Ben's Workstation](./02_Hardware/Ben's_Desktop.md) 
+[:symbols-desktop-pc-outline:&ensp;Ben's Workstation](./02_Hardware/Ben's_Desktop.md) 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 [:symbols-laptop:&ensp;Ben's Laptop](./02_Hardware/Ben's_Laptop.md)
@@ -83,10 +83,10 @@ hide:
 [:symbols-mobile:&ensp;Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md)
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-[:material-printer-3d-nozzle:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
+[:brands-creality-v2:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
-[:material-desktop-tower:&ensp;Rob's Workstation](./02_Hardware/Rob's_Desktop.md) 
+[:symbols-desktop-pc-outline:&ensp;Rob's Workstation](./02_Hardware/Rob's_Desktop.md) 
 :    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 [:symbols-laptop:&ensp;Rob's Laptop](02_Hardware/Rob's_Laptop.md) 
@@ -97,7 +97,7 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    [Services Tags&ensp;:symbols-tag:](03_Services/tags.md){ .md-button }
+    [Services Tags&ensp;:symbols-tag-outline:](03_Services/tags.md){ .md-button }
 
 [:services-beszel:&ensp;Beszel](./03_Services/Beszel_Hub.md)
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts.
@@ -105,7 +105,7 @@ hide:
 [:services-caddy:&ensp;Caddy](./03_Services/Caddy.md)
 :    Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 
-[:material-web-clock:&nbsp;Chrony](./03_Services/Chrony.md)
+[:symbols-history-settings:&nbsp;Chrony](./03_Services/Chrony.md)
 :    Advanced, lightweight NTP client and server.
 
 [:services-cloudflare:&ensp;Cloudflared](./03_Services/Cloudflared.md)
@@ -114,7 +114,7 @@ hide:
 [:symbols-print:&ensp;CUPS](./03_Services/CUPS_Print_Server.md)
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
-[:material-web-refresh:&ensp;DDNS](./03_Services/DDNS.md)
+[:symbols-web-ip:&ensp;DDNS](./03_Services/DDNS.md)
 :    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools).
 
 [:services-dockge:&ensp;Dockge](./03_Services/Dockge.md) 
@@ -192,7 +192,7 @@ hide:
 [:services-spoolman:&ensp;Spoolman](./03_Services/Spoolman.md)
 :    Keep track of your inventory of 3D-printer filament spools. 
 
-[:material-console-network:&ensp;SSH](./03_Services/SSH.md)
+[:symbols-terminal:&ensp;SSH](./03_Services/SSH.md)
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
 [:simple-syncthing:&ensp;Syncthing](./03_Services/Syncthing.md)
@@ -265,7 +265,7 @@ hide:
 [:symbols-terminal:&ensp;Defining Bash Aliases](./Linux_Tutorials/Defining_Terminal_Aliases.md) 
 :    How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 
-[:services-immich-frame:&ensp;Immich Slideshow for Nest Hub](./Linux_Tutorials/Immich_Slideshow_for_Nest_Hub.md)
+[:symbols-image:&ensp;Immich Slideshow for Nest Hub](./Linux_Tutorials/Immich_Slideshow_for_Nest_Hub.md)
 :    How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [Home Assistant](./03_Services/Home_Assistant.md) with Google Cast.
 
 [:symbols-license:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)

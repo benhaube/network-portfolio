@@ -1,5 +1,5 @@
 ---
-icon: symbols/server
+icon: symbols/server-outline
 title: Debian Server
 subtitle: Primary DNS Server
 tags:
@@ -43,7 +43,7 @@ hide:
 
 #### :symbols-network-node:&ensp;Host Node 
 
-+ [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
++ [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
 #### :symbols-key:&ensp;Credentials
 
@@ -72,7 +72,7 @@ hide:
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                   |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)          |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)                  |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
 | *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                  |
 

@@ -1,11 +1,9 @@
 ---
-icon: material/web-refresh
+icon: symbols/web-ip
 title: DDNS
 subtitle: Provided by addr.tools
 tags:
   - Active
-  - Service
-  - Software
   - Native
   - DNS
   - Domain
@@ -14,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design 'web-refresh' icon ](../assets/icons/ddns.svg){ width=200 }
+![Material Design 'web-ip' icon ](../assets/icons/web-ip.svg){ width=200 }
 
 # DDNS
 *Provided by addr.tools*
@@ -42,9 +40,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                            | Method                             | Container Name | Image |
-| :--------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                    | Method                             | Container Name | Image |
+| :----------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

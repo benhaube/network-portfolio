@@ -55,8 +55,8 @@ theme:
       quote: symbols/quote
     # -- Icons for Tags --
     tag:
-      default: symbols/tag
-      3D-printer: material/printer-3d-nozzle
+      default: symbols/tag-outline
+      3D-printer: material/printer-3d
       isp: symbols/web
       iot: symbols/home-automation
       active: symbols/check-circle-outline
@@ -64,7 +64,7 @@ theme:
       backup: symbols/backup
       dashboard: symbols/space-dashboard
       deprecated: symbols/delete-outline
-      desktop: material/desktop-tower
+      desktop: symbols/desktop-pc-outline
       development: symbols/graph-8
       dns: symbols/dns
       docker: material/docker
@@ -78,37 +78,37 @@ theme:
       inventory: symbols/inventory
       laptop: symbols/laptop
       linux: material/linux
-      living-room: symbols/sofa
+      living-room: symbols/sofa-outline-alt
       map: symbols/graph-2
       mini-rack: symbols/10-inch-rack
       mobile: symbols/devices-mobile
-      monitor: symbols/monitor-heart
-      nas: material/nas
+      monitor: symbols/monitor-heart-outline
+      nas: symbols/nas
       native: material/linux
       network: symbols/lan 
       new: symbols/release-alert-outline
       office: symbols/desk
-      pc: symbols/desktop-windows
+      pc: symbols/personal-computer
       podman: simple/podman
       podman_host: simple/podman
-      policy: symbols/policy-fill
+      policy: symbols/policy
       print: symbols/print
       printer-cart: symbols/print
-      remote: material/remote-desktop
-      router: symbols/router
+      remote: symbols/web-export
+      router: symbols/router-outline
       security: symbols/security
-      server: symbols/server
+      server: symbols/server-outline
       service: symbols/web
       shell: symbols/terminal
       software: symbols/iframe
-      switch: material/switch
+      switch: symbols/ethernet-port-outline
       tools: symbols/construction
       tv-stand: symbols/tv
-      video: material/movie-open
-      vh: symbols/host
+      video: symbols/movie-outline
+      vh: symbols/host-outline
       vlan: symbols/lan-outline
       vm: symbols/stacks
-      vpn: material/vpn
+      vpn: symbols/vpn
       windows: material/microsoft
     top: symbols/arrow-double-up
     previous: symbols/arrow-left
@@ -116,8 +116,8 @@ theme:
     search: symbols/search
     share: symbols/share
     annotation: symbols/expand-circle
-    edit: symbols/edit-square-outline
-    view: symbols/code-xml
+    edit: symbols/square-pen
+    view: symbols/scan-eye
   features:
     - navigation.instant
     - navigation.instant.progress

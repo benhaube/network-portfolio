@@ -6,8 +6,6 @@ subtitle: Network Traffic Probe
 description: Web-based traffic and security network traffic monitoring.
 tags:
   - Inactive
-  - Service
-  - Software
   - Docker
   - Monitor
   - Network
@@ -46,9 +44,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                         | Method                                | Container Name | Image                |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `ntop`         | `ntop/ntopng:latest` |
+| Host Device                                                        | Method                                | Container Name | Image                |
+| :----------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `ntop`         | `ntop/ntopng:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

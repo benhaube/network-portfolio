@@ -5,8 +5,6 @@ subtitle: Network Documentation
 description: The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
 hide:
   - toc
@@ -41,9 +39,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device | Method | Container Name | Image |
-| :------------------------------------------------------------------ | :------------------------------------ | :---------------------- | :------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `network-documentation` | `nginx:alpine` |
+| Host Device                                                        | Method                                | Container Name          | Image          |
+| :----------------------------------------------------------------- | :------------------------------------ | :---------------------- | :------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `network-documentation` | `nginx:alpine` |
 
 ### :symbols-settings:&ensp;Configuration
 

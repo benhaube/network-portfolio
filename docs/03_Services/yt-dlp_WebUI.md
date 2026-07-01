@@ -5,8 +5,6 @@ subtitle: Download Videos from YouTube
 description: A Web UI and RPC server for `yt-dlp`.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Video
   - Download
@@ -44,9 +42,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                         | Method                                | Container Name | Image                             |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
+| Host Device                                                        | Method                                | Container Name | Image                             |
+| :----------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

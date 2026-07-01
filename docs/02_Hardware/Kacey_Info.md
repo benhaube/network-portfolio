@@ -1,5 +1,5 @@
 ---
-icon: brands/creality
+icon: brands/creality-v2
 title: More Kacey Info
 subtitle: Detailed Configuration Info
 tags:
@@ -11,12 +11,12 @@ tags:
 hide:
   - toc
 ---
-![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d.svg){ width=200 }![Creality Logo](../assets/icons/creality.svg){ width=50 }
+![Creality Logo](../assets/icons/creality-v2.svg){ width=200 }
 
 # More Kacey Info
 *Detailed Configuration Info*
 
-[Creality Docs&ensp;:brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
+[Creality Docs&ensp;:brands-creality-v2:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Basic Information
@@ -65,7 +65,7 @@ hide:
     + <http://k1c-a71e.internal>
     + <http://k1c-a71e.internal:4408>
 
-## :material-camera:&ensp;Camera
+## :symbols-camera-video:&ensp;Camera
 
 #### Moonraker
 
@@ -82,7 +82,7 @@ hide:
     + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
-## :material-code-block-brackets:&ensp;Machine G-code 
+## :symbols-frame-source:&ensp;Machine G-code 
 
 #### :services-orca-slicer:&ensp;OrcaSlicer
 

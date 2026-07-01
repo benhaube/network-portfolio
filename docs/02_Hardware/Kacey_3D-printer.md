@@ -1,5 +1,5 @@
 ---
-icon: material/printer-3d-nozzle
+icon: brands/creality-v2
 title: Kacey 3D-Printer
 subtitle: Modified Creality K1C
 tags:
@@ -11,12 +11,12 @@ tags:
 hide:
   - toc
 ---
-![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }![Creality Logo](../assets/icons/creality.svg){ width=50 }
+![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }![Creality Logo](../assets/icons/creality-v2.svg){ width=50 }
 
 # Kacey 3D-Printer
 *Modified Creality K1C*
 
-[Creality Docs&ensp;:brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
+[Creality Docs&ensp;:brands-creality-v2:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -25,7 +25,7 @@ hide:
 
     See more detailed information about the Creality K1C hardware:
 
-    [More Kacey Info&ensp;:brands-creality:](Kacey_Info.md){ .md-button }
+    [More Kacey Info&ensp;:brands-creality-v2:](Kacey_Info.md){ .md-button }
 
 #### :symbols-toolbox:&ensp;Role 
 
@@ -41,7 +41,7 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:brands-creality:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
++ [:brands-creality-v2:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
 + [:material-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
@@ -85,7 +85,7 @@ hide:
 | :------: | :--------------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
 | *Active* | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
 | *Active* | [:services-klipper:&nbsp;Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper](https://www.klipper3d.org/).                                      |
-| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)     |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)             |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
 ## :symbols-note-stack-fill:&ensp;Maintenance & Notes
@@ -104,7 +104,7 @@ hide:
         + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
         + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
  
-    :material-printer-3d-nozzle:&ensp;**Hardware:**
+    :material-printer-3d:&ensp;**Hardware:**
  
     + [:symbols-settings:&nbsp;Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
         + Changes from a fixed bed to an adjustable bed with aluminum knobs. 

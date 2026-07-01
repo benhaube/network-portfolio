@@ -1,11 +1,11 @@
 ---
-icon: services/immich-frame
+icon: symbols/image
 title: Project Migration
 subtitle: Immich Slideshow for Nest Hub
 hide:
   - toc
 ---
-![Immich Frame icon](../assets/icons/immich-frame.svg){ width=200 }
+![Material image icon](../assets/icons/image.svg){ width=200 }
 
 # Project Migration
 *Immich Slideshow for Nest Hub*
@@ -15,8 +15,8 @@ hide:
     **User:** Ben Haube | **Date:** Feb 5, 2026<br>
     **Infrastructure:** 
     
-    + [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))* 
-    + [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
+    + [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))* 
+    + [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
 
 ---
 
@@ -41,7 +41,7 @@ hide:
 3.  **Finalize:** 
     + Empty "Trash/Bin" to reclaim storage.
 
-### :symbols-code:&ensp;Photo Cleaning Script
+### :symbols-frame-source:&ensp;Photo Cleaning Script
 
 ```javascript title="Javascript" linenums="1"
 --8<-- "clean-google-photos.js"
@@ -76,7 +76,7 @@ Place this in the same folder as your docker-compose file.
 --8<-- "immich-frame-config.json"
 ```
 
-## :material-wan:&ensp;Network & Cloudflare
+## :symbols-web:&ensp;Network & Cloudflare
 
 **Goal:**
 :   Allow Nest Hubs to load the frame securely.

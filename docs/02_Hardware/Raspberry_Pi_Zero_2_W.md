@@ -1,5 +1,5 @@
 ---
-icon: material/raspberry-pi
+icon: symbols/server-outline
 title: Raspberry Pi Zero Server
 subtitle: Reverse-Proxy Server
 tags:
@@ -81,7 +81,7 @@ hide:
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                                                                                                                          |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
 | *Active* | [:services-caddy:&nbsp;Caddy](../03_Services/Caddy.md)           |       `80` `443`       | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)     |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
+| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)             |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
 
 #### :material-docker:&ensp;Docker

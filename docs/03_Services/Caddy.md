@@ -6,8 +6,6 @@ description: Lightweight, open-source Web server written in Go. Used as a *rever
 status: new
 tags:
   - Active
-  - Service
-  - Software
   - Domain
   - DNS
   - Network
@@ -46,9 +44,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                      | Method                                         | Container Name | Image |
-| :----------------------------------------------------------------------------------------------- | :--------------------------------------------- | :------------- | :---- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
+| Host Device                                                                                       | Method                                         | Container Name | Image |
+| :------------------------------------------------------------------------------------------------ | :--------------------------------------------- | :------------- | :---- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

@@ -6,8 +6,6 @@ description: Self-hosted cloud storage and collaboration platform.
 status: deprecated
 tags:
   - Deprecated
-  - Service
-  - Software
   - Docker
   - File Share
 hide:
@@ -44,9 +42,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                             | Method                                | Container Name | Image            |
-| :---------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------- |
-| [:material-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `nextcloud`    | `nextcloud:32.0` |
+| Host Device                                                            | Method                                | Container Name | Image            |
+| :--------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------- |
+| [:symbols-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `nextcloud`    | `nextcloud:32.0` |
 
 ### :symbols-settings:&ensp;Configuration
 

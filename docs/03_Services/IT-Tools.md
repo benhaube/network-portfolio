@@ -5,8 +5,6 @@ subtitle: Handy Tools for Devs
 description: Handy tools for network administrators and developers.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Tools
   - Development
@@ -43,10 +41,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                                | Container Name     | Image                             |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :----------------- | :-------------------------------- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
-|                                                                                                 | :material-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
+| Host Device                                                                                      | Method                                | Container Name     | Image                             |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :----------------- | :-------------------------------- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
+|                                                                                                  | :material-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

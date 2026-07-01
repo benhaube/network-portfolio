@@ -1,5 +1,5 @@
 ---
-icon: material/ip-network
+icon: symbols/ip-outline
 title: IP Address Management
 subtitle: Organized IP Address Space
 tags:
@@ -37,36 +37,36 @@ hide:
 | [VLAN52](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*Home_Guest*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks) | `192.168.52.0/24` | `9.9.9.9` `149.112.112.112`   | -        | :symbols-check: | :symbols-shield-person-fill:&nbsp;Guest VLAN |
 | [VLAN53](../02_Hardware/ASUS_RT-BE92U.md#virtual-local-networks) | [*2G_IoT*](../02_Hardware/ASUS_RT-BE92U.md#wi-fi-networks)     | `192.168.53.0/24` | `9.9.9.9` `149.122.122.122`   | -        | :symbols-close: | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
-## :symbols-router:&ensp;Core Infrastructure 
+## :symbols-router-outline:&ensp;Core Infrastructure 
 &emsp;&emsp;&ensp;*Static & Reserved*
 
 | Device                                                                                     | VLAN   | IP Address       | Hostname        | Type   | Role / Notes                                                                                                              |
 | :----------------------------------------------------------------------------------------- | :----- | :--------------- | :-------------- | :----- | :------------------------------------------------------------------------------------------------------------------------ |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                     | -      | `192.168.50.1`   | `RT-BE92U-FAF0` | Static | Main Gateway, NTP Master, DHCP Server                                                                                     |
-| [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | VLAN50 | `192.168.50.2`   | `pi-server`     | Static | DNS Secondary *([Technitium](../03_Services/Technitium.md) cluster)*, [CUPS](../03_Services/CUPS_Print_Server.md)         |
-| [:material-raspberry-pi:&nbsp;Ras-Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | VLAN50 | `192.168.50.3`   | `pi-zero`       | Static | Caddy reverse proxy server for local domain names                                                                         |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.4`   | `ZimaOS-NAS`    | Static | Main File Server, Primary Ethernet connection *(eth0)*                                                                    |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | VLAN50 | `192.168.50.5`   | `ZimaOS-NAS`    | Static | SMB Multi-channel Path, Secondary Ethernet Connection *(eth1)*                                                            |
-| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                  | VLAN50 | `192.168.50.6`   | `debian-vm`     | Static | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
-| [:symbols-router:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)                       | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                  |
-| [:material-wan:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)                         | -      | `192.168.100.1`  | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)             | -      | `192.168.50.1`   | `RT-BE92U-FAF0` | Static | Main Gateway, NTP Master, DHCP Server                                                                                     |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | VLAN50 | `192.168.50.2`   | `pi-server`     | Static | DNS Secondary *([Technitium](../03_Services/Technitium.md) cluster)*, [CUPS](../03_Services/CUPS_Print_Server.md)         |
+| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | VLAN50 | `192.168.50.3`   | `pi-zero`       | Static | Caddy reverse proxy server for local domain names                                                                         |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                         | VLAN50 | `192.168.50.4`   | `ZimaOS-NAS`    | Static | Main File Server, Primary Ethernet connection *(eth0)*                                                                    |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                         | VLAN50 | `192.168.50.5`   | `ZimaOS-NAS`    | Static | SMB Multi-channel Path, Secondary Ethernet Connection *(eth1)*                                                            |
+| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | VLAN50 | `192.168.50.6`   | `debian-vm`     | Static | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
+| [:symbols-router-outline:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)               | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                  |
+| [:symbols-web:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)                          | -      | `192.168.100.1`  | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
 
 ## :symbols-devices:&ensp;Key Clients 
 &emsp;&emsp;&ensp;*DHCP Reserved*
 
-| Device                                                                                                | VLAN   | IP Address      | Hostname           | Role / Notes                                                            |
-| :---------------------------------------------------------------------------------------------------- | :----- | :-------------- | :----------------- | :---------------------------------------------------------------------- |
-| [:material-desktop-tower:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                        | VLAN50 | `192.168.50.10` | `bens-workstation` | Fedora Linux 44 *(KDE Plasma Desktop Edition)*                          |
-| [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)              | VLAN50 | `192.168.50.15` | `k1c-a71e`         | Creality K1C *(Modified)*                                               |
-| [:material-raspberry-pi:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(`wlan0`)* | VLAN53 | `192.168.53.2`  | `pi-server`        | Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
+| Device                                                                                                 | VLAN   | IP Address      | Hostname           | Role / Notes                                                            |
+| :----------------------------------------------------------------------------------------------------- | :----- | :-------------- | :----------------- | :---------------------------------------------------------------------- |
+| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                     | VLAN50 | `192.168.50.10` | `bens-workstation` | Fedora Linux 44 *(KDE Plasma Desktop Edition)*                          |
+| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)                       | VLAN50 | `192.168.50.15` | `k1c-a71e`         | Creality K1C *(Modified)*                                               |
+| [:symbols-server-outline:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(`wlan0`)* | VLAN53 | `192.168.53.2`  | `pi-server`        | Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
 
-## :material-web-refresh:&ensp;Dynamic DNS Providers
+## :symbols-web-ip:&ensp;Dynamic DNS Providers
 
-| Status   | Provider                        | Server                                                                 | FQDN                            | TLS Certificate                        | Certificate Expire |
-| :------- | :------------------------------ | :--------------------------------------------------------------------- | :------------------------------ | :------------------------------------- | :----------------- |
-| *Active* | :services-addr:&nbsp;addr.tools | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
+| Status   | Provider                        | Server                                                                         | FQDN                            | TLS Certificate                        | Certificate Expire |
+| :------- | :------------------------------ | :----------------------------------------------------------------------------- | :------------------------------ | :------------------------------------- | :----------------- |
+| *Active* | :services-addr:&nbsp;addr.tools | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
 
-## :material-vpn:&ensp;VPN Servers / Clients
+## :symbols-vpn:&ensp;VPN Servers / Clients
 
 #### :simple-wireguard:&ensp;WireGuard @ ASUS Router
 &emsp;&ensp;*Main Server*
@@ -91,13 +91,13 @@ hide:
 ---
 <div class="grid cards" markdown>
 
--   :material-ethernet:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-ethernet-port-outline:{ .lg .middle }&emsp;**MAC Addresses**
 
     ---
 
     [MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-graph-2:{ .lg .middle }&emsp;**Network Diagrams**
 
     ---
 
@@ -113,7 +113,7 @@ hide:
 
     [Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
 
--   :symbols-policy-fill:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-policy:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

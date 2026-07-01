@@ -5,8 +5,6 @@ subtitle: The Klipper Web API
 description: Web API server for Klipper. 
 tags:
   - Active
-  - Service
-  - Software
   - 3D-Printer
   - Remote Access
   - Native
@@ -44,9 +42,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                              | Method                             | Container Name | Image |
-| :--------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:material-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                      | Method                             | Container Name | Image |
+| :------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

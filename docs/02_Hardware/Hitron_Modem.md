@@ -1,5 +1,5 @@
 ---
-icon: material/wan
+icon: symbols/web
 title: Hitron Modem
 subtitle: DOCSIS 3.1 Cable Modem
 tags:
@@ -40,21 +40,21 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                           |
-| :-------: | :-------------- | :------------------ | :--------------------------------------------------------------------- |
-|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
-|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                      |
+| Interface | IP Address      | MAC Address         | Connected To                                                                   |
+| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------- |
+|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
+|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                              |
 
 ---
 ## :symbols-note-stack-fill:&ensp;Maintenance & Notes
 
 !!! config inline "Critical Configurations"
 
-    :material-web-off:&ensp;**WAN Down:**
+    :symbols-web-cancel:&ensp;**WAN Down:**
  
     * If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
    
-    :material-application-cog-outline:&ensp;**Access WebUI:**
+    :symbols-iframe:&ensp;**Access WebUI:**
  
     * To access the modem's Web UI enter <https://192.168.100.1> or <https://hitron-modem.internal>
 

@@ -1,12 +1,10 @@
 ---
-icon: material/web-clock
+icon: symbols/history-settings
 title: Chrony
 subtitle: NTP Server
 description: Advanced, lightweight NTP client and server.
 tags:
   - Active
-  - Service
-  - Software
   - Native
   - Infrastructure
 hide:
@@ -43,9 +41,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                            | Method                             | Container Name | Image |
-| :--------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                    | Method                             | Container Name | Image |
+| :----------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

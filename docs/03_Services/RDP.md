@@ -5,9 +5,8 @@ subtitle: Remote Desktop Protocol
 description: Remote desktop access over the local network
 tags:
   - Active
-  - Service
-  - Software
   - Native
+  - Remote Access
 hide:
   - toc
 ---
@@ -41,9 +40,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                             | Container Name | Image |
-| :----------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:material-desktop-tower:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                        | Method                             | Container Name | Image |
+| :--------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

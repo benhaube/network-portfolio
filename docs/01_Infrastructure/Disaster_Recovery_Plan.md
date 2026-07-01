@@ -115,13 +115,13 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :material-ethernet:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-ethernet-port-outline:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 
 	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-graph-2:{ .lg .middle }&emsp;**Network Diagrams**
 
 	---
 
@@ -131,13 +131,13 @@ tags:
 
 <div class="grid cards" markdown>
 
--   :material-ip-network:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-ip-outline:{ .lg .middle }&emsp;**IP Address Management**
 	
 	---
 
 	[IP Address Management](../01_Infrastructure/IP_Address_Management.md){ .md-button }
 
--   :symbols-policy-fill:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-policy:{ .lg .middle }&emsp;**Network Security**
 
 	---
 

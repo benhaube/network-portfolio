@@ -5,8 +5,6 @@ subtitle: Server Dashboard
 description: A self-hosted dashboard that puts all your feeds in one place. 
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Dashboard
   - Monitor
@@ -62,10 +60,10 @@ hide:
  
     [:material-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:material-arrow-down-thin:](#glance-config)
 
-| Host Device                                                                                     | Method                                | Container Name | Image                       |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
-|                                                                                                 | :material-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
+| Host Device                                                                                      | Method                                | Container Name | Image                       |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
+|                                                                                                  | :material-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

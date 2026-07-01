@@ -1,5 +1,5 @@
 ---
-icon: symbols/tag
+icon: symbols/tag-outline
 title: Infrastructure Tags
 subtitle: An Index of Relevant Tags
 ---

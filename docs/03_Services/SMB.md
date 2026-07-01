@@ -5,8 +5,6 @@ subtitle: Server Message Block
 description: Remote file system access.
 tags:
   - Active
-  - Service
-  - Software
   - Native
   - File Share
   - Remote Access
@@ -48,20 +46,20 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                             | Container Name | Image |
-| :---------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                             | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                                      | Method                             | Container Name | Image |
+| :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                               | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration  
 
-#### :material-raspberry-pi:&ensp;Raspberry Pi 4B Server
+#### :symbols-server-outline:&ensp;Raspberry Pi 4B Server
 
 ```linuxconfig title="<code>/etc/samba/smb.conf</code>" linenums="1"
 --8<-- "smb-pi-4b.conf"
 ```
 
-#### :material-nas:&ensp;ZimaOS NAS
+#### :symbols-nas:&ensp;ZimaOS NAS
 
 ```linuxconfig title="<code>/etc/samba/smb.conf</code>" linenums="1"
 --8<-- "smb-zima.conf"

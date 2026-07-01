@@ -11,7 +11,7 @@ hide:
 # Manual Bed Leveling Mod
 *Fine Tune Your Bed Level*
 
-[Creality K1C&ensp;:brands-creality:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality K1C&ensp;:brands-creality-v2:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! question
 
@@ -96,7 +96,7 @@ hide:
 
     [Root Access Guide&ensp;:brands-3dphub:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 
-    [Helper Script&ensp;:brands-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
+    [Helper Script&ensp;:brands-creality-v2:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
  
     !!! security "Default Password"
 

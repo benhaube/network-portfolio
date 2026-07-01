@@ -5,8 +5,6 @@ subtitle: Awaken Your Home
 description: Open-source home automation that puts local control and privacy first.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - IoT
 hide:
@@ -42,9 +40,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                                | Container Name  | Image                                          |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
+| Host Device                                                                                      | Method                                | Container Name  | Image                                          |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

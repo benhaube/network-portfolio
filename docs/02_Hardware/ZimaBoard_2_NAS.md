@@ -1,5 +1,5 @@
 ---
-icon: material/nas
+icon: symbols/nas
 title: ZimaOS NAS
 subtitle: Rack-Mount ZimaBoard 2
 tags:
@@ -59,10 +59,10 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                                       |
-| :-------: | :------------- | :------------------ | :--------------------------------------------------------------------------------- |
-|  `eth0`   | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 4)* |
-|  `eth1`   | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [:material-switch:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 5)* |
+| Interface | IP Address     | MAC Address         | Connected To                                                                                     |
+| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------------------- |
+|  `eth0`   | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port-outline:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 4)* |
+|  `eth1`   | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port-outline:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port 5)* |
 
 | Interface |              VLAN              | FQDN                        | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------: | :-------------------------- | :---------------------------- | :------------- |
@@ -99,11 +99,11 @@ hide:
 
 #### :material-linux:&ensp;Native Linux
 
-|  Status  | Service                                                      | Port(s) | Role / Notes                                                                                   |
-| :------: | :----------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-smb-share:&nbsp;NFS](../03_Services/NFS.md)        | `2049`  | Remote file system access.                                                                     |
-| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md) |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:symbols-smb-share:&nbsp;SMB](../03_Services/SMB.md)        |  `445`  | Remote file system access.                                                                     |
+|  Status  | Service                                               | Port(s) | Role / Notes                                                                                   |
+| :------: | :---------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-smb-share:&nbsp;NFS](../03_Services/NFS.md) | `2049`  | Remote file system access.                                                                     |
+| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-smb-share:&nbsp;SMB](../03_Services/SMB.md) |  `445`  | Remote file system access.                                                                     |
 
 #### :material-docker:&ensp;Docker
 
@@ -128,7 +128,7 @@ hide:
 |  *Active*  | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)                        | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                                            |
 |  *Active*  | [:symbols-terminal:&nbsp;ttydBridge](../03_Services/ttydBridge.md)                      |         `2222`         | A DockerApp makes it easy to use the host terminal in the Web.                                                                                      |
 |  *Active*  | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md)                 |    `51820` `51821`     | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                            |
-|  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                       |
+|  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                        |
 
 ---
 ## :symbols-note-stack-fill:&ensp;Maintenance & Notes
@@ -161,7 +161,7 @@ hide:
     
     :symbols-calendar-event:&ensp;**Date:** 2026-02-09 <br>
     :symbols-info:&ensp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
-    :symbols-monitor-heart:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
+    :symbols-monitor-heart-outline:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
     :symbols-devices:&ensp;**Affected Clients:** 
  
     + [Ben's Desktop PC](./Ben's_Desktop.md) 

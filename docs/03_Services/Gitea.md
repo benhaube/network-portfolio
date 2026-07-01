@@ -7,8 +7,6 @@ description: Painless, self-hosted, all-in-one software development service, inc
 tags:
   - Active
   - Backup
-  - Service
-  - Software
   - Docker
   - File Share
   - Development
@@ -52,10 +50,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                         | Method                                | Container Name | Image                           |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------------ |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gitea`        | `docker.gitea.com/gitea:latest` |
-|                                                                     | :material-docker:&nbsp;Docker Compose | `gitea_runner` | `gitea/act_runner:latest`       |
+| Host Device                                                        | Method                                | Container Name | Image                           |
+| :----------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gitea`        | `docker.gitea.com/gitea:latest` |
+|                                                                    | :material-docker:&nbsp;Docker Compose | `gitea_runner` | `gitea/act_runner:latest`       |
 
 ### :symbols-settings:&ensp;Configuration 
 

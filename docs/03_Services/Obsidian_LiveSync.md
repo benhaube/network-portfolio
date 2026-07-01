@@ -5,8 +5,6 @@ subtitle: Sync with CouchDB
 description: Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - File Share
   - Remote Access
@@ -47,9 +45,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                         | Method                                | Container Name      | Image           |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------------ | :-------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `obsidian-livesync` | `couchdb:3.5.0` |
+| Host Device                                                        | Method                                | Container Name      | Image           |
+| :----------------------------------------------------------------- | :------------------------------------ | :------------------ | :-------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `obsidian-livesync` | `couchdb:3.5.0` |
 
 ### :symbols-settings:&ensp;Configuration 
 

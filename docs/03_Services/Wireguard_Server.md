@@ -5,8 +5,6 @@ subtitle: A Simple, Modern VPN
 description: An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Remote Access
   - VPN
@@ -33,13 +31,13 @@ hide:
 
 + `41820`
 + `51820`
-+ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :material-nas:&nbsp;ZimaOS NAS)*
++ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :symbols-nas:&nbsp;ZimaOS NAS)*
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ :material-vpn:&nbsp;Server Endpoint:
-    + `rac3r4life.myaddr.dev:41820` *(for :symbols-router:&nbsp;ASUS RT-BE92U)*
-    + `rac3r4life.myaddr.dev:51820` *(for :material-nas:&nbsp;ZimaOS NAS)*
++ :symbols-vpn:&nbsp;Server Endpoint:
+    + `rac3r4life.myaddr.dev:41820` *(for :symbols-router-outline:&nbsp;ASUS RT-BE92U)*
+    + `rac3r4life.myaddr.dev:51820` *(for :symbols-nas:&nbsp;ZimaOS NAS)*
 + :symbols-cogs:&nbsp;Web UI Admin: 
     + <http://storage-server.internal:51821/>
     + <http://storage-server-2.internal:51821/>
@@ -52,12 +50,12 @@ hide:
 
 #### :symbols-devices:&ensp;Clients
 
-+ :symbols-router:&nbsp;ASUS RT-BE92U:
++ :symbols-router-outline:&nbsp;ASUS RT-BE92U:
     + `Ben's-Phone`
     + `Ben's-Laptop`
     + `Rob's-Phone`
     + `Rob's-Laptop`
-+ :material-nas:&nbsp;ZimaOS NAS:
++ :symbols-nas:&nbsp;ZimaOS NAS:
     + `ben-laptop`
     + `ben-pixel`
     + `rob-laptop`
@@ -65,10 +63,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                            | Method                                | Container Name         | Image                        |
-| :--------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)    | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| Host Device                                                                    | Method                                | Container Name         | Image                        |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :symbols-settings:&ensp;Configuration 
 

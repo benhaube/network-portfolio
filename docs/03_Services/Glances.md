@@ -5,8 +5,6 @@ subtitle: An Eye on Your System
 description: Glances an Eye on your system. A top / htop alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 tags:
   - Active
-  - Service
-  - Software
   - Docker
   - Monitor
 hide:
@@ -43,10 +41,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                                | Container Name | Image                           |
-| :---------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                             | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| Host Device                                                                                      | Method                                | Container Name | Image                           |
+| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                               | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
 
 ### :symbols-settings:&ensp;Configuration
 

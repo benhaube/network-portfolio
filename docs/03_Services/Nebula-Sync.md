@@ -6,8 +6,6 @@ description: Synchronize configuration between multiple Pi-hole instances.
 status: deprecated
 tags:
   - Deprecated
-  - Service
-  - Software
   - Docker
   - DNS
   - Infrastructure
@@ -44,9 +42,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                         | Method                                | Container Name | Image                                 |
-| :-------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
-| [:material-raspberry-pi:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
+| Host Device                                                                                          | Method                                | Container Name | Image                                 |
+| :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
+| [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

@@ -1,5 +1,5 @@
 ---
-icon: symbols/policy-fill
+icon: symbols/policy
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 tags:
@@ -11,7 +11,7 @@ tags:
   - VPN
   - Remote Access
 ---
-![Material Design server-security icon](../assets/icons/server-security.svg){ width=200 }
+![Lucide Firewall icon](../assets/icons/firewall.svg){ width=200 }
 
 # Network Security Policy
 *The Principle of Least Privilege*
@@ -31,7 +31,7 @@ tags:
 | [:symbols-shield-person-fill:&nbsp;Guest](./IP_Address_Management.md#local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                  |
 | [:symbols-shield-house-fill:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)          | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
-## :material-wall-fire:&ensp;Boundary Defense & Remote Access
+## :symbols-firewall:&ensp;Boundary Defense & Remote Access
 
 #### Edge Protection
 
@@ -103,13 +103,13 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :material-ethernet:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-ethernet-port-outline:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 
 	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-graph-2:{ .lg .middle }&emsp;**Network Diagrams**
 
 	---
 
@@ -125,7 +125,7 @@ tags:
 
 	[Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
 
--   :material-ip-network:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-ip-outline:{ .lg .middle }&emsp;**IP Address Management**
 
 	---
 

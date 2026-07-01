@@ -5,8 +5,6 @@ subtitle: All of the Data
 description: Visualization of real-time track data and telemetry synced to F1 live and replays.
 tags:
   - Active
-  - Service
-  - Software
   - Docker
 hide:
   - toc
@@ -45,10 +43,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                         | Method                                | Container Name | Image                                                 |
-| :------------------------------------------------------------------ | :------------------------------------ | :------------- | :---------------------------------------------------- |
-| [:material-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `f1-backend`   | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`  |
-|                                                                     |                                       | `f1-frontend`  | `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest` |
+| Host Device                                                        | Method                                | Container Name | Image                                                 |
+| :----------------------------------------------------------------- | :------------------------------------ | :------------- | :---------------------------------------------------- |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `f1-backend`   | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`  |
+|                                                                    |                                       | `f1-frontend`  | `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

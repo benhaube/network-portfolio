@@ -5,8 +5,6 @@ subtitle: Open Print Server
 description: A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 tags:
   - Active
-  - Service
-  - Software
   - Printing
   - Native
 hide:
@@ -48,9 +46,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                             | Container Name | Image |
-| :---------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:material-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                                      | Method                             | Container Name | Image |
+| :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

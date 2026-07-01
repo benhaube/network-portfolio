@@ -1,5 +1,5 @@
 ---
-icon: symbols/router
+icon: symbols/router-outline
 title: ASUS RT-BE92U
 subtitle: Wireless Router
 tags:
@@ -47,12 +47,12 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-#### :material-wan:&ensp;WAN Connection
+#### :symbols-web:&ensp;WAN Connection
 
-| Interface | IP Address | MAC Address         | Connected To                                           |
-| :-------: | :--------- | :------------------ | :----------------------------------------------------- |
-|   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :material-ethernet:&nbsp;2.5 Gb/s WAN / LAN *(port 1)* |
-|   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                      |
+| Interface | IP Address | MAC Address         | Connected To                                                       |
+| :-------: | :--------- | :------------------ | :----------------------------------------------------------------- |
+|   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :symbols-ethernet-port-outline:&nbsp;2.5 Gb/s WAN / LAN *(port 1)* |
+|   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                                  |
 
 #### :symbols-lan-outline:&ensp;Virtual Local Networks
 
@@ -70,16 +70,16 @@ hide:
 | *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-person-fill:&nbsp;Guest VLAN |
 |   *2G_IoT*   | VLAN53 | :symbols-close: | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
-#### :material-ethernet:&ensp;Physical Ethernet Ports
+#### :symbols-ethernet-port-outline:&ensp;Physical Ethernet Ports
 
-|       Port #       | Connected Device                                                               | Color / Type  | Notes               |
-| :----------------: | :----------------------------------------------------------------------------- | :------------ | :------------------ |
-| 10 Gb WAN / LAN 1  | [:material-switch:&nbsp;Ugreen Switch](./Ugreen_Switch.md)                     | Black / Cat6a | 10 Gb/s Uplink      |
-| 2.5 Gb WAN / LAN 2 | [:material-wan:&nbsp;Hitron Modem](./Hitron_Modem.md)                          | Black / Cat6a | WAN Connection      |
-|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:symbols-10-inch-rack:&nbsp;Mini-Rack</a>  | Black / Cat6a | Spare Keystone Jack |
-|    2.5 Gb LAN 2    | [:material-switch:&nbsp;TP-Link LiteWave Switch](./TP-Link_LiteWave_Switch.md) | White / Cat6  | 1 Gb/s Uplink       |
-|    2.5 Gb LAN 3    | :material-ethernet:&nbsp;*Empty*                                               | -             | -                   |
-|    2.5 Gb LAN 4    | :material-ethernet:&nbsp;*Empty*                                               | -             | -                   |
+|       Port #       | Connected Device                                                                             | Color / Type  | Notes               |
+| :----------------: | :------------------------------------------------------------------------------------------- | :------------ | :------------------ |
+| 10 Gb WAN / LAN 1  | [:symbols-ethernet-port-outline:&nbsp;Ugreen Switch](./Ugreen_Switch.md)                     | Black / Cat6a | 10 Gb/s Uplink      |
+| 2.5 Gb WAN / LAN 2 | [:symbols-web:&nbsp;Hitron Modem](./Hitron_Modem.md)                                         | Black / Cat6a | WAN Connection      |
+|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:symbols-10-inch-rack:&nbsp;Mini-Rack</a>                | Black / Cat6a | Spare Keystone Jack |
+|    2.5 Gb LAN 2    | [:symbols-ethernet-port-outline:&nbsp;TP-Link LiteWave Switch](./TP-Link_LiteWave_Switch.md) | White / Cat6  | 1 Gb/s Uplink       |
+|    2.5 Gb LAN 3    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
+|    2.5 Gb LAN 4    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
 
 ## :symbols-storage:&ensp;Storage & Mounts
 
@@ -103,9 +103,9 @@ hide:
 
 |  Status  | Service                                                                 | Port(s) | Role / Notes                                                                                                                                                                                            |
 | :------: | :---------------------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | [:material-web-clock:&nbsp;Chrony](../03_Services/Chrony.md)            |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
-| *Active* | [:material-web-refresh:&nbsp;DDNS](../03_Services/DDNS.md)              |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools). |
-| *Active* | [:material-console-network:&nbsp;SSH](../03_Services/SSH.md)            |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
+| *Active* | [:symbols-history-settings:&nbsp;Chrony](../03_Services/Chrony.md)      |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
+| *Active* | [:symbols-web-ip:&nbsp;DDNS](../03_Services/DDNS.md)                    |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools). |
+| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)                    |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
 | *Active* | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
 
 ---
@@ -116,7 +116,7 @@ hide:
     **:symbols-restore:&ensp;Backup Restore:**
     :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) and the [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md). 
 
-    **:material-web-clock:&ensp;NTP Server:**
+    **:symbols-history-settings:&ensp;NTP Server:**
     :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
 
 #### :symbols-update:&ensp;Update Process
@@ -164,7 +164,7 @@ hide:
 + The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command.
 + To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_Services/Gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.
 
-#### :material-web-check:&ensp;WAN Check Script
+#### :symbols-web-check:&ensp;WAN Check Script
 
 ##### About
 

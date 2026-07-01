@@ -109,7 +109,7 @@ theme:
       vh: symbols/host-outline
       vlan: symbols/lan-outline
       vm: symbols/stacks
-      vpn: symbols/vpn
+      vpn: symbols/vpn-outline
       windows: material/microsoft
     top: symbols/arrow-double-up
     previous: symbols/arrow-left

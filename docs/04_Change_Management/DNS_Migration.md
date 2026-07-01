@@ -11,7 +11,7 @@ tags:
 hide:
   - toc
 ---
-![Pi-hole Icon](../assets/icons/pi-hole.svg){ width=150 }
+![Pi-hole Icon](../assets/icons/pi-hole.svg){ width=125 }
 &nbsp;![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }
 &emsp;![Technitium Icon](../assets/icons/technitium.svg){ width=150 }
 

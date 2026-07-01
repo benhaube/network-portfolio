@@ -20,9 +20,9 @@
 <p align="center">
     <a href="#clone-the-repo">Clone the Repository</a>
     ·
-    <a href="https://github.com/benhaube/network-portfolio/#using-docker">Build Using Docker</a>
+    <a href="#using-docker">Build Using Docker</a>
     ·
-    <a href="https://github.com/benhaube/network-portfolio/#using-python">Build Using Python</a>
+    <a href="#using-python">Build Using Python</a>
 </p>
 
 # Network Documentation & Portfolio 

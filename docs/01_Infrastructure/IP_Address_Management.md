@@ -66,7 +66,7 @@ hide:
 | :------- | :------------------------------ | :----------------------------------------------------------------------------- | :------------------------------ | :------------------------------------- | :----------------- |
 | *Active* | :services-addr:&nbsp;addr.tools | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
 
-## :symbols-vpn:&ensp;VPN Servers / Clients
+## :symbols-vpn-outline:&ensp;VPN Servers / Clients
 
 #### :simple-wireguard:&ensp;WireGuard @ ASUS Router
 &emsp;&ensp;*Main Server*

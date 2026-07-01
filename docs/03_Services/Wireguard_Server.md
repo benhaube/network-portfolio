@@ -35,7 +35,7 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ :symbols-vpn:&nbsp;Server Endpoint:
++ :symbols-vpn-outline:&nbsp;Server Endpoint:
     + `rac3r4life.myaddr.dev:41820` *(for :symbols-router-outline:&nbsp;ASUS RT-BE92U)*
     + `rac3r4life.myaddr.dev:51820` *(for :symbols-nas:&nbsp;ZimaOS NAS)*
 + :symbols-cogs:&nbsp;Web UI Admin: 

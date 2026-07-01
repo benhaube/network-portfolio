@@ -98,7 +98,7 @@ hide:
 
 !!! config inline end "Critical Configurations"
 
-    :symbols-vpn:&ensp;**VPN:**
+    :symbols-vpn-outline:&ensp;**VPN:**
 
     + The [WireGuard](../03_Services/Wireguard_Server.md) VPN is used for remote access to the LAN.
     + [ASUS RT-BE92U](./ASUS_RT-BE92U.md) is the primary server, and [ZimaOS NAS](./ZimaBoard_2_NAS.md) is the secondary / backup server.

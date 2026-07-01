@@ -11,7 +11,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design switch icon](../assets/icons/ethernet.svg){ width=200 }&nbsp;
+![Material Design switch icon](../assets/icons/ethernet.svg){ width=200 }&ensp;
 ![Ugreen Logo](../assets/icons/ugreen-light.svg#only-light){ width=50 }
 ![Ugreen Logo](../assets/icons/ugreen-dark.svg#only-dark){ width=50 }
 

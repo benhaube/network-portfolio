@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }&nbsp;
+![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }&ensp;
 ![Raspberry Pi Icon](../assets/icons/raspberry-pi-logo.svg){ width=50 }
 &nbsp;![Arm Logo](../assets/icons/arm.svg){ width=50 }
 

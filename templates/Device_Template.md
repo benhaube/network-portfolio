@@ -60,9 +60,9 @@ hide:
 | :-------: | :----- | :----------------- | :------------------ | :-------- |
 |  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
 
-## :symbols-storage: Storage & Mounts
+## :symbols-folder-open: Storage & Mounts
 
-#### :material-harddisk: Internal Drive(s)
+#### :symbols-hard-drive: Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |

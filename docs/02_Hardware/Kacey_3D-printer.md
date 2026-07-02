@@ -61,9 +61,9 @@ hide:
 | :-------: | :----------------------------: | :--------------- | :---------------------------- | :------------- |
 |  `wlan0`  | :symbols-security:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage:&ensp;Storage & Mounts
+## :symbols-folder-open:&ensp;Storage & Mounts
 
-#### :material-harddisk:&ensp;Internal Drive
+#### :symbols-hard-drive:&ensp;Internal Drive
 
 | Mount Point | Drive Type | Drive Capacity | Device Path       | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------------- | :---------- | :--------- |

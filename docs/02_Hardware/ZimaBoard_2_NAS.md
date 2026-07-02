@@ -69,7 +69,7 @@ hide:
 |  `eth0`   | :symbols-security:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 |  `eth1`   | :symbols-security:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage:&ensp;Storage & Mounts
+## :symbols-folder-open:&ensp;Storage & Mounts
 
 #### :symbols-firmware:&ensp;Boot
 
@@ -77,7 +77,7 @@ hide:
 | :---------- | :--------- | :------------- | :------------- | :---------- | :--------- |
 | `/`         | eMMC       | 64 GB          | `/dev/mmcblk0` | `ext4`      | -          |
 
-#### :material-harddisk:&ensp;Data
+#### :symbols-hard-drive:&ensp;Data
 
 | Mount Point            | Drive Type         | Drive Capacity | Device Path    | File System | Encryption |
 | :--------------------- | :----------------- | :------------- | :------------- | :---------- | :--------- |

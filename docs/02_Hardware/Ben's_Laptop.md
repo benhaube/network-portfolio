@@ -82,9 +82,9 @@ hide:
 | :---------: | :----------------------------- | :---- | :---------------------------- | :------------- |
 | `wlp0s20f3` | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage:&ensp;Storage & Mounts
+## :symbols-folder-open:&ensp;Storage & Mounts
 
-#### :material-harddisk:&ensp;Internal Drive(s)
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point  | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :----------- | :--------- | :------------- | :---------- | :---------- | :--------- |

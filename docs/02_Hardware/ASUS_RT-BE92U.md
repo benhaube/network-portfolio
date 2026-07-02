@@ -81,9 +81,9 @@ hide:
 |    2.5 Gb LAN 3    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
 |    2.5 Gb LAN 4    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
 
-## :symbols-storage:&ensp;Storage & Mounts
+## :symbols-folder-open:&ensp;Storage & Mounts
 
-#### :material-harddisk:&ensp;Internal Drive(s)
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |

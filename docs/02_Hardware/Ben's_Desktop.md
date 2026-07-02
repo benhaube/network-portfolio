@@ -78,9 +78,9 @@ hide:
 | `enp7s0`  | :symbols-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 | `wlp6s0`  | :symbols-security:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-storage:&ensp;Storage & Mounts
+## :symbols-folder-open:&ensp;Storage & Mounts
 
-#### :material-harddisk:&ensp;Internal Drive(s)
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path                 | File System | Encryption |
 | :------------- | :--------- | :------------- | :-------------------------- | :---------- | :--------- |

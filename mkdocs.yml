@@ -90,8 +90,8 @@ theme:
       new: symbols/release-alert-outline
       office: symbols/desk
       pc: symbols/personal-computer
-      podman: simple/podman
-      podman_host: simple/podman
+      podman: services/linux-containers
+      podman_host: services/linux-containers
       policy: symbols/policy
       print: symbols/print
       printer-cart: symbols/print

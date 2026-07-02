@@ -57,7 +57,7 @@ theme:
       quote: symbols/quote
     tag:
       default: symbols/tag-outline
-      3D-printer: material/printer-3d
+      3D-printer: symbols/printer-3d
       isp: symbols/web
       iot: symbols/home-automation
       active: symbols/check-circle-outline
@@ -78,14 +78,14 @@ theme:
       infra: symbols/network-node
       inventory: symbols/inventory
       laptop: symbols/laptop
-      linux: material/linux
+      linux: symbols/linux
       living-room: symbols/sofa-outline-alt
       map: symbols/graph-2
       mini-rack: symbols/10-inch-rack
       mobile: symbols/devices-mobile
       monitor: symbols/monitor-heart-outline
       nas: symbols/nas
-      native: material/linux
+      native: symbols/linux
       network: symbols/lan 
       new: symbols/release-alert-outline
       office: symbols/desk

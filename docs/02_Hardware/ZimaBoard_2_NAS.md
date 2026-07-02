@@ -140,7 +140,7 @@ hide:
     + Do not attempt to use `apt` to install or upgrade system packages. 
     + Do not change NTP settings *(stuck on systemd-timesyncd)*.
 
-    :symbols-package:&ensp;**Entware:**
+    :symbols-boxes:&ensp;**Entware:**
  
     + The [Entware](https://github.com/Entware/Entware) package manager is installed. 
     + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
@@ -148,7 +148,7 @@ hide:
 
 !!! config "Critical Configurations"
 
-    :symbols-smb-share:&ensp;**SMB Multi-Channel:**
+    :symbols-smb-share-outline:&ensp;**SMB Multi-Channel:**
     
     + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
     + **Constraint:** 

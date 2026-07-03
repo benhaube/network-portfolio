@@ -1,5 +1,5 @@
 ---
-icon: brands/creality-v2
+icon: symbols/printer-3d
 title: Kacey 3D-Printer
 subtitle: Modified Creality K1C
 tags:

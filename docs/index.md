@@ -83,7 +83,7 @@ hide:
 [:symbols-mobile:&ensp;Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md)
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-[:brands-creality-v2:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
+[:symbols-printer-3d:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
 [:symbols-desktop-pc-outline:&ensp;Rob's Workstation](./02_Hardware/Rob's_Desktop.md) 

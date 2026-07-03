@@ -7,6 +7,15 @@
     padding-right: 6em;
 }
 
+/* ~~~~~~~~~~~~~~~~~ *
+ * Enable Mono Title *
+ * ~~~~~~~~~~~~~~~~~ */
+
+.mono-title .highlighttable th.filename {
+    font-family: var(--md-code-font-family), monospace;
+    /*font-size: .85em;*/
+}
+
 /* ~~~~~~~~~~~~~~~~ *
  * Enable Line-Wrap *
  * ~~~~~~~~~~~~~~~~ */

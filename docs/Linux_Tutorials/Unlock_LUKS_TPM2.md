@@ -83,11 +83,11 @@ hide:
 
 	+ Find the line for your LUKS volume and append `tpm2-device=auto` to the options field *(the fourth column)*.
 
-        ```ini title="Before <i>(Example)</i>" linenums="1"
+        ```ini title="Before (Example)" linenums="1"
         luks-UUID-HERE UUID=... none luks
         ```
 
-        ```ini title="After <i>(Example)</i>" linenums="1"
+        ```ini title="After (Example)" linenums="1"
         luks-UUID-HERE UUID=... none luks,tpm2-device=auto  
         ```
 
@@ -109,11 +109,11 @@ hide:
 
     + Find the line that starts with `GRUB_CMDLINE_LINUX_DEFAULT` or `GRUB_CMDLINE_LINUX` and append the new option inside the quotation marks, separated by a space from any existing perameters: 
      
-        ```bash title="Before <i>(Example)</i>" linenums="1"
+        ```bash title="Before (Example)" linenums="1"
         GRUB_CMDLINE_LINUX="quiet splash"
         ```
      
-        ```bash title="After <i>(Example)</i>" linenums="1"
+        ```bash title="After (Example)" linenums="1"
         GRUB_CMDLINE_LINUX="quiet splash rd.luks.options=tpm2-device=auto"
         ```
      

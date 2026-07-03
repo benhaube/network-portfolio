@@ -60,7 +60,7 @@ hide:
     
         The `ddns-start` script also contains the code send a WAN IP change notification to the [Gotify](./Gotify.md) server. 
 
-    ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="5 13 14"
+    ```sh {title="/jffs/scripts/ddns-start" linenums="1" hl_lines="5 13 14" .mono-title}
     --8<-- "ddns-start.sh"
     ```
 
@@ -94,7 +94,7 @@ hide:
 
 2. Create the two shell scripts needed to obtain the Certbot validation record and transfer the TLS certificate / key to the router:
 
-    ```bash title="<code>auth_hook.sh</code>" linenums="1" hl_lines="5"
+    ```bash {title="auth_hook.sh" linenums="1" hl_lines="5" .mono-title}
     --8<-- "auth_hook.sh"
     ```
 
@@ -106,7 +106,7 @@ hide:
     
     2. The validation string provided by Certbot.
 
-    ```bash title="<code>deploy_cert.sh</code>" linenums="1" hl_lines="3 4"
+    ```bash {title="deploy_cert.sh" linenums="1" hl_lines="3 4" .mono-title}
     --8<-- "deploy_cert.sh"
     ```
 

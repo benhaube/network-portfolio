@@ -65,7 +65,7 @@ hide:
   
 3. Paste the following code into the file, then save and close: 
 
-    ```yaml title="<code>config.yml</code>" linenums="1"
+    ```yaml {title="config.yml" linenums="1" .mono-title}
     --8<-- "yt-dlp-webui-config.yml"
     ```
 
@@ -85,7 +85,7 @@ hide:
 
 #### :material-docker:&ensp;Docker Compose
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "yt-dlp.yml"
 ```
 

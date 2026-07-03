@@ -34,7 +34,7 @@ hide:
 3. [ ] Open `printer.cfg` and add the following line: `[include manual-nozzle-clean-v2.cfg]`
 4. [ ] Save the configuration and restart Klipper to apply the changes.
 
-    ```cfg title="<code>printer.cfg</code>" linenums="1" hl_lines="31"
+    ```cfg {title="printer.cfg" linenums="1" hl_lines="31" .mono-title}
     --8<-- "printer.cfg::31"
     ```
 
@@ -78,6 +78,6 @@ hide:
 
 ## :symbols-frame-source:&ensp;G-code Macro
 
-```cfg title="<code>manual-nozzle-clean-v2.cfg</code>" linenums="1"
+```cfg {title="manual-nozzle-clean-v2.cfg" linenums="1" .mono-title}
 --8<-- "manual-nozzle-clean.cfg"
 ```

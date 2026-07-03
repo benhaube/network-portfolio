@@ -54,7 +54,7 @@ hide:
 
 ##### Exports Entry
 
-```linuxconfig title="<code>/etc/exports</code>" linenums="1"
+```linuxconfig {title="/etc/exports" linenums="1" .mono-title}
 --8<-- "exports"
 ```
 
@@ -77,22 +77,22 @@ systemctl restart nfs-server
 1. Systemd `.mount` unit files:
     + Place files in the `/etc/systemd/system` directory.
 
-    ```systemd title="<code>mnt-storage_server-NVMe.mount</code>" linenums="1"
+    ```systemd {title="mnt-storage_server-NVMe.mount" linenums="1" .mono-title}
     --8<-- "mnt-storage_server-NVMe.mount"
     ```
 
-    ```systemd title="<code>mnt-storage_server-Quick_Storage.mount</code>" linenums="1"
+    ```systemd {title="mnt-storage_server-Quick_Storage.mount" linenums="1" .mono-title}
     --8<-- "mnt-storage_server-Quick_Storage.mount"
     ```
 
 2. Systemd `.automount` unit files:
     + Place files in the `/etc/systemd/system` directory.
 
-    ```systemd title="<code>mnt-storage_server-NVMe.automount</code>" linenums="1"
+    ```systemd {title="mnt-storage_server-NVMe.automount" linenums="1" .mono-title}
     --8<-- "mnt-storage_server-NVMe.automount"
     ```
 
-    ```systemd title="<code>mnt-storage_server-Quick_Storage.automount</code>" linenums="1"
+    ```systemd {title="mnt-storage_server-Quick_Storage.automount" linenums="1" .mono-title}
     --8<-- "mnt-storage_server-Quick_Storage.automount"
     ```
 

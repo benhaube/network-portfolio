@@ -83,7 +83,7 @@ hide:
 
 #### :symbols-file-config:&ensp;The 'Caddyfile'
 
-```nginx title="<code>/etc/caddy/Caddyfile</code>" linenums="1"
+```nginx {title="/etc/caddy/Caddyfile" linenums="1" .mono-title}
 --8<-- "Caddyfile"
 ```
 

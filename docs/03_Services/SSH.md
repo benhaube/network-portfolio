@@ -89,7 +89,7 @@ hide:
 
 1. Make the required changes to the SSH config file: 
 
-    ```nt title="<code>/etc/ssh/sshd_config</code>" linenums="1"
+    ```nt {title="/etc/ssh/sshd_config" linenums="1" .mono-title}
     --8<-- "sshd_config"
     ```
 
@@ -103,7 +103,7 @@ hide:
 
 1. Paste this ASCII message into the banner file:
 
-    ```text title="<code>/etc/issue.net</code>" linenums="1"
+    ```text {title="/etc/issue.net" linenums="1" .mono-title}
     --8<-- "issue.net"
     ```
 
@@ -202,7 +202,7 @@ hide:
 
 3. Paste the following into the config file:
 
-    ```kconfig title="<code>~/.ssh/config</code>" linenums="1"
+    ```kconfig {title="~/.ssh/config" linenums="1" .mono-title}
     --8<-- "ssh-client-config"
     ```
 

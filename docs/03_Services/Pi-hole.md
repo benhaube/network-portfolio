@@ -70,6 +70,6 @@ curl -sSL https://install.pi-hole.net | bash
 
 #### :symbols-file-config:&ensp;Pi-hole Config File
 
-```toml title="<code>/etc/pihole/pihole.toml</code>" linenums="1"
+```toml {title="/etc/pihole/pihole.toml" linenums="1" .mono-title}
 --8<-- "pihole.toml"
 ```

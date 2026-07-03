@@ -30,7 +30,7 @@ hide:
 
 2. Check your `~/.bashrc` file to make sure it includes the following code:
 
-    ```bash title="<code>~/.bashrc</code>" linenums="1"
+    ```bash {title="~/.bashrc" linenums="1" .mono-title}
     --8<-- "debian-bashrc"
     ```
 
@@ -67,7 +67,7 @@ hide:
 
 2. Check your `~/.bashrc` file to make sure it includes the following code:
 
-    ```bash title="<code>~/.bashrc</code>" linenums="1"
+    ```bash {title="~/.bashrc" linenums="1" .mono-title}
     --8<-- "fedora-bashrc"
     ```
 

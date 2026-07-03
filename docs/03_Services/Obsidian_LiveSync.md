@@ -53,18 +53,18 @@ hide:
 
 #### :symbols-server:&ensp;Server
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "obsidian-livesync.yml"
 ```
 
 1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI. 
 
-```ini title="<code>local.ini</code>" linenums="1"
+```ini {title="local.ini" linenums="1" .mono-title}
 --8<-- "couchdb-local.ini"
 ```
 
 #### :symbols-devices:&ensp;Clients
 
-```json title="<code>.obsidian/plugins/obsidian-livesync/data.json</code>" linenums="1"
+```json {title=".obsidian/plugins/obsidian-livesync/data.json" linenums="1" .mono-title}
 --8<-- "obsidian-livesync_data.json"
 ```

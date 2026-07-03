@@ -62,11 +62,11 @@ hide:
     :services-dockge:&ensp;**Deployed with Dockge:**
     :    This service is deployed and managed by [Dockge](./Dockge.md). To pull updated images, start the service, stop the service, modify the environment variables, and modify the `compose.yml` file, visit the [Dockge Web-UI](http://pi-server.internal:5001). Alternatively, SSH into the ZimaOS NAS and edit the `compose.yml` and `.env` files directly. 
 
-    :symbols-folder:&ensp;**Data Directory:**
+    :symbols-folder-data:&ensp;**Data Directory:**
     :    The data for the `gitea` container is stored in the `dockge/stacks` directory, and is owned by `root:root`. 
     
         + `/media/nvme0n1p1/AppData/dockge/stacks/gitea/gitea`
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "gitea.yml"
 ```

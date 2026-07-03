@@ -45,7 +45,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "nginx.yml"
 ```
 
@@ -53,6 +53,6 @@ hide:
 2. Mounts your site folder as read-only (ro) for extra security.
 3. Mounts your site folder as read-only (ro) for extra security.
 
-```nginx title="<code>default.conf</code>" linenums="1"
+```nginx {title="default.conf" linenums="1" .mono-title}
 --8<-- "nginx.conf"
 ```

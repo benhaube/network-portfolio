@@ -55,26 +55,26 @@ hide:
 
 #### :symbols-server-outline:&ensp;Raspberry Pi 4B Server
 
-```linuxconfig title="<code>/etc/samba/smb.conf</code>" linenums="1"
+```linuxconfig {title="/etc/samba/smb.conf" linenums="1" .mono-title}
 --8<-- "smb-pi-4b.conf"
 ```
 
 #### :symbols-nas:&ensp;ZimaOS NAS
 
-```linuxconfig title="<code>/etc/samba/smb.conf</code>" linenums="1"
+```linuxconfig {title="/etc/samba/smb.conf" linenums="1" .mono-title}
 --8<-- "smb-zima.conf"
 ```
 
 ##### User Configuration Files
 
-```linuxconfig title="<code>/etc/samba/casa.admin.conf</code>" linenums="1"
+```linuxconfig {title="/etc/samba/casa.admin.conf" linenums="1" .mono-title}
 --8<-- "casa.admin.conf"
 ```
     
-```linuxconfig title="<code>/etc/samba/casa.bhaube.conf</code>" linenums="1"
+```linuxconfig {title="/etc/samba/casa.bhaube.conf" linenums="1" .mono-title}
 --8<-- "casa.bhaube.conf"
 ```
     
-```linuxconfig title="<code>/etc/samba/casa.rpereira.conf</code>" linenums="1"    
+```linuxconfig {title="/etc/samba/casa.rpereira.conf" linenums="1" .mono-title}    
 --8<-- "casa.rpereira.conf"
 ```

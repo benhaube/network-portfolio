@@ -107,7 +107,7 @@ hide:
 
         + **Example:**
 
-            ```yaml title="glance.yml (snippet)" linenums="1"
+            ```yaml {title="glance.yml (snippet)" linenums="1" .mono-title}
             auth:
             secret-key: <insert-server-secret>
             users:
@@ -137,7 +137,7 @@ hide:
      
         + **Example:**
 
-            ```yaml title="page.yml (example)" linenums="1"
+            ```yaml {title="page.yml (example)" linenums="1" .mono-title}
             columns:
               
               - size: full
@@ -154,7 +154,7 @@ hide:
 
 #### :material-docker:&ensp;Docker Compose
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "glance-compose.yml"
 ```
 
@@ -168,7 +168,7 @@ hide:
 
 #### :symbols-cogs:&ensp;Glance Config
 
-```yaml title="<code>dynacat.yml</code>" linenums="1"
+```yaml {title="dynacat.yml" linenums="1" .mono-title}
 --8<-- "dynacat.yml"
 ```
 
@@ -203,7 +203,7 @@ hide:
 
       Use this if you think that some of the text on the page is too dark and hard to read
 
-```yaml title="<code>glance.yml</code>" linenums="1"
+```yaml {title="glance.yml" linenums="1" .mono-title} 
 --8<-- "glance.yml"
 ```
 
@@ -240,14 +240,14 @@ hide:
 
 #### :symbols-space-dashboard:&ensp;Glance Pages
 
-```yaml title="<code>home.yml</code>" linenums="1"
+```yaml {title="home.yml" linenums="1" .mono-title}
 --8<-- "glance-home.yml"
 ```
 
 1. Show a title header on mobile device web browsers.
 2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
 
-```yaml title="<code>network.yml</code>" linenums="1"
+```yaml {title="network.yml" linenums="1" .mono-title}
 --8<-- "glance-network.yml"
 ```
 
@@ -257,7 +257,7 @@ hide:
 
       + Disabled **WireGuard** community widget for now due to bugs causing page instability and other issues. 
 
-```yaml title="<code>formula1.yml</code>" linenums="1"
+```yaml {title="formula1.yml" linenums="1" .mono-title}
 --8<-- "glance-formula1.yml"
 ```
 

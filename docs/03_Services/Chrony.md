@@ -49,12 +49,12 @@ hide:
 
 #### :symbols-server:&ensp;Server
 
-```nt title="<code>/opt/share/ntpmerlin.d/chrony.conf</code>" linenums="1"
+```nt {title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1" .mono-title}
 --8<-- "chrony.conf"
 ```
 
 #### :symbols-devices:&ensp;Clients
 
-```nt title="<code>/etc/chrony.conf</code>" linenums="1"
+```nt {title="/etc/chrony.conf" linenums="1" .mono-title}
 --8<-- "chrony-client.conf"
 ```

@@ -47,6 +47,6 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```ini title="<code>~/.config/krdpserverrc</code>" linenums="1"
+```ini {title="~/.config/krdpserverrc" linenums="1" .mono-title}
 --8<-- "krdpserverrc"
 ```

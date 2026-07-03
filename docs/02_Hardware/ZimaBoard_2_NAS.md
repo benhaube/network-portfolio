@@ -205,7 +205,7 @@ hide:
 
 ##### Fastfetch Preset File
 
-```json title="<code>/usr/share/fastfetch/presets/login.jsonc</code>" linenums="1" 
+```json {title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" .mono-title}
 --8<-- "fastfetch-login-storage-server.jsonc"
 ```
 
@@ -236,7 +236,7 @@ hide:
 
 ##### Starship Config File
 
-```toml title="<code>~/.config/starship.toml</code>" linenums="1"
+```toml {title="/DATA/.config/starship.toml" linenums="1" .mono-title}
 --8<-- "starship-zimaos.toml"
 ```
 
@@ -267,7 +267,7 @@ hide:
 
     :    The task configurations and logs are stored in `/DATA/AppData/cron/`
 
-    :symbols-restart:&ensp;**Persistence:**
+    :symbols-restart-alt:&ensp;**Persistence:**
 
     :    Tasks are persisted to disk and automatically restored after system restart using the Systemd unit, `cron.service`. This fixes the known issue where tasks did not continue after a reboot in previous versions.
 

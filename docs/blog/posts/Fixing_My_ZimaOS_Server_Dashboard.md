@@ -46,7 +46,7 @@ This command will output the data URI which I could paste directly into the icon
 
 My Linux PCs run Fedora (KDE Plasma Desktop Edition). Fedora has a rather great standard for modifying your `.bashrc` file. There is a nice block of bash code in their `.bashrc` file that watches for files in a sub-directory in your home folder, and automatically appends the contents of those files to your `.bashrc` file. This directory is called `~/.bashrc.d/`. I have a lot of customizations to my CLI, so in that directory I have a few files for making changes: `aliases`, `env`, and `functions`. I wrote the function into my `~/.bashrc.d/functions` file, and ran the command `source ~/.bashrc` to reload the shell settings. That's it! Now my new function is set up. 
 
-```bash title="svg2uri" linenums="1" 
+```bash {title="svg2uri" linenums="1" .mono-title}
 svg2uri() {
   # Reads from standard input (stdin) and outputs a URL-encoded SVG Data URI
   node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8').trim()))"

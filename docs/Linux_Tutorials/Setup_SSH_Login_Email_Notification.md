@@ -17,11 +17,13 @@ hide:
 :     In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
 
 1. For **Debian / Ubuntu** based systems, execute:
+
     ```bash linenums="1"
     sudo apt install msmtp msmtp-mta
     ```
 
 2. For **Fedora / RHEL** based systems, execute: 
+
     ```bash linenums="1"
     sudo dnf install msmtp msmtp-mta
     ```
@@ -39,7 +41,7 @@ hide:
 
 2. Paste the following into the configuration file:
 
-    ```bash title="<code>/etc/msmtprc</code>" linenums="1" hl_lines="11 13-14"
+    ```bash {title="/etc/msmtprc" linenums="1" hl_lines="11 13-14" .mono-title}
     --8<-- "msmtprc"
     ```
 
@@ -111,7 +113,7 @@ hide:
 
     The final file should look like this: 
 
-    ```desktop title="<code>/etc/pam.d/sshd</code>" linenums="1" hl_lines="26"
+    ```desktop {title="/etc/pam.d/sshd" linenums="1" hl_lines="26" .mono-title}
     --8<-- "pam-sshd"
     ```
 
@@ -132,7 +134,7 @@ hide:
 
 2. Paste the following into your script file, and replace `example@example.com` with the email address to which you would like the notifications to be sent. 
 
-    ```bash title="<code>ssh-login-notify.sh</code>" linenums="1" hl_lines="7"
+    ```bash {title="ssh-login-notify.sh" linenums="1" hl_lines="7" .mono-title}
     --8<-- "ssh-login-notify.sh"
     ```
 
@@ -178,7 +180,7 @@ hide:
 
 3. Paste the following code into your script file, and replace the variables `TOKEN` and `URL` with your actual Gotify App token and URL.
 
-    ```bash title="<code>gotify-ssh-alert.sh</code>" linenums="1" hl_lines="9 10"
+    ```bash {title="gotify-ssh-alert.sh" linenums="1" hl_lines="9 10" .mono-title}
     --8<-- "gotify-ssh-alert.sh"
     ```
 

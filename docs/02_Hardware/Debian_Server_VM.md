@@ -162,7 +162,7 @@ Prints a customized Fastfetch preset with relevant information every time a new 
 
 ##### Fastfetch Preset File
 
-```json title="<code>/usr/share/fastfetch/presets/login.jsonc</code>" linenums="1" 
+```json {title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" .mono-title}
 --8<-- "fastfetch-login-debian-vm.jsonc"
 ```
 
@@ -184,6 +184,6 @@ Prints a customized Fastfetch preset with relevant information every time a new 
 
 3. Place the custom config file in the `~/.config` directory:
 
-    ```toml title="<code>starship.toml</code>" linenums="1"
+    ```toml {title="starship.toml" linenums="1" .mono-title}
     --8<-- "starship-debian-vm.toml"
     ```

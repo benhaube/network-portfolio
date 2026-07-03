@@ -60,7 +60,7 @@ hide:
 
 #### :symbols-file-config:&ensp;Config File
 
-```ini title="<code>moonraker.cfg</code>" linenums="1"
+```ini {title="moonraker.cfg" linenums="1" .mono-title}
 --8<-- "moonraker.cfg"
 ```
 

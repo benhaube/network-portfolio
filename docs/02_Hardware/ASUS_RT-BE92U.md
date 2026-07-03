@@ -197,7 +197,7 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
 
 3. Add the following code to the `wan-event` script contained in the `/jffs/scripts` directory: 
 
-    ```sh title="<code>/jffs/scripts/wan-event</code>" linenums="1"
+    ```sh {title="/jffs/scripts/wan-event" linenums="1" .mono-title}
     if [ "$2" == "connected" ]; then
       # Manually create the cron job to preserve custom arguments
       cru a WAN_Check "*/5 * * * * /jffs/scripts/ChkWAN.sh wan ping=9.9.9.9,149.112.112.112,8.8.8.8,1.1.1.1"

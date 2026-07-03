@@ -50,7 +50,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "f1-replay-timing.yaml"
 ```
 

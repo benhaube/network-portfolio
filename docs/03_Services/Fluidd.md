@@ -61,6 +61,6 @@ hide:
 
 #### :symbols-backup:&ensp;Config File Backup
 
-```json {title="<code>backup-fluidd.json</code>" linenums="1" .wrap-code}
+```json {title="backup-fluidd.json" linenums="1" .wrap-code .mono-title}
 --8<-- "fluidd.json"
 ```

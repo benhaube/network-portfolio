@@ -62,7 +62,7 @@ hide:
 3. [ ] Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`
 4. [ ] Save and restart Klipper. 
 
-    ```cfg title="<code>printer.cfg</code>" linenums="1" hl_lines="30"
+    ```cfg {title="printer.cfg" linenums="1" hl_lines="30" .mono-title}
     --8<-- "printer.cfg::31"
     ```
 
@@ -75,7 +75,7 @@ hide:
 #### Klipper Mesh Clearance
   + [ ] In `printer.cfg`, locate the `[bed_mesh]` section. Reduce the Y-axis value of `mesh_max` by 10 *(e.g., change `220` to `210`)*.
 
-    ```cfg title="<code>printer.cfg</code>" linenums="350" hl_lines="4"
+    ```cfg {title="printer.cfg" linenums="350" hl_lines="4" .mono-title}
     --8<-- "printer.cfg:350:356"
     ```
 
@@ -117,6 +117,6 @@ hide:
 
 ## :symbols-frame-source:&ensp;PROWIPER G-Code
 
-```cfg title="<code>3DPHUB_PROWIPER.cfg</code>" linenums="1" hl_lines="43 58"
+```cfg {title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58" .mono-title}
 --8<-- "3DHUB_PROWIPER.cfg"
 ```

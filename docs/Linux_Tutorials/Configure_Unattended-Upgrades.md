@@ -211,7 +211,7 @@ The `Origins-Pattern` section of the configuration file dictates which repositor
 
     The variable, `${distro_codename}`, automatically expands to your Debian release *(Bullseye, Bookworm, or Trixie)*. This makes the configuration portable across versions.
 
-```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
 Unattended-Upgrade::Origins-Pattern {
     //  (1)!
 //  "origin=Debian,codename=${distro_codename}-updates";
@@ -235,7 +235,7 @@ The `Package-Blacklist` section uses Python regular expressions to exclude speci
 
 1. Here are some examples: 
 
-    ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+    ```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
     Unattended-Upgrade::Package-Blacklist {
         "linux-";  // (1)!
     //  "libc6$";  (2)
@@ -264,7 +264,7 @@ There are three main options to control email behavior.
 
 1. Setup email alerts to monitor upgrade activity: 
 
-    ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+    ```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
     Unattended-Upgrade::Mail "admin@example.com";
     Unattended-Upgrade::MailReport "on-change";
     Unattended-Upgrade::Sender "your-authorized-email@example.com";
@@ -282,7 +282,7 @@ Some updates require a system reboot to take effect *(e.g., kernel, libc, system
 
 1. These options control automatic reboot behavior:
 
-    ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+    ```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
     Unattended-Upgrade::Automatic-Reboot "true";  // (1)!
     Unattended-Upgrade::Automatic-Reboot-WithUsers "true";  // (2)!
     Unattended-Upgrade::Automatic-Reboot-Time "03:00";  // (3)!
@@ -302,7 +302,7 @@ Some updates require a system reboot to take effect *(e.g., kernel, libc, system
 
 1. Control whether `unattended-upgrades` removes orphaned packages automatically:
 
-    ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+    ```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
     Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";  // (1)!
     Unattended-Upgrade::Remove-New-Unused-Dependencies "true";  // (2)!
     Unattended-Upgrade::Remove-Unused-Dependencies "false";  // (3)!
@@ -316,7 +316,7 @@ Some updates require a system reboot to take effect *(e.g., kernel, libc, system
 
 1. Configure the method `unattended-upgrades` uses to log activity: 
 
-    ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+    ```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
     Unattended-Upgrade::SyslogEnable "true";  // (1)!
     Unattended-Upgrade::SyslogFacility "daemon";  // (2)!
     Unattended-Upgrade::Verbose "true";  // (3)!
@@ -334,7 +334,7 @@ These options are intended for laptops and metered internet connections.
 
 1. Prevent upgrades in unfavorable conditions:
 
-    ```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+    ```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
     Unattended-Upgrade::OnlyOnACPower "true";  // (1)!
     Unattended-Upgrade::Skip-Updates-On-Metered-Connections "true";  // (2)!
     Acquire::http::Dl-Limit "500";  // (3)!
@@ -352,7 +352,7 @@ These options are intended for laptops and metered internet connections.
 
 Other useful settings in the configuration file:
 
-```cpp title="<code>/etc/apt/apt.conf.d/50unattended-upgrades</code>" linenums="1"
+```cpp {title="/etc/apt/apt.conf.d/50unattended-upgrades" linenums="1" .mono-title}
 Unattended-Upgrade::AutoFixInterruptedDpkg "true";  // (1)!
 Unattended-Upgrade::MinimalSteps "true";  // (2)!
 Unattended-Upgrade::InstallOnShutdown "false";  // (3)!
@@ -391,7 +391,7 @@ It is highly recommended to do a 'dry-run' after making changes to the configura
 
 2. Here is an example log output showing a successful automatic upgrade run:
 
-    ```text title="<code>unattended-upgrades.log</code>" linenums="1"
+    ```text {title="unattended-upgrades.log" linenums="1" .mono-title}
     2026-05-19 06:25:15,546 INFO Starting unattended upgrades script
     2026-05-19 06:25:15,547 INFO Allowed origins are: origin=Debian,codename=trixie,label=Debian, origin=Debian,codename=trixie,label=Debian-Security, origin=Debian,codename=trixie-security,label=Debian-Security
     2026-05-19 06:25:15,547 INFO Initial blacklist: 

@@ -64,7 +64,7 @@ hide:
 
 #### :material-docker:&ensp;Docker Compose
 
-```yaml title="<code>compose.yml</code>" linenums="1"
+```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "gotify.yml"
 ```
 
@@ -74,7 +74,7 @@ hide:
 
 1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
 
-    ```bash title="<code>home-bkp-nas.sh</code>" linenums="1" hl_lines="3 4"
+    ```bash {title="home-bkp-nas.sh" linenums="1" hl_lines="3 4" .mono-title}
     --8<-- "home-bkp-nas.sh:59"
     ```
 
@@ -128,7 +128,7 @@ hide:
 
 2. Paste this code into the file, then save and close.
 
-    ```sh title="<code>/jffs/scripts/ddns-start</code>" linenums="1" hl_lines="5 13 14"
+    ```sh {title="/jffs/scripts/ddns-start" linenums="1" hl_lines="5 13 14" .mono-title}
     --8<-- "ddns-start.sh"
     ```
 
@@ -156,7 +156,7 @@ hide:
 
 2. Paste this code into the file, then save and close.
 
-    ```sh title="<code>/jffs/scripts/gotify-backupmon.sh</code>" linenums="1" hl_lines="4 5"
+    ```sh {title="/jffs/scripts/gotify-backupmon.sh" linenums="1" hl_lines="4 5" .mono-title}
     --8<-- "gotify-backupmon.sh"
     ```
 
@@ -180,7 +180,7 @@ hide:
 
     + Append the following code to the bottom of the script:
 
-        ```sh title="<code>/jffs/scripts/services-start</code>" linenums="1"
+        ```sh {title="/jffs/scripts/services-start" linenums="1" .mono-title}
         # (1)!
         (
             sleep 15
@@ -222,7 +222,7 @@ hide:
 
 2. Paste this code into the file, then save and close.
 
-    ```sh title="<code>/opt/share/connmon.d/userscripts.d/gotify-connmon.sh</code>" linenums="1" hl_lines="4 5"
+    ```sh {title="/opt/share/connmon.d/userscripts.d/gotify-connmon.sh" linenums="1" hl_lines="4 5" .mono-title}
     --8<-- "gotify-connmon.sh"
     ```
 
@@ -253,7 +253,7 @@ hide:
 
 2. Create a `dnsmasq.postconf` script to modify the `dnsmasq` configuration dynamically before the service starts:
 
-    ```sh title="<code>/jffs/scripts/dnsmasq.postconf</code>" linenums="1"
+    ```sh {title="/jffs/scripts/dnsmasq.postconf" linenums="1" .mono-title}
     --8<-- "dnsmasq.postconf"
     ```
 
@@ -263,7 +263,7 @@ hide:
 
     :    This script will act as the middleman. Dnsmasq passes four arguments to this script automatically: Action *(`add`, `old`, or `del`)*, MAC address, IP address, and Hostname.
 
-    ```sh title="<code>/jffs/scripts/dhcp-event.sh</code>" linenums="1" hl_lines="14 15"
+    ```sh {title="/jffs/scripts/dhcp-event.sh" linenums="1" hl_lines="14 15" .mono-title}
     --8<-- "dhcp-event.sh"
     ```
 
@@ -289,17 +289,17 @@ hide:
 
 1. Create the script: 
 
-    ```bash title="Debian Servers&emsp;<code>/usr/local/bin/</code>" linenums="1"
+    ```bash {title="Debian Servers:  /usr/local/bin/" linenums="1" .mono-title}
     sudo nano /usr/local/bin/gotify-ssh-alert.sh
     ```
 
-    ```bash title="ZimaOS NAS&emsp;<code>/opt/bin/</code>" linenums="1"
+    ```bash {title="ZimaOS NAS:  /opt/bin/" linenums="1" .mono-title}
     sudo nano /opt/bin/gotify-ssh-alert.sh  # (1)!
     ```
 
     1. Since **ZimaOS** is an immutable operating system, it is necessary to use the `/opt/bin/` directory. This ensures the script is not deleted after OS upgrades and / or system reboots.
 
-    ```sh title="ASUS Router&emsp;<code>/jffs/scripts/</code>" linenums="1"
+    ```sh {title="ASUS Router:  /jffs/scripts/" linenums="1" .mono-title}
     nano /jffs/scripts/gotify-ssh-alert.sh  # (1)!
     ```
 
@@ -348,19 +348,19 @@ hide:
 
 4. Edit the respective configuration files:
 
-    ```bash title="Debian Servers&emsp;<code>/etc/pam.d/sshd</code>" linenums="1"
+    ```bash {title="Debian Servers:  /etc/pam.d/sshd" linenums="1" .mono-title}
     session     optional     pam_exec.so     /usr/local/bin/gotify-ssh-alert.sh  # (1)!
     ```
       
     1. Add line to `/etc/pam.d/sshd` after the existing "session" lines.
 
-    ```bash title="ZimaOS NAS&emsp;<code>/etc/pam.d/sshd</code>" linenums="1"
+    ```bash {title="ZimaOS NAS:  /etc/pam.d/sshd" linenums="1" .mono-title}
     session     optional     /lib/security/pam_exec.so     /opt/bin/gotify-ssh-alert.sh  # (1)!
     ```
 
     1. Add line to `/etc/pam.d/sshd` after the existing "session" lines.    
 
-    ```sh title="ASUS Router&emsp;<code>/jffs/configs/profile.add</code>" linenums="1"
+    ```sh {title="ASUS Router:  /jffs/configs/profile.add" linenums="1" .mono-title}
     /jffs/scripts/gotify-ssh-alert.sh &  # (1)!
     ```
 
@@ -406,7 +406,7 @@ hide:
 
 2. Paste the following code into the file:
 
-    ```bash title="<code>/DATA/Scripts/appdata_backup.sh</code>" linenums="1" hl_lines="4 5"
+    ```bash {title="/DATA/Scripts/appdata_backup.sh" linenums="1" hl_lines="4 5" .mono-title}
     --8<-- "appdata_backup.sh"
     ```
 
@@ -434,7 +434,7 @@ hide:
 
 2. Paste the following code into the file:
 
-    ```bash title="<code>/DATA/Scripts/docker_cleanup.sh</code>" linenums="1" hl_lines="4 5"
+    ```bash {title="/DATA/Scripts/docker_cleanup.sh" linenums="1" hl_lines="4 5" .mono-title}
     --8<-- "docker_cleanup.sh"
     ```
 
@@ -462,7 +462,7 @@ hide:
 
 2. Paste the following code into the file:
 
-    ```bash title="<code>/DATA/Scripts/temp_files_clean.sh</code>" linenums="1" hl_lines="4 5"
+    ```bash {title="/DATA/Scripts/temp_files_clean.sh" linenums="1" hl_lines="4 5" .mono-title}
     --8<-- "temp_files_clean.sh"
     ```
 

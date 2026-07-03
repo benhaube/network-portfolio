@@ -68,8 +68,8 @@ theme:
       desktop: symbols/desktop-pc-outline
       development: symbols/graph-8
       dns: symbols/dns
-      docker: material/docker
-      docker_host: material/docker
+      docker: services/docker
+      docker_host: services/docker
       domain: symbols/domain
       download: symbols/download
       file-share: symbols/smb-share-outline
@@ -110,7 +110,7 @@ theme:
       vlan: symbols/lan-outline
       vm: symbols/stacks
       vpn: symbols/vpn-outline
-      windows: material/microsoft
+      windows: brands/microsoft
     top: symbols/arrow-double-up
     previous: symbols/arrow-left
     next: symbols/arrow-right

@@ -1,5 +1,13 @@
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.15.0/dist/mermaid.esm.min.mjs';
-import elkLayouts from 'https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.2.1/dist/mermaid-layout-elk.esm.min.mjs';
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+import elkLayouts from 'https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0/dist/mermaid-layout-elk.esm.min.mjs';
+
+mermaid.registerIconPacks([
+  {
+    name: 'material-symbols',
+    loader: () =>
+      fetch('https://unpkg.com/@iconify-json/material-symbols@1/icons.json').then((res) => res.json()),
+  },
+]);
 
 mermaid.registerLayoutLoaders(elkLayouts);
 mermaid.initialize({

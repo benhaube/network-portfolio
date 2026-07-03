@@ -98,22 +98,22 @@ hide:
  
     :symbols-package:&ensp;**Software:**
  
-    + :services-fluidd:&nbsp;Fluidd 
+    + Fluidd 
         + For information regarding the [Fluidd](../03_Services/Fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).    
-    + :services-klipper:&nbsp;Klipper / Moonraker
+    + Klipper / Moonraker
         + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
         + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
  
     :material-printer-3d:&ensp;**Hardware:**
  
-    + [:symbols-settings:&nbsp;Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
+    + [Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
         + Changes from a fixed bed to an adjustable bed with aluminum knobs. 
-    + [:symbols-prowiper:&nbsp;PROWIPER^&copy;^ Mod](../3D_Printing/PROWIPER_Mod.md)
+    + [PROWIPER^&copy;^ Mod](../3D_Printing/PROWIPER_Mod.md)
         + Replaces the standard nozzle wiping brush at the back of the build plate.
  
     :symbols-frame-source:&ensp;**Custom G-Code Macros:**
 
-    + [:symbols-toothbrush-nozzle:&nbsp;Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
+    + [Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
         + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
 
 #### :symbols-update:&ensp;Update Process

@@ -42,14 +42,14 @@ hide:
 #### :symbols-memory:&ensp;OS / Firmware
 
 + [:brands-creality-v2:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
-+ [:material-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
++ [:symbols-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"Kacey (root)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
+    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"Kacey (root)"
 
 ## :symbols-lan:&ensp;Network Configuration
 
@@ -79,7 +79,7 @@ hide:
 
 ## :symbols-web:&ensp;Services / Docker Containers
 
-#### :material-linux:&ensp;Native Linux
+#### :symbols-linux:&ensp;Native Linux
 
 |  Status  | Service                                                          |   Port(s)   | Role / Notes                                                                                   |
 | :------: | :--------------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
@@ -104,7 +104,7 @@ hide:
         + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
         + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
  
-    :material-printer-3d:&ensp;**Hardware:**
+    :symbols-printer-3d:&ensp;**Hardware:**
  
     + [Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
         + Changes from a fixed bed to an adjustable bed with aluminum knobs. 

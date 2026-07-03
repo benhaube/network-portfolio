@@ -47,7 +47,7 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Portainer"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Portainer"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
@@ -56,14 +56,14 @@ hide:
 
 | Host Device                                                                                          | Method                                | Container Name | Image                        |
 | :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
+| [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
 
 ##### Agent
 
 | Host Device                                                                                           | Method                                | Container Name    | Image                 |
 | :---------------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
-| [:symbols-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                                | :material-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| [:symbols-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                                | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
 ### :symbols-settings:&ensp;Configuration  
 

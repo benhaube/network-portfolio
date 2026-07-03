@@ -11,13 +11,13 @@ hide:
 [My Resume&ensp;:symbols-work-history-outline:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :symbols-engine:&nbsp;:material-arrow-right-thin:&nbsp;:symbols-lan:&ensp;From Engines to Infrastructure
+## :symbols-engine:&nbsp;:symbols-arrow-right-thin:&nbsp;:symbols-lan:&ensp;From Engines to Infrastructure
 
 With thirteen years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology** and **Cybersecurity**.
 
 I’ve found that whether it’s a fuel injection system or a network stack, the core principles remain the same: **precision, security, and relentless troubleshooting.**
 
-## :material-star-four-points:&ensp;My Technical North Star
+## :symbols-star-four-points:&ensp;My Technical North Star
 
 I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-Source** movements. My "homelab" isn’t just a hobby; it is a sandbox for testing the "Defense in Depth" strategies I’m studying for my IT / Cybersecurity career, and it is an ecosystem of tools and services I use to take back ownership of my data from the "Big-Tech" monopolies that put profit above people. 
 

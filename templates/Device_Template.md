@@ -38,7 +38,7 @@ hide:
 #### :symbols-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
 
 #### :symbols-security: Device Security
 
@@ -82,13 +82,13 @@ hide:
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |
 | *Active* | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network *(NAT)* | `disk-image.qcow2` | -            |
 
-#### :material-linux: Native Linux
+#### :symbols-linux: Native Linux
 
 |  Status  | Service                                                   | Port(s) | Role / Notes |
 | :------: | :-------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
-#### :material-docker: Docker
+#### :services-docker: Docker
 
 |  Status  | Service                                                   | Port(s) | Role / Notes |
 | :------: | :-------------------------------------------------------- | :-----: | :----------- |

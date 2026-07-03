@@ -41,7 +41,7 @@ hide:
 #### :symbols-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
 
 ## :symbols-monitor-heart: Resource Allocation
 
@@ -61,13 +61,13 @@ hide:
 
 ## :symbols-web: Services / Docker Containers
 
-#### :material-linux: Native Linux
+#### :symbols-linux: Native Linux
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
-#### :material-docker: Docker
+#### :services-docker: Docker
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |

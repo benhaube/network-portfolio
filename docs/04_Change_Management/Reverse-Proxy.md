@@ -27,7 +27,7 @@ hide:
 
 #### DNS Servers
 
-* Technitium Cluster Primary:&ensp;[:material-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)
+* Technitium Cluster Primary:&ensp;[:symbols-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)
 * Technitium Cluster Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
 #### Reverse Proxy

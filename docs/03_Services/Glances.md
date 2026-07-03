@@ -43,18 +43,18 @@ hide:
 
 | Host Device                                                                                      | Method                                | Container Name | Image                           |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                               | :material-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                               | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :material-docker:&ensp;Docker Compose
+#### :services-docker:&ensp;Docker Compose
 
 ```yaml title="Raspberry Pi 4B Server" linenums="1"
 --8<-- "glances-pi-4b.yml"
 ```
 
-1. See all image tags here:&ensp;[:material-docker:&nbsp;Docker Hub](https://hub.docker.com/r/nicolargo/glances/tags)
+1. See all image tags here:&ensp;[:services-docker:&nbsp;Docker Hub](https://hub.docker.com/r/nicolargo/glances/tags)
 2. Uncomment for SATA or NVME smartctl monitoring.
 3. Uncomment for SATA smartctl monitoring.
 4. Uncomment for NVME smartctl monitoring.

@@ -42,8 +42,8 @@ hide:
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Asus Router"
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE91U (Admin)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Asus Router"
+    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ASUS RT-BE91U (Admin)"
 
 ## :symbols-lan:&ensp;Network Configuration
 
@@ -99,7 +99,7 @@ hide:
 
 ## :symbols-web:&ensp;Services / Docker Containers
 
-#### :material-linux:&ensp;Native
+#### :symbols-linux:&ensp;Native
 
 |  Status  | Service                                                                 | Port(s) | Role / Notes                                                                                                                                                                                            |
 | :------: | :---------------------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

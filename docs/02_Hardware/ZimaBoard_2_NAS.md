@@ -46,10 +46,10 @@ hide:
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)" 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)"   
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)" 
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)"   
+    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-monitor-heart:&ensp;Core Specs
 
@@ -95,9 +95,9 @@ hide:
 
 |  Status  | OS                                                                             | Virtual NIC | Virtual Disk Image | Role / Notes                                                                         |
 | :------: | :----------------------------------------------------------------------------- | :---------- | :----------------- | :----------------------------------------------------------------------------------- |
-| *Active* | [:material-debian:&nbsp;Debian *(trixie)*](../02_Hardware/Debian_Server_VM.md) | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
+| *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](../02_Hardware/Debian_Server_VM.md) | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
 
-#### :material-linux:&ensp;Native Linux
+#### :symbols-linux:&ensp;Native Linux
 
 |  Status  | Service                                               | Port(s) | Role / Notes                                                                                   |
 | :------: | :---------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
@@ -105,7 +105,7 @@ hide:
 | *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 | *Active* | [:symbols-smb-share:&nbsp;SMB](../03_Services/SMB.md) |  `445`  | Remote file system access.                                                                     |
 
-#### :material-docker:&ensp;Docker
+#### :services-docker:&ensp;Docker
 
 |   Status   | Service                                                                                 |        Port(s)         | Role / Notes                                                                                                                                        |
 | :--------: | :-------------------------------------------------------------------------------------- | :--------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -157,7 +157,7 @@ hide:
     ---
     See the ["Configuration"](../03_Services/SMB.md#configuration) section of the SMB service documentation page for server configuration details.
 
-!!! change "NAS Protocol Change (SMB :material-arrow-right-thin: NFS)"
+!!! change "NAS Protocol Change (SMB :symbols-arrow-right-thin: NFS)"
     
     :symbols-calendar-event:&ensp;**Date:** 2026-02-09 <br>
     :symbols-info:&ensp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>

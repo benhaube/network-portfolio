@@ -15,10 +15,10 @@ hide:
     **What are terminal aliases?**
     :     When operating in a GNU / Linux terminal environment, aliases are an indispensable necessity to speed up your workflow. You can create an alias to eliminate the need to memorize the required arguments, you can combine several commands into an easy shortcut, you can automatically fix common typos, and many more. This guide will show you how to set up useful terminal aliases on both **Fedora / RHEL** and **Debian / Ubuntu** based GNU / Linux distributions. 
 
-[:material-arrow-down-thin:&thinsp;Jump to **Fedora / RHEL** Instructions&thinsp;:material-arrow-down-thin:](#fedora-rhel-based-distributions)
+[:symbols-arrow-down-thin:&thinsp;Jump to **Fedora / RHEL** Instructions&thinsp;:symbols-arrow-down-thin:](#fedora-rhel-based-distributions)
 
 ---
-## :material-debian:&ensp;Debian / Ubuntu Based Distributions
+## :symbols-debian:&ensp;Debian / Ubuntu Based Distributions
 
 1. Create a backup of your `.bashrc` file contained in your home (`~/`) directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize. 
 
@@ -55,7 +55,7 @@ hide:
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
     + If your aliases were not loaded properly, check the code you entered into the `~/.bashrc` file for errors. 
 
-## :material-fedora:&ensp;Fedora / RHEL Based Distributions
+## :symbols-fedora:&ensp;Fedora / RHEL Based Distributions
 
 1. Create a backup of your `.bashrc` file contained in your home *(`~/`)* directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize. 
 

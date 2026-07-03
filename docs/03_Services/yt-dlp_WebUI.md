@@ -38,13 +38,13 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"yt-dlp-webui"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"yt-dlp-webui"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                        | Method                                | Container Name | Image                             |
 | :----------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -83,7 +83,7 @@ hide:
 
 5. Paste the JWT into the environment variable, `JWT_SECRET`, in your Docker compose file and restart the container.
 
-#### :material-docker:&ensp;Docker Compose
+#### :services-docker:&ensp;Docker Compose
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "yt-dlp.yml"

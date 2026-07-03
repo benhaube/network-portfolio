@@ -38,13 +38,13 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                      | Method                             | Container Name | Image |
 | :------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

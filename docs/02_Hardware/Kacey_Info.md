@@ -57,7 +57,7 @@ hide:
     + <http://k1c-a71e.internal:7125>
 + API Key: 
     + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-        + Local Network&ensp;:material-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
+        + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
 
 #### Fluidd
 

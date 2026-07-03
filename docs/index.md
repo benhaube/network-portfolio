@@ -216,14 +216,14 @@ hide:
 ---
 ## :symbols-swap-horizontal:&ensp;Change Management
 
-[:brands-raspberry-pi:&nbsp;:material-arrow-right-bold:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
+[:brands-raspberry-pi:&nbsp;:symbols-arrow-right:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
 :    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
-[:simple-pihole:&nbsp;:material-arrow-right-bold:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
+[:simple-pihole:&nbsp;:symbols-arrow-right:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 
 
 ---
-## :material-printer-3d-nozzle:&ensp;3D Printing
+## :symbols-printer-3d-nozzle:&ensp;3D Printing
 
 !!! links inline end "Check out my 3D Models!"
     All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.
@@ -240,7 +240,7 @@ hide:
 :    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md).
 
 ---
-## :material-linux:&ensp;Linux Tutorials
+## :symbols-linux:&ensp;Linux Tutorials
 
 !!! links inline end "Extra Links"
     **My Favorite Bash Aliases:**

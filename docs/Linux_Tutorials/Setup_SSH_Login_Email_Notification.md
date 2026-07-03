@@ -200,7 +200,7 @@ hide:
     ```
 
 6. Add this line to the `/etc/pam.d/sshd` file: 
-    + If you need help editing the configuration file... [:material-arrow-up-thin:&thinsp;see the instructions above&thinsp;:material-arrow-up-thin:](#enable-login-alerts-with-pam)
+    + If you need help editing the configuration file... [:symbols-arrow-up-thin:&thinsp;see the instructions above&thinsp;:symbols-arrow-up-thin:](#enable-login-alerts-with-pam)
 
     ```bash linenums="1"
     session     optional     pam_exec.so /usr/local/bin/gotify-ssh-alert.sh  # (1)!

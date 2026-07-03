@@ -47,15 +47,15 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Technitium"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Technitium"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                      | Method                             | Container Name | Image |
 | :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

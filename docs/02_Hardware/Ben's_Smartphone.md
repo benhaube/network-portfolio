@@ -38,7 +38,7 @@ hide:
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Email&ensp;:material-arrow-right-thin:&ensp;"Google"
+    + Email&ensp;:symbols-arrow-right-thin:&ensp;"Google"
 
 #### :symbols-security:&ensp;Device Security
 
@@ -85,7 +85,7 @@ hide:
 
 |  Status  | OS                                                       | Virtual NIC | Virtual Disk Image | Role / Notes                       |
 | :------: | :------------------------------------------------------- | :---------- | :----------------- | :--------------------------------- |
-| *Active* | [:material-debian:&nbsp;Debian](https://www.debian.org/) | NAT         | `-`                | Android Virtualization Environment |
+| *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/) | NAT         | `-`                | Android Virtualization Environment |
 
 #### :brands-android-robot:&ensp;Native Android
 

@@ -41,13 +41,13 @@ hide:
 #### :symbols-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Uptime Kuma"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Uptime Kuma"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                      | Method                                | Container Name | Image                    |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `uptime-kuma`  | `louislam/uptime-kuma:2` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `uptime-kuma`  | `louislam/uptime-kuma:2` |
 
 ### :symbols-settings:&ensp;Configuration 
 

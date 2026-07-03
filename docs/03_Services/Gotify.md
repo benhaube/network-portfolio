@@ -39,8 +39,8 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (admin)"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Gotify (bhaube)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (admin)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (bhaube)"
 
 #### :symbols-feedback:&ensp;Notifications
 
@@ -58,11 +58,11 @@ hide:
 
 | Host Device                                                        | Method                                | Container Name | Image                  |
 | :----------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `gotify`       | `gotify/server:latest` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `gotify`       | `gotify/server:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :material-docker:&ensp;Docker Compose
+#### :services-docker:&ensp;Docker Compose
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "gotify.yml"
@@ -138,7 +138,7 @@ hide:
           
           [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
-          + Local Network&ensp;:material-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
+          + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
 
 3. Make the script executable:
 

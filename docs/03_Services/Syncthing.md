@@ -60,31 +60,31 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ ben-laptop"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ bens-phone" 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ debian-vm" 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ pi-server"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ pi-zero"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Syncthing @ storage-server"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ ben-laptop"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ bens-phone" 
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ debian-vm" 
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ pi-server"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ pi-zero"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ storage-server"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                       | Method                                     | Container Name | Image                          |
 | :------------------------------------------------------------------------------------------------ | :----------------------------------------- | :------------- | :----------------------------- |
-| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
-| [:symbols-laptop:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                              | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                | :symbols-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| [:symbols-laptop:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                              | :symbols-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
 | [:symbols-mobile:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                      | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :material-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
+| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | :symbols-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :symbols-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux         | `N/A`          | `N/A`                          |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :services-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 
 #### :symbols-install-desktop:&ensp;Install Commands
 
-+ :material-fedora:&nbsp;Fedora / RHEL:
++ :symbols-fedora:&nbsp;Fedora / RHEL:
 
     ```bash linenums="1"
     sudo dnf install -y syncthing
@@ -92,7 +92,7 @@ hide:
     sudo systemctl start syncthing@bhaube.service
     ```
 
-+ :material-debian:&nbsp;Debian 13 *(trixie)*:
++ :symbols-debian:&nbsp;Debian 13 *(trixie)*:
 
     ```bash linenums="1"
     sudo apt install -y syncthing
@@ -112,7 +112,7 @@ hide:
 
     [Syncthing-Fork&ensp;:simple-fdroid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
-#### :material-docker:&ensp;Docker Compose
+#### :services-docker:&ensp;Docker Compose
 
 ```yaml title="ZimaOS NAS" linenums="1"
 --8<-- "syncthing-zima.yml"

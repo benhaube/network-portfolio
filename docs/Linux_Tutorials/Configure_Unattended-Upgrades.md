@@ -155,7 +155,7 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
     Wed 2026-05-20 06:13:41 EDT   19h Tue 2026-05-19 06:25:12 EDT 4h 46min ago apt-daily-upgrade.timer apt-daily-upgrade.service
     ```
 
-## :material-linux:&ensp;Manage the Systemd Service
+## :symbols-linux:&ensp;Manage the Systemd Service
 
 The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the upgrades are complete before the system powers off. Below is a table containing common Systemd service management commands.
 

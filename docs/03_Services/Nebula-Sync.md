@@ -37,14 +37,14 @@ hide:
 
 #### :symbols-key:&ensp;Credentials 
 
-+ :material-docker:&nbsp;Docker Compose: 
++ :services-docker:&nbsp;Docker Compose: 
     + `compose.yml`
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                          | Method                                | Container Name | Image                                 |
 | :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
+| [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

@@ -42,14 +42,14 @@ hide:
 #### :symbols-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich Admin"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Immich User"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Immich Admin"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Immich User"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                        | Method                                | Container Name            | Image                                                            |
 | :----------------------------------------------------------------- | :------------------------------------ | :------------------------ | :--------------------------------------------------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `immich-server`           | `ghcr.io/immich-app/immich-server:v2.7.5`                        |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `immich-server`           | `ghcr.io/immich-app/immich-server:v2.7.5`                        |
 |                                                                    |                                       | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.7.5-openvino`     |
 |                                                                    |                                       | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
 |                                                                    |                                       | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |

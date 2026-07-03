@@ -34,9 +34,9 @@ hide:
 2.  **Deletion *(Desktop)*:**
     + **Manual:** 
         + **Go to:**&ensp;[:services-google-photos:&nbsp;Google Photos](https://photos.google.com) 
-        + :material-mouse-left-click:&nbsp;first photo&emsp;:material-arrow-right-thin:&emsp;:material-mouse-scroll-wheel::material-arrow-down-thin:&emsp;:material-arrow-right-thin:&emsp;++shift++&nbsp;+&nbsp;:material-mouse-left-click:&nbsp;last photo&emsp;:material-arrow-right-thin:&emsp;++del++
+        + :material-mouse-left-click:&nbsp;first photo&emsp;:symbols-arrow-right-thin:&emsp;:material-mouse-scroll-wheel::symbols-arrow-down-thin:&emsp;:symbols-arrow-right-thin:&emsp;++shift++&nbsp;+&nbsp;:material-mouse-left-click:&nbsp;last photo&emsp;:symbols-arrow-right-thin:&emsp;++del++
     + **Console Script *(Advanced)*:** 
-        + Open Chrome DevTools:&ensp;++f12++&ensp;:material-arrow-right-thin:&ensp;Console. 
+        + Open Chrome DevTools:&ensp;++f12++&ensp;:symbols-arrow-right-thin:&ensp;Console. 
         + Paste script to auto-select/delete. 
 3.  **Finalize:** 
     + Empty "Trash/Bin" to reclaim storage.
@@ -55,7 +55,7 @@ hide:
 **Goal:**
 :   Replicate "Live Albums" and generate the Nest Hub interface.
 
-### :material-docker:&ensp;Docker Compose Snippet
+### :services-docker:&ensp;Docker Compose Snippet
 
 Add these services to your existing Immich stack or a new stack.
 
@@ -84,8 +84,8 @@ Place this in the same folder as your docker-compose file.
 1. **Tunnel:** 
     + Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081` using the [Cloudflare](../03_Services/Cloudflared.md) tunnel.
 2. **WAF Rules *(Critical)*:**
-    + **Go to:**&ensp;Cloudflare Dashboard&ensp;:material-arrow-right-thin:&ensp;Security&ensp;:material-arrow-right-thin:&ensp;WAF&ensp;:material-arrow-right-thin:&ensp;Custom Rules
-    + **Create Rule:**&ensp;If Hostname equals `frame.rac3r4life.online`&ensp;:material-arrow-right-thin:&ensp;**Skip** "Super Bot Fight Mode" and "Managed Challenge"
+    + **Go to:**&ensp;Cloudflare Dashboard&ensp;:symbols-arrow-right-thin:&ensp;Security&ensp;:symbols-arrow-right-thin:&ensp;WAF&ensp;:symbols-arrow-right-thin:&ensp;Custom Rules
+    + **Create Rule:**&ensp;If Hostname equals `frame.rac3r4life.online`&ensp;:symbols-arrow-right-thin:&ensp;**Skip** "Super Bot Fight Mode" and "Managed Challenge"
         + _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
 ## :symbols-home-automation:&ensp;Automation 

@@ -39,10 +39,10 @@ hide:
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Admin"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (bhaube)"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance User (rpereira)"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Admin"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance User (bhaube)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance User (rpereira)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Server Secret"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
@@ -58,12 +58,12 @@ hide:
  
     :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuration is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
  
-    [:material-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:material-arrow-down-thin:](#glance-config)
+    [:symbols-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down-thin:](#glance-config)
 
 | Host Device                                                                                      | Method                                | Container Name | Image                       |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :material-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
-|                                                                                                  | :material-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
+|                                                                                                  | :services-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 
@@ -150,9 +150,9 @@ hide:
  
     + To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository. 
  
-        [Glance Widgets&ensp;:material-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
+        [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
-#### :material-docker:&ensp;Docker Compose
+#### :services-docker:&ensp;Docker Compose
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "glance-compose.yml"
@@ -183,7 +183,7 @@ hide:
 
       [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
-      + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
+      + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Server Secret"
 
 4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 
@@ -218,7 +218,7 @@ hide:
 
       [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
 
-      + Local Network&ensp;:material-arrow-right-thin:&ensp;"Glance Server Secret"
+      + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Server Secret"
 
 4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 

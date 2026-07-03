@@ -42,12 +42,12 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
++ [:symbols-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"pi-server (admin)"
+    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-server (admin)"
 
 ## :symbols-monitor-heart:&ensp;Core Specs
 
@@ -85,7 +85,7 @@ hide:
 
 ## :symbols-web:&ensp;Services / Docker Containers
 
-#### :material-linux:&ensp;Native Linux
+#### :symbols-linux:&ensp;Native Linux
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                    |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :---------------------------------------------------------------------------------------------- |
@@ -95,7 +95,7 @@ hide:
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                        |
 | *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                   |
 
-#### :material-docker:&ensp;Docker
+#### :services-docker:&ensp;Docker
 
 |   Status   | Service                                                                        |       Port(s)        | Role / Notes                                                                                                |
 | :--------: | :----------------------------------------------------------------------------- | :------------------: | :---------------------------------------------------------------------------------------------------------- |

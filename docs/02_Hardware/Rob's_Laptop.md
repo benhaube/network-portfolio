@@ -18,7 +18,7 @@ hide:
 # Rob's Laptop
 *ASUS TUF Gaming Laptop*
 
-[Windows Docs&ensp;:material-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/FA507XI_User_Manual.pdf){ .md-button .md-button--primary }
+[Windows Docs&ensp;:brands-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/FA507XI_User_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -37,12 +37,12 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:material-microsoft:&nbsp;Windows 11 Home](https://microsoft.com/windows)
++ [:brands-microsoft:&nbsp;Windows 11 Home](https://microsoft.com/windows)
 
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"PIN - Rob's Laptop PC"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"PIN - Rob's Laptop PC"
 
 ## :symbols-monitor-heart:&ensp;Core Specs
 

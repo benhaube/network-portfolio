@@ -4,7 +4,7 @@
 
     :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with [Chrony](../03_Services/Chrony.md). The Chrony service is hosted on the main router, [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md).
    
-    **:material-text-long:&ensp;Logs:**
+    **:symbols-notes:&ensp;Logs:**
 
     :    Logs are configured with `log2ram` to reduce wear on the MicroSD card.
  

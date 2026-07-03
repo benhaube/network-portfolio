@@ -59,8 +59,8 @@ hide:
 
 !!! visual inline "Visual Indicators"
 
-    :material-led-off:&ensp;**Green LED:** 10/100/1000 Mb/s<br>
-    :material-led-on:&ensp;**Flashing:** Activity
+    :symbols-led-off:&ensp;**Green LED:** 10/100/1000 Mb/s<br>
+    :symbols-led-on:&ensp;**Flashing:** Activity
 
 !!! warning inline "Troubleshooting"
 

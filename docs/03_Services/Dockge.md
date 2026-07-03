@@ -42,19 +42,19 @@ hide:
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ debian-vm"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ pi-server"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ pi-zero"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Dockge @ storage-server"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ debian-vm"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ pi-server"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ pi-zero"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ storage-server"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                       | Method                                | Container Name    | Image                   |
 | :------------------------------------------------------------------------------------------------ | :------------------------------------ | :---------------- | :---------------------- |
-| [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)              | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :material-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
+| [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)              | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :services-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -90,7 +90,7 @@ hide:
     docker compose pull && docker compose up -d
     ```
 
-#### :material-docker:&ensp;Docker Compose
+#### :services-docker:&ensp;Docker Compose
 
 ```yaml title="Debian Server VM | Raspberry Pi 4B Server | Raspberry Pi Zero Server" linenums="1"
 --8<-- "dockge.yaml"

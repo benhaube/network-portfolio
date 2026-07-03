@@ -42,7 +42,7 @@ hide:
 
 | Host Device                                                        | Method                                | Container Name | Image                            |
 | :----------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `spoolman`     | `ghcr.io/donkie/spoolman:latest` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `spoolman`     | `ghcr.io/donkie/spoolman:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

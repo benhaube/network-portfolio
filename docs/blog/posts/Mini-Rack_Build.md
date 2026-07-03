@@ -20,7 +20,7 @@ hide:
 ---
 ![Custom icon for my mini-rack made in Inkscape](../assets/icons/10-in-rack.svg){ width=400 }
 
-!!! info "Mini-Rack Build: Dec, 2025&ensp;:material-arrow-right-thin:&ensp;Jan, 2026"
+!!! info "Mini-Rack Build: Dec, 2025&ensp;:symbols-arrow-right-thin:&ensp;Jan, 2026"
 
     **3D-Printed Parts:**
  
@@ -37,11 +37,11 @@ hide:
     + [Ugreen UM106X Switch](../../02_Hardware/Ugreen_Switch.md)
     + [Hitron Modem](../../02_Hardware/Hitron_Modem.md)
     + GeeekPi: DeskPi Rack-Mate T0 *(4U - 10" Rack)*
-    + One SFP+&ensp;:material-arrow-right-thin:&ensp;10GbE transceiver
+    + One SFP+&ensp;:symbols-arrow-right-thin:&ensp;10GbE transceiver
     + Two Cat6a Keystone jacks
     + Three GeeekPi 6" Cat6a patch cables
     + Three Monoprice 3' Cat6a patch cables
-    + One PCIe 4.0&ensp;:material-arrow-right-thin:&ensp;NVMe add-in card
+    + One PCIe 4.0&ensp;:symbols-arrow-right-thin:&ensp;NVMe add-in card
     + One SK-Hynix 500GB NVMe SSD *(for Docker / VM storage, pulled from [ThinkPad](../../02_Hardware/Ben's_Laptop.md) after storage upgrade)*
     + Two Crucial BX500 4TB SATA SSDs in RAID1 *(for mass network attached storage)*
     + One 30 cm SATA extension cable

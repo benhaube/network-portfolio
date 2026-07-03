@@ -15,7 +15,7 @@ hide:
 # Service Template
 *Subtitle*
 
-[GitHub :material-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation:](https://docs.github.com/en){ .md-button .md-button--primary }
+[GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation:](https://docs.github.com/en){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Overview
@@ -34,13 +34,13 @@ hide:
 #### :symbols-key: Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:material-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
 
 ## :symbols-deployed-code-update: Deployment Details
 
 | Host Device                                      | Method                                | Container Name   | Image            |
 | :----------------------------------------------- | :------------------------------------ | :--------------- | :--------------- |
-| :devices-icon:&nbsp;[Device](Device_Template.md) | :material-docker:&nbsp;Docker Compose | `container-name` | `image_name:tag` |
+| :devices-icon:&nbsp;[Device](Device_Template.md) | :services-docker:&nbsp;Docker Compose | `container-name` | `image_name:tag` |
 
 ### :symbols-settings: Configuration 
 

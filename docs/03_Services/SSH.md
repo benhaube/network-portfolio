@@ -56,23 +56,23 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"ASUS RT-BE92U (Admin)"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"debian-vm (server-admin)"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"pi-server (admin)"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"pi-zero (admin)"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
-    + SSH keys&ensp;:material-arrow-right-thin:&ensp;"Kacey (root)"
+    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"ASUS RT-BE92U (Admin)"
+    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"debian-vm (server-admin)"
+    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-server (admin)"
+    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-zero (admin)"
+    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
+    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"Kacey (root)"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                                       | Method                             | Container Name | Image |
 | :------------------------------------------------------------------------------------------------ | :--------------------------------- | :------------- | :---- |
-| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                    | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)                  | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                    | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)                  | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -208,7 +208,7 @@ hide:
 
     1. All hosts use Bitwarden SSH key agent
     2. Assume 'admin' is the user for all hosts 
-    3.    :material-alert:&nbsp;**CRITICAL:** 
+    3.    :symbols-warning:&nbsp;**CRITICAL:** 
           
           Prevents offering all other keys stored in Bitwarden
 

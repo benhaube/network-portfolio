@@ -41,12 +41,12 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:material-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
++ [:symbols-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + SSH Keys&ensp;:material-arrow-right-thin:&ensp;"pi-zero (admin)"
+    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-zero (admin)"
 
 ## :symbols-monitor-heart:&ensp;Core Specs
 
@@ -76,7 +76,7 @@ hide:
 
 ## :symbols-web:&ensp;Services / Docker Containers
 
-#### :material-linux:&ensp;Native Linux
+#### :symbols-linux:&ensp;Native Linux
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                                                                                                                          |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
@@ -84,7 +84,7 @@ hide:
 | *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)             |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
 
-#### :material-docker:&ensp;Docker
+#### :services-docker:&ensp;Docker
 
 |   Status   | Service                                                            | Port(s) | Role / Notes                                                                                           |
 | :--------: | :----------------------------------------------------------------- | :-----: | :----------------------------------------------------------------------------------------------------- |

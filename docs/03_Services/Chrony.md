@@ -36,14 +36,14 @@ hide:
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ASUS Router"
-    + SSH Key&ensp;:material-arrow-right-thin:&ensp;"admin@asusrouter"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ASUS Router"
+    + SSH Key&ensp;:symbols-arrow-right-thin:&ensp;"admin@asusrouter"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                                    | Method                             | Container Name | Image |
 | :----------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

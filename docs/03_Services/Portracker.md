@@ -52,9 +52,9 @@ ZimaOS NAS:
 
 | Host Device                                                                                           | Method                                | Container Name | Image                             |
 | :---------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                    | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)      | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :material-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                                    | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)      | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 

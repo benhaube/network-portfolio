@@ -17,7 +17,7 @@ hide:
 # Ben's Workstation
 *High-Performance Desktop PC*
 
-[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550-PLUS_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
+[Fedora Docs&ensp;:symbols-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550-PLUS_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -37,12 +37,12 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:material-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
++ [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
 
 #### :symbols-security:&ensp;Device Security
 
@@ -105,9 +105,9 @@ hide:
 | :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
 | *Active* | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
-| *Active* | [:material-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)     | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
+| *Active* | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
-#### :material-linux:&ensp;Native Linux
+#### :symbols-linux:&ensp;Native Linux
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                                                              |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------ |

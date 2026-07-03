@@ -36,13 +36,13 @@ hide:
 #### :symbols-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
 | Host Device                                                        | Method                                | Container Name | Image                      |
 | :----------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :material-docker:&nbsp;Docker Compose | `ttydbridge`   | `cp0204/ttydbridge:v0.0.3` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `ttydbridge`   | `cp0204/ttydbridge:v0.0.3` |
 
 ### :symbols-settings:&ensp;Configuration
 

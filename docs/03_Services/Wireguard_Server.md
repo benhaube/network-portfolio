@@ -45,8 +45,8 @@ hide:
 #### :symbols-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Admin"
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"WireGuard Metrics"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"WireGuard Admin"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"WireGuard Metrics"
 
 #### :symbols-devices:&ensp;Clients
 
@@ -65,8 +65,8 @@ hide:
 
 | Host Device                                                                    | Method                                | Container Name         | Image                        |
 | :----------------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
-| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :material-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :material-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :services-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :symbols-settings:&ensp;Configuration 
 

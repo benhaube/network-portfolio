@@ -18,7 +18,7 @@ hide:
 # Ben's Laptop
 *ThinkPad X1 Carbon*
 
-[Fedora Docs&ensp;:material-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Guide&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_user_guide.pdf){ .md-button .md-button--primary }&emsp;[Maintenance Manual&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_maintenance_manual.pdf){ .md-button .md-button--primary }
+[Fedora Docs&ensp;:symbols-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Guide&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_user_guide.pdf){ .md-button .md-button--primary }&emsp;[Maintenance Manual&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_maintenance_manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -37,12 +37,12 @@ hide:
 
 #### :symbols-memory:&ensp;OS / Firmware
 
-+ [:material-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
++ [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
 #### :symbols-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:material-arrow-right-thin:&ensp;"Local User @ Ben's-Laptop"
+    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Local User @ Ben's-Laptop"
 
 #### :symbols-security:&ensp;Device Security
 
@@ -107,7 +107,7 @@ hide:
 | :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
-#### :material-linux:&ensp;Native Linux
+#### :symbols-linux:&ensp;Native Linux
 
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                             |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :--------------------------------------- |

@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Material Server icon](../assets/icons/server.svg){ width=200 }
+![Material Server icon](../assets/icons/server-outline.svg){ width=200 }
 &ensp;![Debian Logo](../assets/icons/debian.svg){ width=50 }
 &nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 

@@ -287,16 +287,24 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
   social:
+    - icon: brands/gitlab
+      link: https://gitlab.com/benhaube
+      name: benhaube — Gitlab
     - icon: brands/github
       link: https://github.com/benhaube
+      name: benhaube — GitHub
     - icon: brands/linkedin
       link: https://www.linkedin.com/in/benjamin-haube/
+      name: Benjamin Haube — Linkedin
     - icon: brands/printables
       link: https://www.printables.com/@rac3r4life
-    - icon: brands/gravatar
-      link: https://benhaube.link
+      name: rac3r4life — Printables
+    - icon: brands/reddit
+      link: https://reddit.com/u/benhaube
+      name: u/benhaube — Reddit
     - icon: brands/bluesky
       link: https://bsky.app/profile/rac3r4life.me
+      name: rac3r4life.me — Bluesky
   generator: false
   
   # ~~~ Tag Definitions ~~~

@@ -240,9 +240,11 @@ hide:
     --8<-- "mount-rclone.desktop"
     ```
 
+--8<-- "nerd-fonts.md"
+
 #### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
 
---8<-- "nerd-fonts.md"
+The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh. 
 
 1. Install the latest version:
 
@@ -264,7 +266,7 @@ hide:
 
 #### :symbols-login:&ensp;Fastfetch Login Preset
 
-Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset).
 
 1. Install Fastfetch: 
 

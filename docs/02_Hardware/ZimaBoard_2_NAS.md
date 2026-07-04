@@ -138,11 +138,11 @@ hide:
     This server runs **ZimaOS**, an "Atomic" *(a.k.a., immutable)* operating system.
   
     + Do not attempt to use `apt` to install or upgrade system packages. 
-    + Do not change NTP settings *(stuck on systemd-timesyncd)*.
+    + Do not change NTP settings *(stuck on `systemd-timesyncd`)*.
 
     :symbols-boxes:&ensp;**Entware:**
  
-    + The [Entware](https://github.com/Entware/Entware) package manager is installed. 
+    + The [Entware](https://github.com/Entware/Entware) package manager is installed, allowing additional packages not included in ZimaOS to be installed. 
     + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
     + Check the [Entware Wiki](https://github.com/Entware/Entware/wiki) for documentation.
 
@@ -170,7 +170,42 @@ hide:
     --- 
     See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 
 
+--8<-- "nerd-fonts.md"
+
+#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
+
+The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh. 
+
+##### Install
+
+1. Install the latest version:
+
+    ```bash linenums="1" 
+    sudo curl -sS https://starship.rs/install.sh
+    sudo sh install.sh -b /opt/bin
+    ```
+
+2. Add init script to `~/.bashrc`: 
+
+    ```bash linenums="1"
+    eval "$(starship init bash)"
+    ```
+
+3. Copy the `starship.toml` config file into the `~/.config` directory: 
+
+    ```bash linenums="1"
+    sudo cp starship.toml .config/
+    ```
+
+##### Starship Config File
+
+```toml {title="/DATA/.config/starship.toml" linenums="1" .mono-title}
+--8<-- "starship-zimaos.toml"
+```
+
 #### :symbols-login:&ensp;Fastfetch Login Preset
+
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset).
 
 ##### Install
 
@@ -207,37 +242,6 @@ hide:
 
 ```json {title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" .mono-title}
 --8<-- "fastfetch-login-storage-server.jsonc"
-```
-
-#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
-
---8<-- "nerd-fonts.md"
-
-##### Install
-
-1. Install the latest version:
-
-    ```bash linenums="1" 
-    sudo curl -sS https://starship.rs/install.sh
-    sudo sh install.sh -b /opt/bin
-    ```
-
-2. Add init script to `~/.bashrc`: 
-
-    ```bash linenums="1"
-    eval "$(starship init bash)"
-    ```
-
-3. Copy the `starship.toml` config file into the `~/.config` directory: 
-
-    ```bash linenums="1"
-    sudo cp starship.toml .config/
-    ```
-
-##### Starship Config File
-
-```toml {title="/DATA/.config/starship.toml" linenums="1" .mono-title}
---8<-- "starship-zimaos.toml"
 ```
 
 #### :symbols-cron:&ensp;Zima Cron

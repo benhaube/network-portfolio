@@ -32,11 +32,33 @@
 + Critical configuration files are backed up to the attached USB flash drive.
 + All backed up files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
-<br>
+--8<-- "nerd-fonts.md"
+
+#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
+
+The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh. 
+
+1. Install the latest version:
+
+    ```bash linenums="1"
+    curl -sS https://starship.rs/install.sh | sh
+    ```
+
+2. Add init script to shell's config file: 
+
+    ```bash linenums="1"
+    eval "$(starship init bash)"
+    ```
+
+3. Place the custom config file in the `~/.config` directory:
+
+    ```toml {title="starship.toml" linenums="1" .mono-title}
+    --8<-- "starship-raspi.toml"
+    ```
 
 #### :symbols-login:&ensp;Fastfetch Login Preset
 
-Prints a customized Fastfetch preset with relevant information every time a new terminal session is started. 
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset).
 
 1. Install Fastfetch: 
 
@@ -62,25 +84,3 @@ Prints a customized Fastfetch preset with relevant information every time a new 
 ```json {title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" .mono-title}
 --8<-- "fastfetch-login-pi-server.jsonc"
 ```
-
-#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
-
---8<-- "nerd-fonts.md"
-
-1. Install the latest version:
-
-    ```bash linenums="1"
-    curl -sS https://starship.rs/install.sh | sh
-    ```
-
-2. Add init script to shell's config file: 
-
-    ```bash linenums="1"
-    eval "$(starship init bash)"
-    ```
-
-3. Place the custom config file in the `~/.config` directory:
-
-    ```toml {title="starship.toml" linenums="1" .mono-title}
-    --8<-- "starship-raspi.toml"
-    ```

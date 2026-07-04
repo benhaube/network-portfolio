@@ -1,5 +1,5 @@
 ---
-icon: material/remote-desktop
+icon: symbols/remote-desktop
 title: RDP
 subtitle: Remote Desktop Protocol
 description: Remote desktop access over the local network

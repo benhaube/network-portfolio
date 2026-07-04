@@ -183,7 +183,7 @@ hide:
 [:services-portracker:&ensp;Portracker](./03_Services/Portracker.md)
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-[:material-remote-desktop:&ensp;RDP](./03_Services/RDP.md)
+[:symbols-remote-desktop:&ensp;RDP](./03_Services/RDP.md)
 :    Remote desktop access over the local network. *(not exposed to the internet)*
 
 [:symbols-smb-share:&ensp;SMB](./03_Services/SMB.md)

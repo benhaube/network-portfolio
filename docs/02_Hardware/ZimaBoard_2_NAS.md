@@ -10,6 +10,7 @@ tags:
   - Living Room
   - Mini-Rack
   - Linux
+  - Server
 hide:
   - toc
 ---

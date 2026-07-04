@@ -168,7 +168,7 @@ Prints a customized Fastfetch preset with relevant information every time a new 
 
 #### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
 
---8<-- "starship-note.md"
+--8<-- "nerd-fonts.md"
 
 1. Install the latest version:
 

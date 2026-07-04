@@ -242,7 +242,7 @@ hide:
 
 #### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
 
---8<-- "starship-note.md"
+--8<-- "nerd-fonts.md"
 
 1. Install the latest version:
 

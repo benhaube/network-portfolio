@@ -147,7 +147,7 @@ html .md-footer-meta.md-typeset a:hover {
 
 .md-nav--primary .md-nav__title[for="__drawer"] {
 	background-color: var(--md-accent-fg-color--transparent);
-	color: var(--md-default-fg-color--light);
+	color: #FFF;
 }
 @media screen and (max-width: 76.2344em) {
   .md-nav--primary .md-nav__title {

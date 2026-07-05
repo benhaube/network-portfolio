@@ -93,8 +93,8 @@ theme:
       podman: services/linux-containers
       podman_host: services/linux-containers
       policy: symbols/policy
-      print: symbols/print
-      printer-cart: symbols/print
+      print: symbols/print-outline
+      printer-cart: symbols/print-outline
       remote: symbols/web-export
       router: symbols/router-outline
       security: symbols/security

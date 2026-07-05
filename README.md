@@ -5,7 +5,7 @@
 </p>
 <p align="center">
     <a href="https://github.com/benhaube/network-portfolio/blob/main/LICENSE.txt">
-        <img alt="Static Badge" src="https://img.shields.io/badge/License-GFDL_v1.3-%234CAE4F?link=https%3A%2F%2Fgithub.com%2Fbenhaube%2Fnetwork-portfolio%2Fblob%2Fmain%2FLICENSE.txt">
+        <img alt="Static Badge" src="https://img.shields.io/badge/License-GFDL--1.3-%234CAE4F?logo=data%3Aimage%2Fsvg%2Bxml%3Bcharset%3Dutf-8%2C%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%252224%2522%2520height%253D%252224%2522%2520viewBox%253D%25220%25200%252024%252024%2522%2520fill%253D%2522none%2522%2520stroke%253D%2522%25234CAE4F%2522%2520stroke-width%253D%25222%2522%2520stroke-linecap%253D%2522round%2522%2520stroke-linejoin%253D%2522round%2522%2520class%253D%2522lucide%2520lucide-award-icon%2520lucide-award%2522%253E%253Cpath%2520d%253D%2522m15.477%252012.89%25201.515%25208.526a.5.5%25200%25200%25201-.81.47l-3.58-2.687a1%25201%25200%25200%25200-1.197%25200l-3.586%25202.686a.5.5%25200%25200%25201-.81-.469l1.514-8.526%2522%252F%253E%253Ccircle%2520cx%253D%252212%2522%2520cy%253D%25228%2522%2520r%253D%25226%2522%252F%253E%253C%252Fsvg%253E&logoColor=%230A84FF">
     </a>
     <a href="https://github.com/squidfunk/mkdocs-material">
         <img alt="Static Badge" src="https://img.shields.io/badge/Material_for_MkDocs-repo-%23526CFE?logo=materialformkdocs&logoColor=%23526CFE&link=https%3A%2F%2Fgithub.com%2Fsquidfunk%2Fmkdocs-material">

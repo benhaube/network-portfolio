@@ -1,5 +1,5 @@
 ---
-icon: symbols/print
+icon: symbols/print-outline
 title: CUPS
 subtitle: Open Print Server
 description: A standards-based, open-source printing system for Linux and other Unix-like operating systems.
@@ -10,7 +10,7 @@ tags:
 hide:
   - toc
 ---
-![CUPS Open Print Server icon](../assets/icons/cups-service.svg){ width=200 }
+![CUPS Open Print Server icon](../assets/icons/cups-service-outline.svg){ width=200 }
 
 # CUPS
 *Open Print Server*
@@ -32,7 +32,7 @@ hide:
 
 + <https://192.168.50.2:631>
 
-#### :symbols-print:&ensp;Printer URL
+#### :symbols-print-add-outline:&ensp;Printer URL
 
 + IPP:
     + `ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
@@ -48,7 +48,7 @@ hide:
 
 | Host Device                                                                                      | Method                             | Container Name | Image |
 | :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux  | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

@@ -89,7 +89,7 @@ hide:
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                    |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :---------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-print:&nbsp;CUPS](../03_Services/CUPS_Print_Server.md)      |         `631`          | A standards-based, open-source printing system for Linux and other Unix-like operating systems. |
+| *Active* | [:symbols-print-outline:&nbsp;CUPS](../03_Services/CUPS_Print_Server.md)      |         `631`          | A standards-based, open-source printing system for Linux and other Unix-like operating systems. |
 | *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)                  |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.  |
 | *Active* | [:symbols-smb-share:&nbsp;SMB](../03_Services/SMB.md)                 |         `445`          | Remote file system access.                                                                      |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                        |

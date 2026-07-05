@@ -111,7 +111,7 @@ hide:
 [:services-cloudflare:&ensp;Cloudflared](./03_Services/Cloudflared.md)
 :    A secure reverse-proxy tunnel for hosting private services on the public Internet.
 
-[:symbols-print:&ensp;CUPS](./03_Services/CUPS_Print_Server.md)
+[:symbols-print-outline:&ensp;CUPS](./03_Services/CUPS_Print_Server.md)
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
 [:symbols-web-ip:&ensp;DDNS](./03_Services/DDNS.md)

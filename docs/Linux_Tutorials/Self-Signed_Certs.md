@@ -1,5 +1,5 @@
 ---
-icon: symbols/license
+icon: symbols/award
 title: Self-Signed Certificates
 subtitle: SSL for Your Local Server
 hide:
@@ -63,7 +63,7 @@ Now that we have a private key, we need to create a Certificate Signing Request.
 
     1. Replace `example.key` with the file name of the key you generated previously, and replace `example.csr` with your preferred file name for the CSR. I usually give them both the same file name to keep it simple.
 
-## :symbols-license:&ensp;Generate the Certificate
+## :symbols-file-badge:&ensp;Generate the Certificate
 
 Now that we have the private key and the CSR we have the pieces we need to generate a self-signed certificate. 
 

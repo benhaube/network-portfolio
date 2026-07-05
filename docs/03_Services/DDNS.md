@@ -84,7 +84,7 @@ hide:
     ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ width=700 }
 </figure>
 
-#### :symbols-license:&ensp;TLS Certificate
+#### :symbols-award:&ensp;TLS Certificate
 
 1. Install the `certbot` package on a separate PC:
 

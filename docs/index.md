@@ -159,7 +159,7 @@ hide:
 [:services-nextcloud:&ensp;Nextcloud](./03_Services/Nextcloud.md)
 :    Self-hosted cloud storage and collaboration platform.
 
-[:symbols-smb-share:&ensp;NFS](./03_Services/NFS.md) 
+[:symbols-smb-share-outline:&ensp;NFS](./03_Services/NFS.md) 
 :    Remote file system access.
 
 [:simple-nginx:&ensp;Nginx](./03_Services/Nginx.md)
@@ -186,7 +186,7 @@ hide:
 [:symbols-remote-desktop:&ensp;RDP](./03_Services/RDP.md)
 :    Remote desktop access over the local network. *(not exposed to the internet)*
 
-[:symbols-smb-share:&ensp;SMB](./03_Services/SMB.md)
+[:symbols-smb-share-outline:&ensp;SMB](./03_Services/SMB.md)
 :    Remote file system access.
 
 [:services-spoolman:&ensp;Spoolman](./03_Services/Spoolman.md)
@@ -259,7 +259,7 @@ hide:
 [:material-svg:&ensp;Convert an SVG to Data URI](Linux_Tutorials/SVG_to_URI.md) 
 :    How to convert an SVG into a data URI for use in HTML pages and CSS stylesheets. 
 
-[:symbols-encrypted-outline:&ensp;Decrypt LUKS with TPM2](./Linux_Tutorials/Unlock_LUKS_TPM2.md) 
+[:symbols-lock-open-outline:&ensp;Decrypt LUKS with TPM2](./Linux_Tutorials/Unlock_LUKS_TPM2.md) 
 :    How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots. 
 
 [:symbols-terminal:&ensp;Defining Bash Aliases](./Linux_Tutorials/Defining_Terminal_Aliases.md) 

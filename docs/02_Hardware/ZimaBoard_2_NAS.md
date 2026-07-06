@@ -87,7 +87,7 @@ hide:
 
 ## :symbols-web:&ensp;Services / Docker Containers
 
-#### :symbols-smb-share:&ensp;File Sharing
+#### :symbols-smb-share-outline:&ensp;File Sharing
 
 + SMB  *(with Multichannel enabled)*
 + NFS *(for Linux PCs)*
@@ -100,11 +100,11 @@ hide:
 
 #### :symbols-linux:&ensp;Native Linux
 
-|  Status  | Service                                               | Port(s) | Role / Notes                                                                                   |
-| :------: | :---------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-smb-share:&nbsp;NFS](../03_Services/NFS.md) | `2049`  | Remote file system access.                                                                     |
-| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:symbols-smb-share:&nbsp;SMB](../03_Services/SMB.md) |  `445`  | Remote file system access.                                                                     |
+|  Status  | Service                                                       | Port(s) | Role / Notes                                                                                   |
+| :------: | :------------------------------------------------------------ | :-----: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-smb-share-outline:&nbsp;NFS](../03_Services/NFS.md) | `2049`  | Remote file system access.                                                                     |
+| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)          |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-smb-share-outline:&nbsp;SMB](../03_Services/SMB.md) |  `445`  | Remote file system access.                                                                     |
 
 #### :services-docker:&ensp;Docker
 

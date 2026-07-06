@@ -1,5 +1,5 @@
 ---
-icon: symbols/smb-share
+icon: symbols/smb-share-outline
 title: NFS
 subtitle: Network File System
 description: Remote file system access for Linux.
@@ -46,7 +46,7 @@ hide:
 
 | Host Device                                                        | Method                             | Container Name | Image |
 | :----------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :symbols-linux:&nbsp;Native Linux  | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

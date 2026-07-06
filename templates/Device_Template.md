@@ -76,7 +76,7 @@ hide:
 
 ## :symbols-web: Services / Docker Containers
 
-#### :symbols-stacks: Virtualization
+#### :symbols-layers: Virtualization
 
 |  Status  | OS                                       | Virtual NIC             | Virtual Disk Image | Role / Notes |
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |

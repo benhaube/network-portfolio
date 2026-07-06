@@ -26,7 +26,7 @@ hide:
 
 + `hostname`
 
-#### :symbols-stacks: Hypervisor
+#### :symbols-layers: Hypervisor
 
 + (e.g., KVM / QEMU)
 

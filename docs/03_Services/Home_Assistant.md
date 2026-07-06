@@ -21,7 +21,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    Open-source home automation that puts local control and privacy first.
 

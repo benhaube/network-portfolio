@@ -20,7 +20,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description
+#### :symbols-file-text:&ensp;Description
 
 :    A free and open-source Klipper web interface for managing your 3D-printer.
 

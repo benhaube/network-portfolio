@@ -20,7 +20,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description
+#### :symbols-file-text:&ensp;Description
 
 :    Advanced, lightweight NTP client and server.
 

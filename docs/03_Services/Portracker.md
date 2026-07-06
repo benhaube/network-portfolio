@@ -23,7 +23,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    A self-hosted, real-time port monitoring and discovery tool.
 

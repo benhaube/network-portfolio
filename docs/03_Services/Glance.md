@@ -23,7 +23,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description
+#### :symbols-file-text:&ensp;Description
 
 :    A self-hosted dashboard that puts all your feeds in one place. 
 

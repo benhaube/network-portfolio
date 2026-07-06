@@ -25,7 +25,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 

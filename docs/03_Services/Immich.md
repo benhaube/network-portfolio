@@ -22,7 +22,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description  
+#### :symbols-file-text:&ensp;Description  
 
 :    High performance self-hosted photo and video management solution. 
 

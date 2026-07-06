@@ -23,7 +23,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description:  
+#### :symbols-file-text:&ensp;Description:  
 
 :    A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 

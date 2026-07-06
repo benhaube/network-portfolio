@@ -23,7 +23,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 

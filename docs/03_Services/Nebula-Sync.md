@@ -23,7 +23,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    Synchronize configuration between multiple [Pi-hole](./Pi-hole.md) instances.
 

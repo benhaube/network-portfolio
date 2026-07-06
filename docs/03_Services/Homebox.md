@@ -17,12 +17,12 @@ hide:
 # Homebox
 *Inventory Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-description:](https://homebox.software/en/quick-start/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-file-text:](https://homebox.software/en/quick-start/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    An inventory and organization system built for the home user.
 

@@ -20,7 +20,7 @@ hide:
 
 ---
 
-## :symbols-description:&ensp;Pre-Migration & Documentation
+## :symbols-file-text:&ensp;Pre-Migration & Documentation
 
 1. **Export Pi-hole Data:** 
     + [ ] Run a "Teleporter" backup on your current primary and secondary Pi-holes.

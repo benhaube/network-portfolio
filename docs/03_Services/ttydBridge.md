@@ -21,7 +21,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 :    A DockerApp makes it easy to use the host terminal on the Web.
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 

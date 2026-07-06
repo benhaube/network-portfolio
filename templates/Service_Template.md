@@ -20,7 +20,7 @@ hide:
 ---
 ## :symbols-info: Overview
 
-#### :symbols-description: Description
+#### :symbols-file-text: Description
 :    Insert description of service here
  
 #### :symbols-settings-ethernet: Port(s)

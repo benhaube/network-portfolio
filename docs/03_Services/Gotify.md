@@ -22,7 +22,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    A simple server for sending and receiving messages in real-time per WebSocket. *(Includes a sleek Web-UI)*
  

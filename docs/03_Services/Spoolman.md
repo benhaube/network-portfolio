@@ -20,7 +20,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    Keep track of your inventory of 3D-printer filament spools. 
 

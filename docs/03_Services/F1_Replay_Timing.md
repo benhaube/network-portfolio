@@ -20,7 +20,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description
+#### :symbols-file-text:&ensp;Description
 
 :    Visualization of real-time track data and telemetry synced to F1 live and replays.
 

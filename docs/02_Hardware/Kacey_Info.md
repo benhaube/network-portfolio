@@ -21,7 +21,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Basic Information
 
-#### :symbols-description:&ensp;Model 
+#### :symbols-file-text:&ensp;Model 
 
 :    Creality^&copy;^ K1C
 

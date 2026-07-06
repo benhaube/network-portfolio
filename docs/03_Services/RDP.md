@@ -21,7 +21,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description 
+#### :symbols-file-text:&ensp;Description 
 
 :    Remote desktop access over the local network *(not publicly exposed)*
 

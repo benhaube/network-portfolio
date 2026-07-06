@@ -22,7 +22,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description  
+#### :symbols-file-text:&ensp;Description  
 
 :    Web API server for [Klipper](https://www.klipper3d.org/). 
 

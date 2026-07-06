@@ -20,7 +20,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-description:&ensp;Description
+#### :symbols-file-text:&ensp;Description
 
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 

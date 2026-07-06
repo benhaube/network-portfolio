@@ -42,8 +42,8 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                      | Method                             | Container Name | Image |
-| :------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| Host Device                                                                      | Method                            | Container Name | Image |
+| :------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
 | [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration

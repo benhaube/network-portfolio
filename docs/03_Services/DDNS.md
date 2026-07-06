@@ -40,8 +40,8 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                             | Container Name | Image |
-| :----------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| Host Device                                                                    | Method                            | Container Name | Image |
+| :----------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
 | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 

@@ -43,7 +43,7 @@ hide:
 
 | Host Device                                                                        | Method                             | Container Name | Image |
 | :--------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :symbols-linux:&nbsp;Native Linux  | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

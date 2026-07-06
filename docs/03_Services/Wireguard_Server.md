@@ -65,7 +65,7 @@ hide:
 
 | Host Device                                                                    | Method                                | Container Name         | Image                        |
 | :----------------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
-| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux    | `N/A`                  | `N/A`                        |
+| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux     | `N/A`                  | `N/A`                        |
 | [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :services-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :symbols-settings:&ensp;Configuration 

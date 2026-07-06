@@ -45,8 +45,8 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                           | Method                             | Container Name | Image |
-| :---------------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
+| Host Device                                                                                           | Method                            | Container Name | Image |
+| :---------------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
 | [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 

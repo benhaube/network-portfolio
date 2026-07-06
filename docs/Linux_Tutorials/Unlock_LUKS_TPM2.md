@@ -1,11 +1,11 @@
 ---
-icon: symbols/encrypted-outline
+icon: symbols/lock-open-outline
 title: Decrypt LUKS with TPM2
 subtitle: Speeding Up the Boot Process
 hide:
   - toc
 ---
-![Material Encrypted icon](../assets/icons/encrypted.svg){ width=200 }
+![Material Encrypted icon](../assets/icons/lock-open-outline.svg){ width=200 }
 
 # Decrypt LUKS with TPM2
 *Speeding Up the Boot Process*

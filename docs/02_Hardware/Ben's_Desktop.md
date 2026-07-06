@@ -190,7 +190,7 @@ hide:
 2. Place `.bkp-exclude-nas` in the `~/` directory. 
 
     ```kconfig {title=".bkp-exclude-nas" linenums="1" .mono-title}
-    --8<-- ".bkp-exclude-nas"
+    --8<-- "bkp-exclude-nas"
     ```
 
 3. Run the command `#!bash mkdir -p ~/.var/log` to create the log directory. 

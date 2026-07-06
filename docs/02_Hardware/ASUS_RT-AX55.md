@@ -21,15 +21,15 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `RT-AX55-1360`
 
-#### :symbols-location:&ensp;Location
+#### :symbols-location-outline:&ensp;Location
 
 + Office
 + Printer-Cart 
@@ -75,7 +75,7 @@ hide:
 | LAN 4 | :symbols-ethernet-port-outline:&nbsp;*Empty*                                            | -             | -                                            |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 !!! config inline "Critical Configurations"
 

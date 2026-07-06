@@ -23,15 +23,15 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+#### :symbols-toolbox-outline:&ensp;Role
 
 :    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./Ugreen_Switch.md).
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `ems1`
 
-#### :symbols-location:&ensp;Location 
+#### :symbols-location-outline:&ensp;Location 
 
 + Mobile
 
@@ -44,7 +44,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"PIN - Rob's Laptop PC"
 
-## :symbols-monitor-heart:&ensp;Core Specs
+## :symbols-monitor-heart-outline:&ensp;Core Specs
 
 | CPU                                            | Cores / Threads | CPU Freq. | RAM                      | GPU                                              | GPU Freq. | VRAM       |
 | :--------------------------------------------- | :-------------- | :-------- | :----------------------- | :----------------------------------------------- | :-------- | :--------- |
@@ -63,9 +63,9 @@ hide:
 | Ethernet  | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 |   Wi-Fi   | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path                                                    | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------------------------------------------------------- | :---------- | :--------- |
@@ -78,6 +78,6 @@ hide:
 | `-`         | -          | -              | `-`         | `-`         | -          |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 --8<-- "maintenance-rob-pc.md"

@@ -21,11 +21,11 @@ hide:
 ---
 ## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro. 
 
-#### :symbols-location:&ensp;Location 
+#### :symbols-location-outline:&ensp;Location 
 
 + Living Room
 + TV Stand
@@ -34,7 +34,7 @@ hide:
 
 + Wall Wart *(5V / 0.6A)*
  
-#### :symbols-monitor-heart:&ensp;Specs
+#### :symbols-monitor-heart-outline:&ensp;Specs
 
 + Throughput:
     + Five 1 GbE ports
@@ -58,7 +58,7 @@ hide:
 | **6**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                                       | -             | -                          |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance Notes
+## :symbols-note-stack:&ensp;Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 

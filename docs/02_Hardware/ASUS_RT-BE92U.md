@@ -23,15 +23,15 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+#### :symbols-toolbox-outline:&ensp;Role
 
 :    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `RT-BE92U-FAF0`
 
-#### :symbols-location:&ensp;Location 
+#### :symbols-location-outline:&ensp;Location 
 
 + Living-Room
 
@@ -81,9 +81,9 @@ hide:
 |    2.5 Gb LAN 3    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
 |    2.5 Gb LAN 4    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -109,7 +109,7 @@ hide:
 | *Active* | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 !!! config inline end "Critical Configurations"
 

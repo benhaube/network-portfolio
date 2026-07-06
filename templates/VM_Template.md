@@ -19,10 +19,10 @@ hide:
 ---
 ## :symbols-info: Overview
 
-#### :symbols-toolbox: Role
+#### :symbols-toolbox-outline: Role
 :    Insert role here 
 
-#### :symbols-host: Hostname
+#### :symbols-host-outline: Hostname
 
 + `hostname`
 
@@ -43,7 +43,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
 
-## :symbols-monitor-heart: Resource Allocation
+## :symbols-monitor-heart-outline: Resource Allocation
 
 |         vCPU          |  RAM  | Storage | VDI Location  |
 | :-------------------: | :---: | :------ | :------------ |
@@ -74,7 +74,7 @@ hide:
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :symbols-note-stack-fill: Maintenance & Snapshots
+## :symbols-note-stack: Maintenance & Snapshots
 
 !!! config "Critical Configurations"
 

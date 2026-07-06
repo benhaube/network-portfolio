@@ -20,10 +20,10 @@ hide:
 ---
 ## :symbols-info: Physical Overview
 
-#### :symbols-toolbox: Role
+#### :symbols-toolbox-outline: Role
 :    Core Desktop Switch
 
-#### :symbols-location: Location
+#### :symbols-location-outline: Location
 
 + Insert location here
  
@@ -31,7 +31,7 @@ hide:
 
 + (e.g., Wall wart 12V / 1A)
  
-#### :symbols-monitor-heart: Specs
+#### :symbols-monitor-heart-outline: Specs
 
 + Throughput:
   + (e.g., 50 Gb/s) 
@@ -52,7 +52,7 @@ hide:
 | **6**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
 
 ---
-## :symbols-note-stack-fill: Maintenance Notes
+## :symbols-note-stack: Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 

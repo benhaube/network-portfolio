@@ -21,11 +21,11 @@ hide:
 ---
 ## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox:&ensp;Role
+#### :symbols-toolbox-outline:&ensp;Role
 
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
-#### :symbols-location:&ensp;Location
+#### :symbols-location-outline:&ensp;Location
 
 + Office
 + Printer-Cart
@@ -34,7 +34,7 @@ hide:
 
 + Wall Wart *(5V / 0.6A)*
 
-#### :symbols-monitor-heart:&ensp;Specs
+#### :symbols-monitor-heart-outline:&ensp;Specs
 
 + Throughput: 
     + Five 1 GbE ports
@@ -55,7 +55,7 @@ hide:
 | **5**  | [:symbols-router-outline:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)                     | Black / Cat6A | Uplink                                       |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance Notes
+## :symbols-note-stack:&ensp;Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 

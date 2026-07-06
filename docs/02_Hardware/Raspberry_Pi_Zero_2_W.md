@@ -26,15 +26,15 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`).
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `pi-zero`
 
-#### :symbols-location:&ensp;Location
+#### :symbols-location-outline:&ensp;Location
 
 + Office
 + Printer-Cart
@@ -48,7 +48,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-zero (admin)"
 
-## :symbols-monitor-heart:&ensp;Core Specs
+## :symbols-monitor-heart-outline:&ensp;Core Specs
 
 | CPU                                  | Cores / Threads        | CPU Freq. | RAM          | GPU          | GPU Freq. | VRAM     |
 | :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
@@ -64,9 +64,9 @@ hide:
 | :-------: | :----------------------------: | :----------------- | :---------------------------- | :------------- |
 |  `wlan0`  | :symbols-security:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
 
 | Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption |
 | :--------------- | :--------- | :------------- | :--------------- | :---------- | :--------- |
@@ -93,6 +93,6 @@ hide:
 | *Inactive* | [:services-portainer:&nbsp;Portainer](../03_Services/Portainer.md) | `9001`  | A lightweight service delivery platform for containerized applications.                                |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 --8<-- "maintenance-raspi.md"

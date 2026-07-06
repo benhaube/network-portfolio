@@ -218,7 +218,7 @@ hide:
 <p>Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</p>
 </div>
 
-## :symbols-note-stack-fill:&ensp;Important Notes
+## :symbols-note-stack:&ensp;Important Notes
 
 ???+ note "Troubleshooting Note"
 

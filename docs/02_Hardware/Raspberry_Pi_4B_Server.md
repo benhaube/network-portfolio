@@ -26,16 +26,16 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    The secondary DNS server in the [Technitium](../03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `pi-server` *(VLAN50 / `eth0`)*
 + `home-assistant` *(VLAN53 / `wlan0`)*
 
-#### :symbols-location:&ensp;Location  
+#### :symbols-location-outline:&ensp;Location  
 
 + Office
 + Printer-Cart
@@ -49,7 +49,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-server (admin)"
 
-## :symbols-monitor-heart:&ensp;Core Specs
+## :symbols-monitor-heart-outline:&ensp;Core Specs
 
 | CPU                                   | Cores / Threads        | CPU Freq. | RAM                       | GPU             | GPU Freq. | VRAM     |
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
@@ -67,9 +67,9 @@ hide:
 |  `eth0`   |     :symbols-security:&nbsp;VLAN50      | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
 |  `wlan0`  | :symbols-shield-house-fill:&nbsp;VLAN53 | `N/A`                | `127.0.0.1` | `192.168.53.1` |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
 
 | Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption |
 | :--------------- | :--------- | :------------- | :--------------- | :---------- | :--------- |
@@ -112,6 +112,6 @@ hide:
 |  *Active*  | [:services-uptime-kuma:&nbsp;Uptime Kuma](../03_Services/Uptime_Kuma.md)       |        `3001`        | A fancy self-hosted monitoring tool.                                                                        |
  
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 --8<-- "maintenance-raspi.md"

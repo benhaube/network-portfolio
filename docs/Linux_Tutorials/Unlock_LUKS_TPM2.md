@@ -158,7 +158,7 @@ hide:
         sudo dracut -f
         ```
 
-## :symbols-note-stack-fill:&ensp;Important Notes
+## :symbols-note-stack:&ensp;Important Notes
 
 ???+ security
 

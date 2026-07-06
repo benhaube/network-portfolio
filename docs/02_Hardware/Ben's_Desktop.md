@@ -22,15 +22,15 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+#### :symbols-toolbox-outline:&ensp;Role
 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `bens-workstation`
 
-#### :symbols-location:&ensp;Location
+#### :symbols-location-outline:&ensp;Location
 
 + Office 
 + Desk
@@ -60,7 +60,7 @@ hide:
     + LUKS2 drive encryption
     + FIDO2-based MFA for local user  
 
-## :symbols-monitor-heart:&ensp;Core Specs
+## :symbols-monitor-heart-outline:&ensp;Core Specs
 
 | CPU                                           | Cores / Threads | CPU Freq. | RAM                     | GPU                                | GPU Freq. | VRAM       |
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
@@ -78,9 +78,9 @@ hide:
 | `enp7s0`  | :symbols-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 | `wlp6s0`  | :symbols-security:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path                 | File System | Encryption |
 | :------------- | :--------- | :------------- | :-------------------------- | :---------- | :--------- |
@@ -115,7 +115,7 @@ hide:
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                  |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 --8<-- "critical-conf-ben-pc.md"
 

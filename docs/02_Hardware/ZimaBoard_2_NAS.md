@@ -27,15 +27,15 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. It has an *x86-64* Intel N150 quad-core CPU *(3.6 GHz)* and 16 GB of LPDDR5 *(6400 MHz)* RAM, and it is located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `ZimaOS-NAS`
 
-#### :symbols-location:&ensp;Location 
+#### :symbols-location-outline:&ensp;Location 
 
 + Living-Room
 + Mini-Rack
@@ -52,7 +52,7 @@ hide:
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)"   
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 
-## :symbols-monitor-heart:&ensp;Core Specs
+## :symbols-monitor-heart-outline:&ensp;Core Specs
 
 | CPU                                 | Cores / Threads | CPU Freq. | RAM                       | GPU                              | GPU Freq. | VRAM     |
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
@@ -70,15 +70,15 @@ hide:
 |  `eth0`   | :symbols-security:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 |  `eth1`   | :symbols-security:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-firmware:&ensp;Boot
+#### :symbols-memory-alt:&ensp;Boot
 
 | Mount Point | Drive Type | Drive Capacity | Device Path    | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------- | :---------- | :--------- |
 | `/`         | eMMC       | 64 GB          | `/dev/mmcblk0` | `ext4`      | -          |
 
-#### :symbols-hard-drive:&ensp;Data
+#### :symbols-hard-drive-outline:&ensp;Data
 
 | Mount Point            | Drive Type         | Drive Capacity | Device Path    | File System | Encryption |
 | :--------------------- | :----------------- | :------------- | :------------- | :---------- | :--------- |
@@ -132,7 +132,7 @@ hide:
 |  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_Services/yt-dlp_WebUI.md)               |         `3033`         | High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                        |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 !!! zima inline end "ZimaOS"
 

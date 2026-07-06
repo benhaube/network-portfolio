@@ -19,15 +19,15 @@ hide:
 ---
 ## :symbols-info: Device Overview
 
-#### :symbols-toolbox: Role
+#### :symbols-toolbox-outline: Role
 
 :    Device role
 
-#### :symbols-host: Hostname
+#### :symbols-host-outline: Hostname
 
 + `hostname`
 
-#### :symbols-location: Location
+#### :symbols-location-outline: Location
 
 + Location 
 
@@ -44,7 +44,7 @@ hide:
 
 + Hardware / Software security features (e.g., TPM2)
 
-## :symbols-monitor-heart: Core Specs
+## :symbols-monitor-heart-outline: Core Specs
 
 | CPU                  | Cores / Threads | CPU Freq. | RAM  | GPU  | GPU Freq. | VRAM |
 | :------------------- | :-------------- | :-------- | :--- | :--- | :-------- | :--- |
@@ -60,9 +60,9 @@ hide:
 | :-------: | :----- | :----------------- | :------------------ | :-------- |
 |  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
 
-## :symbols-folder-open: Storage & Mounts
+## :symbols-folder-open-outline: Storage & Mounts
 
-#### :symbols-hard-drive: Internal Drive(s)
+#### :symbols-hard-drive-outline: Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -95,7 +95,7 @@ hide:
 | *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :symbols-note-stack-fill: Maintenance & Notes
+## :symbols-note-stack: Maintenance & Notes
 
 !!! config "Critical Configurations"
 

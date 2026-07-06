@@ -19,15 +19,15 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-#### :symbols-host:&ensp;Hostname 
+#### :symbols-host-outline:&ensp;Hostname 
 
 + `ben-s-phone`
 
-#### :symbols-location:&ensp;Location
+#### :symbols-location-outline:&ensp;Location
 
 + Mobile
 
@@ -49,7 +49,7 @@ hide:
     + :symbols-fingerprint:&nbsp;Fingerprint
     + :symbols-facial-recognition:&nbsp;Facial Recognition
 
-## :symbols-monitor-heart:&ensp;Core Specs
+## :symbols-monitor-heart-outline:&ensp;Core Specs
 
 | CPU                                                        | Cores / Threads       | CPU Freq.                                                                     | RAM           | GPU                                   | GPU Freq. | VRAM   |
 | :--------------------------------------------------------- | :-------------------- | :---------------------------------------------------------------------------- | :------------ | :------------------------------------ | :-------- | :----- |
@@ -65,9 +65,9 @@ hide:
 | :-------: | :----------------------------- | :---- | :---------------------------- | :------------- |
 |   Wi-Fi   | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption             |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------------------- |
@@ -94,7 +94,7 @@ hide:
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 !!! config inline end "Critical Configurations"
 

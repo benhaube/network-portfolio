@@ -25,11 +25,11 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    The primary DNS server in the [Technitium](../03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./ZimaBoard_2_NAS.md).
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `debian-vm`
 
@@ -50,7 +50,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"debian-vm (server-admin)"
 
-## :symbols-monitor-heart:&ensp;Resource Allocation
+## :symbols-monitor-heart-outline:&ensp;Resource Allocation
 
 |          vCPU          |  RAM  | Storage | VDI Location                             |
 | :--------------------: | :---: | :------ | :--------------------------------------- |
@@ -84,7 +84,7 @@ hide:
 | *Active* | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 !!! config "Critical Configurations"
 

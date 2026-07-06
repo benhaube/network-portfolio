@@ -27,15 +27,15 @@ hide:
 
     [More Kacey Info&ensp;:brands-creality-v2:](Kacey_Info.md){ .md-button }
 
-#### :symbols-toolbox:&ensp;Role 
+#### :symbols-toolbox-outline:&ensp;Role 
 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
-#### :symbols-host:&ensp;Hostname
+#### :symbols-host-outline:&ensp;Hostname
 
 + `k1c-a71e`
 
-#### :symbols-location:&ensp;Location  
+#### :symbols-location-outline:&ensp;Location  
 
 + Office
 
@@ -61,9 +61,9 @@ hide:
 | :-------: | :----------------------------: | :--------------- | :---------------------------- | :------------- |
 |  `wlan0`  | :symbols-security:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open:&ensp;Storage & Mounts
+## :symbols-folder-open-outline:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive
+#### :symbols-hard-drive-outline:&ensp;Internal Drive
 
 | Mount Point | Drive Type | Drive Capacity | Device Path       | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------------- | :---------- | :--------- |
@@ -88,15 +88,15 @@ hide:
 | *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)             |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance & Notes
+## :symbols-note-stack:&ensp;Maintenance & Notes
 
 ???+ config "Modifications"
 
-    :symbols-firmware:&ensp;**Firmware:**
+    :symbols-memory:&ensp;**Firmware:**
  
     + The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/) for configuration issues.
  
-    :symbols-package:&ensp;**Software:**
+    :symbols-package-alt:&ensp;**Software:**
  
     + Fluidd 
         + For information regarding the [Fluidd](../03_Services/Fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).    
@@ -111,7 +111,7 @@ hide:
     + [PROWIPER^&copy;^ Mod](../3D_Printing/PROWIPER_Mod.md)
         + Replaces the standard nozzle wiping brush at the back of the build plate.
  
-    :symbols-frame-source:&ensp;**Custom G-Code Macros:**
+    :symbols-file-code-corner:&ensp;**Custom G-Code Macros:**
 
     + [Manual Nozzle Cleaning Macro](../3D_Printing/Manual_Nozzle_Cleaning_Gcode_Macro.md)
         + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.

@@ -23,11 +23,11 @@ hide:
 ---
 ## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox:&ensp;Role
+#### :symbols-toolbox-outline:&ensp;Role
 
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
-#### :symbols-location:&ensp;Location 
+#### :symbols-location-outline:&ensp;Location 
 
 + Living-Room 
 + Mini-Rack 
@@ -36,7 +36,7 @@ hide:
 
 + Wall wart *(12.0V / 1.0A)*
 
-#### :symbols-monitor-heart:&ensp;Specs
+#### :symbols-monitor-heart-outline:&ensp;Specs
 
 + Throughput: 
     + Five 2.5 Gb/s Ports
@@ -59,7 +59,7 @@ hide:
 | **6**  | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red / Cat6A    | 10 Gb/s &mdash; SFP+ Ethernet Transceiver                  |
 
 ---
-## :symbols-note-stack-fill:&ensp;Maintenance Notes
+## :symbols-note-stack:&ensp;Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 

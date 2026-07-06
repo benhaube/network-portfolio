@@ -238,7 +238,7 @@ hide:
 
       Use this if you think that some of the text on the page is too dark and hard to read
 
-#### :symbols-space-dashboard:&ensp;Glance Pages
+#### :symbols-layout-dashboard:&ensp;Glance Pages
 
 ```yaml {title="home.yml" linenums="1" .mono-title}
 --8<-- "glance-home.yml"

@@ -1,5 +1,5 @@
 ---
-icon: symbols/history-settings
+icon: symbols/web-clock
 title: Chrony
 subtitle: NTP Server
 description: Advanced, lightweight NTP client and server.

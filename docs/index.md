@@ -105,7 +105,7 @@ hide:
 [:services-caddy:&ensp;Caddy](./03_Services/Caddy.md)
 :    Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 
-[:symbols-history-settings:&nbsp;Chrony](./03_Services/Chrony.md)
+[:symbols-web-clock:&nbsp;Chrony](./03_Services/Chrony.md)
 :    Advanced, lightweight NTP client and server.
 
 [:services-cloudflare:&ensp;Cloudflared](./03_Services/Cloudflared.md)

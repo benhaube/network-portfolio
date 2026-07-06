@@ -103,7 +103,7 @@ hide:
 
 |  Status  | Service                                                                 | Port(s) | Role / Notes                                                                                                                                                                                            |
 | :------: | :---------------------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | [:symbols-history-settings:&nbsp;Chrony](../03_Services/Chrony.md)      |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
+| *Active* | [:symbols-web-clock:&nbsp;Chrony](../03_Services/Chrony.md)             |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
 | *Active* | [:symbols-web-ip:&nbsp;DDNS](../03_Services/DDNS.md)                    |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools). |
 | *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)                    |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
 | *Active* | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
@@ -116,7 +116,7 @@ hide:
     **:symbols-restore:&ensp;Backup Restore:**
     :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) and the [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md). 
 
-    **:symbols-history-settings:&ensp;NTP Server:**
+    **:symbols-web-clock:&ensp;NTP Server:**
     :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
 
 #### :symbols-update:&ensp;Update Process

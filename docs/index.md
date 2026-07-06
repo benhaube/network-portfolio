@@ -268,7 +268,7 @@ hide:
 [:symbols-image:&ensp;Immich Slideshow for Nest Hub](./Linux_Tutorials/Immich_Slideshow_for_Nest_Hub.md)
 :    How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [Home Assistant](./03_Services/Home_Assistant.md) with Google Cast.
 
-[:symbols-award:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)
+[:symbols-file-badge:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)
 :    How to generate self-signed SSL certificates for use in testing, development, and internal web servers.
 
 [:symbols-feedback:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 

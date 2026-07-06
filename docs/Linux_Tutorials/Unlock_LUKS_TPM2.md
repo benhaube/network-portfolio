@@ -15,7 +15,7 @@ hide:
     Unlocking your LUKS volume with a **TPM2** provides a secure way to enable automatic decryption during boot, usually eliminating the need to type a passphrase unless the system state changes. The most common and recommended way to achieve this on modern Linux systems, especially those using LUKS2 and systemd, is by using the `systemd-cryptenroll` tool.
 
 ---
-## :symbols-release-alert:&ensp;Prerequisites
+## :symbols-release-alert-outline:&ensp;Prerequisites
 
 **TPM2 Chip:** 
 :    Your computer must have an active **TPM2** chip. Most modern hardware does, but you may need to enable in **UEFI** settings.
@@ -192,7 +192,7 @@ hide:
 
         1. Or `sudo update-initramfs -u -k <version>` if you have an **Ubuntu / Debian** system.
 
-    :symbols-frame-source:&ensp;**Update PCRs Script:** 
+    :symbols-file-terminal:&ensp;**Update PCRs Script:** 
     :    If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a Bash script I have written.<br>
          It is available to download in this **GitHub** repo:
 

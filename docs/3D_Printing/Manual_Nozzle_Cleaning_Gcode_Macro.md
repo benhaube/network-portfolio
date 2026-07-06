@@ -76,7 +76,7 @@ hide:
 
 ---
 
-## :symbols-frame-source:&ensp;G-code Macro
+## :symbols-file-code-corner:&ensp;G-code Macro
 
 ```cfg {title="manual-nozzle-clean-v2.cfg" linenums="1" .mono-title}
 --8<-- "manual-nozzle-clean.cfg"

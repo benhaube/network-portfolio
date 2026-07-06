@@ -121,7 +121,7 @@ hide:
 	+ ++ctrl+o++&ensp;to save
 	+ ++ctrl+x++&ensp;to close
 
-## :symbols-frame-source:&ensp;Creating the Shell Script 
+## :symbols-file-terminal:&ensp;Creating the Shell Script 
 
 **The Script:**
 :     Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMTP server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
@@ -166,7 +166,7 @@ hide:
     journalctl -t msmtp
     ```
 
-## :symbols-release-alert:&ensp;Bonus
+## :symbols-release-alert-outline:&ensp;Bonus
 
 **Gotify:**
 :   If you have a [Gotify](../03_Services/Gotify.md) instance, you can use it to send instantaneous push notifications when a new SSH session is established using the same method. However, since Gotify uses a dead-simple REST API, literally anything that can execute a standard `curl` command or send an HTTP `POST` request can trigger a push notification. That means there are no extra configurations or packages required. Just a simple Bash script using the tools built into every Linux distribution. 

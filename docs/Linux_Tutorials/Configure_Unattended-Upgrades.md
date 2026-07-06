@@ -66,7 +66,7 @@ There are two optional packages you can install to extend the functionality of `
         sudo apt install powermgmt-base -y
         ```
 
-## :symbols-release-alert:&ensp;Verify the Installation
+## :symbols-verified-outline:&ensp;Verify the Installation
 
 1. Run a 'dry-run' test to confirm the package is working and to see which origins are allowed:
 

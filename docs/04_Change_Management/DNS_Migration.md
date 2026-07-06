@@ -74,7 +74,7 @@ hide:
 3. **Test Resolution:** 
     + [ ] Run `#!bash dig @[Primary-IP] google.com` and verify the `SERVER` field.
 
-## :symbols-verified:&ensp;Verification & Safety Net
+## :symbols-verified-outline:&ensp;Verification & Safety Net
 
 1. **Check DoT Status:** 
     + [ ] Run `#!bash dig @[Primary-IP] +short txt proto.on.quad9.net` to ensure the upstream is encrypted.

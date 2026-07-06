@@ -88,7 +88,7 @@ hide:
 <p><b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</p>
 </div>
 
-## :symbols-firmware:&ensp;Firmware Setup
+## :symbols-memory:&ensp;Firmware Setup
 
 !!! info inline end "Root Access"
 

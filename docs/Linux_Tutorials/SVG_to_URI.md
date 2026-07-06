@@ -20,7 +20,7 @@ hide:
 
 ---
 
-## :symbols-release-alert:&ensp;Prerequisites
+## :symbols-release-alert-outline:&ensp;Prerequisites
 
 To complte this tutorial you will need the following packages:
 

@@ -63,7 +63,7 @@ theme:
       active: symbols/check-circle-outline
       android: brands/android-robot
       backup: symbols/backup
-      dashboard: symbols/space-dashboard
+      dashboard: symbols/layout-dashboard
       deprecated: symbols/trash-2
       desktop: symbols/desktop-pc-outline
       development: symbols/graph-8
@@ -87,7 +87,7 @@ theme:
       nas: symbols/nas
       native: symbols/linux
       network: symbols/lan 
-      new: symbols/release-alert-outline
+      new: symbols/badge-alert
       office: symbols/desk-lamp
       pc: symbols/personal-computer
       podman: services/linux-containers

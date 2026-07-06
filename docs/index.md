@@ -138,7 +138,7 @@ hide:
 [:services-gotify-notification:&ensp;Gotify](./03_Services/Gotify.md)
 :    A simple server for sending and receiving messages in real-time per WebSocket. 
 
-[:simple-homeassistant:&ensp;Home Assistant](./03_Services/Home_Assistant.md)
+[:services-home-assistant:&ensp;Home Assistant](./03_Services/Home_Assistant.md)
 :    Open-source home automation that puts local control and privacy first.
 
 [:services-homebox:&ensp;Homebox](./03_Services/Homebox.md) 

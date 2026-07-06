@@ -1,5 +1,5 @@
 ---
-icon: simple/homeassistant
+icon: services/home-assistant
 title: Home Assistant
 subtitle: Awaken Your Home
 description: Open-source home automation that puts local control and privacy first.

@@ -88,7 +88,7 @@ theme:
       native: symbols/linux
       network: symbols/lan 
       new: symbols/release-alert-outline
-      office: symbols/desk
+      office: symbols/desk-lamp
       pc: symbols/personal-computer
       podman: services/linux-containers
       podman_host: services/linux-containers
@@ -108,7 +108,7 @@ theme:
       video: symbols/movie-outline
       vh: symbols/host-outline
       vlan: symbols/lan-outline
-      vm: symbols/stacks
+      vm: symbols/stacks-outline
       vpn: symbols/vpn-outline
       windows: brands/microsoft
     top: symbols/arrow-double-up

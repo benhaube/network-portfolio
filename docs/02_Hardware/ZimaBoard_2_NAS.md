@@ -96,7 +96,7 @@ hide:
 
 |  Status  | OS                                                                             | Virtual NIC | Virtual Disk Image | Role / Notes                                                                         |
 | :------: | :----------------------------------------------------------------------------- | :---------- | :----------------- | :----------------------------------------------------------------------------------- |
-| *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](../02_Hardware/Debian_Server_VM.md) | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
+| *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](../02_Hardware/Debian_Server_VM.md)  | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_Services/Technitium.md) DNS server. |
 
 #### :symbols-linux:&ensp;Native Linux
 

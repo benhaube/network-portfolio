@@ -168,14 +168,14 @@ hide:
 + To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
 + See ["SSH Config File"](../03_Services/SSH.md#ssh-config-file_1) for documentation.  
 
-#### :symbols-smb-share:&ensp;ZimaOS NAS Mounts
+#### :symbols-smb-share-outline:&ensp;ZimaOS NAS Mounts
 
 + On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. *(e.g., photos / code)* 
     + Other benefits from the switch to NFS include: Full compatibility for file ownership and permissions, and compatibility for sym-links. The `rsync` command in the backup script has been modified to reflect this change.  
     + This change only applies to PCs using the Linux OS. The Windows and Android clients still utilize SMB with multi-chanel enabled.
 + See the ["Clients"](../03_Services/NFS.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
 
-#### :symbols-frame-source:&ensp;Backup Script
+#### :symbols-file-terminal:&ensp;Backup Script
 
 1. Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
@@ -217,7 +217,7 @@ hide:
     systemctl --user enable home-bkp-nas.timer
     ```
 
-#### :symbols-encrypted-outline:&ensp;Encrypted-Documents
+#### :symbols-folder-key:&ensp;Encrypted-Documents
 
 1. Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2. Place the `.desktop` file in the `~/.config/autostart` directory. 

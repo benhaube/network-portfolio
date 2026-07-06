@@ -20,7 +20,7 @@ hide:
 
 ---
 
-## :symbols-delete-outline:&ensp;Cleaning Google Photos
+## :symbols-trash-2:&ensp;Cleaning Google Photos
 
 **Goal:**
 :   Delete cloud data without losing local files.
@@ -47,7 +47,7 @@ hide:
 --8<-- "clean-google-photos.js"
 ```
 
-1. If the script selects them but doesn't delete them, just click the :symbols-delete: icon yourself after it does the hard work of selecting everything.
+1. If the script selects them but doesn't delete them, just click the :symbols-trash-2: icon yourself after it does the hard work of selecting everything.
 
 ## :symbols-server-outline:&ensp;Server-Side Setup 
 &emsp;&emsp;&ensp;*ZimaOS NAS*

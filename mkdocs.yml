@@ -57,14 +57,14 @@ theme:
       quote: symbols/quote
     tag:
       default: symbols/tag-outline
-      3D-printer: symbols/printer-3d
+      3D-printer: symbols/printer-3d-nozzle-outline
       isp: symbols/web
       iot: symbols/home-automation
       active: symbols/check-circle-outline
       android: brands/android-robot
       backup: symbols/backup
       dashboard: symbols/space-dashboard
-      deprecated: symbols/delete-outline
+      deprecated: symbols/trash-2
       desktop: symbols/desktop-pc-outline
       development: symbols/graph-8
       dns: symbols/dns
@@ -108,7 +108,7 @@ theme:
       video: symbols/movie-outline
       vh: symbols/host-outline
       vlan: symbols/lan-outline
-      vm: symbols/stacks-outline
+      vm: symbols/layers
       vpn: symbols/vpn-outline
       windows: brands/microsoft
     top: symbols/arrow-double-up

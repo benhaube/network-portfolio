@@ -83,7 +83,7 @@ hide:
 [:symbols-mobile:&ensp;Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md)
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-[:symbols-printer-3d:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
+[:symbols-printer-3d-nozzle-outline:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
 [:symbols-desktop-pc-outline:&ensp;Rob's Workstation](./02_Hardware/Rob's_Desktop.md) 
@@ -223,7 +223,7 @@ hide:
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 
 
 ---
-## :symbols-printer-3d-nozzle:&ensp;3D Printing
+## :symbols-printer-3d-nozzle-outline:&ensp;3D Printing
 
 !!! links inline end "Check out my 3D Models!"
     All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.

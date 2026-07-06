@@ -57,7 +57,7 @@ hide:
 | Device                                                                                                 | VLAN   | IP Address      | Hostname           | Role / Notes                                                            |
 | :----------------------------------------------------------------------------------------------------- | :----- | :-------------- | :----------------- | :---------------------------------------------------------------------- |
 | [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                     | VLAN50 | `192.168.50.10` | `bens-workstation` | Fedora Linux 44 *(KDE Plasma Desktop Edition)*                          |
-| [:symbols-printer-3d:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)                       | VLAN50 | `192.168.50.15` | `k1c-a71e`         | Creality K1C *(Modified)*                                               |
+| [:symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)        | VLAN50 | `192.168.50.15` | `k1c-a71e`         | Creality K1C *(Modified)*                                               |
 | [:symbols-server-outline:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(`wlan0`)* | VLAN53 | `192.168.53.2`  | `pi-server`        | Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ## :symbols-web-ip:&ensp;Dynamic DNS Providers

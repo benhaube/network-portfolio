@@ -1,5 +1,5 @@
 ---
-icon: symbols/printer-3d
+icon: symbols/printer-3d-nozzle-outline
 title: Kacey 3D-Printer
 subtitle: Modified Creality K1C
 tags:
@@ -11,7 +11,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle.svg){ width=200 }![Creality Logo](../assets/icons/creality-v2.svg){ width=50 }
+![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle-outline.svg){ width=200 }![Creality Logo](../assets/icons/creality-v2.svg){ width=50 }
 
 # Kacey 3D-Printer
 *Modified Creality K1C*
@@ -104,7 +104,7 @@ hide:
         + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/).
         + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/).
  
-    :symbols-printer-3d:&ensp;**Hardware:**
+    :symbols-printer-3d-nozzle-outline:&ensp;**Hardware:**
  
     + [Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
         + Changes from a fixed bed to an adjustable bed with aluminum knobs. 

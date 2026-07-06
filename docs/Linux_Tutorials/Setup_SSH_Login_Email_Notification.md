@@ -1,5 +1,5 @@
 ---
-icon: symbols/feedback
+icon: symbols/feedback-outline
 title: Setup SSH Login Notification
 subtitle: With Email SMTP and Gotify
 hide:
@@ -84,7 +84,7 @@ hide:
     sudo chown root:root /root/.email_app_password
     ```
 
-## :symbols-feedback:&ensp;Enable Login Alerts with PAM
+## :symbols-feedback-outline:&ensp;Enable Login Alerts with PAM
 
 ???+ question
 

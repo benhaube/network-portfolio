@@ -216,10 +216,10 @@ hide:
 ---
 ## :symbols-swap-horizontal:&ensp;Change Management
 
-[:brands-raspberry-pi:&nbsp;:symbols-arrow-right:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
+[:brands-raspberry-pi:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
 :    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
-[:simple-pihole:&nbsp;:symbols-arrow-right:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
+[:simple-pihole:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 
 
 ---
@@ -271,5 +271,5 @@ hide:
 [:symbols-file-badge:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)
 :    How to generate self-signed SSL certificates for use in testing, development, and internal web servers.
 
-[:symbols-feedback:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 
+[:symbols-feedback-outline:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 
 :    How to set up an email and push notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`, and a Gotify server. 

@@ -83,7 +83,7 @@ hide:
     **New Session Notification:**
     :    The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
 
-        [SSH Login Notification&ensp;:symbols-feedback:](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md){ .md-button }
+        [SSH Login Notification&ensp;:symbols-feedback-outline:](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md){ .md-button }
 
 ##### SSH Config File
 

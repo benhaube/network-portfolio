@@ -42,7 +42,7 @@ hide:
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (admin)"
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (bhaube)"
 
-#### :symbols-feedback:&ensp;Notifications
+#### :symbols-feedback-outline:&ensp;Notifications
 
 | Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- |

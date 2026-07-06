@@ -46,8 +46,8 @@ hide:
 + Full-disk encryption
 + 8-digit PIN
 + Biometric:
-    + :symbols-fingerprint:&nbsp;Fingerprint
-    + :symbols-facial-recognition:&nbsp;Facial Recognition
+    + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
+    + :symbols-scan-face:&nbsp;Face Scan
 
 ## :symbols-monitor-heart-outline:&ensp;Core Specs
 

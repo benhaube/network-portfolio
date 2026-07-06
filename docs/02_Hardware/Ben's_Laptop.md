@@ -63,8 +63,8 @@ hide:
     + LUKS2 drive encryption
     + FIDO2-based MFA for local user 
 + Biometric:
-    + :symbols-fingerprint:&nbsp;Fingerprint
-    + :symbols-facial-recognition:&nbsp;IR facial recognition
+    + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
+    + :symbols-scan-face:&nbsp;IR Face Scan
 
 ## :symbols-monitor-heart-outline:&ensp;Core Specs
 

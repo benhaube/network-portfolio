@@ -15,8 +15,8 @@ hide:
   - toc
 ---
 ![Material Design nas icon](../assets/icons/10-in-rack.svg){ width=200 }
-![ZimaOS Icon](../assets/icons/zimaos-light.svg#only-light){ width=50 }
-![ZimaOS Icon](../assets/icons/zimaos-dark.svg#only-dark){ width=50 }
+&ensp;![ZimaOS Icon](../assets/icons/zimaos-light.svg#only-light){ width=50 }
+&ensp;![ZimaOS Icon](../assets/icons/zimaos-dark.svg#only-dark){ width=50 }
 &ensp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # ZimaOS NAS

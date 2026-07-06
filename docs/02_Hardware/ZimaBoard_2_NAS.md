@@ -92,7 +92,7 @@ hide:
 + SMB  *(with Multichannel enabled)*
 + NFS *(for Linux PCs)*
 
-#### :symbols-stacks:&ensp;Virtualization
+#### :symbols-layers:&ensp;Virtualization
 
 |  Status  | OS                                                                             | Virtual NIC | Virtual Disk Image | Role / Notes                                                                         |
 | :------: | :----------------------------------------------------------------------------- | :---------- | :----------------- | :----------------------------------------------------------------------------------- |

@@ -33,7 +33,7 @@ hide:
 
 + `debian-vm`
 
-#### :symbols-stacks:&ensp;Hypervisor 
+#### :symbols-layers:&ensp;Hypervisor 
 
 + [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 

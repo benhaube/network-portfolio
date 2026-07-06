@@ -101,7 +101,7 @@ hide:
 
 ## :symbols-web:&ensp;Services / Docker Containers
 
-#### :symbols-stacks:&ensp;Virtualization
+#### :symbols-layers:&ensp;Virtualization
 
 |  Status  | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes                                    |
 | :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |

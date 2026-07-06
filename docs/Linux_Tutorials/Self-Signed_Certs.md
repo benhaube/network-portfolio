@@ -5,7 +5,7 @@ subtitle: SSL for Your Local Server
 hide:
   - toc
 ---
-![Material Design file-certificate-outline icon](../assets/icons/certificate.svg){ width=200 }
+![Material Design file-certificate-outline icon](../assets/icons/file-badge.svg){ width=200 }
 
 # Self-Signed Certificates
 

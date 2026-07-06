@@ -31,7 +31,7 @@ hide:
     + [ ] Secondary:&ensp;[:symbols-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.6`
     + [ ] Tertiary/Failover:&ensp;[:brands-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.3`
 
-## :symbols-dns:&ensp;Server Provisioning
+## :symbols-server-outline:&ensp;Server Provisioning
 
 #### Debian Server
 

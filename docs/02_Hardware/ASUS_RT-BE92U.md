@@ -68,7 +68,7 @@ hide:
 | :----------: | :----: | :-------------: | :---------------- | :-------------------- | :------------------------------------------- |
 |    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :symbols-security:&nbsp;Trusted VLAN         |
 | *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-person-fill:&nbsp;Guest VLAN |
-|   *2G_IoT*   | VLAN53 | :symbols-close: | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
+|   *2G_IoT*   | VLAN53 | :symbols-x: | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
 
 #### :symbols-ethernet-port-outline:&ensp;Physical Ethernet Ports
 

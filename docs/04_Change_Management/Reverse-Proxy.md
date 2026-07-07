@@ -48,7 +48,7 @@ hide:
 | Domain / Alias     | Record Type | Target / Value     |       PTR       | Description                             |
 | :----------------- | :---------- | :----------------- | :-------------: | :-------------------------------------- |
 | `pi-zero.internal` | **A**       | `192.168.50.3`     | :symbols-check: | The dedicated Caddy reverse proxy host. |
-| `immich.internal`  | **CNAME**   | `pi-zero.internal` | :symbols-close: | Points the Immich domain to the proxy.  |
+| `immich.internal`  | **CNAME**   | `pi-zero.internal` | :symbols-x: | Points the Immich domain to the proxy.  |
 
 ## :symbols-cogs:&ensp;Caddy Configuration
 

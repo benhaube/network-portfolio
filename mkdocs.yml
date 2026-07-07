@@ -18,21 +18,21 @@ theme:
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: symbols/brightness-auto
+        icon: symbols/sun-moon
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: green
       accent: light blue
       toggle:
-        icon: symbols/brightness-7
+        icon: symbols/sun
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: green
       accent: light blue
       toggle:
-        icon: symbols/brightness-4
+        icon: symbols/moon
         name: Switch to system preference
   font:
     text: Google Sans

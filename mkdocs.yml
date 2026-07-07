@@ -77,12 +77,12 @@ theme:
       inactive: symbols/circle-x
       infra: symbols/network-node
       inventory: symbols/inventory
-      laptop: symbols/laptop
+      laptop: symbols/laptop-minimal
       linux: symbols/linux
       living-room: symbols/sofa-outline-alt
       map: symbols/graph-2
       mini-rack: symbols/10-inch-rack
-      mobile: symbols/devices-mobile
+      mobile: symbols/tablet-smartphone
       monitor: symbols/monitor-heart-outline
       nas: symbols/nas-outline
       native: symbols/linux

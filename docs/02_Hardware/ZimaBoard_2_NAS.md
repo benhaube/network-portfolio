@@ -1,5 +1,5 @@
 ---
-icon: symbols/nas
+icon: symbols/nas-outline
 title: ZimaOS NAS
 subtitle: Rack-Mount ZimaBoard 2
 tags:

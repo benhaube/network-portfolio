@@ -43,7 +43,7 @@ hide:
 
 #### :symbols-network-node:&ensp;Host Node 
 
-+ [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
++ [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
 #### :symbols-key:&ensp;Credentials
 

@@ -36,7 +36,7 @@ hide:
 
 #### Application Hosts
 
-* [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
+* [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 * [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
 ## :symbols-cloud-sync:&ensp;Technitium DNS Records

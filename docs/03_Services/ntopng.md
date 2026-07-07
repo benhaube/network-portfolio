@@ -46,7 +46,7 @@ hide:
 
 | Host Device                                                        | Method                                | Container Name | Image                |
 | :----------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `ntop`         | `ntop/ntopng:latest` |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `ntop`         | `ntop/ntopng:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

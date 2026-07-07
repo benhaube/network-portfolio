@@ -44,7 +44,7 @@ hide:
 
 | Host Device                                                        | Method                                | Container Name | Image                             |
 | :----------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

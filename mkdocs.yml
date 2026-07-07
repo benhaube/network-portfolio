@@ -84,7 +84,7 @@ theme:
       mini-rack: symbols/10-inch-rack
       mobile: symbols/devices-mobile
       monitor: symbols/monitor-heart-outline
-      nas: symbols/nas
+      nas: symbols/nas-outline
       native: symbols/linux
       network: symbols/lan 
       new: symbols/badge-alert

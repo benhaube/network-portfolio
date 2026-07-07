@@ -69,7 +69,7 @@ hide:
 [:symbols-ethernet-port-outline:&ensp;Ugreen Switch](./02_Hardware/Ugreen_Switch.md)
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
-[:symbols-nas:&ensp;ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md) 
+[:symbols-nas-outline:&ensp;ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md) 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
 ### Key Clients

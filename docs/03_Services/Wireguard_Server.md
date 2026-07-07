@@ -31,13 +31,13 @@ hide:
 
 + `41820`
 + `51820`
-+ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :symbols-nas:&nbsp;ZimaOS NAS)*
++ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :symbols-nas-outline:&nbsp;ZimaOS NAS)*
 
 #### :symbols-link:&ensp;URL / Access 
 
 + :symbols-vpn-outline:&nbsp;Server Endpoint:
     + `rac3r4life.myaddr.dev:41820` *(for :symbols-router-outline:&nbsp;ASUS RT-BE92U)*
-    + `rac3r4life.myaddr.dev:51820` *(for :symbols-nas:&nbsp;ZimaOS NAS)*
+    + `rac3r4life.myaddr.dev:51820` *(for :symbols-nas-outline:&nbsp;ZimaOS NAS)*
 + :symbols-cogs:&nbsp;Web UI Admin: 
     + <http://storage-server.internal:51821/>
     + <http://storage-server-2.internal:51821/>
@@ -55,7 +55,7 @@ hide:
     + `Ben's-Laptop`
     + `Rob's-Phone`
     + `Rob's-Laptop`
-+ :symbols-nas:&nbsp;ZimaOS NAS:
++ :symbols-nas-outline:&nbsp;ZimaOS NAS:
     + `ben-laptop`
     + `ben-pixel`
     + `rob-laptop`
@@ -66,7 +66,7 @@ hide:
 | Host Device                                                                    | Method                                | Container Name         | Image                        |
 | :----------------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
 | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux     | `N/A`                  | `N/A`                        |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :services-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :services-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :symbols-settings:&ensp;Configuration 
 

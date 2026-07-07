@@ -44,7 +44,7 @@ hide:
 | Host Device                                                                                      | Method                                | Container Name | Image                           |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
 | [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
-| [:symbols-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                               | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                               | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
 
 ### :symbols-settings:&ensp;Configuration
 

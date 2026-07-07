@@ -1,5 +1,5 @@
 ---
-icon: symbols/dns
+icon: symbols/dns-outline
 title: DNS Migration
 subtitle: From Pi-hole to Technitium
 tags:

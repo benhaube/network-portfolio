@@ -67,7 +67,7 @@ theme:
       deprecated: symbols/trash-2
       desktop: symbols/desktop-pc-outline
       development: symbols/graph-8
-      dns: symbols/dns
+      dns: symbols/dns-outline
       docker: services/docker
       docker_host: services/docker
       domain: symbols/domain

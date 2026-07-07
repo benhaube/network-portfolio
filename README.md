@@ -3,12 +3,9 @@
         <img src="./readme-assets/logo.png" alt="Project / Site Logo" width="400">
     </a>
 </p>
-<p align="center">
-    <title>
-        <font color="#4CAE4F">
-            Network Documentation & Portfolio
-        </font>
-    </title>
+<h1 align="center" color="#4CAE4F">
+    Network Documentation & Portfolio
+</h1>
 </p>
 <p align="center">
     <a href="https://github.com/benhaube/network-portfolio/blob/main/LICENSE">

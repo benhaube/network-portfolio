@@ -71,22 +71,22 @@ hide:
 #### :simple-wireguard:&ensp;WireGuard @ ASUS Router
 &emsp;&ensp;*Main Server*
 
-| Client                             | CIDR          | DNS Servers                   | Endpoint                    |
-| :--------------------------------- | :------------ | :---------------------------- | :-------------------------- |
-| :symbols-mobile:&nbsp;Ben's-Phone  | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
-| :symbols-laptop:&nbsp;Ben's-Laptop | `10.6.0.3/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
-| :symbols-mobile:&nbsp;Rob's-Phone  | `10.6.0.4/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
-| :symbols-laptop:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
+| Client                                     | CIDR          | DNS Servers                   | Endpoint                    |
+| :----------------------------------------- | :------------ | :---------------------------- | :-------------------------- |
+| :symbols-mobile:&nbsp;Ben's-Phone          | `10.6.0.2/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
+| :symbols-laptop-minimal:&nbsp;Ben's-Laptop | `10.6.0.3/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
+| :symbols-mobile:&nbsp;Rob's-Phone          | `10.6.0.4/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
+| :symbols-laptop-minimal:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
 
 #### :simple-wireguard:&ensp;WireGuard @ ZimaOS NAS
 &emsp;&ensp;*Backup Server*
 
-| Client                           | CIDR                              | DNS Servers                   | Endpoint                    |
-| :------------------------------- | :-------------------------------- | :---------------------------- | :-------------------------- |
-| :symbols-laptop:&nbsp;ben-laptop | `10.8.0.2/32` `fd42:42:42::2/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
-| :symbols-mobile:&nbsp;ben-pixel  | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
-| :symbols-laptop:&nbsp;rob-laptop | `10.8.0.4/32` `fd42:42:42::4/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
-| :symbols-mobile:&nbsp;rob-phone  | `10.8.0.5/32` `fd42:42:42::5/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
+| Client                                   | CIDR                              | DNS Servers                   | Endpoint                    |
+| :--------------------------------------- | :-------------------------------- | :---------------------------- | :-------------------------- |
+| :symbols-laptop-minimal:&nbsp;ben-laptop | `10.8.0.2/32` `fd42:42:42::2/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
+| :symbols-mobile:&nbsp;ben-pixel          | `10.8.0.3/32` `fd42:42:42::3/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
+| :symbols-laptop-minimal:&nbsp;rob-laptop | `10.8.0.4/32` `fd42:42:42::4/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
+| :symbols-mobile:&nbsp;rob-phone          | `10.8.0.5/32` `fd42:42:42::5/128` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:51820 |
 
 ---
 <div class="grid cards" markdown>

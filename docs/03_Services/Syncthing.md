@@ -39,7 +39,7 @@ hide:
 + :symbols-desktop-pc-outline:&nbsp;Ben's Desktop
     + <https://bens-workstation.internal:8384>
     + <https://192.168.50.61:8384>
-+ :symbols-laptop:&nbsp;Ben's Laptop
++ :symbols-laptop-minimal:&nbsp;Ben's Laptop
     + <https://localhost:8384>
 + :symbols-mobile:&nbsp;Ben's Smartphone
     + <https://localhost:8384>
@@ -74,7 +74,7 @@ hide:
 | Host Device                                                                                       | Method                                     | Container Name | Image                          |
 | :------------------------------------------------------------------------------------------------ | :----------------------------------------- | :------------- | :----------------------------- |
 | [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-laptop:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                              | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                      | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
 | [:symbols-mobile:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                      | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
 | [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
 | [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |

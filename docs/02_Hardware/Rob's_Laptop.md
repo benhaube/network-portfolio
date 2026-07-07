@@ -1,5 +1,5 @@
 ---
-icon: symbols/laptop
+icon: symbols/laptop-minimal
 title: Rob's Laptop
 subtitle: ASUS TUF Gaming Laptop
 tags: 

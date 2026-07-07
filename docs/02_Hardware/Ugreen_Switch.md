@@ -52,7 +52,7 @@ hide:
 
 | Port # | Connected Device                                                               | Color / Type   | Notes                                                      |
 | :----: | :----------------------------------------------------------------------------- | :------------- | :--------------------------------------------------------- |
-| **1**  | [:symbols-laptop:&nbsp;Rob's Laptop](../02_Hardware/Rob's_Laptop.md)           | White / Cat5e  | 2.5 Gb/s &mdash; Temporary Connection `E8:9C:25:90:8B:11`  |
+| **1**  | [:symbols-laptop-minimal:&nbsp;Rob's Laptop](../02_Hardware/Rob's_Laptop.md)   | White / Cat5e  | 2.5 Gb/s &mdash; Temporary Connection `E8:9C:25:90:8B:11`  |
 | **2**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                   | -              | -                                                          |
 | **3**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                   | -              | -                                                          |
 | **4**  | [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)     | Blue / Cat6A   | 2.5 Gb/s &mdash; `eth1` `192.168.50.5` `00:E0:4C:5B:9A:95` |

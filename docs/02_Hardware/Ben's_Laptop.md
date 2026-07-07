@@ -13,8 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Lenovo Logo](../assets/icons/lenovo.svg){ width=250 }
-&nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
+![Lucide laptop-minimal icon](../assets/icons/laptop-minimal.svg){ width=200 }
 
 # Ben's Laptop
 *ThinkPad X1 Carbon*

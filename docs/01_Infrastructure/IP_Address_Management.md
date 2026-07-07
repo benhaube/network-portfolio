@@ -18,7 +18,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design ip-network icon](../assets/icons/ip-network.svg){ width=200 }
+![Material Design 'ip-outline' icon](../assets/icons/ip-outline.svg){ width=200 }
 
 # IP Address Management
 *Organized IP Address Space*
@@ -49,7 +49,7 @@ hide:
 | [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                 | VLAN50 | `192.168.50.5`   | `ZimaOS-NAS`    | Static | SMB Multi-channel Path, Secondary Ethernet Connection *(eth1)*                                                            |
 | [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | VLAN50 | `192.168.50.6`   | `debian-vm`     | Static | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
 | [:symbols-router-outline:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)               | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                  |
-| [:symbols-web:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)                          | -      | `192.168.100.1`  | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
+| [:symbols-settings-ethernet:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)            | -      | `192.168.100.1`  | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
 
 ## :symbols-devices:&ensp;Key Clients 
 &emsp;&emsp;&ensp;*DHCP Reserved*

@@ -11,7 +11,7 @@ tags:
 hide:
   - toc
 ---
-![CUPS Open Print Server icon](../assets/icons/cups-service-outline.svg){ width=200 }
+![CUPS Open Print Server icon](../assets/icons/cups.svg){ width=200 }
 
 # CUPS
 *Open Print Server*

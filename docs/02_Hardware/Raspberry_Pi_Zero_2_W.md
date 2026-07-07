@@ -1,6 +1,6 @@
 ---
 icon: symbols/server-outline
-title: Raspberry Pi Zero Server
+title: Pi Zero 2W Server
 subtitle: Reverse-Proxy Server
 tags:
   - Server
@@ -15,11 +15,9 @@ tags:
 hide:
   - toc
 ---
-![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }&ensp;
-![Raspberry Pi Icon](../assets/icons/raspberry-pi-logo.svg){ width=50 }
-&nbsp;![Arm Logo](../assets/icons/arm.svg){ width=50 }
+![Material Design raspberry-pi icon](../assets/icons/raspberry-pi.svg){ width=200 }
 
-# Raspberry Pi Zero Server
+# Pi Zero 2W Server
 *Reverse-Proxy Server*
 
 [Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
@@ -82,7 +80,7 @@ hide:
 |  Status  | Service                                                          |        Port(s)         | Role / Notes                                                                                                                          |
 | :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
 | *Active* | [:services-caddy:&nbsp;Caddy](../03_Services/Caddy.md)           |       `80` `443`       | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)             |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)         |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
 
 #### :services-docker:&ensp;Docker

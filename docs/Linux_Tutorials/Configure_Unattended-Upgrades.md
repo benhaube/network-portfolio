@@ -5,8 +5,7 @@ subtitle: Using Unattended-Upgrades
 hide:
   - toc
 ---
-![Google Symbols 'update' icon](../assets/icons/update.svg){ width=200 }&nbsp;
-![Material 'debian' icon](../assets/icons/debian.svg){ width=50 }
+![Google Symbols 'update' icon](../assets/icons/update.svg){ width=200 }
 
 # Automatic Updates for Debian
 *Using Unattended-Upgrades*
@@ -374,7 +373,7 @@ It is highly recommended to do a 'dry-run' after making changes to the configura
     sudo unattended-upgrades --dry-run --debug
     ```
 
-## :symbols-manage-search:&ensp;Monitor Upgrade Logs
+## :symbols-text-search:&ensp;Monitor Upgrade Logs
 
 !!! info
 

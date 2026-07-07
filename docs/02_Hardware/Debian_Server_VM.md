@@ -15,8 +15,6 @@ hide:
   - toc
 ---
 ![Material Server icon](../assets/icons/server-outline.svg){ width=200 }
-&ensp;![Debian Logo](../assets/icons/debian.svg){ width=50 }
-&nbsp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
 
 # Debian Server
 *Virtual Machine*
@@ -73,7 +71,7 @@ hide:
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                   |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)                  |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)              |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 | *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
 | *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                  |
 

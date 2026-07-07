@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![ASUS Logo](../assets/icons/asus-full.svg){ width=250 }&ensp;![AMD Logo](../assets/icons/amd-small.svg){ width=25 }
+![Lucide pc-case icon](../assets/icons/pc-case.svg){ width=200 }
 
 # Ben's Workstation
 *High-Performance Desktop PC*

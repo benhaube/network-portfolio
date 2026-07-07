@@ -12,8 +12,8 @@ site_description:  My personal, self-hosted network documentation, professional 
 theme:
   name: material
   custom_dir: overrides
-  favicon: /assets/favicon-outline.svg
-  logo: /assets/favicon-outline.svg
+  favicon: /assets/favicon.svg
+  logo: /assets/favicon.svg
   # Theme toggles (auto/light/dark)
   palette:
     - media: "(prefers-color-scheme)"

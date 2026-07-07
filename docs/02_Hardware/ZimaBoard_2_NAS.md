@@ -15,10 +15,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design nas icon](../assets/icons/10-in-rack.svg){ width=200 }&ensp;
-![ZimaOS Icon](../assets/icons/zimaos-light.svg#only-light){ width=50 }
-![ZimaOS Icon](../assets/icons/zimaos-dark.svg#only-dark){ width=50 }
-&ensp;![Intel Logo](../assets/icons/intel.svg){ width=50 }
+![Material Design nas icon](../assets/icons/10-in-rack.svg){ width=200 }
 
 # ZimaOS NAS
 *Rack-Mount ZimaBoard 2*
@@ -104,7 +101,7 @@ hide:
 |  Status  | Service                                                       | Port(s) | Role / Notes                                                                                   |
 | :------: | :------------------------------------------------------------ | :-----: | :--------------------------------------------------------------------------------------------- |
 | *Active* | [:symbols-smb-share-outline:&nbsp;NFS](../03_Services/NFS.md) | `2049`  | Remote file system access.                                                                     |
-| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)          |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)      |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 | *Active* | [:symbols-smb-share-outline:&nbsp;SMB](../03_Services/SMB.md) |  `445`  | Remote file system access.                                                                     |
 
 #### :services-docker:&ensp;Docker

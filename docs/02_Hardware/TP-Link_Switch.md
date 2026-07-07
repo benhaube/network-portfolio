@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design switch icon](../assets/icons/ethernet.svg){ width=200 }&ensp;![TP-Link Logo](../assets/icons/tp-link.svg){ width=50 }
+![Material Design switch icon](../assets/icons/ethernet.svg){ width=200 }
 
 # TP-Link Switch
 *Model SG105*

@@ -12,9 +12,7 @@ tags:
 hide:
   - toc
 ---
-![ASUS TUF Gaming Logo](../assets/icons/asus-tuf-light.svg#only-light){ width=200 }
-![ASUS TUF Gaming Logo](../assets/icons/asus-tuf-dark.svg#only-dark){ width=200 }
-&ensp;![AMD Logo](../assets/icons/amd-small.svg){ width=35 }&ensp;![Nvidia Logo](../assets/icons/nvidia.svg){ width=50 }
+![Lucide laptop-minimal icon](../assets/icons/laptop-minimal.svg){ width=200 }
 
 # Rob's Laptop
 *ASUS TUF Gaming Laptop*

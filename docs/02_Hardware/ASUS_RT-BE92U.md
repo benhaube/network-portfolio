@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design 'router-wireless' icon](../assets/icons/router-wireless-merlin.svg){ width=200 }
+![Material Design 'router-wireless' icon](../assets/icons/router-wireless.svg){ width=200 }
 
 # ASUS RT-BE92U
 *Wireless Router*
@@ -106,7 +106,7 @@ hide:
 | :------: | :---------------------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | *Active* | [:symbols-web-clock:&nbsp;Chrony](../03_Services/Chrony.md)             |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
 | *Active* | [:symbols-web-ip:&nbsp;DDNS](../03_Services/DDNS.md)                    |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools). |
-| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)                    |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)                |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
 | *Active* | [:simple-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
 
 ---

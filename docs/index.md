@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-![Material Design file-document-multiple customized icon](assets/icons/logo-outline.svg){ width=200 }&emsp;![Material Design format-list-bulleted customized icon](assets/icons/format-list-bulleted.svg){ width=50 } 
+![Material Design file-document-multiple customized icon](assets/icons/logo.svg){ width=250 }
 
 # Network Documentation & Portfolio
 [About Me&ensp;:symbols-user-search:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
@@ -51,13 +51,13 @@ hide:
 [:symbols-server-outline:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)
 :    The primary DNS server in the [Technitium](03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md). 
 
-[:symbols-web:&ensp;Hitron Modem](./02_Hardware/Hitron_Modem.md)
+[:symbols-settings-ethernet:&ensp;Hitron Modem](./02_Hardware/Hitron_Modem.md)
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
-[:symbols-server-outline:&ensp;Raspberry Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md)
+[:symbols-server-outline:&ensp;Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md)
 :    The secondary DNS server in the [Technitium](03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
-[:symbols-server-outline:&ensp;Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) 
+[:symbols-server-outline:&ensp;Pi Zero 2W Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`). 
 
 [:symbols-ethernet-port-outline:&ensp;TP-Link LiteWave Switch](./02_Hardware/TP-Link_LiteWave_Switch.md)
@@ -192,7 +192,7 @@ hide:
 [:services-spoolman:&ensp;Spoolman](./03_Services/Spoolman.md)
 :    Keep track of your inventory of 3D-printer filament spools. 
 
-[:symbols-terminal:&ensp;SSH](./03_Services/SSH.md)
+[:symbols-terminal-alt:&ensp;SSH](./03_Services/SSH.md)
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
 [:simple-syncthing:&ensp;Syncthing](./03_Services/Syncthing.md)

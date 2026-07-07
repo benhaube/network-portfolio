@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle-outline.svg){ width=200 }![Creality Logo](../assets/icons/creality-v2.svg){ width=50 }
+![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle-outline.svg){ width=200 }
 
 # Kacey 3D-Printer
 *Modified Creality K1C*
@@ -86,7 +86,7 @@ hide:
 | :------: | :--------------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
 | *Active* | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
 | *Active* | [:services-klipper:&nbsp;Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper](https://www.klipper3d.org/).                                      |
-| *Active* | [:symbols-terminal:&nbsp;SSH](../03_Services/SSH.md)             |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)         |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
 ## :symbols-note-stack:&ensp;Maintenance & Notes

@@ -26,7 +26,7 @@ hide:
 
 | Device Type                                   | Location    | Hostname                                                      | Interface                                    | MAC Address         | Role / Notes                      |
 | :-------------------------------------------- | :---------- | :------------------------------------------------------------ | :------------------------------------------- | :------------------ | :-------------------------------- |
-| :symbols-web:&nbsp;Cable Modem                | Living-Room | [<code>N/A</code>](../02_Hardware/Hitron_Modem.md)            | :symbols-ethernet-port-outline:&nbsp;*LAN 1* | `00:1c:73:00:00:99` | Cable modem, Hitron DOCSIS 3.1    |
+| :symbols-settings-ethernet:&nbsp;Cable Modem  | Living-Room | [<code>N/A</code>](../02_Hardware/Hitron_Modem.md)            | :symbols-ethernet-port-outline:&nbsp;*LAN 1* | `00:1c:73:00:00:99` | Cable modem, Hitron DOCSIS 3.1    |
 |                                               |             |                                                               | :symbols-ethernet-port-outline:&nbsp;*LAN 2* | `XX:XX:XX:XX:XX:XX` |                                   |
 | :symbols-router-outline:&nbsp;Wireless Router | Living-Room | [<code>RT-BE92U-FAF0</code>](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-ethernet-port-outline:&nbsp;*WAN*   | `60:CF:84:51:FA:F0` | Main router, ASUS RT-BE92U        |
 |                                               |             |                                                               | :symbols-android-wifi-lock:&nbsp;*2.4 GHz*   | `6A:CF:84:51:FA:F1` |                                   |

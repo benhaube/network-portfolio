@@ -27,17 +27,17 @@ hide:
 
 #### DNS Servers
 
-* Technitium Cluster Primary:&ensp;[:symbols-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)
-* Technitium Cluster Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+* Technitium Cluster Primary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)
+* Technitium Cluster Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
 #### Reverse Proxy
 
-* Caddy:&ensp;[:brands-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) &mdash; *(Native `apt` Install)*
+* Caddy:&ensp;[:brands-raspberry-pi:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) &mdash; *(Native `apt` Install)*
 
 #### Application Hosts
 
 * [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
-* [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+* [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
 ## :symbols-cloud-sync:&ensp;Technitium DNS Records
 

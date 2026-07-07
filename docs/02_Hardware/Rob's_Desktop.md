@@ -11,7 +11,7 @@ tags:
 hide:
   - toc
 ---
-![ASUS Logo](../assets/icons/asus-full.svg){ width=250 }&ensp;![Nvidia Logo](../assets/icons/nvidia.svg){ width=25 }&ensp;![Intel Logo](../assets/icons/intel.svg){ width=40 }
+![Lucide pc-case icon](../assets/icons/pc-case.svg){ width=200 }
 
 # Rob's Workstation
 *High-Performance Desktop PC*

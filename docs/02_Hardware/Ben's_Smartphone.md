@@ -10,7 +10,7 @@ tags:
 hide:
   - toc
 ---
-![Android Robot logo](../assets/icons/android-robot.svg){ width=200 }&nbsp;![Google logo](../assets/icons/google.svg){ width=50 }
+![Google Material (new) 'mobile' icon](../assets/icons/smartphone.svg){ width=200 }
 
 # Ben's Smartphone
 *Google Pixel 9 Pro*

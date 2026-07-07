@@ -30,7 +30,7 @@ hide:
 + Office
 + Printer-Cart
 
-#### :symbols-power:&ensp;Power Source
+#### :symbols-power-outline:&ensp;Power Source
 
 + Wall Wart *(5V / 0.6A)*
 

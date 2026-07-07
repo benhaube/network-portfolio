@@ -27,7 +27,7 @@ hide:
 
 + Insert location here
  
-#### :symbols-power: Power Source
+#### :symbols-power-outline: Power Source
 
 + (e.g., Wall wart 12V / 1A)
  

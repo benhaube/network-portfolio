@@ -32,7 +32,7 @@ hide:
 + Living-Room 
 + Mini-Rack 
 
-#### :symbols-power:&ensp;Power Source
+#### :symbols-power-outline:&ensp;Power Source
 
 + Wall wart *(12.0V / 1.0A)*
 

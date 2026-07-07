@@ -1,3 +1,6 @@
+<head>
+    <link> rel="stylesheet" href="./readme-assets/styles.css" </link>
+</head>
 <p align="center">
     <a href="https://portfolio.rac3r4life.online">
         <img src="./readme-assets/logo.png" alt="Project / Site Logo" width="400">
@@ -28,8 +31,6 @@
     ·
     <a href="#using-python">Build Using Python</a>
 </p>
-
----
 
 ## About
 

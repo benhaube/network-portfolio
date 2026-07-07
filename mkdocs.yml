@@ -114,7 +114,7 @@ theme:
     top: symbols/arrow-double-up
     previous: symbols/arrow-left
     next: symbols/arrow-right
-    search: symbols/search
+    search: symbols/search-lucide
     share: symbols/share
     annotation: symbols/expand-circle
     edit: symbols/square-pen

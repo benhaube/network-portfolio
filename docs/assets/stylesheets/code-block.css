@@ -78,3 +78,7 @@
 .md-tooltip--active + .md-annotation__index::after {
 	transform: rotate(90deg);
 }
+
+.md-annotation__index:before {
+    background: var(--md-code-bg-color);
+}

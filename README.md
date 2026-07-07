@@ -1,14 +1,14 @@
 <p align="center">
     <a href="https://portfolio.rac3r4life.online">
-        <img src="./readme-assets/project-icon.png" alt="Project / Site Logo" width="400">
+        <img src="./readme-assets/logo.png" alt="Project / Site Logo" width="400">
     </a>
 </p>
 <p align="center">
-    <h1>
+    <title>
         <font color="#4CAE4F">
             Network Documentation & Portfolio
         </font>
-    </h1>
+    </title>
 </p>
 <p align="center">
     <a href="https://github.com/benhaube/network-portfolio/blob/main/LICENSE">

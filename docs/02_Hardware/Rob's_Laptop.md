@@ -8,6 +8,7 @@ tags:
   - Mobile
   - Windows
   - Remote Access
+  - Hardware
 hide:
   - toc
 ---

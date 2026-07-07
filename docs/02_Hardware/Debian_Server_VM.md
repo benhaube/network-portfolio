@@ -10,6 +10,7 @@ tags:
   - Docker Host
   - Network
   - Linux
+  - Hardware
 hide:
   - toc
 ---

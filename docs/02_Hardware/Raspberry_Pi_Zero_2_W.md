@@ -11,6 +11,7 @@ tags:
   - Office
   - Printer Cart
   - Linux
+  - Hardware
 hide:
   - toc
 ---

@@ -10,6 +10,7 @@ tags:
   - DNS
   - IoT
   - Living Room
+  - Hardware
 hide:
   - toc
 ---

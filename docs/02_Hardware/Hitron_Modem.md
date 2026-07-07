@@ -8,6 +8,7 @@ tags:
   - ISP
   - Living Room
   - Mini-Rack
+  - Hardware
 hide:
   - toc
 ---

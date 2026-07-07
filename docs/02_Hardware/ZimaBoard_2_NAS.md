@@ -11,6 +11,7 @@ tags:
   - Mini-Rack
   - Linux
   - Server
+  - Hardware
 hide:
   - toc
 ---

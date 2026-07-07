@@ -8,6 +8,7 @@ tags:
   - 3D-Printer
   - Office
   - Linux
+  - Hardware
 hide:
   - toc
 ---

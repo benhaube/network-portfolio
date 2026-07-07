@@ -8,6 +8,7 @@ tags:
   - Network
   - Living Room
   - TV Stand
+  - Hardware
 hide:
   - toc
 ---

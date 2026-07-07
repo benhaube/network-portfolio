@@ -6,6 +6,7 @@ tags:
   - Mobile
   - Android
   - Remote Access
+  - Hardware
 hide:
   - toc
 ---

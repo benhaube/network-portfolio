@@ -8,6 +8,7 @@ tags:
   - Infrastructure
   - Office
   - Printer Cart
+  - Hardware
 hide:
   - toc
 ---

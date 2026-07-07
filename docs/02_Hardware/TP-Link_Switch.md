@@ -8,6 +8,7 @@ tags:
   - Network
   - Office
   - Printer Cart
+  - Hardware
 hide:
   - toc
 ---

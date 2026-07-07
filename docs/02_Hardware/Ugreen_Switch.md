@@ -8,6 +8,7 @@ tags:
   - Network
   - Living Room
   - Mini-Rack
+  - Hardware
 hide:
   - toc
 ---

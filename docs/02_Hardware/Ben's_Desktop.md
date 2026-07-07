@@ -5,10 +5,11 @@ subtitle: High-Performance Desktop PC
 tags:
   - PC
   - Desktop
+  - Docker Host
   - Virtual Host
   - Office
   - Linux
-  - Podman Host
+  - Hardware
 hide:
   - toc
 ---

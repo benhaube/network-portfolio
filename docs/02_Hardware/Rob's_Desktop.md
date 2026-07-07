@@ -7,6 +7,7 @@ tags:
   - Desktop 
   - Office
   - Windows
+  - Hardware
 hide:
   - toc
 ---

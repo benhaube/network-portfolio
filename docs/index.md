@@ -8,7 +8,7 @@ hide:
 ![Material Design file-document-multiple customized icon](assets/icons/logo-outline.svg){ width=200 }&emsp;![Material Design format-list-bulleted customized icon](assets/icons/format-list-bulleted.svg){ width=50 } 
 
 # Network Documentation & Portfolio
-[About Me&ensp;:symbols-user-search:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
+[About Me&ensp;:symbols-user-search:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
 ## :symbols-lan:&ensp;Infrastructure

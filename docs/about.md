@@ -8,7 +8,7 @@ hide:
 ![My Profile Picture](assets/pictures/profilepic.jpg){ width=300 }
 
 # About Me & Professional Philosophy
-[My Resume&ensp;:symbols-work-history-outline:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send-alt:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
+[My Resume&ensp;:symbols-work-history-outline:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
 ## :symbols-engine-outline:&nbsp;:symbols-arrow-right-thin:&nbsp;:symbols-lan-outline:&ensp;From Engines to Infrastructure

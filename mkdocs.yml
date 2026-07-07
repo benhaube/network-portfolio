@@ -116,7 +116,7 @@ theme:
     next: symbols/arrow-right
     search: symbols/search-lucide
     share: symbols/share
-    annotation: symbols/expand-circle
+    annotation: symbols/code-annotation
     edit: symbols/square-pen
     view: symbols/scan-eye
   features:

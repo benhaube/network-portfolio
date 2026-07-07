@@ -46,10 +46,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                      | Method                             | Container Name | Image |
-| :----------------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux  | `N/A`          | `N/A` |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                               | :symbols-linux:&nbsp;Native Linux  | `N/A`          | `N/A` |
+| Host Device                                                                                      | Method                            | Container Name | Image |
+| :----------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
+| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                       | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration  
 

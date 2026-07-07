@@ -45,8 +45,8 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                        | Method                                | Container Name      | Image           |
-| :----------------------------------------------------------------- | :------------------------------------ | :------------------ | :-------------- |
+| Host Device                                                                | Method                                | Container Name      | Image           |
+| :------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :-------------- |
 | [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :services-docker:&nbsp;Docker Compose | `obsidian-livesync` | `couchdb:3.5.0` |
 
 ### :symbols-settings:&ensp;Configuration 

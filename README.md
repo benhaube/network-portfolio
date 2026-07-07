@@ -1,7 +1,14 @@
 <p align="center">
     <a href="https://portfolio.rac3r4life.online">
-        <img src="./readme-assets/project-icon.png" alt="Project / Site Logo">
+        <img src="./readme-assets/project-icon.png" alt="Project / Site Logo" width="400">
     </a>
+</p>
+<p align="center">
+    <h1>
+        <font color="#4CAE4F">
+            Network Documentation & Portfolio
+        </font>
+    </h1>
 </p>
 <p align="center">
     <a href="https://github.com/benhaube/network-portfolio/blob/main/LICENSE">
@@ -25,7 +32,9 @@
     <a href="#using-python">Build Using Python</a>
 </p>
 
-# Network Documentation & Portfolio 
+---
+
+## About
 
 This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel. 
 
@@ -37,6 +46,10 @@ This is my personal, self-hosted professional portfolio and network documentatio
 > **Update: 2026/06/24**
 > 
 > The **comprehensive visual overhaul** of the site is now complete! I have updated and modernized the visual appearance of the site with custom CSS and new, rounded Material icons. The goal was to emulate the modern look of the new Zensical static site generation tool which is the successor to Material for MkDocs. Unfortunately, after doing some testing with Zensical I determined that it is not currently feasible to migrate this project. It is still missing some features I rely on for this site *(e.g., the blog and panzoom plugins)*.  I figured while I wait for Zensical to develop I could modernize the visual appearance of my MkDocs site by replicating the design as closely as possible.
+> 
+> **Update: 2026/07/07**
+> 
+> To further modernize the aesthetics of the website I have replaced almost all of the icons on the site. I have pulled icons from Lucide, Google Material *(new)*, and even made some of my own. The project / site has a new outline-style logo to match the rest of the site's modern aesthetics. I am utilizing the `/overrides/.icons/symbols` directory to assemble my custom icon pack. Some icons that are built-in to Material for MkDocs and cannot be changed in `mkdocs.yml` have been changed using custom CSS located in the `/docs/assets/stylesheets` directory. The `mkdocs.yml` file only has a single `extra.css` file defined, but I have used the `@import` CSS 'at-rule' to pull in extra files, allowing me to keep the code more organized without creating more complexity in the MkDocs configuration file. 
 
 ## Clone the Repo
 

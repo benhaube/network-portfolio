@@ -6,6 +6,7 @@ description: Visualization of real-time track data and telemetry synced to F1 li
 tags:
   - Active
   - Docker
+  - Service
 hide:
   - toc
 ---

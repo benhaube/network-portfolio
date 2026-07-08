@@ -16,10 +16,9 @@ hide:
 # Reverse Proxy & DNS Routing
 *Domain Names for Local Services*
 
-!!! info
+!!! info "Goal"
 
-    **Goal:**
-    :   Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
+    Route human-readable domain names *(e.g., `immich.internal`)* to internal services without needing to specify port numbers.
 
 ---
 
@@ -27,19 +26,19 @@ hide:
 
 #### DNS Servers
 
-* Technitium Cluster Primary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)
-* Technitium Cluster Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+* Technitium Cluster Primary:&ensp;[:services-technitium:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)
+* Technitium Cluster Secondary:&ensp;[:services-technitium:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
 #### Reverse Proxy
 
-* Caddy:&ensp;[:brands-raspberry-pi:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) &mdash; *(Native `apt` Install)*
+* Caddy:&ensp;[:services-caddy:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)
 
 #### Application Hosts
 
 * [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 * [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
-## :symbols-cloud-sync:&ensp;Technitium DNS Records
+## :symbols-file-search-corner:&ensp;Technitium DNS Records
 
 !!! note
 
@@ -50,7 +49,7 @@ hide:
 | `pi-zero.internal` | **A**       | `192.168.50.3`     | :symbols-check: | The dedicated Caddy reverse proxy host. |
 | `immich.internal`  | **CNAME**   | `pi-zero.internal` |   :symbols-x:   | Points the Immich domain to the proxy.  |
 
-## :symbols-cogs:&ensp;Caddy Configuration
+## :symbols-file-config:&ensp;Caddy Configuration
 
 #### File Location 
 

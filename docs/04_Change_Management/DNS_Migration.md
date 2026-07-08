@@ -27,9 +27,9 @@ hide:
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary:&ensp;[:brands-raspberry-pi:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.2` 
-    + [ ] Secondary:&ensp;[:symbols-debian:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.6`
-    + [ ] Tertiary/Failover:&ensp;[:brands-raspberry-pi:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.3`
+    + [ ] Primary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.2` 
+    + [ ] Secondary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.6`
+    + [ ] Tertiary/Failover:&ensp;[:brands-raspberry-pi:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.3`
 
 ## :symbols-server-outline:&ensp;Server Provisioning
 
@@ -44,7 +44,7 @@ hide:
 4. **Import Records:** 
     + [ ] Manually add local DNS zones/records from the Pi-hole export.
 
-#### Raspberry Pi 4B
+#### Pi 4B Server
 
 1. **Uninstall Pi-hole:**
     + [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.

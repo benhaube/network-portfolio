@@ -167,7 +167,8 @@ hide:
 
 ##### Bitwarden SSH Key Agent
 
-![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent.png){ width=350 align=right }
+![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-light.png#only-light){ width=350 align=right }
+![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-dark.png#only-dark){ width=350 align=right }
 
 1. Download the appropriate version of the Bitwarden desktop application from the [GitHub Releases](https://github.com/bitwarden/clients/releases) page.
 2. Install the package: 

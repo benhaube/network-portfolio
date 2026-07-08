@@ -207,7 +207,7 @@ hide:
 [:services-uptime-kuma:&ensp;Uptime Kuma](./03_Services/Uptime_Kuma.md)
 :    A fancy self-hosted monitoring tool.
 
-[:simple-wireguard:&ensp;WireGuard Server](./03_Services/Wireguard_Server.md)
+[:services-wireguard:&ensp;WireGuard Server](./03_Services/Wireguard_Server.md)
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
 [:services-youtube-dl:&ensp;yt-dlp Web-UI](./03_Services/yt-dlp_WebUI.md)

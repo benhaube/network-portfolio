@@ -68,7 +68,7 @@ hide:
 
 ## :symbols-vpn-outline:&ensp;VPN Servers / Clients
 
-#### :simple-wireguard:&ensp;WireGuard @ ASUS Router
+#### :services-wireguard:&ensp;WireGuard @ ASUS Router
 &emsp;&ensp;*Main Server*
 
 | Client                                     | CIDR          | DNS Servers                   | Endpoint                    |
@@ -78,7 +78,7 @@ hide:
 | :symbols-mobile:&nbsp;Rob's-Phone          | `10.6.0.4/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
 | :symbols-laptop-minimal:&nbsp;Rob's-Laptop | `10.6.0.5/32` | `192.168.50.6` `192.168.50.2` | rac3r4life.myaddr.dev:41820 |
 
-#### :simple-wireguard:&ensp;WireGuard @ ZimaOS NAS
+#### :services-wireguard:&ensp;WireGuard @ ZimaOS NAS
 &emsp;&ensp;*Backup Server*
 
 | Client                                   | CIDR                              | DNS Servers                   | Endpoint                    |

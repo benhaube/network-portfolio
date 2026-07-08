@@ -43,9 +43,9 @@ hide:
 
 #### :symbols-security:&ensp;Device Security
 
-+ Titan M2 security chip *(FIDO2 / WebAuthn)*
-+ Full-disk encryption
-+ 8-digit PIN
++ :symbols-security-key:&nbsp;Titan M2 security chip *(FIDO2 / WebAuthn)*
++ :symbols-encrypted-outline:&nbsp;Full-disk encryption
++ :symbols-password-alt:&nbsp;8-digit PIN
 + Biometric:
     + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
     + :symbols-scan-face:&nbsp;Face Scan

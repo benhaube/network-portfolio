@@ -59,9 +59,9 @@ hide:
     + UEFI memory protection
     + UEFI Secure Boot
 + Software:
-    + Linux swap encryption
-    + LUKS2 drive encryption
-    + FIDO2-based MFA for local user 
+    + :symbols-sync-lock:&nbsp;Linux swap encryption
+    + :symbols-encrypted-outline:&nbsp;LUKS2 drive encryption
+    + :symbols-security-key:&nbsp;FIDO2-based MFA for local user 
 + Biometric:
     + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
     + :symbols-scan-face:&nbsp;IR Face Scan

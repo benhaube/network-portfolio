@@ -57,9 +57,9 @@ hide:
     + TPM v2.0
     + UEFI Secure Boot
 + Software:
-    + Linux swap encryption
-    + LUKS2 drive encryption
-    + FIDO2-based MFA for local user  
+    + :symbols-sync-lock:&nbsp;Linux swap encryption
+    + :symbols-encrypted-outline:&nbsp;LUKS2 drive encryption
+    + :symbols-security-key:&nbsp;FIDO2-based MFA for local user  
 
 ## :symbols-monitor-heart-outline:&ensp;Core Specs
 

@@ -55,7 +55,7 @@ hide:
 |   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :symbols-ethernet-port-outline:&nbsp;2.5 Gb/s WAN / LAN *(port 1)* |
 |   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                                  |
 
-#### :symbols-graph-5:&ensp;Virtual Local Networks
+#### :symbols-hub:&ensp;Virtual Local Networks
 
 |                   VLAN                   | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
 | :--------------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |

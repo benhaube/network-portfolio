@@ -20,7 +20,7 @@ hide:
 
 !!! links "Bed Leveling Kit" 
 
-    [AliExpress&ensp;:brands-aliexpress:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon&ensp;:fontawesome-brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
+    [AliExpress&ensp;:brands-aliexpress:](https://s.click.aliexpress.com/e/_oopAFjx){ .md-button }&emsp;[Amazon&ensp;:brands-amazon:](https://amzn.to/4jkJ185){ .md-button }
 
 ---
 ## :symbols-wrench:&ensp;Hardware Setup

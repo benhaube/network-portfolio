@@ -49,7 +49,7 @@ hide:
     + Two server-grade 5000 RPM, 80 mm Arctic PWM fans
     + Black rack screws
 
-    [Amazon List&ensp;:fontawesome-brands-amazon:](https://www.amazon.com/hz/wishlist/ls/4BBKVMBF22TH?ref_=wl_share){ .md-button }
+    [Amazon List&ensp;:brands-amazon:](https://www.amazon.com/hz/wishlist/ls/4BBKVMBF22TH?ref_=wl_share){ .md-button }
 
 ---
 

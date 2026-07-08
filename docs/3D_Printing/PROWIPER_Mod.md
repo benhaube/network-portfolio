@@ -27,14 +27,14 @@ hide:
 
     4. **Bambu A1** Silicone Brushes
 
-        [Amazon&ensp;:fontawesome-brands-amazon:](https://www.amazon.com/dp/B0DRBZK7RZ){ .md-button }
+        [Amazon&ensp;:brands-amazon:](https://www.amazon.com/dp/B0DRBZK7RZ){ .md-button }
 
     5. 2x **M3x16mm** self-tapping screws
 
-        [Amazon&ensp;:fontawesome-brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
+        [Amazon&ensp;:brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
 
 ---
-## :symbols-edit-square-outline:&ensp;Configuration File Edits
+## :symbols-square-pen:&ensp;Configuration File Edits
 
 !!! warning inline end "Important"
 
@@ -66,7 +66,7 @@ hide:
     --8<-- "printer.cfg::31"
     ```
 
-## :symbols-memory:&ensp;Slicer & Firmware Clearances
+## :symbols-ruler:&ensp;Slicer & Firmware Clearances
 
 !!! info inline end "Clearance Info"
 

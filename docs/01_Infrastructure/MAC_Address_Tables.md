@@ -69,7 +69,7 @@ hide:
 | :symbols-nintendo-switch:&nbsp;Game Console                 | Mobile      | `nintendo-switch`                                                 | `74:84:69:0B:56:EF` |         :symbols-wifi:          | :symbols-check: | Nintendo Switch OLED                                                 |
 | :symbols-nintendo-switch:&nbsp;Game Console                 | Living-Room | `nintendo-switch`                                                 | `74:84:69:34:69:78` | :symbols-ethernet-port-outline: | :symbols-check: | Nintendo Switch OLED docking station for TV in Living Room           |
 
-## :symbols-shield-house-fill:&ensp;IoT Network 
+## :symbols-shield-house-outline:&ensp;IoT Network 
 &emsp;&emsp;&ensp;*VLAN53*
 
 | Device Type                                       | Location    | Hostname                                                                | MAC Address         |   Interface    |   WAN Access    | Role / Notes                                                    |

@@ -57,19 +57,19 @@ hide:
 
 #### :symbols-hub:&ensp;Virtual Local Networks
 
-|                   VLAN                   | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
-| :--------------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
-|      :symbols-security:&nbsp;VLAN50      | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
-| :symbols-shield-person-fill:&nbsp;VLAN52 | -        | `9.9.9.9` `149.112.112.112`   | `192.168.52.0/24` | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`  |
-| :symbols-shield-house-fill:&nbsp;VLAN53  | -        | `9.9.9.9` `149.112.112.112`   | `192.168.53.0/24` | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`  |
+|                   VLAN                      | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
+| :-----------------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
+|      :symbols-security:&nbsp;VLAN50         | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
+| :symbols-shield-person-outline:&nbsp;VLAN52 | -        | `9.9.9.9` `149.112.112.112`   | `192.168.52.0/24` | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`  |
+| :symbols-shield-house-outline:&nbsp;VLAN53  | -        | `9.9.9.9` `149.112.112.112`   | `192.168.53.0/24` | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`  |
 
 #### :symbols-android-wifi-lock:&ensp;Wi-Fi Networks
 
-|     SSID     |  VLAN  |   WAN Access    | CIDR              | Frequency             | Notes                                        |
-| :----------: | :----: | :-------------: | :---------------- | :-------------------- | :------------------------------------------- |
-|    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :symbols-security:&nbsp;Trusted VLAN         |
-| *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-person-fill:&nbsp;Guest VLAN |
-|   *2G_IoT*   | VLAN53 |   :symbols-x:   | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-fill:&nbsp;IoT VLAN    |
+|     SSID     |  VLAN  |   WAN Access    | CIDR              | Frequency             | Notes                                           |
+| :----------: | :----: | :-------------: | :---------------- | :-------------------- | :---------------------------------------------- |
+|    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :symbols-security:&nbsp;Trusted VLAN            |
+| *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-person-outline:&nbsp;Guest VLAN |
+|   *2G_IoT*   | VLAN53 |   :symbols-x:   | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-outline:&nbsp;IoT VLAN    |
 
 #### :symbols-ethernet-port-outline:&ensp;Physical Ethernet Ports
 

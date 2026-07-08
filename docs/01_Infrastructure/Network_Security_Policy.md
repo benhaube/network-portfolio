@@ -25,11 +25,11 @@ tags:
 ## :symbols-segment:&ensp;Network Segmentation 
 &emsp;&emsp;&ensp;*VLAN Architecture*
 
-| Zone                                                                                         | VLAN ID  | Description                                            | Access Rules                                                                                                  |
-| :------------------------------------------------------------------------------------------- | :------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| [:symbols-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)                   | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                        |
-| [:symbols-shield-person-fill:&nbsp;Guest](./IP_Address_Management.md#virtual-local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                  |
-| [:symbols-shield-house-fill:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)                  | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
+| Zone                                                                                            | VLAN ID  | Description                                            | Access Rules                                                                                                  |
+| :---------------------------------------------------------------------------------------------- | :------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| [:symbols-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)                      | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                        |
+| [:symbols-shield-person-outline:&nbsp;Guest](./IP_Address_Management.md#virtual-local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                  |
+| [:symbols-shield-house-outline:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)                  | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ## :symbols-firewall:&ensp;Boundary Defense & Remote Access
 
@@ -95,7 +95,7 @@ tags:
 
 + The [Creality K1C](../02_Hardware/Kacey_3D-printer.md) is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 
-## :symbols-shield-house-fill:&ensp;IoT & Smart Home Integrity
+## :symbols-shield-house-outline:&ensp;IoT & Smart Home Integrity
 
 + The migration from **Google Home** to **Home Assistant** ensures that IoT devices are managed locally. 
 + By isolating VLAN 53, "phone-home" telemetry from generic IoT hardware is neutralized, preventing potential lateral movement if a device is compromised.

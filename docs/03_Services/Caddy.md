@@ -21,7 +21,7 @@ hide:
 # Caddy
 *Reverse-Proxy Server*
 
-[GitHub&ensp;:simple-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

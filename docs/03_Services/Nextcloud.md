@@ -17,7 +17,7 @@ hide:
 # Nextcloud
 *Private Cloud*
 
-[GitHub&ensp;:simple-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.nextcloud.com/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.nextcloud.com/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

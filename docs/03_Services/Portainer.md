@@ -20,7 +20,7 @@ hide:
 # Portainer-EE
 *Container Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.portainer.io/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.portainer.io/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

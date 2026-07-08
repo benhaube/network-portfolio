@@ -16,7 +16,7 @@ hide:
 # CUPS
 *Open Print Server*
 
-[GitHub&ensp;:simple-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

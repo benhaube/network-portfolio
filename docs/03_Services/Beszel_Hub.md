@@ -17,7 +17,7 @@ hide:
 # Beszel
 *Server Monitoring*
 
-[GitHub&ensp;:simple-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

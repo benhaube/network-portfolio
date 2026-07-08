@@ -17,7 +17,7 @@ hide:
 # Home Assistant
 *Awaken Your Home*
 
-[GitHub&ensp;:simple-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://www.home-assistant.io/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://www.home-assistant.io/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

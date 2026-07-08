@@ -15,7 +15,7 @@ hide:
 # Router Template
 *Subtitle*
 
-[Docs :symbols-documentation:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
+[Docs :symbols-documentation-outline:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Device Overview

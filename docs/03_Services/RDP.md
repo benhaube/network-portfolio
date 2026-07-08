@@ -17,7 +17,7 @@ hide:
 # RDP
 *Remote Desktop Protocol*
 
-[Gitlab&ensp;:brands-gitlab:](https://invent.kde.org/plasma/krdp){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/KDE/krdp){ .md-button .md-button--primary }
+[Gitlab&ensp;:brands-gitlab:](https://invent.kde.org/plasma/krdp){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/KDE/krdp){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

@@ -19,7 +19,7 @@ hide:
 # Glance
 *Server Dashboard*
 
-[GitHub&ensp;:simple-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

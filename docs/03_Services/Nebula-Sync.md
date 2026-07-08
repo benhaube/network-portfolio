@@ -19,7 +19,7 @@ hide:
 # Nebula-Sync
 *Synchronize Pi-hole*
 
-[GitHub&ensp;:simple-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

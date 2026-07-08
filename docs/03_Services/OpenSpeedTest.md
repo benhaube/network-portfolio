@@ -18,7 +18,7 @@ hide:
 # OpenSpeedTest
 *Test Network Performance*
 
-[GitHub&ensp;:simple-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/openspeedtest/Speed-Test){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/openspeedtest/Speed-Test){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

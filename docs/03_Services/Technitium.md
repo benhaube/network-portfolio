@@ -21,7 +21,7 @@ hide:
 # Technitium
 *Authoritative & Recursive DNS*
 
-[GitHub&ensp;:simple-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

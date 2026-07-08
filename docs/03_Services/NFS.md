@@ -19,7 +19,7 @@ hide:
 # NFS
 *Network File System*
 
-[Documentation&ensp;:symbols-documentation:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-documentation-outline:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

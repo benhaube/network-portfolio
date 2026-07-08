@@ -15,7 +15,7 @@ hide:
 # Service Template
 *Subtitle*
 
-[GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation:](https://docs.github.com/en){ .md-button .md-button--primary }
+[GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation-outline:](https://docs.github.com/en){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Overview

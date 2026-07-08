@@ -14,7 +14,7 @@ hide:
 # VM Template
 *Subtitle*
 
-[OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :symbols-documentation:](https://example.com){ .md-button .md-button--primary }
+[OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :symbols-documentation-outline:](https://example.com){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Overview

@@ -18,7 +18,7 @@ hide:
 # Moonraker
 *The Klipper Web API*
 
-[GitHub&ensp;:simple-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

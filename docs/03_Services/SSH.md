@@ -18,7 +18,7 @@ hide:
 # SSH
 *Secure Shell*
 
-[Documentation&ensp;:symbols-documentation:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-documentation-outline:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

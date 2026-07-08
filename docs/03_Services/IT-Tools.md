@@ -18,7 +18,7 @@ hide:
 # IT-Tools
 *Handy Tools for Devs*
 
-[GitHub&ensp;:simple-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://deepwiki.com/sharevb/it-tools){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/sharevb/it-tools){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

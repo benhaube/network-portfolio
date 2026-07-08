@@ -18,7 +18,7 @@ hide:
 # Uptime Kuma
 *A Fancy Monitoring Tool*
 
-[GitHub&ensp;:simple-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://github.com/louislam/uptime-kuma/wiki){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://github.com/louislam/uptime-kuma/wiki){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

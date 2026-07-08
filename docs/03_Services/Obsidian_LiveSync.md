@@ -17,7 +17,7 @@ hide:
 # Obsidian LiveSync
 *Sync with CouchDB*
 
-[GitHub&ensp;:simple-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
+[GitHub&ensp;:simple-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

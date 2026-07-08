@@ -16,7 +16,7 @@ hide:
 # Chrony
 *NTP Server*
 
-[Gitlab&ensp;:brands-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation:](https://chrony-project.org/documentation.html){ .md-button .md-button--primary }
+[Gitlab&ensp;:brands-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://chrony-project.org/documentation.html){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

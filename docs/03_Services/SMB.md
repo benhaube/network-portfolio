@@ -18,7 +18,7 @@ hide:
 # SMB
 *Server Message Block*
 
-[Documentation&ensp;:symbols-documentation:](https://wiki.samba.org/index.php/Main_Page){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-documentation-outline:](https://wiki.samba.org/index.php/Main_Page){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

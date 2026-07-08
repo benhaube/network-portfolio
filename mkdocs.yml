@@ -86,7 +86,7 @@ theme:
       monitor: symbols/monitor-heart-outline
       nas: symbols/nas-outline
       native: symbols/linux
-      network: symbols/lan 
+      network: symbols/lan-outline 
       new: symbols/badge-alert
       office: symbols/desk-lamp
       pc: symbols/personal-computer
@@ -115,7 +115,7 @@ theme:
     previous: symbols/arrow-left
     next: symbols/arrow-right
     search: symbols/search-lucide
-    share: symbols/share
+    share: symbols/share-2
     annotation: symbols/code-annotation
     edit: symbols/square-pen
     view: symbols/scan-eye

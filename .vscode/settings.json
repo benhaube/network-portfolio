@@ -169,5 +169,7 @@
         "Zensical",
         "zimaos",
         "zpkg"
-    ]
+    ],
+    "mermaid.themeCSS": "",
+    "mermaid.theme": "dark"
 }

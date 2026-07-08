@@ -20,7 +20,7 @@ hide:
 # Pi Zero 2W Server
 *Reverse-Proxy Server*
 
-[Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:symbols-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview

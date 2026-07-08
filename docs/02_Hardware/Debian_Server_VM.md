@@ -19,7 +19,7 @@ hide:
 # Debian Server
 *Virtual Machine*
 
-[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }&emsp;[KVM Docs&ensp;:symbols-layers:](https://docs.kernel.org/6.0/virt/kvm/index.html){ .md-button .md-button--primary }&emsp;[QEMU Docs&ensp;:services-qemu:](https://www.qemu.org/docs/master/){ .md-button .md-button--primary }
+[Debian Docs&ensp;:symbols-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }&emsp;[KVM Docs&ensp;:symbols-layers:](https://docs.kernel.org/6.0/virt/kvm/index.html){ .md-button .md-button--primary }&emsp;[QEMU Docs&ensp;:services-qemu:](https://www.qemu.org/docs/master/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

@@ -72,7 +72,7 @@ hide:
 | :----------------------------------------------- | :-------------- | :------------------------ | :------ | :----------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;Core(r) i5 1135G7 *(x86-64)* | 4C / 8T         | 8 GB LPDDR4 *(4267 MT/s)* | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz   | *Shared* |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-lan-outline:&ensp;Network Configuration
 
 |  Interface  | IP Address | MAC Address         | Connected To                                                                          |
 | :---------: | :--------- | :------------------ | :------------------------------------------------------------------------------------ |

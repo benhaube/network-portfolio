@@ -40,7 +40,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
 
-## :symbols-lan: Network Configuration
+## :symbols-lan-outline: Network Configuration
 
 #### :symbols-wan: WAN Connection
 

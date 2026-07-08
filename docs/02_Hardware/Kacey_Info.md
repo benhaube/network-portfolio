@@ -50,7 +50,7 @@ hide:
     + *Chip:* GD32F303RET6
     + *Version:* CR4CU220812S12
 
-## :symbols-lan:&ensp;Network
+## :symbols-lan-outline:&ensp;Network
 
 #### Moonraker
 

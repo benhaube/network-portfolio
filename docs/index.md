@@ -11,7 +11,7 @@ hide:
 [About Me&ensp;:symbols-user-search:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :symbols-lan:&ensp;Infrastructure
+## :symbols-lan-outline:&ensp;Infrastructure
 
 [:symbols-restore:&ensp;Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.

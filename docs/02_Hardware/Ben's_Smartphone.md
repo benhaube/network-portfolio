@@ -56,7 +56,7 @@ hide:
 | :--------------------------------------------------------- | :-------------------- | :---------------------------------------------------------------------------- | :------------ | :------------------------------------ | :-------- | :----- |
 | :brands-google-tensor:&nbsp;Google Tensor G4 *(arm64-v8a)* | 8C / 8T<br>3-Clusters | **Cluster-1:** 1950 MHz<br>**Cluster-2:** 2600 MHz<br>**Cluster-3:** 3105 MHz | 16 GB LPDDR5X | :brands-google-tensor:&nbsp;Mali-G715 | -         | Shared |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-lan-outline:&ensp;Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To                                                                          |
 | :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------ |

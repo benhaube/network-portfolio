@@ -33,7 +33,7 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access
 
-+ :symbols-lan: LAN Access:
++ :symbols-lan-outline: LAN Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
     + <http://storage-server-2.internal:2283>

@@ -39,7 +39,7 @@ hide:
 
 + N/A
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-lan-outline:&ensp;Network Configuration
 
 | Interface | IP Address      | MAC Address         | Connected To                                                                   |
 | :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------- |

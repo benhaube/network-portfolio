@@ -49,7 +49,7 @@ hide:
 | :-------------------: | :---: | :------ | :------------ |
 | #C / #T *(virt-tech)* | # GB  | # GB    | `path/to/vdi` |
 
-## :symbols-lan: Network Configuration
+## :symbols-lan-outline: Network Configuration
 
 | Interface | IP Address | MAC Address         | Notes |
 | :-------: | :--------- | :------------------ | :---- |

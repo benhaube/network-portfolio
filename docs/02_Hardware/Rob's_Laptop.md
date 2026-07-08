@@ -50,7 +50,7 @@ hide:
 | :brands-amd:&nbsp;Ryzen(r) 9 7940HS *(x86-64)* | 8C / 16T        | 4.0 GHz   | 16 GB DDR5 *(4800 MT/s)* | :brands-amd:&nbsp;Radeon(r) 780M                 | 2700 MHz  | *Shared*   |
 |                                                |                 |           |                          | :simple-nvidia:&nbsp;GeForce RTX 4070 *(mobile)* | 2175 MHz  | 8 GB GDDR6 |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-lan-outline:&ensp;Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To                                                                                                           |
 | :-------: | :--------- | :------------------ | :--------------------------------------------------------------------------------------------------------------------- |

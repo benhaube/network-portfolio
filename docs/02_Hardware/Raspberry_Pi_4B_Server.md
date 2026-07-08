@@ -54,7 +54,7 @@ hide:
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
 | :simple-arm:&nbsp;BCM2711 *(Armv8-A)* | 4C / 4T *(Cortex-A72)* | 1.5 GHz   | 4 GB LPDDR4 *(2400 MT/s)* | VideoCore VI 3D | 500 MHz   | *Shared* |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-lan-outline:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Connected To                                                                                               |
 | :-------: | :------------- | :------------------ | :--------------------------------------------------------------------------------------------------------- |

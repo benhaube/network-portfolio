@@ -50,7 +50,7 @@ hide:
 | :------------------- | :-------------- | :-------- | :--- | :--- | :-------- | :--- |
 | CPU *(architecture)* | #C / #T         | # GHz     | # GB | GPU  | # MHz     | # GB |
 
-## :symbols-lan: Network Configuration
+## :symbols-lan-outline: Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To                          |
 | :-------: | :--------- | :------------------ | :------------------------------------ |

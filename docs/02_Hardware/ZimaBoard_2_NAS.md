@@ -56,7 +56,7 @@ hide:
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 *(6400 MHz)* | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | *Shared* |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-lan-outline:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Connected To                                                                                     |
 | :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------------------- |

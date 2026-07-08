@@ -52,7 +52,7 @@ hide:
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"Kacey (root)"
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-lan-outline:&ensp;Network Configuration
 
 | Interface | IP Address      | MAC Address         | Connected To                                                                          |
 | :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------------ |

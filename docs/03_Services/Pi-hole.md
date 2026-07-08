@@ -35,8 +35,8 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ ~~[[https://pi-server.internal/admin/login]]~~
-+ ~~[[https://pi-hole.internal/admin/login]]~~
++ ~~<https://pi-server.internal/admin/login>~~
++ ~~<https://pi-hole.internal/admin/login>~~
 
 #### :symbols-user-key:&ensp;Credentials 
 

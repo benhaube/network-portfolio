@@ -27,14 +27,14 @@ hide:
 
 !!! note inline end "Installation Note"
 
-    **Graphite Bed & Bed Fans:**
+    :symbols-fan-alt:&ensp;**Graphite Bed & Bed Fans:**
     :     If you plan to install a graphite heated bed upgrade, or if you want to increase your chamber temperature for ABS / ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
 
         [Graphite Bed Kit&ensp;:brands-r3men:](https://www.r3men.com/products/graphite-heated-bed-for-creality-k1-k1c-k1se?ref=3dphub){ .md-button }
 
         [Bed Fans Guide&ensp;:brands-3dphub:](https://3dphub.net/learn/bed-fans-upgrade-guide){ .md-button }
 
-    **Nylon Knobs:**
+    :symbols-settings-outline:&ensp;**Nylon Knobs:**
     :     If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
 
         [Nylon Knobs&ensp;:brands-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
@@ -88,7 +88,7 @@ hide:
 <p><b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</p>
 </div>
 
-## :symbols-memory:&ensp;Firmware Setup
+## :symbols-cpu:&ensp;Firmware Setup
 
 !!! info inline end "Root Access"
 
@@ -124,7 +124,7 @@ hide:
 
 !!! note inline end 
 
-    **Preheating the Bed:**
+    :symbols-heat:&ensp;**Preheating the Bed:**
     :     Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade. 
 
 1. [ ] Home the printer.
@@ -140,7 +140,7 @@ hide:
 
 !!! question inline end 
 
-    **Minutes?**
+    :symbols-clock:&ensp;**Minutes?**
     :     15 min = &frac14; turn.
 
 5. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction *(looking at it from the top down)* and how far to turn each knob *(in minutes)*.

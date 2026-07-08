@@ -14,11 +14,11 @@ hide:
 
 !!! info
 
-    **Date Implemented:** 
+    :symbols-calendar-event:&ensp;**Date Implemented:** 
 
     + March 2026
  
-    **Overview:**
+    :symbols-file-text:&ensp;**Overview:**
 
     + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance. 
     + It safely homes the axes, moves the toolhead to an accessible front-center position, and heats the nozzle to soften plastic debris. 
@@ -27,7 +27,7 @@ hide:
 
 ---
 
-## :symbols-reset-wrench:&ensp;Installation & Klipper Integration
+## :symbols-wrench:&ensp;Installation & Klipper Integration
 
 1. [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
 2. [ ] Upload the newly edited `manual-nozzle-clean-v2.cfg` into this directory.

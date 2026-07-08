@@ -107,7 +107,7 @@ theme:
       tv-stand: symbols/tv
       video: symbols/movie-outline
       vh: symbols/host-outline
-      vlan: symbols/lan-outline
+      vlan: symbols/graph-5
       vm: symbols/layers
       vpn: symbols/vpn-outline
       windows: brands/microsoft

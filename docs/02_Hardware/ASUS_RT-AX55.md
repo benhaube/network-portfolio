@@ -53,7 +53,7 @@ hide:
 | :-------: | :--------------- | :------------------ | :--------------------------- |
 |   WAN0    | `192.168.50.221` | `7C:10:C9:DF:13:60` | :symbols-wifi:&nbsp;Backhaul |
 
-#### :symbols-lan-outline:&ensp;Virtual Local Networks
+#### :symbols-graph-5:&ensp;Virtual Local Networks
 
 |              VLAN              | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
 | :----------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |

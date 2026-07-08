@@ -252,8 +252,6 @@ plugins:
   - open-in-new-tab:
       add_icon: false
   - awesome-nav
-  - roamlinks
-  - callouts
   - panzoom:
       full_screen: true
       always_show_hint: true 

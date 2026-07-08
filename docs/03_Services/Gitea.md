@@ -48,6 +48,9 @@ hide:
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gitea (admin)"
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gitea (benhaube)"
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"Gitea"
++ 2FA / MFA:
+    + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
+    + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 

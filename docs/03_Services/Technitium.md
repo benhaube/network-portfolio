@@ -50,6 +50,8 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Technitium"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
++ 2FA / MFA:
+    + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 

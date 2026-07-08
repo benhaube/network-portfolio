@@ -43,6 +43,8 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Uptime Kuma"
++ 2FA / MFA:
+    + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 

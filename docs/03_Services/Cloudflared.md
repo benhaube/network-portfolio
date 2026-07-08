@@ -42,6 +42,9 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Software&ensp;:symbols-arrow-right-thin:&ensp;"Cloudflare Dashboard"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
++ 2FA / MFA:
+    + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
+    + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 

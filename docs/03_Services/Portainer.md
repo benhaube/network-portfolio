@@ -50,6 +50,9 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Portainer"
 + [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
++ 2FA / MFA:
+    + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
+    + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 

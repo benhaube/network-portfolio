@@ -38,11 +38,11 @@ This is my personal, self-hosted professional portfolio and network documentatio
 ![Screenshot of header bar](./readme-assets/header-screenshot.png)
 
 > [!note] 
-> **Update: 2026/06/24**
+> **Update: June 24, 2026**
 > 
 > The **comprehensive visual overhaul** of the site is now complete! I have updated and modernized the visual appearance of the site with custom CSS and new, rounded Material icons. The goal was to emulate the modern look of the new Zensical static site generation tool which is the successor to Material for MkDocs. Unfortunately, after doing some testing with Zensical I determined that it is not currently feasible to migrate this project. It is still missing some features I rely on for this site *(e.g., the blog and panzoom plugins)*.  I figured while I wait for Zensical to develop I could modernize the visual appearance of my MkDocs site by replicating the design as closely as possible.
 > 
-> **Update: 2026/07/07**
+> **Update: July 07, 2026**
 > 
 > To further modernize the aesthetics of the website I have replaced almost all of the icons on the site. I have pulled icons from Lucide, Google Material *(new)*, and even made some of my own. The project / site has a new outline-style logo to match the rest of the site's modern aesthetics. I am utilizing the `/overrides/.icons/symbols` directory to assemble my custom icon pack. Some icons that are built-in to Material for MkDocs and cannot be changed in `mkdocs.yml` have been changed using custom CSS located in the `/docs/assets/stylesheets` directory. The `mkdocs.yml` file only has a single `extra.css` file defined, but I have used the `@import` CSS 'at-rule' to pull in extra files, allowing me to keep the code more organized without creating more complexity in the MkDocs configuration file. 
 

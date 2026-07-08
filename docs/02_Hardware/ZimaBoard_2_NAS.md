@@ -266,7 +266,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 !!! note
 
-    :symbols-folder-data:&ensp;**Data Directory:**
+    :symbols-folder-git-2:&ensp;**Data Directory:**
 
     :    The task configurations and logs are stored in `/DATA/AppData/cron/`
 

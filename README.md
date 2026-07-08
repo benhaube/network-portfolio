@@ -37,7 +37,7 @@ This is my personal, self-hosted professional portfolio and network documentatio
 
 ![Screenshot of header bar](./readme-assets/header-screenshot.png)
 
-> [!info] 
+> [!note] 
 > **Update: June 24, 2026**
 > 
 > The **comprehensive visual overhaul** of the site is now complete! I have updated and modernized the visual appearance of the site with custom CSS and new, rounded Material icons. The goal was to emulate the modern look of the new Zensical static site generation tool which is the successor to Material for MkDocs. Unfortunately, after doing some testing with Zensical I determined that it is not currently feasible to migrate this project. It is still missing some features I rely on for this site *(e.g., the blog and panzoom plugins)*.  I figured while I wait for Zensical to develop I could modernize the visual appearance of my MkDocs site by replicating the design as closely as possible.

@@ -19,7 +19,7 @@ hide:
 # Debian Server
 *Virtual Machine*
 
-[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Debian Docs&ensp;:simple-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }&emsp;[KVM Docs&ensp;:symbols-layers:](https://docs.kernel.org/6.0/virt/kvm/index.html){ .md-button .md-button--primary }&emsp;[QEMU Docs&ensp;:services-qemu:](https://www.qemu.org/docs/master/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -57,9 +57,9 @@ hide:
 
 ## :symbols-lan-outline:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Notes                                                                    |
-| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------- |
-| `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :symbols-p2p:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
+| Interface | IP Address     | MAC Address         | Notes                                                                         |
+| :-------: | :------------- | :------------------ | :---------------------------------------------------------------------------- |
+| `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
 | Interface | VLAN                           | FQDN                 | DNS Servers | Gateway        |
 | :-------: | :----------------------------- | :------------------- | :---------- | :------------- |

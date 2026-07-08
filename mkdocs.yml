@@ -44,6 +44,7 @@ extra_javascript:
 
 theme:
   name: material
+  language: en
   custom_dir: overrides
   favicon: /assets/favicon.svg
   logo: /assets/favicon.svg
@@ -97,6 +98,7 @@ theme:
   
   # Change the icons used in the theme.
   icon:
+    menu: symbols/menu
     repo: symbols/git
     top: symbols/arrow-double-up
     previous: symbols/arrow-left
@@ -107,6 +109,7 @@ theme:
     annotation: symbols/code-annotation
     edit: symbols/square-pen
     view: symbols/scan-eye
+    alternate: symbols/languages
 
     # Change icons for built-in admonitions. Custom admonitions are defined in CSS.
     admonition:

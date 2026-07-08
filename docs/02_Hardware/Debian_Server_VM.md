@@ -57,9 +57,9 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Notes                                                                             |
-| :-------: | :------------- | :------------------ | :-------------------------------------------------------------------------------- |
-| `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :material-lan-connect:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
+| Interface | IP Address     | MAC Address         | Notes                                                                    |
+| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------- |
+| `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :symbols-p2p:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
 | Interface | VLAN                           | FQDN                 | DNS Servers | Gateway        |
 | :-------: | :----------------------------- | :------------------- | :---------- | :------------- |

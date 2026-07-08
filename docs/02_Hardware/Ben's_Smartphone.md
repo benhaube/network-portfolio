@@ -36,7 +36,7 @@ hide:
 
 + [:brands-android-robot:&nbsp;Android 16](https://www.android.com/)
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Email&ensp;:symbols-arrow-right-thin:&ensp;"Google"

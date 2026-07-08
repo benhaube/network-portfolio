@@ -40,7 +40,7 @@ hide:
 
 + [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"

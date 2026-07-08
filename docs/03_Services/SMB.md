@@ -38,7 +38,7 @@ hide:
 + `\\pi-server.internal\smb-share`
 + `\\asusrouter.internal\`
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"

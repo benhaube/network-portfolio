@@ -36,7 +36,7 @@ hide:
 + <http://storage-server.internal:61208>
 + <http://storage-server-2.internal:61208>
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + N/A
 

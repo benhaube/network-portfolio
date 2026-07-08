@@ -40,7 +40,7 @@ hide:
 + :symbols-web: WAN Access:
     + <https://immich.rac3r4life.online>
 
-#### :symbols-key:&ensp;Credentials  
+#### :symbols-user-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Immich Admin"

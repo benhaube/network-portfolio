@@ -45,7 +45,7 @@ ZimaOS NAS:
 + <http://storage-server.internal:4999>
 + <http://storage-server-2.internal:4999>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + N/A
 

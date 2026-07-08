@@ -42,7 +42,7 @@ hide:
 
 + [:services-zimaos:&nbsp;ZimaOS v1.6.1](https://www.zimaspace.com/zimaos) *(Immutable)*
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)" 

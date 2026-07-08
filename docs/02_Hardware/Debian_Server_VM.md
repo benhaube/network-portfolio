@@ -44,7 +44,7 @@ hide:
 
 + [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"debian-vm (server-admin)"

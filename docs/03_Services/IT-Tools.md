@@ -36,7 +36,7 @@ hide:
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + N/A
 

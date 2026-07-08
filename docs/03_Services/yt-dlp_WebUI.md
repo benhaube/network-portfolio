@@ -36,7 +36,7 @@ hide:
 + <http://storage-server-2.internal:3033>
 + <https://yt-dlp.internal>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"yt-dlp-webui"

@@ -34,7 +34,7 @@ hide:
 + <http://storage-server-2.internal:8080>
 + <https://portfolio.rac3r4life.online>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + N/A
 

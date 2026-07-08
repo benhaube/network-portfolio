@@ -35,7 +35,7 @@ hide:
 + <http://storage-server-2.internal:7912/>
 + <https://spoolman.internal>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + N/A
 

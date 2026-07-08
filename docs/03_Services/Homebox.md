@@ -37,7 +37,7 @@ hide:
 + <http://storage-server-2.internal:3100>
 + <http://192.168.50.4:3100>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Homebox"

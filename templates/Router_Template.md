@@ -35,7 +35,7 @@ hide:
 
 + :symbols-router-outline:&nbsp;Router_OS
 
-#### :symbols-key: Credentials
+#### :symbols-user-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"

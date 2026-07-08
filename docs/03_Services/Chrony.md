@@ -34,7 +34,7 @@ hide:
 + `192.168.50.1:123`
 + `asusrouter.internal:123`
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ASUS Router"

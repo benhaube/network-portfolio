@@ -43,7 +43,7 @@ hide:
 
 + [:symbols-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-server (admin)"

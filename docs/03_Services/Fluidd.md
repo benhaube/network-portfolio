@@ -37,7 +37,7 @@ hide:
 + <http://kacey.internal:4408>
 + <http://192.168.50.153:4408>
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"

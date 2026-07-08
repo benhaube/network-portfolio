@@ -39,7 +39,7 @@ hide:
 
 + [:symbols-wizard-hat:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Asus Router"

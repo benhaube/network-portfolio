@@ -46,7 +46,7 @@ hide:
 + [:symbols-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 

@@ -37,7 +37,7 @@ hide:
 + <http://storage-server.internal:3004>
 + <http://storage-server-2.internal:3004>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + N/A
 

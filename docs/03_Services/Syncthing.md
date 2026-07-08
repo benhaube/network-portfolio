@@ -58,7 +58,7 @@ hide:
     + <https://192.168.50.4:8384>
     + <https://192.168.50.5:8384>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"

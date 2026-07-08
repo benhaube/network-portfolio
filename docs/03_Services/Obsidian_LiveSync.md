@@ -39,7 +39,7 @@ hide:
     + <http://storage-server.internal:5984/obsidian-vault>
     + <http://storage-server-2.internal:5984/obsidian-vault>
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Obsidian LiveSync"

@@ -35,7 +35,7 @@ hide:
 + [rdp://192.168.50.67:3389](rdp://192.168.50.67:3389)
 + [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):  
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"

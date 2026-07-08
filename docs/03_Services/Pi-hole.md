@@ -38,7 +38,7 @@ hide:
 + ~~[[https://pi-server.internal/admin/login]]~~
 + ~~[[https://pi-hole.internal/admin/login]]~~
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Pihole Admin @ pi-zero"

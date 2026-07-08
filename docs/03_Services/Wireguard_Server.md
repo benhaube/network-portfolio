@@ -43,7 +43,7 @@ hide:
     + <http://storage-server.internal:51821/>
     + <http://storage-server-2.internal:51821/>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"WireGuard Admin"

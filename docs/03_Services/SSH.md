@@ -54,7 +54,7 @@ hide:
     + `192.168.50.153:22` 
     + `kacey.internal:22` 
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"ASUS RT-BE92U (Admin)"

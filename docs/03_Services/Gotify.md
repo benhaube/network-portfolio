@@ -37,7 +37,7 @@ hide:
 + <http://storage-server-2.internal:8180> &mdash; *Local Network Web-UI only*
 + <https://gotify.rac3r4life.online> &mdash; *Use for notification WebSocket*
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (admin)"

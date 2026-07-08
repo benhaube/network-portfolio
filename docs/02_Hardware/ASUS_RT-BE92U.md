@@ -40,7 +40,7 @@ hide:
 
 + [:symbols-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Asus Router"

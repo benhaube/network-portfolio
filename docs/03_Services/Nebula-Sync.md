@@ -36,7 +36,7 @@ hide:
 
 + N/A
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + :services-docker:&nbsp;Docker Compose: 
     + `compose.yml`

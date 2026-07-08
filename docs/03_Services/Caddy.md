@@ -39,7 +39,7 @@ hide:
 
 + <https://pi-zero.internal>
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + N/A
 

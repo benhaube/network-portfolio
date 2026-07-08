@@ -35,7 +35,7 @@ hide:
 + <http://pi-server.internal:8123>
 + <https://home-assistant.internal>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Home Assistant"

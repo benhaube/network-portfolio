@@ -40,7 +40,7 @@ hide:
 + <http://debian-vm.internal:5001>
 + <http://storage-server.internal:5001>
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ debian-vm"

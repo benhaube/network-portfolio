@@ -37,7 +37,7 @@ hide:
 + <http://storage-server.internal:14333>
 + <http://storage-server-2.internal:14333>
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Software&ensp;:symbols-arrow-right-thin:&ensp;"Cloudflare Dashboard"

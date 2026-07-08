@@ -38,7 +38,7 @@ hide:
 
 + [:brands-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"PIN - Rob's Desktop PC"

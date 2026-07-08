@@ -35,7 +35,7 @@ hide:
 
 + Hitron FW version: `7.3.5.3.2b2`
 
-#### :symbols-key:&ensp;Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 + N/A
 

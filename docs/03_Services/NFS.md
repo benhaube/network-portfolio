@@ -37,7 +37,7 @@ hide:
 + `192.168.50.4:/media/Quick-Storage`
 + `192.168.50.4:/media/nvme0n1p1`
 
-#### :symbols-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"

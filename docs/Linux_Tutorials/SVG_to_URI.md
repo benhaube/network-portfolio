@@ -57,7 +57,7 @@ If you want to handle the color and size adjustments without even opening a text
     
         The expression `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
 
-## :symbols-frame-source:&ensp;Making a Function
+## :symbols-file-code-corner:&ensp;Making a Function
 
 This is the perfect use case for a shell alias / function. On Linux we can easily add this to the Bash shell's configuration file (`.bashrc`) so it is always available. Here is how to create a custom `svg2uri` function that reads directly from standard input.
 

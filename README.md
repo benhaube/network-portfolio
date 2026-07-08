@@ -143,13 +143,13 @@ pip install mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-ope
 #### Serve Site for Testing
 
 ```bash
-mkdocs serve -a 0.0.0.0:8000 --livereload
+python -m mkdocs serve -a 0.0.0.0:8000 --livereload
 ```
 
 #### Build Site for Deployment
 
 ```bash
-mkdocs build
+python -m mkdocs build
 ```
 
 > [!tip]

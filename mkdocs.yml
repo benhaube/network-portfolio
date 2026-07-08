@@ -7,6 +7,39 @@ site_name: Network Documentation & Portfolio
 site_url: https://portfolio.rac3r4life.online
 site_description:  My personal, self-hosted network documentation, professional portfolio, and blog website. Designed to showcase my knowledge and capabilities in IT and network security, and to make managing my homelab easier.
 
+# Disable directory URLs
+use_directory_urls: false
+
+# Watch directories outside of '/docs'
+watch:
+  # 'network-documentation/includes' contains 'abbreviations.md'
+  - includes
+
+# Exclude Markdown files in '/docs/includes' from site navigation.
+# The '/docs/includes' directory contains markdown files with content that will be displayed on multiple pages.
+exclude_docs: |
+  includes/
+
+# Git Repo URL & Docs directory
+repo_url: https://github.com/benhaube/network-portfolio
+repo_name: benhaube/network-portfolio
+edit_uri: edit/main/docs/
+
+# Set the copyright message & create cookies settings link
+copyright: >
+  Copyright&copy; 2026 Benjamin Haube -
+  <a href="#__consent">Change cookie settings</a>
+
+# Define extra CSS / Javascript directories
+extra_css:
+  # Other CSS files are imported into the main 'extra.css' file.
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - assets/javascripts/mermaid.mjs
+  # Tablesort is disabled for now since it didn't play nice with all of the tables on the site.
+  # - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  # - assets/javascripts/tablesort.js
+
 # ~~~ Theme Settings ~~~
 
 theme:
@@ -14,6 +47,7 @@ theme:
   custom_dir: overrides
   favicon: /assets/favicon.svg
   logo: /assets/favicon.svg
+  
   # Theme toggles (auto/light/dark)
   palette:
     - media: "(prefers-color-scheme)"
@@ -34,14 +68,47 @@ theme:
       toggle:
         icon: symbols/moon
         name: Switch to system preference
+  
+  # Set the fonts used on the site.
   font:
     text: Google Sans
     code: Google Sans Code
   
-  # ~~~ Icon Settings ~~~
+  # Enable Material for MkDocs theme features.
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
   
+  # Change the icons used in the theme.
   icon:
     repo: symbols/git
+    top: symbols/arrow-double-up
+    previous: symbols/arrow-left
+    next: symbols/arrow-right
+    close: symbols/x
+    search: symbols/search-lucide
+    share: symbols/share-2
+    annotation: symbols/code-annotation
+    edit: symbols/square-pen
+    view: symbols/scan-eye
+
+    # Change icons for built-in admonitions. Custom admonitions are defined in CSS.
     admonition:
       note: symbols/attach-file
       abstract: symbols/notebook-text
@@ -55,6 +122,8 @@ theme:
       bug: symbols/bug-report-outline
       example: symbols/labs
       quote: symbols/quote
+
+    # Set the icons used for page tags.
     tag:
       default: symbols/tag-outline
       3D-printer: symbols/printer-3d-nozzle-outline
@@ -111,34 +180,6 @@ theme:
       vm: symbols/layers
       vpn: symbols/vpn-outline
       windows: brands/microsoft
-    top: symbols/arrow-double-up
-    previous: symbols/arrow-left
-    next: symbols/arrow-right
-    close: symbols/x
-    search: symbols/search-lucide
-    share: symbols/share-2
-    annotation: symbols/code-annotation
-    edit: symbols/square-pen
-    view: symbols/scan-eye
-  features:
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.tabs
-    - navigation.sections
-    - navigation.path
-    - navigation.footer
-    - toc.follow
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.copy
-    - content.code.select
-    - content.code.annotate
-    - content.action.edit
-    - content.action.view
-    - content.tooltips
 
 # ~~~ Python Markdown Extensions ~~~
 
@@ -257,25 +298,18 @@ plugins:
       background: none
       shadow: true
       manual: true
-
-# ~~~ Watch directories outside of /docs ~~~
-
-watch:
-  - includes
-exclude_docs: |
-  includes/
   
-# ~~~ Disable directory URLs ~~~
-
-use_directory_urls: false
-
 # ~~~ Extra Settings ~~~
 
 extra:
+
+  # Define the text when hovering over a page status icon.
   status:
     new: Recently Added
     deprecated: Deprecated
     inactive: Inactive
+  
+  # Modify the cookie consent form options and message.
   consent:
     actions:
       - accept
@@ -287,6 +321,8 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+  
+  # Create the social links in the site footer.
   social:
     - icon: brands/gitlab
       link: https://gitlab.com/benhaube
@@ -306,10 +342,11 @@ extra:
     - icon: brands/bluesky
       link: https://bsky.app/profile/rac3r4life.me
       name: rac3r4life.me — Bluesky
+  
+  # Disable the "Made with Material for MkDocs" message in the site footer.
   generator: false
   
-  # ~~~ Tag Definitions ~~~
-  
+  # Create / define the tags used on the site. Tag icons are set above in the 'theme > icon' section. 
   tags:
     3D-Printer: 3D-printer
     ISP: isp
@@ -365,25 +402,3 @@ extra:
     VLAN: vlan 
     VPN: vpn
     Windows: windows
-
-# ~~~ Copyright Message ~~~
-
-copyright: >
-  Copyright&copy; 2026 Benjamin Haube -
-  <a href="#__consent">Change cookie settings</a>
-
-# ~~~ Extra CSS / Javascript ~~~
-
-extra_css:
-  # Other CSS files are imported into the main 'extra.css' file.
-  - assets/stylesheets/extra.css
-extra_javascript:
-  - assets/javascripts/mermaid.mjs
-  # - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  # - assets/javascripts/tablesort.js
-
-# ~~~ Git Repo URL & Docs directory ~~~
-
-repo_url: https://github.com/benhaube/network-portfolio
-repo_name: benhaube/network-portfolio
-edit_uri: edit/main/docs/

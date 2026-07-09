@@ -39,7 +39,7 @@ The first step is to install the OpenSSL package, providing the tools necessary 
     sudo dnf install openssl
     ```
 
-## :symbols-key:&ensp;Generate a Private Key
+## :symbols-key-round:&ensp;Generate a Private Key
 
 After installing OpenSSL, next we need to generate a private key. Private keys are an essential component of an SSL certificate because they encrypt and decrypt the data. Make sure you keep the private key in a secure location. It is crucial for maintaining the security of your certificate.
 

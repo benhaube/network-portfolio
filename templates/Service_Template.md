@@ -27,7 +27,7 @@ hide:
 
 + `port`
 
-#### :symbols-link: URL / Access
+#### :symbols-link-alt: URL / Access
 
 + <https://example.com>
 

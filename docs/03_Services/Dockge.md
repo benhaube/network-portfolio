@@ -20,7 +20,7 @@ hide:
 # Dockge
 *Docker Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

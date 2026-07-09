@@ -19,7 +19,7 @@ hide:
 # Pi-hole
 *A DNS Sinkhole*
 
-[GitHub&ensp;:simple-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

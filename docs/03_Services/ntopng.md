@@ -19,7 +19,7 @@ hide:
 # ntopng
 *Network Traffic Probe*
 
-[GitHub&ensp;:simple-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://www.ntop.org/guides/ntopng/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://www.ntop.org/guides/ntopng/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

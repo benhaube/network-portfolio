@@ -19,7 +19,7 @@ hide:
 # Portracker
 *Port Monitoring & Discovery*
 
-[GitHub&ensp;:simple-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

@@ -18,7 +18,7 @@ hide:
 # Gotify
 *Push Notifications*
 
-[GitHub&ensp;:simple-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://gotify.net/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://gotify.net/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

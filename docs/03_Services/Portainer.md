@@ -20,7 +20,7 @@ hide:
 # Portainer-EE
 *Container Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.portainer.io/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.portainer.io/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -49,7 +49,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Portainer"
-+ [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
++ [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 + 2FA / MFA:
     + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
     + :symbols-clock:&nbsp;TOTP 

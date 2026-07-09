@@ -19,7 +19,7 @@ hide:
 # Cloudflared
 *Reverse-Proxy Server*
 
-[GitHub&ensp;:simple-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -41,7 +41,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Software&ensp;:symbols-arrow-right-thin:&ensp;"Cloudflare Dashboard"
-+ [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
++ [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 + 2FA / MFA:
     + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
     + :symbols-clock:&nbsp;TOTP 

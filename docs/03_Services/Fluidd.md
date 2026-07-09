@@ -16,7 +16,7 @@ hide:
 # Fluidd
 *The Klipper UI*
 
-[GitHub&ensp;:simple-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.fluidd.xyz/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.fluidd.xyz/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

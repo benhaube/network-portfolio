@@ -16,7 +16,7 @@ hide:
 # F1 Replay Timing
 *All of the Data*
 
-[GitHub&ensp;:simple-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Issues&ensp;:symbols-adjust:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Issues&ensp;:symbols-adjust:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

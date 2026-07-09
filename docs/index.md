@@ -251,7 +251,7 @@ hide:
     **Update PCRs Script:**
     :    In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
 
-        [Update PCRs&ensp;:simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
+        [Update PCRs&ensp;:brands-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
 [:symbols-update:&ensp;Automatic Updates for Debian Servers](./Linux_Tutorials/Configure_Unattended-Upgrades.md)
 :    How to install and configure the `unattended-upgrades` package on your Debian server to enable automatic updates. This tutorial will help you configure Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.

@@ -18,7 +18,7 @@ hide:
 # Immich
 *Bye Bye, Google Photos*
 
-[GitHub&ensp;:simple-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

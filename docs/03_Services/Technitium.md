@@ -21,7 +21,7 @@ hide:
 # Technitium
 *Authoritative & Recursive DNS*
 
-[GitHub&ensp;:simple-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -49,7 +49,7 @@ hide:
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Technitium"
-+ [:simple-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
++ [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 + 2FA / MFA:
     + :symbols-clock:&nbsp;TOTP 
 

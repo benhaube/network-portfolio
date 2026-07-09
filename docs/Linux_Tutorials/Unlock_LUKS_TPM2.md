@@ -196,4 +196,4 @@ hide:
     :    If you are using a system that uses `dracut` to rebuild the `initramfs` you can automate this process with a Bash script I have written.<br>
          It is available to download in this **GitHub** repo:
 
-        [Update PCRs Script&ensp;:simple-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
+        [Update PCRs Script&ensp;:brands-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }

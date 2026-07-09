@@ -16,7 +16,7 @@ hide:
 # Spoolman
 *Filament Inventory Management*
 
-[GitHub&ensp;:simple-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

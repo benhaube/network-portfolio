@@ -19,7 +19,7 @@ hide:
 # WireGuard
 *A Simple, Modern VPN*
 
-[GitHub&ensp;:simple-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

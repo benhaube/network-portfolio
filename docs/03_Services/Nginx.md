@@ -15,7 +15,7 @@ hide:
 # Nginx
 *Network Documentation*
 
-[GitHub&ensp;:simple-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

@@ -17,7 +17,7 @@ hide:
 # ttydBridge
 *The Terminal on the Web*
 
-[GitHub&ensp;:simple-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/tsl0922/ttyd){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/tsl0922/ttyd){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

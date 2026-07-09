@@ -17,7 +17,7 @@ hide:
 # Glances
 *An Eye on Your System*
 
-[GitHub&ensp;:simple-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://glances.readthedocs.io/en/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://glances.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

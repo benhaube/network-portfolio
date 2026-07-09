@@ -20,7 +20,7 @@ hide:
 # Gitea
 *Git with a Cup of Tea*
 
-[GitHub&ensp;:simple-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.gitea.com/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.gitea.com/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

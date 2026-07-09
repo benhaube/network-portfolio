@@ -34,7 +34,7 @@ hide:
 2.  **Deletion *(Desktop)*:**
     + **Manual:** 
         + **Go to:**&nbsp;[Google Photos:symbols-external-link-small:](https://photos.google.com) 
-        + :material-mouse-left-click:&nbsp;first photo&emsp;:symbols-arrow-right-thin:&emsp;:material-mouse-scroll-wheel::symbols-arrow-down-thin:&emsp;:symbols-arrow-right-thin:&emsp;++shift++&nbsp;+&nbsp;:material-mouse-left-click:&nbsp;last photo&emsp;:symbols-arrow-right-thin:&emsp;++del++
+        + :symbols-mouse-left:&nbsp;first photo&emsp;:symbols-arrow-right-thin:&emsp;:symbols-mouse::symbols-arrow-down-thin:&emsp;:symbols-arrow-right-thin:&emsp;++shift++&nbsp;+&nbsp;:symbols-mouse-left:&nbsp;last photo&emsp;:symbols-arrow-right-thin:&emsp;++del++
     + **Console Script *(Advanced)*:** 
         + Open Chrome DevTools:&ensp;++f12++&ensp;:symbols-arrow-right-thin:&ensp;Console. 
         + Paste script to auto-select/delete. 

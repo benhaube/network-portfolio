@@ -1,5 +1,5 @@
 ---
-icon: symbols/feedback-outline
+icon: symbols/message-square-warning
 title: Setup SSH Login Notification
 subtitle: With Email SMTP and Gotify
 hide:
@@ -84,7 +84,7 @@ hide:
     sudo chown root:root /root/.email_app_password
     ```
 
-## :symbols-feedback-outline:&ensp;Enable Login Alerts with PAM
+## :symbols-message-square-warning:&ensp;Enable Login Alerts with PAM
 
 ???+ question
 
@@ -151,7 +151,7 @@ hide:
 
     1. The 'execute' permission is absolutely necessary to allow the system to execute the script.
 
-## :symbols-labs:&ensp;Testing the Setup
+## :symbols-flask-conical:&ensp;Testing the Setup
 
 !!! party "Congrats!"
 
@@ -229,7 +229,7 @@ hide:
 
 ???+ tip
 
-    :symbols-feedback-outline:&ensp;**Unattended Upgrades Notifications:**
+    :symbols-message-square-warning:&ensp;**Unattended Upgrades Notifications:**
     :    To use the `msmtp` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
  
     !!! failure "Error"

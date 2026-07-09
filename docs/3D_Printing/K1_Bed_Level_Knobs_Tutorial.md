@@ -11,7 +11,7 @@ hide:
 # Manual Bed Leveling Mod
 *Fine Tune Your Bed Level*
 
-[Creality K1C&ensp;:brands-creality-v2:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality K1C&ensp;:symbols-printer-3d-nozzle-outline:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! question
 
@@ -34,7 +34,7 @@ hide:
 
         [Bed Fans Guide&ensp;:brands-3dphub:](https://3dphub.net/learn/bed-fans-upgrade-guide){ .md-button }
 
-    :symbols-settings-outline:&ensp;**Nylon Knobs:**
+    :symbols-settings:&ensp;**Nylon Knobs:**
     :     If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
 
         [Nylon Knobs&ensp;:brands-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
@@ -133,8 +133,8 @@ hide:
 
     | Interface                         |  Port  |
     | :-------------------------------- | :----: |
-    | :services-fluidd:&nbsp;Fluidd     | `4408` |
-    | :services-mainsail:&nbsp;Mainsail | `4409` |
+    | :services-fluidd:&ensp;Fluidd     | `4408` |
+    | :services-mainsail:&ensp;Mainsail | `4409` |
 
 4. [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
 
@@ -182,6 +182,6 @@ hide:
     **Error `key60`:**
     :     If you are doing this modification with the factory load cells *(bed mesh probe)* and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
 
-#### :symbols-link:&ensp;References and Resources
+#### :symbols-link-alt:&ensp;References and Resources
 
 [Klipper Docs&ensp;:services-klipper:](https://www.klipper3d.org){ .md-button }&emsp;[Fluidd Docs&ensp;:services-fluidd:](https://docs.fluidd.xyz/){ .md-button }&emsp;[Mainsail Docs&ensp;:services-mainsail:](https://docs.mainsail.xyz/){ .md-button }

@@ -10,7 +10,7 @@ hide:
 # Nozzle Cleaning Macro
 *Manually Clean Your Nozzle*
 
-[Creality K1C&ensp;:brands-creality-v2:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }
+[Creality K1C&ensp;:symbols-printer-3d-nozzle-outline:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }
 
 !!! info
 
@@ -34,11 +34,11 @@ hide:
 3. [ ] Open `printer.cfg` and add the following line: `[include manual-nozzle-clean-v2.cfg]`
 4. [ ] Save the configuration and restart Klipper to apply the changes.
 
-    ```cfg {title="printer.cfg" linenums="1" hl_lines="31" .mono-title}
-    --8<-- "printer.cfg::31"
+    ```cfg {title="printer.cfg" linenums="12" hl_lines="20" .mono-title}
+    --8<-- "printer.cfg:12:31"
     ```
 
-## :symbols-toggle-on-outline:&ensp;Trigger / Usage
+## :symbols-toggle-right:&ensp;Trigger / Usage
 
 !!! note inline end "Custom Temperature" 
   
@@ -64,8 +64,8 @@ hide:
   + [ ] Click the **"Park & Cool"** button to automatically trigger the `DONE_CLEANING_COOL` macro. 
 
 <figure markdown="span">
-![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-light.png#only-light){ width=500 .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
-![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-dark.png#only-dark){ width=500 .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
+![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-light.png#only-light){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
+![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-dark.png#only-dark){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
 <figcaption>The <a href="/03_Services/Fluidd.html">Fluidd</a> UI prompt will appear when the nozzle has reached the specified temperature. Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</figcaption>
 </figure>
 

@@ -10,7 +10,7 @@ hide:
 # PROWIPER Mod
 *Improved Nozzle Brush Routine*
 
-[Creality K1C&ensp;:brands-creality-v2:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality K1C&ensp;:symbols-printer-3d-nozzle-outline:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! info "PROWIPER Info"
 
@@ -34,7 +34,7 @@ hide:
         [Amazon&ensp;:brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
 
 ---
-## :symbols-square-pen:&ensp;Configuration File Edits
+## :symbols-file-pen:&ensp;Configuration File Edits
 
 !!! warning inline end "Important"
 
@@ -62,8 +62,8 @@ hide:
 3. [ ] Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`
 4. [ ] Save and restart Klipper. 
 
-    ```cfg {title="printer.cfg" linenums="1" hl_lines="30" .mono-title}
-    --8<-- "printer.cfg::31"
+    ```cfg {title="printer.cfg" linenums="12" hl_lines="19" .mono-title}
+    --8<-- "printer.cfg:12:31"
     ```
 
 ## :symbols-ruler:&ensp;Slicer & Firmware Clearances
@@ -92,7 +92,7 @@ hide:
 <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
 </div>
 
-## :symbols-toggle-on-outline:&ensp;Dry Run 
+## :symbols-toggle-right:&ensp;Dry Run 
 &emsp;&emsp;&ensp;*Critical Safety Step*
 
 !!! warning inline end "Caution"

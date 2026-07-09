@@ -27,8 +27,8 @@ hide:
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.2` 
-    + [ ] Secondary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.6`
+    + [ ] Primary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.6`
+    + [ ] Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.2`
     + [ ] Tertiary/Failover:&ensp;[:brands-raspberry-pi:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.3`
 
 ## :symbols-server-outline:&ensp;Server Provisioning
@@ -61,9 +61,9 @@ hide:
 2. **Verify Sync:** 
     + [ ] Ensure local zones and blocklists are appearing on both instances.
 3. **Blocklist Tuning:** 
-    + [ ] Add your preferred lists *(e.g., OISD, HaGeZi)* and verify they are enabled on both.
+    + [ ] Add your preferred lists *(e.g., [OISD](https://oisd.nl/), [HaGeZi](https://github.com/hagezi/dns-blocklists))* and verify they are enabled on both.
 
-## :symbols-toggle-on-outline:&ensp;Network Cutover
+## :symbols-toggle-right:&ensp;Network Cutover
 
 1. **Update Router DHCP:** 
     + [ ] Point DNS 1 to the Debian VM IP.
@@ -85,8 +85,8 @@ hide:
 
 ---
 
-## :symbols-sitemap:&ensp;Flowchart
+## :symbols-graph-2:&ensp;Flowchart
 
-```mermaid
+```mermaid {.pz-ignore}
 --8<-- "dns_migration.mmd"
 ```

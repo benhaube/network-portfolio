@@ -1,5 +1,5 @@
 ---
-icon: material/svg
+icon: symbols/svg
 title: Convert an SVG to Data URI
 subtitle: For HTML and CSS
 hide:

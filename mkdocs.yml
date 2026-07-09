@@ -113,17 +113,17 @@ theme:
 
     # Change icons for built-in admonitions. Custom admonitions are defined in CSS.
     admonition:
-      note: symbols/attach-file
+      note: symbols/paperclip-alt
       abstract: symbols/notebook-text
       info: symbols/info
       tip: symbols/flame-outline
       success: symbols/check
       question: symbols/help
-      warning: symbols/warning-outline
-      failure: symbols/error-alt
-      danger: symbols/electric-bolt-outline
+      warning: symbols/triangle-alert
+      failure: symbols/octagon-alert
+      danger: symbols/zap
       bug: symbols/bug-report-outline
-      example: symbols/labs
+      example: symbols/flask-conical
       quote: symbols/quote
 
     # Set the icons used for page tags.

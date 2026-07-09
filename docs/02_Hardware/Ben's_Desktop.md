@@ -110,10 +110,10 @@ hide:
 
 #### :symbols-linux:&ensp;Native Linux
 
-|  Status  | Service                                                          |        Port(s)         | Role / Notes                                                              |
-| :------: | :--------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------ |
-| *Active* | [:symbols-remote-desktop:&nbsp;RDP](../03_Services/RDP.md)       |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
-| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                  |
+|  Status  | Service                                                            |        Port(s)         | Role / Notes                                                              |
+| :------: | :----------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------ |
+| *Active* | [:symbols-remote-desktop:&nbsp;RDP](../03_Services/RDP.md)         |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
+| *Active* | [:services-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                  |
 
 ---
 ## :symbols-note-stack:&ensp;Maintenance & Notes

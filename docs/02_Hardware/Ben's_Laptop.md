@@ -109,9 +109,9 @@ hide:
 
 #### :symbols-linux:&ensp;Native Linux
 
-|  Status  | Service                                                          |        Port(s)         | Role / Notes                             |
-| :------: | :--------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
-| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
+|  Status  | Service                                                            |        Port(s)         | Role / Notes                             |
+| :------: | :----------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
+| *Active* | [:services-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
 
 ---
 ## :symbols-note-stack:&ensp;Maintenance & Notes

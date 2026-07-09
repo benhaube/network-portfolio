@@ -72,7 +72,7 @@ hide:
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                   |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :--------------------------------------------------------------------------------------------- |
 | *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)              |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:simple-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)      | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
+| *Active* | [:services-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)    | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
 | *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                  |
 
 #### :services-docker:&ensp;Docker

@@ -190,7 +190,7 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
     curl --retry 3 "https://raw.githubusercontent.com/MartineauUK/Chk-WAN/master/ChkWAN.sh" -o "/jffs/scripts/ChkWAN.sh" && chmod 755 "/jffs/scripts/ChkWAN.sh"
     ```
 
-2. Manually test the script with the default PING method, and the script will simply passively report the status, rather proactively restart the WAN or reboot:
+2. Manually test the script with the default PING method, and the script will passively report the status, rather than proactively restart the WAN or reboot the router:
 
     ```sh linenums="1"
     ./ChkWAN.sh noaction once nowait

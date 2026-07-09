@@ -63,7 +63,7 @@ flowchart-elk TD
             end
         end
 
-        %% --- Raspberry Pi 4B Server --- %%
+        %% --- Pi 4B Server --- %%
         subgraph Server_Pi4 ["<svg class="lucide lucide-server-icon lucide-server" width="24" height="24" style="vertical-align: middle;"  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 2h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>&emsp;<b>Pi 4B Server</b> <code>[.2]</code>"]
             MicroSD_Pi4[("<b>MicroSD Storage</b><br><i>(128 GB)</i>")]:::storage
             OS_Pi4["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
@@ -74,7 +74,7 @@ flowchart-elk TD
             Service_Docker_Pi4["<b>Docker Containers:</b><br>Beszel Agent<br>Beszel Hub<br>Dockge<br>F1 API<br>Glance<br>Glances<br>IT-Tools<br>Portracker<br>Uptime Kuma"]:::service
         end
 
-        %% --- Raspberry Pi Zero Server --- %%
+        %% --- Pi Zero 2W Server --- %%
         subgraph Server_PiZero ["<svg class="lucide lucide-server-icon lucide-server" width="24" height="24" style="vertical-align: middle;"  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 2h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>&emsp;<b>Pi Zero 2W Server</b> <code>[.3]</code>"]
             MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(64 GB)</i>")]:::storage
             OS_PiZero["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os

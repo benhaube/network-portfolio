@@ -112,14 +112,14 @@ hide:
 
     :symbols-mail:&ensp;**Email Client:**
 
-    + The standard Gmail app has been disabled and replaced with [Thunderbird](https://www.thunderbird.net/en-US/mobile/) *(formerly K9-Mail)* on this mobile device. 
+    + The standard Gmail app has been disabled and replaced with [Thunderbird:symbols-external-link-small:](https://www.thunderbird.net/en-US/mobile/) *(formerly K9-Mail)* on this mobile device. 
     + Account and app settings are backed up to the [ZimaOS NAS](./ZimaBoard_2_NAS.md) with [Syncthing](../03_Services/Syncthing.md)
 
     :symbols-calendar-event:&ensp;**Calendar & Tasks:**
  
-    + The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar](https://github.com/FossifyOrg/Calendar) and [Tasks.org](https://tasks.org/) *(Installed via F-Droid)*. 
-    + Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/) application.
-    + The calendar and tasks service is hosted by [Fastmail](https://fastmail.com). 
+    + The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar:symbols-external-link-small:](https://github.com/FossifyOrg/Calendar) and [Tasks.org:symbols-external-link-small:](https://tasks.org/) *(Installed via F-Droid)*. 
+    + Calendar and tasks synchronization is handled with the [DAVx5:symbols-external-link-small:](https://www.davx5.com/) application.
+    + The calendar and tasks service is hosted by [Fastmail:symbols-external-link-small:](https://fastmail.com). 
 
 #### :symbols-update:&ensp;Update Process
 
@@ -130,8 +130,8 @@ hide:
 
 ##### Applications
 
-+ Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps).
-+ Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/) app store and the [Obtainium](https://obtainium.imranr.dev/) application.
++ Most applications are installed / updated via the [Google Play Store:symbols-external-link-small:](https://play.google.com/store/apps).
++ Other FOSS applications are installed / updated via the [F-Droid:symbols-external-link-small:](https://f-droid.org/) app store and the [Obtainium:symbols-external-link-small:](https://obtainium.imranr.dev/) application.
 
 #### :symbols-backup:&ensp;Backup Policy
 
@@ -139,7 +139,7 @@ hide:
 
 + Google's cloud backup service is used to back up **device settings** and **apps & app data** for applications installed via the Google Play Store. 
 + Other backup services provided by Google, like photos, call history, and SMS / MMS & RCS messages are disabled to maintain privacy and control of sensitive data.
-+ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
++ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
 ##### Photos & Videos
 
@@ -148,7 +148,7 @@ hide:
 
 ##### SMS / MMS & RCS
 
-+ The [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/) application is responsible for backing up messages daily.
++ The [SMS Backup & Restore Pro:symbols-external-link-small:](https://www.synctech.com.au/sms-backup-restore/) application is responsible for backing up messages daily.
 + The application creates a compressed archive of the messages in the directory, `/backups/SMS_Backup`, and [Syncthing](../03_Services/Syncthing.md) transfers them to the **ZimaOS NAS**.
 
 ##### Other Apps

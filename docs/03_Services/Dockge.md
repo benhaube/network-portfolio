@@ -50,12 +50,12 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                       | Method                                | Container Name    | Image                   |
-| :------------------------------------------------------------------------------------------------ | :------------------------------------ | :---------------- | :---------------------- |
-| [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)              | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | :services-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
+| Host Device                                                                                | Method                                | Container Name    | Image                   |
+| :----------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :---------------------- |
+| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                 | :services-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -80,7 +80,7 @@ hide:
     docker compose up -d
     ```
 
-    Dockge is now running on: <http://localhost:5001>
+    Dockge is now running on: `http://localhost:5001`
 
 #### :symbols-update:&ensp;Update Dockge
 
@@ -93,7 +93,7 @@ hide:
 
 #### :services-docker:&ensp;Docker Compose
 
-```yaml title="Debian Server VM | Raspberry Pi 4B Server | Raspberry Pi Zero Server" linenums="1"
+```yaml title="Debian Server | Pi 4B Server | Pi Zero 2W Server" linenums="1"
 --8<-- "dockge.yaml"
 ```
 

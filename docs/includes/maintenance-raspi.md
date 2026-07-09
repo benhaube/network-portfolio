@@ -30,7 +30,7 @@
 + Data and configurations from Docker services are backed up to [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
     + Path: `/media/Quick-Storage/Backup/<hostname>/stacks`
 + Critical configuration files are backed up to the attached USB flash drive.
-+ All backed up files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
++ All backed up files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
 --8<-- "nerd-fonts.md"
 
@@ -58,7 +58,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 #### :symbols-login:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset).
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub:symbols-external-link-small:](https://github.com/benhaube/fastfetch-login-preset).
 
 1. Install Fastfetch: 
 

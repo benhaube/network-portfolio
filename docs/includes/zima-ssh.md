@@ -1,6 +1,6 @@
 !!! zima "Don't Forget!"
 
-    **ZimaOS** does not have SSH enabled after a fresh install. For the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) the SSH service needs to be enabled first through the [ZimaOS Web UI](http://storage-server.internal/) in the developer options.
+    **ZimaOS** does not have SSH enabled after a fresh install. For the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) the SSH service needs to be enabled first through the [ZimaOS Web UI:symbols-external-link-small:](http://storage-server.internal/) in the developer options.
 
     + Settings&ensp;:symbols-arrow-right-thin:&ensp;General&ensp;:symbols-arrow-right-thin:&ensp;Developer Mode&ensp;:symbols-arrow-right-thin:&ensp;SSH Access 
      

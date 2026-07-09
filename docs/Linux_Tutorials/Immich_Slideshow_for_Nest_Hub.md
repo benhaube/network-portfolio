@@ -16,7 +16,7 @@ hide:
     **Infrastructure:** 
     
     + [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))* 
-    + [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
+    + [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
 
 ---
 
@@ -33,7 +33,7 @@ hide:
 
 2.  **Deletion *(Desktop)*:**
     + **Manual:** 
-        + **Go to:**&ensp;[:services-google-photos:&nbsp;Google Photos](https://photos.google.com) 
+        + **Go to:**&nbsp;[Google Photos:symbols-external-link-small:](https://photos.google.com) 
         + :material-mouse-left-click:&nbsp;first photo&emsp;:symbols-arrow-right-thin:&emsp;:material-mouse-scroll-wheel::symbols-arrow-down-thin:&emsp;:symbols-arrow-right-thin:&emsp;++shift++&nbsp;+&nbsp;:material-mouse-left-click:&nbsp;last photo&emsp;:symbols-arrow-right-thin:&emsp;++del++
     + **Console Script *(Advanced)*:** 
         + Open Chrome DevTools:&ensp;++f12++&ensp;:symbols-arrow-right-thin:&ensp;Console. 

@@ -51,7 +51,7 @@ hide:
 | :----: | :----------------------------------------------------------------------------------------------- | :------------ | :------------------------------------------- |
 | **1**  | [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)               | White / Cat5e | `enp7s0` `192.168.50.10` `3C:7C:3F:0D:A9:CD` |
 | **2**  | [:symbols-desktop-pc-outline:&nbsp;Rob's Desktop](../02_Hardware/Rob's_Desktop.md)               | White / Cat5e | `DHCP` `50:EB:F6:59:74:C3`                   |
-| **3**  | [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White / Cat5e | `eth0` `192.168.50.2` `E4:5F:01:A4:60:07`    |
+| **3**  | [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | White / Cat5e | `eth0` `192.168.50.2` `E4:5F:01:A4:60:07`    |
 | **4**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                     | -             | -                                            |
 | **5**  | [:symbols-router-outline:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)                     | Black / Cat6A | Uplink                                       |
 

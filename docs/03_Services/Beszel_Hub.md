@@ -50,18 +50,18 @@ hide:
 
 ##### Hub
 
-| Host Device                                                                                      | Method                                | Container Name | Image                  |
-| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
-|                                                                                                  | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
+| Host Device                                                                            | Method                                | Container Name | Image                  |
+| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
+|                                                                                        | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
 
 ##### Agents
 
-| Host Device                                                                                       | Method                                | Container Name | Image                        |
-| :------------------------------------------------------------------------------------------------ | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)              | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
+| Host Device                                                                                | Method                                | Container Name | Image                        |
+| :----------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
+| [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)       | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                 | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
 ### :symbols-settings:&ensp;Configuration
 
@@ -81,7 +81,7 @@ hide:
 
 ##### Hub
 
-```yaml title="Raspberry Pi 4B Server" linenums="1"
+```yaml title="Pi 4B Server" linenums="1"
 --8<-- "beszel-pi-4b.yaml"
 ```
 
@@ -95,7 +95,7 @@ hide:
 
 1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
-```yaml title="Raspberry Pi Zero Server" linenums="1"
+```yaml title="Pi Zero 2W Server" linenums="1"
 --8<-- "beszel-pi-zero.yaml"
 ```
 

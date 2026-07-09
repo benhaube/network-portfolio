@@ -77,10 +77,10 @@ hide:
 
 #### :services-docker:&ensp;Docker
 
-|  Status  | Service                                                       | Port(s) | Role / Notes                                                                                           |
-| :------: | :------------------------------------------------------------ | :-----: | :----------------------------------------------------------------------------------------------------- |
-| *Active* | [:services-beszel:&nbsp;Beszel](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
-| *Active* | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.            |
+|  Status  | Service                                                       | Port(s) | Role / Notes                                                                                 |
+| :------: | :------------------------------------------------------------ | :-----: | :--------------------------------------------------------------------------------------------|
+| *Active* | [:services-beszel:&nbsp;Beszel](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
+| *Active* | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.  |
 
 ---
 ## :symbols-note-stack:&ensp;Maintenance & Notes
@@ -127,7 +127,7 @@ hide:
 #### :symbols-screenshot-region:&ensp;Snapshot Policy
 
 + Perform external snapshots before major changes.
-+ The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
++ The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
 #### :symbols-restore:&ensp;Recovery
 
@@ -160,7 +160,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 #### :symbols-login:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset).
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub:symbols-external-link-small:](https://github.com/benhaube/fastfetch-login-preset).
 
 1. Install Fastfetch: 
 

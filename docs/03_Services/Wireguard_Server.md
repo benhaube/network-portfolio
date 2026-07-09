@@ -32,7 +32,7 @@ hide:
 
 + `41820`
 + `51820`
-+ `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :symbols-nas-outline:&nbsp;ZimaOS NAS)*
++ `51821` *(for [configuration WebUI:symbols-external-link-small:](http://storage-server.internal:51821) on :symbols-nas-outline:&nbsp;ZimaOS NAS)*
 
 #### :symbols-link-alt:&ensp;URL / Access 
 

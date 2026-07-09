@@ -34,7 +34,7 @@ hide:
 
 #### :symbols-link-alt:&ensp;URL / Access
 
-Raspberry Pi 4B Server:
+Pi 4B Server:
 
 + <http://192.168.50.2:4999>
 + <http://pi-server.internal:4999>
@@ -51,15 +51,15 @@ ZimaOS NAS:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                           | Method                                | Container Name | Image                             |
-| :---------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                            | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)      | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| Host Device                                                                                    | Method                                | Container Name | Image                             |
+| :--------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                     | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)         | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server-outline:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 
-```yaml title="Raspberry Pi 4B Server" linenums="1"
+```yaml title="Pi 4B Server" linenums="1"
 --8<-- "portracker-pi-4b.yml"
 ```
 
@@ -72,7 +72,7 @@ ZimaOS NAS:
 7. Required for discovering services running in Docker.
 8. **Optional:** For enhanced TrueNAS features
 
-```yaml title="Raspberry Pi Zero Server" linenums="1"
+```yaml title="Pi Zero 2W Server" linenums="1"
 --8<-- "portracker-pi-zero.yml"
 ```
 

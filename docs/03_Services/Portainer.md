@@ -58,28 +58,28 @@ hide:
 
 ##### Hub
 
-| Host Device                                                                                          | Method                                | Container Name | Image                        |
-| :--------------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
+| Host Device                                                                                | Method                                | Container Name | Image                        |
+| :----------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
+| [:symbols-server-outline:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
 
 ##### Agent
 
-| Host Device                                                                                           | Method                                | Container Name    | Image                 |
-| :---------------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
-| [:symbols-nas-outline:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                        | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| Host Device                                                                                    | Method                                | Container Name    | Image                 |
+| :--------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
+| [:symbols-server-outline:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| [:symbols-nas-outline:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                 | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
 ### :symbols-settings:&ensp;Configuration  
 
 ##### Hub
 
-```yaml title="Raspberry Pi 4B Server" linenums="1"
+```yaml title="Pi 4B Server" linenums="1"
 --8<-- "portainer-pi-4b.yml"
 ```
 
 ##### Agent
 
-```yaml title="Raspberry Pi Zero Server" linenums="1"
+```yaml title="Pi Zero 2W Server" linenums="1"
 --8<-- "portainer-pi-zero.yml"
 ```
 

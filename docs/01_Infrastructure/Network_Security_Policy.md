@@ -16,35 +16,34 @@ tags:
 # Network Security Policy
 *The Principle of Least Privilege*
 
-!!! info 
+!!! info "Security Philosophy"
 
-	**Security Philosophy:**
-	:    This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
+	This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 ---
 ## :symbols-segment:&ensp;Network Segmentation 
 &emsp;&emsp;&ensp;*VLAN Architecture*
 
-| Zone                                                                                            | VLAN ID  | Description                                            | Access Rules                                                                                                  |
-| :---------------------------------------------------------------------------------------------- | :------- | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| [:symbols-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)                      | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                        |
-| [:symbols-shield-person-outline:&nbsp;Guest](./IP_Address_Management.md#virtual-local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                  |
-| [:symbols-shield-house-outline:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)                  | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
+| Zone                                                                                            | VLAN ID  | Description                                            | Access Rules                                                                                                                                          |
+| :---------------------------------------------------------------------------------------------- | :------- | :----------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [:symbols-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)                      | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                                                                |
+| [:symbols-shield-person-outline:&nbsp;Guest](./IP_Address_Management.md#virtual-local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                                                          |
+| [:symbols-shield-house-outline:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)                  | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default. Strictly isolated from all other VLANs; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ## :symbols-firewall:&ensp;Boundary Defense & Remote Access
 
-#### Edge Protection
+### Edge Protection
 
 + An [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) acts as the primary firewall, utilizing **SPI** and **DoS / DDoS** protection.
 + The two-way **IPS** built into the ASUS router uses SPI to protect any device connected to the network from spam, DoS / DDoS attacks, and from malicious packets entering or exiting the network. 
-+ The Asuswrt-Merlin firmware extends the basic functionality of the built-in firewall with [Skynet](https://github.com/Adamm00/IPSet_ASUS). It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
++ The Asuswrt-Merlin firmware extends the basic functionality of the built-in firewall with [Skynet:symbols-external-link-small:](https://github.com/Adamm00/IPSet_ASUS). It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
 
-#### External Access
+### External Access
 
 + Direct port forwarding is strictly prohibited. 
 + Remote access to individual services is facilitated through a [Cloudflare Tunnel](../03_Services/Cloudflared.md), ensuring all incoming traffic is proxied and SSL-encrypted.
 
-#### VPN
+### VPN
 
 + For administrative tasks, there are two [WireGuard](../03_Services/Wireguard_Server.md) instances providing a secure, encrypted tunnel into the Trusted zone.
 + The primary WireGuard server is hosted natively on the main [ASUS router](../02_Hardware/ASUS_RT-BE92U.md). 
@@ -52,46 +51,65 @@ tags:
 
 ## :symbols-dns-outline:&ensp;DNS Security & Content Filtering
 
-#### Internal Resolution
+### Internal Resolution
 
-+ A clustered [Technitium DNS](../03_Services/Technitium.md) environment *([Debian Server VM](../02_Hardware/Debian_Server_VM.md) & [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))* handles all local queries.
++ A clustered [Technitium DNS](../03_Services/Technitium.md) environment *([Debian Server](../02_Hardware/Debian_Server_VM.md) & [Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))* handles all local queries.
 
-#### Upstream Privacy
+### Upstream Privacy
 
-+ Queries are forwarded to [Quad-9](https://quad9.net/) via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
++ Queries are forwarded to [Quad-9:symbols-external-link-small:](https://quad9.net/) via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle:symbols-external-link-small:](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
 
-#### Blocking
+### Blocking
 
-+ Network-wide ad and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
++ Network-wide ad, tracking, and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
 ## :symbols-security:&ensp;Device & Host Hardening
 
-#### Operating Systems
+### Operating Systems
+
+##### Servers
 
 + Servers primarily utilize **Debian** and **ZimaOS** *(on the NAS)* for stability and security. 
 	+ Debian Linux *(Stable)* is a rock-solid, unchanging base to build a server on. Packages are not frequently updated with new features, so there is no need to worry about breakages. The 10-year-long service life means you are guaranteed to get security updates for the server's lifetime. 
 	+ The immutability of ZimaOS means OS updates on the NAS are easy to revert if they cause a breakage, and ensures no system files can be modified by an intruder. 
-	+ Both of these server operating systems ensure maximum security and availability for services hosted on the network.
++ Both of these server operating systems ensure maximum security and availability for services hosted on the network.
+
+##### Clients
+
 + Client PCs utilize **Fedora *(KDE Plasma Desktop Edition)*** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware *(e.g., the latest CPUs & GPUs)*.
+
+##### Mobile Devices
+
 + Mobile devices *(smartphones and tablets)* utilize **Android**. Only Google Pixel and Samsung Galaxy devices are allowed due to their monthly security patches and long service & support lifespan.   
 
-#### Access Control
+### Access Control
 
-+ [SSH](../03_Services/SSH.md) access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
+##### Credential Storage
+
++ [Bitwarden:symbols-external-link-small:](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
 	+ Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely.
 	+ The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. 
 	+ The mobile application auto-fills passwords on websites and native applications.
+
+##### SSH Security
+
++ [SSH](../03_Services/SSH.md) access requires **Ed25519 Key-Based Authentication**; password-based SSH is disabled.
+
+##### Local User Accounts
+
 + Local user accounts on the Fedora and Windows 11 PCs do not have administrator privileges. A separate "admin" account is required to make system-level changes. 
+
+##### Self-Hosted Services
+
 + Services hosted on the network that require login have separate "admin" accounts for administration. The regular user accounts have reduced permissions to increase security. 
 
-#### Updates
+### Updates
 
 + Automated security patching is enabled for critical packages on the Debian servers with `unattended-upgrades`. 
-+ Weekly manual audits for Docker container image updates *(monitored via &nbsp;[:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md))*.
++ Weekly manual audits for Docker container image updates *(monitored via &nbsp;[Dockge](../03_Services/Dockge.md))*.
 + Desktop and Laptop PCs have automatic updates enabled.
 
-#### 3D Infrastructure
+### 3D Infrastructure
 
 + The [Creality K1C](../02_Hardware/Kacey_3D-printer.md) is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 

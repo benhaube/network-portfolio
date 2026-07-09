@@ -48,14 +48,14 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                      | Method                                | Container Name      | Image                              |
-| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :--------------------------------- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                       | :services-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
+| Host Device                                                                            | Method                                | Container Name      | Image                              |
+| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :--------------------------------- |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :services-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml title="Raspberry Pi 4B Server" linenums="1"
+```yaml title="Pi 4B Server" linenums="1"
 --8<-- "cloudflared-pi-server.yml"
 ```
 

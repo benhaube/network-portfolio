@@ -48,10 +48,10 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                           | Method                            | Container Name | Image |
-| :---------------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;~~Raspberry Pi Zero Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                                    | Method                            | Container Name | Image |
+| :--------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
+| [:symbols-server-outline:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-outline:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 
@@ -60,7 +60,7 @@ hide:
     **Configure DoH / DoT with Pi-hole:**
     :    For secure, encrypted recursive DNS queries, configure `dnscrypt-proxy`. 
 
-        * [Pi-hole w/ dnscrypt-proxy](https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/)
+        * [Pi-hole w/ dnscrypt-proxy:symbols-external-link-small:](https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/)
 
     **Synchronize Pi-hole Settings:**
     :    To synchronize the settings from the primary Pi-hole instance to a second instance use [Nebula-Sync](./Nebula-Sync.md). 

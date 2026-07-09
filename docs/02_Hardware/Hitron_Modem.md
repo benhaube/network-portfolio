@@ -24,7 +24,7 @@ hide:
 
 #### :symbols-toolbox-outline:&ensp;Role 
 
-:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
+:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity:symbols-external-link-small:](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
 #### :symbols-location-outline:&ensp;Location
 
@@ -57,7 +57,7 @@ hide:
    
     :symbols-iframe:&ensp;**Access WebUI:**
  
-    * To access the modem's Web UI enter <https://192.168.100.1> or <https://hitron-modem.internal>
+    * To access the modem's Web UI enter `https://192.168.100.1`.
 
 #### :symbols-update:&ensp;Update Process 
 

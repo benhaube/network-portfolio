@@ -45,9 +45,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                       | Method                                        | Container Name | Image |
-| :------------------------------------------------------------------------------------------------ | :-------------------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
+| Host Device                                                                                | Method                                        | Container Name | Image |
+| :----------------------------------------------------------------------------------------- | :-------------------------------------------- | :------------- | :---- |
+| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -92,4 +92,4 @@ hide:
 2. Enable the static file server. 
 3. Another common task is to set up a reverse proxy.
 4. Or serve a PHP site through php-fpm.
-5. Refer to the [Caddy Docs](https://caddyserver.com/docs/caddyfile) for more information. 
+5. Refer to the [Caddy Docs:symbols-external-link-small:](https://caddyserver.com/docs/caddyfile) for more information. 

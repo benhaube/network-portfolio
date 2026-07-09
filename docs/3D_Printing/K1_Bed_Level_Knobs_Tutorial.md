@@ -106,7 +106,7 @@ hide:
 
 1. [ ] Turn the printer on.
 2. [ ] SSH into the printer.
-3. [ ] **Option 1:** Run the [Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
+3. [ ] **Option 1:** Run the [Helper Script:symbols-external-link-small:](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/helper-script-installation/) and install `13) Screws Tilt Adjust Support`
 
     **Option 2:** Add this to `printer.cfg`
 

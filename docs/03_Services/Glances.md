@@ -42,20 +42,20 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                      | Method                                | Container Name | Image                           |
-| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                       | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| Host Device                                                                            | Method                                | Container Name | Image                           |
+| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
 
 ### :symbols-settings:&ensp;Configuration
 
 #### :services-docker:&ensp;Docker Compose
 
-```yaml title="Raspberry Pi 4B Server" linenums="1"
+```yaml title="Pi 4B Server" linenums="1"
 --8<-- "glances-pi-4b.yml"
 ```
 
-1. See all image tags here:&ensp;[:services-docker:&nbsp;Docker Hub](https://hub.docker.com/r/nicolargo/glances/tags)
+1. See all image tags here:&ensp;[Docker Hub:symbols-external-link-small:](https://hub.docker.com/r/nicolargo/glances/tags)
 2. Uncomment for SATA or NVME smartctl monitoring.
 3. Uncomment for SATA smartctl monitoring.
 4. Uncomment for NVME smartctl monitoring.

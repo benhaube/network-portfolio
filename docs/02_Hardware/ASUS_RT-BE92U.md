@@ -26,7 +26,7 @@ hide:
 
 #### :symbols-toolbox-outline:&ensp;Role
 
-:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
+:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin:symbols-external-link-small:](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 #### :symbols-host-outline:&ensp;Hostname
 
@@ -102,12 +102,12 @@ hide:
 
 #### :symbols-linux:&ensp;Native
 
-|  Status  | Service                                                                   | Port(s) | Role / Notes                                                                                                                                                                                            |
-| :------: | :------------------------------------------------------------------------ | :-----: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | [:symbols-web-clock:&nbsp;Chrony](../03_Services/Chrony.md)               |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                            |
-| *Active* | [:symbols-web-ip:&nbsp;DDNS](../03_Services/DDNS.md)                      |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools). |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)                  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                          |
-| *Active* | [:services-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                |
+|  Status  | Service                                                                   | Port(s) | Role / Notes                                                                                                                                                                                                                         |
+| :------: | :------------------------------------------------------------------------ | :-----: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-web-clock:&nbsp;Chrony](../03_Services/Chrony.md)               |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
+| *Active* | [:symbols-web-ip:&nbsp;DDNS](../03_Services/DDNS.md)                      |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools). |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)                  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                                                       |
+| *Active* | [:services-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                                             |
 
 ---
 ## :symbols-note-stack:&ensp;Maintenance & Notes
@@ -115,25 +115,25 @@ hide:
 !!! config inline end "Critical Configurations"
 
     **:symbols-restore:&ensp;Backup Restore:**
-    :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) and the [Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md). 
+    :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) and the [Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md). 
 
     **:symbols-web-clock:&ensp;NTP Server:**
     :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
 
 #### :symbols-update:&ensp;Update Process
 
-+ Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router) tool.
-+ Email notifications enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM) and script updates.
-    + Notification emails are sent to: <mailto:admin@haube-pereira.com> 
++ Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU:symbols-external-link-small:](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router) tool.
++ Email notifications enabled for [AMTM:symbols-external-link-small:](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM) and script updates.
+    + Notification emails are sent to: [admin@haube-pereira.com:symbols-external-link-small:](mailto:admin@haube-pereira.com) 
 + For Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
 #### :symbols-backup:&ensp;Backup Policy
 
-+ The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays *(at 3:00 UTC-5)* to [ZimaOS NAS](./ZimaBoard_2_NAS.md) and [Raspberry Pi 4B Server](./Raspberry_Pi_4B_Server.md) using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON) script.
++ The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays *(at 3:00 UTC-5)* to [ZimaOS NAS](./ZimaBoard_2_NAS.md) and [Pi 4B Server](./Raspberry_Pi_4B_Server.md) using the [BACKUPMON:symbols-external-link-small:](https://github.com/ViktorJp/BACKUPMON) script.
 + **Backup Directory:**
     + ZimaOS NAS: `/media/Quick-Storage/Backup/router`
     + Pi 4B Server: `/mnt/usb-drive/smb-share/router`
-+ Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
++ Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
 #### :services-gotify-notification:&ensp;Gotify Push Notifications
 

@@ -43,7 +43,7 @@ hide:
 ### Core Infrastructure
 
 [:symbols-router-outline:&ensp;ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md)
-:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
+:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin:symbols-external-link-small:](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 [:symbols-router-outline:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
@@ -52,10 +52,10 @@ hide:
 :    The primary DNS server in the [Technitium](03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md). 
 
 [:symbols-settings-ethernet:&ensp;Hitron Modem](./02_Hardware/Hitron_Modem.md)
-:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
+:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity:symbols-external-link-small:](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
 [:symbols-server-outline:&ensp;Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md)
-:    The secondary DNS server in the [Technitium](03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
+:    The secondary DNS server in the [Technitium](03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker:symbols-external-link-small:](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 [:symbols-server-outline:&ensp;Pi Zero 2W Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`). 
@@ -70,7 +70,7 @@ hide:
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
 [:symbols-nas-outline:&ensp;ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md) 
-:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
+:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664:symbols-external-link-small:](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
 ### Key Clients
 
@@ -115,7 +115,7 @@ hide:
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
 [:symbols-web-ip:&ensp;DDNS](./03_Services/DDNS.md)
-:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools).
+:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools).
 
 [:services-dockge:&ensp;Dockge](./03_Services/Dockge.md) 
 :    A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
@@ -151,10 +151,10 @@ hide:
 :    Handy tools for network administrators and developers.
 
 [:services-klipper:&ensp;Moonraker](./03_Services/Moonraker.md)
-:    Web API server for [Klipper](https://www.klipper3d.org/).
+:    Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/).
 
 [:symbols-settings-sync:&ensp;Nebula-Sync](./03_Services/Nebula-Sync.md)
-:    Synchronize configuration between multiple [Pi-hole](https://pi-hole.net) instances.
+:    Synchronize configuration between multiple [Pi-hole:symbols-external-link-small:](https://pi-hole.net) instances.
 
 [:services-nextcloud:&ensp;Nextcloud](./03_Services/Nextcloud.md)
 :    Self-hosted cloud storage and collaboration platform.
@@ -217,7 +217,7 @@ hide:
 ## :symbols-swap-horizontal:&ensp;Change Management
 
 [:brands-raspberry-pi:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
-:    Preparing the [Raspberry Pi Zero Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
+:    Preparing the [Pi Zero 2W Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
 [:simple-pihole:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 

@@ -25,7 +25,7 @@ hide:
 
 #### :symbols-file-text:&ensp;Description  
 
-:    Web API server for [Klipper](https://www.klipper3d.org/). 
+:    Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/). 
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 

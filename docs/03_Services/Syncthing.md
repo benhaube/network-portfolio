@@ -46,10 +46,10 @@ hide:
 + :symbols-server-outline:&nbsp;Debian Server
     + <https://debian-vm.internal:8384>
     + <https://192.168.50.6:8384>
-+ :symbols-server-outline:&nbsp;Raspberry Pi 4B Server
++ :symbols-server-outline:&nbsp;Pi 4B Server
     + <https://pi-server.internal:8384>
     + <https://192.168.50.2:8384>
-+ :symbols-server-outline:&nbsp;Raspberry Pi Zero Server
++ :symbols-server-outline:&nbsp;Pi Zero 2W Server
     + <https://pi-zero.internal:8384>
     + <https://192.168.50.3:8384>
 + :symbols-nas-outline:&nbsp;ZimaOS NAS
@@ -71,15 +71,15 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                       | Method                                     | Container Name | Image                          |
-| :------------------------------------------------------------------------------------------------ | :----------------------------------------- | :------------- | :----------------------------- |
-| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)                      | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-mobile:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)                      | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)                 | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | :services-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
+| Host Device                                                                                | Method                                     | Container Name | Image                          |
+| :----------------------------------------------------------------------------------------- | :----------------------------------------- | :------------- | :----------------------------- |
+| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)         | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)               | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
+| [:symbols-mobile:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)               | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
+| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
+| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
+| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                 | :services-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 

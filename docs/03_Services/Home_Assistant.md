@@ -42,9 +42,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                                      | Method                                | Container Name  | Image                                          |
-| :----------------------------------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
-| [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
+| Host Device                                                                            | Method                                | Container Name  | Image                                          |
+| :------------------------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
+| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

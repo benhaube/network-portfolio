@@ -62,9 +62,9 @@ hide:
 
 ## :symbols-web-ip:&ensp;Dynamic DNS Providers
 
-| Status   | Provider                        | Server                                                                         | FQDN                            | TLS Certificate                        | Certificate Expire |
-| :------- | :------------------------------ | :----------------------------------------------------------------------------- | :------------------------------ | :------------------------------------- | :----------------- |
-| *Active* | :services-addr:&nbsp;addr.tools | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :simple-letsencrypt:&nbsp;Lets Encrypt | 2026-08-23         |
+| Status   | Provider                        | Server                                                                         | FQDN                            | TLS Certificate                         | Certificate Expire |
+| :------- | :------------------------------ | :----------------------------------------------------------------------------- | :------------------------------ | :-------------------------------------- | :----------------- |
+| *Active* | :services-addr:&nbsp;addr.tools | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :brands-lets-encrypt:&nbsp;Lets Encrypt | 2026-08-23         |
 
 ## :symbols-vpn-outline:&ensp;VPN Servers / Clients
 

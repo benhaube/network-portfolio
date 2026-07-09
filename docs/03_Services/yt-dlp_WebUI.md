@@ -17,7 +17,7 @@ hide:
 # yt-dlp Web-UI
 *Download Videos from YouTube*
 
-[Docker Hub&ensp;:simple-docker:](https://hub.docker.com/r/marcobaobao/yt-dlp-webui){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/qokelate/yt-dlp-webui/2-getting-started){ .md-button .md-button--primary }
+[Docker Hub&ensp;:services-docker:](https://hub.docker.com/r/marcobaobao/yt-dlp-webui){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/qokelate/yt-dlp-webui/2-getting-started){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

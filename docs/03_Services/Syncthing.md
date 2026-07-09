@@ -111,7 +111,7 @@ hide:
 
 + :brands-android-robot:&nbsp;Android:
 
-    [Syncthing-Fork&ensp;:simple-fdroid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
+    [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
 #### :services-docker:&ensp;Docker Compose
 

@@ -162,19 +162,19 @@ hide:
 [:symbols-smb-share-outline:&ensp;NFS](./03_Services/NFS.md) 
 :    Remote file system access.
 
-[:simple-nginx:&ensp;Nginx](./03_Services/Nginx.md)
+[:services-nginx:&ensp;Nginx](./03_Services/Nginx.md)
 :    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
 [:services-ntop:&ensp;ntopng](./03_Services/ntopng.md)
 :    Web-based traffic and security network traffic monitoring. 
 
-[:simple-obsidian:&ensp;Obsidian LiveSync](./03_Services/Obsidian_LiveSync.md)
+[:services-obsidian:&ensp;Obsidian LiveSync](./03_Services/Obsidian_LiveSync.md)
 :    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
 [:services-openspeedtest:&ensp;OpenSpeedTest](./03_Services/OpenSpeedTest.md)
 :    A free & open-source HTML5 network performance estimation tool.
 
-[:simple-pihole:&ensp;Pi-hole](./03_Services/Pi-hole.md)
+[:services-pi-hole:&ensp;Pi-hole](./03_Services/Pi-hole.md)
 :    A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
 [:services-portainer:&ensp;Portainer-EE](./03_Services/Portainer.md)
@@ -219,7 +219,7 @@ hide:
 [:brands-raspberry-pi:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
 :    Preparing the [Pi Zero 2W Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
-[:simple-pihole:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
+[:services-pi-hole:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 
 
 ---

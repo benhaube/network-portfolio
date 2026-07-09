@@ -7,7 +7,7 @@
 :root,
 [data-md-color-scheme="default"] {
     /* Foreground and background colors from Zensical */
-    --md-hue:225deg;
+    --md-hue: 225deg;
     --md-default-fg-color: #000000de;
     --md-default-fg-color--light: #0000008c;
     --md-default-fg-color--lighter: #00000052;

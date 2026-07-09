@@ -242,7 +242,7 @@ hide:
 
 --8<-- "nerd-fonts.md"
 
-#### :symbols-rocket-launch:&ensp;Starship Terminal Prompt
+#### :symbols-rocket:&ensp;Starship Terminal Prompt
 
 The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh. 
 

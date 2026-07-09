@@ -116,7 +116,7 @@ theme:
       note: symbols/paperclip-alt
       abstract: symbols/notebook-text
       info: symbols/info
-      tip: symbols/flame-outline
+      tip: symbols/flame-alt
       success: symbols/check
       question: symbols/help
       warning: symbols/triangle-alert
@@ -144,7 +144,7 @@ theme:
       docker_host: services/docker
       domain: symbols/domain
       download: symbols/download
-      file-share: symbols/smb-share-outline
+      file-share: symbols/share
       hardware: symbols/devices
       inactive: symbols/circle-x
       infra: symbols/network-node
@@ -176,7 +176,7 @@ theme:
       software: symbols/iframe
       switch: symbols/ethernet-port-outline
       tools: symbols/construction
-      tv-stand: symbols/tv
+      tv-stand: symbols/tv-minimal
       video: symbols/movie-outline
       vh: symbols/host-outline
       vlan: symbols/hub

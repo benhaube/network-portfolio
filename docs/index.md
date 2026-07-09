@@ -256,7 +256,7 @@ hide:
 [:symbols-update:&ensp;Automatic Updates for Debian Servers](./Linux_Tutorials/Configure_Unattended-Upgrades.md)
 :    How to install and configure the `unattended-upgrades` package on your Debian server to enable automatic updates. This tutorial will help you configure Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
 
-[:material-svg:&ensp;Convert an SVG to Data URI](Linux_Tutorials/SVG_to_URI.md) 
+[:symbols-svg:&ensp;Convert an SVG to Data URI](Linux_Tutorials/SVG_to_URI.md) 
 :    How to convert an SVG into a data URI for use in HTML pages and CSS stylesheets. 
 
 [:symbols-lock-open-outline:&ensp;Decrypt LUKS with TPM2](./Linux_Tutorials/Unlock_LUKS_TPM2.md) 
@@ -271,5 +271,5 @@ hide:
 [:symbols-file-badge:&ensp;Self-Signed Certificates](./Linux_Tutorials/Self-Signed_Certs.md)
 :    How to generate self-signed SSL certificates for use in testing, development, and internal web servers.
 
-[:symbols-feedback-outline:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 
+[:symbols-message-square-warning:&ensp;Setup SSH Login Notification](./Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) 
 :    How to set up an email and push notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`, and a Gotify server. 

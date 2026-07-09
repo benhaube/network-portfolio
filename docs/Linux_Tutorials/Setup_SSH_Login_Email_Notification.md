@@ -229,7 +229,7 @@ hide:
 
 ???+ tip
 
-    **Unattended Upgrades Notifications:**
+    :symbols-feedback-outline:&ensp;**Unattended Upgrades Notifications:**
     :    To use the `msmtp` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
  
     !!! failure "Error"
@@ -238,7 +238,7 @@ hide:
         :    Not authorised to send from this header address.
 
     ---
-    **The Fix:**
+    :symbols-wrench:&ensp;**The Fix:**
  
     1. Open the configuration file in a text editor: 
    

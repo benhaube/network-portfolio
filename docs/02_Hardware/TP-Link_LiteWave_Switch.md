@@ -52,8 +52,8 @@ hide:
 | Port # | Connected Device                                                                                                   | Color / Type  | Notes                      |
 | :----: | :----------------------------------------------------------------------------------------------------------------- | :------------ | :------------------------- |
 | **1**  | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](./ASUS_RT-BE92U.md)                                                  | White / Cat6  | Uplink                     |
-| **2**  | [:symbols-tv-assistant:&nbsp;Google TV Streamer](../01_Infrastructure/MAC_Address_Tables.md#trusted-network)       | Black / Cat6A | `DHCP` `B8:7B:D4:9D:80:F7` |
-| **3**  | [:symbols-tv:&nbsp;TCL Smart TV](../01_Infrastructure/MAC_Address_Tables.md#trusted-network)                       | Black / Cat5e | `DHCP` `4C:53:FD:6A:81:D5` |
+| **2**  | [:symbols-cast:&nbsp;Google TV Streamer](../01_Infrastructure/MAC_Address_Tables.md#trusted-network)               | Black / Cat6A | `DHCP` `B8:7B:D4:9D:80:F7` |
+| **3**  | [:symbols-tv-minimal:&nbsp;TCL Smart TV](../01_Infrastructure/MAC_Address_Tables.md#trusted-network)               | Black / Cat5e | `DHCP` `4C:53:FD:6A:81:D5` |
 | **4**  | [:symbols-nintendo-switch:&nbsp;Nintendo Switch Dock](../01_Infrastructure/MAC_Address_Tables.md#trusted-network)  | Black / Cat5e | `DHCP` `74:84:69:34:69:78` |
 | **5**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                                       | -             | -                          |
 | **6**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                                       | -             | -                          |

@@ -35,7 +35,7 @@ hide:
 + `80`
 + `443`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <https://pi-zero.internal>
 

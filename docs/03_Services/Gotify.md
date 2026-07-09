@@ -31,7 +31,7 @@ hide:
 
 + `8180`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <http://storage-server.internal:8180> &mdash; *Local Network Web-UI only*
 + <http://storage-server-2.internal:8180> &mdash; *Local Network Web-UI only*
@@ -43,7 +43,7 @@ hide:
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (admin)"
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (bhaube)"
 
-#### :symbols-feedback-outline:&ensp;Notifications
+#### :symbols-message-square-warning:&ensp;Notifications
 
 | Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@ hide:
 | [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
 | [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
 | [:symbols-router-outline:&nbsp;Router Alerts](#router-alerts)                                                                   | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
-| [:symbols-terminal:&nbsp;SSH Alerts](#ssh-alerts)                                                                               | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and client IP address.                    |
+| [:symbols-terminal-lt:&nbsp;SSH Alerts](#ssh-alerts)                                                                            | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and client IP address.                    |
 | [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
 | [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
 
@@ -286,7 +286,7 @@ hide:
 
         To test it, simply disconnect a device from the network, manually delete its lease from the Asuswrt-Merlin UI *(or wait for it to expire)*, and reconnect it to force an `add` event.
 
-#### :symbols-terminal:&ensp;SSH Alerts
+#### :symbols-terminal-alt:&ensp;SSH Alerts
 
 1. Create the script: 
 

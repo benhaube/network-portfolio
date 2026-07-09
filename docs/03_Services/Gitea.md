@@ -34,7 +34,7 @@ hide:
 + `3080`
 + `222`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + Web-UI:
     + <http://storage-server.internal:3080>

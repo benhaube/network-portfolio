@@ -31,7 +31,7 @@ hide:
 
 + `22`
 
-#### :symbols-link:&ensp;URL / Access 
+#### :symbols-link-alt:&ensp;URL / Access 
 
 + :symbols-router-outline:&nbsp;ASUS RT-BE92U
     + `192.168.50.1:22` 
@@ -50,7 +50,7 @@ hide:
     + `192.168.50.5:22` 
     + `storage-server.internal:22` 
     + `storage-server-2.internal:22`
-+ :brands-creality-v2:&nbsp;Kacey 3D-Printer
++ :symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer
     + `192.168.50.153:22` 
     + `kacey.internal:22` 
 
@@ -73,7 +73,7 @@ hide:
 | [:symbols-server-outline:&nbsp;Raspberry Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)  | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-server-outline:&nbsp;Raspberry Pi Zero Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                        | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)                  | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)   | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -84,7 +84,7 @@ hide:
     **New Session Notification:**
     :    The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
 
-        [SSH Login Notification&ensp;:symbols-feedback-outline:](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md){ .md-button }
+        [SSH Login Notification&ensp;:symbols-message-square-warning:](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md){ .md-button }
 
 ##### SSH Config File
 
@@ -210,7 +210,7 @@ hide:
 
     1. All hosts use Bitwarden SSH key agent
     2. Assume 'admin' is the user for all hosts 
-    3.    :symbols-warning:&nbsp;**CRITICAL:** 
+    3.    :symbols-triangle-alert:&nbsp;**CRITICAL:** 
           
           Prevents offering all other keys stored in Bitwarden
 

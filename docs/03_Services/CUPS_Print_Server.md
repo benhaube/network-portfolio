@@ -29,7 +29,7 @@ hide:
 
 + `631`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <https://192.168.50.2:631>
 

@@ -34,7 +34,7 @@ hide:
 + `51820`
 + `51821` *(for [configuration WebUI](http://storage-server.internal:51821) on :symbols-nas-outline:&nbsp;ZimaOS NAS)*
 
-#### :symbols-link:&ensp;URL / Access 
+#### :symbols-link-alt:&ensp;URL / Access 
 
 + :symbols-vpn-outline:&nbsp;Server Endpoint:
     + `rac3r4life.myaddr.dev:41820` *(for :symbols-router-outline:&nbsp;ASUS RT-BE92U)*

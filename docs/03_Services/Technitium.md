@@ -36,7 +36,7 @@ hide:
 + `443`
 + `5380`
 
-#### :symbols-link:&ensp;URL / Access  
+#### :symbols-link-alt:&ensp;URL / Access  
 
 + :symbols-server-outline:&nbsp;Debian Server
     + `192.168.50.6` &mdash; First DNS server

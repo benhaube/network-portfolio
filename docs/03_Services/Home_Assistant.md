@@ -30,7 +30,7 @@ hide:
 
 + `8123`
 
-#### :symbols-link:&ensp;URL / Access 
+#### :symbols-link-alt:&ensp;URL / Access 
 
 + <http://pi-server.internal:8123>
 + <https://home-assistant.internal>

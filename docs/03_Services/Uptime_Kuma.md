@@ -31,7 +31,7 @@ hide:
 
 + `3001`
 
-#### :symbols-link:&ensp;URL / Access 
+#### :symbols-link-alt:&ensp;URL / Access 
 
 + :symbols-lan-outline:&nbsp;LAN Access
     + <https://uptime.internal>

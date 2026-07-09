@@ -31,7 +31,7 @@ hide:
 
 + `2283`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + :symbols-lan-outline: LAN Access:
     + <https://immich.internal>

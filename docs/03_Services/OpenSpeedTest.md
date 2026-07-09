@@ -31,7 +31,7 @@ hide:
 
 + `3004`
 
-#### :symbols-link:&ensp;URL / Access  
+#### :symbols-link-alt:&ensp;URL / Access  
 
 + <https://openspeedtest.internal>
 + <http://storage-server.internal:3004>

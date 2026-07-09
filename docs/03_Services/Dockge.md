@@ -33,7 +33,7 @@ hide:
 
 + `5001`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <http://pi-server.internal:5001>
 + <http://pi-zero.internal:5001>
@@ -99,7 +99,7 @@ hide:
 
 1. If you want to use private registries you need to uncomment this line to share the auth file with Dockge.
 
-2.    :symbols-warning:&nbsp;**READ CAREFULLY!** 
+2.    :symbols-triangle-alert:&nbsp;**READ CAREFULLY!** 
    
       If you did it wrong, your data could end up writing into a WRONG PATH.
       

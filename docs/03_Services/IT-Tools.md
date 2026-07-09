@@ -31,7 +31,7 @@ hide:
 
 + `8080`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>

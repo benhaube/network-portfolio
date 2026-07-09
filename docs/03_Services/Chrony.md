@@ -29,7 +29,7 @@ hide:
 
 + `123`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + `192.168.50.1:123`
 + `asusrouter.internal:123`

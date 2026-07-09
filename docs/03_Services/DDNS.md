@@ -30,7 +30,7 @@ hide:
 
 + `N/A`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <https://rac3r4life.myaddr.dev>
 
@@ -47,7 +47,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-terminal-alt:&ensp;Router Script
+#### :symbols-file-terminal:&ensp;Router Script
 
 1. Create a script on the router in the `/jffs/scripts` directory to update the IP every time it changes:
 
@@ -85,7 +85,7 @@ hide:
     ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ width=700 }
 </figure>
 
-#### :symbols-award:&ensp;TLS Certificate
+#### :symbols-award-outline:&ensp;TLS Certificate
 
 1. Install the `certbot` package on a separate PC:
 

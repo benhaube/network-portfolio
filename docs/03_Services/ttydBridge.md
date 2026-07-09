@@ -29,7 +29,7 @@ hide:
 
 + `2222`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <http://storage-server.internal:2222>
 + <http://storage-server-2.internal:2222>

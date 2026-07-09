@@ -30,7 +30,7 @@ hide:
 + `80`
 + `4408`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <http://kacey.internal>
 + <http://192.168.50.153>
@@ -44,9 +44,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                      | Method                            | Container Name | Image |
-| :------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:brands-creality-v2:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                                     | Method                            | Container Name | Image |
+| :---------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
+| [:symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

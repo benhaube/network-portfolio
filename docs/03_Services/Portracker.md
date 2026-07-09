@@ -32,7 +32,7 @@ hide:
 
 + `4999`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 Raspberry Pi 4B Server:
 

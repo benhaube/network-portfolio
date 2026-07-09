@@ -32,7 +32,7 @@ hide:
 
 + `2049`
 
-#### :symbols-link:&ensp;URL / Access 
+#### :symbols-link-alt:&ensp;URL / Access 
 
 + `192.168.50.4:/media/Quick-Storage`
 + `192.168.50.4:/media/nvme0n1p1`

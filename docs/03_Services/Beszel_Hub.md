@@ -33,7 +33,7 @@ hide:
 + Agent:
     + `45867` 
 
-#### :symbols-link:&ensp;URL / Access 
+#### :symbols-link-alt:&ensp;URL / Access 
 
 + <https://beszel.internal>
 + <http://pi-server.internal:8090/>
@@ -65,7 +65,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :symbols-key:&ensp;Generate API Tokens
+#### :symbols-key-round:&ensp;Generate API Tokens
 
 :    Run the following command in a terminal on a client machine to generate API tokens.
 

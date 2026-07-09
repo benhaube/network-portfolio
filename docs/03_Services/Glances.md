@@ -30,7 +30,7 @@ hide:
 
 + `21208`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <http://pi-server.internal:61208>
 + <http://storage-server.internal:61208>

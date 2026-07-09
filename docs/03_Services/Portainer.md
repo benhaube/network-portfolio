@@ -36,7 +36,7 @@ hide:
 + Agent:
     + `9001`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + Hub: 
     + ~~<https://portainer.internal>~~

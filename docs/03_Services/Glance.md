@@ -32,7 +32,7 @@ hide:
 
 + `8580`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + <https://glance.internal>
 + <http://pi-server.internal:8580/>
@@ -59,7 +59,7 @@ hide:
  
     :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuration is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
  
-    [:symbols-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down-thin:](#glance-config)
+    [:symbols-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down-thin:](#glance-config-file)
 
 | Host Device                                                                                      | Method                                | Container Name | Image                       |
 | :----------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
@@ -76,7 +76,7 @@ hide:
 
     ---
 
-    :symbols-person:&ensp;**Users:**
+    :symbols-users:&ensp;**Users:**
  
     + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com) within the folder "Local Network". There are currently three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
@@ -95,7 +95,7 @@ hide:
  
     + Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again. 
       
-    :symbols-key:&ensp;**Server Secret:**
+    :symbols-key-round:&ensp;**Server Secret:**
  
     + The "Server Secret" needs to be set in the `glance.yml` configuration file. 
     + To generate a new server secret, attach to the container's shell and run the following command: 
@@ -159,7 +159,7 @@ hide:
 --8<-- "glance-compose.yml"
 ```
 
-1. **Optional:** Mount docker socket if you want to use the docker containers widget
+1. **Optional:** Mount docker socket *(as 'read-only' for extra security)* if you want to use the docker containers widget.
 2. Use the file, `.env`, to store tokens / secrets and URLs for Widgets. Do **NOT** put API tokens directly into the Glance pages.
 3. It is required to define DNS server IP addresses for the container to resolve custom `.internal` FQDN. 
 4. Specify your timezone.
@@ -167,7 +167,7 @@ hide:
 6. **Optional:** "Main" tracks qualifying sessions and races *(inc. sprints)*. "Race" tracks **only** races. 
 7. Changed the Docker image to **Dynacat**, a fork of Glance with added features.
 
-#### :symbols-cogs:&ensp;Glance Config
+#### :symbols-file-config:&ensp;Glance Config File
 
 ```yaml {title="dynacat.yml" linenums="1" .mono-title}
 --8<-- "dynacat.yml"

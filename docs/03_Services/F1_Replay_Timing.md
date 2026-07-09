@@ -30,7 +30,7 @@ hide:
 + `3000`
 + `8000`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-alt:&ensp;URL / Access
 
 + Backend: 
     + <http://storage-server.internal:8000>
@@ -55,12 +55,12 @@ hide:
 --8<-- "f1-replay-timing.yaml"
 ```
 
-1.    :symbols-warning:&nbsp;**Warning!**
+1.    :symbols-triangle-alert:&nbsp;**Warning!**
 
       + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
       + Use the IP address or URL of the host server. 
 
-2.    :symbols-warning:&nbsp;**Warning!**
+2.    :symbols-triangle-alert:&nbsp;**Warning!**
 
       + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
       + Use the IP address or URL of the host server. 

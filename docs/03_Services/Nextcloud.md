@@ -30,7 +30,7 @@ hide:
 
 + `10081`
 
-#### :symbols-link:&ensp;URL / Access 
+#### :symbols-link-alt:&ensp;URL / Access 
 
 + ~~<http://storage-server.internal:10081>~~
 + ~~<http://storage-server-2.internal:10081>~~

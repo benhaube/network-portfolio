@@ -30,7 +30,7 @@ hide:
 
 + `5984`
 
-#### :symbols-link:&ensp;URL / Access  
+#### :symbols-link-alt:&ensp;URL / Access  
 
 + :symbols-cogs: Settings Web UI: 
     + <http://storage-server.internal:5984/_utils>

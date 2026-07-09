@@ -33,7 +33,7 @@ hide:
 + Web: `80`, `443`
 + DNS: `53`
 
-#### :symbols-link:&ensp;URL / Access  
+#### :symbols-link-alt:&ensp;URL / Access  
 
 + ~~<https://pi-server.internal/admin/login>~~
 + ~~<https://pi-hole.internal/admin/login>~~

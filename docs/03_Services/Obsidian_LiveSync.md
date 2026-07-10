@@ -52,7 +52,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-server:&ensp;Server
+#### :symbols-server-outline:&ensp;Server
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "obsidian-livesync.yml"

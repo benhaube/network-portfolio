@@ -48,7 +48,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-server:&ensp;Server
+#### :symbols-server-outline:&ensp;Server
 
 ```nt {title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1" .mono-title}
 --8<-- "chrony.conf"

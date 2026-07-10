@@ -50,7 +50,7 @@ hide:
 | Host Device                                                                            | Method                            | Container Name | Image |
 | :------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
 | [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration  
 
@@ -60,7 +60,7 @@ hide:
 --8<-- "smb-pi-4b.conf"
 ```
 
-#### :symbols-nas-outline:&ensp;ZimaOS NAS
+#### :symbols-server-nas:&ensp;ZimaOS NAS
 
 ```linuxconfig {title="/etc/samba/smb.conf" linenums="1" .mono-title}
 --8<-- "smb-zima.conf"

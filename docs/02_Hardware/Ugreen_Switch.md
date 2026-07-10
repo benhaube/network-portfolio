@@ -53,8 +53,8 @@ hide:
 | **1**  | [:symbols-laptop-minimal:&nbsp;Rob's Laptop](../02_Hardware/Rob's_Laptop.md)   | White / Cat5e  | 2.5 Gb/s &mdash; Temporary Connection `E8:9C:25:90:8B:11`  |
 | **2**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                   | -              | -                                                          |
 | **3**  | :symbols-ethernet-port-outline:&nbsp;*Empty*                                   | -              | -                                                          |
-| **4**  | [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)     | Blue / Cat6A   | 2.5 Gb/s &mdash; `eth1` `192.168.50.5` `00:E0:4C:5B:9A:95` |
-| **5**  | [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)     | Yellow / Cat6A | 2.5 Gb/s &mdash; `eth0` `192.168.50.4` `00:E0:4C:5B:9A:96` |
+| **4**  | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)      | Blue / Cat6A   | 2.5 Gb/s &mdash; `eth1` `192.168.50.5` `00:E0:4C:5B:9A:95` |
+| **5**  | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)      | Yellow / Cat6A | 2.5 Gb/s &mdash; `eth0` `192.168.50.4` `00:E0:4C:5B:9A:96` |
 | **6**  | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | Red / Cat6A    | 10 Gb/s &mdash; SFP+ Ethernet Transceiver                  |
 
 ---

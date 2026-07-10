@@ -67,7 +67,7 @@ hide:
 | Host Device                                                                                    | Method                                | Container Name    | Image                 |
 | :--------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
 | [:symbols-server-outline:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
-| [:symbols-nas-outline:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                 | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                  | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
 ### :symbols-settings:&ensp;Configuration  
 

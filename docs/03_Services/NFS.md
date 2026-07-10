@@ -45,9 +45,9 @@ hide:
 
 ## :symbols-deployed-code-update:&ensp;Deployment Details
 
-| Host Device                                                                | Method                            | Container Name | Image |
-| :------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                               | Method                            | Container Name | Image |
+| :------------------------------------------------------------------------ | :-------------------------------- | :------------- | :---- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

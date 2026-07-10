@@ -45,7 +45,7 @@ hide:
 + :symbols-server-outline:&nbsp;Pi Zero 2W Server
     + `192.168.50.3:22` 
     + `pi-zero.internal:22` 
-+ :symbols-nas-outline:&nbsp;ZimaOS NAS
++ :symbols-server-nas:&nbsp;ZimaOS NAS
     + `192.168.50.4:22`
     + `192.168.50.5:22` 
     + `storage-server.internal:22` 
@@ -72,7 +72,7 @@ hide:
 | [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)               | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)          | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)      | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                      | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                       | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 

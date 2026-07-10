@@ -156,7 +156,7 @@ theme:
       mini-rack: symbols/mini-rack
       mobile: symbols/tablet-smartphone
       monitor: symbols/square-activity
-      nas: symbols/nas-outline
+      nas: symbols/server-nas
       native: symbols/linux
       network: symbols/lan-outline 
       new: symbols/badge-alert

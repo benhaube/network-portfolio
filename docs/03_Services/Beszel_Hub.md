@@ -61,7 +61,7 @@ hide:
 | :----------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
 | [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)       | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
 | [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                 | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                  | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
 ### :symbols-settings:&ensp;Configuration
 

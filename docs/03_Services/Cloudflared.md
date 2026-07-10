@@ -51,7 +51,7 @@ hide:
 | Host Device                                                                            | Method                                | Container Name      | Image                              |
 | :------------------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :--------------------------------- |
 | [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
-| [:symbols-nas-outline:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)             | :services-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :services-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

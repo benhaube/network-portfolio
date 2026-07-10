@@ -171,7 +171,7 @@ theme:
       router: symbols/router-outline
       security: symbols/security
       server: symbols/server-outline
-      service: symbols/web
+      service: symbols/monitor-cloud
       shell: symbols/terminal
       software: symbols/iframe
       switch: symbols/ethernet-port-outline

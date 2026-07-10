@@ -44,7 +44,7 @@ hide:
 
 + Hardware / Software security features (e.g., TPM2)
 
-## :symbols-monitor-heart-outline: Core Specs
+## :symbols-square-activity: Core Specs
 
 | CPU                  | Cores / Threads | CPU Freq. | RAM  | GPU  | GPU Freq. | VRAM |
 | :------------------- | :-------------- | :-------- | :--- | :--- | :-------- | :--- |

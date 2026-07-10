@@ -48,7 +48,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-server (admin)"
 
-## :symbols-monitor-heart-outline:&ensp;Core Specs
+## :symbols-square-activity:&ensp;Core Specs
 
 | CPU                                   | Cores / Threads        | CPU Freq. | RAM                       | GPU             | GPU Freq. | VRAM     |
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |

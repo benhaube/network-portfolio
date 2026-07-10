@@ -49,7 +49,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"debian-vm (server-admin)"
 
-## :symbols-monitor-heart-outline:&ensp;Resource Allocation
+## :symbols-square-activity:&ensp;Resource Allocation
 
 |          vCPU          |  RAM  | Storage | VDI Location                             |
 | :--------------------: | :---: | :------ | :--------------------------------------- |

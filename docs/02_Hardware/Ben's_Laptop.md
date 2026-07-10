@@ -66,7 +66,7 @@ hide:
     + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
     + :symbols-scan-face:&nbsp;IR Face Scan
 
-## :symbols-monitor-heart-outline:&ensp;Core Specs
+## :symbols-square-activity:&ensp;Core Specs
 
 | CPU                                              | Cores / Threads | CPU Freq.                 | RAM     | GPU                            | GPU Freq. | VRAM     |
 | :----------------------------------------------- | :-------------- | :------------------------ | :------ | :----------------------------- | :-------- | :------- |

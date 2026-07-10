@@ -35,7 +35,7 @@ hide:
 
 + Wall Wart *(5V / 0.6A)*
 
-#### :symbols-monitor-heart-outline:&ensp;Specs
+#### :symbols-square-activity:&ensp;Specs
 
 + Throughput: 
     + Five 1 GbE ports

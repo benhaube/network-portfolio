@@ -31,7 +31,7 @@ hide:
 
 + (e.g., Wall wart 12V / 1A)
  
-#### :symbols-monitor-heart-outline: Specs
+#### :symbols-square-activity: Specs
 
 + Throughput:
   + (e.g., 50 Gb/s) 

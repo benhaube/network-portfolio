@@ -50,7 +50,7 @@ hide:
     + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (rpereira)"   
     + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
 
-## :symbols-monitor-heart-outline:&ensp;Core Specs
+## :symbols-square-activity:&ensp;Core Specs
 
 | CPU                                 | Cores / Threads | CPU Freq. | RAM                       | GPU                              | GPU Freq. | VRAM     |
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
@@ -160,7 +160,7 @@ hide:
     
     :symbols-calendar-event:&ensp;**Date:** 2026-02-09 <br>
     :symbols-info:&ensp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
-    :symbols-monitor-heart-outline:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
+    :symbols-square-activity:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
     :symbols-devices:&ensp;**Affected Clients:** 
  
     + [Ben's Desktop PC](./Ben's_Desktop.md) 

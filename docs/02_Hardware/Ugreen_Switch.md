@@ -35,7 +35,7 @@ hide:
 
 + Wall wart *(12.0V / 1.0A)*
 
-#### :symbols-monitor-heart-outline:&ensp;Specs
+#### :symbols-square-activity:&ensp;Specs
 
 + Throughput: 
     + Five 2.5 Gb/s Ports

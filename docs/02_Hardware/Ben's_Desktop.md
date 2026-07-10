@@ -61,7 +61,7 @@ hide:
     + :symbols-encrypted-outline:&nbsp;LUKS2 drive encryption
     + :symbols-security-key:&nbsp;FIDO2-based MFA for local user  
 
-## :symbols-monitor-heart-outline:&ensp;Core Specs
+## :symbols-square-activity:&ensp;Core Specs
 
 | CPU                                           | Cores / Threads | CPU Freq. | RAM                     | GPU                                | GPU Freq. | VRAM       |
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |

@@ -43,7 +43,7 @@ hide:
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
 
-## :symbols-monitor-heart-outline: Resource Allocation
+## :symbols-square-activity: Resource Allocation
 
 |         vCPU          |  RAM  | Storage | VDI Location  |
 | :-------------------: | :---: | :------ | :------------ |

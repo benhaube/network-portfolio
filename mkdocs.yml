@@ -155,7 +155,7 @@ theme:
       map: symbols/graph-2
       mini-rack: symbols/10-inch-rack
       mobile: symbols/tablet-smartphone
-      monitor: symbols/monitor-heart-outline
+      monitor: symbols/square-activity
       nas: symbols/nas-outline
       native: symbols/linux
       network: symbols/lan-outline 

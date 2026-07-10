@@ -66,7 +66,7 @@ hide:
     + <http://k1c-a71e.internal>
     + <http://k1c-a71e.internal:4408>
 
-## :symbols-camera-video:&ensp;Camera
+## :symbols-webcam:&ensp;Camera
 
 #### Moonraker
 

@@ -1,5 +1,5 @@
 ---
-icon: symbols/router-outline
+icon: symbols/router
 title: Router Template
 subtitle: Subtitle
 tags:
@@ -15,32 +15,32 @@ hide:
 # Router Template
 *Subtitle*
 
-[Docs :symbols-documentation-outline:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
+[Docs :symbols-files:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Device Overview
 
-#### :symbols-toolbox-outline: Role
+#### :symbols-toolbox: Role
 :    AiMesh Node
 
-#### :symbols-host-outline: Hostname(s)
+#### :symbols-host: Hostname(s)
 
 + `hostname`
 
-#### :symbols-location-outline: Location
+#### :symbols-map-pin: Location
 
 + Location
  
-#### :symbols-memory: OS / Firmware
+#### :symbols-cpu: OS / Firmware
 
-+ :symbols-router-outline:&nbsp;Router_OS
++ :symbols-router:&nbsp;Router_OS
 
 #### :symbols-user-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-## :symbols-lan-outline: Network Configuration
+## :symbols-lan: Network Configuration
 
 #### :symbols-wan: WAN Connection
 
@@ -48,32 +48,32 @@ hide:
 | :-------: | :--------- | :------------------ | :----------- |
 |   WAN0    | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -            |
 
-#### :symbols-lan-outline: Virtual Local Networks
+#### :symbols-lan: Virtual Local Networks
 
 |  VLAN  | Domain | DNS Server(s)       | Gateway   | Subnet       | Subnet Mask | Broadcast   | DHCP Range     |
 | :----: | :----- | :------------------ | :-------- | :----------- | :---------- | :---------- | :------------- |
 | *vlan* | domain | `x.x.x.x` `x.x.x.x` | `x.x.x.x` | `x.x.x.x/xx` | `255.x.x.x` | `x.x.x.255` | `.x` to `.xxx` |
 
-#### :symbols-android-wifi-lock: Wi-Fi Networks
+#### :symbols-wifi-cog: Wi-Fi Networks
 
 |  SSID  |  VLAN  | IP Address   | Frequency | Notes |
 | :----: | :----: | :----------- | :-------- | :---- |
 | *SSID* | *vlan* | `x.x.x.x/xx` | -         | -     |
 
-#### :symbols-ethernet-port-outline: Physical Ethernet Ports
+#### :symbols-ethernet-port: Physical Ethernet Ports
 
 |     Port #      | Connected Device                        | Color / Type | Notes |
 | :-------------: | :-------------------------------------- | :----------- | :---- |
-| 10Gb WAN/LAN 1  | :symbols-ethernet-port-outline: *Empty* | -            | -     |
-| 2.5Gb WAN/LAN 2 | :symbols-ethernet-port-outline: *Empty* | -            | -     |
-|   2.5Gb LAN 1   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
-|   2.5Gb LAN 2   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
-|   2.5Gb LAN 3   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
-|   2.5Gb LAN 4   | :symbols-ethernet-port-outline: *Empty* | -            | -     |
+| 10Gb WAN/LAN 1  | :symbols-ethernet-port: *Empty* | -            | -     |
+| 2.5Gb WAN/LAN 2 | :symbols-ethernet-port: *Empty* | -            | -     |
+|   2.5Gb LAN 1   | :symbols-ethernet-port: *Empty* | -            | -     |
+|   2.5Gb LAN 2   | :symbols-ethernet-port: *Empty* | -            | -     |
+|   2.5Gb LAN 3   | :symbols-ethernet-port: *Empty* | -            | -     |
+|   2.5Gb LAN 4   | :symbols-ethernet-port: *Empty* | -            | -     |
 
-## :symbols-folder-open-outline: Storage & Mounts
+## :symbols-folders: Storage & Mounts
 
-#### :symbols-hard-drive-outline: Internal Drive(s)
+#### :symbols-hard-drive: Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System   | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :------------ | :--------- |
@@ -85,9 +85,9 @@ hide:
 | :------------- | :--------- | :------------- | :---------- | :------------ | :--------- |
 | `/mount/point` | -          | -              | `/dev/path` | `file-ststem` | -          |
 
-## :symbols-web: Services / Docker Containers
+## :symbols-monitor-cloud: Services / Docker Containers
 
-#### :symbols-linux: Native
+#### :symbols-penguin: Native
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
@@ -100,7 +100,7 @@ hide:
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :symbols-note-stack: Maintenance & Notes
+## :symbols-sticky-notes: Maintenance & Notes
 
 !!! config "Critical Configurations"
 
@@ -110,6 +110,6 @@ hide:
 
 * Update Process
 
-#### :symbols-backup: Backup Policy
+#### :symbols-cloud-upload: Backup Policy
 
 * Backup policy

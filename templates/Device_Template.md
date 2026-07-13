@@ -1,5 +1,5 @@
 ---
-icon: symbols/devices
+icon: symbols/monitor-smartphone
 title: Device Template
 subtitle: Subtitle
 tags:
@@ -19,28 +19,28 @@ hide:
 ---
 ## :symbols-info: Device Overview
 
-#### :symbols-toolbox-outline: Role
+#### :symbols-toolbox: Role
 
 :    Device role
 
-#### :symbols-host-outline: Hostname
+#### :symbols-host: Hostname
 
 + `hostname`
 
-#### :symbols-location-outline: Location
+#### :symbols-map-pin: Location
 
 + Location 
 
-#### :symbols-memory: OS / Firmware
+#### :symbols-cpu: OS / Firmware
 
 + :os-icon:&nbsp;Operating System
 
 #### :symbols-user-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-#### :symbols-security: Device Security
+#### :symbols-brick-wall-shield: Device Security
 
 + Hardware / Software security features (e.g., TPM2)
 
@@ -50,19 +50,19 @@ hide:
 | :------------------- | :-------------- | :-------- | :--- | :--- | :-------- | :--- |
 | CPU *(architecture)* | #C / #T         | # GHz     | # GB | GPU  | # MHz     | # GB |
 
-## :symbols-lan-outline: Network Configuration
+## :symbols-lan: Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To                          |
 | :-------: | :--------- | :------------------ | :------------------------------------ |
-|  enp7s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port-outline:&nbsp; |
+|  enp7s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
 
 | Interface | VLAN   | FQDN               | DNS Servers         | Gateway   |
 | :-------: | :----- | :----------------- | :------------------ | :-------- |
 |  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
 
-## :symbols-folder-open-outline: Storage & Mounts
+## :symbols-folders: Storage & Mounts
 
-#### :symbols-hard-drive-outline: Internal Drive(s)
+#### :symbols-hard-drive: Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -74,7 +74,7 @@ hide:
 | :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
 
-## :symbols-web: Services / Docker Containers
+## :symbols-monitor-cloud: Services / Docker Containers
 
 #### :symbols-layers: Virtualization
 
@@ -82,7 +82,7 @@ hide:
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |
 | *Active* | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network *(NAT)* | `disk-image.qcow2` | -            |
 
-#### :symbols-linux: Native Linux
+#### :symbols-penguin: Native Linux
 
 |  Status  | Service                                                   | Port(s) | Role / Notes |
 | :------: | :-------------------------------------------------------- | :-----: | :----------- |
@@ -95,7 +95,7 @@ hide:
 | *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :symbols-note-stack: Maintenance & Notes
+## :symbols-sticky-notes: Maintenance & Notes
 
 !!! config "Critical Configurations"
 
@@ -105,6 +105,6 @@ hide:
 
 + Update Process
 
-#### :symbols-backup: Backup Policy
+#### :symbols-cloud-upload: Backup Policy
 
 + Backup policy

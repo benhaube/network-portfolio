@@ -1,12 +1,12 @@
 ---
-icon: symbols/web
+icon: symbols/monitor-cloud
 title: Service Template
 subtitle: Subtitle
 tags:
   - Active
   - Service
   - Software
-  - Docker
+  - Container
 hide:
   - toc
 ---
@@ -15,7 +15,7 @@ hide:
 # Service Template
 *Subtitle*
 
-[GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-documentation-outline:](https://docs.github.com/en){ .md-button .md-button--primary }
+[GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-files:](https://docs.github.com/en){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Overview
@@ -27,16 +27,16 @@ hide:
 
 + `port`
 
-#### :symbols-link-alt: URL / Access
+#### :symbols-link: URL / Access
 
 + <https://example.com>
 
 #### :symbols-user-key: Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-## :symbols-deployed-code-update: Deployment Details
+## :symbols-package-search: Deployment Details
 
 | Host Device                                      | Method                                | Container Name   | Image            |
 | :----------------------------------------------- | :------------------------------------ | :--------------- | :--------------- |

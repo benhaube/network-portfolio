@@ -14,15 +14,15 @@ hide:
 # VM Template
 *Subtitle*
 
-[OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :symbols-documentation-outline:](https://example.com){ .md-button .md-button--primary }
+[OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :symbols-files:](https://example.com){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info: Overview
 
-#### :symbols-toolbox-outline: Role
+#### :symbols-toolbox: Role
 :    Insert role here 
 
-#### :symbols-host-outline: Hostname
+#### :symbols-host: Hostname
 
 + `hostname`
 
@@ -30,7 +30,7 @@ hide:
 
 + (e.g., KVM / QEMU)
 
-#### :symbols-memory: Operating System
+#### :symbols-cpu: Operating System
 
 + :os-icon:&nbsp;[Operating System](https://example.com)
 
@@ -41,7 +41,7 @@ hide:
 #### :symbols-user-key: Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-arrow-right-thin:&ensp;"Credential Entry"
+    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
 ## :symbols-square-activity: Resource Allocation
 
@@ -49,7 +49,7 @@ hide:
 | :-------------------: | :---: | :------ | :------------ |
 | #C / #T *(virt-tech)* | # GB  | # GB    | `path/to/vdi` |
 
-## :symbols-lan-outline: Network Configuration
+## :symbols-lan: Network Configuration
 
 | Interface | IP Address | MAC Address         | Notes |
 | :-------: | :--------- | :------------------ | :---- |
@@ -59,9 +59,9 @@ hide:
 | :-------: | :----- | :------------------ | :---------- | :-------- |
 |  enp1s0   | VLAN50 | `hostname.internal` | `0.0.0.0`   | `x.x.x.1` |
 
-## :symbols-web: Services / Docker Containers
+## :symbols-monitor-cloud: Services / Docker Containers
 
-#### :symbols-linux: Native Linux
+#### :symbols-penguin: Native Linux
 
 |  Status  | Service                                                  | Port(s) | Role / Notes |
 | :------: | :------------------------------------------------------- | :-----: | :----------- |
@@ -74,7 +74,7 @@ hide:
 | *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :symbols-note-stack: Maintenance & Snapshots
+## :symbols-sticky-notes: Maintenance & Snapshots
 
 !!! config "Critical Configurations"
 
@@ -84,10 +84,10 @@ hide:
 
 + Update Policy
 
-#### :symbols-screenshot-region: Snapshot Policy
+#### :symbols-fullscreen: Snapshot Policy
 
 + Snapshot Policy
 
-#### :symbols-restore: Recovery
+#### :symbols-refresh-ccw-dot: Recovery
 
 + Recovery Policy

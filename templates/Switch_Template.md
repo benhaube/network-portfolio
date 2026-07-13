@@ -1,5 +1,5 @@
 ---
-icon: symbols/ethernet-port-outline
+icon: symbols/ethernet-port
 title: Switch Template
 subtitle: Subtitle
 tags:
@@ -20,14 +20,14 @@ hide:
 ---
 ## :symbols-info: Physical Overview
 
-#### :symbols-toolbox-outline: Role
+#### :symbols-toolbox: Role
 :    Core Desktop Switch
 
-#### :symbols-location-outline: Location
+#### :symbols-map-pin: Location
 
 + Insert location here
  
-#### :symbols-power-outline: Power Source
+#### :symbols-plug: Power Source
 
 + (e.g., Wall wart 12V / 1A)
  
@@ -40,19 +40,19 @@ hide:
 + Managed: 
   + Managed / Unmanaged
 
-## :symbols-ethernet-port-outline: Port Map
+## :symbols-ethernet-port: Port Map
 
 | Port # | Connected Device                             | Color / Type | Notes |
 | :----: | :------------------------------------------- | :----------- | :---- |
-| **1**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
-| **2**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
-| **3**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
-| **4**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
-| **5**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
-| **6**  | :symbols-ethernet-port-outline:&nbsp;*Empty* | -            | -     |
+| **1**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
+| **2**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
+| **3**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
+| **4**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
+| **5**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
+| **6**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
 
 ---
-## :symbols-note-stack: Maintenance Notes
+## :symbols-sticky-notes: Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 

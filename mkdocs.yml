@@ -100,11 +100,11 @@ theme:
   icon:
     menu: symbols/menu
     repo: symbols/git
-    top: symbols/arrow-double-up
-    previous: symbols/arrow-left
-    next: symbols/arrow-right
+    top: symbols/chevrons-up
+    previous: symbols/chevron-left
+    next: symbols/chevron-right
     close: symbols/x
-    search: symbols/search-lucide
+    search: symbols/search
     share: symbols/share-2
     annotation: symbols/code-annotation
     edit: symbols/square-pen
@@ -113,76 +113,75 @@ theme:
 
     # Change icons for built-in admonitions. Custom admonitions are defined in CSS.
     admonition:
-      note: symbols/paperclip-alt
+      note: symbols/paperclip
       abstract: symbols/notebook-text
       info: symbols/info
-      tip: symbols/flame-alt
+      tip: symbols/flame
       success: symbols/check
-      question: symbols/help
+      question: symbols/circle-question-mark
       warning: symbols/triangle-alert
       failure: symbols/octagon-alert
       danger: symbols/zap
-      bug: symbols/bug-report-outline
+      bug: symbols/bug
       example: symbols/flask-conical
-      quote: symbols/quote
+      quote: symbols/message-square-quote
 
     # Set the icons used for page tags.
     tag:
       default: symbols/tag-outline
-      3D-printer: symbols/printer-3d-nozzle-outline
-      active: symbols/check-circle-outline
+      3D-printer: symbols/printer-3d-nozzle
+      active: symbols/circle-check
       android: brands/android-robot
-      backup: symbols/backup
+      backup: symbols/cloud-upload
+      container: symbols/container
+      container-host: symbols/container
       dashboard: symbols/layout-dashboard
       deprecated: symbols/trash-2
-      desktop: symbols/desktop-pc-outline
-      development: symbols/graph-8
-      dns: symbols/dns-outline
-      docker: services/docker
-      docker_host: services/docker
-      domain: symbols/domain
+      desktop: symbols/pc-case
+      development: symbols/git-graph
+      dns: symbols/server-dns
       download: symbols/download
       file-share: symbols/share
-      hardware: symbols/devices
+      hardware: symbols/monitor-smartphone
       inactive: symbols/circle-x
       infra: symbols/network-node
       inventory: symbols/inventory
       iot: symbols/home-automation
-      isp: symbols/web
+      isp: symbols/globe
       laptop: symbols/laptop-minimal
-      linux: symbols/linux
-      living-room: symbols/sofa-outline-alt
-      map: symbols/graph-2
-      mini-rack: symbols/mini-rack
+      linux: symbols/penguin
+      living-room: symbols/sofa
+      map: symbols/sitemap
+      mini-rack: symbols/server-rack
       mobile: symbols/tablet-smartphone
-      monitor: symbols/square-activity
+      monitor: symbols/activity
       nas: symbols/server-nas
-      native: symbols/linux
-      network: symbols/lan-outline 
+      native: symbols/penguin
+      network: symbols/lan 
       new: symbols/badge-alert
       office: symbols/desk-lamp
       pc: symbols/personal-computer
       podman: services/linux-containers
       podman_host: services/linux-containers
-      policy: symbols/policy
-      print: symbols/print-outline
-      printer-cart: symbols/print-outline
-      remote: symbols/web-export
-      router: symbols/router-outline
-      security: symbols/security
-      server: symbols/server-outline
+      policy: symbols/file-pen-line
+      print: symbols/printer
+      printer-cart: symbols/printer
+      remote: symbols/globe-arrow
+      router: symbols/router
+      security: symbols/brick-wall-shield
+      server: symbols/server
       service: symbols/monitor-cloud
       shell: symbols/terminal
-      software: symbols/iframe
-      switch: symbols/ethernet-port-outline
-      tools: symbols/construction
+      software: symbols/desktop-landscape
+      switch: symbols/ethernet-port
+      tools: symbols/wrench
       tv-stand: symbols/tv-minimal
-      vh: symbols/host-outline
-      video: symbols/movie-outline
+      vh: symbols/host
+      video: symbols/film
       vlan: symbols/hub
       vm: symbols/layers
-      vpn: symbols/vpn-outline
-      windows: brands/microsoft
+      vpn: symbols/waypoints
+      windows: symbols/window
 
 # ~~~ Python Markdown Extensions ~~~
 
@@ -355,13 +354,13 @@ extra:
     Active: active
     Android: android
     Backup: backup
+    Container: container
+    Container Host: container-host
     Dashboard: dashboard
     Deprecated: deprecated
     Desktop: desktop
     Development: development
     DNS: dns
-    Docker: docker
-    Docker Host: docker_host
     Domain: domain
     Download: download
     File Share: file-share

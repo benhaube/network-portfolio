@@ -1,1 +1,5 @@
-<svg class="lucide lucide-square-terminal-icon lucide-square-terminal" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1.2,0,0,1.2,-2.4,-2.4)"><path d="m7 11 2-2-2-2" stroke="#4cae4f"/><path d="m11 13h4" stroke="#4cae4f"/><rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="#0091eb"/></g></svg>
+<svg class="lucide lucide-square-terminal-icon lucide-square-terminal" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="m5 9 2-2-2-2" stroke="#4cae4f"/>
+  <path d="m9 11h4" stroke="#4cae4f"/>
+  <rect x="1" y="1" width="18" height="18" rx="2" ry="2" stroke="#0091eb"/>
+</svg>

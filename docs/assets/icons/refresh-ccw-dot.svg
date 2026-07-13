@@ -1,1 +1,7 @@
-<svg class="lucide lucide-refresh-ccw-dot-icon lucide-refresh-ccw-dot" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1.2,0,0,1.2,-2.4,-2.4)"><path d="m21 12a9 9 0 00-9-9 9.75 9.75 0 00-6.74 2.74l-2.26 2.26" stroke="#0091eb"/><path d="m3 3v5h5" stroke="#0091eb"/><path d="m3 12a9 9 0 009 9 9.75 9.75 0 006.74-2.74l2.26-2.26" stroke="#0091eb"/><path d="m16 16h5v5" stroke="#0091eb"/><circle cx="12" cy="12" r="1" stroke="#4cae4f"/></g></svg>
+<svg class="lucide lucide-refresh-ccw-dot-icon lucide-refresh-ccw-dot" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="m19 10a9 9 0 00-9-9 9.75 9.75 0 00-6.74 2.74l-2.26 2.26" stroke="#0091eb"/>
+  <path d="m1 1v5h5" stroke="#0091eb"/>
+  <path d="m1 10a9 9 0 009 9 9.75 9.75 0 006.74-2.74l2.26-2.26" stroke="#0091eb"/>
+  <path d="m14 14h5v5" stroke="#0091eb"/>
+  <circle cx="10" cy="10" r="1" stroke="#4cae4f"/>
+</svg>

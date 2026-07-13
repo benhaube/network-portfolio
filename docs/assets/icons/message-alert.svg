@@ -1,1 +1,5 @@
-<svg class="lucide lucide-message-square-warning-icon lucide-message-square-warning" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 22.898" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-1 -2)" stroke-width="2.1818"><path d="m23.909 18.364a2.1818 2.1818 0 01-2.1818 2.1818h-14.369a2.1818 2.1818 0 00-1.5425.63927l-2.4022 2.4022a.77455.77455 0 01-1.3222-.54764v-17.767a2.1818 2.1818 0 012.1818-2.1818h17.455a2.1818 2.1818 0 012.1818 2.1818z" stroke="#0091eb"/><path d="m13 16.182h.01091" stroke="#4cae4f"/><path d="m13 7.4545v4.3636" stroke="#4cae4f"/></g></svg>
+<svg class="lucide lucide-message-square-warning-icon lucide-message-square-warning" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 20.99" xmlns="http://www.w3.org/2000/svg">
+  <path d="m21 15a2 2 0 01-2 2h-13.172a2 2 0 00-1.414.586l-2.202 2.202a.71.71 0 01-1.212-.502v-16.286a2 2 0 012-2h16a2 2 0 012 2z" stroke="#0091eb"/>
+  <path d="m11 13h.01" stroke="#4cae4f"/>
+  <path d="m11 5v4" stroke="#4cae4f"/>
+</svg>

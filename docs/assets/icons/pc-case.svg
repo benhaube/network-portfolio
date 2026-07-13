@@ -1,1 +1,6 @@
-<svg class="lucide lucide-pc-case-icon lucide-pc-case" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1.0909,0,0,1.0909,-4.3636,-1.0909)"><rect x="5" y="2" width="14" height="20" rx="2" stroke="#0091eb"/><path d="m15 14h.01" stroke="#0091eb"/><path d="m9 6h6" stroke="#4cae4f"/><path d="m9 10h6" stroke="#4cae4f"/></g></svg>
+<svg class="lucide lucide-pc-case-icon lucide-pc-case" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="14" height="20" rx="2" stroke="#0091eb"/>
+  <path d="m11 13h.01" stroke="#0091eb"/>
+  <path d="m5 5h6" stroke="#4cae4f"/>
+  <path d="m5 9h6" stroke="#4cae4f"/>
+</svg>

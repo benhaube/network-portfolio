@@ -1,1 +1,7 @@
-<svg class="lucide lucide-network-icon lucide-network" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1.0909 0 0 1.0909 -1.0909 -1.0909)"><path d="m5 15.774v-2.7736c0-.55228.44772-1 1-1h12c.55228 0 1 .44772 1 1v2.7736" stroke="#4cae4f"/><path d="m12 12v-3.7736" stroke="#4cae4f"/><rect x="16" y="16" width="6" height="6" rx="1" stroke="#0091eb"/><rect x="2" y="16" width="6" height="6" rx="1" stroke="#0091eb"/><rect x="9" y="2" width="6" height="6" rx="1" stroke="#0091eb"/></g></svg>
+<svg class="lucide lucide-network-icon lucide-network" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+  <path d="m4 15v-3a1 1 0 011-1h12a1 1 0 011 1v3" stroke="#4cae4f"/>
+  <path d="m11 11v-4" stroke="#4cae4f"/>
+  <rect x="15" y="15" width="6" height="6" rx="1" stroke="#0091eb"/>
+  <rect x="1" y="15" width="6" height="6" rx="1" stroke="#0091eb"/>
+  <rect x="8" y="1" width="6" height="6" rx="1" stroke="#0091eb"/>
+</svg>

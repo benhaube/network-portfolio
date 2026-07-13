@@ -1,0 +1,8 @@
+<svg class="lucide lucide-router-icon lucide-router" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 21.995" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="12.995" width="20" height="8" rx="2" stroke="#0091eb"/>
+  <path d="m5.01 16.995h-.01" stroke="#4cae4f"/>
+  <path d="m9.01 16.995h-.01" stroke="#4cae4f"/>
+  <path d="m14 8.995v4" stroke="#0091eb"/>
+  <path d="m16.84 6.165a4 4 0 00-5.66 0" stroke="#4cae4f"/>
+  <path d="m19.66 3.335a8 8 0 00-11.31 0" stroke="#4cae4f"/>
+</svg>

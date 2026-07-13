@@ -1,0 +1,6 @@
+<svg class="lucide lucide-monitor-cloud-icon lucide-monitor-cloud" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="m10 11a3 3 0 112.83-4h.17a2 2 0 010 4z" stroke="#4cae4f"/>
+  <path d="m11 15v4" stroke="#0091eb"/>
+  <path d="m7 19h8" stroke="#0091eb"/>
+  <rect x="1" y="1" width="20" height="14" rx="2" stroke="#0091eb"/>
+</svg>

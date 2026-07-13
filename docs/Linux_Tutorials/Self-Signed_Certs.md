@@ -51,7 +51,7 @@ After installing OpenSSL, next we need to generate a private key. Private keys a
 
     1. Replace `example.key` with your preferred file name.
 
-## :symbols-draw:&ensp;Certificate Signing Request
+## :symbols-signature:&ensp;Certificate Signing Request
 
 Now that we have a private key, we need to create a Certificate Signing Request. The CSR contains information about your server and organization. When you run the command you will be asked to enter a bunch of details. *(e.g., country, state, locality, organization name, common name (domain name), and email address)* Make sure you enter these details properly because they will be used to create the certificate. Especially, the domain name. It is very important for the domain name to match the server the certificate will be used for. 
 

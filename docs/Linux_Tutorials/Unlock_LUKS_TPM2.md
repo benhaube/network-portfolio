@@ -1,11 +1,11 @@
 ---
-icon: symbols/lock-open-outline
+icon: symbols/lock-keyhole-open
 title: Decrypt LUKS with TPM2
 subtitle: Speeding Up the Boot Process
 hide:
   - toc
 ---
-![Material Encrypted icon](../assets/icons/lock-open-outline.svg){ width=200 }
+![Material Encrypted icon](../assets/icons/lock-keyhole-open.svg){ width=200 }
 
 # Decrypt LUKS with TPM2
 *Speeding Up the Boot Process*
@@ -15,7 +15,7 @@ hide:
     Unlocking your LUKS volume with a **TPM2** provides a secure way to enable automatic decryption during boot, usually eliminating the need to type a passphrase unless the system state changes. The most common and recommended way to achieve this on modern Linux systems, especially those using LUKS2 and systemd, is by using the `systemd-cryptenroll` tool.
 
 ---
-## :symbols-release-alert-outline:&ensp;Prerequisites
+## :symbols-badge-alert:&ensp;Prerequisites
 
 **TPM2 Chip:** 
 :    Your computer must have an active **TPM2** chip. Most modern hardware does, but you may need to enable in **UEFI** settings.
@@ -158,11 +158,11 @@ hide:
         sudo dracut -f
         ```
 
-## :symbols-note-stack:&ensp;Important Notes
+## :symbols-sticky-notes:&ensp;Important Notes
 
 ???+ security
 
-    :symbols-lock-outline:&ensp;**Security vs. Convenience:** 
+    :symbols-lock-keyhole:&ensp;**Security vs. Convenience:** 
     :    This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed PCRs), certain ["Evil Maid" attacks:symbols-external-link-small:](https://en.wikipedia.org/wiki/Evil_maid_attack) might be possible.
 
     :symbols-key-round:&ensp;**Backup Key:**
@@ -172,7 +172,7 @@ hide:
         sudo systemd-cryptenroll --recovery-key /dev/your_device
         ```
  
-    :symbols-password-alt:&ensp;**TPM PIN:**
+    :symbols-rectangle-ellipsis:&ensp;**TPM PIN:**
     :    Using a **TPM PIN** in addition to the PCRs can mitigate some of these risks. This can be done by using the flag `--tpm2-with-pin=yes` with the enrollment command.
 
         ```bash linenums="1"

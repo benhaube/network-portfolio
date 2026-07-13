@@ -1,5 +1,5 @@
 ---
-icon: symbols/smb-share-outline
+icon: symbols/cloud-sync
 title: NFS
 subtitle: Network File System
 description: Remote file system access for Linux.
@@ -14,12 +14,12 @@ tags:
 hide:
   - toc
 ---
-![Material Design SMB icon](../assets/icons/smb-share.svg){ width=200 }
+![Lucide cloud-sync icon](../assets/icons/cloud-sync.svg){ width=200 }
 
 # NFS
 *Network File System*
 
-[Documentation&ensp;:symbols-documentation-outline:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-files:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -32,7 +32,7 @@ hide:
 
 + `2049`
 
-#### :symbols-link-alt:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + `192.168.50.4:/media/Quick-Storage`
 + `192.168.50.4:/media/nvme0n1p1`
@@ -40,18 +40,18 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
-    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (bhaube)"
+    + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+    + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                               | Method                            | Container Name | Image |
-| :------------------------------------------------------------------------ | :-------------------------------- | :------------- | :---- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                               | Method                              | Container Name | Image |
+| :------------------------------------------------------------------------ | :---------------------------------- | :------------- | :---- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-server-outline:&ensp;Server
+#### :symbols-server:&ensp;Server
 
 ##### Exports Entry
 
@@ -71,7 +71,7 @@ exportfs -a
 systemctl restart nfs-server
 ```
 
-#### :symbols-devices:&ensp;Clients
+#### :symbols-monitor-smartphone:&ensp;Clients
 
 ##### Systemd Unit Files
 

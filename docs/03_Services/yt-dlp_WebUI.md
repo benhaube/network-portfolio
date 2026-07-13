@@ -5,7 +5,7 @@ subtitle: Download Videos from YouTube
 description: A Web UI and RPC server for `yt-dlp`.
 tags:
   - Active
-  - Docker
+  - Container
   - Video
   - Download
   - Service
@@ -17,7 +17,7 @@ hide:
 # yt-dlp Web-UI
 *Download Videos from YouTube*
 
-[Docker Hub&ensp;:services-docker:](https://hub.docker.com/r/marcobaobao/yt-dlp-webui){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/qokelate/yt-dlp-webui/2-getting-started){ .md-button .md-button--primary }
+[Docker Hub&ensp;:services-docker:](https://hub.docker.com/r/marcobaobao/yt-dlp-webui){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/qokelate/yt-dlp-webui/2-getting-started){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -30,7 +30,7 @@ hide:
 
 + `3033`
 
-#### :symbols-link-alt:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + <http://storage-server.internal:3033>
 + <http://storage-server-2.internal:3033>
@@ -39,9 +39,9 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"yt-dlp-webui"
+    + Local Network&ensp;:symbols-move-right:&ensp;"yt-dlp-webui"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                             |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------- |
@@ -49,7 +49,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-reset-wrench:&ensp;Preparation  
+#### :symbols-wrench:&ensp;Preparation  
 
 1. Create the configuration directory:
 
@@ -84,7 +84,7 @@ hide:
 
 5. Paste the JWT into the environment variable, `JWT_SECRET`, in your Docker compose file and restart the container.
 
-#### :services-docker:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "yt-dlp.yml"

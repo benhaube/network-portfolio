@@ -1,19 +1,16 @@
 ---
-icon: symbols/dns-outline
+icon: symbols/server-dns
 title: DNS Migration
 subtitle: From Pi-hole to Technitium
 tags:
   - DNS
-  - Domain
   - Infrastructure
   - Server
   - Service
 hide:
   - toc
 ---
-![Pi-hole Icon](../assets/icons/pi-hole.svg){ width=125 }
-&nbsp;![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-light.svg#only-light){ width=100 }![material-arrow-right-bold icon](../assets/icons/arrow-right-bold-dark.svg#only-dark){ width=100 }
-&emsp;![Technitium Icon](../assets/icons/technitium.svg){ width=150 }
+![Lucide 'server' icon rotated 90&deg;](../assets/icons/dns.svg){ width=200 }
 
 # DNS Migration
 *From Pi-hole to Technitium*
@@ -27,11 +24,11 @@ hide:
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.6`
-    + [ ] Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.2`
-    + [ ] Tertiary/Failover:&ensp;[:brands-raspberry-pi:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:symbols-arrow-right-thin:&ensp;`192.168.50.3`
+    + [ ] Primary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)&ensp;:symbols-move-right:&ensp;`192.168.50.6`
+    + [ ] Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)&ensp;:symbols-move-right:&ensp;`192.168.50.2`
+    + [ ] Tertiary/Failover:&ensp;[:brands-raspberry-pi:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)&ensp;:symbols-move-right:&ensp;`192.168.50.3`
 
-## :symbols-server-outline:&ensp;Server Provisioning
+## :symbols-server:&ensp;Server Provisioning
 
 #### Debian Server
 
@@ -53,7 +50,7 @@ hide:
 3. **Set as Secondary:** 
     + [ ] Configure identical upstream servers.
 
-## :symbols-settings-sync:&ensp;Cluster Synchronization
+## :symbols-refresh-cw:&ensp;Cluster Synchronization
 
 1. **Enable Clustering:** 
     + [ ] Set the Debian VM as the **Master**.
@@ -74,7 +71,7 @@ hide:
 3. **Test Resolution:** 
     + [ ] Run `#!bash dig @[Primary-IP] google.com` and verify the `SERVER` field.
 
-## :symbols-verified-outline:&ensp;Verification & Safety Net
+## :symbols-badge-check:&ensp;Verification & Safety Net
 
 1. **Check DoT Status:** 
     + [ ] Run `#!bash dig @[Primary-IP] +short txt proto.on.quad9.net` to ensure the upstream is encrypted.
@@ -85,7 +82,7 @@ hide:
 
 ---
 
-## :symbols-graph-2:&ensp;Flowchart
+## :symbols-sitemap:&ensp;Flowchart
 
 ```mermaid {.pz-ignore}
 --8<-- "dns_migration.mmd"

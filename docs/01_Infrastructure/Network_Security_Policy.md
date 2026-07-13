@@ -1,5 +1,5 @@
 ---
-icon: symbols/policy
+icon: symbols/firewall
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 tags:
@@ -21,14 +21,14 @@ tags:
 	This infrastructure operates on the **Principle of Least Privilege**. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 ---
-## :symbols-segment:&ensp;Network Segmentation 
+## :symbols-square-split-horizontal:&ensp;Network Segmentation 
 &emsp;&emsp;&ensp;*VLAN Architecture*
 
-| Zone                                                                                            | VLAN ID  | Description                                            | Access Rules                                                                                                                                          |
-| :---------------------------------------------------------------------------------------------- | :------- | :----------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [:symbols-security:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)                      | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                                                                |
-| [:symbols-shield-person-outline:&nbsp;Guest](./IP_Address_Management.md#virtual-local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                                                          |
-| [:symbols-shield-house-outline:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)                  | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default. Strictly isolated from all other VLANs; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
+| Zone                                                                                  | VLAN ID  | Description                                            | Access Rules                                                                                                                                          |
+| :------------------------------------------------------------------------------------ | :------- | :----------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [:symbols-shield-ban:&nbsp;Trusted](./MAC_Address_Tables.md#trusted-network)          | *VLAN50* | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                                                                |
+| [:symbols-shield-user:&nbsp;Guest](./IP_Address_Management.md#virtual-local-networks) | *VLAN52* | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                                                          |
+| [:symbols-shield-house:&nbsp;IoT](./MAC_Address_Tables.md#iot-network)                | *VLAN53* | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default. Strictly isolated from all other VLANs; communication only with [Home Assistant](../03_Services/Home_Assistant.md) |
 
 ## :symbols-firewall:&ensp;Boundary Defense & Remote Access
 
@@ -63,7 +63,7 @@ tags:
 
 + Network-wide ad, tracking, and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
-## :symbols-security:&ensp;Device & Host Hardening
+## :symbols-brick-wall-shield:&ensp;Device & Host Hardening
 
 ### Operating Systems
 
@@ -113,7 +113,7 @@ tags:
 
 + The [Creality K1C](../02_Hardware/Kacey_3D-printer.md) is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 
-## :symbols-shield-house-outline:&ensp;IoT & Smart Home Integrity
+## :symbols-door-closed-locked:&ensp;IoT & Smart Home Integrity
 
 + The migration from **Google Home** to **Home Assistant** ensures that IoT devices are managed locally. 
 + By isolating VLAN 53, "phone-home" telemetry from generic IoT hardware is neutralized, preventing potential lateral movement if a device is compromised.
@@ -121,13 +121,13 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-ethernet-port-outline:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-ethernet-port:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 
 	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :symbols-graph-2:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
 
 	---
 
@@ -137,13 +137,13 @@ tags:
 
 <div class="grid cards" markdown>
 
--   :symbols-restore:{ .lg .middle }&emsp;**Disaster Recovery**
+-   :symbols-refresh-ccw-dot:{ .lg .middle }&emsp;**Disaster Recovery**
 	
 	---
 
 	[Disaster Recovery Plan](../01_Infrastructure/Disaster_Recovery_Plan.md){ .md-button }
 
--   :symbols-ip-outline:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-network-ip:{ .lg .middle }&emsp;**IP Address Management**
 
 	---
 

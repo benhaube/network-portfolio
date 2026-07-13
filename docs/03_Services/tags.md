@@ -3,7 +3,7 @@ icon: symbols/tag-outline
 title: Services Tags
 subtitle: An Index of Relevant Tags
 ---
-![Material Design web icon customized](../assets/icons/web.svg){ width=200 }
+![Lucide monitor-cloud icon](../assets/icons/monitor-cloud.svg){ width=200 }
 
 # Services Tags
 

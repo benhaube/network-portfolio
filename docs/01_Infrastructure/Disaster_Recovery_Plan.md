@@ -1,5 +1,5 @@
 ---
-icon: symbols/restore
+icon: symbols/refresh-ccw-dot
 title: Disaster Recovery Plan
 subtitle: Maintaining High Availability
 tags:
@@ -10,7 +10,7 @@ tags:
   - Monitor
   - Service
 ---
-![Material Design restore icon](../assets/icons/restore.svg){ width=200 }
+![Material Design restore icon](../assets/icons/refresh-ccw-dot.svg){ width=200 }
 
 # Disaster Recovery Plan
 *Maintaining High Availability*
@@ -30,7 +30,7 @@ tags:
 | Standard | [:services-immich:&nbsp;Immich](../03_Services/Immich.md) / Media                                                                             | Loss of access to personal archives.            | < 24 Hours                         |
 
 ---
-## :symbols-backup:&ensp;Backup Strategy
+## :symbols-cloud-upload:&ensp;Backup Strategy
 
 !!! info inline end "3-2-1 Backup Strategy"
     
@@ -65,7 +65,7 @@ tags:
 
 + Encrypted backups of the Obsidian vaults, application data, and key configuration files are synced to the secure cloud provider *([Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage))*.
 
-## :symbols-restore:&ensp;Recovery Procedures
+## :symbols-refresh-ccw-dot:&ensp;Recovery Procedures
 
 ### Node Failure &mdash; Primary DNS
 
@@ -91,7 +91,7 @@ tags:
 
 + Point the Cloudflare tunnel or local DNS records to the **ZimaOS NAS** IP.
 
-## :symbols-reset-wrench:&ensp;Testing & Maintenance
+## :symbols-wrench:&ensp;Testing & Maintenance
 
 ### Quarterly "Pull the Plug" Test
 
@@ -114,13 +114,13 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-ethernet-port-outline:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-ethernet-port:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 
 	[MAC Address Tables](../01_Infrastructure/MAC_Address_Tables.md){ .md-button }
 
--   :symbols-graph-2:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
 
 	---
 
@@ -130,13 +130,13 @@ tags:
 
 <div class="grid cards" markdown>
 
--   :symbols-ip-outline:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-network-ip:{ .lg .middle }&emsp;**IP Address Management**
 	
 	---
 
 	[IP Address Management](../01_Infrastructure/IP_Address_Management.md){ .md-button }
 
--   :symbols-policy:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-firewall:{ .lg .middle }&emsp;**Network Security**
 
 	---
 

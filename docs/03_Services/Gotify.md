@@ -6,7 +6,7 @@ subtitle: Push Notifications
 description: A simple server for sending and receiving messages in real-time per WebSocket.
 tags:
   - Active
-  - Docker
+  - Container
   - Monitor
   - New
   - Service
@@ -18,7 +18,7 @@ hide:
 # Gotify
 *Push Notifications*
 
-[GitHub&ensp;:brands-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://gotify.net/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/gotify/server){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://gotify.net/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -31,7 +31,7 @@ hide:
 
 + `8180`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://storage-server.internal:8180> &mdash; *Local Network Web-UI only*
 + <http://storage-server-2.internal:8180> &mdash; *Local Network Web-UI only*
@@ -40,22 +40,22 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (admin)"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gotify (bhaube)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (admin)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (bhaube)"
 
 #### :symbols-message-square-warning:&ensp;Notifications
 
 | Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [:symbols-backup:&nbsp;Backup Alerts](#backup-alerts)                                                                           | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
+| [:symbols-cloud-upload:&nbsp;Backup Alerts](#backup-alerts)                                                                     | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
 | [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
 | [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
-| [:symbols-router-outline:&nbsp;Router Alerts](#router-alerts)                                                                   | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
+| [:symbols-router:&nbsp;Router Alerts](#router-alerts)                                                                           | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
 | [:symbols-terminal-alt:&nbsp;SSH Alerts](#ssh-alerts)                                                                           | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and client IP address.                    |
 | [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
 | [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                  |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :--------------------- |
@@ -63,7 +63,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :services-docker:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "gotify.yml"
@@ -71,7 +71,7 @@ hide:
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
 
-#### :symbols-backup:&ensp;Backup Alerts
+#### :symbols-cloud-upload:&ensp;Backup Alerts
 
 1. Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`. 
 
@@ -113,7 +113,7 @@ hide:
 5. Click the "Test" button to send a test notification.
 6. Click "Submit" to save the new notification.
 
-#### :symbols-router-outline:&ensp;Router Alerts
+#### :symbols-router:&ensp;Router Alerts
 
 ##### WAN IP Change
 
@@ -139,7 +139,7 @@ hide:
           
           [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
-          + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
+          + Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
 
 3. Make the script executable:
 
@@ -395,7 +395,7 @@ hide:
 
 :    The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
 
-    [Zima Cron&ensp;:symbols-cron:](https://github.com/chicohaager/cron){ .md-button }
+    [Zima Cron&ensp;:symbols-clock-fading:](https://github.com/chicohaager/cron){ .md-button }
 
 ##### AppData Backup
 

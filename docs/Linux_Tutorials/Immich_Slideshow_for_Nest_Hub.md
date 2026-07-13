@@ -16,7 +16,7 @@ hide:
     **Infrastructure:** 
     
     + [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) *([Immich](../03_Services/Immich.md))* 
-    + [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
+    + [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *([Home Assistant](../03_Services/Home_Assistant.md), [Cloudflared](../03_Services/Cloudflared.md) Tunnel)*
 
 ---
 
@@ -34,9 +34,9 @@ hide:
 2.  **Deletion *(Desktop)*:**
     + **Manual:** 
         + **Go to:**&nbsp;[Google Photos:symbols-external-link-small:](https://photos.google.com) 
-        + :symbols-mouse-left:&nbsp;first photo&emsp;:symbols-arrow-right-thin:&emsp;:symbols-mouse::symbols-arrow-down-thin:&emsp;:symbols-arrow-right-thin:&emsp;++shift++&nbsp;+&nbsp;:symbols-mouse-left:&nbsp;last photo&emsp;:symbols-arrow-right-thin:&emsp;++del++
+        + :symbols-mouse-left:&nbsp;first photo&emsp;:symbols-move-right:&emsp;:symbols-mouse::symbols-arrow-down:&emsp;:symbols-move-right:&emsp;++shift++&nbsp;+&nbsp;:symbols-mouse-left:&nbsp;last photo&emsp;:symbols-move-right:&emsp;++del++
     + **Console Script *(Advanced)*:** 
-        + Open Chrome DevTools:&ensp;++f12++&ensp;:symbols-arrow-right-thin:&ensp;Console. 
+        + Open Chrome DevTools:&ensp;++f12++&ensp;:symbols-move-right:&ensp;Console. 
         + Paste script to auto-select/delete. 
 3.  **Finalize:** 
     + Empty "Trash/Bin" to reclaim storage.
@@ -49,13 +49,13 @@ hide:
 
 1. If the script selects them but doesn't delete them, just click the :symbols-trash-2: icon yourself after it does the hard work of selecting everything.
 
-## :symbols-server-outline:&ensp;Server-Side Setup 
+## :symbols-server:&ensp;Server-Side Setup 
 &emsp;&emsp;&ensp;*ZimaOS NAS*
 
 **Goal:**
 :   Replicate "Live Albums" and generate the Nest Hub interface.
 
-### :services-docker:&ensp;Docker Compose Snippet
+### :symbols-file-code-corner:&ensp;Docker Compose Snippet
 
 Add these services to your existing Immich stack or a new stack.
 
@@ -76,7 +76,7 @@ Place this in the same folder as your docker-compose file.
 --8<-- "immich-frame-config.json"
 ```
 
-## :symbols-web:&ensp;Network & Cloudflare
+## :symbols-globe:&ensp;Network & Cloudflare
 
 **Goal:**
 :   Allow Nest Hubs to load the frame securely.
@@ -84,8 +84,8 @@ Place this in the same folder as your docker-compose file.
 1. **Tunnel:** 
     + Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081` using the [Cloudflare](../03_Services/Cloudflared.md) tunnel.
 2. **WAF Rules *(Critical)*:**
-    + **Go to:**&ensp;Cloudflare Dashboard&ensp;:symbols-arrow-right-thin:&ensp;Security&ensp;:symbols-arrow-right-thin:&ensp;WAF&ensp;:symbols-arrow-right-thin:&ensp;Custom Rules
-    + **Create Rule:**&ensp;If Hostname equals `frame.rac3r4life.online`&ensp;:symbols-arrow-right-thin:&ensp;**Skip** "Super Bot Fight Mode" and "Managed Challenge"
+    + **Go to:**&ensp;Cloudflare Dashboard&ensp;:symbols-move-right:&ensp;Security&ensp;:symbols-move-right:&ensp;WAF&ensp;:symbols-move-right:&ensp;Custom Rules
+    + **Create Rule:**&ensp;If Hostname equals `frame.rac3r4life.online`&ensp;:symbols-move-right:&ensp;**Skip** "Super Bot Fight Mode" and "Managed Challenge"
         + _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
 ## :symbols-home-automation:&ensp;Automation 

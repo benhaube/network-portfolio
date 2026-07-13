@@ -5,19 +5,19 @@ subtitle: Sync with CouchDB
 description: Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 tags:
   - Active
-  - Docker
+  - Container
   - File Share
   - Remote Access
   - Service
 hide:
   - toc
 ---
-![Obsidian Logo](../assets/icons/obsidian.svg){ width=200 }&nbsp;![CouchDB Logo](../assets/icons/couchdb.svg){ width=75 }
+![Obsidian Logo](../assets/icons/obsidian.svg){ width=200 }![CouchDB Logo](../assets/icons/couchdb.svg){ width=75 }
 
 # Obsidian LiveSync
 *Sync with CouchDB*
 
-[GitHub&ensp;:brands-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -30,9 +30,9 @@ hide:
 
 + `5984`
 
-#### :symbols-link-alt:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
-+ :symbols-cogs: Settings Web UI: 
++ :symbols-monitor-cog: Settings Web UI: 
     + <http://storage-server.internal:5984/_utils>
     + <http://storage-server-2.internal:5984/_utils>
 + :symbols-database: Database:
@@ -42,9 +42,9 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Obsidian LiveSync"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Obsidian LiveSync"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name      | Image           |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------------ | :-------------- |
@@ -52,7 +52,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-server-outline:&ensp;Server
+#### :symbols-server:&ensp;Server
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "obsidian-livesync.yml"
@@ -64,7 +64,7 @@ hide:
 --8<-- "couchdb-local.ini"
 ```
 
-#### :symbols-devices:&ensp;Clients
+#### :symbols-monitor-smartphone:&ensp;Clients
 
 ```json {title=".obsidian/plugins/obsidian-livesync/data.json" linenums="1" .mono-title}
 --8<-- "obsidian-livesync_data.json"

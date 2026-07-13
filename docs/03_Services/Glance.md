@@ -5,7 +5,7 @@ subtitle: Server Dashboard
 description: A self-hosted dashboard that puts all your feeds in one place. 
 tags:
   - Active
-  - Docker
+  - Container
   - Dashboard
   - Monitor
   - Network
@@ -19,7 +19,7 @@ hide:
 # Glance
 *Server Dashboard*
 
-[GitHub&ensp;:brands-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -32,7 +32,7 @@ hide:
 
 + `8580`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://glance.internal>
 + <http://pi-server.internal:8580/>
@@ -40,18 +40,18 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Admin"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance User (bhaube)"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance User (rpereira)"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Server Secret"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Glance Admin"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Glance User (bhaube)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Glance User (rpereira)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 ???+ change "Image Migration"
 
-    :symbols-calendar-event:&ensp;**Date:** Monday, April 27 2026 <br>
-    :symbols-swap-horizontal:&ensp;**Change:** Using a forked Docker image <br>
-    :symbols-help:&ensp;**Reason:** Active development, additional features
+    :symbols-calendar-clock:&ensp;**Date:** Monday, April 27 2026 <br>
+    :symbols-arrow-right-left:&ensp;**Change:** Using a forked Docker image <br>
+    :symbols-circle-question-mark:&ensp;**Reason:** Active development, additional features
 
     ---
 
@@ -59,20 +59,20 @@ hide:
  
     :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuration is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image. 
  
-    [:symbols-arrow-down-thin:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down-thin:](#glance-config-file)
+    [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#glance-config-file)
 
-| Host Device                                                                            | Method                                | Container Name | Image                       |
-| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
-|                                                                                        | :services-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
+| Host Device                                                                    | Method                                | Container Name | Image                       |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
+|                                                                                | :services-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 
 ??? change "User Authentication"
 
-    :symbols-calendar-event:&ensp;**Date:** Monday, April 20 2026 <br>
-    :symbols-swap-horizontal:&ensp;**Change:** Enabled user authentication <br>
-    :symbols-help:&ensp;**Reason:** Additional security
+    :symbols-calendar-clock:&ensp;**Date:** Monday, April 20 2026 <br>
+    :symbols-arrow-right-left:&ensp;**Change:** Enabled user authentication <br>
+    :symbols-circle-question-mark:&ensp;**Reason:** Additional security
 
     ---
 
@@ -80,7 +80,7 @@ hide:
  
     + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault:symbols-external-link-small:](https://vault.bitwarden.com) within the folder "Local Network". There are currently three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
-    :symbols-password:&ensp;**Passwords:**
+    :symbols-rectangle-ellipsis:&ensp;**Passwords:**
 
     !!! tip inline end
     
@@ -119,9 +119,9 @@ hide:
 
 ??? change "Widgets Directory"
 
-    :symbols-calendar-event:&ensp;**Date:** Saturday, April 18 2026 <br>
-    :symbols-swap-horizontal:&ensp;**Change:** Moved pages and widgets into separate directories. <br>
-    :symbols-help:&ensp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
+    :symbols-calendar-clock:&ensp;**Date:** Saturday, April 18 2026 <br>
+    :symbols-arrow-right-left:&ensp;**Change:** Moved pages and widgets into separate directories. <br>
+    :symbols-circle-question-mark:&ensp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
 
     ---
 
@@ -147,13 +147,13 @@ hide:
                   - $include: /app/config/widgets/search.yml
             ```
 
-    :symbols-widgets-outline:&ensp;**Widgets:**
+    :symbols-widgets:&ensp;**Widgets:**
  
     + To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository. 
  
         [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
-#### :services-docker:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "glance-compose.yml"
@@ -184,7 +184,7 @@ hide:
 
       [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
-      + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Server Secret"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
 4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 
@@ -219,7 +219,7 @@ hide:
 
       [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
 
-      + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Glance Server Secret"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
 4.    The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 
@@ -254,7 +254,7 @@ hide:
 
 1. Show a title header on mobile device web browsers.
 2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
-3.    :symbols-bug-report-outline:&ensp;**Bug:** 
+3.    :symbols-bug:&ensp;**Bug:** 
 
       + Disabled **WireGuard** community widget for now due to bugs causing page instability and other issues. 
 

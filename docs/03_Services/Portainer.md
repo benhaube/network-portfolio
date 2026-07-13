@@ -7,7 +7,7 @@ status: inactive
 tags:
   - Inactive
   - Dashboard
-  - Docker
+  - Container
   - Download
   - Shell
   - Tools
@@ -20,7 +20,7 @@ hide:
 # Portainer-EE
 *Container Management*
 
-[GitHub&ensp;:brands-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.portainer.io/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/portainer/portainer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.portainer.io/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -36,7 +36,7 @@ hide:
 + Agent:
     + `9001`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + Hub: 
     + ~~<https://portainer.internal>~~
@@ -48,26 +48,26 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Portainer"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Portainer"
 + [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 + 2FA / MFA:
-    + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
+    + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
     + :symbols-clock:&nbsp;TOTP 
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 ##### Hub
 
-| Host Device                                                                                | Method                                | Container Name | Image                        |
-| :----------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server-outline:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
+| Host Device                                                                        | Method                                | Container Name | Image                        |
+| :--------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
 
 ##### Agent
 
-| Host Device                                                                                    | Method                                | Container Name    | Image                 |
-| :--------------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
-| [:symbols-server-outline:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
-| [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)                  | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| Host Device                                                                            | Method                                | Container Name    | Image                 |
+| :------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
+| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_Hardware/ZimaBoard_2_NAS.md)          | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
 
 ### :symbols-settings:&ensp;Configuration  
 

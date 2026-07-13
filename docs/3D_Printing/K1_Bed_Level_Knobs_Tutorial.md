@@ -11,7 +11,7 @@ hide:
 # Manual Bed Leveling Mod
 *Fine Tune Your Bed Level*
 
-[Creality K1C&ensp;:symbols-printer-3d-nozzle-outline:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality K1C&ensp;:symbols-printer-3d-nozzle:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! question
 
@@ -27,7 +27,7 @@ hide:
 
 !!! note inline end "Installation Note"
 
-    :symbols-fan-alt:&ensp;**Graphite Bed & Bed Fans:**
+    :symbols-fan:&ensp;**Graphite Bed & Bed Fans:**
     :     If you plan to install a graphite heated bed upgrade, or if you want to increase your chamber temperature for ABS / ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
 
         [Graphite Bed Kit&ensp;:brands-r3men:](https://www.r3men.com/products/graphite-heated-bed-for-creality-k1-k1c-k1se?ref=3dphub){ .md-button }
@@ -120,11 +120,11 @@ hide:
 
 4. [ ] Save *(if you edited `printer.cfg`)* and restart the printer to apply the changes.
 
-## :symbols-help:&ensp;How to Use
+## :symbols-circle-question-mark:&ensp;How to Use
 
 !!! note inline end 
 
-    :symbols-heat:&ensp;**Preheating the Bed:**
+    :symbols-waves-vertical:&ensp;**Preheating the Bed:**
     :     Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade. 
 
 1. [ ] Home the printer.
@@ -182,6 +182,6 @@ hide:
     **Error `key60`:**
     :     If you are doing this modification with the factory load cells *(bed mesh probe)* and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
 
-#### :symbols-link-alt:&ensp;References and Resources
+#### :symbols-link:&ensp;References and Resources
 
 [Klipper Docs&ensp;:services-klipper:](https://www.klipper3d.org){ .md-button }&emsp;[Fluidd Docs&ensp;:services-fluidd:](https://docs.fluidd.xyz/){ .md-button }&emsp;[Mainsail Docs&ensp;:services-mainsail:](https://docs.mainsail.xyz/){ .md-button }

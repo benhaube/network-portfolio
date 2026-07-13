@@ -1,5 +1,5 @@
 ---
-icon: services/klipper
+icon: symbols/api
 title: Moonraker
 subtitle: The Klipper Web API
 description: Web API server for Klipper. 
@@ -12,13 +12,12 @@ tags:
 hide:
   - toc
 ---
-![Klipper logo](../assets/icons/klipper-light.svg#only-light){ width=250 }
-![Klipper logo](../assets/icons/klipper.svg#only-dark){ width=250 }
+![Custom 'api' icon made with the Lucide design guidelines](../assets/icons/api.svg){ width=200 }
 
 # Moonraker
 *The Klipper Web API*
 
-[GitHub&ensp;:brands-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -31,7 +30,7 @@ hide:
 
 + `7125`
 
-#### :symbols-link-alt:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + <http://kacey.internal:7125>
 + <http://192.168.50.153:7125>
@@ -39,13 +38,13 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                            | Container Name | Image |
-| :---------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                             | Method                              | Container Name | Image |
+| :-------------------------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

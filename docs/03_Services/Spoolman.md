@@ -4,7 +4,7 @@ title: Spoolman
 subtitle: Filament Inventory Management
 tags:
   - Active
-  - Docker
+  - Container
   - Inventory
   - 3D-Printer
   - Service
@@ -16,7 +16,7 @@ hide:
 # Spoolman
 *Filament Inventory Management*
 
-[GitHub&ensp;:brands-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -29,7 +29,7 @@ hide:
 
 + `7912`
 
-#### :symbols-link-alt:&ensp;URL / Access   
+#### :symbols-link:&ensp;URL / Access   
 
 + <http://storage-server.internal:7912/>
 + <http://storage-server-2.internal:7912/>
@@ -39,7 +39,7 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                            |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------------- |

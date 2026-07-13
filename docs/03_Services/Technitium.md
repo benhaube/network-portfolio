@@ -9,7 +9,6 @@ tags:
   - DNS
   - Infrastructure
   - Network
-  - Domain
   - Native
   - New
   - Service
@@ -21,7 +20,7 @@ hide:
 # Technitium
 *Authoritative & Recursive DNS*
 
-[GitHub&ensp;:brands-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/TechnitiumSoftware/DnsServer){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -36,29 +35,29 @@ hide:
 + `443`
 + `5380`
 
-#### :symbols-link-alt:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
-+ :symbols-server-outline:&nbsp;Debian Server
++ :symbols-server:&nbsp;Debian Server
     + `192.168.50.6` &mdash; First DNS server
     + <http://debian-vm.internal:5380>
-+ :symbols-server-outline:&nbsp;Pi 4B Server
++ :symbols-server:&nbsp;Pi 4B Server
     + `192.168.50.2` &mdash; Second DNS server
     + <http://pi-server.internal:5380>
 
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Technitium"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
 + [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 + 2FA / MFA:
     + :symbols-clock:&nbsp;TOTP 
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                            | Method                            | Container Name | Image |
-| :------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)      | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                    | Method                              | Container Name | Image |
+| :----------------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)      | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -68,7 +67,7 @@ hide:
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 ```
 
-#### :symbols-backup:&ensp;Settings Backup
+#### :symbols-cloud-upload:&ensp;Settings Backup
 
 :    The settings for both Technitium DNS server nodes are backed up in `.tar.gz` archives and stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). Listed below are the directories where each settings backup archive are located. Each archive name has the server's FQDN and the date & time of the settings export. *(e.g., `pi-server.internal_2026-05-29_16-00-14_backup.tar.gz`)*
 

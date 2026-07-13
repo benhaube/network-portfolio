@@ -5,7 +5,7 @@ subtitle: Port Monitoring & Discovery
 description: A self-hosted, real-time port monitoring and discovery tool.
 tags:
   - Active
-  - Docker
+  - Container
   - Monitor
   - Network
   - Infrastructure
@@ -19,7 +19,7 @@ hide:
 # Portracker
 *Port Monitoring & Discovery*
 
-[GitHub&ensp;:brands-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/mostafa-wahied/portracker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/mostafa-wahied/portracker){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -32,7 +32,7 @@ hide:
 
 + `4999`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 Pi 4B Server:
 
@@ -49,13 +49,13 @@ ZimaOS NAS:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                    | Method                                | Container Name | Image                             |
-| :--------------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                      | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)         | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server-outline:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| Host Device                                                                            | Method                                | Container Name | Image                             |
+| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)         | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `portracker`   | `mostafawahied/portracker:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 

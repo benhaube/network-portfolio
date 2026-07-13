@@ -1,14 +1,14 @@
 !!! config inline "Critical Configurations"
 
-    **:symbols-web-clock:&ensp;Chrony:**
+    **:symbols-clock-refresh-cw:&ensp;Chrony:**
 
     :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with [Chrony](../03_Services/Chrony.md). The Chrony service is hosted on the main router, [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md).
    
-    **:symbols-notes:&ensp;Logs:**
+    **:symbols-logs:&ensp;Logs:**
 
     :    Logs are configured with `log2ram` to reduce wear on the MicroSD card.
  
-    **:symbols-mail-asterisk:&ensp;Email Notifications:**
+    **:symbols-mail-warning:&ensp;Email Notifications:**
 
     :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation.
 
@@ -23,7 +23,7 @@
 
 + Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_Services/Dockge.md)
 
-#### :symbols-backup:&ensp;Backup Policy
+#### :symbols-cloud-upload:&ensp;Backup Policy
 
 + An image of the MicroSD card is stored on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
     + Path: `/media/Quick-Storage/Backup/<hostname>`

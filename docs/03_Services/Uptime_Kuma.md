@@ -5,7 +5,7 @@ subtitle: A Fancy Monitoring Tool
 description: A fancy self-hosted service monitoring tool.
 tags:
   - Active
-  - Docker
+  - Container
   - Monitor
   - Network
   - Service
@@ -18,7 +18,7 @@ hide:
 # Uptime Kuma
 *A Fancy Monitoring Tool*
 
-[GitHub&ensp;:brands-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://github.com/louislam/uptime-kuma/wiki){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/louislam/uptime-kuma){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://github.com/louislam/uptime-kuma/wiki){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -31,26 +31,26 @@ hide:
 
 + `3001`
 
-#### :symbols-link-alt:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
-+ :symbols-lan-outline:&nbsp;LAN Access
++ :symbols-lan:&nbsp;LAN Access
     + <https://uptime.internal>
     + <http://pi-server.internal:3001>
-+ :symbols-web:&nbsp;WAN Access
++ :symbols-globe:&nbsp;WAN Access
     + <https://uptime.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Uptime Kuma"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
 + 2FA / MFA:
     + :symbols-clock:&nbsp;TOTP 
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                            | Method                                | Container Name | Image                    |
-| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------- |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `uptime-kuma`  | `louislam/uptime-kuma:2` |
+| Host Device                                                                    | Method                                | Container Name | Image                    |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `uptime-kuma`  | `louislam/uptime-kuma:2` |
 
 ### :symbols-settings:&ensp;Configuration 
 

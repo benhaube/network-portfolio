@@ -5,7 +5,7 @@ subtitle: All of the Data
 description: Visualization of real-time track data and telemetry synced to F1 live and replays.
 tags:
   - Active
-  - Docker
+  - Container
   - Service
 hide:
   - toc
@@ -30,7 +30,7 @@ hide:
 + `3000`
 + `8000`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + Backend: 
     + <http://storage-server.internal:8000>
@@ -42,7 +42,7 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                                                 |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :---------------------------------------------------- |

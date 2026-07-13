@@ -1,5 +1,5 @@
 ---
-icon: symbols/web-clock
+icon: symbols/clock-refresh-cw
 title: Chrony
 subtitle: NTP Server
 description: Advanced, lightweight NTP client and server.
@@ -11,12 +11,12 @@ tags:
 hide:
   - toc
 ---
-![Chrony Icon](../assets/icons/chrony.svg){ width=200 }
+![Chrony Icon](../assets/icons/clock-refresh-cw-color.svg){ width=200 }
 
 # Chrony
 *NTP Server*
 
-[Gitlab&ensp;:brands-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://chrony-project.org/documentation.html){ .md-button .md-button--primary }
+[Gitlab&ensp;:brands-gitlab:](https://gitlab.com/chrony/chrony){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://chrony-project.org/documentation.html){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -29,7 +29,7 @@ hide:
 
 + `123`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + `192.168.50.1:123`
 + `asusrouter.internal:123`
@@ -37,24 +37,24 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ASUS Router"
-    + SSH Key&ensp;:symbols-arrow-right-thin:&ensp;"admin@asusrouter"
+    + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
+    + SSH Key&ensp;:symbols-move-right:&ensp;"admin@asusrouter"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                            | Container Name | Image |
-| :----------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                              | Container Name | Image |
+| :--------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-server-outline:&ensp;Server
+#### :symbols-server:&ensp;Server
 
 ```nt {title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1" .mono-title}
 --8<-- "chrony.conf"
 ```
 
-#### :symbols-devices:&ensp;Clients
+#### :symbols-monitor-smartphone:&ensp;Clients
 
 ```nt {title="/etc/chrony.conf" linenums="1" .mono-title}
 --8<-- "chrony-client.conf"

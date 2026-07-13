@@ -1,12 +1,12 @@
 ---
-icon: symbols/settings-sync
+icon: symbols/refresh-cw
 title: Nebula-Sync
 subtitle: Synchronize Pi-hole
 description: Synchronize configuration between multiple Pi-hole instances.
 status: deprecated
 tags:
   - Deprecated
-  - Docker
+  - Container
   - DNS
   - Infrastructure
   - Network
@@ -14,12 +14,12 @@ tags:
 hide:
   - toc
 ---
-![Nebula Sync Icon](../assets/icons/settings-sync.svg){ width=200 }
+![Nebula Sync Icon](../assets/icons/refresh-cw.svg){ width=200 }
 
 # Nebula-Sync
 *Synchronize Pi-hole*
 
-[GitHub&ensp;:brands-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/lovelaze/nebula-sync){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/lovelaze/nebula-sync){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -32,7 +32,7 @@ hide:
 
 + `N/A`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + N/A
 
@@ -41,11 +41,11 @@ hide:
 + :services-docker:&nbsp;Docker Compose: 
     + `compose.yml`
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                | Method                                | Container Name | Image                                 |
-| :----------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
-| [:symbols-server-outline:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
+| Host Device                                                                        | Method                                | Container Name | Image                                 |
+| :--------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

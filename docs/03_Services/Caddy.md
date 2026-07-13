@@ -6,7 +6,6 @@ description: Lightweight, open-source Web server written in Go. Used as a *rever
 status: new
 tags:
   - Active
-  - Domain
   - DNS
   - Network
   - Infrastructure
@@ -21,7 +20,7 @@ hide:
 # Caddy
 *Reverse-Proxy Server*
 
-[GitHub&ensp;:brands-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/caddyserver/caddy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://caddyserver.com/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -35,7 +34,7 @@ hide:
 + `80`
 + `443`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://pi-zero.internal>
 
@@ -43,11 +42,11 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                | Method                                        | Container Name | Image |
-| :----------------------------------------------------------------------------------------- | :-------------------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
+| Host Device                                                                        | Method                                          | Container Name | Image |
+| :--------------------------------------------------------------------------------- | :---------------------------------------------- | :------------- | :---- |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-penguin:&nbsp;Native Linux *(Systemd)* | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

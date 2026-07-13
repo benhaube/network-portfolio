@@ -6,7 +6,7 @@ subtitle: Network Traffic Probe
 description: Web-based traffic and security network traffic monitoring.
 tags:
   - Inactive
-  - Docker
+  - Container
   - Monitor
   - Network
   - Service
@@ -14,12 +14,12 @@ tags:
 hide:
   - toc
 ---
-![ntop Logo](../assets/icons/ntop.svg){ width=250 }
+![ntop Logo](../assets/icons/ntop.svg){ width=200 }
 
 # ntopng
 *Network Traffic Probe*
 
-[GitHub&ensp;:brands-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://www.ntop.org/guides/ntopng/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://www.ntop.org/guides/ntopng/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -33,7 +33,7 @@ hide:
 + `3000`
 + `5556`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://192.168.50.4:3000>
 + <http://storage-server.internal:3000>
@@ -43,7 +43,7 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------- |

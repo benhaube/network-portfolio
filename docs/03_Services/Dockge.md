@@ -6,7 +6,7 @@ description: A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml`
 tags:
   - Active
   - Dashboard
-  - Docker
+  - Container
   - Download
   - Shell
   - Tools
@@ -20,7 +20,7 @@ hide:
 # Dockge
 *Docker Management*
 
-[GitHub&ensp;:brands-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -33,7 +33,7 @@ hide:
 
 + `5001`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://pi-server.internal:5001>
 + <http://pi-zero.internal:5001>
@@ -43,19 +43,19 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ debian-vm"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ pi-server"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ pi-zero"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Dockge @ storage-server"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ debian-vm"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-server"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-zero"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ storage-server"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                | Method                                | Container Name    | Image                   |
-| :----------------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :---------------------- |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                  | :services-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
+| Host Device                                                                        | Method                                | Container Name    | Image                   |
+| :--------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :---------------------- |
+| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | :services-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -91,7 +91,7 @@ hide:
     docker compose pull && docker compose up -d
     ```
 
-#### :services-docker:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose
 
 ```yaml title="Debian Server | Pi 4B Server | Pi Zero 2W Server" linenums="1"
 --8<-- "dockge.yaml"

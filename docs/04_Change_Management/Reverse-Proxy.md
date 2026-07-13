@@ -6,7 +6,6 @@ tags:
   - Infrastructure
   - Server
   - Service
-  - Domain
   - DNS
 hide:
   - toc
@@ -36,7 +35,7 @@ hide:
 #### Application Hosts
 
 * [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
-* [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
+* [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)
 
 ## :symbols-file-search-corner:&ensp;Technitium DNS Records
 

@@ -19,7 +19,7 @@ hide:
 # Pi-hole
 *A DNS Sinkhole*
 
-[GitHub&ensp;:brands-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/pi-hole/pi-hole){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.pi-hole.net/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -33,7 +33,7 @@ hide:
 + Web: `80`, `443`
 + DNS: `53`
 
-#### :symbols-link-alt:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + ~~<https://pi-server.internal/admin/login>~~
 + ~~<https://pi-hole.internal/admin/login>~~
@@ -41,17 +41,17 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Pihole Admin @ pi-zero"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Pihole Admin @ pi-server"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
 + 2FA / MFA:
     + :symbols-clock:&nbsp;TOTP 
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                    | Method                            | Container Name | Image |
-| :--------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                            | Method                              | Container Name | Image |
+| :------------------------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

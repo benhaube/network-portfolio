@@ -5,7 +5,7 @@ subtitle: Test Network Performance
 description: A free & open-source HTML5 network performance estimation tool.
 tags:
   - Active
-  - Docker
+  - Container
   - Network
   - Infrastructure
   - Monitor
@@ -18,7 +18,7 @@ hide:
 # OpenSpeedTest
 *Test Network Performance*
 
-[GitHub&ensp;:brands-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/openspeedtest/Speed-Test){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/openspeedtest/Speed-Test){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -31,7 +31,7 @@ hide:
 
 + `3004`
 
-#### :symbols-link-alt:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
 + <https://openspeedtest.internal>
 + <http://storage-server.internal:3004>
@@ -41,7 +41,7 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name  | Image                  |
 | :------------------------------------------------------------------------ | :------------------------------------ | :-------------- | :--------------------- |

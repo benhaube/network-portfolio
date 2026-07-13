@@ -5,7 +5,7 @@ subtitle: Network Documentation
 description: The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 tags:
   - Active
-  - Docker
+  - Container
   - Service
 hide:
   - toc
@@ -15,7 +15,7 @@ hide:
 # Nginx
 *Network Documentation*
 
-[GitHub&ensp;:brands-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -28,7 +28,7 @@ hide:
 
 + `8080`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://storage-server.internal:8080>
 + <http://storage-server-2.internal:8080>
@@ -38,7 +38,7 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name          | Image          |
 | :------------------------------------------------------------------------ | :------------------------------------ | :---------------------- | :------------- |

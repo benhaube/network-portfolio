@@ -6,7 +6,7 @@ description: An inventory and organization system built for the home user.
 status: new
 tags:
   - Active
-  - Docker
+  - Container
   - Inventory
   - New
   - Service
@@ -31,7 +31,7 @@ hide:
 
 + `3100`
 
-#### :symbols-link-alt:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + <http://storage-server.internal:3100>
 + <http://storage-server-2.internal:3100>
@@ -40,9 +40,9 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Homebox"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Homebox"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                                   |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :-------------------------------------- |

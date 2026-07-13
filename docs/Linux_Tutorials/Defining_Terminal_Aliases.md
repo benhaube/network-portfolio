@@ -5,7 +5,7 @@ subtitle: Increase Productivity
 hide:
   - toc
 ---
-![Material Design Console icon](../assets/icons/console.svg){ width=200 }
+![Lucide terminal icon](../assets/icons/console.svg){ width=200 }
 
 # Defining Bash Aliases
 *Increase Productivity*
@@ -15,7 +15,7 @@ hide:
     **What are terminal aliases?**
     :     When operating in a GNU / Linux terminal environment, aliases are an indispensable necessity to speed up your workflow. You can create an alias to eliminate the need to memorize the required arguments, you can combine several commands into an easy shortcut, you can automatically fix common typos, and many more. This guide will show you how to set up useful terminal aliases on both **Fedora / RHEL** and **Debian / Ubuntu** based GNU / Linux distributions. 
 
-[:symbols-arrow-down-thin:&thinsp;Jump to **Fedora / RHEL** Instructions&thinsp;:symbols-arrow-down-thin:](#fedora-rhel-based-distributions)
+[:symbols-arrow-down:&thinsp;Jump to **Fedora / RHEL** Instructions&thinsp;:symbols-arrow-down:](#fedora-rhel-based-distributions)
 
 ---
 ## :symbols-debian:&ensp;Debian / Ubuntu Based Distributions

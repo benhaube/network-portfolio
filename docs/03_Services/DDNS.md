@@ -1,24 +1,23 @@
 ---
-icon: symbols/web-ip
+icon: symbols/globe-ip
 title: DDNS
 subtitle: Provided by addr.tools
 tags:
   - Active
   - Native
   - DNS
-  - Domain
   - Infrastructure
   - Network
   - Service
 hide:
   - toc
 ---
-![Material Design 'web-ip' icon ](../assets/icons/web-ip.svg){ width=200 }
+![Custom Lucide-style globe icon](../assets/icons/globe-ip.svg){ width=200 }
 
 # DDNS
 *Provided by addr.tools*
 
-[GitHub&ensp;:brands-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools&ensp;:services-addr:](https://addr.tools){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools&ensp;:symbols-terminal:](https://addr.tools){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -30,20 +29,20 @@ hide:
 
 + `N/A`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://rac3r4life.myaddr.dev>
 
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                            | Container Name | Image |
-| :----------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                              | Container Name | Image |
+| :--------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -71,7 +70,7 @@ hide:
           
           [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
-          + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
+          + Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
 
 3. Make the script executable:
 
@@ -103,7 +102,7 @@ hide:
           
           [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
 
-          + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"DDNS Key (myaddr.tools)"
+          + Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
     
     2. The validation string provided by Certbot.
 

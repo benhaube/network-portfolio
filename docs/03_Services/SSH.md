@@ -18,7 +18,7 @@ hide:
 # SSH
 *Secure Shell*
 
-[Documentation&ensp;:symbols-documentation-outline:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
+[Documentation&ensp;:symbols-files:](https://www.openssh.org/manual.html){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -31,18 +31,18 @@ hide:
 
 + `22`
 
-#### :symbols-link-alt:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
-+ :symbols-router-outline:&nbsp;ASUS RT-BE92U
++ :symbols-router:&nbsp;ASUS RT-BE92U
     + `192.168.50.1:22` 
     + `asusrouter.internal:22`
-+ :symbols-server-outline:&nbsp;Debian Server
++ :symbols-server:&nbsp;Debian Server
     + `192.168.50.6:22` 
     + `debian-vm.internal:22` 
-+ :symbols-server-outline:&nbsp;Pi 4B Server
++ :symbols-server:&nbsp;Pi 4B Server
     + `192.168.50.2:22` 
     + `pi-server.internal:22`
-+ :symbols-server-outline:&nbsp;Pi Zero 2W Server
++ :symbols-server:&nbsp;Pi Zero 2W Server
     + `192.168.50.3:22` 
     + `pi-zero.internal:22` 
 + :symbols-server-nas:&nbsp;ZimaOS NAS
@@ -50,34 +50,34 @@ hide:
     + `192.168.50.5:22` 
     + `storage-server.internal:22` 
     + `storage-server-2.internal:22`
-+ :symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer
++ :symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer
     + `192.168.50.153:22` 
     + `kacey.internal:22` 
 
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"ASUS RT-BE92U (Admin)"
-    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"debian-vm (server-admin)"
-    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-server (admin)"
-    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"pi-zero (admin)"
-    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
-    + SSH keys&ensp;:symbols-arrow-right-thin:&ensp;"Kacey (root)"
+    + SSH keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE92U (Admin)"
+    + SSH keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
+    + SSH keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
+    + SSH keys&ensp;:symbols-move-right:&ensp;"pi-zero (admin)"
+    + SSH keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+    + SSH keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                     | Method                            | Container Name | Image |
-| :---------------------------------------------------------------------------------------------- | :-------------------------------- | :------------- | :---- |
-| [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                  | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)               | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)          | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)      | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                       | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-printer-3d-nozzle-outline:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-linux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                             | Method                              | Container Name | Image |
+| :-------------------------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                  | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)               | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)          | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md)      | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)               | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-server-outline:&ensp;Servers
+#### :symbols-server:&ensp;Servers
 
 !!! tip 
 
@@ -163,7 +163,7 @@ hide:
 
 --8<-- "zima-ssh.md"
 
-#### :symbols-devices:&ensp;Clients
+#### :symbols-monitor-smartphone:&ensp;Clients
 
 ##### Bitwarden SSH Key Agent
 

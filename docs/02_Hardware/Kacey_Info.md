@@ -1,5 +1,5 @@
 ---
-icon: brands/creality-v2
+icon: symbols/printer-3d-nozzle
 title: More Kacey Info
 subtitle: Detailed Configuration Info
 tags:
@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Creality Logo](../assets/icons/creality-v2.svg){ width=200 }
+![Custom 3D-printer nozzle icon using Lucide design guidelines](../assets/icons/printer-3d-nozzle.svg){ width=200 }
 
 # More Kacey Info
 *Detailed Configuration Info*
@@ -26,19 +26,19 @@ hide:
 
 :    Creality^&copy;^ K1C
 
-#### :symbols-deployed-code:&ensp;Build Volume
+#### :symbols-box:&ensp;Build Volume
 
 :    `220x220x250`
 
-#### :symbols-graph-8:&ensp;Revision
+#### :symbols-git-branch:&ensp;Revision
 
 :    v2.0.5    
 
-#### :symbols-calendar-today:&ensp;Create Date
+#### :symbols-calendar-clock:&ensp;Create Date
 
 :    2023/09/05
 
-#### :symbols-memory-alt:&ensp;Printer MCU
+#### :symbols-memory-stick:&ensp;Printer MCU
 
 + Nozzle:
     + *Chip:* GD32F303CBT6
@@ -50,7 +50,7 @@ hide:
     + *Chip:* GD32F303RET6
     + *Version:* CR4CU220812S12
 
-## :symbols-lan-outline:&ensp;Network
+## :symbols-lan:&ensp;Network
 
 #### Moonraker
 
@@ -58,7 +58,7 @@ hide:
     + <http://k1c-a71e.internal:7125>
 + API Key: 
     + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-        + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
+        + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
 
 #### Fluidd
 
@@ -83,7 +83,7 @@ hide:
     + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
-## :symbols-frame-source:&ensp;Machine G-code 
+## :symbols-code-xml:&ensp;Machine G-code 
 
 #### :services-orca-slicer:&ensp;OrcaSlicer
 

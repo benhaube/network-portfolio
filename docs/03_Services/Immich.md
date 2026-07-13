@@ -5,7 +5,7 @@ subtitle: Bye Bye, Google Photos
 description: High performance self-hosted photo and video management solution.
 tags:
   - Active
-  - Docker
+  - Container
   - File Share
   - Download
   - Backup
@@ -18,7 +18,7 @@ hide:
 # Immich
 *Bye Bye, Google Photos*
 
-[GitHub&ensp;:brands-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -31,22 +31,22 @@ hide:
 
 + `2283`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
-+ :symbols-lan-outline: LAN Access:
++ :symbols-lan: LAN Access:
     + <https://immich.internal>
     + <http://storage-server.internal:2283>
     + <http://storage-server-2.internal:2283>
-+ :symbols-web: WAN Access:
++ :symbols-globe: WAN Access:
     + <https://immich.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Immich Admin"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Immich User"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Immich Admin"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Immich User"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name            | Image                                                            |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------------------ | :--------------------------------------------------------------- |

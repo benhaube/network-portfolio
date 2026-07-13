@@ -6,7 +6,7 @@ description: Self-hosted cloud storage and collaboration platform.
 status: deprecated
 tags:
   - Deprecated
-  - Docker
+  - Container
   - File Share
   - Service
 hide:
@@ -17,7 +17,7 @@ hide:
 # Nextcloud
 *Private Cloud*
 
-[GitHub&ensp;:brands-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.nextcloud.com/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.nextcloud.com/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -30,7 +30,7 @@ hide:
 
 + `10081`
 
-#### :symbols-link-alt:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + ~~<http://storage-server.internal:10081>~~
 + ~~<http://storage-server-2.internal:10081>~~
@@ -38,10 +38,10 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Nextcloud (admin)"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Nextcloud (bhaube)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (admin)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (bhaube)"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                                   | Method                                | Container Name | Image            |
 | :---------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------- |

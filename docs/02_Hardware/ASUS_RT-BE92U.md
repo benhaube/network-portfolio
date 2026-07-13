@@ -1,5 +1,5 @@
 ---
-icon: symbols/router-outline
+icon: symbols/router
 title: ASUS RT-BE92U
 subtitle: Wireless Router
 tags:
@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design 'router-wireless' icon](../assets/icons/router-wireless.svg){ width=200 }
+![Lucide 'router' icon](../assets/icons/router.svg){ width=200 }
 
 # ASUS RT-BE92U
 *Wireless Router*
@@ -24,67 +24,67 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox-outline:&ensp;Role
+#### :symbols-toolbox:&ensp;Role
 
 :    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin:symbols-external-link-small:](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-#### :symbols-host-outline:&ensp;Hostname
+#### :symbols-host:&ensp;Hostname
 
 + `RT-BE92U-FAF0`
 
-#### :symbols-location-outline:&ensp;Location 
+#### :symbols-map-pin:&ensp;Location 
 
 + Living-Room
 
-#### :symbols-memory:&ensp;OS / Firmware
+#### :symbols-cpu:&ensp;OS / Firmware
 
 + [:symbols-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Asus Router"
-    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"ASUS RT-BE91U (Admin)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
+    + SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
 
-## :symbols-lan-outline:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-#### :symbols-web:&ensp;WAN Connection
+#### :symbols-globe:&ensp;WAN Connection
 
-| Interface | IP Address | MAC Address         | Connected To                                                       |
-| :-------: | :--------- | :------------------ | :----------------------------------------------------------------- |
-|   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :symbols-ethernet-port-outline:&nbsp;2.5 Gb/s WAN / LAN *(port 1)* |
-|   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                                  |
+| Interface | IP Address | MAC Address         | Connected To                                               |
+| :-------: | :--------- | :------------------ | :--------------------------------------------------------- |
+|   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :symbols-ethernet-port:&nbsp;2.5 Gb/s WAN / LAN *(port 1)* |
+|   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                          |
 
 #### :symbols-hub:&ensp;Virtual Local Networks
 
-|                   VLAN                      | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
-| :-----------------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
-|      :symbols-security:&nbsp;VLAN50         | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
-| :symbols-shield-person-outline:&nbsp;VLAN52 | -        | `9.9.9.9` `149.112.112.112`   | `192.168.52.0/24` | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`  |
-| :symbols-shield-house-outline:&nbsp;VLAN53  | -        | `9.9.9.9` `149.112.112.112`   | `192.168.53.0/24` | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`  |
+|                VLAN                | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
+| :--------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
+|  :symbols-shield-ban:&nbsp;VLAN50  | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
+| :symbols-shield-user:&nbsp;VLAN52  | -        | `9.9.9.9` `149.112.112.112`   | `192.168.52.0/24` | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`  |
+| :symbols-shield-house:&nbsp;VLAN53 | -        | `9.9.9.9` `149.112.112.112`   | `192.168.53.0/24` | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`  |
 
-#### :symbols-android-wifi-lock:&ensp;Wi-Fi Networks
+#### :symbols-wifi-cog:&ensp;Wi-Fi Networks
 
-|     SSID     |  VLAN  |   WAN Access    | CIDR              | Frequency             | Notes                                           |
-| :----------: | :----: | :-------------: | :---------------- | :-------------------- | :---------------------------------------------- |
-|    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :symbols-security:&nbsp;Trusted VLAN            |
-| *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-person-outline:&nbsp;Guest VLAN |
-|   *2G_IoT*   | VLAN53 |   :symbols-x:   | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house-outline:&nbsp;IoT VLAN    |
+|     SSID     |  VLAN  |   WAN Access    | CIDR              | Frequency             | Notes                                  |
+| :----------: | :----: | :-------------: | :---------------- | :-------------------- | :------------------------------------- |
+|    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :symbols-shield-ban:&nbsp;Trusted VLAN |
+| *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-user:&nbsp;Guest VLAN  |
+|   *2G_IoT*   | VLAN53 |   :symbols-x:   | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house:&nbsp;IoT VLAN   |
 
-#### :symbols-ethernet-port-outline:&ensp;Physical Ethernet Ports
+#### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
-|       Port #       | Connected Device                                                                             | Color / Type  | Notes               |
-| :----------------: | :------------------------------------------------------------------------------------------- | :------------ | :------------------ |
-| 10 Gb WAN / LAN 1  | [:symbols-ethernet-port-outline:&nbsp;Ugreen Switch](./Ugreen_Switch.md)                     | Black / Cat6a | 10 Gb/s Uplink      |
-| 2.5 Gb WAN / LAN 2 | [:symbols-settings-ethernet:&nbsp;Hitron Modem](./Hitron_Modem.md)                           | Black / Cat6a | WAN Connection      |
-|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:symbols-10-inch-rack:&nbsp;Mini-Rack</a>                | Black / Cat6a | Spare Keystone Jack |
-|    2.5 Gb LAN 2    | [:symbols-ethernet-port-outline:&nbsp;TP-Link LiteWave Switch](./TP-Link_LiteWave_Switch.md) | White / Cat6  | 1 Gb/s Uplink       |
-|    2.5 Gb LAN 3    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
-|    2.5 Gb LAN 4    | :symbols-ethernet-port-outline:&nbsp;*Empty*                                                 | -             | -                   |
+|       Port #       | Connected Device                                                                     | Color / Type  | Notes               |
+| :----------------: | :----------------------------------------------------------------------------------- | :------------ | :------------------ |
+| 10 Gb WAN / LAN 1  | [:symbols-ethernet-port:&nbsp;Ugreen Switch](./Ugreen_Switch.md)                     | Black / Cat6a | 10 Gb/s Uplink      |
+| 2.5 Gb WAN / LAN 2 | [:symbols-settings-ethernet:&nbsp;Hitron Modem](./Hitron_Modem.md)                   | Black / Cat6a | WAN Connection      |
+|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:symbols-server-rack:&nbsp;Mini-Rack</a>         | Black / Cat6a | Spare Keystone Jack |
+|    2.5 Gb LAN 2    | [:symbols-ethernet-port:&nbsp;TP-Link LiteWave Switch](./TP-Link_LiteWave_Switch.md) | White / Cat6  | 1 Gb/s Uplink       |
+|    2.5 Gb LAN 3    | :symbols-ethernet-port:&nbsp;*Empty*                                                 | -             | -                   |
+|    2.5 Gb LAN 4    | :symbols-ethernet-port:&nbsp;*Empty*                                                 | -             | -                   |
 
-## :symbols-folder-open-outline:&ensp;Storage & Mounts
+## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
@@ -98,26 +98,26 @@ hide:
 | :-------------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB        | `/dev/sda1` | `ext4`      | -          |
 
-## :symbols-web:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
-#### :symbols-linux:&ensp;Native
+#### :symbols-penguin:&ensp;Native
 
 |  Status  | Service                                                                   | Port(s) | Role / Notes                                                                                                                                                                                                                         |
 | :------: | :------------------------------------------------------------------------ | :-----: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-web-clock:&nbsp;Chrony](../03_Services/Chrony.md)               |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
-| *Active* | [:symbols-web-ip:&nbsp;DDNS](../03_Services/DDNS.md)                      |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools). |
+| *Active* | [:symbols-clock-refresh-cw:&nbsp;Chrony](../03_Services/Chrony.md)        |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
+| *Active* | [:symbols-globe-ip:&nbsp;DDNS](../03_Services/DDNS.md)                    |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools). |
 | *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)                  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                                                       |
 | *Active* | [:services-wireguard:&nbsp;WireGuard](../03_Services/Wireguard_Server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                                             |
 
 ---
-## :symbols-note-stack:&ensp;Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 !!! config inline end "Critical Configurations"
 
-    **:symbols-restore:&ensp;Backup Restore:**
+    **:symbols-refresh-ccw-dot:&ensp;Backup Restore:**
     :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) and the [Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md). 
 
-    **:symbols-web-clock:&ensp;NTP Server:**
+    **:symbols-clock-refresh-cw:&ensp;NTP Server:**
     :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
 
 #### :symbols-update:&ensp;Update Process
@@ -127,7 +127,7 @@ hide:
     + Notification emails are sent to: [admin@haube-pereira.com:symbols-external-link-small:](mailto:admin@haube-pereira.com) 
 + For Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
-#### :symbols-backup:&ensp;Backup Policy
+#### :symbols-cloud-upload:&ensp;Backup Policy
 
 + The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays *(at 3:00 UTC-5)* to [ZimaOS NAS](./ZimaBoard_2_NAS.md) and [Pi 4B Server](./Raspberry_Pi_4B_Server.md) using the [BACKUPMON:symbols-external-link-small:](https://github.com/ViktorJp/BACKUPMON) script.
 + **Backup Directory:**
@@ -165,7 +165,7 @@ hide:
 + The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command.
 + To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_Services/Gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.
 
-#### :symbols-web-check:&ensp;WAN Check Script
+#### :symbols-globe-check:&ensp;WAN Check Script
 
 ##### About
 

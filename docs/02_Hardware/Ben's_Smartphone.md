@@ -1,5 +1,5 @@
 ---
-icon: symbols/mobile
+icon: symbols/smartphone
 title: Ben's Smartphone
 subtitle: Google Pixel 9 Pro
 tags:
@@ -15,37 +15,37 @@ hide:
 # Ben's Smartphone
 *Google Pixel 9 Pro*
 
-[Android Help&ensp;:brands-android-robot:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Device Support&ensp;:symbols-mobile-question:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }&emsp;[Pixel Care+&ensp;:symbols-shield-heart:](https://store.google.com/us/pixel-care?hl=en-US){ .md-button .md-button--primary }
+[Android Help&ensp;:symbols-circle-question-mark:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Device Support&ensp;:symbols-circle-question-mark:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }&emsp;[Pixel Care+&ensp;:symbols-shield-ban-plus:](https://store.google.com/us/pixel-care?hl=en-US){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-toolbox-outline:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-#### :symbols-host-outline:&ensp;Hostname 
+#### :symbols-host:&ensp;Hostname 
 
 + `ben-s-phone`
 
-#### :symbols-location-outline:&ensp;Location
+#### :symbols-map-pin:&ensp;Location
 
 + Mobile
 
-#### :symbols-memory:&ensp;OS / Firmware
+#### :symbols-cpu:&ensp;OS / Firmware
 
 + [:brands-android-robot:&nbsp;Android 16](https://www.android.com/)
 
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Email&ensp;:symbols-arrow-right-thin:&ensp;"Google"
+    + Email&ensp;:symbols-move-right:&ensp;"Google"
 
-#### :symbols-security:&ensp;Device Security
+#### :symbols-brick-wall-shield:&ensp;Device Security
 
-+ :symbols-security-key:&nbsp;Titan M2 security chip *(FIDO2 / WebAuthn)*
-+ :symbols-encrypted-outline:&nbsp;Full-disk encryption
-+ :symbols-password-alt:&nbsp;8-digit PIN
++ :symbols-key-fido2:&nbsp;Titan M2 security chip *(FIDO2 / WebAuthn)*
++ :symbols-shield:&nbsp;Full-disk encryption
++ :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 + Biometric:
     + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
     + :symbols-scan-face:&nbsp;Face Scan
@@ -56,19 +56,19 @@ hide:
 | :--------------------------------------------------------- | :-------------------- | :---------------------------------------------------------------------------- | :------------ | :------------------------------------ | :-------- | :----- |
 | :brands-google-tensor:&nbsp;Google Tensor G4 *(arm64-v8a)* | 8C / 8T<br>3-Clusters | **Cluster-1:** 1950 MHz<br>**Cluster-2:** 2600 MHz<br>**Cluster-3:** 3105 MHz | 16 GB LPDDR5X | :brands-google-tensor:&nbsp;Mali-G715 | -         | Shared |
 
-## :symbols-lan-outline:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                                          |
-| :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------ |
-|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:symbols-android-wifi-lock:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address | MAC Address         | Connected To                                                                 |
+| :-------: | :--------- | :------------------ | :--------------------------------------------------------------------------- |
+|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
-| Interface | VLAN                           | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------- | :---- | :---------------------------- | :------------- |
-|   Wi-Fi   | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                             | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :------------------------------- | :---- | :---------------------------- | :------------- |
+|   Wi-Fi   | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open-outline:&ensp;Storage & Mounts
+## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption             |
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------------------- |
@@ -80,7 +80,7 @@ hide:
 | :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -              | `-`         | `-`         | -          |
 
-## :symbols-web:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
@@ -95,11 +95,11 @@ hide:
 | *Active* | [:services-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
 
 ---
-## :symbols-note-stack:&ensp;Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 !!! config inline end "Critical Configurations"
 
-    :symbols-vpn-outline:&ensp;**VPN:**
+    :symbols/waypoints:&ensp;**VPN:**
 
     + The [WireGuard](../03_Services/Wireguard_Server.md) VPN is used for remote access to the LAN.
     + [ASUS RT-BE92U](./ASUS_RT-BE92U.md) is the primary server, and [ZimaOS NAS](./ZimaBoard_2_NAS.md) is the secondary / backup server.
@@ -115,7 +115,7 @@ hide:
     + The standard Gmail app has been disabled and replaced with [Thunderbird:symbols-external-link-small:](https://www.thunderbird.net/en-US/mobile/) *(formerly K9-Mail)* on this mobile device. 
     + Account and app settings are backed up to the [ZimaOS NAS](./ZimaBoard_2_NAS.md) with [Syncthing](../03_Services/Syncthing.md)
 
-    :symbols-calendar-event:&ensp;**Calendar & Tasks:**
+    :symbols-calendar-sync:&ensp;**Calendar & Tasks:**
  
     + The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar:symbols-external-link-small:](https://github.com/FossifyOrg/Calendar) and [Tasks.org:symbols-external-link-small:](https://tasks.org/) *(Installed via F-Droid)*. 
     + Calendar and tasks synchronization is handled with the [DAVx5:symbols-external-link-small:](https://www.davx5.com/) application.
@@ -133,7 +133,7 @@ hide:
 + Most applications are installed / updated via the [Google Play Store:symbols-external-link-small:](https://play.google.com/store/apps).
 + Other FOSS applications are installed / updated via the [F-Droid:symbols-external-link-small:](https://f-droid.org/) app store and the [Obtainium:symbols-external-link-small:](https://obtainium.imranr.dev/) application.
 
-#### :symbols-backup:&ensp;Backup Policy
+#### :symbols-cloud-upload:&ensp;Backup Policy
 
 ##### Cloud Backup
 

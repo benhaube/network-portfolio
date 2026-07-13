@@ -1,5 +1,5 @@
 ---
-icon: symbols/print-outline
+icon: symbols/printer
 title: CUPS
 subtitle: Open Print Server
 description: A standards-based, open-source printing system for Linux and other Unix-like operating systems.
@@ -11,12 +11,12 @@ tags:
 hide:
   - toc
 ---
-![CUPS Open Print Server icon](../assets/icons/cups.svg){ width=200 }
+![Lucide printer icon](../assets/icons/printer.svg){ width=200 }
 
 # CUPS
 *Open Print Server*
 
-[GitHub&ensp;:brands-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/OpenPrinting/cups){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://openprinting.github.io/cups/#DOCUMENTATION){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -29,11 +29,11 @@ hide:
 
 + `631`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://192.168.50.2:631>
 
-#### :symbols-print-add-outline:&ensp;Printer URL
+#### :symbols-printer-check:&ensp;Printer URL
 
 + IPP:
     + `ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
@@ -43,13 +43,13 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"CUPS Admin"&emsp;:symbols-info:{ title="Login needed for Administration, but anyone on the local network can print." }
+    + Local Network&ensp;:symbols-move-right:&ensp;"CUPS Admin"&emsp;:symbols-info:{ title="Login needed for Administration, but anyone on the local network can print." }
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                            | Method                             | Container Name | Image |
-| :------------------------------------------------------------------------------------- | :--------------------------------- | :------------- | :---- |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-linux:&nbsp;Native Linux  | `N/A`          | `N/A` |
+| Host Device                                                                    | Method                              | Container Name | Image |
+| :----------------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

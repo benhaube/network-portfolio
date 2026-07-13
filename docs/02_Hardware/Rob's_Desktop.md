@@ -1,5 +1,5 @@
 ---
-icon: symbols/desktop-pc-outline
+icon: symbols/pc-case
 title: Rob's Workstation
 subtitle: High-Performance Desktop PC
 tags:  
@@ -11,37 +11,37 @@ tags:
 hide:
   - toc
 ---
-![Lucide pc-case icon](../assets/icons/pc-case.svg){ width=200 }
+![Lucide 'pc-case' icon](../assets/icons/pc-case.svg){ width=200 }
 
 # Rob's Workstation
 *High-Performance Desktop PC*
 
-[Windows Docs&ensp;:brands-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_H670-PRO_WIFI_D4_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_600_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
+[Windows Docs&ensp;:symbols-window:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_H670-PRO_WIFI_D4_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_600_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox-outline:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
-#### :symbols-host-outline:&ensp;Hostname
+#### :symbols-host:&ensp;Hostname
 
 + `Rob-Desktop`
 
-#### :symbols-location-outline:&ensp;Location
+#### :symbols-map-pin:&ensp;Location
 
 + Office 
 + Desk 
 
-#### :symbols-memory:&ensp;OS / Firmware
+#### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:brands-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
++ [:symbols-window:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"PIN - Rob's Desktop PC"
+    + Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
 
 ## :symbols-square-activity:&ensp;Core Specs
 
@@ -50,21 +50,21 @@ hide:
 | :brands-intel:&nbsp;Core(r) i7 12700K *(x86-64)* | 12C / 20T       | 5.0 GHz   | 32 GB DDR4 *(3600 MHz)* | :brands-intel:&nbsp;UHD 770 Graphics     | 1500 MHz  | *Shared*   |
 |                                                  |                 |           |                         | :brands-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz  | 8 GB GDDR6 |
 
-## :symbols-lan-outline:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                                                      |
-| :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------------------ |
-| Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | [:symbols-ethernet-port-outline:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
-|   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | [:symbols-android-wifi-lock:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*             |
+| Interface | IP Address | MAC Address         | Connected To                                                                              |
+| :-------: | :--------- | :------------------ | :---------------------------------------------------------------------------------------- |
+| Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
+|   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*              |
 
-| Interface |              VLAN              | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------: | :---- | :---------------------------- | :------------- |
-| Ethernet  | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|   Wi-Fi   | :symbols-security:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN               | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :------------------------------: | :---- | :---------------------------- | :------------- |
+| Ethernet  | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|   Wi-Fi   | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open-outline:&ensp;Storage & Mounts
+## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity | Device Path                                                   | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------------------------------------------------------ | :---------- | :--------- |
@@ -79,6 +79,6 @@ hide:
 | `-`         | -          | -              | `-`         | `-`         | -          |
 
 ---
-## :symbols-note-stack:&ensp;Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 --8<-- "maintenance-rob-pc.md"

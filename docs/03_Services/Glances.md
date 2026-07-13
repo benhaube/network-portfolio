@@ -5,7 +5,7 @@ subtitle: An Eye on Your System
 description: Glances an Eye on your system. A top / htop alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 tags:
   - Active
-  - Docker
+  - Container
   - Monitor
   - Service
 hide:
@@ -17,7 +17,7 @@ hide:
 # Glances
 *An Eye on Your System*
 
-[GitHub&ensp;:brands-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://glances.readthedocs.io/en/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://glances.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -30,7 +30,7 @@ hide:
 
 + `21208`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://pi-server.internal:61208>
 + <http://storage-server.internal:61208>
@@ -40,16 +40,16 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                            | Method                                | Container Name | Image                           |
-| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| Host Device                                                                    | Method                                | Container Name | Image                           |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)      | :services-docker:&nbsp;Docker Compose | `glances`      | `nicolargo/glances:latest-full` |
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :services-docker:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose
 
 ```yaml title="Pi 4B Server" linenums="1"
 --8<-- "glances-pi-4b.yml"

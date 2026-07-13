@@ -5,7 +5,7 @@ subtitle: Handy Tools for Devs
 description: Handy tools for network administrators and developers.
 tags:
   - Active
-  - Docker
+  - Container
   - Tools
   - Development
   - Service
@@ -18,7 +18,7 @@ hide:
 # IT-Tools
 *Handy Tools for Devs*
 
-[GitHub&ensp;:brands-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/sharevb/it-tools){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/sharevb/it-tools){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -31,7 +31,7 @@ hide:
 
 + `8080`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <https://it-tools.internal>
 + <http://pi-server.internal:8080/>
@@ -40,12 +40,12 @@ hide:
 
 + N/A
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                            | Method                                | Container Name     | Image                             |
-| :------------------------------------------------------------------------------------- | :------------------------------------ | :----------------- | :-------------------------------- |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
-|                                                                                        | :services-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
+| Host Device                                                                    | Method                                | Container Name     | Image                             |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :----------------- | :-------------------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
+|                                                                                | :services-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

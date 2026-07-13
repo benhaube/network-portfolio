@@ -1,5 +1,5 @@
 ---
-icon: symbols/server-outline
+icon: symbols/server
 title: Debian Server
 subtitle: Primary DNS Server
 tags:
@@ -7,14 +7,14 @@ tags:
   - Server
   - DNS
   - Infrastructure
-  - Docker Host
+  - Container Host
   - Network
   - Linux
   - Hardware
 hide:
   - toc
 ---
-![Material Server icon](../assets/icons/server-outline.svg){ width=200 }
+![Lucide 'server' icon](../assets/icons/server.svg){ width=200 }
 
 # Debian Server
 *Virtual Machine*
@@ -24,11 +24,11 @@ hide:
 ---
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-toolbox-outline:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    The primary DNS server in the [Technitium](../03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./ZimaBoard_2_NAS.md).
 
-#### :symbols-host-outline:&ensp;Hostname
+#### :symbols-host:&ensp;Hostname
 
 + `debian-vm`
 
@@ -36,7 +36,7 @@ hide:
 
 + [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 
-#### :symbols-memory:&ensp;Operating System 
+#### :symbols-cpu:&ensp;Operating System 
 
 + [:symbols-debian:&nbsp;Debian Linux](https://www.debian.org/) *(trixie)*
 
@@ -47,7 +47,7 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"debian-vm (server-admin)"
+    + SSH Keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
 
 ## :symbols-square-activity:&ensp;Resource Allocation
 
@@ -55,19 +55,19 @@ hide:
 | :--------------------: | :---: | :------ | :--------------------------------------- |
 | 2C / 2T *(VT-x, VT-d)* | 2 GB  | 50 GB   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
-## :symbols-lan-outline:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
 | Interface | IP Address     | MAC Address         | Notes                                                                         |
 | :-------: | :------------- | :------------------ | :---------------------------------------------------------------------------- |
 | `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
-| Interface | VLAN                           | FQDN                 | DNS Servers | Gateway        |
-| :-------: | :----------------------------- | :------------------- | :---------- | :------------- |
-| `enp1s0`  | :symbols-security:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
+| Interface | VLAN                             | FQDN                 | DNS Servers | Gateway        |
+| :-------: | :------------------------------- | :------------------- | :---------- | :------------- |
+| `enp1s0`  | :symbols-shield-ban:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
 
-## :symbols-web:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
-#### :symbols-linux:&ensp;Native Linux
+#### :symbols-penguin:&ensp;Native Linux
 
 |  Status  | Service                                                               |        Port(s)         | Role / Notes                                                                                   |
 | :------: | :-------------------------------------------------------------------- | :--------------------: | :--------------------------------------------------------------------------------------------- |
@@ -75,15 +75,15 @@ hide:
 | *Active* | [:services-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md)    | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
 | *Active* | [:services-technitium:&nbsp;Technitium](../03_Services/Technitium.md) |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                  |
 
-#### :services-docker:&ensp;Docker
+#### :symbols-container:&ensp;Docker Container
 
 |  Status  | Service                                                       | Port(s) | Role / Notes                                                                                 |
-| :------: | :------------------------------------------------------------ | :-----: | :--------------------------------------------------------------------------------------------|
+| :------: | :------------------------------------------------------------ | :-----: | :------------------------------------------------------------------------------------------- |
 | *Active* | [:services-beszel:&nbsp;Beszel](../03_Services/Beszel_Hub.md) | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md))*. |
 | *Active* | [:services-dockge:&nbsp;Dockge](../03_Services/Dockge.md)     | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.  |
 
 ---
-## :symbols-note-stack:&ensp;Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 !!! config "Critical Configurations"
 
@@ -124,12 +124,12 @@ hide:
         virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
         ```
 
-#### :symbols-screenshot-region:&ensp;Snapshot Policy
+#### :symbols-fullscreen:&ensp;Snapshot Policy
 
 + Perform external snapshots before major changes.
 + The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 
-#### :symbols-restore:&ensp;Recovery
+#### :symbols-refresh-ccw-dot:&ensp;Recovery
 
 + If the VM is corrupted there are external snapshots to roll back to. 
 + Also, on the main storage pool on the [ZimaOS NAS](./ZimaBoard_2_NAS.md) in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 

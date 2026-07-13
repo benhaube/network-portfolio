@@ -6,7 +6,7 @@ description: Open-source home automation that puts local control and privacy fir
 tags:
   - Active
   - Dashboard
-  - Docker
+  - Container
   - IoT
   - Service
 hide:
@@ -17,7 +17,7 @@ hide:
 # Home Assistant
 *Awaken Your Home*
 
-[GitHub&ensp;:brands-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://www.home-assistant.io/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://www.home-assistant.io/docs/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -30,7 +30,7 @@ hide:
 
 + `8123`
 
-#### :symbols-link-alt:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + <http://pi-server.internal:8123>
 + <https://home-assistant.internal>
@@ -38,13 +38,13 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Home Assistant"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                            | Method                                | Container Name  | Image                                          |
-| :------------------------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
+| Host Device                                                                    | Method                                | Container Name  | Image                                          |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

@@ -6,7 +6,7 @@ description: Open decentralized file synchronization.
 tags:
   - Active
   - Backup
-  - Docker
+  - Container
   - Download
   - File Share
   - Native
@@ -19,7 +19,7 @@ hide:
 # Syncthing
 *File Synchronization*
 
-[GitHub&ensp;:brands-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.syncthing.net/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/syncthing/syncthing){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.syncthing.net/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -34,22 +34,22 @@ hide:
 + `22000` *(TCP / UDP)*
 + `21027` *(UDP)*
 
-#### :symbols-link-alt:&ensp;URL / Access  
+#### :symbols-link:&ensp;URL / Access  
 
-+ :symbols-desktop-pc-outline:&nbsp;Ben's Desktop
++ :symbols-pc-case:&nbsp;Ben's Desktop
     + <https://bens-workstation.internal:8384>
     + <https://192.168.50.61:8384>
 + :symbols-laptop-minimal:&nbsp;Ben's Laptop
     + <https://localhost:8384>
-+ :symbols-mobile:&nbsp;Ben's Smartphone
++ :symbols-smartphone:&nbsp;Ben's Smartphone
     + <https://localhost:8384>
-+ :symbols-server-outline:&nbsp;Debian Server
++ :symbols-server:&nbsp;Debian Server
     + <https://debian-vm.internal:8384>
     + <https://192.168.50.6:8384>
-+ :symbols-server-outline:&nbsp;Pi 4B Server
++ :symbols-server:&nbsp;Pi 4B Server
     + <https://pi-server.internal:8384>
     + <https://192.168.50.2:8384>
-+ :symbols-server-outline:&nbsp;Pi Zero 2W Server
++ :symbols-server:&nbsp;Pi Zero 2W Server
     + <https://pi-zero.internal:8384>
     + <https://192.168.50.3:8384>
 + :symbols-server-nas:&nbsp;ZimaOS NAS
@@ -61,25 +61,25 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ bens-workstation"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ ben-laptop"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ bens-phone" 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ debian-vm" 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ pi-server"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ pi-zero"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Syncthing @ storage-server"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-workstation"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ ben-laptop"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-phone" 
+    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ debian-vm" 
+    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-server"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-zero"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ storage-server"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                                | Method                                     | Container Name | Image                          |
-| :----------------------------------------------------------------------------------------- | :----------------------------------------- | :------------- | :----------------------------- |
-| [:symbols-desktop-pc-outline:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)         | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)               | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-mobile:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)               | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-linux:&nbsp;Native Linux          | `N/A`          | `N/A`                          |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                  | :services-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
+| Host Device                                                                        | Method                                     | Container Name | Image                          |
+| :--------------------------------------------------------------------------------- | :----------------------------------------- | :------------- | :----------------------------- |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)            | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)       | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
+| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)   | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
+| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | :services-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 
@@ -113,7 +113,7 @@ hide:
 
     [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
-#### :services-docker:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose
 
 ```yaml title="ZimaOS NAS" linenums="1"
 --8<-- "syncthing-zima.yml"

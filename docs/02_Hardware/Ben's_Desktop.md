@@ -1,11 +1,11 @@
 ---
-icon: symbols/desktop-pc-outline
+icon: symbols/pc-case
 title: Ben's Workstation
 subtitle: High-Performance Desktop PC
 tags:
   - PC
   - Desktop
-  - Docker Host
+  - Container Host
   - Virtual Host
   - Office
   - Linux
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide pc-case icon](../assets/icons/pc-case.svg){ width=200 }
+![Lucide 'pc-case' icon](../assets/icons/pc-case.svg){ width=200 }
 
 # Ben's Workstation
 *High-Performance Desktop PC*
@@ -23,29 +23,29 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox-outline:&ensp;Role
+#### :symbols-toolbox:&ensp;Role
 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
 
-#### :symbols-host-outline:&ensp;Hostname
+#### :symbols-host:&ensp;Hostname
 
 + `bens-workstation`
 
-#### :symbols-location-outline:&ensp;Location
+#### :symbols-map-pin:&ensp;Location
 
 + Office 
 + Desk
 
-#### :symbols-memory:&ensp;OS / Firmware
+#### :symbols-cpu:&ensp;OS / Firmware
 
 + [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Local User @ Ben's-Workstation"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
 
-#### :symbols-security:&ensp;Device Security
+#### :symbols-brick-wall-shield:&ensp;Device Security
 
 + HSI-1
 + Firmware:
@@ -57,9 +57,9 @@ hide:
     + TPM v2.0
     + UEFI Secure Boot
 + Software:
-    + :symbols-sync-lock:&nbsp;Linux swap encryption
-    + :symbols-encrypted-outline:&nbsp;LUKS2 drive encryption
-    + :symbols-security-key:&nbsp;FIDO2-based MFA for local user  
+    + :symbols-arrow-right-left:&nbsp;Linux swap encryption
+    + :symbols-shield:&nbsp;LUKS2 drive encryption
+    + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
 
 ## :symbols-square-activity:&ensp;Core Specs
 
@@ -67,21 +67,21 @@ hide:
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
 | :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T        | 4.7 GHz   | 32 GB DDR4 *(3600 MHz)* | :brands-amd:&nbsp;Radeon(r) 6600XT | 2581 MHz  | 8 GB GDDR6 |
 
-## :symbols-lan-outline:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                                       |
-| :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
-| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port-outline:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
-| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-android-wifi-lock:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*              |
+| Interface | IP Address      | MAC Address         | Connected To                                                                               |
+| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
+| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*               |
 
-| Interface | VLAN                           | FQDN                        | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------- | :-------------------------- | :---------------------------- | :------------- |
-| `enp7s0`  | :symbols-security:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-| `wlp6s0`  | :symbols-security:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                             | FQDN                        | DNS Servers                   | Gateway        |
+| :-------: | :------------------------------- | :-------------------------- | :---------------------------- | :------------- |
+| `enp7s0`  | :symbols-shield-ban:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| `wlp6s0`  | :symbols-shield-ban:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open-outline:&ensp;Storage & Mounts
+## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive-outline:&ensp;Internal Drive(s)
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path                 | File System | Encryption |
 | :------------- | :--------- | :------------- | :-------------------------- | :---------- | :--------- |
@@ -98,7 +98,7 @@ hide:
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
 
-## :symbols-web:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
@@ -106,17 +106,17 @@ hide:
 | :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
 | *Active* | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
-| *Active* | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
+| *Active* | [:symbols-window:&nbsp;Windows 11](https://microsoft.com/windows)         | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
-#### :symbols-linux:&ensp;Native Linux
+#### :symbols-penguin:&ensp;Native Linux
 
 |  Status  | Service                                                            |        Port(s)         | Role / Notes                                                              |
 | :------: | :----------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------ |
-| *Active* | [:symbols-remote-desktop:&nbsp;RDP](../03_Services/RDP.md)         |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
+| *Active* | [:symbols-screen-share:&nbsp;RDP](../03_Services/RDP.md)           |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
 | *Active* | [:services-syncthing:&nbsp;Syncthing](../03_Services/Syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                  |
 
 ---
-## :symbols-note-stack:&ensp;Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 --8<-- "critical-conf-ben-pc.md"
 
@@ -150,7 +150,7 @@ hide:
     sudo flatpak update -y
     ```
 
-#### :symbols-backup:&ensp;Backup Policy
+#### :symbols-cloud-upload:&ensp;Backup Policy
 
 + The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggered by Systemd.
 + With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
@@ -170,7 +170,7 @@ hide:
 + To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
 + See ["SSH Config File"](../03_Services/SSH.md#ssh-config-file_1) for documentation.  
 
-#### :symbols-smb-share-outline:&ensp;ZimaOS NAS Mounts
+#### :symbols-cloud-sync:&ensp;ZimaOS NAS Mounts
 
 + On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. *(e.g., photos / code)* 
     + Other benefits from the switch to NFS include: Full compatibility for file ownership and permissions, and compatibility for sym-links. The `rsync` command in the backup script has been modified to reflect this change.

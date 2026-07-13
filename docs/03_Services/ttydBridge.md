@@ -5,7 +5,7 @@ subtitle: The Terminal on the Web
 description: A DockerApp makes it easy to use the host terminal on the Web.
 tags:
   - Active
-  - Docker
+  - Container
   - Remote Access
   - Shell
   - Service
@@ -17,7 +17,7 @@ hide:
 # ttydBridge
 *The Terminal on the Web*
 
-[GitHub&ensp;:brands-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://deepwiki.com/tsl0922/ttyd){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/tsl0922/ttyd){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -29,7 +29,7 @@ hide:
 
 + `2222`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://storage-server.internal:2222>
 + <http://storage-server-2.internal:2222>
@@ -37,9 +37,9 @@ hide:
 #### :symbols-user-key:&ensp;Credentials  
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"ZimaOS NAS (admin)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                      |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------- |

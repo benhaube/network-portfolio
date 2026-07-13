@@ -1,6 +1,6 @@
 ---
 title: Index
-icon: symbols/list-bulleted
+icon: symbols/list
 hide:
   - toc
 ---
@@ -11,62 +11,62 @@ hide:
 [About Me&ensp;:symbols-user-search:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :symbols-lan-outline:&ensp;Infrastructure
+## :symbols-network-node:&ensp;Infrastructure
 
-[:symbols-restore:&ensp;Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md)
+[:symbols-refresh-ccw-dot:&ensp;Disaster Recovery Plan](./01_Infrastructure/Disaster_Recovery_Plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
-[:symbols-ip-outline:&ensp;IP Address Management](./01_Infrastructure/IP_Address_Management.md)
+[:symbols-network-ip:&ensp;IP Address Management](./01_Infrastructure/IP_Address_Management.md)
 :    This page contains information about IPAM, VPNs, and VLANs encompassed by the local network.
 
-[:symbols-ethernet-port-outline:&ensp;MAC Address Tables](./01_Infrastructure/MAC_Address_Tables.md)
+[:symbols-ethernet-port:&ensp;MAC Address Tables](./01_Infrastructure/MAC_Address_Tables.md)
 :    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 
-[:symbols-policy:&ensp;Network Security Policy](./01_Infrastructure/Network_Security_Policy.md) 
+[:symbols-firewall:&ensp;Network Security Policy](./01_Infrastructure/Network_Security_Policy.md) 
 :    This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
-[:symbols-graph-2:&ensp;Logical Network Map](./01_Infrastructure/Logical_Map.md)
+[:symbols-sitemap:&ensp;Logical Network Map](./01_Infrastructure/Logical_Map.md)
 :    A *Mermaid.js* flowchart focusing on servers, services, and their connections. 
 
-[:symbols-graph-2:&ensp;Physical Network Map](./01_Infrastructure/Physical_Map.md)
+[:symbols-sitemap:&ensp;Physical Network Map](./01_Infrastructure/Physical_Map.md)
 :    A *Mermaid.js* flowchart focusing on physical devices and their connections.
 
 ---
-## :symbols-devices:&ensp;Hardware
+## :symbols-monitor-smartphone:&ensp;Hardware
 
 !!! links inline end "Extra Links"
 
-    [More Kacey Info&ensp;:brands-creality-v2:](02_Hardware/Kacey_Info.md){ .md-button }
+    [More Kacey Info&ensp;:symbols-printer-3d-nozzle:](02_Hardware/Kacey_Info.md){ .md-button }
 
     [Hardware Tags&ensp;:symbols-tag-outline:](02_Hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
-[:symbols-router-outline:&ensp;ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md)
+[:symbols-router:&ensp;ASUS RT-BE92U](./02_Hardware/ASUS_RT-BE92U.md)
 :    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin:symbols-external-link-small:](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-[:symbols-router-outline:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
+[:symbols-router:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
-[:symbols-server-outline:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)
+[:symbols-server:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)
 :    The primary DNS server in the [Technitium](03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md). 
 
 [:symbols-settings-ethernet:&ensp;Hitron Modem](./02_Hardware/Hitron_Modem.md)
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity:symbols-external-link-small:](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
-[:symbols-server-outline:&ensp;Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md)
+[:symbols-server:&ensp;Pi 4B Server](./02_Hardware/Raspberry_Pi_4B_Server.md)
 :    The secondary DNS server in the [Technitium](03_Services/Technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker:symbols-external-link-small:](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
-[:symbols-server-outline:&ensp;Pi Zero 2W Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) 
+[:symbols-server:&ensp;Pi Zero 2W Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`). 
 
-[:symbols-ethernet-port-outline:&ensp;TP-Link LiteWave Switch](./02_Hardware/TP-Link_LiteWave_Switch.md)
+[:symbols-ethernet-port:&ensp;TP-Link LiteWave Switch](./02_Hardware/TP-Link_LiteWave_Switch.md)
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
 
-[:symbols-ethernet-port-outline:&ensp;TP-Link Switch](./02_Hardware/TP-Link_Switch.md)
+[:symbols-ethernet-port:&ensp;TP-Link Switch](./02_Hardware/TP-Link_Switch.md)
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
-[:symbols-ethernet-port-outline:&ensp;Ugreen Switch](./02_Hardware/Ugreen_Switch.md)
+[:symbols-ethernet-port:&ensp;Ugreen Switch](./02_Hardware/Ugreen_Switch.md)
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
 [:symbols-server-nas:&ensp;ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md) 
@@ -74,26 +74,26 @@ hide:
 
 ### Key Clients
 
-[:symbols-desktop-pc-outline:&ensp;Ben's Workstation](./02_Hardware/Ben's_Desktop.md) 
+[:symbols-pc-case:&ensp;Ben's Workstation](./02_Hardware/Ben's_Desktop.md) 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 [:symbols-laptop-minimal:&ensp;Ben's Laptop](./02_Hardware/Ben's_Laptop.md)
 :    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-[:symbols-mobile:&ensp;Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md)
+[:symbols-smartphone:&ensp;Ben's Smartphone](./02_Hardware/Ben's_Smartphone.md)
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
 
-[:symbols-printer-3d-nozzle-outline:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
+[:symbols-printer-3d-nozzle:&ensp;Kacey 3D-Printer](./02_Hardware/Kacey_3D-printer.md) 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
-[:symbols-desktop-pc-outline:&ensp;Rob's Workstation](./02_Hardware/Rob's_Desktop.md) 
+[:symbols-pc-case:&ensp;Rob's Workstation](./02_Hardware/Rob's_Desktop.md) 
 :    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./02_Hardware/TP-Link_Switch.md).
 
 [:symbols-laptop-minimal:&ensp;Rob's Laptop](02_Hardware/Rob's_Laptop.md) 
 :    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./02_Hardware/Ugreen_Switch.md).
 
 ---
-## :symbols-web:&ensp;Services
+## :symbols-monitor-cloud:&ensp;Services
 
 !!! links inline end "Extra Links"
 
@@ -105,16 +105,16 @@ hide:
 [:services-caddy:&ensp;Caddy](./03_Services/Caddy.md)
 :    Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
 
-[:symbols-web-clock:&nbsp;Chrony](./03_Services/Chrony.md)
+[:symbols-clock-refresh-cw:&nbsp;Chrony](./03_Services/Chrony.md)
 :    Advanced, lightweight NTP client and server.
 
 [:services-cloudflare:&ensp;Cloudflared](./03_Services/Cloudflared.md)
 :    A secure reverse-proxy tunnel for hosting private services on the public Internet.
 
-[:symbols-print-outline:&ensp;CUPS](./03_Services/CUPS_Print_Server.md)
+[:symbols-printer:&ensp;CUPS](./03_Services/CUPS_Print_Server.md)
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
-[:symbols-web-ip:&ensp;DDNS](./03_Services/DDNS.md)
+[:symbols-globe-ip:&ensp;DDNS](./03_Services/DDNS.md)
 :    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools).
 
 [:services-dockge:&ensp;Dockge](./03_Services/Dockge.md) 
@@ -150,16 +150,16 @@ hide:
 [:services-it-tools:&ensp;IT-Tools](./03_Services/IT-Tools.md)
 :    Handy tools for network administrators and developers.
 
-[:services-klipper:&ensp;Moonraker](./03_Services/Moonraker.md)
+[:symbols-api:&ensp;Moonraker](./03_Services/Moonraker.md)
 :    Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/).
 
-[:symbols-settings-sync:&ensp;Nebula-Sync](./03_Services/Nebula-Sync.md)
+[:symbols-refresh-cw:&ensp;Nebula-Sync](./03_Services/Nebula-Sync.md)
 :    Synchronize configuration between multiple [Pi-hole:symbols-external-link-small:](https://pi-hole.net) instances.
 
 [:services-nextcloud:&ensp;Nextcloud](./03_Services/Nextcloud.md)
 :    Self-hosted cloud storage and collaboration platform.
 
-[:symbols-smb-share-outline:&ensp;NFS](./03_Services/NFS.md) 
+[:symbols-cloud-sync:&ensp;NFS](./03_Services/NFS.md) 
 :    Remote file system access.
 
 [:services-nginx:&ensp;Nginx](./03_Services/Nginx.md)
@@ -183,10 +183,10 @@ hide:
 [:services-portracker:&ensp;Portracker](./03_Services/Portracker.md)
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-[:symbols-remote-desktop:&ensp;RDP](./03_Services/RDP.md)
+[:symbols-screen-share:&ensp;RDP](./03_Services/RDP.md)
 :    Remote desktop access over the local network. *(not exposed to the internet)*
 
-[:symbols-smb-share-outline:&ensp;SMB](./03_Services/SMB.md)
+[:symbols-cloud-sync:&ensp;SMB](./03_Services/SMB.md)
 :    Remote file system access.
 
 [:services-spoolman:&ensp;Spoolman](./03_Services/Spoolman.md)
@@ -214,16 +214,16 @@ hide:
 :    High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
 ---
-## :symbols-swap-horizontal:&ensp;Change Management
+## :symbols-arrow-right-left:&ensp;Change Management
 
-[:brands-raspberry-pi:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
+[:brands-raspberry-pi:&nbsp;:symbols-move-right:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](./04_Change_Management/Reverse-Proxy.md)
 :    Preparing the [Pi Zero 2W Server](./02_Hardware/Raspberry_Pi_Zero_2_W.md) to be a [Caddy](./03_Services/Caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
-[:services-pi-hole:&nbsp;:symbols-arrow-right-thin:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
+[:services-pi-hole:&nbsp;:symbols-move-right:&nbsp;:services-technitium:&ensp;DNS Migration](./04_Change_Management/DNS_Migration.md) 
 :    Preparing to migrate from [Pi-hole](./03_Services/Pi-hole.md) to [Technitium](./03_Services/Technitium.md) for DNS queries on the local network. 
 
 ---
-## :symbols-printer-3d-nozzle-outline:&ensp;3D Printing
+## :symbols-printer-3d-nozzle:&ensp;3D Printing
 
 !!! links inline end "Check out my 3D Models!"
     All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.
@@ -240,7 +240,7 @@ hide:
 :    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](./02_Hardware/Kacey_3D-printer.md).
 
 ---
-## :symbols-linux:&ensp;Linux Tutorials
+## :symbols-penguin:&ensp;Linux Tutorials
 
 !!! links inline end "Extra Links"
     **My Favorite Bash Aliases:**
@@ -259,7 +259,7 @@ hide:
 [:symbols-svg:&ensp;Convert an SVG to Data URI](Linux_Tutorials/SVG_to_URI.md) 
 :    How to convert an SVG into a data URI for use in HTML pages and CSS stylesheets. 
 
-[:symbols-lock-open-outline:&ensp;Decrypt LUKS with TPM2](./Linux_Tutorials/Unlock_LUKS_TPM2.md) 
+[:symbols-lock-keyhole-open:&ensp;Decrypt LUKS with TPM2](./Linux_Tutorials/Unlock_LUKS_TPM2.md) 
 :    How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots. 
 
 [:symbols-terminal:&ensp;Defining Bash Aliases](./Linux_Tutorials/Defining_Terminal_Aliases.md) 

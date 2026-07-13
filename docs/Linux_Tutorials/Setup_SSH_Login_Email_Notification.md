@@ -11,7 +11,7 @@ hide:
 *With Email SMTP and Gotify*
 
 ---
-## :symbols-deployed-code-update:&ensp;Install Required Packages
+## :symbols-package-search:&ensp;Install Required Packages
 
 **Dependencies:**
 :     In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
@@ -28,7 +28,7 @@ hide:
     sudo dnf install msmtp msmtp-mta
     ```
 
-## :symbols-mail-lock:&ensp;Configure Your Email Credentials 
+## :symbols-key-round:&ensp;Configure Your Email Credentials 
 
 **Config File:**
 :     Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
@@ -166,7 +166,7 @@ hide:
     journalctl -t msmtp
     ```
 
-## :symbols-release-alert-outline:&ensp;Bonus
+## :symbols-badge-alert:&ensp;Bonus
 
 **Gotify:**
 :   If you have a [Gotify](../03_Services/Gotify.md) instance, you can use it to send instantaneous push notifications when a new SSH session is established using the same method. However, since Gotify uses a dead-simple REST API, literally anything that can execute a standard `curl` command or send an HTTP `POST` request can trigger a push notification. That means there are no extra configurations or packages required. Just a simple Bash script using the tools built into every Linux distribution. 
@@ -200,7 +200,7 @@ hide:
     ```
 
 6. Add this line to the `/etc/pam.d/sshd` file: 
-    + If you need help editing the configuration file... [:symbols-arrow-up-thin:&thinsp;see the instructions above&thinsp;:symbols-arrow-up-thin:](#enable-login-alerts-with-pam)
+    + If you need help editing the configuration file... [:symbols-arrow-up:&thinsp;see the instructions above&thinsp;:symbols-arrow-up:](#enable-login-alerts-with-pam)
 
     ```bash linenums="1"
     session     optional     pam_exec.so /usr/local/bin/gotify-ssh-alert.sh  # (1)!
@@ -218,7 +218,7 @@ hide:
 <p>Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</p>
 </div>
 
-## :symbols-note-stack:&ensp;Important Notes
+## :symbols-sticky-notes:&ensp;Important Notes
 
 ???+ note "Troubleshooting Note"
 

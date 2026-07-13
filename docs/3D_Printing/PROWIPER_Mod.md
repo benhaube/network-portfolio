@@ -10,7 +10,7 @@ hide:
 # PROWIPER Mod
 *Improved Nozzle Brush Routine*
 
-[Creality K1C&ensp;:symbols-printer-3d-nozzle-outline:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
+[Creality K1C&ensp;:symbols-printer-3d-nozzle:](../02_Hardware/Kacey_3D-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_Services/Fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! info "PROWIPER Info"
 
@@ -109,7 +109,7 @@ hide:
 2. [ ] Drop the A1 brush into the slot
 3. [ ] Using a **2mm hex driver** and the **M3x12mm** self-tapping screws, install the spacer and the V5 brush mount into the two existing holes at the back of the Z-axis.
 
-## :symbols-verified-outline:&ensp;Final Verification
+## :symbols-badge-check:&ensp;Final Verification
 
 + [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate. 
 

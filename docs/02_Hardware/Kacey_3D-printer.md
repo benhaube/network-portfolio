@@ -1,5 +1,5 @@
 ---
-icon: symbols/printer-3d-nozzle-outline
+icon: symbols/printer-3d-nozzle
 title: Kacey 3D-Printer
 subtitle: Modified Creality K1C
 tags:
@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Material Design printer-3d-nozzle icon](../assets/icons/printer-3d-nozzle-outline.svg){ width=200 }
+![Custom 3D-printer nozzle icon using Lucide design guidelines](../assets/icons/printer-3d-nozzle.svg){ width=200 }
 
 # Kacey 3D-Printer
 *Modified Creality K1C*
@@ -28,43 +28,43 @@ hide:
 
     [More Kacey Info&ensp;:brands-creality-v2:](Kacey_Info.md){ .md-button }
 
-#### :symbols-toolbox-outline:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
-#### :symbols-host-outline:&ensp;Hostname
+#### :symbols-host:&ensp;Hostname
 
 + `k1c-a71e`
 
-#### :symbols-location-outline:&ensp;Location  
+#### :symbols-map-pin:&ensp;Location  
 
 + Office
 
-#### :symbols-memory:&ensp;OS / Firmware
+#### :symbols-cpu:&ensp;OS / Firmware
 
 + [:brands-creality-v2:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
-+ [:symbols-linux:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
++ [:symbols-penguin:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
 + [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Fluidd (Creality K1C)" 
-    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"Kacey (root)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
+    + SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
-## :symbols-lan-outline:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                          |
-| :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------------ |
-|  `wlan0`  | `192.168.50.15` | `FC:EE:28:09:A7:1E` | [:symbols-android-wifi-lock:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address      | MAC Address         | Connected To                                                                 |
+| :-------: | :-------------- | :------------------ | :--------------------------------------------------------------------------- |
+|  `wlan0`  | `192.168.50.15` | `FC:EE:28:09:A7:1E` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
-| Interface |              VLAN              | FQDN             | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------: | :--------------- | :---------------------------- | :------------- |
-|  `wlan0`  | :symbols-security:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN               | FQDN             | DNS Servers                   | Gateway        |
+| :-------: | :------------------------------: | :--------------- | :---------------------------- | :------------- |
+|  `wlan0`  | :symbols-shield-ban:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folder-open-outline:&ensp;Storage & Mounts
+## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive-outline:&ensp;Internal Drive
+#### :symbols-hard-drive:&ensp;Internal Drive
 
 | Mount Point | Drive Type | Drive Capacity | Device Path       | File System | Encryption |
 | :---------- | :--------- | :------------- | :---------------- | :---------- | :--------- |
@@ -78,26 +78,26 @@ hide:
 | :---------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB        | `/dev/sda1` | `vfat`      | -          |
 
-## :symbols-web:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
-#### :symbols-linux:&ensp;Native Linux
+#### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                          |   Port(s)   | Role / Notes                                                                                   |
-| :------: | :--------------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)        | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
-| *Active* | [:services-klipper:&nbsp;Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/).         |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)         |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+|  Status  | Service                                                    |   Port(s)   | Role / Notes                                                                                   |
+| :------: | :--------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)  | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
+| *Active* | [:symbols-pi:&nbsp;Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/).         |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)   |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
-## :symbols-note-stack:&ensp;Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 ???+ config "Modifications"
 
-    :symbols-memory:&ensp;**Firmware:**
+    :symbols-cpu:&ensp;**Firmware:**
  
     + The standard firmware from Creality is heavily modified with the [Creality Helper Script:symbols-external-link-small:](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See documentation for configuration issues.
  
-    :symbols-package-alt:&ensp;**Software:**
+    :symbols-package:&ensp;**Software:**
  
     + Fluidd 
         + For information regarding the [Fluidd](../03_Services/Fluidd.md) Web UI see the [documentation:symbols-external-link-small:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).    
@@ -105,7 +105,7 @@ hide:
         + For information regarding Klipper configuration see the [documentation:symbols-external-link-small:](https://www.klipper3d.org/).
         + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation:symbols-external-link-small:](https://moonraker.readthedocs.io/en/latest/).
  
-    :symbols-printer-3d-nozzle-outline:&ensp;**Hardware:**
+    :symbols-printer-3d-nozzle:&ensp;**Hardware:**
  
     + [Bed Leveling Knobs](../3D_Printing/K1_Bed_Level_Knobs_Tutorial.md)
         + Changes from a fixed bed to an adjustable bed with aluminum knobs. 
@@ -122,6 +122,6 @@ hide:
 * Update most software through the [Fluidd Web UI:symbols-external-link-small:](http://k1c-a71e.internal).
 * Update Entware packages in terminal via [SSH](../03_Services/SSH.md) 
 
-#### :symbols-backup:&ensp;Backup Policy
+#### :symbols-cloud-upload:&ensp;Backup Policy
 
 * Configuration files are backed up automatically to a private [GitHub:symbols-external-link-small:](https://github.com/benhaube/creality-K1C-klipper-backup) repository. 

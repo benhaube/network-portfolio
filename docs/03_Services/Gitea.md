@@ -7,7 +7,7 @@ description: Painless, self-hosted, all-in-one software development service, inc
 tags:
   - Active
   - Backup
-  - Docker
+  - Container
   - File Share
   - Development
   - New
@@ -20,7 +20,7 @@ hide:
 # Gitea
 *Git with a Cup of Tea*
 
-[GitHub&ensp;:brands-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://docs.gitea.com/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/go-gitea/gitea){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.gitea.com/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -34,7 +34,7 @@ hide:
 + `3080`
 + `222`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + Web-UI:
     + <http://storage-server.internal:3080>
@@ -45,14 +45,14 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gitea (admin)"
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Gitea (benhaube)"
-    + SSH Keys&ensp;:symbols-arrow-right-thin:&ensp;"Gitea"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
+    + SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
 + 2FA / MFA:
-    + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
+    + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
     + :symbols-clock:&nbsp;TOTP 
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                               | Method                                | Container Name | Image                           |
 | :------------------------------------------------------------------------ | :------------------------------------ | :------------- | :------------------------------ |

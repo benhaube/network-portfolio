@@ -5,7 +5,7 @@ subtitle: Server Monitoring
 description: A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
 tags:
   - Active
-  - Docker
+  - Container
   - Monitor
   - Infrastructure
   - Service
@@ -17,7 +17,7 @@ hide:
 # Beszel
 *Server Monitoring*
 
-[GitHub&ensp;:brands-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/henrygd/beszel){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://beszel.dev/guide/what-is-beszel){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -33,7 +33,7 @@ hide:
 + Agent:
     + `45867` 
 
-#### :symbols-link-alt:&ensp;URL / Access 
+#### :symbols-link:&ensp;URL / Access 
 
 + <https://beszel.internal>
 + <http://pi-server.internal:8090/>
@@ -41,27 +41,27 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-arrow-right-thin:&ensp;"Beszel Hub"
+    + Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
 + [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 + 2FA / MFA:
     + :symbols-clock:&nbsp;TOTP 
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 ##### Hub
 
-| Host Device                                                                            | Method                                | Container Name | Image                  |
-| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
-|                                                                                        | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
+| Host Device                                                                    | Method                                | Container Name | Image                  |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
+|                                                                                | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
 
 ##### Agents
 
-| Host Device                                                                                | Method                                | Container Name | Image                        |
-| :----------------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server-outline:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)       | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-server-outline:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)                  | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
+| Host Device                                                                        | Method                                | Container Name | Image                        |
+| :--------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
+| [:symbols-server:&nbsp;Debian Server VM](../02_Hardware/Debian_Server_VM.md)       | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
 ### :symbols-settings:&ensp;Configuration
 
@@ -77,7 +77,7 @@ hide:
 
     1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
 
-#### :services-docker:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose
 
 ##### Hub
 

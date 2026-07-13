@@ -5,7 +5,7 @@ subtitle: Using Unattended-Upgrades
 hide:
   - toc
 ---
-![Google Symbols 'update' icon](../assets/icons/update.svg){ width=200 }
+![Custom update icon derived from Lucide history icon](../assets/icons/update.svg){ width=200 }
 
 # Automatic Updates for Debian
 *Using Unattended-Upgrades*
@@ -17,7 +17,7 @@ hide:
 
 ???+ note
 
-    :symbols-graph-8:&ensp;**Relevant Versions:**
+    :symbols-git-branch:&ensp;**Relevant Versions:**
     :    This tutorial applies to **Debian 13** *(Trixie)*, **Debian 12** *(Bookworm)*, and **Debian 11** *(Bullseye)*. The command output examples are based on **Debian 13** *(Trixie)*, and your output may vary based on your version. However, the commands should work identically on all supported versions of Debian. 
 
 ---
@@ -26,7 +26,7 @@ hide:
 
 !!! note inline end
 
-    :symbols-deployed-code-update:&ensp;**Minimal & Server Installs:**
+    :symbols-package-search:&ensp;**Minimal & Server Installs:**
     :    A full Debian install will probably have this package installed by default, however, server and minimal installs may not, and will require installing the package with the command above.
 
 1. Update the package index: 
@@ -65,7 +65,7 @@ There are two optional packages you can install to extend the functionality of `
         sudo apt install powermgmt-base -y
         ```
 
-## :symbols-verified-outline:&ensp;Verify the Installation
+## :symbols-badge-check:&ensp;Verify the Installation
 
 1. Run a 'dry-run' test to confirm the package is working and to see which origins are allowed:
 
@@ -89,7 +89,7 @@ There are two optional packages you can install to extend the functionality of `
         :symbols-binoculars:&ensp;**What to Look For:**
         :    The command output will show the codename for your version of Debian *(bullseye, bookworm, or trixie)*. and depending on what needs to be upgraded you may see different packages. The important things to look for are "Allowed origins" matching your release name, and "All upgrades installed." 
 
-## :symbols-timer-outline:&ensp;Manage the Systemd Timers
+## :symbols-timer:&ensp;Manage the Systemd Timers
 
 Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd timers to schedule the automatic updates. There are two timers that work together to handle updating the system's packages.
 
@@ -154,7 +154,7 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
     Wed 2026-05-20 06:13:41 EDT   19h Tue 2026-05-19 06:25:12 EDT 4h 46min ago apt-daily-upgrade.timer apt-daily-upgrade.service
     ```
 
-## :symbols-linux:&ensp;Manage the Systemd Service
+## :symbols-penguin:&ensp;Manage the Systemd Service
 
 The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the upgrades are complete before the system powers off. Below is a table containing common Systemd service management commands.
 
@@ -435,7 +435,7 @@ It is highly recommended to do a 'dry-run' after making changes to the configura
     journalctl -u unattended-upgrades --since today
     ```
 
-## :symbols-reset-wrench:&ensp;Troubleshoot Issues
+## :symbols-wrench:&ensp;Troubleshoot Issues
 
 ### Upgrades Not Running Automatically
 

@@ -22,16 +22,16 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox-outline:&ensp;Role 
+#### :symbols-toolbox:&ensp;Role 
 
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity:symbols-external-link-small:](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
-#### :symbols-location-outline:&ensp;Location
+#### :symbols-map-pin:&ensp;Location
 
 + Living-Room
 + Mini-Rack
 
-#### :symbols-memory:&ensp;OS / Firmware
+#### :symbols-cpu:&ensp;OS / Firmware
 
 + Hitron FW version: `7.3.5.3.2b2`
 
@@ -39,23 +39,23 @@ hide:
 
 + N/A
 
-## :symbols-lan-outline:&ensp;Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                   |
-| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------- |
-|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:symbols-router-outline:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
-|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                              |
+| Interface | IP Address      | MAC Address         | Connected To                                                           |
+| :-------: | :-------------- | :------------------ | :--------------------------------------------------------------------- |
+|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) |
+|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                      |
 
 ---
-## :symbols-note-stack:&ensp;Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 !!! config inline "Critical Configurations"
 
-    :symbols-web-cancel:&ensp;**WAN Down:**
+    :symbols-globe-x:&ensp;**WAN Down:**
  
     * If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
    
-    :symbols-iframe:&ensp;**Access WebUI:**
+    :symbols-monitor-cog:&ensp;**Access WebUI:**
  
     * To access the modem's Web UI enter `https://192.168.100.1`.
 
@@ -63,6 +63,6 @@ hide:
 
 + N/A
 
-#### :symbols-backup:&ensp;Backup Policy 
+#### :symbols-cloud-upload:&ensp;Backup Policy 
 
 + N/A

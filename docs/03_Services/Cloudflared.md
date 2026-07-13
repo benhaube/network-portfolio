@@ -5,7 +5,7 @@ subtitle: Reverse-Proxy Server
 description: Secure reverse-proxy tunnel for hosting private services on the public internet.
 tags:
   - Active
-  - Docker
+  - Container
   - Remote Access
   - Network
   - Infrastructure
@@ -19,7 +19,7 @@ hide:
 # Cloudflared
 *Reverse-Proxy Server*
 
-[GitHub&ensp;:brands-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-documentation-outline:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -32,7 +32,7 @@ hide:
 
 + `14333`
 
-#### :symbols-link-alt:&ensp;URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 + <http://storage-server.internal:14333>
 + <http://storage-server-2.internal:14333>
@@ -40,18 +40,18 @@ hide:
 #### :symbols-user-key:&ensp;Credentials 
 
 + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Software&ensp;:symbols-arrow-right-thin:&ensp;"Cloudflare Dashboard"
+    + Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
 + [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
 + 2FA / MFA:
-    + :symbols-security-key:&nbsp;FIDO2 / WebAuthn
+    + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
     + :symbols-clock:&nbsp;TOTP 
 
-## :symbols-deployed-code-update:&ensp;Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                            | Method                                | Container Name      | Image                              |
-| :------------------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :--------------------------------- |
-| [:symbols-server-outline:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)              | :services-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
+| Host Device                                                                    | Method                                | Container Name      | Image                              |
+| :----------------------------------------------------------------------------- | :------------------------------------ | :------------------ | :--------------------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :services-docker:&nbsp;Docker Compose | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)      | :services-docker:&nbsp;Docker Compose | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

@@ -42,20 +42,20 @@ Host Pi-Zero
     IdentityFile ~/.ssh/pi-zero.pub
     IdentitiesOnly yes
 
-Host storage-server.internal
+Host storage-server.internal Gitea
     HostName storage-server.internal
     Port 222
     User git
     IdentityFile ~/.ssh/gitea.pub
     IdentitiesOnly yes
 
-Host Gitlab
+Host gitlab.com Gitlab
     HostName gitlab.com
     User git
     IdentityFile ~/.ssh/gitlab.pub
     IdentitiesOnly yes
 
-Host GitHub
+Host github.com GitHub
     HostName github.com
     User git
     IdentityFile ~/.ssh/github.pub

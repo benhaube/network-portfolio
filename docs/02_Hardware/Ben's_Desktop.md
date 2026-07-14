@@ -73,10 +73,10 @@ hide:
 | `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
 | `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*               |
 
-| Interface | VLAN                             | FQDN                        | DNS Servers                   | Gateway        |
-| :-------: | :------------------------------- | :-------------------------- | :---------------------------- | :------------- |
-| `enp7s0`  | :symbols-shield-ban:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-| `wlp6s0`  | :symbols-shield-ban:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                                 | FQDN                        | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------------- | :-------------------------- | :---------------------------- | :------------- |
+| `enp7s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| `wlp6s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 

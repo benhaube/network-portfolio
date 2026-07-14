@@ -57,10 +57,10 @@ hide:
 | Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port2)* |
 |   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*              |
 
-| Interface |               VLAN               | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :------------------------------: | :---- | :---------------------------- | :------------- |
-| Ethernet  | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|   Wi-Fi   | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN                   | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------------: | :---- | :---------------------------- | :------------- |
+| Ethernet  | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 

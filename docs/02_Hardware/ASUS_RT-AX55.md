@@ -55,15 +55,15 @@ hide:
 
 #### :symbols-hub:&ensp;Virtual Local Networks
 
-|               VLAN               | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
-| :------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
-| :symbols-shield-ban:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
+|               VLAN                   | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
+| :----------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
+| :symbols-shield-quarter:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
 
 #### :symbols-wifi-cog:&ensp;Wi-Fi Networks
 
 |  SSID  |  VLAN  |   WAN Access    | CIDR              | Frequency      | Notes                                  |
 | :----: | :----: | :-------------: | :---------------- | :------------- | :------------------------------------- |
-| *Home* | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :symbols-shield-ban:&nbsp;Trusted VLAN |
+| *Home* | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :symbols-shield-quarter:&nbsp;Trusted VLAN |
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 

@@ -61,9 +61,9 @@ hide:
 | :-------: | :------------- | :------------------ | :---------------------------------------------------------------------------- |
 | `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
-| Interface | VLAN                             | FQDN                 | DNS Servers | Gateway        |
-| :-------: | :------------------------------- | :------------------- | :---------- | :------------- |
-| `enp1s0`  | :symbols-shield-ban:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
+| Interface | VLAN                                 | FQDN                 | DNS Servers | Gateway        |
+| :-------: | :----------------------------------- | :------------------- | :---------- | :------------- |
+| `enp1s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
 
 ## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 

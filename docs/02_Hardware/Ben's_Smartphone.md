@@ -62,9 +62,9 @@ hide:
 | :-------: | :--------- | :------------------ | :--------------------------------------------------------------------------- |
 |   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
-| Interface | VLAN                             | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :------------------------------- | :---- | :---------------------------- | :------------- |
-|   Wi-Fi   | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                                 | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------------- | :---- | :---------------------------- | :------------- |
+|   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 

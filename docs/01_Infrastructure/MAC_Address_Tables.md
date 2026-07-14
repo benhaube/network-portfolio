@@ -34,7 +34,7 @@ hide:
 |                                              |             |                                                               | :symbols-wifi-cog:&nbsp;*2.4 GHz*    | `7C:10:C9:DF:13:61` |                                   |
 |                                              |             |                                                               | :symbols-wifi-cog:&nbsp;*5 GHz*      | `7C:10:C9:DF:13:64` |                                   |
 
-## :symbols-shield-ban:&ensp;Trusted Network 
+## :symbols-shield-quarter:&ensp;Trusted Network 
 &emsp;&emsp;&ensp;*VLAN50*
 
 | Device Type                                 | Location    | Hostname                                                          | MAC Address         |        Interface        |   WAN Access    | Role / Notes                                                         |

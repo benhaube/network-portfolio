@@ -61,10 +61,10 @@ hide:
 |  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(port 3, VLAN50)* |
 |  `wlan0`  | `192.168.53.2` | `E4:5F:01:A4:60:08` | [:symbols-wifi-cog:&nbsp;2G_IoT](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN53)*                     |
 
-| Interface |                VLAN                | FQDN                 | DNS Servers | Gateway        |
-| :-------: | :--------------------------------: | :------------------- | :---------- | :------------- |
-|  `eth0`   |  :symbols-shield-ban:&nbsp;VLAN50  | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
-|  `wlan0`  | :symbols-shield-house:&nbsp;VLAN53 | `N/A`                | `127.0.0.1` | `192.168.53.1` |
+| Interface |                VLAN                    | FQDN                 | DNS Servers | Gateway        |
+| :-------: | :------------------------------------: | :------------------- | :---------- | :------------- |
+|  `eth0`   |  :symbols-shield-quarter:&nbsp;VLAN50  | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
+|  `wlan0`  |   :symbols-shield-house:&nbsp;VLAN53   | `N/A`                | `127.0.0.1` | `192.168.53.1` |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 

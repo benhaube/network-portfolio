@@ -59,9 +59,9 @@ hide:
 | :-------: | :------------- | :------------------ | :--------------------------------------------------------------------------- |
 |  `wlan0`  | `192.168.50.3` | `2c:cf:67:db:f5:e2` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)* |
 
-| Interface |               VLAN               | FQDN               | DNS Servers                   | Gateway        |
-| :-------: | :------------------------------: | :----------------- | :---------------------------- | :------------- |
-|  `wlan0`  | :symbols-shield-ban:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN                   | FQDN               | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------------: | :----------------- | :---------------------------- | :------------- |
+|  `wlan0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 

@@ -57,10 +57,10 @@ hide:
 | Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port-1)*, Temporary connection |
 |   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*                                   |
 
-| Interface |               VLAN               | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :------------------------------: | :---- | :---------------------------- | :------------- |
-| Ethernet  | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|   Wi-Fi   | :symbols-shield-ban:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN                   | FQDN  | DNS Servers                   | Gateway        |
+| :-------: | :----------------------------------: | :---- | :---------------------------- | :------------- |
+| Ethernet  | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 

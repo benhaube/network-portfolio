@@ -49,7 +49,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :symbols-file-code-corner:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ```yaml title="Pi 4B Server" linenums="1"
 --8<-- "glances-pi-4b.yml"

@@ -77,7 +77,7 @@ hide:
 
     1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
 
-#### :symbols-file-code-corner:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ##### Hub
 

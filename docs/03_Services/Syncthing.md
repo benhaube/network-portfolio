@@ -113,7 +113,7 @@ hide:
 
     [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
-#### :symbols-file-code-corner:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ```yaml title="ZimaOS NAS" linenums="1"
 --8<-- "syncthing-zima.yml"

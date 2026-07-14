@@ -55,7 +55,7 @@ hide:
 **Goal:**
 :   Replicate "Live Albums" and generate the Nest Hub interface.
 
-### :symbols-file-code-corner:&ensp;Docker Compose Snippet
+### :symbols-file-code-corner:&ensp;Docker Compose File Snippet
 
 Add these services to your existing Immich stack or a new stack.
 

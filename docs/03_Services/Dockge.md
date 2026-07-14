@@ -91,7 +91,7 @@ hide:
     docker compose pull && docker compose up -d
     ```
 
-#### :symbols-file-code-corner:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ```yaml title="Debian Server | Pi 4B Server | Pi Zero 2W Server" linenums="1"
 --8<-- "dockge.yaml"

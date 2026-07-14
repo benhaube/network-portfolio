@@ -63,7 +63,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-file-code-corner:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "gotify.yml"

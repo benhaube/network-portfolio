@@ -153,7 +153,7 @@ hide:
  
         [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
-#### :symbols-file-code-corner:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "glance-compose.yml"

@@ -84,7 +84,7 @@ hide:
 
 5. Paste the JWT into the environment variable, `JWT_SECRET`, in your Docker compose file and restart the container.
 
-#### :symbols-file-code-corner:&ensp;Docker Compose
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ```yaml {title="compose.yml" linenums="1" .mono-title}
 --8<-- "yt-dlp.yml"

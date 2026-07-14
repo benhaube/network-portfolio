@@ -138,7 +138,7 @@ theme:
       dashboard: symbols/layout-dashboard
       deprecated: symbols/trash-2
       desktop: symbols/pc-case
-      development: symbols/git-graph
+      development: symbols/git-branch
       dns: symbols/server-dns
       download: symbols/download
       file-share: symbols/share

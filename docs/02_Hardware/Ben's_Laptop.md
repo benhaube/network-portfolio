@@ -292,3 +292,21 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 ```json {title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" .mono-title}
 --8<-- "fastfetch-login-laptop.jsonc"
 ```
+
+1. Sets the width of the percentage bars.
+2.     **Options:** 
+       
+       + `1` = number 
+       + `2` = bar 
+       + `3` = both 
+       + `9` = colored number
+
+3.     **Options:** 
+       
+       + `string`
+       + `icon` 
+       + `both` 
+       + `none`
+
+4. Aligns all keys to this uniform width.
+5. Sets the separator symbol used between the keys and values.

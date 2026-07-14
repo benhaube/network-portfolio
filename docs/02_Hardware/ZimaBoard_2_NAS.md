@@ -270,15 +270,21 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 ##### Install
 
 1. Download the latest release from [GitHub:symbols-external-link-small:](https://github.com/chicohaager/cron).
+
+    ```bash linenums="1"
+    wget https://github.com/chicohaager/cron/releases/download/<version>/cron.raw
+    ```
+
 2. Copy the `cron.raw` package into the `/tmp` directory on the server:
 
     ```bash linenums="1"
-    scp cron.raw root@storage-server.internal:/tmp/
+    scp cron.raw admin@ZimaOS-NAS:/tmp/
     ```
 
 3. Install the package:
 
     ```bash linenums="1"
+    ssh admin@ZimaOS-NAS
     sudo zpkg install /tmp/cron.raw
     ```
 
@@ -303,16 +309,23 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 ##### Install
 
 1. Download the latest release from [GitHub:symbols-external-link-small:](https://github.com/chicohaager/zfw).
+
+    ```bash linenums="1"
+    wget https://github.com/chicohaager/zfw/releases/download/<version>/zfw-<version>-amd64.tar.gz
+    ```
+
 2. Copy the compressed archive into the `/tmp` directory on the server:
 
     ```bash linenums="1"
-    scp zfw-<version>-amd64.tar.gz root@storage-server.internal:/tmp/
+    scp zfw-<version>-amd64.tar.gz admin@ZimaOS-NAS:/tmp/
     ```
 
 3. Extract the archive, enter the directory, and run the `install.sh` script:
 
     ```bash linenums="1"
-    ssh root@storage-server.internal 'cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-* && sh install.sh'
+    ssh admin@ZimaOS-NAS 
+    cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-*
+    sudo sh install.sh'
     ```
 
 !!! note

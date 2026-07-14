@@ -48,7 +48,7 @@ hide:
 [:symbols-router:&ensp;ASUS RT-AX55](./02_Hardware/ASUS_RT-AX55.md)
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
-[:symbols-server:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)
+[:symbols-layers:&ensp;Debian Server](./02_Hardware/Debian_Server_VM.md)
 :    The primary DNS server in the [Technitium](03_Services/Technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](./02_Hardware/ZimaBoard_2_NAS.md). 
 
 [:symbols-settings-ethernet:&ensp;Hitron Modem](./02_Hardware/Hitron_Modem.md)

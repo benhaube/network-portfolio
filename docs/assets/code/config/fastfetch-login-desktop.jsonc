@@ -1,7 +1,6 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    // "type": "small",
     "color": {
       "1": "cyan",
       "2": "white"
@@ -9,10 +8,10 @@
   },
   "display": {
     "bar": {
-      "width": 10                     // Width of percentage bars
+      "width": 10  // (1)!
     },
     "percent": {
-      "type": 3,                       // 1=number, 2=bar, 3=both, 9=colored number
+      "type": 3,  // (2)!
        "color": {
          "green": "green",
          "yellow": "light_yellow",
@@ -20,10 +19,10 @@
       }
     },
     "key": {
-      "type": "icon",                  // string, icon, both, or none
-      "width": 5                       // Aligns keys to this width
+      "type": "icon",  // (3)!
+      "width": 5   // (4)!
     },
-    "separator": " ↪",                 // Separator between keys and values
+    "separator": " ↪",  // (5)!
     "color": {
       "separator": "bright_cyan",
       "title": "white",
@@ -69,15 +68,24 @@
     "break",
     {
       "type": "localip",
-      "key": "Local IP",
-      // "showIpv6": true,
+      "key": "Ethernet IP",
+      "namePrefix": "enp7s0",
+      "defaultRouteOnly": false,
+      "showMac": true,
+      "showSpeed": true,
+      "format": "{4} ({7}) - IPv4[{1}] MAC[{3}]"
+    },
+    {
+      "type": "localip",
+      "key": "Wi-Fi IP",
+      "namePrefix": "wlp6s0",
+      "defaultRouteOnly": false,
       "showMac": true,
       "showSpeed": true,
       "format": "{4} ({7}) - IPv4[{1}] MAC[{3}]"
     },
     {
       "type": "publicip",
-      // "showAllIps": true,
       "timeout": 1000
     },
     {

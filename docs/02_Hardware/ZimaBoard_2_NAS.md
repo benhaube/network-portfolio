@@ -243,6 +243,24 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 --8<-- "fastfetch-login-storage-server.jsonc"
 ```
 
+1. Sets the width of the percentage bars.
+2.     **Options:** 
+       
+       + `1` = number 
+       + `2` = bar 
+       + `3` = both 
+       + `9` = colored number
+
+3.     **Options:** 
+       
+       + `string`
+       + `icon` 
+       + `both` 
+       + `none`
+
+4. Aligns all keys to this uniform width.
+5. Sets the separator symbol used between the keys and values.
+
 #### :symbols-clock-fading:&ensp;Zima Cron
 
 ##### About

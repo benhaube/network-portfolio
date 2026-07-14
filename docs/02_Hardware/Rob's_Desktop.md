@@ -16,7 +16,7 @@ hide:
 # Rob's Workstation
 *High-Performance Desktop PC*
 
-[Windows Docs&ensp;:symbols-window:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_H670-PRO_WIFI_D4_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_600_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
+[Windows Docs&ensp;:brands-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_H670-PRO_WIFI_D4_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_600_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -36,7 +36,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:symbols-window:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
++ [:brands-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
 #### :symbols-user-key:&ensp;Credentials
 

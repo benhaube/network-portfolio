@@ -105,7 +105,7 @@ hide:
 | :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
 | *Active* | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
-| *Active* | [:symbols-window:&nbsp;Windows 11](https://microsoft.com/windows)         | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
+| *Active* | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
 #### :symbols-penguin:&ensp;Native Linux
 

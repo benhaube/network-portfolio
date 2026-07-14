@@ -70,7 +70,7 @@ hide:
 
 ## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-memory-stick:&ensp;Boot
+#### :symbols-microchip:&ensp;Boot
 
 | Mount Point | Drive Type | Drive Capacity | Device Path    | File System | Encryption |
 | :---------- | :--------- | :------------- | :------------- | :---------- | :--------- |

@@ -38,7 +38,7 @@ hide:
 
 :    2023/09/05
 
-#### :symbols-memory-stick:&ensp;Printer MCU
+#### :symbols-microchip:&ensp;Printer MCU
 
 + Nozzle:
     + *Chip:* GD32F303CBT6

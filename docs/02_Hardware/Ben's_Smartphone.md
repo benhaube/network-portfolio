@@ -34,7 +34,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:brands-android-robot:&nbsp;Android 16](https://www.android.com/)
++ [:brands-android:&nbsp;Android 16](https://www.android.com/)
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -88,7 +88,7 @@ hide:
 | :------: | :------------------------------------------------------ | :---------- | :----------------- | :--------------------------------- |
 | *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/) | NAT         | `-`                | Android Virtualization Environment |
 
-#### :brands-android-robot:&ensp;Native Android
+#### :brands-android:&ensp;Native Android
 
 |  Status  | Service                                                            |        Port(s)         | Role / Notes                             |
 | :------: | :----------------------------------------------------------------- | :--------------------: | :--------------------------------------- |

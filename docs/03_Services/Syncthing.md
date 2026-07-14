@@ -71,15 +71,15 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                        | Method                                     | Container Name | Image                          |
-| :--------------------------------------------------------------------------------- | :----------------------------------------- | :------------- | :----------------------------- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)            | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)       | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
-| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)   | :brands-android-robot:&nbsp;Native Android | `N/A`          | `N/A`                          |
-| [:symbols-layers:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-penguin:&nbsp;Native Linux        | `N/A`          | `N/A`                          |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | :services-docker:&nbsp;Docker Compose      | `syncthing`    | `linuxserver/syncthing:latest` |
+| Host Device                                                                        | Method                                | Container Name | Image                          |
+| :--------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------------- |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)            | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)       | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
+| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)   | :brands-android:&nbsp;Native Android  | `N/A`          | `N/A`                          |
+| [:symbols-layers:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | :services-docker:&nbsp;Docker Compose | `syncthing`    | `linuxserver/syncthing:latest` |
 
 ### :symbols-settings:&ensp;Configuration  
 
@@ -109,7 +109,7 @@ hide:
     sudo systemctl start syncthing@admin.service
     ```
 
-+ :brands-android-robot:&nbsp;Android:
++ :brands-android:&nbsp;Android:
 
     [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 

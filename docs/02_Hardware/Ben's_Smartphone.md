@@ -34,7 +34,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:brands-android:&nbsp;Android 16](https://www.android.com/)
++ [:brands-android:&nbsp;Android 17](https://www.android.com/)
 
 #### :symbols-user-key:&ensp;Credentials
 

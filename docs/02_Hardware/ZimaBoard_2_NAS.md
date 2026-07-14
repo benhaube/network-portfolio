@@ -40,7 +40,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:services-zimaos:&nbsp;ZimaOS v1.6.1](https://www.zimaspace.com/zimaos) *(Immutable)*
++ [:services-zimaos:&nbsp;ZimaOS v1.6.2](https://www.zimaspace.com/zimaos) *(Immutable)*
 
 #### :symbols-user-key:&ensp;Credentials
 

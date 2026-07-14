@@ -82,11 +82,11 @@ hide:
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                    |   Port(s)   | Role / Notes                                                                                   |
-| :------: | :--------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)  | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
-| *Active* | [:symbols-pi:&nbsp;Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/).         |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)   |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+|  Status  | Service                                                     |   Port(s)   | Role / Notes                                                                                   |
+| :------: | :---------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:services-fluidd:&nbsp;Fluidd](../03_Services/Fluidd.md)   | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
+| *Active* | [:symbols-api:&nbsp;Moonraker](../03_Services/Moonraker.md) |   `7125`    | Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/).         |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_Services/SSH.md)    |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

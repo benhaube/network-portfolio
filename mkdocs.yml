@@ -174,6 +174,7 @@ theme:
       shell: symbols/terminal
       software: symbols/desktop-landscape
       switch: symbols/ethernet-port
+      sync: symbols/refresh-cw
       tools: symbols/wrench
       tv-stand: symbols/tv-minimal
       vh: symbols/host
@@ -182,6 +183,7 @@ theme:
       vm: symbols/layers
       vpn: symbols/waypoints
       windows: symbols/window
+      web-host: symbols/globe
 
 # ~~~ Python Markdown Extensions ~~~
 
@@ -394,6 +396,7 @@ extra:
     Shell: shell
     Software: software
     Switch: switch
+    Sync: sync
     Tools: tools
     TV Stand: tv-stand
     Video: video
@@ -402,3 +405,4 @@ extra:
     VLAN: vlan 
     VPN: vpn
     Windows: windows
+    Web Host: web-host

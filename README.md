@@ -165,13 +165,10 @@ I would like to give special thanks to the following projects whose work was use
 
 + **[Google](https://fonts.google.com/):**
     + For their `Google Sans` and `Google Sans Code` fonts
-    + For their beautiful rounded icons in the `Material Symbols` collection.
 + **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/):**
     + For their incredible open-source static website generator.
 + **[Lucide](https://lucide.dev/):**
     + For their beautiful and modern icon library.
-+ **[Simple Icons](https://simpleicons.org/):**
-    + For their amazing brand icons.
 + **[Selfh.st](https://selfh.st/icons/):**
     + For their awesome, colorful brand icons. 
 + **[Mermaid.js](https://mermaid.js.org/):**

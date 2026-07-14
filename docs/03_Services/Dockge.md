@@ -52,7 +52,7 @@ hide:
 
 | Host Device                                                                        | Method                                | Container Name    | Image                   |
 | :--------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :---------------------- |
-| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-layers:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | :services-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |

@@ -1,5 +1,5 @@
 ---
-icon: symbols/server
+icon: symbols/layers
 title: Debian Server
 subtitle: Primary DNS Server
 tags:
@@ -14,10 +14,10 @@ tags:
 hide:
   - toc
 ---
-![Lucide 'server' icon](../assets/icons/server.svg){ width=200 }
+![Lucide 'server' icon](../assets/icons/layers.svg){ width=200 }
 
 # Debian Server
-*Virtual Machine*
+*Primary DNS Server*
 
 [Debian Docs&ensp;:symbols-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }&emsp;[KVM Docs&ensp;:symbols-layers:](https://docs.kernel.org/6.0/virt/kvm/index.html){ .md-button .md-button--primary }&emsp;[QEMU Docs&ensp;:services-qemu:](https://www.qemu.org/docs/master/){ .md-button .md-button--primary }
 

@@ -4,12 +4,12 @@ title: Ben's Laptop
 subtitle: ThinkPad X1 Carbon
 tags:
   - PC
-  - Container Host
   - Laptop
   - Mobile
   - Remote Access
   - Linux
   - Hardware
+  - Virtual Host
 hide:
   - toc
 ---

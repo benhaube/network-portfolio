@@ -147,7 +147,7 @@ hide:
                   - $include: /app/config/widgets/search.yml
             ```
 
-    :symbols-widgets:&ensp;**Widgets:**
+    :symbols-blocks:&ensp;**Widgets:**
  
     + To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository. 
  

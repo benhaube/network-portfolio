@@ -5,7 +5,6 @@ subtitle: High-Performance Desktop PC
 tags:
   - PC
   - Desktop
-  - Container Host
   - Virtual Host
   - Office
   - Linux

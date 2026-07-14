@@ -4,17 +4,12 @@ title: IP Address Management
 subtitle: Organized IP Address Space
 tags:
   - Network
-  - Hardware
   - VLAN
   - VPN
   - Remote Access
-  - Hardware
   - DNS
   - Server
   - Router
-  - Desktop
-  - PC
-  - 3D-Printer
 hide:
   - toc
 ---
@@ -47,7 +42,7 @@ hide:
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | VLAN50 | `192.168.50.3`   | `pi-zero`       | Static | Caddy reverse proxy server for local domain names                                                                         |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | VLAN50 | `192.168.50.4`   | `ZimaOS-NAS`    | Static | Main File Server, Primary Ethernet connection *(eth0)*                                                                    |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)          | VLAN50 | `192.168.50.5`   | `ZimaOS-NAS`    | Static | SMB Multi-channel Path, Secondary Ethernet Connection *(eth1)*                                                            |
-| [:symbols-server:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | VLAN50 | `192.168.50.6`   | `debian-vm`     | Static | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
+| [:symbols-layers:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | VLAN50 | `192.168.50.6`   | `debian-vm`     | Static | DNS Primary *([Technitium](../03_Services/Technitium.md) cluster)*, VM on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md) |
 | [:symbols-router:&nbsp;ASUS RT-AX55](../02_Hardware/ASUS_RT-AX55.md)               | VLAN50 | `192.168.50.221` | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                  |
 | [:symbols-settings-ethernet:&nbsp;Hitron Modem](../02_Hardware/Hitron_Modem.md)    | -      | `192.168.100.1`  | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)                                                       |
 
@@ -66,7 +61,7 @@ hide:
 | :------- | :--------------------------------- | :--------------------------------------------------------------------- | :------------------------------ | :-------------------------------------- | :----------------- |
 | *Active* | :symbols-terminal:&nbsp;addr.tools | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md) | <https://rac3r4life.myaddr.dev> | :brands-lets-encrypt:&nbsp;Lets Encrypt | 2026-08-23         |
 
-## :symbols/waypoints:&ensp;VPN Servers / Clients
+## :symbols-waypoints:&ensp;VPN Servers / Clients
 
 #### :services-wireguard:&ensp;WireGuard @ ASUS Router
 &emsp;&ensp;*Main Server*

@@ -4,14 +4,12 @@ title: MAC Address Tables
 subtitle: Hardware MAC Addresses
 tags:
   - Network
-  - VLAN
   - IoT
   - Router
   - Server
   - Mobile
   - Laptop
   - Desktop
-  - PC
 hide:
   - toc
 ---

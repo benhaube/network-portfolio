@@ -120,3 +120,10 @@
   color: var(--md-accent-fg-color);
   transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out;
 }
+
+/* ~~~ Tag Container ~~~ */
+
+/* Prevent tags from colliding with floated page buttons */
+.md-tags {
+  margin-right: 5.5rem; 
+}

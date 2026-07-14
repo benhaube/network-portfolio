@@ -3,7 +3,6 @@
 add_newline = true
 # format = '$all$directory$character'
 # right_format = """$all"""
-
 continuation_prompt = '[❯❯ ](bright-black)'
 
 [character]

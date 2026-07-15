@@ -1,7 +1,7 @@
 ---
 icon: symbols/laptop-minimal
 title: Rob's Laptop
-subtitle: ASUS TUF Gaming Laptop
+subtitle: ASUS TUF Gaming A16
 tags: 
   - PC
   - Laptop 
@@ -15,7 +15,7 @@ hide:
 ![Lucide 'laptop-minimal' icon](../assets/icons/laptop-minimal.svg){ width=200 }
 
 # Rob's Laptop
-*ASUS TUF Gaming Laptop*
+*ASUS TUF Gaming A16*
 
 [Windows Docs&ensp;:brands-microsoft:](https://support.microsoft.com/en-us/windows){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/FA507XI_User_Manual.pdf){ .md-button .md-button--primary }
 
@@ -36,7 +36,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-microsoft:&nbsp;Windows 11 Home](https://microsoft.com/windows)
+:    [:brands-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
 #### :symbols-user-key:&ensp;Credentials
 

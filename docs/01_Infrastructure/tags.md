@@ -2,6 +2,8 @@
 icon: symbols/tag-outline
 title: Infrastructure Tags
 subtitle: An Index of Relevant Tags
+search:
+  exclude: true
 ---
 ![LAN Icon](../assets/icons/network-node.svg){ width=200 }
 

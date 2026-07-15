@@ -51,7 +51,7 @@ hide:
 
 | Device                                                                                         | VLAN   | IP Address      | Hostname           | Role / Notes                                                            |
 | :--------------------------------------------------------------------------------------------- | :----- | :-------------- | :----------------- | :---------------------------------------------------------------------- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)                        | VLAN50 | `192.168.50.10` | `bens-workstation` | Fedora Linux 44 *(KDE Plasma Desktop Edition)*                          |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Bens_Desktop.md)                         | VLAN50 | `192.168.50.10` | `bens-workstation` | Fedora Linux 44 *(KDE Plasma Desktop Edition)*                          |
 | [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_Hardware/Kacey_3D-printer.md)        | VLAN50 | `192.168.50.15` | `k1c-a71e`         | Creality K1C *(Modified)*                                               |
 | [:symbols-server:&nbsp;Ras-Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) *(`wlan0`)* | VLAN53 | `192.168.53.2`  | `pi-server`        | Bridge to VLAN53 for [Home Assistant](../03_Services/Home_Assistant.md) |
 

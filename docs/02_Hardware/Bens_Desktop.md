@@ -24,7 +24,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](./TP-Link_Switch.md).
+:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](TP-Link_Switch.md).
 
 #### :symbols-host:&ensp;Hostname
 
@@ -72,10 +72,10 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                               |
-| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------------- |
-| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](../02_Hardware/TP-Link_Switch.md) *(Port 1)* |
-| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*               |
+| Interface | IP Address      | MAC Address         | Connected To                                                                |
+| :-------: | :-------------- | :------------------ | :-------------------------------------------------------------------------- |
+| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](TP-Link_Switch.md) *(Port 1)* |
+| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*  |
 
 | Interface | VLAN                                 | FQDN                        | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------- | :-------------------------- | :---------------------------- | :------------- |
@@ -155,7 +155,7 @@ hide:
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-+ The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](./ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggered by Systemd.
++ The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](ZimaBoard_2_NAS.md) with a custom [backup script](#backup-script) triggered by Systemd.
 + With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
 + Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
 

@@ -163,8 +163,8 @@ hide:
     :symbols-square-activity:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
     :symbols-monitor-smartphone:&ensp;**Affected Clients:** 
  
-    + [Ben's Desktop PC](./Ben's_Desktop.md) 
-    + [Ben's Laptop PC](./Ben's_Laptop.md)
+    + [Ben's Desktop PC](./Bens_Desktop.md) 
+    + [Ben's Laptop PC](./Bens_Laptop.md)
 
     --- 
     See the ["Configuration"](../03_Services/NFS.md#configuration) section of the NFS service documentation page for server and client configuration details. 

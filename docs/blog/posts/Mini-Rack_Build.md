@@ -42,7 +42,7 @@ hide:
     + Three GeeekPi 6" Cat6a patch cables
     + Three Monoprice 3' Cat6a patch cables
     + One PCIe 4.0&ensp;:symbols-move-right:&ensp;NVMe add-in card
-    + One SK-Hynix 500GB NVMe SSD *(for Docker / VM storage, pulled from [ThinkPad](../../02_Hardware/Ben's_Laptop.md) after storage upgrade)*
+    + One SK-Hynix 500GB NVMe SSD *(for Docker / VM storage, pulled from [ThinkPad](../../02_Hardware/Bens_Laptop.md) after storage upgrade)*
     + Two Crucial BX500 4TB SATA SSDs in RAID1 *(for mass network attached storage)*
     + One 30 cm SATA extension cable
     + One PWM Fan controller

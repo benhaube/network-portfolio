@@ -85,9 +85,9 @@ hide:
 
 | Host Device                                                                        | Method                                | Container Name | Image                          |
 | :--------------------------------------------------------------------------------- | :------------------------------------ | :------------- | :----------------------------- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md)            | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Ben's_Laptop.md)       | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
-| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_Hardware/Ben's_Smartphone.md)   | :brands-android:&nbsp;Native Android  | `N/A`          | `N/A`                          |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Bens_Desktop.md)             | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_Hardware/Bens_Laptop.md)        | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
+| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_Hardware/Bens_Smartphone.md)    | :brands-android:&nbsp;Native Android  | `N/A`          | `N/A`                          |
 | [:symbols-layers:&nbsp;Debian Server](../02_Hardware/Debian_Server_VM.md)          | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md)     | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_Hardware/Raspberry_Pi_Zero_2_W.md) | :symbols-penguin:&nbsp;Native Linux   | `N/A`          | `N/A`                          |

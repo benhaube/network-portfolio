@@ -42,9 +42,9 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                             | Method                              | Container Name | Image |
-| :---------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Ben's_Desktop.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                              | Container Name | Image |
+| :--------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_Hardware/Bens_Desktop.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

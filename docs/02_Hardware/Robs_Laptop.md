@@ -24,7 +24,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](./Ugreen_Switch.md).
+:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](Ugreen_Switch.md).
 
 #### :symbols-host:&ensp;Hostname
 
@@ -55,8 +55,8 @@ hide:
 
 | Interface | IP Address | MAC Address         | Connected To                                                                                                   |
 | :-------: | :--------- | :------------------ | :------------------------------------------------------------------------------------------------------------- |
-| Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](../02_Hardware/Ugreen_Switch.md) *(Port-1)*, Temporary connection |
-|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi-cog:&nbsp;Home](./ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*                                   |
+| Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](Ugreen_Switch.md) *(Port-1)*, Temporary connection |
+|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi-cog:&nbsp;Home](ASUS_RT-BE92U.md#wi-fi-networks) *(VLAN50)*                                   |
 
 | Interface |               VLAN                   | FQDN  | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------: | :---- | :---------------------------- | :------------- |

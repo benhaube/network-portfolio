@@ -1,0 +1,8 @@
+title: Infrastructure
+sort:
+  ignore_case: true
+nav:
+  - "*"
+  - logical_map.md
+  - physical_map.md
+  - tags.md

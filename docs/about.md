@@ -25,7 +25,7 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 
 ##### Privacy-First Networking
 
-:    Using tools like [Technitium](03_Services/Technitium.md) DNS and [Network Attached Storage](02_Hardware/ZimaBoard_2_NAS.md) servers to take back control of my data.
+:    Using tools like [Technitium](03_services/technitium.md) DNS and [Network Attached Storage](02_hardware/zimaos_nas.md) servers to take back control of my data.
 
 ##### Immutable Documentation 
 
@@ -41,7 +41,7 @@ When I’m not hardening my network or managing services, you can usually find m
 
 ##### 3D Printing
 
-:    Tinkering with my [Creality K1C](02_Hardware/Kacey_3D-printer.md), and likely troubleshooting a new filament or hardware modification.
+:    Tinkering with my [Creality K1C](02_hardware/kacey_3d-printer.md), and likely troubleshooting a new filament or hardware modification.
 
 ##### At the Track 
 

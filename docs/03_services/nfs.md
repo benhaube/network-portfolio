@@ -1,0 +1,115 @@
+---
+icon: symbols/cloud-sync
+title: NFS
+subtitle: Network File System
+description: Remote file system access for Linux.
+tags:
+  - Active
+  - Native
+  - File Share
+  - Network
+  - Infrastructure
+  - Backup
+  - Service
+hide:
+  - toc
+---
+![Lucide cloud-sync icon](../assets/icons/cloud-sync.svg){ width=200 }
+
+# NFS
+*Network File System*
+
+[Documentation&ensp;:symbols-files:](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-nfs){ .md-button .md-button--primary }
+
+---
+## :symbols-info:&ensp;Overview
+
+#### :symbols-file-text:&ensp;Description 
+
+:    Remote file system access for Linux.
+
+#### :symbols-settings-ethernet:&ensp;Port(s)
+
+:    `2049`
+
+#### :symbols-link:&ensp;URL / Access 
+
+:    :symbols-folder-tree:&nbsp;Network Storage:
+
+      + `192.168.50.4:/media/Quick-Storage`
+
+:    :symbols-app-window-mac:&nbsp;Application Data:
+
+      + `192.168.50.4:/media/nvme0n1p1`
+
+#### :symbols-user-key:&ensp;Credentials 
+
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+      
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
+
+## :symbols-package-search:&ensp;Deployment Details
+
+| Host Device                                                          | Method                              | Container Name | Image |
+| :------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+
+### :symbols-settings:&ensp;Configuration 
+
+#### :symbols-server:&ensp;Server
+
+##### Exports Entry
+
+```linuxconfig {title="/etc/exports" linenums="1" .mono-title}
+--8<-- "exports"
+```
+
+##### Command to Apply
+
+```bash linenums="1"
+exportfs -a
+```
+
+**or**
+
+```bash linenums="1"
+systemctl restart nfs-server
+```
+
+#### :symbols-monitor-smartphone:&ensp;Clients
+
+##### Systemd Unit Files
+
+1. Systemd `.mount` unit files:
+    + Place files in the `/etc/systemd/system` directory.
+
+    ```systemd {title="mnt-storage_server-NVMe.mount" linenums="1" .mono-title}
+    --8<-- "mnt-storage_server-NVMe.mount"
+    ```
+
+    ```systemd {title="mnt-storage_server-Quick_Storage.mount" linenums="1" .mono-title}
+    --8<-- "mnt-storage_server-Quick_Storage.mount"
+    ```
+
+2. Systemd `.automount` unit files:
+    + Place files in the `/etc/systemd/system` directory.
+
+    ```systemd {title="mnt-storage_server-NVMe.automount" linenums="1" .mono-title}
+    --8<-- "mnt-storage_server-NVMe.automount"
+    ```
+
+    ```systemd {title="mnt-storage_server-Quick_Storage.automount" linenums="1" .mono-title}
+    --8<-- "mnt-storage_server-Quick_Storage.automount"
+    ```
+
+##### Command to Apply
+
+1. Run the Systemd daemon-reload command to apply the configuration files.
+
+    ```bash linenums="1"
+    sudo systemctl daemon-reload
+    ```
+
+2. Add a shortcut to the `/mnt/storage_server` directory in the "Places" pane in the Dolphin file manager for quick GUI access. The remote file systems will mount automatically when you visit the directory.
+    + Running the CLI command, `ls /mnt/storage-server`, will also trigger the auto-mount. 

@@ -1,0 +1,8 @@
+title: Hardware
+sort:
+  ignore_case: true
+nav:
+  - asus_rt-be92u.md
+  - asus_rt-ax55.md
+  - "*"
+  - tags.md

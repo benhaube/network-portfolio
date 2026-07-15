@@ -2,7 +2,7 @@
 
     **:symbols-clock-refresh-cw:&ensp;Chrony:**
 
-    :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with [Chrony](../03_Services/Chrony.md). The Chrony service is hosted on the main router, [ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md).
+    :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with [Chrony](../03_services/chrony.md). The Chrony service is hosted on the main router, [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md).
    
     **:symbols-logs:&ensp;Logs:**
 
@@ -10,7 +10,7 @@
  
     **:symbols-mail-warning:&ensp;Email Notifications:**
 
-    :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../Linux_Tutorials/Setup_SSH_Login_Email_Notification.md) for documentation.
+    :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation.
 
 #### :symbols-update:&ensp;Update Process
 
@@ -21,16 +21,16 @@
     sudo apt update && sudo apt upgrade
     ```
 
-+ Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_Services/Dockge.md)
++ Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_services/dockge.md)
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-+ An image of the MicroSD card is stored on [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
++ An image of the MicroSD card is stored on [ZimaOS NAS](../02_hardware/zimaos_nas.md). 
     + Path: `/media/Quick-Storage/Backup/<hostname>`
-+ Data and configurations from Docker services are backed up to [ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md). 
++ Data and configurations from Docker services are backed up to [ZimaOS NAS](../02_hardware/zimaos_nas.md). 
     + Path: `/media/Quick-Storage/Backup/<hostname>/stacks`
 + Critical configuration files are backed up to the attached USB flash drive.
-+ All backed up files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_Infrastructure/Disaster_Recovery_Plan.md#backup-strategy).
++ All backed up files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 --8<-- "nerd-fonts.md"
 

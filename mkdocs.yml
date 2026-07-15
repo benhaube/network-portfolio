@@ -245,7 +245,7 @@ markdown_extensions:
         kwds:
           case: lower
           
-# ~~~ MkDocs Native Plugins ~~~
+# ~~~ Material for MkDocs Built-in Plugins ~~~
 
 plugins:
   - meta:

@@ -29,22 +29,28 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `3001`
+:    `3001`
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ :symbols-lan:&nbsp;LAN Access
-    + <https://uptime.internal>
-    + <http://pi-server.internal:3001>
-+ :symbols-globe:&nbsp;WAN Access
-    + <https://uptime.rac3r4life.online>
+:    :symbols-lan:&nbsp;LAN Access
+    
+      + <https://uptime.internal>
+      + <http://pi-server.internal:3001>
+
+:    :symbols-globe:&nbsp;WAN Access
+    
+      + <https://uptime.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials  
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
-+ 2FA / MFA:
-    + :symbols-clock:&nbsp;TOTP 
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
+
+:    2FA / MFA:
+    
+      + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

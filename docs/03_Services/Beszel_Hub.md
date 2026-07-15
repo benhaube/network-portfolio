@@ -28,23 +28,29 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ Hub:
-    + `8090`
-+ Agent:
-    + `45867` 
+:    Hub:
+    
+      + `8090`
+
+:    Agent:
+    
+      + `45867` 
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ <https://beszel.internal>
-+ <http://pi-server.internal:8090/>
+:    <http://pi-server.internal:8090/>
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
-+ [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
-+ 2FA / MFA:
-    + :symbols-clock:&nbsp;TOTP 
+:    [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
+
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
+
+:    2FA / MFA:
+    
+      + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

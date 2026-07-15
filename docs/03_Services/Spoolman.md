@@ -27,17 +27,17 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `7912`
+:    `7912`
 
 #### :symbols-link:&ensp;URL / Access   
 
-+ <http://storage-server.internal:7912/>
-+ <http://storage-server-2.internal:7912/>
-+ <https://spoolman.internal>
+:    <http://storage-server.internal:7912/>
+
+:    <http://storage-server-2.internal:7912/>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ N/A
+:    N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

@@ -25,16 +25,17 @@ hide:
  
 #### :symbols-settings-ethernet: Port(s)
 
-+ `port`
+:    `port`
 
 #### :symbols-link: URL / Access
 
-+ <https://example.com>
+:    <https://example.com>
 
 #### :symbols-user-key: Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
 ## :symbols-package-search: Deployment Details
 

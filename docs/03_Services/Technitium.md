@@ -31,26 +31,31 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `53`
-+ `443`
-+ `5380`
+:    `53`&emsp;`443`&emsp;`5380`
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ :symbols-server:&nbsp;Debian Server
-    + `192.168.50.6` &mdash; First DNS server
-    + <http://debian-vm.internal:5380>
-+ :symbols-server:&nbsp;Pi 4B Server
-    + `192.168.50.2` &mdash; Second DNS server
-    + <http://pi-server.internal:5380>
+:   :symbols-layers:&nbsp;Debian Server
+    
+      + `192.168.50.6` &mdash; First DNS server
+      + <http://debian-vm.internal:5380>
+
+:    :symbols-server:&nbsp;Pi 4B Server
+    
+      + `192.168.50.2` &mdash; Second DNS server
+      + <http://pi-server.internal:5380>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
-+ [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
-+ 2FA / MFA:
-    + :symbols-clock:&nbsp;TOTP 
+:    [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
+
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
+
+:    2FA / MFA:
+    
+      + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

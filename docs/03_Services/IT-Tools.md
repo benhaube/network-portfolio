@@ -29,16 +29,15 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `8080`
+:    `8080`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <https://it-tools.internal>
-+ <http://pi-server.internal:8080/>
+:    <http://pi-server.internal:8080/>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ N/A
+:    N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

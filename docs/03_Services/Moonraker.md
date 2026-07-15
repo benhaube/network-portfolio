@@ -28,17 +28,17 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `7125`
+:    `7125`
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ <http://kacey.internal:7125>
-+ <http://192.168.50.153:7125>
+:    <http://kacey.internal:7125>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

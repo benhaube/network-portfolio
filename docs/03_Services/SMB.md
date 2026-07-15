@@ -29,26 +29,38 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `445`
+:    `445`
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ `\\storage-server.internal\nvme0n1p1`
-+ `\\storage-server.internal\Quick-Storage`
-+ `\\pi-server.internal\smb-share`
-+ `\\asusrouter.internal\`
+:    :symbols-router:&nbsp;ASUS RT-BE92U:
+
+      + `\\asusrouter.internal\`
+
+:    :symbols-server:&nbsp;Pi 4B Server:
+
+      + `\\pi-server.internal\smb-share`
+
+:    :symbols-server-nas:&nbsp;ZimaOS NAS:
+
+      + `\\storage-server.internal\nvme0n1p1`
+      + `\\storage-server.internal\Quick-Storage`
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
-    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
-    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)" 
-    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)" 
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com)
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
+      + Local Network&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)" 
+      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)" 
 
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                                    | Method                              | Container Name | Image |
 | :----------------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_Hardware/ASUS_RT-BE92U.md)         | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_Hardware/Raspberry_Pi_4B_Server.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)      | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
 

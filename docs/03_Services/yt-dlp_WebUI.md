@@ -28,18 +28,18 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `3033`
+:    `3033`
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ <http://storage-server.internal:3033>
-+ <http://storage-server-2.internal:3033>
-+ <https://yt-dlp.internal>
+:    <http://storage-server.internal:3033>
+:    <http://storage-server-2.internal:3033>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"yt-dlp-webui"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"yt-dlp-webui"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

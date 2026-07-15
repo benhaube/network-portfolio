@@ -27,18 +27,18 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `123`
+:    `123`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ `192.168.50.1:123`
-+ `asusrouter.internal:123`
+:    `192.168.50.1:123`&ensp;`asusrouter.internal:123`
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
-    + SSH Key&ensp;:symbols-move-right:&ensp;"admin@asusrouter"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
+      + SSH Key&ensp;:symbols-move-right:&ensp;"admin@asusrouter"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

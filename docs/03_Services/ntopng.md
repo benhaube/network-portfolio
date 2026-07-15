@@ -30,18 +30,17 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `3000`
-+ `5556`
+:    `3000`&emsp;`5556`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <http://192.168.50.4:3000>
-+ <http://storage-server.internal:3000>
-+ <http://storage-server-2.internal:3000>
+:    <http://storage-server.internal:3000>
+
+:    <http://storage-server-2.internal:3000>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ N/A
+:    N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

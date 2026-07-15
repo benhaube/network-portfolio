@@ -29,18 +29,19 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `3100`
+:    `3100`
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ <http://storage-server.internal:3100>
-+ <http://storage-server-2.internal:3100>
-+ <http://192.168.50.4:3100>
+:    <http://storage-server.internal:3100>
+
+:    <http://storage-server-2.internal:3100>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Homebox"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Homebox"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

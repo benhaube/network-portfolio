@@ -31,16 +31,17 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `N/A`
+:    `N/A`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ N/A
+:    N/A
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ :services-docker:&nbsp;Docker Compose: 
-    + `compose.yml`
+:    :services-docker:&nbsp;Docker Compose: 
+    
+      + `compose.yml`
 
 ## :symbols-package-search:&ensp;Deployment Details
 

@@ -30,21 +30,24 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `14333`
+:    `14333`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <http://storage-server.internal:14333>
-+ <http://storage-server-2.internal:14333>
+:    <http://storage-server.internal:14333>&emsp;<http://storage-server-2.internal:14333>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
-+ [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
-+ 2FA / MFA:
-    + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
-    + :symbols-clock:&nbsp;TOTP 
+:    [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
+
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
+
+:    2FA / MFA:
+      
+      + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
+      + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

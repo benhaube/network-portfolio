@@ -29,19 +29,25 @@ hide:
  
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `8180`
+:     `8180`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <http://storage-server.internal:8180> &mdash; *Local Network Web-UI only*
-+ <http://storage-server-2.internal:8180> &mdash; *Local Network Web-UI only*
-+ <https://gotify.rac3r4life.online> &mdash; *Use for notification WebSocket*
+:    :symbols-lan:&nbsp;LAN Access:
+
+      + <http://storage-server.internal:8180> 
+      + <http://storage-server-2.internal:8180>
+
+:    :symbols-globe:&nbsp;WAN Access:
+
+      + <https://gotify.rac3r4life.online> &mdash;&nbsp;:symbols-webhook:&nbsp;*Use for notification webhook*
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (admin)"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (bhaube)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (admin)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (bhaube)"
 
 #### :symbols-message-square-warning:&ensp;Notifications
 

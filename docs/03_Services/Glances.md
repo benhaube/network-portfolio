@@ -28,17 +28,17 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `21208`
+:    `61208`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <http://pi-server.internal:61208>
-+ <http://storage-server.internal:61208>
-+ <http://storage-server-2.internal:61208>
+:    <http://pi-server.internal:61208>
+
+:    <http://storage-server.internal:61208>
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ N/A
+:    N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

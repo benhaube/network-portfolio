@@ -28,17 +28,17 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `8123`
+:    `8123`
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ <http://pi-server.internal:8123>
-+ <https://home-assistant.internal>
+:    <http://pi-server.internal:8123>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

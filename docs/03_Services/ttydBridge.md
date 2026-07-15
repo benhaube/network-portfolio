@@ -27,17 +27,19 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `2222`
+:    `2222`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <http://storage-server.internal:2222>
-+ <http://storage-server-2.internal:2222>
+:    <http://storage-server.internal:2222>
+
+:    <http://storage-server-2.internal:2222>
 
 #### :symbols-user-key:&ensp;Credentials  
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

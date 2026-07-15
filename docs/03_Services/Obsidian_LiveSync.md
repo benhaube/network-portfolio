@@ -29,21 +29,25 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `5984`
+:    `5984`
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ :symbols-monitor-cog: Settings Web UI: 
-    + <http://storage-server.internal:5984/_utils>
-    + <http://storage-server-2.internal:5984/_utils>
-+ :symbols-database: Database:
-    + <http://storage-server.internal:5984/obsidian-vault>
-    + <http://storage-server-2.internal:5984/obsidian-vault>
+:    :symbols-monitor-cog: Settings Web UI: 
+    
+      + <http://storage-server.internal:5984/_utils>
+      + <http://storage-server-2.internal:5984/_utils>
+
+:    :symbols-database: Database:
+    
+      + <http://storage-server.internal:5984/obsidian-vault>
+      + <http://storage-server-2.internal:5984/obsidian-vault>
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
-    + Local Network&ensp;:symbols-move-right:&ensp;"Obsidian LiveSync"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):   
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Obsidian LiveSync"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

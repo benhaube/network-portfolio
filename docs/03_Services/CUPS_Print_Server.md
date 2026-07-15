@@ -27,23 +27,27 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `631`
+:    `631`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <https://192.168.50.2:631>
+:    <https://192.168.50.2:631>
 
 #### :symbols-printer-plus:&ensp;Printer URL
 
-+ IPP:
-    + `ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
-+ mDNS:
-    + `dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
+:    IPP:
+    
+      + `ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
+
+:    mDNS:
+    
+      + `dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"CUPS Admin"&emsp;:symbols-info:{ title="Login needed for Administration, but anyone on the local network can print." }
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"CUPS Admin"&emsp;:symbols-info:{ title="Login needed for Administration, but anyone on the local network can print." }
 
 ## :symbols-package-search:&ensp;Deployment Details
 

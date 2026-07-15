@@ -30,44 +30,56 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `8384` *(TCP)*
-+ `22000` *(TCP / UDP)*
-+ `21027` *(UDP)*
+:    `8384` *(TCP)*&emsp;`22000` *(TCP / UDP)*&emsp;`21027` *(UDP)*
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ :symbols-pc-case:&nbsp;Ben's Desktop
-    + <https://bens-workstation.internal:8384>
-    + <https://192.168.50.61:8384>
-+ :symbols-laptop-minimal:&nbsp;Ben's Laptop
-    + <https://localhost:8384>
-+ :symbols-smartphone:&nbsp;Ben's Smartphone
-    + <https://localhost:8384>
-+ :symbols-server:&nbsp;Debian Server
-    + <https://debian-vm.internal:8384>
-    + <https://192.168.50.6:8384>
-+ :symbols-server:&nbsp;Pi 4B Server
-    + <https://pi-server.internal:8384>
-    + <https://192.168.50.2:8384>
-+ :symbols-server:&nbsp;Pi Zero 2W Server
-    + <https://pi-zero.internal:8384>
-    + <https://192.168.50.3:8384>
-+ :symbols-server-nas:&nbsp;ZimaOS NAS
-    + <https://storage-server.internal:8384>
-    + <https://storage-server-2.internal:8384>
-    + <https://192.168.50.4:8384>
-    + <https://192.168.50.5:8384>
+:    :symbols-pc-case:&nbsp;Ben's Desktop
+    
+      + <https://bens-workstation.internal:8384>
+      + <https://192.168.50.61:8384>
+
+:    :symbols-laptop-minimal:&nbsp;Ben's Laptop
+    
+      + <https://localhost:8384>
+
+:    :symbols-smartphone:&nbsp;Ben's Smartphone
+    
+      + <https://localhost:8384>
+
+:    :symbols-server:&nbsp;Debian Server
+    
+      + <https://debian-vm.internal:8384>
+      + <https://192.168.50.6:8384>
+
+:    :symbols-server:&nbsp;Pi 4B Server
+    
+      + <https://pi-server.internal:8384>
+      + <https://192.168.50.2:8384>
+
+:    :symbols-server:&nbsp;Pi Zero 2W Server
+    
+      + <https://pi-zero.internal:8384>
+      + <https://192.168.50.3:8384>
+
+:    :symbols-server-nas:&nbsp;ZimaOS NAS
+    
+      + <https://storage-server.internal:8384>
+      + <https://storage-server-2.internal:8384>
+      + <https://192.168.50.4:8384>
+      + <https://192.168.50.5:8384>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
-    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-workstation"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ ben-laptop"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-phone" 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ debian-vm" 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-server"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-zero"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ storage-server"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-workstation"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ ben-laptop"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-phone" 
+      + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ debian-vm" 
+      + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-server"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-zero"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ storage-server"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

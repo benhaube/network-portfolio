@@ -30,24 +30,24 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `4999`
+:    `4999`
 
 #### :symbols-link:&ensp;URL / Access
 
-Pi 4B Server:
+:    Pi 4B Server:
 
-+ <http://192.168.50.2:4999>
-+ <http://pi-server.internal:4999>
+      + <http://192.168.50.2:4999>
+      + <http://pi-server.internal:4999>
 
-ZimaOS NAS:
+:    ZimaOS NAS:
 
-+ <http://192.168.50.4:4999>
-+ <http://storage-server.internal:4999>
-+ <http://storage-server-2.internal:4999>
+      + <http://192.168.50.4:4999>
+      + <http://storage-server.internal:4999>
+      + <http://storage-server-2.internal:4999>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ N/A
+:    N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

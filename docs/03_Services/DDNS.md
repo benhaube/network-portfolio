@@ -27,16 +27,17 @@ hide:
  
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `N/A`
+:    `N/A`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <https://rac3r4life.myaddr.dev>
+:    <https://rac3r4life.myaddr.dev>
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

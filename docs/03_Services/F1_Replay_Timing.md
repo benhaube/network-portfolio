@@ -27,20 +27,22 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `3000`
-+ `8000`
+:    `3000`&emsp;`8000`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ Backend: 
-    + <http://storage-server.internal:8000>
-+ Frontend: 
-    + <http://storage-server.internal:3000>
-    + <http://storage-server-2.internal:3000>
+:    Backend: 
+    
+      + <http://storage-server.internal:8000>
+
+:    Frontend: 
+    
+      + <http://storage-server.internal:3000>
+      + <http://storage-server-2.internal:3000>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ N/A
+:    N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

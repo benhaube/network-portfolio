@@ -30,18 +30,24 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `2049`
+:    `2049`
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ `192.168.50.4:/media/Quick-Storage`
-+ `192.168.50.4:/media/nvme0n1p1`
+:    :symbols-folder-tree:&nbsp;Network Storage:
+
+      + `192.168.50.4:/media/Quick-Storage`
+
+:    :symbols-app-window-mac:&nbsp;Application Data:
+
+      + `192.168.50.4:/media/nvme0n1p1`
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+      
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

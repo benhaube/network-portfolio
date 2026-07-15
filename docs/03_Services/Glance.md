@@ -30,20 +30,20 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `8580`
+:    `8580`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <https://glance.internal>
-+ <http://pi-server.internal:8580/>
+:    <http://pi-server.internal:8580/>
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Glance Admin"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Glance User (bhaube)"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Glance User (rpereira)"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Glance Admin"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Glance User (bhaube)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Glance User (rpereira)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

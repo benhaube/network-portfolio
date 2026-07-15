@@ -29,40 +29,52 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `22`
+:    `22`
 
 #### :symbols-link:&ensp;URL / Access 
 
-+ :symbols-router:&nbsp;ASUS RT-BE92U
-    + `192.168.50.1:22` 
-    + `asusrouter.internal:22`
-+ :symbols-server:&nbsp;Debian Server
-    + `192.168.50.6:22` 
-    + `debian-vm.internal:22` 
-+ :symbols-server:&nbsp;Pi 4B Server
-    + `192.168.50.2:22` 
-    + `pi-server.internal:22`
-+ :symbols-server:&nbsp;Pi Zero 2W Server
-    + `192.168.50.3:22` 
-    + `pi-zero.internal:22` 
-+ :symbols-server-nas:&nbsp;ZimaOS NAS
-    + `192.168.50.4:22`
-    + `192.168.50.5:22` 
-    + `storage-server.internal:22` 
-    + `storage-server-2.internal:22`
-+ :symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer
-    + `192.168.50.153:22` 
-    + `kacey.internal:22` 
+:    :symbols-router:&nbsp;ASUS RT-BE92U
+    
+      + `192.168.50.1:22` 
+      + `asusrouter.internal:22`
+
+:    :symbols-layers:&nbsp;Debian Server
+    
+      + `192.168.50.6:22` 
+      + `debian-vm.internal:22` 
+
+:    :symbols-server:&nbsp;Pi 4B Server
+    
+      + `192.168.50.2:22` 
+      + `pi-server.internal:22`
+
+:    :symbols-server:&nbsp;Pi Zero 2W Server
+    
+      + `192.168.50.3:22` 
+      + `pi-zero.internal:22` 
+
+:    :symbols-server-nas:&nbsp;ZimaOS NAS
+    
+      + `192.168.50.4:22`
+      + `192.168.50.5:22` 
+      + `storage-server.internal:22` 
+      + `storage-server-2.internal:22`
+
+:    :symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer
+    
+      + `192.168.50.153:22` 
+      + `kacey.internal:22` 
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE92U (Admin)"
-    + SSH keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
-    + SSH keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
-    + SSH keys&ensp;:symbols-move-right:&ensp;"pi-zero (admin)"
-    + SSH keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
-    + SSH keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + SSH keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE92U (Admin)"
+      + SSH keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
+      + SSH keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
+      + SSH keys&ensp;:symbols-move-right:&ensp;"pi-zero (admin)"
+      + SSH keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+      + SSH keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

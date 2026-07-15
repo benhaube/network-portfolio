@@ -31,28 +31,38 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ Hub:
-    + `9443`
-+ Agent:
-    + `9001`
+:    Hub:
+    
+      + `9443`
+
+:    Agent:
+    
+      + `9001`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ Hub: 
-    + ~~<https://portainer.internal>~~
-    + ~~<https://pi-server.internal:9443>~~
-+ Agent:
-    + ~~<http://pi-zero.internal:9001>~~
-    + ~~<http://storage-server.internal:9001>~~
+:    Hub: 
+    
+      + ~~<https://portainer.internal>~~
+      + ~~<https://pi-server.internal:9443>~~
+
+:    Agent:
+    
+      + ~~<http://pi-zero.internal:9001>~~
+      + ~~<http://storage-server.internal:9001>~~
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Portainer"
-+ [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
-+ 2FA / MFA:
-    + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
-    + :symbols-clock:&nbsp;TOTP 
+:    [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
+
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Portainer"
+
+:    2FA / MFA:
+    
+      + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
+      + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

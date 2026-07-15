@@ -31,16 +31,15 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `80`
-+ `443`
+:    `80`&emsp;`443`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <https://pi-zero.internal>
+:    <https://pi-zero.internal>
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ N/A
+:    N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

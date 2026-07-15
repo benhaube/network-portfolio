@@ -31,22 +31,28 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `5001`
+:    `5001`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ <http://pi-server.internal:5001>
-+ <http://pi-zero.internal:5001>
-+ <http://debian-vm.internal:5001>
-+ <http://storage-server.internal:5001>
+:    Main Server:    
+
+      + <http://pi-server.internal:5001>
+
+:    Other Servers *(connected to main server)*:
+
+      + <http://pi-zero.internal:5001>
+      + <http://debian-vm.internal:5001>
+      + <http://storage-server.internal:5001>
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ debian-vm"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-server"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-zero"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ storage-server"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ debian-vm"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-server"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-zero"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ storage-server"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

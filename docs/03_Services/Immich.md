@@ -28,22 +28,26 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-+ `2283`
+:    `2283`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ :symbols-lan: LAN Access:
-    + <https://immich.internal>
-    + <http://storage-server.internal:2283>
-    + <http://storage-server-2.internal:2283>
-+ :symbols-globe: WAN Access:
-    + <https://immich.rac3r4life.online>
+:    :symbols-lan:&nbsp;LAN Access:
+    
+      + <https://immich.internal>
+      + <http://storage-server.internal:2283>
+      + <http://storage-server-2.internal:2283>
+
+:    :symbols-globe:&nbsp;WAN Access:
+    
+      + <https://immich.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials  
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Immich Admin"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Immich User"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Immich Admin"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Immich User"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

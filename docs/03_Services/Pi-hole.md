@@ -30,21 +30,31 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ Web: `80`, `443`
-+ DNS: `53`
+:    Web: 
+
+      + `80` 
+      + `443`
+
+:    DNS: 
+
+      + `53`
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ ~~<https://pi-server.internal/admin/login>~~
-+ ~~<https://pi-hole.internal/admin/login>~~
+:    ~~<https://pi-server.internal/admin/login>~~
+
+:    ~~<https://pi-hole.internal/admin/login>~~
 
 #### :symbols-user-key:&ensp;Credentials 
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
-+ 2FA / MFA:
-    + :symbols-clock:&nbsp;TOTP 
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
+
+:    2FA / MFA:
+    
+      + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

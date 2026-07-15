@@ -28,17 +28,17 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `3389`
+:    `3389`
 
 #### :symbols-link:&ensp;URL / Access  
 
-+ [rdp://192.168.50.67:3389](rdp://192.168.50.67:3389)
-+ [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
+:    [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):  
-    + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com):  
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

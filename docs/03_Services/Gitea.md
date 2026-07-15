@@ -31,26 +31,31 @@ hide:
  
 #### :symbols-settings-ethernet:&ensp;Port(s)
 
-+ `3080`
-+ `222`
+:    `3080`&emsp;`222`
 
 #### :symbols-link:&ensp;URL / Access
 
-+ Web-UI:
-    + <http://storage-server.internal:3080>
-    + <http://storage-server-2.internal:3080>
-+ SSH: 
-    + `git@storage-server.internal`
+:    Web-UI:
+    
+      + <http://storage-server.internal:3080>
+      + <http://storage-server-2.internal:3080>
+
+:    SSH: 
+    
+      + `git@storage-server.internal`
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
-    + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
-+ 2FA / MFA:
-    + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
-    + :symbols-clock:&nbsp;TOTP 
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
+
+:    2FA / MFA:
+    
+      + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
+      + :symbols-clock:&nbsp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

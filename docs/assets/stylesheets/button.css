@@ -124,6 +124,8 @@
 /* ~~~ Tag Container ~~~ */
 
 /* Prevent tags from colliding with floated page buttons */
-.md-tags {
-  margin-right: 5.5rem; 
+@media screen and (min-width:44.94em) {
+  .md-tags {
+    margin-right: 5.5rem; 
+  }
 }

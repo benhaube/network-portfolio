@@ -33,7 +33,7 @@ hide:
 
 + <https://192.168.50.2:631>
 
-#### :symbols-printer-check:&ensp;Printer URL
+#### :symbols-printer-plus:&ensp;Printer URL
 
 + IPP:
     + `ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`

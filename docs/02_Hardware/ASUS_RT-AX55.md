@@ -28,22 +28,22 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `RT-AX55-1360`
+:    `RT-AX55-1360`
 
 #### :symbols-map-pin:&ensp;Location
 
-+ Office
-+ Printer-Cart 
+:    Office&ensp;:symbols-move-right:&ensp;Printer-Cart 
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:symbols-wizard-hat:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
+:    [:symbols-wizard-hat:&nbsp;asuswrt](https://www.asus.com/us/content/asuswrt/) *(3004.386.53329-g73d3919)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+      
+      + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
 
 ## :symbols-lan:&ensp;Network Configuration
 

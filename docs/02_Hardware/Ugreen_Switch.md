@@ -28,23 +28,27 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location 
 
-+ Living-Room 
-+ Mini-Rack 
+:    Living-Room&ensp;:symbols-move-right:&ensp;Mini-Rack 
 
 #### :symbols-plug:&ensp;Power Source
 
-+ Wall wart *(12.0V / 1.0A)*
+:    Wall wart *(12.0V / 1.0A)*
 
 #### :symbols-square-activity:&ensp;Specs
 
-+ Throughput: 
-    + Five 2.5 Gb/s Ports
-    + One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](./ASUS_RT-BE92U.md) router)*
-    + 45 Gb/s Total Switching Capacity
-+ Jumbo Frames: 
-    + Supported *(12 KB)*
-+ Managed:
-    + No &mdash; Unmanaged
+:    **Throughput:** 
+    
+      + Five 2.5 Gb/s Ports
+      + One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](./ASUS_RT-BE92U.md) router)*
+      + 45 Gb/s Total Switching Capacity
+
+:    **Jumbo Frames:** 
+    
+      + Supported *(12 KB)*
+
+:    **Managed:**
+    
+      + No &mdash; Unmanaged
 
 ## :symbols-ethernet-port:&ensp;Port Map
 

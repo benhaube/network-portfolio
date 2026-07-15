@@ -28,16 +28,15 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location
 
-+ Living-Room
-+ Mini-Rack
+:    Living-Room&ensp;:symbols-move-right:&ensp;Mini-Rack
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ Hitron FW version: `7.3.5.3.2b2`
+:    Hitron FW version: `7.3.5.3.2b2`
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ N/A
+:    N/A
 
 ## :symbols-lan:&ensp;Network Configuration
 

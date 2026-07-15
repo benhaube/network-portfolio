@@ -27,21 +27,21 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `Rob-Desktop`
+:    `Rob-Desktop`
 
 #### :symbols-map-pin:&ensp;Location
 
-+ Office 
-+ Desk 
+:    Office&ensp;:symbols-move-right:&ensp;Desk 
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:brands-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
+:    [:brands-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
 
 ## :symbols-square-activity:&ensp;Core Specs
 

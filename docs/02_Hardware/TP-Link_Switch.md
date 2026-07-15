@@ -28,22 +28,26 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location
 
-+ Office
-+ Printer-Cart
+:    Office&ensp;:symbols-move-right:&ensp;Printer-Cart
 
 #### :symbols-plug:&ensp;Power Source
 
-+ Wall Wart *(5V / 0.6A)*
+:    Wall Wart *(5V / 0.6A)*
 
 #### :symbols-square-activity:&ensp;Specs
 
-+ Throughput: 
-    + Five 1 GbE ports
-    + 10 Gb/s total switching capacity
-+ Jumbo Frames: 
-    + Supported *(16 KB)*
-+ Managed:
-    + No &mdash; Unmanaged
+:    **Throughput:** 
+    
+      + Five 1 GbE ports
+      + 10 Gb/s total switching capacity
+
+:    **Jumbo Frames:** 
+    
+      + Supported *(16 KB)*
+
+:    **Managed:**
+    
+      + No &mdash; Unmanaged
 
 ## :symbols-ethernet-port:&ensp;Port Map 
 

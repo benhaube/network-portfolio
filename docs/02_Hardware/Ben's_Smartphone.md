@@ -26,29 +26,34 @@ hide:
 
 #### :symbols-host:&ensp;Hostname 
 
-+ `ben-s-phone`
+:    `ben-s-phone`
 
 #### :symbols-map-pin:&ensp;Location
 
-+ Mobile
+:    Mobile
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:brands-android:&nbsp;Android 17](https://www.android.com/)
+:    [:brands-android:&nbsp;Android 17](https://www.android.com/)
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Email&ensp;:symbols-move-right:&ensp;"Google"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Email&ensp;:symbols-move-right:&ensp;"Google"
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-+ :symbols-key-fido2:&nbsp;Titan M2 security chip *(FIDO2 / WebAuthn)*
-+ :symbols-shield:&nbsp;Full-disk encryption
-+ :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
-+ Biometric:
-    + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
-    + :symbols-scan-face:&nbsp;Face Scan
+:    **Software:**
+
+      + :symbols-key-fido2:&nbsp;Titan M2 security chip *(FIDO2 / WebAuthn)*
+      + :symbols-shield:&nbsp;Full-disk encryption
+      + :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
+
+:    **Biometric:**
+    
+      + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
+      + :symbols-scan-face:&nbsp;Face Scan
 
 ## :symbols-square-activity:&ensp;Core Specs
 

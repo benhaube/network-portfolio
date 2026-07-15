@@ -34,23 +34,26 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `k1c-a71e`
+:    `k1c-a71e`
 
 #### :symbols-map-pin:&ensp;Location  
 
-+ Office
+:    Office
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:brands-creality-v2:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
-+ [:symbols-penguin:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
-+ [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
+:    [:brands-creality-v2:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
+
+:    [:symbols-penguin:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
+
+:    [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
 ## :symbols-lan:&ensp;Network Configuration
 

@@ -25,25 +25,30 @@ hide:
 
 #### :symbols-map-pin: Location
 
-+ Insert location here
+:    Insert location here
  
 #### :symbols-plug: Power Source
 
-+ (e.g., Wall wart 12V / 1A)
+:    (e.g., Wall wart 12V / 1A)
  
 #### :symbols-square-activity: Specs
 
-+ Throughput:
-  + (e.g., 50 Gb/s) 
-+ Jumbo Frames: 
-  + Supported / Unsupported
-+ Managed: 
-  + Managed / Unmanaged
+:    **Throughput:**
+  
+      + (e.g., 50 Gb/s) 
+
+:    **Jumbo Frames:** 
+  
+      + Supported / Unsupported
+
+:    **Managed:** 
+  
+      + Managed / Unmanaged
 
 ## :symbols-ethernet-port: Port Map
 
-| Port # | Connected Device                             | Color / Type | Notes |
-| :----: | :------------------------------------------- | :----------- | :---- |
+| Port # | Connected Device                     | Color / Type | Notes |
+| :----: | :----------------------------------- | :----------- | :---- |
 | **1**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
 | **2**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
 | **3**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |

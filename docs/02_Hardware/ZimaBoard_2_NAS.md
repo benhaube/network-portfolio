@@ -31,24 +31,24 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `ZimaOS-NAS`
+:    `ZimaOS-NAS`
 
 #### :symbols-map-pin:&ensp;Location 
 
-+ Living-Room
-+ Mini-Rack
+:    Living-Room&ensp;:symbols-move-right:&ensp;Mini-Rack
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:services-zimaos:&nbsp;ZimaOS v1.6.2](https://www.zimaspace.com/zimaos) *(Immutable)*
+:    [:services-zimaos:&nbsp;ZimaOS v1.6.2](https://www.zimaspace.com/zimaos) *(Immutable)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)" 
-    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
-    + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"   
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)" 
+      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"   
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-square-activity:&ensp;Core Specs
 

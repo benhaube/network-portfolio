@@ -28,37 +28,41 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `bens-workstation`
+:    `bens-workstation`
 
 #### :symbols-map-pin:&ensp;Location
 
-+ Office 
-+ Desk
+:    Office&ensp;:symbols-move-right:&ensp;Desk
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
+:    [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-+ HSI-1
-+ Firmware:
-    + IOMMU
-    + Linux kernel lockdown
-    + Pre-boot DMA protection
-    + SMAP
-    + SMM locked down
-    + TPM v2.0
-    + UEFI Secure Boot
-+ Software:
-    + :symbols-arrow-right-left:&nbsp;Linux swap encryption
-    + :symbols-shield:&nbsp;LUKS2 drive encryption
-    + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
+:    **HSI-1**
+
+:    **Firmware:**
+    
+      + IOMMU
+      + Linux kernel lockdown
+      + Pre-boot DMA protection
+      + SMAP
+      + SMM locked down
+      + TPM v2.0
+      + UEFI Secure Boot
+
+:    **Software:**
+    
+      + :symbols-arrow-right-left:&nbsp;Linux swap encryption
+      + :symbols-shield:&nbsp;LUKS2 drive encryption
+      + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
 
 ## :symbols-square-activity:&ensp;Core Specs
 

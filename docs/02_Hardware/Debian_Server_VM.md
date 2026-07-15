@@ -30,24 +30,25 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `debian-vm`
+:    `debian-vm`
 
 #### :symbols-layers:&ensp;Hypervisor 
 
-+ [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
+:    [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
 
 #### :symbols-cpu:&ensp;Operating System 
 
-+ [:symbols-debian:&nbsp;Debian Linux](https://www.debian.org/) *(trixie)*
+:    [:symbols-debian:&nbsp;Debian Linux](https://www.debian.org/) *(trixie)*
 
 #### :symbols-network-node:&ensp;Host Node 
 
-+ [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
+:    [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_Hardware/ZimaBoard_2_NAS.md)
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
+    
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
 
 ## :symbols-square-activity:&ensp;Resource Allocation
 

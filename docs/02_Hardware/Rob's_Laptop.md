@@ -28,20 +28,21 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `ems1`
+:    `ems1`
 
 #### :symbols-map-pin:&ensp;Location 
 
-+ Mobile
+:    Mobile
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:brands-microsoft:&nbsp;Windows 11 Home](https://microsoft.com/windows)
+:    [:brands-microsoft:&nbsp;Windows 11 Home](https://microsoft.com/windows)
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Laptop PC"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Laptop PC"
 
 ## :symbols-square-activity:&ensp;Core Specs
 

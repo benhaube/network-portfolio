@@ -31,22 +31,23 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `pi-server` *(VLAN50 / `eth0`)*
-+ `home-assistant` *(VLAN53 / `wlan0`)*
+:    `pi-server` *(VLAN50 / `eth0`)*
+
+:    `home-assistant` *(VLAN53 / `wlan0`)*
 
 #### :symbols-map-pin:&ensp;Location  
 
-+ Office
-+ Printer-Cart
+:    Office&ensp;:symbols-move-right:&ensp;Printer-Cart
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:symbols-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
+:    [:symbols-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
 
 ## :symbols-square-activity:&ensp;Core Specs
 

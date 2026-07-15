@@ -30,21 +30,22 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `RT-BE92U-FAF0`
+:    `RT-BE92U-FAF0`
 
 #### :symbols-map-pin:&ensp;Location 
 
-+ Living-Room
+:    Living-Room
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:symbols-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
+:    [:symbols-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
-    + SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
+      + SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
 
 ## :symbols-lan:&ensp;Network Configuration
 

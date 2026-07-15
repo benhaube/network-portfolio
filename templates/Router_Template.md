@@ -25,20 +25,21 @@ hide:
 
 #### :symbols-host: Hostname(s)
 
-+ `hostname`
+:    `hostname`
 
 #### :symbols-map-pin: Location
 
-+ Location
+:    Location
  
 #### :symbols-cpu: OS / Firmware
 
-+ :symbols-router:&nbsp;Router_OS
+:    :symbols-router:&nbsp;Router_OS
 
 #### :symbols-user-key: Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
 ## :symbols-lan: Network Configuration
 
@@ -62,8 +63,8 @@ hide:
 
 #### :symbols-ethernet-port: Physical Ethernet Ports
 
-|     Port #      | Connected Device                        | Color / Type | Notes |
-| :-------------: | :-------------------------------------- | :----------- | :---- |
+|     Port #      | Connected Device                | Color / Type | Notes |
+| :-------------: | :------------------------------ | :----------- | :---- |
 | 10Gb WAN/LAN 1  | :symbols-ethernet-port: *Empty* | -            | -     |
 | 2.5Gb WAN/LAN 2 | :symbols-ethernet-port: *Empty* | -            | -     |
 |   2.5Gb LAN 1   | :symbols-ethernet-port: *Empty* | -            | -     |

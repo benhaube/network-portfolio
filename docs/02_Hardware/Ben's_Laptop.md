@@ -29,42 +29,49 @@ hide:
 
 #### :symbols-host:&ensp;Hostname
 
-+ `ben-laptop`
+:    `ben-laptop`
 
 #### :symbols-map-pin:&ensp;Location 
 
-+ Mobile
+:    Mobile
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-+ [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
+:    [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Laptop"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Laptop"
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-+ HSI-4
-+ Firmware: 
-    + BIOS rollback protection
-    + IOMMU
-    + Linux kernel lockdown
-    + Pre-boot DMA protection
-    + SMAP
-    + Suspend-to-idle: enabled
-    + Suspend-to-RAM: disabled
-    + TPM v2.0
-    + UEFI memory protection
-    + UEFI Secure Boot
-+ Software:
-    + :symbols-arrow-right-left:&nbsp;Linux swap encryption
-    + :symbols-shield:&nbsp;LUKS2 drive encryption
-    + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user 
-+ Biometric:
-    + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
-    + :symbols-scan-face:&nbsp;IR Face Scan
+:    **HSI-4**
+
+:    **Firmware:** 
+      
+      + BIOS rollback protection
+      + IOMMU
+      + Linux kernel lockdown
+      + Pre-boot DMA protection
+      + SMAP
+      + Suspend-to-idle: enabled
+      + Suspend-to-RAM: disabled
+      + TPM v2.0
+      + UEFI memory protection
+      + UEFI Secure Boot
+
+:    **Software:**
+    
+      + :symbols-arrow-right-left:&nbsp;Linux swap encryption
+      + :symbols-shield:&nbsp;LUKS2 drive encryption
+      + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user 
+
+:    **Biometric:**
+    
+      + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
+      + :symbols-scan-face:&nbsp;IR Face Scan
 
 ## :symbols-square-activity:&ensp;Core Specs
 

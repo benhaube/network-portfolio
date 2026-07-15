@@ -25,24 +25,25 @@ hide:
 
 #### :symbols-host: Hostname
 
-+ `hostname`
+:    `hostname`
 
 #### :symbols-map-pin: Location
 
-+ Location 
+:    Location 
 
 #### :symbols-cpu: OS / Firmware
 
-+ :os-icon:&nbsp;Operating System
+:    :os-icon:&nbsp;Operating System
 
 #### :symbols-user-key: Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
 #### :symbols-brick-wall-shield: Device Security
 
-+ Hardware / Software security features (e.g., TPM2)
+:    Hardware / Software security features (e.g., TPM2)
 
 ## :symbols-square-activity: Core Specs
 
@@ -52,8 +53,8 @@ hide:
 
 ## :symbols-lan: Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                          |
-| :-------: | :--------- | :------------------ | :------------------------------------ |
+| Interface | IP Address | MAC Address         | Connected To                  |
+| :-------: | :--------- | :------------------ | :---------------------------- |
 |  enp7s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
 
 | Interface | VLAN   | FQDN               | DNS Servers         | Gateway   |

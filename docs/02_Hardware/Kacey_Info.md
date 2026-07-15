@@ -30,7 +30,7 @@ hide:
 
 :    `220x220x250`
 
-#### :symbols-git-branch:&ensp;Revision
+#### :symbols-git-commit-vertical:&ensp;Revision
 
 :    v2.0.5    
 
@@ -40,47 +40,60 @@ hide:
 
 #### :symbols-microchip:&ensp;Printer MCU
 
-+ Nozzle:
-    + *Chip:* GD32F303CBT6
-    + *Version:* CR-K1-MAX-NOZZLE-V1.2.0
-+ Leveling:
-    + *Chip:* GD32E230F8P6
-    + *Version:* CR-K1-MAX-LEVELING-V1.1.0
-+ Main:
-    + *Chip:* GD32F303RET6
-    + *Version:* CR4CU220812S12
+:    **Nozzle:**
+    
+      + *Chip:* `GD32F303CBT6`
+      + *Version:* `CR-K1-MAX-NOZZLE-V1.2.0`
+
+:    **Leveling:**
+    
+      + *Chip:* `GD32E230F8P6`
+      + *Version:* `CR-K1-MAX-LEVELING-V1.1.0`
+
+:    **Main:**
+    
+      + *Chip:* `GD32F303RET6`
+      + *Version:* `CR4CU220812S12`
 
 ## :symbols-lan:&ensp;Network
 
 #### Moonraker
 
-+ URL: 
-    + <http://k1c-a71e.internal:7125>
-+ API Key: 
-    + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-        + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
+:    **URL:** 
+    
+      + <http://k1c-a71e.internal:7125>
+
+:    **API Key:** 
+    
+      + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+          + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
 
 #### Fluidd
 
-+ URL:
-    + <http://k1c-a71e.internal>
-    + <http://k1c-a71e.internal:4408>
+:    **URL:**
+    
+      + <http://k1c-a71e.internal>
+      + <http://k1c-a71e.internal:4408>
 
 ## :symbols-webcam:&ensp;Camera
 
 #### Moonraker
 
-+ Snapshot URL:
-    + <http://k1c-a71e.internal:8080/?action=snapshot>
-    + <http://localhost:8080/?action=snapshot>
-    + <http://127.0.0.1:8080/?action=snapshot>
+:    **Snapshot URL:**
+    
+      + <http://k1c-a71e.internal:8080/?action=snapshot>
+      + <http://localhost:8080/?action=snapshot>
+      + <http://127.0.0.1:8080/?action=snapshot>
 
 #### Fluidd
 
-+ Snapshot URL: 
-    + <http://k1c-a71e.internal:8080/?action=snapshot>
-+ Stream URL: 
-    + <http://k1c-a71e.internal/webcam/?action=stream>
+:    **Snapshot URL:** 
+    
+      + <http://k1c-a71e.internal:8080/?action=snapshot>
+
+:    **Stream URL:** 
+    
+      + <http://k1c-a71e.internal/webcam/?action=stream>
 
 ---
 ## :symbols-code-xml:&ensp;Machine G-code 

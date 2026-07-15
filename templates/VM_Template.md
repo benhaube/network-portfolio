@@ -24,24 +24,25 @@ hide:
 
 #### :symbols-host: Hostname
 
-+ `hostname`
+:    `hostname`
 
 #### :symbols-layers: Hypervisor
 
-+ (e.g., KVM / QEMU)
+:    (e.g., KVM / QEMU)
 
 #### :symbols-cpu: Operating System
 
-+ :os-icon:&nbsp;[Operating System](https://example.com)
+:    :os-icon:&nbsp;[Operating System](https://example.com)
 
 #### :symbols-network-node: Host Node
 
-+ [:device-icon: Device_Template](Device_Template.md)
+:    [:device-icon: Device_Template](Device_Template.md)
 
 #### :symbols-user-key: Credentials
 
-+ [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+    
+      + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
 ## :symbols-square-activity: Resource Allocation
 

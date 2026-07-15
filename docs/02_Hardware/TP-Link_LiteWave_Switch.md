@@ -28,24 +28,30 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location 
 
-+ Living Room
-+ TV Stand
+:    Living Room&ensp;:symbols-move-right:&ensp;TV Stand
  
 #### :symbols-plug:&ensp;Power Source 
 
-+ Wall Wart *(5V / 0.6A)*
+:    Wall Wart *(5V / 0.6A)*
  
 #### :symbols-square-activity:&ensp;Specs
 
-+ Throughput:
-    + Five 1 GbE ports
-    + 10 Gb/s total switching capacity
-+ Jumbo Frames: 
-    + Not Supported
-+ Managed: 
-    + No &mdash; Unmanaged
-+ Hardware Revision:
-    + v5.46
+:    **Throughput:**
+    
+      + Five 1 GbE ports
+      + 10 Gb/s total switching capacity
+
+:    **Jumbo Frames:** 
+    
+      + Not Supported
+
+:    **Managed:** 
+    
+      + No &mdash; Unmanaged
+
+:    **Hardware Revision:**
+    
+      + v5.46
 
 ## :symbols-ethernet-port:&ensp;Port Map
 

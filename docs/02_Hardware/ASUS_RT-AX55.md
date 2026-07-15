@@ -6,7 +6,7 @@ tags:
   - Network
   - Router
   - Infrastructure
-  - Office
+  - Office 
   - Printer Cart
   - Hardware
 hide:

@@ -8,7 +8,7 @@ tags:
   - Infrastructure
   - Container Host
   - Network
-  - Office
+  - Office 
   - Printer Cart
   - Linux
   - Hardware

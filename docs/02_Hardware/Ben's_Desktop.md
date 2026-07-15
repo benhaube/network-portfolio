@@ -3,7 +3,7 @@ icon: symbols/pc-case
 title: Ben's Workstation
 subtitle: High-Performance Desktop PC
 tags:
-  - PC
+  - PC 
   - Desktop
   - Virtual Host
   - Office

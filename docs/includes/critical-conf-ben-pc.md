@@ -2,7 +2,7 @@
 
     **:symbols-clock-refresh-cw:&ensp;Chrony:**
 
-    + Time synchronizes with local time server running on main router, [ASUS RT-BE92U](ASUS_RT-BE92U.md), using `chrony`.
+    + Time synchronizes with local time server running on main router, [ASUS RT-BE92U](asus_rt-be92u.md), using `chrony`.
     + See the ["Clients"](../03_services/chrony.md#clients) section of the Chrony service documentation page for configuration information. 
 
     **:symbols-lock-keyhole-open:&ensp;LUKS Unlocking:**

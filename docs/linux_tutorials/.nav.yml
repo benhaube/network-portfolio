@@ -2,7 +2,7 @@ title: Linux Tutorials
 sort:
   ignore_case: true
 nav:
-  - donfigure_unattended-upgrades.md
+  - configure_unattended-upgrades.md
   - svg_to_uri.md
   - unlock_luks_tpm2.md
   - define_bash_aliases.md

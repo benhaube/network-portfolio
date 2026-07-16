@@ -1,0 +1,6 @@
+<svg class="lucide lucide-image-play-icon lucide-image-play" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 20.973 20.985" xmlns="http://www.w3.org/2000/svg">
+  <path d="m13 13.003a1 1 0 011.517-.859l4.997 2.997a1 1 0 010 1.718l-4.997 2.997a1 1 0 01-1.517-.86z" stroke="#0091eb"/>
+  <path d="m4 19 5-5" stroke="#4cae4f"/>
+  <circle cx="7" cy="7" r="2" stroke="#4cae4f"/>
+  <path d="m19 10.17v-7.17a2 2 0 00-2-2h-14a2 2 0 00-2 2v14a2 2 0 002 2h6" stroke="#0091eb"/>
+</svg>

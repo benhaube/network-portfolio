@@ -223,23 +223,6 @@ hide:
 :    Preparing to migrate from [Pi-hole](03_services/pi-hole.md) to [Technitium](03_services/technitium.md) for DNS queries on the local network. 
 
 ---
-## :symbols-printer-3d-nozzle:&ensp;3D Printing
-
-!!! links inline end "Check out my 3D Models!"
-    All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.
-
-    [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
-
-[:symbols-settings:&ensp;Manual Bed Leveling Mod](3d_printing/k1_bed_level_knobs.md) 
-:    Installing a bed leveling modification on the [Creality K1C](02_hardware/kacey_3d-printer.md). 
-
-[:symbols-toothbrush-nozzle:&ensp;Nozzle Cleaning Macro](3d_printing/manual_nozzle_cleaning_macro.md) 
-:    Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
-
-[:symbols-prowiper:&ensp;PROWIPER^&copy;^ Mod](3d_printing/prowiper_mod.md) 
-:    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](02_hardware/kacey_3d-printer.md).
-
----
 ## :symbols-penguin:&ensp;Linux Tutorials
 
 !!! links inline end "Extra Links"
@@ -265,7 +248,7 @@ hide:
 [:symbols-terminal:&ensp;Defining Bash Aliases](linux_tutorials/define_bash_aliases.md) 
 :    How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 
-[:symbols-image:&ensp;Immich Slideshow for Nest Hub](linux_tutorials/immich_slidshow_for_nest_hub.md)
+[:symbols-image-play:&ensp;Immich Slideshow for Nest Hub](linux_tutorials/immich_slidshow_for_nest_hub.md)
 :    How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [Home Assistant](03_services/home_assistant.md) with Google Cast.
 
 [:symbols-file-badge:&ensp;Self-Signed Certificates](linux_tutorials/self-signed_certificates.md)
@@ -273,3 +256,20 @@ hide:
 
 [:symbols-message-square-warning:&ensp;Setup SSH Login Notification](linux_tutorials/setup_ssh_login_notification.md) 
 :    How to set up an email and push notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`, and a Gotify server. 
+
+---
+## :symbols-printer-3d-nozzle:&ensp;3D Printing
+
+!!! links inline end "Check out my 3D Models!"
+    All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.
+
+    [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
+
+[:symbols-settings:&ensp;Manual Bed Leveling Mod](3d_printing/k1_bed_level_knobs.md) 
+:    Installing a bed leveling modification on the [Creality K1C](02_hardware/kacey_3d-printer.md). 
+
+[:symbols-toothbrush-nozzle:&ensp;Nozzle Cleaning Macro](3d_printing/manual_nozzle_cleaning_macro.md) 
+:    Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
+
+[:symbols-prowiper:&ensp;PROWIPER^&copy;^ Mod](3d_printing/prowiper_mod.md) 
+:    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](02_hardware/kacey_3d-printer.md).

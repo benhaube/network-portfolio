@@ -68,14 +68,14 @@ hide:
 
     **Ethernet Ports:** 
  
-    :symbols-led-off:&ensp;**Green LED:** 2500 Mb/s <br>
-    :symbols-led-off:&ensp;**Amber LED:** 10/100/1000 Mb/s <br>
+    :symbols-led:&ensp;**Green LED:** 2500 Mb/s <br>
+    :symbols-led:&ensp;**Amber LED:** 10/100/1000 Mb/s <br>
     :symbols-led-on:&ensp;**Flashing:** Activity
    
     **SFP+ Port:** 
  
-    :symbols-led-off:&ensp;**Green LED:** 10 Gb/s <br>
-    :symbols-led-off:&ensp;**Amber LED:** 1000 / 2500 Mb/s <br>
+    :symbols-led:&ensp;**Green LED:** 10 Gb/s <br>
+    :symbols-led:&ensp;**Amber LED:** 1000 / 2500 Mb/s <br>
     :symbols-led-on:&ensp;**Flashing:** Activity
 
 !!! warning inline "Troubleshooting"

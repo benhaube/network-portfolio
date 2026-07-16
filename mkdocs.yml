@@ -106,7 +106,7 @@ theme:
     close: symbols/x
     search: symbols/search
     share: symbols/share-2
-    annotation: symbols/code-annotation
+    annotation: symbols/circle-chevron-right
     edit: symbols/square-pen
     view: symbols/scan-eye
     alternate: symbols/languages

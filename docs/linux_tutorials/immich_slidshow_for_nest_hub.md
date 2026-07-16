@@ -1,11 +1,11 @@
 ---
-icon: symbols/image
+icon: symbols/image-play
 title: Project Migration
 subtitle: Immich Slideshow for Nest Hub
 hide:
   - toc
 ---
-![Material image icon](../assets/icons/image.svg){ width=200 }
+![Material image icon](../assets/icons/image-play.svg){ width=200 }
 
 # Project Migration
 *Immich Slideshow for Nest Hub*
@@ -76,7 +76,7 @@ Place this in the same folder as your docker-compose file.
 --8<-- "immich-frame-config.json"
 ```
 
-## :symbols-globe:&ensp;Network & Cloudflare
+## :symbols-globe-arrow:&ensp;Network & Cloudflare
 
 **Goal:**
 :   Allow Nest Hubs to load the frame securely.

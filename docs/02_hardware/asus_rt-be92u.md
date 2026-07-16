@@ -202,10 +202,12 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
 
     ```sh {title="/jffs/scripts/wan-event" linenums="1" .mono-title}
     if [ "$2" == "connected" ]; then
-      # Manually create the cron job to preserve custom arguments
+      #  (1)!
       cru a WAN_Check "*/5 * * * * /jffs/scripts/ChkWAN.sh wan ping=9.9.9.9,149.112.112.112,8.8.8.8,1.1.1.1"
     fi
     ```
+
+    1. Manually create the cron job to preserve custom arguments.
 
     !!! note
 

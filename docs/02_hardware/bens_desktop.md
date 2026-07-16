@@ -46,9 +46,9 @@ hide:
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-:    **HSI-1**
+:    HSI-1
 
-:    **Firmware:**
+:    Firmware:
     
       + IOMMU
       + Linux kernel lockdown
@@ -58,7 +58,7 @@ hide:
       + TPM v2.0
       + UEFI Secure Boot
 
-:    **Software:**
+:    Software:
     
       + :symbols-arrow-right-left:&nbsp;Linux swap encryption
       + :symbols-shield:&nbsp;LUKS2 drive encryption

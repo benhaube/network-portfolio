@@ -36,16 +36,16 @@ hide:
 
 #### :symbols-square-activity:&ensp;Specs
 
-:    **Throughput:** 
+:    Throughput: 
     
       + Five 1 GbE ports
       + 10 Gb/s total switching capacity
 
-:    **Jumbo Frames:** 
+:    Jumbo Frames: 
     
       + Supported *(16 KB)*
 
-:    **Managed:**
+:    Managed:
     
       + No &mdash; Unmanaged
 

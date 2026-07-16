@@ -36,17 +36,17 @@ hide:
 
 #### :symbols-square-activity:&ensp;Specs
 
-:    **Throughput:** 
+:    Throughput:
     
       + Five 2.5 Gb/s Ports
       + One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](asus_rt-be92u.md) router)*
       + 45 Gb/s Total Switching Capacity
 
-:    **Jumbo Frames:** 
+:    Jumbo Frames: 
     
       + Supported *(12 KB)*
 
-:    **Managed:**
+:    Managed:
     
       + No &mdash; Unmanaged
 

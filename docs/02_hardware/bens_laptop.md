@@ -47,9 +47,9 @@ hide:
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-:    **HSI-4**
+:    HSI-4
 
-:    **Firmware:** 
+:    Firmware: 
       
       + BIOS rollback protection
       + IOMMU
@@ -62,13 +62,13 @@ hide:
       + UEFI memory protection
       + UEFI Secure Boot
 
-:    **Software:**
+:    Software:
     
       + :symbols-arrow-right-left:&nbsp;Linux swap encryption
       + :symbols-shield:&nbsp;LUKS2 drive encryption
       + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user 
 
-:    **Biometric:**
+:    Biometric:
     
       + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
       + :symbols-scan-face:&nbsp;IR Face Scan

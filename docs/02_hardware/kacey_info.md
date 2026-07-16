@@ -40,17 +40,17 @@ hide:
 
 #### :symbols-microchip:&ensp;Printer MCU
 
-:    **Nozzle:**
+:    Nozzle:
     
       + *Chip:* `GD32F303CBT6`
       + *Version:* `CR-K1-MAX-NOZZLE-V1.2.0`
 
-:    **Leveling:**
+:    Leveling:
     
       + *Chip:* `GD32E230F8P6`
       + *Version:* `CR-K1-MAX-LEVELING-V1.1.0`
 
-:    **Main:**
+:    Main:
     
       + *Chip:* `GD32F303RET6`
       + *Version:* `CR4CU220812S12`
@@ -59,18 +59,18 @@ hide:
 
 #### Moonraker
 
-:    **URL:** 
+:    URL: 
     
       + <http://k1c-a71e.internal:7125>
 
-:    **API Key:** 
+:    API Key: 
     
       + [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
           + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
 
 #### Fluidd
 
-:    **URL:**
+:    URL:
     
       + <http://k1c-a71e.internal>
       + <http://k1c-a71e.internal:4408>
@@ -79,7 +79,7 @@ hide:
 
 #### Moonraker
 
-:    **Snapshot URL:**
+:    Snapshot URL:
     
       + <http://k1c-a71e.internal:8080/?action=snapshot>
       + <http://localhost:8080/?action=snapshot>
@@ -87,11 +87,11 @@ hide:
 
 #### Fluidd
 
-:    **Snapshot URL:** 
+:    Snapshot URL:
     
       + <http://k1c-a71e.internal:8080/?action=snapshot>
 
-:    **Stream URL:** 
+:    Stream URL: 
     
       + <http://k1c-a71e.internal/webcam/?action=stream>
 

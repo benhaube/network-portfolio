@@ -44,13 +44,13 @@ hide:
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-:    **Software:**
+:    Software:
 
       + :symbols-key-fido2:&nbsp;Titan M2 security chip *(FIDO2 / WebAuthn)*
       + :symbols-shield:&nbsp;Full-disk encryption
       + :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 
-:    **Biometric:**
+:    Biometric:
     
       + :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
       + :symbols-scan-face:&nbsp;Face Scan

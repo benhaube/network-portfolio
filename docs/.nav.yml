@@ -1,2 +1,12 @@
 sort:
   type: alphabetical
+nav: 
+  - index.md
+  - about.md
+  - 01_infrastructure
+  - 02_hardware
+  - 03_services
+  - 04_change_management
+  - linux_tutorials
+  - 3d_printing
+  - blog

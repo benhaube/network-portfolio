@@ -170,7 +170,7 @@ theme:
       server: symbols/server
       service: symbols/monitor-cloud
       shell: symbols/terminal
-      software: symbols/desktop-landscape
+      software: symbols/package
       switch: symbols/ethernet-port
       sync: symbols/refresh-cw
       tools: symbols/wrench

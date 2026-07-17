@@ -158,9 +158,9 @@ hide:
 
 !!! change "NAS Protocol Change (SMB :symbols-move-right: NFS)"
     
-    :symbols-calendar-clock:&ensp;**Date:** 2026-02-09 <br>
-    :symbols-info:&ensp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
-    :symbols-square-activity:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
+    :symbols-calendar:&ensp;**Date:** 2026-02-09 <br>
+    :symbols-circle-question-mark:&ensp;**Reason:** SMB latency caused slow transfers for small files. *(e.g., photos / code)* <br>
+    :symbols-activity:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
     :symbols-monitor-smartphone:&ensp;**Affected Clients:** 
  
     + [Ben's Desktop PC](bens_desktop.md) 

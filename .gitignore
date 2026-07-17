@@ -259,3 +259,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# === .gitignore for CSS, SCSS, SASS ===
+
+# Ignore 'minified' CSS files
+*.min.css

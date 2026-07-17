@@ -38,7 +38,7 @@ hide:
 
       + `192.168.50.4:/media/Quick-Storage`
 
-:    :symbols-app-window-mac:&nbsp;Application Data:
+:    :symbols-folder-git-2:&nbsp;Application Data:
 
       + `192.168.50.4:/media/nvme0n1p1`
 
@@ -47,7 +47,6 @@ hide:
 :    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
       
       + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
-      + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -59,23 +58,59 @@ hide:
 
 #### :symbols-server:&ensp;Server
 
+##### Enable Service
+
+!!! zima "ZimaOS&ensp;&ge;&ensp;v1.6.2"
+
+    After upgrading to [ZimaOS v1.6.2:symbols-external-link-small:](https://github.com/IceWhaleTech/ZimaOS/releases/tag/1.6.2) the NFS service needs to be enabled manually with the following commands. All newer versions have the NFS server disabled by default to prevent unwanted file system access.
+
+```bash linenums="1"
+sudo systemctl enable nfs-server
+sudo systemctl start nfs-server
+```
+
 ##### Exports Entry
 
 ```linuxconfig {title="/etc/exports" linenums="1" .mono-title}
 --8<-- "exports"
 ```
 
-##### Command to Apply
+1. Open the `/etc/exports` configuration file in a text editor and add the two lines shown above:
 
-```bash linenums="1"
-exportfs -a
-```
+    ```bash linenums="1"
+    sudo nano /etc/exports/
+    ```
 
-**or**
+2. Save and close the file.
+3. Run one of the following commands to apply the configuration:
 
-```bash linenums="1"
-systemctl restart nfs-server
-```
+    ```bash linenums="1"
+    exportfs -a
+    # or 
+    systemctl restart nfs-server
+    ```
+
+##### Check Status
+
+1. Run this command to check the status of `nfs-server.service`:
+
+    ```bash linenums="1"
+    systemctl status nfs-server
+    ```
+
+    ```shell-session title="Example Output" linenums="1"
+    ● nfs-server.service - NFS server and services
+          Loaded: loaded (/usr/lib/systemd/system/nfs-server.service; enabled; preset: disabled)
+         Drop-In: /run/systemd/generator/nfs-server.service.d
+                  └─order-with-mounts.conf
+          Active: active (exited) since Tue 2026-07-14 10:32:31 EDT; 3 days ago
+      Invocation: 081a72bf1f954c7f8ca46a9e92d9a610
+            Docs: man:rpc.nfsd(8)
+                  man:exportfs(8)
+        Main PID: 28634 (code=exited, status=0/SUCCESS)
+        Mem peak: 2.3M
+             CPU: 19ms
+    ```
 
 #### :symbols-monitor-smartphone:&ensp;Clients
 

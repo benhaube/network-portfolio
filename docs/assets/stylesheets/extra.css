@@ -49,6 +49,11 @@
   max-width: 1355px;
 }
 
+/* --- Hide icons in Table of Contents --- */
+.md-nav--secondary .twemoji {
+    display: none !important;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Page Header *
  * ~~~~~~~~~~~~~~~~~~~~~ */   

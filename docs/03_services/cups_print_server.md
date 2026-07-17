@@ -66,7 +66,7 @@ hide:
     sudo apt install cups
     ```
 
-2. Start / Enable the `cupsd` Systemd service:
+2. Start / Enable the `cups` Systemd service:
 
     ```bash linenums="1"
     sudo systemctl enable cups

@@ -34,7 +34,9 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access
 
-:    <http://storage-server.internal:14333>&emsp;<http://storage-server-2.internal:14333>
+:    <http://storage-server.internal:14333>
+
+:    <http://storage-server-2.internal:14333>
 
 #### :symbols-user-key:&ensp;Credentials 
 

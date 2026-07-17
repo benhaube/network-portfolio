@@ -117,10 +117,35 @@ toggle.name = "Switch to system preference"
 primary = "green"
 accent = "light blue"
 
+[[project.extra.social]]
+icon = "brands/gitlab"
+link = "https://gitlab.com/benhaube"
+name = "benhaube — Gitlab"
 
 [[project.extra.social]]
 icon = "brands/github"
 link = "https://github.com/benhaube/network-portfolio"
+name = "benhaube — GitHub"
+
+[[project.extra.social]]
+icon = "brands/linkedin"
+link = "https://www.linkedin.com/in/benjamin-haube/"
+name = "Benjamin Haube — Linkedin"
+
+[[project.extra.social]]
+icon = "brands/printables"
+link = "https://www.printables.com/@rac3r4life"
+name = "rac3r4life — Printables"
+
+[[project.extra.social]]
+icon = "brands/reddit"
+link = "https://reddit.com/u/benhaube"
+name = "u/benhaube — Reddit"
+
+[[project.extra.social]]
+icon = "brands/bluesky"
+link = "https://bsky.app/profile/rac3r4life.me"
+name = "rac3r4life.me — Bluesky"
 
 [project.extra.consent]
 title = "Cookie Consent"

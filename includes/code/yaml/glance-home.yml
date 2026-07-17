@@ -1,0 +1,34 @@
+- name: Home
+  show-mobile-header: true  # (1)!
+  # hide-desktop-navigation: true  (2)
+  head-widgets:
+
+    - $include: /app/config/widgets/markets.yml
+
+  columns:
+
+    - size: small
+      widgets:
+
+        - $include: /app/config/widgets/nasa-apod.yml
+        - $include: /app/config/widgets/random-fact.yml
+        - $include: /app/config/widgets/bookmarks.yml
+
+    - size: full
+      widgets:
+
+        - $include: /app/config/widgets/search.yml
+        - $include: /app/config/widgets/hacker-news-lobsters-split.yml
+        - $include: /app/config/widgets/rss-home.yml
+        - $include: /app/config/widgets/youtube-home.yml
+        - $include: /app/config/widgets/reddit-home.yml
+
+    - size: small
+      widgets:
+
+        - $include: /app/config/widgets/clock.yml
+        - $include: /app/config/widgets/weather.yml
+        - $include: /app/config/widgets/weather-aqi.yml 
+        - $include: /app/config/widgets/weather-forecast.yml
+        - $include: /app/config/widgets/calendar.yml
+        - $include: /app/config/widgets/releases.yml

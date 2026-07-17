@@ -1,0 +1,12 @@
+services:
+  gotify:
+    image: gotify/server:latest
+    container_name: gotify
+    restart: unless-stopped
+    ports:
+      - "8180:80"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - GOTIFY_DEFAULTUSER_PASS=ChangeThisPassword123  # (1)!
+      - TZ=America/New_York

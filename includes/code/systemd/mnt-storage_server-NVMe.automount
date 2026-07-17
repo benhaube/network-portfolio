@@ -1,0 +1,9 @@
+[Unit]  
+Description=Automount for ZimaOS Quick-Storage  
+  
+[Automount]  
+Where=/mnt/storage_server/NVMe  
+TimeoutIdleSec=600  
+  
+[Install]  
+WantedBy=multi-user.target

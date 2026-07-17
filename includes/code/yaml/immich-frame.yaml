@@ -1,0 +1,26 @@
+services:
+  immich_frame:  # (1)!
+    image: ghcr.io/immichframe/immichframe:latest
+    container_name: immich_frame
+    environment:
+      - IMMICH_URL=http://<ZIMABOARD_IP>:2283
+      - API_KEY=<YOUR_IMMICH_API_KEY_FOR_FRAME>
+      - SLIDESHOW_DURATION=60
+      - SHOW_CLOCK=true
+      - SHOW_WEATHER=true
+      - WEATHER_LOCATION=Reisterstown, MD
+      - ALBUM_UIDS=<UUID_OF_NESTHUB_ALBUM>  # (2)!
+    ports:
+      - 8081:8080
+    restart: always
+
+  immich_auto_album:  # (3)!
+    image: ghcr.io/alangrainger/immich-person-to-album:latest
+    container_name: immich_auto_album
+    environment:
+      - IMMICH_URL=http://<ZIMABOARD_IP>:2283
+      - API_KEY=<YOUR_IMMICH_API_KEY_FOR_SYNC>
+      - SYNC_MODE=1  # (4)!
+    volumes:
+      - ./config.json:/app/config.json
+    restart: always

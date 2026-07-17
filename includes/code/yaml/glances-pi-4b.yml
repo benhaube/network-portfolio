@@ -1,0 +1,39 @@
+services:  
+  glances:    
+    image: nicolargo/glances:latest-full  # (1)!
+    restart: always   
+    pid: "host"  
+    network_mode: "host"  
+    read_only: true  
+    privileged: false   
+    # cap_add:  (2)
+      # - SYS_RAWIO  (3) 
+      # - SYS_ADMIN  (4)
+    # devices:  
+      # - "/dev/nvme0"  
+  volumes:  
+    - "/:/rootfs:ro"  
+    - "/var/run/docker.sock:/var/run/docker.sock:ro"  
+    - "/run/user/1000/podman/podman.sock:/run/user/1000/podman/podman.sock:ro"  
+    - "./glances.conf:/glances/conf/glances.conf"  
+    - "/var/log:/var/log:ro"
+    - "/etc/os-release:/etc/os-release:ro"  # (5)!
+  tmpfs:  
+    - /tmp   
+  environment:  
+    - TZ=America/New_York  # (6)!
+    - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart  
+    - PYTHONPYCACHEPREFIX=/tmp/py_caches  
+  # deploy:  (7)
+    # resources:
+      # reservations:
+        # devices:
+          # - driver: nvidia
+            # count: 1
+            # capabilities: [gpu]  
+  # secrets:  (8)
+    # - source: glances_password
+      # target: /root/.config/glances/<login>.pwd
+# secrets:  
+  # glances_password:  
+    # file: ./secrets/glances_password

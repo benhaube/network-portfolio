@@ -1,0 +1,47 @@
+#:schema https://starship.rs/config-schema.json
+
+add_newline = true
+# format = '$all$directory$character'
+# right_format = """$all"""
+continuation_prompt = '[❯❯ ](bright-black)'
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+
+[username]
+style_user = 'bold white'
+style_root = 'bold red'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = true
+ssh_symbol = " "
+format = '@ [$ssh_symbol$hostname](bold red) '
+disabled = false
+
+[directory]
+style = 'bold white'
+truncation_length = 8
+truncation_symbol = '…/'
+read_only = " 󰌾"
+read_only_style = 'bold red'
+
+[localip]
+ssh_only = false
+format = '- [$localipv4](bold red) '
+disabled = false
+
+[os]
+format = "on [($name) $symbol]($style)"
+style = "bold red"
+disabled = false
+
+[os.symbols]
+Debian = " "
+
+[cmd_duration]
+style = 'bold red'
+format = 'took [$duration]($style) '

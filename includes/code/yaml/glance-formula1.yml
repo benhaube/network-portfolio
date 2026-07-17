@@ -1,0 +1,36 @@
+- name: Formula 1
+  show-mobile-header: true  # (1)!
+  # hide-desktop-navigation: true  (2)
+  columns:
+
+    - size: small
+      widgets:
+
+        - $include: /app/config/widgets/search.yml
+        - $include: /app/config/widgets/f1-last-race-results.yml
+        - $include: /app/config/widgets/rss-f1.yml
+
+    - size: full
+      widgets:
+
+        - type: split-column
+          widgets:
+
+            - $include: /app/config/widgets/f1-next-race.yml
+            
+            - type: group
+              widgets:
+
+                - $include: /app/config/widgets/f1-driver-standings.yml
+                - $include: /app/config/widgets/f1-constructor-standings.yml
+
+        - $include: /app/config/widgets/reddit-f1.yml
+
+    - size: small
+      widgets:
+
+        - $include: /app/config/widgets/clock.yml
+        - $include: /app/config/widgets/weather.yml
+        - $include: /app/config/widgets/weather-aqi.yml
+        - $include: /app/config/widgets/weather-forecast.yml
+        - $include: /app/config/widgets/calendar.yml

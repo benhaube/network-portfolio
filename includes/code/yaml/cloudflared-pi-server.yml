@@ -1,0 +1,17 @@
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflare-tunnel
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=your_token_string_here
+    networks:
+      - it-tools_default
+      - beszel_default
+
+networks:
+  it-tools_default:
+    external: true
+  beszel_default:
+    external: true

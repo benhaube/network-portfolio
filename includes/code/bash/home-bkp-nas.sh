@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# --- Configuration ---
+SOURCE_DIR="$HOME/"
+DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/<client-hostname>/" # (1)!
+MOUNT_POINT="/mnt/storage_server/Quick_Storage"
+EXCLUDE_FILE="$HOME/.bkp-exclude-nas"
+LOG_FILE="$HOME/.var/log/backup_log.log"
+TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+
+# --- Environment Validation ---
+# Ensure log rotation is configured to prevent infinite log growth
+LOGROTATE_CONF="/etc/logrotate.d/home-backup"
+if [ ! -f "$LOGROTATE_CONF" ]; then
+    echo "[$TIMESTAMP] WARNING: Logrotate config not found at $LOGROTATE_CONF." | tee -a "$LOG_FILE"
+    echo "[$TIMESTAMP] Logs will grow indefinitely until this is fixed." | tee -a "$LOG_FILE"
+fi
+
+# --- Safety Check: Trigger Automount & Verify ---
+# Access the mount point to wake up systemd automount
+ls "$MOUNT_POINT" > /dev/null 2>&1
+
+# Check if it is actually a mount point
+if ! mountpoint -q "$MOUNT_POINT"; then
+    echo "[$TIMESTAMP] CRITICAL: NAS is not mounted at $MOUNT_POINT. Backup aborted." | tee -a "$LOG_FILE"
+    exit 1
+fi
+
+# Ensure the sub-directory exists on the NAS
+mkdir -p "$DEST_DIR"
+
+# Print status to terminal & log
+echo "[$TIMESTAMP] Starting home directory backup..." | tee -a "$LOG_FILE"
+
+# --- The Rsync Command ---
+# -av: Archive mode + increase verbosity
+# --progress: Show progress during transfer
+# --timeout=60: Sets IO timeout to 60s
+# --delete: Remove files on NAS that were deleted from Source
+rsync -av --progress --timeout=60 --delete --exclude-from="$EXCLUDE_FILE" "$SOURCE_DIR" "$DEST_DIR" >> "$LOG_FILE" 2>&1
+
+# Capture the exit code immediately
+EXIT_CODE=$?
+
+# Update the TIMESTAMP variable
+TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+
+# Report Status based on captured code
+if [ $EXIT_CODE -eq 0 ]; then
+    MSG="[$TIMESTAMP] Backup completed successfully."
+else
+    MSG="[$TIMESTAMP] Backup **FAILED** with exit code $EXIT_CODE."
+fi
+
+# Print to terminal and append to log
+echo "$MSG"
+echo "$MSG" >> "$LOG_FILE"
+
+# --- Gotify Notification ---
+# (2)!
+GOTIFY_URL="https://gotify.yourdomain.com/message"
+GOTIFY_TOKEN="YourGotifyToken"
+
+# Adjust the push notification title and priority based on the exit code
+if [ $EXIT_CODE -eq 0 ]; then
+    GOTIFY_TITLE="NAS Backup: Success"
+    GOTIFY_PRIORITY=4 # Normal priority
+else
+    GOTIFY_TITLE="NAS Backup: FAILED"
+    GOTIFY_PRIORITY=8 # High priority
+fi
+
+# Send the push notification
+# Uses the same '$MSG' variable defined for the system log
+# -sS: Silent mode but still shows errors if it fails
+# -F: Formats the data as multipart/form-data for Gotify
+curl -sS -X POST "$GOTIFY_URL" \
+    -H "X-Gotify-Key: $GOTIFY_TOKEN" \
+    -F "title=$GOTIFY_TITLE" \
+    -F "message=$HOSTNAME: $MSG" \
+    -F "extras={\"client::display\": {\"contentType\": \"text/markdown\"}}" \
+    -F "priority=$GOTIFY_PRIORITY" >> "$LOG_FILE" 2>&1
+
+# Log that the notification was attempted
+echo "[$TIMESTAMP] Gotify notification triggered." >> "$LOG_FILE"

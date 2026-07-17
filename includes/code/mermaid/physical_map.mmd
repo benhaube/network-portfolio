@@ -1,0 +1,121 @@
+%%{
+  init: {
+    "themeCSS": ".node.isp rect, .node.isp polygon, .node.isp circle, .node.isp path { fill: var(--isp-bg) !important; stroke: var(--isp-border) !important; stroke-width: 2px !important; } .node.multi rect, .node.multi polygon, .node.multi circle, .node.multi path { fill: var(--multi-bg) !important; stroke: var(--multi-border) !important; stroke-width: 2px !important; } .node.tenGb rect, .node.tenGb polygon, .node.tenGb circle, .node.tenGb path { fill: var(--tengb-bg) !important; stroke: var(--tengb-border) !important; stroke-width: 2px !important; } .node.twoFiveGb rect, .node.twoFiveGb polygon, .node.twoFiveGb circle, .node.twoFiveGb path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; } .node.twoFiveGbTemp rect, .node.twoFiveGbTemp polygon, .node.twoFiveGbTemp circle, .node.twoFiveGbTemp path { fill: var(--twofivegb-bg) !important; stroke: var(--twofivegb-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.gigabit rect, .node.gigabit polygon, .node.gigabit circle, .node.gigabit path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; } .node.gigabitTemp rect, .node.gigabitTemp polygon, .node.gigabitTemp circle, .node.gigabitTemp path { fill: var(--gigabit-bg) !important; stroke: var(--gigabit-border) !important; stroke-width: 2px !important; stroke-dasharray: 5 5 !important; } .node.wifi rect, .node.wifi polygon, .node.wifi circle, .node.wifi path { fill: var(--wifi-bg) !important; stroke: var(--wifi-border) !important; stroke-width: 2px !important; } .node.usb rect, .node.usb polygon, .node.usb circle, .node.usb path { fill: var(--usb-bg) !important; stroke: var(--usb-border) !important; stroke-width: 2px !important; } .nodeLabel { color: var(--node-text) !important; } .node text { fill: var(--node-text) !important; } .cluster rect { fill: var(--subgraph-bg) !important; stroke: var(--subgraph-border) !important; stroke-width: 1px !important; } .cluster-label text, .cluster text { fill: var(--node-text) !important; } .cluster-label span, .cluster span { color: var(--node-text) !important; } .edgeLabel, .edgeLabel span, .edgeLabel p, .labelBkg, .htmlLabel { background-color: var(--edge-bg) !important; color: var(--edge-text) !important; } .edgeLabel rect { fill: var(--edge-bg) !important; } .edgeLabel text { fill: var(--edge-text) !important; } .edgePath path, .flowchart-link { stroke: var(--edge-line) !important; } .marker path, .arrowheadPath { fill: var(--edge-line) !important; stroke: var(--edge-line) !important; }"
+  }
+}%%
+
+flowchart-elk TD
+    %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
+    classDef isp fill:, stroke:, rx:1.5rem, ry:1.5rem;
+    classDef multi fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef tenGb fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef twoFiveGb fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef twoFiveGbTemp fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef gigabit fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef gigabitTemp fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef wifi fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef usb fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    
+%% --- Nodes --- %%
+
+    %% --- ISP --- %%
+    ISP["<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><br><b>WAN</b>"]:::isp
+
+    %% --- Living Room & Mini-Rack --- %%
+    subgraph Living_Room ["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sofa-icon lucide-sofa"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M4 18v2"/><path d="M20 18v2"/><path d="M12 4v9"/></svg>&emsp;<b>Living Room</b>"]
+        direction TB
+        subgraph Mini_Rack ["<b>Mini-Rack</b>"]
+            direction TB
+            Modem["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-left-right-ellipsis-icon lucide-chevrons-left-right-ellipsis"><path d="M12 12h.01"/><path d="M16 12h.01"/><path d="m17 7 5 5-5 5"/><path d="m7 7-5 5 5 5"/><path d="M8 12h.01"/></svg>&ensp;<b>Hitron Modem</b>"]:::twoFiveGb
+            RouterMain["<svg class="lucide lucide-router-icon lucide-router" width="24" height="24" style="vertical-align: middle;"  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="M6.01 18H6"/><path d="M10.01 18H10"/><path d="m15 10v4"/><path d="m17.84 7.17a4 4 0 00-5.66 0"/><path d="m20.66 4.34a8 8 0 00-11.31 0"/></svg>&ensp;<b>ASUS RT-BE92U</b>"]:::tenGb
+            tenGbKeystone["Keystone Jack"]:::tenGb
+            twoFiveGbKeystone["Keystone Jack"]:::twoFiveGb
+            SwitchAgg["<svg xmlns='http://www.w3.org/2000/svg' style='vertical-align: middle;' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-ethernet-port-icon lucide-ethernet-port'><path d='m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z'/><path d='M6 8v1'/><path d='M10 8v1'/><path d='M14 8v1'/><path d='M18 8v1'/></svg>&ensp;<b>Ugreen Switch</b>"]:::tenGb
+            Zima["<svg class="lucide lucide-server-icon lucide-server" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="vertical-align:middle" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 2h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m6 6h.01"/><path d="m6 18h.01"/></svg>&ensp;<b>ZimaOS NAS</b>"]:::twoFiveGb
+            VM["<svg class="lucide lucide-server-icon lucide-server" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="vertical-align:middle" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 2h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m6 6h.01"/><path d="m6 18h.01"/></svg>&ensp;<b>Debian Server</b>"]:::multi
+        end
+        subgraph TV_Stand ["<svg class="lucide lucide-tv-minimal-icon lucide-tv-minimal" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7 21h10"/><path d="m4 3h16c1.108 0 2 .892 2 2v10c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-10c0-1.108.892-2 2-2z"/></svg>&emsp;<b>TV Stand</b>"]
+            SwitchTV["<svg xmlns='http://www.w3.org/2000/svg' style='vertical-align: middle;' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-ethernet-port-icon lucide-ethernet-port'><path d='m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z'/><path d='M6 8v1'/><path d='M10 8v1'/><path d='M14 8v1'/><path d='M18 8v1'/></svg>&ensp;<b>LiteWave Switch</b><br>"]:::gigabit
+            GoogleTV["<svg class="lucide lucide-cast-icon lucide-cast" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="vertical-align:middle" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2 8v-2a2 2 0 012-2h16a2 2 0 012 2v12a2 2 0 01-2 2h-6"/><path d="m2 12a9 9 0 018 8"/><path d="m2 16a5 5 0 014 4"/><path d="m2 20h.01"/></svg>&ensp;Google TV Streamer"]:::gigabit
+            SmartTV["<svg class="lucide lucide-tv-minimal-icon lucide-tv-minimal" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7 21h10"/><path d="m4 3h16c1.108 0 2 .892 2 2v10c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-10c0-1.108.892-2 2-2z"/></svg>&ensp;TCL Smart TV"]:::gigabit
+            Nintendo["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-directional-icon lucide-gamepad-directional"><path d="M11.146 15.854a1.207 1.207 0 0 1 1.708 0l1.56 1.56A2 2 0 0 1 15 18.828V21a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2.172a2 2 0 0 1 .586-1.414z"/><path d="M18.828 15a2 2 0 0 1-1.414-.586l-1.56-1.56a1.207 1.207 0 0 1 0-1.708l1.56-1.56A2 2 0 0 1 18.828 9H21a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1z"/><path d="M6.586 14.414A2 2 0 0 1 5.172 15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2.172a2 2 0 0 1 1.414.586l1.56 1.56a1.207 1.207 0 0 1 0 1.708z"/><path d="M9 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2.172a2 2 0 0 1-.586 1.414l-1.56 1.56a1.207 1.207 0 0 1-1.708 0l-1.56-1.56A2 2 0 0 1 9 5.172z"/></svg>&ensp;Nintendo Switch Dock"]:::gigabit
+        end
+    end
+
+    %% --- Office & Printer Cart --- %%
+    subgraph Office ["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-desk-lamp-icon lucide-desk-lamp"><path d="m17 7 1-2"/><rect width="4" height="4" x="15" y="7"/><path d="M6 7v4"/><path d="M9 7H3l1-5h4Z"/><path d="M22 22V12c0-.6-.4-1-1-1H3c-.6 0-1 .4-1 1v10"/><path d="M10 15H2"/><path d="M10 11v8"/><path d="M22 19H2"/></svg>&emsp;<b>Office</b>"]
+        direction TB
+        subgraph PrinterCart ["<svg class="lucide lucide-printer-icon lucide-printer" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m6 18h-2a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="m6 9v-6a1 1 0 011-1h10a1 1 0 011 1v6"/><path d="m7 14h10c.554 0 1 .446 1 1v6c0 .554-.446 1-1 1h-10c-.554 0-1-.446-1-1v-6c0-.554.446-1 1-1z"/></svg>&emsp;<b>Printer Cart</b>"]
+            direction TB
+            MeshNode["<svg class="lucide lucide-router-icon lucide-router" width="24" height="24" style="vertical-align: middle;"  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="M6.01 18H6"/><path d="M10.01 18H10"/><path d="m15 10v4"/><path d="m17.84 7.17a4 4 0 00-5.66 0"/><path d="m20.66 4.34a8 8 0 00-11.31 0"/></svg>&ensp;<b>ASUS RT-AX55</b>"]:::gigabit
+            SwitchOffice["<svg xmlns='http://www.w3.org/2000/svg' style='vertical-align: middle;' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-ethernet-port-icon lucide-ethernet-port'><path d='m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z'/><path d='M6 8v1'/><path d='M10 8v1'/><path d='M14 8v1'/><path d='M18 8v1'/></svg>&ensp;<b>TP-Link Switch</b>"]:::gigabit
+            Pi4["<svg class="lucide lucide-server-icon lucide-server" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="vertical-align:middle" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 2h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m6 6h.01"/><path d="m6 18h.01"/></svg>&ensp;<b>Pi 4B Server</b>"]:::gigabit
+            PiZero["<svg class="lucide lucide-server-icon lucide-server" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="vertical-align:middle" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 2h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m6 6h.01"/><path d="m6 18h.01"/></svg>&ensp;<b>Pi Zero 2W Server</b>"]:::wifi
+            BrLaser["<svg class="lucide lucide-printer-icon lucide-printer" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m6 18h-2a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="m6 9v-6a1 1 0 011-1h10a1 1 0 011 1v6"/><path d="m7 14h10c.554 0 1 .446 1 1v6c0 .554-.446 1-1 1h-10c-.554 0-1-.446-1-1v-6c0-.554.446-1 1-1z"/></svg>&ensp;Brother HL-L2300D"]:::usb
+        end
+        DesktopBen["<svg class="lucide lucide-pc-case-icon lucide-pc-case" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7 2h10c1.108 0 2 .892 2 2v16c0 1.108-.892 2-2 2h-10c-1.108 0-2-.892-2-2v-16c0-1.108.892-2 2-2z"/><path d="m15 14h.01"/><path d="m9 6h6"/><path d="m9 10h6"/></svg>&ensp;Ben's Desktop"]:::gigabit
+        DesktopRob["<svg class="lucide lucide-pc-case-icon lucide-pc-case" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7 2h10c1.108 0 2 .892 2 2v16c0 1.108-.892 2-2 2h-10c-1.108 0-2-.892-2-2v-16c0-1.108.892-2 2-2z"/><path d="m15 14h.01"/><path d="m9 6h6"/><path d="m9 10h6"/></svg>&ensp;Rob's Desktop"]:::gigabit
+        Printer3D["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box-icon lucide-box"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>&ensp;Creality K1C"]:::wifi
+    end
+
+    %% --- Mobile Devices --- %%
+    subgraph Mobile ["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style='vertical-align: middle;' viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wifi-icon lucide-wifi"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></svg>&emsp;<b>Mobile Devices</b> <i>(VLAN50)</i>"]
+        direction TB
+        LaptopBen["<svg class="lucide lucide-laptop-minimal-icon lucide-laptop-minimal" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="vertical-align:middle" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 4h14c1.108 0 2 .892 2 2v8c0 1.108-.892 2-2 2h-14c-1.108 0-2-.892-2-2v-8c0-1.108.892-2 2-2z"/><path d="m2 20h20"/></svg>&ensp;Ben's Laptop"]:::wifi
+        LaptopRob["<svg class="lucide lucide-laptop-minimal-icon lucide-laptop-minimal" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="vertical-align:middle" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 4h14c1.108 0 2 .892 2 2v8c0 1.108-.892 2-2 2h-14c-1.108 0-2-.892-2-2v-8c0-1.108.892-2 2-2z"/><path d="m2 20h20"/></svg>&ensp;Rob's Laptop"]:::twoFiveGb
+        PhoneBen["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone-icon lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>&ensp;Ben's Phone"]:::wifi
+        PhoneRob["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone-icon lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>&ensp;Rob's Phone"]:::wifi
+    end
+
+    %% --- IoT Network (VLAN53) --- %%
+    subgraph IoT ["<svg class="lucide lucide-network-icon lucide-network" width="24" height="24" fill="none" style="vertical-align: middle;" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m3 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m10 2h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m5 16v-3a1 1 0 011-1h12a1 1 0 011 1v3"/><path d="M12 12V8"/></svg>&emsp;<b>IoT Network</b> <i>(VLAN53)</i>"]
+        direction TB
+        IoTDevices["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align: middle;" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-wifi-icon lucide-house-wifi"><path d="M9.5 13.866a4 4 0 0 1 5 .01"/><path d="M12 17h.01"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M7 10.754a8 8 0 0 1 10 0"/></svg>&ensp;IoT Devices"]:::wifi
+    end
+
+    %% --- Guest Wi-Fi (VLAN52) --- %%
+    subgraph Guest ["<svg class="lucide lucide-network-icon lucide-network" width="24" height="24" fill="none" style="vertical-align: middle;" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m3 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m10 2h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m5 16v-3a1 1 0 011-1h12a1 1 0 011 1v3"/><path d="M12 12V8"/></svg>&emsp;<b>Guest Network</b> <i>(VLAN52)</i>"]
+        direction TB
+        GuestDevices["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>&ensp;Guest Devices"]:::wifi
+    end
+
+%% --- Connections --- %%
+
+    %% --- WAN & Uplinks --- %%
+    ISP == "Coax Cable<br><i>(Black RG-11)</i>" ==> Modem
+    Modem == "<b>Port 2: 2.5 GbE</b><br><i>(Black Cat6a)</i>" ==> RouterMain
+
+    %% --- Backhaul --- %%
+    RouterMain == "Backhaul" ==> MeshNode
+
+    %% --- Router to Switch --- %%
+    RouterMain == "<b>Port 1: 10 GbE</b><br><i>(Black Cat6a)</i>" ==> tenGbKeystone
+    RouterMain == "<b>Port 3: 2.5 GbE</b><br><i>(Black Cat6a)</i>" ==> twoFiveGbKeystone
+    tenGbKeystone == "<b>10Gb SFP+ Transceiver</b><br><i>(Red Cat6a)</i>" ==> SwitchAgg
+    RouterMain == "<b>Port 4</b><br><i>(White Cat6)</i>" ==> SwitchTV
+    MeshNode == "<b>Port 5</b><br><i>(Black Cat6a)</i>" ==> SwitchOffice
+
+    %% --- Virtual Machines --- %%
+    Zima -. "KVM / QEMU" .- VM
+
+    %% --- Living Room --- %%
+    SwitchAgg -- "<b>Port 1</b><br><i>(White Cat5e)</i>" --> LaptopRob
+    SwitchAgg -- "<b>Port 4</b><br><i>(Blue Cat6a)</i>" --> Zima
+    SwitchAgg -- "<b>Port 5</b><br><i>(Yellow Cat6a)</i>" --> Zima
+    SwitchTV -- "<b>Port 2</b><br><i>(Black Cat6a)</i>" --> GoogleTV
+    SwitchTV -- "<b>Port 3</b><br><i>(Black Cat5e)</i>" --> SmartTV
+    SwitchTV -- "<b>Port 4</b><br><i>(Black Cat5e)</i>" --> Nintendo
+
+    %% --- Office --- %%
+    SwitchOffice -- "<b>Port 1</b><br><i>(White Cat5e)</i>" --> DesktopBen
+    SwitchOffice -- "<b>Port 2</b><br><i>(White Cat5e)</i>" --> DesktopRob
+    SwitchOffice -- "<b>Port 3</b><br><i>(White Cat5e)</i>" --> Pi4
+    Pi4 -. "USB" .- BrLaser
+
+    %% --- Wi-Fi --- %%
+    RouterMain -. "VLAN52" .- Guest
+    RouterMain -. "VLAN53" .- IoT
+    MeshNode -. "VLAN50" .- PiZero
+    MeshNode -. "VLAN53<br><code>[wlan0]</code>" .- Pi4
+    MeshNode -. "VLAN50" .- Printer3D
+    RouterMain -. "VLAN50" .- Mobile

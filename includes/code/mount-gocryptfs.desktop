@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=gocryptfs --extpass="kwallet-query -f Passwords -r gocryptfspass kdewallet" ~/.cipher ~/Encrypted-Documents
+Name=mountgocryptfs
+Icon=plasmavault
+Type=Application

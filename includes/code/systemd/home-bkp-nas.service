@@ -1,0 +1,12 @@
+[Unit]
+Description=Daily NAS Backup for Home Directory
+ConditionPathIsMountPoint=/mnt/storage_server/Quick_Storage
+
+[Service]
+Type=oneshot
+ExecStart=/home/bhaube/.local/bin/home-bkp-nas.sh
+Nice=19
+IOSchedulingClass=idle
+
+[Install]
+WantedBy=default.target

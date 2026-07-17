@@ -1,0 +1,51 @@
+server:
+  port: 8580
+  assets-path: /app/assets # (1)!
+
+# branding:
+  # app-icon-url: /assets/icons/glance.png
+  # hide-footer: true
+
+theme:
+  presets:
+    Neon-Pink:
+      background-color: 240 27 11  # (5)!
+      contrast-multiplier: 1.5  # (6)!
+      primary-color: 321 100 71
+      positive-color: 165 78 51
+      negative-color: 360 100 71
+    Formula-One:
+      background-color: 0 0 5
+      contrast-multiplier: 1.5
+      primary-color: 2 100 44
+      positive-color: 112 82 46
+      negative-color: 2 100 44
+    Material-Purple-Enhanced:
+      background-color: 227 46 16
+      contrast-multiplier: 1.3
+      primary-color: 233 76 85
+      positive-color: 115 54 76
+      negative-color: 347 70 65
+    Material-Dark-Forest:
+      background-color: 187 100 8
+      contrast-multiplier: 1.3
+      primary-color: 188 54 83
+      positive-color: 115 54 76
+      negative-color: 347 70 65
+
+  custom-css-file: /assets/user.css # (2)!
+
+auth:
+  secret-key: <insert-server-secret>  # (3)!
+  users:
+    admin:
+      password-hash: ${ADMIN_PW_HASH} # (4)!
+    bhaube:
+      password-hash: ${BHAUBE_PW_HASH}
+    rpereira:
+      password-hash: ${RPEREIRA_PW_HASH}
+
+pages:
+  - $include: pages/home.yml
+  - $include: pages/network.yml
+  - $include: pages/formula1.yml

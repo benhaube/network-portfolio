@@ -39,9 +39,10 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    :symbols-container:&nbsp;Docker Container: 
+:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     
-      + `compose.yml`
+      + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

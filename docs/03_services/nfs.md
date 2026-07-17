@@ -98,7 +98,7 @@ sudo systemctl start nfs-server
     systemctl status nfs-server
     ```
 
-    ```shell-session title="Example Output" linenums="1"
+    ```shell-session title="Expected Output" linenums="1"
     ● nfs-server.service - NFS server and services
           Loaded: loaded (/usr/lib/systemd/system/nfs-server.service; enabled; preset: disabled)
          Drop-In: /run/systemd/generator/nfs-server.service.d

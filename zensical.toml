@@ -1,0 +1,308 @@
+[project]
+
+site_name = "Network Documentation & Portfolio"
+site_description = "My personal, self-hosted network documentation, professional portfolio, and blog website. Designed to showcase my knowledge and capabilities in IT and network security, and to make managing my homelab easier."
+site_author = "Benjamin Haube"
+site_url = "https://portfolio.rac3r4life.online/"
+
+copyright = """
+  Copyright &copy; Benjamin Haube –
+  <a href="#__consent">Change cookie settings</a>
+"""
+
+repo_url = "https://github.com/benhaube/network-portfolio"
+repo_name = "benhaube/network-portfolio"
+edit_uri = "edit/main/docs/"
+
+watch = ["includes"]
+
+# Zensical supports both implicit navigation and explicitly defined navigation.
+# If you decide not to define a navigation here then Zensical will simply
+# derive the navigation structure from the directory structure of your
+# "docs_dir". The definition below demonstrates how a navigation structure
+# can be defined using TOML syntax.
+#
+# Read more: https://zensical.org/docs/setup/navigation/
+# nav = [
+#   { "Get started" = "index.md" },
+#   { "Markdown in 5min" = "markdown.md" },
+# ]
+
+extra_css = ["assets/stylesheets/extra.css"]
+extra_javascript = ["assets/javascripts/extra.js"]
+
+# ----------------------------------------------------------------------------
+# Section for configuring theme options
+# ----------------------------------------------------------------------------
+
+[project.theme]
+
+# change this to "classic" to use the traditional Material for MkDocs look.
+#variant = "classic"
+custom_dir = "overrides"
+favicon = "assets/favicon.svg"
+language = "en"
+
+features = [
+
+    "announce.dismiss",
+    "content.action.edit",
+    "content.action.view",
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    # "header.autohide",
+    # "navigation.expand",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.path",
+    # "navigation.prune",
+    "navigation.sections",
+    "navigation.tabs",
+    #"navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "toc.follow",
+    "toc.integrate",
+]
+
+logo = "assets/favicon.svg"
+
+[project.theme.icon]
+edit = "lucide/square-pen"
+view = "lucide/scan-eye"
+next = "lucide/chevron-right"
+previous = "lucide/chevron-left"
+top = "lucide/chevrons-up"
+search = "lucide/search"
+share = "lucide/share-2"
+
+[project.theme.font]
+text = "Google Sans"
+code = "Google Sans Code"
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+primary = "green"
+accent = "light blue"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+primary = "green"
+accent = "light blue"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+primary = "green"
+accent = "light blue"
+
+
+[[project.extra.social]]
+icon = "brands/github"
+link = "https://github.com/benhaube/network-portfolio"
+
+[project.extra.consent]
+title = "Cookie Consent"
+description = """
+    We use cookies to recognize your repeated visits and preferences, as well
+    as to measure the effectiveness of our documentation and whether users
+    find what they're searching for. With your consent, you're helping us to
+    make our documentation better.
+"""
+actions = [
+    "accept",
+    "reject",
+    "manage"
+]
+
+[project.extra.status]
+new = "Recently added"
+deprecated = "Deprecated"
+inactive = "Inactive"
+
+[project.extra.tags]
+3D-Printer = "3D-printer"
+ISP = "isp"
+IoT = "iot"
+Active = "active"
+Android = "android"
+Backup = "backup"
+Container = "container"
+"Container Host" = "container-host"
+Dashboard = "dashboard"
+Deprecated = "deprecated"
+Desktop = "desktop"
+Development = "development"
+DNS = "dns"
+Domain = "domain"
+Download = "download"
+"File Share" = "file-share"
+Hardware = "hardware"
+Inactive = "inactive"
+Infrastructure = "infra"
+Inventory = "inventory"
+Laptop = "laptop"
+Linux = "linux"
+"Living Room" = "living-room"
+Map = "map"
+Mini-Rack = "mini-rack"
+Mobile = "mobile"
+Monitor = "monitor"
+NAS = "nas"
+Native = "native"
+Network = "network"
+New = "new"
+Office = "office"
+PC = "pc"
+Policy = "policy"
+Printing = "print"
+"Printer Cart" = "printer-cart"
+"Remote Access" = "remote"
+Router = "router"
+Security = "security"
+Server = "server"
+Service = "service"
+Shell = "shell"
+Software = "software"
+Switch = "switch"
+Sync = "sync"
+Tools = "tools"
+"TV Stand" = "tv-stand"
+Video = "video"
+"Virtual Host" = "vh"
+"Virtual Machine" = "vm"
+VLAN = "vlan"
+VPN = "vpn"
+Windows = "windows"
+"Web Host" = "web-host"
+
+[project.theme.icon.tag]
+default = "lucide/tag"
+3D-printer = "symbols/printer-3d-nozzle"
+active = "lucide/circle-check"
+android = "brands/android"
+backup = "lucide/cloud-upload"
+container = "lucide/container"
+container-host = "lucide/container"
+dashboard = "lucide/layout-dashboard"
+deprecated = "lucide/trash-2"
+desktop = "lucide/pc-case"
+development = "lucide/git-branch"
+dns = "symbols/server-dns"
+download = "lucide/download"
+file-share = "lucide/share"
+hardware = "lucide/monitor-smartphone"
+inactive = "lucide/circle-x"
+infra = "symbols/network-node"
+inventory = "lucide/clipboard-list"
+iot = "lucide/house-wifi"
+isp = "lucide/globe"
+laptop = "lucide/laptop-minimal"
+linux = "lucide/penguin"
+living-room = "lucide/sofa"
+map = "symbols/sitemap"
+mini-rack = "symbols/server-rack"
+mobile = "lucide/tablet-smartphone"
+monitor = "lucide/activity"
+nas = "symbols/server-nas"
+native = "lucide/penguin"
+network = "lucide/network"
+new = "lucide/badge-alert"
+office = "lucide/desk-lamp"
+pc = "lucide/personal-computer"
+policy = "lucide/file-pen-line"
+print = "lucide/printer"
+printer-cart = "lucide/printer"
+remote = "lucide/globe-arrow"
+router = "lucide/router"
+security = "lucide/brick-wall-shield"
+server = "lucide/server"
+service = "lucide/monitor-cloud"
+shell = "lucide/terminal"
+software = "lucide/package"
+switch = "lucide/ethernet-port"
+tools = "lucide/wrench"
+tv-stand = "lucide/tv-minimal"
+vh = "symbols/host"
+video = "lucide/film"
+vlan = "symbols/hub"
+vm = "lucide/layers"
+vpn = "lucide/waypoints"
+windows = "brands/microsoft"
+web-host = "lucide/globe"
+
+# ----------------------------------------------------------------------------
+# Section for configuring Python Markdown extensions.
+# ----------------------------------------------------------------------------
+
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+[project.markdown_extensions.toc]
+permalink = true
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+[project.markdown_extensions.pymdownx.betterem]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+options.custom_icons = ["overrides/.icons"]
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.magiclink]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.snippets]
+base_path = [
+    "*",
+    "docs/includes",
+    "docs/assets/code",
+    "docs/assets/code/bash",
+    "docs/assets/code/config",
+    "docs/assets/code/gcode",
+    "docs/assets/code/mermaid",
+    "docs/assets/code/systemd",
+    "docs/assets/code/yaml"
+]
+auto_append = ["includes/abbreviations.md"]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+clickable_checkbox = true
+[project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions.zensical.extensions.glightbox]
+auto = false
+auto_themed = true

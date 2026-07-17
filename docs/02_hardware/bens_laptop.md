@@ -1,5 +1,5 @@
 ---
-icon: symbols/laptop-minimal
+icon: lucide/laptop-minimal
 title: Ben's Laptop
 subtitle: ThinkPad X1 Carbon
 tags:

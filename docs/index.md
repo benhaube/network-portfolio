@@ -77,7 +77,7 @@ hide:
 [:symbols-pc-case:&ensp;Ben's Workstation](02_hardware/bens_desktop.md) 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](02_hardware/tp-link_switch.md).
 
-[:symbols-laptop-minimal:&ensp;Ben's Laptop](02_hardware/bens_laptop.md)
+[:lucide-laptop-minimal:&ensp;Ben's Laptop](02_hardware/bens_laptop.md)
 :    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
 
 [:symbols-smartphone:&ensp;Ben's Smartphone](02_hardware/bens_smartphone.md)
@@ -89,7 +89,7 @@ hide:
 [:symbols-pc-case:&ensp;Rob's Workstation](02_hardware/robs_desktop.md) 
 :    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](02_hardware/tp-link_switch.md).
 
-[:symbols-laptop-minimal:&ensp;Rob's Laptop](02_hardware/robs_laptop.md) 
+[:lucide-laptop-minimal:&ensp;Rob's Laptop](02_hardware/robs_laptop.md) 
 :    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](02_hardware/ugreen_switch.md).
 
 ---

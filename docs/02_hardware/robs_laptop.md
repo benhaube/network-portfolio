@@ -1,5 +1,5 @@
 ---
-icon: symbols/laptop-minimal
+icon: lucide/laptop-minimal
 title: Rob's Laptop
 subtitle: ASUS TUF Gaming A16
 tags: 

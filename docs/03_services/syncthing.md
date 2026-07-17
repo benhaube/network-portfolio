@@ -1,5 +1,5 @@
 ---
-icon: simple/syncthing
+icon: services/syncthing-alt
 title: Syncthing
 subtitle: File Synchronization
 description: Open decentralized file synchronization.

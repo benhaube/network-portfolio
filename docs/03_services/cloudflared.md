@@ -1,5 +1,5 @@
 ---
-icon: simple/cloudflare
+icon: services/cloudflare
 title: Cloudflared
 subtitle: Reverse-Proxy Server
 description: Secure reverse-proxy tunnel for hosting private services on the public internet.

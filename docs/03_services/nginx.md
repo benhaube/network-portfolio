@@ -1,5 +1,5 @@
 ---
-icon: simple/nginx
+icon: services/nginx
 title: Nginx
 subtitle: Network Documentation
 description: The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.

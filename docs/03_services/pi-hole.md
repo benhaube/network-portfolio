@@ -1,5 +1,5 @@
 ---
-icon: simple/pihole
+icon: services/pi-hole
 title: Pi-hole
 subtitle: A DNS Sinkhole
 description: A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.

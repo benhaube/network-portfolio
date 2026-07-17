@@ -1,5 +1,5 @@
 ---
-icon: simple/obsidian
+icon: services/obsidian
 title: Obsidian LiveSync
 subtitle: Sync with CouchDB
 description: Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.

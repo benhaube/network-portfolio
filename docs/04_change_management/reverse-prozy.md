@@ -1,5 +1,5 @@
 ---
-icon: simple/caddy
+icon: services/caddy
 title: Reverse Proxy & DNS Routing
 subtitle: Domain Names for Local Services
 tags:

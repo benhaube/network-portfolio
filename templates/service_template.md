@@ -39,9 +39,10 @@ hide:
 
 ## :symbols-package-search: Deployment Details
 
-| Host Device                                      | Method                                | Container Name   | Image            |
-| :----------------------------------------------- | :------------------------------------ | :--------------- | :--------------- |
-| :devices-icon:&nbsp;[Device](device_template.md) | :services-docker:&nbsp;Docker Compose | `container-name` | `image_name:tag` |
+| Host Device                                      | Method                                    | Container Name   | Image            |
+| :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- |
+| :devices-icon:&nbsp;[Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` |
+| :devices-icon:&nbsp;[Device](device_template.md) | :symbols-penguin:&nbsp;Native Linux       | `N/A`            | `N/A`            |
 
 ### :symbols-settings: Configuration 
 

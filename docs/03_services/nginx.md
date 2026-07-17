@@ -36,7 +36,7 @@ hide:
       + <http://storage-server.internal:8080>
       + <http://storage-server-2.internal:8080>
 
-:    :symbols-globe:&nbsp;Remote Access:
+:    :symbols-globe-arrow:&nbsp;Remote Access:
 
       + <https://portfolio.rac3r4life.online>
 

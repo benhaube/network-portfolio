@@ -33,12 +33,12 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access 
 
-:    :symbols-lan:&nbsp;LAN Access
+:    :symbols-lan:&nbsp;Local Access
     
       + <https://uptime.internal>
       + <http://pi-server.internal:3001>
 
-:    :symbols-globe:&nbsp;WAN Access
+:    :symbols-globe-arrow:&nbsp;Remote Access
     
       + <https://uptime.rac3r4life.online>
 

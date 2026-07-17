@@ -49,7 +49,7 @@ hide:
 
 ???+ change "Image Migration"
 
-    :symbols-calendar-clock:&ensp;**Date:** Monday, April 27 2026 <br>
+    :symbols-calendar:&ensp;**Date:** Monday, April 27 2026 <br>
     :symbols-arrow-right-left:&ensp;**Change:** Using a forked Docker image <br>
     :symbols-circle-question-mark:&ensp;**Reason:** Active development, additional features
 
@@ -70,7 +70,7 @@ hide:
 
 ??? change "User Authentication"
 
-    :symbols-calendar-clock:&ensp;**Date:** Monday, April 20 2026 <br>
+    :symbols-calendar:&ensp;**Date:** Monday, April 20 2026 <br>
     :symbols-arrow-right-left:&ensp;**Change:** Enabled user authentication <br>
     :symbols-circle-question-mark:&ensp;**Reason:** Additional security
 
@@ -80,7 +80,7 @@ hide:
  
     + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault:symbols-external-link-small:](https://vault.bitwarden.com) within the folder "Local Network". There are currently three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
-    :symbols-rectangle-ellipsis:&ensp;**Passwords:**
+    :symbols-text-cursor-input:&ensp;**Passwords:**
 
     !!! tip inline end
     
@@ -119,7 +119,7 @@ hide:
 
 ??? change "Widgets Directory"
 
-    :symbols-calendar-clock:&ensp;**Date:** Saturday, April 18 2026 <br>
+    :symbols-calendar:&ensp;**Date:** Saturday, April 18 2026 <br>
     :symbols-arrow-right-left:&ensp;**Change:** Moved pages and widgets into separate directories. <br>
     :symbols-circle-question-mark:&ensp;**Reason:** Simplify the `<page>.yml` files for easier configuration management.
 
@@ -129,7 +129,7 @@ hide:
         
         Changes to the YAML files in the `config/pages` and `config/widgets` directories are recognized by the container instantly. However, you may need to clear the browser cache when you reload the page. 
  
-        **Reload and clear cache:**<br>++ctrl+f5++ 
+        To reload an clear the browser cache use the keyboard keys; ++ctrl+f5++ 
  
     :symbols-settings:&ensp;**Configuration:**
 

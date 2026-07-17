@@ -15,11 +15,6 @@ watch:
   # 'network-documentation/includes' contains 'abbreviations.md'
   - includes
 
-# Exclude Markdown files in '/docs/includes' from site navigation.
-# The '/docs/includes' directory contains markdown files with content that will be displayed on multiple pages.
-exclude_docs: |
-  includes/
-
 # Git Repo URL & Docs directory
 repo_url: https://github.com/benhaube/network-portfolio
 repo_name: benhaube/network-portfolio
@@ -201,14 +196,14 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path:
         - .
-        - docs/includes
-        - docs/assets/code
-        - docs/assets/code/bash
-        - docs/assets/code/config
-        - docs/assets/code/gcode
-        - docs/assets/code/mermaid
-        - docs/assets/code/systemd
-        - docs/assets/code/yaml
+        - includes
+        - includes/code
+        - includes/code/bash
+        - includes/code/config
+        - includes/code/gcode
+        - includes/code/mermaid
+        - includes/code/systemd
+        - includes/code/yaml
       auto_append:
         - includes/abbreviations.md
   - pymdownx.betterem

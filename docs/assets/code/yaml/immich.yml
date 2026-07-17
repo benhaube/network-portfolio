@@ -33,7 +33,7 @@ services:
       - DB_USERNAME=postgres
     hostname: immich-machine-learning
     healthcheck: {}
-    image: ghcr.io/immich-app/immich-machine-learning:v2.7.5-openvino
+    image: ghcr.io/immich-app/immich-machine-learning:v3.0.3-openvino
     labels:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/immich.svg
     restart: unless-stopped
@@ -64,7 +64,7 @@ services:
       - DB_USERNAME=postgres
     hostname: immich-server
     healthcheck: {}
-    image: ghcr.io/immich-app/immich-server:v2.7.5
+    image: ghcr.io/immich-app/immich-server:v3.0.3
     labels:
       icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/immich.svg
     ports:

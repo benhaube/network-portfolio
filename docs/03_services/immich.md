@@ -32,13 +32,12 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access
 
-:    :symbols-lan:&nbsp;LAN Access:
+:    :symbols-lan:&nbsp;Local Access:
     
-      + <https://immich.internal>
       + <http://storage-server.internal:2283>
       + <http://storage-server-2.internal:2283>
 
-:    :symbols-globe:&nbsp;WAN Access:
+:    :symbols-globe-arrow:&nbsp;Remote Access:
     
       + <https://immich.rac3r4life.online>
 
@@ -46,15 +45,15 @@ hide:
 
 :    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
     
-      + Local Network&ensp;:symbols-move-right:&ensp;"Immich Admin"
-      + Local Network&ensp;:symbols-move-right:&ensp;"Immich User"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Immich (admin)"
+      + Local Network&ensp;:symbols-move-right:&ensp;"Immich (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                          | Method                                    | Container Name            | Image                                                            |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------------------ | :--------------------------------------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `immich-server`           | `ghcr.io/immich-app/immich-server:v2.7.5`                        |
-|                                                                      |                                           | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v2.7.5-openvino`     |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `immich-server`           | `ghcr.io/immich-app/immich-server:v3.0.3`                        |
+|                                                                      |                                           | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v3.0.3-openvino`     |
 |                                                                      |                                           | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
 |                                                                      |                                           | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
 

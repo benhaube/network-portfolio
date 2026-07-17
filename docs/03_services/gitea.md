@@ -59,10 +59,10 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                | Container Name | Image                           |
-| :------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :services-docker:&nbsp;Docker Compose | `gitea`        | `docker.gitea.com/gitea:latest` |
-|                                                                      | :services-docker:&nbsp;Docker Compose | `gitea_runner` | `gitea/act_runner:latest`       |
+| Host Device                                                          | Method                                    | Container Name | Image                           |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `gitea`        | `docker.gitea.com/gitea:latest` |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `gitea_runner` | `gitea/act_runner:latest`       |
 
 ### :symbols-settings:&ensp;Configuration 
 

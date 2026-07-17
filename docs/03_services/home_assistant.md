@@ -42,9 +42,9 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                | Container Name  | Image                                          |
-| :------------------------------------------------------------------- | :------------------------------------ | :-------------- | :--------------------------------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :services-docker:&nbsp;Docker Compose | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
+| Host Device                                                          | Method                                    | Container Name  | Image                                          |
+| :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :--------------------------------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

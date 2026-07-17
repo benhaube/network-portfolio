@@ -56,12 +56,12 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                                | Container Name    | Image                   |
-| :----------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :---------------------- |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :services-docker:&nbsp;Docker Compose | `dockge-dockge-1` | `louislam/dockge:1`     |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :services-docker:&nbsp;Docker Compose | `dockge`          | `louislam/dockge:1.5.0` |
+| Host Device                                                                    | Method                                    | Container Name    | Image                   |
+| :----------------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :---------------------- |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1`     |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `dockge`          | `louislam/dockge:1.5.0` |
 
 ### :symbols-settings:&ensp;Configuration 
 

@@ -46,10 +46,10 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                | Container Name | Image                                                 |
-| :------------------------------------------------------------------- | :------------------------------------ | :------------- | :---------------------------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :services-docker:&nbsp;Docker Compose | `f1-backend`   | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`  |
-|                                                                      |                                       | `f1-frontend`  | `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                                                 |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :---------------------------------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1-backend`   | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`  |
+|                                                                      |                                           | `f1-frontend`  | `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

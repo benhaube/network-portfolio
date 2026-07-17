@@ -39,15 +39,15 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    :services-docker:&nbsp;Docker Compose: 
+:    :symbols-container:&nbsp;Docker Container: 
     
       + `compose.yml`
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                              | Method                                | Container Name | Image                                 |
-| :----------------------------------------------------------------------- | :------------------------------------ | :------------- | :------------------------------------ |
-| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :services-docker:&nbsp;Docker Compose | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
+| Host Device                                                              | Method                                    | Container Name | Image                                 |
+| :----------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------ |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

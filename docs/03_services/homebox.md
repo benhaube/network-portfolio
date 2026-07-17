@@ -45,9 +45,9 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                | Container Name | Image                                   |
-| :------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :services-docker:&nbsp;Docker Compose | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                                   |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

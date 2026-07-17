@@ -68,16 +68,16 @@ hide:
 
 ##### Hub
 
-| Host Device                                                              | Method                                | Container Name | Image                        |
-| :----------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :services-docker:&nbsp;Docker Compose | `portainer`    | `portainer/portainer-ee:lts` |
+| Host Device                                                              | Method                                    | Container Name | Image                        |
+| :----------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portainer`    | `portainer/portainer-ee:lts` |
 
 ##### Agent
 
-| Host Device                                                                        | Method                                | Container Name    | Image                 |
-| :--------------------------------------------------------------------------------- | :------------------------------------ | :---------------- | :-------------------- |
-| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
-| [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_hardware/zimaos_nas.md)           | :services-docker:&nbsp;Docker Compose | `portainer_agent` | `portainer/agent:lts` |
+| Host Device                                                                        | Method                                    | Container Name    | Image                 |
+| :--------------------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :-------------------- |
+| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `portainer_agent` | `portainer/agent:lts` |
+| [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `portainer_agent` | `portainer/agent:lts` |
 
 ### :symbols-settings:&ensp;Configuration  
 

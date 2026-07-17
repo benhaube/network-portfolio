@@ -41,10 +41,10 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                | Container Name     | Image                             |
-| :------------------------------------------------------------------- | :------------------------------------ | :----------------- | :-------------------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :services-docker:&nbsp;Docker Compose | `it-tools`         | `sharevb/it-tools:latest`         |
-|                                                                      | :services-docker:&nbsp;Docker Compose | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
+| Host Device                                                          | Method                                    | Container Name     | Image                             |
+| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :-------------------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `it-tools`         | `sharevb/it-tools:latest`         |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
 
 ### :symbols-settings:&ensp;Configuration 
 

@@ -46,9 +46,9 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                | Container Name          | Image          |
-| :------------------------------------------------------------------- | :------------------------------------ | :---------------------- | :------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :services-docker:&nbsp;Docker Compose | `network-documentation` | `nginx:alpine` |
+| Host Device                                                          | Method                                    | Container Name          | Image          |
+| :------------------------------------------------------------------- | :---------------------------------------- | :---------------------- | :------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `network-documentation` | `nginx:alpine` |
 
 ### :symbols-settings:&ensp;Configuration
 

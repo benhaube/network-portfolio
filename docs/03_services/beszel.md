@@ -56,18 +56,18 @@ hide:
 
 ##### Hub
 
-| Host Device                                                          | Method                                | Container Name | Image                  |
-| :------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :services-docker:&nbsp;Docker Compose | `beszel-hub`   | `henrygd/beszel`       |
-|                                                                      | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent` |
+| Host Device                                                          | Method                                    | Container Name | Image                  |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel`       |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent` |
 
 ##### Agents
 
-| Host Device                                                                    | Method                                | Container Name | Image                        |
-| :----------------------------------------------------------------------------- | :------------------------------------ | :------------- | :--------------------------- |
-| [:symbols-server:&nbsp;Debian Server VM](../02_hardware/debian_server.md)      | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :services-docker:&nbsp;Docker Compose | `beszel-agent` | `henrygd/beszel-agent-intel` |
+| Host Device                                                                    | Method                                    | Container Name | Image                        |
+| :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- |
+| [:symbols-server:&nbsp;Debian Server VM](../02_hardware/debian_server.md)      | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` |
 
 ### :symbols-settings:&ensp;Configuration
 

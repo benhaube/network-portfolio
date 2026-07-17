@@ -61,10 +61,10 @@ hide:
  
     [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#glance-config-file)
 
-| Host Device                                                          | Method                                | Container Name | Image                       |
-| :------------------------------------------------------------------- | :------------------------------------ | :------------- | :-------------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :services-docker:&nbsp;Docker Compose | `glance`       | `panonim/dynacat:latest`    |
-|                                                                      | :services-docker:&nbsp;Docker Compose | `f1_api`       | `skyallinott/f1_api:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                       |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------- |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glance`       | `panonim/dynacat:latest`    |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `f1_api`       | `skyallinott/f1_api:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 

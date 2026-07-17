@@ -73,10 +73,10 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                                | Container Name         | Image                        |
-| :--------------------------------------------------------------------- | :------------------------------------ | :--------------------- | :--------------------------- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-penguin:&nbsp;Native Linux   | `N/A`                  | `N/A`                        |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :services-docker:&nbsp;Docker Compose | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| Host Device                                                            | Method                                    | Container Name         | Image                        |
+| :--------------------------------------------------------------------- | :---------------------------------------- | :--------------------- | :--------------------------- |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-penguin:&nbsp;Native Linux       | `N/A`                  | `N/A`                        |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-container:&nbsp;Docker Container | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
 
 ### :symbols-settings:&ensp;Configuration 
 

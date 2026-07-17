@@ -2,6 +2,7 @@
 icon: symbols/ethernet-port
 title: TP-Link LiteWave Switch
 subtitle: Model LS1005G
+status: new
 tags:
   - Switch
   - Infrastructure

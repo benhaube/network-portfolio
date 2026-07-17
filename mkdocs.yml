@@ -145,7 +145,7 @@ theme:
       hardware: symbols/monitor-smartphone
       inactive: symbols/circle-x
       infra: symbols/network-node
-      inventory: symbols/inventory
+      inventory: symbols/clipboard-list
       iot: symbols/home-automation
       isp: symbols/globe
       laptop: symbols/laptop-minimal

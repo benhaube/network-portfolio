@@ -30,14 +30,13 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-:    `8384` *(TCP)*&emsp;`22000` *(TCP / UDP)*&emsp;`21027` *(UDP)*
+:    `8384`&emsp;`22000`&emsp;`21027`
 
 #### :symbols-link:&ensp;URL / Access  
 
 :    :symbols-pc-case:&nbsp;Ben's Desktop
     
       + <https://bens-workstation.internal:8384>
-      + <https://192.168.50.61:8384>
 
 :    :symbols-laptop-minimal:&nbsp;Ben's Laptop
     
@@ -50,24 +49,19 @@ hide:
 :    :symbols-server:&nbsp;Debian Server
     
       + <https://debian-vm.internal:8384>
-      + <https://192.168.50.6:8384>
 
 :    :symbols-server:&nbsp;Pi 4B Server
     
       + <https://pi-server.internal:8384>
-      + <https://192.168.50.2:8384>
 
 :    :symbols-server:&nbsp;Pi Zero 2W Server
     
       + <https://pi-zero.internal:8384>
-      + <https://192.168.50.3:8384>
 
 :    :symbols-server-nas:&nbsp;ZimaOS NAS
     
       + <https://storage-server.internal:8384>
       + <https://storage-server-2.internal:8384>
-      + <https://192.168.50.4:8384>
-      + <https://192.168.50.5:8384>
 
 #### :symbols-user-key:&ensp;Credentials 
 

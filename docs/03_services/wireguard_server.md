@@ -36,26 +36,28 @@ hide:
 
 :    :symbols-waypoints:&nbsp;Server Endpoint:
     
-      + `rac3r4life.myaddr.dev:41820` *(for :symbols-router:&nbsp;ASUS RT-BE92U)*
-      + `rac3r4life.myaddr.dev:51820` *(for :symbols-server-nas:&nbsp;ZimaOS NAS)*
+      + `rac3r4life.myaddr.dev:41820` &mdash; :symbols-router:&nbsp;*ASUS RT-BE92U*
+      + `rac3r4life.myaddr.dev:51820` &mdash; :symbols-server-nas:&nbsp;*ZimaOS NAS*
 
 :    :symbols-monitor-cog:&nbsp;Web UI Admin: 
     
+      + <https://asusrouter.internal:8443/Advanced_VPNServer_Content.asp>
       + <http://storage-server.internal:51821/>
       + <http://storage-server-2.internal:51821/>
 
 #### :symbols-user-key:&ensp;Credentials 
 
 :    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"WireGuard Admin"
-      + Local Network&ensp;:symbols-move-right:&ensp;"WireGuard Metrics"
+      
+      + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router" &mdash; :symbols-router:&nbsp;*ASUS RT-BE92U*
+      + Local Network&ensp;:symbols-move-right:&ensp;"WireGuard Admin" &mdash; :symbols-server-nas:&nbsp;*ZimaOS NAS*
+      + Local Network&ensp;:symbols-move-right:&ensp;"WireGuard Metrics" &mdash; :symbols-server-nas:&nbsp;*ZimaOS NAS*
 
 :    2FA / MFA:
     
-      + :symbols-clock:&nbsp;TOTP 
+      + :symbols-clock:&nbsp;TOTP
 
-#### :symbols-monitor-smartphone:&ensp;Clients
+#### :symbols-monitor-smartphone:&ensp;Client Profiles
 
 :    :symbols-router:&nbsp;ASUS RT-BE92U:
     

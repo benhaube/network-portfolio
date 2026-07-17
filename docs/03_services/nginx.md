@@ -31,12 +31,12 @@ hide:
 
 #### :symbols-link:&ensp;URL / Access
 
-:    :symbols-lan:&nbsp;LAN Access:
+:    :symbols-lan:&nbsp;Local Access:
 
       + <http://storage-server.internal:8080>
       + <http://storage-server-2.internal:8080>
 
-:    :symbols-globe:&nbsp;WAN Access:
+:    :symbols-globe:&nbsp;Remote Access:
 
       + <https://portfolio.rac3r4life.online>
 

@@ -35,7 +35,7 @@ watch = [
 
 extra_css = ["assets/stylesheets/extra.css"]
 extra_javascript = [
-    "assets/javascripts/extra.js",
+    "assets/javascripts/link-new-tab.js",
     "assets/javascripts/mermaid.mjs"
 ]
 
@@ -91,6 +91,7 @@ previous = "lucide/chevron-left"
 top = "lucide/chevrons-up"
 search = "lucide/search"
 share = "lucide/share-2"
+annotation = "lucide/circle-chevron-right"
 
 [project.theme.font]
 text = "Google Sans"

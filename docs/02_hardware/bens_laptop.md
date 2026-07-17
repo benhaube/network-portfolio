@@ -116,9 +116,9 @@ hide:
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                            |        Port(s)         | Role / Notes                             |
-| :------: | :----------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
-| *Active* | [:services-syncthing:&nbsp;Syncthing](../03_services/syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
+|  Status  | Service                                                                |        Port(s)         | Role / Notes                             |
+| :------: | :--------------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

@@ -195,7 +195,7 @@ hide:
 [:symbols-terminal-alt:&ensp;SSH](03_services/ssh.md)
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
-[:services-syncthing:&ensp;Syncthing](03_services/syncthing.md)
+[:services-syncthing-alt:&ensp;Syncthing](03_services/syncthing.md)
 :    Open decentralized file synchronization.
 
 [:services-technitium:&ensp;Technitium](03_services/technitium.md)

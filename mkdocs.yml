@@ -128,7 +128,7 @@ theme:
 
     # Set the icons used for page tags.
     tag:
-      default: symbols/tag-outline
+      default: symbols/tag
       3D-printer: symbols/printer-3d-nozzle
       active: symbols/circle-check
       android: brands/android

@@ -38,7 +38,7 @@ hide:
 
     [More Kacey Info&ensp;:symbols-printer-3d-nozzle:](02_hardware/kacey_info.md){ .md-button }
 
-    [Hardware Tags&ensp;:symbols-tag-outline:](02_hardware/tags.md){ .md-button }
+    [Hardware Tags&ensp;:symbols-tag:](02_hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
@@ -97,7 +97,7 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    [Services Tags&ensp;:symbols-tag-outline:](03_services/tags.md){ .md-button }
+    [Services Tags&ensp;:symbols-tag:](03_services/tags.md){ .md-button }
 
 [:services-beszel:&ensp;Beszel](03_services/beszel.md)
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts.

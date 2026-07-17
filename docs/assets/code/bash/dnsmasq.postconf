@@ -1,7 +1,0 @@
-#!/bin/sh
-
-CONFIG=$1
-source /usr/sbin/helper.sh
-
-# (1)!
-pc_replace "dhcp-script=/sbin/dhcpc_lease" "dhcp-script=/jffs/scripts/dhcp-event.sh" $CONFIG

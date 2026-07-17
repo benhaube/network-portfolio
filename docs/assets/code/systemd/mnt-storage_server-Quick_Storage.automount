@@ -1,9 +1,0 @@
-[Unit]  
-Description=Automount for ZimaOS NAS Quick-Storage  
-  
-[Automount]  
-Where=/mnt/storage_server/Quick_Storage  
-TimeoutIdleSec=600  
-  
-[Install]  
-WantedBy=multi-user.target

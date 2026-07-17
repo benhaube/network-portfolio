@@ -1,8 +1,0 @@
-services:
-  speedtest:
-    restart: unless-stopped
-    container_name: openspeedtest
-    ports:
-      - '3004:3000'  # (1)!
-      # - '3001:3001'  (2)
-    image: openspeedtest/latest

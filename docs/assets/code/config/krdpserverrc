@@ -1,5 +1,0 @@
-[General]  
-Autostart=true  
-Certificate=/home/bhaube/.local/share/krdpserver/krdp.crt  
-CertificateKey=/home/bhaube/.local/share/krdpserver/krdp.key  
-SystemUserEnabled=true

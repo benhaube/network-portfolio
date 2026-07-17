@@ -68,7 +68,7 @@ Add these services to your existing Immich stack or a new stack.
 3. The Logic *(Auto-adds faces to the specific album)*
 4. `SYNC_MODE=1` adds new photos automatically.
 
-### :symbols-image:&ensp;Auto Album Config
+### :symbols-images:&ensp;Auto Album Config
 
 Place this in the same folder as your docker-compose file.
 

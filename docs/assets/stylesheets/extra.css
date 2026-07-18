@@ -116,7 +116,7 @@
 /* ~~~ Footer background / border ~~~ */
 
 .md-footer {
-    -webkit-backdrop-filter: blur(.4rem);
+  -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
   background-color: var(--md-default-bg-color);
   border-top: .05rem solid var(--md-default-fg-color--lightest);

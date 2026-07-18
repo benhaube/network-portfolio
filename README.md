@@ -126,14 +126,14 @@ podman run --rm -it -v ${PWD}:/docs:Z mkdocs-custom build
 ### Setup Python Virtual Environment
 
 ```bash
-python -m venv venv/
-source venv/bin/activate
+python -m venv .venv/
+source .venv/bin/activate
 ```
 
-#### Install Material for MkDocs
+### Install Material for MkDocs
 
 ```bash
-pip install mkdocs-material "mkdocs-material[imaging]"
+pip install mkdocs-material
 ```
 
 #### Install Plugins
@@ -142,24 +142,75 @@ pip install mkdocs-material "mkdocs-material[imaging]"
 pip install mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-open-in-new-tab
 ```
 
+#### Install Dependencies for Optimize Plugin
+
+##### Python
+
+```bash
+pip install "mkdocs-material[imaging]"
+```
+
+> [!note]
+> This will install compatible versions of the following python packages:
+> 
+> + [Pillow](https://pillow.readthedocs.io/)
+> + [CairoSVG](https://cairosvg.org/)
+
+##### Linux Packages
+
+```bash
+# Fedora / RHEL
+sudo dnf install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
+
+# OpenSUSE
+sudo zypper install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
+
+# Debian / Ubuntu
+sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+```
+
+##### MacOS Packages
+
+```bash
+brew install cairo freetype libffi libjpeg libpng zlib
+```
+
+### How to Upgrade
+
+```bash
+# Material for MkDocs
+pip install --upgrade --force-reinstall mkdocs-material "mkdocs-material[imaging]"
+# MkDocs Plugins
+pip install --upgrade --force-reinstall mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-open-in-new-tab
+```
+
+#### Check Current Version
+
+```bash
+pip show mkdocs-material
+```
+
 ### Building / Serving the Site
 
 #### Serve Site for Testing
 
 ```bash
-python -m mkdocs serve -a 0.0.0.0:8000 --livereload
+mkdocs serve
+
+# Specify port 
+mkdocs serve -a 0.0.0.0:<port>
 ```
 
 #### Build Site for Deployment
 
 ```bash
-python -m mkdocs build
+mkdocs build
 ```
 
 > [!tip]
 > **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
 
-## 🙏 Special Thanks
+## :folded_hands_light_skin_tone: Special Thanks
 
 I would like to give special thanks to the following projects whose work was used extensively in this project:
 

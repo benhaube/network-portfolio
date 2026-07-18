@@ -210,7 +210,7 @@ mkdocs build
 > [!tip]
 > **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
 
-## :folded_hands: Special Thanks
+## 🙏🏻 Special Thanks
 
 I would like to give special thanks to the following projects whose work was used extensively in this project:
 

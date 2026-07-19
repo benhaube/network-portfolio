@@ -134,7 +134,7 @@ theme:
       deprecated: symbols/trash-2
       desktop: symbols/pc-case
       development: symbols/git-branch
-      dns: symbols/server-dns
+      dns: symbols/server
       download: symbols/download
       file-share: symbols/share
       hardware: symbols/monitor-smartphone

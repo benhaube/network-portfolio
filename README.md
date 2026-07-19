@@ -263,6 +263,8 @@ uv add --dev zensical
 uv run zensical
 ```
 
+### Building / Serving the Site
+
 #### Serve Site for Testing
 
 ```bash

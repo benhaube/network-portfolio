@@ -237,6 +237,44 @@ podman run --rm -it -v ${PWD}:/docs:Z mkdocs-custom build
 > [!note]
 > The `:Z` or `:z` in the volume definition *(also in the compose.yml files)* is critical for **Fedora / Podman** based workstations that use SE-Linux. The container will not run properly without it. It allows the container to set the appropriate SE-Linux context on each file in the repo directory. 
 
+## Zensical Testing
+
+The `zensical-testing` branch exists to experiment with the new [Zensical](https://zensical.org/) static website generator. Eventually, this project will need to migrate to Zensical because Material for MkDocs has entered a maintenance-only development stage, and will eventually be deprecated. This is due to breaking changes made by the MkDocs team with MkDocs 2.0... Once Material for MkDocs is deprecated it will continue to function, but it will not recieve updates for security vulnerabilities. Fortunately, Zenzical is the successor to Material for MkDocs developed from scratch by the same team. Unfortunately, Zensical is still pretty early in its development roadmap, and it is lacking features and extensions I rely on for this project. Once Zenzical develops enough to meet the requirements for this project I will migrate. Until then, this branch exists to build the `zensical.toml` configuration file, and to test the site as Zensical develops.
+
+### Getting Started
+
+#### Install with pip
+
+Open up a terminal window and install Zensical by first setting up a virtual environment and then using `pip` to install the Zensical package into it:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install zensical
+```
+ 
+#### Install with UV
+
+To install Zensical with `uv` and add it to your development dependencies in your `pyproject.toml`, use:
+
+```bash
+uv init
+uv add --dev zensical
+uv run zensical
+```
+
+#### Serve Site for Testing
+
+```bash
+zensical serve
+```
+
+#### Build Site for Deployment
+
+```bash
+zensical build
+```
+
 ## 🙏🏻 Special Thanks
 
 I would like to give special thanks to the following projects whose work was used extensively in this project:

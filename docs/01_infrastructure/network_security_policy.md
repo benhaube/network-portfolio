@@ -49,7 +49,7 @@ tags:
 + The primary WireGuard server is hosted natively on the main [ASUS router](../02_hardware/asus_rt-be92u.md). 
 + The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_hardware/zimaos_nas.md). 
 
-## :symbols-server-dns:&ensp;DNS Security & Content Filtering
+## :symbols-server:&ensp;DNS Security & Content Filtering
 
 ### Internal Resolution
 

@@ -24,9 +24,9 @@
 <p align="center">
     <a href="#clone-the-repo">Clone the Repository</a>
     ·
-    <a href="#using-docker">Build Using Docker</a>
+    <a href="#using-python-the-preferred-method">Build Using Python</a>
     ·
-    <a href="#using-python">Build Using Python</a>
+    <a href="#using-docker">Build Using Docker</a>
 </p>
 
 ## About
@@ -67,6 +67,122 @@ git clone git@github.com:benhaube/network-portfolio.git
 
 cd network-portfolio/
 ```
+
+## Using Python *(The Preferred Method)*
+
+### Setup Python Virtual Environment
+
+```bash
+python -m venv .venv/
+source .venv/bin/activate
+```
+
+### Install Material for MkDocs
+
+```bash
+pip install mkdocs-material
+```
+
+#### Install Plugins
+
+The following plugins for MkDocs are required for this project:
+
++ [mkdocs-awesome-nav](https://github.com/lukasgeiter/mkdocs-awesome-nav) &mdash; Customize the navigation structure.
++ [mkdocs-glightbox](https://github.com/blueswen/mkdocs-glightbox) &mdash; Create an image gallery.
++ [mkdocs-panzoom-plugin](https://github.com/PLAYG0N/mkdocs-panzoom) &mdash; Enable pan & zoom on large Mermaid flowcharts.
++ [mkdocs-open-in-new-tab](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab) &mdash; Open external links in a new tab.
+
+```bash
+pip install mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-open-in-new-tab
+```
+
+#### Install Dependencies for Optimize Plugin
+
+The built-in [Optimize](https://squidfunk.github.io/mkdocs-material/plugins/optimize/) plugin for Material for MkDocs is utilized in this project. It optimizes `.jpg` and `.png` images on the site, reducing bandwidth and server storage requirements. However, the Optimize plugin does require additional dependencies to function using the Python package. **Note:** The Docker image includes the dependencies required for the Optimize plugin.
+
+##### Python
+
+```bash
+pip install "mkdocs-material[imaging]"
+```
+
+> [!note]
+> This will install compatible versions of the following python packages:
+> 
+> + [Pillow](https://pillow.readthedocs.io/)
+> + [CairoSVG](https://cairosvg.org/)
+
+##### Cairo Graphics
+
+[Cairo Graphics](https://www.cairographics.org/) is a graphics library and dependency of Pillow, which Material for MkDocs makes use of for generating social cards and performing image optimization.
+
+```bash
+# Fedora / RHEL
+sudo dnf install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
+
+# OpenSUSE
+sudo zypper install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
+
+# Debian / Ubuntu
+sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+```
+
+##### pngquant
+
+[pngquant](https://pngquant.org/) is an excellent library for lossy PNG compression, and a direct dependency of the built-in optimize plugin.
+
+```bash
+# Fedora / RHEL
+sudo dnf install pngquant
+
+# OpenSUSE
+sudo zypper install pngquant
+
+# Debian / Ubuntu
+sudo apt-get install pngquant
+```
+
+### How to Upgrade
+
+Run the following commands to upgrade Material for MkDocs and the required plugins to the latest version.
+
+```bash
+# Material for MkDocs
+pip install --upgrade --force-reinstall mkdocs-material "mkdocs-material[imaging]"
+
+# MkDocs Plugins
+pip install --upgrade --force-reinstall mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-open-in-new-tab
+```
+
+#### Check Current Version
+
+Run the following command to check the currently installed version of Material for MkDocs.
+
+```bash
+pip show mkdocs-material
+```
+
+### Building / Serving the Site
+
+#### Serve Site for Testing
+
+```bash
+# Serve on the default port -- localhost:8000
+mkdocs serve
+
+# Serve on a specified port 
+mkdocs serve -a localhost:<port>
+```
+
+#### Build Site for Deployment
+
+```bash
+mkdocs build
+```
+
+> [!tip]
+> **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
+
 ## Using Docker
 
 ### Build the Custom Image
@@ -106,7 +222,7 @@ podman compose -f compose-build.yml up -d
 > [!tip]
 > **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
 
-#### Alternative `podman run` commands
+#### Alternative `podman run` Commands *(Not Recommended)*
 
 Podman / Docker compose is the preferred method for starting and stopping the MkDocs container, but you can also use the following `podman run` commands. 
 
@@ -121,45 +237,7 @@ podman run --rm -it -v ${PWD}:/docs:Z mkdocs-custom build
 > [!note]
 > The `:Z` or `:z` in the volume definition *(also in the compose.yml files)* is critical for **Fedora / Podman** based workstations that use SE-Linux. The container will not run properly without it. It allows the container to set the appropriate SE-Linux context on each file in the repo directory. 
 
-## Using Python
-
-### Setup Python Virtual Environment
-
-```bash
-python -m venv venv/
-source venv/bin/activate
-```
-
-#### Install Material for MkDocs
-
-```bash
-pip install mkdocs-material "mkdocs-material[imaging]"
-```
-
-#### Install Plugins
-
-```bash
-pip install mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-open-in-new-tab
-```
-
-### Building / Serving the Site
-
-#### Serve Site for Testing
-
-```bash
-python -m mkdocs serve -a 0.0.0.0:8000 --livereload
-```
-
-#### Build Site for Deployment
-
-```bash
-python -m mkdocs build
-```
-
-> [!tip]
-> **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
-
-## 🙏 Special Thanks
+## 🙏🏻 Special Thanks
 
 I would like to give special thanks to the following projects whose work was used extensively in this project:
 

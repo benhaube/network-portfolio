@@ -23,17 +23,17 @@
  * Customize Headings         *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* Modify H1 headings to use the primary color, reduce the margin below, and reduce the font weight to 500 */
+/* Modify h1 headings to use the primary color, reduce the margin below, and reduce the font weight to 500 */
 .md-typeset h1 {
   color: var(--md-primary-fg-color);
   margin-bottom: 0.2rem;
   font-weight: 500;
 }
-/* Set the font weight for H2 headings to 500 */
+/* Set the font weight for h2 headings to 500 */
 .md-typeset h2 {
     font-weight: 500;
 }
-/* Set the font weight for H3 headings to 500 */
+/* Set the font weight for h3 headings to 500 */
 .md-typeset h3 {
     font-weight: 500;
 }
@@ -43,4 +43,12 @@
 [data-md-color-scheme=slate] h3,
 [data-md-color-scheme=slate] h4 {
     color: hsla(var(--md-hue),0%,100%,1)
+}
+/* Disable all uppercase letters for h5 headings */
+.md-typeset h5 {
+    text-transform: none;
+}
+/* Increase font size for h5 and h6 headings to 0.83em */
+.md-typeset h5, .md-typeset h6 {
+    font-size: 0.83em;
 }

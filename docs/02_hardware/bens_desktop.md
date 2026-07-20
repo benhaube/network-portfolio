@@ -115,7 +115,7 @@ hide:
 
 |  Status  | Service                                                                |        Port(s)         | Role / Notes                                                              |
 | :------: | :--------------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------ |
-| *Active* | [:symbols-screen-share:&nbsp;RDP](../03_services/rdp.md)               |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
+| *Active* | [:symbols-chevrons-right-left:&nbsp;RDP](../03_services/rdp.md)               |         `3389`         | Remote desktop protocol for accessing the desktop over the local network. |
 | *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                  |
 
 ---

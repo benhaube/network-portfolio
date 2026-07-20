@@ -65,7 +65,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-1. Log into the [ASUS Router's Web UI:symbols-external-link-small:](https://asusrouter.internal:8443/) and navigate to the **"Advanced VPN Server Content"** page.
+1. Log into the [ASUS Router's Web UI:symbols-external-link-small:](https://asusrouter.internal:8443) and navigate to the **"Advanced VPN Server Content"** page.
 
       <figure markdown="span">
             ![ASUS Router navigation to VPN settings](../assets/screenshots/asus_router_advanced_vpn_server_content.png){ width=600 }

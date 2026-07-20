@@ -19,7 +19,7 @@ hide:
 [:symbols-binary:&ensp;IP Address Management](01_infrastructure/ip_address_mangement.md)
 :    This page contains information about IPAM, VPNs, and VLANs encompassed by the local network.
 
-[:symbols-grid-3x3:&ensp;MAC Address Tables](01_infrastructure/mac_address_tables.md)
+[:symbols-grid-2x2:&ensp;MAC Address Tables](01_infrastructure/mac_address_tables.md)
 :    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 
 [:symbols-firewall:&ensp;Network Security Policy](01_infrastructure/network_security_policy.md) 

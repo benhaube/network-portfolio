@@ -1,5 +1,5 @@
 ---
-icon: symbols/grid-3x3
+icon: symbols/grid-2x2
 title: MAC Address Tables
 subtitle: Hardware MAC Addresses
 tags:
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide 'grid-3x3' icon](../assets/icons/grid-3x3.svg){ width=200 }
+![Lucide 'grid-2x2' icon](../assets/icons/grid-2x2.svg){ width=200 }
 
 # MAC Address Tables
 *Hardware MAC Addresses*

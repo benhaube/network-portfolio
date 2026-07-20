@@ -121,7 +121,7 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-grid-3x3:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-grid-2x2:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 

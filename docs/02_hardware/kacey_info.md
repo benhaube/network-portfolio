@@ -38,7 +38,7 @@ hide:
 
 :    2023/09/05
 
-#### :symbols-microchip:&ensp;Printer MCU
+#### :symbols-circuit-board:&ensp;Printer MCU
 
 :    Nozzle:
     

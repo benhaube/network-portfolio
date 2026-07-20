@@ -64,7 +64,7 @@ hide:
       + :symbols-shield:&nbsp;LUKS2 drive encryption
       + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
 
-## :symbols-square-activity:&ensp;Core Specs
+## :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                           | Cores / Threads | CPU Freq. | RAM                     | GPU                                | GPU Freq. | VRAM       |
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
@@ -82,7 +82,7 @@ hide:
 | `enp7s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 | `wlp6s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folders:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 

@@ -34,7 +34,7 @@ hide:
 
 :    Wall Wart *(5V / 0.6A)*
 
-#### :symbols-square-activity:&ensp;Specs
+#### :symbols-circuit-board:&ensp;Specs
 
 :    Throughput: 
     

@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![custom icon in Lucide style](../assets/icons/binary.svg){ width=200 }
+![Lucide `binary` icon](../assets/icons/binary.svg){ width=200 }
 
 # IP Address Management
 *Organized IP Address Space*

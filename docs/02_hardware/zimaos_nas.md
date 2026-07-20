@@ -50,7 +50,7 @@ hide:
       + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"   
       + SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
-## :symbols-square-activity:&ensp;Core Specs
+## :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                 | Cores / Threads | CPU Freq. | RAM                       | GPU                              | GPU Freq. | VRAM     |
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
@@ -68,7 +68,7 @@ hide:
 |  `eth0`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 |  `eth1`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folders:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-microchip:&ensp;Boot
 

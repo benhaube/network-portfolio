@@ -49,7 +49,7 @@ hide:
     
       + SSH Keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
 
-## :symbols-square-activity:&ensp;Core Specs
+## :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                   | Cores / Threads        | CPU Freq. | RAM                       | GPU             | GPU Freq. | VRAM     |
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
@@ -67,7 +67,7 @@ hide:
 |  `eth0`   |  :symbols-shield-quarter:&nbsp;VLAN50  | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
 |  `wlan0`  |   :symbols-shield-house:&nbsp;VLAN53   | `N/A`                | `127.0.0.1` | `192.168.53.1` |
 
-## :symbols-folders:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 

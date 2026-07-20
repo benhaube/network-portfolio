@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Material Ethernet Icon customized](../assets/icons/grid-3x3.svg){ width=200 }
+![Lucide 'grid-3x3' icon](../assets/icons/grid-3x3.svg){ width=200 }
 
 # MAC Address Tables
 *Hardware MAC Addresses*

@@ -65,7 +65,7 @@ hide:
 | :-------: | :----------------------------------: | :--------------- | :---------------------------- | :------------- |
 |  `wlan0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folders:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive
 

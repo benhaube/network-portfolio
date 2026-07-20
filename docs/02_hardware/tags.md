@@ -5,7 +5,7 @@ subtitle: An Index of Relevant Tags
 search:
   exclude: true
 ---
-![Lucide 'monitor-smartphone' icon](../assets/icons/monitor-smartphone.svg){ width=200 }
+![Lucide 'circuit-board' icon](../assets/icons/circuit-board.svg){ width=200 }
 
 # Hardware Tags
 

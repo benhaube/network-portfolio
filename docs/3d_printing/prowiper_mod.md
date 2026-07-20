@@ -51,7 +51,7 @@ hide:
 #### Verify Bottom Clearance
   + [ ] Review `variable_bot_clearance` *(default `20`)* and `variable_drop_distance` *(default `15`)*. 
 
-## :services-klipper:&ensp;Klipper Integration
+## :symbols-api:&ensp;Klipper Integration
 
 !!! note inline end "Integration Note"
 

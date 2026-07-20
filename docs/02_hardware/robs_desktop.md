@@ -43,7 +43,7 @@ hide:
     
       + Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
 
-## :symbols-square-activity:&ensp;Core Specs
+## :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                              | Cores / Threads | CPU Freq. | RAM                     | GPU                                      | GPU Freq. | VRAM       |
 | :----------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------------- | :-------- | :--------- |
@@ -62,7 +62,7 @@ hide:
 | Ethernet  | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 |   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
 
-## :symbols-folders:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 

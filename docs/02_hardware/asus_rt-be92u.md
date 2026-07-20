@@ -83,7 +83,7 @@ hide:
 |    2.5 Gb LAN 3    | :symbols-ethernet-port:&nbsp;*Empty*                                               | -             | -                   |
 |    2.5 Gb LAN 4    | :symbols-ethernet-port:&nbsp;*Empty*                                               | -             | -                   |
 
-## :symbols-folders:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 

@@ -216,10 +216,10 @@ hide:
 ---
 ## :symbols-arrow-right-left:&ensp;Change Management
 
-[:brands-raspberry-pi:&nbsp;:symbols-move-right:&nbsp;:services-caddy:&ensp;Reverse Proxy & DNS Routing](04_change_management/reverse-proxy.md)
+[:services-caddy:&ensp;Reverse Proxy & DNS Routing](04_change_management/reverse-proxy.md)
 :    Preparing the [Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) to be a [Caddy](03_services/caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
 
-[:services-pi-hole:&nbsp;:symbols-move-right:&nbsp;:services-technitium:&ensp;DNS Migration](04_change_management/dns_migration.md) 
+[:symbols-cloud-cog:&ensp;DNS Migration](04_change_management/dns_migration.md) 
 :    Preparing to migrate from [Pi-hole](03_services/pi-hole.md) to [Technitium](03_services/technitium.md) for DNS queries on the local network. 
 
 ---

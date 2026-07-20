@@ -155,6 +155,7 @@
 *[PLA]: Polylactic Acid
 *[PNG]: Portable Network Graphics
 *[QEMU]: The Quick Emulator
+*[QoS]: Quality of Service
 *[RAM]: Random Access Memory
 *[RBAC]: Role-Based Access Control
 *[RCS]: Rich Communication Services

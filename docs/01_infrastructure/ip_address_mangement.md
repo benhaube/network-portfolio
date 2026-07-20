@@ -1,5 +1,5 @@
 ---
-icon: symbols/network-ip
+icon: symbols/binary
 title: IP Address Management
 subtitle: Organized IP Address Space
 tags:
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![custom icon in Lucide style](../assets/icons/network-ip.svg){ width=200 }
+![custom icon in Lucide style](../assets/icons/binary.svg){ width=200 }
 
 # IP Address Management
 *Organized IP Address Space*
@@ -86,7 +86,7 @@ hide:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-ethernet-port:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-grid-3x3:{ .lg .middle }&emsp;**MAC Addresses**
 
     ---
 

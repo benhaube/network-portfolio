@@ -114,7 +114,7 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-ethernet-port:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-grid-3x3:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 
@@ -130,7 +130,7 @@ tags:
 
 <div class="grid cards" markdown>
 
--   :symbols-network-ip:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-binary:{ .lg .middle }&emsp;**IP Address Management**
 	
 	---
 

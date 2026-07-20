@@ -1,5 +1,5 @@
 ---
-icon: symbols/ethernet-port
+icon: symbols/grid-3x3
 title: MAC Address Tables
 subtitle: Hardware MAC Addresses
 tags:
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Material Ethernet Icon customized](../assets/icons/ethernet.svg){ width=200 }
+![Material Ethernet Icon customized](../assets/icons/grid-3x3.svg){ width=200 }
 
 # MAC Address Tables
 *Hardware MAC Addresses*
@@ -94,7 +94,7 @@ hide:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-network-ip:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-binary:{ .lg .middle }&emsp;**IP Address Management**
 
     ---
 

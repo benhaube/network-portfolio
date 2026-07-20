@@ -8,7 +8,7 @@ tags:
   - Virtual Host
   - Container Host
   - Living Room
-  - Mini-Rack
+  - Server Rack
   - Linux
   - Server
   - Hardware

@@ -134,10 +134,10 @@ theme:
       deprecated: symbols/trash-2
       desktop: symbols/pc-case
       development: symbols/git-branch
-      dns: symbols/server
+      dns: symbols/cloud-cog
       download: symbols/download
       file-share: symbols/share
-      hardware: symbols/monitor-smartphone
+      hardware: symbols/circuit-board
       inactive: symbols/circle-x
       infra: symbols/network-node
       inventory: symbols/clipboard-list
@@ -147,7 +147,6 @@ theme:
       linux: symbols/penguin
       living-room: symbols/sofa
       map: symbols/sitemap
-      mini-rack: symbols/server-rack
       mobile: symbols/tablet-smartphone
       monitor: symbols/activity
       nas: symbols/server-nas
@@ -163,6 +162,7 @@ theme:
       router: symbols/router
       security: symbols/brick-wall-shield
       server: symbols/server
+      server-rack: symbols/server-rack
       service: symbols/monitor-cloud
       shell: symbols/terminal
       software: symbols/package
@@ -367,7 +367,6 @@ extra:
     Linux: linux
     Living Room: living-room
     Map: map
-    Mini-Rack: mini-rack
     Mobile: mobile
     Monitor: monitor
     NAS: nas
@@ -383,6 +382,7 @@ extra:
     Router: router
     Security: security
     Server: server
+    Server Rack: server-rack
     Service: service
     Shell: shell
     Software: software

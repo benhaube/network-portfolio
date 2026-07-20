@@ -7,7 +7,7 @@ tags:
   - Infrastructure
   - ISP
   - Living Room
-  - Mini-Rack
+  - Server Rack
   - Hardware
 hide:
   - toc

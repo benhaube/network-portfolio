@@ -137,7 +137,7 @@ tags:
 
 <div class="grid cards" markdown>
 
--   :symbols-refresh-ccw-dot:{ .lg .middle }&emsp;**Disaster Recovery**
+-   :symbols-tornado:{ .lg .middle }&emsp;**Disaster Recovery**
 	
 	---
 

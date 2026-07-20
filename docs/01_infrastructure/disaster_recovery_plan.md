@@ -1,5 +1,5 @@
 ---
-icon: symbols/refresh-ccw-dot
+icon: symbols/tornado
 title: Disaster Recovery Plan
 subtitle: Maintaining High Availability
 tags:
@@ -10,7 +10,7 @@ tags:
   - Monitor
   - Service
 ---
-![Material Design restore icon](../assets/icons/refresh-ccw-dot.svg){ width=200 }
+![Lucide 'tornado' icon](../assets/icons/tornado.svg){ width=200 }
 
 # Disaster Recovery Plan
 *Maintaining High Availability*

@@ -13,7 +13,7 @@ hide:
 ---
 ## :symbols-network-node:&ensp;Infrastructure
 
-[:symbols-refresh-ccw-dot:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
+[:symbols-tornado:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
 [:symbols-binary:&ensp;IP Address Management](01_infrastructure/ip_address_mangement.md)

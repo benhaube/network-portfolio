@@ -1,5 +1,5 @@
 ---
-icon: symbols/server
+icon: symbols/cloud-cog
 title: DNS Migration
 subtitle: From Pi-hole to Technitium
 tags:
@@ -10,7 +10,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide 'server' icon rotated 90&deg;](../assets/icons/dns.svg){ width=200 }
+![Lucide 'cloud-cog' icon](../assets/icons/cloud-cog.svg){ width=200 }
 
 # DNS Migration
 *From Pi-hole to Technitium*

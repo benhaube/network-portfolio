@@ -1,5 +1,5 @@
 ---
-icon: symbols/globe-ip
+icon: symbols/cloud-cog
 title: DDNS
 subtitle: Provided by addr.tools
 tags:
@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Custom Lucide-style globe icon](../assets/icons/globe-ip.svg){ width=200 }
+![Lucide 'cloud-cog' icon](../assets/icons/cloud-cog.svg){ width=200 }
 
 # DDNS
 *Provided by addr.tools*

@@ -143,7 +143,7 @@ tags:
 
 	[Disaster Recovery Plan](disaster_recovery_plan.md){ .md-button }
 
--   :symbols-binary:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-binary:{ .lg .middle }&emsp;**IP Addresses**
 
 	---
 

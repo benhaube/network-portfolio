@@ -94,7 +94,7 @@ hide:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-binary:{ .lg .middle }&emsp;**IP Address Management**
+-   :symbols-binary:{ .lg .middle }&emsp;**IP Addresses**
 
     ---
 

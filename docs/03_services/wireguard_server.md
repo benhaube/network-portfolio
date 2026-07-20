@@ -5,10 +5,10 @@ subtitle: A Simple, Modern VPN
 description: An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 tags:
   - Active
-  - Container
   - Remote Access
   - VPN
   - Network
+  - Infrastructure
   - Native
   - Service
 hide:
@@ -30,32 +30,23 @@ hide:
 
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 
-:    `41820`&emsp;`51820`&emsp;`51821`
+:    `41820`
 
 #### :symbols-link:&ensp;URL / Access 
 
 :    :symbols-waypoints:&nbsp;Server Endpoint:
     
       + `rac3r4life.myaddr.dev:41820` &mdash; :symbols-router:&nbsp;*ASUS RT-BE92U*
-      + `rac3r4life.myaddr.dev:51820` &mdash; :symbols-server-nas:&nbsp;*ZimaOS NAS*
 
 :    :symbols-monitor-cog:&nbsp;Web UI Admin: 
     
       + <https://asusrouter.internal:8443/Advanced_VPNServer_Content.asp>
-      + <http://storage-server.internal:51821/>
-      + <http://storage-server-2.internal:51821/>
 
 #### :symbols-user-key:&ensp;Credentials 
 
 :    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
       
       + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router" &mdash; :symbols-router:&nbsp;*ASUS RT-BE92U*
-      + Local Network&ensp;:symbols-move-right:&ensp;"WireGuard Admin" &mdash; :symbols-server-nas:&nbsp;*ZimaOS NAS*
-      + Local Network&ensp;:symbols-move-right:&ensp;"WireGuard Metrics" &mdash; :symbols-server-nas:&nbsp;*ZimaOS NAS*
-
-:    2FA / MFA:
-    
-      + :symbols-clock:&nbsp;TOTP
 
 #### :symbols-monitor-smartphone:&ensp;Client Profiles
 
@@ -66,24 +57,28 @@ hide:
       + `Rob's-Phone`
       + `Rob's-Laptop`
 
-:    :symbols-server-nas:&nbsp;ZimaOS NAS:
-    
-      + `ben-laptop`
-      + `ben-pixel`
-      + `rob-laptop`
-      + `rob-phone`
-
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                                    | Container Name         | Image                        |
-| :--------------------------------------------------------------------- | :---------------------------------------- | :--------------------- | :--------------------------- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-penguin:&nbsp;Native Linux       | `N/A`                  | `N/A`                        |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-container:&nbsp;Docker Container | `big-bear-wg-easy-v15` | `ghcr.io/wg-easy/wg-easy:15` |
+| Host Device                                                            | Method                                    | Container Name | Image |
+| :--------------------------------------------------------------------- | :---------------------------------------- | :------------- | :---- |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-penguin:&nbsp;Native Linux       | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
---8<-- "wireguard.yml"
-```
+1. Log into the [ASUS Router's Web UI:symbols-external-link-small:](https://asusrouter.internal:8443/) and navigate to the **"Advanced VPN Server Content"** page.
 
-1. Setting your password here is **NOT** recommended. Leave as the default, and change the password from the Web UI. 
+      <figure markdown="span">
+            ![ASUS Router navigation to VPN settings](../assets/screenshots/asus_router_advanced_vpn_server_content.png){ width=600 }
+      </figure>
+
+2. Select **"General"** in the drop-down menu to add / remove / edit clients, change the tunnel IP address, change the listening port, or turn on / off intranet access.
+
+      <figure markdown="span">
+            ![ASUS Router WireGuard "General" settings](../assets/screenshots/asus_router_wireguard_general.png){ width=600 }
+      </figure>
+
+3. Select **"Advanced Settings"** in the drop-down menu to configure DNS, IPv6 NAT, persistent keepalive, and change the server's pre-shared key. 
+
+      <figure markdown="span">
+            ![ASUS Router WireGuard "Advanced" settings](../assets/screenshots/asus_router_wireguard_advanced.png){ width=600 }
+      </figure>

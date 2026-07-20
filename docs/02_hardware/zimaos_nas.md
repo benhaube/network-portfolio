@@ -126,7 +126,6 @@ hide:
 |  *Active*  | [:services-spoolman:&nbsp;Spoolman](../03_services/spoolman.md)                         |         `7912`         | Keep track of your inventory of 3D-printer filament spools.                                                                                         |
 |  *Active*  | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md)                  | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                                            |
 |  *Active*  | [:symbols-terminal:&nbsp;ttydBridge](../03_services/ttydbridge.md)                      |         `2222`         | A DockerApp makes it easy to use the host terminal in the Web.                                                                                      |
-|  *Active*  | [:services-wireguard:&nbsp;WireGuard](../03_services/wireguard_server.md)               |    `51820` `51821`     | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                            |
 |  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_services/yt-dlp_web-ui.md)              |         `3033`         | High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                        |
 
 ---

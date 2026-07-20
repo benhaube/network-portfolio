@@ -116,11 +116,14 @@ hide:
 
 !!! config inline end "Critical Configurations"
 
-    **:symbols-refresh-ccw-dot:&ensp;Backup Restore:**
+    :symbols-refresh-ccw-dot:&ensp;**Backup Restore:**
     :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](zimaos_nas.md) and the [Pi 4B Server](pi_4b_server.md). 
 
-    **:symbols-clock-refresh-cw:&ensp;NTP Server:**
+    :symbols-clock-refresh-cw:&ensp;**NTP Server:**
     :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
+
+    :symbols-gauge:&ensp;**Adaptive QoS:**
+    :    The router manages the available WAN connection bandwidth with an "Adaptive QoS" algorithm and prioritizes allocation based on the application type.
 
 #### :symbols-update:&ensp;Update Process
 
@@ -230,3 +233,65 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
     ```text linenums="1"
     */5 * * * * /jffs/scripts/ChkWAN.sh wan ping=9.9.9.9,149.112.112.112,8.8.8.8,1.1.1.1 #WAN_Check#
     ```
+
+#### :symbols-gauge:&ensp;Adaptive QoS & spdMerlin
+
+:    The router manages the available WAN connection bandwidth with an **"Adaptive QoS"** algorithm and prioritizes allocation based on the application type. The `spdMerlin` script runs a bandwidth test *every 8 hours* to update the QoS algorithm with the available bandwidth by averaging the last 10 test results. The upload / download bandwidth for Adaptive QoS will be automatically set to 95% of the average from the last ten test results. 
+
+##### App Categories
+
+:    Below is a list of QoS application categories listed in decending order from **highest** to **lowest** priority:
+
+      + :symbols-gamepad-2:&ensp;Gaming
+      + :symbols-film:&ensp;Video Streaming
+      + :symbols-audio-lines:&ensp;Audio Streaming
+      + :symbols-app-window-mac:&ensp;Web Surfing
+      + :symbols-file-archive:&ensp;File Transferring
+      + :symbols-briefcase:&ensp;Work-From-Home
+      + :symbols-graduation-cap:&ensp;Learn-From-Home
+      + :symbols-circle-ellipsis:&ensp;Others
+
+##### Adaptive QoS Settings
+
+1. To access the **Adaptive QoS** settings, log into the [ASUS Router's Web UI:symbols-external-link-small:](https://asusrouter.internal:8443) and navigate to the QoS settings using the side bar. 
+
+    <figure markdown="span">
+        ![Screenshot of ASUS Router Adaptive QoS navigation](../assets/screenshots/asus_router_adaptive_qos.png){ width=400 }
+    </figure>
+
+2. On the **Adaptive QoS** settings page you can enable / disable the QoS feature, select the QoS method, set the upload and download bandwidth, and adjust the application priority. 
+
+    !!! tip
+
+        :symbols-gauge:&ensp;**Bandwidth Setting:**
+
+        :    It is necessary to leave **"Bandwidth Setting"** set to **"Manual Setting"** for the `spdMerlin` script to automatically set the bandwidth based on the scheduled bandwidth test results. Though it may sound counter-intuitive, this is required for the feature to work. 
+    
+    <figure markdown="span">
+        ![Screenshot of ASUS Router QoS settings](../assets/screenshots/asus_router_qos_settings.png){ width=600 }
+    </figure>
+
+    <figure markdown="span">
+        ![Screenshot of ASUS Router QoS categories](../assets/screenshots/asus_router_adaptive_qos_categories.png){ width=600 }
+    </figure>
+
+##### Configure spdMerlin
+
+1. Log into the ASUS Router via [SSH](../03_services/ssh.md), run the `amtm` script, and ensure the `spdMerlin` script is installed. 
+
+    <figure markdown="span">
+        ![Screenshot of AMTM script running on the ASUS Router over SSH](../assets/screenshots/asus_router_amtm_script_light.png#only-light){ width=400 }
+        ![Screenshot of AMTM script running on the ASUS Router over SSH](../assets/screenshots/asus_router_amtm_script_dark.png#only-dark){ width=400 }
+    </figure>
+
+2. After confirming the `spdMerlin` script is installed, log into the [ASUS Router's Web UI:symbols-external-link-small:](https://asusrouter.internal:8443) and navigate to the `spdMerlin` page via the **"Addons"** entry on the side bar.
+
+    <figure markdown="span">
+        ![Screenshot of ASUS Router spdMerlin navigation](../assets/screenshots/asus_router_spdmerlin.png){ width=400 }
+    </figure>
+
+3. On the `spdMerlin` addon page you can enable / disable automatic bandwidth tests, set the schedule for bandwidth tests, and enable the **"AutoBW"** feature to automatically set the QoS bandwidth based on the test results.
+
+    <figure markdown="span">
+        ![Screenshot of ASUS Router spdMerlin configuration page](../assets/screenshots/asus_router_spdMerlin_settings.png){ width=600 }
+    </figure>

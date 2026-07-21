@@ -30,10 +30,14 @@ extra_css:
   # Other CSS files are imported into the main 'extra.css' file.
   - assets/stylesheets/extra.css
 extra_javascript:
+  # Pull in mermaid.js
   - assets/javascripts/mermaid.mjs
-  # Tablesort is disabled for now since it didn't play nice with all of the tables on the site.
-  # - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  # - assets/javascripts/tablesort.js
+  # Pull in tablesort
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.dotsep.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.filesize.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js
+  - assets/javascripts/tablesort.js
 
 # ~~~ Theme Settings ~~~
 
@@ -187,6 +191,11 @@ markdown_extensions:
   - tables
   - def_list
   - footnotes
+  - material.extensions.preview:
+      configurations:
+        - targets:
+            include:
+              - 02_hardware/*
   - toc:
       permalink: true
       permalink_title: Permanent link

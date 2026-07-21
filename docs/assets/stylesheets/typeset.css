@@ -52,3 +52,52 @@
 .md-typeset h5, .md-typeset h6 {
     font-size: 0.83em;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+ * Data Preview Links         *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Remove existing bottom border */
+.md-typeset [data-preview] {
+    border-bottom: none;
+}
+/* Add icon after */
+.md-typeset [data-preview]::after {
+	background-color: currentcolor;
+	content: "";
+	display: inline-block;
+	height: .8em;
+	-webkit-mask-image: var(--md-typeset-preview-icon);
+	mask-image: var(--md-typeset-preview-icon);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	transition: background-color 125ms;
+	vertical-align: text-top;
+	width: .8em;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+ * External Links             *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Create an elemet that can add an icon after external links */
+/* Use '{ external-link }' directly after an external link to add the icon element */
+.md-typeset [external-link]::after {
+	background-color: currentcolor;
+	content: "";
+	display: inline-block;
+	height: .75em;
+    /* The icon root property is defined in 'extra.css' */
+	-webkit-mask-image: var(--md-typeset-external-link-icon);
+	mask-image: var(--md-typeset-external-link-icon);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	transition: background-color 125ms;
+	vertical-align: text-top;
+    margin-left: .1em;
+	width: .75em;
+}

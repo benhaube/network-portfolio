@@ -193,7 +193,13 @@ markdown_extensions:
   - footnotes
   - material.extensions.preview:
       configurations:
-        - targets:
+        - sources:
+            include: 
+              - 01_infrastructure/*
+            exclude: 
+              - 01_infrastructure/network_security_policy.md
+              - 01_infrastructure/disaster_recovery_plan.md
+          targets:
             include:
               - 02_hardware/*
   - toc:

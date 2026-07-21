@@ -36,7 +36,7 @@ hide:
 
 :    :symbols-waypoints:&nbsp;Server Endpoint:
     
-      + `rac3r4life.myaddr.dev:41820` &mdash; :symbols-router:&nbsp;*ASUS RT-BE92U*
+      + `rac3r4life.myaddr.dev:41820` 
 
 :    :symbols-monitor-cog:&nbsp;Web UI Admin: 
     
@@ -46,7 +46,7 @@ hide:
 
 :    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
       
-      + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router" &mdash; :symbols-router:&nbsp;*ASUS RT-BE92U*
+      + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router" 
 
 #### :symbols-monitor-smartphone:&ensp;Client Profiles
 

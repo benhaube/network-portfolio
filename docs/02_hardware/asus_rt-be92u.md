@@ -240,7 +240,7 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
 
 ##### App Categories
 
-:    Below is a list of QoS application categories listed in decending order from **highest** to **lowest** priority:
+:    Below is a list of QoS application categories in decending order from **highest** to **lowest** priority:
 
       + :symbols-gamepad-2:&ensp;Gaming
       + :symbols-film:&ensp;Video Streaming

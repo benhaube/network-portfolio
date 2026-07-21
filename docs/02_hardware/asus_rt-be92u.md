@@ -78,7 +78,7 @@ hide:
 | :----------------: | :--------------------------------------------------------------------------------- | :------------ | :------------------ |
 | 10 Gb WAN / LAN 1  | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md)                     | Black / Cat6a | 10 Gb/s Uplink      |
 | 2.5 Gb WAN / LAN 2 | [:symbols-settings-ethernet:&nbsp;Hitron Modem](hitron_modem.md)                   | Black / Cat6a | WAN Connection      |
-|    2.5 Gb LAN 1    | <a href="./tags.html#tag:mini-rack">:symbols-server-rack:&nbsp;Mini-Rack</a>       | Black / Cat6a | Spare Keystone Jack |
+|    2.5 Gb LAN 1    | <a href="./tags.html#tag:server-rack">:symbols-server-rack:&nbsp;Server Rack</a>   | Black / Cat6a | Spare Keystone Jack |
 |    2.5 Gb LAN 2    | [:symbols-ethernet-port:&nbsp;TP-Link LiteWave Switch](tp-link_litewave_switch.md) | White / Cat6  | 1 Gb/s Uplink       |
 |    2.5 Gb LAN 3    | :symbols-ethernet-port:&nbsp;*Empty*                                               | -             | -                   |
 |    2.5 Gb LAN 4    | :symbols-ethernet-port:&nbsp;*Empty*                                               | -             | -                   |

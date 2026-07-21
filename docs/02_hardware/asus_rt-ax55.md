@@ -67,13 +67,13 @@ hide:
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
-| Port  | Connected Device                                                 | Color / Type  | Notes                                        |
-| :---: | :--------------------------------------------------------------- | :------------ | :------------------------------------------- |
-| WAN 1 | :symbols-ethernet-port:&nbsp;*Empty*                             | -             | :symbols-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
-| LAN 1 | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md) | Black / Cat6a | 1 Gb/s Uplink                                |
-| LAN 2 | :symbols-ethernet-port:&nbsp;*Empty*                             | -             | -                                            |
-| LAN 3 | :symbols-ethernet-port:&nbsp;*Empty*                             | -             | -                                            |
-| LAN 4 | :symbols-ethernet-port:&nbsp;*Empty*                             | -             | -                                            |
+| Port  | Connected Device                                                                          | Color / Type  | Notes                                        |
+| :---: | :---------------------------------------------------------------------------------------- | :------------ | :------------------------------------------- |
+| WAN 1 | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | :symbols-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
+| LAN 1 | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } | Black / Cat6a | 1 Gb/s Uplink                                |
+| LAN 2 | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | -                                            |
+| LAN 3 | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | -                                            |
+| LAN 4 | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | -                                            |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

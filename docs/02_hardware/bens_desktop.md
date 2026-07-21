@@ -24,7 +24,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md).
+:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#port-map){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -72,34 +72,34 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                |
-| :-------: | :-------------- | :------------------ | :-------------------------------------------------------------------------- |
-| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md) *(Port 1)* |
-| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks) *(VLAN50)*  |
+| Interface | IP Address      | MAC Address         | Connected To                                                                                         |
+| :-------: | :-------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
+| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } *(Port 1)* |
+| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)*           |
 
-| Interface | VLAN                                 | FQDN                        | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------------- | :-------------------------- | :---------------------------- | :------------- |
-| `enp7s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-| `wlp6s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                                 | FQDN                        | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='none'} |
+| :-------: | :----------------------------------- | :-------------------------- | :------------------------------------ | :-------------------------------- |
+| `enp7s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                    |
+| `wlp6s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                    |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point    | Drive Type | Drive Capacity | Device Path                 | File System | Encryption |
-| :------------- | :--------- | :------------- | :-------------------------- | :---------- | :--------- |
-| `/`, `/home`   | NVMe SSD   | 929 GB         | `/dev/dm-0`                 | `btrfs`     | LUKS2      |
-| `/mnt/1TB_HDD` | SATA HDD   | 1 TB           | `/dev/mapper/1TB_HDD_crypt` | `btrfs`     | LUKS2      |
+| Mount Point    | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path                 | File System | Encryption |
+| :------------- | :--------- | :------------------------------------------- | :-------------------------- | :---------- | :--------- |
+| `/`, `/home`   | NVMe SSD   | 929 GB                                       | `/dev/dm-0`                 | `btrfs`     | LUKS2      |
+| `/mnt/1TB_HDD` | SATA HDD   | 1 TB                                         | `/dev/mapper/1TB_HDD_crypt` | `btrfs`     | LUKS2      |
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  |
-| :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
-| `/run/media/bhaube/External_SSD`    | NVMe SSD      | 916 GB         | `/dev/dm-2`                         | `ext4`           | LUKS2       |
-| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | -              | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
-| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB           | -                                   | `fuse.rclone`    | -           |
-| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
-| `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
+| Mount Point                         | Drive Type    | Drive Capacity {data-sort-method='filesize'} | Device Path                         | File System      | Encryption  |
+| :---------------------------------- | :------------ | :------------------------------------------- | :---------------------------------- | :--------------- | :---------- |
+| `/run/media/bhaube/External_SSD`    | NVMe SSD      | 916 GB                                       | `/dev/dm-2`                         | `ext4`           | LUKS2       |
+| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                       | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                         |                                     | `fuse.rclone`    | N/A         |
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                       | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | N/A         |
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                       | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | N/A         |
 
 ## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
@@ -155,9 +155,9 @@ hide:
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-+ The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](zimaos_nas.md) with a custom [backup script](#backup-script) triggered by Systemd.
++ The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd.
 + With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
-+ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
++ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### :symbols-terminal:&ensp;SSH Client
 
@@ -270,7 +270,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 #### :symbols-login:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub:symbols-external-link-small:](https://github.com/benhaube/fastfetch-login-preset).
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 
 1. Install Fastfetch: 
 

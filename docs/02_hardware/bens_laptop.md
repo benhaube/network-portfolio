@@ -81,9 +81,9 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-|  Interface  | IP Address | MAC Address         | Connected To                                                               |
-| :---------: | :--------- | :------------------ | :------------------------------------------------------------------------- |
-| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks) *(VLAN50)* |
+|  Interface  | IP Address | MAC Address         | Connected To                                                                               |
+| :---------: | :--------- | :------------------ | :----------------------------------------------------------------------------------------- |
+| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
 |  Interface  | VLAN                                 | FQDN  | DNS Servers                   | Gateway        |
 | :---------: | :----------------------------------- | :---- | :---------------------------- | :------------- |
@@ -99,12 +99,12 @@ hide:
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point                         | Drive Type    | Drive Capacity | Device Path                         | File System      | Encryption  |
-| :---------------------------------- | :------------ | :------------- | :---------------------------------- | :--------------- | :---------- |
-| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | -              | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
-| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB           | -                                   | `fuse.rclone`    | -           |
-| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
-| `/mnt/storage_server/NVMe`          | NFS           | 234 GB         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
+| Mount Point                         | Drive Type    | Drive Capacity {data-sort-method='filesize'} | Device Path                         | File System      | Encryption  |
+| :---------------------------------- | :------------ | :------------------------------------------- | :---------------------------------- | :--------------- | :---------- |
+| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                       | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                         | -                                   | `fuse.rclone`    | -           |
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                       | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                       | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
 
 ## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
@@ -159,7 +159,7 @@ hide:
 
 + The `/home` directory backed up every weekday at `18:30` to [ZimaOS NAS](zimaos_nas.md) with a custom [backup script](#backup-script) triggered by Systemd.
 + With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
-+ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
++ Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### :symbols-terminal:&ensp;SSH Client
 
@@ -273,7 +273,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 #### :symbols-login:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub:symbols-external-link-small:](https://github.com/benhaube/fastfetch-login-preset).
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 
 1. Install Fastfetch: 
 

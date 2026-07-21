@@ -26,7 +26,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role
 
-:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin:symbols-external-link-small:](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
+:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -58,30 +58,30 @@ hide:
 
 #### :symbols-hub:&ensp;Virtual Local Networks
 
-|                VLAN                    | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
-| :------------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
-|  :symbols-shield-quarter:&nbsp;VLAN50  | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
-|   :symbols-shield-user:&nbsp;VLAN52    | -        | `9.9.9.9` `149.112.112.112`   | `192.168.52.0/24` | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`  |
-|  :symbols-shield-house:&nbsp;VLAN53    | -        | `9.9.9.9` `149.112.112.112`   | `192.168.53.0/24` | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`  |
+|                VLAN                    | Domain   | DNS Server(s) {data-sort-method='none'} | CIDR {data-sort-method='dotsep'} | Gateway        | Broadcast        | DHCP Range {data-sort-method='none'} |
+| :------------------------------------: | :------- | :-------------------------------------- | :------------------------------- | :------------- | :--------------- | :----------------------------------- |
+|  :symbols-shield-quarter:&nbsp;VLAN50  | internal | `192.168.50.6` `192.168.50.2`           | `192.168.50.0/24`                | `192.168.50.1` | `192.168.50.255` | `.22` to `.254`                      |
+|   :symbols-shield-user:&nbsp;VLAN52    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.52.0/24`                | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`                       |
+|  :symbols-shield-house:&nbsp;VLAN53    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.53.0/24`                | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`                       |
 
 #### :symbols-wifi-cog:&ensp;Wi-Fi Networks
 
-|     SSID     |  VLAN  |   WAN Access    | CIDR              | Frequency             | Notes                                      |
-| :----------: | :----: | :-------------: | :---------------- | :-------------------- | :----------------------------------------- |
-|    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz, 6 GHz | :symbols-shield-quarter:&nbsp;Trusted VLAN |
-| *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24` | 2.4 GHz, 5 GHz        | :symbols-shield-user:&nbsp;Guest VLAN      |
-|   *2G_IoT*   | VLAN53 |   :symbols-x:   | `192.168.53.0/24` | 2.4 GHz               | :symbols-shield-house:&nbsp;IoT VLAN       |
+|     SSID     |  VLAN  |   WAN Access    | CIDR {data-sort-method='dotsep'} | Frequency {data-sort-method='none'} | Notes                                      |
+| :----------: | :----: | :-------------: | :------------------------------- | :---------------------------------- | :----------------------------------------- |
+|    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24`                | 2.4 GHz, 5 GHz, 6 GHz               | :symbols-shield-quarter:&nbsp;Trusted VLAN |
+| *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24`                | 2.4 GHz, 5 GHz                      | :symbols-shield-user:&nbsp;Guest VLAN      |
+|   *2G_IoT*   | VLAN53 |   :symbols-x:   | `192.168.53.0/24`                | 2.4 GHz                             | :symbols-shield-house:&nbsp;IoT VLAN       |
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
-|       Port #       | Connected Device                                                                   | Color / Type  | Notes               |
-| :----------------: | :--------------------------------------------------------------------------------- | :------------ | :------------------ |
-| 10 Gb WAN / LAN 1  | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md)                     | Black / Cat6a | 10 Gb/s Uplink      |
-| 2.5 Gb WAN / LAN 2 | [:symbols-settings-ethernet:&nbsp;Hitron Modem](hitron_modem.md)                   | Black / Cat6a | WAN Connection      |
-|    2.5 Gb LAN 1    | <a href="./tags.html#tag:server-rack">:symbols-server-rack:&nbsp;Server Rack</a>   | Black / Cat6a | Spare Keystone Jack |
-|    2.5 Gb LAN 2    | [:symbols-ethernet-port:&nbsp;TP-Link LiteWave Switch](tp-link_litewave_switch.md) | White / Cat6  | 1 Gb/s Uplink       |
-|    2.5 Gb LAN 3    | :symbols-ethernet-port:&nbsp;*Empty*                                               | -             | -                   |
-|    2.5 Gb LAN 4    | :symbols-ethernet-port:&nbsp;*Empty*                                               | -             | -                   |
+|       Port #       | Connected Device                                                                                            | Color / Type  | Notes               |
+| :----------------: | :---------------------------------------------------------------------------------------------------------- | :------------ | :------------------ |
+| 10 Gb WAN / LAN 1  | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview }                     | Black / Cat6a | 10 Gb/s Uplink      |
+| 2.5 Gb WAN / LAN 2 | [:symbols-settings-ethernet:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview }      | Black / Cat6a | WAN Connection      |
+|    2.5 Gb LAN 1    | <a href="./tags.html#tag:server-rack">:symbols-server-rack:&nbsp;Server Rack</a>                            | Black / Cat6a | Spare Keystone Jack |
+|    2.5 Gb LAN 2    | [:symbols-ethernet-port:&nbsp;TP-Link LiteWave Switch](tp-link_litewave_switch.md#port-map){ data-preview } | White / Cat6  | 1 Gb/s Uplink       |
+|    2.5 Gb LAN 3    | :symbols-ethernet-port:&nbsp;*Empty*                                                                        | -             | -                   |
+|    2.5 Gb LAN 4    | :symbols-ethernet-port:&nbsp;*Empty*                                                                        | -             | -                   |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -106,7 +106,7 @@ hide:
 |  Status  | Service                                                                   | Port(s) | Role / Notes                                                                                                                                                                                                                         |
 | :------: | :------------------------------------------------------------------------ | :-----: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *Active* | [:symbols-clock-refresh-cw:&nbsp;Chrony](../03_services/chrony.md)        |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
-| *Active* | [:symbols-cloud-cog:&nbsp;DDNS](../03_services/ddns.md)                   |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools). |
+| *Active* | [:symbols-cloud-cog:&nbsp;DDNS](../03_services/ddns.md)                   |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.             |
 | *Active* | [:symbols-cloud-sync:&nbsp;SMB](../03_services/smb.md)                    |  `445`  | Remote file system access.                                                                                                                                                                                                           |
 | *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)                  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                                                       |
 | *Active* | [:services-wireguard:&nbsp;WireGuard](../03_services/wireguard_server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                                             |
@@ -127,22 +127,22 @@ hide:
 
 #### :symbols-update:&ensp;Update Process
 
-+ Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU:symbols-external-link-small:](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router) tool.
-+ Email notifications enabled for [AMTM:symbols-external-link-small:](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM) and script updates.
-    + Notification emails are sent to: [admin@haube-pereira.com:symbols-external-link-small:](mailto:admin@haube-pereira.com) 
++ Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router){ external-link } tool.
++ Email notifications enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM){ external-link } and script updates.
+    + Notification emails are sent to: [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ external-link } 
 + For Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-+ The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays *(at 3:00 UTC-5)* to [ZimaOS NAS](zimaos_nas.md) and [Pi 4B Server](pi_4b_server.md) using the [BACKUPMON:symbols-external-link-small:](https://github.com/ViktorJp/BACKUPMON) script.
++ The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays *(at 3:00 UTC-5)* to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } and [Pi 4B Server](pi_4b_server.md#external-attached){ data-preview } using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON){ external-link } script.
 + **Backup Directory:**
     + ZimaOS NAS: `/media/Quick-Storage/Backup/router`
     + Pi 4B Server: `/mnt/usb-drive/smb-share/router`
-+ Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2:symbols-external-link-small:](https://www.backblaze.com/cloud-storage), to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
++ Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### :services-gotify-notification:&ensp;Gotify Push Notifications
 
-:    While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_services/gotify.md) server to send instant push notifications for events that may require an urgent response.
+:    While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_services/gotify.md#notifications){ data-preview } server to send instant push notifications for events that may require an urgent response.
 
 ##### SSH Session Alerts
 
@@ -253,7 +253,7 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
 
 ##### Adaptive QoS Settings
 
-1. To access the **Adaptive QoS** settings, log into the [ASUS Router's Web UI:symbols-external-link-small:](https://asusrouter.internal:8443) and navigate to the QoS settings using the side bar. 
+1. To access the **Adaptive QoS** settings, log into the [ASUS Router's Web UI](https://asusrouter.internal:8443){ external-link } and navigate to the QoS settings using the side bar. 
 
     <figure markdown="span">
         ![Screenshot of ASUS Router Adaptive QoS navigation](../assets/screenshots/asus_router_adaptive_qos.png){ width=400 }
@@ -277,14 +277,14 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
 
 ##### Configure spdMerlin
 
-1. Log into the ASUS Router via [SSH](../03_services/ssh.md), run the `amtm` script, and ensure the `spdMerlin` script is installed. 
+1. Log into the ASUS Router via [SSH](../03_services/ssh.md#url-access){ data-preview }, run the `amtm` script, and ensure the `spdMerlin` script is installed. 
 
     <figure markdown="span">
         ![Screenshot of AMTM script running on the ASUS Router over SSH](../assets/screenshots/asus_router_amtm_script_light.png#only-light){ width=400 }
         ![Screenshot of AMTM script running on the ASUS Router over SSH](../assets/screenshots/asus_router_amtm_script_dark.png#only-dark){ width=400 }
     </figure>
 
-2. After confirming the `spdMerlin` script is installed, log into the [ASUS Router's Web UI:symbols-external-link-small:](https://asusrouter.internal:8443) and navigate to the `spdMerlin` page via the **"Addons"** entry on the side bar.
+2. After confirming the `spdMerlin` script is installed, log into the [ASUS Router's Web UI](https://asusrouter.internal:8443){ external-link } and navigate to the `spdMerlin` page via the **"Addons"** entry on the side bar.
 
     <figure markdown="span">
         ![Screenshot of ASUS Router spdMerlin navigation](../assets/screenshots/asus_router_spdmerlin.png){ width=400 }

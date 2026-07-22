@@ -244,8 +244,10 @@ html .md-footer-meta.md-typeset a:hover {
 	backdrop-filter: blur(.4rem) !important;
 	background-color: var(--md-default-bg-color--light);
   border-radius: 0.4rem;
-  max-width: 20rem;
-  width: auto;
+}
+.md-tooltip__inner {
+	font-size: .64rem;
+	padding: .8rem;
 }
 
 /* ~~~ Other Tooltips ~~~ */
@@ -254,8 +256,132 @@ html .md-footer-meta.md-typeset a:hover {
 	background-color: var(--md-default-bg-color);
   border-radius: 0.4rem;
 }
+
+:root {
+  --md-tooltip-width: 20rem;
+  --md-tooltip-tail: 0.3rem
+}
+element {
+	--md-tooltip-host-x: 442.6000061035156px;
+	--md-tooltip-host-y: 3731.8333129882812px;
+	--md-tooltip-x: 60.166664123535156px;
+	--md-tooltip-y: -480px;
+}
+.md-tooltip2 {
+  backface-visibility:hidden;
+  color: var(--md-default-fg-color);
+  font-family: var(--md-text-font-family);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: calc(var(--md-tooltip-host-y) + var(--md-tooltip-y));
+  transform: translateY(.4rem);
+  transform-origin: calc(var(--md-tooltip-host-x) + var(--md-tooltip-x)) 0;
+  transition: transform 0ms .25s,opacity .25s,z-index .25s;
+  width: 100%;
+  z-index: 0
+}
+.md-tooltip2:before {
+  border-left: var(--md-tooltip-tail) solid #0000;
+  border-right: var(--md-tooltip-tail) solid #0000;
+  content: "";
+  display: block;
+  left: clamp(1.5 * .8rem,var(--md-tooltip-host-x) + var(--md-tooltip-x) - var(--md-tooltip-tail),100vw - 2 * var(--md-tooltip-tail) - 1.5 * .8rem);
+  position: absolute;
+  z-index: 1;
+}
+.md-tooltip2--top:before {
+  border-top: var(--md-tooltip-tail) solid var(--md-default-bg-color);
+  bottom: calc(var(--md-tooltip-tail)*-1 + .025rem);
+  filter: drop-shadow(0 1px 0 var(--md-default-fg-color--lightest));
+}
+.md-tooltip2--bottom:before {
+  border-bottom: var(--md-tooltip-tail) solid var(--md-default-bg-color);
+  filter: drop-shadow(0 -1px 0 var(--md-default-fg-color--lightest));
+  top: calc(var(--md-tooltip-tail)*-1 + .025rem)
+}
+.md-tooltip2[role=dialog]:after {
+  content: "";
+  display: block;
+  height: .8rem;
+  left: clamp(.8rem,var(--md-tooltip-host-x) - .8rem,100vw - var(--md-tooltip-width) - .8rem);
+  pointer-events: auto;
+  position: absolute;
+  width: var(--md-tooltip-width);
+  z-index: 1;
+}
+.md-tooltip2[role=dialog].md-tooltip2--top:after {
+  top: 100%;
+}
+.md-tooltip2[role=dialog].md-tooltip2--bottom:after {
+  bottom: 100%
+}
+.md-tooltip2--active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform .4s cubic-bezier(0,1,.35,1),opacity .25s,z-index 0ms;
+  z-index: 4
+}
 .md-tooltip2__inner {
-  border-radius: 0.4rem;
+  scrollbar-gutter: stable;
+  background-color: var(--md-default-bg-color);
+  border-radius: .4rem;
+  box-shadow: var(--md-shadow-z2);
+  left: clamp(.8rem,var(--md-tooltip-host-x) - .8rem,100vw - var(--md-tooltip-width) - .8rem);
+  max-height: 40vh;
+  max-width: calc(100vw - 1.6rem);
+  position: relative;
+  scrollbar-width: thin
+}
+.md-tooltip2__inner::-webkit-scrollbar {
+  height: .2rem;
+  width: .2rem
+}
+.md-tooltip2__inner::-webkit-scrollbar-thumb {
+  background-color: var(--md-default-fg-color--lighter)
+}
+.md-tooltip2__inner::-webkit-scrollbar-thumb:hover {
+  background-color: var(--md-accent-fg-color)
+}
+[role=dialog]>.md-tooltip2__inner {
+  font-size: .64rem;
+  overflow: auto;
+  padding: 0 .8rem;
+  pointer-events: auto;
+  width: var(--md-tooltip-width)
+}
+[role=dialog]>.md-tooltip2__inner:after,
+[role=dialog]>.md-tooltip2__inner:before {
+  content: "";
+  display: block;
+  height: .8rem;
+  position: sticky;
+  width: 100%;
+  z-index: 10
+}
+[role=dialog]>.md-tooltip2__inner:before {
+  background: linear-gradient(var(--md-default-bg-color),#0000 75%);
+  top: 0
+}
+[role=dialog]>.md-tooltip2__inner:after {
+  background: linear-gradient(#0000,var(--md-default-bg-color) 75%);
+  bottom: 0
+}
+[role=tooltip]>.md-tooltip2__inner {
+  font-size: .55rem;
+  font-weight: 400;
+  left: clamp(.8rem,var(--md-tooltip-host-x) + var(--md-tooltip-x) - var(--md-tooltip-width)/2,100vw - var(--md-tooltip-width) - .8rem);
+  max-width: min(100vw - 2 * .8rem,400px);
+  padding: .2rem .4rem;
+  -webkit-user-select: none;
+  user-select: none;
+  width: fit-content
+}
+.md-tooltip2__inner.md-typeset>:first-child {
+  margin-top: 0
+}
+.md-tooltip2__inner.md-typeset>:last-child {
+  margin-bottom: 0
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ *

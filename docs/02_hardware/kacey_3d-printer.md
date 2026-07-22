@@ -42,15 +42,15 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-creality-v2:&nbsp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer)
+:    [:brands-creality-v2:&ensp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer){ external-link }
 
-:    [:symbols-penguin:&nbsp;Buildroot 2020.02.1](https://buildroot.org/)
+:    [:symbols-penguin:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
 
-:    [:services-klipper:&nbsp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130)
+:    [:services-klipper:&ensp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
       + SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"

@@ -40,16 +40,16 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
+:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
 
 :    2FA / MFA:
       
-      + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
-      + :symbols-clock:&nbsp;TOTP 
+      + :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
+      + :symbols-clock:&ensp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

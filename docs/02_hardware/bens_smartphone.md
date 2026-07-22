@@ -34,11 +34,11 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-android:&nbsp;Android 17](https://www.android.com/)
+:    [:brands-android:&ensp;Android 17](https://www.android.com/){ external-link }
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Email&ensp;:symbols-move-right:&ensp;"Google"
 

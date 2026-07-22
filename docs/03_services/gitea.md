@@ -46,7 +46,7 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
       + Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
@@ -54,8 +54,8 @@ hide:
 
 :    2FA / MFA:
     
-      + :symbols-key-fido2:&nbsp;FIDO2 / WebAuthn
-      + :symbols-clock:&nbsp;TOTP 
+      + :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
+      + :symbols-clock:&ensp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

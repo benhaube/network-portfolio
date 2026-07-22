@@ -36,11 +36,11 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-wizard-hat:&nbsp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/) *(3006.102.7_2)*
+:    [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } *(3006.102.7_2)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
       + SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"

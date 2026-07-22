@@ -45,7 +45,7 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"CUPS Admin"&emsp;:symbols-info:{ title="Login needed for Administration, but anyone on the local network can print." }
 

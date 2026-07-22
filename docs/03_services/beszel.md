@@ -42,15 +42,15 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:brands-github:&nbsp;GitHub OAuth](https://github.com/settings/developers)
+:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
 
 :    2FA / MFA:
     
-      + :symbols-clock:&nbsp;TOTP 
+      + :symbols-clock:&ensp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

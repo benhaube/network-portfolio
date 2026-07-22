@@ -67,7 +67,7 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + SSH keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE92U (Admin)"
       + SSH keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"

@@ -41,11 +41,11 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-debian:&nbsp;Debian Linux 13](https://www.debian.org/) *(Trixie)*
+:    [:symbols-debian:&ensp;Debian Linux 13](https://www.debian.org/){ external-link } *(Trixie)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + SSH Keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
 

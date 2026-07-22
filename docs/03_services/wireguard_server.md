@@ -44,7 +44,7 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
       
       + Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router" 
 

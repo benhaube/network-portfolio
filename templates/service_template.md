@@ -33,7 +33,7 @@ hide:
 
 #### :symbols-user-key: Credentials 
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 

@@ -37,11 +37,11 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-fedora:&nbsp;Fedora Linux 44](https://fedoraproject.org/kde/) *(KDE Plasma Desktop Edition)*
+:    [:symbols-fedora:&ensp;Fedora Linux 44](https://fedoraproject.org/kde/){ external-link } *(KDE Plasma Desktop Edition)*
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Laptop"
 

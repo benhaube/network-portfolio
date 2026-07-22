@@ -34,19 +34,19 @@ hide:
 
 #### :symbols-layers:&ensp;Hypervisor 
 
-:    [:services-zimaos:&nbsp;ZimaOS](https://www.zimaspace.com/zimaos) *(KVM / QEMU)*
+:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos){ external-link } *(KVM / QEMU)*
 
 #### :symbols-cpu:&ensp;Operating System 
 
-:    [:symbols-debian:&nbsp;Debian Linux](https://www.debian.org/) *(trixie)*
+:    [:symbols-debian:&ensp;Debian Linux](https://www.debian.org/){ external-link } *(trixie)*
 
 #### :symbols-network-node:&ensp;Host Node 
 
-:    [:symbols-server-nas:&nbsp;ZimaOS NAS](zimaos_nas.md#virtualization){ data-preview }
+:    [:symbols-server-nas:&ensp;ZimaOS NAS](zimaos_nas.md#virtualization){ data-preview }
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com) 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link } 
     
       + SSH Keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
 

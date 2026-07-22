@@ -44,13 +44,13 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials  
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
 
 :    2FA / MFA:
     
-      + :symbols-clock:&nbsp;TOTP 
+      + :symbols-clock:&ensp;TOTP 
 
 ## :symbols-package-search:&ensp;Deployment Details
 

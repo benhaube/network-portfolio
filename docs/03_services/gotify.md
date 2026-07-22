@@ -44,7 +44,7 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (admin)"
       + Local Network&ensp;:symbols-move-right:&ensp;"Gotify (bhaube)"
@@ -143,7 +143,7 @@ hide:
     2. `$1` is the new IP passed by the router.
     3.    Replace the `KEY` variable with the key provided by addr.tools for your domain name. The Key is stored in the Bitwarden vault.
           
-          [:services-bitwarden:&ensp;**Bitwarden:**](https://vault.bitwarden.com)
+          [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
 
           + Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
 

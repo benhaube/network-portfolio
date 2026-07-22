@@ -36,11 +36,11 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-microsoft:&nbsp;Windows 11 Pro](https://microsoft.com/windows)
+:    [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&nbsp;Bitwarden](https://vault.bitwarden.com): 
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Laptop PC"
 

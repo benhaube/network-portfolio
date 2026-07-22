@@ -114,8 +114,8 @@
 	display: inline-block;
 	height: .75em;
     /* The icon root property is defined in 'extra.css' */
-	-webkit-mask-image: var(--md-typeset-mailto-link);
-	mask-image: var(--md-typeset-mailto-link);
+	-webkit-mask-image: var(--md-typeset-mailto-icon);
+	mask-image: var(--md-typeset-mailto-icon);
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
 	-webkit-mask-size: contain;

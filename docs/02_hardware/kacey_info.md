@@ -61,7 +61,7 @@ hide:
 
 :    URL: 
     
-      + <http://k1c-a71e.internal:7125>
+      + <http://kacey.internal:7125>
 
 :    API Key: 
     
@@ -72,8 +72,8 @@ hide:
 
 :    URL:
     
-      + <http://k1c-a71e.internal>
-      + <http://k1c-a71e.internal:4408>
+      + <http://kacey.internal>
+      + <http://kacey.internal:4408>
 
 ## :symbols-webcam:&ensp;Camera
 
@@ -81,7 +81,7 @@ hide:
 
 :    Snapshot URL:
     
-      + <http://k1c-a71e.internal:8080/?action=snapshot>
+      + <http://kacey.internal:8080/?action=snapshot>
       + <http://localhost:8080/?action=snapshot>
       + <http://127.0.0.1:8080/?action=snapshot>
 
@@ -89,11 +89,11 @@ hide:
 
 :    Snapshot URL:
     
-      + <http://k1c-a71e.internal:8080/?action=snapshot>
+      + <http://kacey.internal:8080/?action=snapshot>
 
 :    Stream URL: 
     
-      + <http://k1c-a71e.internal/webcam/?action=stream>
+      + <http://kacey.internal/webcam/?action=stream>
 
 ---
 ## :symbols-code-xml:&ensp;Machine G-code 

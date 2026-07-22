@@ -55,9 +55,9 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                               |
-| :-------: | :------------- | :------------------ | :------------------------------------------------------------------------- |
-|  `wlan0`  | `192.168.50.3` | `2c:cf:67:db:f5:e2` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address     | MAC Address         | Connected To                                                                               |
+| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+|  `wlan0`  | `192.168.50.3` | `2c:cf:67:db:f5:e2` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
 | Interface |               VLAN                   | FQDN               | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------: | :----------------- | :---------------------------- | :------------- |
@@ -85,11 +85,11 @@ hide:
 
 #### :symbols-container:&ensp;Docker Container
 
-|   Status   | Service                                                            | Port(s) | Role / Notes                                                                                |
-| :--------: | :----------------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------ |
-|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)          | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md))*.                         |
-|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
-| *Inactive* | [:services-portainer:&nbsp;Portainer](../03_services/portainer.md) | `9001`  | A lightweight service delivery platform for containerized applications.                     |
+|   Status   | Service                                                            | Port(s) | Role / Notes                                                                                         |
+| :--------: | :----------------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------------- |
+|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)          | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
+| *Inactive* | [:services-portainer:&nbsp;Portainer](../03_services/portainer.md) | `9001`  | A lightweight service delivery platform for containerized applications.                              |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

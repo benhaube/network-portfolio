@@ -63,9 +63,9 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                               |
-| :-------: | :--------- | :------------------ | :------------------------------------------------------------------------- |
-|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address | MAC Address         | Connected To                                                                               |
+| :-------: | :--------- | :------------------ | :----------------------------------------------------------------------------------------- |
+|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
 | Interface | VLAN                                 | FQDN  | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------- | :---- | :---------------------------- | :------------- |
@@ -89,9 +89,9 @@ hide:
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                      | Virtual NIC | Virtual Disk Image | Role / Notes                       |
-| :------: | :------------------------------------------------------ | :---------- | :----------------- | :--------------------------------- |
-| *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/) | NAT         | `-`                | Android Virtualization Environment |
+|  Status  | OS                                                                       | Virtual NIC | Virtual Disk Image | Role / Notes                       |
+| :------: | :----------------------------------------------------------------------- | :---------- | :----------------- | :--------------------------------- |
+| *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment |
 
 #### :brands-android:&ensp;Native Android
 

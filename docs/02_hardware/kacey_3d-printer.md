@@ -57,9 +57,9 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                               |
-| :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------- |
-|  `wlan0`  | `192.168.50.15` | `FC:EE:28:09:A7:1E` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address      | MAC Address         | Connected To                                                                               |
+| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+|  `wlan0`  | `192.168.50.15` | `FC:EE:28:09:A7:1E` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
 | Interface |               VLAN                   | FQDN             | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------: | :--------------- | :---------------------------- | :------------- |
@@ -122,7 +122,7 @@ hide:
 
 #### :symbols-update:&ensp;Update Process
 
-* Update most software through the [Fluidd Web UI](http://k1c-a71e.internal){ external-link }.
+* Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }.
 * Update Entware packages in terminal via [SSH](../03_services/ssh.md) 
 
 #### :symbols-cloud-upload:&ensp;Backup Policy

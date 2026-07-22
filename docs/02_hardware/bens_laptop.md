@@ -171,7 +171,7 @@ hide:
 
 ##### Config File
 
-+ Key-based authentication is enabled for [SSH](../03_services/ssh.md) sessions on all servers on the network, and password authentication is disabled. 
++ Key-based authentication is enabled for [SSH](../03_services/ssh.md#credentials){ data-preview } sessions on all servers on the network, and password authentication is disabled. 
 + To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
 + See ["SSH Config File"](../03_services/ssh.md#ssh-config-file_1) for documentation.  
 

@@ -58,10 +58,10 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                              |
-| :-------: | :------------- | :------------------ | :------------------------------------------------------------------------ |
-|  `eth0`   | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md) *(Port 4)* |
-|  `eth1`   | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md) *(Port 5)* |
+| Interface | IP Address     | MAC Address         | Connected To                                                                                       |
+| :-------: | :------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
+|  `eth0`   | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 4)* |
+|  `eth1`   | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 5)* |
 
 | Interface |               VLAN                   | FQDN                        | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------: | :-------------------------- | :---------------------------- | :------------- |
@@ -92,9 +92,9 @@ hide:
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                          | Virtual NIC | Virtual Disk Image | Role / Notes                                                                         |
-| :------: | :---------------------------------------------------------- | :---------- | :----------------- | :----------------------------------------------------------------------------------- |
-| *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](debian_server.md) | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md) DNS server. |
+|  Status  | OS                                                                               | Virtual NIC | Virtual Disk Image | Role / Notes                                                                                                            |
+| :------: | :------------------------------------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](debian_server.md#role){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
 
 #### :symbols-penguin:&ensp;Native Linux
 
@@ -108,7 +108,7 @@ hide:
 
 |   Status   | Service                                                                                 |        Port(s)         | Role / Notes                                                                                                                                        |
 | :--------: | :-------------------------------------------------------------------------------------- | :--------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)                               |        `45876`         | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md))*.                                                                                 | 
+|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)                               |        `45876`         | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*.                                                | 
 |  *Active*  | [:services-cloudflare:&nbsp;Cloudflared](../03_services/cloudflared.md)                 |        `14333`         | Secure reverse-proxy tunnel for hosting private services on the public internet.                                                                    |
 |  *Active*  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                               |         `5001`         | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                                                         |
 |  *Active*  | [:services-f1-replay-timing:&nbsp;F1 Replay Timing](../03_services/f1_replay_timing.md) |     `3000` `8000`      | Visualization of real-time track data and telemetry synced to F1 live and replays.                                                                  |
@@ -162,8 +162,8 @@ hide:
     :symbols-activity:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
     :symbols-monitor-smartphone:&ensp;**Affected Clients:** 
  
-    + [Ben's Desktop PC](bens_desktop.md) 
-    + [Ben's Laptop PC](bens_laptop.md)
+    + [Ben's Desktop PC](bens_desktop.md#role){ data-preview } 
+    + [Ben's Laptop PC](bens_laptop.md#role){ data-preview }
 
     --- 
     See the ["Configuration"](../03_services/nfs.md#configuration) section of the NFS service documentation page for server and client configuration details. 

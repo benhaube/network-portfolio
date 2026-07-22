@@ -26,7 +26,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role 
 
-:    The primary DNS server in the [Technitium](../03_services/technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md).
+:    The primary DNS server in the [Technitium](../03_services/technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -42,7 +42,7 @@ hide:
 
 #### :symbols-network-node:&ensp;Host Node 
 
-:    [:symbols-server-nas:&nbsp;ZimaOS NAS](zimaos_nas.md)
+:    [:symbols-server-nas:&nbsp;ZimaOS NAS](zimaos_nas.md#virtualization){ data-preview }
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -78,10 +78,10 @@ hide:
 
 #### :symbols-container:&ensp;Docker Container
 
-|  Status  | Service                                                   | Port(s) | Role / Notes                                                                                |
-| :------: | :-------------------------------------------------------- | :-----: | :------------------------------------------------------------------------------------------ |
-| *Active* | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md) | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md))*.                         |
-| *Active* | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md) | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
+|  Status  | Service                                                   | Port(s) | Role / Notes                                                                                         |
+| :------: | :-------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------------- |
+| *Active* | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md) | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| *Active* | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md) | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes
@@ -133,7 +133,7 @@ hide:
 #### :symbols-refresh-ccw-dot:&ensp;Recovery
 
 + If the VM is corrupted there are external snapshots to roll back to. 
-+ Also, on the main storage pool on the [ZimaOS NAS](zimaos_nas.md) in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 
++ Also, on the main storage pool on the [ZimaOS NAS](zimaos_nas.md#data){ data-preview } in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file. 
 
 --8<-- "nerd-fonts.md"
 

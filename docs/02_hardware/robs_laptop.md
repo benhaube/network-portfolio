@@ -24,7 +24,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](ugreen_switch.md).
+:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](ugreen_switch.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -53,10 +53,10 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                                                    |
-| :-------: | :--------- | :------------------ | :---------------------------------------------------------------------------------------------- |
-| Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md) *(Port-1)*, Temporary connection |
-|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks) *(VLAN50)*                      |
+| Interface | IP Address | MAC Address         | Connected To                                                                                                             |
+| :-------: | :--------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------- |
+| Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port-1)*, Temporary connection |
+|   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){data-preview} *(VLAN50)*                                 |
 
 | Interface |               VLAN                   | FQDN  | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------: | :---- | :---------------------------- | :------------- |

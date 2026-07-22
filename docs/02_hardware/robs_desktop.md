@@ -23,7 +23,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role 
 
-:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md).
+:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -52,10 +52,10 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                               |
-| :-------: | :--------- | :------------------ | :------------------------------------------------------------------------- |
-| Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md) *(Port2)* |
-|   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks) *(VLAN50)* |
+| Interface | IP Address | MAC Address         | Connected To                                                                                        |
+| :-------: | :--------- | :------------------ | :-------------------------------------------------------------------------------------------------- |
+| Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } *(Port2)* |
+|   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)*          |
 
 | Interface |               VLAN                   | FQDN  | DNS Servers                   | Gateway        |
 | :-------: | :----------------------------------: | :---- | :---------------------------- | :------------- |

@@ -24,7 +24,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#port-map){ data-preview }.
+:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -169,7 +169,7 @@ hide:
 
 ##### Config File
 
-+ Key-based authentication is enabled for [SSH](../03_services/ssh.md) sessions on all servers on the network, and password authentication is disabled. 
++ Key-based authentication is enabled for [SSH](../03_services/ssh.md#credentials){ data-preview } sessions on all servers on the network, and password authentication is disabled. 
 + To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
 + See ["SSH Config File"](../03_services/ssh.md#ssh-config-file_1) for documentation.  
 

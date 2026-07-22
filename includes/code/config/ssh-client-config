@@ -31,7 +31,7 @@ Host Debian-VM
     IdentitiesOnly yes
 
 Host Creality-K1C
-    HostName k1c-a71e.internal
+    HostName kacey.internal
     User root
     IdentityFile ~/.ssh/k1c-a71e.pub
     IdentitiesOnly no

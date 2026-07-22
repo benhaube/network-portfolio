@@ -27,7 +27,7 @@ hide:
 
 #### :symbols-file-text:&ensp;Description 
 
-:    Synchronize configuration between multiple [Pi-hole](pi-hole.md) instances.
+:    Synchronize configuration between multiple [Pi-hole](pi-hole.md#description){ data-preview } instances.
 
 #### :symbols-settings-ethernet:&ensp;Port(s)
 

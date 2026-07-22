@@ -217,7 +217,7 @@ hide:
 
 3.    The Glance Dashboard's server secret is stored in the Bitwarden Vault.
 
-      [:services-bitwarden:&nbsp;**Bitwarden:**](https://vault.bitwarden.com)
+      [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
 
       + Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 

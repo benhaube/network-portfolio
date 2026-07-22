@@ -59,7 +59,7 @@ tags:
 ### Cold Storage
 
 + Critical database dumps *([Home Assistant](../03_services/home_assistant.md), [Immich](../03_services/immich.md) PostgreSQL)* are exported weekly to the **USB Storage *(32GB)*** attached to the Pi 4B Server and the **NVMe Storage *(500GB)*** on the ZimaOS NAS.
-+ The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) wireless router is exported weekly *(Sundays @ 1:00 UTC-5)* to the **USB Storage *(32GB)*** attached to the Pi 4B Server and the **Quick-Storage *(2TB)*** on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/){ external-link } firmware.
++ The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#role){ data-preview } wireless router is exported weekly *(Sundays @ 1:00 UTC-5)* to the **USB Storage *(32GB)*** attached to the Pi 4B Server and the **Quick-Storage *(2TB)*** on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/){ external-link } firmware.
 
 ### Off-Site / Cloud 
 
@@ -71,7 +71,7 @@ tags:
 
 ##### Automated Failover
 
-+ The [Technitium](../03_services/technitium.md) DNS Node *([Pi 4B Server](../02_hardware/pi_4b_server.md))* is configured as a secondary resolver in the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) DHCP settings. Clients will automatically fallback to the Pi 4B.    
++ The [Technitium](../03_services/technitium.md) DNS Node *([Pi 4B Server](../02_hardware/pi_4b_server.md))* is configured as a secondary resolver in the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#virtual-local-networks){ data-preview } DHCP settings. Clients will automatically fallback to the Pi 4B.    
 
 ##### Re-provisioning
 

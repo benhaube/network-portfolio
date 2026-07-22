@@ -7,8 +7,6 @@ tags:
   - Router
   - Infrastructure
   - Remote Access
-  - DNS
-  - IoT
   - Living Room
   - Hardware
 hide:

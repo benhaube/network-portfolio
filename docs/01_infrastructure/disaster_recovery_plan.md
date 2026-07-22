@@ -51,7 +51,7 @@ tags:
 ### On-Site Synchronization
 
 + [Syncthing](../03_services/syncthing.md) is utilized across the [Pi 4B Server](../02_hardware/pi_4b_server.md), [Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md), [Debian Server](../02_hardware/debian_server.md) and [ZimaOS NAS](../02_hardware/zimaos_nas.md) nodes to ensure configuration files and Docker volumes are mirrored in real-time.
-+ Linux PCs, [<code>bens-workstation</code>](../02_hardware/bens_desktop.md) and [<code>ben-laptop</code>](../02_hardware/bens_laptop.md), have the `/home` directory backed up to the [ZimaOS NAS](../02_hardware/zimaos_nas.md) every weekday at 18:00 and 19:00 UTC-5 using a custom script, `home-bkp-nas.sh`, that utilizes [NFS](../03_services/nfs.md) and `rsync`. 
++ Linux PCs, [<code>bens-workstation</code>](../02_hardware/bens_desktop.md) and [<code>ben-laptop</code>](../02_hardware/bens_laptop.md), have the `/home` directory backed up to the [ZimaOS NAS](../02_hardware/zimaos_nas.md#data){ data-preview } every weekday at 18:00 and 19:00 UTC-5 using a custom script, `home-bkp-nas.sh`, that utilizes [NFS](../03_services/nfs.md) and `rsync`. 
 + Windows PCs use [SMB](../03_services/smb.md) and the built-in backup utility in Windows 11 to back up personal data to the ZimaOS NAS. 
 + Obsidian vaults are synchronized in real-time with a [CouchDB](../03_services/obsidian_livesync.md) database hosted on the ZimaOS NAS, and to a private GitHub repository.
 + Android smartphones have **SMS / MMS & RCS** messages and critical application configurations backed up while charging to the ZimaOS NAS via Syncthing. The backup archives for messages are created locally on the device with the [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/){ external-link } application.
@@ -105,10 +105,10 @@ tags:
 ### Monitoring
 
 + Server status and service uptime is monitored by [Beszel Hub](../03_services/beszel.md) and [Uptime Kuma](../03_services/uptime_kuma.md) instances. 
-    + Email notifications and push notifications with [Gotify](../03_services/gotify.md) are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
+    + Email notifications and push notifications with [Gotify](../03_services/gotify.md#notifications){ data-preview } are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
 + The ASUS router utilizing the Asuswrt-merlin firmware also has email notifications enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, and router reboots.
 + All three Debian-based servers send **email & push** notifications when new [SSH](../03_services/ssh.md) sessions are started, and when `unattended-upgrades` completes a package upgrade.
-+ The [ZimaOS NAS](../02_hardware/zimaos_nas.md) sends push notifications with [Gotify](../03_services/gotify.md) when new SSH sessions are successfully established. 
++ The [ZimaOS NAS](../02_hardware/zimaos_nas.md) sends push notifications with [Gotify](../03_services/gotify.md#notifications){ data-preview } when new SSH sessions are successfully established. 
 + The email address, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ external-link }, is dedicated to automated notifications from the monitoring software. 
 
 ---

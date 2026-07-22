@@ -2,6 +2,13 @@
  * General Typeset Changes    *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.md-typeset {
+	font-size: .75rem;
+	letter-spacing: -.01em;
+	line-height: 1.8;
+	overflow-wrap: break-word;
+}
+
 /* Change the background-color for highlited text */
 .md-typeset mark {
     background-color: var(--md-code-hl-color--light);
@@ -54,9 +61,18 @@
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Data Preview Link Icon     *
+ * Data Preview Link          *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.md-typeset [data-preview] {
+  position: relative
+}
+[dir=ltr] .md-typeset [data-preview]:after {
+  margin-left: .125em
+}
+[dir=rtl] .md-typeset [data-preview]:after {
+  margin-right: .125em
+}
 /* Remove existing bottom border */
 .md-typeset [data-preview] {
     border-bottom: none;
@@ -82,13 +98,22 @@
  * External Link Icon         *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.md-typeset [external-link] {
+  position: relative
+}
+[dir=ltr] .md-typeset [external-link]:after {
+  margin-left: .125em
+}
+[dir=rtl] .md-typeset [external-link]:after {
+  margin-right: .125em
+}
 /* Create an elemet that can add an icon after external links */
 /* Use '{ external-link }' directly after an external link to add the icon element */
 .md-typeset [external-link]::after {
 	background-color: currentcolor;
 	content: "";
 	display: inline-block;
-	height: .75em;
+	height: .8em;
     /* The icon root property is defined in 'extra.css' */
 	-webkit-mask-image: var(--md-typeset-external-link-icon);
 	mask-image: var(--md-typeset-external-link-icon);
@@ -98,21 +123,29 @@
 	mask-size: contain;
 	transition: background-color 125ms;
 	vertical-align: text-top;
-    margin-left: .1em;
-	width: .75em;
+	width: .8em;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Mailto Link Icon           *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.md-typeset [mailto-link] {
+  position: relative
+}
+[dir=ltr] .md-typeset [mailto-link]:after {
+  margin-left: .125em
+}
+[dir=rtl] .md-typeset [mailto-link]:after {
+  margin-right: .125em
+}
 /* Create an elemet that can add an icon after external links */
 /* Use '{ mailto-link }' directly after an external link to add the icon element */
 .md-typeset [mailto-link]::after {
 	background-color: currentcolor;
 	content: "";
 	display: inline-block;
-	height: .75em;
+	height: .7em;
     /* The icon root property is defined in 'extra.css' */
 	-webkit-mask-image: var(--md-typeset-mailto-icon);
 	mask-image: var(--md-typeset-mailto-icon);
@@ -122,6 +155,5 @@
 	mask-size: contain;
 	transition: background-color 125ms;
 	vertical-align: text-top;
-    margin-left: .1em;
-	width: .75em;
+	width: .7em;
 }

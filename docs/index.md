@@ -17,7 +17,7 @@ hide:
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
 [:symbols-binary:&ensp;IP Address Management](01_infrastructure/ip_address_mangement.md)
-:    This page contains information about IPAM, VPNs, and VLANs encompassed by the local network.
+:    This page contains information about IPAM, VPNs, and VLANs encompassed by the LAN.
 
 [:symbols-grid-2x2:&ensp;MAC Address Tables](01_infrastructure/mac_address_tables.md)
 :    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
@@ -43,22 +43,22 @@ hide:
 ### Core Infrastructure
 
 [:symbols-router:&ensp;ASUS RT-BE92U](02_hardware/asus_rt-be92u.md)
-:    The main wireless router and firewall for the local network. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin:symbols-external-link-small:](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
+:    The main wireless router and firewall for the LAN. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin:symbols-external-link-small:](https://www.asuswrt-merlin.net/), a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 [:symbols-router:&ensp;ASUS RT-AX55](02_hardware/asus_rt-ax55.md)
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
 [:symbols-layers:&ensp;Debian Server](02_hardware/debian_server.md)
-:    The primary DNS server in the [Technitium](03_services/technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](02_hardware/zimaos_nas.md). 
+:    The primary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](02_hardware/zimaos_nas.md#virtualization){ data-preview }. 
 
 [:symbols-settings-ethernet:&ensp;Hitron Modem](02_hardware/hitron_modem.md)
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity:symbols-external-link-small:](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
 
 [:symbols-server:&ensp;Pi 4B Server](02_hardware/pi_4b_server.md)
-:    The secondary DNS server in the [Technitium](03_services/technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker:symbols-external-link-small:](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](02_hardware/tp-link_switch.md).
+:    The secondary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker:symbols-external-link-small:](https://www.docker.com/) containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-server:&ensp;Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) 
-:    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi (SSID: `Home`). 
+:    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the LAN. Located on the stationary printer cart in the office upstairs, and connected to the LAN via 2.4 GHz Wi-Fi ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }). 
 
 [:symbols-ethernet-port:&ensp;TP-Link LiteWave Switch](02_hardware/tp-link_litewave_switch.md)
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
@@ -70,27 +70,27 @@ hide:
 :    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
 
 [:symbols-server-nas:&ensp;ZimaOS NAS](02_hardware/zimaos_nas.md) 
-:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664:symbols-external-link-small:](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
+:    The primary rack-mounted NAS server & VM host for the LAN. With a [ZimaBoard 2 1664:symbols-external-link-small:](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the LAN. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
 
 ### Key Clients
 
 [:symbols-pc-case:&ensp;Ben's Workstation](02_hardware/bens_desktop.md) 
-:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](02_hardware/tp-link_switch.md).
+:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-laptop-minimal:&ensp;Ben's Laptop](02_hardware/bens_laptop.md)
-:    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
+:    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }).
 
 [:symbols-smartphone:&ensp;Ben's Smartphone](02_hardware/bens_smartphone.md)
-:    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
+:    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }).
 
 [:symbols-printer-3d-nozzle:&ensp;Kacey 3D-Printer](02_hardware/kacey_3d-printer.md) 
-:    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C. 
+:    The Creality K1C 3D-printer located in the office upstairs, and connected to the LAN through 2.4 GHz Wi-Fi ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }). Affectionately, named 'Kacey' as a play on the model name, K1C. 
 
 [:symbols-pc-case:&ensp;Rob's Workstation](02_hardware/robs_desktop.md) 
-:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](02_hardware/tp-link_switch.md).
+:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-laptop-minimal:&ensp;Rob's Laptop](02_hardware/robs_laptop.md) 
-:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](02_hardware/ugreen_switch.md).
+:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }). However, sometimes it has a 2.5 Gb/s Ethernet connection through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
 
 ---
 ## :symbols-monitor-cloud:&ensp;Services
@@ -115,7 +115,7 @@ hide:
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
 [:symbols-cloud-cog:&ensp;DDNS](03_services/ddns.md)
-:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools).
+:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this LAN, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools).
 
 [:services-dockge:&ensp;Dockge](03_services/dockge.md) 
 :    A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
@@ -184,7 +184,7 @@ hide:
 :    A self-hosted, real-time port monitoring and discovery tool.
 
 [:symbols-chevrons-right-left:&ensp;RDP](03_services/rdp.md)
-:    Remote desktop access over the local network. *(not exposed to the internet)*
+:    Remote desktop access over the LAN. *(not exposed to the internet)*
 
 [:symbols-cloud-sync:&ensp;SMB](03_services/smb.md)
 :    Remote file system access.
@@ -217,10 +217,10 @@ hide:
 ## :symbols-arrow-right-left:&ensp;Change Management
 
 [:services-caddy:&ensp;Reverse Proxy & DNS Routing](04_change_management/reverse-proxy.md)
-:    Preparing the [Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) to be a [Caddy](03_services/caddy.md) reverse proxy server to give unique FQDNs to services hosted on the local network.
+:    Preparing the [Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) to be a [Caddy](03_services/caddy.md) reverse proxy server to give unique FQDNs to services hosted on the LAN.
 
 [:symbols-cloud-cog:&ensp;DNS Migration](04_change_management/dns_migration.md) 
-:    Preparing to migrate from [Pi-hole](03_services/pi-hole.md) to [Technitium](03_services/technitium.md) for DNS queries on the local network. 
+:    Preparing to migrate from [Pi-hole](03_services/pi-hole.md) to [Technitium](03_services/technitium.md) for DNS queries on the LAN. 
 
 ---
 ## :symbols-penguin:&ensp;Linux Tutorials

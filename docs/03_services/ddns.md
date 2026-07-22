@@ -59,7 +59,7 @@ hide:
 
     !!! note inline end
     
-        The `ddns-start` script also contains the code send a WAN IP change notification to the [Gotify](gotify.md) server. 
+        The `ddns-start` script also contains the code needed to send a WAN IP change notification to the [Gotify](gotify.md#notifications){ data-preview } server. 
 
     ```sh {title="/jffs/scripts/ddns-start" linenums="1" hl_lines="5 13 14" .mono-title}
     --8<-- "ddns-start.sh"

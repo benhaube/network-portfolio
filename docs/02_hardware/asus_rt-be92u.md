@@ -129,7 +129,7 @@ hide:
 
 + Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router){ external-link } tool.
 + Email notifications enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM){ external-link } and script updates.
-    + Notification emails are sent to: [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ external-link } 
+    + Notification emails are sent to: [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ mailto-link } 
 + For Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
 #### :symbols-cloud-upload:&ensp;Backup Policy

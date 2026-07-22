@@ -109,7 +109,7 @@ tags:
 + The ASUS router utilizing the Asuswrt-merlin firmware also has email notifications enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, and router reboots.
 + All three Debian-based servers send **email & push** notifications when new [SSH](../03_services/ssh.md) sessions are started, and when `unattended-upgrades` completes a package upgrade.
 + The [ZimaOS NAS](../02_hardware/zimaos_nas.md) sends push notifications with [Gotify](../03_services/gotify.md#notifications){ data-preview } when new SSH sessions are successfully established. 
-+ The email address, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ external-link }, is dedicated to automated notifications from the monitoring software. 
++ The email address, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ mailto-link }, is dedicated to automated notifications from the monitoring software. 
 
 ---
 <div class="grid cards" markdown>

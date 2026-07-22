@@ -13,7 +13,7 @@ hide:
 !!! question "FAQ"
 
     **What Are Unattended-Upgrades?**
-    :    The [<code>unattended-upgrades:symbols-external-link-small:</code>](https://packages.debian.org/stable/unattended-upgrades) package enables automatic security patches and critical software updates on your Debian server with no manual intervention required by the system administrator. This helps to protect your server from new CVE attack vectors, ensures bug fixes are applied quickly during maintenance windows, and relieves burden from patch management, allowing the system administrator to focus on other things. By the end of this tutorial, you will have `unattended-upgrades` configured with Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
+    :    The [<code>unattended-upgrades</code>](https://packages.debian.org/stable/unattended-upgrades){ external-link } package enables automatic security patches and critical software updates on your Debian server with no manual intervention required by the system administrator. This helps to protect your server from new CVE attack vectors, ensures bug fixes are applied quickly during maintenance windows, and relieves burden from patch management, allowing the system administrator to focus on other things. By the end of this tutorial, you will have `unattended-upgrades` configured with Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
 
 ???+ note
 
@@ -169,7 +169,7 @@ The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the
 
 ## :symbols-terminal-alt:&ensp;CLI Options
 
-Below is a table containing the options included with the `unattended-upgrade` command. You can also see the options by checking the [manual page:symbols-external-link-small:](https://manpages.debian.org/trixie/unattended-upgrades/unattended-upgrade.8.en.html) using the command: `#!bash man unattended-upgrade`
+Below is a table containing the options included with the `unattended-upgrade` command. You can also see the options by checking the [manual page](https://manpages.debian.org/trixie/unattended-upgrades/unattended-upgrade.8.en.html){ external-link } using the command: `#!bash man unattended-upgrade`
 
 ???+ note inline end
 

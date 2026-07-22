@@ -163,7 +163,7 @@ hide:
 ???+ security
 
     :symbols-lock-keyhole:&ensp;**Security vs. Convenience:** 
-    :    This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed PCRs), certain ["Evil Maid" attacks:symbols-external-link-small:](https://en.wikipedia.org/wiki/Evil_maid_attack) might be possible.
+    :    This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed PCRs), certain ["Evil Maid" attacks](https://en.wikipedia.org/wiki/Evil_maid_attack){ external-link } might be possible.
 
     :symbols-key-round:&ensp;**Backup Key:**
     :    Always keep at least one regular passphrase or a **recovery key** for your LUKS volume as a backup. If the TPM fails, the UEFI is updated, or your boot configuration changes in a way that alters the PCR values, the TPM will not release the key.

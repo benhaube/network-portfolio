@@ -58,7 +58,7 @@ hide:
 2. **Verify Sync:** 
     + [ ] Ensure local zones and blocklists are appearing on both instances.
 3. **Blocklist Tuning:** 
-    + [ ] Add your preferred lists *(e.g., [OISD:symbols-external-link-small:](https://oisd.nl/), [HaGeZi:symbols-external-link-small:](https://github.com/hagezi/dns-blocklists))* and verify they are enabled on both.
+    + [ ] Add your preferred lists *(e.g., [OISD](https://oisd.nl/){ external-link }, [HaGeZi](https://github.com/hagezi/dns-blocklists){ external-link })* and verify they are enabled on both.
 
 ## :symbols-toggle-right:&ensp;Network Cutover
 

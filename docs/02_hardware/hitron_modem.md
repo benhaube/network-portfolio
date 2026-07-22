@@ -24,7 +24,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role 
 
-:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity:symbols-external-link-small:](https://www.xfinity.com/overview))*. Located in the 10-inch mini-rack.
+:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview){ external-link })*. Located in the 10-inch mini-rack.
 
 #### :symbols-map-pin:&ensp;Location
 
@@ -40,10 +40,10 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                            |
-| :-------: | :-------------- | :------------------ | :------------------------------------------------------ |
-|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:symbols-router:&nbsp;ASUS RT-BE92U](asus_rt-be92u.md) |
-|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                       |
+| Interface | IP Address      | MAC Address         | Connected To                                                                           |
+| :-------: | :-------------- | :------------------ | :------------------------------------------------------------------------------------- |
+|   LAN 1   | `192.168.100.1` | `00:1c:73:00:00:99` | [:symbols-router:&nbsp;ASUS RT-BE92U](asus_rt-be92u.md#wan-connection){ data-preview } |
+|   LAN 2   | `Down`          | `xx:xx:xx:xx:xx:xx` | -                                                                                      |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

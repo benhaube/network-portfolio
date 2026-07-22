@@ -27,7 +27,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role 
 
-:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664:symbols-external-link-small:](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu) as the "beating heart," it is the most powerful server on the local network. It has an *x86-64* Intel N150 quad-core CPU *(3.6 GHz)* and 16 GB of LPDDR5 *(6400 MHz)* RAM, and it is located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
+:    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu){ external-link } as the "beating heart," it is the most powerful server on the local network. It has an *x86-64* Intel N150 quad-core CPU *(3.6 GHz)* and 16 GB of LPDDR5 *(6400 MHz)* RAM, and it is located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -140,9 +140,9 @@ hide:
 
     :symbols-boxes:&ensp;**Entware:**
  
-    + The [Entware:symbols-external-link-small:](https://github.com/Entware/Entware) package manager is installed, allowing additional packages not included in ZimaOS to be installed. 
+    + The [Entware](https://github.com/Entware/Entware){ external-link } package manager is installed, allowing additional packages not included in ZimaOS to be installed. 
     + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
-    + Check the [Entware Wiki:symbols-external-link-small:](https://github.com/Entware/Entware/wiki) for documentation.
+    + Check the [Entware Wiki](https://github.com/Entware/Entware/wiki){ external-link } for documentation.
 
 !!! config "Critical Configurations"
 
@@ -203,11 +203,11 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 #### :symbols-login:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub:symbols-external-link-small:](https://github.com/benhaube/fastfetch-login-preset).
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 
 ##### Install
 
-1. Download the latest `fastfetch` release from [GitHub:symbols-external-link-small:](https://github.com/fastfetch-cli/fastfetch/releases/latest) and decompress the archive: 
+1. Download the latest `fastfetch` release from [GitHub](https://github.com/fastfetch-cli/fastfetch/releases/latest){ external-link } and decompress the archive: 
 
     ```bash linenums="1"
     sudo wget https://github.com/fastfetch-cli/fastfetch/releases/download/[release-version]/fastfetch-linux-amd64.zip
@@ -268,7 +268,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 ##### Install
 
-1. Download the latest release from [GitHub:symbols-external-link-small:](https://github.com/chicohaager/cron).
+1. Download the latest release from [GitHub](https://github.com/chicohaager/cron){ external-link }.
 
     ```bash linenums="1"
     wget https://github.com/chicohaager/cron/releases/download/<version>/cron.raw
@@ -297,7 +297,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
     :    Tasks are persisted to disk and automatically restored after system restart using the Systemd unit, `cron.service`. This fixes the known issue where tasks did not continue after a reboot in previous versions.
 
-    Open it from the [ZimaOS dashboard:symbols-external-link-small:](http://storage-server.internal) *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
+    Open it from the [ZimaOS dashboard](http://storage-server.internal){ external-link } *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
 
 #### :symbols-firewall:&ensp;Zima Firewall
 
@@ -307,7 +307,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 ##### Install
 
-1. Download the latest release from [GitHub:symbols-external-link-small:](https://github.com/chicohaager/zfw).
+1. Download the latest release from [GitHub](https://github.com/chicohaager/zfw){ external-link }.
 
     ```bash linenums="1"
     wget https://github.com/chicohaager/zfw/releases/download/<version>/zfw-<version>-amd64.tar.gz
@@ -331,4 +331,4 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
     The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` *(root:root, 0700)*, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place. 
  
-    Open it from the [ZimaOS dashboard:symbols-external-link-small:](http://storage-server.internal) *(ZFW Firewall)*, or directly at <http://storage-server.internal/modules/zfw/index.html>.
+    Open it from the [ZimaOS dashboard](http://storage-server.internal){ external-link } *(ZFW Firewall)*, or directly at <http://storage-server.internal/modules/zfw/index.html>.

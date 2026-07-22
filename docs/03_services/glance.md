@@ -78,7 +78,7 @@ hide:
 
     :symbols-users:&ensp;**Users:**
  
-    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault:symbols-external-link-small:](https://vault.bitwarden.com) within the folder "Local Network". There are currently three user accounts: `admin`, `bhaube`, and `rpereira`. 
+    + Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com){ external-link } within the folder "Local Network". There are currently three user accounts: `admin`, `bhaube`, and `rpereira`. 
 
     :symbols-text-cursor-input:&ensp;**Passwords:**
 
@@ -194,11 +194,11 @@ hide:
       
       Then paste the hashed string into the corresponding variable in the `.env` file.
 
-5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one:symbols-external-link-small:](https://colorpicker.dev/#121212) to convert colors from other formats.
+5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212){ external-link } to convert colors from other formats.
  
       :services-it-tools:&ensp;**IT-Tools:**
       
-      + Another service hosted on this local network, [IT-Tools](it-tools.md), also has a great [color converter:symbols-external-link-small:](http://pi-server.internal:8080/color-converter).  
+      + Another service hosted on this local network, [IT-Tools](it-tools.md), also has a great [color converter](http://pi-server.internal:8080/color-converter){ external-link }.  
 
 6.    Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% **lighter / darker** depending on the scheme. 
 
@@ -229,11 +229,11 @@ hide:
       
       Then paste the hashed string into the corresponding variable in the `.env` file.
 
-5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one:symbols-external-link-small:](https://colorpicker.dev/#121212) to convert colors from other formats.
+5.    Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212){ external-link } to convert colors from other formats.
  
       :services-it-tools:&ensp;**IT-Tools:**
       
-      + Another service hosted on this local network, [IT-Tools](it-tools.md), also has a great [color converter:symbols-external-link-small:](http://pi-server.internal:8080/color-converter).  
+      + Another service hosted on this local network, [IT-Tools](it-tools.md), also has a great [color converter](http://pi-server.internal:8080/color-converter){ external-link }.  
 
 6.    Used to increase or decrease the contrast of the text. A value of `1.5` means that the text will be 50% **lighter / darker** depending on the scheme. 
 

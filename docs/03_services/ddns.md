@@ -23,7 +23,7 @@ hide:
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
-:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools:symbols-external-link-small:](https://addr.tools).
+:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
  
 #### :symbols-settings-ethernet:&ensp;Port(s) 
 

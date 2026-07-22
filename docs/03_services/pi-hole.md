@@ -70,7 +70,7 @@ hide:
     **Configure DoH / DoT with Pi-hole:**
     :    For secure, encrypted recursive DNS queries, configure `dnscrypt-proxy`. 
 
-        * [Pi-hole w/ dnscrypt-proxy:symbols-external-link-small:](https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/)
+        * [Pi-hole w/ dnscrypt-proxy](https://docs.pi-hole.net/guides/dns/dnscrypt-proxy/){ external-link }
 
     **Synchronize Pi-hole Settings:**
     :    To synchronize the settings from the primary Pi-hole instance to a second instance use [Nebula-Sync](nebula-sync.md). 

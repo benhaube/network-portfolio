@@ -90,4 +90,4 @@ hide:
 2. Enable the static file server. 
 3. Another common task is to set up a reverse proxy.
 4. Or serve a PHP site through php-fpm.
-5. Refer to the [Caddy Docs:symbols-external-link-small:](https://caddyserver.com/docs/caddyfile) for more information. 
+5. Refer to the [Caddy Docs](https://caddyserver.com/docs/caddyfile){ external-link } for more information. 

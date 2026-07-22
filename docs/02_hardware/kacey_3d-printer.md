@@ -88,7 +88,7 @@ hide:
 |  Status  | Service                                                     |   Port(s)   | Role / Notes                                                                                   |
 | :------: | :---------------------------------------------------------- | :---------: | :--------------------------------------------------------------------------------------------- |
 | *Active* | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   | `80` `4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
-| *Active* | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |   `7125`    | Web API server for [Klipper:symbols-external-link-small:](https://www.klipper3d.org/).         |
+| *Active* | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |   `7125`    | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |
 | *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)    |    `22`     | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
@@ -98,15 +98,15 @@ hide:
 
     :symbols-cpu:&ensp;**Firmware:**
  
-    + The standard firmware from Creality is heavily modified with the [Creality Helper Script:symbols-external-link-small:](https://guilouz.github.io/Creality-Helper-Script-Wiki/).  See documentation for configuration issues.
+    + The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ external-link }.  See documentation for configuration issues.
  
     :symbols-package:&ensp;**Software:**
  
     + Fluidd 
-        + For information regarding the [Fluidd](../03_services/fluidd.md) Web UI see the [documentation:symbols-external-link-small:](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/).    
+        + For information regarding the [Fluidd](../03_services/fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ external-link }.    
     + Klipper / Moonraker
-        + For information regarding Klipper configuration see the [documentation:symbols-external-link-small:](https://www.klipper3d.org/).
-        + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation:symbols-external-link-small:](https://moonraker.readthedocs.io/en/latest/).
+        + For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/){ external-link }.
+        + Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/){ external-link }.
  
     :symbols-printer-3d-nozzle:&ensp;**Hardware:**
  
@@ -122,9 +122,9 @@ hide:
 
 #### :symbols-update:&ensp;Update Process
 
-* Update most software through the [Fluidd Web UI:symbols-external-link-small:](http://k1c-a71e.internal).
+* Update most software through the [Fluidd Web UI](http://k1c-a71e.internal){ external-link }.
 * Update Entware packages in terminal via [SSH](../03_services/ssh.md) 
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-* Configuration files are backed up automatically to a private [GitHub:symbols-external-link-small:](https://github.com/benhaube/creality-K1C-klipper-backup) repository. 
+* Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository. 

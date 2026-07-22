@@ -29,11 +29,11 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 
 ##### Immutable Documentation 
 
-:    Maintaining a "Single Source of Truth" using **Markdown** with [VSCodium:symbols-external-link-small:](https://vscodium.com/) and [Material for MkDocs:symbols-external-link-small:](https://squidfunk.github.io/mkdocs-material/) to ensure the infrastructure is reproducible and transparent.
+:    Maintaining a "Single Source of Truth" using **Markdown** with [VSCodium](https://vscodium.com/){ external-link } and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){ external-link } to ensure the infrastructure is reproducible and transparent.
 
 ##### Continuous Learning
 
-:    From earning my [CompTIA:symbols-external-link-small:](https://www.comptia.org/en-us/) *(A+ & Linux+)* to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
+:    From earning my [CompTIA](https://www.comptia.org/en-us/){ external-link } *(A+ & Linux+)* to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
     
 ## :symbols-motorsports-outline:&ensp;Beyond the Terminal
 

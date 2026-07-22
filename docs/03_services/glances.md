@@ -55,7 +55,7 @@ hide:
 --8<-- "glances-pi-4b.yml"
 ```
 
-1. See all image tags here:&ensp;[Docker Hub:symbols-external-link-small:](https://hub.docker.com/r/nicolargo/glances/tags)
+1. See all image tags here:&ensp;[Docker Hub](https://hub.docker.com/r/nicolargo/glances/tags){ external-link }
 2. Uncomment for SATA or NVME smartctl monitoring.
 3. Uncomment for SATA smartctl monitoring.
 4. Uncomment for NVME smartctl monitoring.

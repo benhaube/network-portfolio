@@ -33,7 +33,7 @@ hide:
 
 2.  **Deletion *(Desktop)*:**
     + **Manual:** 
-        + **Go to:**&nbsp;[Google Photos:symbols-external-link-small:](https://photos.google.com) 
+        + **Go to:**&nbsp;[Google Photos](https://photos.google.com){ external-link } 
         + :symbols-mouse-left:&nbsp;first photo&emsp;:symbols-move-right:&emsp;:symbols-mouse::symbols-arrow-down:&emsp;:symbols-move-right:&emsp;++shift++&nbsp;+&nbsp;:symbols-mouse-left:&nbsp;last photo&emsp;:symbols-move-right:&emsp;++del++
     + **Console Script *(Advanced)*:** 
         + Open Chrome DevTools:&ensp;++f12++&ensp;:symbols-move-right:&ensp;Console. 

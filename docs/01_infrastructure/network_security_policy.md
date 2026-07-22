@@ -36,7 +36,7 @@ tags:
 
 + An [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) acts as the primary firewall, utilizing **SPI** and **DoS / DDoS** protection.
 + The two-way **IPS** built into the ASUS router uses SPI to protect any device connected to the network from spam, DoS / DDoS attacks, and from malicious packets entering or exiting the network. 
-+ The Asuswrt-Merlin firmware extends the basic functionality of the built-in firewall with [Skynet:symbols-external-link-small:](https://github.com/Adamm00/IPSet_ASUS). It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
++ The Asuswrt-Merlin firmware extends the basic functionality of the built-in firewall with [Skynet](https://github.com/Adamm00/IPSet_ASUS){ external-link }. It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
 
 ### External Access
 
@@ -57,7 +57,7 @@ tags:
 
 ### Upstream Privacy
 
-+ Queries are forwarded to [Quad-9:symbols-external-link-small:](https://quad9.net/) via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle:symbols-external-link-small:](https://en.wikipedia.org/wiki/Man-in-the-middle_attack))* attacks.
++ Queries are forwarded to [Quad-9](https://quad9.net/){ external-link } via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack){ external-link })* attacks.
 
 ### Blocking
 
@@ -86,7 +86,7 @@ tags:
 
 ##### Credential Storage
 
-+ [Bitwarden:symbols-external-link-small:](https://vault.bitwarden.com) is utilized to securely store passwords, API keys, and SSH keys. 
++ [Bitwarden](https://vault.bitwarden.com){ external-link } is utilized to securely store passwords, API keys, and SSH keys. 
 	+ Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely.
 	+ The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. 
 	+ The mobile application auto-fills passwords on websites and native applications.

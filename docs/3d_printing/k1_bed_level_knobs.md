@@ -27,7 +27,7 @@ hide:
 
 !!! note inline end "Installation Note"
 
-    :symbols-fan:&ensp;**Graphite Bed & Bed Fans:**
+    :symbols-fan:{ .spin }&ensp;**Graphite Bed & Bed Fans:**
     :     If you plan to install a graphite heated bed upgrade, or if you want to increase your chamber temperature for ABS / ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
 
         [Graphite Bed Kit&ensp;:brands-r3men:](https://www.r3men.com/products/graphite-heated-bed-for-creality-k1-k1c-k1se?ref=3dphub){ .md-button }

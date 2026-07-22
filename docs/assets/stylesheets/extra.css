@@ -394,3 +394,37 @@ img[src$=".gif" i] {
   background: #000;
   backdrop-filter: blur(.3rem) !important;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+ * Custom Icon Animations     *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~ Spin Animation ~~~ */
+@keyframes spin {
+  0% {
+    transform:rotate(0)
+  }
+  to {
+    transform:rotate(360deg)
+  }
+}
+@keyframes spin-alt {
+  0% {
+    transform:rotate(360deg)
+  }
+  to {
+    transform:rotate(0)
+  }
+}
+.spin {
+	animation-name: spin;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.spin-alt {
+  animation-name:spin-alt;
+  animation-duration:1s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite
+}

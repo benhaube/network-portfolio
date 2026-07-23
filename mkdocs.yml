@@ -30,14 +30,16 @@ extra_css:
   # Other CSS files are imported into the main 'extra.css' file.
   - assets/stylesheets/extra.css
 extra_javascript:
-  # Pull in mermaid.js
+  # Pull in Mermaid & elk
   - assets/javascripts/mermaid.mjs
   # Pull in tablesort
+  - assets/javascripts/tablesort.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.dotsep.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.filesize.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.monthname.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js
-  - assets/javascripts/tablesort.js
 
 # ~~~ Theme Settings ~~~
 
@@ -110,7 +112,7 @@ theme:
     view: symbols/scan-eye
     alternate: symbols/languages
 
-    # Change icons for built-in admonitions. Custom admonitions are defined in CSS.
+    # Change icons for built-in admonitions. (Custom admonitions are defined in '/assets/stylesheets/admonition.css')
     admonition:
       note: symbols/paperclip
       abstract: symbols/notebook-text
@@ -280,7 +282,7 @@ plugins:
       log: true
       log_level: warn
       cards_layout_options:
-        font_family: Google Sans Flex
+        font_family: Google Sans
   - blog:
       authors: true
       authors_file: "{blog}/.authors.yml"

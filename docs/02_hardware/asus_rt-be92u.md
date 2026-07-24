@@ -65,7 +65,7 @@ hide:
 #### :symbols-wifi-cog:&ensp;Wi-Fi Networks
 
 |     SSID     |  VLAN  |   WAN Access    | CIDR {data-sort-method='dotsep'} | Frequency {data-sort-method='none'}   | Notes                                      |
-| :----------: | :----: | :-------------: | :------------------------------- | :--------------------==-------------- | :----------------------------------------- |
+| :----------: | :----: | :-------------: | :------------------------------- | :------------------------------------ | :----------------------------------------- |
 |    *Home*    | VLAN50 | :symbols-check: | `192.168.50.0/24`                | 2.4 GHz / 5 GHz / 6 GHz               | :symbols-shield-quarter:&nbsp;Trusted VLAN |
 | *Home_Guest* | VLAN52 | :symbols-check: | `192.168.52.0/24`                | 2.4 GHz / 5 GHz                       | :symbols-shield-user:&nbsp;Guest VLAN      |
 |   *2G_IoT*   | VLAN53 |   :symbols-x:   | `192.168.53.0/24`                | 2.4 GHz                               | :symbols-shield-house:&nbsp;IoT VLAN       |

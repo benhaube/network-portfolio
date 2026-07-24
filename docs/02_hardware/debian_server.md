@@ -70,11 +70,11 @@ hide:
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                                |        Port(s)         | Role / Notes                                                                                   |
-| :------: | :--------------------------------------------------------------------- | :--------------------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                       |
-| *Active* | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md)  |   `53` `443` `5380`    | An open-source authoritative as well as recursive DNS server.                                  |
+|  Status  | Service                                                                |           Port(s)            | Role / Notes                                                                                   |
+| :------: | :--------------------------------------------------------------------- | :--------------------------: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |             `22`             | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384`<br>`22000`<br>`21027` | Open decentralized file synchronization.                                                       |
+| *Active* | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md)  |   `53`<br>`443`<br>`5380`    | An open-source authoritative as well as recursive DNS server.                                  |
 
 #### :symbols-container:&ensp;Docker Container
 

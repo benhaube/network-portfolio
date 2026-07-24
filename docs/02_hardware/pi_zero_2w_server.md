@@ -77,11 +77,11 @@ hide:
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                                |        Port(s)         | Role / Notes                                                                                                                          |
-| :------: | :--------------------------------------------------------------------- | :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md)                 |       `80` `443`       | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |          `22`          | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
-| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization.                                                                                              |
+|  Status  | Service                                                                |           Port(s)            | Role / Notes                                                                                                                          |
+| :------: | :--------------------------------------------------------------------- | :--------------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
+| *Active* | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md)                 |        `80`<br>`443`         | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |             `22`             | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384`<br>`22000`<br>`21027` | Open decentralized file synchronization.                                                                                              |
 
 #### :symbols-container:&ensp;Docker Container
 

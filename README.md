@@ -321,6 +321,14 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
 
 3. After saving and closing the file you can now use the `mkdocs serve` and `mkdocs build` commands as usual, and the new navigation button icons shown on Mermaid diagrams using the Panzoom plugin will have the new, matching Lucide icons. 
 
+    **Before:**
+
+    ![Panzoom button icons before modification](readme-assets/panzoom-button-before.png)
+
+    **After:**
+
+    ![Panzoom button icons after modification](readme-assets/panzoom-button-after.png)
+
 > [!note]
 > The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with "panzoom-icon". 
 > 

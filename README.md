@@ -279,6 +279,49 @@ zensical serve
 zensical build
 ```
 
+## Custom Icons for Panzoom Plugin
+
+I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG0N/mkdocs-panzoom) plugin with Lucide icons to match the rest of the site. The icons cannot be applied using CSS due to the way the Panzoom plugin is written. To use the custom icons you need to copy the XML text into the `panzoom_box.py` file located in your virtual environement directory. 
+
+1. Locate the `panzoom_box.py` file: 
+
+    ```
+    .venv/lib/python3.14/site-packages/mkdocs_panzoom_plugin/panzoom_box.py
+    ```
+
+2. Open the file and replace the SVG icon XML with the custom icons:
+
+    ```python
+    info_button = """<button class="panzoom-info panzoom-button">
+        <svg class="panzoom-icon" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m12 1c-6.0633 0-11 4.9367-11 11 0 6.0633 4.9367 11 11 11 6.0633 0 11-4.9367 11-11 0-6.0633-4.9367-11-11-11zm0 2c4.9824 0 9 4.0176 9 9 0 4.9824-4.0176 9-9 9-4.9824 0-9-4.0176-9-9 0-4.9824 4.0176-9 9-9zm-.0625 2.9961c-1.551-.0023421-3.1655.89385-3.791 2.6719a1 1 0 00.61133 1.2754 1 1 0 001.2754-.61133c.40595-1.154 1.3156-1.4645 2.2246-1.3086s1.6639.7513 1.6621 1.9746a1.0001 1.0001 0 000 .0019531c0 .5-.4327 1.0033-1.0547 1.418-.62199.41466-1.2617.63281-1.2617.63281a1 1 0 00-.63281 1.2656 1 1 0 001.2656.63281s.86027-.28185 1.7383-.86719c.8776-.58507 1.9443-1.5812 1.9453-3.0801v-.001953c.002189-2.153-1.5977-3.6511-3.3242-3.9473-.21588-.037029-.43664-.056306-.6582-.056641zm.0625 10.004a1 1 0 00-1 1 1 1 0 001 1h.009766a1 1 0 001-1 1 1 0 00-1-1h-.009766z"/>
+        </svg>
+    </button>"""
+
+    reset_button = """<button class="panzoom-reset panzoom-button">
+        <svg class="panzoom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m3 2a1 1 0 00-1 1v5a1.0001 1.0001 0 00.0078125.13086 1.0001 1.0001 0 00.068359.25195 1.0001 1.0001 0 00.54102.54102 1.0001 1.0001 0 00.25195.068359 1.0001 1.0001 0 00.13086.0078125h5a1 1 0 001-1 1 1 0 00-1-1h-2.5859l.54102-.54102c1.6227-1.5687 3.788-2.4495 6.0449-2.459 3.6064 0 6.2327 2.1417 7.3906 4.9375 1.1579 2.7958.81536 6.169-1.7344 8.7188s-5.923 2.8923-8.7188 1.7344c-2.7958-1.1579-4.9375-3.7843-4.9375-7.3906a1 1 0 00-1-1 1 1 0 00-1 1c0 4.4123 2.7051 7.8017 6.1738 9.2383 3.4687 1.4366 7.7768.95169 10.896-2.168 3.1197-3.1197 3.6046-7.4278 2.168-10.896-1.4366-3.4687-4.8259-6.1738-9.2383-6.1738a1.0001 1.0001 0 00-.003906 0c-2.7738.010435-5.4374 1.0936-7.4316 3.0215a1.0001 1.0001 0 00-.011719.011719l-.55273.55273v-2.5859a1 1 0 00-1-1z"/>
+        </svg>
+    </button>"""
+
+    max_button = """<button class="panzoom-max panzoom-button">
+        <svg class="panzoom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m5 2c-1.645 0-3 1.355-3 3v3a1 1 0 001 1 1 1 0 001-1v-3c0-.56413.43587-1 1-1h3a1 1 0 001-1 1 1 0 00-1-1h-3zm11 0a1 1 0 00-1 1 1 1 0 001 1h3c.56413 0 1 .43587 1 1v3a1 1 0 001 1 1 1 0 001-1v-3c0-1.645-1.355-3-3-3h-3zm-13 13a1 1 0 00-1 1v3c0 1.645 1.355 3 3 3h3a1 1 0 001-1 1 1 0 00-1-1h-3c-.56413 0-1-.43587-1-1v-3a1 1 0 00-1-1zm18 0a1 1 0 00-1 1v3c0 .56413-.43587 1-1 1h-3a1 1 0 00-1 1 1 1 0 001 1h3c1.645 0 3-1.355 3-3v-3a1 1 0 00-1-1z"/>
+        </svg>
+    </button>"""
+
+    min_button = """<button class="panzoom-min panzoom-button panzoom-hidden">
+        <svg class="panzoom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m8 2a1 1 0 00-1 1v3c0 .56413-.43587 1-1 1h-3a1 1 0 00-1 1 1 1 0 001 1h3c1.645 0 3-1.355 3-3v-3a1 1 0 00-1-1zm8 0a1 1 0 00-1 1v3c0 1.645 1.355 3 3 3h3a1 1 0 001-1 1 1 0 00-1-1h-3c-.56413 0-1-.43587-1-1v-3a1 1 0 00-1-1zm-13 13a1 1 0 00-1 1 1 1 0 001 1h3c.56413 0 1 .43587 1 1v3a1 1 0 001 1 1 1 0 001-1v-3c0-1.645-1.355-3-3-3h-3zm15 0c-1.645 0-3 1.355-3 3v3a1 1 0 001 1 1 1 0 001-1v-3c0-.56413.43587-1 1-1h3a1 1 0 001-1 1 1 0 00-1-1h-3z"/>
+        </svg>
+    </button>"""
+    ```
+
+    > [!note]
+    > The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with "panzoom-icon". 
+    > 
+    > After ugrading the `mkdocs-panzoom-plugin` package you may need to re-apply this modification to the `panzoom_box.py` file. Depending on the changes made by the upgrade, the file may be overwritten.
+
 ## 🙏🏻 Special Thanks
 
 I would like to give special thanks to the following projects whose work was used extensively in this project:

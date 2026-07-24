@@ -500,6 +500,10 @@ img[src$=".gif" i] {
     background: var(--md-code-bg-color) !important;
     z-index: auto !important;
 }
+.panzoom-info-box-top {
+    background: var(--md-code-bg-color) !important;
+    z-index: auto !important;
+}
 
 /* ~~~ Button Box ~~~ */
 

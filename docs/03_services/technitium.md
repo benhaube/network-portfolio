@@ -37,12 +37,12 @@ hide:
 
 :   :symbols-layers:&nbsp;Debian Server
     
-      + `192.168.50.6` &mdash; First DNS server
+      + `192.168.50.6` &mdash; Primary server
       + <http://debian-vm.internal:5380>
 
 :    :symbols-server:&nbsp;Pi 4B Server
     
-      + `192.168.50.2` &mdash; Second DNS server
+      + `192.168.50.2` &mdash; Secondary server
       + <http://pi-server.internal:5380>
 
 #### :symbols-user-key:&ensp;Credentials 

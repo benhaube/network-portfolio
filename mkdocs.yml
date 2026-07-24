@@ -268,7 +268,7 @@ plugins:
   - awesome-nav
   - panzoom:
       full_screen: true
-      always_show_hint: true 
+      always_show_hint: false 
   - tags:
       export: true
       tags_sort_by: !!python/name:material.plugins.tags.tag_name_casefold

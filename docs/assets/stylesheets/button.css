@@ -21,7 +21,7 @@
   color: var(--md-default-fg-color--light);
   background-color: var(--md-default-fg-color--lightest);
   font-size:.875em;
-  font-weight: 600;
+  font-weight: 700;
   padding: .625em 2em;
   transition: color 250ms, background-color 250ms, border-color 250ms ease-in-out !important;
 }

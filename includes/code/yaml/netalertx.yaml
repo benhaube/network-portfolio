@@ -1,0 +1,35 @@
+services:
+  netalertx:
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+      - NET_BIND_SERVICE
+      - CHOWN
+      - SETUID
+      - SETGID
+    cap_drop:
+      - ALL
+    container_name: big-bear-netalertx-v26
+    environment:
+      - ALWAYS_FRESH_INSTALL=false
+      - PGID=1000
+      - PORT=20211
+      - PUID=1000
+      - TZ=UTC
+    image: jokobsk/netalertx:26.7.1
+    restart: unless-stopped
+    tmpfs:
+      - /tmp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/big-bear-netalertx-v26/config
+        target: /data/config
+        bind:
+          create_host_path: true
+      - type: bind
+        source: /DATA/AppData/big-bear-netalertx-v26/db
+        target: /data/db
+        bind:
+          create_host_path: true
+    network_mode: host
+    privileged: false

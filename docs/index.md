@@ -156,6 +156,9 @@ hide:
 [:symbols-refresh-cw:&ensp;Nebula-Sync](03_services/nebula-sync.md)
 :    Synchronize configuration between multiple [Pi-hole](https://pi-hole.net){ external-link } instances.
 
+[:services-netalertx:&ensp;NetAlertX](03_services/netalertx.md)
+:    Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
+
 [:services-nextcloud:&ensp;Nextcloud](03_services/nextcloud.md)
 :    Self-hosted cloud storage and collaboration platform.
 

@@ -328,7 +328,7 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
 
 ## 🙏🏻 Special Thanks
 
-I would like to give special thanks to the following projects whose work was used extensively in this project:
+I would like to give special thanks to the following projects whose work is used extensively for this project:
 
 + **[Google](https://fonts.google.com/):**
     + For their `Google Sans` and `Google Sans Code` fonts

@@ -46,9 +46,9 @@ hide:
 
 ## :symbols-package-search: Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name           | Image                      |
-| :------------------------------------------------------------------- | :---------------------------------------- | :----------------------- | :------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `big-bear-netalertx-v26` | `jokobsk/netalertx:26.7.1` |
+| Host Device                                                          | Method                                    | Container Name  | Image                      |
+| :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx-v26` | `jokobsk/netalertx:26.7.1` |
 
 ### :symbols-settings: Configuration 
 

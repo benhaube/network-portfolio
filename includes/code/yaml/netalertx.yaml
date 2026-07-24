@@ -9,7 +9,7 @@ services:
       - SETGID
     cap_drop:
       - ALL
-    container_name: big-bear-netalertx-v26
+    container_name: netalertx-v26
     environment:
       - ALWAYS_FRESH_INSTALL=false
       - PGID=1000

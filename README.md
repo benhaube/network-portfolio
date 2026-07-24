@@ -281,7 +281,9 @@ zensical build
 
 ## Custom Icons for Panzoom Plugin
 
-I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG0N/mkdocs-panzoom) plugin with Lucide icons to match the rest of the site. The icons cannot be applied using CSS due to the way the Panzoom plugin is written. To use the custom icons you need to copy the XML text into the `panzoom_box.py` file located in your virtual environement directory. 
+I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG0N/mkdocs-panzoom) plugin with [Lucide](https://lucide.dev/) icons to match the rest of the site. The icons cannot be applied using CSS due to the way the Panzoom plugin is written. To use the custom icons you need to copy the XML text into the `panzoom_box.py` file located in your virtual environement directory. 
+
+#### Apply Customization
 
 1. Locate the `panzoom_box.py` file: 
 
@@ -289,7 +291,7 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
     .venv/lib/python3.14/site-packages/mkdocs_panzoom_plugin/panzoom_box.py
     ```
 
-2. Open the file and replace the SVG icon XML with the custom icons:
+2. Open the file and replace the SVG icon XML with the new, custom icons:
 
     ```python
     info_button = """<button class="panzoom-info panzoom-button">
@@ -316,6 +318,8 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
         </svg>
     </button>"""
     ```
+
+3. After saving and closing the file you can now use the `mkdocs serve` and `mkdocs build` commands as usual, and the new navigation button icons shown on Mermaid diagrams using the Panzoom plugin will have the new, matching Lucide icons. 
 
 > [!note]
 > The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with "panzoom-icon". 

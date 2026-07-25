@@ -25,12 +25,12 @@ hide:
 
 #### DNS Servers
 
-* Technitium Cluster Primary:&ensp;[:services-technitium:&nbsp;Debian Server](../02_hardware/debian_server.md)
-* Technitium Cluster Secondary:&ensp;[:services-technitium:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)
+* Technitium Cluster Primary:&ensp;[:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)
+* Technitium Cluster Secondary:&ensp;[:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)
 
 #### Reverse Proxy
 
-* Caddy:&ensp;[:services-caddy:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)
+* Caddy:&ensp;[:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)
 
 #### Application Hosts
 

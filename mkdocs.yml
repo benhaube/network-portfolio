@@ -108,8 +108,8 @@ theme:
     search: symbols/search
     share: symbols/share-2
     annotation: symbols/circle-chevron-right
-    edit: symbols/square-pen
-    view: symbols/scan-eye
+    edit: symbols/file-pen
+    view: symbols/file-code-corner
     alternate: symbols/languages
 
     # Change icons for built-in admonitions. (Custom admonitions are defined in '/assets/stylesheets/admonition.css')

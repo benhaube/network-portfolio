@@ -47,7 +47,22 @@
 
 /* ~~~ Page 'view' & 'edit' buttons ~~~ */
 
-/* Set the margin from the edge of the page */
+.md-content__inner:before {
+  content:"";
+  display: block;
+  height: .4rem
+}
+.md-content__inner>:last-child {
+  margin-bottom: 0
+}
+/* Set the position on the page */
+[dir=ltr] .md-content__button {
+  float: right
+}
+[dir=rtl] .md-content__button {
+  float: left
+}
+/* Set the left & right margin */
 [dir=ltr] .md-content__button {
   margin-left: .4rem;
 }
@@ -56,24 +71,45 @@
 }
 /* Set margin between buttons, give buttons a background with rounded corners, set icon padding, set margin from top of page */
 .md-content__button {
-  margin: .4rem 0;
-  background: var(--md-default-fg-color--lightest);
-  padding: .3rem;
+  background-color: var(--md-default-fg-color--lightest);
   border-radius: .4rem;
-  margin-top: .7rem;
+  display: flex;
+  margin-top: .2rem;
+  padding: .3rem
+}
+/* Dont show button on printed page */
+@media print {
+  .md-content__button {
+    display: none
+  }
+}
+/* Set icon color & opacity */
+.md-typeset .md-content__button {
+  color: var(--md-default-fg-color);
+  transition: color .25s,background-color .25s
+}
+.md-typeset .md-content__button svg {
+  opacity: .5;
+  transition: opacity .25s
+}
+/* Button hover behavior */
+.md-typeset .md-content__button:focus,
+.md-typeset .md-content__button:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color)
+}
+/* Set icon opacity on hover */
+.md-typeset .md-content__button:focus svg,
+.md-typeset .md-content__button:hover svg {
+  opacity: 1
+}
+[dir=rtl] .md-content__button svg {
+  transform: scaleX(-1)
 }
 /* Set the size of the icon */
 .md-content__button svg {
-  display: flex;
   height: .9rem;
   width: .9rem;
-}
-/* Hover: Set the background and icon color, add a 250ms transition */
-.md-content__button:hover {
-  box-shadow: var(--md-shadow-z2);
-  background: var(--md-accent-fg-color--transparent);
-  color: var(--md-accent-fg-color) !important;
-  transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out !important;
 }
 
 /* ~~~ Back-to-top button ~~~ */ 

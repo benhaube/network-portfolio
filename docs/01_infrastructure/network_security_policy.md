@@ -24,7 +24,7 @@ tags:
 ## :symbols-square-split-horizontal:&ensp;Network Segmentation 
 &emsp;&emsp;&ensp;*VLAN Architecture*
 
-| Zone                                                                               | VLAN ID              | Description                                            | Access Rules                                                                                                                                          |
+| Zone                                                                               | VLAN ID              | Description {data-sort-method="none"}                  | Access Rules {data-sort-method="none"}                                                                                                                |
 | :--------------------------------------------------------------------------------- | :------------------- | :----------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [:symbols-shield-quarter:&nbsp;Trusted](mac_address_tables.md#trusted-network)     | *VLAN50*&emsp;&emsp; | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                                                                |
 | [:symbols-shield-user:&nbsp;Guest](ip_address_mangement.md#virtual-local-networks) | *VLAN52*&emsp;&emsp; | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                                                          |

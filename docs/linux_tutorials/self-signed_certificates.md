@@ -75,14 +75,14 @@ Now that we have the private key and the CSR we have the pieces we need to gener
 
     1. Replace `example.csr` and `example.key` with the file names you chose previously, and replace `example.crt` with your preferred file name for the certificate. Again, I usually use the same file name for everything to keep it simple. 
 
-    | Option      | Description                                                                                       |
-    | :---------- | :------------------------------------------------------------------------------------------------ |
-    | `x509`      | The command to perform certificate operations. *(e.g., signing, generating, and displaying info)* |
-    | `-req`      | Tells OpenSSL to treat the input file as a CSR and not a certificate.                             |
-    | `-days 365` | Specifies the validity period of the certificate in days.                                         |
-    | `-in`       | Specifies the input file to be used.                                                              |
-    | `-signkey`  | Specifies the private key that will be used to sign the certificate.                              |
-    | `-out`      | Specifies the file name for the output signed certificate file.                                   |
+    | Option {data-sort-method="none"} | Description  {data-sort-method="none"}                                                            |
+    | :------------------------------- | :------------------------------------------------------------------------------------------------ |
+    | `x509`                           | The command to perform certificate operations. *(e.g., signing, generating, and displaying info)* |
+    | `-req`                           | Tells OpenSSL to treat the input file as a CSR and not a certificate.                             |
+    | `-days 365`                      | Specifies the validity period of the certificate in days.                                         |
+    | `-in`                            | Specifies the input file to be used.                                                              |
+    | `-signkey`                       | Specifies the private key that will be used to sign the certificate.                              |
+    | `-out`                           | Specifies the file name for the output signed certificate file.                                   |
 
 ## :symbols-file-config:&ensp;Configure the Web Server
 

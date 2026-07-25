@@ -158,14 +158,14 @@ Instead of using cron jobs, the `unattended-upgrades` package relies on Systemd 
 
 The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the upgrades are complete before the system powers off. Below is a table containing common Systemd service management commands.
 
-| Action               | Command                                      |
-| :------------------- | :------------------------------------------- |
-| Check service status | `systemctl status unattended-upgrades`       |
-| Stop the service     | `sudo systemctl stop unattended-upgrades`    |
-| Start the service    | `sudo systemctl start unattended-upgrades`   |
-| Disable on boot      | `sudo systemctl disable unattended-upgrades` |
-| Enable on boot       | `sudo systemctl enable unattended-upgrades`  |
-| Restart the service  | `sudo systemctl restart unattended-upgrades` |
+| Action {data-sort-method="none"} | Command {data-sort-method="none"}            |
+| :------------------------------- | :------------------------------------------- |
+| Check service status             | `systemctl status unattended-upgrades`       |
+| Stop the service                 | `sudo systemctl stop unattended-upgrades`    |
+| Start the service                | `sudo systemctl start unattended-upgrades`   |
+| Disable on boot                  | `sudo systemctl disable unattended-upgrades` |
+| Enable on boot                   | `sudo systemctl enable unattended-upgrades`  |
+| Restart the service              | `sudo systemctl restart unattended-upgrades` |
 
 ## :symbols-terminal-alt:&ensp;CLI Options
 
@@ -175,16 +175,16 @@ Below is a table containing the options included with the `unattended-upgrade` c
 
     You can use the options, `--dry-run` and `--debug`, after making configuration changes to verify your settings are working properly before deploying and relying on the automatic updates.
 
-| Option                       | Description                                                                   |
-| :--------------------------- | :---------------------------------------------------------------------------- |
-| `-h`, `--help`               | Print the 'help' message and exit.                                            |
-| `-d`, `--debug`              | Print debug messages.                                                         |
-| `--apt-debug`                | Make apt/libapt print verbose debug messages.                                 |
-| `-v`, `--verbose`            | Print info messages.                                                          |
-| `--dry-run`                  | Simulation, download but do not install.                                      |
-| `--download-only`            | Only download, do not even try to install.                                    |
-| `--minimal-upgrade-steps`    | Upgrade in minimal steps (and allow interrupting with `SIGTERM`). *(default)* |
-| `--no-minimal-upgrade-steps` | Upgrade all packages together instead of in smaller sets.                     |
+| Option {data-sort-method="none"} | Description {data-sort-method="none"}                                         |
+| :------------------------------- | :---------------------------------------------------------------------------- |
+| `-h`, `--help`                   | Print the 'help' message and exit.                                            |
+| `-d`, `--debug`                  | Print debug messages.                                                         |
+| `--apt-debug`                    | Make apt/libapt print verbose debug messages.                                 |
+| `-v`, `--verbose`                | Print info messages.                                                          |
+| `--dry-run`                      | Simulation, download but do not install.                                      |
+| `--download-only`                | Only download, do not even try to install.                                    |
+| `--minimal-upgrade-steps`        | Upgrade in minimal steps (and allow interrupting with `SIGTERM`). *(default)* |
+| `--no-minimal-upgrade-steps`     | Upgrade all packages together instead of in smaller sets.                     |
 
 ## :symbols-file-config:&ensp;Configure Unattended-Upgrades
 

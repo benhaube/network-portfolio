@@ -66,17 +66,17 @@ hide:
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity | Device Path                                                   | File System | Encryption |
-| :---------- | :--------- | :------------- | :------------------------------------------------------------ | :---------- | :--------- |
-| `C:`        | NVMe SSD   | 464 GB         | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_970\5&345CC925&0&000000` | `ntfs`      | BitLocker  |
-| `D:`        | SATA HDD   | 1.81 TB        | `SCSI\DISK&VEN_WDC&PROD_WD2003FZEX-00SRL\4&E91BE7&0&050000`   | `ntfs`      | -          |
-| `G:`        | NVMe SSD   | 931 GB         | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_980\5&EBD909B&0&000000`  | `ntfs`      | -          |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path                                                   | File System | Encryption |
+| :---------- | :--------- | :------------------------------------------- | :------------------------------------------------------------ | :---------- | :--------- |
+| `C:`        | NVMe SSD   | 464 GB                                       | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_970\5&345CC925&0&000000` | `ntfs`      | BitLocker  |
+| `D:`        | SATA HDD   | 1.81 TB                                      | `SCSI\DISK&VEN_WDC&PROD_WD2003FZEX-00SRL\4&E91BE7&0&050000`   | `ntfs`      | -          |
+| `G:`        | NVMe SSD   | 931 GB                                       | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_980\5&EBD909B&0&000000`  | `ntfs`      | -          |
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `-`         | -          | -              | `-`         | `-`         | -          |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :---------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `-`         | -          | -                                            | `-`         | `-`         | -          |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

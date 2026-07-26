@@ -69,27 +69,27 @@ hide:
 
 #### :symbols-hard-drive:&ensp;Internal Drive
 
-| Mount Point | Drive Type | Drive Capacity | Device Path       | File System | Encryption |
-| :---------- | :--------- | :------------- | :---------------- | :---------- | :--------- |
-| `/usr/data` | eMMC       | 6.5 GB         | `/dev/mmcblk0p10` | `ext4`      | -          |
-| `/overlay`  | eMMC       | 96.8 MB        | `/dev/mmcblk0p9`  | `ext4`      | -          |
-| `/rom`      | ROM        | 126.8 MB       | `/dev/root`       | `squashfs`  | -          |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path       | File System | Encryption |
+| :---------- | :--------- | :------------------------------------------- | :---------------- | :---------- | :--------- |
+| `/usr/data` | eMMC       | 6.5 GB                                       | `/dev/mmcblk0p10` | `ext4`      | -          |
+| `/overlay`  | eMMC       | 96.8 MB                                      | `/dev/mmcblk0p9`  | `ext4`      | -          |
+| `/rom`      | ROM        | 126.8 MB                                     | `/dev/root`       | `squashfs`  | -          |
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point       | Drive Type      | Drive Capacity | Device Path | File System | Encryption |
-| :---------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
-| `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB        | `/dev/sda1` | `vfat`      | -          |
+| Mount Point       | Drive Type      | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :---------------- | :-------------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB                                      | `/dev/sda1` | `vfat`      | -          |
 
 ## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                     |     Port(s)    | Role / Notes                                                                                   |
-| :------: | :---------------------------------------------------------- | :------------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   | `80`<br>`4408` | A free and open-source Klipper web interface for managing your 3D-printer.                     |
-| *Active* | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |     `7125`     | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)    |      `22`      | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+|  Status  | Service                                                     | Port(s) {data-sort-method='number'} | Role / Notes                                                                                   |
+| :------: | :---------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   |            `80`<br>`4408`           | A free and open-source Klipper web interface for managing your 3D-printer.                     |
+| *Active* | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |                `7125`               | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)    |                 `22`                | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

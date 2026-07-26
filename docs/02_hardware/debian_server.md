@@ -52,9 +52,9 @@ hide:
 
 ## :symbols-square-activity:&ensp;Resource Allocation
 
-|          vCPU          |  RAM  | Storage | VDI Location                             |
-| :--------------------: | :---: | :------ | :--------------------------------------- |
-| 2C / 2T *(VT-x, VT-d)* | 2 GB  | 50 GB   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
+|          vCPU          |  RAM  | Storage {data-sort-method='filesize'} | VDI Location                             |
+| :--------------------: | :---: | :------------------------------------ | :--------------------------------------- |
+| 2C / 2T *(VT-x, VT-d)* | 2 GB  | 50 GB                                 | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
 ## :symbols-lan:&ensp;Network Configuration
 

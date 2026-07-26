@@ -93,9 +93,9 @@ hide:
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point  | Drive Type | Drive Capacity | Device Path | File System | Encryption |
-| :----------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/`, `/home` | NVMe SSD   | 929 GB         | `/dev/dm-0` | `btrfs`     | LUKS2      |
+| Mount Point  | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :----------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `/`, `/home` | NVMe SSD   | 929 GB                                       | `/dev/dm-0` | `btrfs`     | LUKS2      |
 
 #### :symbols-usb:&ensp;External / Attached
 

@@ -85,29 +85,29 @@ hide:
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/`         | eMMC       | 49.1 MB        | `/dev/root` | `squashfs`  | -          |
-| `/jffs`     | -          | 44.5 MB        | `ubi:jffs2` | `ubifs`     | -          |
-| `/data`     | -          | 16.8 MB        | `bui:data`  | `ubifs`     | -          |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :---------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `/`         | eMMC       | 49.1 MB                                      | `/dev/root` | `squashfs`  | -          |
+| `/jffs`     | -          | 44.5 MB                                      | `ubi:jffs2` | `ubifs`     | -          |
+| `/data`     | -          | 16.8 MB                                      | `bui:data`  | `ubifs`     | -          |
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point           | Drive Type      | Drive Capacity | Device Path | File System | Encryption |
-| :-------------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
-| `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB        | `/dev/sda1` | `ext4`      | -          |
+| Mount Point           | Drive Type      | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :-------------------- | :-------------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB                                      | `/dev/sda1` | `ext4`      | -          |
 
 ## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 
 #### :symbols-penguin:&ensp;Native
 
-|  Status  | Service                                                                   | Port(s) | Role / Notes                                                                                                                                                                                                                         |
-| :------: | :------------------------------------------------------------------------ | :-----: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-clock-refresh-cw:&nbsp;Chrony](../03_services/chrony.md)        |  `123`  | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
-| *Active* | [:symbols-cloud-cog:&nbsp;DDNS](../03_services/ddns.md)                   |  `N/A`  | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.             |
-| *Active* | [:symbols-cloud-sync:&nbsp;SMB](../03_services/smb.md)                    |  `445`  | Remote file system access.                                                                                                                                                                                                           |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)                  |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                                                       |
-| *Active* | [:services-wireguard:&nbsp;WireGuard](../03_services/wireguard_server.md) | `41820` | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                                             |
+|  Status  | Service                                                                   | Port(s) {data-sort-method='number'} | Role / Notes                                                                                                                                                                                                                         |
+| :------: | :------------------------------------------------------------------------ | :---------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-clock-refresh-cw:&nbsp;Chrony](../03_services/chrony.md)        |                 `123`               | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
+| *Active* | [:symbols-cloud-cog:&nbsp;DDNS](../03_services/ddns.md)                   |                 `N/A`               | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.             |
+| *Active* | [:symbols-cloud-sync:&nbsp;SMB](../03_services/smb.md)                    |                 `445`               | Remote file system access.                                                                                                                                                                                                           |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)                  |                  `22`               | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                                                       |
+| *Active* | [:services-wireguard:&nbsp;WireGuard](../03_services/wireguard_server.md) |                `41820`              | An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.                                                                                                                                             |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

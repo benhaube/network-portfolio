@@ -58,30 +58,30 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                                                       |
-| :-------: | :------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
-|  `eth0`   | `192.168.50.4` | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 4)* |
-|  `eth1`   | `192.168.50.5` | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 5)* |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                       |
+| :-------: | :------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
+|  `eth0`   | `192.168.50.4`                         | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 4)* |
+|  `eth1`   | `192.168.50.5`                         | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 5)* |
 
-| Interface |               VLAN                   | FQDN                        | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------------: | :-------------------------- | :---------------------------- | :------------- |
-|  `eth0`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|  `eth1`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN                   | FQDN                        | DNS Servers {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------: | :-------------------------- | :-------------------------------------- | :---------------------------------- |
+|  `eth0`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                      |
+|  `eth1`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-microchip:&ensp;Boot
 
-| Mount Point | Drive Type | Drive Capacity | Device Path    | File System | Encryption |
-| :---------- | :--------- | :------------- | :------------- | :---------- | :--------- |
-| `/`         | eMMC       | 64 GB          | `/dev/mmcblk0` | `ext4`      | -          |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path    | File System | Encryption |
+| :---------- | :--------- | :------------------------------------------- | :------------- | :---------- | :--------- |
+| `/`         | eMMC       | 64 GB                                        | `/dev/mmcblk0` | `ext4`      | -          |
 
 #### :symbols-hard-drive:&ensp;Data
 
-| Mount Point            | Drive Type         | Drive Capacity | Device Path    | File System | Encryption |
-| :--------------------- | :----------------- | :------------- | :------------- | :---------- | :--------- |
-| `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB           | `/dev/md0`     | `btrfs`     | -          |
-| `/media/nvme0n1p1`     | NVMe SSD           | 250 GB         | `/dev/nvme0n1` | `ext4`      | -          |
+| Mount Point            | Drive Type         | Drive Capacity {data-sort-method='filesize'} | Device Path    | File System | Encryption |
+| :--------------------- | :----------------- | :------------------------------------------- | :------------- | :---------- | :--------- |
+| `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB                                         | `/dev/md0`     | `btrfs`     | -          |
+| `/media/nvme0n1p1`     | NVMe SSD           | 250 GB                                       | `/dev/nvme0n1` | `ext4`      | -          |
 
 ## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 

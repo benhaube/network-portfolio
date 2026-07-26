@@ -57,31 +57,31 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Connected To                                                                                                 |
-| :-------: | :------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
-|  `eth0`   | `192.168.50.2` | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } *(port 3, VLAN50)* |
-|  `wlan0`  | `192.168.53.2` | `E4:5F:01:A4:60:08` | [:symbols-wifi-cog:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN53)*                 |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                                 |
+| :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
+|  `eth0`   | `192.168.50.2`                         | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } *(port 3, VLAN50)* |
+|  `wlan0`  | `192.168.53.2`                         | `E4:5F:01:A4:60:08` | [:symbols-wifi-cog:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN53)*                 |
 
-| Interface |                VLAN                    | FQDN                 | DNS Servers | Gateway        |
-| :-------: | :------------------------------------: | :------------------- | :---------- | :------------- |
-|  `eth0`   |  :symbols-shield-quarter:&nbsp;VLAN50  | `pi-server.internal` | `127.0.0.1` | `192.168.50.1` |
-|  `wlan0`  |   :symbols-shield-house:&nbsp;VLAN53   | `N/A`                | `127.0.0.1` | `192.168.53.1` |
+| Interface |                VLAN                    | FQDN                 | DNS Servers {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :------------------------------------: | :------------------- | :-------------------------------------- | :---------------------------------- |
+|  `eth0`   |  :symbols-shield-quarter:&nbsp;VLAN50  | `pi-server.internal` | `127.0.0.1`                             | `192.168.50.1`                      |
+|  `wlan0`  |   :symbols-shield-house:&nbsp;VLAN53   | `N/A`                | `127.0.0.1`                             | `192.168.53.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point      | Drive Type | Drive Capacity | Device Path      | File System | Encryption |
-| :--------------- | :--------- | :------------- | :--------------- | :---------- | :--------- |
-| `/`              | MicroSD    | 117 GB         | `/dev/mmcblk0p2` | `ext4`      | -          |
-| `/boot/firmware` | MicroSD    | 512 MB         | `/dev/mmcblk0p1` | `vfat`      | -          |
-| `/var/log`       | RAM        | 128 MB         | `log2ram`        | `tmpfs`     | -          |
+| Mount Point      | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path      | File System | Encryption |
+| :--------------- | :--------- | :------------------------------------------- | :--------------- | :---------- | :--------- |
+| `/`              | MicroSD    | 117 GB                                       | `/dev/mmcblk0p2` | `ext4`      | -          |
+| `/boot/firmware` | MicroSD    | 512 MB                                       | `/dev/mmcblk0p1` | `vfat`      | -          |
+| `/var/log`       | RAM        | 128 MB                                       | `log2ram`        | `tmpfs`     | -          |
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point      | Drive Type      | Drive Capacity | Device Path | File System | Encryption |
-| :--------------- | :-------------- | :------------- | :---------- | :---------- | :--------- |
-| `/mnt/usb-drive` | USB Flash Drive | 28.7 GB        | `/dev/sda1` | `ext4`      | -          |
+| Mount Point      | Drive Type      | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :--------------- | :-------------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `/mnt/usb-drive` | USB Flash Drive | 28.7 GB                                      | `/dev/sda1` | `ext4`      | -          |
 
 ## :symbols-monitor-cloud:&ensp;Services / Docker Containers
 

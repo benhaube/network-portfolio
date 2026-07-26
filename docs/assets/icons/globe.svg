@@ -1,0 +1,5 @@
+<svg class="lucide lucide-globe-icon lucide-globe" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+  <path d="m1 11h20" stroke="#0091eb"/>
+  <path d="m11 1a14.5 14.5 0 000 20 14.5 14.5 0 000-20" stroke="#4cae4f"/>
+  <circle cx="11" cy="11" r="10" stroke="#0091eb"/>
+</svg>

@@ -5,7 +5,7 @@ subtitle: An Index of Relevant Tags
 search:
   exclude: true
 ---
-![LAN Icon](../assets/icons/network-node.svg){ width=200 }
+![LAN Icon](../assets/icons/network.svg){ width=200 }
 
 # Infrastructure Tags
 

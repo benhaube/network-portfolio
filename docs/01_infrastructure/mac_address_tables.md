@@ -1,5 +1,5 @@
 ---
-icon: symbols/grid-2x2
+icon: symbols/hash
 title: MAC Address Tables
 subtitle: Hardware MAC Addresses
 tags:
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide 'grid-2x2' icon](../assets/icons/grid-2x2.svg){ width=200 }
+![Lucide 'hash' icon](../assets/icons/hash.svg){ width=200 }
 
 # MAC Address Tables
 *Hardware MAC Addresses*
@@ -24,7 +24,7 @@ hide:
 
 | Device Type {data-sort-method="none"}        | Location {data-sort-method="none"} | Hostname {data-sort-method="none"}                                                    | Interface {data-sort-method='none'}                                                                                                           | MAC Address {data-sort-method="none"}                                                    |
 | :------------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------- |
-| :symbols-settings-ethernet:&nbsp;Cable Modem | Living-Room&emsp;                  | [<code>N/A</code>](../02_hardware/hitron_modem.md#network-configuration)              | :symbols-ethernet-port:&nbsp;*LAN 1*                                                                                                          | `00:1c:73:00:00:99`                                                                      |
+| :symbols-globe:&nbsp;Cable Modem             | Living-Room&emsp;                  | [<code>N/A</code>](../02_hardware/hitron_modem.md#network-configuration)              | :symbols-ethernet-port:&nbsp;*LAN 1*                                                                                                          | `00:1c:73:00:00:99`                                                                      |
 | :symbols-router:&nbsp;Wireless Router        | Living-Room&emsp;                  | [<code>RT-BE92U-FAF0</code>](../02_hardware/asus_rt-be92u.md#physical-ethernet-ports) | :symbols-ethernet-port:&nbsp;*WAN*<br>:symbols-wifi-cog:&nbsp;*2.4 GHz*<br>:symbols-wifi-cog:&nbsp;*5 GHz*<br>:symbols-wifi-cog:&nbsp;*6 GHz* | `60:CF:84:51:FA:F0`<br>`6A:CF:84:51:FA:F1`<br>`82:CF:84:51:FA:F5`<br>`60:CF:84:51:FA:F9` |
 | :symbols-router:&nbsp;Mesh Node              | Office                             | [<code>RT-AX55-1360</code>](../02_hardware/asus_rt-ax55.md#physical-ethernet-ports)   | :symbols-ethernet-port:&nbsp;*WAN*<br>:symbols-wifi-cog:&nbsp;*2.4 GHz*<br>:symbols-wifi-cog:&nbsp;*5 GHz*                                    | `7C:10:C9:DF:13:60`<br>`7C:10:C9:DF:13:61`<br>`7C:10:C9:DF:13:64`                        |
 
@@ -110,7 +110,7 @@ hide:
 
     [Disaster Recovery Plan](disaster_recovery_plan.md){ .md-button }
 
--   :symbols-firewall:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-brick-wall-shield:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

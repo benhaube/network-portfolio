@@ -1,5 +1,5 @@
 ---
-icon: symbols/firewall
+icon: symbols/brick-wall-shield
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 tags:
@@ -11,7 +11,7 @@ tags:
   - VPN
   - Remote Access
 ---
-![Lucide Firewall icon](../assets/icons/firewall.svg){ width=200 }
+![Lucide 'brick-wall-shield' icon](../assets/icons/brick-wall-shield.svg){ width=200 }
 
 # Network Security Policy
 *The Principle of Least Privilege*
@@ -121,7 +121,7 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-grid-2x2:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-hash:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 

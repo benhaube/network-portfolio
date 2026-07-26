@@ -114,7 +114,7 @@ tags:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-grid-2x2:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-hash:{ .lg .middle }&emsp;**MAC Addresses**
 
 	---
 
@@ -136,7 +136,7 @@ tags:
 
 	[IP Address Management](ip_address_mangement.md){ .md-button }
 
--   :symbols-firewall:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-brick-wall-shield:{ .lg .middle }&emsp;**Network Security**
 
 	---
 

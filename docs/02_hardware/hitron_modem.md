@@ -1,5 +1,5 @@
 ---
-icon: symbols/settings-ethernet
+icon: symbols/globe
 title: Hitron Modem
 subtitle: DOCSIS 3.1 Cable Modem
 tags:
@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide 'chevrons-left-right-ellipsis' icon](../assets/icons/modem.svg){ width=200 }
+![Lucide 'globe' icon](../assets/icons/globe.svg){ width=200 }
 
 # Hitron Modem
 *DOCSIS 3.1 Cable Modem*

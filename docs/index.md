@@ -19,10 +19,10 @@ hide:
 [:symbols-binary:&ensp;IP Address Management](01_infrastructure/ip_address_mangement.md)
 :    This page contains information about IPAM, VPNs, and VLANs encompassed by the LAN.
 
-[:symbols-grid-2x2:&ensp;MAC Address Tables](01_infrastructure/mac_address_tables.md)
+[:symbols-hash:&ensp;MAC Address Tables](01_infrastructure/mac_address_tables.md)
 :    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 
-[:symbols-firewall:&ensp;Network Security Policy](01_infrastructure/network_security_policy.md) 
+[:symbols-brick-wall-shield:&ensp;Network Security Policy](01_infrastructure/network_security_policy.md) 
 :    This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 [:symbols-sitemap:&ensp;Logical Network Map](01_infrastructure/logical_map.md)
@@ -51,7 +51,7 @@ hide:
 [:symbols-layers:&ensp;Debian Server](02_hardware/debian_server.md)
 :    The primary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](02_hardware/zimaos_nas.md#virtualization){ data-preview }. 
 
-[:symbols-settings-ethernet:&ensp;Hitron Modem](02_hardware/hitron_modem.md)
+[:symbols-globe:&ensp;Hitron Modem](02_hardware/hitron_modem.md)
 :    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview){ external-link })*. Located in the 10-inch mini-rack.
 
 [:symbols-server:&ensp;Pi 4B Server](02_hardware/pi_4b_server.md)

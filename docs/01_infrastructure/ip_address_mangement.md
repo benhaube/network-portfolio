@@ -44,7 +44,7 @@ hide:
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md#network-configuration)            | VLAN50 | `192.168.50.5`                         | `ZimaOS-NAS`    | Static | SMB Multi-channel Path, Secondary Ethernet Connection *(eth1)*                                                                      |
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md#network-configuration)          | VLAN50 | `192.168.50.6`                         | `debian-vm`     | Static | DNS Primary *([Technitium](../03_services/technitium.md) cluster)*, VM on [ZimaOS NAS](../02_hardware/zimaos_nas.md#virtualization) |
 | [:symbols-router:&nbsp;ASUS RT-AX55](../02_hardware/asus_rt-ax55.md#physical-ethernet-ports)          | VLAN50 | `192.168.50.221`                       | `RT-AX55-1360`  | Static | AiMesh Node *(Backhaul)*                                                                                                            |
-| [:symbols-settings-ethernet:&nbsp;Hitron Modem](../02_hardware/hitron_modem.md#network-configuration) | -      | `192.168.100.1`                        | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#wan-connection)                                                  |
+| [:symbols-globe:&nbsp;Hitron Modem](../02_hardware/hitron_modem.md#network-configuration)             | -      | `192.168.100.1`                        | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#wan-connection)                                                  |
 
 ## :symbols-monitor-smartphone:&ensp;Key Clients 
 &emsp;&emsp;&ensp;*DHCP Reserved*
@@ -75,7 +75,7 @@ hide:
 ---
 <div class="grid cards" markdown>
 
--   :symbols-grid-2x2:{ .lg .middle }&emsp;**MAC Addresses**
+-   :symbols-hash:{ .lg .middle }&emsp;**MAC Addresses**
 
     ---
 
@@ -97,7 +97,7 @@ hide:
 
     [Disaster Recovery Plan](disaster_recovery_plan.md){ .md-button }
 
--   :symbols-firewall:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-brick-wall-shield:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

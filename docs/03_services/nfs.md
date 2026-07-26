@@ -28,7 +28,7 @@ hide:
 
 :    Remote file system access for Linux.
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `2049`
 

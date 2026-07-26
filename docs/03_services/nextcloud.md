@@ -27,7 +27,7 @@ hide:
 
 :    Self-hosted cloud storage and collaboration platform.
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `10081`
 

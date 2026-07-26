@@ -25,7 +25,7 @@ hide:
 
 :    Advanced, lightweight NTP client and server.
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `123`
 

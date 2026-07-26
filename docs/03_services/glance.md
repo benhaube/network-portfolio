@@ -28,7 +28,7 @@ hide:
 
 :    A self-hosted dashboard that puts all your feeds in one place. 
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `8580`
 

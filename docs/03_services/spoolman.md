@@ -25,7 +25,7 @@ hide:
 
 :    Keep track of your inventory of 3D-printer filament spools. 
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `7912`
 

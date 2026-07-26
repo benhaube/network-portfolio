@@ -26,7 +26,7 @@ hide:
 
 :    Web API server for [Klipper](https://www.klipper3d.org/){ external-link }. 
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `7125`
 

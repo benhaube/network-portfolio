@@ -29,7 +29,7 @@ hide:
 
 :    A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `5001`
 

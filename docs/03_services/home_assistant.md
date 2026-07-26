@@ -26,7 +26,7 @@ hide:
 
 :    Open-source home automation that puts local control and privacy first.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `8123`
 

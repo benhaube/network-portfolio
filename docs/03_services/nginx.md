@@ -25,7 +25,7 @@ hide:
 
 :    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `8080`
 

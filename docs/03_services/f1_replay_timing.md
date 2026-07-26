@@ -25,7 +25,7 @@ hide:
 
 :    Visualization of real-time track data and telemetry synced to F1 live and replays.
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `3000`&emsp;`8000`
 

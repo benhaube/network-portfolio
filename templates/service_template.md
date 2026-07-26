@@ -23,7 +23,7 @@ hide:
 #### :symbols-file-text: Description
 :    Insert description of service here
  
-#### :symbols-settings-ethernet: Port(s)
+#### :symbols-chevrons-left-right-ellipsis: Port(s)
 
 :    `port`
 

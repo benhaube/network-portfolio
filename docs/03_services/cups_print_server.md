@@ -25,7 +25,7 @@ hide:
 
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `631`
 

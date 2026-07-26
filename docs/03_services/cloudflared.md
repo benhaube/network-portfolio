@@ -28,7 +28,7 @@ hide:
 
 :    Secure reverse-proxy tunnel for hosting private services on the public internet.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `14333`
 

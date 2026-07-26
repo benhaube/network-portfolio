@@ -27,7 +27,7 @@ hide:
 
 :    A fancy self-hosted service monitoring tool.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `3001`
 

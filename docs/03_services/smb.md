@@ -27,7 +27,7 @@ hide:
 
 :    Remote file system access.
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `445`
 

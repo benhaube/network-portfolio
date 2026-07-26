@@ -25,7 +25,7 @@ hide:
 
 :    A free and open-source Klipper web interface for managing your 3D-printer.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `80`&emsp;`4408`
 

@@ -27,7 +27,7 @@ hide:
 
 :    Handy tools for network administrators and developers.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `8080`
 

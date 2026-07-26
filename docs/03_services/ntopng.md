@@ -28,7 +28,7 @@ hide:
 
 :    Web-based traffic and security network traffic monitoring. 
 
-#### :symbols-settings-ethernet:&ensp;Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `3000`&emsp;`5556`
 

@@ -28,7 +28,7 @@ hide:
 
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
-#### :symbols-settings-ethernet:&ensp;Port(s) 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
 
 :    `41820`
 

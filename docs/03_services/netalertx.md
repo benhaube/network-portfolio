@@ -30,7 +30,7 @@ hide:
 #### :symbols-file-text: Description
 :    Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
  
-#### :symbols-settings-ethernet: Port(s)
+#### :symbols-chevrons-left-right-ellipsis: Port(s)
 
 :    `20211`&emsp;`20212`
 

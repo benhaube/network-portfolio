@@ -30,7 +30,7 @@ tags:
 | [:symbols-shield-user:&nbsp;Guest](ip_address_mangement.md#virtual-local-networks) | *VLAN52*&emsp;&emsp; | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                                                          |
 | [:symbols-shield-house:&nbsp;IoT](mac_address_tables.md#iot-network)               | *VLAN53*&emsp;&emsp; | Smart home hardware *(bulbs, sensors, etc.)*           | **No Internet Access** by default. Strictly isolated from all other VLANs; communication only with [Home Assistant](../03_services/home_assistant.md) |
 
-## :symbols-firewall:&ensp;Boundary Defense & Remote Access
+## :symbols-brick-wall-fire:&ensp;Boundary Defense & Remote Access
 
 ### Edge Protection
 

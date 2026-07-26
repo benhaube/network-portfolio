@@ -300,7 +300,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
     Open it from the [ZimaOS dashboard](http://storage-server.internal){ external-link } *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
 
-#### :symbols-brick-wall-fire:&ensp;Zima Firewall
+#### :symbols-brick-wall-flame:&ensp;Zima Firewall
 
 ##### About
 

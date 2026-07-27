@@ -20,7 +20,7 @@ tags:
     The goal of this **DR** plan is to ensure **HA** for critical network services *(DNS, Routing, Security)* and to provide a clear path to data restoration for stateful services *(Immich, Home Assistant, SMB Shares)* in the event of hardware failure or data corruption.
 
 ---
-## :symbols-priority:&ensp;Service Priority Levels
+## :symbols-list-start:&ensp;Service Priority Levels
 
 | Priority | Service                                                                                                                                       | Impact of Failure {data-sort-method='none'}     | RTO                                |
 | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :--------------------------------- |

@@ -22,6 +22,7 @@
 *[CSR]: Certificate Signing Request
 *[CSRF]: Cross-Site Request Forgery
 *[CSS]: Cascading Style Sheets
+*[CSV]: Comma Separated Values
 *[CUPS]: Common UNIX Printing System
 *[CVE]: Common Vulnerabilities and Exposures
 *[DDR]: Double Data Rate

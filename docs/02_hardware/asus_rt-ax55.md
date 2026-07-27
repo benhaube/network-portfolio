@@ -49,31 +49,33 @@ hide:
 
 #### :symbols-globe:&ensp;WAN Connection
 
-| Interface | IP Address       | MAC Address         | Connected To                 |
-| :-------: | :--------------- | :------------------ | :--------------------------- |
-|   WAN0    | `192.168.50.221` | `7C:10:C9:DF:13:60` | :symbols-wifi:&nbsp;Backhaul |
+| Interface {data-sort-method='number'} | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To {data-sort-method='none'} |
+| :-----------------------------------: | :------------------------------------- | :------------------ | :------------------------------------- |
+|                `wan0`                 | `192.168.50.221`                       | `7C:10:C9:DF:13:60` | Network backhaul                       |
 
 #### :symbols-hub:&ensp;Virtual Local Networks
 
-|               VLAN                   | Domain   | DNS Server(s)                 | CIDR              | Gateway        | Broadcast        | DHCP Range      |
-| :----------------------------------: | :------- | :---------------------------- | :---------------- | :------------- | :--------------- | :-------------- |
-| :symbols-shield-quarter:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2` | `192.168.50.0/24` | `192.168.50.1` | `192.168.50.255` | `.22` to `.254` |
+|               VLAN                   | Domain   | DNS Server(s) {data-sort-method='none'} | CIDR {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} | Broadcast {data-sort-method='dotsep'} | DHCP Range {data-sort-method='none'} |
+| :----------------------------------: | :------- | :-------------------------------------- | :------------------------------- | :---------------------------------- | :------------------------------------ | :----------------------------------- |
+| :symbols-shield-quarter:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2`           | `192.168.50.0/24`                | `192.168.50.1`                      | `192.168.50.255`                      | `.22` to `.254`                      |
+|  :symbols-shield-house:&nbsp;VLAN53  | -        | `9.9.9.9` `149.112.112.112`             | `192.168.53.0/24`                | `192.168.53.1`                      | `192.168.53.255`                      | `.3` to `.254`                       |
 
 #### :symbols-wifi-cog:&ensp;Wi-Fi Networks
 
-|  SSID  |  VLAN  |   WAN Access    | CIDR              | Frequency      | Notes                                      |
-| :----: | :----: | :-------------: | :---------------- | :------------- | :----------------------------------------- |
-| *Home* | VLAN50 | :symbols-check: | `192.168.50.0/24` | 2.4 GHz, 5 GHz | :symbols-shield-quarter:&nbsp;Trusted VLAN |
+|   SSID   |  VLAN  |   WAN Access    | CIDR {data-sort-method='dotsep'} | Frequency {data-sort-method='none'} | Notes                                      |
+| :------: | :----: | :-------------: | :------------------------------- | :---------------------------------- | :----------------------------------------- |
+|  *Home*  | VLAN50 | :symbols-check: | `192.168.50.0/24`                | 2.4 GHz, 5 GHz                      | :symbols-shield-quarter:&nbsp;Trusted VLAN |
+| *2G_IoT* | VLAN53 |   :symbols-x:   | `192.168.53.0/24`                | 2.4 GHz                             | :symbols-shield-house:&nbsp;IoT VLAN       |
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
-| Port {data-sort-method='number'} | Connected Device                                                                          | Color / Type  | Notes                                        |
-| :------------------------------: | :---------------------------------------------------------------------------------------- | :------------ | :------------------------------------------- |
-|               WAN 1              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | :symbols-wifi:&nbsp;Wi-Fi *(5 GHz)* Backhaul |
-|               LAN 1              | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } | Black / Cat6a | 1 Gb/s Uplink                                |
-|               LAN 2              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | -                                            |
-|               LAN 3              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | -                                            |
-|               LAN 4              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -             | -                                            |
+| Port {data-sort-method='number'} | Connected Device                                                                          | Color / Type {data-sort-method='none'} | Notes {data-sort-method='none'} |
+| :------------------------------: | :---------------------------------------------------------------------------------------- | :------------------------------------- | :------------------------------ |
+|               WAN 0              | :symbols-lan:&nbsp;Local Network                                                          | White / Cat5e                          | Network backhaul                |
+|               LAN 1              | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } | Black / Cat6A                          | 1 Gb/s Uplink                   |
+|               LAN 2              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -                                      | -                               |
+|               LAN 3              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -                                      | -                               |
+|               LAN 4              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -                                      | -                               |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

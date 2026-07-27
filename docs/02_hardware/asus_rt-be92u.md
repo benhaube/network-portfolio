@@ -49,18 +49,24 @@ hide:
 
 #### :symbols-globe:&ensp;WAN Connection
 
-| Interface | IP Address | MAC Address         | Connected To                                               |
-| :-------: | :--------- | :------------------ | :--------------------------------------------------------- |
-|   WAN0    | `DHCP`     | `60:CF:84:51:FA:F0` | :symbols-ethernet-port:&nbsp;2.5 Gb/s WAN / LAN *(port 1)* |
-|   WAN1    | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                          |
+??? info "Dual-WAN Capable"
+
+    The **ASUS RT-BE92U** tri-band 802.11be *(Wi-Fi 7)* router supports two simultaneous WAN connections that can be configured to act synchronously or in fail-over mode. Additionally, the first two physical Ethernet ports on the router can be configured as either a WAN or LAN port. Physical port 0 is a 2.5 GbE port, and physical port 1 is a 10 GbE port. 
+    
+    On this network we utilize a single WAN connection on physical port `WAN / LAN 0` while physical port `WAN / LAN 1`, *the 10 GbE port*, is used as the uplink to the main switch via Cat6A Ethernet cable connected to an SFP+ to Ethernet transceiver in the switch. In the router's firmware the two WAN interfaces are labeled `wan0` and `wan1`, and they correspond to the physical ports, `WAN / LAN 0` and `WAN / LAN 1`, respectively.
+
+| Interface {data-sort-method='number'} | IP Address | MAC Address         | Connected To {data-sort-method='none'}                                                     |
+| :-----------------------------------: | :--------- | :------------------ | :----------------------------------------------------------------------------------------- |
+|                `wan0`                 | `DHCP`     | `60:CF:84:51:FA:F0` | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview } |
+|                `wan1`                 | `Disabled` | `xx:xx:xx:xx:xx:xx` | -                                                                                          |
 
 #### :symbols-hub:&ensp;Virtual Local Networks
 
-|                VLAN                    | Domain   | DNS Server(s) {data-sort-method='none'} | CIDR {data-sort-method='dotsep'} | Gateway        | Broadcast        | DHCP Range {data-sort-method='none'} |
-| :------------------------------------: | :------- | :-------------------------------------- | :------------------------------- | :------------- | :--------------- | :----------------------------------- |
-|  :symbols-shield-quarter:&nbsp;VLAN50  | internal | `192.168.50.6` `192.168.50.2`           | `192.168.50.0/24`                | `192.168.50.1` | `192.168.50.255` | `.22` to `.254`                      |
-|   :symbols-shield-user:&nbsp;VLAN52    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.52.0/24`                | `192.168.52.1` | `192.168.52.255` | `.2` to `.254`                       |
-|  :symbols-shield-house:&nbsp;VLAN53    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.53.0/24`                | `192.168.53.1` | `192.168.53.255` | `.3` to `.254`                       |
+|                VLAN                    | Domain   | DNS Server(s) {data-sort-method='none'} | CIDR {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} | Broadcast {data-sort-method='dotsep'} | DHCP Range {data-sort-method='none'} |
+| :------------------------------------: | :------- | :-------------------------------------- | :------------------------------- | :---------------------------------- | :------------------------------------ | :----------------------------------- |
+|  :symbols-shield-quarter:&nbsp;VLAN50  | internal | `192.168.50.6` `192.168.50.2`           | `192.168.50.0/24`                | `192.168.50.1`                      | `192.168.50.255`                      | `.22` to `.254`                      |
+|   :symbols-shield-user:&nbsp;VLAN52    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.52.0/24`                | `192.168.52.1`                      | `192.168.52.255`                      | `.2` to `.254`                       |
+|  :symbols-shield-house:&nbsp;VLAN53    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.53.0/24`                | `192.168.53.1`                      | `192.168.53.255`                      | `.3` to `.254`                       |
 
 #### :symbols-wifi-cog:&ensp;Wi-Fi Networks
 
@@ -72,14 +78,14 @@ hide:
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
-|       Port #       | Connected Device                                                                                            | Color / Type  | Notes               |
-| :----------------: | :---------------------------------------------------------------------------------------------------------- | :------------ | :------------------ |
-| 10 Gb WAN / LAN 1  | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview }                     | Black / Cat6a | 10 Gb/s Uplink      |
-| 2.5 Gb WAN / LAN 2 | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview }                  | Black / Cat6a | WAN Connection      |
-|    2.5 Gb LAN 1    | <a href="./tags.html#tag:server-rack">:symbols-server-rack:&nbsp;Server Rack</a>                            | Black / Cat6a | Spare Keystone Jack |
-|    2.5 Gb LAN 2    | [:symbols-ethernet-port:&nbsp;TP-Link LiteWave Switch](tp-link_litewave_switch.md#port-map){ data-preview } | White / Cat6  | 1 Gb/s Uplink       |
-|    2.5 Gb LAN 3    | :symbols-ethernet-port:&nbsp;*Empty*                                                                        | -             | -                   |
-|    2.5 Gb LAN 4    | :symbols-ethernet-port:&nbsp;*Empty*                                                                        | -             | -                   |
+| Port {data-sort-method='number'} | Max Speed {data-sort-method='number'} | Connected Device                                                                                            | Color / Type {data-sort-method='none'} | Notes {data-sort-method='none'} |
+| :------------------------------: | :------------------------------------ | :---------------------------------------------------------------------------------------------------------- | :------------------------------------- | :------------------------------ |
+|           WAN / LAN 0            | 2.5 Gb/s                              | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview }                  | Black / Cat6a                          | Active WAN connection           |
+|           WAN / LAN 1            | 10 Gb/s                               | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview }                     | Black / Cat6a                          | 10 Gb/s uplink                  |
+|              LAN 2               | 2.5 Gb/s                              | <a href="./tags.html#tag:server-rack">:symbols-server-rack:&nbsp;Server Rack</a>                            | Black / Cat6a                          | Spare keystone jack             |
+|              LAN 3               | 2.5 Gb/s                              | [:symbols-ethernet-port:&nbsp;TP-Link LiteWave Switch](tp-link_litewave_switch.md#port-map){ data-preview } | White / Cat6                           | 1 Gb/s uplink                   |
+|              LAN 4               | 2.5 Gb/s                              | :symbols-ethernet-port:&nbsp;*Empty*                                                                        |                                        |                                 |
+|              LAN 5               | 2.5 Gb/s                              | :symbols-ethernet-port:&nbsp;*Empty*                                                                        |                                        |                                 |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -101,7 +107,7 @@ hide:
 
 #### :symbols-penguin:&ensp;Native
 
-|  Status  | Service                                                                   | Port(s) {data-sort-method='number'} | Role / Notes                                                                                                                                                                                                                         |
+|  Status  | Service                                                                   | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                                                                                                                                                               |
 | :------: | :------------------------------------------------------------------------ | :---------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *Active* | [:symbols-clock-refresh-cw:&nbsp;Chrony](../03_services/chrony.md)        |                 `123`               | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
 | *Active* | [:symbols-cloud-cog:&nbsp;DDNS](../03_services/ddns.md)                   |                 `N/A`               | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.             |
@@ -238,7 +244,7 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
 
 ##### App Categories
 
-:    Below is a list of QoS application categories in decending order from **highest** to **lowest** priority:
+:    Below is a list of QoS application categories in descending order from **highest** to **lowest** priority:
 
       + :symbols-gamepad-2:&ensp;Gaming
       + :symbols-film:&ensp;Video Streaming

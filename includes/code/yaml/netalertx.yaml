@@ -22,12 +22,12 @@ services:
       - /tmp
     volumes:
       - type: bind
-        source: /DATA/AppData/big-bear-netalertx-v26/config
+        source: /DATA/AppData/netalertx-v26/config
         target: /data/config
         bind:
           create_host_path: true
       - type: bind
-        source: /DATA/AppData/big-bear-netalertx-v26/db
+        source: /DATA/AppData/netalertx-v26/db
         target: /data/db
         bind:
           create_host_path: true

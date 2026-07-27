@@ -25,32 +25,72 @@ hide:
 [GitHub :brands-github:](https://github.com/netalertx/NetAlertX/){ .md-button .md-button--primary }&emsp;[Documentation :symbols-files:](https://docs.netalertx.com/){ .md-button .md-button--primary }
 
 ---
-## :symbols-info: Overview
+## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text: Description
+#### :symbols-file-text:&ensp;Description
 :    Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
  
-#### :symbols-chevrons-left-right-ellipsis: Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `20211`&emsp;`20212`
 
-#### :symbols-link: URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 :    <http://storage-server.internal:20211>
 
-#### :symbols-user-key: Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Local Network&ensp;:symbols-move-right:&ensp;"NetAlertX"
 
-## :symbols-package-search: Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name  | Image                      |
-| :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx-v26` | `jokobsk/netalertx:26.7.1` |
+| Host Device                                                          | Method                                    | Container Name | Image                      |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx`    | `jokobsk/netalertx:latest` |
 
-### :symbols-settings: Configuration 
+### :symbols-settings:&ensp;Configuration 
+
+#### :symbols-blocks:&ensp;Loaded Plugins 
+
+| Plugin ID   | Category       | Description {data-sort-method='none'}        | Required {data-sort-reverse} |
+| :---------- | :------------- | :------------------------------------------- | :--------------------------: |
+| `ARPSCAN`   | Device Scan    | Run ARP-scan on the current network          |                              |
+| `ASUSWRT`   | Importer       | Import connected devices from Asuswrt        |                              |
+| `AVAHISCAN` | Name Discovery | Avahi *(mDNS-based)* name resolution         |                              |
+| `CSVBCKP`   | System         | CSV devices backup                           |                              |
+| `CUSTPROP`  | System         | Managing custom device property values       |   :symbols-check:&nbsp;Yes   |
+| `DBCLNP`    | System         | Database cleanup                             |   :symbols-check:&nbsp;Yes   |
+| `DIGSCAN`   | Name Discovery | Dig *(DNS)* name resolution 	                |                              |
+| `INTRNT`    | Device Scan    | Internet *(WAN)* IP address scanner          |                              |
+| `MAINT`     | System         | Maintenance of logs, etc.                    |                              |
+| `NEWDEV`    | System         | New device template                          |   :symbols-check:&nbsp;Yes   |
+| `NBTSCAN`   | Name Discovery | Nbtscan *(NetBIOS-based)* name resolution    |                              |
+| `NMAP`      | Other          | Nmap port scanning & discovery 	            |                              |
+| `NSLOOKUP`  | Name Discovery | NSLookup *(DNS-based)* name resolution       |                              |
+| `NTFPRCS`   | System         | Notification processing                      |   :symbols-check:&nbsp;Yes   |
+| `SETPWD`    | System         | Set the service password                     |   :symbols-check:&nbsp;Yes   |
+| `SMTP`      | Publisher      | Email notifications                          |                              | 
+| `SYNC`      | Importer       | Sync & import from other NetAlertX instances |   :symbols-check:&nbsp;Yes   |
+| `UI`        | System         | User interface specific settings             |   :symbols-check:&nbsp;Yes   |
+| `VNDRPDT`   | System         | MAC address vendor database update           |                              |
+
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+##### Config
+
++ Drive:&ensp;`/dev/nvme0n1p1`
++ Path:&ensp;`/DATA/AppData/netalertx/config`
++ Config file:&ensp;`app.conf`
+
+##### Database
+
++ Drive:&ensp;`/dev/nvme0n1p1`
++ Path:&ensp;`/DATA/AppData/netalertx/db`
++ Database file:&ensp;`app.db`
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ```yaml {title="compose.yaml" linenums="1" .mono-title}
 --8<-- "netalertx.yaml"

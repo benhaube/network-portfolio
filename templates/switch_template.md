@@ -18,34 +18,34 @@ hide:
 [Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
 
 ---
-## :symbols-info: Physical Overview
+## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox: Role
+#### :symbols-toolbox:&ensp;Role
 :    Core Desktop Switch
 
-#### :symbols-map-pin: Location
+#### :symbols-map-pin:&ensp;Location
 
 :    Insert location here
  
-#### :symbols-plug: Power Source
+#### :symbols-plug:&ensp;Power Source
 
 :    (e.g., Wall wart 12V / 1A)
  
-#### :symbols-square-activity: Specs
+#### :symbols-circuit-board:&ensp;Specs
 
-:    **Throughput:**
+:    Throughput:
   
       + (e.g., 50 Gb/s) 
 
-:    **Jumbo Frames:** 
+:    Jumbo Frames: 
   
       + Supported / Unsupported
 
-:    **Managed:** 
+:    Managed: 
   
       + Managed / Unmanaged
 
-## :symbols-ethernet-port: Port Map
+## :symbols-ethernet-port:&ensp;Port Map
 
 | Port # | Connected Device                     | Color / Type | Notes |
 | :----: | :----------------------------------- | :----------- | :---- |
@@ -57,7 +57,7 @@ hide:
 | **6**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
 
 ---
-## :symbols-sticky-notes: Maintenance Notes
+## :symbols-sticky-notes:&ensp;Maintenance Notes
 
 !!! visual inline "Visual Indicators"
 

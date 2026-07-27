@@ -18,33 +18,33 @@ hide:
 [GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-files:](https://docs.github.com/en){ .md-button .md-button--primary }
 
 ---
-## :symbols-info: Overview
+## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text: Description
+#### :symbols-file-text:&ensp;Description
 :    Insert description of service here
  
-#### :symbols-chevrons-left-right-ellipsis: Port(s)
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
 
 :    `port`
 
-#### :symbols-link: URL / Access
+#### :symbols-link:&ensp;URL / Access
 
 :    <https://example.com>
 
-#### :symbols-user-key: Credentials 
+#### :symbols-user-key:&ensp;Credentials 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-## :symbols-package-search: Deployment Details
+## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                      | Method                                    | Container Name   | Image            |
 | :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- |
 | :devices-icon:&nbsp;[Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` |
 | :devices-icon:&nbsp;[Device](device_template.md) | :symbols-penguin:&nbsp;Native Linux       | `N/A`            | `N/A`            |
 
-### :symbols-settings: Configuration 
+### :symbols-settings:&ensp;Configuration 
 
 ```bash title="" linenums="1"
 # Paste your docker-compose.yaml or docker run command here!

@@ -17,41 +17,41 @@ hide:
 [Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }
 
 ---
-## :symbols-info: Device Overview
+## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox: Role
+#### :symbols-toolbox:&ensp;Role
 
 :    Device role
 
-#### :symbols-host: Hostname
+#### :symbols-host:&ensp;Hostname
 
 :    `hostname`
 
-#### :symbols-map-pin: Location
+#### :symbols-map-pin:&ensp;Location
 
 :    Location 
 
-#### :symbols-cpu: OS / Firmware
+#### :symbols-cpu:&ensp;OS / Firmware
 
 :    :os-icon:&nbsp;Operating System
 
-#### :symbols-user-key: Credentials
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
     
       + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-#### :symbols-brick-wall-shield: Device Security
+#### :symbols-brick-wall-shield:&ensp;Device Security
 
 :    Hardware / Software security features (e.g., TPM2)
 
-## :symbols-square-activity: Core Specs
+## :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                  | Cores / Threads | CPU Freq. | RAM  | GPU  | GPU Freq. | VRAM |
 | :------------------- | :-------------- | :-------- | :--- | :--- | :-------- | :--- |
 | CPU *(architecture)* | #C / #T         | # GHz     | # GB | GPU  | # MHz     | # GB |
 
-## :symbols-lan: Network Configuration
+## :symbols-lan:&ensp;Network Configuration
 
 | Interface | IP Address | MAC Address         | Connected To                  |
 | :-------: | :--------- | :------------------ | :---------------------------- |
@@ -61,51 +61,51 @@ hide:
 | :-------: | :----- | :----------------- | :------------------ | :-------- |
 |  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
 
-## :symbols-folders: Storage & Mounts
+## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive: Internal Drive(s)
-
-| Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
-| :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
-
-#### :symbols-usb: External/Attached
+#### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
 | :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
 | `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
 
-## :symbols-monitor-cloud: Services / Docker Containers
+#### :symbols-usb:&ensp;External/Attached
 
-#### :symbols-layers: Virtualization
+| Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
+| :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
+| `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
+
+## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+
+#### :symbols-layers:&ensp;Virtualization
 
 |  Status  | OS                                       | Virtual NIC             | Virtual Disk Image | Role / Notes |
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |
 | *Active* | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network *(NAT)* | `disk-image.qcow2` | -            |
 
-#### :symbols-penguin: Native Linux
+#### :symbols-penguin:&ensp;Native Linux
 
 |  Status  | Service                                                   | Port(s) | Role / Notes |
 | :------: | :-------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
-#### :services-docker: Docker
+#### :symbols-container:&ensp;Docker
 
 |  Status  | Service                                                   | Port(s) | Role / Notes |
 | :------: | :-------------------------------------------------------- | :-----: | :----------- |
 | *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
 
 ---
-## :symbols-sticky-notes: Maintenance & Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 !!! config "Critical Configurations"
 
     Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
 
-#### :symbols-update: Update Process
+#### :symbols-update:&ensp;Update Process
 
 + Update Process
 
-#### :symbols-cloud-upload: Backup Policy
+#### :symbols-cloud-upload:&ensp;Backup Policy
 
 + Backup policy

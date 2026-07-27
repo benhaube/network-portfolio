@@ -22,7 +22,7 @@ tags:
 ---
 ## :symbols-list-start:&ensp;Service Priority Levels
 
-| Priority | Service                                                                                                                                       | Impact of Failure {data-sort-method='none'}     | RTO                                |
+| Priority | Service                                                                                                                                       | Impact of Failure {data-sort-method='none'}     | RTO {data-sort-method='none'}      |
 | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :--------------------------------- |
 | Critical | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md) DNS Cluster                                                             | Total loss of Internet / LAN connectivity.      | < 5 Minutes *(Automatic Failover)* |
 | High     | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md) / [:services-cloudflare:&nbsp;Cloudflare](../03_services/cloudflared.md) Reverse Proxy | Loss of remote access and SSL termination.      | < 1 Hour                           |

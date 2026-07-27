@@ -9,25 +9,25 @@ services:
       - SETGID
     cap_drop:
       - ALL
-    container_name: netalertx-v26
+    container_name: netalertx
     environment:
       - ALWAYS_FRESH_INSTALL=false
       - PGID=1000
       - PORT=20211
       - PUID=1000
       - TZ=UTC
-    image: jokobsk/netalertx:26.7.1
+    image: jokobsk/netalertx:latest
     restart: unless-stopped
     tmpfs:
       - /tmp
     volumes:
       - type: bind
-        source: /DATA/AppData/netalertx-v26/config
+        source: /DATA/AppData/netalertx/config
         target: /data/config
         bind:
           create_host_path: true
       - type: bind
-        source: /DATA/AppData/netalertx-v26/db
+        source: /DATA/AppData/netalertx/db
         target: /data/db
         bind:
           create_host_path: true

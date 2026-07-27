@@ -4,6 +4,7 @@
 *[ADB]: Android Debugging Bridge
 *[API]: Application Programming Interface
 *[APIs]: Application Programming Interfaces
+*[ARP]: Address Resolution Protocol
 *[ASA]: Acrylonitrile Styrene Acrylate
 *[ASCII]: American Standard Code for Information Interchange
 *[BIOS]: Basic Input / Output System

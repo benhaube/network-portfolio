@@ -134,6 +134,7 @@
 *[MT/s]: Mega Transfers Per Second
 *[NAS]: Network Attached Storage
 *[NAT]: Network Address Translation
+*[NetBIOS]: Network Basic Input / Output System
 *[NFS]: Network File System
 *[NIC]: Network Interface Card
 *[NICs]: Network Interface Cards

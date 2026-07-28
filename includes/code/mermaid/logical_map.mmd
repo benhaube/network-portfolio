@@ -46,7 +46,7 @@ flowchart-elk TD
         USB_Ext[("<b>USB Flash Drive</b><br><i>(32 GB)</i>")]:::usb-storage
 
         %% --- ZimaOS NAS --- %%
-        subgraph Server_Zima ["<svg class="lucide lucide-server-icon lucide-server" width="24" height="24" style="vertical-align: middle;"  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m4 2h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><path d="m4 14h16c1.108 0 2 .892 2 2v4c0 1.108-.892 2-2 2h-16c-1.108 0-2-.892-2-2v-4c0-1.108.892-2 2-2z"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>&emsp;<b>ZimaOS NAS</b> <code>[.4 / .5]</code>"]
+        subgraph Server_Zima ["<svg width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5 3h14c1.108 0 2 .892 2 2v14c0 1.108-.892 2-2 2h-14c-1.108 0-2-.892-2-2v-14c0-1.108.892-2 2-2z"/><path d="m8 12h.01m-.01 4h.01"/><path d="m17 17v-10"/><path d="m13 17v-10"/></svg>&emsp;<b>ZimaOS NAS</b> <code>[.4 / .5]</code>"]
             Storage_SMB[("<b>RAID: Quick-Storage</b><br><i>(4 TB)</i>")]:::storage
             Storage_NVMe[("<b>nvme0n1p1</b><br><i>(500 GB)</i>")]:::storage
             Storage_MMC[("<b>Onboard MMC</b><br><i>(64 GB)</i>")]:::storage
@@ -87,13 +87,13 @@ flowchart-elk TD
     %% --- IoT VLAN --- %%
     subgraph IoT_VLAN53 ["<svg class="lucide lucide-network-icon lucide-network" width="24" height="24" fill="none" style="vertical-align: middle;" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m3 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m10 2h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m5 16v-3a1 1 0 011-1h12a1 1 0 011 1v3"/><path d="M12 12V8"/></svg>&emsp;<b>VLAN53:</b> IoT <code>[192.168.53.x]</code>"]
         direction TB
-        IoTClients["IoT Clients"]:::vlan53  
+        IoTClients["<svg class="lucide lucide-house-wifi-icon lucide-house-wifi" width="24" height="24" style="vertical-align: middle;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m3 10a2 2 0 01.709-1.528l7-6a2 2 0 012.582 0l7 6a2 2 0 01.709 1.528v9a2 2 0 01-2 2h-14a2 2 0 01-2-2z"/><path d="m7 10.754a8 8 0 0110 0m-5 6.246h.01m-2.51-3.134a4 4 0 015 .01"/></svg>&ensp;IoT Clients"]:::vlan53  
     end
 
     %% --- Guest VLAN --- %%
     subgraph Guest_VLAN52 ["<svg class="lucide lucide-network-icon lucide-network" width="24" height="24" fill="none" style="vertical-align: middle;" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m3 16h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m10 2h4c.554 0 1 .446 1 1v4c0 .554-.446 1-1 1h-4c-.554 0-1-.446-1-1v-4c0-.554.446-1 1-1z"/><path d="m5 16v-3a1 1 0 011-1h12a1 1 0 011 1v3"/><path d="M12 12V8"/></svg>&emsp;<b>VLAN52:</b> Guest <code>[192.168.52.x]</code>"]
         direction TB
-        GuestClients["Guest Clients"]:::vlan52
+        GuestClients["<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="vertical-align: middle;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>&ensp;Guest Clients"]:::vlan52
     end
     
 %% --- Connections --- %%

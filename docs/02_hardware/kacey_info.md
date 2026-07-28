@@ -17,12 +17,12 @@ hide:
 # More Kacey Info
 *Detailed Configuration Info*
 
-[Creality Docs&ensp;:brands-creality-v2:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
+[Creality Docs&ensp;:brands-creality-v2:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-file-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Basic Information
 
-#### :symbols-file-text:&ensp;Model 
+#### :symbols-hash:&ensp;Model 
 
 :    Creality^&copy;^ K1C
 
@@ -34,7 +34,7 @@ hide:
 
 :    v2.0.5    
 
-#### :symbols-calendar-clock:&ensp;Create Date
+#### :symbols-calendar-1:&ensp;Create Date
 
 :    2023/09/05
 
@@ -135,7 +135,7 @@ M600
 M600
 ```
 
-## :services-klipper:&ensp;Klipper Configuration Files
+#### :symbols-file-config:&ensp;Klipper Configuration Files
 
 ```cfg {title="printer.cfg" linenums="1" .mono-title}
 --8<-- "printer.cfg"

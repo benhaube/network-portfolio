@@ -15,7 +15,7 @@ hide:
 # Ben's Smartphone
 *Google Pixel 9 Pro*
 
-[Android Help&ensp;:symbols-circle-question-mark:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Device Support&ensp;:symbols-life-buoy:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }&emsp;[Pixel Care+&ensp;:symbols-shield-heart:](https://store.google.com/us/pixel-care?hl=en-US){ .md-button .md-button--primary }
+[Android Help&ensp;:symbols-circle-question-mark:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Device Support&ensp;:symbols-life-buoy:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }&emsp;[Pixel Care&thinsp;+&ensp;:symbols-shield-heart:](https://store.google.com/us/pixel-care?hl=en-US){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

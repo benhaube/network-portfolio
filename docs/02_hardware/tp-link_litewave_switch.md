@@ -56,14 +56,14 @@ hide:
 
 ## :symbols-ethernet-port:&ensp;Port Map
 
-| Port # | Connected Device                                                                                                            | Color / Type  | Notes                      |
-| :----: | :-------------------------------------------------------------------------------------------------------------------------- | :------------ | :------------------------- |
-| **1**  | [:symbols-router:&nbsp;ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview }                             | White / Cat6  | Uplink                     |
-| **2**  | [:symbols-cast:&nbsp;Google TV Streamer](../01_infrastructure/mac_address_tables.md#trusted-network){ data-preview }        | Black / Cat6A | `DHCP` `B8:7B:D4:9D:80:F7` |
-| **3**  | [:symbols-tv-minimal:&nbsp;TCL Smart TV](../01_infrastructure/mac_address_tables.md#trusted-network){ data-preview }        | Black / Cat5e | `DHCP` `4C:53:FD:6A:81:D5` |
-| **4**  | [:symbols-gamepad-2:&nbsp;Nintendo Switch Dock](../01_infrastructure/mac_address_tables.md#trusted-network){ data-preview } | Black / Cat5e | `DHCP` `74:84:69:34:69:78` |
-| **5**  | :symbols-ethernet-port:&nbsp;*Empty*                                                                                        | -             | -                          |
-| **6**  | :symbols-ethernet-port:&nbsp;*Empty*                                                                                        | -             | -                          |
+| Port # {data-sort-method='number'} | Connected Device                                                                                                            | Color / Type {data-sort-method='none'} | Notes {data-sort-method='none'} |
+| :--------------------------------: | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------- | :------------------------------ |
+|                 1                  | [:symbols-router:&nbsp;ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview }                             | White / Cat6                           | Uplink                          |
+|                 2                  | [:symbols-cast:&nbsp;Google TV Streamer](../01_infrastructure/mac_address_tables.md#trusted-network){ data-preview }        | Black / Cat6A                          | `DHCP` `B8:7B:D4:9D:80:F7`      |
+|                 3                  | [:symbols-tv-minimal:&nbsp;TCL Smart TV](../01_infrastructure/mac_address_tables.md#trusted-network){ data-preview }        | Black / Cat5e                          | `DHCP` `4C:53:FD:6A:81:D5`      |
+|                 4                  | [:symbols-gamepad-2:&nbsp;Nintendo Switch Dock](../01_infrastructure/mac_address_tables.md#trusted-network){ data-preview } | Black / Cat5e                          | `DHCP` `74:84:69:34:69:78`      |
+|                 5                  | :symbols-ethernet-port:&nbsp;*Empty*                                                                                        | -                                      | -                               |
+|                 6                  | :symbols-ethernet-port:&nbsp;*Empty*                                                                                        | -                                      | -                               |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance Notes

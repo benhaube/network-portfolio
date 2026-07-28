@@ -45,60 +45,60 @@ hide:
 
 #### :symbols-globe:&ensp;WAN Connection
 
-| Interface | IP Address | MAC Address         | Connected To |
-| :-------: | :--------- | :------------------ | :----------- |
-|   WAN0    | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -            |
+| Interface {data-sort-method='number'} | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To {data-sort-method='none'} |
+| :-----------------------------------: | :------------------------------------- | :------------------ | :------------------------------------- |
+|               `wan0`                  | `x.x.x.x`                              | `XX:XX:XX:XX:XX:XX` | -                                      |
 
 #### :symbols-lan:&ensp;Virtual Local Networks
 
-|  VLAN  | Domain | DNS Server(s)       | Gateway   | Subnet       | Subnet Mask | Broadcast   | DHCP Range     |
-| :----: | :----- | :------------------ | :-------- | :----------- | :---------- | :---------- | :------------- |
-| *vlan* | domain | `x.x.x.x` `x.x.x.x` | `x.x.x.x` | `x.x.x.x/xx` | `255.x.x.x` | `x.x.x.255` | `.x` to `.xxx` |
+|  VLAN  | Domain | DNS Server(s) {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} | Subnet {data-sort-method='dotsep'} | Subnet Mask {data-sort-method='dotsep'} | Broadcast {data-sort-method='dotsep'} | DHCP Range {data-sort-method='none'} |
+| :----: | :----- | :-------------------------------------- | :---------------------------------- | :--------------------------------- | :-------------------------------------- | :------------------------------------ | :----------------------------------- |
+| *vlan* | domain | `x.x.x.x` `x.x.x.x`                     | `x.x.x.1`                           | `x.x.x.x/xx`                       | `255.x.x.x`                             | `x.x.x.255`                           | `.x` to `.xxx`                       |
 
 #### :symbols-wifi-cog:&ensp;Wi-Fi Networks
 
-|  SSID  |  VLAN  | IP Address   | Frequency | Notes |
-| :----: | :----: | :----------- | :-------- | :---- |
-| *SSID* | *vlan* | `x.x.x.x/xx` | -         | -     |
+|  SSID  |  VLAN  | IP Address {data-sort-method='dotsep'} | Frequency {data-sort-method='none'} | Notes |
+| :----: | :----: | :------------------------------------- | :---------------------------------- | :---- |
+| *SSID* | *vlan* | `x.x.x.x/xx`                           | -                                   | -     |
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
-|     Port #      | Connected Device                | Color / Type | Notes |
-| :-------------: | :------------------------------ | :----------- | :---- |
-| 10Gb WAN/LAN 1  | :symbols-ethernet-port: *Empty* | -            | -     |
-| 2.5Gb WAN/LAN 2 | :symbols-ethernet-port: *Empty* | -            | -     |
-|   2.5Gb LAN 1   | :symbols-ethernet-port: *Empty* | -            | -     |
-|   2.5Gb LAN 2   | :symbols-ethernet-port: *Empty* | -            | -     |
-|   2.5Gb LAN 3   | :symbols-ethernet-port: *Empty* | -            | -     |
-|   2.5Gb LAN 4   | :symbols-ethernet-port: *Empty* | -            | -     |
+| Port {data-sort-method='number'} | Connected Device                | Color / Type {data-sort-method='none'} | Notes {data-sort-method='none'} |
+| :------------------------------: | :------------------------------ | :------------------------------------- | :------------------------------ |
+|          10Gb WAN/LAN 0          | :symbols-ethernet-port: *Empty* | -                                      | -                               |
+|         2.5Gb WAN/LAN 1          | :symbols-ethernet-port: *Empty* | -                                      | -                               |
+|           2.5Gb LAN 2            | :symbols-ethernet-port: *Empty* | -                                      | -                               |
+|           2.5Gb LAN 3            | :symbols-ethernet-port: *Empty* | -                                      | -                               |
+|           2.5Gb LAN 4            | :symbols-ethernet-port: *Empty* | -                                      | -                               |
+|           2.5Gb LAN 5            | :symbols-ethernet-port: *Empty* | -                                      | -                               |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point    | Drive Type | Drive Capacity | Device Path | File System   | Encryption |
-| :------------- | :--------- | :------------- | :---------- | :------------ | :--------- |
-| `/mount/point` | -          | -              | `/dev/path` | `file-ststem` | -          |
+| Mount Point    | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System   | Encryption |
+| :------------- | :--------- | :------------------------------------------- | :---------  | :------------ | :--------- |
+| `/mount/point` | -          | -                                            | `/dev/path` | `file-ststem` | -          |
 
 #### :symbols-usb:&ensp;External/Attached
 
-| Mount Point    | Drive Type | Drive Capacity | Device Path | File System   | Encryption |
-| :------------- | :--------- | :------------- | :---------- | :------------ | :--------- |
-| `/mount/point` | -          | -              | `/dev/path` | `file-ststem` | -          |
+| Mount Point    | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System   | Encryption |
+| :------------- | :--------- | :------------------------------------------- | :---------- | :------------ | :--------- |
+| `/mount/point` | -          | -                                            | `/dev/path` | `file-ststem` | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-penguin:&ensp;Native
 
-|  Status  | Service                                                  | Port(s) | Role / Notes |
-| :------: | :------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                  | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'} |
+| :------: | :------------------------------------------------------- | :---------------------------------: | :------------------------------------- |
+| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`               | -                                      |
 
 #### :symbols-container:&ensp;Container
 
-|  Status  | Service                                                  | Port(s) | Role / Notes |
-| :------: | :------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                  | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'} |
+| :------: | :------------------------------------------------------- | :---------------------------------: | :------------------------------------- |
+| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`               | -                                      |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

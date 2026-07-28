@@ -63,41 +63,41 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                                               |
-| :-------: | :--------- | :------------------ | :----------------------------------------------------------------------------------------- |
-|   Wi-Fi   | `DHCP`     | `08:8B:C8:4E:19:7B` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                               |
+| :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+|   Wi-Fi   | `DHCP`                                 | `08:8B:C8:4E:19:7B` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
-| Interface | VLAN                                 | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------------- | :---- | :---------------------------- | :------------- |
-|   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface | VLAN                                 | FQDN  | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------- | :---- | :------------------------------------ | :---------------------------------- |
+|   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption             |
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------------------- |
-| `N/A`       | UFS 3.1    | 128 GB         | `N/A`       | `N/A`       | Full Device Encryption |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption             |
+| :---------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------------------- |
+| `N/A`       | UFS 3.1    | 128 GB                                       | `N/A`       | `N/A`       | Full Device Encryption |
 
 #### :symbols-usb:&ensp;External/Attached
 
-| Mount Point | Drive Type | Drive Capacity | Device Path | File System | Encryption |
-| :---------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `-`         | -          | -              | `-`         | `-`         | -          |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :---------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `-`         | -          | -                                            | `-`         | `-`         | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                       | Virtual NIC | Virtual Disk Image | Role / Notes                       |
-| :------: | :----------------------------------------------------------------------- | :---------- | :----------------- | :--------------------------------- |
-| *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment |
+|  Status  | OS                                                                       | Virtual NIC | Virtual Disk Image | Role / Notes {data-sort-method='none'} |
+| :------: | :----------------------------------------------------------------------- | :---------- | :----------------- | :------------------------------------- |
+| *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment     |
 
 #### :brands-android:&ensp;Native Android
 
-|  Status  | Service                                                                |        Port(s)         | Role / Notes                             |
-| :------: | :--------------------------------------------------------------------- | :--------------------: | :--------------------------------------- |
-| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384` `22000` `21027` | Open decentralized file synchronization. |
+|  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}   |
+| :------: | :--------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------- |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |       `8384` `22000` `21027`        | Open decentralized file synchronization. |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

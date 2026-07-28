@@ -63,10 +63,10 @@ hide:
 |  `eth0`   | `192.168.50.4`                         | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 4)* |
 |  `eth1`   | `192.168.50.5`                         | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 5)* |
 
-| Interface |               VLAN                   | FQDN                        | DNS Servers {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} |
-| :-------: | :----------------------------------: | :-------------------------- | :-------------------------------------- | :---------------------------------- |
-|  `eth0`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                      |
-|  `eth1`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                      |
+| Interface |               VLAN                   | FQDN                        | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------: | :-------------------------- | :------------------------------------ | :---------------------------------- |
+|  `eth0`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
+|  `eth1`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -83,7 +83,7 @@ hide:
 | `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB                                         | `/dev/md0`     | `btrfs`     | -          |
 | `/media/nvme0n1p1`     | NVMe SSD           | 250 GB                                       | `/dev/nvme0n1` | `ext4`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-cloud-sync:&ensp;File Sharing
 
@@ -92,42 +92,42 @@ hide:
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                               | Virtual NIC | Virtual Disk Image | Role / Notes                                                                                                            |
+|  Status  | OS                                                                               | Virtual NIC | Virtual Disk Image | Role / Notes {data-sort-method='none'}                                                                                  |
 | :------: | :------------------------------------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](debian_server.md#role){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                  | Port(s) | Role / Notes                                                                                   |
-| :------: | :------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-cloud-sync:&nbsp;NFS](../03_services/nfs.md)   | `2049`  | Remote file system access.                                                                     |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md) |  `22`   | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:symbols-cloud-sync:&nbsp;SMB](../03_services/smb.md)   |  `445`  | Remote file system access.                                                                     |
+|  Status  | Service                                                  | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                         |
+| :------: | :------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-cloud-sync:&nbsp;NFS](../03_services/nfs.md)   |                `2049`               | Remote file system access.                                                                     |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md) |                 `22`                | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:symbols-cloud-sync:&nbsp;SMB](../03_services/smb.md)   |                 `445`               | Remote file system access.                                                                     |
 
 #### :symbols-container:&ensp;Docker Container
 
-|   Status   | Service                                                                                 |           Port(s)            | Role / Notes                                                                                                                                        |
-| :--------: | :-------------------------------------------------------------------------------------- | :--------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)                               |           `45876`            | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*.                                                | 
-|  *Active*  | [:services-cloudflare:&nbsp;Cloudflared](../03_services/cloudflared.md)                 |           `14333`            | Secure reverse-proxy tunnel for hosting private services on the public internet.                                                                    |
-|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                               |            `5001`            | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                                                         |
-|  *Active*  | [:services-f1-replay-timing:&nbsp;F1 Replay Timing](../03_services/f1_replay_timing.md) |       `3000`<br>`8000`       | Visualization of real-time track data and telemetry synced to F1 live and replays.                                                                  |
-|  *Active*  | [:services-gitea:&nbsp;Gitea](../03_services/gitea.md)                                  |        `3080`<br>`222`       | Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. |
-|  *Active*  | [:services-glances:&nbsp;Glances](../03_services/glances.md)                            |           `61208`            | A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.                                                            |
-|  *Active*  | [:services-gotify-notification:&nbsp;Gotify](../03_services/gotify.md)                  |            `8180`            | A simple server for sending and receiving messages in real-time per WebSocket.                                                                      |
-|  *Active*  | [:services-homebox:&nbsp;Homebox](../03_services/homebox.md)                            |            `3100`            | An inventory and organization system built for the home user.                                                                                       |
-|  *Active*  | [:services-immich:&nbsp;Immich](../03_services/immich.md)                               |            `2283`            | High performance self-hosted photo and video management solution.                                                                                   |
-|  *Active*  | [:services-netalertx:&nbsp;NetAlertX](../03_services/netalertx.md)                      |      `20211`<br>`20212`      | Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.          |
-|  *Active*  | [:services-nginx:&nbsp;Nginx](../03_services/nginx.md)                                  |            `8080`            | The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.                                  |
-| *Inactive* | [:services-ntop:&nbsp;ntopng](../03_services/ntopng.md)                                 |       `3000`<br>`5556`       | Web-based traffic and security network traffic monitoring.                                                                                          |
-|  *Active*  | [:services-obsidian:&nbsp;Obsidian LiveSync](../03_services/obsidian_livesync.md)       |            `5984`            | Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.                                                |
-|  *Active*  | [:services-openspeedtest:&nbsp;OpenSpeedTest](../03_services/openspeedtest.md)          |            `3004`            | A free & open-source HTML5 network performance estimation tool.                                                                                     |
-| *Inactive* | [:services-portainer:&nbsp;Portainer](../03_services/portainer.md)                      |            `9001`            | A lightweight service delivery platform for containerized applications.                                                                             |
-|  *Active*  | [:services-portracker:&nbsp;Portracker](../03_services/portracker.md)                   |            `4999`            | A self-hosted, real-time port monitoring and discovery tool.                                                                                        |
-|  *Active*  | [:services-spoolman:&nbsp;Spoolman](../03_services/spoolman.md)                         |            `7912`            | Keep track of your inventory of 3D-printer filament spools.                                                                                         |
-|  *Active*  | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md)                  | `8384`<br>`22000`<br>`21027` | Open decentralized file synchronization.                                                                                                            |
-|  *Active*  | [:symbols-terminal:&nbsp;ttydBridge](../03_services/ttydbridge.md)                      |            `2222`            | A DockerApp makes it easy to use the host terminal in the Web.                                                                                      |
-|  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_services/yt-dlp_web-ui.md)              |            `3033`            | High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                        |
+|   Status   | Service                                                                                 | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                                                                              |
+| :--------: | :-------------------------------------------------------------------------------------- | :---------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)                               |               `45876`               | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*.                                                | 
+|  *Active*  | [:services-cloudflare:&nbsp;Cloudflared](../03_services/cloudflared.md)                 |               `14333`               | Secure reverse-proxy tunnel for hosting private services on the public internet.                                                                    |
+|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                               |                `5001`               | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                                                         |
+|  *Active*  | [:services-f1-replay-timing:&nbsp;F1 Replay Timing](../03_services/f1_replay_timing.md) |           `3000`<br>`8000`          | Visualization of real-time track data and telemetry synced to F1 live and replays.                                                                  |
+|  *Active*  | [:services-gitea:&nbsp;Gitea](../03_services/gitea.md)                                  |            `3080`<br>`222`          | Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD. |
+|  *Active*  | [:services-glances:&nbsp;Glances](../03_services/glances.md)                            |               `61208`               | A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.                                                            |
+|  *Active*  | [:services-gotify-notification:&nbsp;Gotify](../03_services/gotify.md)                  |                `8180`               | A simple server for sending and receiving messages in real-time per WebSocket.                                                                      |
+|  *Active*  | [:services-homebox:&nbsp;Homebox](../03_services/homebox.md)                            |                `3100`               | An inventory and organization system built for the home user.                                                                                       |
+|  *Active*  | [:services-immich:&nbsp;Immich](../03_services/immich.md)                               |                `2283`               | High performance self-hosted photo and video management solution.                                                                                   |
+|  *Active*  | [:services-netalertx:&nbsp;NetAlertX](../03_services/netalertx.md)                      |          `20211`<br>`20212`         | Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.          |
+|  *Active*  | [:services-nginx:&nbsp;Nginx](../03_services/nginx.md)                                  |                `8080`               | The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.                                  |
+| *Inactive* | [:services-ntop:&nbsp;ntopng](../03_services/ntopng.md)                                 |           `3000`<br>`5556`          | Web-based traffic and security network traffic monitoring.                                                                                          |
+|  *Active*  | [:services-obsidian:&nbsp;Obsidian LiveSync](../03_services/obsidian_livesync.md)       |                `5984`               | Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.                                                |
+|  *Active*  | [:services-openspeedtest:&nbsp;OpenSpeedTest](../03_services/openspeedtest.md)          |                `3004`               | A free & open-source HTML5 network performance estimation tool.                                                                                     |
+| *Inactive* | [:services-portainer:&nbsp;Portainer](../03_services/portainer.md)                      |                `9001`               | A lightweight service delivery platform for containerized applications.                                                                             |
+|  *Active*  | [:services-portracker:&nbsp;Portracker](../03_services/portracker.md)                   |                `4999`               | A self-hosted, real-time port monitoring and discovery tool.                                                                                        |
+|  *Active*  | [:services-spoolman:&nbsp;Spoolman](../03_services/spoolman.md)                         |                `7912`               | Keep track of your inventory of 3D-printer filament spools.                                                                                         |
+|  *Active*  | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md)                  |     `8384`<br>`22000`<br>`21027`    | Open decentralized file synchronization.                                                                                                            |
+|  *Active*  | [:symbols-terminal:&nbsp;ttydBridge](../03_services/ttydbridge.md)                      |                `2222`               | A DockerApp makes it easy to use the host terminal in the Web.                                                                                      |
+|  *Active*  | [:services-youtube-dl:&nbsp;yt-dlp WebUI](../03_services/yt-dlp_web-ui.md)              |                `3033`               | High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.                                                        |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

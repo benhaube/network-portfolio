@@ -52,36 +52,36 @@ hide:
 
 ## :symbols-square-activity:&ensp;Resource Allocation
 
-|          vCPU          |  RAM  | Storage {data-sort-method='filesize'} | VDI Location                             |
-| :--------------------: | :---: | :------------------------------------ | :--------------------------------------- |
-| 2C / 2T *(VT-x, VT-d)* | 2 GB  | 50 GB                                 | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
+|          vCPU          |  RAM {data-sort-method='filesize'} | Storage {data-sort-method='filesize'} | VDI Location                             |
+| :--------------------: | :--------------------------------: | :------------------------------------ | :--------------------------------------- |
+| 2C / 2T *(VT-x, VT-d)* | 2 GB                               | 50 GB                                 | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address     | MAC Address         | Notes                                                                         |
-| :-------: | :------------- | :------------------ | :---------------------------------------------------------------------------- |
-| `enp1s0`  | `192.168.50.6` | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Notes {data-sort-method='none'}                                               |
+| :-------: | :------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
+| `enp1s0`  | `192.168.50.6`                         | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter *(Appears as separate device on LAN)* |
 
-| Interface | VLAN                                 | FQDN                 | DNS Servers | Gateway        |
-| :-------: | :----------------------------------- | :------------------- | :---------- | :------------- |
-| `enp1s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1` | `192.168.50.1` |
+| Interface | VLAN                                 | FQDN                 | DNS Servers {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------- | :------------------- | :-------------------------------------- | :---------------------------------- |
+| `enp1s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1`                             | `192.168.50.1`                      |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                                |           Port(s)            | Role / Notes                                                                                   |
-| :------: | :--------------------------------------------------------------------- | :--------------------------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |             `22`             | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384`<br>`22000`<br>`21027` | Open decentralized file synchronization.                                                       |
-| *Active* | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md)  |   `53`<br>`443`<br>`5380`    | An open-source authoritative as well as recursive DNS server.                                  |
+|  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                         |
+| :------: | :--------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |                 `22`                | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`    | Open decentralized file synchronization.                                                       |
+| *Active* | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md)  |       `53`<br>`443`<br>`5380`       | An open-source authoritative as well as recursive DNS server.                                  |
 
 #### :symbols-container:&ensp;Docker Container
 
-|  Status  | Service                                                   | Port(s) | Role / Notes                                                                                         |
-| :------: | :-------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------------- |
-| *Active* | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md) | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
-| *Active* | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md) | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
+|  Status  | Service                                                   | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                               |
+| :------: | :-------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| *Active* | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md) |               `45876`               | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| *Active* | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md) |                `5001`               | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

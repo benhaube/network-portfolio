@@ -35,7 +35,7 @@ hide:
 ## :symbols-router:&ensp;Core Infrastructure 
 &emsp;&emsp;&ensp;*Static & Reserved*
 
-| Device                                                                                                | VLAN   | IP Address {data-sort-method='dotsep'} | Hostname        | Type   | Role / Notes                                                                                                                        |
+| Device                                                                                                | VLAN   | IP Address {data-sort-method='dotsep'} | Hostname        | Type   | Role / Notes {data-sort-method='none'}                                                                                              |
 | :---------------------------------------------------------------------------------------------------- | :----- | :------------------------------------- | :-------------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#physical-ethernet-ports)        | -      | `192.168.50.1`                         | `RT-BE92U-FAF0` | Static | Main Gateway, NTP Master, DHCP Server                                                                                               |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md#network-configuration)            | VLAN50 | `192.168.50.2`                         | `pi-server`     | Static | DNS Secondary *([Technitium](../03_services/technitium.md) cluster)*, [CUPS](../03_services/cups_print_server.md)                   |
@@ -49,7 +49,7 @@ hide:
 ## :symbols-monitor-smartphone:&ensp;Key Clients 
 &emsp;&emsp;&ensp;*DHCP Reserved*
 
-| Device                                                                                                        | VLAN   | IP Address {data-sort-method='dotsep'} | Hostname           | Role / Notes                                                            |
+| Device                                                                                                        | VLAN   | IP Address {data-sort-method='dotsep'} | Hostname           | Role / Notes {data-sort-method='none'}                                  |
 | :------------------------------------------------------------------------------------------------------------ | :----- | :------------------------------------- | :----------------- | :---------------------------------------------------------------------- |
 | [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md#network-configuration)                  | VLAN50 | `192.168.50.10`                        | `bens-workstation` | Fedora Linux 44 *(KDE Plasma Desktop Edition)*                          |
 | [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md#network-configuration) | VLAN50 | `192.168.50.15`                        | `k1c-a71e`         | Creality K1C *(Modified)*                                               |

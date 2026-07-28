@@ -51,7 +51,7 @@ hide:
 
 #### :symbols-message-square-warning:&ensp;Notifications
 
-| Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes                                                                                                                                         |
+| Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes {data-sort-method='none'}                                                                                                               |
 | :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [:symbols-cloud-upload:&nbsp;Backup Alerts](#backup-alerts)                                                                     | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
 | [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |

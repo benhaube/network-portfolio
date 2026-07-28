@@ -46,33 +46,33 @@ hide:
 
 ## :symbols-square-activity:&ensp;Resource Allocation
 
-|         vCPU          |  RAM  | Storage | VDI Location  |
-| :-------------------: | :---: | :------ | :------------ |
-| #C / #T *(virt-tech)* | # GB  | # GB    | `path/to/vdi` |
+|         vCPU          |  RAM {data-sort-method='filesize'} | Storage {data-sort-method='filesize'} | VDI Location  |
+| :-------------------: | :--------------------------------- | :------------------------------------ | :------------ |
+| #C / #T *(virt-tech)* | # GB                               | # GB                                  | `path/to/vdi` |
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Notes |
-| :-------: | :--------- | :------------------ | :---- |
-|  enp1s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | -     |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Notes {data-sort-method='none'} |
+| :-------: | :------------------------------------- | :------------------ | :------------------------------ |
+|  enp1s0   | `x.x.x.x`                              | `XX:XX:XX:XX:XX:XX` | -                               |
 
-| Interface | VLAN   | FQDN                | DNS Servers | Gateway   |
-| :-------: | :----- | :------------------ | :---------- | :-------- |
-|  enp1s0   | VLAN50 | `hostname.internal` | `0.0.0.0`   | `x.x.x.1` |
+| Interface | VLAN   | FQDN                | DNS Servers {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----- | :------------------ | :-------------------------------------- | :---------------------------------- |
+|  enp1s0   | VLAN50 | `hostname.internal` | `0.0.0.0`                               | `x.x.x.1`                           |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                  | Port(s) | Role / Notes |
-| :------: | :------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                  | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'} |
+| :------: | :------------------------------------------------------- | :---------------------------------: | :------------------------------------- |
+| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`               | -                                      |
 
 #### :symbols-container:&ensp;Container
 
-|  Status  | Service                                                  | Port(s) | Role / Notes |
-| :------: | :------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                  | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'} |
+| :------: | :------------------------------------------------------- | :---------------------------------: | :------------------------------------- |
+| *Active* | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`               | -                                      |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Snapshots

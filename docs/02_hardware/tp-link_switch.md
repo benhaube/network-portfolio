@@ -51,13 +51,13 @@ hide:
 
 ## :symbols-ethernet-port:&ensp;Port Map 
 
-| Port # | Connected Device                                                                              | Color / Type  | Notes                                        |
-| :----: | :-------------------------------------------------------------------------------------------- | :------------ | :------------------------------------------- |
-| **1**  | [:symbols-pc-case:&nbsp;Ben's Desktop](bens_desktop.md#network-configuration){ data-preview } | White / Cat5e | `enp7s0` `192.168.50.10` `3C:7C:3F:0D:A9:CD` |
-| **2**  | [:symbols-pc-case:&nbsp;Rob's Desktop](robs_desktop.md#network-configuration){ data-preview } | White / Cat5e | `DHCP` `50:EB:F6:59:74:C3`                   |
-| **3**  | [:symbols-server:&nbsp;Pi 4B Server](pi_4b_server.md#network-configuration){ data-preview }   | White / Cat5e | `eth0` `192.168.50.2` `E4:5F:01:A4:60:07`    |
-| **4**  | :symbols-ethernet-port:&nbsp;*Empty*                                                          | -             | -                                            |
-| **5**  | [:symbols-router:&nbsp;ASUS RT-AX55](asus_rt-ax55.md#physical-ethernet-ports){ data-preview } | Black / Cat6A | Uplink                                       |
+| Port # {data-sort-method='number'} | Connected Device                                                                              | Color / Type {data-sort-method='none'} | Notes {data-sort-method='none'}              |
+| :--------------------------------: | :-------------------------------------------------------------------------------------------- | :------------------------------------- | :------------------------------------------- |
+|                  1                 | [:symbols-pc-case:&nbsp;Ben's Desktop](bens_desktop.md#network-configuration){ data-preview } | White / Cat5e                          | `enp7s0` `192.168.50.10` `3C:7C:3F:0D:A9:CD` |
+|                  2                 | [:symbols-pc-case:&nbsp;Rob's Desktop](robs_desktop.md#network-configuration){ data-preview } | White / Cat5e                          | `DHCP` `50:EB:F6:59:74:C3`                   |
+|                  3                 | [:symbols-server:&nbsp;Pi 4B Server](pi_4b_server.md#network-configuration){ data-preview }   | White / Cat5e                          | `eth0` `192.168.50.2` `E4:5F:01:A4:60:07`    |
+|                  4                 | :symbols-ethernet-port:&nbsp;*Empty*                                                          | -                                      | -                                            |
+|                  5                 | [:symbols-router:&nbsp;ASUS RT-AX55](asus_rt-ax55.md#physical-ethernet-ports){ data-preview } | Black / Cat6A                          | Uplink                                       |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance Notes

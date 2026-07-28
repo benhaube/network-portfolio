@@ -43,7 +43,7 @@ hide:
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-:    Hardware / Software security features (e.g., TPM2)
+:    Hardware / Software security features *(e.g., TPM2)*
 
 ## :symbols-circuit-board:&ensp;Core Specs
 
@@ -53,29 +53,29 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                  |
-| :-------: | :--------- | :------------------ | :---------------------------- |
-|  enp7s0   | `x.x.x.x`  | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                  |
+| :-------: | :------------------------------------- | :------------------ | :---------------------------- |
+|  enp7s0   | `x.x.x.x`                              | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
 
-| Interface | VLAN   | FQDN               | DNS Servers         | Gateway   |
-| :-------: | :----- | :----------------- | :------------------ | :-------- |
-|  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x` | `x.x.x.1` |
+| Interface | VLAN   | FQDN               | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----- | :----------------- | :------------------------------------ | :---------------------------------- |
+|  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x`                   | `x.x.x.1`                           |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
-| :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
+| Mount Point    | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :------------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `/mount-point` | NVMe SSD   | 929 GB                                       | `/dev/path` | `btrfs`     | -          |
 
 #### :symbols-usb:&ensp;External/Attached
 
-| Mount Point    | Drive Type | Drive Capacity | Device Path | File System | Encryption |
-| :------------- | :--------- | :------------- | :---------- | :---------- | :--------- |
-| `/mount-point` | NVMe SSD   | 929 GB         | `/dev/path` | `btrfs`     | -          |
+| Mount Point    | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
+| :------------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
+| `/mount-point` | NVMe SSD   | 929 GB                                       | `/dev/path` | `btrfs`     | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
@@ -85,15 +85,15 @@ hide:
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                   | Port(s) | Role / Notes |
-| :------: | :-------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                   | Port(s) {data-sort-method='number'} | Role / Notes |
+| :------: | :-------------------------------------------------------- | :---------------------------------: | :----------- |
+| *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`               | -            |
 
 #### :symbols-container:&ensp;Docker
 
-|  Status  | Service                                                   | Port(s) | Role / Notes |
-| :------: | :-------------------------------------------------------- | :-----: | :----------- |
-| *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) | `XXXX`  | -            |
+|  Status  | Service                                                   | Port(s) {data-sort-method='number'} | Role / Notes |
+| :------: | :-------------------------------------------------------- | :---------------------------------: | :----------- |
+| *Active* | :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`               | -            |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

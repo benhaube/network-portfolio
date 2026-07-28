@@ -47,14 +47,14 @@ hide:
 
 ## :symbols-ethernet-port:&ensp;Port Map
 
-| Port # | Connected Device                     | Color / Type | Notes |
-| :----: | :----------------------------------- | :----------- | :---- |
-| **1**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
-| **2**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
-| **3**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
-| **4**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
-| **5**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
-| **6**  | :symbols-ethernet-port:&nbsp;*Empty* | -            | -     |
+| Port # {data-sort-method='number'} | Connected Device                     | Color / Type {data-sort-method='none'} | Notes {data-sort-method='none'} |
+| :--------------------------------: | :----------------------------------- | :------------------------------------- | :------------------------------ |
+|                 1                  | :symbols-ethernet-port:&nbsp;*Empty* | -                                      | -                               |
+|                 2                  | :symbols-ethernet-port:&nbsp;*Empty* | -                                      | -                               |
+|                 3                  | :symbols-ethernet-port:&nbsp;*Empty* | -                                      | -                               |
+|                 4                  | :symbols-ethernet-port:&nbsp;*Empty* | -                                      | -                               |
+|                 5                  | :symbols-ethernet-port:&nbsp;*Empty* | -                                      | -                               |
+|                 6                  | :symbols-ethernet-port:&nbsp;*Empty* | -                                      | -                               |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance Notes

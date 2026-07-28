@@ -72,15 +72,15 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                                         |
-| :-------: | :-------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
-| `enp7s0`  | `192.168.50.10` | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } *(Port 1)* |
-| `wlp6s0`  | `DHCP`          | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)*           |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                         |
+| :-------: | :------------------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
+| `enp7s0`  | `192.168.50.10`                        | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } *(Port 1)* |
+| `wlp6s0`  | `DHCP`                                 | `F2:1E:02:CD:11:10` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)*           |
 
-| Interface | VLAN                                 | FQDN                        | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='none'} |
-| :-------: | :----------------------------------- | :-------------------------- | :------------------------------------ | :-------------------------------- |
-| `enp7s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                    |
-| `wlp6s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                    |
+| Interface | VLAN                                 | FQDN                        | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------- | :-------------------------- | :------------------------------------ | :---------------------------------- |
+| `enp7s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
+| `wlp6s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -101,11 +101,11 @@ hide:
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                       | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | N/A         |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                       | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | N/A         |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes                                                          |
+|  Status  | OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes {data-sort-method='none'}                                |
 | :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
 | *Active* | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
@@ -113,10 +113,10 @@ hide:
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                                |           Port(s)            | Role / Notes                                                              |
-| :------: | :--------------------------------------------------------------------- | :--------------------------: | :------------------------------------------------------------------------ |
-| *Active* | [:symbols-chevrons-right-left:&nbsp;RDP](../03_services/rdp.md)        |            `3389`            | Remote desktop protocol for accessing the desktop over the local network. |
-| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384`<br>`22000`<br>`21027` | Open decentralized file synchronization.                                  |
+|  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                    |
+| :------: | :--------------------------------------------------------------------- | :---------------------------------: | :------------------------------------------------------------------------ |
+| *Active* | [:symbols-chevrons-right-left:&nbsp;RDP](../03_services/rdp.md)        |                `3389`               | Remote desktop protocol for accessing the desktop over the local network. |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`    | Open decentralized file synchronization.                                  |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

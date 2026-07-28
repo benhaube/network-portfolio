@@ -59,9 +59,9 @@ hide:
 | :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
 |  `wlan0`  | `192.168.50.3`                         | `2c:cf:67:db:f5:e2` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
-| Interface |               VLAN                   | FQDN               | DNS Servers {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} |
-| :-------: | :----------------------------------: | :----------------- | :-------------------------------------- | :---------------------------------- |
-|  `wlan0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                      |
+| Interface |               VLAN                   | FQDN               | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------: | :----------------- | :------------------------------------ | :---------------------------------- |
+|  `wlan0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -73,23 +73,23 @@ hide:
 | `/boot/firmware` | MicroSD    | 512 MB                                       | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 80 MB                                        | `log2ram`        | `tmpfs`     | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                                |           Port(s)            | Role / Notes                                                                                                                          |
-| :------: | :--------------------------------------------------------------------- | :--------------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
-| *Active* | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md)                 |        `80`<br>`443`         | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
-| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |             `22`             | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
-| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384`<br>`22000`<br>`21027` | Open decentralized file synchronization.                                                                                              |
+|  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                                                                |
+| :------: | :--------------------------------------------------------------------- | :---------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
+| *Active* | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md)                 |            `80`<br>`443`            | Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services. |
+| *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)               |                `22`                 | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`    | Open decentralized file synchronization.                                                                                              |
 
 #### :symbols-container:&ensp;Docker Container
 
-|   Status   | Service                                                            | Port(s) | Role / Notes                                                                                         |
-| :--------: | :----------------------------------------------------------------- | :-----: | :--------------------------------------------------------------------------------------------------- |
-|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)          | `45876` | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
-|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)          | `5001`  | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
-| *Inactive* | [:services-portainer:&nbsp;Portainer](../03_services/portainer.md) | `9001`  | A lightweight service delivery platform for containerized applications.                              |
+|   Status   | Service                                                            | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                               |
+| :--------: | :----------------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------------- |
+|  *Active*  | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)          |               `45876`               | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+|  *Active*  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)          |                `5001`               | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
+| *Inactive* | [:services-portainer:&nbsp;Portainer](../03_services/portainer.md) |                `9001`               | A lightweight service delivery platform for containerized applications.                              |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

@@ -81,13 +81,13 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-|  Interface  | IP Address | MAC Address         | Connected To                                                                               |
-| :---------: | :--------- | :------------------ | :----------------------------------------------------------------------------------------- |
-| `wlp0s20f3` | `DHCP`     | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
+|  Interface  | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                               |
+| :---------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+| `wlp0s20f3` | `DHCP`                                 | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
-|  Interface  | VLAN                                 | FQDN  | DNS Servers                   | Gateway        |
-| :---------: | :----------------------------------- | :---- | :---------------------------- | :------------- |
-| `wlp0s20f3` | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+|  Interface  | VLAN                                 | FQDN  | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :---------: | :----------------------------------- | :---- | :------------------------------------ | :---------------------------------- |
+| `wlp0s20f3` | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -106,19 +106,19 @@ hide:
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                       | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                       | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes                                    |
+|  Status  | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes {data-sort-method='none'}          |
 | :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                                |           Port(s)            | Role / Notes                             |
-| :------: | :--------------------------------------------------------------------- | :--------------------------: | :--------------------------------------- |
-| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) | `8384`<br>`22000`<br>`21027` | Open decentralized file synchronization. |
+|  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}   |
+| :------: | :--------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------- |
+| *Active* | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`    | Open decentralized file synchronization. |
 
 ---
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes

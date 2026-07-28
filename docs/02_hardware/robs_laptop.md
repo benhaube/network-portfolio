@@ -58,10 +58,10 @@ hide:
 | Ethernet  | `DHCP`     | `E8:9C:25:90:8B:11` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port-1)*, Temporary connection |
 |   Wi-Fi   | `DHCP`     | `F8:54:F6:C1:88:D2` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){data-preview} *(VLAN50)*                                 |
 
-| Interface |               VLAN                   | FQDN  | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------------: | :---- | :---------------------------- | :------------- |
-| Ethernet  | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
-|   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN                   | FQDN  | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------: | :---- | :------------------------------------ | :---------------------------------- |
+| Ethernet  | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
+|   Wi-Fi   | :symbols-shield-quarter:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

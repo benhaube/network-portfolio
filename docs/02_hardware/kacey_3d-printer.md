@@ -57,13 +57,13 @@ hide:
 
 ## :symbols-lan:&ensp;Network Configuration
 
-| Interface | IP Address      | MAC Address         | Connected To                                                                               |
-| :-------: | :-------------- | :------------------ | :----------------------------------------------------------------------------------------- |
-|  `wlan0`  | `192.168.50.15` | `FC:EE:28:09:A7:1E` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                               |
+| :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+|  `wlan0`  | `192.168.50.15`                        | `FC:EE:28:09:A7:1E` | [:symbols-wifi-cog:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
-| Interface |               VLAN                   | FQDN             | DNS Servers                   | Gateway        |
-| :-------: | :----------------------------------: | :--------------- | :---------------------------- | :------------- |
-|  `wlan0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2` | `192.168.50.1` |
+| Interface |               VLAN                   | FQDN             | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :----------------------------------: | :--------------- | :------------------------------------ | :---------------------------------- |
+|  `wlan0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -81,11 +81,11 @@ hide:
 | :---------------- | :-------------- | :------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB                                      | `/dev/sda1` | `vfat`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Docker Containers
+## :symbols-monitor-cloud:&ensp;Services / Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 
-|  Status  | Service                                                     | Port(s) {data-sort-method='number'} | Role / Notes                                                                                   |
+|  Status  | Service                                                     | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                         |
 | :------: | :---------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |
 | *Active* | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   |            `80`<br>`4408`           | A free and open-source Klipper web interface for managing your 3D-printer.                     |
 | *Active* | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |                `7125`               | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |

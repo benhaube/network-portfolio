@@ -63,6 +63,7 @@ hide:
 | `CUSTPROP`  | System         | Managing custom device property values       |   :symbols-check:&nbsp;Yes   |
 | `DBCLNP`    | System         | Database cleanup                             |   :symbols-check:&nbsp;Yes   |
 | `DIGSCAN`   | Name Discovery | Dig *(DNS)* name resolution 	                |                              |
+| `ICMP`      | Other          | ICMP *(ping)* status checker                 |                              |
 | `INTRNT`    | Device Scan    | Internet *(WAN)* IP address scanner          |                              |
 | `MAINT`     | System         | Maintenance of logs, etc.                    |                              |
 | `NEWDEV`    | System         | New device template                          |   :symbols-check:&nbsp;Yes   |

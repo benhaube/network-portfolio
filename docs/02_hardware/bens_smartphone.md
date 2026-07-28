@@ -85,7 +85,7 @@ hide:
 | :---------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -                                            | `-`         | `-`         | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-layers:&ensp;Virtualization
 

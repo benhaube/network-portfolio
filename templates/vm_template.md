@@ -60,7 +60,7 @@ hide:
 | :-------: | :----- | :------------------ | :-------------------------------------- | :---------------------------------- |
 |  enp1s0   | VLAN50 | `hostname.internal` | `0.0.0.0`                               | `x.x.x.1`                           |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 

@@ -81,7 +81,7 @@ hide:
 | :---------------- | :-------------- | :------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB                                      | `/dev/sda1` | `vfat`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 

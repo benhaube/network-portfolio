@@ -75,7 +75,7 @@ hide:
 | :------------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
 | `/mount-point` | NVMe SSD   | 929 GB                                       | `/dev/path` | `btrfs`     | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-layers:&ensp;Virtualization
 

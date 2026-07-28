@@ -83,7 +83,7 @@ hide:
 | :--------------- | :-------------- | :------------------------------------------- | :---------- | :---------- | :--------- |
 | `/mnt/usb-drive` | USB Flash Drive | 28.7 GB                                      | `/dev/sda1` | `ext4`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 

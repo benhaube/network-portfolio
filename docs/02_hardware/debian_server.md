@@ -66,7 +66,7 @@ hide:
 | :-------: | :----------------------------------- | :------------------- | :-------------------------------------- | :---------------------------------- |
 | `enp1s0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1`                             | `192.168.50.1`                      |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 

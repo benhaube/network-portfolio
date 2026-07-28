@@ -73,7 +73,7 @@ hide:
 | `/boot/firmware` | MicroSD    | 512 MB                                       | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 80 MB                                        | `log2ram`        | `tmpfs`     | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-penguin:&ensp;Native Linux
 

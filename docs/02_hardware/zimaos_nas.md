@@ -83,7 +83,7 @@ hide:
 | `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB                                         | `/dev/md0`     | `btrfs`     | -          |
 | `/media/nvme0n1p1`     | NVMe SSD           | 250 GB                                       | `/dev/nvme0n1` | `ext4`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-cloud-sync:&ensp;File Sharing
 

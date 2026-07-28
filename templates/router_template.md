@@ -86,7 +86,7 @@ hide:
 | :------------- | :--------- | :------------------------------------------- | :---------- | :------------ | :--------- |
 | `/mount/point` | -          | -                                            | `/dev/path` | `file-ststem` | -          |
 
-## :symbols-monitor-cloud:&ensp;Services / Containers
+## :symbols-monitor-cloud:&ensp;Services & Containers
 
 #### :symbols-penguin:&ensp;Native
 

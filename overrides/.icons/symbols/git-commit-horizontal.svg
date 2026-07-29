@@ -1,3 +1,1 @@
-<svg class="lucide lucide-git-commit-horizontal-icon lucide-git-commit-horizontal" fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m12 8c-1.8524 0-3.4252 1.2812-3.873 3h-5.127a1 1 0 00-1 1 1 1 0 001 1h5.127c.44782 1.7188 2.0206 3 3.873 3s3.4252-1.2812 3.873-3h5.127a1 1 0 001-1 1 1 0 00-1-1h-5.127c-.44782-1.7188-2.0206-3-3.873-3zm0 2c1.1164 0 2 .88359 2 2s-.88359 2-2 2-2-.88359-2-2 .88359-2 2-2z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-commit-horizontal-icon lucide-git-commit-horizontal"><circle cx="12" cy="12" r="3"/><line x1="3" x2="9" y1="12" y2="12"/><line x1="15" x2="21" y1="12" y2="12"/></svg>

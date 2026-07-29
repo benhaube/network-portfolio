@@ -1,3 +1,20 @@
-<svg fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m9 4a1 1 0 00-1 1 1 1 0 001 1h2v2h-3c-1.645 0-3 1.355-3 3v1h-2v-2a1 1 0 00-1-1 1 1 0 00-1 1v6a1 1 0 001 1 1 1 0 001-1v-2h2v1c0 1.645 1.355 3 3 3h2.5c.15826 0 .30544.07261.40039.19922l.59961.80078c.47161.62881 1.214 1 2 1h2.5c1.645 0 3-1.355 3-3v-2h2v3a1 1 0 001 1 1 1 0 001-1v-8a1 1 0 00-1-1 1 1 0 00-1 1v3h-2v-2c0-1.645-1.355-3-3-3h-3v-2h2a1 1 0 001-1 1 1 0 00-1-1h-3-3zm-1 6h4 4c.56413 0 1 .43587 1 1v6c0 .56413-.43587 1-1 1h-2.5c-.15826 0-.30544-.07261-.40039-.19922l-.59961-.80078c-.47161-.62881-1.214-1-2-1h-2.5c-.56413 0-1-.43587-1-1v-4c0-.56413.43587-1 1-1z"/>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-engine"
+>
+  <path d="M12 9V5" />
+  <path d="M18 14h4" />
+  <path d="M2 10v6" />
+  <path d="M22 10v8" />
+  <path d="M6 13H2" />
+  <path d="M8 17a2 2 0 01-2-2v-4a2 2 0 012-2h8a2 2 0 012 2v6a2 2 0 01-2 2h-2.5a1.5 1.5 0 01-1.2-.6l-.6-.8a1.5 1.5 0 00-1.2-.6z" />
+  <path d="M9 5h6" />
 </svg>

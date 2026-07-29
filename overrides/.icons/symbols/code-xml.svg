@@ -1,3 +1,1 @@
-<svg class="lucide lucide-code-xml-icon lucide-code-xml" fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m14.541 3a1 1 0 00-.99609.70117l-5 16a1 1 0 00.65625 1.2539 1 1 0 001.2539-.65625l5-16a1 1 0 00-.65625-1.2539 1 1 0 00-.25781-.044922zm-8.541 4a1 1 0 00-.70703.29297l-4 4a1.0001 1.0001 0 000 1.4141l4 4a1 1 0 001.4141 0 1 1 0 000-1.4141l-3.293-3.293 3.293-3.293a1 1 0 000-1.4141 1 1 0 00-.70703-.29297zm12 0a1 1 0 00-.70703.29297 1 1 0 000 1.4141l3.293 3.293-3.293 3.293a1 1 0 000 1.4141 1 1 0 001.4141 0l4-4a1.0001 1.0001 0 000-1.4141l-4-4a1 1 0 00-.70703-.29297z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>

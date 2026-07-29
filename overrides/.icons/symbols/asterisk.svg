@@ -1,3 +1,1 @@
-<svg class="lucide lucide-asterisk-icon lucide-asterisk" fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m12 5a1 1 0 00-1 1v4.2676l-3.6953-2.1328a1 1 0 00-.75977-.10156 1 1 0 00-.60742.4668 1 1 0 00.36719 1.3652l3.6973 2.1348-3.6973 2.1348a1 1 0 00-.36719 1.3652 1 1 0 001.3672.36523l3.6953-2.1328v4.2676a1 1 0 001 1 1 1 0 001-1v-4.2676l3.6953 2.1328a1 1 0 001.3672-.36523 1 1 0 00-.36719-1.3652l-3.6973-2.1348 3.6973-2.1348a1 1 0 00.36719-1.3652 1 1 0 00-.60742-.4668 1 1 0 00-.75977.10156l-3.6953 2.1328v-4.2676a1 1 0 00-1-1z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk-icon lucide-asterisk"><path d="M12 6v12"/><path d="M17.196 9 6.804 15"/><path d="m6.804 9 10.392 6"/></svg>

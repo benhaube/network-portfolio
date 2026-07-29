@@ -1,3 +1,1 @@
-<svg class="lucide lucide-terminal-icon lucide-terminal" fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m4 4a1 1 0 00-.70703.29297 1 1 0 000 1.4141l5.293 5.293-5.293 5.293a1 1 0 000 1.4141 1 1 0 001.4141 0l6-6a1.0001 1.0001 0 000-1.4141l-6-6a1 1 0 00-.70703-.29297zm8 14a1 1 0 00-1 1 1 1 0 001 1h8a1 1 0 001-1 1 1 0 00-1-1h-8z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal-icon lucide-terminal"><path d="M12 19h8"/><path d="m4 17 6-6-6-6"/></svg>

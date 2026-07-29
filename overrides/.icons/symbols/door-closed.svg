@@ -1,3 +1,1 @@
-<svg class="lucide lucide-door-closed-icon lucide-door-closed" fill="currentColor" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path d="m8 3c-1.645 0-3 1.355-3 3v13h-3a1 1 0 00-1 1 1 1 0 001 1h20a1 1 0 001-1 1 1 0 00-1-1h-3v-13c0-1.645-1.355-3-3-3h-8zm0 2h8c.56413 0 1 .43587 1 1v13h-10v-13c0-.56413.43587-1 1-1zm2 6a1 1 0 00-1 1 1 1 0 001 1h.009766a1 1 0 001-1 1 1 0 00-1-1h-.009766z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-door-closed-icon lucide-door-closed"><path d="M10 12h.01"/><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/></svg>

@@ -132,14 +132,14 @@ theme:
       default: symbols/tag
       3D-printer: symbols/printer-3d-nozzle
       active: symbols/circle-check
-      android: brands/android
+      android: brands/android-2
       backup: symbols/cloud-upload
       container: symbols/container
       container-host: symbols/container
       dashboard: symbols/layout-dashboard
       deprecated: symbols/trash-2
       desktop: symbols/pc-case
-      development: symbols/git-branch
+      development: symbols/git-fork
       dns: symbols/cloud-cog
       download: symbols/download
       file-share: symbols/share
@@ -147,7 +147,7 @@ theme:
       inactive: symbols/circle-x
       infra: symbols/chevrons-left-right-ellipsis
       inventory: symbols/clipboard-list
-      iot: symbols/home-automation
+      iot: symbols/house-wifi
       isp: symbols/globe
       laptop: symbols/laptop-minimal
       linux: symbols/tux
@@ -157,10 +157,10 @@ theme:
       monitor: symbols/activity
       nas: symbols/server-nas
       native: symbols/tux
-      network: symbols/lan 
+      network: symbols/network 
       new: symbols/badge-alert
       office: symbols/desk-lamp
-      pc: symbols/personal-computer
+      pc: symbols/computer
       policy: symbols/file-pen-line
       print: symbols/printer
       printer-cart: symbols/printer

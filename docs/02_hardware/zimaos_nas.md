@@ -39,7 +39,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:services-zimaos:&ensp;ZimaOS v1.6.2](https://www.zimaspace.com/zimaos){ external-link } *(Immutable)*
+:    [:services-zimaos:&ensp;ZimaOS v1.7.0](https://www.zimaspace.com/zimaos){ external-link } *(Immutable)*
 
 #### :symbols-user-key:&ensp;Credentials
 

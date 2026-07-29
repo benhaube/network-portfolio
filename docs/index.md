@@ -11,7 +11,7 @@ hide:
 [About Me&ensp;:symbols-user-search:](about.md){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :symbols-network-node:&ensp;Infrastructure
+## :symbols-chevrons-left-right-ellipsis:&ensp;Infrastructure
 
 [:symbols-tornado:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
@@ -32,7 +32,7 @@ hide:
 :    A *Mermaid.js* flowchart focusing on physical devices and their connections.
 
 ---
-## :symbols-monitor-smartphone:&ensp;Hardware
+## :symbols-circuit-board:&ensp;Hardware
 
 !!! links inline end "Extra Links"
 

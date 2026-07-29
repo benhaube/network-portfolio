@@ -150,13 +150,13 @@ theme:
       iot: symbols/home-automation
       isp: symbols/globe
       laptop: symbols/laptop-minimal
-      linux: symbols/penguin
+      linux: symbols/tux
       living-room: symbols/sofa
       map: symbols/sitemap
       mobile: symbols/tablet-smartphone
       monitor: symbols/activity
       nas: symbols/server-nas
-      native: symbols/penguin
+      native: symbols/tux
       network: symbols/lan 
       new: symbols/badge-alert
       office: symbols/desk-lamp

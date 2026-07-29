@@ -83,7 +83,7 @@ hide:
 | :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |
 | *Active* | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network *(NAT)* | `disk-image.qcow2` | -            |
 
-#### :symbols-penguin:&ensp;Native Linux
+#### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                   | Port(s) {data-sort-method='number'} | Role / Notes |
 | :------: | :-------------------------------------------------------- | :---------------------------------: | :----------- |

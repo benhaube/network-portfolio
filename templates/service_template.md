@@ -42,7 +42,7 @@ hide:
 | Host Device                                      | Method                                    | Container Name   | Image            |
 | :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- |
 | :devices-icon:&nbsp;[Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` |
-| :devices-icon:&nbsp;[Device](device_template.md) | :symbols-penguin:&nbsp;Native Linux       | `N/A`            | `N/A`            |
+| :devices-icon:&nbsp;[Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            |
 
 ### :symbols-settings:&ensp;Configuration 
 

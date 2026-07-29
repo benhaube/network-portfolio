@@ -11,7 +11,7 @@ hide:
 *With Email SMTP and Gotify*
 
 ---
-## :symbols-package-search:&ensp;Install Required Packages
+## :symbols-install-desktop:&ensp;Install Required Packages
 
 **Dependencies:**
 :     In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.

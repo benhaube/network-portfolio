@@ -52,7 +52,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-blocks:&ensp;Loaded Plugins 
+#### :symbols-puzzle:&ensp;Loaded Plugins 
 
 | Plugin ID   | Category       | Description {data-sort-method='none'}        | Required {data-sort-reverse} |
 | :---------- | :------------- | :------------------------------------------- | :--------------------------: |

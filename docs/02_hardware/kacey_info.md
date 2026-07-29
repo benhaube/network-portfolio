@@ -55,7 +55,7 @@ hide:
       + *Chip:* `GD32F303RET6`
       + *Version:* `CR4CU220812S12`
 
-## :symbols-lan:&ensp;Network
+## :symbols-network:&ensp;Network
 
 #### Moonraker
 
@@ -135,7 +135,7 @@ M600
 M600
 ```
 
-#### :symbols-file-config:&ensp;Klipper Configuration Files
+#### :symbols-file-cog:&ensp;Klipper Configuration Files
 
 ```cfg {title="printer.cfg" linenums="1" .mono-title}
 --8<-- "printer.cfg"

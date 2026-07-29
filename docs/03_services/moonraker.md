@@ -58,7 +58,7 @@ hide:
 2. Enter this command to run the Creality Helper Script.
 3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
 
-#### :symbols-file-config:&ensp;Config File
+#### :symbols-file-cog:&ensp;Config File
 
 ```ini {title="moonraker.cfg" linenums="1" .mono-title}
 --8<-- "moonraker.cfg"

@@ -15,7 +15,7 @@ hide:
 # Ben's Smartphone
 *Google Pixel 9 Pro*
 
-[Android Help&ensp;:symbols-circle-question-mark:](https://support.google.com/android/?hl=en#topic=7313011){ .md-button .md-button--primary }&emsp;[Device Support&ensp;:symbols-life-buoy:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }&emsp;[Pixel Care&thinsp;+&ensp;:symbols-shield-heart:](https://store.google.com/us/pixel-care?hl=en-US){ .md-button .md-button--primary }
+[Android Help&ensp;:symbols-circle-question-mark:](https://support.google.com/android){ .md-button .md-button--primary }&emsp;[Device Support&ensp;:symbols-life-buoy:](https://store.google.com/us/my-devices?hl=en-US){ .md-button .md-button--primary }&emsp;[Pixel Care&thinsp;+&ensp;:symbols-shield-heart:](https://store.google.com/us/pixel-care?hl=en-US){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -34,7 +34,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-android:&ensp;Android 17](https://www.android.com/){ external-link }
+:    [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -61,7 +61,7 @@ hide:
 | :--------------------------------------------------------- | :-------------------- | :---------------------------------------------------------------------------- | :------------ | :------------------------------------ | :-------- | :----- |
 | :brands-google-tensor:&nbsp;Google Tensor G4 *(arm64-v8a)* | 8C / 8T<br>3-Clusters | **Cluster-1:** 1950 MHz<br>**Cluster-2:** 2600 MHz<br>**Cluster-3:** 3105 MHz | 16 GB LPDDR5X | :brands-google-tensor:&nbsp;Mali-G715 | -         | Shared |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                               |
 | :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
@@ -93,7 +93,7 @@ hide:
 | :------: | :----------------------------------------------------------------------- | :---------- | :----------------- | :------------------------------------- |
 | *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment     |
 
-#### :brands-android:&ensp;Native Android
+#### :brands-android-2:&ensp;Native Android
 
 |  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}   |
 | :------: | :--------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------- |
@@ -110,12 +110,12 @@ hide:
     + [ASUS RT-BE92U](asus_rt-be92u.md) is the primary server, and [ZimaOS NAS](zimaos_nas.md) is the secondary / backup server.
     + The VPN is configured through the WireGuard application, and has both profiles loaded. The default profile connects to the ASUS router
 
-    :services-gotify-notification:&ensp;**Gotify:**
+    :symbols-message-square-dot:&ensp;**Push Notifications:**
 
     + The [Gotify](../03_services/gotify.md) application is installed for instant push notifications regarding the essential network infrastructure.
     + Log into the app with the "admin" user. 
 
-    :symbols-mail:&ensp;**Email Client:**
+    :symbols-mail-open:&ensp;**Email Client:**
 
     + The standard Gmail app has been disabled and replaced with [Thunderbird](https://www.thunderbird.net/en-US/mobile/){ external-link } *(formerly K9-Mail)* on this mobile device. 
     + Account and app settings are backed up to the [ZimaOS NAS](zimaos_nas.md) with [Syncthing](../03_services/syncthing.md)

@@ -1,5 +1,5 @@
 ---
-icon: symbols/tag
+icon: symbols/tags
 title: Hardware Tags
 subtitle: An Index of Relevant Tags
 search:

@@ -80,7 +80,7 @@ hide:
     sudo systemctl reload caddy
     ```
 
-#### :symbols-file-config:&ensp;The 'Caddyfile'
+#### :symbols-file-cog:&ensp;The 'Caddyfile'
 
 ```nginx {title="/etc/caddy/Caddyfile" linenums="1" .mono-title}
 --8<-- "Caddyfile"

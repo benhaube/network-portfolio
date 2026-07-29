@@ -55,7 +55,7 @@ hide:
       + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)" 
       + SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                               |
 | :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |

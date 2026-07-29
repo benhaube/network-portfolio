@@ -48,7 +48,7 @@ hide:
 | `pi-zero.internal` | **A**       | `192.168.50.3`                           |         :symbols-check:        | The dedicated Caddy reverse proxy host. |
 | `immich.internal`  | **CNAME**   | `pi-zero.internal`                       |           :symbols-x:          | Points the Immich domain to the proxy.  |
 
-## :symbols-file-config:&ensp;Caddy Configuration
+## :symbols-file-cog:&ensp;Caddy Configuration
 
 #### File Location 
 

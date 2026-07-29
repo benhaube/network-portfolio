@@ -17,7 +17,7 @@ hide:
 # TP-Link Switch
 *Model SG105*
 
-[Manual&ensp;:symbols-notebook-text:](../assets/manuals/TL-SG105.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:symbols-file-chart:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }
+[Manual&ensp;:symbols-notebook-text:](../assets/manuals/TL-SG105.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:symbols-file-chart-column:](../assets/manuals/TL-SG105_info.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Physical Overview

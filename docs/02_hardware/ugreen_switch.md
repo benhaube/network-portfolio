@@ -17,7 +17,7 @@ hide:
 # Ugreen Switch
 *Model UM106X*
 
-[Manual&ensp;:symbols-notebook-text:](../assets/manuals/Ugreen_CM106X_Manual.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:symbols-file-chart:](../assets/manuals/Ugreen_CM106X_Datasheet.pdf){ .md-button .md-button--primary }
+[Manual&ensp;:symbols-notebook-text:](../assets/manuals/Ugreen_CM106X_Manual.pdf){ .md-button .md-button--primary }&emsp;[Datasheet&ensp;:symbols-file-chart-column:](../assets/manuals/Ugreen_CM106X_Datasheet.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Physical Overview

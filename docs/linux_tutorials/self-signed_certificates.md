@@ -84,7 +84,7 @@ Now that we have the private key and the CSR we have the pieces we need to gener
     | `-signkey`                       | Specifies the private key that will be used to sign the certificate.                              |
     | `-out`                           | Specifies the file name for the output signed certificate file.                                   |
 
-## :symbols-file-config:&ensp;Configure the Web Server
+## :symbols-file-cog:&ensp;Configure the Web Server
 
 The process to configure your Web server to use your new self-signed certificate will vary depending on the server you are using. *(e.g., Nginx, Apache, etc.)* Check the documentation for your specific Web server, then update the configuration file with the directory path of your certificate. 
 

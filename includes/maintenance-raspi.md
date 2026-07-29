@@ -56,7 +56,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
     --8<-- "starship-raspi.toml"
     ```
 
-#### :symbols-login:&ensp;Fastfetch Login Preset
+#### :symbols-log-in:&ensp;Fastfetch Login Preset
 
 The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 

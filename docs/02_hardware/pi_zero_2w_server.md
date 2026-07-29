@@ -53,7 +53,7 @@ hide:
 | :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
 | :brands-arm:&nbsp;BCM2837 *(Armv-8)* | 4C / 4T *(Cortex-A53)* | 1.2 GHz   | 512 MB SDRAM | VideoCore IV | 400 MHz   | *Shared* |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                               |
 | :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |

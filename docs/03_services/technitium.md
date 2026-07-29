@@ -84,7 +84,7 @@ curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
     /DATA/Quick_Storage/Backup/pi-server/Technitium/
     ```
 
-#### :symbols-file-config:&ensp;Zone Files
+#### :symbols-file-cog:&ensp;Zone Files
 
 ```zone {title="50.168.192.in-addr.arpa.zone" linenums="1" .mono-title}
 --8<-- "50.168.192.in-addr.arpa.zone"

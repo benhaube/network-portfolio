@@ -31,7 +31,7 @@ hide:
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    :symbols-lan:&nbsp;Local Access:
+:    :symbols-network:&nbsp;Local Access:
 
       + <http://storage-server.internal:8080>
       + <http://storage-server-2.internal:8080>
@@ -62,7 +62,7 @@ hide:
 2. Mounts your site folder as read-only (ro) for extra security.
 3. Mounts your site folder as read-only (ro) for extra security.
 
-#### :symbols-file-config:&ensp;Config File
+#### :symbols-file-cog:&ensp;Config File
 
 ```nginx {title="/DATA/AppData/Network-Portfolio/default.conf" linenums="1" .mono-title}
 --8<-- "nginx.conf"

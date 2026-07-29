@@ -70,7 +70,7 @@ hide:
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
 | :brands-amd:&nbsp;Ryzen(r) 7 5800X *(x86-64)* | 8C / 16T        | 4.7 GHz   | 32 GB DDR4 *(3600 MHz)* | :brands-amd:&nbsp;Radeon(r) 6600XT | 2581 MHz  | 8 GB GDDR6 |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                         |
 | :-------: | :------------------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
@@ -268,7 +268,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
     --8<-- "starship-desktop.toml"
     ```
 
-#### :symbols-login:&ensp;Fastfetch Login Preset
+#### :symbols-log-in:&ensp;Fastfetch Login Preset
 
 The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 

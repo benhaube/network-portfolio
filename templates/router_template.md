@@ -41,7 +41,7 @@ hide:
     
       + Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 #### :symbols-globe:&ensp;WAN Connection
 
@@ -49,7 +49,7 @@ hide:
 | :-----------------------------------: | :------------------------------------- | :------------------ | :------------------------------------- |
 |               `wan0`                  | `x.x.x.x`                              | `XX:XX:XX:XX:XX:XX` | -                                      |
 
-#### :symbols-lan:&ensp;Virtual Local Networks
+#### :symbols-network:&ensp;Virtual Local Networks
 
 |  VLAN  | Domain | DNS Server(s) {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} | Subnet {data-sort-method='dotsep'} | Subnet Mask {data-sort-method='dotsep'} | Broadcast {data-sort-method='dotsep'} | DHCP Range {data-sort-method='none'} |
 | :----: | :----- | :-------------------------------------- | :---------------------------------- | :--------------------------------- | :-------------------------------------- | :------------------------------------ | :----------------------------------- |

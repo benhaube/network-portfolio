@@ -34,7 +34,7 @@ hide:
 
         [Bed Fans Guide&ensp;:brands-3dphub:](https://3dphub.net/learn/bed-fans-upgrade-guide){ .md-button }
 
-    :symbols-settings:&ensp;**Nylon Knobs:**
+    :symbols-settings:{ .spin }&ensp;**Nylon Knobs:**
     :     If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit *(using metal knobs is still recommended to avoid heat issues)*.
 
         [Nylon Knobs&ensp;:brands-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }

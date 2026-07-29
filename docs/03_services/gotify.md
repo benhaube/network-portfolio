@@ -33,7 +33,7 @@ hide:
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    :symbols-lan:&nbsp;Local Access:
+:    :symbols-network:&nbsp;Local Access:
 
       + <http://storage-server.internal:8180> 
       + <http://storage-server-2.internal:8180>

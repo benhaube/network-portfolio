@@ -8,10 +8,10 @@ hide:
 ![My Profile Picture](assets/pictures/profilepic.jpg){ width=250 }
 
 # About Me & Professional Philosophy
-[My Resume&ensp;:symbols-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
+[My Resume&ensp;:symbols-briefcase-business:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
-## :symbols-engine: :symbols-move-right: :symbols-lan:&ensp;From Engines to Infrastructure
+## :symbols-engine: :symbols-move-right: :symbols-network:&ensp;From Engines to Infrastructure
 
 With thirteen years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology** and **Cybersecurity**.
 
@@ -35,7 +35,7 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 
 :    From earning my [CompTIA](https://www.comptia.org/en-us/){ external-link } *(A+ & Linux+)* to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
     
-## :symbols-motorsports-outline:&ensp;Beyond the Terminal
+## :symbols-motor-racing-helmet:&ensp;Beyond the Terminal
 
 When I’m not hardening my network or managing services, you can usually find me...
 

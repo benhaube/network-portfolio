@@ -167,7 +167,7 @@ hide:
 6. **Optional:** "Main" tracks qualifying sessions and races *(inc. sprints)*. "Race" tracks **only** races. 
 7. Changed the Docker image to **Dynacat**, a fork of Glance with added features.
 
-#### :symbols-file-config:&ensp;Glance Config File
+#### :symbols-file-cog:&ensp;Glance Config File
 
 ```yaml {title="dynacat.yml" linenums="1" .mono-title}
 --8<-- "dynacat.yml"

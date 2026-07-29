@@ -186,7 +186,7 @@ Below is a table containing the options included with the `unattended-upgrade` c
 | `--minimal-upgrade-steps`        | Upgrade in minimal steps (and allow interrupting with `SIGTERM`). *(default)* |
 | `--no-minimal-upgrade-steps`     | Upgrade all packages together instead of in smaller sets.                     |
 
-## :symbols-file-config:&ensp;Configure Unattended-Upgrades
+## :symbols-file-cog:&ensp;Configure Unattended-Upgrades
 
 The configuration file, `/etc/apt/apt.conf.d/50unattended-upgrades`, dictates which packages get upgraded automatically, notification settings, reboot behavior, and logging. Editing this configuration file allows you to customize all of these features. The file uses the `apt` syntax, meaning the comment characters, `//`, in front of an option will disable that option. In order to enable the option, remove those leading characters.    
 

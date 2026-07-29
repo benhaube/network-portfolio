@@ -26,7 +26,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role 
 
-:    The primary DNS server in the [Technitium](../03_services/technitium.md) cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#role){ data-preview }.
+:    The primary DNS server in the [Technitium](../03_services/technitium.md#description){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -56,7 +56,7 @@ hide:
 | :--------------------: | :--------------------------------: | :------------------------------------ | :--------------------------------------- |
 | 2C / 2T *(VT-x, VT-d)* | 2 GB                               | 50 GB                                 | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Notes {data-sort-method='none'}                                               |
 | :-------: | :------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
@@ -159,7 +159,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
     --8<-- "starship-debian-vm.toml"
     ```
 
-#### :symbols-login:&ensp;Fastfetch Login Preset
+#### :symbols-log-in:&ensp;Fastfetch Login Preset
 
 The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 

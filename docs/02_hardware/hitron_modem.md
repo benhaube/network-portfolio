@@ -38,7 +38,7 @@ hide:
 
 :    N/A
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface {data-sort-method='number'} | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                           |
 | :-----------------------------------: | :------------------------------------- | :------------------ | :------------------------------------------------------------------------------------- |

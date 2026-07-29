@@ -88,7 +88,7 @@ Place this in the same folder as your docker-compose file.
     + **Create Rule:**&ensp;If Hostname equals `frame.rac3r4life.online`&ensp;:symbols-move-right:&ensp;**Skip** "Super Bot Fight Mode" and "Managed Challenge"
         + _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
-## :symbols-home-automation:&ensp;Automation 
+## :symbols-house-wifi:&ensp;Automation 
 &emsp;&emsp;&ensp;*Home Assistant on Pi 4*
 
 **Goal:**

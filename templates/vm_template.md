@@ -50,7 +50,7 @@ hide:
 | :-------------------: | :--------------------------------- | :------------------------------------ | :------------ |
 | #C / #T *(virt-tech)* | # GB                               | # GB                                  | `path/to/vdi` |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Notes {data-sort-method='none'} |
 | :-------: | :------------------------------------- | :------------------ | :------------------------------ |

@@ -80,7 +80,7 @@ hide:
     sudo systemctl restart cups
     ```
 
-#### :symbols-file-config: Config File
+#### :symbols-file-cog: Config File
 
 ```apacheconf {title="/etc/cups/cupsd.conf" linenums="1" .mono-title}
 --8<-- "cupsd.conf"

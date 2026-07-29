@@ -45,7 +45,7 @@ hide:
       + Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
       + SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 #### :symbols-globe:&ensp;WAN Connection
 

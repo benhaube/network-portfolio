@@ -32,7 +32,7 @@ hide:
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    :symbols-lan:&nbsp;Local Access:
+:    :symbols-network:&nbsp;Local Access:
     
       + <http://storage-server.internal:2283>
       + <http://storage-server-2.internal:2283>

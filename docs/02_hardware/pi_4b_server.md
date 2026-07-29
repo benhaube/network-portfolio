@@ -27,7 +27,7 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role 
 
-:    The secondary DNS server in the [Technitium](../03_services/technitium.md) cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
+:    The secondary DNS server in the [Technitium](../03_services/technitium.md#description){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -55,7 +55,7 @@ hide:
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
 | :brands-arm:&nbsp;BCM2711 *(Armv8-A)* | 4C / 4T *(Cortex-A72)* | 1.5 GHz   | 4 GB LPDDR4 *(2400 MT/s)* | VideoCore VI 3D | 500 MHz   | *Shared* |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                                 |
 | :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |

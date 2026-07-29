@@ -56,7 +56,7 @@ hide:
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;N150 *(x86-64)* | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 *(6400 MHz)* | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | *Shared* |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                       |
 | :-------: | :------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
@@ -139,7 +139,7 @@ hide:
     + Do not attempt to use `apt` to install or upgrade system packages. 
     + Do not change NTP settings *(stuck on `systemd-timesyncd`)*.
 
-    :symbols-boxes:&ensp;**Entware:**
+    :symbols-package-open:&ensp;**Entware:**
  
     + The [Entware](https://github.com/Entware/Entware){ external-link } package manager is installed, allowing additional packages not included in ZimaOS to be installed. 
     + Additional packages can be installed to the `/opt/bin` directory with the `opkg` command. 
@@ -202,7 +202,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 --8<-- "starship-zimaos.toml"
 ```
 
-#### :symbols-login:&ensp;Fastfetch Login Preset
+#### :symbols-log-in:&ensp;Fastfetch Login Preset
 
 The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 
@@ -300,7 +300,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
     Open it from the [ZimaOS dashboard](http://storage-server.internal){ external-link } *(Cron)*, or directly at <http://storage-server.internal/modules/cron/>.
 
-#### :symbols-brick-wall-flame:&ensp;Zima Firewall
+#### :symbols-brick-wall-fire:&ensp;Zima Firewall
 
 ##### About
 

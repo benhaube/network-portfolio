@@ -81,7 +81,7 @@ hide:
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-#### :symbols-file-config:&ensp;Pi-hole Config File
+#### :symbols-file-cog:&ensp;Pi-hole Config File
 
 ```toml {title="/etc/pihole/pihole.toml" linenums="1" .mono-title}
 --8<-- "pihole.toml"

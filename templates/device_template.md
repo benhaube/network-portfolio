@@ -51,7 +51,7 @@ hide:
 | :------------------- | :-------------- | :-------- | :--- | :--- | :-------- | :--- |
 | CPU *(architecture)* | #C / #T         | # GHz     | # GB | GPU  | # MHz     | # GB |
 
-## :symbols-lan:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                  |
 | :-------: | :------------------------------------- | :------------------ | :---------------------------- |

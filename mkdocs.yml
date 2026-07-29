@@ -145,7 +145,7 @@ theme:
       file-share: symbols/share
       hardware: symbols/circuit-board
       inactive: symbols/circle-x
-      infra: symbols/network-node
+      infra: symbols/chevrons-left-right-ellipsis
       inventory: symbols/clipboard-list
       iot: symbols/home-automation
       isp: symbols/globe

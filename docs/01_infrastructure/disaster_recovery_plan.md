@@ -136,7 +136,7 @@ tags:
 
 	[IP Address Management](ip_address_mangement.md){ .md-button }
 
--   :symbols-brick-wall-shield:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-shield-keyhole:{ .lg .middle }&emsp;**Network Security**
 
 	---
 

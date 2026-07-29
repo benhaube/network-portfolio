@@ -110,7 +110,7 @@ hide:
 
     [Disaster Recovery Plan](disaster_recovery_plan.md){ .md-button }
 
--   :symbols-brick-wall-shield:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-shield-keyhole:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

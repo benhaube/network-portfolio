@@ -68,7 +68,7 @@ hide:
 
 ## :symbols-monitor-cloud:&ensp;Services & Containers
 
-#### :symbols-penguin:&ensp;Native Linux
+#### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                         |
 | :------: | :--------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |

@@ -114,7 +114,7 @@ hide:
 | :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
 | *Active* | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
-#### :symbols-penguin:&ensp;Native Linux
+#### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                                | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}   |
 | :------: | :--------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------- |

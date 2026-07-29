@@ -42,9 +42,9 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                             | Method                              | Container Name | Image |
-| :-------------------------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
-| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                             | Method                          | Container Name | Image |
+| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration
 

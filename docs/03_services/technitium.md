@@ -59,10 +59,10 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                              | Container Name | Image |
-| :--------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                          | Container Name | Image |
+| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

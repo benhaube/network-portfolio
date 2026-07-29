@@ -96,7 +96,7 @@ hide:
 | :------: | :------------------------------------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](debian_server.md#role){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
 
-#### :symbols-penguin:&ensp;Native Linux
+#### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                  | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                         |
 | :------: | :------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |

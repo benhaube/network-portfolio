@@ -79,12 +79,12 @@ hide:
 
 | Host Device                                                                     | Method                                    | Container Name | Image                          |
 | :------------------------------------------------------------------------------ | :---------------------------------------- | :------------- | :----------------------------- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)          | :symbols-penguin:&nbsp;Native Linux       | `N/A`          | `N/A`                          |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)     | :symbols-penguin:&nbsp;Native Linux       | `N/A`          | `N/A`                          |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)     | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
 | [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_hardware/bens_smartphone.md) | :brands-android:&nbsp;Native Android      | `N/A`          | `N/A`                          |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)          | :symbols-penguin:&nbsp;Native Linux       | `N/A`          | `N/A`                          |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)            | :symbols-penguin:&nbsp;Native Linux       | `N/A`          | `N/A`                          |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)  | :symbols-penguin:&nbsp;Native Linux       | `N/A`          | `N/A`                          |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)            | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)  | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)            | :symbols-container:&nbsp;Docker Container | `syncthing`    | `linuxserver/syncthing:latest` |
 
 ### :symbols-settings:&ensp;Configuration  

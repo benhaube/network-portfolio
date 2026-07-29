@@ -44,7 +44,7 @@ hide:
 
 :    [:brands-creality-v2:&ensp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer){ external-link }
 
-:    [:symbols-penguin:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
+:    [:symbols-tux:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
 
 :    [:services-klipper:&ensp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }
 
@@ -83,7 +83,7 @@ hide:
 
 ## :symbols-monitor-cloud:&ensp;Services & Containers
 
-#### :symbols-penguin:&ensp;Native Linux
+#### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                     | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                         |
 | :------: | :---------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |

@@ -50,9 +50,9 @@ hide:
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                              | Container Name | Image |
-| :------------------------------------------------------------------- | :---------------------------------- | :------------- | :---- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-penguin:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                          | Method                          | Container Name | Image |
+| :------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
 
 ### :symbols-settings:&ensp;Configuration 
 

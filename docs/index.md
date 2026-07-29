@@ -226,7 +226,7 @@ hide:
 :    Preparing to migrate from [Pi-hole](03_services/pi-hole.md) to [Technitium](03_services/technitium.md) for DNS queries on the LAN. 
 
 ---
-## :symbols-penguin:&ensp;Linux Tutorials
+## :symbols-tux:&ensp;Linux Tutorials
 
 !!! links inline end "Extra Links"
     **My Favorite Bash Aliases:**

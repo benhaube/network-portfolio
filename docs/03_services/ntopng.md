@@ -32,7 +32,7 @@ hide:
 
 :    `3000`&emsp;`5556`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-2:&ensp;URL / Access 
 
 :    <http://storage-server.internal:3000>
 

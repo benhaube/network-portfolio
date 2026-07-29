@@ -34,7 +34,7 @@ hide:
 
 :    `20211`&emsp;`20212`
 
-#### :symbols-link:&ensp;URL / Access
+#### :symbols-link-2:&ensp;URL / Access 
 
 :    <http://storage-server.internal:20211>
 

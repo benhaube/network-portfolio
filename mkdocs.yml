@@ -166,7 +166,7 @@ theme:
       printer-cart: symbols/printer
       remote: symbols/globe-arrow
       router: symbols/router
-      security: symbols/brick-wall-shield
+      security: symbols/shield-keyhole
       server: symbols/server
       server-rack: symbols/server-rack
       service: symbols/monitor-cloud

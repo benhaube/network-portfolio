@@ -250,7 +250,7 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
       + :symbols-film:&ensp;Video Streaming
       + :symbols-audio-lines:&ensp;Audio Streaming
       + :symbols-app-window-mac:&ensp;Web Surfing
-      + :symbols-file-archive:&ensp;File Transferring
+      + :symbols-file-input:&ensp;File Transferring
       + :symbols-briefcase:&ensp;Work-From-Home
       + :symbols-graduation-cap:&ensp;Learn-From-Home
       + :symbols-circle-ellipsis:&ensp;Others

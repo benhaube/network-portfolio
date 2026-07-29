@@ -1,5 +1,5 @@
 ---
-title: Mini-Rack Build
+title: Server Rack Build
 date: 
   created: 2026-01-15
   updated: 2026-04-25
@@ -17,9 +17,9 @@ pin: false
 hide:
   - toc
 ---
-![Custom icon for my mini-rack made in Inkscape](../assets/icons/10-in-rack.svg){ width=200 }
+![Custom icon for my server rack made in Inkscape](../assets/icons/10-in-rack.svg){ width=200 }
 
-!!! info "Mini-Rack Build: Dec, 2025&ensp;:symbols-move-right:&ensp;Jan, 2026"
+!!! info "Server Rack Build: Dec, 2025&ensp;:symbols-move-right:&ensp;Jan, 2026"
 
     **3D-Printed Parts:**
  

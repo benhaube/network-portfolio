@@ -24,11 +24,11 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role 
 
-:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview){ external-link })*. Located in the 10-inch mini-rack.
+:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview){ external-link })*. Located in the 10-inch server rack.
 
 #### :symbols-map-pin:&ensp;Location
 
-:    Living-Room&ensp;:symbols-move-right:&ensp;Mini-Rack
+:    Living-Room&ensp;:symbols-move-right:&ensp;Server Rack
 
 #### :symbols-cpu:&ensp;OS / Firmware
 

@@ -43,7 +43,7 @@ hide:
 ### Core Infrastructure
 
 [:symbols-router:&ensp;ASUS RT-BE92U](02_hardware/asus_rt-be92u.md)
-:    The main wireless router and firewall for the LAN. Located next to the 10-inch mini-rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
+:    The main wireless router and firewall for the LAN. Located next to the 10-inch server rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
 [:symbols-router:&ensp;ASUS RT-AX55](02_hardware/asus_rt-ax55.md)
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "*AiMesh*" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
@@ -52,7 +52,7 @@ hide:
 :    The primary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](02_hardware/zimaos_nas.md#virtualization){ data-preview }. 
 
 [:symbols-globe:&ensp;Hitron Modem](02_hardware/hitron_modem.md)
-:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview){ external-link })*. Located in the 10-inch mini-rack.
+:    The DOCSIS 3.1 cable modem that communicates with the ISP *([Xfinity](https://www.xfinity.com/overview){ external-link })*. Located in the 10-inch server rack.
 
 [:symbols-server:&ensp;Pi 4B Server](02_hardware/pi_4b_server.md)
 :    The secondary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
@@ -67,10 +67,10 @@ hide:
 :    A gigabit desktop switch *(5-port)* distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
 [:symbols-ethernet-port:&ensp;Ugreen Switch](02_hardware/ugreen_switch.md)
-:    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
+:    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
 
 [:symbols-server-nas:&ensp;ZimaOS NAS](02_hardware/zimaos_nas.md) 
-:    The primary rack-mounted NAS server & VM host for the LAN. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu){ external-link } as the "beating heart," it is the most powerful server on the LAN. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch mini-rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
+:    The primary rack-mounted NAS server & VM host for the LAN. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu){ external-link } as the "beating heart," it is the most powerful server on the LAN. With an *x86-64* Intel N150 CPU and 16 GB of LPDDR5 *(6400 MHz)* RAM. Located in the 10-inch server rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
 
 ### Key Clients
 

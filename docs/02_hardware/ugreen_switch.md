@@ -24,11 +24,11 @@ hide:
 
 #### :symbols-toolbox:&ensp;Role
 
-:    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch mini-rack with extra ports available for future network expansion.
+:    A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
 
 #### :symbols-map-pin:&ensp;Location 
 
-:    Living-Room&ensp;:symbols-move-right:&ensp;Mini-Rack 
+:    Living-Room&ensp;:symbols-move-right:&ensp;Server Rack 
 
 #### :symbols-plug:&ensp;Power Source
 

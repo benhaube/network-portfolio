@@ -28,7 +28,7 @@ hide:
 
 :    A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    Web: 
 

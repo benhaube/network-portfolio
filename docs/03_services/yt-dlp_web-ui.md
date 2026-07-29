@@ -26,7 +26,7 @@ hide:
 
 :    High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `3033`
 

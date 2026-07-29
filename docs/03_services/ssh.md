@@ -27,7 +27,7 @@ hide:
 
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `22`
 

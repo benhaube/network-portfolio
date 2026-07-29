@@ -26,7 +26,7 @@ hide:
 
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container *(the main server)* and **"Agent"** containers for connecting other servers to the hub.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    Hub:
     

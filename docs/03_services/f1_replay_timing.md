@@ -25,7 +25,7 @@ hide:
 
 :    Visualization of real-time track data and telemetry synced to F1 live and replays.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `3000`&emsp;`8000`
 

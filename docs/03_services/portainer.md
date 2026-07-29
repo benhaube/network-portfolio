@@ -29,7 +29,7 @@ hide:
 
 :    A lightweight service delivery platform for containerized applications. 
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    Hub:
     

@@ -26,7 +26,7 @@ hide:
 
 :    High performance self-hosted photo and video management solution. 
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s) 
 
 :    `2283`
 

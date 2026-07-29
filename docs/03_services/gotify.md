@@ -27,7 +27,7 @@ hide:
 
 :    A simple server for sending and receiving messages in real-time per WebSocket. *(Includes a sleek Web-UI)*
  
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s) 
 
 :     `8180`
 

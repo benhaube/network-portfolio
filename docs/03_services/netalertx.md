@@ -30,7 +30,7 @@ hide:
 #### :symbols-file-text:&ensp;Description
 :    Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
  
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `20211`&emsp;`20212`
 

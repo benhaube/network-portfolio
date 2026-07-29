@@ -29,7 +29,7 @@ hide:
 
 :    Synchronize configuration between multiple [Pi-hole](pi-hole.md#description){ data-preview } instances.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `N/A`
 

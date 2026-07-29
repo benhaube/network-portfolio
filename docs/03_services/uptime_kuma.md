@@ -27,7 +27,7 @@ hide:
 
 :    A fancy self-hosted service monitoring tool.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s) 
 
 :    `3001`
 

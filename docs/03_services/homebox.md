@@ -27,7 +27,7 @@ hide:
 
 :    An inventory and organization system built for the home user.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s) 
 
 :    `3100`
 

@@ -28,7 +28,7 @@ hide:
 
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `4999`
 

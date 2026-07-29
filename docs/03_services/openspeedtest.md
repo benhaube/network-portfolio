@@ -27,7 +27,7 @@ hide:
 
 :    A free & open-source HTML5 network performance estimation tool.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `3004`
 

@@ -28,7 +28,7 @@ hide:
 
 :    Open decentralized file synchronization.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s) 
 
 :    `8384`&emsp;`22000`&emsp;`21027`
 

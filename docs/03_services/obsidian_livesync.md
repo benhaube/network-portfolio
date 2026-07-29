@@ -27,7 +27,7 @@ hide:
 
 :    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `5984`
 

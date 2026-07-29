@@ -26,7 +26,7 @@ hide:
 
 :    Remote desktop access over the local network *(not publicly exposed)*
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `3389`
 

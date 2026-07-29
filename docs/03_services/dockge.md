@@ -29,7 +29,7 @@ hide:
 
 :    A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s) 
 
 :    `5001`
 

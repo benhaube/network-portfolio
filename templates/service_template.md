@@ -23,7 +23,7 @@ hide:
 #### :symbols-file-text:&ensp;Description
 :    Insert description of service here
  
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `port`
 

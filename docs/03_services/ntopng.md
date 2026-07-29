@@ -28,7 +28,7 @@ hide:
 
 :    Web-based traffic and security network traffic monitoring. 
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s)
+#### :symbols-hash:&ensp;Port(s)
 
 :    `3000`&emsp;`5556`
 

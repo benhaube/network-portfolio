@@ -29,7 +29,7 @@ hide:
 
 :    An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s) 
 
 :    `53`&emsp;`443`&emsp;`5380`
 

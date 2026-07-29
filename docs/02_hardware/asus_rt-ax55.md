@@ -71,7 +71,7 @@ hide:
 
 | Port {data-sort-method='number'} | Connected Device                                                                          | Color / Type {data-sort-method='none'} | Notes {data-sort-method='none'} |
 | :------------------------------: | :---------------------------------------------------------------------------------------- | :------------------------------------- | :------------------------------ |
-|               WAN 0              | :symbols-network:&nbsp;Local Network                                                          | White / Cat5e                          | Network backhaul                |
+|               WAN 0              | :symbols-network:&nbsp;Local Network                                                      | White / Cat5e                          | Network backhaul                |
 |               LAN 1              | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } | Black / Cat6A                          | 1 Gb/s Uplink                   |
 |               LAN 2              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -                                      | -                               |
 |               LAN 3              | :symbols-ethernet-port:&nbsp;*Empty*                                                      | -                                      | -                               |

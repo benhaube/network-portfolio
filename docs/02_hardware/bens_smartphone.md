@@ -47,7 +47,7 @@ hide:
 :    Software:
 
       + :symbols-key-fido2:&nbsp;Titan M2 security chip *(FIDO2 / WebAuthn)*
-      + :symbols-shield:&nbsp;Full-disk encryption
+      + :symbols-shield-keyhole:&nbsp;Full-disk encryption
       + :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 
 :    Biometric:
@@ -75,9 +75,9 @@ hide:
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption             |
-| :---------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------------------- |
-| `N/A`       | UFS 3.1    | 128 GB                                       | `N/A`       | `N/A`       | Full Device Encryption |
+| Mount Point | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption                                         |
+| :---------- | :--------- | :------------------------------------------- | :---------- | :---------- | :------------------------------------------------- |
+| `N/A`       | UFS 3.1    | 128 GB                                       | `N/A`       | `N/A`       | :symbols-shield-keyhole:&nbsp;Full-disk Encryption |
 
 #### :symbols-usb:&ensp;External/Attached
 

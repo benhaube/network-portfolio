@@ -65,7 +65,7 @@ hide:
 :    Software:
     
       + :symbols-arrow-right-left:&nbsp;Linux swap encryption
-      + :symbols-shield:&nbsp;LUKS2 drive encryption
+      + :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
       + :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user 
 
 :    Biometric:
@@ -93,18 +93,18 @@ hide:
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point  | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption |
-| :----------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------- |
-| `/`, `/home` | NVMe SSD   | 929 GB                                       | `/dev/dm-0` | `btrfs`     | LUKS2      |
+| Mount Point  | Drive Type | Drive Capacity {data-sort-method='filesize'} | Device Path | File System | Encryption                               |
+| :----------- | :--------- | :------------------------------------------- | :---------- | :---------- | :--------------------------------------- |
+| `/`, `/home` | NVMe SSD   | 929 GB                                       | `/dev/dm-0` | `btrfs`     | :symbols-shield-keyhole:&nbsp;LUKS2      |
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point                         | Drive Type    | Drive Capacity {data-sort-method='filesize'} | Device Path                         | File System      | Encryption  |
-| :---------------------------------- | :------------ | :------------------------------------------- | :---------------------------------- | :--------------- | :---------- |
-| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                       | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | `gocryptfs` |
-| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                         | -                                   | `fuse.rclone`    | -           |
-| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                       | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -           |
-| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                       | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -           |
+| Mount Point                         | Drive Type    | Drive Capacity {data-sort-method='filesize'} | Device Path                         | File System      | Encryption                                |
+| :---------------------------------- | :------------ | :------------------------------------------- | :---------------------------------- | :--------------- | :---------------------------------------- |
+| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                       | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | :symbols-shield-keyhole:&nbsp;`gocryptfs` |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                         | -                                   | `fuse.rclone`    | -                                         |
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                       | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -                                         |
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                       | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -                                         |
 
 ## :symbols-monitor-cloud:&ensp;Services & Containers
 

@@ -186,7 +186,7 @@ hide:
 [:services-portracker:&ensp;Portracker](03_services/portracker.md)
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-[:symbols-chevrons-right-left:&ensp;RDP](03_services/rdp.md)
+[:symbols-screen-share:&ensp;RDP](03_services/rdp.md)
 :    Remote desktop access over the LAN. *(not exposed to the internet)*
 
 [:symbols-cloud-sync:&ensp;SMB](03_services/smb.md)

@@ -1,5 +1,5 @@
 ---
-icon: symbols/chevrons-right-left
+icon: symbols/screen-share
 title: RDP
 subtitle: Remote Desktop Protocol
 description: Remote desktop access over the local network
@@ -12,7 +12,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide 'chevrons-right-left' icon](../assets/icons/chevrons-right-left.svg){ width=200 }
+![Lucide 'chevrons-right-left' icon](../assets/icons/screen-share.svg){ width=200 }
  
 # RDP
 *Remote Desktop Protocol*

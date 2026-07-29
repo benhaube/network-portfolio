@@ -46,6 +46,47 @@
   --md-path-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>');
 }
 
+/* ~~~ Use 'stroke' instead of 'fill' for icons with 'lucide' class ~~~ */
+
+.md-icon svg.lucide {
+  fill:#0000;
+  stroke:currentcolor
+}
+.md-content__button svg.lucide {
+  fill:#0000;
+  stroke:currentcolor
+}
+.md-social__link svg.lucide {
+  fill:#0000;
+  stroke:currentcolor
+}
+.md-header__button.md-logo img.lucide,
+.md-header__button.md-logo svg.lucide {
+  fill:#0000;
+  stroke:currentcolor
+}
+.md-nav__link svg.lucide {
+  fill:#0000;
+  stroke:currentcolor
+}
+@media screen and (max-width:76.234375em) {
+  .md-nav .md-nav__title[for=__drawer] .md-logo img.lucide,
+  .md-nav .md-nav__title[for=__drawer] .md-logo svg.lucide {
+    fill:#0000;
+    stroke:currentcolor
+  }
+}
+.md-top svg.lucide {
+  fill:#0000;
+  stroke:currentcolor
+}
+.md-typeset .emojione svg.lucide,
+.md-typeset .gemoji svg.lucide,
+.md-typeset .twemoji svg.lucide {
+  fill:#0000;
+  stroke:currentcolor
+}
+
 /* ~~~ Max Page Width ~~~ */
 
 .md-grid {

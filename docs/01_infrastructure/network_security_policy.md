@@ -1,5 +1,5 @@
 ---
-icon: symbols/brick-wall-shield
+icon: symbols/shield-keyhole
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 tags:
@@ -11,7 +11,7 @@ tags:
   - VPN
   - Remote Access
 ---
-![Lucide 'brick-wall-shield' icon](../assets/icons/brick-wall-shield.svg){ width=200 }
+![Lucide 'brick-wall-shield' icon](../assets/icons/shield-keyhole.svg){ width=200 }
 
 # Network Security Policy
 *The Principle of Least Privilege*

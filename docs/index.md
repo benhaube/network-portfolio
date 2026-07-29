@@ -22,7 +22,7 @@ hide:
 [:symbols-hash:&ensp;MAC Address Tables](01_infrastructure/mac_address_tables.md)
 :    This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 
-[:symbols-brick-wall-shield:&ensp;Network Security Policy](01_infrastructure/network_security_policy.md) 
+[:symbols-shield-keyhole:&ensp;Network Security Policy](01_infrastructure/network_security_policy.md) 
 :    This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
 [:symbols-sitemap:&ensp;Logical Network Map](01_infrastructure/logical_map.md)

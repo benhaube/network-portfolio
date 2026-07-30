@@ -129,7 +129,7 @@ hide:
         + The change you made in `/etc/default/grub` will not take effect until you regenerate the main GRUB configuration file, which is usually located at `/boot/grub2/grub.cfg`.
         + Run the appropriate command for your distribution:
      
-            :symbols-debian:&ensp;For **Debian / Ubuntu** use `update-grub`:
+            :brands-debian:&ensp;For **Debian / Ubuntu** use `update-grub`:
      
             ```bash linenums="1"
             sudo update-grub
@@ -144,7 +144,7 @@ hide:
 5. **Regenerate the `initramfs`:**
     + The boot unlocking happens in the early boot stage **(initramfs / initrd)**, so you must rebuild it to include the new configuration and the necessary TPM modules.
 
-        :symbols-debian:&ensp;For **Debian / Ubuntu** use `dpkg-reconfigure` or `update-initramfs`:
+        :brands-debian:&ensp;For **Debian / Ubuntu** use `dpkg-reconfigure` or `update-initramfs`:
 
         ```bash linenums="1"
         sudo dpkg-reconfigure linux-image-<version>

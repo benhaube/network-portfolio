@@ -20,7 +20,7 @@ hide:
 # Pi Zero 2W Server
 *Reverse-Proxy Server*
 
-[Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:symbols-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
+[Raspberry Pi Docs&ensp;:brands-raspberry-pi:](https://www.raspberrypi.com/documentation){ .md-button .md-button--primary }&emsp;[Debian Docs&ensp;:brands-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -39,7 +39,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-debian:&ensp;Debian Linux 13](https://www.debian.org/){ external-link } *(Trixie)*
+:    [:brands-debian:&ensp;Debian Linux 13](https://www.debian.org/){ external-link } *(Trixie)*
 
 #### :symbols-user-key:&ensp;Credentials
 

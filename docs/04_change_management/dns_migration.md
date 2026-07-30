@@ -24,7 +24,7 @@ hide:
 2. **Document Static Records:** 
     + [ ] Note all local DNS records and DHCP reservations *(if Pi-hole is handling DHCP)*.
 3. **Map IP Addresses:**
-    + [ ] Primary:&ensp;[:symbols-debian:&nbsp;Debian Server](../02_hardware/debian_server.md)&ensp;:symbols-move-right:&ensp;`192.168.50.6`
+    + [ ] Primary:&ensp;[:brands-debian:&nbsp;Debian Server](../02_hardware/debian_server.md)&ensp;:symbols-move-right:&ensp;`192.168.50.6`
     + [ ] Secondary:&ensp;[:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)&ensp;:symbols-move-right:&ensp;`192.168.50.2`
     + [ ] Tertiary/Failover:&ensp;[:brands-raspberry-pi:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)&ensp;:symbols-move-right:&ensp;`192.168.50.3`
 

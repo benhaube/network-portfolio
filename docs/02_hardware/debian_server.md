@@ -19,7 +19,7 @@ hide:
 # Debian Server
 *Primary DNS Server*
 
-[Debian Docs&ensp;:symbols-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }&emsp;[KVM Docs&ensp;:symbols-layers:](https://docs.kernel.org/6.0/virt/kvm/index.html){ .md-button .md-button--primary }&emsp;[QEMU Docs&ensp;:services-qemu:](https://www.qemu.org/docs/master/){ .md-button .md-button--primary }
+[Debian Docs&ensp;:brands-debian:](https://www.debian.org/doc/){ .md-button .md-button--primary }&emsp;[KVM Docs&ensp;:symbols-layers:](https://docs.kernel.org/6.0/virt/kvm/index.html){ .md-button .md-button--primary }&emsp;[QEMU Docs&ensp;:services-qemu:](https://www.qemu.org/docs/master/){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview
@@ -38,7 +38,7 @@ hide:
 
 #### :symbols-cpu:&ensp;Operating System 
 
-:    [:symbols-debian:&ensp;Debian Linux](https://www.debian.org/){ external-link } *(trixie)*
+:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/){ external-link } *(trixie)*
 
 #### :symbols-network-node:&ensp;Host Node 
 

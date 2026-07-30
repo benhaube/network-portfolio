@@ -18,7 +18,7 @@ hide:
 [:symbols-arrow-down:&thinsp;Jump to **Fedora / RHEL** Instructions&thinsp;:symbols-arrow-down:](#fedora-rhel-based-distributions)
 
 ---
-## :symbols-debian:&ensp;Debian / Ubuntu Based Distributions
+## :brands-debian:&ensp;Debian / Ubuntu Based Distributions
 
 1. Create a backup of your `.bashrc` file contained in your home (`~/`) directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize. 
 

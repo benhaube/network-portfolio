@@ -92,9 +92,9 @@ hide:
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                               | Virtual NIC | Virtual Disk Image | Role / Notes {data-sort-method='none'}                                                                                  |
-| :------: | :------------------------------------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-debian:&nbsp;Debian *(trixie)*](debian_server.md#role){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
+|  Status  | OS                                                                              | Virtual NIC | Virtual Disk Image | Role / Notes {data-sort-method='none'}                                                                                  |
+| :------: | :------------------------------------------------------------------------------ | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| *Active* | [:brands-debian:&nbsp;Debian *(trixie)*](debian_server.md#role){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
 
 #### :symbols-tux:&ensp;Native Linux
 

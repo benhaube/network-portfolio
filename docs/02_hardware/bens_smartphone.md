@@ -89,9 +89,9 @@ hide:
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                       | Virtual NIC | Virtual Disk Image | Role / Notes {data-sort-method='none'} |
-| :------: | :----------------------------------------------------------------------- | :---------- | :----------------- | :------------------------------------- |
-| *Active* | [:symbols-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment     |
+|  Status  | OS                                                                      | Virtual NIC | Virtual Disk Image | Role / Notes {data-sort-method='none'} |
+| :------: | :---------------------------------------------------------------------- | :---------- | :----------------- | :------------------------------------- |
+| *Active* | [:brands-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment     |
 
 #### :brands-android-2:&ensp;Native Android
 

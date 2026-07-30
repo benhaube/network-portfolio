@@ -99,7 +99,7 @@ hide:
     sudo systemctl start syncthing@bhaube.service
     ```
 
-+ :symbols-debian:&nbsp;Debian 13 *(trixie)*:
++ :brands-debian:&nbsp;Debian 13 *(trixie)*:
 
     ```bash linenums="1"
     sudo apt install -y syncthing

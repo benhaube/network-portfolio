@@ -60,7 +60,7 @@ hide:
 | :symbols-shield-quarter:&nbsp;VLAN50 | internal | `192.168.50.6` `192.168.50.2`           | `192.168.50.0/24`                | `192.168.50.1`                      | `192.168.50.255`                      | `.22` to `.254`                      |
 |  :symbols-shield-house:&nbsp;VLAN53  | -        | `9.9.9.9` `149.112.112.112`             | `192.168.53.0/24`                | `192.168.53.1`                      | `192.168.53.255`                      | `.3` to `.254`                       |
 
-#### :symbols-wifi-cog:&ensp;Wi-Fi Networks
+#### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
 |   SSID   |  VLAN  |   WAN Access    | CIDR {data-sort-method='dotsep'} | Frequency {data-sort-method='none'} | Notes                                      |
 | :------: | :----: | :-------------: | :------------------------------- | :---------------------------------- | :----------------------------------------- |

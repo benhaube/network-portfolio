@@ -68,7 +68,7 @@ hide:
 |   :symbols-shield-user:&nbsp;VLAN52    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.52.0/24`                | `192.168.52.1`                      | `192.168.52.255`                      | `.2` to `.254`                       |
 |  :symbols-shield-house:&nbsp;VLAN53    | -        | `9.9.9.9` `149.112.112.112`             | `192.168.53.0/24`                | `192.168.53.1`                      | `192.168.53.255`                      | `.3` to `.254`                       |
 
-#### :symbols-wifi-cog:&ensp;Wi-Fi Networks
+#### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
 |     SSID     |  VLAN  |   WAN Access    | CIDR {data-sort-method='dotsep'} | Frequency {data-sort-method='none'}   | Notes                                      |
 | :----------: | :----: | :-------------: | :------------------------------- | :------------------------------------ | :----------------------------------------- |

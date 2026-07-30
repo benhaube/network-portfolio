@@ -60,7 +60,7 @@ hide:
 | Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                                 |
 | :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
 |  `eth0`   | `192.168.50.2`                         | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } *(port 3, VLAN50)* |
-|  `wlan0`  | `192.168.53.2`                         | `E4:5F:01:A4:60:08` | [:symbols-wifi-cog:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN53)*                 |
+|  `wlan0`  | `192.168.53.2`                         | `E4:5F:01:A4:60:08` | [:symbols-wifi-lock:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN53)*                 |
 
 | Interface |                VLAN                    | FQDN                 | DNS Servers {data-sort-method='dotsep'} | Gateway {data-sort-method='dotsep'} |
 | :-------: | :------------------------------------: | :------------------- | :-------------------------------------- | :---------------------------------- |

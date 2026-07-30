@@ -18,7 +18,7 @@ hide:
 # Ben's Laptop
 *ThinkPad X1 Carbon*
 
-[Fedora Docs&ensp;:symbols-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Guide&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_user_guide.pdf){ .md-button .md-button--primary }&emsp;[Maintenance Manual&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_maintenance_manual.pdf){ .md-button .md-button--primary }
+[Fedora Docs&ensp;:brands-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Guide&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_user_guide.pdf){ .md-button .md-button--primary }&emsp;[Maintenance Manual&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_maintenance_manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -37,7 +37,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-fedora:&ensp;Fedora Linux 44](https://fedoraproject.org/kde/){ external-link } *(KDE Plasma Desktop Edition)*
+:    [:brands-fedora:&ensp;Fedora Linux 44](https://fedoraproject.org/kde/){ external-link } *(KDE Plasma Desktop Edition)*
 
 #### :symbols-user-key:&ensp;Credentials
 

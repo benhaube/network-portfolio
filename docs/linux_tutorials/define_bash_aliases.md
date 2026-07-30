@@ -55,7 +55,7 @@ hide:
     + Test one of the aliases you created to make sure they are loaded properly when a terminal session is started. 
     + If your aliases were not loaded properly, check the code you entered into the `~/.bashrc` file for errors. 
 
-## :symbols-fedora:&ensp;Fedora / RHEL Based Distributions
+## :brands-fedora:&ensp;Fedora / RHEL Based Distributions
 
 1. Create a backup of your `.bashrc` file contained in your home *(`~/`)* directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize. 
 

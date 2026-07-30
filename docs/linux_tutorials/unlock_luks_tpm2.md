@@ -135,7 +135,7 @@ hide:
             sudo update-grub
             ```
      
-            :symbols-fedora:&ensp;For **Fedora / RHEL** use `grub2-mkconfig`: 
+            :brands-fedora:&ensp;For **Fedora / RHEL** use `grub2-mkconfig`: 
      
             ```bash linenums="1"
             sudo grub2-mkconfig -o /boot/grub/grub.cfg
@@ -152,7 +152,7 @@ hide:
         sudo update-initramfs -u -k <version>
         ```
 
-        :symbols-fedora:&ensp;For **Fedora / RHEL** use `dracut` command:
+        :brands-fedora:&ensp;For **Fedora / RHEL** use `dracut` command:
     
         ```bash linenums="1"
         sudo dracut -f

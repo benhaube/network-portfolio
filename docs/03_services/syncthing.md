@@ -91,7 +91,7 @@ hide:
 
 #### :symbols-install-desktop:&ensp;Install Commands
 
-+ :symbols-fedora:&nbsp;Fedora / RHEL:
++ :brands-fedora:&nbsp;Fedora / RHEL:
 
     ```bash linenums="1"
     sudo dnf install -y syncthing

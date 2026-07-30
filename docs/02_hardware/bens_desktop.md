@@ -17,7 +17,7 @@ hide:
 # Ben's Workstation
 *High-Performance Desktop PC*
 
-[Fedora Docs&ensp;:symbols-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550-PLUS_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
+[Fedora Docs&ensp;:brands-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550-PLUS_User_Manual.pdf){ .md-button .md-button--primary }&emsp;[UEFI Manual&ensp;:symbols-notebook-text:](../assets/manuals/ASUS_B550_Series_UEFI_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Device Overview
@@ -36,7 +36,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-fedora:&ensp;Fedora Linux 44](https://fedoraproject.org/kde/){ external-link } *(KDE Plasma Desktop Edition)*
+:    [:brands-fedora:&ensp;Fedora Linux 44](https://fedoraproject.org/kde/){ external-link } *(KDE Plasma Desktop Edition)*
 
 #### :symbols-user-key:&ensp;Credentials
 

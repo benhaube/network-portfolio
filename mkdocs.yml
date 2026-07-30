@@ -100,7 +100,7 @@ theme:
   # Change the icons used in the theme.
   icon:
     menu: symbols/menu
-    repo: symbols/git
+    repo: brands/git
     top: symbols/chevrons-up
     previous: symbols/chevron-left
     next: symbols/chevron-right

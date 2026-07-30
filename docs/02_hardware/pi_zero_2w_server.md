@@ -55,8 +55,8 @@ hide:
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                               |
-| :-------: | :------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+| Interface | IP Address {data-sort-method='dotsep'} | MAC Address         | Connected To                                                                                |
+| :-------: | :------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
 |  `wlan0`  | `192.168.50.3`                         | `2c:cf:67:db:f5:e2` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
 | Interface |               VLAN                   | FQDN               | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |

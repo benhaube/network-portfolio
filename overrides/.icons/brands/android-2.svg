@@ -8,11 +8,11 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
-  class="lucide lucide-android-2-icon lucide-android-2"
+  class="lucide lucide-android-icon lucide-android"
 >
   <path d="M16 10h.01" />
   <path d="m18 5 2-3" />
-  <path d="M21 14C21.002.648 2.992.682 3 14z" />
+  <path d="M21 14C21 0 3 0 3 14z" />
   <path d="M3 14v7a1 1 45 001 1h16a1 1 135 001-1v-7" />
   <path d="M6 5 4 2" />
   <path d="M8 10h.01" />

@@ -1,5 +1,5 @@
 ---
-icon: symbols/prowiper
+icon: brands/prowiper
 title: PROWIPER Mod
 subtitle: Improved Nozzle Brush Routine
 hide:

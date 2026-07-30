@@ -274,5 +274,5 @@ hide:
 [:symbols-toothbrush-nozzle:&ensp;Nozzle Cleaning Macro](3d_printing/manual_nozzle_cleaning_macro.md) 
 :    Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
 
-[:symbols-prowiper:&ensp;PROWIPER^&copy;^ Mod](3d_printing/prowiper_mod.md) 
+[:brands-prowiper:&ensp;PROWIPER^&copy;^ Mod](3d_printing/prowiper_mod.md) 
 :    Installing the PROWIPER^&copy;^ Mod, and editing the required g-code on the [Creality K1C](02_hardware/kacey_3d-printer.md).

@@ -5,7 +5,8 @@ subtitle: Improved Nozzle Brush Routine
 hide:
   - toc
 ---
-![Custom PROWIPER Mod Icon I made with Inkscape](../assets/icons/prowiper.svg){ width=200 }
+![Custom PROWIPER Mod Icon I made with Inkscape](../assets/icons/prowiper-light.svg#only-light){ width=200 }
+![Custom PROWIPER Mod Icon I made with Inkscape](../assets/icons/prowiper-dark.svg#only-dark){ width=200 }
 
 # PROWIPER Mod
 *Improved Nozzle Brush Routine*

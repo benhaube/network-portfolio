@@ -233,7 +233,7 @@ hide:
     --8<-- "mount-gocryptfs.desktop"
     ```
 
-#### :symbols-google-drive:&ensp;Rclone Google Drive Mount
+#### :brands-google-drive:&ensp;Rclone Google Drive Mount
 
 1. Place the`rclone.conf` file in the `~/.config/rclone` directory.
 

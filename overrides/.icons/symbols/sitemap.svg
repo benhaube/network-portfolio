@@ -1,9 +1,19 @@
-<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="lucide lucide-sitemap-icon lucide-sitemap">
-  <circle cx="12" cy="4" r="2"/>
-  <path transform="translate(0 1)" d="m12 5v6h6a2 2 45 012 2v4"/>
-  <circle cx="20" cy="20" r="2"/>
-  <path transform="translate(0 1)" d="m12 11c-2.0078.010295-4.0001-.00259-6.0001-.003865-1.1045-.000704-1.9999.8993-1.9999 2.0039v4"/>
-  <path d="m12 12v6"/>
-  <circle cx="12" cy="20" r="2"/>
-  <circle cx="4" cy="20" r="2"/>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-sitemap-icon lucide-sitemap"
+>
+  <path d="M12 7v10" />
+  <path d="M20 17v-3a2 2 45 00-2-2h-6a1034 1034 0 01-6-.004A2 2 0 004 14v3" />
+  <circle cx="12" cy="19" r="2" />
+  <circle cx="12" cy="5" r="2" />
+  <circle cx="20" cy="19" r="2" />
+  <circle cx="4" cy="19" r="2" />
 </svg>

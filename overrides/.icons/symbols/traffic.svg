@@ -10,14 +10,14 @@
   stroke-linejoin="round"
   class="lucide lucide-traffic-icon lucide-traffic"
 >
-  <path d="M18 10h4l-4 3" />
-  <path d="M18 17h4l-4 3" />
-  <path d="M18 3h4l-4 3" />
-  <path d="M6 10H2l4 3" />
-  <path d="M6 17H2l4 3" />
-  <path d="M6 3H2l4 3" />
-  <circle cx="12" cy="12" r="1" fill="currentColor" />
-  <circle cx="12" cy="18" r="1" fill="currentColor" />
-  <circle cx="12" cy="6" r="1" fill="currentColor" />
-  <rect x="6" y="2" width="12" height="20" rx="2" />
+  <path d="M12 12h.01" />
+  <path d="M12 17h.01" />
+  <path d="M12 7h.01" />
+  <path d="M17 11h3l-3 2" />
+  <path d="M17 16h3l-3 2" />
+  <path d="M17 6h3l-3 2" />
+  <path d="M7 11H4l3 2" />
+  <path d="M7 16H4l3 2" />
+  <path d="M7 6H4l3 2" />
+  <rect x="7" y="3" width="10" height="18" rx="2" />
 </svg>

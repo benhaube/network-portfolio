@@ -5,12 +5,15 @@ hide:
   - toc
 ---
 
-![My Profile Picture](assets/pictures/profilepic.jpg){ width=250 }
+![Lucide 'user-search' icon](assets/icons/user-search.svg){ width=200 }
 
 # About Me & Professional Philosophy
 [My Resume&ensp;:symbols-briefcase-business:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
+
+![My Profile Picture](assets/pictures/profilepic.jpg){ width=250 align="right" }
+
 ## :symbols-engine: :symbols-move-right: :symbols-network:&ensp;From Engines to Infrastructure
 
 With thirteen years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology** and **Cybersecurity**.

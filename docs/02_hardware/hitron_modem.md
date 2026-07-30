@@ -50,7 +50,7 @@ hide:
 
 !!! config inline "Critical Configurations"
 
-    :symbols-globe-x:&ensp;**WAN Down:**
+    :symbols-globe-off:&ensp;**WAN Down:**
  
     * If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
    

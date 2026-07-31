@@ -350,3 +350,5 @@ I would like to give special thanks to the following projects whose work is used
     + For building an amazing tool for rendering beautiful flowcharts.
 + **[VSCodium](https://vscodium.com/):**
     + For their excellent open-source, MIT-Licensed Integrated Developer Environment that lacks Microsoft's spyware / telemetry. I have used it extensively in the development of this website, and daily in all of my projects and network configuration management.
++ **[Inkscape](https://inkscape.org/):**
+    + For building an incredible piece of software for the FOSS community to create and edit SVG icons.

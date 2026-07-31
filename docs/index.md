@@ -13,6 +13,12 @@ hide:
 ---
 ## :symbols-chevrons-left-right-ellipsis:&ensp;Infrastructure
 
+!!! links inline end "Extra Links"
+
+    **Tag Index:**
+
+    :    [Infrastructure Tags&ensp;:symbols-tags:](01_infrastructure/tags.md){ .md-button }
+
 [:symbols-tornado:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
 :    Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
@@ -36,9 +42,9 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    [More Kacey Info&ensp;:symbols-printer-3d-nozzle:](02_hardware/kacey_info.md){ .md-button }
+    **Tag Index:**
 
-    [Hardware Tags&ensp;:symbols-tags:](02_hardware/tags.md){ .md-button }
+    :    [Hardware Tags&ensp;:symbols-tags:](02_hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
@@ -97,7 +103,9 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
+    **Tag Index:**
+
+    :    [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
 
 [:services-beszel:&ensp;Beszel](03_services/beszel.md)
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts.
@@ -232,7 +240,7 @@ hide:
 
     **Tag Index:**
     
-    :    [Linux Tutorials Tags&ensp;:symbols-tags:](/linux_tutorials/tags.md){ .md-button }
+    :    [Linux Tutorials Tags&ensp;:symbols-tags:](linux_tutorials/tags.md){ .md-button }
 
     **My Favorite Bash Aliases:**
     :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.

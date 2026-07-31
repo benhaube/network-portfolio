@@ -2,6 +2,14 @@
 icon: symbols/lock-keyhole-open
 title: Decrypt LUKS with TPM2
 subtitle: Speeding Up the Boot Process
+tags:
+  - Hardware
+  - Linux
+  - PC
+  - Security
+  - Shell
+  - Software
+  - Tools
 hide:
   - toc
 ---

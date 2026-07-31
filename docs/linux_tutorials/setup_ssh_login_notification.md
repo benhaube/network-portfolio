@@ -2,6 +2,15 @@
 icon: symbols/message-square-warning
 title: Setup SSH Login Notification
 subtitle: With Email SMTP and Gotify
+tags:
+  - Infrastructure
+  - Linux
+  - Monitor
+  - Network
+  - Remote Access
+  - Security
+  - Server
+  - Shell
 hide:
   - toc
 ---

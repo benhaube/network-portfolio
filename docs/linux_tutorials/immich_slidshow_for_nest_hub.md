@@ -2,6 +2,15 @@
 icon: symbols/image-play
 title: Project Migration
 subtitle: Immich Slideshow for Nest Hub
+tags:
+  - Backup
+  - Container
+  - File Share
+  - IoT
+  - Linux
+  - NAS
+  - Server
+  - Service
 hide:
   - toc
 ---

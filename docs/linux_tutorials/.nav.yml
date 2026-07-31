@@ -8,3 +8,4 @@ nav:
   - define_bash_aliases.md
   - my_bash_aliases.md
   - "*"
+  - tags.md

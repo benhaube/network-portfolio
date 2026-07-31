@@ -2,6 +2,12 @@
 icon: symbols/terminal
 title: My Bash Aliases
 subtitle: A Great Start
+tags:
+  - Linux
+  - PC
+  - Server
+  - Shell
+  - Tools
 hide:
   - toc
 ---

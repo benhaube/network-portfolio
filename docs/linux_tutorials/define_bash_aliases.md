@@ -2,6 +2,12 @@
 icon: symbols/terminal
 title: Defining Bash Aliases
 subtitle: Increase Productivity
+tags:
+  - Linux
+  - PC
+  - Server
+  - Shell
+  - Tools
 hide:
   - toc
 ---

@@ -2,6 +2,13 @@
 icon: symbols/update
 title: Auto Updates for Debian
 subtitle: Using Unattended-Upgrades
+tags:
+  - Linux
+  - PC
+  - Security
+  - Server
+  - Software
+  - Tools
 hide:
   - toc
 ---

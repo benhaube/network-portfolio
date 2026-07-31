@@ -2,6 +2,17 @@
 icon: symbols/file-badge
 title: Self-Signed Certificates
 subtitle: SSL for Your Local Server
+tags:
+  - Development
+  - Domain
+  - Infrastructure
+  - Linux
+  - Network
+  - Security
+  - Server
+  - Shell
+  - Tools
+  - Web Host
 hide:
   - toc
 ---

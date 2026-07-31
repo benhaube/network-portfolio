@@ -27,29 +27,23 @@ hide:
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    `3000`&emsp;`8000`
+:    `8000`
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    Backend: 
-    
-      + <http://storage-server.internal:8000>
-
-:    Frontend: 
-    
-      + <http://storage-server.internal:3000>
-      + <http://storage-server-2.internal:3000>
+:    <http://storage-server.internal:8000>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    N/A
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
+    
+      + Local Network&ensp;:symbols-move-right:&ensp;"F1 Replay Timing"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                                                 |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :---------------------------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1-backend`   | `ghcr.io/adn8naiagent/f1replaytiming-backend:latest`  |
-|                                                                      |                                           | `f1-frontend`  | `ghcr.io/adn8naiagent/f1replaytiming-frontend:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                                         |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1timing`     | `ghcr.io/adn8naiagent/f1replaytiming:latest`  |
 
 ### :symbols-settings:&ensp;Configuration 
 
@@ -57,12 +51,6 @@ hide:
 --8<-- "f1-replay-timing.yaml"
 ```
 
-1.    :symbols-triangle-alert:&nbsp;**Warning!**
-
-      + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
-      + Use the IP address or URL of the host server. 
-
-2.    :symbols-triangle-alert:&nbsp;**Warning!**
-
-      + Do **NOT** use `0.0.0.0`, `127.0.0.1` or `localhost`. The application running in the client Web browser will think the backend / frontend is being hosted on the local machine. 
-      + Use the IP address or URL of the host server. 
+```properties {title=".env" linenums="1" .mono-title}
+--8<-- "f1-replay-timing.env"
+```

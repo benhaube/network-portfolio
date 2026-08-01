@@ -281,7 +281,9 @@ plugins:
   - social:
       log: true
       log_level: warn
+      cards_layout: default
       cards_layout_options:
+        background_color: "#0B0C0F"
         font_family: Google Sans
   - blog:
       authors: true

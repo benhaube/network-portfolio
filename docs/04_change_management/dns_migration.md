@@ -2,6 +2,7 @@
 icon: symbols/cloud-cog
 title: DNS Migration
 subtitle: From Pi-hole to Technitium
+description: A checklist for completing the tasks required to migrate the network's DNS servers from PiHole to Technitium.
 tags:
   - DNS
   - Infrastructure

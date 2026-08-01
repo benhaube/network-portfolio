@@ -2,6 +2,7 @@
 icon: services/caddy
 title: Reverse Proxy & DNS Routing
 subtitle: Domain Names for Local Services
+description: Set up a local reverse-proxy server using Caddy to give local services their own, unique FQDN.
 tags:
   - Infrastructure
   - Server

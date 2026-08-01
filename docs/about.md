@@ -1,6 +1,7 @@
 ---
 icon: symbols/user-search
 title: About Me
+subtitle: From Engines to Infrastructure
 hide:
   - toc
 ---

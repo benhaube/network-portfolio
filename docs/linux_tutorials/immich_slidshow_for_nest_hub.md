@@ -2,6 +2,7 @@
 icon: symbols/image-play
 title: Project Migration
 subtitle: Immich Slideshow for Nest Hub
+description: A comprehensive guide for setting up an Immich slideshow on your Nest Hub to replace Google Photos.
 tags:
   - Backup
   - Container

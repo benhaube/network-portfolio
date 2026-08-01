@@ -2,6 +2,7 @@
 icon: symbols/message-square-warning
 title: Setup SSH Login Notification
 subtitle: With Email SMTP and Gotify
+description: Get notified whenever a new SSH session is established on your servers.
 tags:
   - Infrastructure
   - Linux

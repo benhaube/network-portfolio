@@ -2,6 +2,7 @@
 icon: symbols/file-badge
 title: Self-Signed Certificates
 subtitle: SSL for Your Local Server
+description: Generate self-signed SSL certificates for testing HTTPS on your local services.
 tags:
   - Development
   - Domain

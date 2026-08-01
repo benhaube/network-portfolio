@@ -1,7 +1,8 @@
 ---
 icon: symbols/settings
 title: Manual Bed Leveling Mod
-subtitle: Fine Tune Your Bed Level
+subtitle: Fine Tune Your Bed Mesh
+description: Fine-tune the bed mesh on your Creality K1C 3D-printer using a manual bed leveling upgrade kit and custom Gcode macros.
 hide:
   - toc
 ---

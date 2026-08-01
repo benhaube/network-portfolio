@@ -2,6 +2,7 @@
 icon: symbols/svg
 title: Convert an SVG to Data URI
 subtitle: For HTML and CSS
+description: Convert SVG icons into a Data URI for use in CSS and HTML.
 tags:
   - Development
   - Linux

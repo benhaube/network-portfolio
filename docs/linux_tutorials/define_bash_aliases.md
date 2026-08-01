@@ -2,6 +2,7 @@
 icon: symbols/terminal
 title: Defining Bash Aliases
 subtitle: Increase Productivity
+description: Increase your productivity by creating aliases for your most used Bash commands.
 tags:
   - Linux
   - PC

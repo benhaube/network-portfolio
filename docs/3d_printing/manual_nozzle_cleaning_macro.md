@@ -2,6 +2,7 @@
 icon: symbols/toothbrush-nozzle
 title: Nozzle Cleaning Macro
 subtitle: Manually Clean Your Nozzle
+description: A custom Gcode macro for manually cleaning your 3D-printer's nozzle.
 hide:
   - toc
 ---

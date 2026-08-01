@@ -2,6 +2,7 @@
 icon: symbols/lock-keyhole-open
 title: Decrypt LUKS with TPM2
 subtitle: Speeding Up the Boot Process
+description: Speed up your computer's boot process by unlocking your LUKS2 encrypted volumes with the onboard TPM2.0 chip.
 tags:
   - Hardware
   - Linux

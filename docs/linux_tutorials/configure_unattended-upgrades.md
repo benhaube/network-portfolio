@@ -2,6 +2,7 @@
 icon: symbols/update
 title: Auto Updates for Debian
 subtitle: Using Unattended-Upgrades
+description: A comprehensive guide to using and configuring 'unattended-upgrades' on Debian Linux.
 tags:
   - Linux
   - PC

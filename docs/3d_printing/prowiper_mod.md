@@ -2,6 +2,7 @@
 icon: brands/prowiper
 title: PROWIPER Mod
 subtitle: Improved Nozzle Brush Routine
+description: Install an upgraded nozzle brush and an improved nozzle cleaning Gcode macro on your Creality K1C 3D-printer.
 hide:
   - toc
 ---

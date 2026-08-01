@@ -2,6 +2,7 @@
 icon: symbols/terminal
 title: My Bash Aliases
 subtitle: A Great Start
+description: Increase your productivity by creating aliases for your most used Bash commands.
 tags:
   - Linux
   - PC

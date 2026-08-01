@@ -2,6 +2,7 @@
 icon: symbols/hash
 title: MAC Address Tables
 subtitle: Hardware MAC Addresses
+description: This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 tags:
   - Network
   - IoT

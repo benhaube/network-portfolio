@@ -2,6 +2,7 @@
 icon: symbols/globe
 title: Hitron Modem
 subtitle: DOCSIS 3.1 Cable Modem
+description: The DOCSIS 3.1 cable modem that communicates with the ISP (Xfinity). Located in the 10-inch server rack.
 tags:
   - Network
   - Infrastructure

@@ -3,6 +3,7 @@ icon: symbols/ethernet-port
 title: TP-Link LiteWave Switch
 subtitle: Model LS1005G
 status: new
+description: A gigabit desktop switch (5-port) distributing Ethernet connections to devices in the TV stand in the living room.
 tags:
   - Switch
   - Infrastructure

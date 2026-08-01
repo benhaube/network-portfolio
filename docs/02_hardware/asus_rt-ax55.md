@@ -2,6 +2,7 @@
 icon: symbols/router
 title: ASUS RT-AX55
 subtitle: AiMesh Node
+description: A secondary router located on the stationary printer cart in the office upstairs, acting as an "AiMesh" node to expand Wi-Fi coverage to the upper levels.
 tags:
   - Network
   - Router

@@ -2,6 +2,7 @@
 icon: symbols/server
 title: Pi 4B Server
 subtitle: Secondary DNS Server
+description: The secondary DNS server in the Technitium cluster, a CUPS print server, a Home Assistant server, and host for other Docker containers.
 tags:
   - Server
   - DNS

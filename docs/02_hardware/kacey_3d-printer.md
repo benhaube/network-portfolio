@@ -2,6 +2,7 @@
 icon: symbols/printer-3d-nozzle
 title: Kacey 3D-Printer
 subtitle: Modified Creality K1C
+description: The Creality K1C 3D-printer located in the office upstairs, and connected to the LAN through 2.4 GHz Wi-Fi. Affectionately, named 'Kacey' as a play on the model name, K1C. 
 tags:
   - Network
   - Server

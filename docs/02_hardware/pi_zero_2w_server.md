@@ -2,6 +2,7 @@
 icon: symbols/server
 title: Pi Zero 2W Server
 subtitle: Reverse-Proxy Server
+description: A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique '.internal' FQDNs to services hosted on the LAN.
 tags:
   - Server
   - DNS

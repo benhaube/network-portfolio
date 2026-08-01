@@ -2,6 +2,7 @@
 icon: symbols/ethernet-port
 title: TP-Link Switch
 subtitle: Model SG105
+description: A gigabit desktop switch (5-port) distributing Ethernet connections to devices in the office.
 tags:
   - Switch
   - Infrastructure

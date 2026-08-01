@@ -2,6 +2,7 @@
 icon: symbols/smartphone
 title: Ben's Smartphone
 subtitle: Google Pixel 9 Pro
+description: Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network.
 tags:
   - Mobile
   - Android

@@ -2,6 +2,7 @@
 icon: symbols/pc-case
 title: Rob's Workstation
 subtitle: High-Performance Desktop PC
+description: Rob's main workstation PC located at his desk in the office upstairs.
 tags:  
   - PC 
   - Desktop 

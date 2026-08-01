@@ -2,6 +2,7 @@
 icon: symbols/server-nas
 title: ZimaOS NAS
 subtitle: Rack-Mount ZimaBoard 2
+description: The primary rack-mounted NAS server & VM host for the LAN. With a ZimaBoard 2 1664 as the "beating heart," it is the most powerful server on the LAN.
 tags:
   - NAS
   - File Share

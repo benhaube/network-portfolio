@@ -2,6 +2,7 @@
 icon: symbols/sitemap
 title: Logical Network Map
 subtitle: Focusing on Servers and Services
+description: A Mermaid.js flowchart focusing on servers, services, and their connections.
 tags:
   - Network
   - Map

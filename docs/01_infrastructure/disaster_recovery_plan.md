@@ -2,6 +2,7 @@
 icon: symbols/tornado
 title: Disaster Recovery Plan
 subtitle: Maintaining High Availability
+description: Ensuring HA for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 tags:
   - Policy
   - Security

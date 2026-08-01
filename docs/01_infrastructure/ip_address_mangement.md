@@ -2,6 +2,7 @@
 icon: symbols/binary
 title: IP Address Management
 subtitle: Organized IP Address Space
+description: This page contains information about IPAM, VPNs, and VLANs encompassed by the LAN.
 tags:
   - Network
   - VLAN

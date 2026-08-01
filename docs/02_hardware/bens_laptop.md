@@ -2,6 +2,7 @@
 icon: symbols/laptop-minimal
 title: Ben's Laptop
 subtitle: ThinkPad X1 Carbon
+description: Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go.
 tags:
   - PC 
   - Laptop

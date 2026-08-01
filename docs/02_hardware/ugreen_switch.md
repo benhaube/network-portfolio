@@ -2,6 +2,7 @@
 icon: symbols/ethernet-port
 title: Ugreen Switch
 subtitle: Model UM106X
+description: A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
 tags:
   - Switch
   - Infrastructure

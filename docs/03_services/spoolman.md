@@ -2,6 +2,7 @@
 icon: services/spoolman
 title: Spoolman
 subtitle: Filament Inventory Management
+description: Keep track of your inventory of 3D-printer filament spools.
 tags:
   - Active
   - Container

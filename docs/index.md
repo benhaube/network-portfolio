@@ -111,7 +111,7 @@ hide:
 :    A lightweight server monitoring hub with historical data, docker stats, and alerts.
 
 [:services-caddy:&ensp;Caddy](03_services/caddy.md)
-:    Lightweight, open-source Web server written in Go. Used as a *reverse-proxy* for creating unique domains for locally hosted services.
+:    Lightweight, open-source Web server written in Go. Used as a reverse-proxy for creating unique domains for locally hosted services.
 
 [:symbols-clock-refresh-cw:&nbsp;Chrony](03_services/chrony.md)
 :    Advanced, lightweight NTP client and server.
@@ -123,10 +123,10 @@ hide:
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
 [:symbols-cloud-cog:&ensp;DDNS](03_services/ddns.md)
-:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this LAN, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
+:    A networking service that automatically maps a static domain name *(FQDN)* to a dynamic public IP address. On this LAN, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
 
 [:services-dockge:&ensp;Dockge](03_services/dockge.md) 
-:    A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.
+:    A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 
 [:services-f1-replay-timing:&ensp;F1 Replay Timing](03_services/f1_replay_timing.md) 
 :    Visualization of real-time track data and telemetry synced to F1 live and replays.
@@ -135,7 +135,7 @@ hide:
 :    A free and open-source Klipper web interface for managing your 3D-printer.
 
 [:services-gitea:&ensp;Gitea](03_services/gitea.md) 
-:    Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD.
+:    Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
 [:services-glance:&ensp;Glance](03_services/glance.md)
 :    A self-hosted dashboard that puts all your feeds in one place. 

@@ -2,7 +2,7 @@
 icon: services/glances
 title: Glances
 subtitle: An Eye on Your System
-description: Glances an Eye on your system. A top / htop alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
+description: Glances an Eye on your system. A 'top' / 'htop' alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 tags:
   - Active
   - Container

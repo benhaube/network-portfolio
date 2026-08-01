@@ -3,7 +3,7 @@ icon: services/gitea
 status: new
 title: Gitea
 subtitle: Git with a Cup of Tea
-description: Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD.
+description: Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 tags:
   - Active
   - Backup
@@ -27,7 +27,7 @@ hide:
 
 #### :symbols-file-text:&ensp;Description
 
-:    Painless, self-hosted, all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD.
+:    Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
  
 #### :symbols-hash:&ensp;Port(s)
 

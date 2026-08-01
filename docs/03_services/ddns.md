@@ -2,6 +2,7 @@
 icon: symbols/cloud-cog
 title: DDNS
 subtitle: Provided by addr.tools
+description: A networking service that automatically maps a static domain name (FQDN) to a dynamic public IP address. On this LAN, the DDNS service is provided by addr.tools.
 tags:
   - Active
   - Native
@@ -23,7 +24,7 @@ hide:
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
-:    A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
+:    A networking service that automatically maps a static domain name *(FQDN)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
  
 #### :symbols-hash:&ensp;Port(s) 
 

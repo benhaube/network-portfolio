@@ -8,6 +8,6 @@
   stroke-linejoin="round"
   class="lucide lucide-printer-3d-nozzle-icon lucide-printer-3d-nozzle"
 >
+  <path d="M11.989 16a2 2 0 01-1.603-.804L8.6 12.804A2 2 0 006.997 12H6a1 1 0 01-1-1V8a1 1 0 011-1h1a1 1 0 001-1V3a1 1 0 011-1h6a1 1 0 011 1v3a1 1 0 001 1h1a1 1 0 011 1v3a1 1 0 01-1 1h-.997a2 2 0 00-1.603.803l-1.787 2.394A2 2 0 0112.01 16" />
   <path d="M12 20c-.184.853-.901 1.48-1.707 1.771-.844.305-1.746.229-2.625.229H3" />
-  <path d="M8 2h8v5h3v5h-3l-2.987 4h-2.027L8 12H5V7h3z" />
 </svg>

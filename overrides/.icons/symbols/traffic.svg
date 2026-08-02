@@ -6,6 +6,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="lucide lucide-traffic-icon lucide-traffic"
 >
   <path d="M12 12h.01" />
   <path d="M12 17h.01" />

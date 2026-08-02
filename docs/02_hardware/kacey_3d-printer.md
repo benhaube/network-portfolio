@@ -62,9 +62,9 @@ hide:
 | :-------: | :------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
 |  `wlan0`  | `192.168.50.15`                        | `FC:EE:28:09:A7:1E` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } *(VLAN50)* |
 
-| Interface |               VLAN                   | FQDN             | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
-| :-------: | :----------------------------------: | :--------------- | :------------------------------------ | :---------------------------------- |
-|  `wlan0`  | :symbols-shield-quarter:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
+| Interface |             VLAN             | FQDN             | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :--------------------------: | :--------------- | :------------------------------------ | :---------------------------------- |
+|  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

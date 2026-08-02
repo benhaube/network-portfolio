@@ -27,11 +27,11 @@ hide:
 ---
 ## :symbols-hub:&ensp;Virtual Local Networks
 
-| VLAN                                                             | SSID                                                           | CIDR {data-sort-method='dotsep'} | DNS Servers {data-sort-method='dotsep'} | Domain   |   WAN Access {data-sort-method='none'} | Role / Notes                               |
-| :--------------------------------------------------------------- | :------------------------------------------------------------- | :------------------------------- | :-------------------------------------- | :------- | :------------------------------------: | :----------------------------------------- |
-| [VLAN50](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*Home*](../02_hardware/asus_rt-be92u.md#wi-fi-networks)       | `192.168.50.0/24`                | `192.168.50.6` `192.168.50.2`           | internal |             :symbols-check:            | :symbols-shield-quarter:&nbsp;Trusted VLAN |
-| [VLAN52](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*Home_Guest*](../02_hardware/asus_rt-be92u.md#wi-fi-networks) | `192.168.52.0/24`                | `9.9.9.9` `149.112.112.112`             | -        |             :symbols-check:            | :symbols-shield-user:&nbsp;Guest VLAN      |
-| [VLAN53](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*2G_IoT*](../02_hardware/asus_rt-be92u.md#wi-fi-networks)     | `192.168.53.0/24`                | `9.9.9.9` `149.122.122.122`             | -        |               :symbols-x:              | :symbols-shield-house:&nbsp;IoT VLAN       |
+| VLAN                                                             | SSID                                                           | CIDR {data-sort-method='dotsep'} | DNS Servers {data-sort-method='dotsep'} | Domain   |   WAN Access {data-sort-method='none'} | Role / Notes                          |
+| :--------------------------------------------------------------- | :------------------------------------------------------------- | :------------------------------- | :-------------------------------------- | :------- | :------------------------------------: | :------------------------------------ |
+| [VLAN50](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*Home*](../02_hardware/asus_rt-be92u.md#wi-fi-networks)       | `192.168.50.0/24`                | `192.168.50.6` `192.168.50.2`           | internal |             :symbols-check:            | :symbols-shield:&nbsp;Trusted VLAN    |
+| [VLAN52](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*Home_Guest*](../02_hardware/asus_rt-be92u.md#wi-fi-networks) | `192.168.52.0/24`                | `9.9.9.9` `149.112.112.112`             | -        |             :symbols-check:            | :symbols-user-shield:&nbsp;Guest VLAN |
+| [VLAN53](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*2G_IoT*](../02_hardware/asus_rt-be92u.md#wi-fi-networks)     | `192.168.53.0/24`                | `9.9.9.9` `149.122.122.122`             | -        |               :symbols-x:              | :symbols-house-shield:&nbsp;IoT VLAN  |
 
 ## :symbols-router:&ensp;Core Infrastructure 
 &emsp;&emsp;&ensp;*Static & Reserved*

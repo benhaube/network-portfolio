@@ -64,10 +64,10 @@ hide:
 |  `eth0`   | `192.168.50.4`                         | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 4)* |
 |  `eth1`   | `192.168.50.5`                         | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } *(Port 5)* |
 
-| Interface |               VLAN                   | FQDN                        | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
-| :-------: | :----------------------------------: | :-------------------------- | :------------------------------------ | :---------------------------------- |
-|  `eth0`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
-|  `eth1`   | :symbols-shield-quarter:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
+| Interface |             VLAN             | FQDN                        | DNS Servers {data-sort-method='none'} | Gateway {data-sort-method='dotsep'} |
+| :-------: | :--------------------------: | :-------------------------- | :------------------------------------ | :---------------------------------- |
+|  `eth0`   | :symbols-shield:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
+|  `eth1`   | :symbols-shield:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2`         | `192.168.50.1`                      |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

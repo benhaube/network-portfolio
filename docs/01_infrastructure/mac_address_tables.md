@@ -29,7 +29,7 @@ hide:
 | :symbols-router:&nbsp;Wireless Router        | Living-Room&emsp;                  | [<code>RT-BE92U-FAF0</code>](../02_hardware/asus_rt-be92u.md#physical-ethernet-ports) | :symbols-ethernet-port:&nbsp;*WAN*<br>:symbols-wifi-lock:&nbsp;*2.4 GHz*<br>:symbols-wifi-lock:&nbsp;*5 GHz*<br>:symbols-wifi-lock:&nbsp;*6 GHz* | `60:CF:84:51:FA:F0`<br>`6A:CF:84:51:FA:F1`<br>`82:CF:84:51:FA:F5`<br>`60:CF:84:51:FA:F9` |
 | :symbols-router:&nbsp;Mesh Node              | Office                             | [<code>RT-AX55-1360</code>](../02_hardware/asus_rt-ax55.md#physical-ethernet-ports)   | :symbols-ethernet-port:&nbsp;*WAN*<br>:symbols-wifi-lock:&nbsp;*2.4 GHz*<br>:symbols-wifi-lock:&nbsp;*5 GHz*                                     | `7C:10:C9:DF:13:60`<br>`7C:10:C9:DF:13:61`<br>`7C:10:C9:DF:13:64`                        |
 
-## :symbols-shield-quarter:&ensp;Trusted Network 
+## :symbols-shield:&ensp;Trusted Network 
 &emsp;&emsp;&ensp;*VLAN50*
 
 | Device Type                                 | Location    | Hostname                                                                              | MAC Address         | Interface {data-sort-method='none'} | Role / Notes {data-sort-method='none'}                                                                  |
@@ -62,7 +62,7 @@ hide:
 | :symbols-gamepad-2:&nbsp;Game Console       | Mobile      | `nintendo-switch`                                                                     | `74:84:69:0B:56:EF` |           :symbols-wifi:            | Nintendo Switch OLED                                                                                    |
 | :symbols-gamepad-2:&nbsp;Game Console       | Living-Room | `nintendo-switch`                                                                     | `74:84:69:34:69:78` |       :symbols-ethernet-port:       | Nintendo Switch OLED docking station for TV in Living Room                                              |
 
-## :symbols-shield-house:&ensp;IoT Network 
+## :symbols-house-shield:&ensp;IoT Network 
 &emsp;&emsp;&ensp;*VLAN53*
 
 | Device Type                                 | Location    | Hostname                                                                            | MAC Address         | Interface {data-sort-method='none'} | Role / Notes {data-sort-method='none'}                          |

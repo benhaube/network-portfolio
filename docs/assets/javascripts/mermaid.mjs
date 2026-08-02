@@ -3,9 +3,14 @@ import elkLayouts from 'https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0/di
 
 mermaid.registerIconPacks([
   {
-    name: 'material-symbols',
+    name: 'lucide',
     loader: () =>
-      fetch('https://unpkg.com/@iconify-json/material-symbols@1/icons.json').then((res) => res.json()),
+      fetch('https://unpkg.com/@iconify-json/lucide@1/icons.json').then((res) => res.json()),
+  },
+    {
+    name: 'lucide-lab',
+    loader: () =>
+      fetch('https://unpkg.com/@iconify-json/lucide-lab@1/icons.json').then((res) => res.json()),
   },
 ]);
 

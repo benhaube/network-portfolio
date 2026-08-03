@@ -56,7 +56,7 @@ hide:
 | [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md#network-configuration) | VLAN50 | `192.168.50.15`                        | `k1c-a71e`         | Creality K1C *(Modified)*                                               |
 | [:symbols-server:&nbsp;Ras-Pi 4B Server](../02_hardware/pi_4b_server.md#network-configuration) *(`wlan0`)*    | VLAN53 | `192.168.53.2`                         | `pi-server`        | Bridge to VLAN53 for [Home Assistant](../03_services/home_assistant.md) |
 
-## :symbols-cloud-cog:&ensp;Dynamic DNS Providers
+## :symbols-cloud-sync:&ensp;Dynamic DNS Providers
 
 | Status   | Provider                           | Server                                                                        | FQDN                            | TLS Certificate                         | Certificate Expire |
 | :------- | :--------------------------------- | :---------------------------------------------------------------------------- | :------------------------------ | :-------------------------------------- | :----------------- |

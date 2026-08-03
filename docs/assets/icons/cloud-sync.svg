@@ -1,7 +1,7 @@
 <svg class="lucide lucide-cloud-sync-icon lucide-cloud-sync" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 21.914 20.993" xmlns="http://www.w3.org/2000/svg">
-  <path d="m15.997 15.993-1.535 1.605a5 5 0 01-8-1.5" stroke="#0091eb"/>
-  <path d="m15.997 19.993v-4h-4" stroke="#0091eb"/>
-  <path d="m19.993 13.244a4.5 4.5 0 00-3.501-7.251h-1.79a7 7 0 10-12.709 5.607" stroke="#4cae4f"/>
-  <path d="m5.9968 7.9928v4h4" stroke="#0091eb"/>
-  <path d="m5.9968 11.993 1.535-1.605a5 5 0 018 1.5" stroke="#0091eb"/>
+  <path d="m15.997 15.993-1.535 1.605a5 5 0 01-8-1.5" stroke="#4cae4f"/>
+  <path d="m15.997 19.993v-4h-4" stroke="#4cae4f"/>
+  <path d="m19.993 13.244a4.5 4.5 0 00-3.501-7.251h-1.79a7 7 0 10-12.709 5.607" stroke="#0091eb"/>
+  <path d="m5.9968 7.9928v4h4" stroke="#4cae4f"/>
+  <path d="m5.9968 11.993 1.535-1.605a5 5 0 018 1.5" stroke="#4cae4f"/>
 </svg>

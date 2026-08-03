@@ -1,5 +1,5 @@
 ---
-icon: symbols/cloud-cog
+icon: symbols/cloud-sync
 title: DDNS
 subtitle: Provided by addr.tools
 description: A networking service that automatically maps a static domain name (FQDN) to a dynamic public IP address. On this LAN, the DDNS service is provided by addr.tools.
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide 'cloud-cog' icon](../assets/icons/cloud-cog.svg){ width=200 }
+![Lucide 'cloud-cog' icon](../assets/icons/cloud-sync.svg){ width=200 }
 
 # DDNS
 *Provided by addr.tools*

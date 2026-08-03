@@ -13,8 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Portracker Icon](../assets/icons/portracker-light.svg#only-light){ width=200 }
-![Portracker Icon](../assets/icons/portracker-dark.svg#only-dark){ width=200 }
+![Portracker Icon](../assets/icons/portracker.svg){ width=200 }
 
 # Portracker
 *Port Monitoring & Discovery*

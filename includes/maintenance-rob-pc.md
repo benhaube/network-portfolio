@@ -4,7 +4,7 @@
     
     + Time synchronizes with local time server running on main router, [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md), using `chrony`.
 
-#### :symbols-update:&ensp;Update Process 
+#### :symbols-rotate-cw-clock:&ensp;Update Process 
 
 + Automatic OS, software, firmware, and driver updates enabled with Windows Update.
 

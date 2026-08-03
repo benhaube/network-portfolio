@@ -254,7 +254,7 @@ hide:
 
         [Update PCRs&ensp;:brands-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
 
-[:symbols-update:&ensp;Automatic Updates for Debian Servers](linux_tutorials/configure_unattended-upgrades.md)
+[:symbols-rotate-cw-clock:&ensp;Automatic Updates for Debian Servers](linux_tutorials/configure_unattended-upgrades.md)
 :    How to install and configure the `unattended-upgrades` package on your Debian server to enable automatic updates. This tutorial will help you configure Systemd timers, custom origin settings, email notifications, automatic reboot scheduling, and dedicated logging to monitor all upgrade activity.
 
 [:symbols-svg:&ensp;Convert an SVG to Data URI](linux_tutorials/svg_to_uri.md) 

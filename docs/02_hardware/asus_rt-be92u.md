@@ -130,7 +130,7 @@ hide:
     :symbols-gauge:&ensp;**Adaptive QoS:**
     :    The router manages the available WAN connection bandwidth with an "Adaptive QoS" algorithm and prioritizes allocation based on the application type.
 
-#### :symbols-update:&ensp;Update Process
+#### :symbols-rotate-cw-clock:&ensp;Update Process
 
 + Automatic **Asuswrt-Merlin** firmware updates with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router){ external-link } tool.
 + Email notifications enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM){ external-link } and script updates.

@@ -81,7 +81,7 @@ hide:
 
     Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
 
-#### :symbols-update:&ensp;Update Policy
+#### :symbols-rotate-cw-clock:&ensp;Update Policy
 
 + Update Policy
 

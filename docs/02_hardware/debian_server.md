@@ -106,7 +106,7 @@ hide:
           
     + This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation. 
 
-#### :symbols-update:&ensp;Update Policy
+#### :symbols-rotate-cw-clock:&ensp;Update Policy
 
 + The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically.
 + Manual OS updates can be applied with the `apt` package manager. *(Standard Debian)*

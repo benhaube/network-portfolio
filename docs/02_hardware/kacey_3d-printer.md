@@ -121,7 +121,7 @@ hide:
     + [Manual Nozzle Cleaning Macro](../3d_printing/manual_nozzle_cleaning_macro.md)
         + This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
 
-#### :symbols-update:&ensp;Update Process
+#### :symbols-rotate-cw-clock:&ensp;Update Process
 
 * Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }.
 * Update Entware packages in terminal via [SSH](../03_services/ssh.md) 

@@ -59,7 +59,7 @@ hide:
  
     * To access the modem's Web UI enter `https://192.168.100.1`.
 
-#### :symbols-update:&ensp;Update Process 
+#### :symbols-rotate-cw-clock:&ensp;Update Process 
 
 + N/A
 

@@ -88,7 +88,7 @@ hide:
 
     Dockge is now running on: `http://localhost:5001`
 
-#### :symbols-update:&ensp;Update Dockge
+#### :symbols-rotate-cw-clock:&ensp;Update Dockge
 
 1. To update Dockge, run the following commands: 
 

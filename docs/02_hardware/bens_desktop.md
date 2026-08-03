@@ -124,7 +124,7 @@ hide:
 
 --8<-- "critical-conf-ben-pc.md"
 
-#### :symbols-update:&ensp;Update Process
+#### :symbols-rotate-cw-clock:&ensp;Update Process
 
 ##### Automatic Updates
 

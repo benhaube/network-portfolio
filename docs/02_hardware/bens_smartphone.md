@@ -127,7 +127,7 @@ hide:
     + Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/){ external-link } application.
     + The calendar and tasks service is hosted by [Fastmail](https://fastmail.com){ external-link }. 
 
-#### :symbols-update:&ensp;Update Process
+#### :symbols-rotate-cw-clock:&ensp;Update Process
 
 ##### Android OS
 

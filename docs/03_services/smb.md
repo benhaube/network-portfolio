@@ -1,5 +1,5 @@
 ---
-icon: symbols/cloud-sync
+icon: symbols/folder-tree
 title: SMB
 subtitle: Server Message Block
 description: Remote file system access.
@@ -13,7 +13,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide cloud-sync icon](../assets/icons/cloud-sync.svg){ width=200 }
+![Lucide 'folder-tree' icon](../assets/icons/folder-tree.svg){ width=200 }
 
 # SMB
 *Server Message Block*

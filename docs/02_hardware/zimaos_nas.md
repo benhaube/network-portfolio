@@ -86,7 +86,7 @@ hide:
 
 ## :symbols-monitor-cloud:&ensp;Services & Containers
 
-#### :symbols-cloud-sync:&ensp;File Sharing
+#### :symbols-share:&ensp;File Sharing
 
 + SMB  *(with Multichannel enabled)*
 + NFS *(for Linux PCs)*
@@ -101,9 +101,9 @@ hide:
 
 |  Status  | Service                                                  | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                         |
 | :------: | :------------------------------------------------------- | :---------------------------------: | :--------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-cloud-sync:&nbsp;NFS](../03_services/nfs.md)   |                `2049`               | Remote file system access.                                                                     |
+| *Active* | [:symbols-folder-tree:&nbsp;NFS](../03_services/nfs.md)  |                `2049`               | Remote file system access.                                                                     |
 | *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md) |                 `22`                | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| *Active* | [:symbols-cloud-sync:&nbsp;SMB](../03_services/smb.md)   |                 `445`               | Remote file system access.                                                                     |
+| *Active* | [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md)  |                 `445`               | Remote file system access.                                                                     |
 
 #### :symbols-container:&ensp;Docker Container
 
@@ -148,7 +148,7 @@ hide:
 
 !!! config "Critical Configurations"
 
-    :symbols-cloud-sync:&ensp;**SMB Multi-Channel:**
+    :symbols-folder-tree:&ensp;**SMB Multi-Channel:**
     
     + SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
     + **Constraint:** 

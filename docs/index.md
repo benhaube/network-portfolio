@@ -170,7 +170,7 @@ hide:
 [:services-nextcloud:&ensp;Nextcloud](03_services/nextcloud.md)
 :    Self-hosted cloud storage and collaboration platform.
 
-[:symbols-cloud-sync:&ensp;NFS](03_services/nfs.md) 
+[:symbols-folder-tree:&ensp;NFS](03_services/nfs.md) 
 :    Remote file system access.
 
 [:services-nginx:&ensp;Nginx](03_services/nginx.md)
@@ -197,7 +197,7 @@ hide:
 [:symbols-screen-share:&ensp;RDP](03_services/rdp.md)
 :    Remote desktop access over the LAN. *(not exposed to the internet)*
 
-[:symbols-cloud-sync:&ensp;SMB](03_services/smb.md)
+[:symbols-folder-tree:&ensp;SMB](03_services/smb.md)
 :    Remote file system access.
 
 [:services-spoolman:&ensp;Spoolman](03_services/spoolman.md)

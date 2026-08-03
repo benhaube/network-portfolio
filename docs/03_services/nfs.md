@@ -1,5 +1,5 @@
 ---
-icon: symbols/cloud-sync
+icon: symbols/folder-tree
 title: NFS
 subtitle: Network File System
 description: Remote file system access for Linux.
@@ -14,7 +14,7 @@ tags:
 hide:
   - toc
 ---
-![Lucide cloud-sync icon](../assets/icons/cloud-sync.svg){ width=200 }
+![Lucide 'folder-tree' icon](../assets/icons/folder-tree.svg){ width=200 }
 
 # NFS
 *Network File System*

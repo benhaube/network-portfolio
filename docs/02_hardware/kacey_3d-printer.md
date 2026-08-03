@@ -23,7 +23,7 @@ hide:
 ---
 ## :symbols-info:&ensp;Device Overview
 
-???+ links inline end "More K1C Info"
+???+ links inline end "Extra Links"
 
     See more detailed information about the Creality K1C hardware:
 

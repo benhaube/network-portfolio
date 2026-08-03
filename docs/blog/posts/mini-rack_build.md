@@ -28,7 +28,7 @@ hide:
     + Vented blank plates *(hexagon pattern)* 
     + Ugreen CM753 mounting bracket *(No longer available to download. Included a similar model in collection linked below.)*
   
-    [3D-Models&ensp;:brands-printables:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }
+    [3D-Models&ensp;:symbols-file-axis-3d:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }
 
     **Purchased Parts:**
  

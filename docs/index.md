@@ -15,7 +15,7 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    **Tag Index:**
+    :symbols-tag:&ensp;**Tag Index:**
 
     :    [Infrastructure Tags&ensp;:symbols-tags:](01_infrastructure/tags.md){ .md-button }
 
@@ -42,7 +42,7 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    **Tag Index:**
+    :symbols-tag:&ensp;**Tag Index:**
 
     :    [Hardware Tags&ensp;:symbols-tags:](02_hardware/tags.md){ .md-button }
 
@@ -103,7 +103,7 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    **Tag Index:**
+    :symbols-tag:&ensp;**Tag Index:**
 
     :    [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
 
@@ -238,16 +238,18 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    **Tag Index:**
+    :symbols-tag:&ensp;**Tag Index:**
     
     :    [Linux Tutorials Tags&ensp;:symbols-tags:](linux_tutorials/tags.md){ .md-button }
 
-    **My Favorite Bash Aliases:**
+    :symbols-terminal:&ensp;**My Favorite Bash Aliases:**
+    
     :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
 
         [My Bash Aliases&ensp;:symbols-terminal:](linux_tutorials/my_bash_aliases.md){ .md-button }
 
-    **Update PCRs Script:**
+    :symbols-file-terminal:&ensp;**Update PCRs Script:**
+    
     :    In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs *(defaults to 0+4+7+11)*, usage help, checking the version, and defining the device path. 
 
         [Update PCRs&ensp;:brands-github:](https://github.com/benhaube/Update-LUKS-PCRs-script){ .md-button }
@@ -276,10 +278,13 @@ hide:
 ---
 ## :symbols-printer-3d-nozzle:&ensp;3D Printing
 
-!!! links inline end "Check out my 3D Models!"
-    All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.
+!!! links inline end "Extra Links"
 
-    [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
+    :symbols-file-axis-3d:&ensp;**Check out my 3D Models!**
+
+    :    All of my 3D models are published to Printables, and shared with the GPLv3 open-source license. Every model has STEP and FreeCAD files included for easy editing.
+
+        [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
 [:symbols-settings:&ensp;Manual Bed Leveling Mod](3d_printing/k1_bed_level_knobs.md) 
 :    Installing a bed leveling modification on the [Creality K1C](02_hardware/kacey_3d-printer.md). 

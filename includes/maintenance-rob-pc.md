@@ -1,6 +1,6 @@
 !!! config inline "Critical Configurations"
 
-    **:symbols-clock-refresh-cw:&ensp;Chrony:**
+    **:symbols-refresh-cw-clock:&ensp;Chrony:**
     
     + Time synchronizes with local time server running on main router, [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md), using `chrony`.
 

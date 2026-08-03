@@ -110,7 +110,7 @@ hide:
 
 |  Status  | Service                                                                   | Port(s) {data-sort-method='number'} | Role / Notes {data-sort-method='none'}                                                                                                                                                                                               |
 | :------: | :------------------------------------------------------------------------ | :---------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| *Active* | [:symbols-clock-refresh-cw:&nbsp;Chrony](../03_services/chrony.md)        |                 `123`               | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
+| *Active* | [:symbols-refresh-cw-clock:&nbsp;Chrony](../03_services/chrony.md)        |                 `123`               | Advanced, lightweight NTP client and server.                                                                                                                                                                                         |
 | *Active* | [:symbols-cloud-sync:&nbsp;DDNS](../03_services/ddns.md)                  |                 `N/A`               | A networking service that automatically maps a static domain name *(hostname)* to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.             |
 | *Active* | [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md)                   |                 `445`               | Remote file system access.                                                                                                                                                                                                           |
 | *Active* | [:symbols-terminal-alt:&nbsp;SSH](../03_services/ssh.md)                  |                  `22`               | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                                                                                                                       |
@@ -124,7 +124,7 @@ hide:
     :symbols-refresh-ccw-dot:&ensp;**Backup Restore:**
     :    Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](zimaos_nas.md) and the [Pi 4B Server](pi_4b_server.md). 
 
-    :symbols-clock-refresh-cw:&ensp;**NTP Server:**
+    :symbols-refresh-cw-clock:&ensp;**NTP Server:**
     :    The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time. 
 
     :symbols-gauge:&ensp;**Adaptive QoS:**

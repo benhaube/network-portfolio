@@ -1,6 +1,6 @@
 !!! config inline "Critical Configurations"
 
-    **:symbols-clock-refresh-cw:&ensp;Chrony:**
+    **:symbols-refresh-cw-clock:&ensp;Chrony:**
 
     :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with [Chrony](../03_services/chrony.md). The Chrony service is hosted on the main router, [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md).
    

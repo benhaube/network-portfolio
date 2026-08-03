@@ -1,5 +1,5 @@
 ---
-icon: symbols/clock-refresh-cw
+icon: symbols/refresh-cw-clock
 title: Chrony
 subtitle: NTP Server
 description: Advanced, lightweight NTP client and server.

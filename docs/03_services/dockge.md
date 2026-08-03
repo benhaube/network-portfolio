@@ -65,7 +65,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-install-desktop:&ensp;Install Dockge
+#### :symbols-monitor-arrow-down-corner:&ensp;Install Dockge
 
 1. Create the directories that store your stacks and stores Dockge's stack:
 

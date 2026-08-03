@@ -75,7 +75,7 @@ hide:
     **Synchronize Pi-hole Settings:**
     :    To synchronize the settings from the primary Pi-hole instance to a second instance use [Nebula-Sync](nebula-sync.md). 
 
-#### :symbols-install-desktop:&ensp;Install
+#### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 ```bash linenums="1"
 curl -sSL https://install.pi-hole.net | bash

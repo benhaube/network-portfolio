@@ -30,7 +30,7 @@ hide:
 
 ---
 
-## :symbols-install-desktop:&ensp;Install OpenSSL
+## :symbols-monitor-arrow-down-corner:&ensp;Install OpenSSL
 
 The first step is to install the OpenSSL package, providing the tools necessary for generating SSL certificates. Most Linux distributions already have this package in their repos, so installing the package is a simple command away with the built-in package manager. 
 

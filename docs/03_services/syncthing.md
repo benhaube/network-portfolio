@@ -89,7 +89,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration  
 
-#### :symbols-install-desktop:&ensp;Install Commands
+#### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
 
 + :brands-fedora:&nbsp;Fedora / RHEL:
 

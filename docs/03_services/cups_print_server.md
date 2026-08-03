@@ -57,7 +57,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-install-desktop: Install CUPS Server
+#### :symbols-monitor-arrow-down-corner: Install CUPS Server
 
 1. Install the `cups` package and its dependencies:
 

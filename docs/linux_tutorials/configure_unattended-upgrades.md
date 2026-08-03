@@ -30,7 +30,7 @@ hide:
 
 ---
 
-## :symbols-install-desktop:&ensp;Install the Packages
+## :symbols-monitor-arrow-down-corner:&ensp;Install the Packages
 
 !!! note inline end
 

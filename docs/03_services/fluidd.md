@@ -47,7 +47,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :symbols-install-desktop:&ensp;Install
+#### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 ```bash title="Setup Creality Helper Script" linenums="1"
 --8<-- "install-helper-script.sh"

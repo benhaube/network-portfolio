@@ -49,7 +49,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-install-desktop:&ensp;Install
+#### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 1. Add the official Caddy repository. 
 

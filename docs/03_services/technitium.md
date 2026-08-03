@@ -66,7 +66,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration 
 
-#### :symbols-install-desktop:&ensp;Install
+#### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 ```bash title="Command to install & update Technitium" linenums="1"
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash

@@ -9,7 +9,7 @@ hide:
 ![Lucide 'user-search' icon](assets/icons/user-search.svg){ width=200 }
 
 # About Me & Professional Philosophy
-[My Resume&ensp;:symbols-briefcase-business:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
+[My Resume&ensp;:symbols-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
 

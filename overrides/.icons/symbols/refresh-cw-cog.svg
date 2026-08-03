@@ -1,0 +1,24 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-refresh-cw-cog-icon lucide-refresh-cw-cog"
+>
+  <path d="M12 21a9.75 9.75 0 01-6.74-2.74L3 16" />
+  <path d="m15.233 14.857-.923-.383" />
+  <path d="m15.233 17.153-.923.383" />
+  <path d="m16.857 13.233-.383-.923" />
+  <path d="m16.857 18.777-.383.924" />
+  <path d="m19.153 13.233.383-.923" />
+  <path d="m19.535 19.701-.382-.924" />
+  <path d="m20.777 14.857.923-.383" />
+  <path d="m20.777 17.153.923.383" />
+  <path d="M21 3v5h-5" />
+  <path d="M3 12a9 9 0 019-9 9.75 9.75 0 016.74 2.74L21 8" />
+  <path d="M8 16H3v5" />
+  <circle cx="18.005" cy="16.005" r="3" />
+</svg>

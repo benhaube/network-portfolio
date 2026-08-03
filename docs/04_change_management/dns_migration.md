@@ -51,7 +51,7 @@ hide:
 3. **Set as Secondary:** 
     + [ ] Configure identical upstream servers.
 
-## :symbols-refresh-cw:&ensp;Cluster Synchronization
+## :symbols-refresh-cw-cog:&ensp;Cluster Synchronization
 
 1. **Enable Clustering:** 
     + [ ] Set the Debian VM as the **Master**.

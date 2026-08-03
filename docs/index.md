@@ -161,7 +161,7 @@ hide:
 [:symbols-api:&ensp;Moonraker](03_services/moonraker.md)
 :    Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.
 
-[:symbols-refresh-cw:&ensp;Nebula-Sync](03_services/nebula-sync.md)
+[:symbols-refresh-cw-cog:&ensp;Nebula-Sync](03_services/nebula-sync.md)
 :    Synchronize configuration between multiple [Pi-hole](https://pi-hole.net){ external-link } instances.
 
 [:services-netalertx:&ensp;NetAlertX](03_services/netalertx.md)

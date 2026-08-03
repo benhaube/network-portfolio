@@ -1,5 +1,5 @@
 ---
-icon: symbols/refresh-cw
+icon: symbols/refresh-cw-cog
 title: Nebula-Sync
 subtitle: Synchronize Pi-hole
 description: Synchronize configuration between multiple Pi-hole instances.
@@ -15,7 +15,7 @@ tags:
 hide:
   - toc
 ---
-![Nebula Sync Icon](../assets/icons/refresh-cw.svg){ width=200 }
+![Nebula Sync Icon](../assets/icons/refresh-cw-cog.svg){ width=200 }
 
 # Nebula-Sync
 *Synchronize Pi-hole*

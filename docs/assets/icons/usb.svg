@@ -1,0 +1,9 @@
+<svg class="lucide lucide-usb-icon lucide-usb" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <path d="m2.7 17.3 14.3-14.3" stroke="#4cae4f"/>
+  <path d="m7.26 5.6799-4.26 4.32 2 5" stroke="#4cae4f"/>
+  <path d="m8 12 5 2 3.5-3.5" stroke="#4cae4f"/>
+  <path d="m16 9.9999 1-1 1 1-1 1z" stroke="#0091eb"/>
+  <circle cx="8" cy="4.9999" r="1" stroke="#0091eb"/>
+  <circle cx="2" cy="18" r="1" stroke="#0091eb"/>
+  <path d="m19 .99994-3 1 2 2z" stroke="#0091eb"/>
+</svg>

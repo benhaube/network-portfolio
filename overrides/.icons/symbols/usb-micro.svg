@@ -1,0 +1,13 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-usb-micro-icon lucide-usb-micro"
+>
+  <path d="M17 12H7" />
+  <path d="M17.333 7a2 2 0 011.2.4l2.667 2A2 2 0 0122 11v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5a2 2 0 01.8-1.6l2.667-2a2 2 0 011.2-.4z" />
+</svg>

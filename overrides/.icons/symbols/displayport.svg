@@ -1,0 +1,13 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class="lucide lucide-displayport-icon lucide-displayport"
+>
+  <path d="M18 12H7" />
+  <path d="M21 16a1 1 0 001-1V9a1 1 0 00-1-1H3a1 1 0 00-1 1v3.172a2 2 0 00.586 1.414l1.828 1.828A2 2 0 005.828 16z" />
+</svg>

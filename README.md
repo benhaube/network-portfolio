@@ -105,7 +105,7 @@ pip install "mkdocs-material[imaging]"
 
 ##### Cairo Graphics
 
-[Cairo Graphics](https://www.cairographics.org/) is a graphics library and dependency of Pillow, which Material for MkDocs makes use of for generating social cards and performing image optimization.
+[Cairo](https://www.cairographics.org/) is a graphics library and dependency of Pillow, which Material for MkDocs makes use of for generating social cards and performing image optimization.
 
 ```bash
 # Fedora / RHEL

@@ -87,8 +87,6 @@ pip install mkdocs-material
 
 #### Install Plugins
 
-The following plugins for MkDocs are required for this project:
-
 | Plugin                                                                                         | Role                                           |
 | :--------------------------------------------------------------------------------------------- | :--------------------------------------------- |
 | [<code>mkdocs-awesome-nav</code>](https://github.com/lukasgeiter/mkdocs-awesome-nav)           | Customize the navigation structure.            |

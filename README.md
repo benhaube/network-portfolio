@@ -91,7 +91,7 @@ The following plugins for MkDocs are required for this project:
 
 | Plugin                                                                            | Role                                           |
 | :-------------------------------------------------------------------------------- | :--------------------------------------------- |
-| [mkdocs-awesome-nav](https://github.com/lukasgeiter/mkdocs-awesome-nav)           | Customize the navigation structure.            |
+| [<code>mkdocs-awesome-nav</code>](https://github.com/lukasgeiter/mkdocs-awesome-nav)           | Customize the navigation structure.            |
 | [mkdocs-glightbox](https://github.com/blueswen/mkdocs-glightbox)                  | Create an image gallery.                       |
 | [mkdocs-open-in-new-tab](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab) | Open external links in a new tab.              |
 | [mkdocs-panzoom-plugin](https://github.com/PLAYG0N/mkdocs-panzoom)                | Enable pan & zoom on large Mermaid flowcharts. |

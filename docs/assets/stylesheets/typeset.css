@@ -25,6 +25,10 @@
     vertical-align: text-top;
     word-break: break-word
 }
+/* Hide bullets/numbers from being rendered in lists that use the class '{: .no-bullets }' */
+.no-bullets {
+    list-style-type: none;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
  * Customize Headings         *

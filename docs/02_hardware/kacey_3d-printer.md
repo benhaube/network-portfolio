@@ -39,7 +39,8 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location  
 
-:    Office
++ <!-- material/tags { include: [Office] } -->
+{: .no-bullets }
 
 #### :symbols-cpu:&ensp;OS / Firmware
 

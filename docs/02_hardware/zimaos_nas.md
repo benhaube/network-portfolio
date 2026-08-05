@@ -36,7 +36,8 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location 
 
-:    Living-Room&ensp;:symbols-move-right:&ensp;Server Rack
++ <!-- material/tags { include: [Living Room, Server Rack] } -->
+{: .no-bullets } 
 
 #### :symbols-cpu:&ensp;OS / Firmware
 

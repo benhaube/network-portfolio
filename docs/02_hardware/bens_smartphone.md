@@ -31,7 +31,8 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location
 
-:    Mobile
++ <!-- material/tags { include: [Mobile] } -->
+{: .no-bullets }
 
 #### :symbols-cpu:&ensp;OS / Firmware
 

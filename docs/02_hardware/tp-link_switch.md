@@ -29,7 +29,8 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location
 
-:    Office&ensp;:symbols-move-right:&ensp;Printer-Cart
++ <!-- material/tags { include: [Office, Printer Cart] } -->
+{: .no-bullets }
 
 #### :symbols-plug:&ensp;Power Source
 

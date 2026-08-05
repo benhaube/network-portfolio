@@ -31,9 +31,10 @@ hide:
 
 :    `RT-BE92U-FAF0`
 
-#### :symbols-map-pin:&ensp;Location 
+#### :symbols-map-pin:&ensp;Location
 
-:    Living-Room
++ <!-- material/tags { include: [Living Room] } -->
+{: .no-bullets }
 
 #### :symbols-cpu:&ensp;OS / Firmware
 

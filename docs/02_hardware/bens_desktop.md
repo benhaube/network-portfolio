@@ -4,6 +4,7 @@ title: Ben's Workstation
 subtitle: High-Performance Desktop PC
 description: Ben's main workstation PC located at his desk in the office upstairs.
 tags:
+  - Desk
   - Desktop
   - Hardware
   - Linux
@@ -33,7 +34,8 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location
 
-:    Office&ensp;:symbols-move-right:&ensp;Desk
++ <!-- material/tags { include: [Office, Desk] } -->
+{: .no-bullets }
 
 #### :symbols-cpu:&ensp;OS / Firmware
 

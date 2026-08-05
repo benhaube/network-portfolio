@@ -30,7 +30,8 @@ hide:
 
 #### :symbols-map-pin:&ensp;Location 
 
-:    Living Room&ensp;:symbols-move-right:&ensp;TV Stand
++ <!-- material/tags { include: [Living Room, TV Stand] } -->
+{: .no-bullets }
  
 #### :symbols-plug:&ensp;Power Source 
 

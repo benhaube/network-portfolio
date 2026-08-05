@@ -1,18 +1,18 @@
 ---
 icon: symbols/ethernet-port
-title: Switch Template
+title: Title
 subtitle: Subtitle
 tags:
   - Hardware
-  - Switch
   - Infrastructure
   - Network
+  - Switch
 hide:
   - toc
 ---
-![Material Design switch icon](../assets/icons/ethernet.svg){ width=200 }
+![Page Title Icon](../assets/icons/icon.svg){ width=200 }
 
-# Switch Template
+# Title
 *Subtitle*
 
 [Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }

@@ -1,6 +1,6 @@
 ---
 icon: symbols/monitor-smartphone
-title: Device Template
+title: Title
 subtitle: Subtitle
 tags:
   - Hardware
@@ -9,9 +9,9 @@ tags:
 hide:
   - toc
 ---
-![Icon](../assets/icons/<icon>.svg){ width=200 }
+![Page Title Icon](../assets/icons/icon.svg){ width=200 }
 
-# Device Template
+# Title
 *Subtitle*
 
 [Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }

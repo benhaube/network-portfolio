@@ -1,18 +1,18 @@
 ---
 icon: symbols/monitor-cloud
-title: Service Template
+title: Title
 subtitle: Subtitle
 tags:
   - Active
+  - Container
   - Service
   - Software
-  - Container
 hide:
   - toc
 ---
-![Icon](../assets/icons/<icon>.svg){ width=200 }
+![Page Title Icon](../assets/icons/icon.svg){ width=200 }
 
-# Service Template
+# Title
 *Subtitle*
 
 [GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-files:](https://docs.github.com/en){ .md-button .md-button--primary }

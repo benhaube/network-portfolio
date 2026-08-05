@@ -1,18 +1,18 @@
 ---
 icon: symbols/router
-title: Router Template
+title: Title
 subtitle: Subtitle
 tags:
   - Hardware
+  - Infrastructure
   - Network
   - Router
-  - Infrastructure
 hide:
   - toc
 ---
-![Icon](../assets/icons/<icon>.svg){ width=200 }
+![Page Title Icon](../assets/icons/icon.svg){ width=200 }
 
-# Router Template
+# Title
 *Subtitle*
 
 [Docs :symbols-files:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }

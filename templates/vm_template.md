@@ -1,17 +1,17 @@
 ---
 icon: symbols/stacks
-title: VM Template
+title: Title
 subtitle: Subtitle
 tags:
   - Hardware
-  - Virtual Machine
   - Server
+  - Virtual Machine
 hide:
   - toc
 ---
-![Icon](../assets/icons/<icon>.svg){ width=200 }
+![Page Title Icon](../assets/icons/icon.svg){ width=200 }
 
-# VM Template
+# Title
 *Subtitle*
 
 [OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :symbols-files:](https://example.com){ .md-button .md-button--primary }

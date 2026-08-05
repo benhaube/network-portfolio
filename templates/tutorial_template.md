@@ -1,13 +1,15 @@
 ---
-icon: material/your-preferred-icon
-title: Your Page Title
+icon: symbols/icon
+title: Title
 subtitle: Subtitle
+tags:
+  - Linux
 hide:
   - toc
 ---
-![Page Title Icon](../assets/icons/<your-icon>){ width=200 }
+![Page Title Icon](../assets/icons/icon.svg){ width=200 }
 
-# Your Page Title
+# Title
 *Subtitle*
 
 ---

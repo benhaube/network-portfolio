@@ -1,5 +1,5 @@
 ---
-title: Post Title
+title: Title
 date: 
   created: 2026-XX-XX
 authors: 
@@ -13,4 +13,4 @@ pin: false
 hide:
   - toc
 ---
-# Post Title
+# Title

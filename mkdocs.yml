@@ -138,6 +138,7 @@ theme:
       container-host: symbols/container
       dashboard: symbols/layout-dashboard
       deprecated: symbols/trash-2
+      desk: symbols/desk-lamp
       desktop: symbols/pc-case
       development: symbols/git-fork
       dns: symbols/cloud-cog
@@ -159,7 +160,7 @@ theme:
       native: symbols/tux
       network: symbols/network 
       new: symbols/badge-alert
-      office: symbols/desk-lamp
+      office: symbols/pencil-ruler
       pc: symbols/computer
       policy: symbols/file-pen-line
       print: symbols/printer
@@ -372,6 +373,7 @@ extra:
     Container Host: container-host
     Dashboard: dashboard
     Deprecated: deprecated
+    Desk: desk
     Desktop: desktop
     Development: development
     DNS: dns

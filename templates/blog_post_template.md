@@ -1,14 +1,14 @@
 ---
-icon: material/post
 title: Post Title
-subtitle: Subtitle
 date: 
-  created: 2026-XX-XXT12:00:00
+  created: 2026-XX-XX
 authors: 
   - benhaube
 draft: true
 categories:
+  - Category
 links:
+  - index.md
 pin: false
 hide:
   - toc

@@ -75,19 +75,17 @@
     --vlan52-border: #ef6c00;
     --vlan53-bg: #f3e5f5;
     --vlan53-border: #7b1fa2;
-    --service-bg: #e1f5fe;
-    --service-border: #0277bd;
+    --service-bg: #c7eefe;
+    --service-border: #1e00ff;
     --storage-bg: #ffebee;
     --storage-border: #c62828;
-    --usb-bg: #ffebee;
-    --usb-border: #c62828;
     --os-bg: #fffce1;
     --os-border: #fbc02d;
     /* Physical Diagram */
-    --isp-bg: #efe6ff;
-    --isp-border: #5A23B9;
-    --multi-bg: #e1f5fe;
-    --multi-border: #01579b;
+    --isp-bg: #ffebee;
+    --isp-border: #c62828;
+    --multi-bg: #c7eefe;
+    --multi-border: #1e00ff;
     --tengb-bg: #fff3e0;
     --tengb-border: #ef6c00;
     --twofivegb-bg: #fffce1;
@@ -96,8 +94,9 @@
     --gigabit-border: #2e7d32;
     --wifi-bg: #f3e5f5;
     --wifi-border: #7b1fa2;
-    --usb-bg: #ffebee;
-    --usb-border: #c62828;
+    /* Both Diagrams */
+    --usb-bg: #e1f5fe;
+    --usb-border: #03a3ff;
 }
 
 /* ~~~ Slate (Dark Mode) Variables ~~~ */
@@ -119,18 +118,16 @@
     --vlan53-bg: #100711;
     --vlan53-border: #7b1fa2;
     --service-bg: #000b13;
-    --service-border: #0277bd;
+    --service-border: #1e00ff;
     --storage-bg: #140508;
     --storage-border: #c62828;
-    --usb-bg: #140508;
-    --usb-border: #c62828;
     --os-bg: #110C00;
     --os-border: #fbc02d;
     /* Physical Diagram */
-    --isp-bg: #0c0519;
-    --isp-border: #5A23B9;
+    --isp-bg: #140508;
+    --isp-border: #c62828;
     --multi-bg: #000b13;
-    --multi-border: #01579b;
+    --multi-border: #1e00ff;
     --tengb-bg: #110600;
     --tengb-border: #ef6c00;
     --twofivegb-bg: #110C00;
@@ -139,6 +136,7 @@
     --gigabit-border: #2e7d32;
     --wifi-bg: #100711;
     --wifi-border: #7b1fa2;
-    --usb-bg: #140508;
-    --usb-border: #c62828;
+    /* Both Diagrams */
+    --usb-bg: #000b13;
+    --usb-border: #03a3ff;
 }

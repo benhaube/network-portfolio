@@ -7,7 +7,6 @@ tags:
   - Desktop
   - IoT
   - Laptop
-  - Mobile
   - Network
   - Router
   - Server

@@ -1,10 +1,10 @@
 ---
 icon: symbols/sitemap
-title: Physical Network Map
+title: Physical Diagram
 subtitle: Focusing on Physical Connections
 description: A Mermaid.js flowchart focusing on physical devices and their connections.
 tags:
-  - Map
+  - Diagram
   - Network
   - Router
   - Server
@@ -15,15 +15,15 @@ hide:
 ---
 ![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=200 }
 
-# Physical Network Map
+# Physical Diagram
 *Focusing on Physical Connections*
 
 ---
 
 ```mermaid { .pz-ignore }
---8<-- "physical_map_legend.mmd"
+--8<-- "physical_diagram_legend.mmd"
 ```
 
 ```mermaid
---8<-- "physical_map.mmd"
+--8<-- "physical_diagram.mmd"
 ```

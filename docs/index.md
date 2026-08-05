@@ -31,10 +31,10 @@ hide:
 [:symbols-shield-keyhole:&ensp;Network Security Policy](01_infrastructure/network_security_policy.md) 
 :    This infrastructure operates on the *Principle of Least Privilege*. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
-[:symbols-sitemap:&ensp;Logical Network Map](01_infrastructure/logical_map.md)
+[:symbols-sitemap:&ensp;Logical Diagram](01_infrastructure/logical_diagram.md)
 :    A *Mermaid.js* flowchart focusing on servers, services, and their connections. 
 
-[:symbols-sitemap:&ensp;Physical Network Map](01_infrastructure/physical_map.md)
+[:symbols-sitemap:&ensp;Physical Diagram](01_infrastructure/physical_diagram.md)
 :    A *Mermaid.js* flowchart focusing on physical devices and their connections.
 
 ---

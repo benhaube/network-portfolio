@@ -125,7 +125,7 @@ tags:
 
 	---
 
-	[Logical Map](logical_map.md){ .md-button }&emsp;[Physical Map](physical_map.md){ .md-button }
+	[Logical Diagram](logical_diagram.md){ .md-button }&emsp;[Physical Diagram](physical_diagram.md){ .md-button }
 
 </div>
 

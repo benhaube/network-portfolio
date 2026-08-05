@@ -1,10 +1,10 @@
 ---
 icon: symbols/sitemap
-title: Logical Network Map
+title: Logical Diagram
 subtitle: Focusing on Servers and Services
 description: A Mermaid.js flowchart focusing on servers, services, and their connections.
 tags:
-  - Map
+  - Diagram
   - Network
   - Router
   - Server
@@ -15,15 +15,15 @@ hide:
 ---
 ![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=200 }
 
-# Logical Network Map
+# Logical Diagram
 *Focusing on Servers and Services*
 
 ---
 
 ```mermaid { .pz-ignore }
---8<-- "logical_map_legend.mmd"
+--8<-- "logical_diagram_legend.mmd"
 ```
 
 ```mermaid
---8<-- "logical_map.mmd"
+--8<-- "logical_diagram.mmd"
 ```

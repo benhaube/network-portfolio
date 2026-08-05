@@ -3,6 +3,6 @@ sort:
   ignore_case: true
 nav:
   - "*"
-  - logical_map.md
-  - physical_map.md
+  - logical_diagram.md
+  - physical_diagram.md
   - tags.md

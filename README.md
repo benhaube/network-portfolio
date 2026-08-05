@@ -89,10 +89,12 @@ pip install mkdocs-material
 
 The following plugins for MkDocs are required for this project:
 
-+ [mkdocs-awesome-nav](https://github.com/lukasgeiter/mkdocs-awesome-nav) &mdash; Customize the navigation structure.
-+ [mkdocs-glightbox](https://github.com/blueswen/mkdocs-glightbox) &mdash; Create an image gallery.
-+ [mkdocs-panzoom-plugin](https://github.com/PLAYG0N/mkdocs-panzoom) &mdash; Enable pan & zoom on large Mermaid flowcharts.
-+ [mkdocs-open-in-new-tab](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab) &mdash; Open external links in a new tab.
+| Plugin                                                                            | Role                                           |
+| :-------------------------------------------------------------------------------- | :--------------------------------------------- |
+| [mkdocs-awesome-nav](https://github.com/lukasgeiter/mkdocs-awesome-nav)           | Customize the navigation structure.            |
+| [mkdocs-glightbox](https://github.com/blueswen/mkdocs-glightbox)                  | Create an image gallery.                       |
+| [mkdocs-open-in-new-tab](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab) | Open external links in a new tab.              |
+| [mkdocs-panzoom-plugin](https://github.com/PLAYG0N/mkdocs-panzoom)                | Enable pan & zoom on large Mermaid flowcharts. |
 
 ```bash
 pip install mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-open-in-new-tab

@@ -6,7 +6,7 @@
 
 flowchart-elk TD
     %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
-    classDef isp fill:, stroke:, rx:0.4rem, ry:0.4rem;
+    classDef isp fill:, stroke:, padding:2.5em;
     classDef multi fill:, stroke:, rx:0.4rem, ry:0.4rem;
     classDef tenGb fill:, stroke:, rx:0.4rem, ry:0.4rem;
     classDef twoFiveGb fill:, stroke:, rx:0.4rem, ry:0.4rem;
@@ -19,7 +19,7 @@ flowchart-elk TD
 %% --- Nodes --- %%
 
     %% --- ISP --- %%
-    ISP["<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' style='vertical-align: middle;' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-globe-icon lucide-globe'><circle cx='12' cy='12' r='10'/><path d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'/><path d='M2 12h20'/></svg>"]:::isp
+    ISP(("<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' style='vertical-align: middle;' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-globe-icon lucide-globe'><circle cx='12' cy='12' r='10'/><path d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'/><path d='M2 12h20'/></svg>")):::isp
 
     %% --- Living Room & Server Rack --- %%
     subgraph Living_Room ["<b>Living Room</b>"]

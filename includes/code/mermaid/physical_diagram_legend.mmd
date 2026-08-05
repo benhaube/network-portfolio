@@ -6,7 +6,7 @@
 
 graph
     %% --- Dummy Class Definitions (To register the classes on the SVGs) ---
-    classDef isp fill:, stroke:;
+    classDef isp fill:, stroke:, padding:2em;
     classDef multi fill:, stroke:, rx:0.4rem, ry:0.4rem;
     classDef tenGb fill:, stroke:, rx:0.4rem, ry:0.4rem;
     classDef twoFiveGb fill:, stroke:, rx:0.4rem, ry:0.4rem;
@@ -17,7 +17,8 @@ graph
     classDef usb fill:, stroke:, rx:0.4rem, ry:0.4rem;
 
 	%% --- Ledgend ---
-	TenGb["<svg xmlns='http://www.w3.org/2000/svg' style='vertical-align: middle;' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-ethernet-port-icon lucide-ethernet-port'><path d='m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z'/><path d='M6 8v1'/><path d='M10 8v1'/><path d='M14 8v1'/><path d='M18 8v1'/></svg>&ensp;10 Gb/s Ethernet"]:::tenGb
+	ISP(("<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='vertical-align: middle;' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-globe-icon lucide-globe'><circle cx='12' cy='12' r='10'/><path d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'/><path d='M2 12h20'/></svg><br>WAN")):::isp
+  TenGb["<svg xmlns='http://www.w3.org/2000/svg' style='vertical-align: middle;' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-ethernet-port-icon lucide-ethernet-port'><path d='m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z'/><path d='M6 8v1'/><path d='M10 8v1'/><path d='M14 8v1'/><path d='M18 8v1'/></svg>&ensp;10 Gb/s Ethernet"]:::tenGb
 	TwoFiveGb["<svg xmlns='http://www.w3.org/2000/svg' style='vertical-align: middle;' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-ethernet-port-icon lucide-ethernet-port'><path d='m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z'/><path d='M6 8v1'/><path d='M10 8v1'/><path d='M14 8v1'/><path d='M18 8v1'/></svg>&ensp;2.5 Gb/s Ethernet"]:::twoFiveGb
 	Gigabit["<svg xmlns='http://www.w3.org/2000/svg' style='vertical-align: middle;' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-ethernet-port-icon lucide-ethernet-port'><path d='m15 20 3-3h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2l3 3z'/><path d='M6 8v1'/><path d='M10 8v1'/><path d='M14 8v1'/><path d='M18 8v1'/></svg>&ensp;1 Gb/s Ethernet"]:::gigabit
 	WiFi["<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='vertical-align: middle;' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-wifi-icon lucide-wifi'><path d='M12 20h.01'/><path d='M2 8.82a15 15 0 0 1 20 0'/><path d='M5 12.859a10 10 0 0 1 14 0'/><path d='M8.5 16.429a5 5 0 0 1 7 0'/></svg>&ensp;Wi-Fi"]:::wifi

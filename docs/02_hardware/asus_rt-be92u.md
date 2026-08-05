@@ -38,7 +38,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } *(3006.102.7_2)*
+:    [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } *(3006.102.8_2)*
 
 #### :symbols-user-key:&ensp;Credentials
 

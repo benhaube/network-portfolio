@@ -38,7 +38,7 @@ hide:
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:symbols-wizard-hat:&ensp;asuswrt](https://www.asus.com/us/content/asuswrt/){ external-link } *(3004.386.53329-g73d3919)*
+:    [:symbols-wizard-hat:&ensp;asuswrt](https://www.asus.com/us/content/asuswrt/){ external-link } *(3004.386.53329)*
 
 #### :symbols-user-key:&ensp;Credentials
 

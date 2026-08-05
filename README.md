@@ -100,7 +100,7 @@ pip install mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-ope
 
 #### Install Dependencies for Optimize Plugin
 
-The built-in [Optimize](https://squidfunk.github.io/mkdocs-material/plugins/optimize/) plugin for Material for MkDocs is utilized in this project. It optimizes `.jpg` and `.png` images on the site, reducing bandwidth and server storage requirements. However, the Optimize plugin does require additional dependencies to function using the Python package. **Note:** The Docker image includes the dependencies required for the Optimize plugin.
+The built-in [Optimize](https://squidfunk.github.io/mkdocs-material/plugins/optimize/) plugin for Material for MkDocs is utilized in this project. It optimizes `.jpg` and `.png` images on the site, reducing bandwidth and server storage requirements. However, the Optimize plugin does require additional dependencies to function using the Python package.
 
 ##### Python
 
@@ -113,6 +113,8 @@ pip install "mkdocs-material[imaging]"
 > 
 > + [Pillow](https://pillow.readthedocs.io/)
 > + [CairoSVG](https://cairosvg.org/)
+> 
+> The Docker image includes the dependencies required for the Optimize plugin.
 
 ##### Cairo Graphics
 

@@ -4,12 +4,12 @@ title: ASUS RT-BE92U
 subtitle: Wireless Router
 description: The main wireless router and firewall for the LAN. Located next to the 10-inch server rack in the living room on the main floor.
 tags:
-  - Network
-  - Router
-  - Infrastructure
-  - Remote Access
-  - Living Room
   - Hardware
+  - Infrastructure
+  - Living Room
+  - Network
+  - Remote Access
+  - Router
 hide:
   - toc
 ---

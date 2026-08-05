@@ -4,15 +4,15 @@ title: Pi Zero 2W Server
 subtitle: Reverse-Proxy Server
 description: A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique '.internal' FQDNs to services hosted on the LAN.
 tags:
-  - Server
-  - DNS
-  - Infrastructure
   - Container Host
+  - DNS
+  - Hardware
+  - Infrastructure
+  - Linux
   - Network
   - Office 
   - Printer Cart
-  - Linux
-  - Hardware
+  - Server
 hide:
   - toc
 ---

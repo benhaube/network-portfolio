@@ -5,12 +5,12 @@ subtitle: Model LS1005G
 status: new
 description: A gigabit desktop switch (5-port) distributing Ethernet connections to devices in the TV stand in the living room.
 tags:
-  - Switch
-  - Infrastructure
-  - Network
-  - Living Room
-  - TV Stand
   - Hardware
+  - Infrastructure
+  - Living Room
+  - Network
+  - Switch
+  - TV Stand
 hide:
   - toc
 ---

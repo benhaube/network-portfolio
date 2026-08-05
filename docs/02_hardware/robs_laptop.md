@@ -4,12 +4,12 @@ title: Rob's Laptop
 subtitle: ASUS TUF Gaming A16
 description: Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming.
 tags: 
-  - PC
+  - Hardware
   - Laptop 
   - Mobile
-  - Windows
+  - PC
   - Remote Access
-  - Hardware
+  - Windows
 hide:
   - toc
 ---

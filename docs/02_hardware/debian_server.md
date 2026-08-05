@@ -4,14 +4,14 @@ title: Debian Server
 subtitle: Primary DNS Server
 description: The primary DNS server in the Technitium cluster. It is a VM hosted on the rack-mounted ZimaOS NAS.
 tags:
-  - Virtual Machine
-  - Server
-  - DNS
-  - Infrastructure
   - Container Host
-  - Network
-  - Linux
+  - DNS
   - Hardware
+  - Infrastructure
+  - Linux
+  - Network
+  - Server
+  - Virtual Machine
 hide:
   - toc
 ---

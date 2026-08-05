@@ -4,12 +4,12 @@ title: Ben's Workstation
 subtitle: High-Performance Desktop PC
 description: Ben's main workstation PC located at his desk in the office upstairs.
 tags:
-  - PC 
   - Desktop
-  - Virtual Host
-  - Office
-  - Linux
   - Hardware
+  - Linux
+  - Office
+  - PC 
+  - Virtual Host
 hide:
   - toc
 ---

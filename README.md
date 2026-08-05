@@ -332,7 +332,7 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
     ![Panzoom button icons after modification](readme-assets/panzoom-button-after.png)&emsp;![Panzoom button icons after modification - maximized](readme-assets/panzoom-button-after-max.png)
 
 > [!note]
-> The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with "panzoom-icon". 
+> The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with `class="panzoom-icon"`. 
 > 
 > After ugrading the `mkdocs-panzoom-plugin` package you may need to re-apply this modification to the `panzoom_box.py` file. Depending on the changes made by the upgrade, the file may be overwritten.
 

@@ -129,18 +129,19 @@ theme:
 
     # Set the icons used for page tags.
     tag:
-      default: symbols/tag
       3D-printer: symbols/printer-3d-nozzle
       active: symbols/circle-check
       android: brands/android-2
       backup: symbols/cloud-upload
-      container: symbols/container
       container-host: symbols/container
+      container: symbols/container
       dashboard: symbols/layout-dashboard
+      default: symbols/tag
       deprecated: symbols/trash-2
       desk: symbols/desk-lamp
       desktop: symbols/pc-case
       development: symbols/git-fork
+      diagram: symbols/sitemap
       dns: symbols/cloud-cog
       download: symbols/download
       file-share: symbols/share
@@ -153,7 +154,6 @@ theme:
       laptop: symbols/laptop-minimal
       linux: symbols/tux
       living-room: symbols/sofa
-      map: symbols/sitemap
       mobile: symbols/tablet-smartphone
       monitor: symbols/activity
       nas: symbols/server-nas
@@ -168,8 +168,8 @@ theme:
       remote: symbols/globe-arrow
       router: symbols/router
       security: symbols/shield-keyhole
-      server: symbols/server
       server-rack: symbols/server-rack
+      server: symbols/server
       service: symbols/monitor-cloud
       shell: symbols/terminal
       software: symbols/package
@@ -182,8 +182,8 @@ theme:
       vlan: symbols/hub
       vm: symbols/layers
       vpn: symbols/waypoints
-      windows: brands/microsoft
       web-host: symbols/globe
+      windows: brands/microsoft
 
 # ~~~ Python Markdown Extensions ~~~
 
@@ -364,18 +364,17 @@ extra:
   # Create / define the tags used on the site. Tag icons are set above in the 'theme > icon' section. 
   tags:
     3D-Printer: 3D-printer
-    ISP: isp
-    IoT: iot
     Active: active
     Android: android
     Backup: backup
-    Container: container
     Container Host: container-host
+    Container: container
     Dashboard: dashboard
     Deprecated: deprecated
     Desk: desk
     Desktop: desktop
     Development: development
+    Diagram: diagram
     DNS: dns
     Domain: domain
     Download: download
@@ -384,10 +383,11 @@ extra:
     Inactive: inactive
     Infrastructure: infra
     Inventory: inventory
+    IoT: iot
+    ISP: isp
     Laptop: laptop
     Linux: linux
     Living Room: living-room
-    Map: map
     Mobile: mobile
     Monitor: monitor
     NAS: nas
@@ -397,13 +397,13 @@ extra:
     Office: office
     PC: pc
     Policy: policy
-    Printing: print
     Printer Cart: printer-cart 
+    Printing: print
     Remote Access: remote
     Router: router
     Security: security
-    Server: server
     Server Rack: server-rack
+    Server: server
     Service: service
     Shell: shell
     Software: software
@@ -416,5 +416,5 @@ extra:
     Virtual Machine: vm
     VLAN: vlan 
     VPN: vpn
-    Windows: windows
     Web Host: web-host
+    Windows: windows

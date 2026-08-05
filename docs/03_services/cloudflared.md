@@ -6,10 +6,10 @@ description: Secure reverse-proxy tunnel for hosting private services on the pub
 tags:
   - Active
   - Container
-  - Remote Access
-  - Network
-  - Infrastructure
   - DNS
+  - Infrastructure
+  - Network
+  - Remote Access
   - Service
 hide:
   - toc

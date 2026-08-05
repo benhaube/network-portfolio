@@ -4,13 +4,13 @@ title: MAC Address Tables
 subtitle: Hardware MAC Addresses
 description: This page contains tables organizing devices on the LAN and their hardware MAC addresses.
 tags:
-  - Network
+  - Desktop
   - IoT
+  - Laptop
+  - Mobile
+  - Network
   - Router
   - Server
-  - Mobile
-  - Laptop
-  - Desktop
 hide:
   - toc
 ---

@@ -6,9 +6,9 @@ description: A Web UI and RPC server for 'yt-dlp'.
 tags:
   - Active
   - Container
-  - Video
   - Download
   - Service
+  - Video
 hide:
   - toc
 ---

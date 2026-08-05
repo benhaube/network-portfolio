@@ -5,8 +5,8 @@ subtitle: Synchronize Pi-hole
 description: Synchronize configuration between multiple Pi-hole instances.
 status: deprecated
 tags:
-  - Deprecated
   - Container
+  - Deprecated
   - DNS
   - Infrastructure
   - Network

@@ -5,8 +5,8 @@ subtitle: Open Print Server
 description: A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 tags:
   - Active
-  - Printing
   - Native
+  - Printing
   - Service
 hide:
   - toc

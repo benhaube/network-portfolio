@@ -4,8 +4,8 @@ title: Fluidd
 subtitle: The Klipper UI
 description: A free and open-source Klipper web interface for managing your 3D-printer.
 tags:
-  - Active
   - 3D-Printer
+  - Active
   - Native
   - Service
 hide:

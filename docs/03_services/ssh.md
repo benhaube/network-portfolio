@@ -5,11 +5,11 @@ subtitle: Secure Shell
 description: Provides secure encrypted communications between two untrusted hosts over an insecure network.
 tags:
   - Active
+  - Infrastructure
   - Native
   - Remote Access
-  - Shell
-  - Infrastructure
   - Service
+  - Shell
 hide:
   - toc
 ---

@@ -4,8 +4,8 @@ title: Physical Network Map
 subtitle: Focusing on Physical Connections
 description: A Mermaid.js flowchart focusing on physical devices and their connections.
 tags:
-  - Network
   - Map
+  - Network
   - Router
   - Server
   - Switch

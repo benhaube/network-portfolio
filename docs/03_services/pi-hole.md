@@ -7,9 +7,9 @@ status: deprecated
 tags:
   - Deprecated
   - DNS
-  - Network
   - Infrastructure
   - Native
+  - Network
   - Service
 hide:
   - toc

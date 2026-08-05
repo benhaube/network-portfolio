@@ -5,9 +5,9 @@ subtitle: Bye Bye, Google Photos
 description: High performance self-hosted photo and video management solution.
 tags:
   - Active
+  - Backup
   - Container
   - File Share
-  - Backup
   - Service
 hide:
   - toc

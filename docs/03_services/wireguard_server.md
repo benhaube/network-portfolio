@@ -5,12 +5,12 @@ subtitle: A Simple, Modern VPN
 description: An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 tags:
   - Active
-  - Remote Access
-  - VPN
-  - Network
   - Infrastructure
   - Native
+  - Network
+  - Remote Access
   - Service
+  - VPN
 hide:
   - toc
 ---

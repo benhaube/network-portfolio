@@ -6,8 +6,8 @@ description: A lightweight server monitoring hub with historical data, docker st
 tags:
   - Active
   - Container
-  - Monitor
   - Infrastructure
+  - Monitor
   - Service
 hide:
   - toc

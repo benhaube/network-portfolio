@@ -4,10 +4,10 @@ title: Moonraker
 subtitle: The Klipper Web API
 description: Web API server for Klipper. 
 tags:
-  - Active
   - 3D-Printer
-  - Remote Access
+  - Active
   - Native
+  - Remote Access
   - Service
 hide:
   - toc

@@ -5,8 +5,8 @@ subtitle: Private Cloud
 description: Self-hosted cloud storage and collaboration platform.
 status: deprecated
 tags:
-  - Deprecated
   - Container
+  - Deprecated
   - File Share
   - Service
   - Sync

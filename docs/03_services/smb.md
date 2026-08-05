@@ -5,10 +5,10 @@ subtitle: Server Message Block
 description: Remote file system access.
 tags:
   - Active
-  - Native
-  - File Share
-  - Remote Access
   - Backup
+  - File Share
+  - Native
+  - Remote Access
   - Service
 hide:
   - toc

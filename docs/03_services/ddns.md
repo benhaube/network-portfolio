@@ -5,9 +5,9 @@ subtitle: Provided by addr.tools
 description: A networking service that automatically maps a static domain name (FQDN) to a dynamic public IP address. On this LAN, the DDNS service is provided by addr.tools.
 tags:
   - Active
-  - Native
   - DNS
   - Infrastructure
+  - Native
   - Network
   - Service
 hide:

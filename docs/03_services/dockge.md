@@ -5,12 +5,12 @@ subtitle: Docker Management
 description: A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 tags:
   - Active
-  - Dashboard
   - Container
+  - Dashboard
   - Download
+  - Service
   - Shell
   - Tools
-  - Service
 hide:
   - toc
 ---

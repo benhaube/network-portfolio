@@ -4,13 +4,13 @@ title: IP Address Management
 subtitle: Organized IP Address Space
 description: This page contains information about IPAM, VPNs, and VLANs encompassed by the LAN.
 tags:
+  - DNS
   - Network
+  - Remote Access
+  - Router
+  - Server
   - VLAN
   - VPN
-  - Remote Access
-  - DNS
-  - Server
-  - Router
 hide:
   - toc
 ---

@@ -5,8 +5,8 @@ subtitle: NTP Server
 description: Advanced, lightweight NTP client and server.
 tags:
   - Active
-  - Native
   - Infrastructure
+  - Native
   - Service
 hide:
   - toc

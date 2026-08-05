@@ -6,9 +6,9 @@ description: A self-hosted, real-time port monitoring and discovery tool.
 tags:
   - Active
   - Container
+  - Infrastructure
   - Monitor
   - Network
-  - Infrastructure
   - Service
 hide:
   - toc

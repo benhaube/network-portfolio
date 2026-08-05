@@ -4,13 +4,13 @@ title: Network Security Policy
 subtitle: The Principle of Least Privilege
 description: This infrastructure operates on the Principle of Least Privilege. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 tags:
-  - Policy
-  - Security
-  - IoT
-  - VLAN
   - DNS
-  - VPN
+  - IoT
+  - Policy
   - Remote Access
+  - Security
+  - VLAN
+  - VPN
 ---
 ![Lucide 'brick-wall-shield' icon](../assets/icons/shield-keyhole.svg){ width=200 }
 

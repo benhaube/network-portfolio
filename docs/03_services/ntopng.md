@@ -5,12 +5,12 @@ title: ntopng
 subtitle: Network Traffic Probe
 description: Web-based traffic and security network traffic monitoring.
 tags:
-  - Inactive
   - Container
+  - Inactive
+  - Infrastructure
   - Monitor
   - Network
   - Service
-  - Infrastructure
 hide:
   - toc
 ---

@@ -5,13 +5,13 @@ subtitle: Container Management
 description: A lightweight service delivery platform for containerized applications. 
 status: inactive
 tags:
-  - Inactive
-  - Dashboard
   - Container
+  - Dashboard
   - Download
+  - Inactive
+  - Service
   - Shell
   - Tools
-  - Service
 hide:
   - toc
 ---

@@ -6,12 +6,12 @@ description: Centralized network visibility and continuous asset discovery. Moni
 status: new
 tags:
   - Active
-  - Service
   - Container
-  - Monitor
   - Inventory
+  - Monitor
   - Network
   - New
+  - Service
   - Tools
 hide:
   - toc

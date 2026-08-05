@@ -6,9 +6,9 @@ description: A free & open-source HTML5 network performance estimation tool.
 tags:
   - Active
   - Container
-  - Network
   - Infrastructure
   - Monitor
+  - Network
   - Service
 hide:
   - toc

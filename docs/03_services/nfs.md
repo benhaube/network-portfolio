@@ -5,11 +5,11 @@ subtitle: Network File System
 description: Remote file system access for Linux.
 tags:
   - Active
-  - Native
-  - File Share
-  - Network
-  - Infrastructure
   - Backup
+  - File Share
+  - Infrastructure
+  - Native
+  - Network
   - Service
 hide:
   - toc

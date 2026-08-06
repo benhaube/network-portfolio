@@ -171,7 +171,7 @@ theme:
       server-rack: symbols/server-rack
       server: symbols/server
       service: symbols/monitor-cloud
-      shell: symbols/terminal
+      shell: symbols/square-terminal
       software: symbols/package
       switch: symbols/ethernet-port
       sync: symbols/refresh-cw

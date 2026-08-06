@@ -3,7 +3,11 @@
     "markdown.extension.tableFormatter.enabled": true,
     "editor.wordWrap": "off",
     "yaml.schemas": {
-        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
+        "https://raw.githubusercontent.com/compose-spec/compose-go/master/schema/compose-spec.json": [
+            "file:///home/bhaube/Development/network-portfolio/compose-serve.yml",
+            "file:///home/bhaube/Development/network-portfolio/compose-build.yml"
+        ]
     },
     "stylelint.validate": ["css", "scss"],
     "yaml.customTags": [ 
@@ -171,5 +175,6 @@
         "zpkg"
     ],
     "mermaid.themeCSS": "",
-    "mermaid.theme": "dark"
+    "mermaid.theme": "dark",
+    "yaml.disableSchemaDetection": []
 }

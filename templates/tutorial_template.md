@@ -7,9 +7,11 @@ tags:
 hide:
   - toc
 ---
+
 ![Page Title Icon](../assets/icons/icon.svg){ width=200 }
 
 # Title
-*Subtitle*
+
+_Subtitle_
 
 ---

@@ -49,6 +49,8 @@ _Git with a Cup of Tea_
 
 #### :symbols-user-key:&ensp;Credentials
 
+:    [:brands-gitlab:&ensp;GitLab OAuth](https://gitlab.com/-/user_settings/applications){ external-link }
+
 :    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:

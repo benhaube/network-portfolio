@@ -189,6 +189,43 @@ html .md-footer-meta.md-typeset a:hover {
   color:var(--md-accent-fg-color)
 }
 
+/* --- Customize Dialog --- */
+
+.md-dialog--active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: transform .4s cubic-bezier(.075,.85,.175,1),opacity .4s
+}
+.md-dialog__inner {
+  color: var(--md-default-bg-color);
+  font-size: .7rem
+}
+.md-dialog {
+  background-color: var(--md-accent-fg-color);
+  border-radius: 1.2rem;
+  bottom: .8rem;
+  box-shadow: var(--md-shadow-z3);
+  min-width: 11.1rem;
+  opacity: 0;
+  padding: .4rem 1.2rem;
+  pointer-events: none;
+  position: fixed;
+  transform: translateY(100%);
+  transition: transform 0ms .4s,opacity .4s;
+  z-index: 4
+}
+.md-dialog--active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: transform .4s cubic-bezier(.075,.85,.175,1),opacity .4s
+}
+.md-dialog__inner {
+  color: var(--md-default-bg-color);
+  font-size: .7rem
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~ * 
  * Customize Navigation *
  * ~~~~~~~~~~~~~~~~~~~~ */

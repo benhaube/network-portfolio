@@ -13,17 +13,19 @@ tags:
 hide:
   - toc
 ---
+
 ![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=200 }
 
 # Logical Diagram
-*Focusing on Servers and Services*
+
+_Focusing on Servers and Services_
 
 ---
 
-```mermaid { .pz-ignore }
+``` mermaid { .pz-ignore }
 --8<-- "logical_diagram_legend.mmd"
 ```
 
-```mermaid
+``` mermaid
 --8<-- "logical_diagram.mmd"
 ```

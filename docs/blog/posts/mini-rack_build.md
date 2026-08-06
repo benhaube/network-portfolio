@@ -17,36 +17,37 @@ pin: false
 hide:
   - toc
 ---
+
 ![Custom icon for my server rack made in Inkscape](../assets/icons/10-in-rack.svg){ width=200 }
 
 !!! info "Server Rack Build: Dec, 2025&ensp;:symbols-move-right:&ensp;Jan, 2026"
 
     **3D-Printed Parts:**
- 
-    + RackMate bottom horizontal frame 
-    + ZimaBoard 2 w/SSD mounting bracket 
-    + Vented blank plates *(hexagon pattern)* 
-    + Ugreen CM753 mounting bracket *(No longer available to download. Included a similar model in collection linked below.)*
-  
+
+    - RackMate bottom horizontal frame
+    - ZimaBoard 2 w/SSD mounting bracket
+    - Vented blank plates _(hexagon pattern)_
+    - Ugreen CM753 mounting bracket _(No longer available to download. Included a similar model in collection linked below.)_
+
     [3D-Models&ensp;:symbols-file-axis-3d:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }
 
     **Purchased Parts:**
- 
-    + [ZimaBoard 2 1664](../../02_hardware/zimaos_nas.md)
-    + [Ugreen UM106X Switch](../../02_hardware/ugreen_switch.md)
-    + [Hitron Modem](../../02_hardware/hitron_modem.md)
-    + GeeekPi: DeskPi Rack-Mate T0 *(4U - 10" Rack)*
-    + One SFP+&ensp;:symbols-move-right:&ensp;10GbE transceiver
-    + Two Cat6a Keystone jacks
-    + Three GeeekPi 6" Cat6a patch cables
-    + Three Monoprice 3' Cat6a patch cables
-    + One PCIe 4.0&ensp;:symbols-move-right:&ensp;NVMe add-in card
-    + One SK-Hynix 500GB NVMe SSD *(for Docker / VM storage, pulled from [ThinkPad](../../02_hardware/bens_laptop.md) after storage upgrade)*
-    + Two Crucial BX500 4TB SATA SSDs in RAID1 *(for mass network attached storage)*
-    + One 30 cm SATA extension cable
-    + One PWM Fan controller
-    + Two server-grade 5000 RPM, 80 mm Arctic PWM fans
-    + Black rack screws
+
+    - [ZimaBoard 2 1664](../../02_hardware/zimaos_nas.md)
+    - [Ugreen UM106X Switch](../../02_hardware/ugreen_switch.md)
+    - [Hitron Modem](../../02_hardware/hitron_modem.md)
+    - GeeekPi: DeskPi Rack-Mate T0 _(4U - 10" Rack)_
+    - One SFP+&ensp;:symbols-move-right:&ensp;10GbE transceiver
+    - Two Cat6a Keystone jacks
+    - Three GeeekPi 6" Cat6a patch cables
+    - Three Monoprice 3' Cat6a patch cables
+    - One PCIe 4.0&ensp;:symbols-move-right:&ensp;NVMe add-in card
+    - One SK-Hynix 500GB NVMe SSD *(for Docker / VM storage, pulled from [ThinkPad](../../02_hardware/bens_laptop.md) after storage upgrade)*
+    - Two Crucial BX500 4TB SATA SSDs in RAID1 _(for mass network attached storage)_
+    - One 30 cm SATA extension cable
+    - One PWM Fan controller
+    - Two server-grade 5000 RPM, 80 mm Arctic PWM fans
+    - Black rack screws
 
     [Amazon List&ensp;:brands-amazon:](https://www.amazon.com/hz/wishlist/ls/4BBKVMBF22TH?ref_=wl_share){ .md-button }
 

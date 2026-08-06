@@ -13,17 +13,20 @@ tags:
 hide:
   - toc
 ---
+
 ![Obsidian Logo](../assets/icons/obsidian.svg){ width=200 }![CouchDB Logo](../assets/icons/couchdb.svg){ width=75 }
 
 # Obsidian LiveSync
-*Sync with CouchDB*
+
+_Sync with CouchDB_
 
 [GitHub&ensp;:brands-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
@@ -33,21 +36,21 @@ hide:
 
 #### :symbols-link-2:&ensp;URL / Access   
 
-:    :symbols-monitor-cog: Settings Web UI: 
-    
-      + <http://storage-server.internal:5984/_utils>
-      + <http://storage-server-2.internal:5984/_utils>
+:    :symbols-monitor-cog: Settings Web UI:
+
+    - <http://storage-server.internal:5984/_utils>
+      - <http://storage-server-2.internal:5984/_utils>
 
 :    :symbols-database: Database:
-    
-      + <http://storage-server.internal:5984/obsidian-vault>
-      + <http://storage-server-2.internal:5984/obsidian-vault>
+
+    - <http://storage-server.internal:5984/obsidian-vault>
+      - <http://storage-server-2.internal:5984/obsidian-vault>
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:   
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Obsidian LiveSync"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:  
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Obsidian LiveSync"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -55,22 +58,22 @@ hide:
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :-------------- |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `obsidian-livesync` | `couchdb:3.5.0` |
 
-### :symbols-settings:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration
 
 #### :symbols-server:&ensp;Server
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "obsidian-livesync.yml"
 ```
 
-1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI. 
+1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI.
 
-```ini {title="local.ini" linenums="1" .mono-title}
+``` ini { .mono-title title="local.ini" linenums="1" }
 --8<-- "couchdb-local.ini"
 ```
 
 #### :symbols-monitor-smartphone:&ensp;Clients
 
-```json {title=".obsidian/plugins/obsidian-livesync/data.json" linenums="1" .mono-title}
+``` json { .mono-title title=".obsidian/plugins/obsidian-livesync/data.json" linenums="1" }
 --8<-- "obsidian-livesync_data.json"
 ```

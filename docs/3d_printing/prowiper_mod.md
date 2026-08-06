@@ -6,52 +6,56 @@ description: Install an upgraded nozzle brush and an improved nozzle cleaning Gc
 hide:
   - toc
 ---
+
 ![Custom PROWIPER Mod Icon I made with Inkscape](../assets/icons/prowiper-light.svg#only-light){ width=200 }
 ![Custom PROWIPER Mod Icon I made with Inkscape](../assets/icons/prowiper-dark.svg#only-dark){ width=200 }
 
 # PROWIPER Mod
-*Improved Nozzle Brush Routine*
+
+_Improved Nozzle Brush Routine_
 
 [Creality K1C&ensp;:symbols-printer-3d-nozzle:](../02_hardware/kacey_3d-printer.md){ .md-button .md-button--primary }&emsp;[Fluidd&ensp;:services-fluidd:](../03_services/fluidd.md){ .md-button .md-button--primary }&emsp;[3DPHUB.net&ensp;:brands-3dphub:](https://3dphub.net){ .md-button .md-button--primary }
 
 !!! info "PROWIPER Info"
 
-    **Modifications:** 
+    **Modifications:**
 
-    1. Upgraded bed leveling kit with aluminum spacers. 
+    1. Upgraded bed leveling kit with aluminum spacers.
     2. PROWIPER V5 Mount
- 
+
     **Hardware Required:**
 
-    3. Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` *(in high-temp filament like ASA / ABS)*
-   
-        [Printables&ensp;:brands-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button } 
+    1.  Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` _(in high-temp filament like ASA / ABS)_
 
-    4. **Bambu A1** Silicone Brushes
+        [Printables&ensp;:brands-printables:](https://printables.com/model/1023575-prowiper-for-creality-k1-series){ .md-button }
+
+    2.  **Bambu A1** Silicone Brushes
 
         [Amazon&ensp;:brands-amazon:](https://www.amazon.com/dp/B0DRBZK7RZ){ .md-button }
 
-    5. 2x **M3x16mm** self-tapping screws
+    3.  2x **M3x16mm** self-tapping screws
 
         [Amazon&ensp;:brands-amazon:](https://www.amazon.com/dp/B0D9BBT81N){ .md-button }
 
 ---
+
 ## :symbols-file-pen:&ensp;Configuration File Edits
 
 !!! warning inline end "Important"
 
     Before uploading the macro, modify `3DPHUB_PROWIPER.CFG` to account for the custom bed height and safe testing speeds.
 
-#### Set the Mount Type 
-  + [ ] Ensure `variable_brush_mount` is set to `"V5K1C"`.
-#### Adjust for the Bed Spacer
-  + [ ] Change `variable_spacer_height` to match the Z-height of the spacer being used. *(e.g., `4`)*
-#### Tweak Testing Speeds:
-  + [ ] Change `variable_speed` from the default `7500` to a safer `4000` or `5000`.
-#### Disable Phantom Bed Fans
-  + [ ] Change `variable_bed_fans_installed` to `"FALSE"` *(unless a specific `bed_fans` pin is defined in your main printer config)*.
-#### Verify Bottom Clearance
-  + [ ] Review `variable_bot_clearance` *(default `20`)* and `variable_drop_distance` *(default `15`)*. 
+#### Set the Mount Type
+
+- [ ] Ensure `variable_brush_mount` is set to `"V5K1C"`.
+  #### Adjust for the Bed Spacer
+- [ ] Change `variable_spacer_height` to match the Z-height of the spacer being used. _(e.g., `4`)_
+  #### Tweak Testing Speeds:
+- [ ] Change `variable_speed` from the default `7500` to a safer `4000` or `5000`.
+  #### Disable Phantom Bed Fans
+- [ ] Change `variable_bed_fans_installed` to `"FALSE"` *(unless a specific `bed_fans` pin is defined in your main printer config)*.
+  #### Verify Bottom Clearance
+- [ ] Review `variable_bot_clearance` _(default `20`)_ and `variable_drop_distance` _(default `15`)_.
 
 ## :symbols-api:&ensp;Klipper Integration
 
@@ -59,12 +63,12 @@ hide:
 
     The script automatically intercepts the stock `CX_NOZZLE_CLEAR` command, meaning standard print starts will natively utilize the new wiping sequence without further macro edits.
 
-1. [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
-2. [ ] Upload the newly edited `3DPHUB_PROWIPER.CFG` into this directory.
-3. [ ] Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`
-4. [ ] Save and restart Klipper. 
+1.  [ ] Establish an SSH connection to the printer and navigate to `/usr/data/printer_data/config`.
+2.  [ ] Upload the newly edited `3DPHUB_PROWIPER.CFG` into this directory.
+3.  [ ] Open `printer.cfg` and add the following line: `[include 3DPHUB_PROWIPER.cfg]`
+4.  [ ] Save and restart Klipper.
 
-    ```cfg {title="printer.cfg" linenums="12" hl_lines="19" .mono-title}
+    ``` cfg { .mono-title title="printer.cfg" linenums="12" hl_lines="19" }
     --8<-- "printer.cfg:12:31"
     ```
 
@@ -75,27 +79,31 @@ hide:
     Because the **V5 mount** is utilized instead of the low-profile **LPF2 mount**, a 10mm clearance zone is required to prevent the toolhead from striking the mount during printing or probing.
 
 #### Klipper Mesh Clearance
-  + [ ] In `printer.cfg`, locate the `[bed_mesh]` section. Reduce the Y-axis value of `mesh_max` by 10 *(e.g., change `220` to `210`)*.
 
-    ```cfg {title="printer.cfg" linenums="350" hl_lines="4" .mono-title}
+-   [ ] In `printer.cfg`, locate the `[bed_mesh]` section. Reduce the Y-axis value of `mesh_max` by 10 _(e.g., change `220` to `210`)_.
+
+    ``` cfg { .mono-title title="printer.cfg" linenums="350" hl_lines="4" }
     --8<-- "printer.cfg:350:356"
     ```
 
 #### Slicer Clearance
-  + [ ] In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
+
+- [ ] In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
 
 <figure markdown="span">
-![Excluded Bed Area](../assets/screenshots/printable-area-light.png#only-light){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
-![Excluded Bed Area](../assets/screenshots/printable-area-dark.png#only-dark){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
-<figcaption><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</figcaption>
+  ![Excluded Bed Area](../assets/screenshots/printable-area-light.png#only-light){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
+  ![Excluded Bed Area](../assets/screenshots/printable-area-dark.png#only-dark){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
+  <figcaption><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</figcaption>
 </figure>
-      
+
+
 <div class="glightbox-desc printable-area-desc">
-<p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
+  <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
 </div>
 
-## :symbols-toggle-right:&ensp;Dry Run 
-&emsp;&emsp;&ensp;*Critical Safety Step*
+## :symbols-toggle-right:&ensp;Dry Run
+
+&emsp;&emsp;&ensp;_Critical Safety Step_
 
 !!! warning inline end "Caution"
 
@@ -113,12 +121,12 @@ hide:
 
 ## :symbols-badge-check:&ensp;Final Verification
 
-+ [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate. 
+- [ ] Use a ruler to visually confirm there is exactly a 1.0 mm gap between the bottom of the printed wiper mount and the build plate.
 
 ---
 
 ## :symbols-file-code-corner:&ensp;PROWIPER G-Code
 
-```cfg {title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58" .mono-title}
+``` cfg { .mono-title title="3DPHUB_PROWIPER.cfg" linenums="1" hl_lines="43 58" }
 --8<-- "3dhub_prowiper.cfg"
 ```

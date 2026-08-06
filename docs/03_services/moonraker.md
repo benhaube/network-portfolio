@@ -12,19 +12,22 @@ tags:
 hide:
   - toc
 ---
+
 ![Custom 'api' icon made with the Lucide design guidelines](../assets/icons/api.svg){ width=200 }
 
 # Moonraker
-*The Klipper Web API*
+
+_The Klipper Web API_
 
 [GitHub&ensp;:brands-github:](https://github.com/Arksine/moonraker){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://moonraker.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description  
+#### :symbols-file-text:&ensp;Description
 
-:    Web API server for [Klipper](https://www.klipper3d.org/){ external-link }. 
+:    Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -36,9 +39,9 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -50,7 +53,7 @@ hide:
 
 #### :symbols-monitor-arrow-down-corner:&ensp;Install
 
-```bash title="Setup Creality Helper Script" linenums="1"
+``` bash title="Setup Creality Helper Script" linenums="1"
 --8<-- "install-helper-script.sh"
 ```
 
@@ -60,7 +63,7 @@ hide:
 
 #### :symbols-file-cog:&ensp;Config File
 
-```ini {title="moonraker.cfg" linenums="1" .mono-title}
+``` ini { .mono-title title="moonraker.cfg" linenums="1" }
 --8<-- "moonraker.cfg"
 ```
 

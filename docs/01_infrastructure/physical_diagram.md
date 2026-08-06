@@ -13,17 +13,19 @@ tags:
 hide:
   - toc
 ---
+
 ![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=200 }
 
 # Physical Diagram
-*Focusing on Physical Connections*
+
+_Focusing on Physical Connections_
 
 ---
 
-```mermaid { .pz-ignore }
+``` mermaid { .pz-ignore }
 --8<-- "physical_diagram_legend.mmd"
 ```
 
-```mermaid
+``` mermaid
 --8<-- "physical_diagram.mmd"
 ```

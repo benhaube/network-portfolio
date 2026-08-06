@@ -1,4 +1,6 @@
 ---
+title: Posts
 icon: symbols/text-align-start
 ---
-# Blog
+
+# Blog Posts

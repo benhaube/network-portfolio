@@ -12,19 +12,22 @@ tags:
 hide:
   - toc
 ---
+
 ![Lucide 'chevrons-right-left' icon](../assets/icons/screen-share.svg){ width=200 }
- 
+
 # RDP
-*Remote Desktop Protocol*
+
+_Remote Desktop Protocol_
 
 [Gitlab&ensp;:brands-gitlab:](https://invent.kde.org/plasma/krdp){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/KDE/krdp){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
-:    Remote desktop access over the local network *(not publicly exposed)*
+:    Remote desktop access over the local network _(not publicly exposed)_
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -37,8 +40,8 @@ hide:
 #### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:  
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -48,6 +51,6 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```ini {title="~/.config/krdpserverrc" linenums="1" .mono-title}
+``` ini { .mono-title title="~/.config/krdpserverrc" linenums="1" }
 --8<-- "krdpserverrc"
 ```

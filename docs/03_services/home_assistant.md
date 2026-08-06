@@ -12,17 +12,20 @@ tags:
 hide:
   - toc
 ---
+
 ![Home Assistant Logo](../assets/icons/home-assistant.svg){ width=200 }
 
 # Home Assistant
-*Awaken Your Home*
+
+_Awaken Your Home_
 
 [GitHub&ensp;:brands-github:](https://github.com/home-assistant/home-assistant.io){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://www.home-assistant.io/docs/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    Open-source home automation that puts local control and privacy first.
 
@@ -36,9 +39,9 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -48,6 +51,6 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "home-assistant.yml"
 ```

@@ -11,17 +11,20 @@ tags:
 hide:
   - toc
 ---
+
 ![Nginx Icon](../assets/icons/nginx.svg){ width=200 }
 
 # Nginx
-*Network Documentation*
+
+_Network Documentation_
 
 [GitHub&ensp;:brands-github:](https://github.com/nginx/nginx){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://nginx.org/en/docs/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
@@ -33,12 +36,12 @@ hide:
 
 :    :symbols-network:&nbsp;Local Access:
 
-      + <http://storage-server.internal:8080>
-      + <http://storage-server-2.internal:8080>
+    - <http://storage-server.internal:8080>
+      - <http://storage-server-2.internal:8080>
 
 :    :symbols-globe-arrow:&nbsp;Remote Access:
 
-      + <https://portfolio.rac3r4life.online>
+    - <https://portfolio.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials 
 
@@ -54,7 +57,7 @@ hide:
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "nginx.yml"
 ```
 
@@ -64,7 +67,7 @@ hide:
 
 #### :symbols-file-cog:&ensp;Config File
 
-```nginx {title="/DATA/AppData/Network-Portfolio/default.conf" linenums="1" .mono-title}
+``` nginx { .mono-title title="/DATA/AppData/Network-Portfolio/default.conf" linenums="1" }
 --8<-- "nginx.conf"
 ```
 

@@ -10,15 +10,18 @@ tags:
 hide:
   - toc
 ---
+
 ![F1 Replay Timing Icon](../assets/icons/f1-replay-timing-light.svg#only-light){ width=200 }
 ![F1 Replay Timing Icon](../assets/icons/f1-replay-timing-dark.svg#only-dark){ width=200 }
 
 # F1 Replay Timing
-*All of the Data*
+
+_All of the Data_
 
 [GitHub&ensp;:brands-github:](https://github.com/adn8naiagent/F1ReplayTiming){ .md-button .md-button--primary }&emsp;[Issues&ensp;:symbols-circle-dot-dashed:](https://github.com/adn8naiagent/F1ReplayTiming/issues){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -35,22 +38,22 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"F1 Replay Timing"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"F1 Replay Timing"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                                         |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1timing`     | `ghcr.io/adn8naiagent/f1replaytiming:latest`  |
+| Host Device                                                          | Method                                    | Container Name | Image                                        |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1timing`     | `ghcr.io/adn8naiagent/f1replaytiming:latest` |
 
-### :symbols-settings:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "f1-replay-timing.yaml"
 ```
 
-```properties {title=".env" linenums="1" .mono-title}
+``` properties { .mono-title title=".env" linenums="1" }
 --8<-- "f1-replay-timing.env"
 ```

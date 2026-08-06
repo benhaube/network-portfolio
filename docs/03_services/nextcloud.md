@@ -13,17 +13,20 @@ tags:
 hide:
   - toc
 ---
+
 ![Nextcloud Icon](../assets/icons/nextcloud.svg){ width=200 }
 
 # Nextcloud
-*Private Cloud*
+
+_Private Cloud_
 
 [GitHub&ensp;:brands-github:](https://github.com/nextcloud){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.nextcloud.com/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    Self-hosted cloud storage and collaboration platform.
 
@@ -39,10 +42,10 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (admin)"
-      + Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (bhaube)"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (admin)"
+      - Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -52,6 +55,6 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "nextcloud.yml"
 ```

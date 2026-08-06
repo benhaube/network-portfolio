@@ -9,6 +9,7 @@ hide:
 ![Lucide 'user-search' icon](assets/icons/user-search.svg){ width=200 }
 
 # About Me & Professional Philosophy
+
 [My Resume&ensp;:symbols-briefcase:](assets/Resume_2026.pdf){ .md-button .md-button--primary }&emsp;[Contact Me&ensp;:symbols-send:](mailto:ben@haube-pereira.com){ .md-button .md-button--primary }
 
 ---
@@ -23,7 +24,7 @@ I’ve found that whether it’s a fuel injection system or a network stack, the
 
 ## :symbols-astroid:&ensp;My Technical North Star
 
-I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-Source** movements. My "homelab" isn’t just a hobby; it is a sandbox for testing the "Defense in Depth" strategies I’m studying for my IT / Cybersecurity career, and it is an ecosystem of tools and services I use to take back ownership of my data from the "Big-Tech" monopolies that put profit above people. 
+I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-Source** movements. My "homelab" isn’t just a hobby; it is a sandbox for testing the "Defense in Depth" strategies I’m studying for my IT / Cybersecurity career, and it is an ecosystem of tools and services I use to take back ownership of my data from the "Big-Tech" monopolies that put profit above people.
 
 ### My priorities are...
 
@@ -37,8 +38,8 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 
 ##### Continuous Learning
 
-:    From earning my [CompTIA](https://www.comptia.org/en-us/){ external-link } *(A+ & Linux+)* to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
-    
+:    From earning my [CompTIA](https://www.comptia.org/en-us/){ external-link } _(A+ & Linux+)_ to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
+
 ## :symbols-motor-racing-helmet:&ensp;Beyond the Terminal
 
 When I’m not hardening my network or managing services, you can usually find me...
@@ -53,7 +54,7 @@ When I’m not hardening my network or managing services, you can usually find m
 
 ##### In the Sim
 
-:    Competing in competitive online sim-racing league races. 
+:    Competing in competitive online sim-racing league races.
 
 ##### Unplugging
 

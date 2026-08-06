@@ -1,5 +1,5 @@
 ---
-icon: symbols/terminal
+icon: symbols/square-terminal
 title: ttydBridge
 subtitle: The Terminal on the Web
 description: A DockerApp makes it easy to use the host terminal on the Web.
@@ -12,17 +12,21 @@ tags:
 hide:
   - toc
 ---
+
 ![Material Design console icon](../assets/icons/console.svg){ width=200 }
 
 # ttydBridge
-*The Terminal on the Web*
+
+_The Terminal on the Web_
 
 [GitHub&ensp;:brands-github:](https://github.com/Cp0204/ttydBridge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/tsl0922/ttyd){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
+
 :    A DockerApp makes it easy to use the host terminal on the Web.
 
 #### :symbols-hash:&ensp;Port(s) 
@@ -37,9 +41,9 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials  
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -49,7 +53,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "ttydBridge.yml"
 ```
 

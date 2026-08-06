@@ -12,18 +12,21 @@ tags:
 hide:
   - toc
 ---
+
 ![IT-Tools Icon](../assets/icons/it-tools-light.svg#only-light){ width=200 }
 ![IT-Tools Icon](../assets/icons/it-tools-dark.svg#only-dark){ width=200 }
 
 # IT-Tools
-*Handy Tools for Devs*
+
+_Handy Tools for Devs_
 
 [GitHub&ensp;:brands-github:](https://github.com/sharevb/it-tools/){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/sharevb/it-tools){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    Handy tools for network administrators and developers.
 
@@ -46,8 +49,8 @@ hide:
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `it-tools`         | `sharevb/it-tools:latest`         |
 |                                                                      | :symbols-container:&nbsp;Docker Container | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
 
-### :symbols-settings:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "it-tools.yml"
 ```

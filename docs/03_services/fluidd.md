@@ -11,14 +11,17 @@ tags:
 hide:
   - toc
 ---
+
 ![Fluidd Icon](../assets/icons/fluidd.svg){ width=200 }
 
 # Fluidd
-*The Klipper UI*
+
+_The Klipper UI_
 
 [GitHub&ensp;:brands-github:](https://github.com/fluidd-core/fluidd){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.fluidd.xyz/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -35,9 +38,9 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -49,7 +52,7 @@ hide:
 
 #### :symbols-monitor-arrow-down-corner:&ensp;Install
 
-```bash title="Setup Creality Helper Script" linenums="1"
+``` bash title="Setup Creality Helper Script" linenums="1"
 --8<-- "install-helper-script.sh"
 ```
 
@@ -59,6 +62,6 @@ hide:
 
 #### :symbols-cloud-upload:&ensp;Config File Backup
 
-```json {title="backup-fluidd.json" linenums="1" .wrap-code .mono-title}
+``` json { .wrap-code .mono-title title="backup-fluidd.json" linenums="1" }
 --8<-- "fluidd.json"
 ```

@@ -13,17 +13,20 @@ tags:
 hide:
   - toc
 ---
+
 ![Homebox Logo](../assets/icons/homebox.svg){ width=200 }
 
 # Homebox
-*Inventory Management*
+
+_Inventory Management_
 
 [GitHub&ensp;:brands-github:](https://github.com/sysadminsmedia/homebox){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-file-text:](https://homebox.software/en/quick-start/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    An inventory and organization system built for the home user.
 
@@ -39,9 +42,9 @@ hide:
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Homebox"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Homebox"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -51,16 +54,15 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "homebox.yml"
 ```
 
-1. Please consider allowing analytics to help us improve Homebox *(basic computer information, no personal data)*.
-2.     Use a strong random string for the pepper in production, it will be used to hash API keys and make them more secure. 
+1.  Please consider allowing analytics to help us improve Homebox _(basic computer information, no personal data)_.
+2.  Use a strong random string for the pepper in production, it will be used to hash API keys and make them more secure.
 
-       To generate a random string use the following command:
-       
-      
-       ```bash linenums="1"
-       openssl rand -base64 48
-       ```
+    To generate a random string use the following command:
+
+    ``` bash linenums="1"
+    openssl rand -base64 48
+    ```

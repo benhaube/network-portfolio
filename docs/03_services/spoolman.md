@@ -12,19 +12,22 @@ tags:
 hide:
   - toc
 ---
+
 ![Spoolman logo](../assets/icons/spoolman.svg){ width=200 }
 
 # Spoolman
-*Filament Inventory Management*
+
+_Filament Inventory Management_
 
 [GitHub&ensp;:brands-github:](https://github.com/Donkie/Spoolman){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://github.com/Donkie/Spoolman/wiki/Installation){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
-:    Keep track of your inventory of 3D-printer filament spools. 
+:    Keep track of your inventory of 3D-printer filament spools.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -46,8 +49,8 @@ hide:
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------- |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `spoolman`     | `ghcr.io/donkie/spoolman:latest` |
 
-### :symbols-settings:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "spoolman.yml"
 ```

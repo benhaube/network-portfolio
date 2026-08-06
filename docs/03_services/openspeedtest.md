@@ -13,17 +13,20 @@ tags:
 hide:
   - toc
 ---
+
 ![OpenSpeedTest Logo](../assets/icons/openspeedtest.svg){ width=200 }
 
 # OpenSpeedTest
-*Test Network Performance*
+
+_Test Network Performance_
 
 [GitHub&ensp;:brands-github:](https://github.com/openspeedtest/Docker-Image){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://deepwiki.com/openspeedtest/Speed-Test){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    A free & open-source HTML5 network performance estimation tool.
 
@@ -49,7 +52,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "openspeedtest.yml"
 ```
 

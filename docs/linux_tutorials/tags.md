@@ -6,11 +6,12 @@ search:
   exclude: true
 comments: false
 ---
+
 ![Custom 'tux' icon following Lucide design guidelines](../assets/icons/tux.svg){ width=200 }
 
 # Linux Tutorials Tags
 
-*Following is an index of relevant tags:*
+_Following is an index of relevant tags:_
 
 ---
 

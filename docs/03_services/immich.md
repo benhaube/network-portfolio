@@ -12,19 +12,22 @@ tags:
 hide:
   - toc
 ---
+
 ![Immich Logo](../assets/icons/immich.svg){ width=200 }
 
 # Immich
-*Bye Bye, Google Photos*
+
+_Bye Bye, Google Photos_
 
 [GitHub&ensp;:brands-github:](https://github.com/immich-app/immich){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.immich.app/overview/quick-start/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description  
+#### :symbols-file-text:&ensp;Description
 
-:    High performance self-hosted photo and video management solution. 
+:    High performance self-hosted photo and video management solution.
 
 #### :symbols-hash:&ensp;Port(s) 
 
@@ -33,20 +36,20 @@ hide:
 #### :symbols-link-2:&ensp;URL / Access 
 
 :    :symbols-network:&nbsp;Local Access:
-    
-      + <http://storage-server.internal:2283>
-      + <http://storage-server-2.internal:2283>
+
+    - <http://storage-server.internal:2283>
+      - <http://storage-server-2.internal:2283>
 
 :    :symbols-globe-arrow:&nbsp;Remote Access:
-    
-      + <https://immich.rac3r4life.online>
+
+    - <https://immich.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials  
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Local Network&ensp;:symbols-move-right:&ensp;"Immich (admin)"
-      + Local Network&ensp;:symbols-move-right:&ensp;"Immich (bhaube)"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Local Network&ensp;:symbols-move-right:&ensp;"Immich (admin)"
+      - Local Network&ensp;:symbols-move-right:&ensp;"Immich (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -57,8 +60,8 @@ hide:
 |                                                                      |                                           | `immich-redis`            | `docker.io/redis:6.2-alpine`                                     |
 |                                                                      |                                           | `immich-postgres`         | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
 
-### :symbols-settings:&ensp;Configuration 
+### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "immich.yml"
 ```

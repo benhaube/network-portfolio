@@ -14,19 +14,22 @@ tags:
 hide:
   - toc
 ---
+
 ![ntop Logo](../assets/icons/ntop.svg){ width=200 }
 
 # ntopng
-*Network Traffic Probe*
+
+_Network Traffic Probe_
 
 [GitHub&ensp;:brands-github:](https://github.com/ntop/ntopng){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://www.ntop.org/guides/ntopng/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description  
+#### :symbols-file-text:&ensp;Description
 
-:    Web-based traffic and security network traffic monitoring. 
+:    Web-based traffic and security network traffic monitoring.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -50,7 +53,7 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml {title="compose.yml" linenums="1" .mono-title}
+``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "ntopng.yml"
 ```
 

@@ -11,18 +11,21 @@ tags:
 hide:
   - toc
 ---
+
 ![Glances Logo](../assets/icons/glances-light.svg#only-light){ width=200 }
 ![Glances Logo](../assets/icons/glances-dark.svg#only-dark){ width=200 }
 
 # Glances
-*An Eye on Your System*
+
+_An Eye on Your System_
 
 [GitHub&ensp;:brands-github:](https://github.com/nicolargo/glances){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://glances.readthedocs.io/en/latest/){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description 
+#### :symbols-file-text:&ensp;Description
 
 :    Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 
@@ -51,7 +54,7 @@ hide:
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-```yaml title="Pi 4B Server" linenums="1"
+``` yaml title="Pi 4B Server" linenums="1"
 --8<-- "glances-pi-4b.yml"
 ```
 
@@ -59,11 +62,11 @@ hide:
 2. Uncomment for SATA or NVME smartctl monitoring.
 3. Uncomment for SATA smartctl monitoring.
 4. Uncomment for NVME smartctl monitoring.
-5. Uncomment for proper distro information in upper panel. Works only for distros that do have this file *(most distros do)*.  
-6. Please set to your local timezone *(or use local `${TZ}` environment variable if set on your host)*.
-7. Uncomment for GPU compatibility *(Nvidia)* inside the container.  
-8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.     
+5. Uncomment for proper distro information in upper panel. Works only for distros that do have this file _(most distros do)_.  
+6. Please set to your local timezone _(or use local `${TZ}` environment variable if set on your host)_.
+7. Uncomment for GPU compatibility _(Nvidia)_ inside the container.  
+8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.  
 
-```yaml title="ZimaOS NAS" linenums="1"
+``` yaml title="ZimaOS NAS" linenums="1"
 --8<-- "glances-zima.yml"
 ```

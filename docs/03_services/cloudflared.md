@@ -14,14 +14,17 @@ tags:
 hide:
   - toc
 ---
+
 ![Cloudflare Logo](../assets/icons/cloudflare.svg){ width=200 }
 
 # Cloudflared
-*Reverse-Proxy Server*
+
+_Reverse-Proxy Server_
 
 [GitHub&ensp;:brands-github:](https://github.com/cloudflare/cloudflared){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/){ .md-button .md-button--primary }&emsp;[Zero-Trust Dashboard&ensp;:services-cloudflare-zero-trust:](https://dash.cloudflare.com/login){ .md-button .md-button--primary }
 
 ---
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -42,14 +45,14 @@ hide:
 
 :    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }: 
-    
-      + Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+
+    - Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
 
 :    2FA / MFA:
-      
-      + :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
-      + :symbols-clock:&ensp;TOTP 
+
+    - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
+      - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -60,10 +63,10 @@ hide:
 
 ### :symbols-settings:&ensp;Configuration
 
-```yaml title="Pi 4B Server" linenums="1"
+``` yaml title="Pi 4B Server" linenums="1"
 --8<-- "cloudflared-pi-server.yml"
 ```
 
-```yaml title="ZimaOS NAS" linenums="1"
+``` yaml title="ZimaOS NAS" linenums="1"
 --8<-- "cloudflared.yaml"
 ```

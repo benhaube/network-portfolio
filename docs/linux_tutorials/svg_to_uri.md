@@ -56,7 +56,7 @@ If you want to handle the color and size adjustments without even opening a text
 
 + Here is a one-liner that injects a green hex code and a `48x48` size into your standard `<your-icon>.svg` and outputs the final data URI:
 
-    ```bash {linenums="1" .wrap-code}
+    ``` bash { linenums="1" .wrap-code }
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
     ```
 
@@ -80,13 +80,13 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
 1. Open your terminal profile configuration *(usually `~/.bashrc` if you are using Bash, or `~/.zshrc` if you are using Zsh)* in your preferred editor:
 
-    ```bash linenums="1"
+    ``` bash linenums="1"
     nano ~/.bashrc
     ```
 
 2. Scroll to the bottom of the file and paste this block:
 
-    ```bash linenums="1"
+    ``` bash linenums="1"
     svg2uri() {
       # (1)!
       node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8').trim()))"
@@ -107,7 +107,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
 4. Reload the connfiguration:
 
-    ```bash linenums="1"
+    ``` bash linenums="1"
     source ~/.bashrc
     ```
 
@@ -117,13 +117,13 @@ Now you can pipe any SVG directly into your new command.
 
 + If you just want the raw conversion:
 
-    ```bash linenums="1"
+    ``` bash linenums="1"
     cat <your-icon>.svg | svg2uri
     ```
 
 + Or, if you want to use the `sed` trick I mentioned above to inject a color or change size before it gets encoded, you can just chain them together:
 
-    ```bash linenums="1"
+    ``` bash linenums="1"
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
     ```
 
@@ -131,7 +131,7 @@ Now you can pipe any SVG directly into your new command.
 
 If you want to skip highlighting and copying the terminal output altogether, you can pipe the final output directly to your system's clipboard. On Linux you have either `xclip` *(X11)* or `wl-copy` *(Wayland)* available: 
 
-```bash linenums="1"
+``` bash linenums="1"
 cat icon.svg | svg2uri | wl-copy  # (1)! 
 cat icon.svg | svg2uri | xclip -selection clipboard  # (2)!
 ```
@@ -149,7 +149,7 @@ Once you have your generated string, you can drop it directly into your code:
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D..." alt="My Icon" />
 ```
 
-```css title="CSS Example" linenums="1"
+``` css title="CSS Example" linenums="1"
 .my-icon {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D...");
 }

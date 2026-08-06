@@ -49,6 +49,8 @@ _Git with a Cup of Tea_
 
 #### :symbols-user-key:&ensp;Credentials
 
+:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
 
       - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"

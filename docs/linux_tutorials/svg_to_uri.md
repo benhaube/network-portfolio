@@ -35,7 +35,7 @@ To complte this tutorial you will need the following packages:
 + `wl-copy` *(On Wayland-based systems)*
 + `xclip` *(On Xorg-based systems)*
 
-## :symbols-terminal-alt:&ensp;The Command
+## :symbols-terminal:&ensp;The Command
 
 You can simply use the command below if you only need to do one icon, but if you have several icons *(or just want to have an easy way to do it in the future)* you can follow the instructions to define a function.
 
@@ -76,7 +76,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
  
     You can check out instructions on how to do this for **Debian / Fedora** based distributions in my tutorial: 
 
-    [Defining Aliases&ensp;:symbols-terminal:](define_bash_aliases.md){ .md-button }
+    [Defining Aliases&ensp;:symbols-square-terminal:](define_bash_aliases.md){ .md-button }
 
 1. Open your terminal profile configuration *(usually `~/.bashrc` if you are using Bash, or `~/.zshrc` if you are using Zsh)* in your preferred editor:
 

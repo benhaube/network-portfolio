@@ -18,7 +18,7 @@ hide:
 # DDNS
 *Provided by addr.tools*
 
-[GitHub&ensp;:brands-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools&ensp;:symbols-terminal:](https://addr.tools){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/brianshea2/addr.tools){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://myaddr.tools/){ .md-button .md-button--primary }&emsp;[addr.tools&ensp;:symbols-square-terminal:](https://addr.tools){ .md-button .md-button--primary }
 
 ---
 ## :symbols-info:&ensp;Overview

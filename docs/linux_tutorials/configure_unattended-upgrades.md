@@ -175,7 +175,7 @@ The `unattended-upgrades` service is a 'shutdown helper', meaning it ensures the
 | Enable on boot                   | `sudo systemctl enable unattended-upgrades`  |
 | Restart the service              | `sudo systemctl restart unattended-upgrades` |
 
-## :symbols-terminal-alt:&ensp;CLI Options
+## :symbols-terminal:&ensp;CLI Options
 
 Below is a table containing the options included with the `unattended-upgrade` command. You can also see the options by checking the [manual page](https://manpages.debian.org/trixie/unattended-upgrades/unattended-upgrade.8.en.html){ external-link } using the command: `#!bash man unattended-upgrade`
 

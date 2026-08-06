@@ -203,7 +203,7 @@ hide:
 [:services-spoolman:&ensp;Spoolman](03_services/spoolman.md)
 :    Keep track of your inventory of 3D-printer filament spools. 
 
-[:symbols-terminal-alt:&ensp;SSH](03_services/ssh.md)
+[:symbols-terminal:&ensp;SSH](03_services/ssh.md)
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
 [:services-syncthing-alt:&ensp;Syncthing](03_services/syncthing.md)
@@ -212,7 +212,7 @@ hide:
 [:services-technitium:&ensp;Technitium](03_services/technitium.md)
 :    An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-[:symbols-terminal:&ensp;ttydBridge](03_services/ttydbridge.md)
+[:symbols-square-terminal:&ensp;ttydBridge](03_services/ttydbridge.md)
 :    A DockerApp makes it easy to use the host terminal in the Web.
 
 [:services-uptime-kuma:&ensp;Uptime Kuma](03_services/uptime_kuma.md)
@@ -242,11 +242,11 @@ hide:
     
     :    [Linux Tutorials Tags&ensp;:symbols-tags:](linux_tutorials/tags.md){ .md-button }
 
-    :symbols-terminal:&ensp;**My Favorite Bash Aliases:**
+    :symbols-square-terminal:&ensp;**My Favorite Bash Aliases:**
     
     :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
 
-        [My Bash Aliases&ensp;:symbols-terminal:](linux_tutorials/my_bash_aliases.md){ .md-button }
+        [My Bash Aliases&ensp;:symbols-square-terminal:](linux_tutorials/my_bash_aliases.md){ .md-button }
 
     :symbols-file-terminal:&ensp;**Update PCRs Script:**
     
@@ -263,7 +263,7 @@ hide:
 [:symbols-lock-keyhole-open:&ensp;Decrypt LUKS with TPM2](linux_tutorials/unlock_luks_tpm2.md) 
 :    How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots. 
 
-[:symbols-terminal:&ensp;Defining Bash Aliases](linux_tutorials/define_bash_aliases.md) 
+[:symbols-square-terminal:&ensp;Defining Bash Aliases](linux_tutorials/define_bash_aliases.md) 
 :    How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 
 [:symbols-image-play:&ensp;Immich Slideshow for Nest Hub](linux_tutorials/immich_slidshow_for_nest_hub.md)

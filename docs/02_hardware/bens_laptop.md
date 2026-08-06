@@ -163,7 +163,7 @@ hide:
 + With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
 + Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
-#### :symbols-terminal:&ensp;SSH Client
+#### :symbols-square-terminal:&ensp;SSH Client
 
 ##### Bitwarden Key Agent
 

@@ -122,4 +122,4 @@ hide:
     **Recommended Aliases:**
     :     You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
  
-        [My Aliases&ensp;:symbols-terminal:](my_bash_aliases.md){ .md-button }
+        [My Aliases&ensp;:symbols-square-terminal:](my_bash_aliases.md){ .md-button }

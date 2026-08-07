@@ -1,0 +1,4 @@
+<svg class="lucide lucide-messages-square-icon lucide-messages-square" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 21.99" xmlns="http://www.w3.org/2000/svg">
+  <path d="m15 9a2 2 0 01-2 2h-7.172a2 2 0 00-1.414.586l-2.202 2.202a.71.71 0 01-1.212-.502v-10.286a2 2 0 012-2h10a2 2 0 012 2z" stroke="#0091eb"/>
+  <path d="m19 8a2 2 0 012 2v10.286a.71.71 0 01-1.212.502l-2.202-2.202a2 2 0 00-1.414-.586h-7.172a2 2 0 01-2-2v-1" stroke="#4cae4f"/>
+</svg>

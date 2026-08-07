@@ -16,7 +16,7 @@ hide:
   - toc
 ---
 
-![material message-alert icon](../assets/icons/message-alert.svg){ width=200 }
+![material message-alert icon](../assets/icons/message-square-warning.svg){ width=200 }
 
 # Setup SSH Login Notification
 

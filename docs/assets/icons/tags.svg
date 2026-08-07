@@ -1,0 +1,5 @@
+<svg class="lucide lucide-tags-icon lucide-tags" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 21.999 22.001" xmlns="http://www.w3.org/2000/svg">
+  <path d="m12.172 1a2 2 0 011.414.586l6.71 6.71a2.4 2.4 0 010 3.408l-4.592 4.592a2.4 2.4 0 01-3.408 0l-6.71-6.71a2 2 0 01-.586-1.414v-6.172a1 1 0 011-1z" stroke="#0091eb"/>
+  <path d="m1 6v6.172a2 2 0 00.586 1.414l6.71 6.71a2.4 2.4 0 003.191.193" stroke="#4cae4f"/>
+  <circle cx="9.5" cy="5.5" r=".5" fill="#4cae4f" stroke="#4cae4f"/>
+</svg>

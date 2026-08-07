@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 
-![Lucide 'ethernet-port' icon](../assets/icons/ethernet.svg){ width=200 }
+![Lucide 'ethernet-port' icon](../assets/icons/ethernet-port.svg){ width=200 }
 
 # TP-Link LiteWave Switch
 

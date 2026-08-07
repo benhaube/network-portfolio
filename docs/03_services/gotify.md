@@ -14,7 +14,7 @@ hide:
   - toc
 ---
 
-![Gotify logo](../assets/icons/gotify-logo.svg){ width=200 }
+![Gotify logo](../assets/icons/gotify.svg){ width=200 }
 
 # Gotify
 

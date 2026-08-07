@@ -296,7 +296,7 @@ hide:
 [:symbols-settings:&ensp;Manual Bed Leveling Mod](3d_printing/k1_bed_level_knobs.md) 
 : Installing a bed leveling modification on the [Creality K1C](02_hardware/kacey_3d-printer.md).
 
-[:symbols-toothbrush-nozzle:&ensp;Nozzle Cleaning Macro](3d_printing/manual_nozzle_cleaning_macro.md) 
+[:symbols-printer-3d-nozzle-brush:&ensp;Nozzle Cleaning Macro](3d_printing/manual_nozzle_cleaning_macro.md) 
 : Enabling a custom g-code macro I wrote for manually cleaning the nozzle with a silicone brush.
 
 [:brands-prowiper:&ensp;PROWIPER^&copy;^ Mod](3d_printing/prowiper_mod.md) 

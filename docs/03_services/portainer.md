@@ -16,7 +16,7 @@ hide:
   - toc
 ---
 
-![Portainer Icon](../assets/icons/portainer-pink.svg){ width=200 }
+![Portainer Icon](../assets/icons/portainer.svg){ width=200 }
 
 # Portainer-EE
 

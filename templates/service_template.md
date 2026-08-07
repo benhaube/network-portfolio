@@ -1,5 +1,5 @@
 ---
-icon: symbols/monitor-cloud
+icon: symbols/cloud
 title: Title
 subtitle: Subtitle
 tags:

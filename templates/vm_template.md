@@ -64,7 +64,7 @@ _Subtitle_
 | :-------: | :----- | :------------------ | :---------------------------------------- | :------------------------------------ |
 |  enp1s0   | VLAN50 | `hostname.internal` | `0.0.0.0`                                 | `x.x.x.1`                             |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native Linux
 

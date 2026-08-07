@@ -103,7 +103,7 @@ hide:
 
 ---
 
-## :symbols-monitor-cloud:&ensp;Services
+## :symbols-cloud:&ensp;Services
 
 !!! links inline end "Extra Links"
 

@@ -70,7 +70,7 @@ _Primary DNS Server_
 | :-------: | :--------------------------: | :------------------- | :---------------------------------------- | :------------------------------------ |
 | `enp1s0`  | :symbols-shield:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1`                               | `192.168.50.1`                        |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native Linux
 

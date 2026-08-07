@@ -108,7 +108,7 @@ _Wireless Router_
 | :-------------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB                                        | `/dev/sda1` | `ext4`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native
 

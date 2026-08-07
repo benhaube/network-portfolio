@@ -90,7 +90,7 @@ _Google Pixel 9 Pro_
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -                                              | `-`         | `-`         | -          |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-layers:&ensp;Virtualization
 

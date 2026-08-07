@@ -86,7 +86,7 @@ _Modified Creality K1C_
 | :---------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB                                        | `/dev/sda1` | `vfat`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native Linux
 

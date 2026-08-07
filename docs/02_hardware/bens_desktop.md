@@ -107,7 +107,7 @@ _High-Performance Desktop PC_
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | N/A                                       |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | N/A                                       |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-layers:&ensp;Virtualization
 

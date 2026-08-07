@@ -88,7 +88,7 @@ _Secondary DNS Server_
 | :--------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/mnt/usb-drive` | USB Flash Drive | 28.7 GB                                        | `/dev/sda1` | `ext4`      | -          |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native Linux
 

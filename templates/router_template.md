@@ -90,7 +90,7 @@ _Subtitle_
 | :------------- | :--------- | :--------------------------------------------- | :---------- | :------------ | :--------- |
 | `/mount/point` | -          | -                                              | `/dev/path` | `file-ststem` | -          |
 
-## :symbols-monitor-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native
 

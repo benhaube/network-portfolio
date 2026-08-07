@@ -207,7 +207,7 @@ hide:
 [:services-spoolman:&ensp;Spoolman](03_services/spoolman.md)
 : Keep track of your inventory of 3D-printer filament spools.
 
-[:symbols-terminal:&ensp;SSH](03_services/ssh.md)
+[:symbols-square-terminal:&ensp;SSH](03_services/ssh.md)
 : Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
 [:services-syncthing-alt:&ensp;Syncthing](03_services/syncthing.md)

@@ -85,7 +85,7 @@ _Reverse-Proxy Server_
 |  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                              |
 | :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
 | _Active_ | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md)                 |             `80`<br>`443`             | Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services. |
-| _Active_ | [:symbols-terminal:&nbsp;SSH](../03_services/ssh.md)                   |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
+| _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md)            |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                                                              |
 
 #### :symbols-container:&ensp;Docker Container

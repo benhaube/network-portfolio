@@ -1,5 +1,5 @@
 ---
-icon: symbols/terminal
+icon: symbols/square-terminal
 title: SSH
 subtitle: Secure Shell
 description: Provides secure encrypted communications between two untrusted hosts over an insecure network.
@@ -14,7 +14,7 @@ hide:
   - toc
 ---
 
-![Material Design ssh icon](../assets/icons/terminal.svg){ width=200 }
+![Lucide 'square-terminal' icon](../assets/icons/square-terminal.svg){ width=200 }
 
 # SSH
 

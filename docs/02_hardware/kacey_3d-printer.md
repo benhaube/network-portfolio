@@ -94,7 +94,7 @@ _Modified Creality K1C_
 | :------: | :---------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
 | _Active_ | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   |            `80`<br>`4408`             | A free and open-source Klipper web interface for managing your 3D-printer.                     |
 | _Active_ | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |                `7125`                 | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |
-| _Active_ | [:symbols-terminal:&nbsp;SSH](../03_services/ssh.md)        |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md) |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
 

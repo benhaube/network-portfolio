@@ -103,11 +103,11 @@ _Rack-Mount ZimaBoard 2_
 
 #### :symbols-tux:&ensp;Native Linux
 
-|  Status  | Service                                                 | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
-| :------: | :------------------------------------------------------ | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
-| _Active_ | [:symbols-folder-tree:&nbsp;NFS](../03_services/nfs.md) |                `2049`                 | Remote file system access.                                                                     |
-| _Active_ | [:symbols-terminal:&nbsp;SSH](../03_services/ssh.md)    |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| _Active_ | [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md) |                 `445`                 | Remote file system access.                                                                     |
+|  Status  | Service                                                     | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
+| :------: | :---------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
+| _Active_ | [:symbols-folder-tree:&nbsp;NFS](../03_services/nfs.md)     |                `2049`                 | Remote file system access.                                                                     |
+| _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md) |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| _Active_ | [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md)     |                 `445`                 | Remote file system access.                                                                     |
 
 #### :symbols-container:&ensp;Docker Container
 

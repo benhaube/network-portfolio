@@ -170,7 +170,7 @@ theme:
       security: symbols/shield-keyhole
       server-rack: symbols/server-rack
       server: symbols/server
-      service: symbols/monitor-cloud
+      service: symbols/cloud
       shell: symbols/square-terminal
       software: symbols/package
       switch: symbols/ethernet-port

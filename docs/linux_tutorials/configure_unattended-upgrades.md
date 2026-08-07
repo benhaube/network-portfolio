@@ -14,7 +14,7 @@ hide:
   - toc
 ---
 
-![Custom update icon derived from Lucide history icon](../assets/icons/update.svg){ width=200 }
+![Custom update icon derived from Lucide history icon](../assets/icons/rotate-cw-clock.svg){ width=200 }
 
 # Automatic Updates for Debian
 

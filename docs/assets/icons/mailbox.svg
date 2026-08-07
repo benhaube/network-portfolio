@@ -1,0 +1,6 @@
+<svg class="lucide lucide-mailbox-icon lucide-mailbox" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
+  <path d="m21 13a2 2 0 01-2 2h-16a2 2 0 01-2-2v-7.5c0-2.5 2-4.5 4.5-4.5h11.5c2.2 0 4 1.8 4 4z" stroke="#0091eb"/>
+  <polyline transform="translate(-1,-4)" points="15 9 18 9 18 11" stroke="#4cae4f"/>
+  <path d="m5.5 1c2.5 0 4.5 2 4.5 4.5v7.5a2 2 0 01-2 2" stroke="#0091eb"/>
+  <line x1="5" x2="6" y1="6" y2="6" stroke="#4cae4f"/>
+</svg>

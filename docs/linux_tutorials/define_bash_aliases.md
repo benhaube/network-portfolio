@@ -13,7 +13,7 @@ hide:
   - toc
 ---
 
-![Lucide terminal icon](../assets/icons/console.svg){ width=200 }
+![Lucide terminal icon](../assets/icons/square-terminal.svg){ width=200 }
 
 # Defining Bash Aliases
 

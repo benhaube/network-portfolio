@@ -13,7 +13,7 @@ hide:
   - toc
 ---
 
-![Material Design console icon](../assets/icons/console.svg){ width=200 }
+![Material Design console icon](../assets/icons/square-terminal.svg){ width=200 }
 
 # ttydBridge
 

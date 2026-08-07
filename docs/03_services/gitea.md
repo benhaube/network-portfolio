@@ -78,10 +78,20 @@ _Git with a Cup of Tea_
     :services-dockge:&ensp;**Deployed with Dockge:**
     :    This service is deployed and managed by [Dockge](dockge.md). To pull updated images, start the service, stop the service, modify the environment variables, and modify the `compose.yml` file, visit the [Dockge Web-UI](http://pi-server.internal:5001){ external-link }. Alternatively, SSH into the ZimaOS NAS and edit the `compose.yml` and `.env` files directly.
 
-    :symbols-folder-git-2:&ensp;**Data Directory:**
+    :symbols-folder-git-2:&ensp;**Data Directories:**
     :    The data for the `gitea` container is stored in the `dockge/stacks` directory, and is owned by `root:root`.
 
-        - `/media/nvme0n1p1/AppData/dockge/stacks/gitea/gitea`
+    :    Gitea Data:
+
+        - `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data`
+
+    :    Runner Data:
+
+        - `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`
+
+``` ini { .mono-title title="/data/gitea/conf/app.ini" linenums="1" }
+--8<-- "gitea_app.ini"
+```
 
 ``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "gitea.yml"

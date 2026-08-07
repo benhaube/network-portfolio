@@ -14,7 +14,7 @@ hide:
   - toc
 ---
 
-![Material Design ssh icon](../assets/icons/console-line.svg){ width=200 }
+![Material Design ssh icon](../assets/icons/terminal.svg){ width=200 }
 
 # SSH
 

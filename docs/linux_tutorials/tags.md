@@ -7,7 +7,7 @@ search:
 comments: false
 ---
 
-![Custom 'tux' icon following Lucide design guidelines](../assets/icons/tux.svg){ width=200 }
+![Lucide 'tags' icon](../assets/icons/tags.svg){ width=200 }
 
 # Linux Tutorials Tags
 

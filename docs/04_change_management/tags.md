@@ -6,7 +6,7 @@ search:
   exclude: true
 ---
 
-![Material Design 'swap-horizontal-bold' icon customized with site colors](../assets/icons/arrow-right-left.svg){ width=200 }
+![Lucide 'tags' icon](../assets/icons/tags.svg){ width=200 }
 
 # Change Management Tags
 

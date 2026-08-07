@@ -6,7 +6,7 @@ search:
   exclude: true
 ---
 
-![Lucide 'chevrons-left-right-ellipsis' icon](../assets/icons/chevrons-left-right-ellipsis.svg){ width=200 }
+![Lucide 'tags' icon](../assets/icons/tags.svg){ width=200 }
 
 # Infrastructure Tags
 

@@ -6,7 +6,7 @@ search:
   exclude: true
 ---
 
-![Lucide 'circuit-board' icon](../assets/icons/circuit-board.svg){ width=200 }
+![Lucide 'tags' icon](../assets/icons/tags.svg){ width=200 }
 
 # Hardware Tags
 

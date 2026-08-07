@@ -7,7 +7,7 @@ hide:
   - toc
 ---
 
-![Toothbrush Nozzle Icon](../assets/icons/toothbrush-nozzle.svg){ width=200 }
+![Toothbrush Nozzle Icon](../assets/icons/printer-3d-nozzle-toothbrush.svg){ width=200 }
 
 # Nozzle Cleaning Macro
 

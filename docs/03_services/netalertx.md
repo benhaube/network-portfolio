@@ -17,7 +17,7 @@ hide:
   - toc
 ---
 
-![NetAlertX logo](../assets/icons/netalertx.svg#only-light){ width=200 }
+![NetAlertX logo](../assets/icons/netalertx-light.svg#only-light){ width=200 }
 ![NetAlertX logo](../assets/icons/netalertx-dark.svg#only-dark){ width=200 }
 
 # NetAlertX

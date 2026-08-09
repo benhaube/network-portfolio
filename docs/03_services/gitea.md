@@ -40,12 +40,12 @@ _Git with a Cup of Tea_
 
 :    Web-UI:
 
-      - <http://storage-server.internal:3080>
-      - <http://storage-server-2.internal:3080>
+    - <http://storage-server.internal:3080>
+    - <http://storage-server-2.internal:3080>
 
 :    SSH:
 
-      - `git@storage-server.internal`
+    - `git@storage-server.internal:222`
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -55,13 +55,13 @@ _Git with a Cup of Tea_
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
 
-      - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
       - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
       - SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
 
 :    2FA / MFA:
 
-      - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
+    - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
       - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
@@ -73,26 +73,36 @@ _Git with a Cup of Tea_
 
 ### :symbols-settings:&ensp;Configuration
 
-!!! note
+#### :symbols-folder-git-2:&ensp;Data Directories
 
-    :services-dockge:&ensp;**Deployed with Dockge:**
-    :    This service is deployed and managed by [Dockge](dockge.md). To pull updated images, start the service, stop the service, modify the environment variables, and modify the `compose.yml` file, visit the [Dockge Web-UI](http://pi-server.internal:5001){ external-link }. Alternatively, SSH into the ZimaOS NAS and edit the `compose.yml` and `.env` files directly.
+: The data for the `gitea` container is stored in the `dockge/stacks` directory, and is owned by `root:root`.
 
-    :symbols-folder-git-2:&ensp;**Data Directories:**
-    :    The data for the `gitea` container is stored in the `dockge/stacks` directory, and is owned by `root:root`.
+##### Gitea App Data
 
-    :    Gitea Data:
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data`
 
-        - `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data`
+##### Repo Data
 
-    :    Runner Data:
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/git/repositories`
 
-        - `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`
+##### SSH Data
 
-``` ini { .mono-title title="/data/gitea/conf/app.ini" linenums="1" }
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/ssh`
+
+##### Runner Data
+
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`
+
+#### :symbols-file-cog:&ensp;Config File
+
+``` ini { .mono-title title="../data/gitea/conf/app.ini" linenums="1" }
 --8<-- "gitea_app.ini"
 ```
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/gitea/compose.yaml" linenums="1" }
 --8<-- "gitea.yml"
 ```

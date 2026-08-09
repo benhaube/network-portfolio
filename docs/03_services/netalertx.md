@@ -85,15 +85,15 @@ _Centralized Network Visibility_
 
 ##### Config
 
-- Drive:&ensp;`/dev/nvme0n1p1`
-- Path:&ensp;`/DATA/AppData/netalertx/config`
-- Config file:&ensp;`app.conf`
+:    Drive:&ensp;`/dev/nvme0n1p1`
+:    Path:&ensp;`/DATA/AppData/netalertx/config`
+:    Config file:&ensp;`app.conf`
 
 ##### Database
 
-- Drive:&ensp;`/dev/nvme0n1p1`
-- Path:&ensp;`/DATA/AppData/netalertx/db`
-- Database file:&ensp;`app.db`
+:    Drive:&ensp;`/dev/nvme0n1p1`
+:    Path:&ensp;`/DATA/AppData/netalertx/db`
+:    Database file:&ensp;`app.db`
 
 #### :symbols-svg:&ensp;Custom Device Icons
 

@@ -38,7 +38,7 @@ _Bye Bye, Google Photos_
 :    :symbols-network:&nbsp;Local Access:
 
     - <http://storage-server.internal:2283>
-      - <http://storage-server-2.internal:2283>
+    - <http://storage-server-2.internal:2283>
 
 :    :symbols-globe-arrow:&nbsp;Remote Access:
 
@@ -49,7 +49,7 @@ _Bye Bye, Google Photos_
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Immich (admin)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Immich (bhaube)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Immich (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -62,6 +62,34 @@ _Bye Bye, Google Photos_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+##### Docker Deploy
+
+:    `~/.casaos/apps/immich/docker-compose.yml`
+
+##### Database
+
+:    `../AppData/immich/pgdata`
+
+##### Machine Learning Data
+
+:    `../AppData/immich/model-cache`
+
+##### Immich-Redis Data
+
+:    `../AppData/immich/redis`
+
+##### Server Data
+
+:    `/media/Quick-Storage/Gallery/immich`
+
+##### Photo Library
+
+:    `/media/Quick-Storage/Gallery/immich/library`
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
+``` yaml { .mono-title title="~/.casaos/apps/immich/docker-compose.yml" linenums="1" }
 --8<-- "immich.yml"
 ```

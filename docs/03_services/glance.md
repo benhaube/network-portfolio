@@ -50,7 +50,7 @@ _Server Dashboard_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-???+ change "Image Migration"
+??? change "Image Migration"
 
     :symbols-calendar:&ensp;**Date:** Monday, April 27 2026 <br>
     :symbols-arrow-right-left:&ensp;**Change:** Using a forked Docker image <br>
@@ -62,7 +62,7 @@ _Server Dashboard_
 
     :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuration is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image.
 
-    [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#glance-config-file)
+    [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#dynacat)
 
 | Host Device                                                          | Method                                    | Container Name | Image                       |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------- |
@@ -155,9 +155,33 @@ _Server Dashboard_
 
         [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+##### Stack Directory
+
+- `/opt/stacks/glance`
+
+##### Assets Directory
+
+- `/opt/stacks/glance/assets`
+
+##### Config Directory
+
+- `/opt/stacks/glance/config`
+
+##### Pages Directory
+
+- `/opt/stacks/glance/config/pages`
+
+##### Widgets Directory
+
+- `/opt/stacks/glance/config/widgets`
+
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="/opt/stacks/glance/docker-compose.yml" linenums="1" }
 --8<-- "glance-compose.yml"
 ```
 
@@ -171,7 +195,9 @@ _Server Dashboard_
 
 #### :symbols-file-cog:&ensp;Glance Config File
 
-``` yaml { .mono-title title="dynacat.yml" linenums="1" }
+##### Dynacat
+
+``` yaml { .mono-title title="/opt/stacks/glance/config/dynacat.yml" linenums="1" }
 --8<-- "dynacat.yml"
 ```
 
@@ -206,7 +232,9 @@ _Server Dashboard_
 
     Use this if you think that some of the text on the page is too dark and hard to read
 
-``` yaml { .mono-title title="glance.yml" linenums="1" } 
+##### Glance
+
+``` yaml { .mono-title title="/opt/stacks/glance/config/glance.yml" linenums="1" } 
 --8<-- "glance.yml"
 ```
 
@@ -243,14 +271,18 @@ _Server Dashboard_
 
 #### :symbols-layout-dashboard:&ensp;Glance Pages
 
-``` yaml { .mono-title title="home.yml" linenums="1" }
+##### Home
+
+``` yaml { .mono-title title="/opt/stacks/glance/config/pages/home.yml" linenums="1" }
 --8<-- "glance-home.yml"
 ```
 
 1. Show a title header on mobile device web browsers.
 2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
 
-``` yaml { .mono-title title="network.yml" linenums="1" }
+##### Network
+
+``` yaml { .mono-title title="/opt/stacks/glance/config/pages/network.yml" linenums="1" }
 --8<-- "glance-network.yml"
 ```
 
@@ -260,7 +292,9 @@ _Server Dashboard_
 
     - Disabled **WireGuard** community widget for now due to bugs causing page instability and other issues.
 
-``` yaml { .mono-title title="formula1.yml" linenums="1" }
+##### Formula 1
+
+``` yaml { .mono-title title="/opt/stacks/glance/config/pages/formula1.yml" linenums="1" }
 --8<-- "glance-formula1.yml"
 ```
 

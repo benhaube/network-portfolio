@@ -95,6 +95,14 @@ _Centralized Network Visibility_
 - Path:&ensp;`/DATA/AppData/netalertx/db`
 - Database file:&ensp;`app.db`
 
+#### :symbols-svg:&ensp;Custom Device Icons
+
+The NetAlertX service allows users to add custom device and property SVG icons through the settings, but they need to be base64 encoded first. Below is a file containing icons from the open-source Lucide project that are already base64 encoded.
+
+``` toml title="Base64 Encoded Lucide Icons" linenums="1" 
+--8<-- "lucide_base64_encoded.txt"
+```
+
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="compose.yaml" linenums="1" }

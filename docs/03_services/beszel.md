@@ -116,6 +116,6 @@ _Server Monitoring_
 
 ##### ZimaOS NAS
 
-``` yaml { .mono-title title="/opt/stacks/beszel-agent/compose.yaml" linenums="1" }
+``` yaml { .mono-title title="../AppData/dockge/stacks/beszel-agent/compose.yaml" linenums="1" }
 --8<-- "beszel-zima.yaml"
 ```

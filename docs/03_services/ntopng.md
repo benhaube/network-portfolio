@@ -53,7 +53,7 @@ _Network Traffic Probe_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+``` yaml { .mono-title title="~/.casaos/apps/ntopng/docker-compose.yml" linenums="1" }
 --8<-- "ntopng.yml"
 ```
 

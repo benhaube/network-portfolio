@@ -86,30 +86,36 @@ _Server Monitoring_
 
     1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+#### :symbols-file-code-corner:&ensp;Docker Compose Files
 
-##### Hub
+--8<-- "deploy_with_dockge.md"
 
-``` yaml title="Pi 4B Server" linenums="1"
+##### Pi 4B Server _(Hub)_
+
+``` yaml { .mono-title title="/opt/stacks/beszel/docker-compose.yml" linenums="1" }
 --8<-- "beszel-pi-4b.yaml"
 ```
 
 1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
-##### Agents
+##### Debian Server
 
-``` yaml title="Debian Server VM" linenums="1"
+``` yaml { .mono-title title="/opt/stacks/beszel-agent/docker-compose.yml" linenums="1" }
 --8<-- "beszel-debian-vm.yaml"
 ```
 
 1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
-``` yaml title="Pi Zero 2W Server" linenums="1"
+##### Pi Zero 2W Server
+
+``` yaml { .mono-title title="/opt/stacks/beszel-agent/compose.yaml" linenums="1" }
 --8<-- "beszel-pi-zero.yaml"
 ```
 
 1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
-``` yaml title="ZimaOS NAS" linenums="1"
+##### ZimaOS NAS
+
+``` yaml { .mono-title title="/opt/stacks/beszel-agent/compose.yaml" linenums="1" }
 --8<-- "beszel-zima.yaml"
 ```

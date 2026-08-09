@@ -52,9 +52,29 @@ _An Eye on Your System_
 
 ### :symbols-settings:&ensp;Configuration
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+##### Pi 4B Server
+
+- Configuration:
+    - `/opt/stacks/glances/glances.conf`
+- Docker Deploy:
+    - `/opt/stacks/glances/compose.yaml`
+
+##### ZimaOS NAS
+
+- Configuration: 
+    - `../AppData/glances/glances.conf`
+- Docker Deploy:
+    - `../AppData/dockge/stacks/glances/compose.yaml`
+
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml title="Pi 4B Server" linenums="1"
+--8<-- "deploy_with_dockge.md"
+
+##### Pi 4B Server
+
+``` yaml { .mono-title title="/opt/stacks/glances/compose.yaml" linenums="1" }
 --8<-- "glances-pi-4b.yml"
 ```
 
@@ -67,6 +87,8 @@ _An Eye on Your System_
 7. Uncomment for GPU compatibility _(Nvidia)_ inside the container.  
 8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.  
 
-``` yaml title="ZimaOS NAS" linenums="1"
+##### ZimaOS NAS
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/glances/compose.yaml" linenums="1" }
 --8<-- "glances-zima.yml"
 ```

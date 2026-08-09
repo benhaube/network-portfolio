@@ -63,10 +63,16 @@ _Reverse-Proxy Server_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml title="Pi 4B Server" linenums="1"
+#### Pi 4B Server
+
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="/opt/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "cloudflared-pi-server.yml"
 ```
 
-``` yaml title="ZimaOS NAS" linenums="1"
+#### ZimaOS NAS
+
+``` yaml { .mono-title title="/DATA/.casaos/apps/cloudflared/docker-compose.yml" linenums="1" }
 --8<-- "cloudflared.yaml"
 ```

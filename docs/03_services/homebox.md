@@ -54,7 +54,21 @@ _Inventory Management_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+:    Docker Deploy
+
+    - `../AppData/dockge/stacks/homebox`
+
+:    App Data
+
+    - `../AppData/homebox-data/`
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/homebox/compose.yaml" linenums="1" }
 --8<-- "homebox.yml"
 ```
 

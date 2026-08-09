@@ -63,7 +63,7 @@ _The Klipper Web API_
 
 #### :symbols-file-cog:&ensp;Config File
 
-``` ini { .mono-title title="moonraker.cfg" linenums="1" }
+``` ini { .mono-title title="/usr/data/printer_data/config/moonraker.cfg" linenums="1" }
 --8<-- "moonraker.cfg"
 ```
 

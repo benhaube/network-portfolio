@@ -52,7 +52,7 @@ _Push Notifications_
     - Local Network&ensp;:symbols-move-right:&ensp;"Gotify (admin)"
       - Local Network&ensp;:symbols-move-right:&ensp;"Gotify (bhaube)"
 
-#### :symbols-message-square-warning:&ensp;Notifications
+#### :symbols-message-square-dot:&ensp;Notifications
 
 | Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes { data-sort-method="none" }                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -72,9 +72,23 @@ _Push Notifications_
 
 ### :symbols-settings:&ensp;Configuration
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+:    Docker Deploy
+
+    - `../AppData/dockge/stacks/gotify/compose.yaml`
+
+:    App Data
+
+    - `../AppData/dockge/stacks/gotify/data/gofify.db`
+    - `../AppData/dockge/stacks/gotify/data/images/`
+    - `../AppData/dockge/stacks/gotify/data/plugins/`
+
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/gotify/compose.yaml" linenums="1" }
 --8<-- "gotify.yml"
 ```
 
@@ -84,7 +98,7 @@ _Push Notifications_
 
 1.  Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`.
 
-    ``` bash { .mono-title title="home-bkp-nas.sh" linenums="1" hl_lines="3 4" }
+    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="59" hl_lines="3 4" }
     --8<-- "home-bkp-nas.sh:59"
     ```
 

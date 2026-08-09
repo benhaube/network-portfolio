@@ -50,10 +50,16 @@ _All of the Data_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+--8<-- "deploy_with_dockge.md"
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/f1-replay-timing/compose.yaml" linenums="1" }
 --8<-- "f1-replay-timing.yaml"
 ```
 
-``` properties { .mono-title title=".env" linenums="1" }
+#### :symbols-file-type-corner:&ensp;Environment Variables File
+
+``` properties { .mono-title title="../AppData/dockge/stacks/f1-replay-timing/.env" linenums="1" }
 --8<-- "f1-replay-timing.env"
 ```

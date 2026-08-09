@@ -56,13 +56,13 @@ _Inventory Management_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-:    Docker Deploy
+##### Docker Deploy
 
-    - `../AppData/dockge/stacks/homebox`
+:    `../AppData/dockge/stacks/homebox`
 
-:    App Data
+##### App Data
 
-    - `../AppData/homebox-data/`
+:    `../AppData/homebox-data/`
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

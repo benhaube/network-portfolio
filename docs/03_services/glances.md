@@ -56,17 +56,13 @@ _An Eye on Your System_
 
 ##### Pi 4B Server
 
-- Configuration:
-    - `/opt/stacks/glances/glances.conf`
-- Docker Deploy:
-    - `/opt/stacks/glances/compose.yaml`
+:    `/opt/stacks/glances/glances.conf`
+:    `/opt/stacks/glances/compose.yaml`
 
 ##### ZimaOS NAS
 
-- Configuration: 
-    - `../AppData/glances/glances.conf`
-- Docker Deploy:
-    - `../AppData/dockge/stacks/glances/compose.yaml`
+:    `../AppData/glances/glances.conf`
+:    `../AppData/dockge/stacks/glances/compose.yaml`
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

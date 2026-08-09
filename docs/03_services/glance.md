@@ -159,23 +159,23 @@ _Server Dashboard_
 
 ##### Stack Directory
 
-- `/opt/stacks/glance`
+:    `/opt/stacks/glance`
 
 ##### Assets Directory
 
-- `/opt/stacks/glance/assets`
+:    `/opt/stacks/glance/assets`
 
 ##### Config Directory
 
-- `/opt/stacks/glance/config`
+:    `/opt/stacks/glance/config`
 
 ##### Pages Directory
 
-- `/opt/stacks/glance/config/pages`
+:    `/opt/stacks/glance/config/pages`
 
 ##### Widgets Directory
 
-- `/opt/stacks/glance/config/widgets`
+:    `/opt/stacks/glance/config/widgets`
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

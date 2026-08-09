@@ -73,6 +73,6 @@ _Reverse-Proxy Server_
 
 #### ZimaOS NAS
 
-``` yaml { .mono-title title="/DATA/.casaos/apps/cloudflared/docker-compose.yml" linenums="1" }
+``` yaml { .mono-title title="~/.casaos/apps/cloudflared/docker-compose.yml" linenums="1" }
 --8<-- "cloudflared.yaml"
 ```

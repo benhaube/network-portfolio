@@ -51,6 +51,8 @@ _Handy Tools for Devs_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="/opt/stacks/it-tools/compose.yaml" linenums="1" }
 --8<-- "it-tools.yml"
 ```

@@ -102,7 +102,9 @@ _Docker Management_
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml title="Debian Server | Pi 4B Server | Pi Zero 2W Server" linenums="1"
+##### Debian 13 Servers
+
+``` yaml { .mono-title title="/opt/dockge/compose.yaml" linenums="1" }
 --8<-- "dockge.yaml"
 ```
 
@@ -117,6 +119,8 @@ _Docker Management_
 
 3.  Tell Dockge the location of your stacks directory.
 
-``` yaml title="ZimaOS NAS" linenums="1" 
+##### ZimaOS NAS
+
+``` yaml { .mono-title title="/DATA/.casaos/apps/big-bear-dockge/docker-compose.yml" linenums="1" } 
 --8<-- "dockge-zima.yaml"
 ```

@@ -55,21 +55,37 @@ _Network Documentation_
 
 ### :symbols-settings:&ensp;Configuration
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+##### Docker Deploy
+
+:    `../AppData/dockge/stacks/network-documentation-portfolio`
+
+##### Nginx Server Config
+
+:    `../AppData/Network-Portfolio/default.conf`
+
+##### Site Data
+
+:    `../AppData/Network-Portfolio/site`
+
+#### :symbols-file-cog:&ensp;Config File
+
+``` nginx { .mono-title title="../AppData/Network-Portfolio/default.conf" linenums="1" }
+--8<-- "nginx.conf"
+```
+
+1. Pull in standard MIME types, then explicitly define `.mjs`
+2. Redirect server error pages to the static page `/50x.html`
+
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/network-documentation-portfolio/compose.yaml" linenums="1" }
 --8<-- "nginx.yml"
 ```
 
 1. Maps port `8080` on the VM to port `80` inside the container.
 2. Mounts your site folder as read-only (ro) for extra security.
 3. Mounts your site folder as read-only (ro) for extra security.
-
-#### :symbols-file-cog:&ensp;Config File
-
-``` nginx { .mono-title title="/DATA/AppData/Network-Portfolio/default.conf" linenums="1" }
---8<-- "nginx.conf"
-```
-
-1. Pull in standard MIME types, then explicitly define `.mjs`
-2. Redirect server error pages to the static page `/50x.html`

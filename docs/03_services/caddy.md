@@ -34,7 +34,10 @@ _Reverse-Proxy Server_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    `80`&emsp;`443`
+- `80`
+{ .no-bullets }
+- `443`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access 
 

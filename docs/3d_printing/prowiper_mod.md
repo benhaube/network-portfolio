@@ -18,12 +18,12 @@ _Improved Nozzle Brush Routine_
 
 !!! info "PROWIPER Info"
 
-    **Modifications:**
+    **Modifications**
 
     1. Upgraded bed leveling kit with aluminum spacers.
     2. PROWIPER V5 Mount
 
-    **Hardware Required:**
+    **Hardware Required**
 
     1.  Printed `v5-k1c-brush-mount-for-a1-brushes.stl` and `1mm-z-spacer-to-lift-the-wiper-mount.stl` _(in high-temp filament like ASA / ABS)_
 

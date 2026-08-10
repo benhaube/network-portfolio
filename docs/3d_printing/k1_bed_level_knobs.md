@@ -31,14 +31,14 @@ _Fine Tune Your Bed Level_
 
 !!! note inline end "Installation Note"
 
-    :symbols-fan:{ .spin }&ensp;**Graphite Bed & Bed Fans:**
+    :symbols-fan:{ .spin }&ensp;**Graphite Bed & Bed Fans**
     :     If you plan to install a graphite heated bed upgrade, or if you want to increase your chamber temperature for ABS / ASA using bed fans, it is recommended to do these mods at the same time because they all require the first 8 steps.
 
         [Graphite Bed Kit&ensp;:brands-r3men:](https://www.r3men.com/products/graphite-heated-bed-for-creality-k1-k1c-k1se?ref=3dphub){ .md-button }
 
         [Bed Fans Guide&ensp;:brands-3dphub:](https://3dphub.net/learn/bed-fans-upgrade-guide){ .md-button }
 
-    :symbols-settings:{ .spin }&ensp;**Nylon Knobs:**
+    :symbols-settings:{ .spin }&ensp;**Nylon Knobs**
     :     If you have a graphite bed kit, you can print the knobs out of nylon and use the springs and screws that come with the kit _(using metal knobs is still recommended to avoid heat issues)_.
 
         [Nylon Knobs&ensp;:brands-printables:](https://www.printables.com/model/1182770-bed-leveling-knob-for-m4-screw-m4-nut){ .md-button }
@@ -171,19 +171,19 @@ _Fine Tune Your Bed Level_
 
 !!! note inline end
 
-    **Bed Warping:**
+    **Bed Warping**
     :     If your bed mesh looks warped compared to before you installed the knobs, loosen three screws, heat soak the bed and tighten again.
 
         ![Bed Mesh Screenshot](../assets/screenshots/bed-mesh.png){ .on-glb width=230 }
 
 !!! warning
 
-    **Factory Loadcell:**
+    **Factory Loadcell**
     :   This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. It will run a macro that measures the accuracy of your bed mesh probe by repeatedly probing the same point. Most aftermarket probes are at least 10x more accurate than the factory load cells. It is highly recommended to upgrade before doing this modification in order to get the best results and minimize the chance of issues.
 
 !!! failure "Error"
 
-    **Error `key60`:**
+    **Error `key60`**
     :   If you are doing this modification with the factory load cells _(bed mesh probe)_ and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
 
 #### :symbols-link:&ensp;References and Resources

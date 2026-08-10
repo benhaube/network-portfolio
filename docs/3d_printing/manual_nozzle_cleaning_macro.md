@@ -17,11 +17,11 @@ _Manually Clean Your Nozzle_
 
 !!! info
 
-    :symbols-calendar-clock:&ensp;**Date Implemented:**
+    :symbols-calendar-clock:&ensp;**Date Implemented**
 
     - March 2026
 
-    :symbols-file-text:&ensp;**Overview:**
+    :symbols-file-text:&ensp;**Overview**
 
     - This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
     - It safely homes the axes, moves the toolhead to an accessible front-center position, and heats the nozzle to soften plastic debris.

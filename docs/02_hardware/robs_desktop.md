@@ -58,15 +58,15 @@ _High-Performance Desktop PC_
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address | MAC Address         | Connected To                                                                                        |
-| :-------: | :--------- | :------------------ | :-------------------------------------------------------------------------------------------------- |
-| Ethernet  | `DHCP`     | `50:EB:F6:59:74:C3` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(Port2)_ |
-|   Wi-Fi   | `DHCP`     | `70:A6:CC:B5:F5:4A` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_         |
+| Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                        |
+| :-------: | :--------------------------------------- | :------------------ | :-------------------------------------------------------------------------------------------------- |
+| Ethernet  | `DHCP`                                   | `50:EB:F6:59:74:C3` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(Port2)_ |
+|   Wi-Fi   | `DHCP`                                   | `70:A6:CC:B5:F5:4A` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_         |
 
-| Interface |             VLAN             | FQDN  | DNS Servers { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------: | :---- | :-------------------------------------- | :------------------------------------ |
-| Ethernet  | :symbols-shield:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
-|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
+| Interface |             VLAN             | FQDN  | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------: | :--------------------------: | :---- | :---------------------------------------- | :------------------------------------ |
+| Ethernet  | :symbols-shield:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

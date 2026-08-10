@@ -83,10 +83,10 @@ _High-Performance Desktop PC_
 | `enp7s0`  | `192.168.50.10`                          | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(Port 1)_ |
 | `wlp6s0`  | `DHCP`                                   | `F2:1E:02:CD:11:10` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_          |
 
-| Interface |             VLAN             | FQDN                        | DNS Servers { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------: | :-------------------------- | :-------------------------------------- | :------------------------------------ |
-| `enp7s0`  | :symbols-shield:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
-| `wlp6s0`  | :symbols-shield:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
+| Interface |             VLAN             | FQDN                        | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------: | :--------------------------: | :-------------------------- | :---------------------------------------- | :------------------------------------ |
+| `enp7s0`  | :symbols-shield:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| `wlp6s0`  | :symbols-shield:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

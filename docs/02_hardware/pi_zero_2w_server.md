@@ -64,9 +64,9 @@ _Reverse-Proxy Server_
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
 |  `wlan0`  | `192.168.50.3`                           | `2c:cf:67:db:f5:e2` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
-| Interface |             VLAN             | FQDN               | DNS Servers { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------: | :----------------- | :-------------------------------------- | :------------------------------------ |
-|  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
+| Interface |             VLAN             | FQDN               | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------: | :--------------------------: | :----------------- | :---------------------------------------- | :------------------------------------ |
+|  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

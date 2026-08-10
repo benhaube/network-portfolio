@@ -45,7 +45,7 @@ _Model LS1005G_
 :    Throughput:
 
     - Five 1 GbE ports
-      - 10 Gb/s total switching capacity
+    - 10 Gb/s total switching capacity
 
 :    Jumbo Frames:
 

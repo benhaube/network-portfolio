@@ -63,20 +63,20 @@ _Organized IP Address Space_
 
 ## :symbols-cloud-sync:&ensp;Dynamic DNS Providers
 
-| Status   | Provider                                  | Server                                                                        | FQDN                            | TLS Certificate                         | Certificate Expire |
-| :------- | :---------------------------------------- | :---------------------------------------------------------------------------- | :------------------------------ | :-------------------------------------- | :----------------- |
-| _Active_ | :symbols-square-terminal:&nbsp;addr.tools | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#native) | <https://rac3r4life.myaddr.dev> | :brands-lets-encrypt:&nbsp;Lets Encrypt | 2026-08-23         |
+| Status   | Provider                                  | Server                                                                        | FQDN                            | TLS Certificate                         | Certificate Expire { data-sort-method="date" } |
+| :------- | :---------------------------------------- | :---------------------------------------------------------------------------- | :------------------------------ | :-------------------------------------- | :--------------------------------------------- |
+| _Active_ | :symbols-square-terminal:&nbsp;addr.tools | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#native) | <https://rac3r4life.myaddr.dev> | :brands-lets-encrypt:&nbsp;Lets Encrypt | 2026-08-23                                     |
 
 ## :symbols-waypoints:&ensp;VPN Servers / Clients
 
 #### :services-wireguard:&ensp;WireGuard @ ASUS Router
 
-| Client                                     | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="none" } | Endpoint                    |
-| :----------------------------------------- | :--------------------------------- | :-------------------------------------- | :-------------------------- |
-| :symbols-smartphone:&nbsp;Ben's-Phone      | `10.6.0.2/32`                      | `192.168.50.6` `192.168.50.2`           | rac3r4life.myaddr.dev:41820 |
-| :symbols-laptop-minimal:&nbsp;Ben's-Laptop | `10.6.0.3/32`                      | `192.168.50.6` `192.168.50.2`           | rac3r4life.myaddr.dev:41820 |
-| :symbols-smartphone:&nbsp;Rob's-Phone      | `10.6.0.4/32`                      | `192.168.50.6` `192.168.50.2`           | rac3r4life.myaddr.dev:41820 |
-| :symbols-laptop-minimal:&nbsp;Rob's-Laptop | `10.6.0.5/32`                      | `192.168.50.6` `192.168.50.2`           | rac3r4life.myaddr.dev:41820 |
+| Client                                     | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Endpoint                    |
+| :----------------------------------------- | :--------------------------------- | :---------------------------------------- | :-------------------------- |
+| :symbols-smartphone:&nbsp;Ben's-Phone      | `10.6.0.2/32`                      | `192.168.50.6` `192.168.50.2`             | rac3r4life.myaddr.dev:41820 |
+| :symbols-laptop-minimal:&nbsp;Ben's-Laptop | `10.6.0.3/32`                      | `192.168.50.6` `192.168.50.2`             | rac3r4life.myaddr.dev:41820 |
+| :symbols-smartphone:&nbsp;Rob's-Phone      | `10.6.0.4/32`                      | `10.6.0.1`                                | rac3r4life.myaddr.dev:41820 |
+| :symbols-laptop-minimal:&nbsp;Rob's-Laptop | `10.6.0.5/32`                      | `10.6.0.1`                                | rac3r4life.myaddr.dev:41820 |
 
 ---
 

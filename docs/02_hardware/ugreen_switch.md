@@ -44,8 +44,8 @@ _Model UM106X_
 :    Throughput:
 
     - Five 2.5 Gb/s Ports
-      - One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview } router)*
-      - 45 Gb/s Total Switching Capacity
+    - One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview } router)*
+    - 45 Gb/s Total Switching Capacity
 
 :    Jumbo Frames:
 

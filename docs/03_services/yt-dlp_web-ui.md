@@ -70,7 +70,7 @@ _Download Videos from YouTube_
 
 3.  Paste the following code into the file, then save and close:
 
-    ``` yaml { .mono-title title="config.yml" linenums="1" }
+    ``` yaml { .mono-title title="../AppData/dockge/stacks/yt-dlp-webui/data/config.yml" linenums="1" }
     --8<-- "yt-dlp-webui-config.yml"
     ```
 
@@ -90,7 +90,9 @@ _Download Videos from YouTube_
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/yt-dlp-webui/compose.yaml" linenums="1" }
 --8<-- "yt-dlp.yml"
 ```
 

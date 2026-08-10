@@ -51,6 +51,6 @@ _Filament Inventory Management_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+``` yaml { .mono-title title="~/.casaos/apps/big-bear-spoolman/docker-compose.yml" linenums="1" }
 --8<-- "spoolman.yml"
 ```

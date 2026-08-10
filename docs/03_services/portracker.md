@@ -43,7 +43,7 @@ _Port Monitoring & Discovery_
 :    ZimaOS NAS:
 
     - <http://storage-server.internal:4999>
-      - <http://storage-server-2.internal:4999>
+    - <http://storage-server-2.internal:4999>
 
 #### :symbols-user-key:&ensp;Credentials 
 
@@ -51,15 +51,18 @@ _Port Monitoring & Discovery_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                        | Method                                    | Container Name | Image                             |
-| :--------------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)               | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)               | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                             |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` |
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml title="Pi 4B Server" linenums="1"
+--8<-- "deploy_with_dockge.md"
+
+##### Pi 4B Server
+
+``` yaml { .mono-title title="/opt/stacks/portracker/compose.yaml" linenums="1" }
 --8<-- "portracker-pi-4b.yml"
 ```
 
@@ -72,19 +75,8 @@ _Port Monitoring & Discovery_
 7. Required for discovering services running in Docker.
 8. **Optional:** For enhanced TrueNAS features
 
-``` yaml title="Pi Zero 2W Server" linenums="1"
---8<-- "portracker-pi-zero.yml"
-```
+##### ZimaOS NAS
 
-1. Required for port detection.
-2. Required permissions for system ports service namespace access.
-3. **Linux hosts:** read other PIDs' `/proc` entries.
-4. **Docker Desktop:** allow namespace access for host ports _(required for MacOS)_.
-5. Required for system ports.
-6. Required for data persistence.
-7. Required for discovering services running in Docker.
-8. **Optional:** For enhanced TrueNAS features
-
-``` yaml title="ZimaOS NAS" linenums="1"
+``` yaml { .mono-title title="../AppData/dockge/stacks/portracker/compose.yaml" linenums="1" }
 --8<-- "portracker-zima.yml"
 ```

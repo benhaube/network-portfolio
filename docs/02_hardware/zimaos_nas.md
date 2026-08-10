@@ -48,12 +48,12 @@ _Rack-Mount ZimaBoard 2_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"  
-      - SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"  
+    - SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-circuit-board:&ensp;Core Specs
 

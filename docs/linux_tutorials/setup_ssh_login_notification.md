@@ -83,7 +83,7 @@ _With Email SMTP and Gotify_
 
     ???+ tip
 
-        **2FA / MFA:**  
+        **2FA / MFA**  
         : If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
     !!! security 

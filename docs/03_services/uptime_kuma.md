@@ -39,7 +39,7 @@ _A Fancy Monitoring Tool_
 :    :symbols-network:&nbsp;Local Access
 
     - <https://uptime.internal>
-      - <http://pi-server.internal:3001>
+    - <http://pi-server.internal:3001>
 
 :    :symbols-globe-arrow:&nbsp;Remote Access
 
@@ -47,11 +47,11 @@ _A Fancy Monitoring Tool_
 
 #### :symbols-user-key:&ensp;Credentials  
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
 
-:    2FA / MFA:
+:    2FA / MFA
 
     - :symbols-clock:&ensp;TOTP
 

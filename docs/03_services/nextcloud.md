@@ -42,10 +42,10 @@ _Private Cloud_
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (admin)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (bhaube)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

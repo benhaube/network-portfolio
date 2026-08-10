@@ -43,7 +43,7 @@ _Google Pixel 9 Pro_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Email&ensp;:symbols-move-right:&ensp;"Google"
 
@@ -52,13 +52,13 @@ _Google Pixel 9 Pro_
 :    Software:
 
     - :symbols-key-fido2:&nbsp;Titan M2 security chip _(FIDO2 / WebAuthn)_
-      - :symbols-shield-keyhole:&nbsp;Full-disk encryption
-      - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
+    - :symbols-shield-keyhole:&nbsp;Full-disk encryption
+    - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 
 :    Biometric:
 
     - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
-      - :symbols-scan-face:&nbsp;Face Scan
+    - :symbols-scan-face:&nbsp;Face Scan
 
 ## :symbols-circuit-board:&ensp;Core Specs
 

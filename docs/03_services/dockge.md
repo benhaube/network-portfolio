@@ -50,12 +50,12 @@ _Docker Management_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ debian-vm"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-server"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-zero"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ storage-server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-zero"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ storage-server"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

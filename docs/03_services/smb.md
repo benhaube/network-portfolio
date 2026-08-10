@@ -47,17 +47,17 @@ _Server Message Block_
 :    :symbols-server-nas:&nbsp;ZimaOS NAS:
 
     - `\\storage-server.internal\nvme0n1p1`
-      - `\\storage-server.internal\Quick-Storage`
+    - `\\storage-server.internal\Quick-Storage`
 
 #### :symbols-user-key:&ensp;Credentials 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
-      - Local Network&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

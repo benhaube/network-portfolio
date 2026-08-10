@@ -45,14 +45,14 @@ _Reverse-Proxy Server_
 
 :    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
 
-:    2FA / MFA:
+:    2FA / MFA
 
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
-      - :symbols-clock:&ensp;TOTP
+    - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

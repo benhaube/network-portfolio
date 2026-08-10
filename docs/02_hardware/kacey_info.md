@@ -47,17 +47,17 @@ _Detailed Configuration Info_
 :    Nozzle:
 
     - _Chip:_ `GD32F303CBT6`
-      - _Version:_ `CR-K1-MAX-NOZZLE-V1.2.0`
+    - _Version:_ `CR-K1-MAX-NOZZLE-V1.2.0`
 
 :    Leveling:
 
     - _Chip:_ `GD32E230F8P6`
-      - _Version:_ `CR-K1-MAX-LEVELING-V1.1.0`
+    - _Version:_ `CR-K1-MAX-LEVELING-V1.1.0`
 
 :    Main:
 
     - _Chip:_ `GD32F303RET6`
-      - _Version:_ `CR4CU220812S12`
+    - _Version:_ `CR4CU220812S12`
 
 ## :symbols-network:&ensp;Network
 
@@ -69,7 +69,7 @@ _Detailed Configuration Info_
 
 :    API Key:
 
-    -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+    -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
         - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
 #### Fluidd
@@ -77,7 +77,7 @@ _Detailed Configuration Info_
 :    URL:
 
     - <http://kacey.internal>
-      - <http://kacey.internal:4408>
+    - <http://kacey.internal:4408>
 
 ## :symbols-webcam:&ensp;Camera
 
@@ -86,8 +86,8 @@ _Detailed Configuration Info_
 :    Snapshot URL:
 
     - <http://kacey.internal:8080/?action=snapshot>
-      - <http://localhost:8080/?action=snapshot>
-      - <http://127.0.0.1:8080/?action=snapshot>
+    - <http://localhost:8080/?action=snapshot>
+    - <http://127.0.0.1:8080/?action=snapshot>
 
 #### Fluidd
 

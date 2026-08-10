@@ -47,11 +47,11 @@ _Server Monitoring_
 
 :    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
 
-:    2FA / MFA:
+:    2FA / MFA
 
     - :symbols-clock:&ensp;TOTP
 

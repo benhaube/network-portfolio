@@ -37,7 +37,7 @@ _Network Documentation_
 :    :symbols-network:&nbsp;Local Access:
 
     - <http://storage-server.internal:8080>
-      - <http://storage-server-2.internal:8080>
+    - <http://storage-server-2.internal:8080>
 
 :    :symbols-globe-arrow:&nbsp;Remote Access:
 

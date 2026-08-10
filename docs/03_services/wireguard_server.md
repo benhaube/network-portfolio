@@ -47,7 +47,7 @@ _A Simple, Modern VPN_
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
 
@@ -56,9 +56,9 @@ _A Simple, Modern VPN_
 :    :symbols-router:&nbsp;ASUS RT-BE92U:
 
     - `Ben's-Phone`
-      - `Ben's-Laptop`
-      - `Rob's-Phone`
-      - `Rob's-Laptop`
+    - `Ben's-Laptop`
+    - `Rob's-Phone`
+    - `Rob's-Laptop`
 
 ## :symbols-package-search:&ensp;Deployment Details
 

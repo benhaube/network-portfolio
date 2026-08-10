@@ -41,12 +41,12 @@ _Server Dashboard_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance Admin"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Glance User (bhaube)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Glance User (rpereira)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Glance User (bhaube)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Glance User (rpereira)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -210,7 +210,7 @@ _Server Dashboard_
 
 3.  The Glance Dashboard's server secret is stored in the Bitwarden Vault.
 
-    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
@@ -247,7 +247,7 @@ _Server Dashboard_
 
 3.  The Glance Dashboard's server secret is stored in the Bitwarden Vault.
 
-    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 

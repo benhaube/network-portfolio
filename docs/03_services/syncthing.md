@@ -64,19 +64,19 @@ _File Synchronization_
 :    :symbols-server-nas:&nbsp;ZimaOS NAS
 
     - <https://storage-server.internal:8384>
-      - <https://storage-server-2.internal:8384>
+    - <https://storage-server-2.internal:8384>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-workstation"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ ben-laptop"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-phone"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ debian-vm"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-server"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-zero"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ storage-server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ ben-laptop"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-phone"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ debian-vm"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-zero"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ storage-server"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

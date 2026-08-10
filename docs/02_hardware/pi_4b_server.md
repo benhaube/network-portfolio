@@ -50,7 +50,7 @@ _Secondary DNS Server_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - SSH Keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
 

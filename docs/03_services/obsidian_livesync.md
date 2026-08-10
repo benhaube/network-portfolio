@@ -39,16 +39,16 @@ _Sync with CouchDB_
 :    :symbols-monitor-cog: Settings Web UI:
 
     - <http://storage-server.internal:5984/_utils>
-      - <http://storage-server-2.internal:5984/_utils>
+    - <http://storage-server-2.internal:5984/_utils>
 
 :    :symbols-database: Database:
 
     - <http://storage-server.internal:5984/obsidian-vault>
-      - <http://storage-server-2.internal:5984/obsidian-vault>
+    - <http://storage-server-2.internal:5984/obsidian-vault>
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:  
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }  
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Obsidian LiveSync"
 

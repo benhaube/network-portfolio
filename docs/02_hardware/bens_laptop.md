@@ -46,7 +46,7 @@ _ThinkPad X1 Carbon_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Laptop"
 
@@ -57,26 +57,26 @@ _ThinkPad X1 Carbon_
 :    Firmware:
 
     - BIOS rollback protection
-      - IOMMU
-      - Linux kernel lockdown
-      - Pre-boot DMA protection
-      - SMAP
-      - Suspend-to-idle: enabled
-      - Suspend-to-RAM: disabled
-      - TPM v2.0
-      - UEFI memory protection
-      - UEFI Secure Boot
+    - IOMMU
+    - Linux kernel lockdown
+    - Pre-boot DMA protection
+    - SMAP
+    - Suspend-to-idle: enabled
+    - Suspend-to-RAM: disabled
+    - TPM v2.0
+    - UEFI memory protection
+    - UEFI Secure Boot
 
 :    Software:
 
     - :symbols-arrow-right-left:&nbsp;Linux swap encryption
-      - :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
-      - :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user
+    - :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
+    - :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user
 
 :    Biometric:
 
     - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
-      - :symbols-scan-face:&nbsp;IR Face Scan
+    - :symbols-scan-face:&nbsp;IR Face Scan
 
 ## :symbols-circuit-board:&ensp;Core Specs
 

@@ -46,7 +46,7 @@ _High-Performance Desktop PC_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
 
@@ -57,18 +57,18 @@ _High-Performance Desktop PC_
 :    Firmware:
 
     - IOMMU
-      - Linux kernel lockdown
-      - Pre-boot DMA protection
-      - SMAP
-      - SMM locked down
-      - TPM v2.0
-      - UEFI Secure Boot
+    - Linux kernel lockdown
+    - Pre-boot DMA protection
+    - SMAP
+    - SMM locked down
+    - TPM v2.0
+    - UEFI Secure Boot
 
 :    Software:
 
     - :symbols-arrow-right-left:&nbsp;Linux swap encryption
-      - :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
-      - :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
+    - :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
+    - :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
 
 ## :symbols-circuit-board:&ensp;Core Specs
 

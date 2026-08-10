@@ -41,22 +41,22 @@ _Authoritative & Recursive DNS_
 :   :symbols-layers:&nbsp;Debian Server
 
     - `192.168.50.6` &mdash; Primary server
-      - <http://debian-vm.internal:5380>
+    - <http://debian-vm.internal:5380>
 
 :    :symbols-server:&nbsp;Pi 4B Server
 
     - `192.168.50.2` &mdash; Secondary server
-      - <http://pi-server.internal:5380>
+    - <http://pi-server.internal:5380>
 
 #### :symbols-user-key:&ensp;Credentials 
 
 :    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
 
-:    2FA / MFA:
+:    2FA / MFA
 
     - :symbols-clock:&ensp;TOTP
 

@@ -53,16 +53,16 @@ _Git with a Cup of Tea_
 
 :    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }:
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
       - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
       - SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
 
-:    2FA / MFA:
+:    2FA / MFA
 
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
-      - :symbols-clock:&ensp;TOTP
+    - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

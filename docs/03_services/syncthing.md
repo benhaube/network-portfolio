@@ -124,6 +124,8 @@ _File Synchronization_
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml title="ZimaOS NAS" linenums="1"
+##### ZimaOS NAS
+
+``` yaml { .mono-title title="../.casaos/apps/syncthing/docker-compose.yml" linenums="1" }
 --8<-- "syncthing-zima.yml"
 ```

@@ -63,6 +63,8 @@ _A Fancy Monitoring Tool_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="/opt/stacks/uptime-kuma/compose.yaml" linenums="1" }
 --8<-- "uptime-kuma.yml"
 ```

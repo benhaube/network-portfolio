@@ -20,7 +20,7 @@ services:
     - "/etc/os-release:/etc/os-release:ro"  # (5)!
   tmpfs:  
     - /tmp   
-  environment:  
+  environment:  
     - TZ=America/New_York  # (6)!
     - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart  
     - PYTHONPYCACHEPREFIX=/tmp/py_caches  

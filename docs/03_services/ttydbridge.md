@@ -53,7 +53,7 @@ _The Terminal on the Web_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="compose.yml" linenums="1" }
+``` yaml { .mono-title title="~/.casaos/apps/ttydbridge/docker-compose.yml" linenums="1" }
 --8<-- "ttydBridge.yml"
 ```
 

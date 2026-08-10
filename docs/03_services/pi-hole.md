@@ -33,31 +33,30 @@ _A DNS Sinkhole_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    Web:
+-   Web:
+{ .no-bullets }
+    - `80`
+    - `443`
+-   DNS:
+{ .no-bullets }
+    - `53`
 
-      - `80`
-      - `443`
+#### :symbols-link-2:&ensp;URL / Access
 
-:    DNS:
-
-      - `53`
-
-#### :symbols-link-2:&ensp;URL / Access   
-
-:    ~~<https://pi-server.internal/admin/login>~~
-
-:    ~~<https://pi-hole.internal/admin/login>~~
+- ~~<https://pi-server.internal/admin/login>~~
+{ .no-bullets }
+- ~~<https://pi-hole.internal/admin/login>~~
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-
-      - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
-
-:    2FA / MFA
-
-      - :symbols-clock:&ensp;TOTP
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
+- 2FA / MFA
+{ .no-bullets }
+    - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

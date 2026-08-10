@@ -93,8 +93,13 @@ _Primary DNS Server_
 
 !!! config "Critical Configurations"
 
-    -   Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
-    -   The VM is configured to boot automatically when the host server boots.
+    :symbols-refresh-cw-clock:&ensp;**Chrony**
+
+    :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with `chrony`.
+
+    :symbols-power:&ensp;**Autostart**
+
+    :    The VM is configured to boot automatically when the host server boots.
 
         + If a ZimaOS update breaks this configuration it can be re-applied with the following command on the host machine:
 
@@ -102,13 +107,17 @@ _Primary DNS Server_
             sudo virsh autostart <vm_name>
             ```
 
-        + To disable the 'autostart' feature: (not recommended)
+        + To disable the 'autostart' feature:<br>_(not recommended)_
 
             ``` bash linenums="1"
             sudo virsh autostart <vm_name> --disable
             ```
 
-    -   This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation.
+    :symbols-message-square-dot:&ensp;**Notifications**
+
+    :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. 
+    
+        + See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Policy
 
@@ -121,15 +130,6 @@ _Primary DNS Server_
 
 -   Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_services/dockge.md)
 
-!!! warning inline "Warning!"
-
-    + The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
-    + To create an external snapshot, run the following command as `root`:
-
-        ``` bash linenums="1"
-        virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
-        ```
-
 #### :symbols-fullscreen:&ensp;Snapshot Policy
 
 - Perform external snapshots before major changes.
@@ -139,6 +139,16 @@ _Primary DNS Server_
 
 - If the VM is corrupted there are external snapshots to roll back to.
 - Also, on the main storage pool on the [ZimaOS NAS](zimaos_nas.md#data){ data-preview } in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file.
+
+??? warning "Warning!"
+
+    The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
+    
+    + To create an external snapshot, run the following command as `root`:
+
+        ``` bash linenums="1"
+        sudo virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
+        ```
 
 --8<-- "nerd-fonts.md"
 
@@ -160,7 +170,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 3.  Place the custom config file in the `~/.config` directory:
 
-    ``` toml { .mono-title title="starship.toml" linenums="1" }
+    ``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
     --8<-- "starship-debian-vm.toml"
     ```
 

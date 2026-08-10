@@ -34,30 +34,33 @@ _Authoritative & Recursive DNS_
 
 #### :symbols-hash:&ensp;Port(s) 
 
-:    `53`&emsp;`443`&emsp;`5380`
+- `53`
+{ .no-bullets }
+- `443`
+{ .no-bullets }
+- `5380`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access   
 
-:   :symbols-layers:&nbsp;Debian Server
-
+- :symbols-layers:&ensp;Debian Server
+{ .no-bullets }
     - `192.168.50.6` &mdash; Primary server
     - <http://debian-vm.internal:5380>
-
-:    :symbols-server:&nbsp;Pi 4B Server
-
+- :symbols-server:&ensp;Pi 4B Server
+{ .no-bullets }
     - `192.168.50.2` &mdash; Secondary server
     - <http://pi-server.internal:5380>
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
-
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-
+- [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
-
-:    2FA / MFA
-
+- 2FA / MFA
+{ .no-bullets }
     - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details

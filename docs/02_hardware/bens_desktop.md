@@ -52,23 +52,31 @@ _High-Performance Desktop PC_
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-:    HSI-1
+##### Firmware
 
-:    Firmware:
+- IOMMU
+{ .no-bullets }
+- Linux kernel lockdown
+{ .no-bullets }
+- Pre-boot DMA protection
+{ .no-bullets }
+- SMAP
+{ .no-bullets }
+- SMM locked down
+{ .no-bullets }
+- TPM v2.0
+{ .no-bullets }
+- UEFI Secure Boot
+{ .no-bullets }
 
-    - IOMMU
-    - Linux kernel lockdown
-    - Pre-boot DMA protection
-    - SMAP
-    - SMM locked down
-    - TPM v2.0
-    - UEFI Secure Boot
+##### Software
 
-:    Software:
-
-    - :symbols-arrow-right-left:&nbsp;Linux swap encryption
-    - :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
-    - :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
+- :symbols-arrow-right-left:&nbsp;Linux swap encryption
+{ .no-bullets }
+- :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
+{ .no-bullets }
+- :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user  
+{ .no-bullets }
 
 ## :symbols-circuit-board:&ensp;Core Specs
 
@@ -191,16 +199,16 @@ _High-Performance Desktop PC_
 
 1.  Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
-    ``` bash { .mono-title title="home-bkp-nas.sh" linenums="1" hl_lines="5 40 61 62" }
+    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="1" hl_lines="5 40 61 62" }
     --8<-- "home-bkp-nas.sh"
     ```
 
     1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
     2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
 
-2.  Place `.bkp-exclude-nas` in the `~/` directory.
+2.  Place `.bkp-exclude-nas` in the home _(`~/`)_ directory.
 
-    ``` kconfig { .mono-title title=".bkp-exclude-nas" linenums="1" }
+    ``` kconfig { .mono-title title="~/.bkp-exclude-nas" linenums="1" }
     --8<-- "bkp-exclude-nas"
     ```
 
@@ -214,11 +222,11 @@ _High-Performance Desktop PC_
 
 6.  Place `home-bkp-nas.timer` and `home-bkp-nas.service` in the `~/.config/systemd/user/` directory.
 
-    ``` systemd { .mono-title title="home-bkp-nas.timer" linenums="1" }
+    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.timer" linenums="1" }
     --8<-- "home-bkp-nas.timer"
     ```
 
-    ``` systemd { .mono-title title="home-bkp-nas.service" linenums="1" }
+    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.service" linenums="1" }
     --8<-- "home-bkp-nas.service"
     ```
 
@@ -234,7 +242,7 @@ _High-Performance Desktop PC_
 1.  Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2.  Place the `.desktop` file in the `~/.config/autostart` directory.
 
-    ``` desktop { .mono-title title="mount-gocryptfs.desktop" linenums="1" }
+    ``` desktop { .mono-title title="~/.config/autostart/mount-gocryptfs.desktop" linenums="1" }
     --8<-- "mount-gocryptfs.desktop"
     ```
 
@@ -242,13 +250,13 @@ _High-Performance Desktop PC_
 
 1.  Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
-    ``` ini { .mono-title title="rclone.conf" linenums="1" }
+    ``` ini { .mono-title title="~/.config/rclone/rclone.conf" linenums="1" }
     --8<-- "rclone.conf"
     ```
 
 2.  Place the `.desktop` file in the `~/.config/autostart` directory.
 
-    ``` desktop { .mono-title title="mount-rclone.desktop" linenums="1" }
+    ``` desktop { .mono-title title="~/.config/autostart/mount-rclone.desktop" linenums="1" }
     --8<-- "mount-rclone.desktop"
     ```
 
@@ -272,7 +280,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 3.  Place the custom config file in the `~/.config` directory:
 
-    ``` toml { .mono-title title="starship.toml" linenums="1" }
+    ``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
     --8<-- "starship-desktop.toml"
     ```
 

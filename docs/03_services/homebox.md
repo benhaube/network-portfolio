@@ -36,9 +36,10 @@ _Inventory Management_
 
 #### :symbols-link-2:&ensp;URL / Access  
 
-:    <http://storage-server.internal:3100>
-
-:    <http://storage-server-2.internal:3100>
+- <http://storage-server.internal:3100>
+{ .no-bullets }
+- <http://storage-server-2.internal:3100>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials 
 

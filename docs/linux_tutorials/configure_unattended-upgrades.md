@@ -281,9 +281,12 @@ There are three main options to control email behavior.
 
 The `MailReport` option has three possible values:
 
-- `always`: Sends email after every `unattended-upgrades` run.
-- `only-on-error`: Sends email only when upgrades fail.
-- `on-change`: Sends email when packages are upgraded or errors occur.
+- `always`:&ensp;Sends email after every `unattended-upgrades` run.
+{ .no-bullets }
+- `only-on-error`:&ensp;Sends email only when upgrades fail.
+{ .no-bullets }
+- `on-change`:&ensp;Sends email when packages are upgraded or errors occur.
+{ .no-bullets }
 
 ### Automatic Reboots
 

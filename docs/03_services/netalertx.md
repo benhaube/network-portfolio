@@ -36,7 +36,10 @@ _Centralized Network Visibility_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    `20211`&emsp;`20212`
+- `20211` 
+{ .no-bullets }
+- `20212`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access 
 
@@ -85,15 +88,21 @@ _Centralized Network Visibility_
 
 ##### Config
 
-:    Drive:&ensp;`/dev/nvme0n1p1`
-:    Path:&ensp;`/DATA/AppData/netalertx/config`
-:    Config file:&ensp;`app.conf`
+- Drive:&ensp;`/dev/nvme0n1p1`
+{ .no-bullets }
+- Path:&ensp;`/DATA/AppData/netalertx/config`
+{ .no-bullets }
+- Config file:&ensp;`app.conf`
+{ .no-bullets }
 
 ##### Database
 
-:    Drive:&ensp;`/dev/nvme0n1p1`
-:    Path:&ensp;`/DATA/AppData/netalertx/db`
-:    Database file:&ensp;`app.db`
+- Drive:&ensp;`/dev/nvme0n1p1`
+{ .no-bullets }
+- Path:&ensp;`/DATA/AppData/netalertx/db`
+{ .no-bullets }
+- Database file:&ensp;`app.db`
+{ .no-bullets }
 
 #### :symbols-svg:&ensp;Custom Device Icons
 

@@ -34,36 +34,33 @@ _Container Management_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    Hub:
-
+- Hub:
+{ .no-bullets }
     - `9443`
-
-:    Agent:
-
+- Agent:
+{ .no-bullets }
     - `9001`
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    Hub:
-
+- Hub:
+{ .no-bullets }
     - ~~<https://portainer.internal>~~
     - ~~<https://pi-server.internal:9443>~~
-
-:    Agent:
-
+- Agent:
+{ .no-bullets }
     - ~~<http://pi-zero.internal:9001>~~
     - ~~<http://storage-server.internal:9001>~~
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
-
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-
+- [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Portainer"
-
-:    2FA / MFA
-
+- 2FA / MFA
+{ .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
     - :symbols-clock:&ensp;TOTP
 

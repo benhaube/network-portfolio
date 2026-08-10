@@ -17,9 +17,11 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    :symbols-tag:&ensp;**Tag Index:**
+    :symbols-tag:&ensp;**Tag Index**
 
-    :    [Infrastructure Tags&ensp;:symbols-tags:](01_infrastructure/tags.md){ .md-button }
+    :    An index of tags relevant to the network infrastructure.
+
+        [Infrastructure Tags&ensp;:symbols-tags:](01_infrastructure/tags.md){ .md-button }
 
 [:symbols-tornado:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
 : Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
@@ -45,9 +47,11 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    :symbols-tag:&ensp;**Tag Index:**
+    :symbols-tag:&ensp;**Tag Index**
 
-    :    [Hardware Tags&ensp;:symbols-tags:](02_hardware/tags.md){ .md-button }
+    :    An index of tags relevant to the network's hardware.
+
+        [Hardware Tags&ensp;:symbols-tags:](02_hardware/tags.md){ .md-button }
 
 ### Core Infrastructure
 
@@ -67,7 +71,7 @@ hide:
 : The secondary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-server:&ensp;Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) 
-: A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the LAN. Located on the stationary printer cart in the office upstairs, and connected to the LAN via 2.4 GHz Wi-Fi ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }).
+: A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the LAN. Located on the stationary printer cart in the office upstairs, and connected to the LAN via 2.4 GHz Wi-Fi _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
 
 [:symbols-ethernet-port:&ensp;TP-Link LiteWave Switch](02_hardware/tp-link_litewave_switch.md)
 : A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
@@ -87,19 +91,19 @@ hide:
 : Ben's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-laptop-minimal:&ensp;Ben's Laptop](02_hardware/bens_laptop.md)
-: Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }).
+: Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
 
 [:symbols-smartphone:&ensp;Ben's Smartphone](02_hardware/bens_smartphone.md)
-: Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }).
+: Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
 
 [:symbols-printer-3d-nozzle:&ensp;Kacey 3D-Printer](02_hardware/kacey_3d-printer.md) 
-: The Creality K1C 3D-printer located in the office upstairs, and connected to the LAN through 2.4 GHz Wi-Fi ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }). Affectionately, named 'Kacey' as a play on the model name, K1C.
+: The Creality K1C 3D-printer located in the office upstairs, and connected to the LAN through 2.4 GHz Wi-Fi _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_. Affectionately, named 'Kacey' as a play on the model name, K1C.
 
 [:symbols-pc-case:&ensp;Rob's Workstation](02_hardware/robs_desktop.md) 
 : Rob's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-laptop-minimal:&ensp;Rob's Laptop](02_hardware/robs_laptop.md) 
-: Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network ([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview }). However, sometimes it has a 2.5 Gb/s Ethernet connection through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
+: Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_. However, sometimes it has a 2.5 Gb/s Ethernet connection through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
 
 ---
 
@@ -107,9 +111,11 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    :symbols-tag:&ensp;**Tag Index:**
+    :symbols-tag:&ensp;**Tag Index**
 
-    :    [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
+    :    An index of tags relevant to the network services.
+
+        [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
 
 [:services-beszel:&ensp;Beszel](03_services/beszel.md)
 : A lightweight server monitoring hub with historical data, docker stats, and alerts.
@@ -244,17 +250,19 @@ hide:
 
 !!! links inline end "Extra Links"
 
-    :symbols-tag:&ensp;**Tag Index:**
+    :symbols-tag:&ensp;**Tag Index**
 
-    :    [Linux Tutorials Tags&ensp;:symbols-tags:](linux_tutorials/tags.md){ .md-button }
+    :    An index of relevant tags.
 
-    :symbols-square-terminal:&ensp;**My Favorite Bash Aliases:**
+        [Linux Tutorials Tags&ensp;:symbols-tags:](linux_tutorials/tags.md){ .md-button }
+
+    :symbols-square-terminal:&ensp;**My Favorite Bash Aliases**
 
     :    Here is an aggregated list of Bash terminal aliases that I find useful in my daily workflow.
 
         [My Bash Aliases&ensp;:symbols-square-terminal:](linux_tutorials/my_bash_aliases.md){ .md-button }
 
-    :symbols-file-terminal:&ensp;**Update PCRs Script:**
+    :symbols-file-terminal:&ensp;**Update PCRs Script**
 
     :    In this GitHub repository I have written a Bash script, `update-pcrs`, that automates the process of clearing and registering new PCRs and regenerating the initramfs after a firmware or kernel upgrade. The script is full-featured with flags for using custom PCRs _(defaults to 0+4+7+11)_, usage help, checking the version, and defining the device path.
 

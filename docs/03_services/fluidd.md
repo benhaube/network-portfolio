@@ -30,7 +30,10 @@ _The Klipper UI_
 
 #### :symbols-hash:&ensp;Port(s) 
 
-:    `80`&emsp;`4408`
+- `80` 
+{ .no-bullets }
+- `4408`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access 
 

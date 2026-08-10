@@ -37,20 +37,20 @@ _Reverse-Proxy Server_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    <http://storage-server.internal:14333>
-
-:    <http://storage-server-2.internal:14333>
+- <http://storage-server.internal:14333>
+{ .no-bullets }
+- <http://storage-server-2.internal:14333>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
-
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-
+- [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+{ .no-bullets }
     - Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
-
-:    2FA / MFA
-
+- 2FA / MFA
+{ .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
     - :symbols-clock:&ensp;TOTP
 
@@ -63,7 +63,7 @@ _Reverse-Proxy Server_
 
 ### :symbols-settings:&ensp;Configuration
 
-#### Pi 4B Server
+#### :symbols-server:&ensp;Pi 4B Server
 
 --8<-- "deploy_with_dockge.md"
 
@@ -71,7 +71,7 @@ _Reverse-Proxy Server_
 --8<-- "cloudflared-pi-server.yml"
 ```
 
-#### ZimaOS NAS
+#### :symbols-server-nas:&ensp;ZimaOS NAS
 
 ``` yaml { .mono-title title="~/.casaos/apps/cloudflared/docker-compose.yml" linenums="1" }
 --8<-- "cloudflared.yaml"

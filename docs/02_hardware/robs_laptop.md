@@ -28,7 +28,7 @@ _ASUS TUF Gaming A16_
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network (SSID: `Home`). However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](ugreen_switch.md#role){ data-preview }.
+:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network _(SSID: `Home`)_. However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](ugreen_switch.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 

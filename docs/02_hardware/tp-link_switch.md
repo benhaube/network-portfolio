@@ -41,18 +41,22 @@ _Model SG105_
 
 #### :symbols-circuit-board:&ensp;Specs
 
-:    Throughput:
+##### Throughput
 
-    - Five 1 GbE ports
-    - 10 Gb/s total switching capacity
+- Five 1 GbE ports
+{ .no-bullets }
+- 10 Gb/s total switching capacity
+{ .no-bullets }
 
-:    Jumbo Frames:
+##### Jumbo Frames
 
-    - Supported _(16 KB)_
+- Supported _(16 KB)_
+{ .no-bullets }
 
-:    Managed:
+##### Managed
 
-    - No &mdash; Unmanaged
+- No &mdash; Unmanaged
+{ .no-bullets }
 
 ## :symbols-ethernet-port:&ensp;Port Map
 
@@ -70,8 +74,15 @@ _Model SG105_
 
 !!! visual inline "Visual Indicators"
 
-    :symbols-led:&ensp;**Green LED:** 10/100/1000 Mb/s<br>
-    :symbols-led-on:&ensp;**Flashing:** Activity
+    :symbols-led:&ensp;**Green LED** 
+    
+    - 10/100/1000 Mb/s
+    { .no-bullets }
+    
+    :symbols-led-on:&ensp;**Flashing** 
+    
+    - Network Activity
+    { .no-bullets }
 
 !!! warning inline "Troubleshooting"
 

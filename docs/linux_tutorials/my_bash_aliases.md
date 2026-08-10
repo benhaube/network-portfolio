@@ -21,7 +21,7 @@ _A Great Start_
 
 !!! links "Related Links"
 
-    **Defining Bash Aliases:**
+    **Defining Bash Aliases**
     :    Here I have assembled a list of aliases that I find useful and include on all of my GNU / Linux PCs and servers. See the guide linked below for instructions on how to use these aliases on your own distribution.
 
         [Defining Bash Aliases&ensp;:symbols-square-terminal:](define_bash_aliases.md){ .md-button }

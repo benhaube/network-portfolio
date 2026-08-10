@@ -36,9 +36,10 @@ _Private Cloud_
 
 #### :symbols-link-2:&ensp;URL / Access  
 
-:    ~~<http://storage-server.internal:10081>~~
-
-:    ~~<http://storage-server-2.internal:10081>~~
+- ~~<http://storage-server.internal:10081>~~
+{ .no-bullets }
+- ~~<http://storage-server-2.internal:10081>~~
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials 
 

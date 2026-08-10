@@ -28,17 +28,22 @@ _Domain Names for Local Services_
 
 #### DNS Servers
 
-- Technitium Cluster Primary:&ensp;[:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)
-- Technitium Cluster Secondary:&ensp;[:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)
+- [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)
+{ .no-bullets }
+- [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)
+{ .no-bullets }
 
 #### Reverse Proxy
 
-- Caddy:&ensp;[:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)
+- [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)
+{ .no-bullets }
 
 #### Application Hosts
 
 - [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)
+{ .no-bullets }
 - [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)
+{ .no-bullets }
 
 ## :symbols-file-search-corner:&ensp;Technitium DNS Records
 
@@ -56,11 +61,14 @@ _Domain Names for Local Services_
 #### File Location
 
 - `/etc/caddy/Caddyfile`
+{ .no-bullets }
 
 #### Commands
 
 - `#!bash sudo nano /etc/caddy/Caddyfile` _(Open config file in `nano`)_  
+{ .no-bullets }
 - `#!bash sudo systemctl reload caddy` _(Apply changes)_
+{ .no-bullets }
 
 #### Example Caddyfile
 

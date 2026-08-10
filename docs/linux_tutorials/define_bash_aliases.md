@@ -32,11 +32,9 @@ _Increase Productivity_
 
 1.  Create a backup of your `.bashrc` file contained in your home (`~/`) directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize.
 
-    + Open a terminal window and execute the following command:
-
-        ``` bash linenums="1"
-        cp ~/.bashrc ~/.bashrc.bkp 
-        ```
+    ``` bash linenums="1"
+    cp ~/.bashrc ~/.bashrc.bkp 
+    ```
 
 2.  Check your `~/.bashrc` file to make sure it includes the following code:
 
@@ -51,7 +49,9 @@ _Increase Productivity_
         ```
 
         - ++ctrl+o++&ensp;to save
+        { .no-bullets }
         - ++ctrl+x++&ensp;to exit
+        { .no-bullets }
 
 3.  Create a new file in your home (`~/`) directory called `.bash_aliases`
 
@@ -59,9 +59,13 @@ _Increase Productivity_
     nano ~/.bash_aliases
     ```
 
-    - Write your desired aliases into this file, then&ensp;++ctrl+o++&ensp;to save the changes and&ensp;++ctrl+x++&ensp;to exit nano.
+4. Write your desired aliases into this file. 
+    - ++ctrl+o++&ensp;to save 
+    { .no-bullets }
+    - ++ctrl+x++&ensp;to exit
+    { .no-bullets }
 
-4.  Now run the command `#!bash source ~/.bashrc`, or open a new tab in your terminal application of choice.
+5.  Now run the command `#!bash source ~/.bashrc`, or open a new tab in your terminal application of choice.
     - Test one of the aliases you created to make sure they are loaded properly when a terminal session is started.
     - If your aliases were not loaded properly, check the code you entered into the `~/.bashrc` file for errors.
 
@@ -69,11 +73,9 @@ _Increase Productivity_
 
 1.  Create a backup of your `.bashrc` file contained in your home _(`~/`)_ directory. We want to have a backup of the original file before we make any changes just in case. Any errors in the `~/.bashrc` file could potentially cause the terminal to fail to initialize.
 
-    + Open a terminal window and execute the following command:
-
-        ``` bash linenums="1"
-        cp ~/.bashrc ~/.bashrc.bkp
-        ```
+    ``` bash linenums="1"
+    cp ~/.bashrc ~/.bashrc.bkp
+    ```
 
 2.  Check your `~/.bashrc` file to make sure it includes the following code:
 
@@ -88,7 +90,9 @@ _Increase Productivity_
         ```
 
         - ++ctrl+o++&ensp;to save
+        { .no-bullets }
         - ++ctrl+x++&ensp;to exit
+        { .no-bullets }
 
     !!! note
 
@@ -114,7 +118,11 @@ _Increase Productivity_
         **#!/bin/bash**
         : I prefer to put `#!/bin/bash` on the first line of the file. This is not strictly necessary, but it tells your text editor to use proper syntax highlighting for Bash if it is available. An alternative would be to give the file the `.sh` file extension. However, if you do not care about syntax highlighting in your text editor, then neither are necessary.
 
-5.  Paste or type in your desired aliases, then&ensp;++ctrl+o++&ensp;to save the changes and&ensp;++ctrl+x++&ensp;to exit nano.
+5.  Paste or type in your desired aliases. 
+    - ++ctrl+o++&ensp;to save
+    { .no-bullets }
+    - ++ctrl+x++&ensp;to exit
+    { .no-bullets }
 
 6.  Now run the command `#!bash source ~/.bashrc`, or open a new tab in your terminal application of choice.
     - Test one of the aliases you created to make sure they are loaded properly when a terminal session is started.
@@ -122,7 +130,7 @@ _Increase Productivity_
 
 !!! tip
 
-    **Recommended Aliases:**
+    **Recommended Aliases**
     :     You may be asking, "Great, but I have no idea what aliases I may want to use. Do you have any recommendations?" For those of you needing some recommendations, I have a file in this repository that contains a bunch of the aliases that I find useful, and have on my systems.
 
         [My Aliases&ensp;:symbols-square-terminal:](my_bash_aliases.md){ .md-button }

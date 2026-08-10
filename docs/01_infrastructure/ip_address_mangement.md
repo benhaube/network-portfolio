@@ -24,6 +24,7 @@ _Organized IP Address Space_
 !!! question "FAQ"
 
     **What is IPAM?**
+
     : **IP Address Management** is a systematic approach to planning, tracking, and managing IP address space and associated services like DNS and DHCP within a network.
 
 ---
@@ -33,8 +34,8 @@ _Organized IP Address Space_
 | VLAN                                                             | SSID                                                           | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Domain   | WAN Access { data-sort-method="none" } | Role / Notes                          |
 | :--------------------------------------------------------------- | :------------------------------------------------------------- | :--------------------------------- | :---------------------------------------- | :------- | :------------------------------------: | :------------------------------------ |
 | [VLAN50](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_Home_](../02_hardware/asus_rt-be92u.md#wi-fi-networks)       | `192.168.50.0/24`                  | `192.168.50.6` `192.168.50.2`             | internal |            :symbols-check:             | :symbols-shield:&nbsp;Trusted VLAN    |
-| [VLAN52](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*Home_Guest*](../02_hardware/asus_rt-be92u.md#wi-fi-networks) | `192.168.52.0/24`                  | `9.9.9.9` `149.112.112.112`               | -        |            :symbols-check:             | :symbols-user-shield:&nbsp;Guest VLAN |
-| [VLAN53](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [*2G_IoT*](../02_hardware/asus_rt-be92u.md#wi-fi-networks)     | `192.168.53.0/24`                  | `9.9.9.9` `149.122.122.122`               | -        |              :symbols-x:               | :symbols-house-shield:&nbsp;IoT VLAN  |
+| [VLAN52](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_Home_Guest_](../02_hardware/asus_rt-be92u.md#wi-fi-networks) | `192.168.52.0/24`                  | `9.9.9.9` `149.112.112.112`               | -        |            :symbols-check:             | :symbols-user-shield:&nbsp;Guest VLAN |
+| [VLAN53](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_2G_IoT_](../02_hardware/asus_rt-be92u.md#wi-fi-networks)     | `192.168.53.0/24`                  | `9.9.9.9` `149.122.122.122`               | -        |              :symbols-x:               | :symbols-house-shield:&nbsp;IoT VLAN  |
 
 ## :symbols-router:&ensp;Core Infrastructure
 
@@ -43,11 +44,11 @@ _Organized IP Address Space_
 | Device                                                                                               | VLAN   | IP Address { data-sort-method="dotsep" } | Hostname        | Type   | Role / Notes { data-sort-method="none" }                                                                                            |
 | :--------------------------------------------------------------------------------------------------- | :----- | :--------------------------------------- | :-------------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#physical-ethernet-ports)       | -      | `192.168.50.1`                           | `RT-BE92U-FAF0` | Static | Main Gateway, NTP Master, DHCP Server                                                                                               |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md#network-configuration)           | VLAN50 | `192.168.50.2`                           | `pi-server`     | Static | DNS Secondary *([Technitium](../03_services/technitium.md) cluster)*, [CUPS](../03_services/cups_print_server.md)                   |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md#network-configuration)           | VLAN50 | `192.168.50.2`                           | `pi-server`     | Static | DNS Secondary _([Technitium](../03_services/technitium.md) cluster)_, [CUPS](../03_services/cups_print_server.md)                   |
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md#network-configuration) | VLAN50 | `192.168.50.3`                           | `pi-zero`       | Static | Caddy reverse proxy server for local domain names                                                                                   |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md#network-configuration)           | VLAN50 | `192.168.50.4`                           | `ZimaOS-NAS`    | Static | Main File Server, Primary Ethernet connection _(eth0)_                                                                              |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md#network-configuration)           | VLAN50 | `192.168.50.5`                           | `ZimaOS-NAS`    | Static | SMB Multi-channel Path, Secondary Ethernet Connection _(eth1)_                                                                      |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md#network-configuration)         | VLAN50 | `192.168.50.6`                           | `debian-vm`     | Static | DNS Primary *([Technitium](../03_services/technitium.md) cluster)*, VM on [ZimaOS NAS](../02_hardware/zimaos_nas.md#virtualization) |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md#network-configuration)         | VLAN50 | `192.168.50.6`                           | `debian-vm`     | Static | DNS Primary _([Technitium](../03_services/technitium.md) cluster)_, VM on [ZimaOS NAS](../02_hardware/zimaos_nas.md#virtualization) |
 | [:symbols-router:&nbsp;ASUS RT-AX55](../02_hardware/asus_rt-ax55.md#physical-ethernet-ports)         | VLAN50 | `192.168.50.221`                         | `RT-AX55-1360`  | Static | AiMesh Node _(Backhaul)_                                                                                                            |
 | [:symbols-globe:&nbsp;Hitron Modem](../02_hardware/hitron_modem.md#network-configuration)            | -      | `192.168.100.1`                          | `N/A`           | Static | WAN Connection for [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#wan-connection)                                                  |
 

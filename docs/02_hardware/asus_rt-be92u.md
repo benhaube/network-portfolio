@@ -126,13 +126,13 @@ _Wireless Router_
 
 !!! config inline end "Critical Configurations"
 
-    :symbols-refresh-ccw-dot:&ensp;**Backup Restore:**
+    :symbols-refresh-ccw-dot:&ensp;**Backup Restore**
     : Do not restore regular ASUS settings backup. Use `backupmon` over SSH instead. This backup / restore utility does a much more comprehensive backup than the ASUS tool. It backs up the NVRAM, JFFS partition, and the external USB drive. The backups are stored on the [ZimaOS NAS](zimaos_nas.md) and the [Pi 4B Server](pi_4b_server.md).
 
-    :symbols-refresh-cw-clock:&ensp;**NTP Server:**
+    :symbols-refresh-cw-clock:&ensp;**NTP Server**
     : The router acts as the NTP server for the entire network. The "NTP-Director" feature is used to capture all NTP packets and redirect them to its own **Chrony** server, so devices that do not have their own NTP settings are still using the router to update their time.
 
-    :symbols-gauge:&ensp;**Adaptive QoS:**
+    :symbols-gauge:&ensp;**Adaptive QoS**
     : The router manages the available WAN connection bandwidth with an "Adaptive QoS" algorithm and prioritizes allocation based on the application type.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
@@ -145,7 +145,7 @@ _Wireless Router_
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
 -   The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays _(at 3:00 UTC-5)_ to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } and [Pi 4B Server](pi_4b_server.md#external-attached){ data-preview } using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON){ external-link } script.
--   **Backup Directory:**
+-   **Backup Directory**
     - ZimaOS NAS: `/media/Quick-Storage/Backup/router`
     - Pi 4B Server: `/mnt/usb-drive/smb-share/router`
 -   Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).

@@ -89,27 +89,27 @@ _Server Dashboard_
 
         Restarting the container with `#!bash docker compose restart` will not allow changes to the `.env` file to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`.
 
-    + For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file.
-    + To change a user's password, attach to the container's shell and run the following command:
+    - For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file.
+    - To change a user's password, attach to the container's shell and run the following command:
 
         ``` bash linenums="1"
         ./glance password:hash <my-password>
         ```
 
-    + Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again.
+    - Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again.
 
     :symbols-key-round:&ensp;**Server Secret:**
 
-    + The "Server Secret" needs to be set in the `glance.yml` configuration file.
-    + To generate a new server secret, attach to the container's shell and run the following command:
+    - The "Server Secret" needs to be set in the `glance.yml` configuration file.
+    - To generate a new server secret, attach to the container's shell and run the following command:
 
         ``` bash linenums="1"
         ./glance secret:make
         ```
 
-    + Copy and paste the generated string into the `glance.yml` file.
-
-        + **Example:**
+    - Copy and paste the generated string into the `glance.yml` file.
+        - **Example:**
+        { .no-bullets }
 
             ``` yaml { .mono-title title="glance.yml (snippet)" linenums="1" }
             auth:
@@ -117,7 +117,7 @@ _Server Dashboard_
             users:
             ```
 
-    + Shut the container down and start it back up using the same method shown above for user passwords.
+    - Shut the container down and start it back up using the same method shown above for user passwords.
 
 ??? change "Widgets Directory"
 
@@ -137,8 +137,8 @@ _Server Dashboard_
 
     -   The Glance dashboard widgets have been moved into their own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`.
     -   Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure.
-
-        + **Example:**
+        - **Example:**
+        { .no-bullets }
 
             ``` yaml { .mono-title title="page.yml (example)" linenums="1" }
             columns:
@@ -159,23 +159,28 @@ _Server Dashboard_
 
 ##### Stack Directory
 
-:    `/opt/stacks/glance`
+- `/opt/stacks/glance`
+{ .no-bullets }
 
 ##### Assets Directory
 
-:    `/opt/stacks/glance/assets`
+- `/opt/stacks/glance/assets`
+{ .no-bullets }
 
 ##### Config Directory
 
-:    `/opt/stacks/glance/config`
+- `/opt/stacks/glance/config`
+{ .no-bullets }
 
 ##### Pages Directory
 
-:    `/opt/stacks/glance/config/pages`
+- `/opt/stacks/glance/config/pages`
+{ .no-bullets }
 
 ##### Widgets Directory
 
-:    `/opt/stacks/glance/config/widgets`
+- `/opt/stacks/glance/config/widgets`
+{ .no-bullets }
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

@@ -34,13 +34,12 @@ _Network Documentation_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    :symbols-network:&nbsp;Local Access:
-
+- :symbols-network:&ensp;Local Access:
+{ .no-bullets }
     - <http://storage-server.internal:8080>
     - <http://storage-server-2.internal:8080>
-
-:    :symbols-globe-arrow:&nbsp;Remote Access:
-
+- :symbols-globe-arrow:&ensp;Remote Access:
+{ .no-bullets }
     - <https://portfolio.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials 
@@ -59,15 +58,18 @@ _Network Documentation_
 
 ##### Docker Deploy
 
-:    `../AppData/dockge/stacks/network-documentation-portfolio`
+- `../AppData/dockge/stacks/network-documentation-portfolio`
+{ .no-bullets }
 
 ##### Nginx Server Config
 
-:    `../AppData/Network-Portfolio/default.conf`
+- `../AppData/Network-Portfolio/default.conf`
+{ .no-bullets }
 
 ##### Site Data
 
-:    `../AppData/Network-Portfolio/site`
+- `../AppData/Network-Portfolio/site`
+{ .no-bullets }
 
 #### :symbols-file-cog:&ensp;Config File
 

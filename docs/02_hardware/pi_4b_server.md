@@ -35,9 +35,10 @@ _Secondary DNS Server_
 
 #### :symbols-host:&ensp;Hostname
 
-:    `pi-server` _(VLAN50 / `eth0`)_
-
-:    `home-assistant` _(VLAN53 / `wlan0`)_
+-    `pi-server` _(VLAN50 / `eth0`)_
+{ .no-bullets }
+-    `home-assistant` _(VLAN53 / `wlan0`)_
+{ .no-bullets }
 
 #### :symbols-map-pin:&ensp;Location
 

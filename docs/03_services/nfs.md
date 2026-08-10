@@ -37,12 +37,11 @@ _Network File System_
 
 #### :symbols-link-2:&ensp;URL / Access  
 
-:    :symbols-folder-tree:&nbsp;Network Storage:
-
+- :symbols-folder-tree:&ensp;Network Storage:
+{ .no-bullets }
     - `192.168.50.4:/media/Quick-Storage`
-
-:    :symbols-folder-git-2:&nbsp;Application Data:
-
+- :symbols-folder-git-2:&ensp;Application Data:
+{ .no-bullets }
     - `192.168.50.4:/media/nvme0n1p1`
 
 #### :symbols-user-key:&ensp;Credentials 

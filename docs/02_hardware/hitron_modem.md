@@ -56,13 +56,15 @@ _DOCSIS 3.1 Cable Modem_
 
 !!! config inline "Critical Configurations"
 
-    :symbols-globe-off:&ensp;**WAN Down:**
+    :symbols-globe-off:&ensp;**WAN Down**
 
     - If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
+    { .no-bullets }
 
-    :symbols-monitor-cog:&ensp;**Access WebUI:**
+    :symbols-monitor-cog:&ensp;**Access WebUI**
 
     - To access the modem's Web UI enter `https://192.168.100.1`.
+    { .no-bullets }
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 

@@ -34,7 +34,10 @@ _NTP Server_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    `192.168.50.1:123`&ensp;`asusrouter.internal:123`
+- `192.168.50.1:123`
+{ .no-bullets }
+- `asusrouter.internal:123`
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials
 

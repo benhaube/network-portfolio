@@ -33,36 +33,35 @@ _File Synchronization_
 
 #### :symbols-hash:&ensp;Port(s) 
 
-:    `8384`&emsp;`22000`&emsp;`21027`
+- `8384`
+{ .no-bullets }
+- `22000`
+{ .no-bullets }
+- `21027`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access   
 
-:    :symbols-pc-case:&nbsp;Ben's Desktop
-
+- :symbols-pc-case:&ensp;Ben's Desktop
+{ .no-bullets }
     - <https://bens-workstation.internal:8384>
-
-:    :symbols-laptop-minimal:&nbsp;Ben's Laptop
-
+- :symbols-laptop-minimal:&ensp;Ben's Laptop
+{ .no-bullets }
     - <https://localhost:8384>
-
-:    :symbols-smartphone:&nbsp;Ben's Smartphone
-
+- :symbols-smartphone:&ensp;Ben's Smartphone
+{ .no-bullets }
     - <https://localhost:8384>
-
-:    :symbols-layers:&nbsp;Debian Server
-
+- :symbols-layers:&ensp;Debian Server
+{ .no-bullets }
     - <https://debian-vm.internal:8384>
-
-:    :symbols-server:&nbsp;Pi 4B Server
-
+- :symbols-server:&ensp;Pi 4B Server
+{ .no-bullets }
     - <https://pi-server.internal:8384>
-
-:    :symbols-server:&nbsp;Pi Zero 2W Server
-
+- :symbols-server:&ensp;Pi Zero 2W Server
+{ .no-bullets }
     - <https://pi-zero.internal:8384>
-
-:    :symbols-server-nas:&nbsp;ZimaOS NAS
-
+- :symbols-server-nas:&ensp;ZimaOS NAS
+{ .no-bullets }
     - <https://storage-server.internal:8384>
     - <https://storage-server-2.internal:8384>
 
@@ -94,7 +93,7 @@ _File Synchronization_
 
 #### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
 
--   :brands-fedora:&nbsp;Fedora / RHEL:
+:    :brands-fedora:&ensp;Fedora / RHEL:
 
     ``` bash linenums="1"
     sudo dnf install -y syncthing
@@ -102,7 +101,7 @@ _File Synchronization_
     sudo systemctl start syncthing@bhaube.service
     ```
 
--   :brands-debian:&nbsp;Debian 13 _(trixie)_:
+:    :brands-debian:&ensp;Debian 13 _(trixie)_:
 
     ``` bash linenums="1"
     sudo apt install -y syncthing
@@ -110,7 +109,7 @@ _File Synchronization_
     sudo systemctl start syncthing@server-admin.service
     ```
 
--   :brands-raspberry-pi:&nbsp;Raspberry Pi OS Lite _(also Debian 13)_:
+:    :brands-raspberry-pi:&ensp;Raspberry Pi OS Lite _(also Debian 13)_:
 
     ``` bash linenums="1"
     sudo apt install -y syncthing
@@ -118,7 +117,7 @@ _File Synchronization_
     sudo systemctl start syncthing@admin.service
     ```
 
--   :brands-android-2:&nbsp;Android:
+:    :brands-android-2:&ensp;Android:
 
     [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
@@ -126,6 +125,6 @@ _File Synchronization_
 
 ##### ZimaOS NAS
 
-``` yaml { .mono-title title="../.casaos/apps/syncthing/docker-compose.yml" linenums="1" }
+``` yaml { .mono-title title="~/.casaos/apps/syncthing/docker-compose.yml" linenums="1" }
 --8<-- "syncthing-zima.yml"
 ```

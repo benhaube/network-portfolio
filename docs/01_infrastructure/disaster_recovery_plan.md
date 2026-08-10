@@ -41,15 +41,15 @@ _Maintaining High Availability_
 
     To prevent data loss, the **"3-2-1" backup strategy** is applied across the infrastructure.
 
-    **Three** copies of the data:
+    **Three** copies of the data...
 
     - This includes the production copy and two backups
 
-    **Two** media types:
+    **Two** media types...
 
     - Data is stored on local drives and a NAS.
 
-    **One** off-site copy:
+    **One** off-site copy...
 
     - The most important data has a copy stored off-site with Backblaze B2.
 
@@ -63,8 +63,8 @@ _Maintaining High Availability_
 
 ### Cold Storage
 
-- Critical database dumps *([Home Assistant](../03_services/home_assistant.md), [Immich](../03_services/immich.md) PostgreSQL)* are exported weekly to the **USB Storage _(32GB)_** attached to the Pi 4B Server and the **NVMe Storage _(500GB)_** on the ZimaOS NAS.
-- The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#role){ data-preview } wireless router is exported weekly _(Sundays @ 1:00 UTC-5)_ to the **USB Storage _(32GB)_** attached to the Pi 4B Server and the **Quick-Storage _(2TB)_** on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/){ external-link } firmware.
+- Critical database dumps _([Home Assistant](../03_services/home_assistant.md), [Immich](../03_services/immich.md) PostgreSQL)_ are exported weekly to the **USB Storage** _(32GB)_ attached to the Pi 4B Server and the **NVMe Storage** _(500GB)_ on the ZimaOS NAS.
+- The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#role){ data-preview } wireless router is exported weekly _(Sundays @ 1:00 UTC-5)_ to the **USB Storage** _(32GB)_ attached to the Pi 4B Server and the **Quick-Storage** _(2TB)_ on the ZimaOS NAS via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/){ external-link } firmware.
 
 ### Off-Site / Cloud
 
@@ -76,7 +76,7 @@ _Maintaining High Availability_
 
 ##### Automated Failover
 
-- The [Technitium](../03_services/technitium.md) DNS Node *([Pi 4B Server](../02_hardware/pi_4b_server.md))* is configured as a secondary resolver in the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#virtual-local-networks){ data-preview } DHCP settings. Clients will automatically fallback to the Pi 4B.  
+- The [Technitium](../03_services/technitium.md) DNS Node _([Pi 4B Server](../02_hardware/pi_4b_server.md))_ is configured as a secondary resolver in the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#virtual-local-networks){ data-preview } DHCP settings. Clients will automatically fallback to the Pi 4B.  
 
 ##### Re-provisioning
 

@@ -37,12 +37,11 @@ _A Simple, Modern VPN_
 
 #### :symbols-link-2:&ensp;URL / Access  
 
-:    :symbols-waypoints:&nbsp;Server Endpoint:
-
+- :symbols-waypoints:&ensp;Server Endpoint:
+{ .no-bullets }
     - `rac3r4life.myaddr.dev:41820`
-
-:    :symbols-monitor-cog:&nbsp;Web UI Admin:
-
+- :symbols-monitor-cog:&ensp;Web UI Admin:
+{ .no-bullets }
     - <https://asusrouter.internal:8443/Advanced_VPNServer_Content.asp>
 
 #### :symbols-user-key:&ensp;Credentials 
@@ -53,7 +52,7 @@ _A Simple, Modern VPN_
 
 #### :symbols-monitor-smartphone:&ensp;Client Profiles
 
-:    :symbols-router:&nbsp;ASUS RT-BE92U:
+:    :symbols-router:&ensp;ASUS RT-BE92U:
 
     - `Ben's-Phone`
     - `Ben's-Laptop`

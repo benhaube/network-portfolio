@@ -35,9 +35,10 @@ _An Eye on Your System_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    <http://pi-server.internal:61208>
-
-:    <http://storage-server.internal:61208>
+- <http://pi-server.internal:61208>
+{ .no-bullets }
+- <http://storage-server.internal:61208>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -56,13 +57,17 @@ _An Eye on Your System_
 
 ##### Pi 4B Server
 
-:    `/opt/stacks/glances/glances.conf`
-:    `/opt/stacks/glances/compose.yaml`
+- `/opt/stacks/glances/glances.conf`
+{ .no-bullets }
+- `/opt/stacks/glances/compose.yaml`
+{ .no-bullets }
 
 ##### ZimaOS NAS
 
-:    `../AppData/glances/glances.conf`
-:    `../AppData/dockge/stacks/glances/compose.yaml`
+- `../AppData/glances/glances.conf`
+{ .no-bullets }
+- `../AppData/dockge/stacks/glances/compose.yaml`
+{ .no-bullets }
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

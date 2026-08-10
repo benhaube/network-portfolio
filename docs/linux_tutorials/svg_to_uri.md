@@ -32,8 +32,11 @@ hide:
 To complte this tutorial you will need the following packages:
 
 + `nodejs` *(Javascript runtime)*
+{ .no-bullets }
 + `wl-copy` *(On Wayland-based systems)*
+{ .no-bullets }
 + `xclip` *(On Xorg-based systems)*
+{ .no-bullets }
 
 ## :symbols-terminal:&ensp;The Command
 
@@ -46,8 +49,10 @@ cat <your-icon>.svg | node -e "const fs = require('fs'); console.log('data:image
 ### Changing the Color & Size
 
 + You can change the color by adding a `fill` attribute to either the main `<svg>` tag or the specific `<path>` tag. 
+{ .no-bullets }
     + You can use standard hex codes, RGB values, or CSS color names.
 + To scale the icon up or down, leave the `viewBox` alone and explicitly define the `width` and `height` attributes.
+{ .no-bullets }
     + Material Design icons, for example, typically use a `viewBox="0 0 24 24"`.
 
 #### The CLI Power-User Route
@@ -115,13 +120,13 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
 Now you can pipe any SVG directly into your new command. 
 
-+ If you just want the raw conversion:
+:    If you just want the raw conversion:
 
     ``` bash linenums="1"
     cat <your-icon>.svg | svg2uri
     ```
 
-+ Or, if you want to use the `sed` trick I mentioned above to inject a color or change size before it gets encoded, you can just chain them together:
+:    Or, if you want to use the `sed` trick I mentioned above to inject a color or change size before it gets encoded, you can just chain them together:
 
     ``` bash linenums="1"
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri

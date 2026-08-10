@@ -41,19 +41,24 @@ _Model UM106X_
 
 #### :symbols-circuit-board:&ensp;Specs
 
-:    Throughput:
+##### Throughput
 
-    - Five 2.5 Gb/s Ports
-    - One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview } router)*
-    - 45 Gb/s Total Switching Capacity
+- Five 2.5 Gb/s Ports
+{ .no-bullets }
+- One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview } router)*
+{ .no-bullets }
+- 45 Gb/s Total Switching Capacity
+{ .no-bullets }
 
-:    Jumbo Frames:
+##### Jumbo Frames
 
-    - Supported _(12 KB)_
+- Supported _(12 KB)_
+{ .no-bullets }
 
-:    Managed:
+##### Managed
 
-    - No &mdash; Unmanaged
+- No &mdash; Unmanaged
+{ .no-bullets }
 
 ## :symbols-ethernet-port:&ensp;Port Map
 
@@ -72,17 +77,23 @@ _Model UM106X_
 
 !!! visual inline "Visual Indicators"
 
-    **Ethernet Ports:**
+    **Ethernet Ports**
 
-    :symbols-led:&ensp;**Green LED:** 2500 Mb/s <br>
-    :symbols-led:&ensp;**Amber LED:** 10/100/1000 Mb/s <br>
-    :symbols-led-on:&ensp;**Flashing:** Activity
+    - :symbols-led:&ensp;**Green:** 2500 Mb/s 
+    { .no-bullets }
+    - :symbols-led:&ensp;**Amber:** 10/100/1000 Mb/s
+    { .no-bullets }
+    - :symbols-led-on:&ensp;**Flashing:** Network Activity
+    { .no-bullets }
 
-    **SFP+ Port:**
+    **SFP+ Port**
 
-    :symbols-led:&ensp;**Green LED:** 10 Gb/s <br>
-    :symbols-led:&ensp;**Amber LED:** 1000 / 2500 Mb/s <br>
-    :symbols-led-on:&ensp;**Flashing:** Activity
+    - :symbols-led:&ensp;**Green:** 10 Gb/s 
+    { .no-bullets }
+    - :symbols-led:&ensp;**Amber:** 1000 / 2500 Mb/s
+    { .no-bullets }
+    - :symbols-led-on:&ensp;**Flashing:** Network Activity
+    { .no-bullets }
 
 !!! warning inline "Troubleshooting"
 

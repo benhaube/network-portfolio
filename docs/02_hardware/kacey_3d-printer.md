@@ -28,13 +28,13 @@ _Modified Creality K1C_
 
 ???+ links inline end "Extra Links"
 
-    See more detailed information about the Creality K1C hardware:
+    See more detailed information about the Creality K1C hardware...
 
     [More Kacey Info&ensp;:brands-creality-v2:](kacey_info.md){ .md-button }
 
 #### :symbols-toolbox:&ensp;Role
 
-:    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi (SSID: `Home`). Affectionately, named 'Kacey' as a play on the model name, K1C.
+:    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi _(SSID: `Home`)_. Affectionately, named 'Kacey' as a play on the model name, K1C.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -47,11 +47,12 @@ _Modified Creality K1C_
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-creality-v2:&ensp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer){ external-link }
-
-:    [:symbols-tux:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
-
-:    [:services-klipper:&ensp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }
+- [:brands-creality-v2:&ensp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer){ external-link }
+{ .no-bullets }
+- [:symbols-tux:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
+{ .no-bullets }
+- [:services-klipper:&ensp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -102,28 +103,35 @@ _Modified Creality K1C_
 
 ???+ config "Modifications"
 
-    :symbols-cpu:&ensp;**Firmware:**
+    :symbols-cpu:&ensp;**Firmware**
 
-    - The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ external-link }.  See documentation for configuration issues.
+    :    The standard firmware from Creality is heavily modified with the [Creality Helper Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ external-link }.  See documentation for configuration issues.
 
-    :symbols-package:&ensp;**Software:**
+    :symbols-package:&ensp;**Software**
 
-    -   Fluidd
+    :   Fluidd
+    
         - For information regarding the [Fluidd](../03_services/fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ external-link }.  
-    -   Klipper / Moonraker
+    
+    :   Klipper / Moonraker
+    
         - For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/){ external-link }.
         - Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/){ external-link }.
 
-    :symbols-printer-3d-nozzle:&ensp;**Hardware:**
+    :symbols-printer-3d-nozzle:&ensp;**Hardware**
 
-    -   [Bed Leveling Knobs](../3d_printing/k1_bed_level_knobs.md)
+    :   [Bed Leveling Knobs](../3d_printing/k1_bed_level_knobs.md)
+    
         - Changes from a fixed bed to an adjustable bed with aluminum knobs.
-    -   [PROWIPER^&copy;^ Mod](../3d_printing/prowiper_mod.md)
+    
+    :   [PROWIPER^&copy;^ Mod](../3d_printing/prowiper_mod.md)
+    
         - Replaces the standard nozzle wiping brush at the back of the build plate.
 
-    :symbols-file-code-corner:&ensp;**Custom G-Code Macros:**
+    :symbols-file-code-corner:&ensp;**Custom G-Code Macros**
 
-    -   [Manual Nozzle Cleaning Macro](../3d_printing/manual_nozzle_cleaning_macro.md)
+    :   [Manual Nozzle Cleaning Macro](../3d_printing/manual_nozzle_cleaning_macro.md)
+    
         - This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process

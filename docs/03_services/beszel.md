@@ -31,13 +31,10 @@ _Server Monitoring_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    Hub:
-
-    - `8090`
-
-:    Agent:
-
-    - `45867`
+- Hub:&ensp;`8090`
+{ .no-bullets }
+- Agent:&ensp;`45867`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access  
 
@@ -45,14 +42,13 @@ _Server Monitoring_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
-
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-
+- [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
-
-:    2FA / MFA
-
+- 2FA / MFA
+{ .no-bullets }
     - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details

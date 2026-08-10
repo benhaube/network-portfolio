@@ -36,12 +36,11 @@ _Port Monitoring & Discovery_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    Pi 4B Server:
-
+- :symbols-server:&ensp;Pi 4B Server:
+{ .no-bullets }
     - <http://pi-server.internal:4999>
-
-:    ZimaOS NAS:
-
+- :symbols-server-nas:&ensp;ZimaOS NAS:
+{ .no-bullets }
     - <http://storage-server.internal:4999>
     - <http://storage-server-2.internal:4999>
 

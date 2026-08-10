@@ -35,9 +35,10 @@ _Download Videos from YouTube_
 
 #### :symbols-link-2:&ensp;URL / Access   
 
-:    <http://storage-server.internal:3033>
-
-:    <http://storage-server-2.internal:3033>
+- <http://storage-server.internal:3033>
+{ .no-bullets }
+- <http://storage-server-2.internal:3033>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials 
 

@@ -34,33 +34,34 @@ _Git with a Cup of Tea_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    `3080`&emsp;`222`
+- `3080` 
+{ .no-bullets }
+- `222`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    Web-UI:
-
+- Web-UI:
+{ .no-bullets }
     - <http://storage-server.internal:3080>
     - <http://storage-server-2.internal:3080>
-
-:    SSH:
-
+- SSH:
+{ .no-bullets }
     - `git@storage-server.internal:222`
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:brands-gitlab:&ensp;GitLab OAuth](https://gitlab.com/-/user_settings/applications){ external-link }
-
-:    [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
-
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-
+- [:brands-gitlab:&ensp;GitLab OAuth](https://gitlab.com/-/user_settings/applications){ external-link }
+{ .no-bullets }
+- [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
-      - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
-      - SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
-
-:    2FA / MFA
-
+    - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
+    - SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
+- 2FA / MFA
+{ .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
     - :symbols-clock:&ensp;TOTP
 
@@ -79,19 +80,23 @@ _Git with a Cup of Tea_
 
 ##### Gitea App Data
 
-:    `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data`
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data`
+{ .no-bullets }
 
 ##### Repo Data
 
-:    `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/git/repositories`
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/git/repositories`
+{ .no-bullets }
 
 ##### SSH Data
 
-:    `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/ssh`
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/ssh`
+{ .no-bullets }
 
 ##### Runner Data
 
-:    `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`
+- `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`
+{ .no-bullets }
 
 #### :symbols-file-cog:&ensp;Config File
 

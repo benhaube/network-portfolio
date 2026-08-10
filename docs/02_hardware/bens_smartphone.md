@@ -26,7 +26,7 @@ _Google Pixel 9 Pro_
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network (SSID: `Home`).
+:    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
 #### :symbols-host:&ensp;Hostname 
 
@@ -49,16 +49,21 @@ _Google Pixel 9 Pro_
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-:    Software:
+##### Software
 
-    - :symbols-key-fido2:&nbsp;Titan M2 security chip _(FIDO2 / WebAuthn)_
-    - :symbols-shield-keyhole:&nbsp;Full-disk encryption
-    - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
+- :symbols-key-fido2:&nbsp;Titan M2 security chip _(FIDO2 / WebAuthn)_
+{ .no-bullets }
+- :symbols-shield-keyhole:&nbsp;Full-disk encryption
+{ .no-bullets }
+- :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
+{ .no-bullets }
 
-:    Biometric:
+##### Biometric
 
-    - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
-    - :symbols-scan-face:&nbsp;Face Scan
+- :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
+{ .no-bullets }
+- :symbols-scan-face:&nbsp;Face Scan
+{ .no-bullets }
 
 ## :symbols-circuit-board:&ensp;Core Specs
 
@@ -110,27 +115,37 @@ _Google Pixel 9 Pro_
 
 !!! config inline end "Critical Configurations"
 
-    :symbols-waypoints:&ensp;**VPN:**
+    :symbols-waypoints:&ensp;**VPN**
 
     - The [WireGuard](../03_services/wireguard_server.md) VPN is used for remote access to the LAN.
+    { .no-bullets }
     - [ASUS RT-BE92U](asus_rt-be92u.md) is the primary server, and [ZimaOS NAS](zimaos_nas.md) is the secondary / backup server.
+    { .no-bullets }
     - The VPN is configured through the WireGuard application, and has both profiles loaded. The default profile connects to the ASUS router
+    { .no-bullets }
 
-    :symbols-message-square-dot:&ensp;**Push Notifications:**
+    :symbols-message-square-dot:&ensp;**Push Notifications**
 
     - The [Gotify](../03_services/gotify.md) application is installed for instant push notifications regarding the essential network infrastructure.
+    { .no-bullets }
     - Log into the app with the "admin" user.
+    { .no-bullets }
 
-    :symbols-mail-open:&ensp;**Email Client:**
+    :symbols-mail:&ensp;**Email Client**
 
     - The standard Gmail app has been disabled and replaced with [Thunderbird](https://www.thunderbird.net/en-US/mobile/){ external-link } _(formerly K9-Mail)_ on this mobile device.
+    { .no-bullets }
     - Account and app settings are backed up to the [ZimaOS NAS](zimaos_nas.md) with [Syncthing](../03_services/syncthing.md)
+    { .no-bullets }
 
-    :symbols-calendar-sync:&ensp;**Calendar & Tasks:**
+    :symbols-calendar-sync:&ensp;**Calendar & Tasks Sync**
 
     - The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar](https://github.com/FossifyOrg/Calendar){ external-link } and [Tasks.org](https://tasks.org/){ external-link } _(Installed via F-Droid)_.
+    { .no-bullets }
     - Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/){ external-link } application.
+    { .no-bullets }
     - The calendar and tasks service is hosted by [Fastmail](https://fastmail.com){ external-link }.
+    { .no-bullets }
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
@@ -165,5 +180,7 @@ _Google Pixel 9 Pro_
 ##### Other Apps
 
 - Other applications that allow exporting settings / data are backed up to the **ZimaOS NAS** via **Syncthing**.
-- Local directory: `/backups`
-- NAS directory: `/media/Quick-Storage/Backup/Pixel-9-Pro`
+    - Local directory: `/backups`
+    { .no-bullets }
+    - NAS directory: `/media/Quick-Storage/Backup/Pixel-9-Pro`
+    { .no-bullets }

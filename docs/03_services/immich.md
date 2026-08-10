@@ -35,13 +35,12 @@ _Bye Bye, Google Photos_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    :symbols-network:&nbsp;Local Access:
-
+- :symbols-network:&ensp;Local Access:
+{ .no-bullets }
     - <http://storage-server.internal:2283>
     - <http://storage-server-2.internal:2283>
-
-:    :symbols-globe-arrow:&nbsp;Remote Access:
-
+- :symbols-globe-arrow:&ensp;Remote Access:
+{ .no-bullets }
     - <https://immich.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials  
@@ -66,27 +65,33 @@ _Bye Bye, Google Photos_
 
 ##### Docker Deploy
 
-:    `~/.casaos/apps/immich/docker-compose.yml`
+- `~/.casaos/apps/immich/docker-compose.yml`
+{ .no-bullets }
 
 ##### Database
 
-:    `../AppData/immich/pgdata`
+- `../AppData/immich/pgdata`
+{ .no-bullets }
 
 ##### Machine Learning Data
 
-:    `../AppData/immich/model-cache`
+- `../AppData/immich/model-cache`
+{ .no-bullets }
 
 ##### Immich-Redis Data
 
-:    `../AppData/immich/redis`
+- `../AppData/immich/redis`
+{ .no-bullets }
 
 ##### Server Data
 
-:    `/media/Quick-Storage/Gallery/immich`
+- `/media/Quick-Storage/Gallery/immich`
+{ .no-bullets }
 
 ##### Photo Library
 
-:    `/media/Quick-Storage/Gallery/immich/library`
+- `/media/Quick-Storage/Gallery/immich/library`
+{ .no-bullets } 
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

@@ -88,7 +88,7 @@ _AiMesh Node_
 
 !!! config inline "Critical Configurations"
 
-    **:symbols-hub:&ensp;AiMesh Node:**
+    **:symbols-hub:&ensp;AiMesh Node**
     : The AiMesh Node acts like a "dumb" wireless access point. All available settings for the AiMesh node are available through the main router's Web-UI. See [ASUS RT-BE92U](asus_rt-be92u.md#role){ data-preview }.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process

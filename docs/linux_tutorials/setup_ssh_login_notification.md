@@ -26,8 +26,7 @@ _With Email SMTP and Gotify_
 
 ## :symbols-monitor-arrow-down-corner:&ensp;Install Required Packages
 
-**Dependencies:**
-: In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
+In order to send email notifications from a headless server we need to install the required packages. The `msmtp` package is a lightweight CLI utility for sending email using SMTP.
 
 1.  For **Debian / Ubuntu** based systems, execute:
 
@@ -43,8 +42,7 @@ _With Email SMTP and Gotify_
 
 ## :symbols-key-round:&ensp;Configure Your Email Credentials
 
-**Config File:**
-: Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
+Now we need to create the configuration file for `msmtp` so that it can log into your email account with the proper SMTP server information to send email on your behalf.
 
 1.  Using the text editor of your choice _(e.g., nano)_, create a configuration file, `/etc/msmtprc`:
 
@@ -63,7 +61,9 @@ _With Email SMTP and Gotify_
 3.  Fill in the configuration file with your email address and the correct server information for your email provider.
 4.  Save and close the `/etc/msmtprc` configuration file.
     - ++ctrl+o++&ensp;to save
+    { .no-bullets }
     - ++ctrl+x++&ensp;to close
+    { .no-bullets }
 5.  Set restrictive permissions for the configuration file.
 
     ``` bash linenums="1"
@@ -83,7 +83,8 @@ _With Email SMTP and Gotify_
 
     ???+ tip
 
-        **2FA / MFA**  
+        **2FA / MFA** 
+
         : If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
     !!! security 
@@ -102,6 +103,7 @@ _With Email SMTP and Gotify_
 ???+ question
 
     **What is PAM?**
+
     : **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
 
 1.  Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
@@ -132,12 +134,13 @@ _With Email SMTP and Gotify_
 
 2.  Save and close the file:
     - ++ctrl+o++&ensp;to save
+    { .no-bullets }
     - ++ctrl+x++&ensp;to close
+    { .no-bullets }
 
 ## :symbols-file-terminal:&ensp;Creating the Shell Script
 
-**The Script:**
-: Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMTP server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
+Finally, it is time to create the shell script. The shell script is vital. It is what does all the work to send the email notification when you start an SSH session. It will use `msmtp` to log into your email provider's SMTP server using the configuration and password we provided earlier. The PAM, `pam_exec.so`, we configured for `sshd` will run this script every time a new SSH session begins.
 
 1.  Create the shell script:
 
@@ -155,7 +158,9 @@ _With Email SMTP and Gotify_
 
 3.  Save and close the file:
     - ++ctrl+o++&ensp;to save
+    { .no-bullets }
     - ++ctrl+x++&ensp;to close
+    { .no-bullets }
 4.  Give execute permission to the script:
 
     ``` bash linenums="1"
@@ -181,8 +186,7 @@ _With Email SMTP and Gotify_
 
 ## :symbols-badge-alert:&ensp;Bonus
 
-**Gotify:**
-: If you have a [Gotify](../03_services/gotify.md) instance, you can use it to send instantaneous push notifications when a new SSH session is established using the same method. However, since Gotify uses a dead-simple REST API, literally anything that can execute a standard `curl` command or send an HTTP `POST` request can trigger a push notification. That means there are no extra configurations or packages required. Just a simple Bash script using the tools built into every Linux distribution.
+If you have a [Gotify](../03_services/gotify.md) instance, you can use it to send instantaneous push notifications when a new SSH session is established using the same method. However, since Gotify uses a dead-simple REST API, literally anything that can execute a standard `curl` command or send an HTTP `POST` request can trigger a push notification. That means there are no extra configurations or packages required. Just a simple Bash script using the tools built into every Linux distribution.
 
 1.  Open your Gotify Web-UI dashboard, create a new App named "SSH", and take note of the App token. We will paste the App token into the Bash script.
 2.  Create the shell script:
@@ -203,7 +207,9 @@ _With Email SMTP and Gotify_
 
 4.  Save and close the file:
     - ++ctrl+o++&ensp;to save
+    { .no-bullets }
     - ++ctrl+x++&ensp;to close
+    { .no-bullets }
 5.  Set restrictive permissions, allow execution, and ensure `root` ownership of the `gotify-ssh-alert.sh` file:
     - This is an important security step because the script contains the secret token that authenticates with the Gotify server.
 
@@ -242,17 +248,17 @@ _With Email SMTP and Gotify_
 
 ???+ tip
 
-    :symbols-message-square-warning:&ensp;**Unattended Upgrades Notifications:**
+    :symbols-message-square-warning:&ensp;**Unattended Upgrades Notifications**
     : To use the `msmtp` email account configuration with `unattended-upgrades` you need to add a 'Sender' line to the config file to avoid the following error.
 
     !!! failure "Error"
 
-        **Error 551 5.7.1:** 
+        **Error 551 5.7.1** 
         : Not authorised to send from this header address.
 
     ---
 
-    :symbols-wrench:&ensp;**The Fix:**
+    :symbols-wrench:&ensp;**The Fix**
 
     1. Open the configuration file in a text editor:
 
@@ -269,7 +275,9 @@ _With Email SMTP and Gotify_
     3. Save and close the config file:
 
         - ++ctrl+o++&ensp;to save
+        { .no-bullets }
         - ++ctrl+x++&ensp;to close
+        { .no-bullets }
 
     4. Restart the `unattended-upgrades` Systemd service:
 

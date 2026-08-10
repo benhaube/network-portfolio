@@ -36,14 +36,13 @@ _Push Notifications_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    :symbols-network:&nbsp;Local Access:
-
+- :symbols-network:&ensp;Local Access:
+{ .no-bullets }
     - <http://storage-server.internal:8180>
-      - <http://storage-server-2.internal:8180>
-
-:    :symbols-globe-arrow:&nbsp;Remote Access:
-
-    - <https://gotify.rac3r4life.online> &mdash;&nbsp;:symbols-webhook:&nbsp;_Use for notification webhook_
+    - <http://storage-server-2.internal:8180>
+- :symbols-globe-arrow:&ensp;Remote Access:
+{ .no-bullets }
+    - <https://gotify.rac3r4life.online> &mdash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
 
 #### :symbols-user-key:&ensp;Credentials 
 
@@ -76,13 +75,17 @@ _Push Notifications_
 
 ##### Docker Deploy
 
-:    `../AppData/dockge/stacks/gotify/compose.yaml`
+-    `../AppData/dockge/stacks/gotify/compose.yaml`
+{ .no-bullets }
 
 ##### App Data
 
-:    `../AppData/dockge/stacks/gotify/data/gofify.db`
-:    `../AppData/dockge/stacks/gotify/data/images/`
-:    `../AppData/dockge/stacks/gotify/data/plugins/`
+- `../AppData/dockge/stacks/gotify/data/gofify.db`
+{ .no-bullets }
+- `../AppData/dockge/stacks/gotify/data/images/`
+{ .no-bullets }
+- `../AppData/dockge/stacks/gotify/data/plugins/`
+{ .no-bullets }
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

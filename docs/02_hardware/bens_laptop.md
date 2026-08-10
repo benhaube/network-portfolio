@@ -29,7 +29,7 @@ _ThinkPad X1 Carbon_
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network (SSID: `Home`).
+:    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
 #### :symbols-host:&ensp;Hostname
 
@@ -52,31 +52,44 @@ _ThinkPad X1 Carbon_
 
 #### :symbols-brick-wall-shield:&ensp;Device Security
 
-:    HSI-4
+##### Firmware
 
-:    Firmware:
+- BIOS rollback protection
+{ .no-bullets }
+- IOMMU
+{ .no-bullets }
+- Linux kernel lockdown
+{ .no-bullets }
+- Pre-boot DMA protection
+{ .no-bullets }
+- SMAP
+{ .no-bullets }
+- Suspend-to-idle: enabled
+{ .no-bullets }
+- Suspend-to-RAM: disabled
+{ .no-bullets }
+- TPM v2.0
+{ .no-bullets }
+- UEFI memory protection
+{ .no-bullets }
+- UEFI Secure Boot
+{ .no-bullets }
 
-    - BIOS rollback protection
-    - IOMMU
-    - Linux kernel lockdown
-    - Pre-boot DMA protection
-    - SMAP
-    - Suspend-to-idle: enabled
-    - Suspend-to-RAM: disabled
-    - TPM v2.0
-    - UEFI memory protection
-    - UEFI Secure Boot
+##### Software
 
-:    Software:
+- :symbols-arrow-right-left:&nbsp;Linux swap encryption
+{ .no-bullets }
+- :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
+{ .no-bullets }
+- :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user
+{ .no-bullets }
 
-    - :symbols-arrow-right-left:&nbsp;Linux swap encryption
-    - :symbols-shield-keyhole:&nbsp;LUKS2 drive encryption
-    - :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user
+##### Biometric
 
-:    Biometric:
-
-    - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
-    - :symbols-scan-face:&nbsp;IR Face Scan
+- :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
+{ .no-bullets }
+- :symbols-scan-face:&nbsp;IR Face Scan
+{ .no-bullets }
 
 ## :symbols-circuit-board:&ensp;Core Specs
 
@@ -190,24 +203,24 @@ _ThinkPad X1 Carbon_
 
 #### :symbols-file-terminal:&ensp;Backup Script
 
-1.  Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
+1.  Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
-    ``` bash { .mono-title title="home-bkp-nas.sh" linenums="1" hl_lines="5 40 61 62" }
+    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="1" hl_lines="5 40 61 62" }
     --8<-- "home-bkp-nas.sh"
     ```
 
     1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
     2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
 
-2.  Place `.bkp-exclude-nas` in the `~/` directory.
+2.  Place `.bkp-exclude-nas` in the home _(`~/`)_ directory.
 
-    ``` kconfig { .mono-title title=".bkp-exclude-nas" linenums="1" }
+    ``` kconfig { .mono-title title="~/.bkp-exclude-nas" linenums="1" }
     --8<-- "bkp-exclude-nas"
     ```
 
-3.  Run the command `#!bash mkdir -p ~/.var/log` to create the log directory.
-4.  Run the command `#!bash touch ~/.var/log/backup_log.log` to create the empty log file.
-5.  Place `home-backup` in the `/etc/logrotate.d/` directory.
+3.  Run the command `#!bash mkdir -p ~/.var/log` to create the log directory.
+4.  Run the command `#!bash touch ~/.var/log/backup_log.log` to create the empty log file.
+5.  Place `home-backup` in the `/etc/logrotate.d/` directory.
 
     ``` nginx { .mono-title title="/etc/logrotate.d/home-backup" linenums="1" }
     --8<-- "logrotate-home-backup"
@@ -215,11 +228,11 @@ _ThinkPad X1 Carbon_
 
 6.  Place `home-bkp-nas.timer` and `home-bkp-nas.service` in the `~/.config/systemd/user/` directory.
 
-    ``` systemd { .mono-title title="home-bkp-nas.timer" linenums="1" }
+    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.timer" linenums="1" }
     --8<-- "home-bkp-nas.timer"
     ```
 
-    ``` systemd { .mono-title title="home-bkp-nas.service" linenums="1" }
+    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.service" linenums="1" }
     --8<-- "home-bkp-nas.service"
     ```
 
@@ -235,7 +248,7 @@ _ThinkPad X1 Carbon_
 1.  Open `kdewallet`, create a folder named `Passwords`, create an entry called `gocryptfspass`, and type in the password.
 2.  Place the `.desktop` file in the `~/.config/autostart` directory.
 
-    ``` desktop { .mono-title title="mount-gocryptfs.desktop" linenums="1" }
+    ``` desktop { .mono-title title="~/.config/autostart/mount-gocryptfs.desktop" linenums="1" }
     --8<-- "mount-gocryptfs.desktop"
     ```
 
@@ -243,13 +256,13 @@ _ThinkPad X1 Carbon_
 
 1.  Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
-    ``` ini { .mono-title title="rclone.conf" linenums="1" }
+    ``` ini { .mono-title title="~/.config/rclone/rclone.conf" linenums="1" }
     --8<-- "rclone.conf"
     ```
 
 2.  Place the `.desktop` file in the `~/.config/autostart` directory.
 
-    ``` desktop { .mono-title title="mount-rclone.desktop" linenums="1" }
+    ``` desktop { .mono-title title="~/.config/autostart/mount-rclone.desktop" linenums="1" }
     --8<-- "mount-rclone.desktop"
     ```
 
@@ -273,7 +286,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 3.  Place the custom config file in the `~/.config` directory:
 
-    ``` toml { .mono-title title="starship.toml" linenums="1" }
+    ``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
     --8<-- "starship-laptop.toml"
     ```
 

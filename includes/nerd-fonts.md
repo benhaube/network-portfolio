@@ -1,6 +1,6 @@
 ???+ note
 
-    :symbols-languages:&ensp;**Nerd Fonts:**
+    :symbols-languages:&ensp;**Nerd Fonts**
 
     :    The [Starship](https://starship.rs){ external-link } terminal prompt and [Fastfetch](https://github.com/fastfetch-cli/fastfetch){ external-link } login presets require a "Nerd Font" to function properly. The Nerd Fonts project patches open-source, developer targeted _(monospace)_ fonts with a large number of glyphs _(icons)_ from popular ‘iconic fonts’ such as [Font Awesome](https://github.com/FortAwesome/Font-Awesome){ external-link }, [Devicons](http://vorillaz.github.io/devicons/){ external-link }, [Octicons](https://github.com/github/octicons){ external-link }, and others.
 

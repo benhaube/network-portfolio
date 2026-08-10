@@ -36,16 +36,14 @@ _Server Message Block_
 
 #### :symbols-link-2:&ensp;URL / Access   
 
-:    :symbols-router:&nbsp;ASUS RT-BE92U:
-
+- :symbols-router:&ensp;ASUS RT-BE92U:
+{ .no-bullets }
     - `\\asusrouter.internal\`
-
-:    :symbols-server:&nbsp;Pi 4B Server:
-
+- :symbols-server:&ensp;Pi 4B Server:
+{ .no-bullets }
     - `\\pi-server.internal\smb-share`
-
-:    :symbols-server-nas:&nbsp;ZimaOS NAS:
-
+- :symbols-server-nas:&ensp;ZimaOS NAS:
+{ .no-bullets }
     - `\\storage-server.internal\nvme0n1p1`
     - `\\storage-server.internal\Quick-Storage`
 

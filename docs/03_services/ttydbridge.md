@@ -35,9 +35,10 @@ _The Terminal on the Web_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    <http://storage-server.internal:2222>
-
-:    <http://storage-server-2.internal:2222>
+- <http://storage-server.internal:2222>
+{ .no-bullets }
+- <http://storage-server-2.internal:2222>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials  
 

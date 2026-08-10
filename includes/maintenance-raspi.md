@@ -1,14 +1,14 @@
 !!! config inline "Critical Configurations"
 
-    **:symbols-refresh-cw-clock:&ensp;Chrony:**
+    **:symbols-refresh-cw-clock:&ensp;Chrony**
 
     :    Do not modify NTP settings or enable `systemd-timesyncd`. It has been replaced with [Chrony](../03_services/chrony.md). The Chrony service is hosted on the main router, [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md).
 
-    **:symbols-logs:&ensp;Logs:**
+    **:symbols-logs:&ensp;Logs**
 
     :    Logs are configured with `log2ram` to reduce wear on the MicroSD card.
 
-    **:symbols-mail-warning:&ensp;Email Notifications:**
+    **:symbols-mail-warning:&ensp;Email Notifications**
 
     :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation.
 
@@ -27,8 +27,10 @@
 
 -   An image of the MicroSD card is stored on [ZimaOS NAS](../02_hardware/zimaos_nas.md).
     - Path: `/media/Quick-Storage/Backup/<hostname>`
+    { .no-bullets }
 -   Data and configurations from Docker services are backed up to [ZimaOS NAS](../02_hardware/zimaos_nas.md).
     - Path: `/media/Quick-Storage/Backup/<hostname>/stacks`
+    { .no-bullets }
 -   Critical configuration files are backed up to the attached USB flash drive.
 -   All backed up files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
@@ -52,7 +54,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 3.  Place the custom config file in the `~/.config` directory:
 
-    ``` toml { .mono-title title="starship.toml" linenums="1" }
+    ``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
     --8<-- "starship-raspi.toml"
     ```
 

@@ -33,13 +33,17 @@ _Network Traffic Probe_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    `3000`&emsp;`5556`
+- `3000`
+{ .no-bullets }
+- `5556`
+{ .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    <http://storage-server.internal:3000>
-
-:    <http://storage-server-2.internal:3000>
+- <http://storage-server.internal:3000>
+{ .no-bullets }
+- <http://storage-server-2.internal:3000>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials 
 

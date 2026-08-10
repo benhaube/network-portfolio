@@ -44,60 +44,74 @@ _Detailed Configuration Info_
 
 #### :symbols-circuit-board:&ensp;Printer MCU
 
-:    Nozzle:
+##### Nozzle
 
-    - _Chip:_ `GD32F303CBT6`
-    - _Version:_ `CR-K1-MAX-NOZZLE-V1.2.0`
+- _Chip:_ `GD32F303CBT6`
+{ .no-bullets }
+- _Version:_ `CR-K1-MAX-NOZZLE-V1.2.0`
+{ .no-bullets }
 
-:    Leveling:
+##### Leveling
 
-    - _Chip:_ `GD32E230F8P6`
-    - _Version:_ `CR-K1-MAX-LEVELING-V1.1.0`
+- _Chip:_ `GD32E230F8P6`
+{ .no-bullets }
+- _Version:_ `CR-K1-MAX-LEVELING-V1.1.0`
+{ .no-bullets }
 
-:    Main:
+##### Main
 
-    - _Chip:_ `GD32F303RET6`
-    - _Version:_ `CR4CU220812S12`
+- _Chip:_ `GD32F303RET6`
+{ .no-bullets }
+- _Version:_ `CR4CU220812S12`
+{ .no-bullets }
 
 ## :symbols-network:&ensp;Network
 
-#### Moonraker
+#### :symbols-api:&ensp;Moonraker
 
-:    URL:
+##### URL
 
-    - <http://kacey.internal:7125>
+:    <http://kacey.internal:7125>
 
-:    API Key:
+##### API Key
 
-    -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-        - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
-#### Fluidd
+    - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
-:    URL:
+#### :services-fluidd:&ensp;Fluidd
 
-    - <http://kacey.internal>
-    - <http://kacey.internal:4408>
+##### URL
+
+- <http://kacey.internal>
+{ .no-bullets }
+- <http://kacey.internal:4408>
+{ .no-bullets }
 
 ## :symbols-webcam:&ensp;Camera
 
-#### Moonraker
+#### :symbols-api:&ensp;Moonraker
 
-:    Snapshot URL:
+##### Snapshot URL
 
-    - <http://kacey.internal:8080/?action=snapshot>
-    - <http://localhost:8080/?action=snapshot>
-    - <http://127.0.0.1:8080/?action=snapshot>
+- <http://kacey.internal:8080/?action=snapshot>
+{ .no-bullets }
+- <http://localhost:8080/?action=snapshot>
+{ .no-bullets }
+- <http://127.0.0.1:8080/?action=snapshot>
+{ .no-bullets }
 
-#### Fluidd
+#### :services-fluidd:&ensp;Fluidd
 
-:    Snapshot URL:
+##### Snapshot URL
 
-    - <http://kacey.internal:8080/?action=snapshot>
+- <http://kacey.internal:8080/?action=snapshot>
+{ .no-bullets }
 
-:    Stream URL:
+##### Stream URL
 
-    - <http://kacey.internal/webcam/?action=stream>
+- <http://kacey.internal/webcam/?action=stream>
+{ .no-bullets }
 
 ---
 

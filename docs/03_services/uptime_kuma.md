@@ -36,23 +36,21 @@ _A Fancy Monitoring Tool_
 
 #### :symbols-link-2:&ensp;URL / Access  
 
-:    :symbols-network:&nbsp;Local Access
-
+- :symbols-network:&ensp;Local Access
+{ .no-bullets }
     - <https://uptime.internal>
     - <http://pi-server.internal:3001>
-
-:    :symbols-globe-arrow:&nbsp;Remote Access
-
+- :symbols-globe-arrow:&ensp;Remote Access
+{ .no-bullets }
     - <https://uptime.rac3r4life.online>
 
 #### :symbols-user-key:&ensp;Credentials  
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
-
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
-
-:    2FA / MFA
-
+- 2FA / MFA
+{ .no-bullets }
     - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details

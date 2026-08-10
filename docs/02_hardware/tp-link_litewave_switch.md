@@ -42,22 +42,27 @@ _Model LS1005G_
 
 #### :symbols-circuit-board:&ensp;Specs
 
-:    Throughput:
+##### Throughput
 
-    - Five 1 GbE ports
-    - 10 Gb/s total switching capacity
+- Five 1 GbE ports
+{ .no-bullets }
+- 10 Gb/s total switching capacity
+{ .no-bullets }
 
-:    Jumbo Frames:
+##### Jumbo Frames
 
-    - Not Supported
+- Not Supported
+{ .no-bullets }
 
-:    Managed:
+##### Managed
 
-    - No &mdash; Unmanaged
+- No &mdash; Unmanaged
+{ .no-bullets }
 
-:    Hardware Revision:
+##### Hardware Revision
 
-    - v5.46
+- v5.46
+{ .no-bullets }
 
 ## :symbols-ethernet-port:&ensp;Port Map
 
@@ -76,8 +81,15 @@ _Model LS1005G_
 
 !!! visual inline "Visual Indicators"
 
-    :symbols-led:&ensp;**Green LED:** 10/100/1000 Mb/s<br>
-    :symbols-led-on:&ensp;**Flashing:** Activity
+    :symbols-led:&ensp;**Green LED** 
+    
+    - 10/100/1000 Mb/s
+    { .no-bullets }
+    
+    :symbols-led-on:&ensp;**Flashing** 
+    
+    - Network Activity
+    { .no-bullets }
 
 !!! warning inline "Troubleshooting"
 

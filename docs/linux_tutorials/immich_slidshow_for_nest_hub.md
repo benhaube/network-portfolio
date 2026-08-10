@@ -25,17 +25,16 @@ _Immich Slideshow for Nest Hub_
 !!! info "Project Info"
 
     **User:** Ben Haube | **Date:** Feb 5, 2026<br>
-    **Infrastructure:**
+    **Infrastructure**
 
     - [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) *([Immich](../03_services/immich.md))*
+    { .no-bullets }
     - [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) *([Home Assistant](../03_services/home_assistant.md), [Cloudflared](../03_services/cloudflared.md) Tunnel)*
+    { .no-bullets }
 
 ---
 
 ## :symbols-trash-2:&ensp;Cleaning Google Photos
-
-**Goal:**
-: Delete cloud data without losing local files.
 
 1.  **Safety First _(Mobile)_:**
     -   Uninstall Google Photos App **OR** Turn OFF "Backup & Sync".
@@ -63,12 +62,7 @@ _Immich Slideshow for Nest Hub_
 
 ## :symbols-server:&ensp;Server-Side Setup
 
-&emsp;&emsp;&ensp;_ZimaOS NAS_
-
-**Goal:**
-: Replicate "Live Albums" and generate the Nest Hub interface.
-
-### :symbols-file-code-corner:&ensp;Docker Compose File Snippet
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 Add these services to your existing Immich stack or a new stack.
 
@@ -91,9 +85,6 @@ Place this in the same folder as your docker-compose file.
 
 ## :symbols-globe-arrow:&ensp;Network & Cloudflare
 
-**Goal:**
-: Allow Nest Hubs to load the frame securely.
-
 1.  **Tunnel:**
     - Point `frame.rac3r4life.online` to `http://<ZIMAOS_NAS_IP>:8081` using the [Cloudflare](../03_services/cloudflared.md) tunnel.
 2.  **WAF Rules _(Critical)_:**
@@ -102,11 +93,6 @@ Place this in the same folder as your docker-compose file.
         - _Why:_ Prevents the Nest Hub from hitting a "Verify you are human" screen.
 
 ## :symbols-house-wifi:&ensp;Automation
-
-&emsp;&emsp;&ensp;_Home Assistant on Pi 4_
-
-**Goal:**
-: Force Nest Hub to show the frame when idle.
 
 **Prerequisite:** 
 : Install "DashCast" add-on in [Home Assistant](../03_services/home_assistant.md).

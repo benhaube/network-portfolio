@@ -35,9 +35,10 @@ _Filament Inventory Management_
 
 #### :symbols-link-2:&ensp;URL / Access    
 
-:    <http://storage-server.internal:7912/>
-
-:    <http://storage-server-2.internal:7912/>
+- <http://storage-server.internal:7912/>
+{ .no-bullets }
+- <http://storage-server-2.internal:7912/>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials 
 

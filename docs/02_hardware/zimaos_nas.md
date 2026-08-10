@@ -145,7 +145,7 @@ _Rack-Mount ZimaBoard 2_
     - Do not attempt to use `apt` to install or upgrade system packages.
     - Do not change NTP settings _(stuck on `systemd-timesyncd`)_.
 
-    :symbols-package-open:&ensp;**Entware:**
+    :symbols-package-open:&ensp;**Entware**
 
     - The [Entware](https://github.com/Entware/Entware){ external-link } package manager is installed, allowing additional packages not included in ZimaOS to be installed.
     - Additional packages can be installed to the `/opt/bin` directory with the `opkg` command.
@@ -153,10 +153,12 @@ _Rack-Mount ZimaBoard 2_
 
 !!! config "Critical Configurations"
 
-    :symbols-folder-tree:&ensp;**SMB Multi-Channel:**
+    :symbols-folder-tree:&ensp;**SMB Multi-Channel**
 
-    -   SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` (or ZimaOS equivalent path).
+    -   SMB Multi-channel is enabled via custom edit to `/etc/samba/smb.conf` _(or ZimaOS equivalent path)_.
+    { .no-bullets }
     -   **Constraint:**
+    { .no-bullets }
         - Requires both Ethernet cables to be connected to the 2.5 Gb switch to achieve throughput > 2.5 Gb/s.
 
     ---
@@ -206,7 +208,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 ##### Starship Config File
 
-``` toml { .mono-title title="/DATA/.config/starship.toml" linenums="1" }
+``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
 --8<-- "starship-zimaos.toml"
 ```
 
@@ -298,15 +300,15 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 !!! note
 
-    :symbols-folder-git-2:&ensp;**Data Directory:**
+    :symbols-folder-git-2:&ensp;**Data Directory**
 
-    :    The task configurations and logs are stored in `/DATA/AppData/cron/`
+    :    The task configurations and logs are stored in `/media/nvme0n1p1/AppData/cron/`
 
-    :symbols-rotate-ccw:&ensp;**Persistence:**
+    :symbols-rotate-ccw:&ensp;**Persistence**
 
     :    Tasks are persisted to disk and automatically restored after system restart using the Systemd unit, `cron.service`. This fixes the known issue where tasks did not continue after a reboot in previous versions.
 
-    Open it from the [ZimaOS dashboard](http://storage-server.internal){ external-link } _(Cron)_, or directly at <http://storage-server.internal/modules/cron/>.
+    Open __Zima Cron__ from the [ZimaOS dashboard](http://storage-server.internal){ external-link }, or directly at <http://storage-server.internal/modules/cron/>.
 
 #### :symbols-brick-wall-fire:&ensp;Zima Firewall
 
@@ -333,11 +335,11 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
     ``` bash linenums="1"
     ssh admin@ZimaOS-NAS 
     cd /tmp && tar xzf zfw-<version>-amd64.tar.gz && cd zfw-*
-    sudo sh install.sh'
+    sudo sh install.sh
     ```
 
 !!! note
 
-    The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/DATA/zfw/zfw` _(root:root, 0700)_, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place.
+    The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/media/ZimaOS-HD/zfw/zfw` _(root:root, 0700)_, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place.
 
     Open it from the [ZimaOS dashboard](http://storage-server.internal){ external-link } _(ZFW Firewall)_, or directly at <http://storage-server.internal/modules/zfw/index.html>.

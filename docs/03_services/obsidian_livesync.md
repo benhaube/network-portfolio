@@ -36,13 +36,12 @@ _Sync with CouchDB_
 
 #### :symbols-link-2:&ensp;URL / Access   
 
-:    :symbols-monitor-cog: Settings Web UI:
-
+- :symbols-monitor-cog:&ensp;Settings Web UI:
+{ .no-bullets }
     - <http://storage-server.internal:5984/_utils>
     - <http://storage-server-2.internal:5984/_utils>
-
-:    :symbols-database: Database:
-
+- :symbols-database:&ensp;Database:
+{ .no-bullets }
     - <http://storage-server.internal:5984/obsidian-vault>
     - <http://storage-server-2.internal:5984/obsidian-vault>
 
@@ -64,15 +63,18 @@ _Sync with CouchDB_
 
 ##### Docker Deploy
 
-:    `~/.casaos/apps/big-bear-obsidian-livesync/docker-compose.yml`
+- `~/.casaos/apps/big-bear-obsidian-livesync/docker-compose.yml`
+{ .no-bullets }
 
 ##### Database
 
-:    `../AppData/big-bear-obsidian-livesync/data/couchdb`
+- `../AppData/big-bear-obsidian-livesync/data/couchdb`
+{ .no-bullets }
 
 ##### Config File
 
-:    `../AppData/big-bear-obsidian-livesync/data/local.ini`
+- `../AppData/big-bear-obsidian-livesync/data/local.ini`
+{ .no-bullets }
 
 #### :symbols-server:&ensp;Server
 

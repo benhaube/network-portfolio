@@ -38,15 +38,14 @@ _Docker Management_
 
 #### :symbols-link-2:&ensp;URL / Access 
 
-:    Main Server:  
-
+- Main Server:
+{ .no-bullets }
     - <http://pi-server.internal:5001>
-
-:    Other Servers _(connected to main server)_:
-
+- Dockge Agents:
+{ .no-bullets }
     - <http://pi-zero.internal:5001>
-      - <http://debian-vm.internal:5001>
-      - <http://storage-server.internal:5001>
+    - <http://debian-vm.internal:5001>
+    - <http://storage-server.internal:5001>
 
 #### :symbols-user-key:&ensp;Credentials
 

@@ -132,7 +132,7 @@ _Maintaining High Availability_
 
 ##### ASUS Router
 
-- The ASUS router utilizing the **Asuswrt-merlin** firmware also has email notifications and push notifications through the [Gotify](../03_services/gotify.md#notifications){ data-preview } server enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, new network clients, and router reboots. 
+- The ASUS router utilizing the **Asuswrt-merlin** firmware also has email notifications and push notifications through the [Gotify](../03_services/gotify.md#notifications){ data-preview } server enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, new network clients, and router reboots.
 { .no-bullets }
 - The [`ChkWAN.sh`](../02_hardware/asus_rt-be92u.md#wan-check-script) script monitors the WAN connection by performing ICMP echo tests on four different IP addresses every five minutes. If NONE of the four IP addresses reply to the ICMP echo packets the script automatically restarts the WAN interface in an attempt to re-establish the connection.
 { .no-bullets }

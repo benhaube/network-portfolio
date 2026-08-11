@@ -58,7 +58,7 @@ _Server Dashboard_
 
     ---
 
-    :symbols-settings:&ensp;**Configuration:**
+    :symbols-settings:&ensp;**Configuration**
 
     :   Changed the image to `panonim/dynacat:latest`, a fork of Glance with some added features. The standard Glance configuration is compatible, but the main configuration file needs to have a different name, `dynacat.yml`. I have left the old `glance.yml` configuration file in the directory to maintain compatibility with the official Glance image.
 
@@ -79,45 +79,42 @@ _Server Dashboard_
 
     ---
 
-    :symbols-users:&ensp;**Users:**
+    :symbols-users:&ensp;**Users**
 
     - Glance now has authentication enabled, therefore login is required for users to access the service. The user's credentials are stored in the [Bitwarden Vault](https://vault.bitwarden.com){ external-link } within the folder "Local Network". There are currently three user accounts: `admin`, `bhaube`, and `rpereira`.
+    { .no-bullets }
 
-    :symbols-text-cursor-input:&ensp;**Passwords:**
+    :symbols-text-cursor-input:&ensp;**Passwords**
 
     !!! tip inline end
 
         Restarting the container with `#!bash docker compose restart` will not allow changes to the `.env` file to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`.
 
-    - For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file.
-    - To change a user's password, attach to the container's shell and run the following command:
+    : For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file. To change a user's password, attach to the container's shell and run the following command:
 
         ``` bash linenums="1"
         ./glance password:hash <my-password>
         ```
 
-    - Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again.
+    : Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again.
 
-    :symbols-key-round:&ensp;**Server Secret:**
+    :symbols-key-round:&ensp;**Server Secret**
 
-    - The "Server Secret" needs to be set in the `glance.yml` configuration file.
-    - To generate a new server secret, attach to the container's shell and run the following command:
+    : The "Server Secret" needs to be set in the `glance.yml` configuration file. To generate a new server secret, attach to the container's shell and run the following command:
 
         ``` bash linenums="1"
         ./glance secret:make
         ```
 
-    - Copy and paste the generated string into the `glance.yml` file.
-        - **Example:**
-        { .no-bullets }
+    : Copy and paste the generated string into the `glance.yml` file.
 
-            ``` yaml { .mono-title title="glance.yml (snippet)" linenums="1" }
-            auth:
-            secret-key: <insert-server-secret>
-            users:
-            ```
+        ``` yaml { .mono-title title="glance.yml (snippet)" linenums="1" }
+        auth:
+          secret-key: <insert-server-secret>
+          users:
+        ```
 
-    - Shut the container down and start it back up using the same method shown above for user passwords.
+    : Shut the container down and start it back up using the same method shown above for user passwords.
 
 ??? change "Widgets Directory"
 
@@ -131,27 +128,27 @@ _Server Dashboard_
 
         Changes to the YAML files in the `config/pages` and `config/widgets` directories are recognized by the container instantly. However, you may need to clear the browser cache when you reload the page.
 
-        To reload an clear the browser cache use the keyboard keys; ++ctrl+f5++
+        To reload an clear the browser cache use the keyboard keys;
 
-    :symbols-settings:&ensp;**Configuration:**
-
-    -   The Glance dashboard widgets have been moved into their own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`.
-    -   Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure.
-        - **Example:**
+        - ++ctrl+f5++
         { .no-bullets }
 
-            ``` yaml { .mono-title title="page.yml (example)" linenums="1" }
-            columns:
+    :symbols-settings:&ensp;**Configuration**
+
+    :   The Glance dashboard widgets have been moved into their own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure.
+
+        ``` yaml { .mono-title title="page.yml (example)" linenums="1" }
+        columns:
               
-              - size: full
-                widgets:         
+            - size: full
+              widgets:         
                   
-                  - $include: /app/config/widgets/search.yml
-            ```
+                - $include: /app/config/widgets/search.yml
+        ```
 
-    :symbols-blocks:&ensp;**Widgets:**
+    :symbols-blocks:&ensp;**Widgets**
 
-    -   To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository.
+    :   To avoid putting a code block for every widget on this page, you can instead visit the GitHub repository containing all of the widgets included in the repository.
 
         [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 

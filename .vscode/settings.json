@@ -57,6 +57,7 @@
         "dnscrypt",
         "dnsmasq",
         "dnssd",
+        "dotsep",
         "dpkg",
         "Dropbear",
         "dynacat",

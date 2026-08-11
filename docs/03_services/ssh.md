@@ -34,36 +34,36 @@ _Secure Shell_
 
 :    `22`
 
-#### :symbols-link-2:&ensp;URL / Access  
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-router:&ensp;ASUS RT-BE92U
+-   :symbols-router:&ensp;ASUS RT-BE92U
 { .no-bullets }
     - `192.168.50.1:22`
     - `asusrouter.internal:22`
-- :symbols-layers:&ensp;Debian Server
+-   :symbols-layers:&ensp;Debian Server
 { .no-bullets }
     - `192.168.50.6:22`
     - `debian-vm.internal:22`
-- :symbols-server:&ensp;Pi 4B Server
+-   :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
     - `192.168.50.2:22`
     - `pi-server.internal:22`
-- :symbols-server:&ensp;Pi Zero 2W Server
+-   :symbols-server:&ensp;Pi Zero 2W Server
 { .no-bullets }
     - `192.168.50.3:22`
     - `pi-zero.internal:22`
-- :symbols-server-nas:&ensp;ZimaOS NAS
+-   :symbols-server-nas:&ensp;ZimaOS NAS
 { .no-bullets }
     - `192.168.50.4:22`
     - `192.168.50.5:22`
     - `storage-server.internal:22`
     - `storage-server-2.internal:22`
-- :symbols-printer-3d-nozzle:&ensp;Kacey 3D-Printer
+-   :symbols-printer-3d-nozzle:&ensp;Kacey 3D-Printer
 { .no-bullets }
     - `192.168.50.153:22`
     - `kacey.internal:22`
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
@@ -225,8 +225,7 @@ _Secure Shell_
         Prevents offering all other keys stored in Bitwarden
 
 4.  Create the `IdentityFile` for all of the servers in the `~/.ssh` directory and paste in the public key.
-    + **Example:**
 
-        ``` bash linenums="1"
-        nano ~/.ssh/[hostname].pub
-        ```
+    ``` bash title="Example" linenums="1"
+    nano ~/.ssh/[hostname].pub
+    ```

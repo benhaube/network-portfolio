@@ -91,7 +91,7 @@ _Primary DNS Server_
 
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
-!!! config "Critical Configurations"
+!!! config inline end "Critical Configurations"
 
     :symbols-refresh-cw-clock:&ensp;**Chrony**
 
@@ -101,49 +101,38 @@ _Primary DNS Server_
 
     :    The VM is configured to boot automatically when the host server boots.
 
-        + If a ZimaOS update breaks this configuration it can be re-applied with the following command on the host machine:
-
-            ``` bash linenums="1"
-            sudo virsh autostart <vm_name>
-            ```
-
-        + To disable the 'autostart' feature:<br>_(not recommended)_
-
-            ``` bash linenums="1"
-            sudo virsh autostart <vm_name> --disable
-            ```
+        ``` bash linenums="1"
+        sudo virsh autostart <vm_name>
+        ```
 
     :symbols-message-square-dot:&ensp;**Notifications**
 
-    :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. 
-    
-        + See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation.
+    :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Policy
 
--   The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically.
--   Manual OS updates can be applied with the `apt` package manager. _(Standard Debian)_
+:   The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically. Manual OS updates can be applied with the `apt` package manager. Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_services/dockge.md).
+
+##### Manual Debian Updates
+
+:   To update Debian packages manually with the `apt` package manager use the following command:
 
     ``` bash linenums="1"
     sudo apt update && sudo apt upgrade
     ```
 
--   Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_services/dockge.md)
-
 #### :symbols-fullscreen:&ensp;Snapshot Policy
 
-- Perform external snapshots before major changes.
-- The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+:   Perform external snapshots before making major changes. The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### :symbols-refresh-ccw-dot:&ensp;Recovery
 
-- If the VM is corrupted there are external snapshots to roll back to.
-- Also, on the main storage pool on the [ZimaOS NAS](zimaos_nas.md#data){ data-preview } in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file.
+:   If the VM is corrupted there are external snapshots to roll back to. Also, on the main storage pool on the [ZimaOS NAS](zimaos_nas.md#data){ data-preview } in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file.
 
-??? warning "Warning!"
+??? info
 
     The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
-    
+
     + To create an external snapshot, run the following command as `root`:
 
         ``` bash linenums="1"

@@ -117,70 +117,53 @@ _Google Pixel 9 Pro_
 
     :symbols-waypoints:&ensp;**VPN**
 
-    - The [WireGuard](../03_services/wireguard_server.md) VPN is used for remote access to the LAN.
-    { .no-bullets }
-    - [ASUS RT-BE92U](asus_rt-be92u.md) is the primary server, and [ZimaOS NAS](zimaos_nas.md) is the secondary / backup server.
-    { .no-bullets }
-    - The VPN is configured through the WireGuard application, and has both profiles loaded. The default profile connects to the ASUS router
-    { .no-bullets }
+    :   The [WireGuard](../03_services/wireguard_server.md) VPN is used for remote access to the LAN. The [ASUS RT-BE92U](asus_rt-be92u.md) wireless router is the primary server, and [ZimaOS NAS](zimaos_nas.md) is the backup server.
+
+    :   The VPN is configured through the WireGuard application, and has both profiles loaded. The default profile connects to the ASUS router.
 
     :symbols-message-square-dot:&ensp;**Push Notifications**
 
-    - The [Gotify](../03_services/gotify.md) application is installed for instant push notifications regarding the essential network infrastructure.
-    { .no-bullets }
-    - Log into the app with the "admin" user.
-    { .no-bullets }
+    :   The [Gotify](../03_services/gotify.md) application is installed for instant push notifications regarding the essential network infrastructure. Log into the app with the "admin" user.
 
     :symbols-mail:&ensp;**Email Client**
 
-    - The standard Gmail app has been disabled and replaced with [Thunderbird](https://www.thunderbird.net/en-US/mobile/){ external-link } _(formerly K9-Mail)_ on this mobile device.
-    { .no-bullets }
-    - Account and app settings are backed up to the [ZimaOS NAS](zimaos_nas.md) with [Syncthing](../03_services/syncthing.md)
-    { .no-bullets }
+    :   The standard Gmail app has been disabled and replaced with [Thunderbird](https://www.thunderbird.net/en-US/mobile/){ external-link }. Account and app settings are backed up to the [ZimaOS NAS](zimaos_nas.md) with [Syncthing](../03_services/syncthing.md).
 
     :symbols-calendar-sync:&ensp;**Calendar & Tasks Sync**
 
-    - The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar](https://github.com/FossifyOrg/Calendar){ external-link } and [Tasks.org](https://tasks.org/){ external-link } _(Installed via F-Droid)_.
-    { .no-bullets }
-    - Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/){ external-link } application.
-    { .no-bullets }
-    - The calendar and tasks service is hosted by [Fastmail](https://fastmail.com){ external-link }.
-    { .no-bullets }
+    :   The standard Google Calendar and Tasks applications are disabled and replaced with [Fossify Calendar](https://github.com/FossifyOrg/Calendar){ external-link } and [Tasks.org](https://tasks.org/){ external-link } _(Installed via F-Droid)_.
+
+    :   Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/){ external-link } application, and the calendar and tasks service is hosted by [Fastmail](https://fastmail.com){ external-link }.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
 ##### Android OS
 
-- Android updates are automatic, but can also be performed manually through the system settings or via ADB.
-- Google releases monthly security updates, quarterly feature updates, and yearly major version updates.
+:   Android updates are automatic, but can also be performed manually through the system settings or via ADB. Google releases monthly security updates, quarterly feature updates, and yearly major version updates.
 
 ##### Applications
 
-- Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps){ external-link }.
-- Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/){ external-link } app store and the [Obtainium](https://obtainium.imranr.dev/){ external-link } application.
+:   Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps){ external-link }. Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/){ external-link } app store and the [Obtainium](https://obtainium.imranr.dev/){ external-link } application.
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
 ##### Cloud Backup
 
-- Google's cloud backup service is used to back up **device settings** and **apps & app data** for applications installed via the Google Play Store.
-- Other backup services provided by Google, like photos, call history, and SMS / MMS & RCS messages are disabled to maintain privacy and control of sensitive data.
-- Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+:   Google's cloud backup service is used to back up **device settings** and **apps & app data** for applications installed via the Google Play Store. Other backup services provided by Google, like photos, call history, and SMS / MMS & RCS messages are disabled to maintain privacy and control of sensitive data.
+
+:   Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 ##### Photos & Videos
 
-- Photos and videos are backed up to the [ZimaOS NAS](zimaos_nas.md).
-- The [Immich](../03_services/immich.md) application handles backup for photos and videos. The Google Photos application is disabled.
+:   Photos and videos are backed up to the [ZimaOS NAS](zimaos_nas.md). The [Immich](../03_services/immich.md) application handles backup for photos and videos. The Google Photos application is disabled.
 
 ##### SMS / MMS & RCS
 
-- The [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/){ external-link } application is responsible for backing up messages daily.
-- The application creates a compressed archive of the messages in the directory, `/backups/SMS_Backup`, and [Syncthing](../03_services/syncthing.md) transfers them to the **ZimaOS NAS**.
+:   The [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/){ external-link } application is responsible for backing up messages daily. The application creates a compressed archive of the messages in the directory, `/backups/SMS_Backup`, and [Syncthing](../03_services/syncthing.md) transfers them to the **ZimaOS NAS**.
 
 ##### Other Apps
 
-- Other applications that allow exporting settings / data are backed up to the **ZimaOS NAS** via **Syncthing**.
-    - Local directory: `/backups`
-    { .no-bullets }
-    - NAS directory: `/media/Quick-Storage/Backup/Pixel-9-Pro`
-    { .no-bullets }
+:   Other applications that allow exporting settings / data are backed up to the **ZimaOS NAS** via **Syncthing**.
+
+    - Local directory:&ensp;`/backups`
+    - NAS directory:&ensp;`/media/Quick-Storage/Backup/Pixel-9-Pro`

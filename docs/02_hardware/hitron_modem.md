@@ -58,18 +58,8 @@ _DOCSIS 3.1 Cable Modem_
 
     :symbols-globe-off:&ensp;**WAN Down**
 
-    - If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
-    { .no-bullets }
+    :   If WAN connection goes down, unplug power from modem for 60-seconds to reboot.
 
     :symbols-monitor-cog:&ensp;**Access WebUI**
 
-    - To access the modem's Web UI enter `https://192.168.100.1`.
-    { .no-bullets }
-
-#### :symbols-rotate-cw-clock:&ensp;Update Process
-
-- N/A
-
-#### :symbols-cloud-upload:&ensp;Backup Policy
-
-- N/A
+    :   To access the modem's Web UI enter `https://192.168.100.1`.

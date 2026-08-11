@@ -110,35 +110,34 @@ _Modified Creality K1C_
     :symbols-package:&ensp;**Software**
 
     :   Fluidd
-    
+
         - For information regarding the [Fluidd](../03_services/fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ external-link }.  
-    
+
     :   Klipper / Moonraker
-    
+
         - For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/){ external-link }.
         - Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/){ external-link }.
 
     :symbols-printer-3d-nozzle:&ensp;**Hardware**
 
     :   [Bed Leveling Knobs](../3d_printing/k1_bed_level_knobs.md)
-    
+
         - Changes from a fixed bed to an adjustable bed with aluminum knobs.
-    
+
     :   [PROWIPER^&copy;^ Mod](../3d_printing/prowiper_mod.md)
-    
+
         - Replaces the standard nozzle wiping brush at the back of the build plate.
 
     :symbols-file-code-corner:&ensp;**Custom G-Code Macros**
 
     :   [Manual Nozzle Cleaning Macro](../3d_printing/manual_nozzle_cleaning_macro.md)
-    
+
         - This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
-- Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }.
-- Update Entware packages in terminal via [SSH](../03_services/ssh.md)
+:    Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md)
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-- Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository.
+:    Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository.

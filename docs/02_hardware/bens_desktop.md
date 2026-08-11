@@ -142,27 +142,25 @@ _High-Performance Desktop PC_
 
 ##### Automatic Updates
 
-- Automatic offline updates for OS packages and firmware are enabled through the KDE Plasma desktop environment, and will be applied weekly. When OS updates need to reboot the system, a notification will appear in the system tray.
-- Flatpak applications will also update automatically through KDE Discover, and they do not require a system reboot.
-- To perform manual updates for the OS packages, firmware, and Flatpak applications you can use the CLI.
+:   Automatic offline updates for OS packages and firmware are enabled through the KDE Plasma desktop environment, and will be applied weekly. When OS updates need to reboot the system, a notification will appear in the system tray. Flatpak applications will also update automatically through KDE Discover, and they do not require a system reboot. To perform manual updates for the OS packages, firmware, and Flatpak applications you can use the CLI.
 
 ##### Manual Updates
 
--   To update Fedora RPM packages manually with the CLI run the following commands:
+:   To update Fedora RPM packages manually with the CLI run the following commands:
 
     ``` bash linenums="1"
     sudo dnf upgrade -y --refresh --offline
     sudo dnf offline reboot -y
     ```
 
--   To update firmware manually with the CLI run the following commands:
+:   To update firmware manually with the CLI run the following commands:
 
     ``` bash linenums="1"
     sudo fwupdmgr get-updates
     sudo fwupdmgr update
     ```
 
--   To update Flatpak apps manually with the CLI run the following command:
+:   To update Flatpak apps manually with the CLI run the following command:
 
     ``` bash linenums="1"
     sudo flatpak update -y
@@ -170,30 +168,23 @@ _High-Performance Desktop PC_
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-- The `/home` directory backed up every weekday at `18:00` to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd.
-- With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time.
-- Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+:   The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd. With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time. Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### :symbols-square-terminal:&ensp;SSH Client
 
 ##### Bitwarden Key Agent
 
-- Bitwarden is utilized to securely store SSH keys.
-- To enable the agent you need to install the Bitwarden desktop application and edit the `.bashrc` file.
-- See ["Bitwarden SSH Key Agent"](../03_services/ssh.md#bitwarden-ssh-key-agent) for documentation.
+:   Bitwarden is utilized to securely store SSH keys. To enable the agent you need to install the Bitwarden desktop application and edit the `.bashrc` file. See ["Bitwarden SSH Key Agent"](../03_services/ssh.md#bitwarden-ssh-key-agent) for documentation.
 
 ##### Config File
 
-- Key-based authentication is enabled for [SSH](../03_services/ssh.md#credentials){ data-preview } sessions on all servers on the network, and password authentication is disabled.
-- To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory.
-- See ["SSH Config File"](../03_services/ssh.md#ssh-config-file_1) for documentation.  
+:   Key-based authentication is enabled for [SSH](../03_services/ssh.md#credentials){ data-preview } sessions on all servers on the network, and password authentication is disabled. To avoid getting the error, `too many authentication attempts`, when attempting to log in; the servers need to be added to a configuration file in the `~/.ssh` directory. See ["SSH Config File"](../03_services/ssh.md#ssh-config-file_1) for documentation.  
 
 #### :symbols-folder-tree:&ensp;ZimaOS NAS Mounts
 
--   On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files. _(e.g., photos / code)_
-    - Other benefits from the switch to NFS include: Full compatibility for file ownership and permissions, and compatibility for sym-links. The `rsync` command in the backup script has been modified to reflect this change.
-    - This change only applies to PCs using the Linux OS. The Windows and Android clients still utilize SMB with multi-chanel enabled.
--   See the ["Clients"](../03_services/nfs.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
+:   On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files _(e.g., photos / code)_. Other benefits from the switch to NFS include full compatibility for file ownership and permissions and compatibility for sym-links.
+
+:   The `rsync` command in the backup script has been modified to reflect this change. This change only applies to PCs using the **Linux OS**. The Windows and Android clients still utilize SMB with multi-chanel enabled. See the ["Clients"](../03_services/nfs.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
 
 #### :symbols-file-terminal:&ensp;Backup Script
 

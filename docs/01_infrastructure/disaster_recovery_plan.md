@@ -166,7 +166,7 @@ _Maintaining High Availability_
 
     ---
 
-    [IP Address Management](ip_address_mangement.md){ .md-button }
+    [IP Address Management](ip_address_management.md){ .md-button }
 
 -   :symbols-shield-keyhole:{ .lg .middle }&emsp;**Network Security**
 

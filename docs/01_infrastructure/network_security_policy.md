@@ -32,7 +32,7 @@ _The Principle of Least Privilege_
 | Zone                                                                               | VLAN ID              | Description { data-sort-method="none" }                | Access Rules { data-sort-method="none" }                                                                                                              |
 | :--------------------------------------------------------------------------------- | :------------------- | :----------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [:symbols-shield:&nbsp;Trusted](mac_address_tables.md#trusted-network)             | _VLAN50_&emsp;&emsp; | Primary workstations, mobile devices, and core servers | Full access to all internal zones; restricted outbound                                                                                                |
-| [:symbols-user-shield:&nbsp;Guest](ip_address_mangement.md#virtual-local-networks) | _VLAN52_&emsp;&emsp; | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                                                          |
+| [:symbols-user-shield:&nbsp;Guest](ip_address_management.md#virtual-local-networks) | _VLAN52_&emsp;&emsp; | Temporary visitor devices                              | Internet access only; strictly isolated from all other VLANs                                                                                          |
 | [:symbols-house-shield:&nbsp;IoT](mac_address_tables.md#iot-network)               | _VLAN53_&emsp;&emsp; | Smart home hardware _(bulbs, sensors, etc.)_           | **No Internet Access** by default. Strictly isolated from all other VLANs; communication only with [Home Assistant](../03_services/home_assistant.md) |
 
 ## :symbols-brick-wall-fire:&ensp;Boundary Defense & Remote Access
@@ -159,6 +159,6 @@ _The Principle of Least Privilege_
 
     ---
 
-    [IP Address Management](ip_address_mangement.md){ .md-button }
+    [IP Address Management](ip_address_management.md){ .md-button }
 
 </div>

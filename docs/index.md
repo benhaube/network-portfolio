@@ -26,7 +26,7 @@ hide:
 [:symbols-tornado:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
 : Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
-[:symbols-binary:&ensp;IP Address Management](01_infrastructure/ip_address_mangement.md)
+[:symbols-binary:&ensp;IP Address Management](01_infrastructure/ip_address_management.md)
 : This page contains information about IPAM, VPNs, and VLANs encompassed by the LAN.
 
 [:symbols-hash:&ensp;MAC Address Tables](01_infrastructure/mac_address_tables.md)

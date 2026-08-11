@@ -35,16 +35,16 @@ _Network File System_
 
 :    `2049`
 
-#### :symbols-link-2:&ensp;URL / Access  
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-folder-tree:&ensp;Network Storage:
+-   :symbols-folder-tree:&ensp;Network Storage:
 { .no-bullets }
     - `192.168.50.4:/media/Quick-Storage`
-- :symbols-folder-git-2:&ensp;Application Data:
+-   :symbols-folder-git-2:&ensp;Application Data:
 { .no-bullets }
     - `192.168.50.4:/media/nvme0n1p1`
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
@@ -146,5 +146,4 @@ sudo systemctl start nfs-server
     sudo systemctl daemon-reload
     ```
 
-2.  Add a shortcut to the `/mnt/storage_server` directory in the "Places" pane in the Dolphin file manager for quick GUI access. The remote file systems will mount automatically when you visit the directory.
-    - Running the CLI command, `ls /mnt/storage-server`, will also trigger the auto-mount.
+2.  Add a shortcut to the `/mnt/storage_server` directory in the "Places" pane in the Dolphin file manager for quick GUI access. The remote file systems will mount automatically when you visit the directory. Running the CLI command, `ls /mnt/storage-server`, will also trigger the auto-mount.

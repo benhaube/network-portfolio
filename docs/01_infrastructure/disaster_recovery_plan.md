@@ -76,45 +76,71 @@ _Maintaining High Availability_
 
 ##### Automated Failover
 
-- The [Technitium](../03_services/technitium.md) DNS Node _([Pi 4B Server](../02_hardware/pi_4b_server.md))_ is configured as a secondary resolver in the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#virtual-local-networks){ data-preview } DHCP settings. Clients will automatically fallback to the Pi 4B.  
+- The [Technitium](../03_services/technitium.md) DNS Node _([Pi 4B Server](../02_hardware/pi_4b_server.md))_ is configured as a secondary resolver in the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#virtual-local-networks){ data-preview } DHCP settings. Clients will automatically fallback to the remaining DNS server in the event of a single node failure.  
+{ .no-bullets }
 
 ##### Re-provisioning
 
-- If the Debian Server or ZimaOS host is lost, the Debian Server is restored from the last known good snapshot stored on the [NFS](../03_services/nfs.md) / [SMB](../03_services/smb.md) Share.
+- If the **Debian Server** is lost, the VDI is restored from the last known good snapshot stored on the [NFS](../03_services/nfs.md) / [SMB](../03_services/smb.md) Share. If the entire **ZimaOS** host is lost a backup is stored remotely using **Backblaze B2** cloud storage.
+{ .no-bullets }
 
-### Node Failure &mdash; Reverse Proxy
+### Node Failure &mdash; Caddy Reverse Proxy
 
 ##### Traffic Rerouting
 
-- Since the **Pi Zero 2W Server** handles external entries via Caddy, a failure here breaks external URLs.
+- Since the **Pi Zero 2W Server** handles internal FQDN entries via Caddy, a failure here breaks unique `.internal` service URLs.
+{ .no-bullets }
 
 ##### Intervention
 
-- Deploy a temporary Caddy Docker container on the **ZimaOS NAS** using the synced configuration files from [Syncthing](../03_services/syncthing.md).
+- Deploy a temporary Caddy Docker container on the **ZimaOS NAS** using the synced configuration files from [Syncthing](../03_services/syncthing.md). Alternatively, the services can still be accessed using their host server's FQDN and service port number _(e.g., `storage-server.internal:2283` for Immich)_.
+{ .no-bullets }
 
 ##### Update DNS
 
-- Point the Cloudflare tunnel or local DNS records to the **ZimaOS NAS** IP.
+- Point the local DNS `CNAME` records to the **ZimaOS NAS** IP.
+{ .no-bullets }
+
+##### Re-provisioning
+
+- Restore the **Pi Zero 2W Server** using the backup drive image stored on the **ZimaOS NAS** SMB / NFS share in the `Quick-Storage/Backup/pi-zero` directory.
+{ .no-bullets }
 
 ## :symbols-wrench:&ensp;Testing & Maintenance
 
 ### Quarterly "Pull the Plug" Test
 
-- Physically disconnect the **ZimaOS NAS** to verify the **Pi 4B Server** picks up all DNS traffic without user intervention.
+- Once per quarter I physically disconnect the **ZimaOS NAS** from the network to verify the **Pi 4B Server** picks up all DNS traffic without user intervention.
+{ .no-bullets }
 
 ### Backup Verification
 
-- Monthly check of the [Immich](../03_services/immich.md) library integrity and a trial restoration of a single Docker container from [Syncthing](../03_services/syncthing.md) data.
-- Weekly check of client backup logs for backup errors.
+- **Monthly** checks of the [Immich](../03_services/immich.md) library integrity are performed, and a trial restoration of a single Docker container from [Syncthing](../03_services/syncthing.md) data ensures the integrity of the local backup. **Weekly** checks of client backup logs are performed to look for errors.
+{ .no-bullets }
 
 ### Monitoring
 
--   Server status and service uptime is monitored by [Beszel Hub](../03_services/beszel.md) and [Uptime Kuma](../03_services/uptime_kuma.md) instances.
-    - Email notifications and push notifications with [Gotify](../03_services/gotify.md#notifications){ data-preview } are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
--   The ASUS router utilizing the Asuswrt-merlin firmware also has email notifications enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, and router reboots.
--   All three Debian-based servers send **email & push** notifications when new [SSH](../03_services/ssh.md) sessions are started, and when `unattended-upgrades` completes a package upgrade.
--   The [ZimaOS NAS](../02_hardware/zimaos_nas.md) sends push notifications with [Gotify](../03_services/gotify.md#notifications){ data-preview } when new SSH sessions are successfully established.
--   The email address, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ mailto-link }, is dedicated to automated notifications from the monitoring software.
+##### Beszel & Uptime Kuma
+
+- Server status and service uptime is monitored by [Beszel Hub](../03_services/beszel.md) and [Uptime Kuma](../03_services/uptime_kuma.md) instances. Email notifications and push notifications with [Gotify](../03_services/gotify.md#notifications){ data-preview } are enabled on both instances. Notifications are sent when a server has an issue or a service is inaccessible
+{ .no-bullets }
+
+##### NetAlertX
+
+- A [NetAlertX](../03_services/netalertx.md) server is hosted on the **ZimaOS NAS** in a Docker container to monitor the state of the network. It monitors all three VLANs, showing all known devices, the status of their connection, and other important information.
+{ .no-bullets }
+
+##### ASUS Router
+
+- The ASUS router utilizing the **Asuswrt-merlin** firmware also has email notifications and push notifications through the [Gotify](../03_services/gotify.md#notifications){ data-preview } server enabled for firmware / script updates, critical firewall messages, WAN connection quality degradation / dropouts, new network clients, and router reboots. 
+{ .no-bullets }
+- The [`ChkWAN.sh`](../02_hardware/asus_rt-be92u.md#wan-check-script) script monitors the WAN connection by performing ICMP echo tests on four different IP addresses every five minutes. If NONE of the four IP addresses reply to the ICMP echo packets the script automatically restarts the WAN interface in an attempt to re-establish the connection.
+{ .no-bullets }
+
+##### Security Notifications
+
+- All three Debian-based servers send **email & push** notifications when new [SSH](../03_services/ssh.md) sessions are started, and when `unattended-upgrades` completes a package upgrade. The [ZimaOS NAS](../02_hardware/zimaos_nas.md) sends push notifications with [Gotify](../03_services/gotify.md#notifications){ data-preview } when new SSH sessions are successfully established. Finally, the email address, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ mailto-link }, is dedicated to receiving automated notifications from the monitoring software.
+{ .no-bullets }
 
 ---
 

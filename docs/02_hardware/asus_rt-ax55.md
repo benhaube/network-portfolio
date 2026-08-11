@@ -86,7 +86,7 @@ _AiMesh Node_
 
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
-!!! config inline "Critical Configurations"
+!!! config inline end "Critical Configurations"
 
     **:symbols-hub:&ensp;AiMesh Node**
 

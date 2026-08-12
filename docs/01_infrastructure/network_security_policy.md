@@ -39,7 +39,7 @@ _The Principle of Least Privilege_
 
 ### Edge Protection
 
-: An [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) acts as the primary firewall, utilizing **SPI** and **DoS / DDoS** protection. The two-way **IPS** built into the ASUS router uses SPI to protect any device connected to the network from spam, DoS / DDoS attacks, and from malicious packets entering or exiting the network. The [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } firmware extends the basic functionality of the built-in firewall with [Skynet](https://github.com/Adamm00/IPSet_ASUS){ external-link }. It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
+: An [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) acts as the primary firewall, utilizing **SPI** and **DoS / DDoS** protection. The two-way **IPS** built into the ASUS router uses SPI to protect any device connected to the network from spam, DoS / DDoS attacks, and from malicious packets entering or exiting the network. The [Asuswrt-Merlin][merlin]{ external-link } firmware extends the basic functionality of the built-in firewall with [Skynet][skynet]{ external-link }. It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
 
 ### External Access
 
@@ -59,11 +59,11 @@ _The Principle of Least Privilege_
 
 ### Upstream Privacy
 
-:   DNS queries that cannot be resolved by the local servers' cache are forwarded to [Quad-9](https://quad9.net/){ external-link } via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack){ external-link })* attacks.
+:   DNS queries that cannot be resolved by the local servers' cache are forwarded to [Quad-9][quad-9]{ external-link } via **DoT** to prevent ISP snooping and **MITM** _([Man-in-the-Middle][mitm]{ external-link })_ attacks.
 
 ### Blocking
 
-:   Network-wide ad, tracking, and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
+:   Network-wide ad, tracking, and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains. Additionally, the [uBlock Origin][ubo]{ external-link } and [uBlock Lite][ubol]{ external-link } browser extensions are used in Firefox and Chromium to block any ads, tracking, and malware that make it through the DNS filter.
 
 ## :symbols-brick-wall-shield:&ensp;Device & Host Hardening
 
@@ -88,11 +88,15 @@ _The Principle of Least Privilege_
 
 ##### Credential Storage
 
-:   [Bitwarden](https://vault.bitwarden.com){ external-link } is utilized to securely store passwords, API keys, and SSH keys. Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely. The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. The mobile application auto-fills passwords on websites and native applications.
+:   [Bitwarden][bw]{ external-link } is utilized to securely store credentials, including usernames, passwords, Passkeys, API keys, and SSH keys. Bitwarden's desktop client has a built-in SSH key-agent; allowing private keys to be stored securely inside an encrypted vault. The Chromium and Firefox browser extensions auto-fill credentials and integrate with the desktop client; allowing the use of biometric authentication. Additionally, the `bitwarden-cli` utility gives users an easy way to access their credentials while working in the terminal. The mobile client can auto-fill credentials on websites and native applications. Finally, the Bitwarden "Organization" feature allows household members to securely share credentials.
+
+:   While Bitwarden does have the ability to store TOTP credentials, we forego this feature and use [Ente Auth][ente]{ external-link } instead. We believe it is vitally important to separate your primary and secondary authentication factors. Storing both factors in the same location gives attackers a single point of access, and negates the benefits of 2FA / MFA entirely. **Ente Auth** is an open-source, cross-platform TOTP manager with secure synchronization. It has desktop, mobile, and PWA clients making it easy to access your second factor authentication credentials anywhere you need them.
+
+:   The other 2FA / MFA method we utilize wherever possible are physical FIDO2 / WebAuthen security keys. While there are many companies manufacturing these physical security keys, we generally recommend the [YubiKey 5][yubi]{ external-link } and the [Google Titan][titan]{ external-link } products. Both products have a long, proven history of security, and come from reputible companies. Unfortunately, not all accounts offer FIDO2 authentication, but we recommend using it on any accounts that do. It is ideal to have a backup in the event you lose your physical key. This can be either a second physical key you store in a secure location, or TOTP authentication.
 
 ##### SSH Security
 
-:   [SSH](../03_services/ssh.md) access requires **Ed25519 Key-Based Authentication**; password-based and `root` user login are disabled.
+:   [SSH](../03_services/ssh.md) access requires **Ed25519 Key-Based Authentication**; password-based and `root` user login are disabled. No SSH ports are publicly exposed. To manage a server, first connect to the **WireGuard** VPN server to gain secure, encrypted access to the local network.
 
 ##### Local User Accounts
 
@@ -100,7 +104,7 @@ _The Principle of Least Privilege_
 
 ##### Self-Hosted Services
 
-:   Services hosted on the network that require login have separate "admin" accounts for administration. The regular user accounts have reduced permissions to increase security.
+:   Services hosted on the network that require login have separate "admin" accounts for administration. Regular user accounts have reduced permissions for increased operational security.
 
 ### Updates
 
@@ -147,3 +151,14 @@ _The Principle of Least Privilege_
     [IP Address Management](ip_address_management.md){ .md-button }
 
 </div>
+
+[bw]: <https://vault.bitwarden.com> "Bitwarden Web Vault"
+[ente]: <https://auth.ente.com/login> "Login &mdash; Ente Auth"
+[merlin]: <https://www.asuswrt-merlin.net/> "Asuswrt-Merlin Documentation"
+[mitm]: <https://en.wikipedia.org/wiki/Man-in-the-middle_attack>
+[quad-9]: <https://quad9.net/> "Quad-9 DNS"
+[skynet]: <https://github.com/Adamm00/IPSet_ASUS> "GitHub: Skynet"
+[titan]: <https://store.google.com/us/product/titan_security_key?hl=en-US&selections=eyJwcm9kdWN0RmFtaWx5IjoiWkdWMmFXTmxYMlpoYldsc2VWOWZkR2wwWVc1ZmMyVmpkWEpwZEhsZmEyVjUifQ%3D%3D> "Shop Google Titan Keys"
+[ubo]: <https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/> "Add to Firefox"
+[ubol]: <https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh> "Add to Chromium"
+[yubi]: <https://www.yubico.com/products/yubikey-5-overview/> "Shop YubiKey 5 Series"

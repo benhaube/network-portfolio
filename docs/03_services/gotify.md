@@ -34,17 +34,17 @@ _Push Notifications_
 
 :     `8180`
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-network:&ensp;Local Access:
+-   :symbols-network:&ensp;Local Access:
 { .no-bullets }
     - <http://storage-server.internal:8180>
     - <http://storage-server-2.internal:8180>
-- :symbols-globe-arrow:&ensp;Remote Access:
+-   :symbols-globe-arrow:&ensp;Remote Access:
 { .no-bullets }
     - <https://gotify.rac3r4life.online> &mdash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
 
@@ -75,7 +75,7 @@ _Push Notifications_
 
 ##### Docker Deploy
 
--    `../AppData/dockge/stacks/gotify/compose.yaml`
+- `../AppData/dockge/stacks/gotify/compose.yaml`
 { .no-bullets }
 
 ##### App Data
@@ -425,43 +425,46 @@ _Push Notifications_
 
 ##### AppData Backup
 
-1.  Create the custom script in the `/DATA/Scripts` directory:
+1.  Create the custom script in the `/DATA/.opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/Scripts/appdata_backup.sh
+    sudo nano /DATA/.opt/scripts/appdata_backup.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/Scripts/appdata_backup.sh" linenums="1" hl_lines="4 5" }
-    --8<-- "appdata_backup.sh"
+    ``` bash { .mono-title title="/DATA/.opt/scripts/appdata_backup.sh" linenums="1" hl_lines="8 9" }
+    --8<-- "b2-appdata-bkp.sh"
     ```
 
-    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
+    1.  Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
+    2.  The `rclone sync` command deletes files on the destination if they are removed from the source.
+
+        Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
 
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/Scripts/appdata_backup.sh
+    sudo chmod +x /DATA/.opt/scripts/appdata_backup.sh
     ```
 
 4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
 
     ``` bash linenums="1"
-    bash /DATA/Scripts/appdata-backup.sh
+    bash /DATA/.opt/scripts/appdata-backup.sh
     ```
 
 ##### Docker Cleanup
 
-1.  Create the custom script in the `/DATA/Scripts` directory:
+1.  Create the custom script in the `/DATA/.opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/Scripts/docker_cleanup.sh
+    sudo nano /DATA/.opt/scripts/docker_cleanup.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/Scripts/docker_cleanup.sh" linenums="1" hl_lines="4 5" }
+    ``` bash { .mono-title title="/DATA/.opt/scripts/docker_cleanup.sh" linenums="1" hl_lines="4 5" }
     --8<-- "docker_cleanup.sh"
     ```
 
@@ -470,26 +473,26 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/Scripts/docker_cleanup.sh
+    sudo chmod +x /DATA/.opt/scripts/docker_cleanup.sh
     ```
 
 4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
 
     ``` bash linenums="1"
-    bash /DATA/Scripts/docker_cleanup.sh
+    bash /DATA/.opt/scripts/docker_cleanup.sh
     ```
 
 ##### Temp Files Cleanup
 
-1.  Create the custom script in the `/DATA/Scripts` directory:
+1.  Create the custom script in the `/DATA/.opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/Scripts/temp_files_clean.sh
+    sudo nano /DATA/.opt/scripts/temp_files_clean.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/Scripts/temp_files_clean.sh" linenums="1" hl_lines="4 5" }
+    ``` bash { .mono-title title="/DATA/.opt/scripts/temp_files_clean.sh" linenums="1" hl_lines="4 5" }
     --8<-- "temp_files_clean.sh"
     ```
 
@@ -498,11 +501,11 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/Scripts/temp_files_clean.sh
+    sudo chmod +x /DATA/.opt/scripts/temp_files_clean.sh
     ```
 
 4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
 
     ``` bash linenums="1"
-    bash /DATA/Scripts/temp_files_clean.sh
+    bash /DATA/.opt/scripts/temp_files_clean.sh
     ```

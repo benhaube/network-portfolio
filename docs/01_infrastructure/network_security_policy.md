@@ -39,37 +39,31 @@ _The Principle of Least Privilege_
 
 ### Edge Protection
 
-- An [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) acts as the primary firewall, utilizing **SPI** and **DoS / DDoS** protection. The two-way **IPS** built into the ASUS router uses SPI to protect any device connected to the network from spam, DoS / DDoS attacks, and from malicious packets entering or exiting the network. The [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } firmware extends the basic functionality of the built-in firewall with [Skynet](https://github.com/Adamm00/IPSet_ASUS){ external-link }. It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
-{ .no-bullets }
+: An [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) acts as the primary firewall, utilizing **SPI** and **DoS / DDoS** protection. The two-way **IPS** built into the ASUS router uses SPI to protect any device connected to the network from spam, DoS / DDoS attacks, and from malicious packets entering or exiting the network. The [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } firmware extends the basic functionality of the built-in firewall with [Skynet](https://github.com/Adamm00/IPSet_ASUS){ external-link }. It leverages predefined malware lists from reputable sources to protect the network against potential threats, and prevent unauthorized access.
 
 ### External Access
 
 ##### Reverse-Proxy
 
-- Direct port forwarding is strictly prohibited. Remote access to individual services is facilitated through multiple [Cloudflare Tunnels](../03_services/cloudflared.md), ensuring all incoming traffic is proxied and SSL-encrypted.
-{ .no-bullets }
+:   Direct port forwarding is strictly prohibited. Remote access to individual services is facilitated through multiple [Cloudflare Tunnels](../03_services/cloudflared.md), ensuring all incoming traffic is proxied and SSL-encrypted.
 
 ##### VPN
 
-- For administrative tasks, there are two [WireGuard](../03_services/wireguard_server.md) instances providing a secure, encrypted tunnel into the Trusted zone. The primary WireGuard server is hosted natively on the main [ASUS router](../02_hardware/asus_rt-be92u.md). The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_hardware/zimaos_nas.md).
-{ .no-bullets }
+:   For administrative tasks, there are two [WireGuard](../03_services/wireguard_server.md) instances providing a secure, encrypted tunnel into the Trusted zone. The primary WireGuard server is hosted natively on the main [ASUS router](../02_hardware/asus_rt-be92u.md). The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_hardware/zimaos_nas.md).
 
 ## :symbols-server:&ensp;DNS Security & Content Filtering
 
 ### Internal Resolution
 
-- A clustered [Technitium DNS](../03_services/technitium.md) environment handles all local queries. The [Debian Server](../02_hardware/debian_server.md) acts as the primary node in the cluster, and the [Pi 4B Server](../02_hardware/pi_4b_server.md) acts as the secondary node. Both server IP addresses are configured in the router's DHCP server to ensure all clients on the trusted VLAN _(VLAN50)_ are using the local DNS servers for domain name resolution. Thanks to the clustered, highly available configuration; one DNS server can go down and domain resolution will remain functional.
-{ .no-bullets }
+:   A clustered [Technitium DNS](../03_services/technitium.md) environment handles all local queries. The [Debian Server](../02_hardware/debian_server.md) acts as the primary node in the cluster, and the [Pi 4B Server](../02_hardware/pi_4b_server.md) acts as the secondary node. Both server IP addresses are configured in the router's DHCP server to ensure all clients on the trusted VLAN _(VLAN50)_ are using the local DNS servers for domain name resolution. Thanks to the clustered, highly available configuration; one DNS server can go down and domain resolution will remain functional.
 
 ### Upstream Privacy
 
-- DNS queries that cannot be resolved by the local servers' cache are forwarded to [Quad-9](https://quad9.net/){ external-link } via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack){ external-link })* attacks.
-{ .no-bullets }
+:   DNS queries that cannot be resolved by the local servers' cache are forwarded to [Quad-9](https://quad9.net/){ external-link } via **DoT** to prevent ISP snooping and **MITM** *([Man-in-the-Middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack){ external-link })* attacks.
 
 ### Blocking
 
-- Network-wide ad, tracking, and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
-{ .no-bullets }
+:   Network-wide ad, tracking, and malware blocking is enforced at the DNS level using curated blocklists to neutralize telemetry and malicious domains.
 
 ## :symbols-brick-wall-shield:&ensp;Device & Host Hardening
 
@@ -77,57 +71,48 @@ _The Principle of Least Privilege_
 
 ##### Servers
 
--   Servers primarily utilize **Debian** and **ZimaOS** _(on the NAS)_ for stability and security. Both of these server operating systems ensure maximum security and availability for services hosted on the network.
-{ .no-bullets }
+:   Servers primarily utilize **Debian** and **ZimaOS** _(on the NAS)_ for stability and security. Both of these server operating systems ensure maximum security and availability for services hosted on the network.
+
     - **Debian Linux** _(Stable)_ is a rock-solid, unchanging base to build a server on. Packages are not frequently updated with new features, so there is no need to worry about breakages. The 10-year-long service life means you are guaranteed to get security updates for the server's lifetime.
     - The immutability of **ZimaOS** means OS updates on the NAS are easy to revert if they cause a breakage, and ensures no system files can be modified by an intruder.
 
 ##### Clients
 
-- Client PCs utilize **Fedora _(KDE Plasma Desktop Edition)_** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware _(e.g., the latest CPUs & GPUs)_.
-{ .no-bullets }
+:   Client PCs utilize **Fedora _(KDE Plasma Desktop Edition)_** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware _(e.g., the latest CPUs & GPUs)_.
 
 ##### Mobile Devices
 
-- Mobile devices _(smartphones and tablets)_ utilize **Android**. Only Google Pixel and Samsung Galaxy devices are allowed due to their monthly security patches and long service & support lifespan.  
-{ .no-bullets }
+:   Mobile devices _(e.g., smartphones and tablets)_ utilize **Android**. Only **Google Pixel** and **Samsung Galaxy** devices are allowed due to their monthly security patches and long service & support lifespan. While Apple's **iOS** mobile operating system is secure, it is not compatible with our philosophy that promotes the use of open-source software.  
 
 ### Access Control
 
 ##### Credential Storage
 
-- [Bitwarden](https://vault.bitwarden.com){ external-link } is utilized to securely store passwords, API keys, and SSH keys. Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely. The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. The mobile application auto-fills passwords on websites and native applications.
-{ .no-bullets }
+:   [Bitwarden](https://vault.bitwarden.com){ external-link } is utilized to securely store passwords, API keys, and SSH keys. Bitwarden's desktop app has a built-in SSH key-agent; allowing private keys to be stored securely. The Chromium and Firefox browser extensions auto-fill passwords and integrate with the desktop app; allowing the use of biometric authentication. The mobile application auto-fills passwords on websites and native applications.
 
 ##### SSH Security
 
-- [SSH](../03_services/ssh.md) access requires **Ed25519 Key-Based Authentication**; password-based and `root` user login are disabled.
-{ .no-bullets }
+:   [SSH](../03_services/ssh.md) access requires **Ed25519 Key-Based Authentication**; password-based and `root` user login are disabled.
 
 ##### Local User Accounts
 
-- Local user accounts on the Fedora and Windows 11 PCs do not have administrator privileges. A separate "admin" account is required to make system-level changes.
-{ .no-bullets }
+:   Local user accounts on the Fedora and Windows 11 PCs do not have administrator privileges. A separate "admin" account is required to make system-level changes.
 
 ##### Self-Hosted Services
 
-- Services hosted on the network that require login have separate "admin" accounts for administration. The regular user accounts have reduced permissions to increase security.
-{ .no-bullets }
+:   Services hosted on the network that require login have separate "admin" accounts for administration. The regular user accounts have reduced permissions to increase security.
 
 ### Updates
 
-- Automated security patching is enabled for critical packages on the **Debian servers** with `unattended-upgrades`, weekly manual audits for **Docker container** image updates *(monitored via &nbsp;[Dockge](../03_services/dockge.md))*, and **desktop / laptop PCs** have automatic updates enabled.
-{ .no-bullets }
+:   Automated security patching is enabled for critical packages on the **Debian servers** with `unattended-upgrades`, weekly manual audits for **Docker container** image updates *(monitored via &nbsp;[Dockge](../03_services/dockge.md))*, and **desktop / laptop PCs** have automatic updates enabled.
 
 ### 3D Infrastructure
 
-- The [Creality K1C](../02_hardware/kacey_3d-printer.md) is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
-{ .no-bullets }
+:   The [Creality K1C](../02_hardware/kacey_3d-printer.md) is isolated to prevent unauthorized control while remaining accessible to the **Trusted** zone for print management.
 
 ## :symbols-door-closed-locked:&ensp;IoT & Smart Home Integrity
 
-- The migration from **Google Home** to **Home Assistant** ensures that IoT devices are managed locally. By isolating **VLAN53**, "phone-home" telemetry from generic IoT hardware is neutralized, preventing potential lateral movement if a device is compromised.
-{ .no-bullets }
+:   The migration from **Google Home** to **Home Assistant** ensures that IoT devices are managed locally. By isolating **VLAN53**, "phone-home" telemetry from generic IoT hardware is neutralized, preventing potential lateral movement if a device is compromised.
 
 ---
 

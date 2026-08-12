@@ -67,7 +67,7 @@ _Maintaining High Availability_
 
 ##### Mobile Devices
 
-:   Android smartphones have **SMS / MMS & RCS** messages and critical application configurations backed up while charging to the **ZimaOS NAS** via **Syncthing**. The backup archives for messages are created locally on the device with the [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/){ external-link } application.
+:   Android smartphones have **SMS / MMS & RCS** messages and critical application configurations backed up while charging to the **ZimaOS NAS** via **Syncthing**. The backup archives for messages are created locally on the device with the [SMS Backup & Restore Pro][sms]{ external-link } application.
 
 :   **Photos & videos** from mobile devices are backed up in real-time to the **ZimaOS NAS** using the [Immich](../03_services/immich.md) server. This local, self-hosted service is used as an alternative to public photo services _(e.g., Google Photos)_; maintaining data privacy and digital sovereignty and preventing personal data from being used to train AI models.
 
@@ -75,11 +75,11 @@ _Maintaining High Availability_
 
 :   Critical database dumps _(e.g., [Home Assistant](../03_services/home_assistant.md), [Immich](../03_services/immich.md) PostgreSQL)_ are exported weekly to the **USB Storage** _(32GB)_ attached to the **Pi 4B Server** and the **NVMe Storage** _(500GB)_ on the **ZimaOS NAS**.
 
-:   The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#role){ data-preview } wireless router is exported weekly _(Sundays @ 06:00 UTC)_ to the **USB Storage** _(32GB)_ attached to the **Pi 4B Server** and the **Quick-Storage** _(2TB)_ on the **ZimaOS NAS** via the `backupmon` utility included with the [Asuswrt-merlin](https://www.asuswrt-merlin.net/){ external-link } firmware.
+:   The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#role){ data-preview } wireless router is exported weekly _(Sundays @ 06:00 UTC)_ to the **USB Storage** _(32GB)_ attached to the **Pi 4B Server** and the **Quick-Storage** _(2TB)_ on the **ZimaOS NAS** via the `backupmon` utility included with the [Asuswrt-merlin][merlin]{ external-link } firmware.
 
 ### Off-Site Backup
 
-:   Encrypted backups of the Obsidian vaults, application data, local backup data, and key configuration files are synchronized to the secure cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, using the `rclone` utility. Transfers are scheduled using custom bash scripts and cron jobs, and occur during the early morning hours _(06:00 &mdash; 09:00 UTC)_ while the network is at its lowest utilization.
+:   Encrypted backups of the Obsidian vaults, application data, local backup data, and key configuration files are synchronized to the secure cloud storage provider, [Backblaze B2][b2]{ external-link }, using the `rclone` utility. Transfers are scheduled using custom bash scripts and cron jobs, and occur during the early morning hours _(06:00 &mdash; 09:00 UTC)_ while the network is at its lowest utilization.
 
 ## :symbols-refresh-ccw-dot:&ensp;Recovery Procedures
 
@@ -125,7 +125,7 @@ _Maintaining High Availability_
 
 ##### Beszel & Uptime Kuma
 
-:   Server status and service uptime is monitored by [Beszel Hub](../03_services/beszel.md) and [Uptime Kuma](../03_services/uptime_kuma.md) instances. Email notifications via [Fastmail's SMTP server](https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports#email){ external-link } and push notifications using the self-hosted [Gotify](../03_services/gotify.md#notifications){ data-preview } server are enabled on both instances, and notifications are sent when a server has an issue or a service is inaccessible.
+:   Server status and service uptime is monitored by [Beszel Hub](../03_services/beszel.md) and [Uptime Kuma](../03_services/uptime_kuma.md) instances. Email notifications via [Fastmail's SMTP server][fm]{ external-link } and push notifications using the self-hosted [Gotify](../03_services/gotify.md#notifications){ data-preview } server are enabled on both instances, and notifications are sent when a server has an issue or a service is inaccessible.
 
 :   All four servers on the trusted VLAN _(VLAN50)_ are connected to the Bezel service. The **Pi 4B Server** hosts the main **Beszel Hub** container, and the other three servers have only the lightweight **Beszel Agent** container to connect to the hub via websocket.
 
@@ -182,3 +182,8 @@ _Maintaining High Availability_
     [Network Security Policy](network_security_policy.md){ .md-button }
 
 </div>
+
+[b2]: <https://www.backblaze.com/cloud-storage> "Backblaze B2 Cloud Storage"
+[fm]: <https://www.fastmail.help/hc/en-us/articles/1500000278342-Server-names-and-ports#email> "Fastmail Server Names & Ports"
+[merlin]: <https://www.asuswrt-merlin.net/> "Asuswrt-Merlin Documentation"
+[sms]: <https://www.synctech.com.au/sms-backup-restore/>

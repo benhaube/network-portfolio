@@ -428,12 +428,12 @@ _Push Notifications_
 1.  Create the custom script in the `/DATA/.opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/.opt/scripts/appdata_backup.sh
+    sudo nano /DATA/.opt/scripts/b2-appdata-bkp.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/appdata_backup.sh" linenums="1" hl_lines="8 9" }
+    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-appdata-bkp.sh" linenums="1" hl_lines="8 9" }
     --8<-- "b2-appdata-bkp.sh"
     ```
 
@@ -445,13 +445,44 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/.opt/scripts/appdata_backup.sh
+    sudo chmod +x /DATA/.opt/scripts/b2-appdata-bkp.sh
     ```
 
 4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
 
     ``` bash linenums="1"
-    bash /DATA/.opt/scripts/appdata-backup.sh
+    bash /DATA/.opt/scripts/b2-appdata-bkp.sh
+    ```
+
+##### Immich Backup
+
+1.  Create the custom script in the `/DATA/.opt/scripts` directory:
+
+    ``` bash linenums="1"
+    sudo nano /DATA/.opt/scripts/b2-immich-bkp.sh
+    ```
+
+2.  Paste the following code into the file:
+
+    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-immich-bkp.sh" linenums="1" hl_lines="8 9" }
+    --8<-- "b2-immich-bkp.sh"
+    ```
+
+    1.  Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
+    2.  The `rclone sync` command deletes files on the destination if they are removed from the source.
+
+        Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
+
+3.  Set the execute permission:
+
+    ``` bash linenums="1"
+    sudo chmod +x /DATA/.opt/scripts/b2-immich-bkp.sh
+    ```
+
+4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
+
+    ``` bash linenums="1"
+    bash /DATA/.opt/scripts/b2-immich-bkp.sh
     ```
 
 ##### Docker Cleanup

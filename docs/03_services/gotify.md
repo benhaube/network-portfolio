@@ -433,14 +433,18 @@ _Push Notifications_
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-appdata-bkp.sh" linenums="1" hl_lines="8 9" }
+    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-appdata-bkp.sh" linenums="1" hl_lines="9 10" }
     --8<-- "b2-appdata-bkp.sh"
     ```
 
     1.  Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
+
     2.  The `rclone sync` command deletes files on the destination if they are removed from the source.
 
         Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
+
+    3.  Grabs the last instance of transfer stats and cleans up the prefix.
+    4.  Using `$'\n'` to pass line breaks into the Gotify message payload.
 
 3.  Set the execute permission:
 
@@ -464,14 +468,18 @@ _Push Notifications_
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-immich-bkp.sh" linenums="1" hl_lines="8 9" }
+    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-immich-bkp.sh" linenums="1" hl_lines="9 10" }
     --8<-- "b2-immich-bkp.sh"
     ```
 
     1.  Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
+
     2.  The `rclone sync` command deletes files on the destination if they are removed from the source.
 
         Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
+
+    3.  Grabs the last instance of transfer stats and cleans up the prefix.
+    4.  Using `$'\n'` to pass line breaks into the Gotify message payload.
 
 3.  Set the execute permission:
 
@@ -495,14 +503,18 @@ _Push Notifications_
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-backup-bkp.sh" linenums="1" hl_lines="8 9" }
+    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-backup-bkp.sh" linenums="1" hl_lines="9 10" }
     --8<-- "b2-backup-bkp.sh"
     ```
 
     1.  Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
+
     2.  The `rclone sync` command deletes files on the destination if they are removed from the source.
 
         Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
+
+    3.  Grabs the last instance of transfer stats and cleans up the prefix.
+    4.  Using `$'\n'` to pass line breaks into the Gotify message payload.
 
 3.  Set the execute permission:
 

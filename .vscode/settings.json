@@ -1,6 +1,5 @@
 {
     "files.autoSave": "afterDelay",
-    "markdown.extension.tableFormatter.enabled": true,
     "editor.wordWrap": "off",
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
@@ -8,6 +7,9 @@
             "file:///home/bhaube/Development/network-portfolio/compose-serve.yml",
             "file:///home/bhaube/Development/network-portfolio/compose-build.yml"
         ]
+    },
+    "files.associations": {
+        "*.md": "python-markdown"
     },
     "stylelint.validate": ["css", "scss"],
     "yaml.customTags": [ 

@@ -50,7 +50,7 @@ _Primary DNS Server_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - SSH Keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
 

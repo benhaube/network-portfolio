@@ -75,7 +75,7 @@ _Detailed Configuration Info_
 
 ##### API Key
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 

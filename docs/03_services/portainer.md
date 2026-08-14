@@ -56,7 +56,7 @@ _Container Management_
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }
-- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Portainer"
 - 2FA / MFA

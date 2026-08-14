@@ -43,7 +43,7 @@ _Google Pixel 9 Pro_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Email&ensp;:symbols-move-right:&ensp;"Google"
 

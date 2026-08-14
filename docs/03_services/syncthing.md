@@ -67,7 +67,7 @@ _File Synchronization_
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ bens-workstation"
     - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ ben-laptop"

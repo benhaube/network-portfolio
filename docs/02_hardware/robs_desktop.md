@@ -45,7 +45,7 @@ _High-Performance Desktop PC_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
 

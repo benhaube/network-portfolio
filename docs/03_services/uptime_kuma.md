@@ -46,7 +46,7 @@ _A Fancy Monitoring Tool_
 
 #### :symbols-user-key:&ensp;Credentials  
 
-- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
 - 2FA / MFA

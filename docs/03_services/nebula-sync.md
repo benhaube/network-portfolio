@@ -42,7 +42,7 @@ _Synchronize Pi-hole_
 
 #### :symbols-user-key:&ensp;Credentials 
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
     - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"

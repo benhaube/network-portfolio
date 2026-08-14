@@ -65,7 +65,7 @@ _Secure Shell_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com){ external-link }
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - SSH keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE92U (Admin)"
     - SSH keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"

@@ -1,7 +1,7 @@
 # --- GLOBAL SETTINGS for all hosts (*) ---
 
 Host *
-    IdentityAgent ~/.bitwarden-ssh-agent.sock  # (1)!
+    IdentityAgent ~/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock  # (1)!
     # User admin  (2)
 
 # --- HOST-SPECIFIC SETTINGS ---

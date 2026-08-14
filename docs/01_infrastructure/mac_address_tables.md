@@ -65,7 +65,7 @@ _Hardware MAC Addresses_
 | :symbols-gamepad-2:&nbsp;Game Console       | Mobile      | `nintendo-switch`                                                                     | `74:84:69:0B:56:EF` |            :symbols-wifi:             | Nintendo Switch OLED                                                                                    |
 | :symbols-gamepad-2:&nbsp;Game Console       | Living-Room | `nintendo-switch`                                                                     | `74:84:69:34:69:78` |        :symbols-ethernet-port:        | Nintendo Switch OLED docking station for TV in Living Room                                              |
 
-## :symbols-house-shield:&ensp;IoT Network
+## :symbols-shield-house:&ensp;IoT Network
 
 &emsp;&emsp;&ensp;_VLAN53_
 

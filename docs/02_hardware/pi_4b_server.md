@@ -71,7 +71,7 @@ _Secondary DNS Server_
 | Interface |                VLAN                | FQDN                 | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------: | :--------------------------------: | :------------------- | :---------------------------------------- | :------------------------------------ |
 |  `eth0`   |    :symbols-shield:&nbsp;VLAN50    | `pi-server.internal` | `127.0.0.1`                               | `192.168.50.1`                        |
-|  `wlan0`  | :symbols-house-shield:&nbsp;VLAN53 | `N/A`                | `127.0.0.1`                               | `192.168.53.1`                        |
+|  `wlan0`  | :symbols-shield-house:&nbsp;VLAN53 | `N/A`                | `127.0.0.1`                               | `192.168.53.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

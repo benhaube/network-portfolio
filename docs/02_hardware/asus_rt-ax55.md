@@ -63,14 +63,14 @@ _AiMesh Node_
 |                VLAN                | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
 | :--------------------------------: | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
 |    :symbols-shield:&nbsp;VLAN50    | internal | `192.168.50.6` `192.168.50.2`               | `192.168.50.0/24`                  | `192.168.50.1`                        | `192.168.50.255`                        | `.22` to `.254`                        |
-| :symbols-house-shield:&nbsp;VLAN53 | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.53.0/24`                  | `192.168.53.1`                        | `192.168.53.255`                        | `.3` to `.254`                         |
+| :symbols-shield-house:&nbsp;VLAN53 | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.53.0/24`                  | `192.168.53.1`                        | `192.168.53.255`                        | `.3` to `.254`                         |
 
 #### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
 |   SSID   |  VLAN  |   WAN Access    | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                |
 | :------: | :----: | :-------------: | :--------------------------------- | :-------------------------------------- | :----------------------------------- |
 |  _Home_  | VLAN50 | :symbols-check: | `192.168.50.0/24`                  | 2.4 GHz, 5 GHz                          | :symbols-shield:&nbsp;Trusted VLAN   |
-| *2G_IoT* | VLAN53 |   :symbols-x:   | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-house-shield:&nbsp;IoT VLAN |
+| *2G_IoT* | VLAN53 |   :symbols-x:   | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN |
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 

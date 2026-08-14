@@ -68,7 +68,7 @@ theme:
       primary: green
       accent: light blue
       toggle:
-        icon: symbols/moon
+        icon: symbols/moon-star
         name: Switch to system preference
   
   # Set the fonts used on the site.

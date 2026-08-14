@@ -69,7 +69,7 @@ _The Klipper Web API_
 
 1. Remove `#` after this line to keep Creality Helper Script up to date.
 2. Remove `#` after this line to enable camera configuration with Moonraker and replace `xxx.xxx.xxx.xxx` by your IP addresses.
-3. Remove `#` after this line if you use Timelapse function and replace port `4408` by `4409` in snapshoturl if you use Mainsail.
+3. Remove `#` after this line if you use Timelapse function and replace port `4408` by `4409` in `snapshoturl` if you use Mainsail.
 4. Remove `#` after this line if you use Fluidd.
 5. Remove `#` after this line if you use Mainsail.
 6. Remove `#` after this line if you use Mobileraker Companion.

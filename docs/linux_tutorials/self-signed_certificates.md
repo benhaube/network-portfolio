@@ -27,7 +27,7 @@ _SSL for Your Local Server_
 !!! question "FAQ"
 
     **What is an SSL certificate?**
-    : SSL certificates provide encryption for Web servers and applications... the 'S' in HTTPS. Self-Signed SSL certificates can be useful for testing, developmet, and for encrypting connections to internal Web servers. However, they should not be used for hosting services or applications publicly. For that use, you will need to obtain a certificate signed by a reputable CA. My favorite way to obtain a free SSL certificate signed by a CA is LetsEncrypt. On this page is a step-by-step guide to creatinng your own self-signed SSL certificate using the Linux command line.
+    : SSL certificates provide encryption for Web servers and applications... the 'S' in HTTPS. Self-Signed SSL certificates can be useful for testing, development, and for encrypting connections to internal Web servers. However, they should not be used for hosting services or applications publicly. For that use, you will need to obtain a certificate signed by a reputable CA. My favorite way to obtain a free SSL certificate signed by a CA is LetsEncrypt. On this page is a step-by-step guide to creating your own self-signed SSL certificate using the Linux command line.
 
 ---
 
@@ -101,4 +101,4 @@ Now that we have the private key and the CSR we have the pieces we need to gener
 
 The process to configure your Web server to use your new self-signed certificate will vary depending on the server you are using. _(e.g., Nginx, Apache, etc.)_ Check the documentation for your specific Web server, then update the configuration file with the directory path of your certificate.
 
-Self-signed certificates should never be used for production environments, but they are great for testing, development, and internal servers. Just keep in mind that you will recieve warnings in your web browser that say you have an invalid certificate. This is because we have signed our certificate ourselves. The browsers have a certificate store full of trusted root Certificate Authorities, and your self-signed certificate does not match any of them. You can at least tell your browser to quit warning you about the certificate.
+Self-signed certificates should never be used for production environments, but they are great for testing, development, and internal servers. Just keep in mind that you will receive warnings in your web browser that say you have an invalid certificate. This is because we have signed our certificate ourselves. The browsers have a certificate store full of trusted root Certificate Authorities, and your self-signed certificate does not match any of them. You can at least tell your browser to quit warning you about the certificate.

@@ -154,7 +154,7 @@ Finally, it is time to create the shell script. The shell script is vital. It is
     --8<-- "ssh-login-notify.sh"
     ```
 
-    1. Change `RECIPIENT=example@example.com` to the email address where you want to recieve notifications.  
+    1. Change `RECIPIENT=example@example.com` to the email address where you want to receive notifications.  
 
 3.  Save and close the file:
     - ++ctrl+o++&ensp;to save
@@ -173,7 +173,7 @@ Finally, it is time to create the shell script. The shell script is vital. It is
 
 !!! party "Congrats!"
 
-    Congratulations, we are done! You now have a working email notification set up. You will recieve an email notification to the address defined in your script every time a new SSH session is successfully established on your server. Now we will test everything we have configured to make sure it is functioning properly.
+    Congratulations, we are done! You now have a working email notification set up. You will receive an email notification to the address defined in your script every time a new SSH session is successfully established on your server. Now we will test everything we have configured to make sure it is functioning properly.
 
 1.  Start a new SSH session either on a new tab in your terminal application, or with a different host.
 2.  Check your recipient email account to see if the email has been sent.
@@ -254,7 +254,7 @@ If you have a [Gotify](../03_services/gotify.md) instance, you can use it to sen
     !!! failure "Error"
 
         **Error 551 5.7.1** 
-        : Not authorised to send from this header address.
+        : Not authorized to send from this header address.
 
     ---
 

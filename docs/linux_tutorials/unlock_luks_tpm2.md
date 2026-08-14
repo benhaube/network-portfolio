@@ -159,7 +159,7 @@ _Speeding Up the Boot Process_
     sudo nano /etc/default/grub
     ```
 
-2.  Find the line that starts with `GRUB_CMDLINE_LINUX_DEFAULT` or `GRUB_CMDLINE_LINUX` and append the new option inside the quotation marks, separated by a space from any existing perameters:
+2.  Find the line that starts with `GRUB_CMDLINE_LINUX_DEFAULT` or `GRUB_CMDLINE_LINUX` and append the new option inside the quotation marks, separated by a space from any existing parameters:
 
     ``` ini title="Before (Example)" linenums="1"
     GRUB_CMDLINE_LINUX="quiet splash"

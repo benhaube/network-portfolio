@@ -29,7 +29,7 @@ hide:
 
 ## :symbols-badge-alert:&ensp;Prerequisites
 
-To complte this tutorial you will need the following packages:
+To complete this tutorial you will need the following packages:
 
 + `nodejs` *(Javascript runtime)*
 { .no-bullets }
@@ -110,7 +110,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
     
     ++ctrl+x++&ensp;to close
 
-4. Reload the connfiguration:
+4. Reload the configuration:
 
     ``` bash linenums="1"
     source ~/.bashrc

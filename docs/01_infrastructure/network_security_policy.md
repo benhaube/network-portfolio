@@ -155,7 +155,7 @@ _The Principle of Least Privilege_
 [bw]: <https://vault.bitwarden.com> "Bitwarden Web Vault"
 [ente]: <https://auth.ente.com/login> "Login &mdash; Ente Auth"
 [merlin]: <https://www.asuswrt-merlin.net/> "Asuswrt-Merlin Documentation"
-[mitm]: <https://en.wikipedia.org/wiki/Man-in-the-middle_attack>
+[mitm]: <https://en.wikipedia.org/wiki/Man-in-the-middle_attack> "Wikipedia"
 [quad-9]: <https://quad9.net/> "Quad-9 DNS"
 [skynet]: <https://github.com/Adamm00/IPSet_ASUS> "GitHub: Skynet"
 [titan]: <https://store.google.com/us/product/titan_security_key?hl=en-US&selections=eyJwcm9kdWN0RmFtaWx5IjoiWkdWMmFXTmxYMlpoYldsc2VWOWZkR2wwWVc1ZmMyVmpkWEpwZEhsZmEyVjUifQ%3D%3D> "Shop Google Titan Keys"

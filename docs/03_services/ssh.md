@@ -234,9 +234,9 @@ _Secure Shell_
 
     ??? tip
 
-        :symbols-user-key:&ensp;**Permissions Error**
+        :symbols-user-key:&ensp;**Permissions Warning**
 
-        :   In some cases you may get the following error when trying to start an SSH session:
+        :   In some cases you may get the following warning when trying to start an SSH session:
             ``` shell-session
             bhaube @ bens-workstation ~
             on Fedora ❭ ssh ASUS-Router
@@ -249,7 +249,7 @@ _Secure Shell_
             Load key "/home/bhaube/.ssh/asusrouter.pub": bad permissions
             Admin@asusrouter.internal: Permission denied (publickey).
             ```
-        :   If you get this error; run the following command to give you public keys secure permissions:
+        :   If you get this warning; run the following command to give you public keys secure permissions:
             ``` bash
             chmod 600 ~/.ssh/*.pub
             ```

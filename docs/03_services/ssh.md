@@ -177,26 +177,28 @@ _Secure Shell_
 
 ##### Bitwarden SSH Key Agent
 
-![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-light.png#only-light){ width=350 align=right }
-![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-dark.png#only-dark){ width=350 align=right }
+![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-light.png#only-light){ width=350 align=right .on-glb }
+![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-dark.png#only-dark){ width=350 align=right .on-glb }
 
-1.  Download the appropriate version of the Bitwarden desktop application from the [GitHub Releases](https://github.com/bitwarden/clients/releases) page.
-2.  Install the package:
+1.  Install the **flatpak** version of the Bitwarden desktop application from [Flathub](https://flathub.org/en/apps/com.bitwarden.desktop){ external-link }
 
-    ``` bash title="Fedora / RHEL" linenums="1"
-    sudo rpm -i <package-name.rpm>
+    ``` bash linenums="1"
+    flatpak install -y com.bitwarden.desktop
     ```
 
-    ``` bash title="Debian" linenums="1"
-    sudo dpkg -i <package-name.deb>
-    ```
-
+2.  Ensure the package, `libsecret`, is installed. It is required for the Bitwarden desktop app to securely store access tokens and biometric unlock data securely.
 3.  Make sure to enable **"Start automatically on login"** and **"Enable SSH agent"** in the Bitwarden application's settings.
 4.  Paste this line into the client's `~/.bashrc` file to enable the Bitwarden SSH key agent.
 
     ``` bash linenums="1"
-    export SSH_AUTH_SOCK=/home/$USER/.bitwarden-ssh-agent.sock
+    export SSH_AUTH_SOCK=/home/$USER/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
     ```
+
+    ??? note
+
+        :brands-fedora:&ensp;**Fedora PCs**
+
+        :   The PCs running **Fedora &mdash; KDE Plasma Edition** have a separate file for setting environment variables located at `~/.bashrc.d/env`. _DO NOT_ set the `SSH_AUTH_SOCK` environment variable in the `.bashrc` file on these machines.
 
 ##### SSH Config File
 
@@ -229,3 +231,25 @@ _Secure Shell_
     ``` bash title="Example" linenums="1"
     nano ~/.ssh/[hostname].pub
     ```
+
+    ??? tip
+
+        :symbols-user-key:&ensp;**Permissions Error**
+
+        :   In some cases you may get the following error when trying to start an SSH session:
+            ``` shell-session
+            bhaube @ bens-workstation ~
+            on Fedora ❭ ssh ASUS-Router
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            @         WARNING: UNPROTECTED KEY FILE!          @
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            Permissions 0755 for '/home/bhaube/.ssh/asusrouter.pub' are too open.
+            It is required that your key files are NOT accessible by others.
+            This key will be ignored.
+            Load key "/home/bhaube/.ssh/asusrouter.pub": bad permissions
+            Admin@asusrouter.internal: Permission denied (publickey).
+            ```
+        :   If you get this error; run the following command to give you public keys secure permissions:
+            ``` bash
+            chmod 600 ~/.ssh/*.pub
+            ```

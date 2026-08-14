@@ -55,7 +55,7 @@ _Immich Slideshow for Nest Hub_
 ### :symbols-file-code-corner:&ensp;Photo Cleaning Script
 
 ``` javascript title="Javascript" linenums="1"
---8<-- "clean-google-photos.js"
+--8<-- "includes/code/clean-google-photos.js"
 ```
 
 1. If the script selects them but doesn't delete them, just click the :symbols-trash-2: icon yourself after it does the hard work of selecting everything.
@@ -67,7 +67,7 @@ _Immich Slideshow for Nest Hub_
 Add these services to your existing Immich stack or a new stack.
 
 ``` yaml { .mono-title title="compose.yml" linenums="1" }
---8<-- "immich-frame.yaml"
+--8<-- "includes/code/yaml/immich-frame.yaml"
 ```
 
 1. The Interface _(Displays the clock / weather / photos)_
@@ -80,7 +80,7 @@ Add these services to your existing Immich stack or a new stack.
 Place this in the same folder as your docker-compose file.
 
 ``` json { .mono-title title="config.json" linenums="1" }
---8<-- "immich-frame-config.json"
+--8<-- "includes/code/config/immich-frame-config.json"
 ```
 
 ## :symbols-globe-arrow:&ensp;Network & Cloudflare
@@ -100,5 +100,5 @@ Place this in the same folder as your docker-compose file.
 **Automation YAML:**
 
 ``` yaml { .mono-title title="/home-assistant-container/automations.yaml" linenums="1" }
---8<-- "ha-automations.yaml"
+--8<-- "includes/code/yaml/ha-automations.yaml"
 ```

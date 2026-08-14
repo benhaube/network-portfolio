@@ -280,7 +280,7 @@ hide:
 [:symbols-square-terminal:&ensp;Defining Bash Aliases](linux_tutorials/define_bash_aliases.md) 
 : How to define Bash terminal aliases in their own file to avoid a cluttered `.bashrc` file. The methodology is different on  Debian and RHEL / Fedora based Linux distributions.
 
-[:symbols-image-play:&ensp;Immich Slideshow for Nest Hub](linux_tutorials/immich_slidshow_for_nest_hub.md)
+[:symbols-image-play:&ensp;Immich Slideshow for Nest Hub](linux_tutorials/immich_slideshow_for_nest_hub.md)
 : How to replace the Google Photos slideshow on the Nest Hub with an Immich slideshow utilizing an `immich-frame` container and [Home Assistant](03_services/home_assistant.md) with Google Cast.
 
 [:symbols-file-badge:&ensp;Self-Signed Certificates](linux_tutorials/self-signed_certificates.md)

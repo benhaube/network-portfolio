@@ -180,7 +180,7 @@ _Secure Shell_
 ![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-light.png#only-light){ width=350 align=right .on-glb }
 ![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-dark.png#only-dark){ width=350 align=right .on-glb }
 
-1.  Install the **flatpak** version of the Bitwarden desktop application from [Flathub](https://flathub.org/en/apps/com.bitwarden.desktop){ external-link }
+1.  Install the **flatpak** version of the Bitwarden desktop application from [Flathub](https://flathub.org/en/apps/com.bitwarden.desktop "Flathub &mdash; Bitwarden"){ external-link }
 
     ``` bash linenums="1"
     flatpak install -y com.bitwarden.desktop
@@ -199,6 +199,65 @@ _Secure Shell_
         :brands-fedora:&ensp;**Fedora PCs**
 
         :   The PCs running **Fedora &mdash; KDE Plasma Edition** have a separate file for setting environment variables located at `~/.bashrc.d/env`. _DO NOT_ set the `SSH_AUTH_SOCK` environment variable in the `.bashrc` file on these machines.
+
+5.  Once the SSH Agent has been configured for Bitwarden, you may test the setup by requesting an SSH list using the following command:
+
+    ``` bash
+    ssh-add -L
+    ```
+
+??? tip
+
+    :symbols-moon-star:&ensp;**Dark Theme**
+
+    :   To enable the dark theme for the window decoration and menu bar on the **KDE Plasma Desktop Environment** run the following command to set the `GTK_THEME` environment variable:
+        ``` bash
+        flatpak override --env=GTK_THEME=Breeze:dark com.bitwarden.desktop  # (1)!
+        ```
+
+        1. For other desktop environments and/or themes, replace `Breeze:dark` with the appropriate theme name. _(e.g., for GNOME use `Adwaita-dark`)_
+
+##### Bitwarden Biometrics
+
+![Bitwarden system authentication settings](../assets/screenshots/bitwarden-system-auth-light.png#only-light){ width=350 align=right .on-glb }
+![Bitwarden system authentication settings](../assets/screenshots/bitwarden-system-auth-dark.png#only-dark){ width=350 align=right .on-glb }
+
+The flatpak version of the **Bitwarden** desktop client requires a custom policy to be applied with [Polkit](https://en.wikipedia.org/wiki/Polkit "Wikipedia &mdash; Polkit"){ external-link } for system-level authentication integration. To enable unlocking the Bitwarden vault with biometric or system-level authentication follow the following instructions:
+
+1.  Enable **"Unlock with system authentication"** and set **"Timeout Action"** to **"Lock"** in the Bitwarden desktop client's settings.
+2.  Download the file, `com.bitwarden.desktop.policy`, from the `bitwarden/clients` code repository on [GitHub](https://github.com/bitwarden/clients/blob/main/apps/desktop/resources/com.bitwarden.desktop.policy "GitHub &mdash; bitwarden/clients"){ external-link }, or copy the code below to create the file.
+
+    ``` xml { .mono-title title="com.bitwarden.desktop.policy" }
+    --8<-- "com.bitwarden.desktop.policy"
+    ```
+
+3.  Move the policy file to the `/usr/share/polkit-1/actions` directory:
+
+    ``` bash
+    sudo mv com.bitwarden.desktop.policy /usr/share/polkit-1/actions
+    ```
+
+4.  Set the appropriate permissions for the policy file:
+
+    ``` bash
+    sudo chown root:root /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy
+    sudo chmod 644 /usr/share/polkit-1/actions/com.bitwarden.Bitwarden.policy
+    ```
+
+5.  Verify the policy:
+    - Polkit automatically monitors the actions directory, so you do not normally need to restart any services for it to detect the new file. You can verify that polkit has successfully registered the new action by running this command:
+
+        ``` bash
+        pkaction | grep com.bitwarden
+        ```
+
+    - If the command outputs `com.bitwarden.Bitwarden.unlock`, the policy has been successfully added to your system.
+
+        ``` shell-session title="Example Output"
+        bhaube @ bens-workstation ~ 
+        on Fedora ❯ pkaction | grep com.bitwarden
+        com.bitwarden.Bitwarden.unlock
+        ```
 
 ##### SSH Config File
 
@@ -232,14 +291,14 @@ _Secure Shell_
     nano ~/.ssh/[hostname].pub
     ```
 
-    ??? tip
+    ??? failure
 
         :symbols-user-key:&ensp;**Permissions Warning**
 
         :   In some cases you may get the following warning when trying to start an SSH session:
             ``` shell-session
             bhaube @ bens-workstation ~
-            on Fedora ❭ ssh ASUS-Router
+            on Fedora ❯ ssh ASUS-Router
             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
             @         WARNING: UNPROTECTED KEY FILE!          @
             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -249,7 +308,7 @@ _Secure Shell_
             Load key "/home/bhaube/.ssh/asusrouter.pub": bad permissions
             Admin@asusrouter.internal: Permission denied (publickey).
             ```
-        :   If you get this warning; run the following command to give you public keys secure permissions:
+        :   If you get this warning; run the following command to secure permissions for the public keys:
             ``` bash
             chmod 600 ~/.ssh/*.pub
             ```

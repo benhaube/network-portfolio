@@ -23,6 +23,8 @@ _An Eye on Your System_
 
 ---
 
+![Glances on ZimaOS-NAS](../assets/screenshots/glances-zimaos-nas.png){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

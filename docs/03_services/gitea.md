@@ -26,26 +26,28 @@ _Git with a Cup of Tea_
 
 ---
 
+![Gitea homepage](../assets/screenshots/gitea-home.png){ width=300 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
 
-:    Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
+: Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
 #### :symbols-hash:&ensp;Port(s)
 
-- `3080` 
+- `3080`
 { .no-bullets }
 - `222`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
-- Web-UI:
+-   Web-UI:
 { .no-bullets }
     - <http://storage-server.internal:3080>
     - <http://storage-server-2.internal:3080>
-- SSH:
+-   SSH:
 { .no-bullets }
     - `git@storage-server.internal:222`
 
@@ -76,7 +78,7 @@ _Git with a Cup of Tea_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-:   The data for the `gitea` container is stored in the `dockge/stacks` directory, and is owned by `root:root`.
+: The data for the `gitea` container is stored in the `dockge/stacks` directory, and is owned by `root:root`.
 
 ##### Gitea App Data
 

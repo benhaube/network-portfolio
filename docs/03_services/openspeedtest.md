@@ -24,6 +24,9 @@ _Test Network Performance_
 
 ---
 
+![OpenSpeedTest screenshot](../assets/screenshots/openspeedtest-light.png#only-light){ width=400 align=right }
+![OpenSpeedTest screenshot](../assets/screenshots/openspeedtest-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -34,16 +37,16 @@ _Test Network Performance_
 
 :    `3004`
 
-#### :symbols-link-2:&ensp;URL / Access   
+#### :symbols-link-2:&ensp;URL / Access
 
 - <http://storage-server.internal:3004>
 { .no-bullets }
 - <http://storage-server-2.internal:3004>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
-:    N/A
+:  N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

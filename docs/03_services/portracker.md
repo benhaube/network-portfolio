@@ -24,6 +24,9 @@ _Port Monitoring & Discovery_
 
 ---
 
+![Portracker homepage](../assets/screenshots/portracker-home-light.png#only-light){ width=400 align=right }
+![Portracker homepage](../assets/screenshots/portracker-home-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -34,19 +37,19 @@ _Port Monitoring & Discovery_
 
 :    `4999`
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-server:&ensp;Pi 4B Server:
+-   :symbols-server:&ensp;Pi 4B Server:
 { .no-bullets }
     - <http://pi-server.internal:4999>
-- :symbols-server-nas:&ensp;ZimaOS NAS:
+-   :symbols-server-nas:&ensp;ZimaOS NAS:
 { .no-bullets }
     - <http://storage-server.internal:4999>
     - <http://storage-server-2.internal:4999>
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
-:    N/A
+:  N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

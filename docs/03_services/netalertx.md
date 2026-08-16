@@ -28,8 +28,8 @@ _Centralized Network Visibility_
 
 ---
 
-![NetAlertX devices table](../assets/screenshots/netalertx-devices-light.png#only-light){ width=400 align=right }
-![NetAlertX devices table](../assets/screenshots/netalertx-devices-dark.png#only-dark){ width=400 align=right }
+![NetAlertX devices table](../assets/screenshots/netalertx-devices-light.png#only-light){ width=400 align=right .on-glb }
+![NetAlertX devices table](../assets/screenshots/netalertx-devices-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

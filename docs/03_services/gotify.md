@@ -24,8 +24,8 @@ _Push Notifications_
 
 ---
 
-![Gotify notification homepage](../assets/screenshots/gotify-home-light.png#only-light){ width=400 align=right }
-![Gotify notification homepage](../assets/screenshots/gotify-home-dark.png#only-dark){ width=400 align=right }
+![Gotify notification homepage](../assets/screenshots/gotify-home-light.png#only-light){ width=400 align=right .on-glb }
+![Gotify notification homepage](../assets/screenshots/gotify-home-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

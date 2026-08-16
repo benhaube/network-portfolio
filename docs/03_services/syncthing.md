@@ -25,8 +25,8 @@ _File Synchronization_
 
 ---
 
-![Syncthing homepage on ZimaOS-NAS](../assets/screenshots/syncthing-zimaos-light.png#only-light){ width=400 align=right }
-![Syncthing homepage on ZimaOS-NAS](../assets/screenshots/syncthing-zimaos-dark.png#only-dark){ width=400 align=right }
+![Syncthing homepage on ZimaOS-NAS](../assets/screenshots/syncthing-zimaos-light.png#only-light){ width=400 align=right .on-glb }
+![Syncthing homepage on ZimaOS-NAS](../assets/screenshots/syncthing-zimaos-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

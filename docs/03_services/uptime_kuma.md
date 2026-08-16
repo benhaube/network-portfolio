@@ -24,8 +24,8 @@ _A Fancy Monitoring Tool_
 
 ---
 
-![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-light.png#only-light){ width=400 align=right }
-![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-dark.png#only-dark){ width=400 align=right }
+![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-light.png#only-light){ width=400 align=right .on-glb }
+![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

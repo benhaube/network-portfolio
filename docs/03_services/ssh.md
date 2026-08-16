@@ -24,8 +24,8 @@ _Secure Shell_
 
 ---
 
-![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-zimaos-light.png#only-light){ width=400 align=right }
-![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-zimaos-dark.png#only-dark){ width=400 align=right }
+![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-zimaos-light.png#only-light){ width=400 align=right .on-glb }
+![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-zimaos-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

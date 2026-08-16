@@ -24,8 +24,8 @@ _Port Monitoring & Discovery_
 
 ---
 
-![Portracker homepage](../assets/screenshots/portracker-home-light.png#only-light){ width=400 align=right }
-![Portracker homepage](../assets/screenshots/portracker-home-dark.png#only-dark){ width=400 align=right }
+![Portracker homepage](../assets/screenshots/portracker-home-light.png#only-light){ width=400 align=right .on-glb }
+![Portracker homepage](../assets/screenshots/portracker-home-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

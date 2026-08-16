@@ -24,8 +24,8 @@ _Test Network Performance_
 
 ---
 
-![OpenSpeedTest screenshot](../assets/screenshots/openspeedtest-light.png#only-light){ width=400 align=right }
-![OpenSpeedTest screenshot](../assets/screenshots/openspeedtest-dark.png#only-dark){ width=400 align=right }
+![OpenSpeedTest screenshot](../assets/screenshots/openspeedtest-light.png#only-light){ width=400 align=right .on-glb }
+![OpenSpeedTest screenshot](../assets/screenshots/openspeedtest-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

@@ -26,8 +26,8 @@ _Authoritative & Recursive DNS_
 
 ---
 
-![Technitium dashboard](../assets/screenshots/technitium-dashboard-light.png#only-light){ width=400 align=right }
-![Technitium dashboard](../assets/screenshots/technitium-dashboard-dark.png#only-dark){ width=400 align=right }
+![Technitium dashboard](../assets/screenshots/technitium-dashboard-light.png#only-light){ width=400 align=right .on-glb }
+![Technitium dashboard](../assets/screenshots/technitium-dashboard-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

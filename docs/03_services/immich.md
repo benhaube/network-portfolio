@@ -23,8 +23,8 @@ _Bye Bye, Google Photos_
 
 ---
 
-![Immich library homepage](../assets/screenshots/immich-library-light.png#only-light){ width=400 align=right }
-![Immich library homepage](../assets/screenshots/immich-library-dark.png#only-dark){ width=400 align=right }
+![Immich library homepage](../assets/screenshots/immich-library-light.png#only-light){ width=400 align=right .on-glb }
+![Immich library homepage](../assets/screenshots/immich-library-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

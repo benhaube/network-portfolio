@@ -26,7 +26,7 @@ _Docker Management_
 
 ---
 
-![Dockge homepage](../assets/screenshots/dockge-home.png){ width=400 align=right }
+![Dockge homepage](../assets/screenshots/dockge-home.png){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

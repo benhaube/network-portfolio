@@ -23,8 +23,8 @@ _Download Videos from YouTube_
 
 ---
 
-![yt-dlp Web-UI homepage](../assets/screenshots/yt-dlp-webui-light.png#only-light){ width=400 align=right }
-![yt-dlp Web-UI homepage](../assets/screenshots/yt-dlp-webui-dark.png#only-dark){ width=400 align=right }
+![yt-dlp Web-UI homepage](../assets/screenshots/yt-dlp-webui-light.png#only-light){ width=400 align=right .on-glb }
+![yt-dlp Web-UI homepage](../assets/screenshots/yt-dlp-webui-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

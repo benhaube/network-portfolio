@@ -22,7 +22,7 @@ _Open Print Server_
 
 ---
 
-![CUPS Administration](../assets/screenshots/cups-admin.png){ width=400 align=right }
+![CUPS Administration](../assets/screenshots/cups-admin.png){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

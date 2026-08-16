@@ -22,7 +22,7 @@ _All of the Data_
 
 ---
 
-![F1 Replay Timing race replay](../assets/screenshots/f1-replay-timing-race.png){ width=400 align=right }
+![F1 Replay Timing race replay](../assets/screenshots/f1-replay-timing-race.png){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

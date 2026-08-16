@@ -22,8 +22,8 @@ _Network Documentation_
 
 ---
 
-![Network Documentation index page](../assets/screenshots/network-docs-light.png#only-light){ width=400 align=right }
-![Network Documentation index page](../assets/screenshots/network-docs-dark.png#only-dark){ width=400 align=right }
+![Network Documentation index page](../assets/screenshots/network-docs-light.png#only-light){ width=400 align=right .on-glb }
+![Network Documentation index page](../assets/screenshots/network-docs-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

@@ -23,8 +23,8 @@ _Awaken Your Home_
 
 ---
 
-![Home Assistant Overview dashboard](../assets/screenshots/home-assistant-overview-light.png#only-light){ width=400 align=right }
-![Home Assistant Overview dashboard](../assets/screenshots/home-assistant-overview-dark.png#only-dark){ width=400 align=right }
+![Home Assistant Overview dashboard](../assets/screenshots/home-assistant-overview-light.png#only-light){ width=400 align=right .on-glb }
+![Home Assistant Overview dashboard](../assets/screenshots/home-assistant-overview-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

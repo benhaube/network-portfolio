@@ -25,13 +25,16 @@ _File Synchronization_
 
 ---
 
+![Syncthing homepage on ZimaOS-NAS](../assets/screenshots/syncthing-zimaos-light.png#only-light){ width=400 align=right }
+![Syncthing homepage on ZimaOS-NAS](../assets/screenshots/syncthing-zimaos-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
 
-:    Open decentralized file synchronization.
+:  Open decentralized file synchronization.
 
-#### :symbols-hash:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s)
 
 - `8384`
 { .no-bullets }
@@ -40,32 +43,32 @@ _File Synchronization_
 - `21027`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access   
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-pc-case:&ensp;Ben's Desktop
+-   :symbols-pc-case:&ensp;Ben's Desktop
 { .no-bullets }
     - <https://bens-workstation.internal:8384>
-- :symbols-laptop-minimal:&ensp;Ben's Laptop
+-   :symbols-laptop-minimal:&ensp;Ben's Laptop
 { .no-bullets }
     - <https://localhost:8384>
-- :symbols-smartphone:&ensp;Ben's Smartphone
+-   :symbols-smartphone:&ensp;Ben's Smartphone
 { .no-bullets }
     - <https://localhost:8384>
-- :symbols-layers:&ensp;Debian Server
+-   :symbols-layers:&ensp;Debian Server
 { .no-bullets }
     - <https://debian-vm.internal:8384>
-- :symbols-server:&ensp;Pi 4B Server
+-   :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
     - <https://pi-server.internal:8384>
-- :symbols-server:&ensp;Pi Zero 2W Server
+-   :symbols-server:&ensp;Pi Zero 2W Server
 { .no-bullets }
     - <https://pi-zero.internal:8384>
-- :symbols-server-nas:&ensp;ZimaOS NAS
+-   :symbols-server-nas:&ensp;ZimaOS NAS
 { .no-bullets }
     - <https://storage-server.internal:8384>
     - <https://storage-server-2.internal:8384>
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -22,20 +22,23 @@ _The Klipper UI_
 
 ---
 
+![Fluidd homepage](../assets/screenshots/fluidd-home-light.png#only-light){ width=400 align=right }
+![Fluidd homepage](../assets/screenshots/fluidd-home-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
 
-:    A free and open-source Klipper web interface for managing your 3D-printer.
+:  A free and open-source Klipper web interface for managing your 3D-printer.
 
-#### :symbols-hash:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s)
 
-- `80` 
+- `80`
 { .no-bullets }
 - `4408`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 :    <http://kacey.internal>
 

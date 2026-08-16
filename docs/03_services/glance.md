@@ -25,6 +25,9 @@ _Server Dashboard_
 
 ---
 
+![Glance dashboard Network page](../assets/screenshots/glance-network-light.png#only-light){ width=400 align=right }
+![Glance dashboard Network page](../assets/screenshots/glance-network-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

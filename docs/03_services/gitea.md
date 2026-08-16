@@ -1,5 +1,5 @@
 ---
-icon: services/gitea
+icon: services/git
 status: new
 title: Gitea
 subtitle: Git with a Cup of Tea
@@ -16,7 +16,7 @@ hide:
   - toc
 ---
 
-![Gitea Logo](../assets/icons/gitea.svg){ width=225 }
+![Gitea Logo](../assets/icons/git.svg){ width=200 }
 
 # Gitea
 

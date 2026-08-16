@@ -24,6 +24,8 @@ _AiMesh Node_
 
 ---
 
+![ASUS Router AiMesh settings](../assets/screenshots/asus-router-aimesh.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role

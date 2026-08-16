@@ -24,6 +24,8 @@ _Wireless Router_
 
 ---
 
+![ASUS Router settings homepage](../assets/screenshots/asus-router-home.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role

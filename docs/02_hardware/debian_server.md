@@ -26,6 +26,9 @@ _Primary DNS Server_
 
 ---
 
+![SSH session on debian-vm](../assets/screenshots/ssh-debian-vm-light.png#only-light){ width=400 align=right .on-glb }
+![SSH session on debian-vm](../assets/screenshots/ssh-debian-vm-dark.png#only-dark){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-toolbox:&ensp;Role

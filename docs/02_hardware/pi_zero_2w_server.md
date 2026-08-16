@@ -27,6 +27,9 @@ _Reverse-Proxy Server_
 
 ---
 
+![SSH session on pi-server](../assets/screenshots/ssh-pi-zero-light.png#only-light){ width=400 align=right .on-glb }
+![SSH session on pi-server](../assets/screenshots/ssh-pi-zero-dark.png#only-dark){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role

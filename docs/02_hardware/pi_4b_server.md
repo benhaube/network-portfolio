@@ -27,6 +27,9 @@ _Secondary DNS Server_
 
 ---
 
+![SSH session on pi-server](../assets/screenshots/ssh-pi-server-light.png#only-light){ width=400 align=right .on-glb }
+![SSH session on pi-server](../assets/screenshots/ssh-pi-server-dark.png#only-dark){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role

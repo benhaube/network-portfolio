@@ -28,20 +28,23 @@ _Centralized Network Visibility_
 
 ---
 
+![NetAlertX devices table](../assets/screenshots/netalertx-devices-light.png#only-light){ width=400 align=right }
+![NetAlertX devices table](../assets/screenshots/netalertx-devices-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
 
-:    Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
+:  Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
 
 #### :symbols-hash:&ensp;Port(s)
 
-- `20211` 
+- `20211`
 { .no-bullets }
 - `20212`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 :    <http://storage-server.internal:20211>
 

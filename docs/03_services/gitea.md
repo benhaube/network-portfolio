@@ -1,5 +1,5 @@
 ---
-icon: services/git
+icon: services/gitea
 status: new
 title: Gitea
 subtitle: Git with a Cup of Tea

@@ -1,0 +1,43 @@
+# (1)!
+services:
+  cpu: {}
+  nvenc:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities:
+                - gpu
+                - compute
+                - video
+  quicksync:
+    devices:
+      - /dev/dri:/dev/dri
+  rkmpp:
+    security_opt: # (2)!
+      - systempaths=unconfined
+      - apparmor=unconfined
+    group_add:
+      - video
+    devices:
+      - /dev/rga:/dev/rga
+      - /dev/dri:/dev/dri
+      - /dev/dma_heap:/dev/dma_heap
+      - /dev/mpp_service:/dev/mpp_service
+      #- /dev/mali0:/dev/mali0  (3)
+    volumes:
+      #- /etc/OpenCL:/etc/OpenCL:ro  (4)
+      #- /usr/lib/aarch64-linux-gnu/libmali.so.1:/usr/lib/aarch64-linux-gnu/libmali.so.1:ro  (5)
+  vaapi:
+    devices:
+      - /dev/dri:/dev/dri
+  vaapi-wsl: # (6)!
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/dxg:/dev/dxg
+    volumes:
+      - /usr/lib/wsl:/usr/lib/wsl
+    environment:
+      - LIBVA_DRIVER_NAME=d3d12

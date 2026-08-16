@@ -480,6 +480,7 @@ img[src$=".jpeg#only-dark" i],
 img[src$=".gif" i] {
   border-style: none;
   border-radius: 0.4rem;
+  box-shadow: var(--md-shadow-z2);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ *

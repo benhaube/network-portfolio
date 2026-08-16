@@ -26,6 +26,8 @@ _Docker Management_
 
 ---
 
+![Dockge homepage](../assets/screenshots/dockge-home.png){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -36,12 +38,12 @@ _Docker Management_
 
 :    `5001`
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
-- Main Server:
+-   Main Server:
 { .no-bullets }
     - <http://pi-server.internal:5001>
-- Dockge Agents:
+-   Dockge Agents:
 { .no-bullets }
     - <http://pi-zero.internal:5001>
     - <http://debian-vm.internal:5001>

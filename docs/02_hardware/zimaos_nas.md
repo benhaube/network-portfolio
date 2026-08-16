@@ -27,6 +27,8 @@ _Rack-Mount ZimaBoard 2_
 
 ---
 
+![ZimaOS-NAS server dashboard](../assets/screenshots/zimaos-nas-dashboard.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role
@@ -308,7 +310,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
     :    Tasks are persisted to disk and automatically restored after system restart using the Systemd unit, `cron.service`. This fixes the known issue where tasks did not continue after a reboot in previous versions.
 
-    Open __Zima Cron__ from the [ZimaOS dashboard](http://storage-server.internal){ external-link }, or directly at <http://storage-server.internal/modules/cron/>.
+    Open **Zima Cron** from the [ZimaOS dashboard](http://storage-server.internal){ external-link }, or directly at <http://storage-server.internal/modules/cron/>.
 
 #### :symbols-brick-wall-fire:&ensp;Zima Firewall
 

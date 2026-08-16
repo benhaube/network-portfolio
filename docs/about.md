@@ -14,7 +14,7 @@ hide:
 
 ---
 
-![My Profile Picture](assets/pictures/profilepic.jpg){ width=250 align="right" }
+![My Profile Picture](assets/pictures/profilepic.jpg){ width=300 align="right" }
 
 ## :symbols-engine: :symbols-move-right: :symbols-network:&ensp;From Engines to Infrastructure
 

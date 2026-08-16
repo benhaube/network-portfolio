@@ -24,6 +24,9 @@ _Inventory Management_
 
 ---
 
+![Homebox homepage](../assets/screenshots/homebox-home-light.png#only-light){ width=400 align=right }
+![Homebox homepage](../assets/screenshots/homebox-home-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -34,14 +37,14 @@ _Inventory Management_
 
 :    `3100`
 
-#### :symbols-link-2:&ensp;URL / Access  
+#### :symbols-link-2:&ensp;URL / Access
 
 - <http://storage-server.internal:3100>
 { .no-bullets }
 - <http://storage-server-2.internal:3100>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

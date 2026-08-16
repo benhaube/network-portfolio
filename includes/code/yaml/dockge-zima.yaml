@@ -4,7 +4,7 @@ services:
     container_name: dockge
     environment:
       - DOCKGE_STACKS_DIR=/DATA/AppData/dockge/stacks
-    image: louislam/dockge:1.5.0
+    image: louislam/dockge:1
     ports:
       - mode: ingress
         target: 5001

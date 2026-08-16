@@ -25,6 +25,8 @@ _A Simple, Modern VPN_
 
 ---
 
+![WireGuard settings on ASUS router](../assets/screenshots/asus-router-wireguard.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

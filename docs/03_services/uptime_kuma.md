@@ -24,6 +24,9 @@ _A Fancy Monitoring Tool_
 
 ---
 
+![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-light.png#only-light){ width=400 align=right }
+![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -34,22 +37,22 @@ _A Fancy Monitoring Tool_
 
 :    `3001`
 
-#### :symbols-link-2:&ensp;URL / Access  
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-network:&ensp;Local Access
+-   :symbols-network:&ensp;Local Access
 { .no-bullets }
     - <https://uptime.internal>
     - <http://pi-server.internal:3001>
-- :symbols-globe-arrow:&ensp;Remote Access
+-   :symbols-globe-arrow:&ensp;Remote Access
 { .no-bullets }
     - <https://uptime.rac3r4life.online>
 
-#### :symbols-user-key:&ensp;Credentials  
+#### :symbols-user-key:&ensp;Credentials
 
-- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
-- 2FA / MFA
+-   2FA / MFA
 { .no-bullets }
     - :symbols-clock:&ensp;TOTP
 

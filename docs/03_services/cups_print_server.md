@@ -22,6 +22,8 @@ _Open Print Server_
 
 ---
 
+![CUPS Administration](../assets/screenshots/cups-admin.png){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

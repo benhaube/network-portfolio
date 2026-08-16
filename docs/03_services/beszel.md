@@ -23,11 +23,14 @@ _Server Monitoring_
 
 ---
 
+![Beszel service homepage](../assets/screenshots/beszel-home-light.png#only-light){ width=400 align=right }
+![Beszel service homepage](../assets/screenshots/beszel-home-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
 
-:    A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
+:  A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -36,9 +39,9 @@ _Server Monitoring_
 - Agent:&ensp;`45867`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access  
+#### :symbols-link-2:&ensp;URL / Access
 
-:    <http://pi-server.internal:8090/>
+:  <http://pi-server.internal:8090/>
 
 #### :symbols-user-key:&ensp;Credentials
 

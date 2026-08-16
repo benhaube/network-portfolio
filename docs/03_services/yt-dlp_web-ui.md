@@ -23,6 +23,9 @@ _Download Videos from YouTube_
 
 ---
 
+![yt-dlp Web-UI homepage](../assets/screenshots/yt-dlp-webui-light.png#only-light){ width=400 align=right }
+![yt-dlp Web-UI homepage](../assets/screenshots/yt-dlp-webui-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -33,14 +36,14 @@ _Download Videos from YouTube_
 
 :    `3033`
 
-#### :symbols-link-2:&ensp;URL / Access   
+#### :symbols-link-2:&ensp;URL / Access
 
 - <http://storage-server.internal:3033>
 { .no-bullets }
 - <http://storage-server-2.internal:3033>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

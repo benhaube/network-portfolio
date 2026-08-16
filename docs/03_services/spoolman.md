@@ -23,6 +23,9 @@ _Filament Inventory Management_
 
 ---
 
+![Spoolman homepage](../assets/screenshots/spoolman-home-light.png#only-light){ width=400 align=right }
+![Spoolman homepage](../assets/screenshots/spoolman-home-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -33,16 +36,16 @@ _Filament Inventory Management_
 
 :    `7912`
 
-#### :symbols-link-2:&ensp;URL / Access    
+#### :symbols-link-2:&ensp;URL / Access
 
 - <http://storage-server.internal:7912/>
 { .no-bullets }
 - <http://storage-server-2.internal:7912/>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
-:    N/A
+:  N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

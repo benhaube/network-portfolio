@@ -24,6 +24,8 @@ _Detailed Configuration Info_
 
 ---
 
+![Kacey 3D printer photo](../assets/pictures/kacey-3d-printer.jpg){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Basic Information
 
 #### :symbols-hash:&ensp;Model

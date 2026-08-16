@@ -24,17 +24,17 @@ _Modified Creality K1C_
 
 ---
 
+![Kacey 3D printer photo](../assets/pictures/kacey-3d-printer.jpg){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
-
-???+ links inline end "Extra Links"
-
-    See more detailed information about the Creality K1C hardware...
-
-    [More Kacey Info&ensp;:brands-creality-v2:](kacey_info.md){ .md-button }
 
 #### :symbols-toolbox:&ensp;Role
 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi _(SSID: `Home`)_. Affectionately, named 'Kacey' as a play on the model name, K1C.
+
+:    See more detailed information about the Creality K1C hardware...
+
+    [More Kacey Info&ensp;:brands-creality-v2:](kacey_info.md){ .md-button }
 
 #### :symbols-host:&ensp;Hostname
 

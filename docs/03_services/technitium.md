@@ -26,13 +26,16 @@ _Authoritative & Recursive DNS_
 
 ---
 
+![Technitium dashboard](../assets/screenshots/technitium-dashboard-light.png#only-light){ width=400 align=right }
+![Technitium dashboard](../assets/screenshots/technitium-dashboard-dark.png#only-dark){ width=400 align=right }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
 
-:    An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
+: An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-#### :symbols-hash:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s)
 
 - `53`
 { .no-bullets }
@@ -41,18 +44,18 @@ _Authoritative & Recursive DNS_
 - `5380`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access   
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-layers:&ensp;Debian Server
+-   :symbols-layers:&ensp;Debian Server
 { .no-bullets }
     - `192.168.50.6` &mdash; Primary server
     - <http://debian-vm.internal:5380>
-- :symbols-server:&ensp;Pi 4B Server
+-   :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
     - `192.168.50.2` &mdash; Secondary server
     - <http://pi-server.internal:5380>
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }

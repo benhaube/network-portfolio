@@ -25,6 +25,8 @@ _ThinkPad X1 Carbon_
 
 ---
 
+![Bens Laptop desktop screenshot](../assets/screenshots/ben-laptop-desktop.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role

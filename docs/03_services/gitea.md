@@ -26,7 +26,8 @@ _Git with a Cup of Tea_
 
 ---
 
-![Gitea homepage](../assets/screenshots/gitea-home.png){ width=300 align=right }
+![Gitea homepage](../assets/screenshots/gitea-home-light.png#only-light){ width=400 align=right }
+![Gitea homepage](../assets/screenshots/gitea-home-dark.png#only-dark){ width=400 align=right }
 
 ## :symbols-info:&ensp;Overview
 

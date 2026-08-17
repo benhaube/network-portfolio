@@ -24,7 +24,7 @@ _Model UM106X_
 
 ---
 
-![Server rack](../assets/pictures/server-rack.jpg){ width=400 align=right .on-glb }
+![Ugreen UM106X multi-gigabit Ethernet switch with 10Gb SFP+](../assets/images/ugreen-um106x.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Physical Overview
 

@@ -1,5 +1,14 @@
 services:
   beszel:
+    healthcheck:
+      test:
+        - CMD
+        - /beszel
+        - health
+        - --url
+        - http://localhost:8090
+      start_period: 5s 
+      interval: 120s 
     image: henrygd/beszel:latest
     container_name: beszel-hub
     restart: unless-stopped
@@ -11,14 +20,27 @@ services:
     dns:
       - 192.168.50.6
       - 192.168.50.2
-
+    environment:
+      CHECK_UPDATES: true
+      SHARE_ALL_SYSTEMS: true
+      HEARTBEAT_URL: uptime-kuma-heartbeat-url
+      HEARTBEAT_INTERVAL: 60
+      HEARTBEAT_METHOD: POST
+      USER_CREATION: true
   beszel-agent:
+    healthcheck:
+      test:
+        - CMD
+        - /agent
+        - health
+      interval: 120s
     image: henrygd/beszel-agent
     container_name: beszel-agent
     restart: unless-stopped
     network_mode: host
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:ro
       - ./beszel_agent_data:/var/lib/beszel-agent
       # - /mnt/disk/.beszel:/extra-filesystems/sda1:ro  (1)
       - /mnt/usb-drive/.beszel:/extra-filesystems/sda1__usb-drive:ro
@@ -27,6 +49,3 @@ services:
       KEY: your-server-key
       TOKEN: your-token
       HUB_URL: http://pi-server.internal:8090
-    dns:
-      - 192.168.50.6
-      - 192.168.50.2

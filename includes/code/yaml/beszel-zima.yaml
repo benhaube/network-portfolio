@@ -1,24 +1,31 @@
 services:
   beszel-agent:
+    healthcheck:
+      test:
+        - CMD
+        - /agent
+        - health
     cap_add:
       - SYS_RAWIO
       - SYS_ADMIN
       - CAP_PERFMON
-    cpu_shares: 90
     container_name: beszel-agent
     devices:
       - /dev/sda:/dev/sda
       - /dev/sdb:/dev/sdb
       - /dev/nvme0:/dev/nvme0
+      - /dev/mmcblk0:/dev/mmcblk0
       - /dev/dri/card0:/dev/dri/card0
     environment:
       - HUB_URL=http://pi-server.internal:8090
       - KEY=your-server-key
       - LISTEN=45876
       - TOKEN=your-token
+      - GPU_COLLECTOR=intel_gpu_top
     image: henrygd/beszel-agent-intel
     restart: unless-stopped
     volumes:
+      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:ro
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
@@ -27,6 +34,6 @@ services:
         target: /var/lib/beszel-agent
       - type: bind
         source: /media/Quick-Storage/.beszel
-        target: /extra-filesystems/md0__Quick_Storage
+        target: /extra-filesystems/md0__Quick-Storage
     network_mode: host
     privileged: false

@@ -22,6 +22,8 @@ _NTP Server_
 
 ---
 
+![Chrony / ntpMerlin settings on ASUS Router](../assets/screenshots/chrony-ntpMerlin.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -32,7 +34,7 @@ _NTP Server_
 
 :    `123`
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 - `192.168.50.1:123`
 { .no-bullets }

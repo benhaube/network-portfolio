@@ -25,6 +25,9 @@ _Reverse-Proxy Server_
 
 ---
 
+![Cloudflare dashboard tunnels menu](../assets/screenshots/cloudflare-tunnels-light.png#only-light){ width=400 align=right .on-glb }
+![Cloudflare dashboard tunnels menu](../assets/screenshots/cloudflare-tunnels-dark.png#only-dark){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

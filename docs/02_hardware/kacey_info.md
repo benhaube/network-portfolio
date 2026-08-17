@@ -24,7 +24,7 @@ _Detailed Configuration Info_
 
 ---
 
-![Kacey 3D printer photo](../assets/pictures/kacey-3d-printer.jpg){ width=400 align=right .on-glb }
+![Kacey 3D printer](../assets/images/creality-k1c-3d-printer.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Basic Information
 

@@ -23,6 +23,8 @@ _The Terminal on the Web_
 
 ---
 
+![ttydBridge on ZimaOS-NAS](../assets/screenshots/ttydbridge-zimaos-nas.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -33,14 +35,14 @@ _The Terminal on the Web_
 
 :    `2222`
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 - <http://storage-server.internal:2222>
 { .no-bullets }
 - <http://storage-server-2.internal:2222>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials  
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -24,7 +24,7 @@ _AiMesh Node_
 
 ---
 
-![ASUS Router AiMesh settings](../assets/screenshots/asus-router-aimesh.png){ width=400 align=right .on-glb }
+![ASUS RT-AX55 802.11ax wireless router](../assets/images/asus-rt-ax55.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

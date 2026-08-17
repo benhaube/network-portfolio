@@ -24,6 +24,8 @@ _Model SG105_
 
 ---
 
+![TP-Link SG105 gigabit Ethernet switch](../assets/images/tp-link-sg105.png){ width=400 align=right .no-shadow }
+
 ## :symbols-info:&ensp;Physical Overview
 
 #### :symbols-toolbox:&ensp;Role
@@ -37,7 +39,7 @@ _Model SG105_
 
 #### :symbols-plug:&ensp;Power Source
 
-:    Wall Wart _(5V / 0.6A)_
+:  Wall Wart _(5V / 0.6A)_
 
 #### :symbols-circuit-board:&ensp;Specs
 
@@ -74,13 +76,13 @@ _Model SG105_
 
 !!! visual inline "Visual Indicators"
 
-    :symbols-led:&ensp;**Green LED** 
-    
+    :symbols-led:&ensp;**Green LED**
+
     - 10/100/1000 Mb/s
     { .no-bullets }
-    
-    :symbols-led-on:&ensp;**Flashing** 
-    
+
+    :symbols-led-on:&ensp;**Flashing**
+
     - Network Activity
     { .no-bullets }
 

@@ -24,6 +24,8 @@ _Sync with CouchDB_
 
 ---
 
+![CouchDB Obsidian database](../assets/screenshots/obsidian-couchdb.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -34,13 +36,13 @@ _Sync with CouchDB_
 
 :    `5984`
 
-#### :symbols-link-2:&ensp;URL / Access   
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-monitor-cog:&ensp;Settings Web UI:
+-   :symbols-monitor-cog:&ensp;Settings Web UI:
 { .no-bullets }
     - <http://storage-server.internal:5984/_utils>
     - <http://storage-server-2.internal:5984/_utils>
-- :symbols-database:&ensp;Database:
+-   :symbols-database:&ensp;Database:
 { .no-bullets }
     - <http://storage-server.internal:5984/obsidian-vault>
     - <http://storage-server-2.internal:5984/obsidian-vault>

@@ -5,7 +5,50 @@
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
         "https://raw.githubusercontent.com/compose-spec/compose-go/master/schema/compose-spec.json": [
             "file:///home/bhaube/Development/network-portfolio/compose-serve.yml",
-            "file:///home/bhaube/Development/network-portfolio/compose-build.yml"
+            "file:///home/bhaube/Development/network-portfolio/compose-build.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/beszel-debian-vm.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/beszel-pi-4b.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/beszel-pi-zero.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/beszel-zima.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/cloudflared-pi-server.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/cloudflared.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dockge-zima.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dockge.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dynacat.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/f1-replay-timing.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/gitea.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-compose.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-formula1.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glances-pi-4b.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glances-zima.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/gotify.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ha-automations.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/home-assistant.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/homebox.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/immich-frame.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/immich.hwaccel.ml.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/immich.hwaccel.transcoding.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/immich.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/it-tools.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/nebula-sync.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/netalertx.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/nextcloud.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/nginx.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ntopng.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/obsidian-livesync.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/openspeedtest.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/portainer-pi-4b.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/portainer-pi-zero.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/portainer-zima.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/portracker-pi-4b.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/portracker-pi-zero.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/portracker-zima.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/spoolman.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/syncthing-zima.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ttydBridge.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/uptime-kuma.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/wireguard.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/yt-dlp.yml"
         ]
     },
     "files.associations": {
@@ -224,5 +267,9 @@
     ],
     "mermaid.themeCSS": "",
     "mermaid.theme": "dark",
-    "yaml.disableSchemaDetection": []
+    "yaml.disableSchemaDetection": [
+        "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dynacat.yml",
+        "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-formula1.yml",
+        "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ha-automations.yaml"
+    ]
 }

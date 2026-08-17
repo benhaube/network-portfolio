@@ -44,7 +44,7 @@ _High-Performance Desktop PC_
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-fedora:&ensp;Fedora Linux 44](https://fedoraproject.org/kde/){ external-link } _(KDE Plasma Desktop Edition)_
+:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }
 
 #### :symbols-user-key:&ensp;Credentials
 

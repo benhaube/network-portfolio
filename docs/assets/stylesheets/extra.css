@@ -482,6 +482,10 @@ img[src$=".gif" i] {
   border-radius: 0.4rem;
   box-shadow: var(--md-shadow-z2);
 }
+/* Add rule to remove box-shadow from select images */
+.no-shadow {
+  box-shadow: none !important;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~ *
  * Adjust Table Styling *

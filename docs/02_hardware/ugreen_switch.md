@@ -24,6 +24,8 @@ _Model UM106X_
 
 ---
 
+![Server rack](../assets/pictures/server-rack.jpg){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Physical Overview
 
 #### :symbols-toolbox:&ensp;Role

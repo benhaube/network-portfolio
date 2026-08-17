@@ -24,6 +24,8 @@ _DOCSIS 3.1 Cable Modem_
 
 ---
 
+![Server rack](../assets/pictures/server-rack.jpg){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role

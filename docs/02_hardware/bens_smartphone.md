@@ -22,7 +22,7 @@ _Google Pixel 9 Pro_
 
 ---
 
-![Ben's Smartphone homescreen](../assets/screenshots/bens-phone-homescreen.png){ width=325 align=right .on-glb }
+![Google Pixel 9 Pro (Hazel)](../assets/images/google-pixel-9-pro.png){ width=325 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Overview
 

@@ -23,6 +23,8 @@ _The Klipper Web API_
 
 ---
 
+![Kacey (Creality K1C) 3D-Printer](../assets/pictures/kacey-3d-printer.jpg){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

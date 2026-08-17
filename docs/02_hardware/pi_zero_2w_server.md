@@ -47,7 +47,7 @@ _Reverse-Proxy Server_
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:brands-debian:&ensp;Debian Linux 13](https://www.debian.org/){ external-link } _(Trixie)_
+:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
 
 #### :symbols-user-key:&ensp;Credentials
 

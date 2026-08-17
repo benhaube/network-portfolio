@@ -45,7 +45,7 @@ _Primary DNS Server_
 
 #### :symbols-cpu:&ensp;Operating System 
 
-:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/){ external-link } _(trixie)_
+:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
 
 #### :symbols-network-node:&ensp;Host Node 
 

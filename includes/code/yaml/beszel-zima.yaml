@@ -25,15 +25,11 @@ services:
     image: henrygd/beszel-agent-intel
     restart: unless-stopped
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
       - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:ro
-      - type: bind
-        source: /var/run/docker.sock
-        target: /var/run/docker.sock
-      - type: bind
-        source: /media/nvme0n1p1/AppData/beszel_agent_data
-        target: /var/lib/beszel-agent
-      - type: bind
-        source: /media/Quick-Storage/.beszel
-        target: /extra-filesystems/md0__Quick-Storage
+      - /media/nvme0n1p1/AppData/beszel_agent_data:/var/lib/beszel-agent
+      - /media/Quick-Storage/.beszel:/extra-filesystems/md0__Quick-Storage:ro
     network_mode: host
-    privileged: false
+networks:
+  default:
+    name: beszel-agent_default

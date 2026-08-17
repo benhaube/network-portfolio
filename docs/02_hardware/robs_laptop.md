@@ -24,6 +24,8 @@ _ASUS TUF Gaming A16_
 
 ---
 
+![ASUS TUF Gaming A16 laptop](../assets/images/asus-tuf-gaming-a16.png){ width=400 align=right .no-shadow }
+
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role

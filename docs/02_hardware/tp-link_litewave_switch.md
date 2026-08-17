@@ -25,6 +25,8 @@ _Model LS1005G_
 
 ---
 
+![TP-Link LS1005G gigabit Ethernet switch](../assets/images/tp-link-ls1005g.png){ width=400 align=right .no-shadow }
+
 ## :symbols-info:&ensp;Physical Overview
 
 #### :symbols-toolbox:&ensp;Role
@@ -38,7 +40,7 @@ _Model LS1005G_
 
 #### :symbols-plug:&ensp;Power Source
 
-:    Wall Wart _(5V / 0.6A)_
+:  Wall Wart _(5V / 0.6A)_
 
 #### :symbols-circuit-board:&ensp;Specs
 
@@ -81,13 +83,13 @@ _Model LS1005G_
 
 !!! visual inline "Visual Indicators"
 
-    :symbols-led:&ensp;**Green LED** 
-    
+    :symbols-led:&ensp;**Green LED**
+
     - 10/100/1000 Mb/s
     { .no-bullets }
-    
-    :symbols-led-on:&ensp;**Flashing** 
-    
+
+    :symbols-led-on:&ensp;**Flashing**
+
     - Network Activity
     { .no-bullets }
 

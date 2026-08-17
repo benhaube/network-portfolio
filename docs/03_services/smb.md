@@ -24,6 +24,9 @@ _Server Message Block_
 
 ---
 
+![ZimaOS Files SMB shares](../assets/screenshots/zimaos-files-smb-light.png#only-light){ width=400 align=right .on-glb }
+![ZimaOS Files SMB shares](../assets/screenshots/zimaos-files-smb-dark.png#only-dark){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description
@@ -34,20 +37,20 @@ _Server Message Block_
 
 :    `445`
 
-#### :symbols-link-2:&ensp;URL / Access   
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-router:&ensp;ASUS RT-BE92U:
+-   :symbols-router:&ensp;ASUS RT-BE92U:
 { .no-bullets }
     - `\\asusrouter.internal\`
-- :symbols-server:&ensp;Pi 4B Server:
+-   :symbols-server:&ensp;Pi 4B Server:
 { .no-bullets }
     - `\\pi-server.internal\smb-share`
-- :symbols-server-nas:&ensp;ZimaOS NAS:
+-   :symbols-server-nas:&ensp;ZimaOS NAS:
 { .no-bullets }
     - `\\storage-server.internal\nvme0n1p1`
     - `\\storage-server.internal\Quick-Storage`
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

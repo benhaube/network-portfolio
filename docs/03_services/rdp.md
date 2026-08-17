@@ -23,6 +23,8 @@ _Remote Desktop Protocol_
 
 ---
 
+![KDE Plasma RDP server settings](../assets/screenshots/kde-settings-rdp.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

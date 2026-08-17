@@ -41,7 +41,7 @@ _Primary DNS Server_
 
 #### :symbols-layers:&ensp;Hypervisor 
 
-:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos){ external-link } _(KVM / QEMU)_
+:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(KVM / QEMU)_
 
 #### :symbols-cpu:&ensp;Operating System 
 

@@ -46,7 +46,7 @@ _Rack-Mount ZimaBoard 2_
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-:    [:services-zimaos:&ensp;ZimaOS v1.7.0](https://www.zimaspace.com/zimaos){ external-link } _(Immutable)_
+:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(v1.7.0)_
 
 #### :symbols-user-key:&ensp;Credentials
 

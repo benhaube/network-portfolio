@@ -24,6 +24,8 @@ _Provided by addr.tools_
 
 ---
 
+![ASUS Router DDNS settings](../assets/screenshots/asus-router-ddns.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

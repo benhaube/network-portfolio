@@ -1,0 +1,46 @@
+services:
+  clamav-server:
+    image: clamav/clamav:1.5_base
+    restart: unless-stopped
+    environment:
+      TZ: ${TZ:-UTC}
+      FRESHCLAM_CHECKS: "12"
+      CLAMD_CONF_MaxThreads: "4"
+      CLAMD_CONF_MaxFileSize: 512M
+      CLAMD_CONF_MaxScanSize: 2G
+      CLAMD_CONF_StreamMaxLength: 512M
+    volumes:
+      - /DATA/AppData/clamav-dashboard/clamav:/var/lib/clamav
+    networks:
+      - clamav-security
+      
+  clamav-dashboard:
+    image: ghcr.io/jacko88888/clamav-dashboard:0.2.4
+    restart: unless-stopped
+    depends_on:
+      clamav-server:
+        condition: service_healthy
+    ports:
+      - "8099:8080"
+    environment:
+      TZ: ${TZ:-UTC}
+      CLAMAV_HOST: clamav-server
+      CLAMAV_PORT: "3310"
+      DATA_DIR: /data
+      MEDIA_ROOT: /host-media
+      HOST_DATA_ROOT: /host-data
+      MAX_STREAM_BYTES: "536870912"
+    volumes:
+      - /DATA/AppData/clamav-dashboard/data:/data
+      - /media:/host-media:rw
+      - /DATA:/host-data:rw
+    networks:
+      - clamav-security
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=256m
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  clamav-security:

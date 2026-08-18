@@ -48,7 +48,8 @@
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ttydBridge.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/uptime-kuma.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/wireguard.yml",
-            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/yt-dlp.yml"
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/yt-dlp.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/clamav-dashboard.yaml"
         ]
     },
     "files.associations": {

@@ -71,7 +71,7 @@ hide:
 : The secondary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-server:&ensp;Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) 
-: A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the LAN. Located on the stationary printer cart in the office upstairs, and connected to the LAN via 2.4 GHz Wi-Fi _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
+: A tiny, low-power server acting as a dedicated as Caddy _reverse-proxy_, giving unique `.internal` FQDNs to services hosted on the LAN. Located on the stationary printer cart in the office upstairs, and connected to the LAN via 2.4 GHz Wi-Fi _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
 
 [:symbols-ethernet-port:&ensp;TP-Link LiteWave Switch](02_hardware/tp-link_litewave_switch.md)
 : A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
@@ -121,13 +121,16 @@ hide:
 : A lightweight server monitoring hub with historical data, docker stats, and alerts.
 
 [:services-caddy:&ensp;Caddy](03_services/caddy.md)
-: Lightweight, open-source Web server written in Go. Used as a reverse-proxy for creating unique domains for locally hosted services.
+: Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
 [:symbols-refresh-cw-clock:&nbsp;Chrony](03_services/chrony.md)
 : Advanced, lightweight NTP client and server.
 
+[:services-clamav:&ensp;ClamAV Dashboard](03_services/clamav_dashboard.md)
+: Anti-virus security dashboard for **ZimaOS** with automatic disk discovery, scan progress, history and confirmed quarantine actions.
+
 [:services-cloudflare:&ensp;Cloudflared](03_services/cloudflared.md)
-: A secure reverse-proxy tunnel for hosting private services on the public Internet.
+: A secure _reverse-proxy_ tunnel for hosting private services on the public Internet.
 
 [:symbols-printer:&ensp;CUPS](03_services/cups_print_server.md)
 : A standards-based, open-source printing system for Linux and other Unix-like operating systems.

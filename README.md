@@ -37,8 +37,6 @@ This is my personal, self-hosted professional portfolio and network documentatio
 
 ![Screenshot of Index page](readme-assets/index.png)
 
-![Screenshot of header bar](readme-assets/header.png)
-
 ![Screenshot of ASUS RT-BE92U documentation page](readme-assets/asus_rt-be92u.png)
 
 ## Clone the Repo

@@ -3,6 +3,7 @@ icon: services/clamav
 title: ClamAV Dashboard
 subtitle: Anti-Virus for ZimaOS
 description: ClamAV security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
+status: new
 tags:
   - Active
   - Container

@@ -3,6 +3,7 @@ icon: symbols/cloud
 title: Title
 subtitle: Subtitle
 description: Description
+status: new
 tags:
   - Active
   - Container

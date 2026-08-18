@@ -2,7 +2,7 @@
 icon: services/clamav
 title: ClamAV Dashboard
 subtitle: Anti-Virus for ZimaOS
-description: ClamAV security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
+description: Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 status: new
 tags:
   - Active
@@ -31,7 +31,7 @@ _Anti-Virus for ZimaOS_
 
 #### :symbols-file-text:&ensp;Description
 
-: ClamAV security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
+: Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -61,6 +61,6 @@ _Anti-Virus for ZimaOS_
 
 --8<-- "deploy_with_dockge.md"
 
-``` yaml { .mono-title title="../AppData/dockge/stacks/clam-av/compose.yaml" linenums="1" }
+``` yaml { .mono-title title="../AppData/dockge/stacks/clamav-dashboard/compose.yaml" linenums="1" }
 --8<-- "clamav-dashboard.yaml"
 ```

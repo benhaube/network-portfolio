@@ -35,9 +35,11 @@
 
 This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel. 
 
-![Screenshot of Index page](./readme-assets/index-screenshot.png)
+![Screenshot of Index page](readme-assets/index.png)
 
-![Screenshot of header bar](./readme-assets/header-screenshot.png)
+![Screenshot of header bar](readme-assets/header.png)
+
+![Screenshot of ASUS RT-BE92U documentation page](readme-assets/asus_rt-be92u.png)
 
 ## Clone the Repo
 

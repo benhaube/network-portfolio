@@ -2,6 +2,7 @@
 icon: symbols/icon
 title: Title
 subtitle: Subtitle
+description: Description
 tags:
   - Linux
 hide:

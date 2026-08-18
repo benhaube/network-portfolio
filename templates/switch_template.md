@@ -2,6 +2,7 @@
 icon: symbols/ethernet-port
 title: Title
 subtitle: Subtitle
+description: Description
 tags:
   - Hardware
   - Infrastructure
@@ -17,19 +18,22 @@ hide:
 
 _Subtitle_
 
-[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
+[Manual&ensp;:symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
 
 ---
+
+![Switch image](../assets/images/switch.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Physical Overview
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Core Desktop Switch
+: Core Desktop Switch
 
 #### :symbols-map-pin:&ensp;Location
 
-:    Insert location here
+- <!-- material/tags { include: [Location] } -->
+{ .no-bullets } 
 
 #### :symbols-plug:&ensp;Power Source
 

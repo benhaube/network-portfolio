@@ -2,6 +2,7 @@
 icon: symbols/monitor-smartphone
 title: Title
 subtitle: Subtitle
+description: Description
 tags:
   - Hardware
   - Network
@@ -16,9 +17,11 @@ hide:
 
 _Subtitle_
 
-[Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button :symbols-icon:](https://example.com){ .md-button .md-button--primary }
+[Button&ensp;:symbols-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[Button&ensp;:symbols-icon:](https://example.com){ .md-button .md-button--primary }
 
 ---
+
+![Device image](../assets/images/device.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 
@@ -32,7 +35,8 @@ _Subtitle_
 
 #### :symbols-map-pin:&ensp;Location
 
-:    Location
+- <!-- material/tags { include: [Location] } -->
+{ .no-bullets } 
 
 #### :symbols-cpu:&ensp;OS / Firmware
 

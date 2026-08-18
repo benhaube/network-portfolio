@@ -2,6 +2,7 @@
 icon: symbols/cloud
 title: Title
 subtitle: Subtitle
+description: Description
 tags:
   - Active
   - Container
@@ -17,9 +18,11 @@ hide:
 
 _Subtitle_
 
-[GitHub :brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation :symbols-files:](https://docs.github.com/en){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.github.com/en){ .md-button .md-button--primary }
 
 ---
+
+![Service screenshot](../assets/screenshots/screenshot.png){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 
@@ -45,8 +48,8 @@ _Subtitle_
 
 | Host Device                                      | Method                                    | Container Name   | Image            |
 | :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- |
-| :devices-icon:&nbsp;[Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` |
-| :devices-icon:&nbsp;[Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            |
+| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` |
+| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            |
 
 ### :symbols-settings:&ensp;Configuration
 

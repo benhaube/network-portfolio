@@ -2,6 +2,7 @@
 icon: symbols/router
 title: Title
 subtitle: Subtitle
+description: Description
 tags:
   - Hardware
   - Infrastructure
@@ -17,9 +18,11 @@ hide:
 
 _Subtitle_
 
-[Docs :symbols-files:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual :symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
+[Docs&ensp;:symbols-files:](https://example.com){ .md-button .md-button--primary }&emsp;[Manual&ensp;:symbols-notebook-text:](../path/to/file){ .md-button .md-button--primary }
 
 ---
+
+![Router image](../assets/images/router.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 
@@ -33,7 +36,8 @@ _Subtitle_
 
 #### :symbols-map-pin:&ensp;Location
 
-:    Location
+- <!-- material/tags { include: [Location] } -->
+{ .no-bullets } 
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
@@ -96,13 +100,13 @@ _Subtitle_
 
 |  Status  | Service                                                  | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
 | :------: | :------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
-| _Active_ | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
+| _Active_ | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
 
 #### :symbols-container:&ensp;Container
 
 |  Status  | Service                                                  | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
 | :------: | :------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
-| _Active_ | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
+| _Active_ | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
 
 ---
 

@@ -2,6 +2,7 @@
 icon: symbols/stacks
 title: Title
 subtitle: Subtitle
+description: Description
 tags:
   - Hardware
   - Server
@@ -16,9 +17,11 @@ hide:
 
 _Subtitle_
 
-[OS :os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs :symbols-files:](https://example.com){ .md-button .md-button--primary }
+[OS&ensp;:os-icon:](https://example.com){ .md-button .md-button--primary }&emsp;[OS Docs&ensp;:symbols-files:](https://example.com){ .md-button .md-button--primary }
 
 ---
+
+![Virtual Machine screenshot](../assets/screenshots/screenshot.png){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 
@@ -36,7 +39,7 @@ _Subtitle_
 
 #### :symbols-cpu:&ensp;Operating System
 
-:    :os-icon:&nbsp;[Operating System](https://example.com)
+:    [:os-icon:&nbsp;Operating System](https://example.com)
 
 #### :symbols-network-node:&ensp;Host Node
 
@@ -70,13 +73,13 @@ _Subtitle_
 
 |  Status  | Service                                                  | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
 | :------: | :------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
-| _Active_ | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
+| _Active_ | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
 
 #### :symbols-container:&ensp;Container
 
 |  Status  | Service                                                  | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
 | :------: | :------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
-| _Active_ | :service-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
+| _Active_ | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
 
 ---
 

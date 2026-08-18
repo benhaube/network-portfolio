@@ -3,7 +3,6 @@ icon: services/caddy
 title: Caddy
 subtitle: Reverse-Proxy Server
 description: Lightweight, open-source Web server written in Go. Used as a reverse-proxy for creating unique domains for locally hosted services.
-status: new
 tags:
   - Active
   - DNS

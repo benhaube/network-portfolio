@@ -272,5 +272,6 @@
         "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dynacat.yml",
         "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-formula1.yml",
         "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ha-automations.yaml"
-    ]
+    ],
+    "svg.preview.background": "editor"
 }

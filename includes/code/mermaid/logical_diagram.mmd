@@ -18,81 +18,81 @@ flowchart-elk TD
 %% --- Nodes --- %%
 
     %% --- Main Router --- %%
-    subgraph Router ["<b>ASUS RT-BE92U</b> <i>(Main Router)</i>"]
+    subgraph Router ["ASUS RT-BE92U <i>(Main Router)</i>"]
         direction TB
-        Asuswrt_Merlin["<b>Firmware:</b><br>Asuswrt-Merlin"]:::os
+        Asuswrt_Merlin["Firmware:<br>Asuswrt-Merlin"]:::os
         Services["Services"]:::service
-        Router_USB[("USB Storage<br><i>(28.3 GB)</i>")]:::storage
+        Router_USB[("sda1<br><i>(28.3 GB / USB)</i>")]:::storage
         Router_Swap[("Swap<br><i>(2 GB)</i>")]:::storage
         Router_JFFS[("JFFS<br><i>(45 MB)</i>")]:::storage
         RouterNVRAM[("NVRAM<br><i>(256 KB)</i>")]:::storage
     end
 
     %% --- AiMesh Node --- %%
-    subgraph AiMesh_Node["<b>ASUS RT-AX55</b> <i>(Mesh Node)</i>"]
+    subgraph AiMesh_Node["ASUS RT-AX55 <i>(Mesh Node)</i>"]
         direction TB
-        Asuswrt["<b>Firmware:</b><br>Asuswrt"]:::os
+        Asuswrt["Firmware:<br>Asuswrt"]:::os
         AiMesh_JFFS[("JFFS")]:::storage
         AiMesh_NVRAM[("NVRAM")]:::storage
     end
 
     %% --- Trusted VLAN --- %%
-    subgraph Trusted_VLAN50 ["<b>VLAN50:</b> Trusted <code>[192.168.50.x]</code>"]
+    subgraph Trusted_VLAN50 ["VLAN50: Trusted <code>[192.168.50.x]</code>"]
         direction TB
         
-        Clients["<b>Trusted Clients:</b><br>Ben's Desktop<br>Rob's Desktop<br>Laptops<br>Phones<br>Smart TVs"]:::vlan50
-        Printer["<b>Creality<sup>&copy;</sup> K1C</b><br><i>(3D-printer)</i>"]:::vlan50
-        Brother["<b>Brother HL-L2300D</b><br><i>(Laser Printer)</i>"]:::usb
-        USB_Ext[("<b>USB Flash Drive</b><br><i>(32 GB)</i>")]:::storage
+        Clients["<div style='text-align: center;'>Trusted Clients:</div><ul style='text-align: left; display: inline-block; margin: 0 auto;'><li>Desktop PCs</li><li>Laptop PCs</li><li>Smartphones</li><li>Other...</li></ul>"]:::vlan50
+        Printer["Creality K1C<br><i>(3D-printer)</i>"]:::vlan50
+        Brother["Brother HL-L2300D<br><i>(Laser Printer)</i>"]:::usb
+        USB_Ext[("sda1<br><i>(32 GB / USB)</i>")]:::storage
 
         %% --- ZimaOS NAS --- %%
-        subgraph Server_Zima ["<b>ZimaOS NAS</b> <code>[.4 / .5]</code>"]
-            Storage_SMB[("<b>RAID: Quick-Storage</b><br><i>(4 TB)</i>")]:::storage
-            Storage_NVMe[("<b>nvme0n1p1</b><br><i>(500 GB)</i>")]:::storage
-            Storage_MMC[("<b>Onboard MMC</b><br><i>(64 GB)</i>")]:::storage
-            ZimaOS["<b>Operating System:</b><br>ZimaOS v1.6.1"]:::os
+        subgraph Server_Zima ["ZimaOS NAS <code>[.4 / .5]</code>"]
+            Storage_SMB[("Quick-Storage<br><i>(2 TB / RAID1)</i>")]:::storage
+            Storage_NVMe[("nvme0n1p1<br><i>(500 GB / NVMe)</i>")]:::storage
+            Storage_MMC[("ZimaOS-HD<br><i>(64 GB / eMMC)</i>")]:::storage
+            ZimaOS["Operating System:<br>ZimaOS v1.7.0"]:::os
             Service_Docker["Docker Containers"]:::service
             Syncthing_Zima["Syncthing"]:::service
             
             %% --- Debain VM Server --- %%
-            subgraph VM_Debian ["<b>Debian Server</b> <code>[.6]</code>"]
-                DNS_Primary["<b>Primary DNS</b><br><i>(Technitium Cluster)</i>"]:::service
+            subgraph VM_Debian ["Debian Server <code>[.6]</code>"]
+                DNS_Primary["Primary DNS Server<br><i>(Technitium)</i>"]:::service
                 Syncthing_VM["Syncthing"]:::service
                 Service_Docker_VM["Docker Containers"]:::service
-                OS_DebianVM["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
-                Virtual_Disk[("<b>Virtual Disk Image</b><br><i>(50 GB)</i>")]:::storage
+                OS_DebianVM["Operating System:<br>Debian 13 <i>(trixie)</i>"]:::os
+                Virtual_Disk[("sda2<br><i>(50 GB / VDI)</i>")]:::storage
             end
         end
 
         %% --- Pi 4B Server --- %%
-        subgraph Server_Pi4 ["<b>Pi 4B Server</b> <code>[.2]</code>"]
-            MicroSD_Pi4[("<b>MicroSD Storage</b><br><i>(128 GB)</i>")]:::storage
-            OS_Pi4["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
-            DNS_Secondary["<b>Secondary DNS</b><br><i>(Technitium Cluster)</i>"]:::service
-            HA["Home Assistant"]:::service
+        subgraph Server_Pi4 ["Pi 4B Server <code>[.2]</code>"]
+            MicroSD_Pi4[("mmcblk0p2<br><i>(128 GB / MicroSD)</i>")]:::storage
+            OS_Pi4["Operating System:<br>Debian 13 <i>(trixie)</i>"]:::os
+            DNS_Secondary["Secondary DNS Server<br><i>(Technitium)</i>"]:::service
+            HA["Home Assistant<br><i>(Docker)</i>"]:::service
             Print["CUPS Print Server"]:::service
             Syncthing_Pi4["Syncthing"]:::service
             Service_Docker_Pi4["Docker Containers"]:::service
         end
 
         %% --- Pi Zero 2W Server --- %%
-        subgraph Server_PiZero ["<b>Pi Zero 2W Server</b> <code>[.3]</code>"]
-            MicroSD_PiZero[("<b>MicroSD Storage</b><br><i>(64 GB)</i>")]:::storage
-            OS_PiZero["<b>Operating System:</b><br>Debian 13 <i>(trixie)</i>"]:::os
+        subgraph Server_PiZero ["Pi Zero 2W Server <code>[.3]</code>"]
+            MicroSD_PiZero[("mmcblk0p2<br><i>(64 GB / MicroSD)</i>")]:::storage
+            OS_PiZero["Operating System:<br>Debian 13 <i>(trixie)</i>"]:::os
             Service_Docker_PiZero["Docker Containers"]:::service
             Syncthing_PiZero["Syncthing"]:::service
-            Caddy["<b>Caddy Reverse Proxy</b><br><i>(Unique domain names for local services)</i>"]:::service
+            Caddy["Caddy Reverse Proxy<br><i>(Unique FQDN for services)</i>"]:::service
         end
     end
 
     %% --- IoT VLAN --- %%
-    subgraph IoT_VLAN53 ["<b>VLAN53:</b> IoT <code>[192.168.53.x]</code>"]
+    subgraph IoT_VLAN53 ["VLAN53: IoT <code>[192.168.53.x]</code>"]
         direction TB
         IoTClients["IoT Clients"]:::vlan53  
     end
 
     %% --- Guest VLAN --- %%
-    subgraph Guest_VLAN52 ["<b>VLAN52:</b> Guest <code>[192.168.52.x]</code>"]
+    subgraph Guest_VLAN52 ["VLAN52: Guest <code>[192.168.52.x]</code>"]
         direction TB
         GuestClients["Guest Clients"]:::vlan52
     end

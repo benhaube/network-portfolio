@@ -25,6 +25,8 @@ _Network File System_
 
 ---
 
+![NFS Mount in Dolphin file explorer](../assets/screenshots/dolphin-nfs-mount.png){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 #### :symbols-file-text:&ensp;Description

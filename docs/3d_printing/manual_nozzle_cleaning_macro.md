@@ -72,7 +72,7 @@ _Manually Clean Your Nozzle_
 <figure markdown="span">
   ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-light.png#only-light){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
   ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-dark.png#only-dark){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
-  <figcaption>The <a href="/03_Services/Fluidd.html">Fluidd</a> UI prompt will appear when the nozzle has reached the specified temperature. Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</figcaption>
+  <figcaption>The Fluidd UI prompt will appear when the nozzle has reached the specified temperature. Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</figcaption>
 </figure>
 
 <div class="glightbox-desc nozzle-clean-desc">

@@ -23,8 +23,8 @@ _Filament Inventory Management_
 
 ---
 
-![Spoolman homepage](../assets/screenshots/spoolman-home-light.png#only-light){ width=400 align=right .on-glb }
-![Spoolman homepage](../assets/screenshots/spoolman-home-dark.png#only-dark){ width=400 align=right .on-glb }
+![Spoolman homepage](../assets/screenshots/spoolman-spools-light.png#only-light){ width=400 align=right .on-glb }
+![Spoolman homepage](../assets/screenshots/spoolman-spools-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

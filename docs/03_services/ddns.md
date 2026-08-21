@@ -118,7 +118,7 @@ _Provided by addr.tools_
     --8<-- "deploy_cert.sh"
     ```
 
-    3.    You may need to install the SFTP server on the router with Entware using the following command:
+    1.    You may need to install the SFTP server on the router with Entware using the following command:
 
         ``` sh linenums="1"
         opkg install openssh-sftp-server

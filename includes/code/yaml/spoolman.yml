@@ -15,3 +15,4 @@ services:
       - SPOOLMAN_AUTOMATIC_BACKUP=true
       - SPOOLMAN_DB_TYPE=sqlite
       - SPOOLMAN_LOGGING_LEVEL=info
+      - SPOOLMAN_CORS_ORIGIN=http://kacey.internal,http://kacey.internal:4408

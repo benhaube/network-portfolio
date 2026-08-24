@@ -91,7 +91,7 @@ hide:
 : Ben's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-laptop-minimal:&ensp;Ben's Laptop](02_hardware/bens_laptop.md)
-: Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
+: Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
 
 [:symbols-smartphone:&ensp;Ben's Smartphone](02_hardware/bens_smartphone.md)
 : Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.

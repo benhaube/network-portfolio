@@ -23,8 +23,8 @@ _Filament Inventory Management_
 
 ---
 
-![Spoolman homepage](../assets/screenshots/spoolman-spools-light.png#only-light){ width=400 align=right .on-glb }
-![Spoolman homepage](../assets/screenshots/spoolman-spools-dark.png#only-dark){ width=400 align=right .on-glb }
+![Spoolman homepage](../assets/screenshots/spoolman-library-light.png#only-light){ width=400 align=right .on-glb }
+![Spoolman homepage](../assets/screenshots/spoolman-library-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 
@@ -45,7 +45,7 @@ _Filament Inventory Management_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:  N/A
+: N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -55,6 +55,23 @@ _Filament Inventory Management_
 
 ### :symbols-settings:&ensp;Configuration
 
-``` yaml { .mono-title title="~/.casaos/apps/big-bear-spoolman/docker-compose.yml" linenums="1" }
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+- Compose File:&ensp;`/media/nvme0n1p1/AppData/dockge/stacks/spoolman`
+{ .no-bullets }
+- Spoolman Data:&ensp;`/media/nvme0n1p1/AppData/dockge/stacks/spoolman/data`
+{ .no-bullets }
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
+--8<-- "deploy_with_dockge.md"
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/spoolman/compose.yaml" }
 --8<-- "spoolman.yml"
 ```
+
+1. Also available at [Docker Hub](https://hub.docker.com/r/donkieyo/spoolman){ external-link }:&ensp;`donkieyo/spoolman:latest`
+2. Mount the host machine's `./data` directory into the container's `/home/app/.local/share/spoolman` directory.
+3. Do _NOT_ modify this line!
+4. Map the host machine's port `7912` to the container's port `8000`.
+5. Optional, defaults to UTC.

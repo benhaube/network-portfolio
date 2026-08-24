@@ -1,22 +1,17 @@
 services:
-  app:
-    cpu_shares: 90
-    container_name: spoolman
-    environment:
-      - SPOOLMAN_AUTOMATIC_BACKUP=TRUE
-      - SPOOLMAN_DB_TYPE=sqlite
-      - SPOOLMAN_LOGGING_LEVEL=INFO
-      - TZ=America/New_York
-    image: ghcr.io/donkie/spoolman:latest
-    ports:
-      - mode: ingress
-        target: 8000
-        published: "7912"
-        protocol: tcp
+  spoolman:
+    image: ghcr.io/donkie/spoolman:latest # (1)!
     restart: unless-stopped
     volumes:
+      # (2)!
       - type: bind
-        source: /DATA/AppData/big-bear-spoolman/data
-        target: /home/app/.local/share/spoolman
-        bind:
-          create_host_path: true
+        source: ./data
+        target: /home/app/.local/share/spoolman # (3)!
+    ports:
+      # (4)!
+      - "7912:8000"
+    environment:
+      - TZ=America/New_York # (5)!
+      - SPOOLMAN_AUTOMATIC_BACKUP=true
+      - SPOOLMAN_DB_TYPE=sqlite
+      - SPOOLMAN_LOGGING_LEVEL=info

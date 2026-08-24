@@ -68,7 +68,7 @@ _Reverse-Proxy Server_
 
 #### :symbols-server:&ensp;Pi 4B Server
 
---8<-- "deploy_with_dockge.md"
+--8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="/opt/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "cloudflared-pi-server.yml"

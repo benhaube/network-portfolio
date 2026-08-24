@@ -117,7 +117,7 @@ The NetAlertX service allows users to add custom device and property SVG icons t
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
---8<-- "deploy_with_dockge.md"
+--8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/netalertx/compose.yaml" linenums="1" }
 --8<-- "netalertx.yaml"

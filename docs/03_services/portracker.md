@@ -60,7 +60,7 @@ _Port Monitoring & Discovery_
 
 ### :symbols-settings:&ensp;Configuration
 
---8<-- "deploy_with_dockge.md"
+--8<-- "includes/managed_by_dockge.md"
 
 ##### Pi 4B Server
 

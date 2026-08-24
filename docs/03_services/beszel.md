@@ -87,7 +87,7 @@ _Server Monitoring_
 
 #### :symbols-file-code-corner:&ensp;Docker Compose Files
 
---8<-- "deploy_with_dockge.md"
+--8<-- "includes/managed_by_dockge.md"
 
 ##### Pi 4B Server _(Hub)_
 

@@ -109,7 +109,7 @@ _Git with a Cup of Tea_
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
---8<-- "deploy_with_dockge.md"
+--8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/gitea/compose.yaml" linenums="1" }
 --8<-- "gitea.yml"

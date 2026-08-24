@@ -59,7 +59,7 @@ _Anti-Virus for ZimaOS_
 
 ### :symbols-settings:&ensp;Configuration
 
---8<-- "deploy_with_dockge.md"
+--8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/clamav-dashboard/compose.yaml" linenums="1" }
 --8<-- "clamav-dashboard.yaml"

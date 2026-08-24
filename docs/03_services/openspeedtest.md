@@ -56,7 +56,7 @@ _Test Network Performance_
 
 ### :symbols-settings:&ensp;Configuration
 
---8<-- "deploy_with_dockge.md"
+--8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/openspeedtest/compose.yaml" linenums="1" }
 --8<-- "openspeedtest.yml"

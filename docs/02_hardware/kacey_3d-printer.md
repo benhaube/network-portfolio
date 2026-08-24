@@ -111,12 +111,17 @@ _Modified Creality K1C_
 
     :   Fluidd
 
-        - For information regarding the [Fluidd](../03_services/fluidd.md) Web UI see the [documentation](https://guilouz.github.io/Creality-Helper-Script-Wiki/configurations/access-to-web-interface/){ external-link }.  
+        - For information regarding the [Fluidd](../03_services/fluidd.md) Web UI see the [documentation](https://docs.fluidd.xyz/ "Fluidd Docs"){ external-link }.  
 
     :   Klipper / Moonraker
 
-        - For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/){ external-link }.
-        - Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/){ external-link }.
+        - For information regarding Klipper configuration see the [documentation](https://www.klipper3d.org/ "Klipper Docs"){ external-link }.
+        - Moonraker is an API that allows Fluidd to communicate with Klipper. See Moonraker [documentation](https://moonraker.readthedocs.io/en/latest/ "Moonraker Docs"){ external-link }.
+
+    :   HelixScreen
+
+        - HelixScreen is a replacement UI for the printer's LCD touchscreen that can control many more functions of the 3D-printer. It integrates with the Moonraker API for its functions. 
+        - For more information about HelixScreen and help with configuration see the [documentation](https://helixscreen.org/installation/ "HelixScreen Docs"){ external-link }.
 
     :symbols-printer-3d-nozzle:&ensp;**Hardware**
 

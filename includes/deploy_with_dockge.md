@@ -1,5 +1,5 @@
-???+ note 
+???+ dockge "Deployed with Dockge"
 
-    :services-dockge:&ensp;**Deployed with Dockge**
-
-    :   This service is deployed and managed by [Dockge](dockge.md). To pull updated images, start the service, stop the service, modify the environment variables, and modify the `compose.yml` file, visit the [Dockge Web-UI](http://pi-server.internal:5001){ external-link }. Alternatively, SSH into the server and edit the `compose.yml` and `.env` files directly.
+    This container stack is deployed and managed by [Dockge](dockge.md). To pull updated images, start / stop the containers, modify the environment variables, and modify the `compose.yaml` file; visit the [Dockge Web-UI](http://pi-server.internal:5001){ external-link }. 
+    
+    Alternatively, start an SSH session with the host server to edit the `compose.yaml` and `.env` files directly with a text editor _(e.g., `nano`)_, then use the `docker compose` command to manage the container stack.

@@ -1,8 +1,8 @@
 ---
 icon: symbols/laptop-minimal
 title: Ben's Laptop
-subtitle: ThinkPad X1 Carbon
-description: Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go.
+subtitle: ThinkPad X1 Yoga
+description: Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go.
 tags:
   - Hardware
   - Laptop
@@ -19,19 +19,19 @@ hide:
 
 # Ben's Laptop
 
-_ThinkPad X1 Carbon_
+_ThinkPad X1 Yoga_
 
 [Fedora Docs&ensp;:brands-fedora:](https://docs.fedoraproject.org//en-US/docs/){ .md-button .md-button--primary }&emsp;[User Guide&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_user_guide.pdf){ .md-button .md-button--primary }&emsp;[Maintenance Manual&ensp;:symbols-notebook-text:](../assets/manuals/x1_yoga_gen6_maintenance_manual.pdf){ .md-button .md-button--primary }
 
 ---
 
-![Bens Laptop desktop screenshot](../assets/screenshots/ben-laptop-desktop.png){ width=400 align=right .on-glb }
+![Bens Laptop desktop screenshot](../assets/images/thinkpad_x1_yoga.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 
 #### :symbols-toolbox:&ensp;Role
 
-:    Ben's main laptop PC, a ThinkPad X1 Carbon, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
+:    Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
 #### :symbols-host:&ensp;Hostname
 

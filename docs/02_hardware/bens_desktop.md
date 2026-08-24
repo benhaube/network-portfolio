@@ -25,7 +25,7 @@ _High-Performance Desktop PC_
 
 ---
 
-![Bens Workstation desktop screenshot](../assets/screenshots/bens-workstation-desktop.png){ width=400 align=right .on-glb }
+![Bens Workstation desktop screenshot](../assets/images/bens_desktop.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

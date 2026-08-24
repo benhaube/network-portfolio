@@ -27,7 +27,7 @@ _Rack-Mount ZimaBoard 2_
 
 ---
 
-![ZimaOS-NAS server dashboard](../assets/screenshots/zimaos-nas-dashboard.png){ width=400 align=right .on-glb }
+![ZimaBoard 2 1664 — Single Board Server](../assets/images/zimaboard-2.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

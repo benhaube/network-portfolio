@@ -27,8 +27,7 @@ _Reverse-Proxy Server_
 
 ---
 
-![SSH session on pi-server](../assets/screenshots/ssh-pi-zero-light.png#only-light){ width=400 align=right .on-glb }
-![SSH session on pi-server](../assets/screenshots/ssh-pi-zero-dark.png#only-dark){ width=400 align=right .on-glb }
+![Raspberry Pi Zero 2W — Single Board Computer](../assets/images/ras-pi-zero-2w.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

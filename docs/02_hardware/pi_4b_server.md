@@ -27,8 +27,7 @@ _Secondary DNS Server_
 
 ---
 
-![SSH session on pi-server](../assets/screenshots/ssh-pi-server-light.png#only-light){ width=400 align=right .on-glb }
-![SSH session on pi-server](../assets/screenshots/ssh-pi-server-dark.png#only-dark){ width=400 align=right .on-glb }
+![Raspberry Pi 4B — Single Board Computer](../assets/images/ras-pi-4b.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

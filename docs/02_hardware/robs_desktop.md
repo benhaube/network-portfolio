@@ -24,7 +24,7 @@ _High-Performance Desktop PC_
 
 ---
 
-![Screenshot of Rob's Workstation desktop](../assets/images/robs_desktop.png){ width=400 align=right .no-shadow }
+![Rob's Workstation — Corsair 4000D Airflow PC case](../assets/images/robs_desktop.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

@@ -25,7 +25,7 @@ _ThinkPad X1 Yoga_
 
 ---
 
-![Bens Laptop desktop screenshot](../assets/images/thinkpad_x1_yoga.png){ width=400 align=right .no-shadow }
+![ThinkPad X1 Yoga Gen-6](../assets/images/thinkpad_x1_yoga.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

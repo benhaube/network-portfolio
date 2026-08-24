@@ -25,7 +25,7 @@ _High-Performance Desktop PC_
 
 ---
 
-![Bens Workstation desktop screenshot](../assets/images/bens_desktop.png){ width=400 align=right .no-shadow }
+![Bens Workstation — Corsair 4000D Airflow PC case](../assets/images/bens_desktop.png){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

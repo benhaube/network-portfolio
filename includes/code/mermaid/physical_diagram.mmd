@@ -115,7 +115,8 @@ flowchart-elk TD
     %% --- Wi-Fi --- %%
     RouterMain -. "VLAN52" .- Guest
     RouterMain -. "VLAN53" .- IoT
+    RouterMain -. "VLAN50" .- Mobile
+    MeshNode -. "VLAN53" .- IoT
     MeshNode -. "VLAN50" .- PiZero
     MeshNode -. "VLAN53<br><code>[wlan0]</code>" .- Pi4
     MeshNode -. "VLAN50" .- Printer3D
-    RouterMain -. "VLAN50" .- Mobile

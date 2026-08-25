@@ -105,6 +105,9 @@ hide:
 [:symbols-laptop-minimal:&ensp;Rob's Laptop](02_hardware/robs_laptop.md) 
 : Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_. However, sometimes it has a 2.5 Gb/s Ethernet connection through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
 
+[:symbols-smartphone:&ensp;Rob's Smartphone](02_hardware/robs_phone.md)
+: Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
+
 ---
 
 ## :symbols-cloud:&ensp;Services

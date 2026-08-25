@@ -100,7 +100,7 @@ _Fine Tune Your Bed Level_
 
     [Root Access Guide&ensp;:brands-3dphub:](https://www.3dphub.net/learn/root-access-quick-start-guide){ .md-button }
 
-    [Helper Script&ensp;:brands-creality-v2:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
+    [Helper Script&ensp;:brands-creality:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button }
 
     !!! security "Default Password"
 

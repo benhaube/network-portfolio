@@ -20,7 +20,7 @@ hide:
 
 _Modified Creality K1C_
 
-[Creality Docs&ensp;:brands-creality-v2:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-file-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
+[Creality Docs&ensp;:brands-creality:](https://wiki.creality.com/en/k1-flagship-series){ .md-button .md-button--primary }&emsp;[Helper Script&ensp;:symbols-file-terminal:](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ .md-button .md-button--primary }&emsp;[OrcaSlicer&ensp;:services-orca-slicer:](https://www.orcaslicer.com/){ .md-button .md-button--primary }
 
 ---
 
@@ -34,7 +34,7 @@ _Modified Creality K1C_
 
 :    See more detailed information about the Creality K1C hardware...
 
-    [More Kacey Info&ensp;:brands-creality-v2:](kacey_info.md){ .md-button }
+    [More Kacey Info&ensp;:brands-creality:](kacey_info.md){ .md-button }
 
 #### :symbols-host:&ensp;Hostname
 
@@ -47,7 +47,7 @@ _Modified Creality K1C_
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-- [:brands-creality-v2:&ensp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer){ external-link }
+- [:brands-creality:&ensp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer){ external-link }
 { .no-bullets }
 - [:symbols-tux:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
 { .no-bullets }

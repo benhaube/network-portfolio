@@ -22,7 +22,7 @@ _Google Pixel 9 Pro_
 
 ---
 
-![Google Pixel 9 Pro (Hazel)](../assets/images/google-pixel-9-pro.png){ width=325 align=right .no-shadow }
+![Google Pixel 9 Pro (Hazel)](../assets/images/google-pixel-9-pro.png){ width=300 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Overview
 

@@ -12,7 +12,7 @@ hide:
   - toc
 ---
 
-![Google Material (new) 'mobile' icon](../assets/icons/smartphone.svg){ width=200 }
+![Lucide 'smartphone' icon](../assets/icons/smartphone.svg){ width=200 }
 
 # Ben's Smartphone
 
@@ -69,9 +69,9 @@ _Google Pixel 9 Pro_
 
 ## :symbols-circuit-board:&ensp;Core Specs
 
-| CPU                                                        | Cores / Threads       | CPU Freq.                                                                     | RAM           | GPU                                   | GPU Freq. | VRAM   |
-| :--------------------------------------------------------- | :-------------------- | :---------------------------------------------------------------------------- | :------------ | :------------------------------------ | :-------- | :----- |
-| :brands-google-tensor:&nbsp;Google Tensor G4 _(arm64-v8a)_ | 8C / 8T<br>3-Clusters | **Cluster-1:** 1950 MHz<br>**Cluster-2:** 2600 MHz<br>**Cluster-3:** 3105 MHz | 16 GB LPDDR5X | :brands-google-tensor:&nbsp;Mali-G715 | -         | Shared |
+| CPU                                                        | Cores / Threads       | CPU Freq.                                 | RAM           | GPU                         | GPU Freq. | VRAM   |
+| :--------------------------------------------------------- | :-------------------- | :---------------------------------------- | :------------ | :-------------------------- | :-------- | :----- |
+| :brands-google-tensor:&nbsp;Google Tensor G4 _(arm64-v8a)_ | 8C / 8T<br>3-Clusters | 4x 1950 MHz<br>3x 2600 MHz<br>1x 3105 MHz | 16 GB LPDDR5X | :brands-arm:&nbsp;Mali-G715 | -         | Shared |
 
 ## :symbols-network:&ensp;Network Configuration
 
@@ -79,9 +79,9 @@ _Google Pixel 9 Pro_
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
 |   Wi-Fi   | `DHCP`                                   | `08:8B:C8:4E:19:7B` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
-| Interface | VLAN                         | FQDN  | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------- | :---- | :---------------------------------------- | :------------------------------------ |
-|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| Interface | VLAN                         | FQDN                   | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------: | :--------------------------- | :--------------------- | :---------------------------------------- | :------------------------------------ |
+|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `ben-s-phone.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

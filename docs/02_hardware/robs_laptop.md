@@ -80,9 +80,9 @@ _ASUS TUF Gaming A16_
 
 #### :symbols-usb:&ensp;External / Attached
 
-| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
-| :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
-| `-`         | -          | -                                              | `-`         | `-`         | -          |
+| Mount Point | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
+| :---------- | :------------ | :--------------------------------------------- | :---------- | :---------- | :--------- |
+| `N:`        | Network Drive | 1.81 TB                                        | `-`         | `ntfs`      | N/A        |
 
 ---
 

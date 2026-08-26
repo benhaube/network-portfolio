@@ -325,19 +325,25 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
 
 ## 🙏🏻 Special Thanks
 
-I would like to give special thanks to the following projects whose work is used extensively for this project:
+**[Google](https://fonts.google.com/):**&ensp;For their `Google Sans` and `Google Sans Code` fonts
 
-+ **[Google](https://fonts.google.com/):**
-    + For their `Google Sans` and `Google Sans Code` fonts
-+ **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/):**
-    + For their incredible open-source static website generator.
-+ **[Lucide](https://lucide.dev/):**
-    + For their beautiful and modern icon library.
-+ **[Selfh.st](https://selfh.st/icons/):**
-    + For their awesome, colorful brand icons. 
-+ **[Mermaid.js](https://mermaid.js.org/):**
-    + For building an amazing tool for rendering beautiful flowcharts.
-+ **[VSCodium](https://vscodium.com/):**
-    + For their excellent open-source, MIT-Licensed Integrated Developer Environment that lacks Microsoft's spyware / telemetry. I have used it extensively in the development of this website, and daily in all of my projects and network configuration management.
-+ **[Inkscape](https://inkscape.org/):**
-    + For building an incredible piece of software for the FOSS community to create and edit SVG icons.
++ The `Google Sans` and `Google Sans Code` fonts are used under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/).
+
+**[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/):**&ensp;For their incredible open-source static website generator.
+
++ Some of the Material for MkDocs source code has been modified under the [MIT](https://github.com/squidfunk/mkdocs-material/blob/master/LICENSE) license.
+
+**[Lucide](https://lucide.dev/):**&ensp;For their beautiful and modern icon library.
+
++ The Lucide icons are used under the [ISC and MIT](https://github.com/lucide-icons/lucide/blob/main/LICENSE) licenses.
+
+**[Selfh.st](https://selfh.st/icons/):**&ensp;For their awesome, colorful brand icons. 
+
++ The Selfh.st icons are used under the [Creative Commons Attribution 4.0](https://github.com/selfhst/icons/blob/main/LICENSE?ref=selfh.st) license.
+
+**[Mermaid.js](https://mermaid.js.org/):**&ensp;For building an amazing tool for rendering beautiful flowcharts.
++ The Mermaid.js javascript is used under the [MIT](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE) license.
+
+**[VSCodium](https://vscodium.com/):**&ensp;For their excellent open-source, MIT-Licensed Integrated Developer Environment that lacks Microsoft's spyware / telemetry. I have used it extensively in the development of this website, and daily in all of my projects and network configuration management.
+
+**[Inkscape](https://inkscape.org/):**&ensp;For building an incredible piece of software for the FOSS community to create and edit SVG icons.

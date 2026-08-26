@@ -125,7 +125,7 @@ _High-Performance Desktop PC_
 | :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
 | _Active_ | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
 | _Active_ | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
-| _Active_ | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows_11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
+| _Active_ | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows-11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
 #### :symbols-tux:&ensp;Native Linux
 

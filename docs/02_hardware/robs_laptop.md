@@ -65,10 +65,10 @@ _ASUS TUF Gaming A16_
 | Ethernet  | `DHCP`                                   | `E8:9C:25:90:8B:11` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } _(Port-1)_, Temporary connection |
 |   Wi-Fi   | `DHCP`                                   | `F8:54:F6:C1:88:D2` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){data-preview} _(VLAN50)_                                |
 
-| Interface |             VLAN             | FQDN  | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------: | :---- | :---------------------------------------- | :------------------------------------ |
-| Ethernet  | :symbols-shield:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
-|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `N/A` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| Interface |             VLAN             | FQDN            | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------: | :--------------------------: | :-------------- | :---------------------------------------- | :------------------------------------ |
+| Ethernet  | :symbols-shield:&nbsp;VLAN50 | `ems1.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `ems1.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 

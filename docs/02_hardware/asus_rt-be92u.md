@@ -36,6 +36,10 @@ _Wireless Router_
 
 :    `RT-BE92U-FAF0`
 
+#### :symbols-link-2:&ensp;FQDN
+
+:    `asusrouter.internal`
+
 #### :symbols-map-pin:&ensp;Location
 
 - <!-- material/tags { include: [Living Room] } -->

@@ -36,6 +36,10 @@ _AiMesh Node_
 
 :    `RT-AX55-1360`
 
+#### :symbols-link-2:&ensp;FQDN
+
+:    `aimesh-node.internal`
+
 #### :symbols-map-pin:&ensp;Location
 
 - <!-- material/tags { include: [Office, Printer Cart] } -->

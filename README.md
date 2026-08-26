@@ -33,7 +33,9 @@
 
 ## About
 
-This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel. 
+This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel.
+
+You can build your own network documentation website with the configuration, directory structure, and page templates provided in this code repository. Just clone the repo and replace the `*.md` files with your own created using the templates. The provided `mkdocs.yml` configuration file and cusomized CSS can be used for any MkDocs project regardless of the page content. **Note:**&ensp;You will need to change the `.nav.yml` files to reflect the names of your own markdown files.
 
 ![Screenshot of Index page](readme-assets/index.png)
 

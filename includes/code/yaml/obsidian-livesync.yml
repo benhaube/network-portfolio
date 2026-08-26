@@ -1,9 +1,8 @@
 services:
-  app:
-    cpu_shares: 90
+  couchdb:
     container_name: obsidian-livesync
     environment:
-      - COUCHDB_PASSWORD=password  # (1)!
+      - COUCHDB_PASSWORD=password # (1)!
       - COUCHDB_USER=bhaube
     image: couchdb:3.5.0
     ports:
@@ -14,12 +13,12 @@ services:
     restart: unless-stopped
     volumes:
       - type: bind
-        source: /DATA/AppData/big-bear-obsidian-livesync/data/couchdb
+        source: /DATA/AppData/obsidian-livesync/data/couchdb
         target: /opt/couchdb/data
         bind:
           create_host_path: true
       - type: bind
-        source: /DATA/AppData/big-bear-obsidian-livesync/data/local.ini
+        source: /DATA/AppData/obsidian-livesync/data/local.ini
         target: /opt/couchdb/etc/local.ini
         bind:
           create_host_path: true

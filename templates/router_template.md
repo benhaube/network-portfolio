@@ -34,6 +34,10 @@ _Subtitle_
 
 :    `hostname`
 
+#### :symbols-link-2:&ensp;FQDN
+
+:    `*.internal`
+
 #### :symbols-map-pin:&ensp;Location
 
 - <!-- material/tags { include: [Location] } -->

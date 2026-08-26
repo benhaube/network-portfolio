@@ -65,33 +65,31 @@ _Sync with CouchDB_
 
 ##### Docker Deploy
 
-- `~/.casaos/apps/big-bear-obsidian-livesync/docker-compose.yml`
+- `../AppData/dockge/stacks/obsidian-livesync/compose.yaml`
 { .no-bullets }
 
 ##### Database
 
-- `../AppData/big-bear-obsidian-livesync/data/couchdb`
+- `../AppData/obsidian-livesync/data/couchdb`
 { .no-bullets }
 
 ##### Config File
 
-- `../AppData/big-bear-obsidian-livesync/data/local.ini`
+- `../AppData/obsidian-livesync/data/local.ini`
 { .no-bullets }
 
-#### :symbols-server:&ensp;Server
+#### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml { .mono-title title="~/.casaos/apps/big-bear-obsidian-livesync/docker-compose.yml" linenums="1" }
+--8<-- "includes/managed_by_dockge.md"
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/obsidian-livesync/compose.yaml" linenums="1" }
 --8<-- "obsidian-livesync.yml"
 ```
 
 1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI.
 
-``` ini { .mono-title title="../AppData/big-bear-obsidian-livesync/data/local.ini" linenums="1" }
+#### :symbols-file-cog:&ensp;Config File
+
+``` ini { .mono-title title="../AppData/obsidian-livesync/data/local.ini" linenums="1" }
 --8<-- "couchdb-local.ini"
-```
-
-#### :symbols-monitor-smartphone:&ensp;Clients
-
-``` json { .mono-title title=".obsidian/plugins/obsidian-livesync/data.json" linenums="1" }
---8<-- "obsidian-livesync_data.json"
 ```

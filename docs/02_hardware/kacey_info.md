@@ -40,7 +40,7 @@ _Detailed Configuration Info_
 
 :    v2.0.5  
 
-#### :symbols-calendar-1:&ensp;Create Date
+#### :symbols-calendar:&ensp;Create Date
 
 :    2023/09/05
 
@@ -92,7 +92,14 @@ _Detailed Configuration Info_
 
 ## :symbols-webcam:&ensp;Camera
 
-#### :symbols-api:&ensp;Moonraker
+##### Stream URL
+
+- <http://kacey.internal:8080/?action=stream>
+{ .no-bullets }
+- <http://localhost:8080/?action=stream>
+{ .no-bullets }
+- <http://127.0.0.1:8080/?action=stream>
+{ .no-bullets }
 
 ##### Snapshot URL
 
@@ -101,18 +108,6 @@ _Detailed Configuration Info_
 - <http://localhost:8080/?action=snapshot>
 { .no-bullets }
 - <http://127.0.0.1:8080/?action=snapshot>
-{ .no-bullets }
-
-#### :services-fluidd:&ensp;Fluidd
-
-##### Snapshot URL
-
-- <http://kacey.internal:8080/?action=snapshot>
-{ .no-bullets }
-
-##### Stream URL
-
-- <http://kacey.internal/webcam/?action=stream>
 { .no-bullets }
 
 ---
@@ -124,8 +119,10 @@ _Detailed Configuration Info_
 ``` gcode title="Machine Start" linenums="1"
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
 M140 S0
-M104 S0 
-START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] MATERIAL=[filament_type]
+M104 S0
+M106 S0
+M106 P2 S0 
+START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
 ```
 
 ``` gcode title="Machine End" linenums="1"
@@ -153,39 +150,5 @@ M600
 ```
 
 ``` gcode title="Pause" linenums="1"
-M600
-```
-
-#### :symbols-file-cog:&ensp;Klipper Configuration Files
-
-``` cfg { .mono-title title="printer.cfg" linenums="1" }
---8<-- "printer.cfg"
-```
-
-``` cfg { .mono-title title="printer_params.cfg" linenums="1" }
---8<-- "printer_params.cfg"
-```
-
-``` cfg { .mono-title title="moonraker.conf" linenums="1" }
---8<-- "moonraker.conf"
-```
-
-``` cfg { .mono-title title="octoeverywhere-system.cfg" linenums="1" }
---8<-- "octoeverywhere-system.cfg"
-```
-
-``` cfg { .mono-title title="M600-custom.cfg" linenums="1" }
---8<-- "m600_custom.cfg"
-```
-
-``` cfg { .mono-title title="sensorless.cfg" linenums="1" }
---8<-- "sensorless.cfg"
-```
-
-``` cfg { .mono-title title="spoolman.cfg" linenums="1" }
---8<-- "spoolman.cfg"
-```
-
-``` cfg { .mono-title title="gcode-macros.cfg" linenums="1" }
---8<-- "gcode-macros.cfg"
+PAUSE
 ```

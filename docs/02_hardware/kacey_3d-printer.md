@@ -47,7 +47,7 @@ _Modified Creality K1C_
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-- [:brands-creality:&ensp;Creality FW Version: 1.3.3.46](https://www.creality.com/download/k1c-carbon-3d-printer){ external-link }
+- [:brands-creality:&ensp;Creality FW Version: 1.3.3.5](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }
 { .no-bullets }
 - [:symbols-tux:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
 { .no-bullets }
@@ -120,7 +120,7 @@ _Modified Creality K1C_
 
     :   HelixScreen
 
-        - HelixScreen is a replacement UI for the printer's LCD touchscreen that can control many more functions of the 3D-printer. It integrates with the Moonraker API for its functions. 
+        - HelixScreen is a replacement UI for the printer's LCD touchscreen that can control many more functions of the 3D-printer. It integrates with the Moonraker API for its functions.
         - For more information about HelixScreen and help with configuration see the [documentation](https://helixscreen.org/installation/ "HelixScreen Docs"){ external-link }.
 
     :symbols-printer-3d-nozzle:&ensp;**Hardware**
@@ -133,16 +133,142 @@ _Modified Creality K1C_
 
         - Replaces the standard nozzle wiping brush at the back of the build plate.
 
-    :symbols-file-code-corner:&ensp;**Custom G-Code Macros**
-
-    :   [Manual Nozzle Cleaning Macro](../3d_printing/manual_nozzle_cleaning_macro.md)
-
-        - This custom macro set *(`CLEAN_NOZZLE`, `DONE_CLEANING`, and `DONE_CLEANING_COOL`)* creates an interactive, semi-automated workflow for manual nozzle maintenance.
-
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
-:    Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md)
+:    Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md). Update firmware manually with downloaded `*.img` file on a `FAT32` formatted USB stick.
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
 :    Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository.
+
+#### :symbols-clock:&ensp;Change Date & Time
+
+:    In some cases date and time are not correct and defined by default to `Sun Mar 1 13:29:37 CET 2020`. This guide explains how to set the correct date and time on your printer based on your time zone. This procedure must be repeated after restoring the printer to factory settings or if you update the firmware.
+
+1.  Connect to printer via [SSH](../03_services/ssh.md).
+2.  Enter this command to see the current date and time defined on your printer:
+
+    ``` bash
+    date
+    ```
+
+    - If date and time are correct, there is no need to continue.
+
+3.  Enter this command to see the current time zone defined on your printer:
+
+    ``` bash
+    ls -l /etc/localtime | awk '{print $6, $7, $8, $9, $10, $11}'
+    ```
+
+    ``` shell-session title="Example Output"
+    Jan 10 16:04 /etc/localtime -> ../usr/share/zoneinfo/America/New_York
+    ```
+
+4.  Enter this command to delete the current time zone:
+
+    ``` bash
+    rm -rf /etc/localtime
+    ```
+
+5.  Enter this command to display the list of available zones:
+
+    ``` bash
+    ls /usr/share/zoneinfo | grep '^[A-Z]'
+    ```
+
+6.  Enter this command to display the list of cities available in the chosen zone (by replacing the `XXX` with the zone):
+
+    ``` bash
+    ls /usr/share/zoneinfo/XXX | grep '^[A-Z]'
+    ```
+
+7.  When you have find your current time zone, enter this command to define it (by replacing the `XXX` with the zone and `YYY` by the city):
+
+    ``` bash
+    ln -s /usr/share/zoneinfo/XXX/YYY /etc/localtime
+    ```
+
+8.  Enter this command to restart NTP server to take effect:
+
+    ``` bash
+    /etc/init.d/S49ntp restart
+    ```
+
+9.  Then enter this command again to see the changes applied:
+
+    ``` bash
+    date
+    ```
+
+#### :symbols-cpu:&ensp;Force Downgrade Firmware
+
+:    If you updated your **K1 / K1C / K1 Max** and can’t downgrade because the printer says “version is new” or fails via UI, follow these steps to bypass the security check.
+
+##### Prerequisites
+
+1. `FAT32` USB drive with the desired firmware `*.img` file.
+2. [SSH](../03_services/ssh.md) access enabled.
+
+##### Step-by-Step
+
+1.  Clear modifications and enable Write access:
+
+    ``` bash
+    rm -rf /overlay/upper/*
+    mount -o remount,rw /
+    ```
+
+2.  Create a “hacked” update script: _(We copy the original to the `/tmp` directory and bypass the version check)_
+
+    ``` bash
+    cp /etc/ota_bin/local_ota_update.sh /tmp/local_ota_update_forced.sh
+    sed -i 's/exit 1/echo "Ignoring lock..."/g' /tmp/local_ota_update_forced.sh
+    chmod +x /tmp/local_ota_update_forced.sh
+    ```
+
+3.  Run the forced downgrade: _(Make sure the `*.img` filename matches the one on your USB drive)_
+
+    ``` bash
+    /tmp/local_ota_update_forced.sh /tmp/udisk/sda1/YOUR_FILE_NAME_HERE.img
+    ```
+
+4.  **Wait:** Once you see `ota: stoped success`, the printer will reboot into the downgraded firmware.
+
+#### :symbols-file-code-corner:&ensp;Install Helper Script
+
+:    The Helper Script allows you to install the latest official builds and many useful features. It is completely automated and necessary changes are made automatically when installing a feature and restored after uninstallation. When the script is updated, installed files are automatically updated as well.
+
+!!! warning
+
+    FOR ^^K1 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.3.3.5` AND ABOVE!<br>
+    FOR ^^KE SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.1.0.12` AND ABOVE!<br>
+    FOR ^^ENDER-3 V3 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.2.1.3` AND ABOVE!
+
+    ---
+
+    Please restore firmware to **factory settings** before using script to avoid issue.
+
+##### Installation
+
+If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided by Creality, please uninstall them first using `[Remove]` Menu.
+
+1.  Connect to printer via [SSH](../03_services/ssh.md).
+2.  Enter the following command to install script in `/usr/data` folder:
+
+    ``` bash
+    git clone --depth 1 https://github.com/Guilouz/Creality-Helper-Script.git /usr/data/helper-script
+    ```
+
+3.  Enter this command to run the script:
+
+    ``` bash
+    sh /usr/data/helper-script/helper.sh
+    ```
+
+4.  If you encounter an issue to clone Helper Script repository, enter this command before cloning:
+
+    ``` bash
+    git config --global http.sslVerify false
+    ```
+
+5.  Also, make sure your system date and time are correct. See [Change Date & Time](#change-date-time) section.

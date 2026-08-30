@@ -141,7 +141,7 @@ _Modified Creality K1C_
 
 :    Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository.
 
-#### :symbols-clock:&ensp;Change Date & Time
+#### :symbols-calendar-clock:&ensp;Change Date & Time
 
 :    In some cases date and time are not correct and defined by default to `Sun Mar 1 13:29:37 CET 2020`. This guide explains how to set the correct date and time on your printer based on your time zone. This procedure must be repeated after restoring the printer to factory settings or if you update the firmware.
 

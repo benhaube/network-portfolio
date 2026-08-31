@@ -327,6 +327,110 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
 > 
 > After ugrading the `mkdocs-panzoom-plugin` package you may need to re-apply this modification to the `panzoom_box.py` file. Depending on the changes made by the upgrade, the file may be overwritten.
 
+## Project Directory Structure
+
+```
+.
+└── network-portfolio
+    ├── docs
+    │   ├── 01_infrastructure
+    │   │   ├── .nav.yml
+    │   │   └── *.md
+    │   ├── 02_hardware
+    │   │   ├── .nav.yml
+    │   │   └── *.md
+    │   ├── 03_services
+    │   │   ├── .nav.yml
+    │   │   └── *.md
+    │   ├── 04_change_management
+    │   │   ├── .nav.yml
+    │   │   └── *.md
+    │   ├── 3d_printing
+    │   │   ├── .meta.yml
+    │   │   ├── .nav.yml
+    │   │   └── *.md
+    │   ├── assets
+    │   │   ├── icons
+    │   │   │   └── *.svg
+    │   │   ├── images
+    │   │   │   └── *.png
+    │   │   ├── javascripts
+    │   │   │   ├── mermaid.mjs
+    │   │   │   └── tablesort.js
+    │   │   ├── manuals
+    │   │   │   └── *.pdf
+    │   │   ├── pictures
+    │   │   │   └── *.jpg
+    │   │   ├── screenshots
+    │   │   │   └── *.png
+    │   │   ├── stylesheets
+    │   │   │   ├── extra.css
+    │   │   │   └── *.css
+    │   │   ├── favicon.svg
+    │   │   └── resume_2026.pdf
+    │   ├── blog
+    │   │   ├── assets
+    │   │   │   ├── icons
+    │   │   │   │   └── *.svg
+    │   │   │   ├── photos
+    │   │   │   │   └── *.jpg
+    │   │   │   └── timelapse
+    │   │   │       └── *.gif
+    │   │   ├── posts
+    │   │   │   ├── .meta.yml
+    │   │   │   └── *.md
+    │   │   ├── .authors.yml
+    │   │   └── index.md
+    │   ├── linux_tutorials
+    │   │   ├── .meta.yml
+    │   │   ├── .nav.yml
+    │   │   └── *.md
+    │   ├── .nav.yml
+    │   ├── about.md
+    │   └── index.md
+    ├── includes
+    │   ├── code
+    │   │   ├── bash
+    │   │   │   └── *.sh
+    │   │   ├── config
+    │   │   │   ├── *.conf
+    │   │   │   ├── *.cfg
+    │   │   │   ├── *.ini
+    │   │   │   ├── *.json
+    │   │   │   ├── *.jsonc
+    │   │   │   └── *.toml
+    │   │   ├── gcode
+    │   │   │   └── *.cfg
+    │   │   ├── mermaid
+    │   │   │   └── *.mmd
+    │   │   ├── systemd
+    │   │   │   ├── *.automount
+    │   │   │   ├── *.mount
+    │   │   │   ├── *.service
+    │   │   │   └── *.timer
+    │   │   ├── yaml
+    │   │   │   ├── *.yaml
+    │   │   │   └── *.yml
+    │   │   └── ...
+    │   ├── abbreviations.md
+    │   └── *.md
+    ├── overrides
+    │   ├── .icons
+    │   │   ├── brands
+    │   │   │   └── *.svg
+    │   │   ├── services
+    │   │   │   └── *.svg
+    │   │   └── symbols
+    │   │       └── *.svg
+    │   └── partials
+    │       └── comments.html
+    ├── templates
+    │   └── *.md
+    ├── LICENSE
+    ├── mkdocs.yml
+    └── README.md
+```
+
 ## 🙏🏻 Special Thanks
 
 **[Google](https://fonts.google.com/)** &mdash; For their `Google Sans` and `Google Sans Code` fonts.

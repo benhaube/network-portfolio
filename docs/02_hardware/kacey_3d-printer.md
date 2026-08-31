@@ -47,7 +47,7 @@ _Modified Creality K1C_
 
 #### :symbols-cpu:&ensp;OS / Firmware
 
-- [:brands-creality:&ensp;Creality FW Version: 1.3.3.5](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }
+- [:brands-creality:&ensp;Creality FW Version: 1.3.3.46](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }
 { .no-bullets }
 - [:symbols-tux:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
 { .no-bullets }

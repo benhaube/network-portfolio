@@ -21,7 +21,7 @@ hide:
 
 _Server Dashboard_
 
-[GitHub&ensp;:brands-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://dynacat.artur.zone/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/Panonim/dynacat){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://dynacat.artur.zone/){ .md-button .md-button--primary }&emsp;[Configuration Files&ensp;:symbols-file-cog:](https://github.com/benhaube/glance-pages){ .md-button .md-button--primary }
 
 ---
 
@@ -36,9 +36,14 @@ _Server Dashboard_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    `8580`
+- `8580`
+{ .no-bullets }
+- `9090`
+{ .no-bullets }
+- `4463`
+{ .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 :    <http://pi-server.internal:8580/>
 
@@ -67,10 +72,11 @@ _Server Dashboard_
 
     [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#dynacat)
 
-| Host Device                                                          | Method                                    | Container Name | Image                       |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glance`       | `panonim/dynacat:latest`    |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `f1_api`       | `skyallinott/f1_api:latest` |
+| Host Device                                                          | Method                                    | Container Name        | Image                               | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :-------------------- | :---------------------------------- | :-----: |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glance`              | `panonim/dynacat:latest`            | `8580`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `f1_api`              | `skyallinott/f1_api:latest`         | `4463`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `glance-github-graph` | `haumea/glance-github-graph:latest` | `9090`  |
 
 ### :symbols-settings:&ensp;Configuration
 
@@ -293,9 +299,6 @@ _Server Dashboard_
 
 1.  Show a title header on mobile device web browsers.
 2.  **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
-3.  :symbols-bug:&ensp;**Bug:**
-
-    - Disabled **WireGuard** community widget for now due to bugs causing page instability and other issues.
 
 ##### Formula 1
 

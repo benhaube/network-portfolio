@@ -33,13 +33,13 @@ _Secondary DNS Server_
 
 #### :symbols-toolbox:&ensp;Role
 
-:    The secondary DNS server in the [Technitium](../03_services/technitium.md#description){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
+: The secondary DNS server in the [Technitium](../03_services/technitium.md#description){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
 
 #### :symbols-host:&ensp;Hostname
 
--    `pi-server` _(VLAN50 / `eth0`)_
+- `pi-server` _(VLAN50 / `eth0`)_
 { .no-bullets }
--    `home-assistant` _(VLAN53 / `wlan0`)_
+- `home-assistant` _(VLAN53 / `wlan0`)_
 { .no-bullets }
 
 #### :symbols-map-pin:&ensp;Location
@@ -105,19 +105,18 @@ _Secondary DNS Server_
 
 #### :symbols-container:&ensp;Docker Container
 
-|   Status   | Service                                                                           | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                                       |
-| :--------: | :-------------------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-|  _Active_  | [:services-beszel:&nbsp;Beszel Hub](../03_services/beszel.md)                     |           `8090`<br>`45876`           | A lightweight server monitoring hub with historical data, docker stats, and alerts.                                                            |
-|  _Active_  | [:services-cloudflare:&nbsp;Cloudflared](../03_services/cloudflared.md)           |                 `N/A`                 | Secure reverse-proxy tunnel for hosting private services on the public internet.                                                               |
-|  _Active_  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                         |                `5001`                 | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.                                                    |
-|  _Active_  | [:symbols-api:&nbsp;F1 API](../03_services/glance.md)                             |                `4463`                 | Part of the [Glance](../03_services/glance.md#deployment-details){ data-preview } stack. Supplies F1 data for widgets on the Glance dashboard. |
-|  _Active_  | [:services-glance:&nbsp;Glance](../03_services/glance.md)                         |                `8580`                 | A self-hosted dashboard that puts all your feeds in one place.                                                                                 |
-|  _Active_  | [:services-glances:&nbsp;Glances](../03_services/glances.md)                      |                `61208`                | A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.                                                       |
-|  _Active_  | [:services-home-assistant:&nbsp;Home Assistant](../03_services/home_assistant.md) |                `8123`                 | Open-source home automation that puts local control and privacy first.                                                                         |
-|  _Active_  | [:services-it-tools:&nbsp;IT-Tools](../03_services/it-tools.md)                   |                `8080`                 | Collection of handy online tools for developers, with great UX.                                                                                |
-| _Inactive_ | [:services-portainer:&nbsp;Portainer-EE](../03_services/portainer.md)             |      `8000`<br>`9000`<br>`9443`       | A lightweight service delivery platform for containerized applications.                                                                        |
-|  _Active_  | [:services-portracker:&nbsp;Portracker](../03_services/portracker.md)             |                `4999`                 | A self-hosted, real-time port monitoring and discovery tool.                                                                                   |
-|  _Active_  | [:services-uptime-kuma:&nbsp;Uptime Kuma](../03_services/uptime_kuma.md)          |                `3001`                 | A fancy self-hosted monitoring tool.                                                                                                           |
+|   Status   | Service                                                                           | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                    |
+| :--------: | :-------------------------------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------ |
+|  _Active_  | [:services-beszel:&nbsp;Beszel Hub](../03_services/beszel.md)                     |           `8090`<br>`45876`           | A lightweight server monitoring hub with historical data, docker stats, and alerts.         |
+|  _Active_  | [:services-cloudflare:&nbsp;Cloudflared](../03_services/cloudflared.md)           |                 `N/A`                 | Secure reverse-proxy tunnel for hosting private services on the public internet.            |
+|  _Active_  | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                         |                `5001`                 | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager. |
+|  _Active_  | [:services-glance:&nbsp;Glance (Stack)](../03_services/glance.md)                 |      `8580`<br>`4463`<br>`9090`       | A self-hosted dashboard that puts all your feeds in one place.                              |
+|  _Active_  | [:services-glances:&nbsp;Glances](../03_services/glances.md)                      |                `61208`                | A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.    |
+|  _Active_  | [:services-home-assistant:&nbsp;Home Assistant](../03_services/home_assistant.md) |                `8123`                 | Open-source home automation that puts local control and privacy first.                      |
+|  _Active_  | [:services-it-tools:&nbsp;IT-Tools](../03_services/it-tools.md)                   |                `8080`                 | Collection of handy online tools for developers, with great UX.                             |
+| _Inactive_ | [:services-portainer:&nbsp;Portainer-EE](../03_services/portainer.md)             |      `8000`<br>`9000`<br>`9443`       | A lightweight service delivery platform for containerized applications.                     |
+|  _Active_  | [:services-portracker:&nbsp;Portracker](../03_services/portracker.md)             |                `4999`                 | A self-hosted, real-time port monitoring and discovery tool.                                |
+|  _Active_  | [:services-uptime-kuma:&nbsp;Uptime Kuma](../03_services/uptime_kuma.md)          |                `3001`                 | A fancy self-hosted monitoring tool.                                                        |
 
 ---
 

@@ -3,7 +3,7 @@ server:
   assets-path: /app/assets # (1)!
 
 # branding:
-  # app-icon-url: /assets/icons/glance.png
+  # app-icon-url: /assets/logo.png
   # hide-footer: true
 
 theme:

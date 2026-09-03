@@ -62,11 +62,11 @@ _Server Message Block_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                          | Container Name | Image |
-| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                          | Container Name | Image | Port(s) |
+| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
 
 ### :symbols-settings:&ensp;Configuration
 

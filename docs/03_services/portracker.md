@@ -49,14 +49,14 @@ _Port Monitoring & Discovery_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:  N/A
+: N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                             |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                             | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | `4999`  |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | `4999`  |
 
 ### :symbols-settings:&ensp;Configuration
 

@@ -47,9 +47,9 @@ _Remote Desktop Protocol_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                          | Container Name | Image |
-| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                          | Container Name | Image | Port(s) |
+| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `3389`  |
 
 ### :symbols-settings:&ensp;Configuration
 

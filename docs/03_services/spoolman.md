@@ -49,9 +49,9 @@ _Filament Inventory Management_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                            |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `spoolman`     | `ghcr.io/donkie/spoolman:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                            | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `spoolman`     | `ghcr.io/donkie/spoolman:latest` | `7912`  |
 
 ### :symbols-settings:&ensp;Configuration
 

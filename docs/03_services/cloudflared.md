@@ -38,14 +38,14 @@ _Reverse-Proxy Server_
 
 :    `14333`
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 - <http://storage-server.internal:14333>
 { .no-bullets }
 - <http://storage-server-2.internal:14333>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }
@@ -59,10 +59,10 @@ _Reverse-Proxy Server_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name      | Image                              |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :--------------------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `cloudflared`       | `wisdomsky/cloudflared-web:latest` |
+| Host Device                                                          | Method                                    | Container Name      | Image                              | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :--------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    | `14333` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `cloudflared`       | `wisdomsky/cloudflared-web:latest` | `14333` |
 
 ### :symbols-settings:&ensp;Configuration
 

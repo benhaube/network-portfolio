@@ -31,13 +31,16 @@ _Handy Tools for Devs_
 
 #### :symbols-file-text:&ensp;Description
 
-:    Handy tools for network administrators and developers.
+: Handy tools for network administrators and developers.
 
-#### :symbols-hash:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s)
 
-:    `8080`
+- `8080`
+{ .no-bullets }
+- `8000`
+{ .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 :    <http://pi-server.internal:8080/>
 
@@ -47,10 +50,10 @@ _Handy Tools for Devs_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name     | Image                             |
-| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :-------------------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `it-tools`         | `sharevb/it-tools:latest`         |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `network-utils-ws` | `sharevb/network-utils-ws:latest` |
+| Host Device                                                          | Method                                    | Container Name     | Image                             | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :-------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `it-tools`         | `sharevb/it-tools:latest`         | `8080`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `network-utils-ws` | `sharevb/network-utils-ws:latest` | `8000`  |
 
 ### :symbols-settings:&ensp;Configuration
 

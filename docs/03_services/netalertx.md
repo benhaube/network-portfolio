@@ -35,7 +35,7 @@ _Centralized Network Visibility_
 
 #### :symbols-file-text:&ensp;Description
 
-:  Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
+: Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -56,9 +56,9 @@ _Centralized Network Visibility_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                      |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx`    | `jokobsk/netalertx:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                      | Port(s)              |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx`    | `jokobsk/netalertx:latest` | `20211`&ensp;`20212` |
 
 ### :symbols-settings:&ensp;Configuration
 

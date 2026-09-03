@@ -55,12 +55,12 @@ _Bye Bye, Google Photos_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name            | Image                                                            |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------------------ | :--------------------------------------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `immich-server`           | `ghcr.io/immich-app/immich-server:v3-release`                    |
-|                                                                      |                                           | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v3-openvino`         |
-|                                                                      |                                           | `redis`                   | `docker.io/valkey/valkey:9`                                      |
-|                                                                      |                                           | `database`                | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` |
+| Host Device                                                          | Method                                    | Container Name            | Image                                                            | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------------------ | :--------------------------------------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `immich-server`           | `ghcr.io/immich-app/immich-server:v3-release`                    | `2283`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v3-openvino`         | `N/A`   |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `redis`                   | `docker.io/valkey/valkey:9`                                      | `N/A`   |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `database`                | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` | `N/A`   |
 
 ### :symbols-settings:&ensp;Configuration
 

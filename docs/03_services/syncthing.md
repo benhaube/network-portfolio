@@ -32,7 +32,7 @@ _File Synchronization_
 
 #### :symbols-file-text:&ensp;Description
 
-:  Open decentralized file synchronization.
+: Open decentralized file synchronization.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -82,15 +82,15 @@ _File Synchronization_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                     | Method                                    | Container Name | Image                          |
-| :------------------------------------------------------------------------------ | :---------------------------------------- | :------------- | :----------------------------- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)     | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
-| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_hardware/bens_smartphone.md) | :brands-android-2:&nbsp;Native Android    | `N/A`          | `N/A`                          |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)            | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)  | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)            | :symbols-container:&nbsp;Docker Container | `syncthing`    | `linuxserver/syncthing:latest` |
+| Host Device                                                                     | Method                                    | Container Name | Image                          | Port(s)                          |
+| :------------------------------------------------------------------------------ | :---------------------------------------- | :------------- | :----------------------------- | :------------------------------- |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)     | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_hardware/bens_smartphone.md) | :brands-android-2:&nbsp;Native Android    | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)            | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)  | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)            | :symbols-container:&nbsp;Docker Container | `syncthing`    | `linuxserver/syncthing:latest` | `8384`&ensp;`22000`&ensp;`21027` |
 
 ### :symbols-settings:&ensp;Configuration
 

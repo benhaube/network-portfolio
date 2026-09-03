@@ -47,9 +47,9 @@ _The Klipper Web API_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                             | Method                          | Container Name | Image |
-| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                             | Method                          | Container Name | Image | Port(s) |
+| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `7125`  |
 
 ### :symbols-settings:&ensp;Configuration
 

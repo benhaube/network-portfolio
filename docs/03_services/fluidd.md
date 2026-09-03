@@ -29,7 +29,7 @@ _The Klipper UI_
 
 #### :symbols-file-text:&ensp;Description
 
-:  A free and open-source Klipper web interface for managing your 3D-printer.
+: A free and open-source Klipper web interface for managing your 3D-printer.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -40,7 +40,10 @@ _The Klipper UI_
 
 #### :symbols-link-2:&ensp;URL / Access
 
-:    <http://kacey.internal>
+- <http://kacey.internal>
+{ .no-bullets }
+- <https://kacey.rac3r4life.online>
+{ .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -50,9 +53,9 @@ _The Klipper UI_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                             | Method                          | Container Name | Image |
-| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                             | Method                          | Container Name | Image | Port(s)          |
+| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------- |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `80`&ensp;`4408` |
 
 ### :symbols-settings:&ensp;Configuration
 
@@ -65,9 +68,3 @@ _The Klipper UI_
 1. Enter the following command to download the Creality-Helper-Script to the `/usr/data/helper-script` directory.
 2. Enter this command to run the Creality Helper Script.
 3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
-
-#### :symbols-cloud-upload:&ensp;Config File Backup
-
-``` json { .wrap-code .mono-title title="backup-fluidd.json" linenums="1" }
---8<-- "fluidd.json"
-```

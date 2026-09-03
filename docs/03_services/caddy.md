@@ -29,7 +29,7 @@ _Reverse-Proxy Server_
 
 #### :symbols-file-text:&ensp;Description
 
-:    Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
+: Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -38,7 +38,7 @@ _Reverse-Proxy Server_
 - `443`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 :    <https://pi-zero.internal>
 
@@ -48,9 +48,9 @@ _Reverse-Proxy Server_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                                      | Container Name | Image |
-| :----------------------------------------------------------------------------- | :------------------------------------------ | :------------- | :---- |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux _(Systemd)_ | `N/A`          | `N/A` |
+| Host Device                                                                    | Method                                      | Container Name | Image | Port(s)         |
+| :----------------------------------------------------------------------------- | :------------------------------------------ | :------------- | :---- | :-------------- |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux _(Systemd)_ | `N/A`          | `N/A` | `80`&ensp;`443` |
 
 ### :symbols-settings:&ensp;Configuration
 

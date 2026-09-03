@@ -37,16 +37,16 @@ _A Simple, Modern VPN_
 
 :    `41820`
 
-#### :symbols-link-2:&ensp;URL / Access  
+#### :symbols-link-2:&ensp;URL / Access
 
-- :symbols-waypoints:&ensp;Server Endpoint:
+-   :symbols-waypoints:&ensp;Server Endpoint:
 { .no-bullets }
     - `rac3r4life.myaddr.dev:41820`
-- :symbols-monitor-cog:&ensp;Web UI Admin:
+-   :symbols-monitor-cog:&ensp;Web UI Admin:
 { .no-bullets }
     - <https://asusrouter.internal:8443/Advanced_VPNServer_Content.asp>
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -63,9 +63,9 @@ _A Simple, Modern VPN_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                          | Container Name | Image |
-| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                          | Container Name | Image | Port(s) |
+| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `41820` |
 
 ### :symbols-settings:&ensp;Configuration
 

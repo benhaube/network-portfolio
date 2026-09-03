@@ -52,10 +52,10 @@ _Anti-Virus for ZimaOS_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name     | Image                                       |
-| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :------------------------------------------ |
-| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `clamav-server`    | `clamav/clamav:1.5_base`                    |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `clamav-dashboard` | `ghcr.io/jacko88888/clamav-dashboard:0.2.4` |
+| Host Device                                                          | Method                                    | Container Name     | Image                                       | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :------------------------------------------ | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `clamav-server`    | `clamav/clamav:1.5_base`                    | `3310`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `clamav-dashboard` | `ghcr.io/jacko88888/clamav-dashboard:0.2.4` | `8099`  |
 
 ### :symbols-settings:&ensp;Configuration
 

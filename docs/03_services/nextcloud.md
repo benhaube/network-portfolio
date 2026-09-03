@@ -34,14 +34,14 @@ _Private Cloud_
 
 :    `10081`
 
-#### :symbols-link-2:&ensp;URL / Access  
+#### :symbols-link-2:&ensp;URL / Access
 
 - ~~<http://storage-server.internal:10081>~~
 { .no-bullets }
 - ~~<http://storage-server-2.internal:10081>~~
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -50,9 +50,9 @@ _Private Cloud_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                              | Method                                    | Container Name | Image            |
-| :----------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------- |
-| [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `nextcloud`    | `nextcloud:32.0` |
+| Host Device                                                              | Method                                    | Container Name | Image            | Port(s) |
+| :----------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------- | :------ |
+| [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `nextcloud`    | `nextcloud:32.0` | `10081` |
 
 ### :symbols-settings:&ensp;Configuration
 

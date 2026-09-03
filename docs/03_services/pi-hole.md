@@ -48,22 +48,22 @@ _A DNS Sinkhole_
 - ~~<https://pi-hole.internal/admin/login>~~
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
-- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
     - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
-- 2FA / MFA
+-   2FA / MFA
 { .no-bullets }
     - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                        | Method                          | Container Name | Image |
-| :--------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md)           | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
-| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                                        | Method                          | Container Name | Image | Port(s)                   |
+| :--------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------------------------ |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md)           | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `80`&ensp;`443`&ensp;`53` |
+| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `80`&ensp;`443`&ensp;`53` |
 
 ### :symbols-settings:&ensp;Configuration
 

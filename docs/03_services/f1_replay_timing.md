@@ -46,9 +46,9 @@ _All of the Data_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                                        |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1timing`     | `ghcr.io/adn8naiagent/f1replaytiming:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                                        | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1timing`     | `ghcr.io/adn8naiagent/f1replaytiming:latest` | `8000`  |
 
 ### :symbols-settings:&ensp;Configuration
 

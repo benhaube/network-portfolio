@@ -73,7 +73,7 @@ _Server Dashboard_
     [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#dynacat)
 
 | Host Device                                                          | Method                                    | Container Name        | Image                               | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :-------------------- | :---------------------------------- | :-----: |
+| :------------------------------------------------------------------- | :---------------------------------------- | :-------------------- | :---------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glance`              | `panonim/dynacat:latest`            | `8580`  |
 |                                                                      | :symbols-container:&nbsp;Docker Container | `f1_api`              | `skyallinott/f1_api:latest`         | `4463`  |
 |                                                                      | :symbols-container:&nbsp;Docker Container | `glance-github-graph` | `haumea/glance-github-graph:latest` | `9090`  |
@@ -297,8 +297,8 @@ _Server Dashboard_
 --8<-- "glance-network.yml"
 ```
 
-1.  Show a title header on mobile device web browsers.
-2.  **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
+1. Show a title header on mobile device web browsers.
+2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
 
 ##### Formula 1
 

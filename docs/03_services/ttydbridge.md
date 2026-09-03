@@ -50,9 +50,9 @@ _The Terminal on the Web_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                      |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ttydbridge`   | `cp0204/ttydbridge:v0.0.3` |
+| Host Device                                                          | Method                                    | Container Name | Image                      | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ttydbridge`   | `cp0204/ttydbridge:v0.0.3` | `2222`  |
 
 ### :symbols-settings:&ensp;Configuration
 

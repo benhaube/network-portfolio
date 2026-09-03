@@ -51,9 +51,9 @@ _Download Videos from YouTube_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                             |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` |
+| Host Device                                                          | Method                                    | Container Name | Image                             | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` | `3033`  |
 
 ### :symbols-settings:&ensp;Configuration
 

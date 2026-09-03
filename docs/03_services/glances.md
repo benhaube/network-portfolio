@@ -35,7 +35,7 @@ _An Eye on Your System_
 
 :    `61208`
 
-#### :symbols-link-2:&ensp;URL / Access 
+#### :symbols-link-2:&ensp;URL / Access
 
 - <http://pi-server.internal:61208>
 { .no-bullets }
@@ -44,14 +44,14 @@ _An Eye on Your System_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    N/A
+:  N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                           |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glances`      | `nicolargo/glances:latest-full` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `glances`      | `nicolargo/glances:latest-full` |
+| Host Device                                                          | Method                                    | Container Name | Image                           | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------ | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glances`      | `nicolargo/glances:latest-full` | `61208` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `glances`      | `nicolargo/glances:latest-full` | `61208` |
 
 ### :symbols-settings:&ensp;Configuration
 

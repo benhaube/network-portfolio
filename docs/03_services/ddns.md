@@ -48,9 +48,9 @@ _Provided by addr.tools_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                          | Container Name | Image |
-| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                            | Method                          | Container Name | Image | Port(s) |
+| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `N/A`   |
 
 ### :symbols-settings:&ensp;Configuration
 

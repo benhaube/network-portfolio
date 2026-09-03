@@ -54,9 +54,9 @@ _Network File System_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                          | Container Name | Image |
-| :------------------------------------------------------------------- | :------------------------------ | :------------- | :---- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |
+| Host Device                                                          | Method                          | Container Name | Image | Port(s) |
+| :------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `2049`  |
 
 ### :symbols-settings:&ensp;Configuration
 

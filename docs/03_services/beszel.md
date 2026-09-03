@@ -30,7 +30,7 @@ _Server Monitoring_
 
 #### :symbols-file-text:&ensp;Description
 
-:  A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
+: A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
 #### :symbols-hash:&ensp;Port(s)
 
@@ -41,7 +41,7 @@ _Server Monitoring_
 
 #### :symbols-link-2:&ensp;URL / Access
 
-:  <http://pi-server.internal:8090/>
+: <http://pi-server.internal:8090/>
 
 #### :symbols-user-key:&ensp;Credentials
 
@@ -58,18 +58,18 @@ _Server Monitoring_
 
 ##### Hub
 
-| Host Device                                                          | Method                                    | Container Name | Image                  |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel`       |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent` |
+| Host Device                                                          | Method                                    | Container Name | Image                  | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel`       | `8090`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent` | `45867` |
 
 ##### Agents
 
-| Host Device                                                                    | Method                                    | Container Name | Image                        |
-| :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` |
+| Host Device                                                                    | Method                                    | Container Name | Image                        | Port(s) |
+| :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- | :------ |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45867` |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45867` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` | `45867` |
 
 ### :symbols-settings:&ensp;Configuration
 

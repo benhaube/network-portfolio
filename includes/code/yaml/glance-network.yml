@@ -7,8 +7,8 @@
       widgets:
 
         - $include: /app/config/widgets/beszel.yml
+        - $include: /app/config/widgets/glances.yml
         - $include: /app/config/widgets/uptime-kuma-ssh.yml
-        # - $include: /app/config/widgets/wg-easy.yml  (3)
         - $include: /app/config/widgets/ha-wan.yml
         - $include: /app/config/widgets/ha-bandwidth.yml
         - $include: /app/config/widgets/releases.yml
@@ -20,7 +20,6 @@
         - $include: /app/config/widgets/network-services.yml
         - $include: /app/config/widgets/zimaos-modules.yml
         - $include: /app/config/widgets/docker-containers.yml
-        # - $include: /app/config/widgets/dns-stats.yml
         - $include: /app/config/widgets/immich-stats.yml
         - $include: /app/config/widgets/technitium.yml
 

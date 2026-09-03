@@ -1,4 +1,5 @@
 services:
+
   glance:
     container_name: glance
     image: panonim/dynacat:latest  # (7)!
@@ -20,6 +21,16 @@ services:
     dns:   # (3)!
       - 192.168.50.2
       - 192.168.50.6
+
+  glance-github-graph:
+    image: haumea/glance-github-graph:latest
+    ports:
+      - 9090:8080
+    environment:
+      - CACHE_ENABLED=true
+      - CACHE_TYPE=memory
+      - CACHE_DURATION_SECS=3600
+
   f1_api:
     container_name: f1_api
     image: skyallinott/f1_api:latest
@@ -30,7 +41,5 @@ services:
     ports:
       - 4463:4463
     restart: unless-stopped
-    dns:
-      - 192.168.50.2
-      - 192.168.50.6
+
 networks: {}

@@ -18,7 +18,7 @@
       widgets:
 
         - $include: /app/config/widgets/search.yml
-        - $include: /app/config/widgets/hacker-news-lobsters-split.yml
+        - $include: /app/config/widgets/github-stats.yml
         - $include: /app/config/widgets/rss-home.yml
         - $include: /app/config/widgets/youtube-home.yml
         - $include: /app/config/widgets/reddit-home.yml

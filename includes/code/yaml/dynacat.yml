@@ -5,9 +5,9 @@ server:
 branding:
   app-name: Dashboard
   # logo-text: G
-  logo-url: /assets/glance.png
-  app-icon-url: /assets/glance.png
-  favicon-url: /assets/glance.svg
+  logo-url: /assets/logo.png
+  app-icon-url: /assets/logo.png
+  favicon-url: /assets/logo.svg
   # hide-footer: true
 
 theme:

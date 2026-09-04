@@ -22,6 +22,7 @@ services:
       - LISTEN=45876
       - TOKEN=your-token
       - GPU_COLLECTOR=intel_gpu_top
+      - FILESYSTEM=nvme0__NVMe  # (1)!
     image: henrygd/beszel-agent-intel
     restart: unless-stopped
     volumes:
@@ -29,6 +30,7 @@ services:
       - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:ro
       - /media/nvme0n1p1/AppData/beszel_agent_data:/var/lib/beszel-agent
       - /media/Quick-Storage/.beszel:/extra-filesystems/md0__Quick-Storage:ro
+      - /media/ZimaOS-HD/.beszel:/extra-filesystems/mmcblk0__ZimaOS-HD:ro
     network_mode: host
 networks:
   default:

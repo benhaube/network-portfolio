@@ -118,3 +118,5 @@ _Server Monitoring_
 ``` yaml { .mono-title title="../AppData/dockge/stacks/beszel-agent/compose.yaml" linenums="1" }
 --8<-- "beszel-zima.yaml"
 ```
+
+1. Rename the root disk in the Beszel Hub UI with the `FILESYSTEM` environment variable. _(&ge; `v0.19.0` ONLY)_

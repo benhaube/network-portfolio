@@ -95,23 +95,17 @@ _Server Monitoring_
 --8<-- "beszel-pi-4b.yaml"
 ```
 
-1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
-
 ##### Debian Server
 
 ``` yaml { .mono-title title="/opt/stacks/beszel-agent/docker-compose.yml" linenums="1" }
 --8<-- "beszel-debian-vm.yaml"
 ```
 
-1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
-
 ##### Pi Zero 2W Server
 
 ``` yaml { .mono-title title="/opt/stacks/beszel-agent/compose.yaml" linenums="1" }
 --8<-- "beszel-pi-zero.yaml"
 ```
-
-1. Monitor other **disks / partitions** by mounting a folder in `/extra-filesystems`.
 
 ##### ZimaOS NAS
 

@@ -44,7 +44,7 @@ _An Eye on Your System_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:  N/A
+: N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -82,13 +82,7 @@ _An Eye on Your System_
 ```
 
 1. See all image tags here:&ensp;[Docker Hub](https://hub.docker.com/r/nicolargo/glances/tags){ external-link }
-2. Uncomment for SATA or NVME smartctl monitoring.
-3. Uncomment for SATA smartctl monitoring.
-4. Uncomment for NVME smartctl monitoring.
-5. Uncomment for proper distro information in upper panel. Works only for distros that do have this file _(most distros do)_.  
-6. Please set to your local timezone _(or use local `${TZ}` environment variable if set on your host)_.
-7. Uncomment for GPU compatibility _(Nvidia)_ inside the container.  
-8. Uncomment to protect Glances WebUI by a login /password *(add `--password` to `GLANCES_OPT`)*.  
+2. Please set to your local timezone _(or use local `${TZ}` environment variable if set on your host)_.
 
 ##### ZimaOS NAS
 

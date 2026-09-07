@@ -1,5 +1,10 @@
 services:
   netalertx:
+    container_name: netalertx
+    image: jokobsk/netalertx:latest
+    restart: unless-stopped
+    privileged: false
+    network_mode: host
     cap_add:
       - NET_RAW
       - NET_ADMIN
@@ -9,17 +14,6 @@ services:
       - SETGID
     cap_drop:
       - ALL
-    container_name: netalertx
-    environment:
-      - ALWAYS_FRESH_INSTALL=false
-      - PGID=1000
-      - PORT=20211
-      - PUID=1000
-      - TZ=UTC
-    image: jokobsk/netalertx:latest
-    restart: unless-stopped
-    tmpfs:
-      - /tmp
     volumes:
       - type: bind
         source: /DATA/AppData/netalertx/config
@@ -31,5 +25,11 @@ services:
         target: /data/db
         bind:
           create_host_path: true
-    network_mode: host
-    privileged: false
+    tmpfs:
+      - /tmp
+    environment:
+      - ALWAYS_FRESH_INSTALL=false
+      - PGID=1000
+      - PORT=20211
+      - PUID=1000
+      - TZ=UTC

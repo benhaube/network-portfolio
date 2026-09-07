@@ -1,7 +1,8 @@
 services:
   nebula-sync:
-    image: ghcr.io/lovelaze/nebula-sync:latest
     container_name: nebula-sync
+    image: ghcr.io/lovelaze/nebula-sync:latest
+    restart: always
     environment:
       - PRIMARY=https://192.168.50.2|<password>
       - REPLICAS=https://192.168.50.3|<password>
@@ -33,5 +34,3 @@ services:
       # (3)!
       - SYNC_CONFIG_DNS_EXCLUDE=interface,hostRecord,reply.host.force4,reply.host.IPv4,reply.host.force6,reply.host.IPv6
       - SYNC_CONFIG_DATABASE_EXCLUDE=maxDBdays,network.expire
-
-    restart: always

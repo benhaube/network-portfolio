@@ -1,16 +1,16 @@
 services:
-  app:
-    cpu_shares: 90
+  dockge:
     container_name: dockge
-    environment:
-      - DOCKGE_STACKS_DIR=/DATA/AppData/dockge/stacks
     image: louislam/dockge:1
+    restart: unless-stopped
+    privileged: false
+    networks:
+      - default
     ports:
       - mode: ingress
         target: 5001
         published: "5001"
         protocol: tcp
-    restart: unless-stopped
     volumes:
       - type: bind
         source: /var/run/docker.sock
@@ -27,9 +27,9 @@ services:
         target: /DATA/AppData/dockge/stacks
         bind:
           create_host_path: true
-    networks:
-      - default
-    privileged: false
+    environment:
+      - DOCKGE_STACKS_DIR=/DATA/AppData/dockge/stacks
+
 networks:
   default:
     name: big-bear-dockge_default

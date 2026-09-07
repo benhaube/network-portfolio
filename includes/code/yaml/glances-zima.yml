@@ -1,48 +1,32 @@
 services:
   glances:
+    container_name: glances
+    image: nicolargo/glances:latest-full
+    restart: always
+    privileged: false
+    pid: host
+    network_mode: host
     cap_add:
       - SYS_RAWIO
       - SYS_ADMIN
-    cpu_shares: 90
-    container_name: glances
     devices:
       - /dev/sda:/dev/sda
       - /dev/sdb:/dev/sdb
       - /dev/nvme0:/dev/nvme0
       - /dev/md0:/dev/md0
       - /dev/mmcblk0:/dev/mmcblk0
+    read_only: true
+    volumes:
+      - /media/nvme0n1p1/AppData/glances/glances.conf:/glances/conf/glances.conf
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/libvirt/virtqemud-sock-ro:/var/run/libvirt/libvirt-sock:ro
+      - /etc/os-release:/etc/os-release:ro
+      - /mnt:/mnt:ro
+      - /media/Quick-Storage:/media/Quick-Storage:ro
+      - /media/nvme0n1p1:/media/nvme0n1p1:ro
+      - /media/ZimaOS-HD:/media/ZimaOS-HD:ro
+    tmpfs:
+      - /tmp
     environment:
       - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart
       - TZ=America/New_York
-    image: nicolargo/glances:latest-full
-    pid: host
-    ports:
-      - target: 61208
-        published: "61208"
-        protocol: tcp
-      - target: 61209
-        published: "61209"
-        protocol: tcp
-    restart: always
-    volumes:
-      - type: bind
-        source: /var/run/docker.sock
-        target: /var/run/docker.sock
-      - type: bind
-        source: /mnt
-        target: /mnt
-      - type: bind
-        source: /etc/os-release
-        target: /etc/os-release
-      - type: bind
-        source: /media/nvme0n1p1/AppData/glances/glances.conf
-        target: /glances/conf/glances.conf
-      - type: bind
-        source: /media/Quick-Storage
-        target: /media/Quick-Storage
-      - type: bind
-        source: /media/nvme0n1p1
-        target: /media/nvme0n1p1
-      - type: bind
-        source: /media/ZimaOS-HD
-        target: /media/ZimaOS-HD

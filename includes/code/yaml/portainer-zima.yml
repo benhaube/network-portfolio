@@ -1,9 +1,10 @@
 services:
-  app:
+  portainer-agent:
     container_name: portainer-agent
     image: portainer/agent:lts
-    labels:
-      icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png
+    restart: unless-stopped
+    privileged: false
+    network_mode: bridge
     ports:
       - mode: ingress
         target: 9001
@@ -20,7 +21,3 @@ services:
         target: /var/lib/docker/volumes
         bind:
           create_host_path: true
-    network_mode: bridge
-    privileged: false
-    restart: unless-stopped
-    cpu_shares: 90

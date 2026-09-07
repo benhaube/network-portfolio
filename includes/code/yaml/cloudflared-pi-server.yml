@@ -1,14 +1,14 @@
 services:
   cloudflared:
-    image: cloudflare/cloudflared:latest
     container_name: cloudflare-tunnel
+    image: cloudflare/cloudflared:latest
     restart: unless-stopped
     command: tunnel run
-    environment:
-      - TUNNEL_TOKEN=your_token_string_here
     networks:
       - it-tools_default
       - beszel_default
+    environment:
+      - TUNNEL_TOKEN=your_token_string_here
 
 networks:
   it-tools_default:

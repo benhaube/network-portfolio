@@ -1,12 +1,8 @@
 services:
   syncthing:
-    cpu_shares: 90
     container_name: syncthing
-    environment:
-      - PGID=1000
-      - PUID=1000
-      - TZ=America/New_York
     image: linuxserver/syncthing:latest
+    restart: unless-stopped
     ports:
       - target: 8384
         published: "8384"
@@ -20,7 +16,6 @@ services:
       - target: 21027
         published: "21027"
         protocol: udp
-    restart: unless-stopped
     volumes:
       - type: bind
         source: /DATA/AppData/syncthing/config
@@ -28,3 +23,7 @@ services:
       - type: bind
         source: /DATA
         target: /DATA
+    environment:
+      - PGID=1000
+      - PUID=1000
+      - TZ=America/New_York

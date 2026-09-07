@@ -1,16 +1,15 @@
 services:
   cloudflared:
-    cpu_shares: 90
     container_name: cloudflared
     image: wisdomsky/cloudflared-web:latest
+    restart: unless-stopped
+    privileged: false
+    network_mode: host
     ports:
       - target: 14333
         published: "14333"
         protocol: tcp
-    restart: unless-stopped
     volumes:
       - type: bind
         source: /DATA/AppData/casaos-cloudflared/config
         target: /config
-    network_mode: host
-    privileged: false

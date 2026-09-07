@@ -1,10 +1,35 @@
 services:
-  big-bear-wg-easy-v15:
+  wg-easy-v15:
+    container_name: wg-easy-v15
+    image: ghcr.io/wg-easy/wg-easy:15.2
+    restart: unless-stopped
+    privileged: false
     cap_add:
       - NET_ADMIN
       - SYS_MODULE
-    cpu_shares: 90
-    container_name: big-bear-wg-easy-v15
+    networks:
+      - wg-easy-v15
+    ports:
+      - mode: ingress
+        target: 51820
+        published: "51820"
+        protocol: udp
+      - mode: ingress
+        target: 51821
+        published: "51821"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/wg-easy-v15/data
+        target: /etc/wireguard
+        bind:
+          create_host_path: true
+    sysctls:
+      net.ipv4.conf.all.src_valid_mark: "1"
+      net.ipv4.ip_forward: "1"
+      net.ipv6.conf.all.disable_ipv6: "0"
+      net.ipv6.conf.all.forwarding: "1"
+      net.ipv6.conf.default.forwarding: "1"
     environment:
       - INIT_DNS=9.9.9.9,149.112.112.112
       - INIT_ENABLED=true
@@ -15,32 +40,7 @@ services:
       - INIT_PORT=51820
       - INIT_USERNAME=admin
       - INSECURE=true
-    image: ghcr.io/wg-easy/wg-easy:15.2
-    ports:
-      - mode: ingress
-        target: 51820
-        published: "51820"
-        protocol: udp
-      - mode: ingress
-        target: 51821
-        published: "51821"
-        protocol: tcp
-    restart: unless-stopped
-    sysctls:
-      net.ipv4.conf.all.src_valid_mark: "1"
-      net.ipv4.ip_forward: "1"
-      net.ipv6.conf.all.disable_ipv6: "0"
-      net.ipv6.conf.all.forwarding: "1"
-      net.ipv6.conf.default.forwarding: "1"
-    volumes:
-      - type: bind
-        source: /DATA/AppData/big-bear-wg-easy-v15/data
-        target: /etc/wireguard
-        bind:
-          create_host_path: true
-    networks:
-      - big-bear-wg-easy-v15
-    privileged: false
+
 networks:
-  big-bear-wg-easy-v15:
-    name: big-bear-wg-easy-v15
+  wg-easy-v15:
+    name: wg-easy-v15

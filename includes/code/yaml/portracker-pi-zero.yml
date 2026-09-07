@@ -1,8 +1,10 @@
 services:
   portracker:
-    image: mostafawahied/portracker:latest
     container_name: portracker
+    image: mostafawahied/portracker:latest
     restart: unless-stopped
+    ports:
+      - "4999:4999"
     pid: "host"  # (1)!
     # (2)!
     cap_add:
@@ -13,7 +15,5 @@ services:
     volumes:
       - ./portracker-data:/data  # (6)!
       - /var/run/docker.sock:/var/run/docker.sock:ro  # (7)!
-    ports:
-      - "4999:4999"
     # environment:
       # - TRUENAS_API_KEY=your-api-key-here  (8)

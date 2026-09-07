@@ -1,24 +1,26 @@
 services:
   it-tools:
+    container_name: it-tools
     image: sharevb/it-tools:latest
     pull_policy: always
-    container_name: it-tools
+    restart: unless-stopped
+    networks:
+      - it-tools_default
     ports:
       - 8080:8080
-    restart: unless-stopped
     dns:
       - 192.168.50.2
       - 192.168.50.6
-    networks:
-      - it-tools_default
+
   network-utils-ws:
-    image: sharevb/network-utils-ws:latest
     container_name: network-utils-ws
-    ports:
-      - 8000:8000
+    image: sharevb/network-utils-ws:latest
     restart: unless-stopped
     networks:
       - it-tools_default
+    ports:
+      - 8000:8000
+
 networks:
   it-tools_default:
     external: true

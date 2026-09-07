@@ -2,14 +2,14 @@ services:
   spoolman:
     image: ghcr.io/donkie/spoolman:latest # (1)!
     restart: unless-stopped
+    ports:
+      # (4)!
+      - "7912:8000"
     volumes:
       # (2)!
       - type: bind
         source: ./data
         target: /home/app/.local/share/spoolman # (3)!
-    ports:
-      # (4)!
-      - "7912:8000"
     environment:
       - TZ=America/New_York # (5)!
       - SPOOLMAN_AUTOMATIC_BACKUP=true

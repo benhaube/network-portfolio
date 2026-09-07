@@ -1,19 +1,18 @@
 services:
   ttydbridge:
-    cpu_shares: 90
     container_name: ttydbridge
-    environment:
-      - EXEC_DIR=/opt
-      - PORT=2222
-      - START_COMMAND=login
     image: cp0204/ttydbridge:v0.0.3
+    restart: unless-stopped
     pid: host
     privileged: true
-    restart: unless-stopped
+    network_mode: bridge    
     volumes:
       - type: bind
         source: /opt
         target: /opt
         bind:
           create_host_path: true
-    network_mode: bridge
+    environment:
+      - EXEC_DIR=/opt
+      - PORT=2222
+      - START_COMMAND=login

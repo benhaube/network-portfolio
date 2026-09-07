@@ -1,7 +1,19 @@
 services:
-  big-bear-portracker:
-    cpu_shares: 90
-    container_name: big-bear-portracker
+  portracker:
+    container_name: portracker
+    image: mostafawahied/portracker:latest
+    restart: unless-stopped
+    cap_add:
+      - SYS_PTRACE
+      - SYS_ADMIN
+    ports:
+      - mode: ingress
+        target: 4999
+        published: "4999"
+        protocol: tcp
+    volumes:
+      - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       - CACHE_TIMEOUT_MS=30000
       - DATABASE_PATH=/data/portracker.db
@@ -10,21 +22,3 @@ services:
       - INCLUDE_UDP=true
       - PORT=4999
       - TRUSTED_LOCAL_EMAIL=server@haube-pereira.com
-    image: mostafawahied/portracker:latest
-    ports:
-      - mode: ingress
-        target: 4999
-        published: "4999"
-        protocol: tcp
-    restart: unless-stopped
-    volumes:
-      - type: bind
-        source: /DATA/AppData/big-bear-portracker/data
-        target: /data
-        bind:
-          create_host_path: true
-      - type: bind
-        source: /var/run/docker.sock
-        target: /var/run/docker.sock
-        bind:
-          create_host_path: true

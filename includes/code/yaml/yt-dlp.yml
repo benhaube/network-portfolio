@@ -1,6 +1,7 @@
 services:
   yt-dlp-webui:
     image: marcobaobao/yt-dlp-webui:latest
+    restart: unless-stopped
     ports:
       - 3033:3033
     volumes:
@@ -8,6 +9,5 @@ services:
       - /DATA/AppData/dockge/stacks/yt-dlp-webui/config:/config  # (2)!
     environment:
       - JWT_SECRET=your-secret  # (3)!
-    restart: unless-stopped
     healthcheck:
       test: curl -f http://localhost:3033 || exit 1

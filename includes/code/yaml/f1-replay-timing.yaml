@@ -3,10 +3,10 @@ services:
     image: ghcr.io/adn8naiagent/f1replaytiming:latest
     ports:
       - "${PORT:-8000}:8000"
-    env_file: .env
     volumes:
       - f1data:/data
-      - f1cache:/data/fastf1-cache
+      - f1cache:/data/fastf1-cache    
+    env_file: .env
 
 volumes:
   f1data:

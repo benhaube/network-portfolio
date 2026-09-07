@@ -1,17 +1,18 @@
 services:
-    homebox:
-        image: ghcr.io/sysadminsmedia/homebox:latest
-        restart: always
-        environment:
-            - HBOX_LOG_LEVEL=info
-            - HBOX_LOG_FORMAT=text
-            - HBOX_WEB_MAX_UPLOAD_SIZE=10
-            - HBOX_OPTIONS_ALLOW_ANALYTICS=true  # (1)!
-            - HBOX_AUTH_API_KEY_PEPPER=some_random_string  # (2)!
-        volumes:
-            - /media/nvme0n1p1/AppData/homebox-data:/data/
-        ports:
-            - 3100:7745
+  homebox:
+      image: ghcr.io/sysadminsmedia/homebox:latest
+      restart: always
+      ports:
+        - 3100:7745
+      volumes:
+        - /media/nvme0n1p1/AppData/homebox-data:/data/
+      environment:
+        - HBOX_LOG_LEVEL=info
+        - HBOX_LOG_FORMAT=text
+        - HBOX_WEB_MAX_UPLOAD_SIZE=10
+        - HBOX_OPTIONS_ALLOW_ANALYTICS=true  # (1)!
+        - HBOX_AUTH_API_KEY_PEPPER=some_random_string  # (2)!
+
 volumes:
-    homebox-data:
-        driver: local
+  homebox-data:
+    driver: local

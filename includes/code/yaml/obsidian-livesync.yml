@@ -1,16 +1,13 @@
 services:
   couchdb:
     container_name: obsidian-livesync
-    environment:
-      - COUCHDB_PASSWORD=password # (1)!
-      - COUCHDB_USER=bhaube
     image: couchdb:3.5.0
+    restart: unless-stopped
     ports:
       - mode: ingress
         target: 5984
         published: "5984"
         protocol: tcp
-    restart: unless-stopped
     volumes:
       - type: bind
         source: /DATA/AppData/obsidian-livesync/data/couchdb
@@ -22,3 +19,6 @@ services:
         target: /opt/couchdb/etc/local.ini
         bind:
           create_host_path: true
+    environment:
+      - COUCHDB_PASSWORD=password # (1)!
+      - COUCHDB_USER=bhaube

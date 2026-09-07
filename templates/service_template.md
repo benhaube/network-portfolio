@@ -33,7 +33,7 @@ _Subtitle_
 
 #### :symbols-hash:&ensp;Port(s)
 
-:    `port`
+:    `1234`
 
 #### :symbols-link-2:&ensp;URL / Access 
 
@@ -47,10 +47,10 @@ _Subtitle_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                      | Method                                    | Container Name   | Image            |
-| :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- |
-| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` |
-| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            |
+| Host Device                                      | Method                                    | Container Name   | Image            | Port(s) |
+| :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- | :------ |
+| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` | `1234`  |
+| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            | `1234`  |
 
 ### :symbols-settings:&ensp;Configuration
 

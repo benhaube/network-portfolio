@@ -174,6 +174,9 @@ hide:
 [:services-it-tools:&ensp;IT-Tools](03_services/it-tools.md)
 : Handy tools for network administrators and developers.
 
+[:brands-matter:&ensp;Matter Server](03_services/matter_server.md)
+: The **Open Home Foundation** Matter Server serves as the foundation to provide Matter support to [Home Assistant](03_services/home_assistant.md), but its universal approach makes it suitable to be used in other projects too.
+
 [:symbols-api:&ensp;Moonraker](03_services/moonraker.md)
 : Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.
 

@@ -50,9 +50,9 @@ _Based on Matter.js_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name  | Image                                      |
-| :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :----------------------------------------- |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `matter-server` | `ghcr.io/matter-js/matterjs-server:stable` |
+| Host Device                                                          | Method                                    | Container Name  | Image                                      | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :----------------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `matter-server` | `ghcr.io/matter-js/matterjs-server:stable` | `5580`  |
 
 ### :symbols-settings:&ensp;Configuration
 

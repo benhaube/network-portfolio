@@ -3,6 +3,7 @@ services:
     container_name: syncthing
     image: linuxserver/syncthing:latest
     restart: unless-stopped
+    network_mode: bridge
     ports:
       - target: 8384
         published: "8384"
@@ -17,13 +18,9 @@ services:
         published: "21027"
         protocol: udp
     volumes:
-      - type: bind
-        source: /DATA/AppData/syncthing/config
-        target: /config
-      - type: bind
-        source: /DATA
-        target: /DATA
+      - /media/nvme0n1p1/AppData/syncthing/config:/config
+      - /media/Quick-Storage:/Quick-Storage
     environment:
-      - PGID=1000
-      - PUID=1000
-      - TZ=America/New_York
+      PGID: "1000"
+      PUID: "1000"
+      TZ: America/New_York

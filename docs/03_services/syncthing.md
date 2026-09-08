@@ -128,6 +128,8 @@ _File Synchronization_
 
 ##### ZimaOS NAS
 
+--8<-- "includes/managed_by_dockge.md"
+
 ``` yaml { .mono-title title="~/.casaos/apps/syncthing/docker-compose.yml" linenums="1" }
 --8<-- "syncthing-zima.yml"
 ```

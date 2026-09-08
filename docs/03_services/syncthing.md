@@ -130,6 +130,6 @@ _File Synchronization_
 
 --8<-- "includes/managed_by_dockge.md"
 
-``` yaml { .mono-title title="~/.casaos/apps/syncthing/docker-compose.yml" linenums="1" }
+``` yaml { .mono-title title="../AppData/dockge/stacks/syncthing/compose.yaml" linenums="1" }
 --8<-- "syncthing-zima.yml"
 ```

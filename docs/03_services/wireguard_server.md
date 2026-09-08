@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 
-![WireGuard Icon](../assets/icons/wireguard.svg){ width=200 }
+![WireGuard Icon](../assets/icons/wireguard-transparent.svg){ width=200 }
 
 # WireGuard
 

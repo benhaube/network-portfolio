@@ -36,11 +36,11 @@ _File Synchronization_
 
 #### :symbols-hash:&ensp;Port(s)
 
-- `8384`
+- `8384`&mdash;_TCP_
 { .no-bullets }
-- `22000`
+- `22000`&mdash;_TCP & UDP_
 { .no-bullets }
-- `21027`
+- `21027`&mdash;_UDP_
 { .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access

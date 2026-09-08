@@ -36,11 +36,11 @@ _File Synchronization_
 
 #### :symbols-hash:&ensp;Port(s)
 
-- `8384`&mdash;_TCP_
+- `8384` &mdash; _TCP_
 { .no-bullets }
-- `22000`&mdash;_TCP & UDP_
+- `22000` &mdash; _TCP & UDP_
 { .no-bullets }
-- `21027`&mdash;_UDP_
+- `21027` &mdash; _UDP_
 { .no-bullets }
 
 #### :symbols-link-2:&ensp;URL / Access
@@ -118,6 +118,12 @@ _File Synchronization_
     sudo apt install -y syncthing
     sudo systemctl enable syncthing@admin.service
     sudo systemctl start syncthing@admin.service
+    ```
+
+:    :services-zimaos:&ensp;ZimaOS:
+
+    ``` bash linenums="1"
+    docker compose up -d
     ```
 
 :    :brands-android-2:&ensp;Android:

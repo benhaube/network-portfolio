@@ -182,6 +182,8 @@ _Rack-Mount ZimaBoard 2_
 
     See the ["Configuration"](../03_services/nfs.md#configuration) section of the NFS service documentation page for server and client configuration details.
 
+#### :symbols-cloud-upload:&ensp;Cloud Backup Config
+
 --8<-- "nerd-fonts.md"
 
 #### :symbols-rocket:&ensp;Starship Terminal Prompt

@@ -184,6 +184,54 @@ _Rack-Mount ZimaBoard 2_
 
 #### :symbols-cloud-upload:&ensp;Cloud Backup Config
 
+The ZimaOS NAS is the main backup server for clients and other servers on the local network. To maintain the **3-2-1 Backup Strategy** the important data stored on the NAS is backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage) cloud storage. To automate the backup process we utilize Bash scripts that use the `rclone` command and Systemd unit files to trigger the scripts on a set schedule.
+
+##### AppData Backup
+
+1. Put the backup script, `b2-appdata-bkp.sh`, into the `/opt/scripts` directory.
+2. Make sure the script is executable.
+
+    ``` bash
+    sudo chmod +x /opt/scripts/b2-appdata-bkp.sh
+    ```
+
+3. Create the Systemd timer unit file, `/etc/systemd/system/b2-appdata-bkp.timer`, and paste in the following code.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/b2-appdata-bkp.timer" }
+    --8<-- "b2-appdata-bkp.timer"
+    ```
+
+4. Create the Systemd service unit file, `/etc/systemd/system/b2-appdata-bkp.service`, and paste in the following code.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/b2-appdata-bkp.service" }
+    --8<-- "b2-appdata-bkp.service"
+    ```
+
+5. Tell Systemd to parse the changes.
+
+    ``` bash
+    sudo systemctl daemon-reload
+    ```
+
+6. Test the new service, and check the logs to make sure it completed successfully.
+
+    ``` bash
+    sudo systemctl start b2-appdata-bkp.service
+    sudo journalctl -u b2-appdata-bkp.service -e
+    ```
+
+7. After confirming the service runs successfully, enable the timer so it survives a reboot and begins its schedule.
+
+    ``` bash 
+    sudo systemctl enable --now b2-appdata-bkp.timer
+    ```
+
+8. Verify the timer is active with the following command.
+
+    ``` bash
+    systemctl list-timers --all
+    ```
+
 --8<-- "nerd-fonts.md"
 
 #### :symbols-rocket:&ensp;Starship Terminal Prompt

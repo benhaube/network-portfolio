@@ -4,7 +4,7 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-ExecStart=/DATA/.opt/scripts/b2-immich-bkp.sh
+ExecStart=/opt/scripts/b2-immich-bkp.sh
 
 [Install]
 WantedBy=multi-user.target

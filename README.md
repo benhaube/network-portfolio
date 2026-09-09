@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://portfolio.rac3r4life.online">
-        <img src="./readme-assets/logo.png" alt="Project / Site Logo" width="400">
+        <img src="./readme-assets/logo.png" alt="Project / Site Logo" width="300" height="300">
     </a>
 </p>
 <h1 align="center" color="#4CAE4F">

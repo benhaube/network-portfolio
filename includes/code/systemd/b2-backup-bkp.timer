@@ -1,0 +1,10 @@
+[Unit]
+Description=Run client data backup on weekdays at 12AM
+
+[Timer]
+OnCalendar=Mon..Fri 00:00:00
+Persistent=true
+RandomizedDelaySec=5m
+
+[Install]
+WantedBy=timers.target

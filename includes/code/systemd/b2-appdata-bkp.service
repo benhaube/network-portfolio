@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekly AppData backup to Backblaze B2
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/DATA/.opt/scripts/b2-appdata-bkp.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run AppData backup on Sundays at 12AM
+
+[Timer]
+OnCalendar=Sun 00:00:00
+Persistent=true
+RandomizedDelaySec=5m
+
+[Install]
+WantedBy=timers.target

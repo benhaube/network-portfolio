@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Immich data backup daily at 1AM
+
+[Timer]
+OnCalendar=Mon..Sun 01:00:00
+Persistent=true
+RandomizedDelaySec=5m
+
+[Install]
+WantedBy=timers.target

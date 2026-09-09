@@ -1,0 +1,10 @@
+[Unit]
+Description=Weekday client data backup to Backblaze B2
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/DATA/.opt/scripts/b2-backup-bkp.sh
+
+[Install]
+WantedBy=multi-user.target

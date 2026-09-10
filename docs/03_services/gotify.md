@@ -455,7 +455,7 @@ _Push Notifications_
     sudo chmod +x /opt/scripts/b2-appdata-bkp.sh
     ```
 
-4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#backblaze-b2-cloud-backup) documentation for Systemd configuration to automate script execution.
+4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#automate-with-systemd) documentation for Systemd configuration to automate script execution.
 
 ##### Immich Backup
 
@@ -486,7 +486,7 @@ _Push Notifications_
     sudo chmod +x /opt/scripts/b2-immich-bkp.sh
     ```
 
-4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#backblaze-b2-cloud-backup) documentation for Systemd configuration to automate script execution.
+4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#automate-with-systemd) documentation for Systemd configuration to automate script execution.
 
 ##### Network Devices Backup
 
@@ -517,7 +517,7 @@ _Push Notifications_
     sudo chmod +x /opt/scripts/b2-backup-bkp.sh
     ```
 
-4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#backblaze-b2-cloud-backup) documentation for Systemd configuration to automate script execution.
+4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#automate-with-systemd) documentation for Systemd configuration to automate script execution.
 
 ##### Docker Cleanup
 

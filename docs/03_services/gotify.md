@@ -447,7 +447,7 @@ _Push Notifications_
         Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
 
     3.  Grabs the last instance of transfer stats and cleans up the prefix.
-    4.  Using `$'\n'` to pass line breaks into the Gotify message payload.
+    4.  Using `$'\n\n'` to pass line breaks into the Gotify message payload.
 
 3.  Set the execute permission:
 
@@ -478,7 +478,7 @@ _Push Notifications_
         Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
 
     3.  Grabs the last instance of transfer stats and cleans up the prefix.
-    4.  Using `$'\n'` to pass line breaks into the Gotify message payload.
+    4.  Using `$'\n\n'` to pass line breaks into the Gotify message payload.
 
 3.  Set the execute permission:
 
@@ -509,7 +509,7 @@ _Push Notifications_
         Rely on B2's native "Lifecycle Rules" to keep old versions for a set number of days.
 
     3.  Grabs the last instance of transfer stats and cleans up the prefix.
-    4.  Using `$'\n'` to pass line breaks into the Gotify message payload.
+    4.  Using `$'\n\n'` to pass line breaks into the Gotify message payload.
 
 3.  Set the execute permission:
 

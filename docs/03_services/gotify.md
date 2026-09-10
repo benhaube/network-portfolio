@@ -428,15 +428,15 @@ _Push Notifications_
 
 ##### AppData Backup
 
-1.  Create the custom script in the `/DATA/.opt/scripts` directory:
+1.  Create the custom script in the `/opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/.opt/scripts/b2-appdata-bkp.sh
+    sudo nano /opt/scripts/b2-appdata-bkp.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-appdata-bkp.sh" linenums="1" hl_lines="9 10" }
+    ``` bash { .mono-title title="/opt/scripts/b2-appdata-bkp.sh" linenums="1" hl_lines="9 10" }
     --8<-- "b2-appdata-bkp.sh"
     ```
 
@@ -452,26 +452,22 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/.opt/scripts/b2-appdata-bkp.sh
+    sudo chmod +x /opt/scripts/b2-appdata-bkp.sh
     ```
 
-4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
-
-    ``` bash linenums="1"
-    bash /DATA/.opt/scripts/b2-appdata-bkp.sh
-    ```
+4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#backblaze-b2-cloud-backup) documentation for Systemd configuration to automate script execution.
 
 ##### Immich Backup
 
-1.  Create the custom script in the `/DATA/.opt/scripts` directory:
+1.  Create the custom script in the `/opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/.opt/scripts/b2-immich-bkp.sh
+    sudo nano /opt/scripts/b2-immich-bkp.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-immich-bkp.sh" linenums="1" hl_lines="9 10" }
+    ``` bash { .mono-title title="/opt/scripts/b2-immich-bkp.sh" linenums="1" hl_lines="9 10" }
     --8<-- "b2-immich-bkp.sh"
     ```
 
@@ -487,26 +483,22 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/.opt/scripts/b2-immich-bkp.sh
+    sudo chmod +x /opt/scripts/b2-immich-bkp.sh
     ```
 
-4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
-
-    ``` bash linenums="1"
-    bash /DATA/.opt/scripts/b2-immich-bkp.sh
-    ```
+4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#backblaze-b2-cloud-backup) documentation for Systemd configuration to automate script execution.
 
 ##### Network Devices Backup
 
-1.  Create the custom script in the `/DATA/.opt/scripts` directory:
+1.  Create the custom script in the `/opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/.opt/scripts/b2-backup-bkp.sh
+    sudo nano /opt/scripts/b2-backup-bkp.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/b2-backup-bkp.sh" linenums="1" hl_lines="9 10" }
+    ``` bash { .mono-title title="/opt/scripts/b2-backup-bkp.sh" linenums="1" hl_lines="9 10" }
     --8<-- "b2-backup-bkp.sh"
     ```
 
@@ -522,26 +514,22 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/.opt/scripts/b2-backup-bkp.sh
+    sudo chmod +x /opt/scripts/b2-backup-bkp.sh
     ```
 
-4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
-
-    ``` bash linenums="1"
-    bash /DATA/.opt/scripts/b2-backup-bkp.sh
-    ```
+4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#backblaze-b2-cloud-backup) documentation for Systemd configuration to automate script execution.
 
 ##### Docker Cleanup
 
-1.  Create the custom script in the `/DATA/.opt/scripts` directory:
+1.  Create the custom script in the `/opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/.opt/scripts/docker_cleanup.sh
+    sudo nano /opt/scripts/docker_cleanup.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/docker_cleanup.sh" linenums="1" hl_lines="4 5" }
+    ``` bash { .mono-title title="/opt/scripts/docker_cleanup.sh" linenums="1" hl_lines="4 5" }
     --8<-- "docker_cleanup.sh"
     ```
 
@@ -550,26 +538,26 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/.opt/scripts/docker_cleanup.sh
+    sudo chmod +x /opt/scripts/docker_cleanup.sh
     ```
 
 4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
 
     ``` bash linenums="1"
-    bash /DATA/.opt/scripts/docker_cleanup.sh
+    bash /opt/scripts/docker_cleanup.sh
     ```
 
 ##### Temp Files Cleanup
 
-1.  Create the custom script in the `/DATA/.opt/scripts` directory:
+1.  Create the custom script in the `/opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /DATA/.opt/scripts/temp_files_clean.sh
+    sudo nano /opt/scripts/temp_files_clean.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/DATA/.opt/scripts/temp_files_clean.sh" linenums="1" hl_lines="4 5" }
+    ``` bash { .mono-title title="/opt/scripts/temp_files_clean.sh" linenums="1" hl_lines="4 5" }
     --8<-- "temp_files_clean.sh"
     ```
 
@@ -578,11 +566,11 @@ _Push Notifications_
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /DATA/.opt/scripts/temp_files_clean.sh
+    sudo chmod +x /opt/scripts/temp_files_clean.sh
     ```
 
 4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
 
     ``` bash linenums="1"
-    bash /DATA/.opt/scripts/temp_files_clean.sh
+    bash /opt/scripts/temp_files_clean.sh
     ```

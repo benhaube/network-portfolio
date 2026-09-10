@@ -12,6 +12,7 @@ GOTIFY_URL="https://gotify.rac3r4life.online/message?token=$GOTIFY_TOKEN"
 # Execute native rclone sync
 # (2)!
 rclone sync "$SOURCE" "$DEST" \
+  --config /DATA/.config/rclone/rclone.conf \
   --fast-list \
   --transfers 16 \
   --b2-hard-delete \
@@ -26,9 +27,9 @@ rclone sync "$SOURCE" "$DEST" \
 EXIT_CODE=$?
 
 # Extract the final stats line from the log
-if grep -q "Transferred:" "$LOGFILE"; then
+if grep -q "INFO  :" "$LOGFILE"; then
   # (3)!
-  STATS=$(grep "Transferred:" "$LOGFILE" | tail -n 1 | sed 's/.*Transferred: //')
+  STATS=$(grep "INFO  :" "$LOGFILE" | tail -n 1 | sed 's/.*INFO  : //')
 else
   STATS="No transfer data available. Backup may have been empty or failed."
 fi

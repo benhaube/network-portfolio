@@ -141,6 +141,9 @@ hide:
 [:symbols-cloud-sync:&ensp;DDNS](03_services/ddns.md)
 : A networking service that automatically maps a static domain name _(FQDN)_ to a dynamic public IP address. On this LAN, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
 
+[:services-degoog:&ensp;Degoog](03_services/degoog.md)
+: A self-hosted search engine aggregator with a comprehensive plugin / extension system.
+
 [:services-dockge:&ensp;Dockge](03_services/dockge.md) 
 : A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 

@@ -25,10 +25,16 @@ copyright: >
   Copyright&copy; 2026 Benjamin Haube -
   <a href="#__consent">Change cookie settings</a>
 
-# Define extra CSS / Javascript directories
+# Define extra CSS / Javascript files
 extra_css:
-  # Other CSS files are imported into the main 'extra.css' file.
   - assets/stylesheets/extra.css
+  - assets/stylesheets/admonition.css
+  - assets/stylesheets/button.css
+  - assets/stylesheets/code-block.css
+  - assets/stylesheets/color.css
+  - assets/stylesheets/page-status.css
+  - assets/stylesheets/search.css
+  - assets/stylesheets/typeset.css
 extra_javascript:
   # Pull in Mermaid & elk
   - assets/javascripts/mermaid.mjs
@@ -313,7 +319,25 @@ plugins:
       background: none
       shadow: true
       manual: true
-  
+  - minify:
+      minify_html: true
+      minify_css: true
+      minify_js: true
+      htmlmin_opts:
+          remove_comments: true
+      cache_safe: true
+      js_files:
+          - assets/javascripts/tablesort.js
+      css_files:
+          - assets/stylesheets/extra.css
+          - assets/stylesheets/admonition.css
+          - assets/stylesheets/button.css
+          - assets/stylesheets/code-block.css
+          - assets/stylesheets/color.css
+          - assets/stylesheets/page-status.css
+          - assets/stylesheets/search.css
+          - assets/stylesheets/typeset.css
+
 # ~~~ Extra Settings ~~~
 
 extra:

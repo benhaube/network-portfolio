@@ -1,0 +1,11 @@
+services:
+  degoog:
+    image: ghcr.io/degoog-org/degoog:latest
+    restart: unless-stopped
+    ports:
+      - 4444:4444
+    volumes:
+      - ./data:/app/data
+    environment:
+      DEGOOG_SETTINGS_PASSWORDS: "set-a-strong-password-here"
+      DEGOOG_PUBLIC_INSTANCE: "false"

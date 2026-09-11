@@ -1,3 +1,15 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ *
+ * Import external CSS files *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@import url(admonition.css);
+@import url(button.css);
+@import url(code-block.css);
+@import url(color.css);
+@import url(page-status.css);
+@import url(search.css);
+@import url(typeset.css);
+
 /* ~~~~~~~~~~~~~~~~~~~~~ *
  * General Customization *
  * ~~~~~~~~~~~~~~~~~~~~~ */

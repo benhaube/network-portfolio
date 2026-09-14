@@ -189,6 +189,7 @@
 *[SMS]: Short Message Service
 *[SMTP]: Simple Mail Transfer Protocol
 *[SNI]: Server Name Indication
+*[SoC]: System on a Chip
 *[SPI]: Stateful Packet Inspection
 *[SSD]: Solid State Drive
 *[SSH]: Secure Shell

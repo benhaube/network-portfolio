@@ -106,6 +106,7 @@
 *[LAN]: Local Area Network
 *[LED]: Light Emitting Diode
 *[LEDs]: Light Emitting Diodes
+*[LLDP]: Link Layer Discovery Protocol
 *[LPDDR]: Low Power Double Data Rate
 *[LPDDR3]: Low Power Double Data Rate 3
 *[LPDDR4]: Low Power Double Data Rate 4

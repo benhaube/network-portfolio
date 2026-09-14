@@ -55,9 +55,9 @@ _Model SG105_
 - Supported _(16 KB)_
 { .no-bullets }
 
-##### Managed
+##### Management Features
 
-- No &mdash; Unmanaged
+- Loopback Detection
 { .no-bullets }
 
 ## :symbols-ethernet-port:&ensp;Port Map

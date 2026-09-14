@@ -56,9 +56,9 @@ _Model LS1005G_
 - Not Supported
 { .no-bullets }
 
-##### Managed
+##### Management Features
 
-- No &mdash; Unmanaged
+- None &mdash; Unmanaged
 { .no-bullets }
 
 ##### Hardware Revision

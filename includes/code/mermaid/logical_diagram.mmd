@@ -18,18 +18,18 @@ flowchart-elk TD
 %% --- Nodes --- %%
 
     %% --- Main Router --- %%
-    subgraph Router ["ASUS RT-BE92U <i>(Main Router)</i>"]
+    subgraph Router ["<b>ASUS RT-BE92U</b> <i>(Main Router)</i>"]
         direction TB
         Asuswrt_Merlin["Firmware:<br>Asuswrt-Merlin"]:::os
         Services["Services"]:::service
         Router_USB[("sda1<br><i>(28.3 GB / USB)</i>")]:::storage
-        Router_Swap[("Swap<br><i>(2 GB)</i>")]:::storage
+        Router_Swap[("sda2<br><i>(2 GB / Swap)</i>")]:::storage
         Router_JFFS[("JFFS<br><i>(45 MB)</i>")]:::storage
         RouterNVRAM[("NVRAM<br><i>(256 KB)</i>")]:::storage
     end
 
     %% --- AiMesh Node --- %%
-    subgraph AiMesh_Node["ASUS RT-AX55 <i>(Mesh Node)</i>"]
+    subgraph AiMesh_Node["<b>ASUS RT-AX55</b> <i>(Mesh Node)</i>"]
         direction TB
         Asuswrt["Firmware:<br>Asuswrt"]:::os
         AiMesh_JFFS[("JFFS")]:::storage
@@ -37,25 +37,25 @@ flowchart-elk TD
     end
 
     %% --- Trusted VLAN --- %%
-    subgraph Trusted_VLAN50 ["VLAN50: Trusted <code>[192.168.50.x]</code>"]
+    subgraph Trusted_VLAN50 ["<b>VLAN50: Trusted</b> <code>[192.168.50.x]</code>"]
         direction TB
         
         Clients["<div style='text-align: center;'>Trusted Clients:</div><ul style='text-align: left; display: inline-block; margin: 0 auto;'><li>Desktop PCs</li><li>Laptop PCs</li><li>Smartphones</li><li>Other...</li></ul>"]:::vlan50
-        Printer["Creality K1C<br><i>(3D-printer)</i>"]:::vlan50
+        Printer["Creality K1C <i>(3D-printer)</i><br><code>[kacey.internal]</code>"]:::vlan50
         Brother["Brother HL-L2300D<br><i>(Laser Printer)</i>"]:::usb
         USB_Ext[("sda1<br><i>(32 GB / USB)</i>")]:::storage
 
         %% --- ZimaOS NAS --- %%
-        subgraph Server_Zima ["ZimaOS NAS <code>[.4 / .5]</code>"]
+        subgraph Server_Zima ["<b>ZimaOS NAS</b> <code>[storage-server.internal / storage-server-2.internal]</code>"]
             Storage_SMB[("Quick-Storage<br><i>(2 TB / RAID1)</i>")]:::storage
             Storage_NVMe[("nvme0n1p1<br><i>(500 GB / NVMe)</i>")]:::storage
             Storage_MMC[("ZimaOS-HD<br><i>(64 GB / eMMC)</i>")]:::storage
-            ZimaOS["Operating System:<br>ZimaOS v1.7.0"]:::os
+            ZimaOS["Operating System:<br>ZimaOS v1.7.1"]:::os
             Service_Docker["Docker Containers"]:::service
             Syncthing_Zima["Syncthing"]:::service
             
             %% --- Debain VM Server --- %%
-            subgraph VM_Debian ["Debian Server <code>[.6]</code>"]
+            subgraph VM_Debian ["<b>Debian Server</b> <code>[debian-vm.internal]</code>"]
                 DNS_Primary["Primary DNS Server<br><i>(Technitium)</i>"]:::service
                 Syncthing_VM["Syncthing"]:::service
                 Service_Docker_VM["Docker Containers"]:::service
@@ -65,7 +65,7 @@ flowchart-elk TD
         end
 
         %% --- Pi 4B Server --- %%
-        subgraph Server_Pi4 ["Pi 4B Server <code>[.2]</code>"]
+        subgraph Server_Pi4 ["<b>Pi 4B Server</b> <code>[pi-server.internal]</code>"]
             MicroSD_Pi4[("mmcblk0p2<br><i>(128 GB / MicroSD)</i>")]:::storage
             OS_Pi4["Operating System:<br>Debian 13 <i>(trixie)</i>"]:::os
             DNS_Secondary["Secondary DNS Server<br><i>(Technitium)</i>"]:::service
@@ -76,7 +76,7 @@ flowchart-elk TD
         end
 
         %% --- Pi Zero 2W Server --- %%
-        subgraph Server_PiZero ["Pi Zero 2W Server <code>[.3]</code>"]
+        subgraph Server_PiZero ["<b>Pi Zero 2W Server</b> <code>[pi-zero.internal]</code>"]
             MicroSD_PiZero[("mmcblk0p2<br><i>(64 GB / MicroSD)</i>")]:::storage
             OS_PiZero["Operating System:<br>Debian 13 <i>(trixie)</i>"]:::os
             Service_Docker_PiZero["Docker Containers"]:::service
@@ -86,15 +86,15 @@ flowchart-elk TD
     end
 
     %% --- IoT VLAN --- %%
-    subgraph IoT_VLAN53 ["VLAN53: IoT <code>[192.168.53.x]</code>"]
+    subgraph IoT_VLAN53 ["<b>VLAN53: IoT</b> <code>[192.168.53.x]</code>"]
         direction TB
-        IoTClients["IoT Clients"]:::vlan53  
+        IoTClients["IoT Devices"]:::vlan53  
     end
 
     %% --- Guest VLAN --- %%
-    subgraph Guest_VLAN52 ["VLAN52: Guest <code>[192.168.52.x]</code>"]
+    subgraph Guest_VLAN52 ["<b>VLAN52: Guest</b> <code>[192.168.52.x]</code>"]
         direction TB
-        GuestClients["Guest Clients"]:::vlan52
+        GuestClients["Guest Devices"]:::vlan52
     end
     
 %% --- Connections --- %%
@@ -121,10 +121,10 @@ flowchart-elk TD
 
     %% --- ZimaOS NAS storage connections --- %%
     Virtual_Disk  -- "Storage" --> Storage_NVMe
-    Service_Docker -- "Storage" --> Storage_NVMe
+    Service_Docker -- "App Data" --> Storage_NVMe
     Service_Docker -- "Immich Library" --> Storage_SMB
-    Syncthing_Zima -- "Storage" --> Storage_NVMe
-    Syncthing_Zima -- "Storage" --> Storage_SMB
+    Syncthing_Zima -- "App Data" --> Storage_NVMe
+    Syncthing_Zima -- "Sync" --> Storage_SMB
     ZimaOS -- "Storage" --> Storage_MMC
 
     %% --- Pi 4B storage connections --- %%

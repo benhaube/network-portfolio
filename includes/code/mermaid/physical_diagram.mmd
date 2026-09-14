@@ -19,23 +19,23 @@ flowchart-elk TD
 %% --- Nodes --- %%
 
     %% --- ISP --- %%
-    ISP(("<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' style='vertical-align: middle;' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-globe-icon lucide-globe'><circle cx='12' cy='12' r='10'/><path d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'/><path d='M2 12h20'/></svg>")):::isp
+    ISP(("<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' style='vertical-align: middle;' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-globe-icon lucide-globe'><circle cx='12' cy='12' r='10'/><path d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'/><path d='M2 12h20'/></svg><br><b>WAN</b>")):::isp
 
     %% --- Living Room & Server Rack --- %%
-    subgraph Living_Room ["Living Room</b>"]
+    subgraph Living_Room ["<b>Living Room</b>"]
         direction TB
-        subgraph Server_Rack ["Server Rack</b>"]
+        subgraph Server_Rack ["<b>Server Rack</b>"]
             direction TB
             Modem["Hitron CODA56<br><i>(DOCSIS 3.1 Modem)</i>"]:::twoFiveGb
             RouterMain["ASUS RT-BE92U<br><i>(Router)</i>"]:::tenGb
             tenGbKeystone["Keystone Jack"]:::tenGb
             twoFiveGbKeystone["Keystone Jack"]:::twoFiveGb
-            SwitchAgg["Ugreen Switch"]:::tenGb
+            SwitchAgg["Ugreen Switch<br><i>(UM106X)</i>"]:::tenGb
             Zima["ZimaOS NAS<br><code>[192.168.50.4]</code><br><code>[192.168.50.5]</code>"]:::twoFiveGb
             VM["Debian Server<br><code>[192.168.50.6]</code>"]:::multi
         end
         subgraph TV_Stand ["TV Stand</b>"]
-            SwitchTV["LiteWave Switch"]:::gigabit
+            SwitchTV["LiteWave Switch<br><i>(LS1005G)</i>"]:::gigabit
             GoogleTV["Google TV Streamer"]:::gigabit
             SmartTV["TCL Smart TV"]:::gigabit
             Nintendo["Nintendo Switch"]:::gigabit
@@ -43,12 +43,12 @@ flowchart-elk TD
     end
 
     %% --- Office & Printer Cart --- %%
-    subgraph Office ["Office</b>"]
+    subgraph Office ["<b>Office</b>"]
         direction TB
-        subgraph PrinterCart ["Printer Cart</b>"]
+        subgraph PrinterCart ["<b>Printer Cart</b>"]
             direction TB
             MeshNode["ASUS RT-AX55<br><i>(AiMesh Node)</i>"]:::gigabit
-            SwitchOffice["TP-Link Switch"]:::gigabit
+            SwitchOffice["TP-Link Switch<br><i>(SG105)</i>"]:::gigabit
             Pi4["Pi 4B Server<br><code>[192.168.50.2]</code><br><code>[192.168.53.2]</code>"]:::gigabit
             PiZero["Pi Zero 2W Server<br><code>[192.168.50.3]</code>"]:::wifi
             BrLaser["Brother HL-L2300D"]:::usb
@@ -59,7 +59,7 @@ flowchart-elk TD
     end
 
     %% --- Mobile Devices --- %%
-    subgraph Mobile ["Mobile Devices</b> <i>(VLAN50)</i>"]
+    subgraph Mobile ["<b>Mobile Devices</b> <i>(VLAN50)</i>"]
         direction TB
         LaptopBen["Ben's Laptop"]:::wifi
         LaptopRob["Rob's Laptop"]:::twoFiveGb
@@ -68,13 +68,13 @@ flowchart-elk TD
     end
 
     %% --- IoT Network (VLAN53) --- %%
-    subgraph IoT ["IoT Network</b> <i>(VLAN53)</i>"]
+    subgraph IoT ["<b>IoT Network</b> <i>(VLAN53)</i>"]
         direction TB
         IoTDevices["IoT Devices<br><code>[192.168.53.x]</code>"]:::wifi
     end
 
     %% --- Guest Wi-Fi (VLAN52) --- %%
-    subgraph Guest ["Guest Network</b> <i>(VLAN52)</i>"]
+    subgraph Guest ["<b>Guest Network</b> <i>(VLAN52)</i>"]
         direction TB
         GuestDevices["Guest Devices<br><code>[192.168.52.x]</code>"]:::wifi
     end
@@ -82,7 +82,7 @@ flowchart-elk TD
 %% --- Connections --- %%
 
     %% --- WAN & Uplinks --- %%
-    ISP == "Coax Cable<br><i>(Black RG-11)</i>" ==> Modem
+    ISP == "Coax Cable<br><i>(Black RG-6)</i>" ==> Modem
     Modem == "Port 2: 2.5 GbE<br><i>(Black Cat6a)</i>" ==> RouterMain
 
     %% --- Backhaul --- %%
@@ -91,7 +91,7 @@ flowchart-elk TD
     %% --- Router to Switch --- %%
     RouterMain == "Port 1: 10 GbE<br><i>(Black Cat6a)</i>" ==> tenGbKeystone
     RouterMain == "Port 3: 2.5 GbE<br><i>(Black Cat6a)</i>" ==> twoFiveGbKeystone
-    tenGbKeystone == "10Gb SFP+ Transceiver<br><i>(Red Cat6a)</i>" ==> SwitchAgg
+    tenGbKeystone == "10Gb SFP+ Transceiver<br><i>(Black Cat6a)</i>" ==> SwitchAgg
     RouterMain == "Port 4<br><i>(White Cat6)</i>" ==> SwitchTV
     MeshNode == "Port 5<br><i>(Black Cat6a)</i>" ==> SwitchOffice
 

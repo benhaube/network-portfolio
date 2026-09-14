@@ -234,19 +234,19 @@ _Modified Creality K1C_
 
 4.  **Wait:** Once you see `ota: stoped success`, the printer will reboot into the downgraded firmware.
 
-#### :symbols-file-code-corner:&ensp;Install Helper Script
+#### :symbols-file-terminal:&ensp;Creality Helper Script
 
 :    The Helper Script allows you to install the latest official builds and many useful features. It is completely automated and necessary changes are made automatically when installing a feature and restored after uninstallation. When the script is updated, installed files are automatically updated as well.
 
-!!! warning
+    !!! warning
 
-    FOR ^^K1 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.3.3.5` AND ABOVE!<br>
-    FOR ^^KE SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.1.0.12` AND ABOVE!<br>
-    FOR ^^ENDER-3 V3 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.2.1.3` AND ABOVE!
+        FOR ^^K1 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.3.3.5` AND ABOVE!<br>
+        FOR ^^KE SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.1.0.12` AND ABOVE!<br>
+        FOR ^^ENDER-3 V3 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.2.1.3` AND ABOVE!
 
-    ---
+        ---
 
-    Please restore firmware to **factory settings** before using script to avoid issue.
+        Please restore firmware to **factory settings** before using script to avoid issue.
 
 ##### Installation
 
@@ -293,7 +293,7 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
     { .no-bullets }
     - Nozzle Cleaning Fan Control
     { .no-bullets }
-    - Fans Control Macros 
+    - Fans Control Macros
     { .no-bullets }
     - Improved Shapers Calibrations
     { .no-bullets }
@@ -316,5 +316,51 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
 6. Customization:
     - Remove Creality Web Interface
     { .no-bullets }
-    - Creality Dynamic Logos for Fluidd 
+    - Creality Dynamic Logos for Fluidd
     { .no-bullets }
+
+#### :symbols-app-window:&ensp;HelixScreen
+
+:  Your printer can do way more than your current touchscreen lets you. Bed mesh visualization, input shaper graphs, multi-material management, print history — it's all trapped in a browser tab. HelixScreen puts it at your fingertips. Fast, beautiful, and frugal enough to run on hardware you already own — your printer's onboard SoC, a Raspberry Pi from a drawer, or anything newer.
+
+    !!! tip
+
+        Installing HelixScreen stops the stock Creality UI, and with it the backend **Creality Print** and the **Creality Cloud** app use — so those can no longer reach the printer. Fluidd, Mainsail, Moonraker uploads and HelixScreen’s own file browser are unaffected. 
+
+        Installs to `/usr/data/helixscreen/`, boot service at `/etc/init.d/S99helixscreen`.
+
+![Screenshot of HelixScreen home screen UI](../assets/screenshots/helixscreen-home.png){ align=right width=400 }
+
+##### One-Step Install
+
+If your K1 has internet access, install directly on the printer:
+
+1. Connect to printer via [SSH](../03_services/ssh.md).
+2. Enter the following command to download and run the `install.sh` script:
+
+    ``` bash
+    wget -O - http://dl.helixscreen.org/install.sh | sh
+    ```
+
+##### Two-Step Install
+
+If your printer doesn’t have internet access, download on another computer first:
+
+1. Go to the [latest release](https://github.com/prestonbrown/helixscreen/releases/latest) page and download:
+    - `helixscreen-k1.zip` _(the K1 release archive)_
+    - `install.sh` _(the installer script, under “Assets”)_
+2. Or use the command line _(replace `vX.Y.Z` with the actual version)_:
+
+    ``` bash
+    VERSION=vX.Y.Z  # Check latest at https://github.com/prestonbrown/helixscreen/releases/latest
+    wget "https://github.com/prestonbrown/helixscreen/releases/download/${VERSION}/helixscreen-k1.zip"
+    wget https://raw.githubusercontent.com/prestonbrown/helixscreen/main/scripts/install.sh
+    ```
+
+3. Copy to your printer and install:
+
+    ``` bash
+    scp helixscreen-k1.zip install.sh root@<printer-ip>:/usr/data/
+    ssh root@<printer-ip>
+    sh /usr/data/install.sh --local /usr/data/helixscreen-k1.zip
+    ```

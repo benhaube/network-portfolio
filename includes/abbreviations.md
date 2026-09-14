@@ -26,6 +26,8 @@
 *[CSV]: Comma Separated Values
 *[CUPS]: Common UNIX Printing System
 *[CVE]: Common Vulnerabilities and Exposures
+*[DDNS]: Dynamic Domain Name Service
+*[DDoS]: Distributed Denial of Service
 *[DDR]: Double Data Rate
 *[DDR3]: Double Data Rate 3
 *[DDR4]: Double Data Rate 4
@@ -34,8 +36,6 @@
 *[DMA]: Direct Memory Access
 *[DNF]: Dandified YUM
 *[DNS]: Domain Name Service
-*[DDNS]: Dynamic Domain Name Service
-*[DDoS]: Distributed Denial of Service
 *[DOCSIS]: Data Over Cable Service Interface Specification
 *[DoH]: DNS over HTTPS
 *[DoS]: Denial of Service
@@ -53,11 +53,11 @@
 *[FQDN]: Fully Qualified Domain Name
 *[FQDNs]: Fully Qualified Domain Names
 *[FW]: Firmware
-*[GbE]: Gigabit Ethernet
 *[Gb]: Gigabit
-*[Gb/s]: Gigabits Per Second
 *[GB]: Gigabyte
+*[Gb/s]: Gigabits Per Second
 *[GB/s]: Megabytes Per Second
+*[GbE]: Gigabit Ethernet
 *[GDDR4]: Graphics Double Data Rate 4
 *[GDDR5]: Graphics Double Data Rate 5
 *[GDDR6]: Graphics Double Data Rate 6
@@ -93,13 +93,13 @@
 *[IR]: Infrared
 *[ISP]: Internet Service Provider
 *[IT]: Information Technology
-*[JPG]: Joint Photographic Experts Group
 *[JPEG]: Joint Photographic Experts Group
+*[JPG]: Joint Photographic Experts Group
 *[JSON]: JavaScript Object Notation
 *[JWT]: JSON Web Token
 *[Kb]: Kilobit
-*[Kb/s]: Kilobits Per Second
 *[KB]: Kilobyte
+*[Kb/s]: Kilobits Per Second
 *[KB/s]: Kilobytes Per Second
 *[KDE]: K Desktop Environment
 *[KVM]: Kernel Virtual Machine
@@ -118,8 +118,8 @@
 *[LXC]: Linux Containers
 *[MAC]: Media Access Control
 *[Mb]: Megabit
-*[Mb/s]: Megabits Per Second
 *[MB]: Megabyte
+*[Mb/s]: Megabits Per Second
 *[MB/s]: Megabytes Per Second
 *[MCU]: Micro Controller Unit
 *[mDNS]: Multicast Domain Name System
@@ -131,8 +131,8 @@
 *[MMS]: Multimedia Messaging Service
 *[MMU]: Memory Management Unit
 *[MOTD]: Message of the Day
-*[MTA]: Mail Transfer Agent
 *[MT/s]: Mega Transfers Per Second
+*[MTA]: Mail Transfer Agent
 *[NAS]: Network Attached Storage
 *[NAT]: Network Address Translation
 *[NetBIOS]: Network Basic Input / Output System
@@ -148,11 +148,11 @@
 *[OS]: Operating System
 *[PAM]: Pluggable Authentication Module
 *[PC]: Personal Computer
-*[PCs]: Personal Computers
 *[PCI]: Peripheral Component Interconnect
 *[PCIe]: Peripheral Component Interconnect Express
 *[PCR]: Platform Control Register
 *[PCRs]: Platform Control Registers
+*[PCs]: Personal Computers
 *[PETG]: Polyethylene Terephthalate Glycol
 *[PIN]: Personal Identification Number
 *[PING]: Pinging involves sending an ICMP echo request to the target host and waiting for an ICMP echo reply.
@@ -185,9 +185,9 @@
 *[SLA]: Stereolithography Apparatus
 *[SMAP]: Supervisor Mode Access Prevention
 *[SMB]: Server Message Block
+*[SMM]: System Management Mode
 *[SMS]: Short Message Service
 *[SMTP]: Simple Mail Transfer Protocol
-*[SMM]: System Management Mode
 *[SNI]: Server Name Indication
 *[SPI]: Stateful Packet Inspection
 *[SSD]: Solid State Drive
@@ -199,8 +199,8 @@
 *[STL]: Stereolithography _(file format)_
 *[SVG]: Scalable Vector Graphics
 *[Tb]: Terabit
-*[Tb/s]: Terabits Per Second
 *[TB]: Terabyte
+*[Tb/s]: Terabits Per Second
 *[TB/s]: Terabytes Per Second
 *[TCP]: Transmission Control Protocol
 *[TLS]: Transport Layer Security
@@ -215,12 +215,12 @@
 *[UFS]: Universal Flash Storage
 *[UI]: User Interface
 *[UKI]: Unified Kernel Image
+*[UNIX]: An operating system analogous to DOS and Windows, supporting multiple concurrent users.
 *[URI]: Uniform Resource Identifier
 *[URL]: Uniform Resource Locator
 *[URLs]: Uniform Resource Locators
 *[USB]: Universal Serial Bus
 *[UTF]: Unicode Transformation Format
-*[UNIX]: An operating system analogous to DOS and Windows, supporting multiple concurrent users.
 *[UUID]: Universally Unique Identifier
 *[vCPU]: Virtual Central Processing Unit
 *[vCPUs]: Virtual Central Pricessing Units

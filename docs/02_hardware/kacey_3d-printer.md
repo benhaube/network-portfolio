@@ -101,7 +101,7 @@ _Modified Creality K1C_
 
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
-???+ config "Modifications"
+??? config "Modifications"
 
     :symbols-cpu:&ensp;**Firmware**
 

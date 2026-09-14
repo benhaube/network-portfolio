@@ -272,3 +272,49 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
     ```
 
 5.  Also, make sure your system date and time are correct. See [Change Date & Time](#change-date-time) section.
+
+##### Installed Software
+
+![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-light.png#only-light){ align=right width=550 }
+![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-dark.png#only-dark){ align=right width=550 }
+
+1.  Essentials:
+    - Moonraker & Nginx
+    { .no-bullets }
+    - Fluidd
+    { .no-bullets }
+2.  Utilities:
+    - Entware
+    { .no-bullets }
+    - Klipper Gcode Shell Command
+    { .no-bullets }
+3. Improvements:
+    - Klipper Adaptive Meshing & Purging
+    { .no-bullets }
+    - Nozzle Cleaning Fan Control
+    { .no-bullets }
+    - Fans Control Macros 
+    { .no-bullets }
+    - Improved Shapers Calibrations
+    { .no-bullets }
+    - Useful Macros
+    { .no-bullets }
+    - Save Z-Offset Macros
+    { .no-bullets } 
+    - Screws Tilt Adjust Support
+    { .no-bullets }
+    - M600 Support
+    { .no-bullets }
+    - Git Backup
+    { .no-bullets }
+4. Camera:
+    - Moonraker Timelapse
+    { .no-bullets }
+5. Remote Access:
+    - Mobileraker Companion
+    { .no-bullets }
+6. Customization:
+    - Remove Creality Web Interface
+    { .no-bullets }
+    - Creality Dynamic Logos for Fluidd 
+    { .no-bullets }

@@ -33,8 +33,6 @@ Host Debian-VM
 Host Creality-K1C
     HostName kacey.internal
     User root
-    IdentityFile ~/.ssh/k1c-a71e.pub
-    IdentitiesOnly no
 
 Host Pi-Zero
     HostName pi-zero.internal

@@ -165,6 +165,9 @@ hide:
 [:services-gotify-notification:&ensp;Gotify](03_services/gotify.md)
 : A simple server for sending and receiving messages in real-time per WebSocket.
 
+[:services-healthchecks:&ensp;Healthchecks](03_services/healthchecks.md)
+: Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
+
 [:services-home-assistant:&ensp;Home Assistant](03_services/home_assistant.md)
 : Open-source home automation that puts local control and privacy first.
 

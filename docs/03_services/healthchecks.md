@@ -68,13 +68,23 @@ _Task Monitoring_
 #### :symbols-container:&ensp;Container Deployment
 
 1.  Move the files `compose.yaml` and `.env` to the `/opt/stacks/healthchecks` directory.
-2.  Start the container with the following command:
+2.  Generate a 64-character random string using the `openssl` command, and paste it into the `.env` file with the `SECRET_KEY` environment variable.
+
+    ``` bash
+    openssl rand -hex 32
+    ```
+
+    ``` properties title="Example"
+    SECRET_KEY=7b0028fdee7f5df6da9927feb8c42f62e7b993182b8837fe8ad269b6587e566a
+    ```
+
+3.  Start the container with the following command:
 
     ``` bash
     docker compose up -d
     ```
 
-3.  If starting fresh, use the following command to create a superuser account for the Healthchecks server:
+4.  If starting fresh, use the following command to create a superuser account for the Healthchecks server:
 
     ``` bash
     docker compose run web /opt/healthchecks/manage.py createsuperuser

@@ -88,7 +88,7 @@ _Primary DNS Server_
 | :------: | :-------------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
 | _Active_ | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)                   |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
 | _Active_ | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                   |                `5001`                 | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
-| _Active_ | [:services-healthchecks:&ensp;Healthchecks](../03_services/healthchecks.md) |      `2525`<br>`5432`<br>`8000`       | Open-source cron job and background task monitoring service, written in Python & Django.             |
+| _Active_ | [:services-healthchecks:&nbsp;Healthchecks](../03_services/healthchecks.md) |      `2525`<br>`5432`<br>`8000`       | Open-source cron job and background task monitoring service, written in Python & Django.             |
 
 ---
 

@@ -60,7 +60,7 @@ _Primary DNS Server_
 
 |          vCPU          | RAM { data-sort-method="filesize" } | Storage { data-sort-method="filesize" } | VDI Location                             |
 | :--------------------: | :---------------------------------: | :-------------------------------------- | :--------------------------------------- |
-| 2C / 2T _(VT-x, VT-d)_ |                2 GB                 | 50 GB                                   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
+| 2C / 2T _(VT-x, VT-d)_ |                3 GB                 | 50 GB                                   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
 ## :symbols-network:&ensp;Network Configuration
 
@@ -84,10 +84,11 @@ _Primary DNS Server_
 
 #### :symbols-container:&ensp;Docker Container
 
-|  Status  | Service                                                   | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
-| :------: | :-------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
-| _Active_ | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md) |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
-| _Active_ | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md) |                `5001`                 | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
+|  Status  | Service                                                                   | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
+| :------: | :------------------------------------------------------------------------ | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| _Active_ | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)                 |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| _Active_ | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                 |                `5001`                 | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
+| _Active_ | [services-healthchecks&ensp;Healthchecks](../03_services/healthchecks.md) |      `2525`<br>`5432`<br>`8000`       | Open-source cron job and background task monitoring service, written in Python & Django.             |
 
 ---
 

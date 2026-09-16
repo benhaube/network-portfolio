@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=$DB_NAME
+      - POSTGRES_PASSWORD=$DB_PASSWORD
+  web:
+    image: healthchecks/healthchecks:latest
+    restart: unless-stopped
+    env_file:
+        - .env
+    ports:
+        - "8000:8000"
+        - "2525:2525"
+    depends_on:
+        - db
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 1; done; uwsgi /opt/healthchecks/docker/uwsgi.ini'
+
+volumes:
+    db-data:

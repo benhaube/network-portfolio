@@ -4,7 +4,9 @@ After=network-online.target
 
 [Service]
 Type=oneshot
+ExecStartPre=-curl -sS -m 10 --retry 5 http://debian-vm.internal:8000/ping/<ping-key>/zimaos-nas-devices-backup/start
 ExecStart=/opt/scripts/b2-backup-bkp.sh
+ExecStopPost=curl -sS -m 10 --retry 5 http://debian-vm.internal:8000/ping/<ping-key>/zimaos-nas-devices-backup/${EXIT_STATUS}
 
 [Install]
 WantedBy=multi-user.target

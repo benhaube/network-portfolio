@@ -35,7 +35,7 @@
 
 This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel.
 
-You can build your own network documentation website with the configuration, directory structure, custom icon libraries, and page templates provided in this code repository. Just fork the repo and replace the `*.md` files with your own created using the templates. The provided `mkdocs.yml` configuration file and cusomized CSS can be used for any MkDocs project regardless of the page content. **Note:**&ensp;You will need to change the `.nav.yml` files to reflect the names of your own markdown files.
+You can build your own network documentation website with the configuration, directory structure, custom icon libraries, and page templates provided in this code repository. Just fork the repo and replace the `*.md` files with your own created using the templates. The provided `mkdocs.yml` configuration file and customized CSS can be used for any MkDocs project regardless of the page content. **Note:**&ensp;You will need to change the `.nav.yml` files to reflect the names of your own markdown files.
 
 ![Screenshot of Index page](readme-assets/index.png)
 
@@ -232,7 +232,7 @@ podman run --rm -it -v ${PWD}:/docs:Z mkdocs-custom build
 
 ## Zensical Testing
 
-The `zensical-testing` branch exists to experiment with the new [Zensical](https://zensical.org/) static website generator. Eventually, this project will need to migrate to Zensical because Material for MkDocs has entered a maintenance-only development stage, and will eventually be deprecated. This is due to breaking changes made by the MkDocs team with MkDocs 2.0... Once Material for MkDocs is deprecated it will continue to function, but it will not recieve updates for security vulnerabilities. 
+The `zensical-testing` branch exists to experiment with the new [Zensical](https://zensical.org/) static website generator. Eventually, this project will need to migrate to Zensical because Material for MkDocs has entered a maintenance-only development stage, and will eventually be deprecated. This is due to breaking changes made by the MkDocs team with MkDocs 2.0... Once Material for MkDocs is deprecated it will continue to function, but it will not receive updates for security vulnerabilities. 
 
 Fortunately, Zenzical is the successor to Material for MkDocs developed from scratch by the same team. Unfortunately, Zensical is still pretty early in its development roadmap, and it is lacking features and extensions I rely on for this project. Once Zenzical develops enough to meet the requirements for this project I will migrate. Until then, this branch exists to build the `zensical.toml` configuration file, and to test the site as Zensical develops.
 
@@ -274,7 +274,7 @@ zensical build
 
 ## Custom Icons for Panzoom Plugin
 
-I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG0N/mkdocs-panzoom) plugin with [Lucide](https://lucide.dev/) icons to match the rest of the site. The icons cannot be applied using CSS due to the way the Panzoom plugin is written. To use the custom icons you need to copy the XML text into the `panzoom_box.py` file located in your virtual environement directory. 
+I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG0N/mkdocs-panzoom) plugin with [Lucide](https://lucide.dev/) icons to match the rest of the site. The icons cannot be applied using CSS due to the way the Panzoom plugin is written. To use the custom icons you need to copy the XML text into the `panzoom_box.py` file located in your virtual environment directory. 
 
 #### Apply Customization
 
@@ -325,7 +325,7 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
 > [!note]
 > The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with `class="panzoom-icon"`. 
 > 
-> After ugrading the `mkdocs-panzoom-plugin` package you may need to re-apply this modification to the `panzoom_box.py` file. Depending on the changes made by the upgrade, the file may be overwritten.
+> After upgrading the `mkdocs-panzoom-plugin` package you may need to re-apply this modification to the `panzoom_box.py` file. Depending on the changes made by the upgrade, the file may be overwritten.
 
 ## Zensical Studio for VSCode
 

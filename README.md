@@ -349,14 +349,14 @@ Install Zensical Studio in VSCode and open your **Zensical** or **MkDocs** proje
     ext install zensical.zensical-studio
     ```
 
+2. Confirm the extension is active and the Python Markdown language is active when you open a Markdown file. You can see this in the status bar in the bottom right of the screen. If you do not see a status bar, you can turn it on in **View** → **Appearance** → **Status Bar**.
+
 > [!tip]
 > You can also install the extension from the Linux command line:
 > 
 > ``` bash
 > codium --install-extension zensical.zensical-studio
 > ```
-
-2. Confirm the extension is active and the Python Markdown language is active when you open a Markdown file. You can see this in the status bar in the bottom right of the screen. If you do not see a status bar, you can turn it on in **View** → **Appearance** → **Status Bar**.
 
 ## Project Directory Structure
 

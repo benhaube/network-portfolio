@@ -1,0 +1,15 @@
+[Unit]
+Description=Macvlan host-to-guest shim for Macvtap
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/ip link add link eth0 name macvlan-shim type macvlan mode bridge
+ExecStart=/sbin/ip link set macvlan-shim up
+ExecStart=/sbin/ip route add 192.168.50.6 dev macvlan-shim
+ExecStop=/sbin/ip link delete macvlan-shim
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

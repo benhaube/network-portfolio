@@ -183,6 +183,39 @@ _Rack-Mount ZimaBoard 2_
 
     See the ["Configuration"](../03_services/nfs.md#configuration) section of the NFS service documentation page for server and client configuration details.
 
+#### :symbols-chevrons-left-right-ellipsis:&ensp;Macvlan Shim
+
+Because the [Debian Server](debian_server.md) is a VM hosted directly on the ZimaOS NAS using bridged networking attached to `eth0`, the physical NIC or Linux bridge will drop intra-host "hairpin" traffic. In standard Linux bridging and Macvtap / bridge setups, an interface cannot route or reflect frames back out of the same physical port without hairpin mode enabled, preventing the hypervisor host _(`192.168.50.4`)_ from communicating directly with the guest VM _(`192.168.50.6`)_ even though outside LAN devices communicate with both just fine.
+
+To solve this problem we need to create a Macvlan shim. Because Macvtap operating in `bridge` mode permits guest-to-guest and guest-to-macvlan communication, creating a macvlan sub-interface gives the host a distinct MAC address that the Macvtap driver will route to.
+
+1. Create and configure the shim:
+
+    ``` bash 
+    sudo ip link add link eth0 name macvlan-shim type macvlan mode bridge
+    sudo ip link set macvlan-shim up
+    sudo ip route add 192.168.50.6 dev macvlan-shim
+    ```
+
+2. Verify reachability:
+
+    ``` bash
+    ping 192.168.50.6
+    ```
+
+3. Make it persistent across reboots by adding a systemd unit file:
+
+    ``` systemd { .mono-title title="/etc/systemd/system/macvlan-shim.service" }
+    --8<-- "macvlan-shim.service"
+    ```
+
+4. Enable the Systemd service:
+
+    ``` bash
+    sudo systemctl daemon-reload
+    sudo systemctl enable macvlan-shim.service
+    ```
+
 #### :symbols-cloud-upload:&ensp;Backblaze B2 Cloud Backup
 
 The ZimaOS NAS is the main backup server for clients and other servers on the local network. To maintain the **3-2-1 Backup Strategy** the important data stored on the NAS is backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage) cloud storage. To automate the backup process we utilize Bash scripts that use the `rclone` command and Systemd unit files to trigger the scripts on a set schedule. Reference the [Backblaze docs](https://www.backblaze.com/docs/cloud-storage-integrate-rclone-with-backblaze-b2) for help with `rclone` integration.

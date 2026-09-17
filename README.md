@@ -327,6 +327,37 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
 > 
 > After ugrading the `mkdocs-panzoom-plugin` package you may need to re-apply this modification to the `panzoom_box.py` file. Depending on the changes made by the upgrade, the file may be overwritten.
 
+## Zensical Studio for VSCode
+
+[Zensical Studio](https://zensical.org/studio/) is the project-aware authoring environment for **Zensical** and **MkDocs** projects. It safely updates links, references, and redirects across your entire project when you rename, move, or split content. Your source files stay in Git – under your control.
+
+### Features
+
+- Python Markdown editing and accurate syntax highlighting, including nested content.
+- Formatting and linting for python markdown files.
+- Automatic link completion, broken link detection, preview links on hover
+- Navigate the content, search workspace symbols, and find references across the project.
+- Live preview to see changes immediately.
+
+### Install
+
+Install Zensical Studio in VSCode and open your **Zensical** or **MkDocs** project. Zensical Studio automatically detects `zensical.toml` or `mkdocs.yml` and activates Python Markdown support for your documentation files.
+
+1. Open the command palette _(Ctrl + Shift + P)_ and paste the following command:
+
+    ```
+    ext install zensical.zensical-studio
+    ```
+
+    > [!tip]
+    > You can also install the extension from the Linux command line:
+    > 
+    > ``` bash
+    > codium --install-extension zensical.zensical-studio
+    > ```
+
+2. Confirm the extension is active and the Python Markdown language is active when you open a Markdown file. You can see this in the status bar in the bottom right of the screen. If you do not see a status bar, you can turn it on in **View** → **Appearance** → **Status Bar**.
+
 ## Project Directory Structure
 
 ```

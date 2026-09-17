@@ -13,7 +13,8 @@ hide:
   - toc
 ---
 
-![Homebox Logo](../assets/icons/homebox.svg){ width=200 }
+![Homebox Logo](../assets/icons/homebox-light.svg#only-light){ width=200 }
+![Homebox Logo](../assets/icons/homebox-dark.svg#only-dark){ width=200 }
 
 # Homebox
 

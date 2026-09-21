@@ -7,12 +7,14 @@ lost+found
 
 # Application-specific caches
 .android/
+.antigravity-ide/
 .antigravity/
 .cargo/
 .conda/
 .docker/
 .gemini/
 .gitlab/
+.gphoto/
 .gradle/
 .Heaven/
 .icons/
@@ -20,7 +22,9 @@ lost+found
 .kde/
 .lmstudio/
 .mcop/
+.mozilla/
 .net/
+.npm-global/
 .npm/
 .ollama/
 .pcloud/
@@ -77,6 +81,8 @@ node_modules/
 .trash
 .viminfo
 .wget-hsts
+.wireshark
+.zima-zerotier
 Android/
 Desktop/
 Downloads/

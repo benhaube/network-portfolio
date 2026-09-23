@@ -1,0 +1,19 @@
+services:
+  cloudflared:
+    container_name: cloudflare-tunnel
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel run
+    network_mode: host
+    environment:
+      - TUNNEL_TOKEN=${TOKEN}
+      - TUNNEL_METRICS=0.0.0.0:60123
+    healthcheck:
+      test:
+        - CMD
+        - cloudflared
+        - tunnel
+        - ready
+      interval: 10s
+      timeout: 5s
+      retries: 5

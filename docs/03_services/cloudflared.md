@@ -32,17 +32,44 @@ _Reverse-Proxy Server_
 
 #### :symbols-file-text:&ensp;Description
 
-:    Secure reverse-proxy tunnel for hosting private services on the public internet.
+: Secure reverse-proxy tunnel for hosting private services on the public internet.
 
-#### :symbols-hash:&ensp;Port(s) 
+#### :symbols-hash:&ensp;Port(s)
 
-:    `14333`
+##### Outbound
 
-#### :symbols-link-2:&ensp;URL / Access
-
-- <http://storage-server.internal:14333>
+- `7844` &ndash; _TCP & UDP_
 { .no-bullets }
-- <http://storage-server-2.internal:14333>
+- `443` &ndash; _TCP_
+{ .no-bullets }
+
+##### Local Metrics
+
+- `60123`
+{ .no-bullets }
+
+#### :symbols-route:&ensp;Routes
+
+##### Pi 4B Server
+
+- <https://it-tools.rac3r4life.online>
+{ .no-bullets }
+- <https://beszel.rac3r4life.online>
+{ .no-bullets }
+- <https://uptime.rac3r4life.online>
+{ .no-bullets }
+
+##### ZimaOS NAS
+
+- <https://gitea.rac3r4life.online>
+{ .no-bullets }
+- <https://gotify.rac3r4life.online>
+{ .no-bullets }
+- <https://homebox.rac3r4life.online>
+{ .no-bullets }
+- <https://immich.rac3r4life.online>
+{ .no-bullets }
+- <https://portfolio.rac3r4life.online>
 { .no-bullets }
 
 #### :symbols-user-key:&ensp;Credentials
@@ -59,23 +86,27 @@ _Reverse-Proxy Server_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name      | Image                              | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :--------------------------------- | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest`    | `14333` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `cloudflared`       | `wisdomsky/cloudflared-web:latest` | `14333` |
+| Host Device                                                          | Method                                    | Container Name      | Image                           | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :------------------------------ | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :symbols-server:&ensp;Pi 4B Server
-
 --8<-- "includes/managed_by_dockge.md"
+
+#### :symbols-server:&ensp;Pi 4B Server
 
 ``` yaml { .mono-title title="/opt/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "cloudflared-pi-server.yml"
 ```
 
+1. Place the tunnel token in the `.env` file with the environment variable, `TOKEN`.
+
 #### :symbols-server-nas:&ensp;ZimaOS NAS
 
-``` yaml { .mono-title title="~/.casaos/apps/cloudflared/docker-compose.yml" linenums="1" }
---8<-- "cloudflared.yaml"
+``` yaml { .mono-title title="../AppData/dockge/stacks/cloudflared/compose.yaml" linenums="1" }
+--8<-- "includes/code/yaml/cloudflared-zimaos-nas.yaml"
 ```
+
+1. Place the tunnel token in the `.env` file with the environment variable, `TOKEN`.

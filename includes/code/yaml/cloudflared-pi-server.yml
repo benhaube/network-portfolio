@@ -8,7 +8,17 @@ services:
       - it-tools_default
       - beszel_default
     environment:
-      - TUNNEL_TOKEN=your_token_string_here
+      - TUNNEL_TOKEN=${TOKEN}  # (1)!
+      - TUNNEL_METRICS=0.0.0.0:60123
+    healthcheck:
+      test:
+        - CMD
+        - cloudflared
+        - tunnel
+        - ready
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 networks:
   it-tools_default:

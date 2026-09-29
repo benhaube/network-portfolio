@@ -69,20 +69,14 @@ _A Simple, Modern VPN_
 
 ### :symbols-settings:&ensp;Configuration
 
-1. Log into the [ASUS Router's Web UI](https://asusrouter.internal:8443){ external-link } and navigate to the **"Advanced VPN Server Content"** page.
+1.  Log into the [ASUS Router's Web UI](https://asusrouter.internal:8443){ external-link } and navigate to the **"Advanced VPN Server Content"** page.
 
-      <figure markdown="span">
-            ![ASUS Router navigation to VPN settings](../assets/screenshots/asus_router_advanced_vpn_server_content.png){ width=600 }
-      </figure>
+    ![ASUS Router navigation to VPN settings](../assets/screenshots/asus_router_advanced_vpn_server_content.png){ width=600 }
 
-2. Select **"General"** in the drop-down menu to add / remove / edit clients, change the tunnel IP address, change the listening port, or turn on / off intranet access.
+2.  Select **"General"** in the drop-down menu to add / remove / edit clients, change the tunnel IP address, change the listening port, or turn on / off intranet access.
 
-      <figure markdown="span">
-            ![ASUS Router WireGuard "General" settings](../assets/screenshots/asus_router_wireguard_general.png){ width=600 }
-      </figure>
+    ![ASUS Router WireGuard "General" settings](../assets/screenshots/asus_router_wireguard_general.png){ width=600 }
 
-3. Select **"Advanced Settings"** in the drop-down menu to configure DNS, IPv6 NAT, persistent keepalive, and change the server's pre-shared key.
+3.  Select **"Advanced Settings"** in the drop-down menu to configure DNS, IPv6 NAT, persistent keepalive, and change the server's pre-shared key.
 
-      <figure markdown="span">
-            ![ASUS Router WireGuard "Advanced" settings](../assets/screenshots/asus_router_wireguard_advanced.png){ width=600 }
-      </figure>
+    ![ASUS Router WireGuard "Advanced" settings](../assets/screenshots/asus_router_wireguard_advanced.png){ width=600 }

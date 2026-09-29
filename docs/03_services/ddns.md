@@ -88,9 +88,7 @@ _Provided by addr.tools_
 
 4.  Make sure the DDNS setting in the router's Web-UI is set to "Custom" and the "Host Name" field has your domain name:
 
-<figure markdown="span">
     ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ width=700 }
-</figure>
 
 #### :symbols-award:&ensp;TLS Certificate
 

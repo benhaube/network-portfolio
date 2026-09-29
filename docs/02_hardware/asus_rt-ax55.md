@@ -73,10 +73,10 @@ _AiMesh Node_
 
 #### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
-|   SSID   |  VLAN  |   WAN Access    | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                |
-| :------: | :----: | :-------------: | :--------------------------------- | :-------------------------------------- | :----------------------------------- |
-|  _Home_  | VLAN50 | :symbols-check: | `192.168.50.0/24`                  | 2.4 GHz, 5 GHz                          | :symbols-shield:&nbsp;Trusted VLAN   |
-| *2G_IoT* | VLAN53 |   :symbols-x:   | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN |
+|   SSID   |  VLAN  |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                |
+| :------: | :----: | :------------------------------------------------------: | :--------------------------------- | :-------------------------------------- | :----------------------------------- |
+|  _Home_  | VLAN50 | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.50.0/24`                  | 2.4 GHz, 5 GHz                          | :symbols-shield:&nbsp;Trusted VLAN   |
+| *2G_IoT* | VLAN53 |   <span aria-label="No" role="img">:symbols-x:</span>    | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN |
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 

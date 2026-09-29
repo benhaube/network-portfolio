@@ -64,28 +64,28 @@ _Centralized Network Visibility_
 
 #### :symbols-puzzle:&ensp;Loaded Plugins
 
-| Plugin ID   | Category       | Description { data-sort-method="none" }      | Required { data-sort-reverse } |
-| :---------- | :------------- | :------------------------------------------- | :----------------------------: |
-| `ARPSCAN`   | Device Scan    | Run ARP-scan on the current network          |                                |
-| `ASUSWRT`   | Importer       | Import connected devices from Asuswrt        |                                |
-| `AVAHISCAN` | Name Discovery | Avahi _(mDNS-based)_ name resolution         |                                |
-| `CSVBCKP`   | System         | CSV devices backup                           |                                |
-| `CUSTPROP`  | System         | Managing custom device property values       |    :symbols-check:&nbsp;Yes    |
-| `DBCLNP`    | System         | Database cleanup                             |    :symbols-check:&nbsp;Yes    |
-| `DIGSCAN`   | Name Discovery | Dig _(DNS)_ name resolution                  |                                |
-| `ICMP`      | Other          | ICMP _(ping)_ status checker                 |                                |
-| `INTRNT`    | Device Scan    | Internet _(WAN)_ IP address scanner          |                                |
-| `MAINT`     | System         | Maintenance of logs, etc.                    |                                |
-| `NEWDEV`    | System         | New device template                          |    :symbols-check:&nbsp;Yes    |
-| `NBTSCAN`   | Name Discovery | Nbtscan _(NetBIOS-based)_ name resolution    |                                |
-| `NMAP`      | Other          | Nmap port scanning & discovery               |                                |
-| `NSLOOKUP`  | Name Discovery | NSLookup _(DNS-based)_ name resolution       |                                |
-| `NTFPRCS`   | System         | Notification processing                      |    :symbols-check:&nbsp;Yes    |
-| `SETPWD`    | System         | Set the service password                     |    :symbols-check:&nbsp;Yes    |
-| `SMTP`      | Publisher      | Email notifications                          |                                |
-| `SYNC`      | Importer       | Sync & import from other NetAlertX instances |    :symbols-check:&nbsp;Yes    |
-| `UI`        | System         | User interface specific settings             |    :symbols-check:&nbsp;Yes    |
-| `VNDRPDT`   | System         | MAC address vendor database update           |                                |
+| Plugin ID   | Category       | Description { data-sort-method="none" }      |              Required { data-sort-reverse }              |
+| :---------- | :------------- | :------------------------------------------- | :------------------------------------------------------: |
+| `ARPSCAN`   | Device Scan    | Run ARP-scan on the current network          |                                                          |
+| `ASUSWRT`   | Importer       | Import connected devices from Asuswrt        |                                                          |
+| `AVAHISCAN` | Name Discovery | Avahi _(mDNS-based)_ name resolution         |                                                          |
+| `CSVBCKP`   | System         | CSV devices backup                           |                                                          |
+| `CUSTPROP`  | System         | Managing custom device property values       | <span aria-label="Yes" role="img">:symbols-check:</span> |
+| `DBCLNP`    | System         | Database cleanup                             | <span aria-label="Yes" role="img">:symbols-check:</span> |
+| `DIGSCAN`   | Name Discovery | Dig _(DNS)_ name resolution                  |                                                          |
+| `ICMP`      | Other          | ICMP _(ping)_ status checker                 |                                                          |
+| `INTRNT`    | Device Scan    | Internet _(WAN)_ IP address scanner          |                                                          |
+| `MAINT`     | System         | Maintenance of logs, etc.                    |                                                          |
+| `NEWDEV`    | System         | New device template                          | <span aria-label="Yes" role="img">:symbols-check:</span> |
+| `NBTSCAN`   | Name Discovery | Nbtscan _(NetBIOS-based)_ name resolution    |                                                          |
+| `NMAP`      | Other          | Nmap port scanning & discovery               |                                                          |
+| `NSLOOKUP`  | Name Discovery | NSLookup _(DNS-based)_ name resolution       |                                                          |
+| `NTFPRCS`   | System         | Notification processing                      | <span aria-label="Yes" role="img">:symbols-check:</span> |
+| `SETPWD`    | System         | Set the service password                     | <span aria-label="Yes" role="img">:symbols-check:</span> |
+| `SMTP`      | Publisher      | Email notifications                          |                                                          |
+| `SYNC`      | Importer       | Sync & import from other NetAlertX instances | <span aria-label="Yes" role="img">:symbols-check:</span> |
+| `UI`        | System         | User interface specific settings             | <span aria-label="Yes" role="img">:symbols-check:</span> |
+| `VNDRPDT`   | System         | MAC address vendor database update           |                                                          |
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 

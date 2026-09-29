@@ -45,7 +45,7 @@ _Immich Slideshow for Nest Hub_
 2.  **Deletion _(Desktop)_:**
     -   **Manual:**
         - **Go to:**&nbsp;[Google Photos](https://photos.google.com){ external-link }
-        - :symbols-mouse-left:&nbsp;first photo&emsp;:symbols-move-right:&emsp;:symbols-mouse::symbols-arrow-down:&emsp;:symbols-move-right:&emsp;++shift++&nbsp;+&nbsp;:symbols-mouse-left:&nbsp;last photo&emsp;:symbols-move-right:&emsp;++del++
+        - <span aria-label="Left Click" role="img">:symbols-mouse-left:</span>&nbsp;first photo&emsp;:symbols-move-right:&emsp;<span aria-label="Scroll Down" role="img">:symbols-mouse::symbols-arrow-down:</span>&emsp;:symbols-move-right:&emsp;++shift++&nbsp;+&nbsp;<span aria-label="Left Click" role="img">:symbols-mouse-left:</span>&nbsp;last photo&emsp;:symbols-move-right:&emsp;++del++
     -   **Console Script _(Advanced)_:**
         - Open Chrome DevTools:&ensp;++f12++&ensp;:symbols-move-right:&ensp;Console.
         - Paste script to auto-select/delete.

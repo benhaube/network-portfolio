@@ -20,7 +20,7 @@ hide:
 
 _Sync with CouchDB_
 
-[GitHub&ensp;:brands-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.couchdb.org/en/stable/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](http://storage-server.internal:5984/_utils/docs/index.html){ .md-button .md-button--primary }
 
 ---
 

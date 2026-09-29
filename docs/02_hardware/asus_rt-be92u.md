@@ -24,7 +24,7 @@ _Wireless Router_
 
 ---
 
-![ASUS RT-BE92U 802.11be wireless router](../assets/images/asus-rt-be92u.png){ width=400 align=right .no-shadow }
+![ASUS RT-BE92U 802.11be wireless router](../assets/images/asus-rt-be92u.webp){ width=400 align=right .no-shadow }
 
 ## :symbols-info:&ensp;Device Overview
 

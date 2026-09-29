@@ -477,6 +477,9 @@ img[src$=".jpg#only-dark" i],
 img[src$=".jpeg" i],
 img[src$=".jpeg#only-light" i],
 img[src$=".jpeg#only-dark" i],
+img[src$=".webp" i],
+img[src$=".webp#only-light" i],
+img[src$=".webp#only-dark" i],
 img[src$=".gif" i] {
   border-style: none;
   border-radius: 0.4rem;

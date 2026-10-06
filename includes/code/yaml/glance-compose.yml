@@ -1,5 +1,4 @@
 services:
-
   glance:
     container_name: glance
     image: panonim/dynacat:latest  # (7)!
@@ -21,7 +20,20 @@ services:
       glance.url: http://pi-server.internal:8580
       glance.description: Server Dashboard
       glance.id: glance
-
+    secrets:
+      - auth_secret
+      - admin_pw_hash
+      - bhaube_pw_hash
+      - rpereira_pw_hash
+      - beszel_token
+      - hass_api_key
+      - github_token
+      - gitlab_token
+      - technitium_token
+      - immich_key
+      - aqi_token
+      - nasa_api_key
+      - vault_pw
   glance-github-graph:
     image: haumea/glance-github-graph:latest
     ports:
@@ -30,7 +42,6 @@ services:
       - CACHE_ENABLED=true
       - CACHE_TYPE=memory
       - CACHE_DURATION_SECS=3600
-
   f1_api:
     container_name: f1_api
     image: skyallinott/f1_api:latest
@@ -41,3 +52,30 @@ services:
       - TIMEZONE=America/New_York  # (4)!
       - TRACK_COLOUR=#B0B0B0  # (5)!
       - EVENT_DETAIL=main  # (6)!
+secrets:
+  auth_secret:
+    file: ./secrets/auth_secret.txt
+  admin_pw_hash:
+    file: ./secrets/admin_pw_hash.txt
+  bhaube_pw_hash:
+    file: ./secrets/bhaube_pw_hash.txt
+  rpereira_pw_hash:
+    file: ./secrets/rpereira_pw_hash.txt
+  beszel_token:
+    file: ./secrets/beszel_token.txt
+  hass_api_key:
+    file: ./secrets/hass_api_key.txt
+  github_token:
+    file: ./secrets/github_token.txt
+  gitlab_token:
+    file: ./secrets/gitlab_token.txt
+  technitium_token:
+    file: ./secrets/technitium_token.txt
+  immich_key:
+    file: ./secrets/immich_key.txt
+  aqi_token:
+    file: ./secrets/aqi_token.txt
+  nasa_api_key:
+    file: ./secrets/nasa_api_key.txt
+  vault_pw:
+    file: ./secrets/vault_pw.txt

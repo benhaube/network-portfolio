@@ -1,4 +1,5 @@
 - name: Home
+  name-icon: auto-invert /assets/lucide/house.svg
   show-mobile-header: true  # (1)!
   # hide-desktop-navigation: true  (2)
   head-widgets:

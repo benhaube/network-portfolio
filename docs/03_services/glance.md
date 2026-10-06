@@ -97,29 +97,33 @@ _Server Dashboard_
 
     !!! tip inline end
 
-        Restarting the container with `#!bash docker compose restart` will not allow changes to the `.env` file to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`.
+        The secrets files remain unecrypted on the host file system. Ensure you restrict file permissions on the host files so they are only readable by `root` _(e.g., `chmod -R 600 secrets/`)_.
 
-    : For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined in the `.env` file. To change a user's password, attach to the container's shell and run the following command:
+        Restarting the container with `#!bash docker compose restart` will not allow changes to the Docker secrets files to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`.
+
+    : For additional security, the passwords are not stored in clear text within the service's configuration files. Instead, the passwords are hashed, and defined using Docker secrets. To change a user's password, attach to the container's shell and run the following command:
 
         ``` bash linenums="1"
         ./glance password:hash <my-password>
         ```
 
-    : Copy and paste the hashed string into the corresponding variable in the `.env` file, shut the container down, and start the container again.
+    : Copy and paste the hashed string into the corresponding variable in the `./secrets/user_pw_hash.txt` file, shut the container down, and start the container again.
 
     :symbols-key-round:&ensp;**Server Secret**
 
-    : The "Server Secret" needs to be set in the `glance.yml` configuration file. To generate a new server secret, attach to the container's shell and run the following command:
+    : The "Server Secret" needs to be set in the `./secrets/auth_secret.txt` file. To generate a new server secret, attach to the container's shell and run the following command:
 
         ``` bash linenums="1"
         ./glance secret:make
         ```
 
-    : Copy and paste the generated string into the `glance.yml` file.
+    : Copy and paste the generated string into the `./secrets/auth_secret.txt` file.
+
+    : Add the secret to the `glance.yml` configuration file.
 
         ``` yaml { .mono-title title="glance.yml (snippet)" linenums="1" }
         auth:
-          secret-key: <insert-server-secret>
+          secret-key: ${secret:auth_secret}
           users:
         ```
 
@@ -135,16 +139,13 @@ _Server Dashboard_
 
     !!! tip inline end
 
-        Changes to the YAML files in the `config/pages` and `config/widgets` directories are recognized by the container instantly. However, you may need to clear the browser cache when you reload the page.
+        Changes to the YAML files in the `./config/pages` and `./config/widgets` directories are recognized by the container instantly. However, you may need to clear the browser cache when you reload the page.
 
-        To reload an clear the browser cache use the keyboard keys;
-
-        - ++ctrl+f5++
-        { .no-bullets }
+        Use ++ctrl+f5++ to reload and clear the browser cache.
 
     :symbols-settings:&ensp;**Configuration**
 
-    :   The Glance dashboard widgets have been moved into their own directory to clean up the page YAML files. The new widgets directory is `/app/config/widgets/`. Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure.
+    :   The Glance dashboard widgets have been moved into their own directory to clean up the page YAML files. The new widgets directory is `./config/widgets/`. Using the `$include` directive, the separate widget YAML files can be added to the pages resulting in a much cleaner and easy to manage file structure.
 
         ``` yaml { .mono-title title="page.yml (example)" linenums="1" }
         columns:
@@ -163,30 +164,14 @@ _Server Dashboard_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Stack Directory
-
-- `/opt/stacks/glance`
-{ .no-bullets }
-
-##### Assets Directory
-
-- `/opt/stacks/glance/assets`
-{ .no-bullets }
-
-##### Config Directory
-
-- `/opt/stacks/glance/config`
-{ .no-bullets }
-
-##### Pages Directory
-
-- `/opt/stacks/glance/config/pages`
-{ .no-bullets }
-
-##### Widgets Directory
-
-- `/opt/stacks/glance/config/widgets`
-{ .no-bullets }
+| Contents | Path                                |
+| :------- | :---------------------------------- |
+| Stack    | `/opt/stacks/glance`                |
+| Secrets  | `/opt/stacks/glance/secrets`        |
+| Assets   | `/opt/stacks/glance/assets`         |
+| Config   | `/opt/stacks/glance/config`         |
+| Pages    | `/opt/stacks/glance/config/pages`   |
+| Widgets  | `/opt/stacks/glance/config/widgets` |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
@@ -225,13 +210,13 @@ _Server Dashboard_
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
-4.  The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
+4.  The directory, `./secrets`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 
     ``` sh linenums="1"
     ./glance password:hash <my-password>
     ```
 
-    Then paste the hashed string into the corresponding variable in the `.env` file.
+    Then paste the hashed string into the `./secrets/<user>_pw_hash.txt` file.
 
 5.  Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212){ external-link } to convert colors from other formats.
 
@@ -262,13 +247,13 @@ _Server Dashboard_
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance Server Secret"
 
-4.  The file, `app/.env`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
+4.  The directory, `./secrets`, contains the hashed passwords. To change a user's password and generate the hash, enter the container's shell and use the following command:
 
     ``` sh linenums="1"
     ./glance password:hash <my-password>
     ```
 
-    Then paste the hashed string into the corresponding variable in the `.env` file.
+    Then paste the hashed string into the `./secrets/<user>_pw_hash.txt` file.
 
 5.  Values for the colors are in **HSL** format. You can use a **color picker** like [this one](https://colorpicker.dev/#121212){ external-link } to convert colors from other formats.
 

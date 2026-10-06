@@ -1,4 +1,5 @@
 - name: Formula 1
+  name-icon: auto-invert /assets/lucide/motor-racing-helmet.svg
   show-mobile-header: true  # (1)!
   # hide-desktop-navigation: true  (2)
   columns:

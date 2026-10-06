@@ -36,14 +36,14 @@ theme:
   custom-css-file: /assets/user.css # (2)!
 
 auth:
-  secret-key: <insert-server-secret>  # (3)!
+  secret-key: ${secret:auth_secret}  # (3)!
   users:
     admin:
-      password-hash: ${ADMIN_PW_HASH} # (4)!
+      password: ${secret:admin_pw_hash}  # (4)!
     bhaube:
-      password-hash: ${BHAUBE_PW_HASH}
+      password: ${secret:bhaube_pw_hash}
     rpereira:
-      password-hash: ${RPEREIRA_PW_HASH}
+      password: ${secret:rpereira_pw_hash}
 
 pages:
   - $include: pages/home.yml

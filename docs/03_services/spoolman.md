@@ -57,10 +57,10 @@ _Filament Inventory Management_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-- Compose File:&ensp;`/media/nvme0n1p1/AppData/dockge/stacks/spoolman`
-{ .no-bullets }
-- Spoolman Data:&ensp;`/media/nvme0n1p1/AppData/dockge/stacks/spoolman/data`
-{ .no-bullets }
+| Contents            | Path                                                           |
+| :------------------ | :------------------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/spoolman/compose.yaml` |
+| Application Data    | `/media/nvme0n1p1/AppData/dockge/stacks/spoolman/data`         |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

@@ -56,13 +56,10 @@ _Awaken Your Home_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Docker Deploy
-
-:    `/opt/stacks/home-assistant/compose.yaml`
-
-##### App Data
-
-:    `/home-assistant-container`
+| Contents            | Path                                      |
+| :------------------ | :---------------------------------------- |
+| Docker Compose File | `/opt/stacks/home-assistant/compose.yaml` |
+| Application Data    | `/home-assistant-container`               |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

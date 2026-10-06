@@ -58,10 +58,10 @@ _Based on Matter.js_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-- Docker Deploy:&ensp;`/opt/stacks/matter-server`
-{ .no-bullets }
-- Matter Data:&ensp;`/opt/matter-server/data`
-{ .no-bullets }
+| Contents            | Path                                     |
+| :------------------ | :--------------------------------------- |
+| Docker Compose File | `/opt/stacks/matter-server/compose.yaml` |
+| Matter Server Data  | `/opt/matter-server/data`                |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

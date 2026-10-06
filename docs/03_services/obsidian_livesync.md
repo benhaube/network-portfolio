@@ -63,20 +63,11 @@ _Sync with CouchDB_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Docker Deploy
-
-- `../AppData/dockge/stacks/obsidian-livesync/compose.yaml`
-{ .no-bullets }
-
-##### Database
-
-- `../AppData/obsidian-livesync/data/couchdb`
-{ .no-bullets }
-
-##### Config File
-
-- `../AppData/obsidian-livesync/data/local.ini`
-{ .no-bullets }
+| Contents            | Path                                                                    |
+| :------------------ | :---------------------------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/obsidian-livesync/compose.yaml` |
+| CouchDB Data        | `/media/nvme0n1p1/AppData/obsidian-livesync/data/couchdb`               |
+| Configuration File  | `/media/nvme0n1p1/AppData/obsidian-livesync/data/local.ini`             |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

@@ -89,23 +89,11 @@ _Centralized Network Visibility_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Config
-
-- Drive:&ensp;`/dev/nvme0n1p1`
-{ .no-bullets }
-- Path:&ensp;`/DATA/AppData/netalertx/config`
-{ .no-bullets }
-- Config file:&ensp;`app.conf`
-{ .no-bullets }
-
-##### Database
-
-- Drive:&ensp;`/dev/nvme0n1p1`
-{ .no-bullets }
-- Path:&ensp;`/DATA/AppData/netalertx/db`
-{ .no-bullets }
-- Database file:&ensp;`app.db`
-{ .no-bullets }
+| Contents            | Path                                                 |
+| :------------------ | :--------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/netalertx/compose.yaml`    |
+| Configuration File  | `/media/nvme0n1p1/AppData/netalertx/config/app.conf` |
+| Database File       | `/media/nvme0n1p1/AppData/netalertx/db/app.db`       |
 
 #### :symbols-svg:&ensp;Custom Device Icons
 

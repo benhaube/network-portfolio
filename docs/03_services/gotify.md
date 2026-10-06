@@ -76,19 +76,12 @@ _Push Notifications_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Docker Deploy
-
-- `../AppData/dockge/stacks/gotify/compose.yaml`
-{ .no-bullets }
-
-##### App Data
-
-- `../AppData/dockge/stacks/gotify/data/gofify.db`
-{ .no-bullets }
-- `../AppData/dockge/stacks/gotify/data/images/`
-{ .no-bullets }
-- `../AppData/dockge/stacks/gotify/data/plugins/`
-{ .no-bullets }
+| Contents            | Path                                                           |
+| :------------------ | :------------------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/gotify/compose.yaml`   |
+| Gotify Database     | `/media/nvme0n1p1/AppData/dockge/stacks/gotify/data/gofify.db` |
+| Application Icons   | `/media/nvme0n1p1/AppData/dockge/stacks/gotify/data/images`    |
+| Gotify Plugins      | `/media/nvme0n1p1/AppData/dockge/stacks/gotify/data/plugins`   |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

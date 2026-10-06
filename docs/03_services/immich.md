@@ -68,39 +68,22 @@ _Bye Bye, Google Photos_
 
 ##### Docker Deploy
 
-- `../AppData/dockge/stacks/immich/compose.yaml`
-{ .no-bullets }
-- `../AppData/dockge/stacks/immich/.env`
-{ .no-bullets }
-- `../AppData/dockge/stacks/immich/hwaccel.transcoding.yml`
-{ .no-bullets }
-- `../AppData/dockge/stacks/immich/hwaccel.ml.yml`
-{ .no-bullets }
+| Contents              | Path                                                                    |
+| :-------------------- | :---------------------------------------------------------------------- |
+| Docker Compose File   | `/media/nvme0n1p1/AppData/dockge/stacks/immich/compose.yaml`            |
+| Environment Variables | `/media/nvme0n1p1/AppData/dockge/stacks/immich/.env`                    |
+| HW Transcode          | `/media/nvme0n1p1/AppData/dockge/stacks/immich/hwaccel.transcoding.yml` |
+| Machine Learning      | `/media/nvme0n1p1/AppData/dockge/stacks/immich/hwaccel.ml.yml`          |
 
-##### Database
+##### Immich Application
 
-- `../AppData/immich/pgdata`
-{ .no-bullets }
-
-##### Machine Learning
-
-- `../AppData/immich/model-cache`
-{ .no-bullets }
-
-##### Redis
-
-- `../AppData/immich/redis`
-{ .no-bullets }
-
-##### Server
-
-- `/media/Quick-Storage/Gallery/immich`
-{ .no-bullets }
-
-##### Photo Library
-
-- `/media/Quick-Storage/Gallery/immich/library`
-{ .no-bullets } 
+| Contents          | Path                                          |
+| :---------------- | :-------------------------------------------- |
+| Postgres Database | `/media/nvme0n1p1/AppData/immich/pgdata`      |
+| ML Model Cache    | `/media/nvme0n1p1/AppData/immich/model-cache` |
+| Immich Redis      | `/media/nvme0n1p1/AppData/immich/redis`       |
+| Immich Server     | `/media/Quick-Storage/Gallery/immich`         |
+| Photo Library     | `/media/Quick-Storage/Gallery/immich/library` |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

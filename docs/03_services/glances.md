@@ -59,17 +59,17 @@ _An Eye on Your System_
 
 ##### Pi 4B Server
 
-- `/opt/stacks/glances/glances.conf`
-{ .no-bullets }
-- `/opt/stacks/glances/compose.yaml`
-{ .no-bullets }
+| Contents              | Path                               |
+| :-------------------- | :--------------------------------- |
+| Glances Configuration | `/opt/stacks/glances/glances.conf` |
+| Docker Compose File   | `/opt/stacks/glances/compose.yaml` |
 
 ##### ZimaOS NAS
 
-- `../AppData/glances/glances.conf`
-{ .no-bullets }
-- `../AppData/dockge/stacks/glances/compose.yaml`
-{ .no-bullets }
+| Contents              | Path                                                          |
+| :-------------------- | :------------------------------------------------------------ |
+| Glances Configuration | `/media/nvme0n1p1/AppData/glances/glances.conf`               |
+| Docker Compose File   | `/media/nvme0n1p1/AppData/dockge/stacks/glances/compose.yaml` |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

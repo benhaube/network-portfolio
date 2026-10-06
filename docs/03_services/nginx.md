@@ -47,7 +47,7 @@ _Network Documentation_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:  N/A
+: N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -59,20 +59,11 @@ _Network Documentation_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Docker Deploy
-
-- `../AppData/dockge/stacks/network-documentation-portfolio`
-{ .no-bullets }
-
-##### Nginx Server Config
-
-- `../AppData/Network-Portfolio/default.conf`
-{ .no-bullets }
-
-##### Site Data
-
-- `../AppData/Network-Portfolio/site`
-{ .no-bullets }
+| Contents            | Path                                                                    |
+| :------------------ | :---------------------------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/network-portfolio/compose.yaml` |
+| Nginx Config File   | `/media/nvme0n1p1/AppData/Network-Portfolio/default.conf`               |
+| Site Data           | `/media/nvme0n1p1/AppData/Network-Portfolio/site`                       |
 
 #### :symbols-file-cog:&ensp;Config File
 

@@ -60,13 +60,10 @@ _Inventory Management_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Docker Deploy
-
-:    `../AppData/dockge/stacks/homebox`
-
-##### App Data
-
-:    `../AppData/homebox-data/`
+| Contents            | Path                                                          |
+| :------------------ | :------------------------------------------------------------ |
+| Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/homebox/compose.yaml` |
+| Application Data    | `/media/nvme0n1p1/AppData/homebox-data/`                      |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 

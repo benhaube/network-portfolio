@@ -69,6 +69,14 @@ _Docker Management_
 
 ### :symbols-settings:&ensp;Configuration
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents            | Path                       |
+| :------------------ | :------------------------- |
+| Docker Compose File | `/opt/dockge/compose.yaml` |
+| Dockge Database     | `/opt/dockge/data`         |
+| Docker Stacks       | `/opt/stacks`              |
+
 #### :symbols-monitor-arrow-down-corner:&ensp;Install Dockge
 
 1.  Create the directories that store your stacks and stores Dockge's stack:

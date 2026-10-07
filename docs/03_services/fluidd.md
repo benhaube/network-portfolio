@@ -61,6 +61,8 @@ _The Klipper UI_
 
 #### :symbols-monitor-arrow-down-corner:&ensp;Install
 
+Fluidd is installed on the Creality K1C via the [Helper-Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ external-link } and requires the Nginx server and Moonraker API to be installed first. Follow the [Fluidd install](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/fluidd-k1/){ external-link } instructions from the Helper-Script documentation.
+
 ``` bash title="Setup Creality Helper Script" linenums="1"
 --8<-- "install-helper-script.sh"
 ```

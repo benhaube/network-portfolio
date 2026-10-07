@@ -15,7 +15,7 @@
 }
 /* Reproduce keyboard plugin style from Zensical */
 .md-typeset kbd {
-    background: transparent;
+    background: var(--md-default-bg-color);
     border-radius: .2rem;
     box-shadow: 0 0 0 .05rem var(--md-typeset-kbd-border-color),0 .15rem 0 var(--md-typeset-kbd-border-color);
     color: var(--md-default-fg-color);

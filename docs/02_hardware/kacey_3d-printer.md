@@ -133,7 +133,7 @@ _Modified Creality K1C_
 
         - Replaces the standard nozzle wiping brush at the back of the build plate.
 
-    :   Bento Box v2.1
+    :   [Bento Box v2.1](../3d_printing/bento_box.md)
 
         - Adds a HEPA & activated carbon based air scrubber for the chamber; reducing harmfull PM2.5 particulate matter and VOCs emmitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
 

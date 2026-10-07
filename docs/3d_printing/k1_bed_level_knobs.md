@@ -7,8 +7,8 @@ hide:
   - toc
 ---
 
-![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=250 }
-![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=250 }
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=250 .no-shadow }
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=250 .no-shadow }
 
 # Manual Bed Leveling Mod
 
@@ -19,7 +19,7 @@ _Fine Tune Your Bed Level_
 !!! question
 
     **Why do this?**
-    :   The K1 series does NOT have automatic bed leveling! This upgrade allows you to fine tune your bed level using the `screws_tilt_calculate` command in Fluidd. This method is superior to tooth skipping and the Creality method. It's quick, easy and accurate.
+    : The K1 series does NOT have automatic bed leveling! This upgrade allows you to fine tune your bed level using the `screws_tilt_calculate` command in Fluidd. This method is superior to tooth skipping and the Creality method. It's quick, easy and accurate.
 
 !!! links "Bed Leveling Kit"
 
@@ -129,30 +129,30 @@ _Fine Tune Your Bed Level_
 !!! note inline end 
 
     :symbols-waves-vertical:&ensp;**Preheating the Bed:**
-    :   Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade.
+    : Factory beds change shape when heated - you need to wait for it to stabilize. You can skip this if you have a Graphite Bed Upgrade.
 
 1.  [ ] Home the printer.
 2.  [ ] Preheat the bed to your normal bed temperature for 20 minutes _(60&deg;C for PLA)_.
 3.  [ ] Open up Fluidd or mainsail through Orca Slicer or by typing your printers IP address into your web browser with the appropriate port number appended.
 
-    | Interface { data-sort-method="none" } |  Port { data-sort-method="number" } |
-    | :---------------------------------- | :-------------------------------: |
-    | :services-fluidd:&ensp;Fluidd       |              `4408`               |
-    | :services-mainsail:&ensp;Mainsail   |              `4409`               |
+    | Interface { data-sort-method="none" } | Port { data-sort-method="number" } |
+    | :------------------------------------ | :--------------------------------: |
+    | :services-fluidd:&ensp;Fluidd         |               `4408`               |
+    | :services-mainsail:&ensp;Mainsail     |               `4409`               |
 
 4.  [ ] In the Fluidd console, type `SCREWS_TILT_CALCULATE` or click the handy macro.
 
 !!! question inline end 
 
     :symbols-clock:&ensp;**Minutes?**
-    :   15 min = &frac14; turn.
+    : 15 min = &frac14; turn.
 
 1. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction _(looking at it from the top down)_ and how far to turn each knob _(in minutes)_.
 
 <figure markdown="span">
   ![A screenshot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-light.png#only-light){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
   ![A screenshot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-dark.png#only-dark){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
-  <figcaption>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly 1&frasl;16 of a turn.</figcaption>
+<figcaption>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly 1&frasl;16 of a turn.</figcaption>
 </figure>
 
 <div class="glightbox-desc img-desc2">
@@ -179,12 +179,12 @@ _Fine Tune Your Bed Level_
 !!! warning
 
     **Factory Loadcell**
-    :   This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. It will run a macro that measures the accuracy of your bed mesh probe by repeatedly probing the same point. Most aftermarket probes are at least 10x more accurate than the factory load cells. It is highly recommended to upgrade before doing this modification in order to get the best results and minimize the chance of issues.
+    : This process is only as accurate as your probe. To get an idea of how accurate your probe is, you can type `PROBE_ACCURACY`. It will run a macro that measures the accuracy of your bed mesh probe by repeatedly probing the same point. Most aftermarket probes are at least 10x more accurate than the factory load cells. It is highly recommended to upgrade before doing this modification in order to get the best results and minimize the chance of issues.
 
 !!! failure "Error"
 
     **Error `key60`**
-    :   If you are doing this modification with the factory load cells _(bed mesh probe)_ and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
+    : If you are doing this modification with the factory load cells _(bed mesh probe)_ and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
 
 #### :symbols-link:&ensp;References and Resources
 

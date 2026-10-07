@@ -133,6 +133,10 @@ _Modified Creality K1C_
 
         - Replaces the standard nozzle wiping brush at the back of the build plate.
 
+    :   Bento Box v2.1
+
+        - Adds a HEPA & activated carbon based air scrubber for the chamber; reducing harmfull PM2.5 particulate matter and VOCs emmitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
+
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
 :    Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md). Update firmware manually with downloaded `*.img` file on a `FAT32` formatted USB stick. See [Force Downgrade Firmware](#force-downgrade-firmware) for information about rolling back to an older firmware version after a bad update.
@@ -325,7 +329,7 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
 
     !!! tip
 
-        Installing HelixScreen stops the stock Creality UI, and with it the backend **Creality Print** and the **Creality Cloud** app use — so those can no longer reach the printer. Fluidd, Mainsail, Moonraker uploads and HelixScreen’s own file browser are unaffected. 
+        Installing HelixScreen stops the stock Creality UI, and with it the backend **Creality Print** and the **Creality Cloud** app use — so those can no longer reach the printer. Fluidd, Mainsail, Moonraker uploads and HelixScreen’s own file browser are unaffected.
 
         Installs to `/usr/data/helixscreen/`, boot service at `/etc/init.d/S99helixscreen`.
 

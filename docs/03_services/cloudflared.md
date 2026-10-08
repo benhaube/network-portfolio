@@ -101,7 +101,7 @@ _Reverse-Proxy Server_
 --8<-- "cloudflared-pi-server.yml"
 ```
 
-1. Place the tunnel token in the `.env` file with the environment variable, `TOKEN`.
+1. Using Docker Secrets for the tunnel token. Place the tunnel token in the file, `./secrets/token.txt`, and ensure only the root user can read and write to the file using the command, `chmod 600 secrets/token.txt`.
 
 #### :symbols-server-nas:&ensp;ZimaOS NAS
 
@@ -109,4 +109,4 @@ _Reverse-Proxy Server_
 --8<-- "includes/code/yaml/cloudflared-zimaos-nas.yaml"
 ```
 
-1. Place the tunnel token in the `.env` file with the environment variable, `TOKEN`.
+1. Using Docker Secrets for the tunnel token. Place the tunnel token in the file, `./secrets/token.txt`, and ensure only the root user can read and write to the file using the command, `chmod 600 secrets/token.txt`.

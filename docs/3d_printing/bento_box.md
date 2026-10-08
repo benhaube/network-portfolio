@@ -2,7 +2,7 @@
 icon: symbols/air-vent
 title: Bento Box v2.1 Mod
 subtitle: Chamber Air Scrubber
-description: Adding a HEPA & activated carbon based air scrubber for the chamber; reducing harmfull PM2.5 particulate matter and VOCs emmitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
+description: Adding a HEPA & activated carbon based air scrubber for the chamber; reducing harmful PM2.5 particulate matter and VOCs emitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
 hide:
   - toc
 ---
@@ -19,7 +19,7 @@ _Chamber Air Scrubber_
 
 ## :symbols-info:&ensp;About
 
-The Bento box is a HEPA & activated carbon based air scrubber for the chamber; reducing harmfull PM2.5 particulate matter and VOCs emmitted during prints. This results in much healier air in your home during prints for both humans and pets. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
+The Bento box is a HEPA & activated carbon based air scrubber for the chamber; reducing harmful PM2.5 particulate matter and VOCs emitted during prints. This results in much healthier air in your home during prints for both humans and pets. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
 
 ### :symbols-receipt-text:&ensp;Bill of Materials
 

@@ -169,14 +169,14 @@ To send email notifications, the container needs to be configured with your SMTP
     ![Healthchecks add email integration](../assets/screenshots/healthchecks-email-integration-light.png#only-light){ width=600 }
     ![Healthchecks add email integration](../assets/screenshots/healthchecks-email-integration-dark.png#only-dark){ width=600 }
 
-2.  Click **Save Integration** to return to the Integrations tab, and click **Test** on your new integration to send a test notification. If your SMTP server is configured correctly, you will recieve a message in your email inbox. If you do not see a test notification, check your spam / junk folder and your SMTP configuration.
+2.  Click **Save Integration** to return to the Integrations tab, and click **Test** on your new integration to send a test notification. If your SMTP server is configured correctly, you will receive a message in your email inbox. If you do not see a test notification, check your spam / junk folder and your SMTP configuration.
 
     ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-light.png#only-light){ width=600 }
     ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-dark.png#only-dark){ width=600 }
 
 ##### Gotify
 
-[Gotify](gotify.md) is an open-source, self-hosted push notification service. If you use or plan on using Gotify, you can can integrate it with your Healtchecks account in few simple steps.
+[Gotify](gotify.md) is an open-source, self-hosted push notification service. If you use or plan on using Gotify, you can can integrate it with your Healthchecks account in few simple steps.
 
 1.  Log into your [Gotify instance](https://gotify.rac3r4life.online), go to **Apps**, and create a new application. Pick a descriptive name and short description. After creating the app, you can also upload an icon for it.
 2.  After you have created the application, copy its **application token**.

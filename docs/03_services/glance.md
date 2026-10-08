@@ -97,7 +97,7 @@ _Server Dashboard_
 
     !!! tip inline end
 
-        The secrets files remain unecrypted on the host file system. Ensure you restrict file permissions on the host files so they are only readable by `root` _(e.g., `chmod -R 600 secrets/`)_.
+        The secrets files remain unencrypted on the host file system. Ensure you restrict file permissions on the host files so they are only readable by `root` _(e.g., `chmod -R 600 secrets/`)_.
 
         Restarting the container with `#!bash docker compose restart` will not allow changes to the Docker secrets files to take affect. It is required to use `#!bash docker compose down` and `#!bash docker compose up -d`.
 

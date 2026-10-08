@@ -135,7 +135,7 @@ _Modified Creality K1C_
 
     :   [Bento Box v2.1](../3d_printing/bento_box.md)
 
-        - Adds a HEPA & activated carbon based air scrubber for the chamber; reducing harmfull PM2.5 particulate matter and VOCs emmitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
+        - Adds a HEPA & activated carbon based air scrubber for the chamber; reducing harmful PM2.5 particulate matter and VOCs emitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
@@ -236,7 +236,7 @@ _Modified Creality K1C_
     /tmp/local_ota_update_forced.sh /tmp/udisk/sda1/YOUR_FILE_NAME_HERE.img
     ```
 
-4.  **Wait:** Once you see `ota: stoped success`, the printer will reboot into the downgraded firmware.
+4.  **Wait:** Once you see `ota: stopped success`, the printer will reboot into the downgraded firmware.
 
 #### :symbols-file-terminal:&ensp;Creality Helper Script
 

@@ -21,7 +21,7 @@ hide:
 
 _Task Monitoring_
 
-[GitHub&ensp;:brands-github:](https://github.com/healthchecks/healthchecks){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](http://debian-vm.internal:8000/docs/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/healthchecks/healthchecks){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://healthchecks.rac3r4life.online/docs/){ .md-button .md-button--primary }
 
 ---
 
@@ -34,6 +34,15 @@ _Task Monitoring_
 
 : Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
 
+#### :symbols-activity:&ensp;Healthcheck Status
+
+- ![AppData Backup](https://healthchecks.rac3r4life.online/b/3/7a592da9-bc4e-44d8-bc9a-0c47854875fd.svg)
+{ .no-bullets }
+- ![Devices Backup](https://healthchecks.rac3r4life.online/b/3/632c4949-6b24-4943-90e0-e8cc92f59947.svg)
+{ .no-bullets }
+- ![Immich Backup](https://healthchecks.rac3r4life.online/b/3/f96a7e0b-d0cd-445e-b4c0-e81b145ce50c.svg)
+{ .no-bullets }
+
 #### :symbols-hash:&ensp;Port(s)
 
 - `2525` &mdash; _SMTP Server_
@@ -45,9 +54,12 @@ _Task Monitoring_
 
 #### :symbols-link-2:&ensp;URL / Access
 
-:    <http://debian-vm.internal:8000>
+- <https://healthchecks.rac3r4life.online>
+{ .no-bullets }
+- <http://debian-vm.internal:8000>
+{ .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials 
+#### :symbols-user-key:&ensp;Credentials
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -65,6 +77,14 @@ _Task Monitoring_
 
 --8<-- "includes/managed_by_dockge.md"
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents              | Path                                    |
+| :-------------------- | :-------------------------------------- |
+| Docker Compose File   | `/opt/stacks/healthchecks/compose.yaml` |
+| Environment Variables | `/opt/stacks/healthchecks/.env`         |
+| Database              | `db-data` _(Docker volume)_             |
+
 #### :symbols-container:&ensp;Container Deployment
 
 1.  Move the files `compose.yaml` and `.env` to the `/opt/stacks/healthchecks` directory.
@@ -74,7 +94,7 @@ _Task Monitoring_
     openssl rand -hex 32
     ```
 
-    ``` properties title="Example"
+    ``` properties title="Example (Not Actual Key)"
     SECRET_KEY=7b0028fdee7f5df6da9927feb8c42f62e7b993182b8837fe8ad269b6587e566a
     ```
 

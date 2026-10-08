@@ -7,17 +7,29 @@ services:
     environment:
       - POSTGRES_DB=$DB_NAME
       - POSTGRES_PASSWORD=$DB_PASSWORD
+    networks:
+      - healthchecks_default
+    healthcheck:
+      test: pg_isready -U postgres -d hc
+      interval: 30s
+      timeout: 5s
+      retries: 5
   web:
     image: healthchecks/healthchecks:latest
     restart: unless-stopped
     env_file:
-        - .env
+      - .env
+    networks:
+      - healthchecks_default
     ports:
-        - "8000:8000"
-        - "2525:2525"
+      - 8000:8000
+      - 2525:2525
     depends_on:
-        - db
-    command: bash -c 'while !</dev/tcp/db/5432; do sleep 1; done; uwsgi /opt/healthchecks/docker/uwsgi.ini'
-
+      - db
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 1; done; uwsgi
+      /opt/healthchecks/docker/uwsgi.ini'
 volumes:
-    db-data:
+  db-data: null
+networks:
+  healthchecks_default:
+    external: true

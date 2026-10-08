@@ -59,6 +59,15 @@ _The Klipper UI_
 
 ### :symbols-settings:&ensp;Configuration
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents             | Path                                |
+| :------------------- | :---------------------------------- |
+| Helper-Script        | `/usr/data/helper-script/helper.sh` |
+| Fluidd Data          | `/usr/data/fluidd/`                 |
+| Fluidd Config File   | `/usr/data/fluidd/config.json`      |
+| Printer Config Files | `/usr/data/printer-data/config/`    |
+
 #### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 Fluidd is installed on the Creality K1C via the [Helper-Script](https://guilouz.github.io/Creality-Helper-Script-Wiki/){ external-link } and requires the Nginx server and Moonraker API to be installed first. Follow the [Fluidd install](https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/fluidd-k1/){ external-link } instructions from the Helper-Script documentation.

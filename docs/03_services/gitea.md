@@ -81,12 +81,14 @@ _Git with a Cup of Tea_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-| Contents        | Path                                                                 |
-| :-------------- | :------------------------------------------------------------------- |
-| Gitea App Data  | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data`                  |
-| Repository Data | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/git/repositories` |
-| SSH Data        | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/ssh`              |
-| Runner Data     | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`           |
+| Contents            | Path                                                                 |
+| :------------------ | :------------------------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/compose.yaml`          |
+| Gitea Config File   | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/conf/app.ini`          |
+| Gitea App Data      | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data`                  |
+| Repository Data     | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/git/repositories` |
+| SSH Data            | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/ssh`              |
+| Runner Data         | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`           |
 
 #### :symbols-file-cog:&ensp;Config File
 

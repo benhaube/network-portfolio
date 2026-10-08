@@ -61,6 +61,16 @@ _Anti-Virus for ZimaOS_
 
 --8<-- "includes/managed_by_dockge.md"
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents              | Path                                                                   |
+| :-------------------- | :--------------------------------------------------------------------- |
+| Docker Compose File   | `/media/nvme0n1p1/AppData/dockge/stacks/clamav-dashboard/compose.yaml` |
+| ClamAV Server Data    | `/media/nvme0n1p1/AppData/dockge/stacks/clamav-dashboard/clamav`       |
+| ClamAV Dashboard Data | `/media/nvme0n1p1/AppData/dockge/stacks/clamav-dashboard/data`         |
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
 ``` yaml { .mono-title title="../AppData/dockge/stacks/clamav-dashboard/compose.yaml" linenums="1" }
 --8<-- "clamav-dashboard.yaml"
 ```

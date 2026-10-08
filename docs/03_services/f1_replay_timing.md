@@ -54,6 +54,15 @@ _All of the Data_
 
 --8<-- "includes/managed_by_dockge.md"
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents                   | Path                                                                   |
+| :------------------------- | :--------------------------------------------------------------------- |
+| Docker Compose File        | `/media/nvme0n1p1/AppData/dockge/stacks/f1-replay-timing/compose.yaml` |
+| Environment Variables File | `/media/nvme0n1p1/AppData/dockge/stacks/f1-replay-timing/.env`         |
+| Service Data               | `f1data` _(Docker volume)_                                             |
+| Service Cache              | `f1cache` _(Docker volume)_                                            |
+
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/f1-replay-timing/compose.yaml" linenums="1" }

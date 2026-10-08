@@ -66,6 +66,15 @@ _A Fancy Monitoring Tool_
 
 --8<-- "includes/managed_by_dockge.md"
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents            | Path                                   |
+| :------------------ | :------------------------------------- |
+| Docker Compose File | `/opt/stacks/uptime-kuma/compose.yaml` |
+| Application Data    | `/opt/stacks/uptime-kuma/data`         |
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
 ``` yaml { .mono-title title="/opt/stacks/uptime-kuma/compose.yaml" linenums="1" }
 --8<-- "uptime-kuma.yml"
 ```

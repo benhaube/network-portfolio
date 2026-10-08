@@ -1,7 +1,7 @@
 ---
 icon: services/healthchecks
 title: Healthchecks
-subtitle: Task Monitoring
+subtitle: Cron Monitoring
 description: Open-source cron job and background task monitoring service, written in Python & Django.
 status: new
 tags:
@@ -19,7 +19,7 @@ hide:
 
 # Healthchecks
 
-_Task Monitoring_
+_Cron Monitoring_
 
 [GitHub&ensp;:brands-github:](https://github.com/healthchecks/healthchecks){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://healthchecks.rac3r4life.online/docs/){ .md-button .md-button--primary }
 
@@ -61,10 +61,14 @@ _Task Monitoring_
 
 #### :symbols-user-key:&ensp;Credentials
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Healthchecks Admin"
     - Local Network&ensp;:symbols-move-right:&ensp;"Healthchecks User"
+-   2FA / MFA
+{ .no-bullets }
+    - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
+    - :symbols-clock:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

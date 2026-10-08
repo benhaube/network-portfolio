@@ -71,11 +71,21 @@ _Docker Management_
 
 #### :symbols-folder-git-2:&ensp;Data Directories
 
+##### Debian 13 Servers
+
 | Contents            | Path                       |
 | :------------------ | :------------------------- |
 | Docker Compose File | `/opt/dockge/compose.yaml` |
 | Dockge Database     | `/opt/dockge/data`         |
 | Docker Stacks       | `/opt/stacks`              |
+
+##### ZimaOS NAS
+
+| Contents            | Path                                                    |
+| :------------------ | :------------------------------------------------------ |
+| Docker Compose File | `/DATA/.casaos/apps/big-bear-dockge/docker-compose.yml` |
+| Dockge Database     | `/media/nvme0n1p1/AppData/dockge/data`                  |
+| Docker Stacks       | `/media/nvme0n1p1/AppData/dockge/stacks`                |
 
 #### :symbols-monitor-arrow-down-corner:&ensp;Install Dockge
 

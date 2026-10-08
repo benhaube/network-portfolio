@@ -54,6 +54,18 @@ _Provided by addr.tools_
 
 ### :symbols-settings:&ensp;Configuration
 
+!!! note 
+
+    The DDNS renewal script also contains the code required to send a push notification through the [Gotify](gotify.md#notifications){ data-preview } server whenever the WAN IP address changes.
+
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents        | Path                       |
+| :-------------- | :------------------------- |
+| Renewal Script  | `/jffs/scripts/ddns-start` |
+| TLS Certificate | `/jffs/.cert/cert.pem`     |
+| TLS Private Key | `/jffs/.cert/key.pem`      |
+
 #### :symbols-file-terminal:&ensp;Router Script
 
 1.  Create a script on the router in the `/jffs/scripts` directory to update the IP every time it changes:
@@ -63,10 +75,6 @@ _Provided by addr.tools_
     ```
 
 2.  Paste this code into the file, then save and close.
-
-    !!! note inline end
-
-        The `ddns-start` script also contains the code needed to send a WAN IP change notification to the [Gotify](gotify.md#notifications){ data-preview } server.
 
     ``` sh { .mono-title title="/jffs/scripts/ddns-start" linenums="1" hl_lines="5 13 14" }
     --8<-- "ddns-start.sh"

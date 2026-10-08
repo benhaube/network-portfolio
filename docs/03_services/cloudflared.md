@@ -101,6 +101,22 @@ _Reverse-Proxy Server_
 
 --8<-- "includes/managed_by_dockge.md"
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+##### Debian
+
+| Contents              | Path                                   |
+| :-------------------- | :------------------------------------- |
+| Docker Compose File   | `/opt/stacks/cloudflared/compose.yaml` |
+| Environment Variables | `/opt/stacks/cloudflared/.env`         |
+
+##### ZimaOS
+
+| Contents              | Path                                                              |
+| :-------------------- | :---------------------------------------------------------------- |
+| Docker Compose File   | `/media/nvme0n1p1/AppData/dockge/stacks/cloudflared/compose.yaml` |
+| Environment Variables | `/media/nvme0n1p1/AppData/dockge/stacks/cloudflared/.env`         |
+
 #### :symbols-file-code-corner:&ensp;Docker Compose Files
 
 ##### Debian Server

@@ -57,6 +57,16 @@ _Download Videos from YouTube_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents            | Path                                                                  |
+| :------------------ | :-------------------------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/yt-dlp-webui/compose.yaml`    |
+| Application Data    | `/media/nvme0n1p1/AppData/dockge/stacks/yt-dlp-webui/data`            |
+| Configuration File  | `/media/nvme0n1p1/AppData/dockge/stacks/yt-dlp-webui/data/config.yml` |
+
 #### :symbols-wrench:&ensp;Preparation
 
 1.  Create the configuration directory:
@@ -93,8 +103,6 @@ _Download Videos from YouTube_
 5.  Paste the JWT into the environment variable, `JWT_SECRET`, in your Docker compose file and restart the container.
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/yt-dlp-webui/compose.yaml" linenums="1" }
 --8<-- "yt-dlp.yml"

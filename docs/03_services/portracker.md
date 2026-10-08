@@ -62,6 +62,24 @@ _Port Monitoring & Discovery_
 
 --8<-- "includes/managed_by_dockge.md"
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+##### Pi 4B Server
+
+| Contents            | Path                                     |
+| :------------------ | :--------------------------------------- |
+| Docker Compose File | `/opt/stacks/portracker/compose.yaml`    |
+| Application Data    | `/opt/stacks/portracker/portracker-data` |
+
+##### ZimaOS NAS
+
+| Contents            | Path                                                     |
+| :------------------ | :------------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/dockge/stacks/portracker/compose.yaml` |
+| Application Data    | `/media/nvme0n1p1/dockge/stacks/portracker/data`         |
+
+#### :symbols-file-code-corner:&ensp;Docker Compose File
+
 ##### Pi 4B Server
 
 ``` yaml { .mono-title title="/opt/stacks/portracker/compose.yaml" linenums="1" }

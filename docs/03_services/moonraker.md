@@ -53,6 +53,15 @@ _The Klipper Web API_
 
 ### :symbols-settings:&ensp;Configuration
 
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents              | Path                                          |
+| :-------------------- | :-------------------------------------------- |
+| Helper-Script         | `/usr/data/helper-script/helper.sh`           |
+| Moonraker Data        | `/usr/data/moonraker/`                        |
+| Printer Config Files  | `/usr/data/printer-data/config/`              |
+| Moonraker Config File | `/usr/data/printer-data/config/moonraker.cfg` |
+
 #### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 ``` bash title="Setup Creality Helper Script" linenums="1"

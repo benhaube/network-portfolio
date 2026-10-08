@@ -162,20 +162,22 @@ _Server Dashboard_
 
         [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
-| Contents | Path                                |
-| :------- | :---------------------------------- |
-| Stack    | `/opt/stacks/glance`                |
-| Secrets  | `/opt/stacks/glance/secrets`        |
-| Assets   | `/opt/stacks/glance/assets`         |
-| Config   | `/opt/stacks/glance/config`         |
-| Pages    | `/opt/stacks/glance/config/pages`   |
-| Widgets  | `/opt/stacks/glance/config/widgets` |
+| Contents                   | Path                                    |
+| :------------------------- | :-------------------------------------- |
+| Docker Compose File        | `/opt/stacks/glance/compose.yaml`       |
+| Environment Variables File | `/opt/stacks/glance/.env`               |
+| Docker Secrets             | `/opt/stacks/glance/secrets`            |
+| Glance Config File         | `/opt/stacks/glance/config/glance.yml`  |
+| Dynacat Config File        | `/opt/stacks/glance/config/dynacat.yml` |
+| Glance Assets              | `/opt/stacks/glance/assets`             |
+| Glance Pages               | `/opt/stacks/glance/config/pages`       |
+| Glance Widgets             | `/opt/stacks/glance/config/widgets`     |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="/opt/stacks/glance/docker-compose.yml" linenums="1" }
 --8<-- "glance-compose.yml"
@@ -189,7 +191,7 @@ _Server Dashboard_
 6. **Optional:** "Main" tracks qualifying sessions and races _(inc. sprints)_. "Race" tracks **only** races.
 7. Changed the Docker image to **Dynacat**, a fork of Glance with added features.
 
-#### :symbols-file-cog:&ensp;Glance Config File
+#### :symbols-file-cog:&ensp;Configuration Files
 
 ##### Dynacat
 

@@ -42,7 +42,7 @@
 *[DoT]: DNS over TLS
 *[DR]: Disaster Recovery
 *[EDR]: Endpoint Detection and Response
-*[EMF]: Electro Magentic Field
+*[EMF]: Electro Magnetic Field
 *[eMMC]: embedded MultiMedia Card
 *[EXT4]: Fourth Extended Filesystem
 *[F1]: Formula 1 (Racing Series)
@@ -73,6 +73,7 @@
 *[GUID]: Globally Unique Identifier
 *[HA]: High Availability
 *[HDD]: Hard Drive Disk
+*[HEPA]: High Efficiency Particulate Air
 *[HSI]: Host Security ID
 *[HSL]: Hue, Saturation, Lightness
 *[HTML]: Hyper Text Markup Language
@@ -141,8 +142,8 @@
 *[NICs]: Network Interface Cards
 *[NSP]: Network Security Policy
 *[NTP]: Network Time Protocol
-*[NVM]: Non-Volitile Memory
-*[NVMe]: Non-Volitile Memory Express
+*[NVM]: Non-volatile Memory
+*[NVMe]: Non-volatile Memory Express
 *[OLED]: Organic Light Emitting Diode
 *[OOM]: Out of Memory
 *[OS]: Operating System
@@ -157,6 +158,7 @@
 *[PIN]: Personal Identification Number
 *[PING]: Pinging involves sending an ICMP echo request to the target host and waiting for an ICMP echo reply.
 *[PLA]: Polylactic Acid
+*[PM2.5]: Particulate Matter (2.5 microns or smaller)
 *[PNG]: Portable Network Graphics
 *[QEMU]: The Quick Emulator
 *[QoS]: Quality of Service
@@ -170,7 +172,7 @@
 *[RGBW]: Red Green Blue White
 *[RHEL]: Red Hat Enterprise Linux
 *[ROM]: Read-Only Memory
-*[RPC]: Remote Proceedure Call
+*[RPC]: Remote Procedure Call
 *[RTO]: Recovery Time Objective
 *[SAML]: Security Assertion Markup Language
 *[SAN]: Storage Area Network
@@ -224,12 +226,14 @@
 *[UTF]: Unicode Transformation Format
 *[UUID]: Universally Unique Identifier
 *[vCPU]: Virtual Central Processing Unit
-*[vCPUs]: Virtual Central Pricessing Units
+*[vCPUs]: Virtual Central Processing Units
 *[VDI]: Virtual Disk Image
 *[VLAN]: Virtual Local Area Network
 *[VLANs]: Virtual Local Area Networks
 *[VM]: Virtual Machine
 *[VNC]: Virtual Network Computing
+*[VOC]: Volatile Organic Compound
+*[VOCs]: Volatile Organic Compounds
 *[VPC]: Virtual Private Cloud
 *[VPN]: Virtual Private Network
 *[VPNs]: Virtual Private Networks

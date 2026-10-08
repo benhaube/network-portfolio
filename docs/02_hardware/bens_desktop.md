@@ -172,6 +172,60 @@ _High-Performance Desktop PC_
 
 :   The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd. With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time. Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
+#### :symbols-message-square-dot:&ensp;Push Notifications
+
+:   To recieve push notifications from the self-hosted [Goitfy](../03_services/gotify.md) server there is a lightweight, Python powered Systemd service available that uses the [Dunst](https://dunst-project.org/){external-link} notification daemon to integrate with the KDE Plasma desktop environment. No native RPM package exists, so we need to clone the GitHub code repository an and build it from source.
+
+    [Gotify-Dunst&ensp;:brands-github:](https://github.com/ztpnk/gotify-dunst){ .md-button }
+
+##### Features
+
+- Receive notifications via WebSocket
+- Display notifications with Dunst _(notify-send)_
+- Notification priority adopted from Gotify
+- Automatically fetch application icons
+
+##### Installation
+
+1.  Install the required dependencies using the `dnf` package manager.
+
+    ``` bash
+    sudo dnf install -y git make libnotify python3-websocket-client
+    ```
+
+2.  Clone the GitHub code repository.
+
+    ``` bash
+    git clone git@github.com:ztpnk/gotify-dunst.git
+    cd gotify-dunst/
+    ```
+
+3.  Compile and install the service.
+
+    ``` bash
+    sudo make install
+    ```
+
+4.  Copy the configuration file, `gotify-dunst.conf`, to the configuration directory, then enter the Gotify server address and client token.
+
+    ``` bash
+    cp gotify-dunst.conf ~/.config/gotify-dunst/
+    nano ~/.config/gotify-dunst/gotify-dunst.conf
+    ```
+
+    ``` cfg title="Example"
+    [server]
+    ssl=true
+    domain=push.example.com
+    token=C2Un.92TZBzsukg
+    ```
+
+5.  Enable the Systemd service.
+
+    ``` bash
+    systemctl --user enable --now gotify-dunst.service
+    ```
+
 #### :symbols-square-terminal:&ensp;SSH Client
 
 ##### Bitwarden Key Agent
@@ -184,9 +238,10 @@ _High-Performance Desktop PC_
 
 #### :symbols-folder-tree:&ensp;ZimaOS NAS Mounts
 
-:   On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files _(e.g., photos / code)_. Other benefits from the switch to NFS include full compatibility for file ownership and permissions and compatibility for sym-links.
-
-:   The `rsync` command in the backup script has been modified to reflect this change. This change only applies to PCs using the **Linux OS**. The Windows and Android clients still utilize SMB with multi-chanel enabled. See the ["Clients"](../03_services/nfs.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
+- On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files _(e.g., photos / code)_. Other benefits from the switch to NFS include full compatibility for file ownership and permissions and compatibility for sym-links.
+{ .no-bullets }
+- The `rsync` command in the backup script has been modified to reflect this change. This change only applies to PCs using the **Linux OS**. The Windows and Android clients still utilize SMB with multi-chanel enabled. See the ["Clients"](../03_services/nfs.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
+{ .no-bullets }
 
 #### :symbols-file-terminal:&ensp;Backup Script
 

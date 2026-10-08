@@ -73,6 +73,8 @@ _Server Monitoring_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-key-round:&ensp;Generate API Tokens
 
 :    Run the following command in a terminal on a client machine to generate API tokens.
@@ -86,8 +88,6 @@ _Server Monitoring_
     1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
 
 #### :symbols-file-code-corner:&ensp;Docker Compose Files
-
---8<-- "includes/managed_by_dockge.md"
 
 ##### Pi 4B Server _(Hub)_
 

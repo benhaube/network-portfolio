@@ -56,6 +56,10 @@ _NTP Server_
 
 ### :symbols-settings:&ensp;Configuration
 
+!!! info
+
+    The **"NTP Director"** feature on the **ASUS RT-BE92U** wireless router is enabled. This ensures network clients without the ability to change their network time settings are forced to use the Chrony server. This works by intercepting and redirecting all outbound packets on port `123`, so all servers and clients on the network have a single source of truth for time synchronization.
+
 #### :symbols-server:&ensp;Server
 
 ``` nt { .mono-title title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1" }

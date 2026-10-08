@@ -4,13 +4,11 @@ services:
     image: cloudflare/cloudflared:latest
     restart: unless-stopped
     command: tunnel run
-    secrets:
-      - token
     networks:
       - it-tools_default
       - beszel_default
     environment:
-      - TUNNEL_TOKEN=$${secret:token}  # (1)!
+      - TUNNEL_TOKEN=${TOKEN}
       - TUNNEL_METRICS=0.0.0.0:60123
     healthcheck:
       test:
@@ -21,9 +19,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-secrets:
-  token:
-    file: ./secrets/token.txt
 networks:
   it-tools_default:
     external: true

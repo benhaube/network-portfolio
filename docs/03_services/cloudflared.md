@@ -50,6 +50,11 @@ _Reverse-Proxy Server_
 
 #### :symbols-route:&ensp;Routes
 
+##### Debian Server
+
+- <https://healthchecks.rac3r4life.online>
+{ .no-bullets }
+
 ##### Pi 4B Server
 
 - <https://it-tools.rac3r4life.online>
@@ -86,27 +91,32 @@ _Reverse-Proxy Server_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name      | Image                           | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :------------------------------ | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
+| Host Device                                                            | Method                                    | Container Name      | Image                           | Port(s) |
+| :--------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :------------------------------ | :------ |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
 
 ### :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-server:&ensp;Pi 4B Server
+#### :symbols-file-code-corner:&ensp;Docker Compose Files
+
+##### Debian Server
+
+``` yaml { .mono-title title="/opt/stacks/cloudflared/compose.yaml" linenums="1" }
+--8<-- "cloudflared-debian-vm.yaml"
+```
+
+##### Pi 4B Server
 
 ``` yaml { .mono-title title="/opt/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "cloudflared-pi-server.yml"
 ```
 
-1. Using Docker Secrets for the tunnel token. Place the tunnel token in the file, `./secrets/token.txt`, and ensure only the root user can read and write to the file using the command, `chmod 600 secrets/token.txt`.
-
-#### :symbols-server-nas:&ensp;ZimaOS NAS
+##### ZimaOS NAS
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "includes/code/yaml/cloudflared-zimaos-nas.yaml"
 ```
-
-1. Using Docker Secrets for the tunnel token. Place the tunnel token in the file, `./secrets/token.txt`, and ensure only the root user can read and write to the file using the command, `chmod 600 secrets/token.txt`.

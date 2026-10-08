@@ -4,7 +4,8 @@ services:
     image: cloudflare/cloudflared:latest
     restart: unless-stopped
     command: tunnel run
-    network_mode: host
+    networks:
+      - healthchecks_default
     environment:
       - TUNNEL_TOKEN=${TOKEN}
       - TUNNEL_METRICS=0.0.0.0:60123
@@ -17,3 +18,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+networks:
+  healthchecks_default:
+    external: true

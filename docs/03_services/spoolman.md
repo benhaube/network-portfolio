@@ -55,6 +55,8 @@ _Filament Inventory Management_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                           |
@@ -64,14 +66,12 @@ _Filament Inventory Management_
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
 
---8<-- "includes/managed_by_dockge.md"
-
 ``` yaml { .mono-title title="../AppData/dockge/stacks/spoolman/compose.yaml" }
 --8<-- "spoolman.yml"
 ```
 
-1. Also available at [Docker Hub](https://hub.docker.com/r/donkieyo/spoolman){ external-link }:&ensp;`donkieyo/spoolman:latest`
-2. Mount the host machine's `./data` directory into the container's `/home/app/.local/share/spoolman` directory.
-3. Do _NOT_ modify this line!
-4. Map the host machine's port `7912` to the container's port `8000`.
-5. Optional, defaults to UTC.
+#### :symbols-file-type-corner:&ensp;Environment Variables File
+
+``` properties { .mono-title title="../AppData/dockge/stacks/spoolman/.env" }
+--8<-- "spoolman.env"
+```

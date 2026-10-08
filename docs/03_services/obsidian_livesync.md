@@ -61,6 +61,8 @@ _Sync with CouchDB_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                                    |
@@ -70,8 +72,6 @@ _Sync with CouchDB_
 | Configuration File  | `/media/nvme0n1p1/AppData/obsidian-livesync/data/local.ini`             |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/obsidian-livesync/compose.yaml" linenums="1" }
 --8<-- "obsidian-livesync.yml"

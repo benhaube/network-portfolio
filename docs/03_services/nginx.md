@@ -57,6 +57,8 @@ _Network Documentation_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                                    |
@@ -75,8 +77,6 @@ _Network Documentation_
 2. Redirect server error pages to the static page `/50x.html`
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/network-documentation-portfolio/compose.yaml" linenums="1" }
 --8<-- "nginx.yml"

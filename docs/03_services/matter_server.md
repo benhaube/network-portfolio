@@ -56,6 +56,8 @@ _Based on Matter.js_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                     |
@@ -64,8 +66,6 @@ _Based on Matter.js_
 | Matter Server Data  | `/opt/matter-server/data`                |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="/opt/stacks/matter-server/compose.yaml" } 
 --8<-- "matter-server.yaml"

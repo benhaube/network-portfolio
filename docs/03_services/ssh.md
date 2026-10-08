@@ -90,14 +90,14 @@ _Secure Shell_
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :symbols-server:&ensp;Servers
-
 !!! tip 
 
     **New Session Notification:**
     :    The SSH servers on the local network have **email & push** notifications configured to notify in case of unwanted access.<br>
 
         [SSH Login Notification&ensp;:symbols-message-square-warning:](../linux_tutorials/setup_ssh_login_notification.md){ .md-button }
+
+#### :symbols-server:&ensp;Servers
 
 ##### SSH Config File
 

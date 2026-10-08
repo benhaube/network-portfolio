@@ -94,6 +94,8 @@ _File Synchronization_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
 
 :    :brands-fedora:&ensp;Fedora / RHEL:
@@ -131,10 +133,6 @@ _File Synchronization_
     [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
-##### ZimaOS NAS
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/syncthing/compose.yaml" linenums="1" }
 --8<-- "syncthing-zima.yml"

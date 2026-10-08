@@ -55,6 +55,8 @@ _An Eye on Your System_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
 ##### Pi 4B Server
@@ -72,8 +74,6 @@ _An Eye on Your System_
 | Docker Compose File   | `/media/nvme0n1p1/AppData/dockge/stacks/glances/compose.yaml` |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ##### Pi 4B Server
 

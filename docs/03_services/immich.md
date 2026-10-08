@@ -64,6 +64,8 @@ _Bye Bye, Google Photos_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
 ##### Docker Deploy
@@ -86,8 +88,6 @@ _Bye Bye, Google Photos_
 | Photo Library     | `/media/Quick-Storage/Gallery/immich/library` |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/immich/compose.yaml" linenums="1" }
 --8<-- "immich.yml"

@@ -62,6 +62,16 @@ _Centralized Network Visibility_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
+#### :symbols-folder-git-2:&ensp;Data Directories
+
+| Contents            | Path                                                 |
+| :------------------ | :--------------------------------------------------- |
+| Docker Compose File | `/media/nvme0n1p1/AppData/netalertx/compose.yaml`    |
+| Configuration File  | `/media/nvme0n1p1/AppData/netalertx/config/app.conf` |
+| Database File       | `/media/nvme0n1p1/AppData/netalertx/db/app.db`       |
+
 #### :symbols-puzzle:&ensp;Loaded Plugins
 
 | Plugin ID   | Category       | Description { data-sort-method="none" }      |              Required { data-sort-reverse }              |
@@ -87,14 +97,6 @@ _Centralized Network Visibility_
 | `UI`        | System         | User interface specific settings             | <span aria-label="Yes" role="img">:symbols-check:</span> |
 | `VNDRPDT`   | System         | MAC address vendor database update           |                                                          |
 
-#### :symbols-folder-git-2:&ensp;Data Directories
-
-| Contents            | Path                                                 |
-| :------------------ | :--------------------------------------------------- |
-| Docker Compose File | `/media/nvme0n1p1/AppData/netalertx/compose.yaml`    |
-| Configuration File  | `/media/nvme0n1p1/AppData/netalertx/config/app.conf` |
-| Database File       | `/media/nvme0n1p1/AppData/netalertx/db/app.db`       |
-
 #### :symbols-svg:&ensp;Custom Device Icons
 
 The NetAlertX service allows users to add custom device and property SVG icons through the settings, but they need to be base64 encoded first. Below is a file containing icons from the open-source Lucide project that are already base64 encoded.
@@ -104,8 +106,6 @@ The NetAlertX service allows users to add custom device and property SVG icons t
 ```
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/netalertx/compose.yaml" linenums="1" }
 --8<-- "netalertx.yaml"

@@ -60,13 +60,13 @@ _Network File System_
 
 ### :symbols-settings:&ensp;Configuration
 
-#### :symbols-server:&ensp;Server
-
-##### Enable Service
-
 !!! zima "ZimaOS&ensp;&ge;&ensp;v1.6.2"
 
     After upgrading to [ZimaOS v1.6.2](https://github.com/IceWhaleTech/ZimaOS/releases/tag/1.6.2){ external-link } the NFS service needs to be enabled manually with the following commands. All newer versions have the NFS server disabled by default to prevent unwanted file system access.
+
+#### :symbols-server:&ensp;Server
+
+##### Enable Service
 
 ``` bash linenums="1"
 sudo systemctl enable nfs-server

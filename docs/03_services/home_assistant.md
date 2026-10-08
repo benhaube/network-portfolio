@@ -54,6 +54,8 @@ _Awaken Your Home_
 
 ### :symbols-settings:&ensp;Configuration
 
+--8<-- "includes/managed_by_dockge.md"
+
 #### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                      |
@@ -62,8 +64,6 @@ _Awaken Your Home_
 | Application Data    | `/home-assistant-container`               |
 
 #### :symbols-file-code-corner:&ensp;Docker Compose File
-
---8<-- "includes/managed_by_dockge.md"
 
 ``` yaml { .mono-title title="/opt/stacks/home-assistant/compose.yaml" linenums="1" }
 --8<-- "home-assistant.yml"

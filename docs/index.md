@@ -317,7 +317,7 @@ hide:
         [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life){ .md-button }
 
 [:symbols-air-vent:&ensp;Bento Box 2.1 Mod](3d_printing/bento_box.md)
-: Adding a HEPA & activated carbon based air scrubber for the chamber; reducing harmfull PM2.5 particulate matter and VOCs emitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
+: Adding a HEPA & activated carbon based air scrubber for the chamber; reducing harmful PM2.5 particulate matter and VOCs emitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
 
 [:symbols-settings:&ensp;Manual Bed Leveling Mod](3d_printing/k1_bed_level_knobs.md) 
 : Installing a bed leveling modification on the [Creality K1C](02_hardware/kacey_3d-printer.md).

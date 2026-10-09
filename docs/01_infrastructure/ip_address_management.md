@@ -70,7 +70,11 @@ _Organized IP Address Space_
 
 ## :symbols-waypoints:&ensp;VPN Servers / Clients
 
+<!-- lint: off heading.level-skip -->
+
 #### :services-wireguard:&ensp;WireGuard @ ASUS Router
+
+<!-- lint: on heading.level-skip -->
 
 | Client                                     | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Endpoint                    |
 | :----------------------------------------- | :--------------------------------- | :---------------------------------------- | :-------------------------- |

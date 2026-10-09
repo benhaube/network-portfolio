@@ -18,6 +18,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off document.first-heading-h1 -->
+
 ![Custom icon for my server rack made in Inkscape](../assets/icons/10-in-rack.svg){ width=200 }
 
 !!! info "Server Rack Build: Dec, 2025&ensp;:symbols-move-right:&ensp;Jan, 2026"

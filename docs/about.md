@@ -40,7 +40,7 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 
 :    From earning my [CompTIA](https://www.comptia.org/en-us/){ external-link } _(A+ & Linux+)_ to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
 
-## :symbols-motor-racing-helmet:&ensp;Beyond the Terminal
+## :symbols-motor-racing-helmet:&ensp;Beyond the Terminal&ensp;:symbols-printer-3d-nozzle:
 
 When I’m not hardening my network or managing services, you can usually find me...
 

@@ -147,7 +147,7 @@ _Modified Creality K1C_
 
 :    Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository, `creality-K1C-klipper-backup`. After every factory reset and reinstall of the git backup utility you cannot continue backing up to the same repository. Instead of creating a new repository we create a new branch in the same repository named by the date of the factory reset. The current default branch is `reset-09-13`. In addition to the git repository backup we use the printer's built-in backup scripts to create `.tar.gz` archives of the Klipper configuration files and the Moonraker database. These archives are stored on the [ZimaOS NAS](zimaos_nas.md) in the `/media/Quick-Storage/Backup/k1c-a71e` directory, and they can be restored using the same built-in backup scripts. This is the recommended way to get the printer restored after a factory reset because it is the faster, more comprehensive method.
 
-#### :symbols-calendar-clock:&ensp;Change Date & Time
+#### :symbols-calendar-clock:&ensp;Change Date & Time { #change-date-time }
 
 :    In some cases date and time are not correct and defined by default to `Sun Mar 1 13:29:37 CET 2020`. This guide explains how to set the correct date and time on your printer based on your time zone. This procedure must be repeated after restoring the printer to factory settings or if you update the firmware.
 

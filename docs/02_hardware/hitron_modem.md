@@ -14,6 +14,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide 'globe' icon](../assets/icons/globe.svg){ width=200 }
 
 # Hitron Modem

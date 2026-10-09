@@ -12,6 +12,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide 'smartphone' icon](../assets/icons/smartphone.svg){ width=200 }
 
 # Ben's Smartphone

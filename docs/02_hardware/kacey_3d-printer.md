@@ -14,6 +14,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Custom 3D-printer nozzle icon using Lucide design guidelines](../assets/icons/printer-3d-nozzle.svg){ width=200 }
 
 # Kacey 3D-Printer

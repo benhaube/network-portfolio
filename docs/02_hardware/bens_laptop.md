@@ -15,6 +15,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide 'laptop-minimal' icon](../assets/icons/laptop-minimal.svg){ width=200 }
 
 # Ben's Laptop

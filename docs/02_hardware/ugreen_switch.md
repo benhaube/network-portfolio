@@ -14,6 +14,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide 'ethernet-port' icon](../assets/icons/ethernet-port.svg){ width=200 }
 
 # Ugreen Switch
@@ -39,7 +41,7 @@ _Model UM106X_
 
 #### :symbols-plug:&ensp;Power Source
 
-:  Wall wart _(12.0V / 1.0A)_
+: Wall wart _(12.0V / 1.0A)_
 
 #### :symbols-circuit-board:&ensp;Specs
 

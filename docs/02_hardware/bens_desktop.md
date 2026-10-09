@@ -15,6 +15,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide 'pc-case' icon](../assets/icons/pc-case.svg){ width=200 }
 
 # Ben's Workstation

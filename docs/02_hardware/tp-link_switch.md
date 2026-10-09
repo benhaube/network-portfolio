@@ -14,6 +14,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide 'ethernet-port' icon](../assets/icons/ethernet-port.svg){ width=200 }
 
 # TP-Link Switch
@@ -39,7 +41,7 @@ _Model SG105_
 
 #### :symbols-plug:&ensp;Power Source
 
-:  Wall Wart _(5V / 0.6A)_
+: Wall Wart _(5V / 0.6A)_
 
 #### :symbols-circuit-board:&ensp;Specs
 

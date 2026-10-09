@@ -17,6 +17,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide `server` icon](../assets/icons/server.svg){ width=200 }
 
 # Pi Zero 2W Server

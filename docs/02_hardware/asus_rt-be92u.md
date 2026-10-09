@@ -14,6 +14,8 @@ hide:
   - toc
 ---
 
+<!-- lint: off heading.level-skip -->
+
 ![Lucide 'router' icon](../assets/icons/router.svg){ width=200 }
 
 # ASUS RT-BE92U

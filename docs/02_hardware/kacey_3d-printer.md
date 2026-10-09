@@ -123,7 +123,7 @@ _Modified Creality K1C_
         - HelixScreen is a replacement UI for the printer's LCD touchscreen that can control many more functions of the 3D-printer. It integrates with the Moonraker API for its functions.
         - For more information about HelixScreen and help with configuration see the [documentation](https://helixscreen.org/installation/ "HelixScreen Docs"){ external-link }.
 
-    :symbols-printer-3d-nozzle:&ensp;**Hardware**
+    :symbols-wrench:&ensp;**Hardware**
 
     :   [Bed Leveling Knobs](../3d_printing/k1_bed_level_knobs.md)
 

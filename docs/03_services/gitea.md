@@ -101,3 +101,44 @@ _Git with a Cup of Tea_
 ``` yaml { .mono-title title="../AppData/dockge/stacks/gitea/compose.yaml" linenums="1" }
 --8<-- "gitea.yml"
 ```
+
+#### :symbols-svg:&ensp;Change Site Logo
+
+To build a custom logo and / or favicon; clone the Gitea source repository, replace `assets/logo.svg` and / or `assets/favicon.svg` and run the command `make generate-images`. The file, `assets/favicon.svg`, is used for the favicon only. This will update the output files listed below which you can then place in `./public/assets/img` on your server.
+
+| File                                       | Use Case                                             |
+| :----------------------------------------- | :--------------------------------------------------- |
+| `./public/assets/img/logo.svg`             | Site icon, app icon                                  |
+| `./public/assets/img/logo.png`             | Open Graph                                           |
+| `./public/assets/img/avatar_default.png`   | Default avatar image                                 |
+| `./public/assets/img/apple-touch-icon.png` | Used on iOS devices for bookmarks                    |
+| `./public/assets/img/favicon.svg`          | Favicon icon                                         |
+| `./public/assets/img/favicon.png`          | Fallback favicon for browsers that don't support SVG |
+
+#### :symbols-palette:&ensp;Gitea GitHub Theme
+
+The built-in themes are `gitea-light`, `gitea-dark`, and `gitea-auto` _(which automatically adapts to OS settings)_. The default theme can be changed via `DEFAULT_THEME` in the `[ui]` section of `app.ini`. Gitea also has support for user themes, which means every user can select which theme should be used. The list of themes a user can choose from can be configured with the `THEMES` value in the `[ui]` section of `app.ini`.
+
+[Gitea GitHub Theme&ensp;:brands-github:](https://github.com/lutinglt/gitea-github-theme){ .md-button }
+
+##### Install Themes
+
+1. Download the latest `theme-github.tar.gz` file from the "Releases" page.
+2. Extract the CSS files, and place them in the `./public/assets/css/` directory on the server.
+3. Add `<theme-name>` of your desired themes to the comma-separated list of setting `THEMES` in `app.ini`, or leave `THEMES` empty to allow all themes.
+
+    ``` ini title="Example"
+    --8<-- "gitea_app.ini:105:107"
+    ```
+
+#### :symbols-layout-template:&ensp;Gitea Mail Templates
+
+The `./templates/mail` folder allows changing the body of every mail of Gitea. Templates to override can be found in the `templates/mail` directory of Gitea source. Override by making a copy of the file under `./templates/mail` using a full path structure matching source.
+
+[Gitea Mail Templates&ensp;:brands-git:](https://gitea.kenanzhu.com/KenanZhu/GiteaMailTemplates){ .md-button }
+
+##### Installation
+
+1. **Choose a package** &ndash; Check your Gitea version with `gitea --version`, then select a template release from the [compatibility matrix](https://gitea.kenanzhu.com/KenanZhu/GiteaMailTemplates/src/branch/main/COMPATIBILITY.md#compatibility-matrix).
+2. **Copy onto server** &ndash; Copy the chosen theme's `mail/` contents into `./templates/mail/`, then restart Gitea. 
+3. **Confirm it works** &ndash; Trigger a notification that uses Gitea's mail templates, such as a password-reset email for a test account, and check its appearance and links. The administration test-email button does not use custom mail templates.

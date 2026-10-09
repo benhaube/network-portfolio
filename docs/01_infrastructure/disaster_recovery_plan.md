@@ -98,7 +98,7 @@ Encrypted backups of the Obsidian vaults, application data, local backup data, a
 - If the **Debian Server** is lost, the VDI is restored from the last known good snapshot stored on the [NFS](../03_services/nfs.md) / [SMB](../03_services/smb.md) Share. If the entire **ZimaOS** host is lost a backup is stored remotely using **Backblaze B2** cloud storage.
 { .no-bullets }
 
-### Node Failure &mdash; Caddy Reverse Proxy
+### Node Failure &mdash; Reverse Proxy
 
 #### Traffic Rerouting
 

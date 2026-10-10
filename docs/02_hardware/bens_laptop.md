@@ -182,7 +182,7 @@ _ThinkPad X1 Yoga_
 
 #### :symbols-message-square-dot:&ensp;Push Notifications
 
-:   To recieve push notifications from the self-hosted [Goitfy](../03_services/gotify.md) server there is a lightweight, Python powered Systemd service available that uses the [Dunst](https://dunst-project.org/){external-link} notification daemon to integrate with the KDE Plasma desktop environment. No native RPM package exists, so we need to clone the GitHub code repository an and build it from source.
+:   To receive push notifications from the self-hosted [Gotify](../03_services/gotify.md) server there is a lightweight, Python powered Systemd service available that uses the [Dunst](https://dunst-project.org/){external-link} notification daemon to integrate with the KDE Plasma desktop environment. No native RPM package exists, so we need to clone the GitHub code repository an and build it from source.
 
     [Gotify-Dunst&ensp;:brands-github:](https://github.com/ztpnk/gotify-dunst){ .md-button }
 

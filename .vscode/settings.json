@@ -14,11 +14,9 @@
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/cloudflared.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dockge-zima.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dockge.yaml",
-            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dynacat.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/f1-replay-timing.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/gitea.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-compose.yml",
-            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-formula1.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glances-pi-4b.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glances-zima.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/gotify.yml",
@@ -50,7 +48,18 @@
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/wireguard.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/yt-dlp.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/clamav-dashboard.yaml",
-            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/degoog.yaml"
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/degoog.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/matter-server.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/healthchecks-compose.yml"
+        ],
+        "https://raw.githubusercontent.com/not-first/glance-schema/master/schema.json": [
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dynacat.yml"
+        ],
+        "https://raw.githubusercontent.com/not-first/glance-schema/master/schema.json#/definitions/page": [
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-home.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-network.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-formula1.yml"
         ]
     },
     "files.associations": {
@@ -346,8 +355,6 @@
     "mermaid.themeCSS": "",
     "mermaid.theme": "dark",
     "yaml.disableSchemaDetection": [
-        "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/dynacat.yml",
-        "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-formula1.yml",
         "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ha-automations.yaml"
     ],
     "svg.preview.background": "editor"

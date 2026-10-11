@@ -117,33 +117,79 @@ _Primary DNS Server_
 
 #### :symbols-rotate-cw-clock:&ensp;Update Policy
 
-:   The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically. Manual OS updates can be applied with the `apt` package manager. Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_services/dockge.md).
+The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically. Manual OS updates can be applied with the `apt` package manager. Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_services/dockge.md).
 
-##### Manual Debian Updates
+##### Manual Updates
 
-:   To update Debian packages manually with the `apt` package manager use the following command:
+To update Debian packages manually with the `apt` package manager use the following command:
 
-    ``` bash linenums="1"
-    sudo apt update && sudo apt upgrade
-    ```
+``` bash linenums="1"
+sudo apt update && sudo apt upgrade
+```
 
 #### :symbols-fullscreen:&ensp;Snapshot Policy
 
-:   Perform external snapshots before making major changes. The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+Perform external snapshots before making major changes. The backup of the VDI and snapshots are also backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### :symbols-refresh-ccw-dot:&ensp;Recovery
 
-:   If the VM is corrupted there are external snapshots to roll back to. Also, on the main storage pool on the [ZimaOS NAS](zimaos_nas.md#data){ data-preview } in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file.
+If the VM is corrupted there are external snapshots to roll back to. Also, on the main storage pool on the [ZimaOS NAS](zimaos_nas.md#data){ data-preview } in the `/media/Quick_Storage/Backup/virsh-backups` directory there is a backup disk image and XML settings file.
 
-??? info
+#### :symbols-broom-sparkles:&ensp;Docker Cleanup
 
-    The **KVM / QEMU** hypervisor on ZimaOS only supports external snapshots.
+Over time the Docker container management system builds up a lot of stale data which can fill up the system drive. This data includes temporary cache, unused containers, dangling volumes, and old or outdated images. To keep the Docker system from accumulating too much unwanted data we have written a script to perform a Docker system cleanup, and the script is automated using Systemd unit files. The `docker-cleanup.sh` script will run weekly on Mondays at 05:00 UTC-5. Built into the script is a push notification sent through the [Gotify](../03_services/gotify.md) server to report cleanup success or failure as well as how much data was removed.
 
-    + To create an external snapshot, run the following command as `root`:
+1.  Place the `docker-cleanup.sh` Bash script in the `/opt/scripts` directory.
 
-        ``` bash linenums="1"
-        sudo virsh snapshot-create-as <vm_name> <snapshot-name> "External snapshot description" --disk-only --atomic
-        ```
+    ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" hl_lines="3 4" }
+    --8<-- "docker-cleanup_debian-vm.sh"
+    ```
+
+2.  Give restricted read permissions to the script to ensure only the `root` user can read the Gotify token. The script should be executable by all users and groups with read and write permissions for the `root` user only.
+
+    ``` bash
+    sudo chmod 711 /opt/scripts/docker-cleanup.sh
+
+    # Example
+    -rwx--x--x 1 root root 1089 Oct 10 14:19 docker-cleanup.sh
+    ```
+
+3.  Create the Systemd service unit file in the `/etc/systemd/system` directory.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/docker-cleanup.service" }
+    --8<-- "docker-cleanup.service"
+    ```
+
+4.  Create the Systemd timer unit file in the `/etc/systemd/system` directory.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/docker-cleanup.timer" }
+    --8<-- "docker-cleanup.timer"
+    ```
+
+5.  Reload Systemd to load the new unit files.
+
+    ``` bash
+    sudo systemctl daemon-reload
+    ```
+
+6.  Enable the Systemd timer unit.
+
+    ``` bash
+    sudo systemctl enable --now docker-cleanup.timer
+    ```
+
+7.  Run the Systemd service manually to test the script, and watch for the Gotify notification.
+
+    ``` bash
+    sudo systemctl start docker-cleanup.service
+    ```
+
+8.  Use either of the following commands to see the logs and check the status of the service.
+
+    ``` bash
+    sudo systemctl status docker-cleanup.service
+    sudo journalctl -u docker-cleanup.service
+    ```
 
 --8<-- "nerd-fonts.md"
 

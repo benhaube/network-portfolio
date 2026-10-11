@@ -308,6 +308,62 @@ The ZimaOS NAS is the main backup server for clients and other servers on the lo
     8 timers listed.
     ```
 
+#### :symbols-broom-sparkles:&ensp;Docker Cleanup
+
+Over time the Docker container management system builds up a lot of stale data which can fill up the system drive. This data includes temporary cache, unused containers, dangling volumes, and old or outdated images. To keep the Docker system from accumulating too much unwanted data we have written a script to perform a Docker system cleanup, and the script is automated using Systemd unit files. The `docker-cleanup.sh` script will run weekly on Mondays at 05:00 UTC-5. Built into the script is a push notification sent through the [Gotify](../03_services/gotify.md) server to report cleanup success or failure as well as how much data was removed.
+
+1.  Place the `docker-cleanup.sh` Bash script in the `/opt/scripts` directory.
+
+    ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" hl_lines="3 4" }
+    --8<-- "docker-cleanup_zima.sh"
+    ```
+
+2.  Give restricted read permissions to the script to ensure only the `root` user can read the Gotify token. The script should be executable by all users and groups with read and write permissions for the `root` user only.
+
+    ``` bash
+    sudo chmod 711 /opt/scripts/docker-cleanup.sh
+
+    # Example
+    -rwx--x--x 1 root root 1089 Oct 10 14:19 docker-cleanup.sh
+    ```
+
+3.  Create the Systemd service unit file in the `/etc/systemd/system` directory.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/docker-cleanup.service" }
+    --8<-- "docker-cleanup.service"
+    ```
+
+4.  Create the Systemd timer unit file in the `/etc/systemd/system` directory.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/docker-cleanup.timer" }
+    --8<-- "docker-cleanup.timer"
+    ```
+
+5.  Reload Systemd to load the new unit files.
+
+    ``` bash
+    sudo systemctl daemon-reload
+    ```
+
+6.  Enable the Systemd timer unit.
+
+    ``` bash
+    sudo systemctl enable --now docker-cleanup.timer
+    ```
+
+7.  Run the Systemd service manually to test the script, and watch for the Gotify notification.
+
+    ``` bash
+    sudo systemctl start docker-cleanup.service
+    ```
+
+8.  Use either of the following commands to see the logs and check the status of the service.
+
+    ``` bash
+    sudo systemctl status docker-cleanup.service
+    sudo journalctl -u docker-cleanup.service
+    ```
+
 --8<-- "nerd-fonts.md"
 
 #### :symbols-rocket:&ensp;Starship Terminal Prompt
@@ -402,9 +458,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 #### :symbols-clock-fading:&ensp;Zima Cron
 
-##### About
-
-: A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support.
+A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support.
 
 ##### Install
 
@@ -441,9 +495,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 #### :symbols-brick-wall-fire:&ensp;Zima Firewall
 
-##### About
-
-: Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live security dashboard. Default-drop INPUT allowlist + DOCKER-USER blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection.
+Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live security dashboard. Default-drop INPUT allowlist + DOCKER-USER blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection.
 
 ##### Install
 

@@ -148,45 +148,42 @@ _Wireless Router_
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
-:   **Asuswrt-Merlin** firmware updates happen automatically with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router){ external-link } tool. Email notifications are enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM){ external-link } and script updates, and notification emails are sent to, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ mailto-link }. To update Entware packages use the command, `opkg update`, or update with **AMTM** script.
+**Asuswrt-Merlin** firmware updates happen automatically with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router){ external-link } tool. Email notifications are enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM){ external-link } and script updates, and notification emails are sent to, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ mailto-link }. To update Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-:   The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays _(at 3:00 UTC-5)_ to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } and [Pi 4B Server](pi_4b_server.md#external-attached){ data-preview } using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON){ external-link } script. Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays _(at 3:00 UTC-5)_ to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } and [Pi 4B Server](pi_4b_server.md#external-attached){ data-preview } using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON){ external-link } script. Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
-:   **Backup Directory**
+##### Backup Directories
 
-    - ZimaOS NAS:&ensp;`/media/Quick-Storage/Backup/router`
-    - Pi 4B Server:&ensp;`/mnt/usb-drive/smb-share/router`
+| Location                             | Path                                 |
+| :----------------------------------- | :----------------------------------- |
+| :symbols-server-nas:&nbsp;ZimaOS NAS | `/media/Quick-Storage/Backup/router` |
+| :symbols-server:&nbsp;Pi 4B Server   | `/mnt/usb-drive/smb-share/router`    |
 
 #### :services-gotify-notification:&ensp;Gotify Push Notifications
 
-:   While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_services/gotify.md#notifications){ data-preview } server to send instant push notifications for events that may require an urgent response.
+While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_services/gotify.md#notifications){ data-preview } server to send instant push notifications for events that may require an urgent response.
 
 ##### SSH Session Alerts
 
-- A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and client IP address. To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_services/gotify.md#ssh-alerts) section on the Gotify service documentation page.
-{ .no-bullets }
+A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and client IP address. To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_services/gotify.md#ssh-alerts) section on the Gotify service documentation page.
 
 ##### WAN IP Change
 
-- Whenever the WAN IP address changes or the WAN connection drops then reconnects; a push notification is sent through the Gotify server. To see the script and detailed configuration information, see the ["WAN IP Change"](../03_services/gotify.md#wan-ip-change) section of the Gotify service documentation page.  
-{ .no-bullets }
+Whenever the WAN IP address changes or the WAN connection drops then reconnects; a push notification is sent through the Gotify server. To see the script and detailed configuration information, see the ["WAN IP Change"](../03_services/gotify.md#wan-ip-change) section of the Gotify service documentation page.  
 
 ##### BACKUPMON Alerts
 
-- Every time the BACKUPMON utility completes a backup of the router's NVRAM, JFFS partition, and external USB drive an alert is sent to the Gotify server. The push notification details the success or failure of the backup. To see the script and detailed configuration information, see the ["BACKUPMON Alerts"](../03_services/gotify.md#backupmon-alerts) section of the Gotify service documentation page.
-{ .no-bullets }
+Every time the BACKUPMON utility completes a backup of the router's NVRAM, JFFS partition, and external USB drive an alert is sent to the Gotify server. The push notification details the success or failure of the backup. To see the script and detailed configuration information, see the ["BACKUPMON Alerts"](../03_services/gotify.md#backupmon-alerts) section of the Gotify service documentation page.
 
 ##### Connmon Alerts
 
-- The Connmon utility monitors the router's WAN connection by measuring the ping, jitter, and line quality. Whenever the tests fail _(lost connection)_ or the measured values are greater than the set threshold an alert is sent to the Gotify server. To see the script and detailed configuration information, see the ["Connmon Alerts"](../03_services/gotify.md#connmon-alerts) section of the Gotify service documentation page.
-{ .no-bullets }
+The Connmon utility monitors the router's WAN connection by measuring the ping, jitter, and line quality. Whenever the tests fail _(lost connection)_ or the measured values are greater than the set threshold an alert is sent to the Gotify server. To see the script and detailed configuration information, see the ["Connmon Alerts"](../03_services/gotify.md#connmon-alerts) section of the Gotify service documentation page.
 
 ##### DHCP Event Alerts
 
-- The router's DHCP server assigns IP addresses to all devices that connect to the local network using the `dnsmasq` service. This service has a native `dhcp-script` configuration flag that triggers exactly when a lease is created, renewed, or deleted. The catch is that Asuswrt-Merlin already uses this flag to run its own internal script *(`/sbin/dhcpc_lease`)*, which populates the router's UI Network Map. If you simply overwrite the flag with a standard custom config, you'll break Asuswrt's internal tracking. The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command. To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_services/gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.
-{ .no-bullets }
+The router's DHCP server assigns IP addresses to all devices that connect to the local network using the `dnsmasq` service. This service has a native `dhcp-script` configuration flag that triggers exactly when a lease is created, renewed, or deleted. The catch is that Asuswrt-Merlin already uses this flag to run its own internal script *(`/sbin/dhcpc_lease`)*, which populates the router's UI Network Map. If you simply overwrite the flag with a standard custom config, you'll break Asuswrt's internal tracking. The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command. To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_services/gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.
 
 #### :symbols-globe-check:&ensp;WAN Check Script
 
@@ -254,20 +251,20 @@ On this router the `ChkWAN.sh` script is configured to PING the following IP add
 
 #### :symbols-gauge:&ensp;Adaptive QoS & spdMerlin
 
-:    The router manages the available WAN connection bandwidth with an **"Adaptive QoS"** algorithm and prioritizes allocation based on the application type. The `spdMerlin` script runs a bandwidth test _every 8 hours_ to update the QoS algorithm with the available bandwidth by averaging the last 10 test results. The upload / download bandwidth for Adaptive QoS will be automatically set to 95% of the average from the last ten test results.
+The router manages the available WAN connection bandwidth with an **"Adaptive QoS"** algorithm and prioritizes allocation based on the application type. The `spdMerlin` script runs a bandwidth test _every 8 hours_ to update the QoS algorithm with the available bandwidth by averaging the last 10 test results. The upload / download bandwidth for Adaptive QoS will be automatically set to 95% of the average from the last ten test results.
 
 ##### App Categories
 
-:    Below is a list of QoS application categories in descending order from **highest** to **lowest** priority:
+Below is a list of QoS application categories in descending order from **highest** to **lowest** priority:
 
-    - :symbols-gamepad-2:&ensp;Gaming
-    - :symbols-film:&ensp;Video Streaming
-    - :symbols-audio-lines:&ensp;Audio Streaming
-    - :symbols-app-window-mac:&ensp;Web Surfing
-    - :symbols-file-input:&ensp;File Transferring
-    - :symbols-briefcase:&ensp;Work-From-Home
-    - :symbols-graduation-cap:&ensp;Learn-From-Home
-    - :symbols-circle-ellipsis:&ensp;Others
+- :symbols-gamepad-2:&ensp;Gaming
+- :symbols-film:&ensp;Video Streaming
+- :symbols-audio-lines:&ensp;Audio Streaming
+- :symbols-app-window:&ensp;Web Surfing
+- :symbols-file-input:&ensp;File Transferring
+- :symbols-briefcase:&ensp;Work-From-Home
+- :symbols-graduation-cap:&ensp;Learn-From-Home
+- :symbols-circle-ellipsis:&ensp;Others
 
 ##### Adaptive QoS Settings
 

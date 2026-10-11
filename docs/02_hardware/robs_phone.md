@@ -113,31 +113,33 @@ _Samsung Galaxy S25+_
 
 ##### Android OS
 
-:   Android updates are automatic, but can also be performed manually through the system settings or via ADB. Samsung releases monthly security updates, quarterly feature updates, and yearly major version updates.
+Android updates are automatic, but can also be performed manually through the system settings or via ADB. Samsung releases monthly security updates, quarterly feature updates, and yearly major version updates.
 
 ##### Applications
 
-:   Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps){ external-link }. Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/){ external-link } app store and the [Obtainium](https://obtainium.imranr.dev/){ external-link } application.
+Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps){ external-link }. Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/){ external-link } app store and the [Obtainium](https://obtainium.imranr.dev/){ external-link } application.
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
 ##### Cloud Backup
 
-:   Google's cloud backup service is used to back up **device settings** and **apps & app data** for applications installed via the Google Play Store. Other backup services provided by Google, like photos, call history, and SMS / MMS & RCS messages are disabled to maintain privacy and control of sensitive data.
+Google's cloud backup service is used to back up **device settings** and **apps & app data** for applications installed via the Google Play Store. Other backup services provided by Google, like photos, call history, and SMS / MMS & RCS messages are disabled to maintain privacy and control of sensitive data.
 
-:   Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 ##### Photos & Videos
 
-:   Photos and videos are backed up to the [ZimaOS NAS](zimaos_nas.md). The [Immich](../03_services/immich.md) application handles backup for photos and videos. The Google Photos application is disabled.
+Photos and videos are backed up to the [ZimaOS NAS](zimaos_nas.md). The [Immich](../03_services/immich.md) application handles backup for photos and videos. The Google Photos application is disabled.
 
 ##### SMS / MMS & RCS
 
-:   The [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/){ external-link } application is responsible for backing up messages daily. The application creates a compressed archive of the messages in the directory, `/backups/SMS_Backup`, and [Syncthing](../03_services/syncthing.md) transfers them to the **ZimaOS NAS**.
+The [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/){ external-link } application is responsible for backing up messages daily. The application creates a compressed archive of the messages in the directory, `/backups/SMS_Backup`, and [Syncthing](../03_services/syncthing.md) transfers them to the **ZimaOS NAS**.
 
 ##### Other Apps
 
-:   Other applications that allow exporting settings / data are backed up to the **ZimaOS NAS** via **Syncthing**.
+Other applications that allow exporting settings / data are backed up to the **ZimaOS NAS** via **Syncthing**.
 
-    - Local directory:&ensp;`/backups`
-    - NAS directory:&ensp;`/media/Quick-Storage/Backup/Galaxy-S25`
+| Location        | Path                                     |
+| :-------------- | :--------------------------------------- |
+| Local Directory | `/backups`                               |
+| NAS Directory   | `/media/Quick-Storage/Backup/Galaxy-S25` |

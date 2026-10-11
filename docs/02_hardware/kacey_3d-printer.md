@@ -141,15 +141,17 @@ _Modified Creality K1C_
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
-:    Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md). Update firmware manually with downloaded `*.img` file on a `FAT32` formatted USB stick. See [Force Downgrade Firmware](#force-downgrade-firmware) for information about rolling back to an older firmware version after a bad update.
+Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md). Update firmware manually with downloaded `*.img` file on a `FAT32` formatted USB stick. See [Force Downgrade Firmware](#force-downgrade-firmware) for information about rolling back to an older firmware version after a bad update.
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-:    Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository, `creality-K1C-klipper-backup`. After every factory reset and reinstall of the git backup utility you cannot continue backing up to the same repository. Instead of creating a new repository we create a new branch in the same repository named by the date of the factory reset. The current default branch is `reset-09-13`. In addition to the git repository backup we use the printer's built-in backup scripts to create `.tar.gz` archives of the Klipper configuration files and the Moonraker database. These archives are stored on the [ZimaOS NAS](zimaos_nas.md) in the `/media/Quick-Storage/Backup/k1c-a71e` directory, and they can be restored using the same built-in backup scripts. This is the recommended way to get the printer restored after a factory reset because it is the faster, more comprehensive method.
+Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository, `creality-K1C-klipper-backup`. After every factory reset and reinstall of the git backup utility you cannot continue backing up to the same repository. Instead of creating a new repository we create a new branch in the same repository named by the date of the factory reset. The current default branch is `reset-09-13`.
+
+In addition to the git repository backup we use the printer's built-in backup scripts to create `.tar.gz` archives of the Klipper configuration files and the Moonraker database. These archives are stored on the [ZimaOS NAS](zimaos_nas.md) in the `/media/Quick-Storage/Backup/k1c-a71e` directory, and they can be restored using the same built-in backup scripts. This is the recommended way to get the printer restored after a factory reset because it faster and more comprehensive.
 
 #### :symbols-calendar-clock:&ensp;Change Date & Time { #change-date-time }
 
-:    In some cases date and time are not correct and defined by default to `Sun Mar 1 13:29:37 CET 2020`. This guide explains how to set the correct date and time on your printer based on your time zone. This procedure must be repeated after restoring the printer to factory settings or if you update the firmware.
+In some cases date and time are not correct and defined by default to `Sun Mar 1 13:29:37 CET 2020`. This guide explains how to set the correct date and time on your printer based on your time zone. This procedure must be repeated after restoring the printer to factory settings or if you update the firmware.
 
 1.  Connect to printer via [SSH](../03_services/ssh.md).
 2.  Enter this command to see the current date and time defined on your printer:
@@ -208,7 +210,7 @@ _Modified Creality K1C_
 
 #### :symbols-cpu:&ensp;Force Downgrade Firmware
 
-:    If you updated your **K1 / K1C / K1 Max** and can’t downgrade because the printer says “version is new” or fails via UI, follow these steps to bypass the security check.
+If you updated your **K1 / K1C / K1 Max** and can’t downgrade because the printer says “version is new” or fails via UI, follow these steps to bypass the security check.
 
 ##### Prerequisites
 
@@ -242,17 +244,17 @@ _Modified Creality K1C_
 
 #### :symbols-file-terminal:&ensp;Creality Helper Script
 
-:    The Helper Script allows you to install the latest official builds and many useful features. It is completely automated and necessary changes are made automatically when installing a feature and restored after uninstallation. When the script is updated, installed files are automatically updated as well.
+The Helper Script allows you to install the latest official builds and many useful features. It is completely automated and necessary changes are made automatically when installing a feature and restored after uninstallation. When the script is updated, installed files are automatically updated as well.
 
-    !!! warning
+!!! warning
 
-        FOR ^^K1 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.3.3.5` AND ABOVE!<br>
-        FOR ^^KE SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.1.0.12` AND ABOVE!<br>
-        FOR ^^ENDER-3 V3 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.2.1.3` AND ABOVE!
+    FOR ^^K1 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.3.3.5` AND ABOVE!<br>
+    FOR ^^KE SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.1.0.12` AND ABOVE!<br>
+    FOR ^^ENDER-3 V3 SERIES^^:&ensp;ONLY USE THIS SCRIPT WITH FIRMWARE `1.2.1.3` AND ABOVE!
 
-        ---
+    ---
 
-        Please restore firmware to **factory settings** before using script to avoid issue.
+    Please restore firmware to **factory settings** before using script to avoid issue.
 
 ##### Installation
 
@@ -327,13 +329,13 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
 
 #### :symbols-app-window:&ensp;HelixScreen
 
-:  Your printer can do way more than your current touchscreen lets you. Bed mesh visualization, input shaper graphs, multi-material management, print history — it's all trapped in a browser tab. HelixScreen puts it at your fingertips. Fast, beautiful, and frugal enough to run on hardware you already own — your printer's onboard SoC, a Raspberry Pi from a drawer, or anything newer.
+Your printer can do way more than your current touchscreen lets you. Bed mesh visualization, input shaper graphs, multi-material management, print history — it's all trapped in a browser tab. HelixScreen puts it at your fingertips. Fast, beautiful, and frugal enough to run on hardware you already own — your printer's onboard SoC, a Raspberry Pi from a drawer, or anything newer.
 
-    !!! tip
+!!! tip
 
-        Installing HelixScreen stops the stock Creality UI, and with it the backend **Creality Print** and the **Creality Cloud** app use — so those can no longer reach the printer. Fluidd, Mainsail, Moonraker uploads and HelixScreen’s own file browser are unaffected.
+    Installing HelixScreen stops the stock Creality UI, and with it the backend **Creality Print** and the **Creality Cloud** app use — so those can no longer reach the printer. Fluidd, Mainsail, Moonraker uploads and HelixScreen’s own file browser are unaffected.
 
-        Installs to `/usr/data/helixscreen/`, boot service at `/etc/init.d/S99helixscreen`.
+    Installs to `/usr/data/helixscreen/`, boot service at `/etc/init.d/S99helixscreen`.
 
 ![Screenshot of HelixScreen home screen UI](../assets/screenshots/helixscreen-home.png){ align=right width=400 }
 

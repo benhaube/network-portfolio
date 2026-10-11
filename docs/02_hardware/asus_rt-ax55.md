@@ -102,8 +102,8 @@ _AiMesh Node_
 
 #### :symbols-rotate-cw-clock:&ensp;Update Process
 
-:   Automatic firmware updates are enabled. The firmware version and status is available through the main router's Web-UI.  
+Automatic firmware updates are enabled. The firmware version and status is available through the main router's Web-UI.  
 
 #### :symbols-cloud-upload:&ensp;Backup Policy
 
-:   No backup is needed for AiMesh node.
+No backup is needed for AiMesh node.

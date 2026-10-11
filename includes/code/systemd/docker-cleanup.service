@@ -1,0 +1,9 @@
+[Unit]
+Description=Weekly Docker cleanup script
+
+[Service]
+Type=oneshot
+ExecStart=/opt/scripts/docker-cleanup.sh
+
+[Install]
+WantedBy=multi-user.target

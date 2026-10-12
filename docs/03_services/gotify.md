@@ -56,15 +56,19 @@ _Push Notifications_
 
 #### :symbols-message-square-dot:&ensp;Notifications
 
-| Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding section on this page." } | Role / Notes { data-sort-method="none" }                                                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [:symbols-cloud-upload:&nbsp;Backup Alerts](#backup-alerts)                                                                     | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
-| [:services-beszel:&nbsp;Beszel Alerts](#beszel-alerts)                                                                          | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
-| [:services-homebox:&nbsp;Homebox Alerts](#homebox-alerts)                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
-| [:symbols-router:&nbsp;Router Alerts](#router-alerts)                                                                           | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
-| [:symbols-square-terminal:&nbsp;SSH Alerts](#ssh-alerts)                                                                        | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and client IP address.                    |
-| [:services-uptime-kuma:&nbsp;Uptime Kuma Alerts](#uptime-kuma-alerts)                                                           | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
-| [:services-zimaos:&nbsp;ZimaOS Alerts](#zimaos-alerts)                                                                          | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
+| Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding documentation." } | Role / Notes { data-sort-method="none" }                                                                                                             |
+| :----------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [:brands-asus-router:&nbsp;Asus Router](#asus-router)                                                                    | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
+| [:services-beszel:&nbsp;Beszel](#beszel)                                                                                 | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
+| [:brands-debian:&nbsp;Debian Server](../02_hardware/debian_server.md#docker-cleanup)                                     | Receive push notifications from the Debian 13 virtual machine server hosted on the ZimaOS NAS                                                        |
+| [:brands-fedora:&nbsp;Fedora Linux PCs](#fedora-linux-pcs)                                                               | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
+| [:services-healthchecks:&nbsp;Healthchecks](healthchecks.md#gotify)                                                      | Receive push notifications from the self-hosted Healthchecks server monitoring cron jobs                                                             |
+| [:services-homebox:&nbsp;Homebox Alerts](#homebox)                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
+| [:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md#docker-cleanup)                                 | Receive push notifications from the Raspberry Pi 4B server                                                                                           |
+| [:brands-raspberry-pi:&nbsp;Pi Zero Server](../02_hardware/pi_zero_2w_server.md#docker-cleanup)                          | Receive push notifications from the Raspberry Pi Zero server                                                                                         |
+| [:symbols-square-terminal:&nbsp;SSH Alerts](#ssh-alerts)                                                                 | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and client IP address.                    |
+| [:services-uptime-kuma:&nbsp;Uptime Kuma](#uptime-kuma)                                                                  | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
+| [:services-zimaos:&nbsp;ZimaOS NAS](#zimaos-nas)                                                                         | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -93,7 +97,7 @@ _Push Notifications_
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
 
-#### :symbols-cloud-upload:&ensp;Backup Alerts
+#### :brands-fedora:&ensp;Fedora Linux PCs
 
 1.  Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`.
 
@@ -106,7 +110,7 @@ _Push Notifications_
 
 2.  That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup.
 
-#### :services-beszel:&ensp;Beszel Alerts
+#### :services-beszel:&ensp;Beszel
 
 1.  Open the [Beszel Hub](beszel.md) settings menu, go to the **"Notifications"** sub-menu, and enter the following URL into the **"Webhook / Push Notifications"** section.
 
@@ -116,7 +120,7 @@ _Push Notifications_
 
 2.  Click the **"Test URL"** button to send a test notification and verify functionality.
 
-#### :services-homebox:&ensp;Homebox Alerts
+#### :services-homebox:&ensp;Homebox
 
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
@@ -135,7 +139,7 @@ _Push Notifications_
 5.  Click the "Test" button to send a test notification.
 6.  Click "Submit" to save the new notification.
 
-#### :symbols-router:&ensp;Router Alerts
+#### :brands-asus-router:&ensp;Asus Router
 
 ##### WAN IP Change
 
@@ -391,7 +395,7 @@ _Push Notifications_
 
         **Note:** The `&` symbol at the end is crucial. It runs the script in the background so it doesn't hang or delay your SSH login prompt while it waits for the `curl` command to reach the Gotify server.
 
-#### :services-uptime-kuma:&ensp;Uptime Kuma Alerts
+#### :services-uptime-kuma:&ensp;Uptime Kuma
 
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
@@ -413,7 +417,7 @@ _Push Notifications_
     - Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
     - Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors.
 
-#### :services-zimaos:&ensp;ZimaOS Alerts
+#### :services-zimaos:&ensp;ZimaOS NAS
 
 :    The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
 

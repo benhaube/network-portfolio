@@ -77,15 +77,15 @@ _Server Monitoring_
 
 #### :symbols-key-round:&ensp;Generate API Tokens
 
-:    Run the following command in a terminal on a client machine to generate API tokens.
+Run the following command in a terminal on a client machine to generate API tokens.
 
-    ``` bash linenums="1"
-    curl -X POST "http://pi-server.internal:8090/api/collections/users/auth-with-password" \
-      -H "Content-Type: application/json" \
-      -d '{"identity":"user@example.com","password":"your-password"}'  # (1)!
-    ```
+``` bash linenums="1"
+curl -X POST "http://pi-server.internal:8090/api/collections/users/auth-with-password" \
+  -H "Content-Type: application/json" \
+  -d '{"identity":"user@example.com","password":"your-password"}'  # (1)!
+```
 
-    1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
+1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
 
 #### :symbols-file-code-corner:&ensp;Docker Compose Files
 

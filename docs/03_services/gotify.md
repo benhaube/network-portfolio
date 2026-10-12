@@ -419,9 +419,9 @@ _Push Notifications_
 
 #### :services-zimaos:&ensp;ZimaOS NAS
 
-:    The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
+The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
 
-    [Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
+[Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
 
 ##### AppData Backup
 

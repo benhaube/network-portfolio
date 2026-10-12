@@ -98,7 +98,7 @@ _File Synchronization_
 
 #### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
 
-:    :brands-fedora:&ensp;Fedora / RHEL:
+:    :brands-fedora:&ensp;Fedora / RHEL
 
     ``` bash linenums="1"
     sudo dnf install -y syncthing
@@ -106,7 +106,7 @@ _File Synchronization_
     sudo systemctl start syncthing@bhaube.service
     ```
 
-:    :brands-debian:&ensp;Debian 13 _(trixie)_:
+:    :brands-debian:&ensp;Debian 13 _(trixie)_
 
     ``` bash linenums="1"
     sudo apt install -y syncthing
@@ -114,21 +114,13 @@ _File Synchronization_
     sudo systemctl start syncthing@server-admin.service
     ```
 
-:    :brands-raspberry-pi:&ensp;Raspberry Pi OS Lite _(also Debian 13)_:
-
-    ``` bash linenums="1"
-    sudo apt install -y syncthing
-    sudo systemctl enable syncthing@admin.service
-    sudo systemctl start syncthing@admin.service
-    ```
-
-:    :services-zimaos:&ensp;ZimaOS:
+:    :services-zimaos:&ensp;ZimaOS
 
     ``` bash linenums="1"
     docker compose up -d
     ```
 
-:    :brands-android-2:&ensp;Android:
+:    :brands-android-2:&ensp;Android
 
     [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 

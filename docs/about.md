@@ -20,7 +20,7 @@ hide:
 
 With thirteen years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology** and **Cybersecurity**.
 
-I’ve found that whether it’s a fuel injection system or a network stack, the core principles remain the same: **precision, security, and relentless troubleshooting.**
+I’ve found that whether it’s a fuel injection system or a network stack, the core principles remain the same: **precision, security, and relentless troubleshooting**. I’m currently looking for opportunities where I can apply my unique blend of hands-on mechanical diagnostic experience and modern IT security principles to solve real-world infrastructure challenges.
 
 ## :symbols-astroid:&ensp;My Technical North Star
 
@@ -28,45 +28,41 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 
 ### My priorities are...
 
-#### Privacy-First Networking
+**Privacy-First Networking**
 
 - Using tools like [Technitium](03_services/technitium.md) DNS and [Network Attached Storage](02_hardware/zimaos_nas.md) servers to take back control of my data.
 { .no-bullets }
 
-#### Immutable Documentation
+**Immutable Documentation**
 
 - Maintaining a "Single Source of Truth" using **Markdown** with [VSCodium](https://vscodium.com/){ external-link } and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){ external-link } to ensure the infrastructure is reproducible and transparent.
 { .no-bullets }
 
-#### Continuous Learning
+**Continuous Learning**
 
 - From earning my [CompTIA](https://www.comptia.org/en-us/){ external-link } _(A+ & Linux+)_ to mastering Docker orchestration, I am always looking for the next problem and "bottleneck" to solve.
 { .no-bullets } 
 
-## :symbols-motor-racing-helmet:&ensp;Beyond the Terminal&ensp;:symbols-printer-3d-nozzle:
+## :symbols-motor-racing-helmet:&ensp;Beyond the Terminal
 
 When I’m not hardening my network or managing services, you can usually find me...
 
-<!-- lint: skip heading.level-skip -->
-
-#### 3D Printing
+**3D Printing**
 
 - Tinkering with my [Creality K1C](02_hardware/kacey_3d-printer.md), and likely troubleshooting a new filament or hardware modification.
 { .no-bullets }
 
-#### At the Track
+**At the Track**
 
 - Following Formula 1 and other motorsports—old habits from the automotive days die hard.
 { .no-bullets }
 
-#### In the Sim
+**In the Sim**
 
 - Competing in competitive online sim-racing league races.
 { .no-bullets }
 
-#### Unplugging
+**Unplugging**
 
 - Spending time outdoors and / or hanging out with my husband and our dog, Max.
 { .no-bullets }
-
-I’m currently looking for opportunities where I can apply my unique blend of hands-on mechanical diagnostic experience and modern IT security principles to solve real-world infrastructure challenges.

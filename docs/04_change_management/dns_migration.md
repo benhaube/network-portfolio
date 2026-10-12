@@ -20,7 +20,7 @@ _From Pi-hole to Technitium_
 
 ---
 
-## :symbols-file-text:&ensp;Pre-Migration & Documentation
+## :symbols-file-text:&ensp;Pre-Migration
 
 1.  **Export Pi-hole Data:**
     - [ ] Run a "Teleporter" backup on your current primary and secondary Pi-holes.
@@ -33,7 +33,7 @@ _From Pi-hole to Technitium_
 
 ## :symbols-server:&ensp;Server Provisioning
 
-#### Debian Server
+### Debian Server
 
 1.  **Allocate Resources:**
     - [ ] Assign 2 vCPUs and 2 GB RAM to the VM.
@@ -44,7 +44,7 @@ _From Pi-hole to Technitium_
 4.  **Import Records:**
     - [ ] Manually add local DNS zones/records from the Pi-hole export.
 
-#### Pi 4B Server
+### Pi 4B Server
 
 1.  **Uninstall Pi-hole:**
     - [ ] Use the command `#!bash sudo pihole uninstall` to remove Pi-hole from the server.

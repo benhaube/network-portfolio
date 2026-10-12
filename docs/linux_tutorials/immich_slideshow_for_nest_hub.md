@@ -94,8 +94,9 @@ Place this in the same folder as your docker-compose file.
 
 ## :symbols-house-wifi:&ensp;Automation
 
-**Prerequisite:** 
-: Install "DashCast" add-on in [Home Assistant](../03_services/home_assistant.md).
+**Prerequisite:**
+
+Install "DashCast" add-on in [Home Assistant](../03_services/home_assistant.md).
 
 **Automation YAML:**
 

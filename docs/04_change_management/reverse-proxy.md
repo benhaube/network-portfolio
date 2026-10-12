@@ -1,6 +1,6 @@
 ---
 icon: services/caddy
-title: Reverse Proxy & DNS Routing
+title: Reverse Proxy
 subtitle: Domain Names for Local Services
 description: Set up a local reverse-proxy server using Caddy to give local services their own, unique FQDN.
 tags:
@@ -14,7 +14,7 @@ hide:
 
 ![Caddy Logo](../assets/icons/caddy.svg){ width=200 }
 
-# Reverse Proxy & DNS Routing
+# Reverse Proxy
 
 _Domain Names for Local Services_
 
@@ -26,19 +26,19 @@ _Domain Names for Local Services_
 
 ## :symbols-info:&ensp;Architecture Overview
 
-#### DNS Servers
+### DNS Servers
 
 - [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)
 { .no-bullets }
 - [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)
 { .no-bullets }
 
-#### Reverse Proxy
+### Reverse Proxy
 
 - [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)
 { .no-bullets }
 
-#### Application Hosts
+### Application Hosts
 
 - [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)
 { .no-bullets }
@@ -58,19 +58,19 @@ _Domain Names for Local Services_
 
 ## :symbols-file-cog:&ensp;Caddy Configuration
 
-#### File Location
+### File Location
 
 - `/etc/caddy/Caddyfile`
 { .no-bullets }
 
-#### Commands
+### Commands
 
 - `#!bash sudo nano /etc/caddy/Caddyfile` _(Open config file in `nano`)_  
 { .no-bullets }
 - `#!bash sudo systemctl reload caddy` _(Apply changes)_
 { .no-bullets }
 
-#### Example Caddyfile
+### Example Caddyfile
 
 ``` nginx { .mono-title title="/etc/caddy/Caddyfile" linenums="1" }
 # Immich Photo Server

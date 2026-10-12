@@ -34,7 +34,7 @@ _Primary DNS Server_
 
 **:symbols-toolbox:&ensp;Role**
 
-:    The primary DNS server in the [Technitium](../03_services/technitium.md#description){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#device-overview){ data-preview }.
+:    The primary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#device-overview){ data-preview }.
 
 **:symbols-host:&ensp;Hostname**
 

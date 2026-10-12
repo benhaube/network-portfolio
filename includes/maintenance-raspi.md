@@ -33,7 +33,7 @@ An image of the MicroSD card is stored on [ZimaOS NAS](../02_hardware/zimaos_nas
 | Docker Data  | `/media/Quick-Storage/Backup/<hostname>/stacks` |
 | System Image | `/media/Quick-Storage/Backup/<hostname>`        |
 
-### :symbols-broom-sparkles:&ensp;Docker Cleanup
+### :symbols-broom-sparkles:&ensp;Docker Cleanup { #docker-cleanup }
 
 Over time the Docker container management system builds up a lot of stale data which can fill up the system drive. This data includes temporary cache, unused containers, dangling volumes, and old or outdated images. To keep the Docker system from accumulating too much unwanted data we have written a script to perform a Docker system cleanup, and the script is automated using Systemd unit files. The `docker-cleanup.sh` script will run weekly on Mondays at 05:00 UTC-5. Built into the script is a push notification sent through the [Gotify](../03_services/gotify.md) server to report cleanup success or failure as well as how much data was removed.
 

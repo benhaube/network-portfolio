@@ -60,13 +60,13 @@ _Wireless Router_
 
 ### :symbols-network:&ensp;Network Configuration
 
-#### :symbols-globe:&ensp;WAN Connection
-
 ??? info "Dual-WAN Capable"
 
     The **ASUS RT-BE92U** tri-band 802.11be _(Wi-Fi 7)_ router supports two simultaneous WAN connections that can be configured to act synchronously or in fail-over mode. Additionally, the first two physical Ethernet ports on the router can be configured as either a WAN or LAN port. Physical port 0 is a 2.5 GbE port, and physical port 1 is a 10 GbE port.
 
     On this network we utilize a single WAN connection on physical port `WAN / LAN 0` while physical port `WAN / LAN 1`, _the 10 GbE port_, is used as the uplink to the main switch via Cat6A Ethernet cable connected to an SFP+ to Ethernet transceiver in the switch. In the router's firmware the two WAN interfaces are labeled `wan0` and `wan1`, and they correspond to the physical ports, `WAN / LAN 0` and `WAN / LAN 1`, respectively.
+
+#### :symbols-globe:&ensp;WAN Connection
 
 | Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" }                                                   |
 | :-------------------------------------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |

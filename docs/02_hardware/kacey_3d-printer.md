@@ -36,7 +36,7 @@ _Modified Creality K1C_
 
 :    See more detailed information about the Creality K1C hardware...
 
-    [More Kacey Info&ensp;:brands-creality:](kacey_info.md){ .md-button }
+    [More Kacey Info&ensp;:symbols-printer-3d-nozzle:](kacey_info.md){ .md-button }
 
 #### :symbols-host:&ensp;Hostname
 
@@ -212,6 +212,8 @@ In some cases date and time are not correct and defined by default to `Sun Mar 1
 
 If you updated your **K1 / K1C / K1 Max** and can’t downgrade because the printer says “version is new” or fails via UI, follow these steps to bypass the security check.
 
+[Creality Firmware&ensp;:brands-creality:](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c){ .md-button }
+
 ##### Prerequisites
 
 1. `FAT32` USB drive with the desired firmware `*.img` file.
@@ -245,6 +247,8 @@ If you updated your **K1 / K1C / K1 Max** and can’t downgrade because the prin
 #### :symbols-file-terminal:&ensp;Creality Helper Script
 
 The Helper Script allows you to install the latest official builds and many useful features. It is completely automated and necessary changes are made automatically when installing a feature and restored after uninstallation. When the script is updated, installed files are automatically updated as well.
+
+[Helper-Script&ensp;:brands-github:](https://github.com/Guilouz/Creality-Helper-Script){ .md-button }
 
 !!! warning
 
@@ -330,6 +334,8 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
 #### :symbols-app-window:&ensp;HelixScreen
 
 Your printer can do way more than your current touchscreen lets you. Bed mesh visualization, input shaper graphs, multi-material management, print history — it's all trapped in a browser tab. HelixScreen puts it at your fingertips. Fast, beautiful, and frugal enough to run on hardware you already own — your printer's onboard SoC, a Raspberry Pi from a drawer, or anything newer.
+
+[HelixScreen&ensp;:brands-github:](https://github.com/prestonbrown/helixscreen){ .md-button }
 
 !!! tip
 

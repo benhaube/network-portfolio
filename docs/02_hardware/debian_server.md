@@ -197,6 +197,8 @@ Over time the Docker container management system builds up a lot of stale data w
 
 The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh.
 
+[Starship&ensp;:brands-github:](https://github.com/starship/starship){ .md-button }
+
 1.  Install the latest version:
 
     ``` bash linenums="1"
@@ -218,6 +220,8 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 #### :symbols-log-in:&ensp;Fastfetch Login Preset
 
 The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
+
+[Fastfetch Presets&ensp;:brands-github:](https://github.com/benhaube/fastfetch-login-preset){ .md-button }
 
 1.  Install Fastfetch:
 

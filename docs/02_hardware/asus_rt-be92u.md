@@ -187,20 +187,13 @@ The router's DHCP server assigns IP addresses to all devices that connect to the
 
 #### :symbols-globe-check:&ensp;WAN Check Script
 
-##### About
-
 The `ChkWAN.sh` script can monitor the connection status of the WAN interface, and if the status is found to be unacceptable, can perform one of the following:
 
 - Report the status of the WAN connection.
 - Attempt to restart the WAN interface.
 - Reboot the router.
 
-On this router the `ChkWAN.sh` script is configured to PING the following IP addresses and restart the WAN interface if no ICMP echo reply is received from ANY of the addresses.
-
-- `9.9.9.9` _(Quad9)_
-- `149.112.112.112` _(Quad9)_
-- `8.8.8.8` _(Google)_
-- `1.1.1.1` _(Cloudflare)_
+[ChkWAN Script&ensp;:brands-github:](https://gitgub.com/MartineauUK/Chk-WAN){ .md-button }
 
 ##### Configure
 

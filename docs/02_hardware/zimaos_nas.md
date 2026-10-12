@@ -233,10 +233,11 @@ The ZimaOS NAS is the main backup server for clients and other servers on the lo
     sudo cp b2-*-bkp.sh /opt/scripts
     ```
 
-2. Make the scripts executable.
+2. Populate the Gotify application token variables in the backup scripts.
+3. Set restricted permissions. Allow _ONLY_ the `root` user to have read, write, and execute permissions.
 
     ``` bash
-    sudo chmod +x /opt/scripts/b2-*-bkp.sh
+    sudo chmod 700 /opt/scripts/b2-*-bkp.sh
     ```
 
 ##### Automate with Systemd
@@ -370,6 +371,8 @@ Over time the Docker container management system builds up a lot of stale data w
 
 The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh.
 
+[Starship&ensp;:brands-github:](https://github.com/starship/starship){ .md-button }
+
 ##### Install
 
 1.  Install the latest version:
@@ -399,7 +402,9 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 #### :symbols-log-in:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
+The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on GitHub.
+
+[Fastfetch Presets&ensp;:brands-github:](https://github.com/benhaube/fastfetch-login-preset){ .md-button }
 
 ##### Install
 
@@ -460,9 +465,11 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support.
 
+[Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
+
 ##### Install
 
-1.  Download the latest release from [GitHub](https://github.com/chicohaager/cron){ external-link }.
+1.  Download the latest release from [GitHub](https://github.com/chicohaager/cron/releases/latest){ external-link }.
 
     ``` bash linenums="1"
     wget https://github.com/chicohaager/cron/releases/download/<version>/cron.raw
@@ -495,11 +502,13 @@ A modern, reliable task scheduler for ZimaOS with a completely redesigned web in
 
 #### :symbols-brick-wall-fire:&ensp;Zima Firewall
 
-Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live security dashboard. Default-drop INPUT allowlist + DOCKER-USER blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection.
+Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live security dashboard. Default-drop `INPUT` allowlist + `DOCKER-USER` blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection.
+
+[ZFW Firewall&ensp;:brands-github:](https://github.com/chicohaager/zfw){ .md-button }
 
 ##### Install
 
-1.  Download the latest release from [GitHub](https://github.com/chicohaager/zfw){ external-link }.
+1.  Download the latest release from [GitHub](https://github.com/chicohaager/zfw/releases/latest){ external-link }.
 
     ``` bash linenums="1"
     wget https://github.com/chicohaager/zfw/releases/download/<version>/zfw-<version>-amd64.tar.gz

@@ -58,7 +58,7 @@ _DOCSIS 3.1 Cable Modem_
 
 ## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
-!!! config inline "Critical Configurations"
+!!! config "Critical Configurations"
 
     :symbols-globe-off:&ensp;**WAN Down**
 

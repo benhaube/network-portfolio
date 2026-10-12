@@ -30,22 +30,17 @@ _Model UM106X_
 
 ## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role** { #role }
 
-: A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
+:   A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
 
-#### :symbols-map-pin:&ensp;Location
+**:symbols-plug:&ensp;Power Source**
 
-- <!-- material/tags { include: [Living Room, Server Rack] } -->
-{ .no-bullets } 
+:   Wall wart _(12.0V / 1.0A)_
 
-#### :symbols-plug:&ensp;Power Source
+### :symbols-circuit-board:&ensp;Specs
 
-: Wall wart _(12.0V / 1.0A)_
-
-#### :symbols-circuit-board:&ensp;Specs
-
-##### Throughput
+#### Throughput
 
 - Five 2.5 Gb/s Ports
 { .no-bullets }
@@ -54,12 +49,12 @@ _Model UM106X_
 - 45 Gb/s Total Switching Capacity
 { .no-bullets }
 
-##### Jumbo Frames
+#### Jumbo Frames
 
 - Supported _(12 KB)_
 { .no-bullets }
 
-##### Management Features
+#### Management Features
 
 - VLAN
 { .no-bullets }
@@ -70,7 +65,12 @@ _Model UM106X_
 - 802.11ab LLDP
 { .no-bullets }
 
-## :symbols-ethernet-port:&ensp;Port Map
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Living Room, Server Rack] } -->
+{ .no-bullets } 
+
+### :symbols-ethernet-port:&ensp;Port Map
 
 | Port # { data-sort-method="number" } | Connected Device                                                                                   | Color / Type { data-sort-method="none" } | Notes { data-sort-method="none" }                          |
 | :----------------------------------: | :------------------------------------------------------------------------------------------------- | :--------------------------------------- | :--------------------------------------------------------- |

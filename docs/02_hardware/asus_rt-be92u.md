@@ -30,35 +30,35 @@ _Wireless Router_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
 :    The main wireless router and firewall for the local network. Located next to the 10-inch server rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 :    `RT-BE92U-FAF0`
 
-#### :symbols-link-2:&ensp;FQDN
+**:symbols-link-2:&ensp;FQDN**
 
 :    `asusrouter.internal`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Living Room] } -->
-{ .no-bullets }
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } *(3006.102.8_2)*
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
     - SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Living Room] } -->
+{ .no-bullets }
+
+### :symbols-network:&ensp;Network Configuration
 
 #### :symbols-globe:&ensp;WAN Connection
 
@@ -100,7 +100,7 @@ _Wireless Router_
 |               LAN 4                | 2.5 Gb/s                                | :symbols-ethernet-port:&nbsp;_Empty_                                                                        |                                          |                                   |
 |               LAN 5                | 2.5 Gb/s                                | :symbols-ethernet-port:&nbsp;_Empty_                                                                        |                                          |                                   |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
@@ -116,7 +116,7 @@ _Wireless Router_
 | :-------------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB                                        | `/dev/sda1` | `ext4`      | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native
 
@@ -146,46 +146,46 @@ _Wireless Router_
 
     :   The router manages the available WAN connection bandwidth with an "Adaptive QoS" algorithm and prioritizes allocation based on the application type.
 
-#### :symbols-rotate-cw-clock:&ensp;Update Process
+### :symbols-rotate-cw-clock:&ensp;Update Process
 
 **Asuswrt-Merlin** firmware updates happen automatically with the [MerlinAU](https://github.com/ExtremeFiretop/MerlinAutoUpdate-Router){ external-link } tool. Email notifications are enabled for [AMTM](https://github.com/RMerl/asuswrt-merlin.ng/wiki/AMTM){ external-link } and script updates, and notification emails are sent to, [admin@haube-pereira.com](mailto:admin@haube-pereira.com){ mailto-link }. To update Entware packages use the command, `opkg update`, or update with **AMTM** script.
 
-#### :symbols-cloud-upload:&ensp;Backup Policy
+### :symbols-cloud-upload:&ensp;Backup Policy
 
 The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays _(at 3:00 UTC-5)_ to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } and [Pi 4B Server](pi_4b_server.md#external-attached){ data-preview } using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON){ external-link } script. Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
-##### Backup Directories
+#### Backup Directories
 
 | Location                             | Path                                 |
 | :----------------------------------- | :----------------------------------- |
 | :symbols-server-nas:&nbsp;ZimaOS NAS | `/media/Quick-Storage/Backup/router` |
 | :symbols-server:&nbsp;Pi 4B Server   | `/mnt/usb-drive/smb-share/router`    |
 
-#### :services-gotify-notification:&ensp;Gotify Push Notifications
+### :services-gotify-notification:&ensp;Gotify Push Notifications
 
 While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_services/gotify.md#notifications){ data-preview } server to send instant push notifications for events that may require an urgent response.
 
-##### SSH Session Alerts
+#### SSH Session Alerts
 
 A custom script is used to send a push notification through the Gotify server whenever a new SSH session is successfully established with the router. The notification reports the user, hostname, and client IP address. To see the script and detailed configuration information, see the ["SSH Session Alerts"](../03_services/gotify.md#ssh-alerts) section on the Gotify service documentation page.
 
-##### WAN IP Change
+#### WAN IP Change
 
 Whenever the WAN IP address changes or the WAN connection drops then reconnects; a push notification is sent through the Gotify server. To see the script and detailed configuration information, see the ["WAN IP Change"](../03_services/gotify.md#wan-ip-change) section of the Gotify service documentation page.  
 
-##### BACKUPMON Alerts
+#### BACKUPMON Alerts
 
 Every time the BACKUPMON utility completes a backup of the router's NVRAM, JFFS partition, and external USB drive an alert is sent to the Gotify server. The push notification details the success or failure of the backup. To see the script and detailed configuration information, see the ["BACKUPMON Alerts"](../03_services/gotify.md#backupmon-alerts) section of the Gotify service documentation page.
 
-##### Connmon Alerts
+#### Connmon Alerts
 
 The Connmon utility monitors the router's WAN connection by measuring the ping, jitter, and line quality. Whenever the tests fail _(lost connection)_ or the measured values are greater than the set threshold an alert is sent to the Gotify server. To see the script and detailed configuration information, see the ["Connmon Alerts"](../03_services/gotify.md#connmon-alerts) section of the Gotify service documentation page.
 
-##### DHCP Event Alerts
+#### DHCP Event Alerts
 
 The router's DHCP server assigns IP addresses to all devices that connect to the local network using the `dnsmasq` service. This service has a native `dhcp-script` configuration flag that triggers exactly when a lease is created, renewed, or deleted. The catch is that Asuswrt-Merlin already uses this flag to run its own internal script *(`/sbin/dhcpc_lease`)*, which populates the router's UI Network Map. If you simply overwrite the flag with a standard custom config, you'll break Asuswrt's internal tracking. The logical workaround is to use the `dnsmasq.postconf` script to seamlessly hijack the configuration and point it to a custom wrapper script, `dhcp-event.sh`. This wrapper will execute the router's default script first, and then fire off your Gotify `curl` command. To see these scripts and detailed configuration information, see the ["DHCP Event Alerts"](../03_services/gotify.md#dhcp-event-alerts) section of the Gotify service documentation page.
 
-#### :symbols-globe-check:&ensp;WAN Check Script
+### :symbols-globe-check:&ensp;WAN Check Script
 
 The `ChkWAN.sh` script can monitor the connection status of the WAN interface, and if the status is found to be unacceptable, can perform one of the following:
 
@@ -195,7 +195,7 @@ The `ChkWAN.sh` script can monitor the connection status of the WAN interface, a
 
 [ChkWAN Script&ensp;:brands-github:](https://gitgub.com/MartineauUK/Chk-WAN){ .md-button }
 
-##### Configure
+#### Configure
 
 1.  Download the `ChkWAN.sh` script to the router and give it permission to execute:
 
@@ -242,11 +242,11 @@ The `ChkWAN.sh` script can monitor the connection status of the WAN interface, a
     */5 * * * * /jffs/scripts/ChkWAN.sh wan ping=9.9.9.9,149.112.112.112,8.8.8.8,1.1.1.1 #WAN_Check#
     ```
 
-#### :symbols-gauge:&ensp;Adaptive QoS & spdMerlin
+### :symbols-gauge:&ensp;Adaptive QoS & spdMerlin
 
 The router manages the available WAN connection bandwidth with an **"Adaptive QoS"** algorithm and prioritizes allocation based on the application type. The `spdMerlin` script runs a bandwidth test _every 8 hours_ to update the QoS algorithm with the available bandwidth by averaging the last 10 test results. The upload / download bandwidth for Adaptive QoS will be automatically set to 95% of the average from the last ten test results.
 
-##### App Categories
+#### App Categories
 
 Below is a list of QoS application categories in descending order from **highest** to **lowest** priority:
 
@@ -259,7 +259,7 @@ Below is a list of QoS application categories in descending order from **highest
 - :symbols-graduation-cap:&ensp;Learn-From-Home
 - :symbols-circle-ellipsis:&ensp;Others
 
-##### Adaptive QoS Settings
+#### Adaptive QoS Settings
 
 1.  To access the **Adaptive QoS** settings, log into the [ASUS Router's Web UI](https://asusrouter.internal:8443){ external-link } and navigate to the QoS settings using the side bar.
 
@@ -277,7 +277,7 @@ Below is a list of QoS application categories in descending order from **highest
 
     ![Screenshot of ASUS Router QoS categories](../assets/screenshots/asus_router_adaptive_qos_categories.png){ width=600 }
 
-##### Configure spdMerlin
+#### Configure spdMerlin
 
 1.  Log into the ASUS Router via [SSH](../03_services/ssh.md#url-access){ data-preview }, run the `amtm` script, and ensure the `spdMerlin` script is installed.
 

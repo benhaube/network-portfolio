@@ -33,39 +33,39 @@ _Secondary DNS Server_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role** { #role }
 
-: The secondary DNS server in the [Technitium](../03_services/technitium.md#description){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
+:   The secondary DNS server in the [Technitium](../03_services/technitium.md#description){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 - `pi-server` _(VLAN50 / `eth0`)_
 { .no-bullets }
 - `home-assistant` _(VLAN53 / `wlan0`)_
 { .no-bullets }
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Office, Printer Cart] } -->
-{ .no-bullets }
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - SSH Keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
 
-## :symbols-circuit-board:&ensp;Core Specs
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Office, Printer Cart] } -->
+{ .no-bullets }
+
+### :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                   | Cores / Threads        | CPU Freq. | RAM                       | GPU             | GPU Freq. | VRAM     |
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
 | :brands-arm:&nbsp;BCM2711 _(Armv8-A)_ | 4C / 4T _(Cortex-A72)_ | 1.5 GHz   | 4 GB LPDDR4 _(2400 MT/s)_ | VideoCore VI 3D | 500 MHz   | _Shared_ |
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                 |
 | :-------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
@@ -77,7 +77,7 @@ _Secondary DNS Server_
 |  `eth0`   |    :symbols-shield:&nbsp;VLAN50    | `pi-server.internal` | `127.0.0.1`                               | `192.168.50.1`                        |
 |  `wlan0`  | :symbols-shield-house:&nbsp;VLAN53 | `N/A`                | `127.0.0.1`                               | `192.168.53.1`                        |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
@@ -93,7 +93,7 @@ _Secondary DNS Server_
 | :--------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/mnt/usb-drive` | USB Flash Drive | 28.7 GB                                        | `/dev/sda1` | `ext4`      | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native Linux
 

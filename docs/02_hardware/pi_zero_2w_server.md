@@ -33,36 +33,36 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role** { #role }
 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi _(SSID: `Home`)_.
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 :    `pi-zero`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Office, Printer Cart] } -->
-{ .no-bullets }
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - SSH Keys&ensp;:symbols-move-right:&ensp;"pi-zero (admin)"
 
-## :symbols-circuit-board:&ensp;Core Specs
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Office, Printer Cart] } -->
+{ .no-bullets }
+
+### :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                  | Cores / Threads        | CPU Freq. | RAM          | GPU          | GPU Freq. | VRAM     |
 | :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
 | :brands-arm:&nbsp;BCM2837 _(Armv-8)_ | 4C / 4T _(Cortex-A53)_ | 1.2 GHz   | 512 MB SDRAM | VideoCore IV | 400 MHz   | _Shared_ |
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -72,7 +72,7 @@ _Reverse-Proxy Server_
 | :-------: | :--------------------------: | :----------------- | :---------------------------------------- | :------------------------------------ |
 |  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
@@ -82,7 +82,7 @@ _Reverse-Proxy Server_
 | `/boot/firmware` | MicroSD    | 512 MB                                         | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 80 MB                                          | `log2ram`        | `tmpfs`     | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native Linux
 

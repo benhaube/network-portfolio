@@ -30,24 +30,24 @@ _DOCSIS 3.1 Cable Modem_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
-: The DOCSIS 3.1 cable modem that communicates with the ISP _([Xfinity](https://www.xfinity.com/overview){ external-link })_. Located in the 10-inch server rack.
+:   The DOCSIS 3.1 cable modem that communicates with the ISP _([Xfinity](https://www.xfinity.com/overview){ external-link })_. Located in the 10-inch server rack.
 
-#### :symbols-map-pin:&ensp;Location
+**:symbols-cpu:&ensp;OS / Firmware**
+
+:    Hitron FW version: `7.3.5.3.2b2`
+
+**:symbols-user-key:&ensp;Credentials**
+
+:    N/A
+
+### :symbols-map-pin:&ensp;Location
 
 - <!-- material/tags { include: [Living Room, Server Rack] } -->
 { .no-bullets }
 
-#### :symbols-cpu:&ensp;OS / Firmware
-
-:    Hitron FW version: `7.3.5.3.2b2`
-
-#### :symbols-user-key:&ensp;Credentials
-
-:    N/A
-
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                           |
 | :-------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------- |

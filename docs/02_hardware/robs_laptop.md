@@ -30,37 +30,37 @@ _ASUS TUF Gaming A16_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role** { #role }
 
-:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network _(SSID: `Home`)_. However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](ugreen_switch.md#role){ data-preview }.
+:    Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network _(SSID: `Home`)_. However, sometimes it has a 2.5 Gb/s Ethernet connection through the rack-mounted [Ugreen Switch](ugreen_switch.md#physical-overview){ data-preview }.
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 :    `ems1`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Mobile] } -->
-{ .no-bullets }
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Laptop PC"
 
-## :symbols-circuit-board:&ensp;Core Specs
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Mobile] } -->
+{ .no-bullets }
+
+### :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                            | Cores / Threads | CPU Freq. | RAM                      | GPU                                              | GPU Freq. | VRAM       |
 | :--------------------------------------------- | :-------------- | :-------- | :----------------------- | :----------------------------------------------- | :-------- | :--------- |
 | :brands-amd:&nbsp;Ryzen(r) 9 7940HS _(x86-64)_ | 8C / 16T        | 4.0 GHz   | 16 GB DDR5 _(4800 MT/s)_ | :brands-amd:&nbsp;Radeon(r) 780M                 | 2700 MHz  | _Shared_   |
 |                                                |                 |           |                          | :brands-nvidia:&nbsp;GeForce RTX 4070 _(mobile)_ | 2175 MHz  | 8 GB GDDR6 |
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                             |
 | :-------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------- |
@@ -72,7 +72,7 @@ _ASUS TUF Gaming A16_
 | Ethernet  | :symbols-shield:&nbsp;VLAN50 | `ems1.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 |   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `ems1.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 

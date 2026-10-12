@@ -12,11 +12,11 @@
 
     :    This server has email & push notifications configured for new SSH sessions and `unattended-upgrades`. See [Setup SSH Login Notification](../linux_tutorials/setup_ssh_login_notification.md) for documentation.
 
-#### :symbols-rotate-cw-clock:&ensp;Update Process
+### :symbols-rotate-cw-clock:&ensp;Update Process
 
 The `unattended-upgrades` service is enabled for critical bug fixes and CVE patches to apply automatically. Manual OS updates can be applied with the `apt` package manager. Updates for services using a Docker image can be applied manually with `docker compose` or by using the update utility in [Dockge](../03_services/dockge.md).
 
-##### Manual Updates
+#### Manual Updates
 
 To update Debian packages manually with the `apt` package manager use the following command:
 
@@ -24,7 +24,7 @@ To update Debian packages manually with the `apt` package manager use the follow
 sudo apt update && sudo apt upgrade
 ```
 
-#### :symbols-cloud-upload:&ensp;Backup Policy
+### :symbols-cloud-upload:&ensp;Backup Policy
 
 An image of the MicroSD card is stored on [ZimaOS NAS](../02_hardware/zimaos_nas.md). Data and configurations from Docker services are backed up to [ZimaOS NAS](../02_hardware/zimaos_nas.md). Critical configuration files are backed up to the attached USB flash drive. All backed up files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
@@ -33,7 +33,7 @@ An image of the MicroSD card is stored on [ZimaOS NAS](../02_hardware/zimaos_nas
 | Docker Data  | `/media/Quick-Storage/Backup/<hostname>/stacks` |
 | System Image | `/media/Quick-Storage/Backup/<hostname>`        |
 
-#### :symbols-broom-sparkles:&ensp;Docker Cleanup
+### :symbols-broom-sparkles:&ensp;Docker Cleanup
 
 Over time the Docker container management system builds up a lot of stale data which can fill up the system drive. This data includes temporary cache, unused containers, dangling volumes, and old or outdated images. To keep the Docker system from accumulating too much unwanted data we have written a script to perform a Docker system cleanup, and the script is automated using Systemd unit files. The `docker-cleanup.sh` script will run weekly on Mondays at 05:00 UTC-5. Built into the script is a push notification sent through the [Gotify](../03_services/gotify.md) server to report cleanup success or failure as well as how much data was removed.
 
@@ -91,7 +91,7 @@ Over time the Docker container management system builds up a lot of stale data w
 
 --8<-- "nerd-fonts.md"
 
-#### :symbols-rocket:&ensp;Starship Terminal Prompt
+### :symbols-rocket:&ensp;Starship Terminal Prompt
 
 The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh.
 
@@ -115,7 +115,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
     --8<-- "starship-raspi.toml"
     ```
 
-#### :symbols-log-in:&ensp;Fastfetch Login Preset
+### :symbols-log-in:&ensp;Fastfetch Login Preset
 
 The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
 
@@ -140,7 +140,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
     fastfetch -c login
     ```
 
-##### Fastfetch Preset File
+#### Fastfetch Preset File
 
 ``` json { .mono-title title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" }
 --8<-- "fastfetch-login-pi-server.jsonc"

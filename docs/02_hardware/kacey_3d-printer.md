@@ -30,7 +30,7 @@ _Modified Creality K1C_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi _(SSID: `Home`)_. Affectionately, named 'Kacey' as a play on the model name, K1C.
 
@@ -38,16 +38,11 @@ _Modified Creality K1C_
 
     [More Kacey Info&ensp;:symbols-printer-3d-nozzle:](kacey_info.md){ .md-button }
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 :    `k1c-a71e`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Office] } -->
-{ .no-bullets }
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 - [:brands-creality:&ensp;Creality FW Version: 1.3.3.46](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }
 { .no-bullets }
@@ -56,14 +51,19 @@ _Modified Creality K1C_
 - [:services-klipper:&ensp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Office] } -->
+{ .no-bullets }
+
+### :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -73,7 +73,7 @@ _Modified Creality K1C_
 | :-------: | :--------------------------: | :--------------- | :---------------------------------------- | :------------------------------------ |
 |  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive
 
@@ -89,7 +89,7 @@ _Modified Creality K1C_
 | :---------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB                                        | `/dev/sda1` | `vfat`      | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native Linux
 
@@ -139,17 +139,17 @@ _Modified Creality K1C_
 
         - Adds a HEPA & activated carbon based air scrubber for the chamber; reducing harmful PM2.5 particulate matter and VOCs emitted during prints. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.
 
-#### :symbols-rotate-cw-clock:&ensp;Update Process
+### :symbols-rotate-cw-clock:&ensp;Update Process
 
-Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md). Update firmware manually with downloaded `*.img` file on a `FAT32` formatted USB stick. See [Force Downgrade Firmware](#force-downgrade-firmware) for information about rolling back to an older firmware version after a bad update.
+Update most software through the [Fluidd Web UI](http://kacey.internal){ external-link }. Update Entware packages in terminal via [SSH](../03_services/ssh.md). Update firmware manually with downloaded `*.img` file on a `FAT32` formatted USB stick. See [Force Downgrade Firmware](#downgrade-firmware) for information about rolling back to an older firmware version after a bad update.
 
-#### :symbols-cloud-upload:&ensp;Backup Policy
+### :symbols-cloud-upload:&ensp;Backup Policy
 
 Configuration files are backed up automatically to a private [GitHub](https://github.com/benhaube/creality-K1C-klipper-backup){ external-link } repository, `creality-K1C-klipper-backup`. After every factory reset and reinstall of the git backup utility you cannot continue backing up to the same repository. Instead of creating a new repository we create a new branch in the same repository named by the date of the factory reset. The current default branch is `reset-09-13`.
 
 In addition to the git repository backup we use the printer's built-in backup scripts to create `.tar.gz` archives of the Klipper configuration files and the Moonraker database. These archives are stored on the [ZimaOS NAS](zimaos_nas.md) in the `/media/Quick-Storage/Backup/k1c-a71e` directory, and they can be restored using the same built-in backup scripts. This is the recommended way to get the printer restored after a factory reset because it faster and more comprehensive.
 
-#### :symbols-calendar-clock:&ensp;Change Date & Time { #change-date-time }
+### :symbols-calendar-clock:&ensp;Change Date & Time { #change-date-time }
 
 In some cases date and time are not correct and defined by default to `Sun Mar 1 13:29:37 CET 2020`. This guide explains how to set the correct date and time on your printer based on your time zone. This procedure must be repeated after restoring the printer to factory settings or if you update the firmware.
 
@@ -208,18 +208,18 @@ In some cases date and time are not correct and defined by default to `Sun Mar 1
     date
     ```
 
-#### :symbols-cpu:&ensp;Force Downgrade Firmware
+### :symbols-cpu:&ensp;Downgrade Firmware
 
 If you updated your **K1 / K1C / K1 Max** and can’t downgrade because the printer says “version is new” or fails via UI, follow these steps to bypass the security check.
 
 [Creality Firmware&ensp;:brands-creality:](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c){ .md-button }
 
-##### Prerequisites
+#### Prerequisites
 
 1. `FAT32` USB drive with the desired firmware `*.img` file.
 2. [SSH](../03_services/ssh.md) access enabled.
 
-##### Step-by-Step
+#### Step-by-Step
 
 1.  Clear modifications and enable Write access:
 
@@ -244,7 +244,7 @@ If you updated your **K1 / K1C / K1 Max** and can’t downgrade because the prin
 
 4.  **Wait:** Once you see `ota: stopped success`, the printer will reboot into the downgraded firmware.
 
-#### :symbols-file-terminal:&ensp;Creality Helper Script
+### :symbols-file-terminal:&ensp;Creality Helper Script
 
 The Helper Script allows you to install the latest official builds and many useful features. It is completely automated and necessary changes are made automatically when installing a feature and restored after uninstallation. When the script is updated, installed files are automatically updated as well.
 
@@ -260,7 +260,7 @@ The Helper Script allows you to install the latest official builds and many usef
 
     Please restore firmware to **factory settings** before using script to avoid issue.
 
-##### Installation
+#### Installation
 
 If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided by Creality, please uninstall them first using `[Remove]` Menu.
 
@@ -285,7 +285,7 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
 
 5.  Also, make sure your system date and time are correct. See [Change Date & Time](#change-date-time) section.
 
-##### Installed Software
+#### Installed Software
 
 ![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-light.png#only-light){ align=right width=550 }
 ![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-dark.png#only-dark){ align=right width=550 }
@@ -331,7 +331,7 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
     - Creality Dynamic Logos for Fluidd
     { .no-bullets }
 
-#### :symbols-app-window:&ensp;HelixScreen
+### :symbols-app-window:&ensp;HelixScreen
 
 Your printer can do way more than your current touchscreen lets you. Bed mesh visualization, input shaper graphs, multi-material management, print history — it's all trapped in a browser tab. HelixScreen puts it at your fingertips. Fast, beautiful, and frugal enough to run on hardware you already own — your printer's onboard SoC, a Raspberry Pi from a drawer, or anything newer.
 
@@ -345,7 +345,7 @@ Your printer can do way more than your current touchscreen lets you. Bed mesh vi
 
 ![Screenshot of HelixScreen home screen UI](../assets/screenshots/helixscreen-home.png){ align=right width=400 }
 
-##### One-Step Install
+#### One-Step Install
 
 If your K1 has internet access, install directly on the printer:
 
@@ -356,7 +356,7 @@ If your K1 has internet access, install directly on the printer:
     wget -O - http://dl.helixscreen.org/install.sh | sh
     ```
 
-##### Two-Step Install
+#### Two-Step Install
 
 If your printer doesn’t have internet access, download on another computer first:
 

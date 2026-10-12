@@ -30,39 +30,39 @@ _Model SG105_
 
 ## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
-: A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
+:   A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the office. It is located on the floor underneath the stationary printer cart.
 
-#### :symbols-map-pin:&ensp;Location
+**:symbols-plug:&ensp;Power Source**
 
-- <!-- material/tags { include: [Office, Printer Cart] } -->
-{ .no-bullets }
+:   Wall Wart _(5V / 0.6A)_
 
-#### :symbols-plug:&ensp;Power Source
+### :symbols-circuit-board:&ensp;Specs
 
-: Wall Wart _(5V / 0.6A)_
-
-#### :symbols-circuit-board:&ensp;Specs
-
-##### Throughput
+#### Throughput
 
 - Five 1 GbE ports
 { .no-bullets }
 - 10 Gb/s total switching capacity
 { .no-bullets }
 
-##### Jumbo Frames
+#### Jumbo Frames
 
 - Supported _(16 KB)_
 { .no-bullets }
 
-##### Management Features
+#### Management Features
 
 - Loopback Detection
 { .no-bullets }
 
-## :symbols-ethernet-port:&ensp;Port Map
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Office, Printer Cart] } -->
+{ .no-bullets }
+
+### :symbols-ethernet-port:&ensp;Port Map
 
 | Port # { data-sort-method="number" } | Connected Device                                                                              | Color / Type { data-sort-method="none" } | Notes { data-sort-method="none" }            |
 | :----------------------------------: | :-------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------------------------------- |

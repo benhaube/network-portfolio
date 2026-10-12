@@ -30,37 +30,37 @@ _High-Performance Desktop PC_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role** { #role }
 
-:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#role){ data-preview }.
+:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 :    `Rob-Desktop`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Office, Desk] } -->
-{ .no-bullets }
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
 
-## :symbols-circuit-board:&ensp;Core Specs
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Office, Desk] } -->
+{ .no-bullets }
+
+### :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                              | Cores / Threads | CPU Freq. | RAM                     | GPU                                      | GPU Freq. | VRAM       |
 | :----------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------------- | :-------- | :--------- |
 | :brands-intel:&nbsp;Core(r) i7 12700K _(x86-64)_ | 12C / 20T       | 5.0 GHz   | 32 GB DDR4 _(3600 MHz)_ | :brands-intel:&nbsp;UHD 770 Graphics     | 1500 MHz  | _Shared_   |
 |                                                  |                 |           |                         | :brands-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz  | 8 GB GDDR6 |
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                        |
 | :-------: | :--------------------------------------- | :------------------ | :-------------------------------------------------------------------------------------------------- |
@@ -72,7 +72,7 @@ _High-Performance Desktop PC_
 | Ethernet  | :symbols-shield:&nbsp;VLAN50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 |   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 

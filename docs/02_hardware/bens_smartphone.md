@@ -28,32 +28,27 @@ _Google Pixel 9 Pro_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
-#### :symbols-host:&ensp;Hostname 
+**:symbols-host:&ensp;Hostname**
 
 :    `ben-s-phone`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Mobile] } -->
-{ .no-bullets }
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Email&ensp;:symbols-move-right:&ensp;"Google"
 
-#### :symbols-brick-wall-shield:&ensp;Device Security
+### :symbols-brick-wall-shield:&ensp;Device Security
 
-##### Software
+#### Software
 
 - :symbols-key-fido2:&nbsp;Titan M2 security chip _(FIDO2 / WebAuthn)_
 { .no-bullets }
@@ -62,20 +57,25 @@ _Google Pixel 9 Pro_
 - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 { .no-bullets }
 
-##### Biometric
+#### Biometric
 
 - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
 { .no-bullets }
 - :symbols-scan-face:&nbsp;Face Scan
 { .no-bullets }
 
-## :symbols-circuit-board:&ensp;Core Specs
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Mobile] } -->
+{ .no-bullets }
+
+### :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                                        | Cores / Threads       | CPU Freq.                                 | RAM           | GPU                         | GPU Freq. | VRAM   |
 | :--------------------------------------------------------- | :-------------------- | :---------------------------------------- | :------------ | :-------------------------- | :-------- | :----- |
 | :brands-google-tensor:&nbsp;Google Tensor G4 _(arm64-v8a)_ | 8C / 8T<br>3-Clusters | 4x 1950 MHz<br>3x 2600 MHz<br>1x 3105 MHz | 16 GB LPDDR5X | :brands-arm:&nbsp;Mali-G715 | -         | Shared |
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -85,7 +85,7 @@ _Google Pixel 9 Pro_
 | :-------: | :--------------------------- | :--------------------- | :---------------------------------------- | :------------------------------------ |
 |   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `ben-s-phone.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
@@ -99,7 +99,7 @@ _Google Pixel 9 Pro_
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -                                              | `-`         | `-`         | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
@@ -139,33 +139,33 @@ _Google Pixel 9 Pro_
 
     :   Calendar and tasks synchronization is handled with the [DAVx5](https://www.davx5.com/){ external-link } application, and the calendar and tasks service is hosted by [Fastmail](https://fastmail.com){ external-link }.
 
-#### :symbols-rotate-cw-clock:&ensp;Update Process
+### :symbols-rotate-cw-clock:&ensp;Update Process
 
-##### Android OS
+#### Android OS
 
 Android updates are automatic, but can also be performed manually through the system settings or via ADB. Google releases monthly security updates, quarterly feature updates, and yearly major version updates.
 
-##### Applications
+#### Applications
 
 Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps){ external-link }. Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/){ external-link } app store and the [Obtainium](https://obtainium.imranr.dev/){ external-link } application.
 
-#### :symbols-cloud-upload:&ensp;Backup Policy
+### :symbols-cloud-upload:&ensp;Backup Policy
 
-##### Cloud Backup
+#### Cloud Backup
 
 Google's cloud backup service is used to back up **device settings** and **apps & app data** for applications installed via the Google Play Store. Other backup services provided by Google, like photos, call history, and SMS / MMS & RCS messages are disabled to maintain privacy and control of sensitive data.
 
 Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
-##### Photos & Videos
+#### Photos & Videos
 
 Photos and videos are backed up to the [ZimaOS NAS](zimaos_nas.md). The [Immich](../03_services/immich.md) application handles backup for photos and videos. The Google Photos application is disabled.
 
-##### SMS / MMS & RCS
+#### SMS / MMS & RCS
 
 The [SMS Backup & Restore Pro](https://www.synctech.com.au/sms-backup-restore/){ external-link } application is responsible for backing up messages daily. The application creates a compressed archive of the messages in the directory, `/backups/SMS_Backup`, and [Syncthing](../03_services/syncthing.md) transfers them to the **ZimaOS NAS**.
 
-##### Other Apps
+#### Other Apps
 
 Other applications that allow exporting settings / data are backed up to the **ZimaOS NAS** via **Syncthing**.
 

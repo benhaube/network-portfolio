@@ -31,44 +31,44 @@ _Model LS1005G_
 
 ## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
-: A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
+:   A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
 
-#### :symbols-map-pin:&ensp;Location
+**:symbols-plug:&ensp;Power Source**
 
-- <!-- material/tags { include: [Living Room, TV Stand] } -->
-{ .no-bullets }
+:   Wall Wart _(5V / 0.6A)_
 
-#### :symbols-plug:&ensp;Power Source
+### :symbols-circuit-board:&ensp;Specs
 
-: Wall Wart _(5V / 0.6A)_
-
-#### :symbols-circuit-board:&ensp;Specs
-
-##### Throughput
+#### Throughput
 
 - Five 1 GbE ports
 { .no-bullets }
 - 10 Gb/s total switching capacity
 { .no-bullets }
 
-##### Jumbo Frames
+#### Jumbo Frames
 
 - Not Supported
 { .no-bullets }
 
-##### Management Features
+#### Management Features
 
 - None &mdash; Unmanaged
 { .no-bullets }
 
-##### Hardware Revision
+#### Hardware Revision
 
 - v5.46
 { .no-bullets }
 
-## :symbols-ethernet-port:&ensp;Port Map
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Living Room, TV Stand] } -->
+{ .no-bullets }
+
+### :symbols-ethernet-port:&ensp;Port Map
 
 | Port # { data-sort-method="number" } | Connected Device                                                                                                            | Color / Type { data-sort-method="none" } | Notes { data-sort-method="none" } |
 | :----------------------------------: | :-------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :-------------------------------- |

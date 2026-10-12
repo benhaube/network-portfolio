@@ -33,24 +33,19 @@ _Rack-Mount ZimaBoard 2_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server "Product Information"){ external-link } as the "beating heart," it is the most powerful server on the local network. It has an _x86-64_ Intel N150 quad-core CPU _(3.6 GHz)_ and 16 GB of LPDDR5 _(6400 MHz)_ RAM, and it is located in the 10-inch server rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 :    `ZimaOS-NAS`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Living Room, Server Rack] } -->
-{ .no-bullets } 
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(v1.7.0)_
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -59,13 +54,18 @@ _Rack-Mount ZimaBoard 2_
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"  
     - SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
-## :symbols-circuit-board:&ensp;Core Specs
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Living Room, Server Rack] } -->
+{ .no-bullets } 
+
+### :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                                 | Cores / Threads | CPU Freq. | RAM                       | GPU                              | GPU Freq. | VRAM     |
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;N150 _(x86-64)_ | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 _(6400 MHz)_ | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | _Shared_ |
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                       |
 | :-------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
@@ -77,7 +77,7 @@ _Rack-Mount ZimaBoard 2_
 |                 `eth0`                  | :symbols-shield:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 |                 `eth1`                  | :symbols-shield:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-microchip:&ensp;Boot
 
@@ -92,7 +92,7 @@ _Rack-Mount ZimaBoard 2_
 | `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB                                           | `/dev/md0`     | `btrfs`     | -          |
 | `/media/nvme0n1p1`     | NVMe SSD           | 250 GB                                         | `/dev/nvme0n1` | `ext4`      | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-share:&ensp;File Sharing
 
@@ -101,9 +101,9 @@ _Rack-Mount ZimaBoard 2_
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                              | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }                                                                                |
-| :------: | :------------------------------------------------------------------------------ | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| _Active_ | [:brands-debian:&nbsp;Debian _(trixie)_](debian_server.md#role){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
+|  Status  | OS                                                                                  | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }                                                                                |
+| :------: | :---------------------------------------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| _Active_ | [:brands-debian:&nbsp;Debian _(trixie)_](debian_server.md#overview){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
 
 #### :symbols-tux:&ensp;Native Linux
 
@@ -178,14 +178,14 @@ _Rack-Mount ZimaBoard 2_
     :symbols-activity:&ensp;**Performance:** Reduced backup time from ~10m to ~1.5m. <br>
     :symbols-monitor-smartphone:&ensp;**Affected Clients:**
 
-    - [Ben's Desktop PC](bens_desktop.md#role){ data-preview }
-    - [Ben's Laptop PC](bens_laptop.md#role){ data-preview }
+    - [Ben's Desktop PC](bens_desktop.md#device-overview){ data-preview }
+    - [Ben's Laptop PC](bens_laptop.md#device-overview){ data-preview }
 
     ---
 
     See the ["Configuration"](../03_services/nfs.md#configuration) section of the NFS service documentation page for server and client configuration details.
 
-#### :symbols-chevrons-left-right-ellipsis:&ensp;Macvlan Shim
+### :symbols-chevrons-left-right-ellipsis:&ensp;Macvlan Shim
 
 Because the [Debian Server](debian_server.md) is a VM hosted directly on the ZimaOS NAS using bridged networking attached to `eth0`, the physical NIC or Linux bridge will drop intra-host "hairpin" traffic. In standard Linux bridging and Macvtap / bridge setups, an interface cannot route or reflect frames back out of the same physical port without hairpin mode enabled, preventing the hypervisor host _(`192.168.50.4`)_ from communicating directly with the guest VM _(`192.168.50.6`)_ even though outside LAN devices communicate with both just fine.
 
@@ -218,13 +218,13 @@ To solve this problem we need to create a Macvlan shim. Because Macvtap operatin
     sudo systemctl enable macvlan-shim.service
     ```
 
-#### :symbols-cloud-upload:&ensp;Backblaze B2 Cloud Backup
+### :symbols-cloud-upload:&ensp;Backblaze B2 Cloud Backup
 
 The ZimaOS NAS is the main backup server for clients and other servers on the local network. To maintain the **3-2-1 Backup Strategy** the important data stored on the NAS is backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage) cloud storage. To automate the backup process we utilize Bash scripts that use the `rclone` command and Systemd unit files to trigger the scripts on a set schedule. Reference the [Backblaze docs](https://www.backblaze.com/docs/cloud-storage-integrate-rclone-with-backblaze-b2) for help with `rclone` integration.
 
 [Backup Scripts&ensp;:brands-github:](https://github.com/benhaube/zimaos-backup-scripts){ .md-button }
 
-##### Activate Scripts
+#### Activate Scripts
 
 1. Put the backup scripts `b2-appdata-bkp.sh`, `b2-backup-bkp.sh`, and `b2-immich-bkp.sh`  into the `/opt/scripts` directory.
 
@@ -240,7 +240,7 @@ The ZimaOS NAS is the main backup server for clients and other servers on the lo
     sudo chmod 700 /opt/scripts/b2-*-bkp.sh
     ```
 
-##### Automate with Systemd
+#### Automate with Systemd
 
 1. Create the Systemd timer unit files in the directory, `/etc/systemd/system`, and paste in the following code. Name the files to match the script's filename. _(e.g., `b2-appdata-bkp.timer`)_
 
@@ -309,7 +309,7 @@ The ZimaOS NAS is the main backup server for clients and other servers on the lo
     8 timers listed.
     ```
 
-#### :symbols-broom-sparkles:&ensp;Docker Cleanup
+### :symbols-broom-sparkles:&ensp;Docker Cleanup
 
 Over time the Docker container management system builds up a lot of stale data which can fill up the system drive. This data includes temporary cache, unused containers, dangling volumes, and old or outdated images. To keep the Docker system from accumulating too much unwanted data we have written a script to perform a Docker system cleanup, and the script is automated using Systemd unit files. The `docker-cleanup.sh` script will run weekly on Mondays at 05:00 UTC-5. Built into the script is a push notification sent through the [Gotify](../03_services/gotify.md) server to report cleanup success or failure as well as how much data was removed.
 
@@ -367,13 +367,13 @@ Over time the Docker container management system builds up a lot of stale data w
 
 --8<-- "nerd-fonts.md"
 
-#### :symbols-rocket:&ensp;Starship Terminal Prompt
+### :symbols-rocket:&ensp;Starship Terminal Prompt
 
 The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh.
 
 [Starship&ensp;:brands-github:](https://github.com/starship/starship){ .md-button }
 
-##### Install
+#### Install
 
 1.  Install the latest version:
 
@@ -394,19 +394,19 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
     sudo cp starship.toml .config/
     ```
 
-##### Starship Config File
+#### Starship Config File
 
 ``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
 --8<-- "starship-zimaos.toml"
 ```
 
-#### :symbols-log-in:&ensp;Fastfetch Login Preset
+### :symbols-log-in:&ensp;Fastfetch Login Preset
 
 The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on GitHub.
 
 [Fastfetch Presets&ensp;:brands-github:](https://github.com/benhaube/fastfetch-login-preset){ .md-button }
 
-##### Install
+#### Install
 
 1.  Download the latest `fastfetch` release from [GitHub](https://github.com/fastfetch-cli/fastfetch/releases/latest){ external-link } and decompress the archive:
 
@@ -423,7 +423,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
     sudo cp -r fastfetch-linux-amd64/usr/share/bash-completion /opt/share
     ```
 
-##### Configure
+#### Configure
 
 1.  Copy the `login.jsonc` preset file into the presets directory:
 
@@ -437,7 +437,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
     fastfetch -c login
     ```
 
-##### Fastfetch Preset File
+#### Fastfetch Preset File
 
 ``` json { .mono-title title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" }
 --8<-- "fastfetch-login-storage-server.jsonc"
@@ -461,13 +461,13 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 4.  Aligns all keys to this uniform width.
 5.  Sets the separator symbol used between the keys and values.
 
-#### :symbols-clock-fading:&ensp;Zima Cron
+### :symbols-clock-fading:&ensp;Zima Cron
 
 A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support.
 
 [Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
 
-##### Install
+#### Install
 
 1.  Download the latest release from [GitHub](https://github.com/chicohaager/cron/releases/latest){ external-link }.
 
@@ -500,13 +500,13 @@ A modern, reliable task scheduler for ZimaOS with a completely redesigned web in
 
     Open **Zima Cron** from the [ZimaOS dashboard](http://storage-server.internal){ external-link }, or directly at <http://storage-server.internal/modules/cron/>.
 
-#### :symbols-brick-wall-fire:&ensp;Zima Firewall
+### :symbols-brick-wall-fire:&ensp;Zima Firewall
 
 Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live security dashboard. Default-drop `INPUT` allowlist + `DOCKER-USER` blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection.
 
 [ZFW Firewall&ensp;:brands-github:](https://github.com/chicohaager/zfw){ .md-button }
 
-##### Install
+#### Install
 
 1.  Download the latest release from [GitHub](https://github.com/chicohaager/zfw/releases/latest){ external-link }.
 

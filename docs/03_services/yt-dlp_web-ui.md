@@ -28,22 +28,22 @@ _Download Videos from YouTube_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `3033`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - <http://storage-server.internal:3033>
 { .no-bullets }
 - <http://storage-server-2.internal:3033>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -55,11 +55,13 @@ _Download Videos from YouTube_
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` | `3033`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                                  |
 | :------------------ | :-------------------------------------------------------------------- |
@@ -67,7 +69,7 @@ _Download Videos from YouTube_
 | Application Data    | `/media/nvme0n1p1/AppData/dockge/stacks/yt-dlp-webui/data`            |
 | Configuration File  | `/media/nvme0n1p1/AppData/dockge/stacks/yt-dlp-webui/data/config.yml` |
 
-#### :symbols-wrench:&ensp;Preparation
+### :symbols-wrench:&ensp;Preparation
 
 1.  Create the configuration directory:
 
@@ -102,7 +104,7 @@ _Download Videos from YouTube_
 
 5.  Paste the JWT into the environment variable, `JWT_SECRET`, in your Docker compose file and restart the container.
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/yt-dlp-webui/compose.yaml" linenums="1" }
 --8<-- "yt-dlp.yml"

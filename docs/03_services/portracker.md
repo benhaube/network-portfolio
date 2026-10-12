@@ -29,15 +29,15 @@ _Port Monitoring & Discovery_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `4999`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-server:&ensp;Pi 4B Server:
 { .no-bullets }
@@ -47,9 +47,9 @@ _Port Monitoring & Discovery_
     - <http://storage-server.internal:4999>
     - <http://storage-server-2.internal:4999>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
-: N/A
+:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -58,29 +58,31 @@ _Port Monitoring & Discovery_
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | `4999`  |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | `4999`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Pi 4B Server
+#### Pi 4B Server
 
 | Contents            | Path                                     |
 | :------------------ | :--------------------------------------- |
 | Docker Compose File | `/opt/stacks/portracker/compose.yaml`    |
 | Application Data    | `/opt/stacks/portracker/portracker-data` |
 
-##### ZimaOS NAS
+#### ZimaOS NAS
 
 | Contents            | Path                                                     |
 | :------------------ | :------------------------------------------------------- |
 | Docker Compose File | `/media/nvme0n1p1/dockge/stacks/portracker/compose.yaml` |
 | Application Data    | `/media/nvme0n1p1/dockge/stacks/portracker/data`         |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
-##### Pi 4B Server
+#### Pi 4B Server
 
 ``` yaml { .mono-title title="/opt/stacks/portracker/compose.yaml" linenums="1" }
 --8<-- "portracker-pi-4b.yml"
@@ -95,7 +97,7 @@ _Port Monitoring & Discovery_
 7. Required for discovering services running in Docker.
 8. **Optional:** For enhanced TrueNAS features
 
-##### ZimaOS NAS
+#### ZimaOS NAS
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/portracker/compose.yaml" linenums="1" }
 --8<-- "portracker-zima.yml"

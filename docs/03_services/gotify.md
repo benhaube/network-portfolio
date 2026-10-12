@@ -29,15 +29,15 @@ _Push Notifications_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A simple server for sending and receiving messages in real-time per WebSocket. _(Includes a sleek Web-UI)_
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :     `8180`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-network:&ensp;Local Access:
 { .no-bullets }
@@ -47,14 +47,14 @@ _Push Notifications_
 { .no-bullets }
     - <https://gotify.rac3r4life.online> &mdash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Gotify (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Gotify (bhaube)"
 
-#### :symbols-message-square-dot:&ensp;Notifications
+## :symbols-message-square-dot:&ensp;Notifications
 
 | Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding documentation." } | Role / Notes { data-sort-method="none" }                                                                                                             |
 | :----------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -76,11 +76,13 @@ _Push Notifications_
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `gotify`       | `gotify/server:latest` | `8180`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                           |
 | :------------------ | :------------------------------------------------------------- |
@@ -89,7 +91,7 @@ _Push Notifications_
 | Application Icons   | `/media/nvme0n1p1/AppData/dockge/stacks/gotify/data/images`    |
 | Gotify Plugins      | `/media/nvme0n1p1/AppData/dockge/stacks/gotify/data/plugins`   |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/gotify/compose.yaml" linenums="1" }
 --8<-- "gotify.yml"
@@ -97,7 +99,7 @@ _Push Notifications_
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
 
-#### :brands-fedora:&ensp;Fedora Linux PCs
+### :brands-fedora:&ensp;Fedora Linux PCs
 
 1.  Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`.
 
@@ -110,7 +112,7 @@ _Push Notifications_
 
 2.  That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup.
 
-#### :services-beszel:&ensp;Beszel
+### :services-beszel:&ensp;Beszel
 
 1.  Open the [Beszel Hub](beszel.md) settings menu, go to the **"Notifications"** sub-menu, and enter the following URL into the **"Webhook / Push Notifications"** section.
 
@@ -120,7 +122,7 @@ _Push Notifications_
 
 2.  Click the **"Test URL"** button to send a test notification and verify functionality.
 
-#### :services-homebox:&ensp;Homebox
+### :services-homebox:&ensp;Homebox
 
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
@@ -139,9 +141,9 @@ _Push Notifications_
 5.  Click the "Test" button to send a test notification.
 6.  Click "Submit" to save the new notification.
 
-#### :brands-asus-router:&ensp;Asus Router
+### :brands-asus-router:&ensp;Asus Router
 
-##### WAN IP Change
+#### WAN IP Change
 
 !!! note inline end
 
@@ -173,7 +175,7 @@ _Push Notifications_
     chmod +x /jffs/scripts/ddns-start
     ```
 
-##### BACKUPMON Alerts
+#### BACKUPMON Alerts
 
 1.  Create the custom wrapper script:
 
@@ -239,7 +241,7 @@ _Push Notifications_
         cru l
         ```
 
-##### Connmon Alerts
+#### Connmon Alerts
 
 1.  Create the script:
 
@@ -266,7 +268,7 @@ _Push Notifications_
 
 4.  Once saved and executable, `connmon` will automatically detect the script in the directory. You will just need to enter the `connmon` notifications menu and enable the custom user scripts option. The next time a ping threshold is breached or the connection drops entirely, connmon will fire this script, format the variables into a clean string, and push it directly to the Gotify server.
 
-##### DHCP Event Alerts
+#### DHCP Event Alerts
 
 1.  Verify the default script `dnsmasq` is currently using for its DHCP script:
 
@@ -312,7 +314,7 @@ _Push Notifications_
 
         To test it, simply disconnect a device from the network, manually delete its lease from the Asuswrt-Merlin UI _(or wait for it to expire)_, and reconnect it to force an `add` event.
 
-#### :symbols-square-terminal:&ensp;SSH Alerts
+### :symbols-square-terminal:&ensp;SSH Alerts
 
 1.  Create the script:
 
@@ -395,7 +397,7 @@ _Push Notifications_
 
         **Note:** The `&` symbol at the end is crucial. It runs the script in the background so it doesn't hang or delay your SSH login prompt while it waits for the `curl` command to reach the Gotify server.
 
-#### :services-uptime-kuma:&ensp;Uptime Kuma
+### :services-uptime-kuma:&ensp;Uptime Kuma
 
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
@@ -417,13 +419,13 @@ _Push Notifications_
     - Toggle **"Default enabled"** if you want your notification to be enabled for all new monitors.
     - Toggle **"Apply on all existing monitors"** to apply your new notification to your existing monitors.
 
-#### :services-zimaos:&ensp;ZimaOS NAS
+### :services-zimaos:&ensp;ZimaOS NAS
 
 The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
 
 [Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
 
-##### AppData Backup
+#### AppData Backup
 
 1.  Create the custom script in the `/opt/scripts` directory:
 
@@ -454,7 +456,7 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
 
 4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#automate-with-systemd) documentation for Systemd configuration to automate script execution.
 
-##### Immich Backup
+#### Immich Backup
 
 1.  Create the custom script in the `/opt/scripts` directory:
 
@@ -485,7 +487,7 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
 
 4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#automate-with-systemd) documentation for Systemd configuration to automate script execution.
 
-##### Network Devices Backup
+#### Network Devices Backup
 
 1.  Create the custom script in the `/opt/scripts` directory:
 
@@ -516,7 +518,7 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
 
 4.  See the [Backblaze B2 Cloud Backup](../02_hardware/zimaos_nas.md#automate-with-systemd) documentation for Systemd configuration to automate script execution.
 
-##### Docker Cleanup
+#### Docker Cleanup
 
 1.  Create the custom script in the `/opt/scripts` directory:
 
@@ -544,7 +546,7 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
     bash /opt/scripts/docker_cleanup.sh
     ```
 
-##### Temp Files Cleanup
+#### Temp Files Cleanup
 
 1.  Create the custom script in the `/opt/scripts` directory:
 

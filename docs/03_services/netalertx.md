@@ -33,22 +33,22 @@ _Centralized Network Visibility_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
+:   Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - `20211`
 { .no-bullets }
 - `20212`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 :    <http://storage-server.internal:20211>
 
-#### :symbols-user-key:&ensp;Credentials 
+**:symbols-user-key:&ensp;Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -60,11 +60,13 @@ _Centralized Network Visibility_
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :------------------- |
 | [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx`    | `jokobsk/netalertx:latest` | `20211`&ensp;`20212` |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                 |
 | :------------------ | :--------------------------------------------------- |
@@ -72,7 +74,7 @@ _Centralized Network Visibility_
 | Configuration File  | `/media/nvme0n1p1/AppData/netalertx/config/app.conf` |
 | Database File       | `/media/nvme0n1p1/AppData/netalertx/db/app.db`       |
 
-#### :symbols-puzzle:&ensp;Loaded Plugins
+### :symbols-puzzle:&ensp;Loaded Plugins
 
 | Plugin ID   | Category       | Description { data-sort-method="none" }      |              Required { data-sort-reverse }              |
 | :---------- | :------------- | :------------------------------------------- | :------------------------------------------------------: |
@@ -97,7 +99,7 @@ _Centralized Network Visibility_
 | `UI`        | System         | User interface specific settings             | <span aria-label="Yes" role="img">:symbols-check:</span> |
 | `VNDRPDT`   | System         | MAC address vendor database update           |                                                          |
 
-#### :symbols-svg:&ensp;Custom Device Icons
+### :symbols-svg:&ensp;Custom Device Icons
 
 The NetAlertX service allows users to add custom device and property SVG icons through the settings, but they need to be base64 encoded first. Below is a file containing icons from the open-source Lucide project that are already base64 encoded.
 
@@ -105,7 +107,7 @@ The NetAlertX service allows users to add custom device and property SVG icons t
 --8<-- "lucide_base64_encoded.txt"
 ```
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/netalertx/compose.yaml" linenums="1" }
 --8<-- "netalertx.yaml"

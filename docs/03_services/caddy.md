@@ -27,22 +27,22 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
+:   Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - `80`
 { .no-bullets }
 - `443`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 :    <https://pi-zero.internal>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    N/A
 
@@ -52,9 +52,11 @@ _Reverse-Proxy Server_
 | :----------------------------------------------------------------------------- | :------------------------------------------ | :------------- | :---- | :-------------- |
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux _(Systemd)_ | `N/A`          | `N/A` | `80`&ensp;`443` |
 
-### :symbols-settings:&ensp;Configuration
+---
 
-#### :symbols-monitor-arrow-down-corner:&ensp;Install
+## :symbols-settings:&ensp;Configuration
+
+### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 1.  Add the official Caddy repository.
 
@@ -85,7 +87,7 @@ _Reverse-Proxy Server_
     sudo systemctl reload caddy
     ```
 
-#### :symbols-file-cog:&ensp;The 'Caddyfile'
+### :symbols-file-cog:&ensp;The 'Caddyfile'
 
 ``` nginx { .mono-title title="/etc/caddy/Caddyfile" linenums="1" }
 --8<-- "Caddyfile"

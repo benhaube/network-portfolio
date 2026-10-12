@@ -28,19 +28,19 @@ _Provided by addr.tools_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A networking service that automatically maps a static domain name _(FQDN)_ to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `N/A`
 
-#### :symbols-link-2:&ensp;URL / Access 
+**:symbols-link-2:&ensp;URL / Access** 
 
 :    <https://rac3r4life.myaddr.dev>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -52,13 +52,15 @@ _Provided by addr.tools_
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `N/A`   |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 !!! note 
 
     The DDNS renewal script also contains the code required to send a push notification through the [Gotify](gotify.md#notifications){ data-preview } server whenever the WAN IP address changes.
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents        | Path                       |
 | :-------------- | :------------------------- |
@@ -66,7 +68,7 @@ _Provided by addr.tools_
 | TLS Certificate | `/jffs/.cert/cert.pem`     |
 | TLS Private Key | `/jffs/.cert/key.pem`      |
 
-#### :symbols-file-terminal:&ensp;Router Script
+### :symbols-file-terminal:&ensp;Router Script
 
 1.  Create a script on the router in the `/jffs/scripts` directory to update the IP every time it changes:
 
@@ -98,7 +100,7 @@ _Provided by addr.tools_
 
     ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ width=700 }
 
-#### :symbols-award:&ensp;TLS Certificate
+### :symbols-award:&ensp;TLS Certificate
 
 1.  Install the `certbot` package on a separate PC:
 

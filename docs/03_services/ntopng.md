@@ -27,27 +27,27 @@ _Network Traffic Probe_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-:  Web-based traffic and security network traffic monitoring.
+:   Web-based traffic and security network traffic monitoring.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - `3000`
 { .no-bullets }
 - `5556`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - <http://storage-server.internal:3000>
 { .no-bullets }
 - <http://storage-server-2.internal:3000>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
-:  N/A
+:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -55,7 +55,9 @@ _Network Traffic Probe_
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------- | :----------------- |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ntop`         | `ntop/ntopng:latest` | `3000`&ensp;`5556` |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 ``` yaml { .mono-title title="~/.casaos/apps/ntopng/docker-compose.yml" linenums="1" }
 --8<-- "ntopng.yml"

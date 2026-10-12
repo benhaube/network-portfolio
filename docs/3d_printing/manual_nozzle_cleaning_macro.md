@@ -47,12 +47,12 @@ _Manually Clean Your Nozzle_
 
     Useful if you are switching between PLA and higher-temp materials like ABS / ASA.
 
-#### Default Cleaning
+### Default Cleaning
 
 - [ ] Trigger `CLEAN_NOZZLE` from your Fluidd dashboard or Guppy Screen macros list.
-- [ ] The nozzle will heat to the default temperature _(__150&deg;C__)_.
+- [ ] The nozzle will heat to the default temperature _(**150&deg;C**)_.
 
-#### Custom Temperature Cleaning
+### Custom Temperature Cleaning
 
 - [ ] You can specify a different temperature through the console by running `CLEAN_NOZZLE TEMP=200`
 
@@ -62,7 +62,7 @@ _Manually Clean Your Nozzle_
 
     The `DONE_CLEANING_COOL` macro turns off the heater, parks the toolhead safely out of the way, and cools the nozzle.
 
-#### Completion
+### Completion
 
 - [ ] Wait for the [Fluidd](../03_services/fluidd.md) UI prompt to appear.
 - [ ] Scrub the nozzle with your silicone brush.
@@ -72,7 +72,7 @@ _Manually Clean Your Nozzle_
 <figure markdown="span">
   ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-light.png#only-light){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
   ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-dark.png#only-dark){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
-  <figcaption>The Fluidd UI prompt will appear when the nozzle has reached the specified temperature. Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</figcaption>
+<figcaption>The Fluidd UI prompt will appear when the nozzle has reached the specified temperature. Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</figcaption>
 </figure>
 
 <div class="glightbox-desc nozzle-clean-desc">

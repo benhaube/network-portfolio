@@ -26,22 +26,22 @@ _NTP Server_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    Advanced, lightweight NTP client and server.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `123`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - `192.168.50.1:123`
 { .no-bullets }
 - `asusrouter.internal:123`
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -54,19 +54,19 @@ _NTP Server_
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `123`   |
 
-### :symbols-settings:&ensp;Configuration
+## :symbols-settings:&ensp;Configuration
 
 !!! info
 
     The **"NTP Director"** feature on the **ASUS RT-BE92U** wireless router is enabled. This ensures network clients without the ability to change their network time settings are forced to use the Chrony server. This works by intercepting and redirecting all outbound packets on port `123`, so all servers and clients on the network have a single source of truth for time synchronization.
 
-#### :symbols-server:&ensp;Server
+### :symbols-server:&ensp;Server
 
 ``` nt { .mono-title title="/opt/share/ntpmerlin.d/chrony.conf" linenums="1" }
 --8<-- "chrony.conf"
 ```
 
-#### :symbols-monitor-smartphone:&ensp;Clients
+### :symbols-monitor-smartphone:&ensp;Clients
 
 ``` nt { .mono-title title="/etc/chrony.conf" linenums="1" }
 --8<-- "chrony-client.conf"

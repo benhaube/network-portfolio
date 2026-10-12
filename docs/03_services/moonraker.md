@@ -27,19 +27,19 @@ _The Klipper Web API_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `7125`
 
-#### :symbols-link-2:&ensp;URL / Access   
+**:symbols-link-2:&ensp;URL / Access**   
 
 :    <http://kacey.internal:7125>
 
-#### :symbols-user-key:&ensp;Credentials 
+**:symbols-user-key:&ensp;Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -51,9 +51,11 @@ _The Klipper Web API_
 | :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
 | [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `7125`  |
 
-### :symbols-settings:&ensp;Configuration
+---
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+## :symbols-settings:&ensp;Configuration
+
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents              | Path                                          |
 | :-------------------- | :-------------------------------------------- |
@@ -62,7 +64,7 @@ _The Klipper Web API_
 | Printer Config Files  | `/usr/data/printer-data/config/`              |
 | Moonraker Config File | `/usr/data/printer-data/config/moonraker.cfg` |
 
-#### :symbols-monitor-arrow-down-corner:&ensp;Install
+### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 ``` bash title="Setup Creality Helper Script" linenums="1"
 --8<-- "install-helper-script.sh"
@@ -72,7 +74,7 @@ _The Klipper Web API_
 2. Enter this command to run the Creality Helper Script.
 3. If you encounter an issue to clone Helper Script repository, enter this command before cloning.
 
-#### :symbols-file-cog:&ensp;Config File
+### :symbols-file-cog:&ensp;Config File
 
 ``` ini { .mono-title title="/usr/data/printer_data/config/moonraker.cfg" linenums="1" }
 --8<-- "moonraker.cfg"

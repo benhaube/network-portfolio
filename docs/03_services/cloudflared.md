@@ -30,32 +30,44 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: Secure reverse-proxy tunnel for hosting private services on the public internet.
+:   Secure reverse-proxy tunnel for hosting private services on the public internet.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
-##### Outbound
+Outbound
 
 - `7844` &ndash; _TCP & UDP_
 { .no-bullets }
 - `443` &ndash; _TCP_
 { .no-bullets }
 
-##### Local Metrics
+Local Metrics
 
 - `60123`
 { .no-bullets }
 
-#### :symbols-route:&ensp;Routes
+**:symbols-user-key:&ensp;Credentials**
 
-##### Debian Server
+- [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
+    - Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
+- 2FA / MFA
+{ .no-bullets }
+    - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
+    - :symbols-clock:&ensp;TOTP
+
+**:symbols-route:&ensp;Routes**
+
+Debian Server
 
 - <https://healthchecks.rac3r4life.online>
 { .no-bullets }
 
-##### Pi 4B Server
+Pi 4B Server
 
 - <https://it-tools.rac3r4life.online>
 { .no-bullets }
@@ -64,7 +76,7 @@ _Reverse-Proxy Server_
 - <https://uptime.rac3r4life.online>
 { .no-bullets }
 
-##### ZimaOS NAS
+ZimaOS NAS
 
 - <https://gitea.rac3r4life.online>
 { .no-bullets }
@@ -77,18 +89,6 @@ _Reverse-Proxy Server_
 - <https://portfolio.rac3r4life.online>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
-
-- [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
-{ .no-bullets }
-- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-{ .no-bullets }
-    - Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
-- 2FA / MFA
-{ .no-bullets }
-    - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
-    - :symbols-clock:&ensp;TOTP
-
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                            | Method                                    | Container Name      | Image                           | Port(s) |
@@ -97,41 +97,43 @@ _Reverse-Proxy Server_
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Debian
+#### Debian
 
 | Contents              | Path                                   |
 | :-------------------- | :------------------------------------- |
 | Docker Compose File   | `/opt/stacks/cloudflared/compose.yaml` |
 | Environment Variables | `/opt/stacks/cloudflared/.env`         |
 
-##### ZimaOS
+#### ZimaOS
 
 | Contents              | Path                                                              |
 | :-------------------- | :---------------------------------------------------------------- |
 | Docker Compose File   | `/media/nvme0n1p1/AppData/dockge/stacks/cloudflared/compose.yaml` |
 | Environment Variables | `/media/nvme0n1p1/AppData/dockge/stacks/cloudflared/.env`         |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose Files
+### :symbols-file-code-corner:&ensp;Docker Compose Files
 
-##### Debian Server
+#### Debian Server
 
 ``` yaml { .mono-title title="/opt/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "cloudflared-debian-vm.yaml"
 ```
 
-##### Pi 4B Server
+#### Pi 4B Server
 
 ``` yaml { .mono-title title="/opt/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "cloudflared-pi-server.yml"
 ```
 
-##### ZimaOS NAS
+#### ZimaOS NAS
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/cloudflared/compose.yaml" linenums="1" }
 --8<-- "includes/code/yaml/cloudflared-zimaos-nas.yaml"

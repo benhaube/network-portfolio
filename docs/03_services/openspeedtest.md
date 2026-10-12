@@ -29,24 +29,24 @@ _Test Network Performance_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A free & open-source HTML5 network performance estimation tool.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `3004`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - <http://storage-server.internal:3004>
 { .no-bullets }
 - <http://storage-server-2.internal:3004>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
-: N/A
+:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -54,7 +54,9 @@ _Test Network Performance_
 | :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :--------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `openspeedtest` | `openspeedtest/latest` | `3004`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 

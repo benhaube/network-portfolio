@@ -29,15 +29,15 @@ _Server Message Block_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    Remote file system access.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `445`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-router:&ensp;ASUS RT-BE92U:
 { .no-bullets }
@@ -50,7 +50,7 @@ _Server Message Block_
     - `\\storage-server.internal\nvme0n1p1`
     - `\\storage-server.internal\Quick-Storage`
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -68,21 +68,23 @@ _Server Message Block_
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
 
-### :symbols-settings:&ensp;Configuration
+---
 
-#### :symbols-server:&ensp;Pi 4B Server
+## :symbols-settings:&ensp;Configuration
+
+### :symbols-server:&ensp;Pi 4B Server
 
 ``` linuxconfig { .mono-title title="/etc/samba/smb.conf" linenums="1" }
 --8<-- "smb-pi-4b.conf"
 ```
 
-#### :symbols-server-nas:&ensp;ZimaOS NAS
+### :symbols-server-nas:&ensp;ZimaOS NAS
 
 ``` linuxconfig { .mono-title title="/etc/samba/smb.conf" linenums="1" }
 --8<-- "smb-zima.conf"
 ```
 
-##### User Configuration Files
+#### User Configuration Files
 
 ``` linuxconfig { .mono-title title="/etc/samba/casa.admin.conf" linenums="1" }
 --8<-- "casa.admin.conf"

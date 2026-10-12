@@ -27,22 +27,22 @@ _The Terminal on the Web_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A DockerApp makes it easy to use the host terminal on the Web.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `2222`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - <http://storage-server.internal:2222>
 { .no-bullets }
 - <http://storage-server-2.internal:2222>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -54,7 +54,9 @@ _The Terminal on the Web_
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ttydbridge`   | `cp0204/ttydbridge:v0.0.3` | `2222`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 ``` yaml { .mono-title title="~/.casaos/apps/ttydbridge/docker-compose.yml" linenums="1" }
 --8<-- "ttydBridge.yml"

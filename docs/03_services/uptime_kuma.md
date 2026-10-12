@@ -29,15 +29,15 @@ _A Fancy Monitoring Tool_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A fancy self-hosted service monitoring tool.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `3001`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-network:&ensp;Local Access
 { .no-bullets }
@@ -47,7 +47,7 @@ _A Fancy Monitoring Tool_
 { .no-bullets }
     - <https://uptime.rac3r4life.online>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
@@ -62,18 +62,20 @@ _A Fancy Monitoring Tool_
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :----------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `uptime-kuma`  | `louislam/uptime-kuma:2` | `3001`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                   |
 | :------------------ | :------------------------------------- |
 | Docker Compose File | `/opt/stacks/uptime-kuma/compose.yaml` |
 | Application Data    | `/opt/stacks/uptime-kuma/data`         |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="/opt/stacks/uptime-kuma/compose.yaml" linenums="1" }
 --8<-- "uptime-kuma.yml"

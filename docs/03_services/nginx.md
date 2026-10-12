@@ -27,15 +27,15 @@ _Network Documentation_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `8080`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-network:&ensp;Local Access:
 { .no-bullets }
@@ -45,9 +45,9 @@ _Network Documentation_
 { .no-bullets }
     - <https://portfolio.rac3r4life.online>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
-: N/A
+:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -55,11 +55,13 @@ _Network Documentation_
 | :------------------------------------------------------------------- | :---------------------------------------- | :---------------------- | :------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `network-documentation` | `nginx:alpine` | `8080`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                                    |
 | :------------------ | :---------------------------------------------------------------------- |
@@ -67,7 +69,7 @@ _Network Documentation_
 | Nginx Config File   | `/media/nvme0n1p1/AppData/Network-Portfolio/default.conf`               |
 | Site Data           | `/media/nvme0n1p1/AppData/Network-Portfolio/site`                       |
 
-#### :symbols-file-cog:&ensp;Config File
+### :symbols-file-cog:&ensp;Config File
 
 ``` nginx { .mono-title title="../AppData/Network-Portfolio/default.conf" linenums="1" }
 --8<-- "nginx.conf"
@@ -76,7 +78,7 @@ _Network Documentation_
 1. Pull in standard MIME types, then explicitly define `.mjs`
 2. Redirect server error pages to the static page `/50x.html`
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/network-documentation-portfolio/compose.yaml" linenums="1" }
 --8<-- "nginx.yml"

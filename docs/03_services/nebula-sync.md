@@ -28,19 +28,19 @@ _Synchronize Pi-hole_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-:    Synchronize configuration between multiple [Pi-hole](pi-hole.md#description){ data-preview } instances.
+:    Synchronize configuration between multiple [Pi-hole](pi-hole.md#overview){ data-preview } instances.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `N/A`
 
-#### :symbols-link-2:&ensp;URL / Access 
+**:symbols-link-2:&ensp;URL / Access** 
 
 :    N/A
 
-#### :symbols-user-key:&ensp;Credentials 
+**:symbols-user-key:&ensp;Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -53,7 +53,9 @@ _Synchronize Pi-hole_
 | :----------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------ | :------ |
 | [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` | `N/A`   |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 ``` yaml { .mono-title title="compose.yml" linenums="1" }
 --8<-- "nebula-sync.yml"

@@ -30,11 +30,11 @@ _File Synchronization_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: Open decentralized file synchronization.
+:   Open decentralized file synchronization.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - `8384` &mdash; _TCP_
 { .no-bullets }
@@ -43,7 +43,7 @@ _File Synchronization_
 - `21027` &mdash; _UDP_
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-pc-case:&ensp;Ben's Desktop
 { .no-bullets }
@@ -68,7 +68,7 @@ _File Synchronization_
     - <https://storage-server.internal:8384>
     - <https://storage-server-2.internal:8384>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -92,11 +92,13 @@ _File Synchronization_
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)  | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)            | :symbols-container:&nbsp;Docker Container | `syncthing`    | `linuxserver/syncthing:latest` | `8384`&ensp;`22000`&ensp;`21027` |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
+### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
 
 :    :brands-fedora:&ensp;Fedora / RHEL
 
@@ -124,7 +126,7 @@ _File Synchronization_
 
     [Syncthing-Fork&ensp;:brands-f-droid:](https://f-droid.org/packages/com.github.catfriend1.syncthingfork/){ .md-button }
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/syncthing/compose.yaml" linenums="1" }
 --8<-- "syncthing-zima.yml"

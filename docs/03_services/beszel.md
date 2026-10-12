@@ -28,22 +28,22 @@ _Server Monitoring_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
+:   A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - Hub:&ensp;`8090`
 { .no-bullets }
 - Agent:&ensp;`45867`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
-: <http://pi-server.internal:8090/>
+:   <http://pi-server.internal:8090/>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }
@@ -56,14 +56,14 @@ _Server Monitoring_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-##### Hub
+**Hub**
 
 | Host Device                                                          | Method                                    | Container Name | Image                  | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel`       | `8090`  |
 |                                                                      | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent` | `45867` |
 
-##### Agents
+**Agents**
 
 | Host Device                                                                    | Method                                    | Container Name | Image                        | Port(s) |
 | :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- | :------ |
@@ -71,11 +71,13 @@ _Server Monitoring_
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45867` |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` | `45867` |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-key-round:&ensp;Generate API Tokens
+### :symbols-key-round:&ensp;Generate API Tokens
 
 Run the following command in a terminal on a client machine to generate API tokens.
 
@@ -87,27 +89,27 @@ curl -X POST "http://pi-server.internal:8090/api/collections/users/auth-with-pas
 
 1. Replace **"user@example.com"** with your user's email address, and **"your-password"** with your user's password.
 
-#### :symbols-file-code-corner:&ensp;Docker Compose Files
+### :symbols-file-code-corner:&ensp;Docker Compose Files
 
-##### Pi 4B Server _(Hub)_
+#### Pi 4B Server _(Hub)_
 
 ``` yaml { .mono-title title="/opt/stacks/beszel/docker-compose.yml" linenums="1" }
 --8<-- "beszel-pi-4b.yaml"
 ```
 
-##### Debian Server
+#### Debian Server
 
 ``` yaml { .mono-title title="/opt/stacks/beszel-agent/docker-compose.yml" linenums="1" }
 --8<-- "beszel-debian-vm.yaml"
 ```
 
-##### Pi Zero 2W Server
+#### Pi Zero 2W Server
 
 ``` yaml { .mono-title title="/opt/stacks/beszel-agent/compose.yaml" linenums="1" }
 --8<-- "beszel-pi-zero.yaml"
 ```
 
-##### ZimaOS NAS
+#### ZimaOS NAS
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/beszel-agent/compose.yaml" linenums="1" }
 --8<-- "beszel-zima.yaml"

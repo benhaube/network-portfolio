@@ -30,11 +30,11 @@ _Server Dashboard_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A self-hosted dashboard that puts all your feeds in one place.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - `8580`
 { .no-bullets }
@@ -43,11 +43,11 @@ _Server Dashboard_
 - `4463`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 :    <http://pi-server.internal:8580/>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -78,7 +78,9 @@ _Server Dashboard_
 |                                                                      | :symbols-container:&nbsp;Docker Container | `f1_api`              | `skyallinott/f1_api:latest`         | `4463`  |
 |                                                                      | :symbols-container:&nbsp;Docker Container | `glance-github-graph` | `haumea/glance-github-graph:latest` | `9090`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 ??? change "User Authentication"
 
@@ -164,7 +166,7 @@ _Server Dashboard_
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents                   | Path                                    |
 | :------------------------- | :-------------------------------------- |
@@ -177,7 +179,7 @@ _Server Dashboard_
 | Glance Pages               | `/opt/stacks/glance/config/pages`       |
 | Glance Widgets             | `/opt/stacks/glance/config/widgets`     |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="/opt/stacks/glance/docker-compose.yml" linenums="1" }
 --8<-- "glance-compose.yml"
@@ -191,9 +193,9 @@ _Server Dashboard_
 6. **Optional:** "Main" tracks qualifying sessions and races _(inc. sprints)_. "Race" tracks **only** races.
 7. Changed the Docker image to **Dynacat**, a fork of Glance with added features.
 
-#### :symbols-file-cog:&ensp;Configuration Files
+### :symbols-file-cog:&ensp;Configuration Files
 
-##### Dynacat
+#### Dynacat
 
 ``` yaml { .mono-title title="/opt/stacks/glance/config/dynacat.yml" linenums="1" }
 --8<-- "dynacat.yml"
@@ -230,7 +232,7 @@ _Server Dashboard_
 
     Use this if you think that some of the text on the page is too dark and hard to read
 
-##### Glance
+#### Glance
 
 ``` yaml { .mono-title title="/opt/stacks/glance/config/glance.yml" linenums="1" } 
 --8<-- "glance.yml"
@@ -267,9 +269,9 @@ _Server Dashboard_
 
     Use this if you think that some of the text on the page is too dark and hard to read
 
-#### :symbols-layout-dashboard:&ensp;Glance Pages
+### :symbols-layout-dashboard:&ensp;Glance Pages
 
-##### Home
+#### Home
 
 ``` yaml { .mono-title title="/opt/stacks/glance/config/pages/home.yml" linenums="1" }
 --8<-- "glance-home.yml"
@@ -278,7 +280,7 @@ _Server Dashboard_
 1. Show a title header on mobile device web browsers.
 2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
 
-##### Network
+#### Network
 
 ``` yaml { .mono-title title="/opt/stacks/glance/config/pages/network.yml" linenums="1" }
 --8<-- "glance-network.yml"
@@ -287,7 +289,7 @@ _Server Dashboard_
 1. Show a title header on mobile device web browsers.
 2. **Optional:** If you only have a single page you can hide the desktop navigation for a cleaner look.
 
-##### Formula 1
+#### Formula 1
 
 ``` yaml { .mono-title title="/opt/stacks/glance/config/pages/formula1.yml" linenums="1" }
 --8<-- "glance-formula1.yml"

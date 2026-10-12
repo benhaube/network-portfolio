@@ -28,15 +28,15 @@ _Bye Bye, Google Photos_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    High performance self-hosted photo and video management solution.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `2283`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-network:&ensp;Local Access:
 { .no-bullets }
@@ -46,7 +46,7 @@ _Bye Bye, Google Photos_
 { .no-bullets }
     - <https://immich.rac3r4life.online>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -62,13 +62,15 @@ _Bye Bye, Google Photos_
 |                                                                      | :symbols-container:&nbsp;Docker Container | `redis`                   | `docker.io/valkey/valkey:9`                                      | `N/A`   |
 |                                                                      | :symbols-container:&nbsp;Docker Container | `database`                | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` | `N/A`   |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
-##### Docker Deploy
+#### Docker Deploy
 
 | Contents              | Path                                                                    |
 | :-------------------- | :---------------------------------------------------------------------- |
@@ -77,7 +79,7 @@ _Bye Bye, Google Photos_
 | HW Transcode          | `/media/nvme0n1p1/AppData/dockge/stacks/immich/hwaccel.transcoding.yml` |
 | Machine Learning      | `/media/nvme0n1p1/AppData/dockge/stacks/immich/hwaccel.ml.yml`          |
 
-##### Immich Application
+#### Immich Application
 
 | Contents          | Path                                          |
 | :---------------- | :-------------------------------------------- |
@@ -87,7 +89,7 @@ _Bye Bye, Google Photos_
 | Immich Server     | `/media/Quick-Storage/Gallery/immich`         |
 | Photo Library     | `/media/Quick-Storage/Gallery/immich/library` |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/immich/compose.yaml" linenums="1" }
 --8<-- "immich.yml"
@@ -106,7 +108,7 @@ _Bye Bye, Google Photos_
 5.  Uncomment the `DB_STORAGE_TYPE: 'HDD'` variable if your database isn't stored on SSDs.
 6.  Do not edit the next line. If you want to change the database storage location on your system, edit the value of `DB_DATA_LOCATION` in the `.env` file.
 
-##### Environment Variables
+#### Environment Variables
 
 ``` properties { .mono-title title="../AppData/dockge/stacks/immich/.env" }
 --8<-- "immich.env"
@@ -116,7 +118,7 @@ _Bye Bye, Google Photos_
 2. Connection secret for postgres. You should change it to a random password. Please use only the characters, `A-Za-z0-9`, without special characters or spaces.
 3. The values below this line do not need to be changed.
 
-##### Hardware Acceleration Configuration
+#### Hardware Acceleration Configuration
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/immich/hwaccel.transcoding.yml" }
 --8<-- "immich.hwaccel.transcoding.yml"

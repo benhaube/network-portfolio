@@ -28,11 +28,11 @@ _Container Management_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: A lightweight service delivery platform for containerized applications.
+:   A lightweight service delivery platform for containerized applications.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - Hub:
 { .no-bullets }
@@ -41,7 +41,7 @@ _Container Management_
 { .no-bullets }
     - `9001`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - Hub:
 { .no-bullets }
@@ -52,7 +52,7 @@ _Container Management_
     - ~~<http://pi-zero.internal:9001>~~
     - ~~<http://storage-server.internal:9001>~~
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }
@@ -66,28 +66,30 @@ _Container Management_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-##### Hub
+**Hub**
 
 | Host Device                                                              | Method                                    | Container Name | Image                        | Port(s) |
 | :----------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- | :------ |
 | [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portainer`    | `portainer/portainer-ee:lts` | `9443`  |
 
-##### Agent
+**Agent**
 
 | Host Device                                                                        | Method                                    | Container Name    | Image                 | Port(s) |
 | :--------------------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :-------------------- | :------ |
 | [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `portainer_agent` | `portainer/agent:lts` | `9001`  |
 | [:symbols-server-nas:&nbsp;~~ZimaOS NAS~~](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `portainer_agent` | `portainer/agent:lts` | `9001`  |
 
-### :symbols-settings:&ensp;Configuration
+---
 
-##### Hub
+## :symbols-settings:&ensp;Configuration
+
+### Hub
 
 ``` yaml title="Pi 4B Server" linenums="1"
 --8<-- "portainer-pi-4b.yml"
 ```
 
-##### Agent
+### Agent
 
 ``` yaml title="Pi Zero 2W Server" linenums="1"
 --8<-- "portainer-pi-zero.yml"

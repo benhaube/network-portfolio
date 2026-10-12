@@ -186,6 +186,6 @@ _Fine Tune Your Bed Level_
     **Error `key60`**
     : If you are doing this modification with the factory load cells _(bed mesh probe)_ and get a `key60` error, *(Internal error command: `BEDMESH_CALIBRATE`)*, this may be due to excessive pressure being applied to the load cells. Try slightly loosening the knobs, then run the `SCREWS_TILT_CALCULATE` macro again.
 
-#### :symbols-link:&ensp;References and Resources
+### :symbols-link:&ensp;References and Resources
 
 [Klipper Docs&ensp;:services-klipper:](https://www.klipper3d.org){ .md-button }&emsp;[Fluidd Docs&ensp;:services-fluidd:](https://docs.fluidd.xyz/){ .md-button }&emsp;[Mainsail Docs&ensp;:services-mainsail:](https://docs.mainsail.xyz/){ .md-button }

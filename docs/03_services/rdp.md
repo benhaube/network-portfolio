@@ -27,19 +27,19 @@ _Remote Desktop Protocol_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    Remote desktop access over the local network _(not publicly exposed)_
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `3389`
 
-#### :symbols-link-2:&ensp;URL / Access   
+**:symbols-link-2:&ensp;URL / Access**   
 
 :    [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
 
@@ -51,7 +51,9 @@ _Remote Desktop Protocol_
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
 | [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `3389`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 ``` ini { .mono-title title="~/.config/krdpserverrc" linenums="1" }
 --8<-- "krdpserverrc"

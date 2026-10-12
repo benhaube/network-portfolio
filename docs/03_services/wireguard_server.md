@@ -29,15 +29,15 @@ _A Simple, Modern VPN_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `41820`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-waypoints:&ensp;Server Endpoint:
 { .no-bullets }
@@ -46,13 +46,13 @@ _A Simple, Modern VPN_
 { .no-bullets }
     - <https://asusrouter.internal:8443/Advanced_VPNServer_Content.asp>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
 
-#### :symbols-monitor-smartphone:&ensp;Client Profiles
+**:symbols-monitor-smartphone:&ensp;Client Profiles**
 
 :    :symbols-router:&ensp;ASUS RT-BE92U:
 
@@ -67,7 +67,9 @@ _A Simple, Modern VPN_
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `41820` |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 1.  Log into the [ASUS Router's Web UI](https://asusrouter.internal:8443){ external-link } and navigate to the **"Advanced VPN Server Content"** page.
 

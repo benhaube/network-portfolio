@@ -30,15 +30,15 @@ _Docker Management_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `5001`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   Main Server:
 { .no-bullets }
@@ -49,7 +49,7 @@ _Docker Management_
     - <http://debian-vm.internal:5001>
     - <http://storage-server.internal:5001>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -67,11 +67,13 @@ _Docker Management_
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | `5001`  |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `dockge`          | `louislam/dockge:1` | `5001`  |
 
-### :symbols-settings:&ensp;Configuration
+---
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+## :symbols-settings:&ensp;Configuration
 
-##### Debian 13 Servers
+### :symbols-folder-git-2:&ensp;Data Directories
+
+#### Debian 13 Servers
 
 | Contents            | Path                       |
 | :------------------ | :------------------------- |
@@ -79,7 +81,7 @@ _Docker Management_
 | Dockge Database     | `/opt/dockge/data`         |
 | Docker Stacks       | `/opt/stacks`              |
 
-##### ZimaOS NAS
+#### ZimaOS NAS
 
 | Contents            | Path                                                    |
 | :------------------ | :------------------------------------------------------ |
@@ -87,7 +89,7 @@ _Docker Management_
 | Dockge Database     | `/media/nvme0n1p1/AppData/dockge/data`                  |
 | Docker Stacks       | `/media/nvme0n1p1/AppData/dockge/stacks`                |
 
-#### :symbols-monitor-arrow-down-corner:&ensp;Install Dockge
+### :symbols-monitor-arrow-down-corner:&ensp;Install Dockge
 
 1.  Create the directories that store your stacks and stores Dockge's stack:
 
@@ -110,7 +112,7 @@ _Docker Management_
 
     Dockge is now running on: `http://localhost:5001`
 
-#### :symbols-rotate-cw-clock:&ensp;Update Dockge
+### :symbols-rotate-cw-clock:&ensp;Update Dockge
 
 1.  To update Dockge, run the following commands:
 
@@ -119,9 +121,9 @@ _Docker Management_
     docker compose pull && docker compose up -d
     ```
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
-##### Debian 13 Servers
+#### Debian 13 Servers
 
 ``` yaml { .mono-title title="/opt/dockge/compose.yaml" linenums="1" }
 --8<-- "dockge.yaml"
@@ -138,7 +140,7 @@ _Docker Management_
 
 3.  Tell Dockge the location of your stacks directory.
 
-##### ZimaOS NAS
+#### ZimaOS NAS
 
 ``` yaml { .mono-title title="/DATA/.casaos/apps/big-bear-dockge/docker-compose.yml" linenums="1" } 
 --8<-- "dockge-zima.yaml"

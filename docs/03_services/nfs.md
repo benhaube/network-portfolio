@@ -29,15 +29,15 @@ _Network File System_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    Remote file system access for Linux.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `2049`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-folder-tree:&ensp;Network Storage:
 { .no-bullets }
@@ -46,7 +46,7 @@ _Network File System_
 { .no-bullets }
     - `192.168.50.4:/media/nvme0n1p1`
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -58,22 +58,24 @@ _Network File System_
 | :------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `2049`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 !!! zima "ZimaOS&ensp;&ge;&ensp;v1.6.2"
 
     After upgrading to [ZimaOS v1.6.2](https://github.com/IceWhaleTech/ZimaOS/releases/tag/1.6.2){ external-link } the NFS service needs to be enabled manually with the following commands. All newer versions have the NFS server disabled by default to prevent unwanted file system access.
 
-#### :symbols-server:&ensp;Server
+### :symbols-server:&ensp;Server
 
-##### Enable Service
+#### Enable Service
 
 ``` bash linenums="1"
 sudo systemctl enable nfs-server
 sudo systemctl start nfs-server
 ```
 
-##### Exports Entry
+#### Exports Entry
 
 ``` linuxconfig { .mono-title title="/etc/exports" linenums="1" }
 --8<-- "exports"
@@ -94,7 +96,7 @@ sudo systemctl start nfs-server
     systemctl restart nfs-server
     ```
 
-##### Check Status
+#### Check Status
 
 1.  Run this command to check the status of `nfs-server.service`:
 
@@ -116,9 +118,9 @@ sudo systemctl start nfs-server
              CPU: 19ms
     ```
 
-#### :symbols-monitor-smartphone:&ensp;Clients
+### :symbols-monitor-smartphone:&ensp;Clients
 
-##### Systemd Unit Files
+#### Systemd Unit Files
 
 1.  Systemd `.mount` unit files:
 
@@ -140,7 +142,7 @@ sudo systemctl start nfs-server
     --8<-- "mnt-storage_server-Quick_Storage.automount"
     ```
 
-##### Command to Apply
+#### Command to Apply
 
 1.  Run the Systemd daemon-reload command to apply the configuration files.
 

@@ -30,11 +30,11 @@ _Authoritative & Recursive DNS_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
+:   An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - `53`
 { .no-bullets }
@@ -43,7 +43,7 @@ _Authoritative & Recursive DNS_
 - `5380`
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 -   :symbols-layers:&ensp;Debian Server
 { .no-bullets }
@@ -54,7 +54,7 @@ _Authoritative & Recursive DNS_
     - `192.168.50.2` &mdash; Secondary server
     - <http://pi-server.internal:5380>
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }
@@ -72,15 +72,17 @@ _Authoritative & Recursive DNS_
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `53`&ensp;`443`&ensp;`5380` |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `53`&ensp;`443`&ensp;`5380` |
 
-### :symbols-settings:&ensp;Configuration
+---
 
-#### :symbols-monitor-arrow-down-corner:&ensp;Install
+## :symbols-settings:&ensp;Configuration
+
+### :symbols-monitor-arrow-down-corner:&ensp;Install
 
 ``` bash title="Command to install & update Technitium" linenums="1"
 curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
 ```
 
-#### :symbols-cloud-upload:&ensp;Settings Backup
+### :symbols-cloud-upload:&ensp;Settings Backup
 
 The settings for both Technitium DNS server nodes are backed up in `.tar.gz` archives and stored on the [ZimaOS NAS](../02_hardware/zimaos_nas.md#device-overview){ data-preview }. Listed below are the directories where each settings backup archive are located. Each archive name has the server's FQDN and the date & time of the settings export. *(e.g., `pi-server.internal_<time>_<date>_backup.tar.gz`)*
 
@@ -92,7 +94,7 @@ The settings for both Technitium DNS server nodes are backed up in `.tar.gz` arc
 /DATA/Quick_Storage/Backup/pi-server/Technitium/
 ```
 
-#### :symbols-file-cog:&ensp;Zone Files
+### :symbols-file-cog:&ensp;Zone Files
 
 ``` zone { .mono-title title="50.168.192.in-addr.arpa.zone" linenums="1" }
 --8<-- "50.168.192.in-addr.arpa.zone"

@@ -30,19 +30,19 @@ _Based on Matter.js_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    The **Open Home Foundation** Matter Server serves as the foundation to provide Matter support to [Home Assistant](home_assistant.md), but its universal approach makes it suitable to be used in other projects too.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `5580`
 
-#### :symbols-link-2:&ensp;URL / Access 
+**:symbols-link-2:&ensp;URL / Access** 
 
 :    <http://pi-server.internal:8123/config/matter/dashboard>
 
-#### :symbols-user-key:&ensp;Credentials 
+**:symbols-user-key:&ensp;Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -54,24 +54,26 @@ _Based on Matter.js_
 | :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :----------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `matter-server` | `ghcr.io/matter-js/matterjs-server:stable` | `5580`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                     |
 | :------------------ | :--------------------------------------- |
 | Docker Compose File | `/opt/stacks/matter-server/compose.yaml` |
 | Matter Server Data  | `/opt/matter-server/data`                |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="/opt/stacks/matter-server/compose.yaml" } 
 --8<-- "matter-server.yaml"
 ```
 
-#### :symbols-webhook:&ensp;Connect to Home Assistant
+### :symbols-webhook:&ensp;Connect to Home Assistant
 
 1.  Open the Home Assistant dashboard and navigate to **Settings**&ensp;:symbols-move-right:&ensp;**Devices & Services**.
 2.  Click **"Add Integration"** and select **"Matter"**.
@@ -84,7 +86,7 @@ _Based on Matter.js_
     ![Home Assistant Matter websocket URL](../assets/screenshots/ha-add-matter-hub-light.png#only-light){ width=400 }
     ![Home Assistant Matter websocket URL](../assets/screenshots/ha-add-matter-hub-dark.png#only-dark){ width=400 }
 
-#### :brands-thread:&ensp;Sync Google Thread Credentials
+### :brands-thread:&ensp;Sync Google Thread Credentials
 
 To utilize the Google TV Streamer and Nest Hubs as Thread border routers, Home Assistant needs their Thread network credentials.
 

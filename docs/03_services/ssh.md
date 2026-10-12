@@ -29,15 +29,16 @@ _Secure Shell_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `22`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
+{ #url-access }
 
 -   :symbols-router:&ensp;ASUS RT-BE92U
 { .no-bullets }
@@ -66,7 +67,7 @@ _Secure Shell_
     - `192.168.50.153:22`
     - `kacey.internal:22`
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials** { #credentials }
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -88,7 +89,9 @@ _Secure Shell_
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)                    | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
 | [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 !!! tip 
 
@@ -97,9 +100,9 @@ _Secure Shell_
 
         [SSH Login Notification&ensp;:symbols-message-square-warning:](../linux_tutorials/setup_ssh_login_notification.md){ .md-button }
 
-#### :symbols-server:&ensp;Servers
+### :symbols-server:&ensp;Servers
 
-##### SSH Config File
+#### SSH Config File
 
 1.  Make the required changes to the SSH config file:
 
@@ -113,7 +116,7 @@ _Secure Shell_
     sudo systemctl restart sshd
     ```
 
-##### Login Banner
+#### Login Banner
 
 1.  Paste this ASCII message into the banner file:
 
@@ -121,7 +124,7 @@ _Secure Shell_
     --8<-- "issue.net"
     ```
 
-##### Suppress MOTD
+#### Suppress MOTD
 
 !!! warning inline end 
 
@@ -151,7 +154,7 @@ _Secure Shell_
     sudo chmod +x /etc/update-motd.d/SCRIPT_TO_ENABLE
     ```
 
-##### Suppress Last Login
+#### Suppress Last Login
 
 1.  Open the SSH config file with a text editor:
 
@@ -176,9 +179,9 @@ _Secure Shell_
 
 --8<-- "zima-ssh.md"
 
-#### :symbols-monitor-smartphone:&ensp;Clients
+### :symbols-monitor-smartphone:&ensp;Clients
 
-##### Bitwarden SSH Key Agent
+#### Bitwarden SSH Key Agent
 
 ![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-light.png#only-light){ width=350 align=right .on-glb }
 ![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-dark.png#only-dark){ width=350 align=right .on-glb }
@@ -220,7 +223,7 @@ _Secure Shell_
 
         1. For other desktop environments and/or themes, replace `Breeze:dark` with the appropriate theme name. _(e.g., for GNOME use `Adwaita-dark`)_
 
-##### Bitwarden Biometrics
+#### Bitwarden Biometrics
 
 ![Bitwarden system authentication settings](../assets/screenshots/bitwarden-system-auth-light.png#only-light){ width=350 align=right .on-glb }
 ![Bitwarden system authentication settings](../assets/screenshots/bitwarden-system-auth-dark.png#only-dark){ width=350 align=right .on-glb }
@@ -262,7 +265,7 @@ The flatpak version of the **Bitwarden** desktop client requires a custom policy
         com.bitwarden.Bitwarden.unlock
         ```
 
-##### SSH Config File
+#### SSH Config File
 
 1.  Create the `~/.ssh` directory:
 

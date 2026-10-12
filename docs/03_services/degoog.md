@@ -30,22 +30,22 @@ _Search You Run Yourself_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    A self-hosted search engine aggregator with a comprehensive plugin / extension system.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 :    `4444`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - <http://storage-server.internal:4444>
 { .no-bullets }
 - <http://storage-server-2.internal:4444>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -57,18 +57,20 @@ _Search You Run Yourself_
 | :------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :--------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `degoog-degoog-1` | `ghcr.io/degoog-org/degoog:latest` | `4444`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                                         |
 | :------------------ | :----------------------------------------------------------- |
 | Docker Compose File | `/media/nvme0n1p1/AppData/dockge/stacks/degoog/compose.yaml` |
 | Degoog Data         | `/media/nvme0n1p1/AppData/dockge/stacks/degoog/data`         |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/degoog/compose.yaml" } 
 --8<-- "degoog.yaml"

@@ -29,11 +29,11 @@ _Anti-Virus for ZimaOS_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
+:   Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 -   Service:&ensp;`clamav-server`
 { .no-bullets }
@@ -42,11 +42,11 @@ _Anti-Virus for ZimaOS_
 { .no-bullets }
     - `8099`
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 :    <http://storage-server.internal:8099>
 
-#### :symbols-user-key:&ensp;Credentials 
+**:symbols-user-key:&ensp;Credentials**
 
 :    N/A
 
@@ -57,11 +57,11 @@ _Anti-Virus for ZimaOS_
 | [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `clamav-server`    | `clamav/clamav:1.5_base`                    | `3310`  |
 |                                                                      | :symbols-container:&nbsp;Docker Container | `clamav-dashboard` | `ghcr.io/jacko88888/clamav-dashboard:0.2.4` | `8099`  |
 
-### :symbols-settings:&ensp;Configuration
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents              | Path                                                                   |
 | :-------------------- | :--------------------------------------------------------------------- |
@@ -69,7 +69,7 @@ _Anti-Virus for ZimaOS_
 | ClamAV Server Data    | `/media/nvme0n1p1/AppData/dockge/stacks/clamav-dashboard/clamav`       |
 | ClamAV Dashboard Data | `/media/nvme0n1p1/AppData/dockge/stacks/clamav-dashboard/data`         |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/clamav-dashboard/compose.yaml" linenums="1" }
 --8<-- "clamav-dashboard.yaml"

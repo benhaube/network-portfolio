@@ -45,7 +45,7 @@ _Improved Nozzle Brush Routine_
 
     Before uploading the macro, modify `3DPHUB_PROWIPER.CFG` to account for the custom bed height and safe testing speeds.
 
-#### Set the Mount Type
+### Set the Mount Type
 
 - [ ] Ensure `variable_brush_mount` is set to `"V5K1C"`.
   #### Adjust for the Bed Spacer
@@ -78,7 +78,7 @@ _Improved Nozzle Brush Routine_
 
     Because the **V5 mount** is utilized instead of the low-profile **LPF2 mount**, a 10mm clearance zone is required to prevent the toolhead from striking the mount during printing or probing.
 
-#### Klipper Mesh Clearance
+### Klipper Mesh Clearance
 
 -   [ ] In `printer.cfg`, locate the `[bed_mesh]` section. Reduce the Y-axis value of `mesh_max` by 10 _(e.g., change `220` to `210`)_.
 
@@ -86,16 +86,15 @@ _Improved Nozzle Brush Routine_
     --8<-- "printer.cfg:350:356"
     ```
 
-#### Slicer Clearance
+### Slicer Clearance
 
 - [ ] In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
 
 <figure markdown="span">
   ![Excluded Bed Area](../assets/screenshots/printable-area-light.png#only-light){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
   ![Excluded Bed Area](../assets/screenshots/printable-area-dark.png#only-dark){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
-  <figcaption><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</figcaption>
+<figcaption><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</figcaption>
 </figure>
-
 
 <div class="glightbox-desc printable-area-desc">
   <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>

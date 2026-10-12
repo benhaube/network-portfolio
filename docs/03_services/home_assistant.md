@@ -28,19 +28,19 @@ _Awaken Your Home_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
 :    Open-source home automation that puts local control and privacy first.
 
-#### :symbols-hash:&ensp;Port(s) 
+**:symbols-hash:&ensp;Port(s)** 
 
 :    `8123`
 
-#### :symbols-link-2:&ensp;URL / Access  
+**:symbols-link-2:&ensp;URL / Access**  
 
 :    <http://pi-server.internal:8123>
 
-#### :symbols-user-key:&ensp;Credentials 
+**:symbols-user-key:&ensp;Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -52,18 +52,20 @@ _Awaken Your Home_
 | :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :--------------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` | `8123`  |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents            | Path                                      |
 | :------------------ | :---------------------------------------- |
 | Docker Compose File | `/opt/stacks/home-assistant/compose.yaml` |
 | Application Data    | `/home-assistant-container`               |
 
-#### :symbols-file-code-corner:&ensp;Docker Compose File
+### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="/opt/stacks/home-assistant/compose.yaml" linenums="1" }
 --8<-- "home-assistant.yml"

@@ -30,20 +30,13 @@ _Cron Monitoring_
 
 ## :symbols-info:&ensp;Overview
 
-#### :symbols-file-text:&ensp;Description
+**:symbols-file-text:&ensp;Description**
 
-: Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
+:   Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
 
-#### :symbols-activity:&ensp;Healthcheck Status
+:   ![AppData Backup](https://healthchecks.rac3r4life.online/b/3/7a592da9-bc4e-44d8-bc9a-0c47854875fd.svg)&ensp;![Devices Backup](https://healthchecks.rac3r4life.online/b/3/632c4949-6b24-4943-90e0-e8cc92f59947.svg)&ensp;![Immich Backup](https://healthchecks.rac3r4life.online/b/3/f96a7e0b-d0cd-445e-b4c0-e81b145ce50c.svg)
 
-- ![AppData Backup](https://healthchecks.rac3r4life.online/b/3/7a592da9-bc4e-44d8-bc9a-0c47854875fd.svg)
-{ .no-bullets }
-- ![Devices Backup](https://healthchecks.rac3r4life.online/b/3/632c4949-6b24-4943-90e0-e8cc92f59947.svg)
-{ .no-bullets }
-- ![Immich Backup](https://healthchecks.rac3r4life.online/b/3/f96a7e0b-d0cd-445e-b4c0-e81b145ce50c.svg)
-{ .no-bullets }
-
-#### :symbols-hash:&ensp;Port(s)
+**:symbols-hash:&ensp;Port(s)**
 
 - `2525` &mdash; _SMTP Server_
 { .no-bullets }
@@ -52,14 +45,14 @@ _Cron Monitoring_
 - `8000` &mdash; _Web Server_
 { .no-bullets }
 
-#### :symbols-link-2:&ensp;URL / Access
+**:symbols-link-2:&ensp;URL / Access**
 
 - <https://healthchecks.rac3r4life.online>
 { .no-bullets }
 - <http://debian-vm.internal:8000>
 { .no-bullets }
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
@@ -77,11 +70,13 @@ _Cron Monitoring_
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `healthchecks-web-1` | `healthchecks/healthchecks:latest` | `8000` `2525` |
 |                                                                        | :symbols-container:&nbsp;Docker Container | `healthchecks-db-1`  | `postgres:16`                      | `5432`        |
 
-### :symbols-settings:&ensp;Configuration
+---
+
+## :symbols-settings:&ensp;Configuration
 
 --8<-- "includes/managed_by_dockge.md"
 
-#### :symbols-folder-git-2:&ensp;Data Directories
+### :symbols-folder-git-2:&ensp;Data Directories
 
 | Contents              | Path                                    |
 | :-------------------- | :-------------------------------------- |
@@ -89,7 +84,7 @@ _Cron Monitoring_
 | Environment Variables | `/opt/stacks/healthchecks/.env`         |
 | Database              | `db-data` _(Docker volume)_             |
 
-#### :symbols-container:&ensp;Container Deployment
+### :symbols-container:&ensp;Container Deployment
 
 1.  Move the files `compose.yaml` and `.env` to the `/opt/stacks/healthchecks` directory.
 2.  Generate a 64-character random string using the `openssl` command, and paste it into the `.env` file with the `SECRET_KEY` environment variable.
@@ -130,9 +125,9 @@ _Cron Monitoring_
 --8<-- "healthchecks.env"
 ```
 
-#### :symbols-mail:&ensp;SMTP Listener Config
+### :symbols-mail:&ensp;SMTP Listener Config
 
-##### `SMTPD_PORT`
+#### `SMTPD_PORT`
 
 Healthchecks comes with a `smtpd` management command, which runs a SMTP listener service. With the command running, you can ping your checks by sending email messages to `your-uuid-here@hc.example.org` email addresses.
 
@@ -141,7 +136,7 @@ The container is configured to start the SMTP listener conditionally, based on t
 - If `SMTPD_PORT` environment variable is not set, the SMTP listener will not run.
 - If `SMTPD_PORT` is set, the listener will run and listen on the specified port. You may also need to edit `docker-compose.yml` to expose the listening port (see the "ports" section under the "web" service in `docker-compose.yml`).
 
-##### `PING_EMAIL_DOMAIN`
+#### `PING_EMAIL_DOMAIN`
 
 The container uses the `PING_EMAIL_DOMAIN` environment variable to define the domain to use for generating ping email addresses.
 
@@ -158,9 +153,9 @@ This setting only controls how the ping email addresses are constructed, and doe
 - A DNS record pointing `hc.example.org` to your Healthchecks instance's IP address.
 - `manage.py smtpd` _(Healthchecks' SMTP listener service)_ running, listening on port 25, and reachable from the outside world.
 
-#### :symbols-message-square-dot:&ensp;Notification Integrations
+### :symbols-message-square-dot:&ensp;Notification Integrations
 
-##### Email
+#### Email
 
 To send email notifications, the container needs to be configured with your SMTP provider using environment variables in the `.env` file.
 
@@ -178,7 +173,7 @@ To send email notifications, the container needs to be configured with your SMTP
     ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-light.png#only-light){ width=600 }
     ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-dark.png#only-dark){ width=600 }
 
-##### Gotify
+#### Gotify
 
 [Gotify](gotify.md) is an open-source, self-hosted push notification service. If you use or plan on using Gotify, you can can integrate it with your Healthchecks account in few simple steps.
 
@@ -191,7 +186,7 @@ To send email notifications, the container needs to be configured with your SMTP
 
 4.  After returning to the **Integrations** tab, you can test the new integration using the same method shown above for the email integration.
 
-##### Home Assistant
+#### Home Assistant
 
 To enable **Home Assistant** notifications, first you need to make sure the **Apprise** integration is enabled using the `APPRISE_ENABLED` environment variable.
 

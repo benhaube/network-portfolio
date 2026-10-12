@@ -26,20 +26,15 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Physical Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
-: Core Desktop Switch
+:   Core Desktop Switch
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Location] } -->
-{ .no-bullets } 
-
-#### :symbols-plug:&ensp;Power Source
+**:symbols-plug:&ensp;Power Source**
 
 :    (e.g., Wall wart 12V / 1A)
 
-#### :symbols-circuit-board:&ensp;Specs
+### :symbols-circuit-board:&ensp;Specs
 
 :    Throughput:
 
@@ -53,7 +48,12 @@ _Subtitle_
 
     - Managed / Unmanaged
 
-## :symbols-ethernet-port:&ensp;Port Map
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Location] } -->
+{ .no-bullets } 
+
+### :symbols-ethernet-port:&ensp;Port Map
 
 | Port # { data-sort-method="number" } | Connected Device                     | Color / Type { data-sort-method="none" } | Notes { data-sort-method="none" } |
 | :----------------------------------: | :----------------------------------- | :--------------------------------------- | :-------------------------------- |

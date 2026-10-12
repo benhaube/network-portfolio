@@ -26,34 +26,34 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox: Role
+**:symbols-toolbox: Role**
 
 :    AiMesh Node
 
-#### :symbols-host:&ensp;Hostname(s)
+**:symbols-host:&ensp;Hostname**
 
 :    `hostname`
 
-#### :symbols-link-2:&ensp;FQDN
+**:symbols-link-2:&ensp;FQDN**
 
 :    `*.internal`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Location] } -->
-{ .no-bullets } 
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    :symbols-router:&nbsp;Router_OS
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Location] } -->
+{ .no-bullets } 
+
+### :symbols-network:&ensp;Network Configuration
 
 #### :symbols-globe:&ensp;WAN Connection
 
@@ -84,7 +84,7 @@ _Subtitle_
 |            2.5Gb LAN 4             | :symbols-ethernet-port: _Empty_ | -                                        | -                                 |
 |            2.5Gb LAN 5             | :symbols-ethernet-port: _Empty_ | -                                        | -                                 |
 
-## :symbols-folder-tree:&ensp;Storage & Mounts
+### :symbols-folder-tree:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
@@ -98,7 +98,7 @@ _Subtitle_
 | :------------- | :--------- | :--------------------------------------------- | :---------- | :------------ | :--------- |
 | `/mount/point` | -          | -                                              | `/dev/path` | `file-ststem` | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-tux:&ensp;Native
 
@@ -120,10 +120,10 @@ _Subtitle_
 
     Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
 
-#### :symbols-rotate-cw-clock:&ensp;Update Process
+### :symbols-rotate-cw-clock:&ensp;Update Process
 
 - Update Process
 
-#### :symbols-cloud-upload:&ensp;Backup Policy
+### :symbols-cloud-upload:&ensp;Backup Policy
 
 - Backup policy

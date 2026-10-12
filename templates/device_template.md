@@ -25,40 +25,40 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Device Overview
 
-#### :symbols-toolbox:&ensp;Role
+**:symbols-toolbox:&ensp;Role**
 
 :    Device role
 
-#### :symbols-host:&ensp;Hostname
+**:symbols-host:&ensp;Hostname**
 
 :    `hostname`
 
-#### :symbols-map-pin:&ensp;Location
-
-- <!-- material/tags { include: [Location] } -->
-{ .no-bullets } 
-
-#### :symbols-cpu:&ensp;OS / Firmware
+**:symbols-cpu:&ensp;OS / Firmware**
 
 :    :os-icon:&nbsp;Operating System
 
-#### :symbols-user-key:&ensp;Credentials
+**:symbols-user-key:&ensp;Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
 
-#### :symbols-brick-wall-shield:&ensp;Device Security
+### :symbols-brick-wall-shield:&ensp;Device Security
 
 :    Hardware / Software security features _(e.g., TPM2)_
 
-## :symbols-circuit-board:&ensp;Core Specs
+### :symbols-map-pin:&ensp;Location
+
+- <!-- material/tags { include: [Location] } -->
+{ .no-bullets } 
+
+### :symbols-circuit-board:&ensp;Core Specs
 
 | CPU                  | Cores / Threads | CPU Freq. | RAM  | GPU | GPU Freq. | VRAM |
 | :------------------- | :-------------- | :-------- | :--- | :-- | :-------- | :--- |
 | CPU _(architecture)_ | #C / #T         | # GHz     | # GB | GPU | # MHz     | # GB |
 
-## :symbols-network:&ensp;Network Configuration
+### :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                  |
 | :-------: | :--------------------------------------- | :------------------ | :---------------------------- |
@@ -68,7 +68,7 @@ _Subtitle_
 | :-------: | :----- | :----------------- | :-------------------------------------- | :------------------------------------ |
 |  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x`                     | `x.x.x.1`                             |
 
-## :symbols-folders:&ensp;Storage & Mounts
+### :symbols-folders:&ensp;Storage & Mounts
 
 #### :symbols-hard-drive:&ensp;Internal Drive(s)
 
@@ -82,7 +82,7 @@ _Subtitle_
 | :------------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/mount-point` | NVMe SSD   | 929 GB                                         | `/dev/path` | `btrfs`     | -          |
 
-## :symbols-cloud:&ensp;Services & Containers
+### :symbols-cloud:&ensp;Services & Containers
 
 #### :symbols-layers:&ensp;Virtualization
 
@@ -110,10 +110,10 @@ _Subtitle_
 
     Note any special tweaks here (e.g., "Do not update kernel," "SMB Multichannel enabled via conf file").
 
-#### :symbols-rotate-cw-clock:&ensp;Update Process
+### :symbols-rotate-cw-clock:&ensp;Update Process
 
 - Update Process
 
-#### :symbols-cloud-upload:&ensp;Backup Policy
+### :symbols-cloud-upload:&ensp;Backup Policy
 
 - Backup policy

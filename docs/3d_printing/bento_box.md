@@ -33,7 +33,11 @@ The Bento box is a HEPA & activated carbon based air scrubber for the chamber; r
 
 ## :symbols-file-code-corner:&ensp;G-Code Customizations
 
-To enable the new fans we need to modify the following files; `printer.cfg`, `gcode-macro.cfg`, and `fans-control.cfg`. The first two files can be edited in place, but the `fans-control.cfg` file is write protected and controlled by the Helper-Script. You CAN modify it in place if you connect via SSH, but in Fluidd you cannot make changes. Even if you do edit it in place, it will be overwritten by a Helper-Script update. To get around this I recommend copying the file into the main configuration directory, then editing your `printer.cfg` file to use the copied file instead of the one located in the `Helper-Script/` directory. You can use this method to modify any of the Helper-Script configuration files to your needs. I have also done this with my `M600-support.cfg` and `useful-macros.cfg` files to make changes for the [PROWIPER mod](prowiper_mod.md).
+To enable the new fans we need to modify the following files; `printer.cfg`, `gcode-macro.cfg`, and `fans-control.cfg`. The first two files can be edited in place, but the `fans-control.cfg` file is write protected and controlled by the Helper-Script. You _CAN_ modify it in place if you connect via SSH, but in Fluidd you cannot make changes. Even if you do edit it in place, it will be overwritten by a Helper-Script update. To get around this I recommend copying the file into the main configuration directory, then editing your `printer.cfg` file to use the copied file instead of the one located in the `Helper-Script/` directory.
+
+!!! tip
+
+    You can use this method to modify any of the Helper-Script configuration files to your needs. I have also done this with my `M600-support.cfg` and `useful-macros.cfg` files to make changes for the [PROWIPER mod](prowiper_mod.md).
 
 #### Replace `fans-control.cfg`
 
@@ -44,7 +48,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
     [include Helper-Script/fans-control.cfg]
     ```
 
-3. [ ] Replace the `[include]` directive you commented out with the following line.
+3.  [ ] Replace the `[include]` directive you commented out with the following line.
 
     ``` cfg
     [include fans-control.cfg]
@@ -52,7 +56,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
 
 #### Base Printer Configuration
 
-1. [ ] Add the new `output-pin` to `printer.cfg` below `fan2`.
+1.  [ ] Add the new `output-pin` to `printer.cfg` below `fan2`.
 
     ``` cfg
     [output_pin fan3]
@@ -65,7 +69,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
     shutdown_value: 0.0
     ```
 
-2. [ ] Open the `gcode-macro.cfg` file and change `variable_fans: 3` to `variable_fans: 4`, then add the line, `variable_fan3_min: 0`.
+2.  [ ] Open the `gcode-macro.cfg` file and change `variable_fans: 3` to `variable_fans: 4`, then add the line, `variable_fan3_min: 0`.
 
     ``` cfg title="Example"
     [gcode_macro PRINTER_PARAM]
@@ -88,14 +92,14 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
 
 #### Automatic Temperature Control
 
-1. [ ] Open the new `fans-control.cfg` file and add `PA0` to the `duplicate_pin_override` section.
+1.  [ ] Open the new `fans-control.cfg` file and add `PA0` to the `duplicate_pin_override` section.
 
     ``` cfg title="Example"
     [duplicate_pin_override]
     pins: PA0, PC0, PC5, PB2, PC6, ADC_TEMPERATURE
     ```
 
-2. [ ] Add the following code to the `fans-control.cfg` file to enable automatic temperature control for the new fans.
+2.  [ ] Add the following code to the `fans-control.cfg` file to enable automatic temperature control for the new fans.
 
     ``` cfg
     [temperature_fan bento_fan]
@@ -119,7 +123,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
 
 For proper `M106` macro control of the fan we need to modify the macro located in the `fans-control.cfg` file.
 
-1. [ ] Remove this block of code from the bottom of the `M106` macro.
+1.  [ ] Remove this block of code from the bottom of the `M106` macro.
 
     ``` cfg
     {% if params.P is defined and params.P|int == 3 %}
@@ -127,7 +131,7 @@ For proper `M106` macro control of the fan we need to modify the macro located i
     {% endif %}
     ```
 
-2. [ ] Add this code block below the `fan2` block.
+2.  [ ] Add this code block below the `fan2` block.
 
     ``` cfg
     {% if fan == 3 %}
@@ -145,7 +149,7 @@ For proper `M106` macro control of the fan we need to modify the macro located i
     {% endif %}
     ```
 
-3. [ ] Replace the initial `P` check at the top of the macro with this logic to restore the fail safe we removed previously. This ensures that if a fan number that does not exist is passed to the `M106` macro it will fall back to fan1 which is the exhaust fan. 
+3.  [ ] Replace the initial `P` check at the top of the macro with this logic to restore the fail safe we removed previously. This ensures that if a fan number that does not exist is passed to the `M106` macro it will fall back to fan1 which is the exhaust fan.
 
     ``` cfg
     {% if params.P is defined %}
@@ -158,7 +162,7 @@ For proper `M106` macro control of the fan we need to modify the macro located i
     {% endif %}
     ```
 
-4. [ ] Example `M106` macro after all customizations are completed.
+4.  [ ] Example `M106` macro after all customizations are completed.
 
     ``` cfg title="Example"
     --8<-- "m106.cfg"

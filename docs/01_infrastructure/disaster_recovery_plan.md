@@ -55,13 +55,13 @@ _Maintaining High Availability_
 
 #### Servers
 
-[Syncthing](../03_services/syncthing.md) is utilized across the [Pi 4B Server](../02_hardware/pi_4b_server.md#role){ data-preview }, [Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md#role){ data-preview }, [Debian Server](../02_hardware/debian_server.md#role){ data-preview } and [ZimaOS NAS](../02_hardware/zimaos_nas.md#role){ data-preview } nodes to ensure configuration files and Docker volumes are mirrored in real-time.
+[Syncthing](../03_services/syncthing.md) is utilized across the [Pi 4B Server](../02_hardware/pi_4b_server.md#device-overview){ data-preview }, [Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md#device-overview){ data-preview }, [Debian Server](../02_hardware/debian_server.md#overview){ data-preview } and [ZimaOS NAS](../02_hardware/zimaos_nas.md#device-overview){ data-preview } nodes to ensure configuration files and Docker volumes are mirrored in real-time.
 
 #### Personal Computers
 
-The **Linux PCs**, [Ben's Desktop](../02_hardware/bens_desktop.md#role){ data-preview } and [Ben's Laptop](../02_hardware/bens_laptop.md#role){ data-preview }, have the home _(`~/`)_ directory backed up to the **ZimaOS NAS** _(weekdays @ 23:00 UTC)_ using a custom script, `home-bkp-nas.sh`, that utilizes [NFS](../03_services/nfs.md) and `rsync`.
+The **Linux PCs**, [Ben's Desktop](../02_hardware/bens_desktop.md#device-overview){ data-preview } and [Ben's Laptop](../02_hardware/bens_laptop.md#device-overview){ data-preview }, have the home _(`~/`)_ directory backed up to the **ZimaOS NAS** _(weekdays @ 23:00 UTC)_ using a custom script, `home-bkp-nas.sh`, that utilizes [NFS](../03_services/nfs.md) and `rsync`.
 
-The **Windows PCs**, [Rob's Desktop](../02_hardware/robs_desktop.md#role){ data-preview } and [Rob's Laptop](../02_hardware/robs_laptop.md#role){ data-preview }, use [SMB](../03_services/smb.md) and the built-in backup utility in **Windows 11** to back up personal data to the **ZimaOS NAS**. The backup directory on the **ZimaOS NAS** is located at: `/media/Quick-Storage/Backup/<client-hostname>`.
+The **Windows PCs**, [Rob's Desktop](../02_hardware/robs_desktop.md#device-overview){ data-preview } and [Rob's Laptop](../02_hardware/robs_laptop.md#device-overview){ data-preview }, use [SMB](../03_services/smb.md) and the built-in backup utility in **Windows 11** to back up personal data to the **ZimaOS NAS**. The backup directory on the **ZimaOS NAS** is located at: `/media/Quick-Storage/Backup/<client-hostname>`.
 
 **Obsidian** vaults are synchronized in real-time with a [CouchDB](../03_services/obsidian_livesync.md) database hosted on the **ZimaOS NAS** in a Docker container, and periodically to a private GitHub repository.
 
@@ -75,7 +75,7 @@ Android smartphones have **SMS / MMS & RCS** messages and critical application c
 
 Critical database dumps _(e.g., [Home Assistant](../03_services/home_assistant.md), [Immich](../03_services/immich.md) PostgreSQL)_ are exported weekly to the **USB Storage** _(32GB)_ attached to the **Pi 4B Server** and the **NVMe Storage** _(500GB)_ on the **ZimaOS NAS**.
 
-The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#role){ data-preview } wireless router is exported weekly _(Sundays @ 06:00 UTC)_ to the **USB Storage** _(32GB)_ attached to the **Pi 4B Server** and the **Quick-Storage** _(2TB)_ on the **ZimaOS NAS** via the `backupmon` utility included with the [Asuswrt-merlin][merlin]{ external-link } firmware.
+The configuration of the [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#device-overview){ data-preview } wireless router is exported weekly _(Sundays @ 06:00 UTC)_ to the **USB Storage** _(32GB)_ attached to the **Pi 4B Server** and the **Quick-Storage** _(2TB)_ on the **ZimaOS NAS** via the `backupmon` utility included with the [Asuswrt-merlin][merlin]{ external-link } firmware.
 
 ### Off-Site Backup
 

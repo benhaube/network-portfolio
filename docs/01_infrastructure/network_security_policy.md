@@ -45,13 +45,11 @@ An [ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) acts as the primary firewall
 
 #### Reverse-Proxy
 
-- Direct port forwarding is strictly prohibited. Remote access to individual services is facilitated through multiple [Cloudflare Tunnels](../03_services/cloudflared.md), ensuring all incoming traffic is proxied and SSL-encrypted.
-{ .no-bullets }
+Direct port forwarding is strictly prohibited. Remote access to individual services is facilitated through multiple [Cloudflare Tunnels](../03_services/cloudflared.md), ensuring all incoming traffic is proxied and SSL-encrypted.
 
 #### VPN
 
-- For administrative tasks, there are two [WireGuard](../03_services/wireguard_server.md) instances providing a secure, encrypted tunnel into the Trusted zone. The primary WireGuard server is hosted natively on the main [ASUS router](../02_hardware/asus_rt-be92u.md). The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_hardware/zimaos_nas.md).
-{ .no-bullets }
+For administrative tasks, there are two [WireGuard](../03_services/wireguard_server.md) instances providing a secure, encrypted tunnel into the Trusted zone. The primary WireGuard server is hosted natively on the main [ASUS router](../02_hardware/asus_rt-be92u.md). The secondary / backup WireGuard server is hosted in a Docker container on the [ZimaOS NAS](../02_hardware/zimaos_nas.md).
 
 ## :symbols-server:&ensp;DNS Security & Content Filtering
 
@@ -73,46 +71,46 @@ Network-wide ad, tracking, and malware blocking is enforced at the DNS level usi
 
 #### Servers
 
--   Servers primarily utilize **Debian** and **ZimaOS** _(on the NAS)_ for stability and security. Both of these server operating systems ensure maximum security and availability for services hosted on the network.
-{ .no-bullets }
-    - **Debian Linux** _(Stable)_ is a rock-solid, unchanging base to build a server on. Packages are not frequently updated with new features, so there is no need to worry about breakages. The 10-year-long service life means you are guaranteed to get security updates for the server's lifetime.
-    - The immutability of **ZimaOS** means OS updates on the NAS are easy to revert if they cause a breakage, and ensures no system files can be modified by an intruder.
+Servers primarily utilize **Debian** and **ZimaOS** _(on the NAS)_ for stability and security. Both of these server operating systems ensure maximum security and availability for services hosted on the network.
+
+- **Debian Linux** _(Stable)_ is a rock-solid, unchanging base to build a server on. Packages are not frequently updated with new features, so there is no need to worry about breakages. The 10-year-long service life means you are guaranteed to get security updates for the server's lifetime.
+- The immutability of **ZimaOS** means OS updates on the NAS are easy to revert if they cause a breakage, and ensures no system files can be modified by an intruder.
 
 #### Clients
 
-- Client PCs utilize **Fedora _(KDE Plasma Desktop Edition)_** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware _(e.g., the latest CPUs & GPUs)_.
-{ .no-bullets } 
+Client PCs utilize **Fedora _(KDE Plasma Desktop Edition)_** and **Windows 11** for their frequent security updates, up-to-date packages with the latest features, and support for the newest hardware _(e.g., the latest CPUs & GPUs)_.
 
 #### Mobile Devices
 
-- Mobile devices _(e.g., smartphones and tablets)_ utilize **Android**. Only **Google Pixel** and **Samsung Galaxy** devices are allowed due to their monthly security patches and long service & support lifespan. While Apple's **iOS** mobile operating system is secure, it is not compatible with our philosophy that promotes the use of open-source software.  
-{ .no-bullets }
+Mobile devices _(e.g., smartphones and tablets)_ utilize **Android**. Only **Google Pixel** and **Samsung Galaxy** devices are allowed due to their monthly security patches and long service & support lifespan. While Apple's **iOS** mobile operating system is secure, it is not compatible with our philosophy that promotes the use of open-source software.  
 
 ### Access Control
 
 #### Credential Storage
 
-- [Bitwarden][bw]{ external-link } is utilized to securely store credentials, including usernames, passwords, Passkeys, API keys, and SSH keys. Bitwarden's desktop client has a built-in SSH key-agent; allowing private keys to be stored securely inside an encrypted vault. The Chromium and Firefox browser extensions auto-fill credentials and integrate with the desktop client; allowing the use of biometric authentication. Additionally, the `bitwarden-cli` utility gives users an easy way to access their credentials while working in the terminal. The mobile client can auto-fill credentials on websites and native applications. Finally, the Bitwarden "Organization" feature allows household members to securely share credentials.
-{ .no-bullets }
-- While Bitwarden does have the ability to store TOTP credentials, we forego this feature and use [Ente Auth][ente]{ external-link } instead. We believe it is vitally important to separate your primary and secondary authentication factors. Storing both factors in the same location gives attackers a single point of access, and negates the benefits of 2FA / MFA entirely. **Ente Auth** is an open-source, cross-platform TOTP manager with secure synchronization. It has desktop, mobile, and PWA clients making it easy to access your second factor authentication credentials anywhere you need them.
-{ .no-bullets }
-- The other 2FA / MFA method we utilize wherever possible are physical FIDO2 / WebAuthen security keys. While there are many companies manufacturing these physical security keys, we generally recommend the [YubiKey 5][yubi]{ external-link } and the [Google Titan][titan]{ external-link } products. Both products have a long, proven history of security, and come from reputable companies. Unfortunately, not all accounts offer FIDO2 authentication, but we recommend using it on any accounts that do. It is ideal to have a backup in the event you lose your physical key. This can be either a second physical key you store in a secure location, or TOTP authentication.
-{ .no-bullets }
+##### Bitwarden
+
+[Bitwarden][bw]{ external-link } is utilized to securely store credentials, including usernames, passwords, Passkeys, API keys, and SSH keys. Bitwarden's desktop client has a built-in SSH key-agent; allowing private keys to be stored securely inside an encrypted vault. The Chromium and Firefox browser extensions auto-fill credentials and integrate with the desktop client; allowing the use of biometric authentication. Additionally, the `bitwarden-cli` utility gives users an easy way to access their credentials while working in the terminal. The mobile client can auto-fill credentials on websites and native applications. Finally, the Bitwarden "Organization" feature allows household members to securely share credentials.
+
+##### Ente Auth
+
+While Bitwarden does have the ability to store TOTP credentials, we forego this feature and use [Ente Auth][ente]{ external-link } instead. We believe it is vitally important to separate your primary and secondary authentication factors. Storing both factors in the same location gives attackers a single point of access, and negates the benefits of 2FA / MFA entirely. **Ente Auth** is an open-source, cross-platform TOTP manager with secure synchronization. It has desktop, mobile, and PWA clients making it easy to access your second factor authentication credentials anywhere you need them.
+
+##### FIDO2 / WebAuthn
+
+The other 2FA / MFA method we utilize wherever possible are physical FIDO2 / WebAuthen security keys. While there are many companies manufacturing these physical security keys, we generally recommend the [YubiKey 5][yubi]{ external-link } and the [Google Titan][titan]{ external-link } products. Both products have a long, proven history of security, and come from reputable companies. Unfortunately, not all accounts offer FIDO2 authentication, but we recommend using it on any accounts that do. It is ideal to have a backup in the event you lose your physical key. This can be either a second physical key you store in a secure location, or TOTP authentication.
 
 #### SSH Security
 
-- [SSH](../03_services/ssh.md) access requires **Ed25519 Key-Based Authentication**; password-based and `root` user login are disabled. No SSH ports are publicly exposed. To manage a server, first connect to the **WireGuard** VPN server to gain secure, encrypted access to the local network.
-{ .no-bullets }
+[SSH](../03_services/ssh.md) access requires **Ed25519 Key-Based Authentication**; password-based and `root` user login are disabled. No SSH ports are publicly exposed. To manage a server, first connect to the **WireGuard** VPN server to gain secure, encrypted access to the local network.
 
 #### Local User Accounts
 
-- Local user accounts on the Fedora and Windows 11 PCs do not have administrator privileges. A separate "admin" account is required to make system-level changes.
-{ .no-bullets }
+Local user accounts on the Fedora and Windows 11 PCs do not have administrator privileges. A separate "admin" account is required to make system-level changes.
 
 #### Self-Hosted Services
 
-- Services hosted on the network that require login have separate "admin" accounts for administration. Regular user accounts have reduced permissions for increased operational security.
-{ .no-bullets }
+Services hosted on the network that require login have separate "admin" accounts for administration. Regular user accounts have reduced permissions for increased operational security.
 
 ### Updates
 

@@ -152,7 +152,7 @@ _Wireless Router_
 
 ### :symbols-cloud-upload:&ensp;Backup Policy
 
-The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays _(at 3:00 UTC-5)_ to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } and [Pi 4B Server](pi_4b_server.md#external-attached){ data-preview } using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON){ external-link } script. Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+The NVRAM, JFFS, and external USB drive are backed up automatically once a week on Sundays _(at 08:00 UTC)_ to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } and [Pi 4B Server](pi_4b_server.md#external-attached){ data-preview } using the [BACKUPMON](https://github.com/ViktorJp/BACKUPMON){ external-link } script. Backups of the router settings stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### Backup Directories
 

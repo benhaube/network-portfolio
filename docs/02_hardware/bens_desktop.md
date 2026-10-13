@@ -174,7 +174,7 @@ flatpak update -y
 
 The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd. With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time. Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
-#### :symbols-file-terminal:&ensp;Backup Script
+#### Backup Script
 
 1.  Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
@@ -383,3 +383,41 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 4.  Aligns all keys to this uniform width.
 5.  Sets the separator symbol used between the keys and values.
+
+### :brands-antigravity:&ensp;Google Antigravity
+
+Google publishes official Linux binaries for both Antigravity apps as standalone archives without native package repositories. This repository packages them into standard RPM and DEB packages and provides an interactive installer for the complete suite. Unlike basic community scripts that download Google tarballs and manually unpack them into `/opt` without package manager integration.
+
+[Antigravity for Linux&ensp;:brands-github:](https://github.com/x3m-industries/antigravity-packages){ .md-button }
+
+#### Add Repo & Install
+
+1.  Add the RPM repository file to `/etc/yum.repos.d/`:
+
+    ``` bash
+    sudo curl -fsSL https://x3m-industries.github.io/antigravity-packages/rpm/antigravity.repo -o /etc/yum.repos.d/antigravity.repo
+    ```
+
+2.  Rebuild DNF package cache:
+
+    ``` bash
+    sudo dnf makecache --refresh
+    ```
+
+3.  Install Antigravity IDE & Hub via DNF:
+
+    ``` bash
+    sudo dnf install antigravity-ide antigravity
+    ```
+
+4.  Update anytime:
+
+    ``` bash
+    sudo dnf update antigravity-ide antigravity
+    ```
+
+5.  Install `agy`: _(Optional)_
+
+    ``` bash
+    npm install -g agy
+    ```

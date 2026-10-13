@@ -45,16 +45,10 @@ _Improved Nozzle Brush Routine_
 
     Before uploading the macro, modify `3DPHUB_PROWIPER.CFG` to account for the custom bed height and safe testing speeds.
 
-### Set the Mount Type
-
 - [ ] Ensure `variable_brush_mount` is set to `"V5K1C"`.
-  #### Adjust for the Bed Spacer
 - [ ] Change `variable_spacer_height` to match the Z-height of the spacer being used. _(e.g., `4`)_
-  #### Tweak Testing Speeds:
 - [ ] Change `variable_speed` from the default `7500` to a safer `4000` or `5000`.
-  #### Disable Phantom Bed Fans
 - [ ] Change `variable_bed_fans_installed` to `"FALSE"` *(unless a specific `bed_fans` pin is defined in your main printer config)*.
-  #### Verify Bottom Clearance
 - [ ] Review `variable_bot_clearance` _(default `20`)_ and `variable_drop_distance` _(default `15`)_.
 
 ## :symbols-api:&ensp;Klipper Integration

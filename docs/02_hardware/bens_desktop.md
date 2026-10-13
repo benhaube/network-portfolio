@@ -174,6 +174,48 @@ flatpak update -y
 
 The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd. With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time. Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
+#### :symbols-file-terminal:&ensp;Backup Script
+
+1.  Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
+
+    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="1" hl_lines="5 40 61 62" }
+    --8<-- "home-bkp-nas.sh"
+    ```
+
+    1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
+    2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
+
+2.  Place `.bkp-exclude-nas` in the home _(`~/`)_ directory.
+
+    ``` kconfig { .mono-title title="~/.bkp-exclude-nas" linenums="1" }
+    --8<-- "bkp-exclude-nas"
+    ```
+
+3.  Run the command `#!bash mkdir -p ~/.var/log` to create the log directory.
+4.  Run the command `#!bash touch ~/.var/log/backup_log.log` to create the empty log file.
+5.  Place `home-backup` in the `/etc/logrotate.d/` directory.
+
+    ``` nginx { .mono-title title="/etc/logrotate.d/home-backup" linenums="1" }
+    --8<-- "logrotate-home-backup"
+    ```
+
+6.  Place `home-bkp-nas.timer` and `home-bkp-nas.service` in the `~/.config/systemd/user/` directory.
+
+    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.timer" linenums="1" }
+    --8<-- "home-bkp-nas.timer"
+    ```
+
+    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.service" linenums="1" }
+    --8<-- "home-bkp-nas.service"
+    ```
+
+7.  Run the following commands to reload the systemd daemons and enable the timer:
+
+    ``` bash linenums="1"
+    systemctl --user daemon-reload
+    systemctl --user enable home-bkp-nas.timer
+    ```
+
 ### :symbols-message-square-dot:&ensp;Push Notifications
 
 To receive push notifications from the self-hosted [Gotify](../03_services/gotify.md) server there is a lightweight, Python powered Systemd service available that uses the [Dunst](https://dunst-project.org/){external-link} notification daemon to integrate with the KDE Plasma desktop environment. No native RPM package exists, so we need to clone the GitHub code repository an and build it from source.
@@ -243,48 +285,6 @@ Key-based authentication is enabled for [SSH](../03_services/ssh.md#credentials)
 On 2026/02/09 we implemented a protocol change from SMB to NFS for remote file system mounts due to slow transfers for small files _(e.g., photos / code)_. Other benefits from the switch to NFS include full compatibility for file ownership and permissions and compatibility for sym-links.
 
 The `rsync` command in the backup script has been modified to reflect this change. This change only applies to PCs using the **Linux OS**. The Windows and Android clients still utilize SMB with multi-chanel enabled. See the ["Clients"](../03_services/nfs.md#clients) section on the NFS service documentation page for the Systemd unit files and configuration details.
-
-### :symbols-file-terminal:&ensp;Backup Script
-
-1.  Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
-
-    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="1" hl_lines="5 40 61 62" }
-    --8<-- "home-bkp-nas.sh"
-    ```
-
-    1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
-    2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
-
-2.  Place `.bkp-exclude-nas` in the home _(`~/`)_ directory.
-
-    ``` kconfig { .mono-title title="~/.bkp-exclude-nas" linenums="1" }
-    --8<-- "bkp-exclude-nas"
-    ```
-
-3.  Run the command `#!bash mkdir -p ~/.var/log` to create the log directory.
-4.  Run the command `#!bash touch ~/.var/log/backup_log.log` to create the empty log file.
-5.  Place `home-backup` in the `/etc/logrotate.d/` directory.
-
-    ``` nginx { .mono-title title="/etc/logrotate.d/home-backup" linenums="1" }
-    --8<-- "logrotate-home-backup"
-    ```
-
-6.  Place `home-bkp-nas.timer` and `home-bkp-nas.service` in the `~/.config/systemd/user/` directory.
-
-    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.timer" linenums="1" }
-    --8<-- "home-bkp-nas.timer"
-    ```
-
-    ``` systemd { .mono-title title="~/.config/systemd/user/home-bkp-nas.service" linenums="1" }
-    --8<-- "home-bkp-nas.service"
-    ```
-
-7.  Run the following commands to reload the systemd daemons and enable the timer:
-
-    ``` bash linenums="1"
-    systemctl --user daemon-reload
-    systemctl --user enable home-bkp-nas.timer
-    ```
 
 ### :symbols-folder-key:&ensp;Encrypted-Documents
 

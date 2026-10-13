@@ -222,6 +222,39 @@ The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](z
     systemctl --user enable home-bkp-nas.timer
     ```
 
+### :brands-node-js:&ensp;Setup Node.js
+
+[Node.js](https://nodejs.org/en){ external-link } is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts. Starting from Fedora 24, `npm` is a part of the Node.js package and does not need to be installed separately.
+
+#### Install
+
+1.  Run this command to install the V8 Javascript Engine, Node.js runtime, `npm` package manager, and their dependencies:
+
+    ``` bash
+    sudo dnf install nodejs
+    ```
+
+#### Setup Global Directory
+
+1.  Create a directory for global installations inside your home directory:
+
+    ``` bash
+    mkdir ~/.npm-global
+    ```
+
+2.  Set the new directory path for npm:
+
+    ``` bash
+    npm config set prefix '~/.npm-global'
+    ```
+
+3.  Add the new directory's bin folder to your PATH by appending it to your `~/.bashrc.d/env` file, then apply the changes to your current session:
+
+    ``` bash
+    echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc.d/env
+    source ~/.bashrc
+    ```
+
 ### :symbols-message-square-dot:&ensp;Push Notifications
 
 To receive push notifications from the self-hosted [Gotify](../03_services/gotify.md) server there is a lightweight, Python powered Systemd service available that uses the [Dunst](https://dunst-project.org/){external-link} notification daemon to integrate with the KDE Plasma desktop environment. No native RPM package exists, so we need to clone the GitHub code repository an and build it from source.

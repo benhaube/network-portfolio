@@ -301,7 +301,7 @@ The `rsync` command in the backup script has been modified to reflect this chang
     --8<-- "mount-gocryptfs.desktop"
     ```
 
-### :brands-google-drive:&ensp;Rclone Google Drive Mount
+### :brands-google-drive:&ensp;Google Drive Mount
 
 1.  Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
@@ -426,4 +426,31 @@ Google publishes official Linux binaries for both Antigravity apps as standalone
 
     ``` bash
     npm install -g agy
+    ```
+
+### :brands-firefox:&ensp;Mozilla Firefox
+
+Fedora Linux comes with Firefox installed and set as the default web browser, however, the RPM package from the Fedora package repository is built and packaged by the Fedora team, and it includes modifications to the source code. Instead of using Fedora's version of Firefox we add the official [Mozilla RPM](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-rpm-package-for-fedora-based-rhel-and-its-derivations-recommended){ external-link } package repository, and replace the Firefox package with the official package from Mozilla.
+
+#### Add Repo & Install
+
+1.  Add Firefox RPM repository through the dnf5 package manager:
+
+    ``` bash
+    sudo dnf config-manager addrepo --id=mozilla \
+    --set=baseurl=https://packages.mozilla.org/rpm/firefox \
+    --set=gpgkey=https://packages.mozilla.org/rpm/firefox/signing-key.gpg \
+    --set=gpgcheck=1 --set=repo_gpgcheck=0 --set=priority=10
+    ```
+
+2.  Rebuild DNF package cache:
+
+    ``` bash
+    sudo dnf makecache --refresh
+    ```
+
+3.  Replace Firefox from the Fedora repository with the Mozilla version:
+
+    ``` bash
+    sudo dnf swap firefox firefox --from-repo=mozilla --allowerasing
     ```

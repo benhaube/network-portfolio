@@ -101,7 +101,7 @@ _ThinkPad X1 Yoga_
 | :----------------------------------------------- | :-------------- | :------------------------ | :------ | :----------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;Core(r) i5 1135G7 _(x86-64)_ | 4C / 8T         | 8 GB LPDDR4 _(4267 MT/s)_ | 4.2 GHz | :brands-intel:&nbsp;Iris(r) Xe | 1.3 GHz   | _Shared_ |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 |  Interface  | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :---------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -111,15 +111,15 @@ _ThinkPad X1 Yoga_
 | :---------: | :--------------------------: | :-------------------- | :---------------------------------------- | :------------------------------------ |
 | `wlp0s20f3` | :symbols-shield:&nbsp;VLAN50 | `ben-laptop.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point  | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                          |
 | :----------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :---------------------------------- |
 | `/`, `/home` | NVMe SSD   | 929 GB                                         | `/dev/dm-0` | `btrfs`     | :symbols-shield-keyhole:&nbsp;LUKS2 |
 
-#### :symbols-usb:&ensp;External / Attached
+### :symbols-usb:&ensp;External / Attached
 
 | Mount Point                         | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path                         | File System      | Encryption                                |
 | :---------------------------------- | :------------ | :--------------------------------------------- | :---------------------------------- | :--------------- | :---------------------------------------- |
@@ -128,15 +128,15 @@ _ThinkPad X1 Yoga_
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -                                         |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -                                         |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-layers:&ensp;Virtualization
+### :symbols-layers:&ensp;Virtualization
 
 |  Status  | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }        |
 | :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
 | _Active_ | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
-#### :symbols-tux:&ensp;Native Linux
+### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
 | :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |

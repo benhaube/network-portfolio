@@ -64,7 +64,7 @@ _Primary DNS Server_
 | :--------------------: | :---------------------------------: | :-------------------------------------- | :--------------------------------------- |
 | 2C / 2T _(VT-x, VT-d)_ |                3 GB                 | 50 GB                                   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Notes { data-sort-method="none" }                                             |
 | :-------: | :--------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
@@ -74,9 +74,9 @@ _Primary DNS Server_
 | :-------: | :--------------------------: | :------------------- | :---------------------------------------- | :------------------------------------ |
 | `enp1s0`  | :symbols-shield:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1`                               | `192.168.50.1`                        |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-tux:&ensp;Native Linux
+### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
 | :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
@@ -84,7 +84,7 @@ _Primary DNS Server_
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                       |
 | _Active_ | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md)  |        `53`<br>`443`<br>`5380`        | An open-source authoritative as well as recursive DNS server.                                  |
 
-#### :symbols-container:&ensp;Docker Container
+### :symbols-container:&ensp;Docker Container
 
 |  Status  | Service                                                                     | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
 | :------: | :-------------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |

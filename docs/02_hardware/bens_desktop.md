@@ -88,7 +88,7 @@ _High-Performance Desktop PC_
 | :-------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------- | :-------- | :--------- |
 | :brands-amd:&nbsp;Ryzen(r) 7 5800X _(x86-64)_ | 8C / 16T        | 4.7 GHz   | 32 GB DDR4 _(3600 MHz)_ | :brands-amd:&nbsp;Radeon(r) 6600XT | 2581 MHz  | 8 GB GDDR6 |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                         |
 | :-------: | :--------------------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
@@ -100,16 +100,16 @@ _High-Performance Desktop PC_
 | `enp7s0`  | :symbols-shield:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 | `wlp6s0`  | :symbols-shield:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point    | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path                 | File System | Encryption                          |
 | :------------- | :--------- | :--------------------------------------------- | :-------------------------- | :---------- | :---------------------------------- |
 | `/`, `/home`   | NVMe SSD   | 929 GB                                         | `/dev/dm-0`                 | `btrfs`     | :symbols-shield-keyhole:&nbsp;LUKS2 |
 | `/mnt/1TB_HDD` | SATA HDD   | 1 TB                                           | `/dev/mapper/1TB_HDD_crypt` | `btrfs`     | :symbols-shield-keyhole:&nbsp;LUKS2 |
 
-#### :symbols-usb:&ensp;External / Attached
+### :symbols-usb:&ensp;External / Attached
 
 | Mount Point                         | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path                         | File System      | Encryption                                |
 | :---------------------------------- | :------------ | :--------------------------------------------- | :---------------------------------- | :--------------- | :---------------------------------------- |
@@ -119,9 +119,9 @@ _High-Performance Desktop PC_
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | N/A                                       |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | N/A                                       |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-layers:&ensp;Virtualization
+### :symbols-layers:&ensp;Virtualization
 
 |  Status  | OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes { data-sort-method="none" }                              |
 | :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
@@ -129,7 +129,7 @@ _High-Performance Desktop PC_
 | _Active_ | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
 | _Active_ | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows-11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
-#### :symbols-tux:&ensp;Native Linux
+### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                  |
 | :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------ |

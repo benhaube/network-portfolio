@@ -47,7 +47,7 @@ _DOCSIS 3.1 Cable Modem_
 - <!-- material/tags { include: [Living Room, Server Rack] } -->
 { .no-bullets }
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                           |
 | :-------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------- |

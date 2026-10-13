@@ -60,7 +60,7 @@ _ASUS TUF Gaming A16_
 | :brands-amd:&nbsp;Ryzen(r) 9 7940HS _(x86-64)_ | 8C / 16T        | 4.0 GHz   | 16 GB DDR5 _(4800 MT/s)_ | :brands-amd:&nbsp;Radeon(r) 780M                 | 2700 MHz  | _Shared_   |
 |                                                |                 |           |                          | :brands-nvidia:&nbsp;GeForce RTX 4070 _(mobile)_ | 2175 MHz  | 8 GB GDDR6 |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                             |
 | :-------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------- |
@@ -72,15 +72,15 @@ _ASUS TUF Gaming A16_
 | Ethernet  | :symbols-shield:&nbsp;VLAN50 | `ems1.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 |   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `ems1.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path                                                    | File System | Encryption                              |
 | :---------- | :--------- | :--------------------------------------------- | :------------------------------------------------------------- | :---------- | :-------------------------------------- |
 | `C:`        | NVMe SSD   | 926 GB                                         | `SCSI\DISK&VEN_NVME&PROD_WD_PC_SN560_SDDP\5&194EBDF0&0&000000` | `ntfs`      | :symbols-shield-keyhole:&nbsp;BitLocker |
 
-#### :symbols-usb:&ensp;External / Attached
+### :symbols-usb:&ensp;External / Attached
 
 | Mount Point | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------- | :------------ | :--------------------------------------------- | :---------- | :---------- | :--------- |

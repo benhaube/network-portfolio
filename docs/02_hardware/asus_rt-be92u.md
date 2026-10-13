@@ -58,7 +58,7 @@ _Wireless Router_
 - <!-- material/tags { include: [Living Room] } -->
 { .no-bullets }
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 ??? info "Dual-WAN Capable"
 
@@ -66,14 +66,14 @@ _Wireless Router_
 
     On this network we utilize a single WAN connection on physical port `WAN / LAN 0` while physical port `WAN / LAN 1`, _the 10 GbE port_, is used as the uplink to the main switch via Cat6A Ethernet cable connected to an SFP+ to Ethernet transceiver in the switch. In the router's firmware the two WAN interfaces are labeled `wan0` and `wan1`, and they correspond to the physical ports, `WAN / LAN 0` and `WAN / LAN 1`, respectively.
 
-#### :symbols-globe:&ensp;WAN Connection
+### :symbols-globe:&ensp;WAN Connection
 
 | Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" }                                                   |
 | :-------------------------------------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
 |                 `wan0`                  | `DHCP`                                   | `60:CF:84:51:FA:F0` | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview } |
 |                 `wan1`                  | `Disabled`                               | `xx:xx:xx:xx:xx:xx` | -                                                                                          |
 
-#### :symbols-hub:&ensp;Virtual Local Networks
+### :symbols-hub:&ensp;Virtual Local Networks
 
 |                VLAN                | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
 | :--------------------------------: | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
@@ -81,7 +81,7 @@ _Wireless Router_
 | :symbols-shield-user:&nbsp;VLAN52  | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.52.0/24`                  | `192.168.52.1`                        | `192.168.52.255`                        | `.2` to `.254`                         |
 | :symbols-shield-house:&nbsp;VLAN53 | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.53.0/24`                  | `192.168.53.1`                        | `192.168.53.255`                        | `.3` to `.254`                         |
 
-#### :symbols-wifi-lock:&ensp;Wi-Fi Networks
+### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
 |     SSID     |  VLAN  |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                 |
 | :----------: | :----: | :------------------------------------------------------: | :--------------------------------- | :-------------------------------------- | :------------------------------------ |
@@ -89,7 +89,7 @@ _Wireless Router_
 | *Home_Guest* | VLAN52 | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.52.0/24`                  | 2.4 GHz / 5 GHz                         | :symbols-shield-user:&nbsp;Guest VLAN |
 |   *2G_IoT*   | VLAN53 |   <span aria-label="No" role="img">:symbols-x:</span>    | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN  |
 
-#### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
+### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
 | Port { data-sort-method="number" } | Max Speed { data-sort-method="number" } | Connected Device                                                                                            | Color / Type { data-sort-method="none" } | Notes { data-sort-method="none" } |
 | :--------------------------------: | :-------------------------------------- | :---------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :-------------------------------- |
@@ -100,9 +100,9 @@ _Wireless Router_
 |               LAN 4                | 2.5 Gb/s                                | :symbols-ethernet-port:&nbsp;_Empty_                                                                        |                                          |                                   |
 |               LAN 5                | 2.5 Gb/s                                | :symbols-ethernet-port:&nbsp;_Empty_                                                                        |                                          |                                   |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
@@ -110,15 +110,15 @@ _Wireless Router_
 | `/jffs`     | -          | 44.5 MB                                        | `ubi:jffs2` | `ubifs`     | -          |
 | `/data`     | -          | 16.8 MB                                        | `bui:data`  | `ubifs`     | -          |
 
-#### :symbols-usb:&ensp;External / Attached
+### :symbols-usb:&ensp;External / Attached
 
 | Mount Point           | Drive Type      | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :-------------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/mnt/router-usb` | USB Flash Drive | 28.3 GB                                        | `/dev/sda1` | `ext4`      | -          |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-tux:&ensp;Native
+### :symbols-tux:&ensp;Native
 
 |  Status  | Service                                                                   | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                                                                                                                 |
 | :------: | :------------------------------------------------------------------------ | :-----------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

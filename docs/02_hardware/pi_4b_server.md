@@ -65,7 +65,7 @@ _Secondary DNS Server_
 | :------------------------------------ | :--------------------- | :-------- | :------------------------ | :-------------- | :-------- | :------- |
 | :brands-arm:&nbsp;BCM2711 _(Armv8-A)_ | 4C / 4T _(Cortex-A72)_ | 1.5 GHz   | 4 GB LPDDR4 _(2400 MT/s)_ | VideoCore VI 3D | 500 MHz   | _Shared_ |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                 |
 | :-------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
@@ -77,9 +77,9 @@ _Secondary DNS Server_
 |  `eth0`   |    :symbols-shield:&nbsp;VLAN50    | `pi-server.internal` | `127.0.0.1`                               | `192.168.50.1`                        |
 |  `wlan0`  | :symbols-shield-house:&nbsp;VLAN53 | `N/A`                | `127.0.0.1`                               | `192.168.53.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point      | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path      | File System | Encryption |
 | :--------------- | :--------- | :--------------------------------------------- | :--------------- | :---------- | :--------- |
@@ -87,15 +87,15 @@ _Secondary DNS Server_
 | `/boot/firmware` | MicroSD    | 512 MB                                         | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 128 MB                                         | `log2ram`        | `tmpfs`     | -          |
 
-#### :symbols-usb:&ensp;External / Attached
+### :symbols-usb:&ensp;External / Attached
 
 | Mount Point      | Drive Type      | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :--------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/mnt/usb-drive` | USB Flash Drive | 28.7 GB                                        | `/dev/sda1` | `ext4`      | -          |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-tux:&ensp;Native Linux
+### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                        |
 | :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :---------------------------------------------------------------------------------------------- |
@@ -105,7 +105,7 @@ _Secondary DNS Server_
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                        |
 | _Active_ | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md)  |        `53`<br>`443`<br>`5380`        | An open-source authoritative as well as recursive DNS server.                                   |
 
-#### :symbols-container:&ensp;Docker Container
+### :symbols-container:&ensp;Docker Container
 
 |   Status   | Service                                                                           | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                                                                                                                            |
 | :--------: | :-------------------------------------------------------------------------------- | :-----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

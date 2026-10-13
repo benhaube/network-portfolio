@@ -62,7 +62,7 @@ _Reverse-Proxy Server_
 | :----------------------------------- | :--------------------- | :-------- | :----------- | :----------- | :-------- | :------- |
 | :brands-arm:&nbsp;BCM2837 _(Armv-8)_ | 4C / 4T _(Cortex-A53)_ | 1.2 GHz   | 512 MB SDRAM | VideoCore IV | 400 MHz   | _Shared_ |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -72,9 +72,9 @@ _Reverse-Proxy Server_
 | :-------: | :--------------------------: | :----------------- | :---------------------------------------- | :------------------------------------ |
 |  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `pi-zero.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point      | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path      | File System | Encryption |
 | :--------------- | :--------- | :--------------------------------------------- | :--------------- | :---------- | :--------- |
@@ -82,9 +82,9 @@ _Reverse-Proxy Server_
 | `/boot/firmware` | MicroSD    | 512 MB                                         | `/dev/mmcblk0p1` | `vfat`      | -          |
 | `/var/log`       | RAM        | 80 MB                                          | `log2ram`        | `tmpfs`     | -          |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-tux:&ensp;Native Linux
+### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                              |
 | :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
@@ -92,7 +92,7 @@ _Reverse-Proxy Server_
 | _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md)            |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                                                              |
 
-#### :symbols-container:&ensp;Docker Container
+### :symbols-container:&ensp;Docker Container
 
 |   Status   | Service                                                            | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
 | :--------: | :----------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |

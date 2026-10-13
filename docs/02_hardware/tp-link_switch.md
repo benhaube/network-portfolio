@@ -62,7 +62,7 @@ _Model SG105_
 - <!-- material/tags { include: [Office, Printer Cart] } -->
 { .no-bullets }
 
-### :symbols-ethernet-port:&ensp;Port Map
+## :symbols-ethernet-port:&ensp;Port Map
 
 | Port # { data-sort-method="number" } | Connected Device                                                                              | Color / Type { data-sort-method="none" } | Notes { data-sort-method="none" }            |
 | :----------------------------------: | :-------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------------------------------- |

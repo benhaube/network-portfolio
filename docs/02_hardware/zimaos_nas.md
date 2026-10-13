@@ -65,7 +65,7 @@ _Rack-Mount ZimaBoard 2_
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
 | :brands-intel:&nbsp;N150 _(x86-64)_ | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 _(6400 MHz)_ | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | _Shared_ |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                       |
 | :-------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
@@ -77,35 +77,35 @@ _Rack-Mount ZimaBoard 2_
 |                 `eth0`                  | :symbols-shield:&nbsp;VLAN50 | `storage-server.internal`   | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 |                 `eth1`                  | :symbols-shield:&nbsp;VLAN50 | `storage-server-2.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-microchip:&ensp;Boot
+### :symbols-microchip:&ensp;Boot
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path    | File System | Encryption |
 | :---------- | :--------- | :--------------------------------------------- | :------------- | :---------- | :--------- |
 | `/`         | eMMC       | 64 GB                                          | `/dev/mmcblk0` | `ext4`      | -          |
 
-#### :symbols-hard-drive:&ensp;Data
+### :symbols-hard-drive:&ensp;Data
 
 | Mount Point            | Drive Type         | Drive Capacity { data-sort-method="filesize" } | Device Path    | File System | Encryption |
 | :--------------------- | :----------------- | :--------------------------------------------- | :------------- | :---------- | :--------- |
 | `/media/Quick-Storage` | RAID0, 2 SATA SSDs | 2 TB                                           | `/dev/md0`     | `btrfs`     | -          |
 | `/media/nvme0n1p1`     | NVMe SSD           | 250 GB                                         | `/dev/nvme0n1` | `ext4`      | -          |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-share:&ensp;File Sharing
+### :symbols-share:&ensp;File Sharing
 
 - SMB  _(with Multichannel enabled)_
 - NFS _(for Linux PCs)_
 
-#### :symbols-layers:&ensp;Virtualization
+### :symbols-layers:&ensp;Virtualization
 
 |  Status  | OS                                                                                  | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }                                                                                |
 | :------: | :---------------------------------------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | _Active_ | [:brands-debian:&nbsp;Debian _(trixie)_](debian_server.md#overview){ data-preview } | Bridge      | `cd175b11.qcow2`   | Hosting the network's primary [Technitium](../03_services/technitium.md#deployment-details){ data-preview } DNS server. |
 
-#### :symbols-tux:&ensp;Native Linux
+### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                     | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
 | :------: | :---------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
@@ -113,7 +113,7 @@ _Rack-Mount ZimaBoard 2_
 | _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md) |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 | _Active_ | [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md)     |                 `445`                 | Remote file system access.                                                                     |
 
-#### :symbols-container:&ensp;Docker Container
+### :symbols-container:&ensp;Docker Container
 
 |   Status   | Service                                                                                 | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                                            |
 | :--------: | :-------------------------------------------------------------------------------------- | :-----------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------- |

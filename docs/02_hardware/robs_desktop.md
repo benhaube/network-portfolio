@@ -60,7 +60,7 @@ _High-Performance Desktop PC_
 | :brands-intel:&nbsp;Core(r) i7 12700K _(x86-64)_ | 12C / 20T       | 5.0 GHz   | 32 GB DDR4 _(3600 MHz)_ | :brands-intel:&nbsp;UHD 770 Graphics     | 1500 MHz  | _Shared_   |
 |                                                  |                 |           |                         | :brands-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz  | 8 GB GDDR6 |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                        |
 | :-------: | :--------------------------------------- | :------------------ | :-------------------------------------------------------------------------------------------------- |
@@ -72,9 +72,9 @@ _High-Performance Desktop PC_
 | Ethernet  | :symbols-shield:&nbsp;VLAN50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 |   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `rob-desktop.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path                                                   | File System | Encryption                              |
 | :---------- | :--------- | :--------------------------------------------- | :------------------------------------------------------------ | :---------- | :-------------------------------------- |
@@ -82,7 +82,7 @@ _High-Performance Desktop PC_
 | `D:`        | SATA HDD   | 1.81 TB                                        | `SCSI\DISK&VEN_WDC&PROD_WD2003FZEX-00SRL\4&E91BE7&0&050000`   | `ntfs`      | -                                       |
 | `G:`        | NVMe SSD   | 931 GB                                         | `SCSI\DISK&VEN_NVME&PROD_SAMSUNG_SSD_980\5&EBD909B&0&000000`  | `ntfs`      | -                                       |
 
-#### :symbols-usb:&ensp;External / Attached
+### :symbols-usb:&ensp;External / Attached
 
 | Mount Point | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------- | :------------ | :--------------------------------------------- | :---------- | :---------- | :--------- |

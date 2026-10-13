@@ -75,7 +75,7 @@ _Google Pixel 9 Pro_
 | :--------------------------------------------------------- | :-------------------- | :---------------------------------------- | :------------ | :-------------------------- | :-------- | :----- |
 | :brands-google-tensor:&nbsp;Google Tensor G4 _(arm64-v8a)_ | 8C / 8T<br>3-Clusters | 4x 1950 MHz<br>3x 2600 MHz<br>1x 3105 MHz | 16 GB LPDDR5X | :brands-arm:&nbsp;Mali-G715 | -         | Shared |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -85,29 +85,29 @@ _Google Pixel 9 Pro_
 | :-------: | :--------------------------- | :--------------------- | :---------------------------------------- | :------------------------------------ |
 |   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `ben-s-phone.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                         |
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :------------------------------------------------- |
 | `N/A`       | UFS 3.1    | 128 GB                                         | `N/A`       | `N/A`       | :symbols-shield-keyhole:&nbsp;Full-disk Encryption |
 
-#### :symbols-usb:&ensp;External/Attached
+### :symbols-usb:&ensp;External/Attached
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `-`         | -          | -                                              | `-`         | `-`         | -          |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-layers:&ensp;Virtualization
+### :symbols-layers:&ensp;Virtualization
 
 |  Status  | OS                                                                      | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" } |
 | :------: | :---------------------------------------------------------------------- | :---------- | :----------------- | :--------------------------------------- |
 | _Active_ | [:brands-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment       |
 
-#### :brands-android-2:&ensp;Native Android
+### :brands-android-2:&ensp;Native Android
 
 |  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
 | :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |

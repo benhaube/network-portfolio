@@ -63,7 +63,7 @@ _Modified Creality K1C_
 - <!-- material/tags { include: [Office] } -->
 { .no-bullets }
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -73,9 +73,9 @@ _Modified Creality K1C_
 | :-------: | :--------------------------: | :--------------- | :---------------------------------------- | :------------------------------------ |
 |  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
-### :symbols-folder-tree:&ensp;Storage & Mounts
+## :symbols-folder-tree:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive
+### :symbols-hard-drive:&ensp;Internal Drive
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path       | File System | Encryption |
 | :---------- | :--------- | :--------------------------------------------- | :---------------- | :---------- | :--------- |
@@ -83,15 +83,15 @@ _Modified Creality K1C_
 | `/overlay`  | eMMC       | 96.8 MB                                        | `/dev/mmcblk0p9`  | `ext4`      | -          |
 | `/rom`      | ROM        | 126.8 MB                                       | `/dev/root`       | `squashfs`  | -          |
 
-#### :symbols-usb:&ensp;External / Attached
+### :symbols-usb:&ensp;External / Attached
 
 | Mount Point       | Drive Type      | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------------- | :-------------- | :--------------------------------------------- | :---------- | :---------- | :--------- |
 | `/tmp/udisk/sda1` | USB Flash Drive | 14.5 GB                                        | `/dev/sda1` | `vfat`      | -          |
 
-### :symbols-cloud:&ensp;Services & Containers
+## :symbols-cloud:&ensp;Services & Containers
 
-#### :symbols-tux:&ensp;Native Linux
+### :symbols-tux:&ensp;Native Linux
 
 |  Status  | Service                                                     | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
 | :------: | :---------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |

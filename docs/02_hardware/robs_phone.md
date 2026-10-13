@@ -73,7 +73,7 @@ _Samsung Galaxy S25+_
 | :-------------------------------------------------------- | :-------------------- | :------------------------- | :------------ | :-------------------------------- | :-------- | :----- |
 | :brands-snapdragon:&nbsp;Snapdragon 8 Elite _(arm64-v8a)_ | 8C / 8T<br>2-Clusters | 2x 4.47 GHz<br>6x 3.53 GHz | 12 GB LPDDR5X | :brands-qualcomm:&nbsp;Adreno 830 | 1200 MHz  | Shared |
 
-### :symbols-network:&ensp;Network Configuration
+## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
 | :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -83,15 +83,15 @@ _Samsung Galaxy S25+_
 | :-------: | :--------------------------- | :---------------------- | :-------------------------------------- | :------------------------------------ |
 |   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `robert-s-s25.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
 
-### :symbols-folders:&ensp;Storage & Mounts
+## :symbols-folders:&ensp;Storage & Mounts
 
-#### :symbols-hard-drive:&ensp;Internal Drive(s)
+### :symbols-hard-drive:&ensp;Internal Drive(s)
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                         |
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :------------------------------------------------- |
 | `N/A`       | UFS 4.0    | 256 GB                                         | `N/A`       | `N/A`       | :symbols-shield-keyhole:&nbsp;Full-disk Encryption |
 
-#### :symbols-usb:&ensp;External/Attached
+### :symbols-usb:&ensp;External/Attached
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :--------- |

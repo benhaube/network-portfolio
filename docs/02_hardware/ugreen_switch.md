@@ -70,7 +70,7 @@ _Model UM106X_
 - <!-- material/tags { include: [Living Room, Server Rack] } -->
 { .no-bullets } 
 
-### :symbols-ethernet-port:&ensp;Port Map
+## :symbols-ethernet-port:&ensp;Port Map
 
 | Port # { data-sort-method="number" } | Connected Device                                                                                   | Color / Type { data-sort-method="none" } | Notes { data-sort-method="none" }                          |
 | :----------------------------------: | :------------------------------------------------------------------------------------------------- | :--------------------------------------- | :--------------------------------------------------------- |

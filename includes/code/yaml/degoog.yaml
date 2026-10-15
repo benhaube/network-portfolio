@@ -7,5 +7,5 @@ services:
     volumes:
       - ./data:/app/data
     environment:
-      DEGOOG_SETTINGS_PASSWORDS: "set-a-strong-password-here"
+      DEGOOG_SETTINGS_PASSWORDS: ${SETTINGS_PW}  # (1)!
       DEGOOG_PUBLIC_INSTANCE: "false"

@@ -75,3 +75,5 @@ _Search You Run Yourself_
 ``` yaml { .mono-title title="../AppData/dockge/stacks/degoog/compose.yaml" } 
 --8<-- "degoog.yaml"
 ```
+
+1. Place your settings password in the `.env` file with the variable `SETTINGS_PW`.

@@ -78,9 +78,68 @@ _Authoritative & Recursive DNS_
 
 ### :symbols-monitor-arrow-down-corner:&ensp;Install
 
-``` bash title="Command to install & update Technitium" linenums="1"
-curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
-```
+1. Use the following command to download and run the install script on each server:
+
+    ``` bash linenums="1"
+    curl -sSL https://download.technitium.com/dns/install.sh | sudo bash
+    ```
+
+#### Missing ICU Package
+
+Most distributions include the `libicu` package by default, but in some instances it may be missing with a minimal install. Since the package is required after `v13.4`, it will need to be installed manually if it is missing.
+
+1. Search with the APT package manager for the correct `libicu` package:
+
+    ``` bash
+    sudo apt search libicu
+    ```
+
+    ``` shell-session title="Example Output" hl_lines="13"
+    icu-devtools/stable 76.1-4 arm64
+      Development utilities for International Components for Unicode
+
+    libicu-dev/stable 76.1-4 arm64
+      Development files for International Components for Unicode
+
+    libicu4j-4.4-java/stable,stable 4.4.2.2-4 all
+      Library for Unicode support and internationalization
+
+    libicu4j-java/stable,stable 73.2-1 all
+      Library for Unicode support and internationalization
+
+    libicu76/stable,now 76.1-4 arm64 [installed]
+      International Components for Unicode
+    ```
+
+2. If the search output does not show `[installed]` next to the package name, then install the correct `libicu` package:
+
+    ``` bash
+    sudo apt install libicu76
+    ```
+
+### :symbols-refresh-cw-clock:&ensp;Update
+
+!!! tip inline end
+
+    For a **clustered** setup with multiple nodes, make sure to update all secondary nodes before updating the primary node.
+
+1. Download the install script to the `/opt/scripts` directory, and give it the name `technituim-update.sh`:
+
+    ``` bash
+    sudo curl -sSL https://download.technitium.com/dns/install.sh -o /opt/scripts/technitium-update.sh
+    ```
+
+2. Give the `root` user read, write, and execute permissions:
+
+    ``` bash
+    sudo chmod 700 /opt/scripts/technitium-update.sh
+    ```
+
+3. Run the install script as the `root` user to update Technitum:
+
+    ``` bash 
+    sudo bash /opt/scripts/technitium-update.sh
+    ```
 
 ### :symbols-cloud-upload:&ensp;Settings Backup
 

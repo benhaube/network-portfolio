@@ -38,7 +38,10 @@ _Awaken Your Home_
 
 **:symbols-link-2:&ensp;URL / Access**  
 
-:    <http://pi-server.internal:8123>
+- <http://pi-server.internal:8123>
+{ .no-bullets }
+- <https://home.rac3r4life.online>
+{ .no-bullets }
 
 **:symbols-user-key:&ensp;Credentials** 
 

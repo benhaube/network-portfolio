@@ -71,12 +71,11 @@ _Secure Shell_
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
-    - SSH keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE92U (Admin)"
-    - SSH keys&ensp;:symbols-move-right:&ensp;"debian-vm (server-admin)"
-    - SSH keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
-    - SSH keys&ensp;:symbols-move-right:&ensp;"pi-zero (admin)"
+    - SSH keys&ensp;:symbols-move-right:&ensp;"Asus Router (Admin)"
+    - SSH keys&ensp;:symbols-move-right:&ensp;"Debian Server (server-admin)"
+    - SSH keys&ensp;:symbols-move-right:&ensp;"Pi 4B Server (admin)"
+    - SSH keys&ensp;:symbols-move-right:&ensp;"Pi Zero Server (admin)"
     - SSH keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
-    - SSH keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

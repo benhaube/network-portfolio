@@ -440,7 +440,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 #### Fastfetch Preset File
 
 ``` json { .mono-title title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" }
---8<-- "fastfetch-login-storage-server.jsonc"
+--8<-- "includes/code/config/fastfetch-login-zimaos.jsonc"
 ```
 
 1.  Sets the width of the percentage bars.

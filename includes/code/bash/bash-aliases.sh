@@ -1,82 +1,82 @@
-# --- Universal Shortcuts ---
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+# This file defines custom aliases #
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+# ~~~ Shortcuts ~~~
 alias c='clear'
 alias s='sudo'
 
-# --- Start calculator with math support ---
+# ~~~ `bc` with math support ~~~
 alias bc='bc -l'
 
-# --- Generate SHA1 digest ---
+# ~~~ Generate SHA1 ~~~
 alias sha1='openssl sha1'
 
-# --- Create parent directories on demand ---
+# ~~~ Create parent directories ~~~
 alias mkdir='mkdir -pv'
 
-# --- Colorize diff output ---
+# ~~~ Colorize `diff` ~~~
 alias diff='colordiff'
 
-# --- Make mount command output human readable ---
+# ~~~ Human-readable `mount` command ~~~
 alias mount='mount | column -t'
 
-# --- Ping ---
-# Stop after 5
-alias ping='ping -c 5'
-# Go fast
-alias fastping='ping -c 100 -s.2'
-
-# --- Show open ports ---
+# ~~~ Show open ports ~~~
 alias ports='netstat -tulanp'
 
-# --- Fix typos ---
+# ~~~ `ping` shortcuts ~~~
+alias ping5='ping -c 5'
+alias fastping='ping -c 100 -s 2'
+
+# ~~~ Fix typos ~~~
 alias cd..='cd ..'
 alias pdw='pwd'
 
-# --- Colorize the grep command output for ease of use ---
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+# ~~~ Colorize `grep` ~~~
+export GREP_OPTIONS='--color=auto'
+alias grep='grep $GREP_OPTIONS'
+alias egrep='egrep $GREP_OPTIONS'
+alias fgrep='fgrep $GREP_OPTIONS'
 
-# --- dnf shortcuts ---  (1)
-# alias uninstall='sudo dnf remove'
+# ~~~ `dnf` shortcuts ~~~  (1)
+# alias remove='sudo dnf remove'
 # alias install='sudo dnf install'
-# alias update='sudo dnf update'
+# alias update='sudo dnf upgrade --offline --refresh && sudo dnf offline reboot'
 # alias distrosync='sudo dnf distro-sync'
 # alias autoremove='sudo dnf autoremove'
-# alias offupdate='sudo dnf upgrade --offline'
-# alias offreboot='sudo dnf offline reboot'
 
-# --- apt shortcuts ---  (2)
-# alias uninstall='sudo apt remove'
+# ~~~ `apt`` shortcuts ~~~  (2)
+# alias remove='sudo apt remove'
 # alias install='sudo apt install'
 # alias update='sudo apt update && sudo apt upgrade'
 # alias autoremove='sudo apt autoremove'
 
-# --- cd shortcuts ---
-alias dl='cd ~/Downloads'
-alias doc='cd ~/Documents'
-alias pic='cd ~/Pictures'
-alias vid='cd ~/Videos'
-alias cd-gh='cd ~/Github'
-alias cd-sh='cd ~/shell-scripts'
+# ~~~ `cd` shortcuts ~~~
 alias ..='cd ..'
 alias ~='cd ~'
 
-# --- File management shortcuts ---
-alias cp='cp -r'
-alias rm='rm -r'
-alias v='vim'
+# ~~~ File management ~~~
+alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
 alias utar='tar -xvf'
 
-# --- ls shortcuts ---
-alias ll='ls -l'
-alias la='ls -A'
-alias lla='ls -la'
-alias l='ls -CF'
+# ~~~ `ls` shortcuts ~~~
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors -b)"
+alias ll='ls $LS_OPTIONS -l'
+alias la='ls $LS_OPTIONS -A'
+alias lla='ls $LS_OPTIONS -la'
+alias l='ls $LS_OPTIONS -CF'
 
-# --- git shortcuts ---
+# ~~~ `git` shortcuts ~~~
 alias ga='git add'
 alias gp='git push'
 alias gcm='git commit'
 
-# --- Print working directory and copy it to the clipboard ---
+# ~~~ Format the `$PATH` output ~~~
+alias showpath='echo $PATH | tr ":" "\n"'
+
+# ~~~ Print working directory and copy it to the clipboard ~~~
 # alias pwdcp='pwd && pwd | xclip -sel clipboard'  (3)
 # alias pwdcp='pwd && pwd | wl-copy'  (4)

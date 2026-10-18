@@ -336,22 +336,22 @@ extra:
   social:
     - icon: brands/gitlab
       link: https://gitlab.com/benhaube
-      name: benhaube — Gitlab
+      name: "benhaube — Gitlab"
     - icon: brands/github
       link: https://github.com/benhaube
-      name: benhaube — GitHub
+      name: "benhaube — GitHub"
     - icon: brands/linkedin
       link: https://www.linkedin.com/in/benjamin-haube/
-      name: Benjamin Haube — Linkedin
+      name: "Benjamin Haube — Linkedin"
     - icon: brands/printables
       link: https://www.printables.com/@rac3r4life
-      name: rac3r4life — Printables
+      name: "@rac3r4life — Printables"
     - icon: brands/reddit
       link: https://reddit.com/u/benhaube
-      name: u/benhaube — Reddit
+      name: "u/benhaube — Reddit"
     - icon: brands/bluesky
       link: https://bsky.app/profile/rac3r4life.me
-      name: rac3r4life.me — Bluesky  
+      name: "@rac3r4life.me — Bluesky"  
   # Disable "Made with Material for MkDocs" message in site footer
   generator: false
   # Page tag definitions

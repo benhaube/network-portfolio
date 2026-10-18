@@ -1,15 +1,15 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * General Typeset Changes    *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~ *
+ * Typeset Style *
+ * ~~~~~~~~~~~~~ */
 
+/* Font size and spacing */
 .md-typeset {
 	font-size: .75rem;
 	letter-spacing: -.01em;
 	line-height: 1.8;
 	overflow-wrap: break-word;
 }
-
-/* Change the background-color for highlited text */
+/* Highlighted text background */
 .md-typeset mark {
     background-color: var(--md-code-hl-color--light);
 }
@@ -25,26 +25,21 @@
     vertical-align: text-top;
     word-break: break-word
 }
-/* Hide bullets/numbers from being rendered in lists that use the class '{: .no-bullets }' */
+/* Hide bullets/numbers in lists */
 .no-bullets {
     list-style-type: none;
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Customize Headings         *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* Modify h1 headings to use the primary color, reduce the margin below, and reduce the font weight to 500 */
+/* H1 heading color and spacing */
 .md-typeset h1 {
   color: var(--md-primary-fg-color);
   margin-bottom: 0.2rem;
   font-weight: 500;
 }
-/* Set the font weight for h2 headings to 500 */
+/* H2 heading font weight */
 .md-typeset h2 {
     font-weight: 500;
 }
-/* Set the font weight for h3 headings to 500 */
+/* H3 heading font weight */
 .md-typeset h3 {
     font-weight: 500;
 }
@@ -55,18 +50,18 @@
 [data-md-color-scheme=slate] h4 {
     color: hsla(var(--md-hue),0%,100%,1)
 }
-/* Disable all uppercase letters for h5 headings */
+/* Disable all uppercase letters for H5 headings */
 .md-typeset h5 {
     text-transform: none;
 }
-/* Increase font size for h5 and h6 headings to 0.83em */
+/* Increase font size for H5 and H6 headings */
 .md-typeset h5, .md-typeset h6 {
     font-size: 0.83em;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Data Preview Link          *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~ *
+ * Data Preview Link *
+ * ~~~~~~~~~~~~~~~~~ */
 
 .md-typeset [data-preview] {
   position: relative
@@ -98,9 +93,9 @@
 	width: .8em;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * External Link Icon         *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ *
+ * External Link Icon *
+ * ~~~~~~~~~~~~~~~~~~ */
 
 .md-typeset [external-link] {
   position: relative
@@ -111,8 +106,6 @@
 [dir=rtl] .md-typeset [external-link]:after {
   margin-right: .125em
 }
-/* Create an elemet that can add an icon after external links */
-/* Use '{ external-link }' directly after an external link to add the icon element */
 .md-typeset [external-link]::after {
 	background-color: currentcolor;
 	content: "";
@@ -130,9 +123,9 @@
 	width: .8em;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Mailto Link Icon           *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ *
+ * Mailto Link Icon *
+ * ~~~~~~~~~~~~~~~~ */
 
 .md-typeset [mailto-link] {
   position: relative
@@ -143,8 +136,6 @@
 [dir=rtl] .md-typeset [mailto-link]:after {
   margin-right: .125em
 }
-/* Create an elemet that can add an icon after external links */
-/* Use '{ mailto-link }' directly after an external link to add the icon element */
 .md-typeset [mailto-link]::after {
 	background-color: currentcolor;
 	content: "";

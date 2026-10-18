@@ -1,10 +1,8 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Admonition style changes *
- * ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ *
+ * Admonition style *
+ * ~~~~~~~~~~~~~~~~ */
 
-/* ~~~ Rounded Corners ~~~ */
-
-/* Expanded */
+/* Expanded border radius */
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: .4rem;
@@ -17,16 +15,16 @@
   border-top-right-radius: .4rem;
   border-top-left-radius: .4rem;
 }
-/* Collapsed */
+/* Collapsed border radius */
 .md-typeset details:not([open]) {
 	border-radius: .4rem;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Customize Built-In Admonitions *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */   
+/* ~~~~~~~~~~~~~~~~~~~~ *
+ * Built-In Admonitions *
+ * ~~~~~~~~~~~~~~~~~~~~ */   
 
-/* ~~~ Admonition: 'Note' ~~~ */
+/* Admonition: 'Note' */
 
 /* Set background color */
 .md-typeset .admonition.note,
@@ -39,7 +37,7 @@
   color: #448aff
 }
 
-/* ~~~ Admonition: 'Abstract' ~~~ */
+/* Admonition: 'Abstract' */
 
 .md-typeset .admonition.abstract,
 .md-typeset details.abstract {
@@ -50,7 +48,7 @@
   color: #00b0ff
 }
 
-/* ~~~ Admonition: 'Info' ~~~ */
+/* Admonition: 'Info' */
 
 .md-typeset .admonition.info,
 .md-typeset details.info {
@@ -61,7 +59,7 @@
   color: #00b8d4
 }
 
-/* ~~~ Admonition: 'Tip' ~~~ */
+/* Admonition: 'Tip' */
 
 .md-typeset .admonition.tip,
 .md-typeset details.tip {
@@ -72,7 +70,7 @@
   color: #00bfa5
 }
 
-/* ~~~ Admonition: 'Success' ~~~ */
+/* Admonition: 'Success' */
 
 .md-typeset .admonition.success,
 .md-typeset details.success {
@@ -83,7 +81,7 @@
   color: #00c853
 }
 
-/* ~~~ Admonition: 'Question' ~~~ */
+/* Admonition: 'Question' */
 
 .md-typeset .admonition.question,
 .md-typeset details.question {
@@ -94,7 +92,7 @@
   color: #64dd17
 }
 
-/* ~~~ Admonition: 'Warning' ~~~ */
+/* Admonition: 'Warning' */
 
 .md-typeset .admonition.warning,
 .md-typeset details.warning {
@@ -105,7 +103,7 @@
   color: #ff9100
 }
 
-/* ~~~ Admonition: 'Failure' ~~~ */
+/* Admonition: 'Failure' */
 
 .md-typeset .admonition.failure,
 .md-typeset details.failure {
@@ -116,7 +114,7 @@
   color: #ff5252
 }
 
-/* ~~~ Admonition: 'Danger' ~~~ */
+/* Admonition: 'Danger' */
 
 .md-typeset .admonition.danger,
 .md-typeset details.danger {
@@ -127,7 +125,7 @@
   color: #ff1744
 }
 
-/* ~~~ Admonition: 'Bug' ~~~ */
+/* Admonition: 'Bug' */
 
 .md-typeset .admonition.bug,
 .md-typeset details.bug {
@@ -138,7 +136,7 @@
   color: #f50057
 }
 
-/* ~~~ Admonition: 'Example' ~~~ */
+/* Admonition: 'Example' */
 
 .md-typeset .admonition.example,
 .md-typeset details.example {
@@ -149,7 +147,7 @@
   color: #7c4dff
 }
 
-/* ~~~ Admonition: 'Quote' ~~~ */
+/* Admonition: 'Quote' */
 
 .md-typeset .admonition.quote,
 .md-typeset details.quote {
@@ -160,12 +158,11 @@
   color: #9e9e9e
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Adding Custom Admonitions *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ *
+ * Custom Admonitions *
+ * ~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~ Define Icon Properties ~~~ */
-
+/* Custom admonition icons */
 :root {
   --md-admonition-icon--change: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-left-icon lucide-arrow-right-left"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>');
   --md-admonition-icon--config: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>');
@@ -178,25 +175,28 @@
   --md-admonition-icon--zima: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="m18.371 2h-12.742c-2.0039 0-3.6289 1.625-3.6289 3.6289v12.742c0 2.0039 1.625 3.6289 3.6289 3.6289h12.742c2.0039 0 3.6289-1.625 3.6289-3.6289v-12.742c0-2.0039-1.625-3.6289-3.6289-3.6289m-5.6016 8.0859h1.8984c.21094 0 .38281-.16797.38281-.375v-2.4609c0-.20703-.17188-.375-.38281-.375h-1.8984v-1.3477h5.9102v1.3398h-1.8984c-.21094 0-.38281.16797-.38281.375v2.4609c0 .20703.17188.375.38281.375h1.8984v1.3438h-5.9102zm-1.2422 8.75h-1.3945v-3.6172l-.52734.4375-1.1172.91406-1.1172-.92188-.52734-.43359v3.6211h-1.3945v-6.0078h1.3945v.17188c0 .23438.10547.45703.28125.60547l1.3594 1.1211 1.3594-1.125c.17969-.14844.28125-.37109.28125-.60547v-.17188h1.4023zm0-11.98h-.14453c-.22656 0-.44531.089844-.60547.25391l-2.9609 2.9883h3.7109v1.3281h-6.0781v-1.3242h.14453c.23438 0 .45312-.09375.61719-.25781l2.9531-2.9844h-3.7148v-1.3281h6.0781zm6 11.98-1.6758-3.9023-1.6758 3.9023h-1.5898l2.3594-5.4922c.07031-.16406.07031-.34766 0-.51172h1.8086c-.07031.16406-.07031.34766 0 .51172l2.3633 5.4922z"/></svg>');
 }
 
-/* ~~~ Admonition: 'Change' ~~~ */
+/* Admonition: 'Change' */
 
+/* Set border color */
 .md-typeset .admonition.change,
 .md-typeset details.change {
   border-color: rgb(255 , 145, 0);
   background-color: rgba(255 , 145, 0, 0.1);
 }
+/* Set icon color */
 .md-typeset .change > .admonition-title::before,
 .md-typeset .change > summary::before {
   background-color: rgb(255, 145, 0);
   -webkit-mask-image: var(--md-admonition-icon--change);
           mask-image: var(--md-admonition-icon--change);
 }
+/* Set color of expand/collapse button */
 .md-typeset .change > .admonition-title:after,
 .md-typeset .change > summary:after {
   color: rgb(255 , 145, 0);
 }
 
-/* ~~~ Admonition: 'Config' ~~~ */
+/* Admonition: 'Config' */
 
 .md-typeset .admonition.config,
 .md-typeset details.config {
@@ -214,7 +214,7 @@
   color: rgb(245, 0, 87);
 }
 
-/* ~~~ Admonition: 'Dockge' ~~~ */
+/* Admonition: 'Dockge' */
 
 .md-typeset .admonition.dockge,
 .md-typeset details.dockge {
@@ -232,49 +232,43 @@
   color: rgb(116, 194, 255);
 }
 
-/* ~~~ Admonition: `Links` ~~~ */
+/* Admonition: `Links` */
 
-/* Set border color */
 .md-typeset .admonition.links,
 .md-typeset details.links {
   border-color: rgb(76, 174, 79);
   background-color: rgba(76, 174, 79, 0.1)
 }
-/* Set icon color */
 .md-typeset .links > .admonition-title::before,
 .md-typeset .links > summary::before {
   background-color: rgb(76, 174, 79);
   -webkit-mask-image: var(--md-admonition-icon--links);
           mask-image: var(--md-admonition-icon--links);
 }
-/* Set color of expand/collapse button to match icon */
 .md-typeset .links > .admonition-title:after,
 .md-typeset .links > summary:after {
   color: rgb(76, 174, 79);
 }
 
-/* ~~~ Admonition: `Nerd` ~~~ */
+/* Admonition: `Nerd` */
 
-/* Set border color */
 .md-typeset .admonition.nerd,
 .md-typeset details.nerd {
   border-color: rgb(255, 206, 62);
   background-color: rgba(255, 206, 62, .1)
 }
-/* Set icon color */
 .md-typeset .nerd > .admonition-title::before,
 .md-typeset .nerd > summary::before {
   background-color: rgb(255, 206, 62);
   -webkit-mask-image: var(--md-admonition-icon--nerd);
           mask-image: var(--md-admonition-icon--nerd);
 }
-/* Set color of expand/collapse button to match icon */
 .md-typeset .nerd > .admonition-title:after,
 .md-typeset .nerd > summary:after {
   color: rgb(255, 206, 62);
 }
 
-/* ~~~ Admonition: 'Party' ~~~ */
+/* Admonition: 'Party' */
 
 .md-typeset .admonition.party,
 .md-typeset details.party {
@@ -292,7 +286,7 @@
   color: rgb(0 , 200, 83);
 }
 
-/* ~~~ Admonition: 'Security' ~~~ */
+/* Admonition: 'Security' */
 
 .md-typeset .admonition.security,
 .md-typeset details.security {
@@ -310,7 +304,7 @@
   color: rgb(245 , 0, 87);
 }
 
-/* ~~~ Admonition: 'Visual' ~~~ */
+/* Admonition: 'Visual' */
 
 .md-typeset .admonition.visual,
 .md-typeset details.visual {
@@ -328,7 +322,7 @@
   color: rgb(0, 191, 165);
 }
 
-/* ~~~ Admonition: 'ZimaOS' ~~~ */
+/* Admonition: 'ZimaOS' */
 
 .md-typeset .admonition.zima,
 .md-typeset details.zima {

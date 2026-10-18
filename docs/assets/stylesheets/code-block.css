@@ -1,84 +1,55 @@
-/* ~~~~~~~~~~~~~~~~~ *
- * Padding & Spacing *
- * ~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ *
+ * Code Block Style *
+ * ~~~~~~~~~~~~~~~~ */
 
 /* Prevent a highlighted line from drawing beneath the button box */
 .md-typeset pre>code {
     padding-right: 6em;
 }
-
-/* ~~~~~~~~~~~~~~~~~ *
- * Enable Mono Title *
- * ~~~~~~~~~~~~~~~~~ */
-
+/* Monospace title font */
 .mono-title .highlighttable th.filename {
     font-family: var(--md-code-font-family), monospace;
     /*font-size: .85em;*/
 }
-
-/* ~~~~~~~~~~~~~~~~ *
- * Enable Line-Wrap *
- * ~~~~~~~~~~~~~~~~ */
-
-/* Force the code to wrap and break long strings without spaces */
+/* Code line-wrap */
 .md-typeset .wrap-code pre > code {
     white-space: pre-wrap !important;
     word-break: break-word !important; 
     overflow-wrap: anywhere !important;
 }
-/* Constrain the table width when line numbers are enabled */
 .md-typeset .wrap-code .highlighttable {
     table-layout: fixed !important;
     width: 100% !important;
 }
-/* Ensure the code cell takes up the remaining space but respects the limit */
 .md-typeset .wrap-code .highlighttable .code {
     width: 100% !important;
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Code Block Border Radius *
- * ~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* ~~~ Title Bar ~~~ */
-
+/* Title bar border radius */
 .highlight span.filename {
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
 }
-
-/* ~~~ Line Numbers ~~~ */
-
+/* Line numbers border radius */
 .highlighttable .linenos {
   border-bottom-left-radius: 0.4rem;
-	border-top-left-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
 }
-
-/* ~~~ Code Body ~~~ */
-
+/* Code body border radius */
 .md-typeset .highlighttable > tbody > tr > .code > div > pre > code {
 	border-bottom-right-radius: 0.4rem;
 	border-top-right-radius: 0.4rem;
 }
-
-/* ~~~ Button Box ~~~ */
-
+/* Code block nav button border radius */
 .md-code__nav {
   border-radius: 0.4rem;
 }
-
-/* ~~~~~~~~~~~~~~~~~~ *
- * Annotation Buttons *
- * ~~~~~~~~~~~~~~~~~~ */
-
-/* ~~~ Button Rotation (90deg) ~~~ */
-
+/* Code annotation button rotate */
 .md-tooltip--active + .md-annotation__index::after {
 	transform: rotate(90deg);
 }
-
+/* Code annotation button background */
 .md-annotation__index:before {
     background: var(--md-code-bg-color);
 }

@@ -1,31 +1,25 @@
-/* -------------------------- *
- * Custom Page Status Icons   *
- * -------------------------- */
+/* ----------------- *
+ * Page Status Icons *
+ * ----------------- */
 
-/* ~~~ Define Icon Properties ~~~ */
-
+/* Define page status icons */
 :root {
   --md-status--deprecated: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M10 11v6"/><path d="M14 11v6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>');
   --md-status--inactive: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-x-icon lucide-circle-x"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>');
   --md-status--new: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-alert-icon lucide-badge-alert"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>');
 }
 
-/* --- Status: Deprecated --- */
-
+/* Status: Deprecated */
 .md-status--deprecated::after {
   mask-image: var(--md-status--deprecated);
   -webkit-mask-image: var(--md-status--deprecated);
 }
-
-/* --- Status: Inactive --- */
-
+/* Status: Inactive */
 .md-status--inactive::after {
   mask-image: var(--md-status--inactive);
   -webkit-mask-image: var(--md-status--inactive);
 }
-
-/* --- Status: New --- */
-
+/* Status: New */
 .md-status--new::after {
   mask-image: var(--md-status--new);
   -webkit-mask-image: var(--md-status--new);

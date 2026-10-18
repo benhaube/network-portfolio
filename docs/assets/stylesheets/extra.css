@@ -1,6 +1,6 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Import external CSS files *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ *
+ * Import CSS Files *
+ * ~~~~~~~~~~~~~~~~ */
 
 @import url(admonition.css);
 @import url(button.css);
@@ -14,8 +14,7 @@
  * General Customization *
  * ~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~ Built-in Site Icons (can't be changed in mkdocs.yml) ~~~ */
-
+/* Built-in Site Icons (can't be changed in `mkdocs.yml`) */
 :root {
   --md-toc-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-text-align-start" viewBox="0 0 24 24"><path d="M21 5H3m12 7H3m14 7H3"/></svg>');
   --md-tasklist-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>');
@@ -45,9 +44,7 @@
   --md-typeset-mailto-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>');
   --md-path-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>');
 }
-
-/* ~~~ Use 'stroke' instead of 'fill' for icons with 'lucide' class ~~~ */
-
+/* Lucide icon class ('stroke' instead of 'fill') */
 .md-icon svg.lucide {
   fill:#0000;
   stroke:currentcolor
@@ -86,16 +83,14 @@
   fill:#0000;
   stroke:currentcolor
 }
-
-/* ~~~ Max Page Width ~~~ */
-
+/* Set max page width */
 .md-grid {
   max-width: 1355px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~ *
- * Customize Page Header *
- * ~~~~~~~~~~~~~~~~~~~~~ */   
+/* ~~~~~~~~~~~ *
+ * Page Header *
+ * ~~~~~~~~~~~ */   
 
 /* Replicate Zensical header with translucency and blur */
 .md-header {
@@ -153,12 +148,11 @@
   margin-right: .4rem
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~ *
- * Customize Page Footer *
- * ~~~~~~~~~~~~~~~~~~~~~ */   
+/* ~~~~~~~~~~~ *
+ * Page Footer *
+ * ~~~~~~~~~~~ */   
 
-/* ~~~ Footer background / border ~~~ */
-
+/* Footer background & border */
 .md-footer {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
@@ -169,18 +163,14 @@
 .md-footer-meta {
   background-color: var(--md-default-fg-color--lightest)
 }
-
-/* ~~~ Footer copyright text color ~~~ */
-
+/* Copyright text color */
 .md-copyright {
   color: var(--md-default-fg-color--light);
 }
 .md-copyright__highlight {
   color: var(--md-default-fg-color);
 }
-
-/* ~~~ Footer link text color ~~~ */ 
-
+/* Footer link color */ 
 html .md-footer-meta.md-typeset a {
   color: var(--md-default-fg-color);
 }
@@ -188,9 +178,7 @@ html .md-footer-meta.md-typeset a:focus,
 html .md-footer-meta.md-typeset a:hover {
   color:var(--md-accent-fg-color)
 }
-
-/* --- Customize Dialog --- */
-
+/* Customize dialog popup */
 .md-dialog--active {
   opacity: 1;
   pointer-events: auto;
@@ -226,12 +214,11 @@ html .md-footer-meta.md-typeset a:hover {
   font-size: .7rem
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ * 
- * Customize Navigation *
- * ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~ * 
+ * Site Navigation *
+ * ~~~~~~~~~~~~~~~ */
 
-/* ~~~ Title Card Background ~~~ */
-
+/* Customize title card */
 .md-nav--primary .md-nav__title[for="__drawer"] {
 	background-color: var(--md-accent-fg-color--transparent);
 	color: #FFF;
@@ -242,9 +229,7 @@ html .md-footer-meta.md-typeset a:hover {
     color: var(--md-default-fg-color--light);
   }
 }
-
-/* ~~~ Repo Card Background ~~~ */
-
+/* Customize repo card */
 @media screen and (max-width: 59.9844em) {
   .md-nav__source {
     background-color: var(--md-accent-fg-color--transparent);
@@ -253,70 +238,20 @@ html .md-footer-meta.md-typeset a:hover {
     padding: 0 .2rem;
   }
 }
-
-/* ~~~ Inactive Page Icon Opacity ~~~ */
-
+/* Inactive page icon opacity */
 .md-nav__link svg {
   opacity: .5;
 }
-
-/* ~~~ Active Page Icon Opacity ~~~ */
-
+/* Active page icon opacity */
 .md-nav__item .md-nav__link--active svg {
   opacity: 1;
 }
 
-/* --><--><--><--><--><--><--><-- *
- * Disabled -- work in progress!  *
- * --><--><--><--><--><--><--><-- *
- * Styling the navigation pane    *
- * to replicate Zensical.         *
- * --><--><--><--><--><--><--><-- */
+/* ~~~~~~~~~~~~~~~ *
+ * Tooltip Styling *
+ * ~~~~~~~~~~~~~~~ */
 
-/*
-.md-nav__link {
-  align-items:flex-start;
-  border-radius:.4rem;
-  cursor:pointer;
-  display:flex;
-  gap:.6rem;
-  margin-left:.2rem;
-  margin-right:.2rem;
-  padding:.35rem .8rem;
-  transition:color .25s,background-color .25s
-}
-.md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
-  background: var(--md-accent-fg-color--transparent);
-	color: var(--md-accent-fg-color);
-}
-
-[dir=ltr] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
-  margin-left:1.1rem;
-}
-[dir=rtl] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
-  margin-right:1.1rem
-}
-[dir=ltr] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
-  border-left:.05rem solid var(--md-default-fg-color--lightest)
-}
-[dir=rtl] .md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
-  border-right:.05rem solid var(--md-default-fg-color--lightest)
-}
-.md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
-  display:block;
-  margin-bottom:.5em;
-  margin-top:.5em;
-  opacity:1;
-  visibility:visible
-}
-*/
-
-/* ~~~~~~~~~~~~~~~~~~~~~~ *
- * Adjust Tooltip Styling *
- * ~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* ~~~ Code Annotation Boxes ~~~ */
-
+/* Code annotation popup */
 .md-tooltip {
   -webkit-backdrop-filter: blur(.4rem) !important;
 	backdrop-filter: blur(.4rem) !important;
@@ -327,14 +262,11 @@ html .md-footer-meta.md-typeset a:hover {
 	font-size: .64rem;
 	padding: .8rem;
 }
-
-/* ~~~ Other Tooltips ~~~ */
-
+/* Standard tooltip popup */
 .md-tooltip--inline .md-tooltip__inner {
 	background-color: var(--md-default-bg-color);
   border-radius: 0.4rem;
 }
-
 :root {
   --md-tooltip-width: 20rem;
   --md-tooltip-tail: 0.3rem
@@ -462,12 +394,11 @@ element {
   margin-bottom: 0
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ *
- * Adjust Image Styling *
- * ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~ *
+ * Image Style *
+ * ~~~~~~~~~~~ */
 
-/* ~~~ Border Radius ~~~ */
-
+/* Image border radius (excluding `.svg`) */
 img[src$=".png" i],
 img[src$=".png#only-light" i],
 img[src$=".png#only-dark" i],
@@ -485,27 +416,25 @@ img[src$=".gif" i] {
   border-radius: 0.4rem;
   box-shadow: var(--md-shadow-z2);
 }
-/* Add rule to remove box-shadow from select images */
+/* Rule to remove box-shadow */
 .no-shadow {
   box-shadow: none !important;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ *
- * Adjust Table Styling *
- * ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~ *
+ * Table Style *
+ * ~~~~~~~~~~~ */
 
-/* ~~~ Border Radius ~~~ */
-
+/* Table border radius */
 .md-typeset table:not([class]) {
 	border-radius: 0.4rem;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Adjust Grid Cards Styling *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ *
+ * Grid Cards Style *
+ * ~~~~~~~~~~~~~~~~ */
 
-/* ~~~ Border Radius ~~~ */
-
+/* Card border radius */
 .md-typeset .grid.cards>ol>li,
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
@@ -544,7 +473,7 @@ img[src$=".gif" i] {
  * Responsive Design *
  * ~~~~~~~~~~~~~~~~~ */
 
-/* Make buttons with the '.md-button' class use the full screen width on mobile screens (below 719px wide) */
+/* Make buttons use the full screen width on mobile screens */
 @media screen and (max-width: 719px) {
   .md-typeset .md-button {
     display: block;
@@ -553,7 +482,7 @@ img[src$=".gif" i] {
     box-sizing: border-box;
   }
 }
-/* Disable image floating on mobile screens (below 768px wide) */
+/* Disable image floating on mobile screens */
 @media screen and (max-width: 768px) {
   .md-typeset img[align="right"],
   .md-typeset img[align="left"],
@@ -564,24 +493,21 @@ img[src$=".gif" i] {
     max-width: 100%; 
   }
 }
-/* Force light/dark mode images to stay hidden based on the active Material theme on mobile screens */
+/* Force light/dark mode images to stay hidden based on the active theme on mobile screens */
 [data-md-color-scheme="slate"] .md-typeset img[src$="#only-light"],
 [data-md-color-scheme="default"] .md-typeset img[src$="#only-dark"] {
   display: none !important;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Customize Panzoom Plugin *
- * ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ *
+ * Panzoom Plugin Style *
+ * ~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~ Border Radius ~~~ */
-
+/* Panzoom border radius */
 .panzoom-box {
     border-radius: 0.4rem !important;
 }
-
-/* ~~~ Help Message Background Color ~~~ */
-
+/* Help message background */
 .panzoom-info-box-bottom {
     background: var(--md-code-bg-color) !important;
     z-index: auto !important;
@@ -590,9 +516,7 @@ img[src$=".gif" i] {
     background: var(--md-code-bg-color) !important;
     z-index: auto !important;
 }
-
-/* ~~~ Button Box ~~~ */
-
+/* Navigation buttons */
 .panzoom-nav {
     border-radius: 0.3rem !important;
     gap: 0.2rem !important;
@@ -601,22 +525,21 @@ img[src$=".gif" i] {
     background: var(--md-code-bg-color--light) !important;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Customize Glightbox Plugin *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~ *
+ * Glightbox Plugin Style *
+ * ~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~ Overlay Blur ~~~ */
-
+/* Overlay background */
 .goverlay {
   background: #000;
   backdrop-filter: blur(.3rem) !important;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Custom Icon Animations     *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~ *
+ * Icon Animations *
+ * ~~~~~~~~~~~~~~~ */
 
-/* ~~~ Spin Animation ~~~ */
+/* Spin animation */
 @keyframes spin {
   0% {
     transform:rotate(0)

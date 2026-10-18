@@ -1,20 +1,8 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * Customize buttons                        *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
- * This code changes the button shape from  * 
- * rectangles to ovals, reduces the font    * 
- * weight to 600, reduces the padding, and  * 
- * adds a 250ms transition animation.       * 
- *                                          *
- * Page 'view' and 'edit' buttons are given * 
- * a rounded square container, and the      * 
- * hover animation is set to 250ms to match * 
- * the other button behavior.               *
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~ * 
+ * Buttons Style *
+ * ~~~~~~~~~~~~~ */
 
-/* ~~~ Regular Buttons ~~~ */
- 
-/* Remove border, make pill-shaped, change text color, change background color, adjust font size and weight, adjust padding, add transition */
+/* Regular Buttons */
 .md-typeset .md-button {
   border-radius: 1.2rem;
   border: none;
@@ -25,28 +13,20 @@
   padding: .625em 2em;
   transition: color 250ms, background-color 250ms, border-color 250ms ease-in-out !important;
 }
-
-/* ~~~ Primary Buttons ~~~ */
-
-/* Set background color, set text color, remove border */
+/* Primary Buttons */
 .md-typeset .md-button--primary {
   background-color: var(--md-primary-fg-color);
   border: none;
   color: var(--md-primary-bg-color)
 }
-
-/* ~~~ Button Hover ~~~ */
-
-/* Set background color, remove border, set text color */
+/* Button Hover */
 .md-typeset .md-button:focus,
 .md-typeset .md-button:hover {
   background-color: var(--md-accent-fg-color);
   border-color: transparent;
   color: var(--md-accent-bg-color)
 }
-
-/* ~~~ Page 'view' & 'edit' buttons ~~~ */
-
+/* Page 'view' & 'edit' buttons */
 .md-content__inner:before {
   content:"";
   display: block;
@@ -55,21 +35,18 @@
 .md-content__inner>:last-child {
   margin-bottom: 0
 }
-/* Set the position on the page */
 [dir=ltr] .md-content__button {
   float: right
 }
 [dir=rtl] .md-content__button {
   float: left
 }
-/* Set the left & right margin */
 [dir=ltr] .md-content__button {
   margin-left: .4rem;
 }
 [dir=rtl] .md-content__button {
   margin-right: .4rem
 }
-/* Set margin between buttons, give buttons a background with rounded corners, set icon padding, set margin from top of page */
 .md-content__button {
   background-color: var(--md-default-fg-color--lightest);
   border-radius: .4rem;
@@ -77,13 +54,11 @@
   margin-top: .2rem;
   padding: .3rem
 }
-/* Dont show button on printed page */
 @media print {
   .md-content__button {
     display: none
   }
 }
-/* Set icon color & opacity */
 .md-typeset .md-content__button {
   color: var(--md-default-fg-color);
   transition: color .25s,background-color .25s
@@ -92,13 +67,11 @@
   opacity: .5;
   transition: opacity .25s
 }
-/* Button hover behavior */
 .md-typeset .md-content__button:focus,
 .md-typeset .md-content__button:hover {
   background-color: var(--md-accent-fg-color--transparent);
   color: var(--md-accent-fg-color)
 }
-/* Set icon opacity on hover */
 .md-typeset .md-content__button:focus svg,
 .md-typeset .md-content__button:hover svg {
   opacity: 1
@@ -106,15 +79,11 @@
 [dir=rtl] .md-content__button svg {
   transform: scaleX(-1)
 }
-/* Set the size of the icon */
 .md-content__button svg {
   height: .9rem;
   width: .9rem;
 }
-
-/* ~~~ Back-to-top button ~~~ */ 
-
-/* Change background color (translucent), add blur, adjust size, move button to bottom of the page */
+/* Back-to-top button */ 
 .md-top {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
@@ -126,26 +95,20 @@
   padding: .5rem .9rem .5rem .7rem;
   top: auto !important;
 }
-/* Adjust the size and spacing of the double-arrows icon */
 .md-top svg {
 	display: inline-block;
 	height: .9rem;
 	vertical-align: -.5em;
 	width: .9rem;
 }
-/* Hover: Set the background color and text/icon color */
 .md-top:hover {
   background-color: var(--md-accent-fg-color);
   color: var(--md-accent-bg-color)
 }
-
-/* ~~~ Tag buttons ~~~ */ 
-
-/* Change from pill-shaped to rounded rectangle to match Zensical aesthetic */
+/* Tag buttons */ 
 .md-typeset .md-tag {
   border-radius: .4rem;
 }
-/* Change background, text, and icon colors on hover */
 .md-typeset .md-tag-icon[href]:focus::before, .md-typeset .md-tag-icon[href]:hover::before {
   background-color: var(--md-accent-fg-color);
   transition: background-color 250ms ease-in-out;
@@ -156,10 +119,6 @@
   color: var(--md-accent-fg-color);
   transition: color 250ms, background-color 250ms, box-shadow 250ms ease-in-out;
 }
-
-/* ~~~ Tag Container ~~~ */
-
-/* Prevent tags from colliding with floated page buttons */
 @media screen and (min-width:44.94em) {
   .md-tags {
     margin-right: 5.5rem; 

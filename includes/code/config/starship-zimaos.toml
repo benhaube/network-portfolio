@@ -1,8 +1,6 @@
 #:schema https://starship.rs/config-schema.json
 
 add_newline = true
-# format = '$all$directory$character'
-# right_format = """$all"""
 continuation_prompt = '[❯❯ ](#b58900)'
 
 [character]

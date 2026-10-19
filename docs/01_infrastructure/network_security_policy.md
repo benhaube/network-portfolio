@@ -1,5 +1,5 @@
 ---
-icon: symbols/shield-keyhole
+icon: symbols/ethernet-port-shield
 title: Network Security Policy
 subtitle: The Principle of Least Privilege
 description: This infrastructure operates on the Principle of Least Privilege. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
@@ -13,7 +13,7 @@ tags:
   - VPN
 ---
 
-![Lucide 'brick-wall-shield' icon](../assets/icons/shield-keyhole.svg){ width=200 }
+![Lucide 'brick-wall-shield' icon](../assets/icons/ethernet-port-shield.svg){ width=200 }
 
 # Network Security Policy
 

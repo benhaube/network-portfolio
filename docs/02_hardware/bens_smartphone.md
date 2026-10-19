@@ -52,7 +52,7 @@ _Google Pixel 9 Pro_
 
 - :symbols-key-fido2:&nbsp;Titan M2 security chip _(FIDO2 / WebAuthn)_
 { .no-bullets }
-- :symbols-shield-keyhole:&nbsp;Full-disk encryption
+- :symbols-hard-drive-lock:&nbsp;Full-disk encryption
 { .no-bullets }
 - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 { .no-bullets }
@@ -89,9 +89,9 @@ _Google Pixel 9 Pro_
 
 ### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                         |
-| :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :------------------------------------------------- |
-| `N/A`       | UFS 3.1    | 128 GB                                         | `N/A`       | `N/A`       | :symbols-shield-keyhole:&nbsp;Full-disk Encryption |
+| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                       |
+| :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :----------------------------------------------- |
+| `N/A`       | UFS 3.1    | 128 GB                                         | `N/A`       | `N/A`       | :symbols-lock-keyhole:&nbsp;Full-disk encryption |
 
 ### :symbols-usb:&ensp;External/Attached
 

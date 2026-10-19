@@ -50,7 +50,7 @@ _Samsung Galaxy S25+_
 
 #### Software
 
-- :symbols-shield-keyhole:&nbsp;Full-disk encryption
+- :symbols-hard-drive-lock:&nbsp;Full-disk encryption
 { .no-bullets }
 - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 { .no-bullets }
@@ -87,9 +87,9 @@ _Samsung Galaxy S25+_
 
 ### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                         |
-| :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :------------------------------------------------- |
-| `N/A`       | UFS 4.0    | 256 GB                                         | `N/A`       | `N/A`       | :symbols-shield-keyhole:&nbsp;Full-disk Encryption |
+| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                       |
+| :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :----------------------------------------------- |
+| `N/A`       | UFS 4.0    | 256 GB                                         | `N/A`       | `N/A`       | :symbols-lock-keyhole:&nbsp;Full-disk encryption |
 
 ### :symbols-usb:&ensp;External/Attached
 

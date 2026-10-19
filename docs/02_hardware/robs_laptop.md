@@ -76,9 +76,9 @@ _ASUS TUF Gaming A16_
 
 ### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path                                                    | File System | Encryption                              |
-| :---------- | :--------- | :--------------------------------------------- | :------------------------------------------------------------- | :---------- | :-------------------------------------- |
-| `C:`        | NVMe SSD   | 926 GB                                         | `SCSI\DISK&VEN_NVME&PROD_WD_PC_SN560_SDDP\5&194EBDF0&0&000000` | `ntfs`      | :symbols-shield-keyhole:&nbsp;BitLocker |
+| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path                                                    | File System | Encryption                            |
+| :---------- | :--------- | :--------------------------------------------- | :------------------------------------------------------------- | :---------- | :------------------------------------ |
+| `C:`        | NVMe SSD   | 926 GB                                         | `SCSI\DISK&VEN_NVME&PROD_WD_PC_SN560_SDDP\5&194EBDF0&0&000000` | `ntfs`      | :symbols-lock-keyhole:&nbsp;BitLocker |
 
 ### :symbols-usb:&ensp;External / Attached
 

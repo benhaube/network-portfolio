@@ -289,7 +289,7 @@ hide:
 [:symbols-svg:&ensp;Convert an SVG to Data URI](linux_tutorials/svg_to_uri.md) 
 : How to convert an SVG into a data URI for use in HTML pages and CSS stylesheets.
 
-[:symbols-lock-keyhole-open:&ensp;Decrypt LUKS with TPM2](linux_tutorials/unlock_luks_tpm2.md) 
+[:symbols-hard-drive-lock:&ensp;Decrypt LUKS with TPM2](linux_tutorials/unlock_luks_tpm2.md) 
 : How to unlock your encrypted LUKS2 volumes with the TPM2 when the system boots.
 
 [:symbols-square-terminal:&ensp;Defining Bash Aliases](linux_tutorials/define_bash_aliases.md) 
@@ -301,7 +301,7 @@ hide:
 [:symbols-file-badge:&ensp;Self-Signed Certificates](linux_tutorials/self-signed_certificates.md)
 : How to generate self-signed SSL certificates for use in testing, development, and internal web servers.
 
-[:symbols-message-square-warning:&ensp;Setup SSH Login Notification](linux_tutorials/setup_ssh_login_notification.md) 
+[:symbols-message-square-dot:&ensp;Setup SSH Login Notification](linux_tutorials/setup_ssh_login_notification.md) 
 : How to set up an email and push notification delivered to your inbox every time a new SSH session is established; utilizing a Bash script, `msmtp` and `pam_exec.so`, and a Gotify server.
 
 ---

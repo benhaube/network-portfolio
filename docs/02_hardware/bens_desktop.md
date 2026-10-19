@@ -172,6 +172,10 @@ flatpak update -y
 
 ### :symbols-cloud-upload:&ensp;Backup Policy
 
+!!! tip inline end
+
+    See ["ZimaOS NAS Mounts"](#zimaos-nas-mounts) for NFS auto-mount client configuration documentation.
+
 The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd. With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time. Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
 
 #### Backup Script
@@ -350,19 +354,30 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 [Starship&ensp;:brands-github:](https://github.com/starship/starship){ .md-button }
 
-1.  Install the latest version:
+1.  Add the [Terra](https://terrapkg.com/){ external-link } RPM package repository:
+
+    !!! note
+
+        The below command uses `--nogpgcheck` because it must fetch the package repo from the origin server. Once the keys are installed all further packages installed from Terra will be verified against the key. If preferable, you can download and inspect the RPMs yourself first.
 
     ``` bash linenums="1"
-    curl -sS https://starship.rs/install.sh | sh
+    sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys
     ```
 
-2.  Add init script to shell's config file:
+2.  Install the latest version of Starship:
+
+    ``` bash
+    sudo dnf makecache --refresh
+    sudo dnf install starship
+    ```
+
+3.  Add init script to shell's config file:
 
     ``` bash linenums="1"
     eval "$(starship init bash)"
     ```
 
-3.  Place the custom config file in the `~/.config` directory:
+4.  Place the custom config file in the `~/.config` directory:
 
     ``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
     --8<-- "starship-desktop.toml"

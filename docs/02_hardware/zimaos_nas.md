@@ -375,11 +375,17 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 #### Install
 
-1.  Install the latest version:
+1.  Install the latest Starship version in the `/opt/bin` directory:
 
     ``` bash linenums="1" 
-    sudo curl -sS https://starship.rs/install.sh
-    sudo sh install.sh -b /opt/bin
+    # Download install script
+    sudo curl -sS https://starship.rs/install.sh -o /opt/scripts/starship-install.sh
+
+    # Set execute permission
+    sudo chmod +x /opt/scripts/starship-install.sh
+
+    # Execute install script
+    sudo sh /opt/scripts/starship-install.sh -b /opt/bin
     ```
 
 2.  Add init script to `~/.bashrc`:
@@ -394,11 +400,59 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
     sudo cp starship.toml .config/
     ```
 
-#### Starship Config File
+    ``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
+    --8<-- "starship-zimaos.toml"
+    ```
 
-``` toml { .mono-title title="~/.config/starship.toml" linenums="1" }
---8<-- "starship-zimaos.toml"
-```
+#### Auto Update
+
+1.  Download the Starship install script to the `/opt/scripts` directory, and save with the filename `starship-install.sh`:
+
+    ``` bash
+    sudo curl -sS https://starship.rs/install.sh -o /opt/scripts/starship-install.sh
+    ```
+
+2.  Give the script execute permission:
+
+    ``` bash
+    sudo chmod +x /opt/scripts/starship-install.sh
+    ```
+
+3.  Create the Systemd service unit file:
+
+    ``` systemd { .mono-title title="/etc/systemd/system/starship-update.service" }
+    [Unit]
+    Description=Weekly Starship.rs update script
+
+    [Service]
+    Type=oneshot
+    ExecStart=/opt/scripts/starship-install.sh -f -b /opt/bin
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+
+4.  Create the Systemd timer unit file:
+
+    ``` systemd { .mono-title title="/etc/systemd/system/starship-update.timer" }
+    [Unit]
+    Description=Run weekly Starship.rs update script
+
+    [Timer]
+    OnCalendar=Sun 05:00:00
+    Persistent=true
+    RandomizedDelaySec=5m
+
+    [Install]
+    WantedBy=timers.target
+    ```
+
+5.  Reload Systemd daemons and enable timer unit:
+
+    ``` bash
+    sudo systemctl daemon-reload
+    sudo systemctl enable --now starship-update.timer
+    ```
 
 ### :symbols-log-in:&ensp;Fastfetch Login Preset
 

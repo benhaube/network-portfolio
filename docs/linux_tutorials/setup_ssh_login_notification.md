@@ -1,5 +1,5 @@
 ---
-icon: symbols/message-square-warning
+icon: symbols/message-square-dot
 title: Setup SSH Login Notification
 subtitle: With Email SMTP and Gotify
 description: Get notified whenever a new SSH session is established on your servers.
@@ -8,7 +8,6 @@ tags:
   - Linux
   - Monitor
   - Network
-  - Remote Access
   - Security
   - Server
   - Shell
@@ -16,7 +15,7 @@ hide:
   - toc
 ---
 
-![material message-alert icon](../assets/icons/message-square-warning.svg){ width=200 }
+![Lucide message-square-dot icon](../assets/icons/message-square-dot.svg){ width=200 }
 
 # Setup SSH Login Notification
 
@@ -85,7 +84,7 @@ Now we need to create the configuration file for `msmtp` so that it can log into
 
         **2FA / MFA** 
 
-        : If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
+        :   If you have 2FA / MFA enabled on your email account, you will need to create a unique "App password."
 
     !!! security 
 
@@ -104,7 +103,7 @@ Now we need to create the configuration file for `msmtp` so that it can log into
 
     **What is PAM?**
 
-    : **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
+    :   **PAM** is the most effective way to fire a hook every time an SSH session opens or closes. When someone logs in with SSH, the system requests instructions from PAM. Usually, PAM checks passwords, keys, or 2FA, but we can also tell it: “Every time a new SSH session starts, run this script.”
 
 1.  Edit `/etc/pam.d/sshd` and add the following **after** the existing "session" lines:
 

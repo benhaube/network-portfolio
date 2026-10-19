@@ -1,5 +1,5 @@
 ---
-icon: symbols/lock-keyhole-open
+icon: symbols/hard-drive-lock
 title: Decrypt LUKS with TPM2
 subtitle: Speeding Up the Boot Process
 description: Speed up your computer's boot process by unlocking your LUKS2 encrypted volumes with the onboard TPM2.0 chip.
@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 
-![Material Encrypted icon](../assets/icons/lock-keyhole-open.svg){ width=200 }
+![Hard Drive Lock icon](../assets/icons/hard-drive-lock.svg){ width=200 }
 
 # Decrypt LUKS with TPM2
 
@@ -222,7 +222,7 @@ The boot unlocking happens in the early boot stage **(initramfs / initrd)**, so 
 
 ???+ security
 
-    :symbols-lock-keyhole:&ensp;**Security vs. Convenience** 
+    :symbols-shield-keyhole:&ensp;**Security vs. Convenience** 
     :    This method trades a bit of security for convenience. If an attacker can physically access your machine and modify the non-encrypted boot partition (but not the sealed PCRs), certain ["Evil Maid" attacks](https://en.wikipedia.org/wiki/Evil_maid_attack){ external-link } might be possible.
 
     :symbols-key-round:&ensp;**Backup Key**

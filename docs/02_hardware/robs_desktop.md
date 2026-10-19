@@ -48,6 +48,28 @@ _High-Performance Desktop PC_
 
     - Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
 
+### :symbols-brick-wall-shield:&ensp;Device Security
+
+#### Firmware
+
+- IOMMU
+{ .no-bullets }
+- Pre-boot DMA protection
+{ .no-bullets }
+- SMAP
+{ .no-bullets }
+- SMM locked down
+{ .no-bullets }
+- TPM v2.0
+{ .no-bullets }
+- UEFI Secure Boot
+{ .no-bullets }
+
+#### Software
+
+- :symbols-hard-drive-lock:&nbsp;Bitlocker drive encryption
+{ .no-bullets }
+
 ### :symbols-map-pin:&ensp;Location
 
 - <!-- material/tags { include: [Office, Desk] } -->

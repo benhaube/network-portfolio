@@ -48,6 +48,37 @@ _ASUS TUF Gaming A16_
 
     - Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Laptop PC"
 
+### :symbols-brick-wall-shield:&ensp;Device Security
+
+#### Firmware
+
+- BIOS rollback protection
+{ .no-bullets }
+- IOMMU
+{ .no-bullets }
+- Pre-boot DMA protection
+{ .no-bullets }
+- SMAP
+{ .no-bullets }
+- Modern Standby
+{ .no-bullets }
+- TPM v2.0
+{ .no-bullets }
+- UEFI memory protection
+{ .no-bullets }
+- UEFI Secure Boot
+{ .no-bullets }
+
+#### Software
+
+- :symbols-hard-drive-lock:&nbsp;Bitlocker drive encryption
+{ .no-bullets }
+
+#### Biometric
+
+- :symbols-scan-face:&nbsp;IR Face Scan
+{ .no-bullets }
+
 ### :symbols-map-pin:&ensp;Location
 
 - <!-- material/tags { include: [Mobile] } -->

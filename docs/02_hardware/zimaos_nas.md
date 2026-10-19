@@ -456,7 +456,10 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 ### :symbols-log-in:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on GitHub.
+![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/ssh-zimaos-light.png#only-light){ width=320 align=right .on-glb }
+![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/ssh-zimaos-dark.png#only-dark){ width=320 align=right .on-glb }
+
+The Fastfetch Login Preset prints a customized Fastfetch output that shows relevant information every time a new terminal session is started. All variants of the preset are hosted in a code repository on GitHub. Including a custom ASCII art version of the ZimaOS logo.
 
 [Fastfetch Presets&ensp;:brands-github:](https://github.com/benhaube/fastfetch-login-preset){ .md-button }
 
@@ -465,12 +468,11 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 1.  Download the latest `fastfetch` release from [GitHub](https://github.com/fastfetch-cli/fastfetch/releases/latest){ external-link }:
 
     ``` bash linenums="1"
-    # Set the `FF_VERSION` variable for the latest release
     FF_VERSION=2.70.0  # (1)!
     wget https://github.com/fastfetch-cli/fastfetch/releases/download/${FF_VERSION}/fastfetch-linux-amd64.tar.gz
     ```
 
-    1. Check the latest version on the [releases](https://github.com/fastfetch-cli/fastfetch/releases/){ external-link } page
+    1. Sets the `FF_VERSION` variable for the latest release. Check the latest release version on the [releases](https://github.com/fastfetch-cli/fastfetch/releases/){ external-link } page
 
 2.  Transfer the downloaded tarball to the `/tmp` directory on the server:
 

@@ -481,7 +481,7 @@ Google publishes official Linux binaries for both Antigravity apps as standalone
     npm install -g agy
     ```
 
-### :brands-firefox:&ensp;Mozilla Firefox
+### :brands-firefoxbrowser:&ensp;Mozilla Firefox
 
 Fedora Linux comes with Firefox installed and set as the default web browser, however, the RPM package from the Fedora package repository is built and packaged by the Fedora team, and it includes modifications to the source code. Instead of using Fedora's version of Firefox we add the official [Mozilla RPM](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-rpm-package-for-fedora-based-rhel-and-its-derivations-recommended){ external-link } package repository, and replace the Firefox package with the official package from Mozilla.
 

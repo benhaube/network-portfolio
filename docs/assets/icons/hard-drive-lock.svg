@@ -1,0 +1,7 @@
+<svg class="lucide lucide-hard-drive-lock preview-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg">
+  <path d="m11.1 9.01h-10.1" stroke="#0091ec"/>
+  <path d="m18.6 4.26-1.07-2.14a2 2 0 00-1.79-1.11h-9.52a2 2 0 00-1.79 1.11l-3.24 6.47a2 2 0 00-.212.896v5.53a2 2 0 002 2h6.13" stroke="#0091ec"/>
+  <path d="m19 12v-2a2 2 0 00-4 0v2" stroke="#4cae4f"/>
+  <path d="m5 13h.01" stroke="#0091ec"/>
+  <rect x="13" y="12" width="8" height="5" rx="1" stroke="#4cae4f"/>
+</svg>

@@ -271,9 +271,14 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 ### :symbols-log-in:&ensp;Fastfetch Login Preset
 
-The Fastfetch Login Preset prints a customized Fastfetch output with relevant information every time a new terminal session is started. I have all variants of the preset hosted in a code repository on [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link }.
+![Fastfetch login preset on Debian Server](../assets/screenshots/ssh-debian-vm-light.png#only-light){ .on-glb width=375 align=right }
+![Fastfetch login preset on Debian Server](../assets/screenshots/ssh-debian-vm-dark.png#only-dark){ .on-glb width=375 align=right }
+
+The Fastfetch Login Preset prints a customized Fastfetch output that shows relevant information every time a new terminal session is started. All variants of the preset are hosted in a code repository on GitHub.
 
 [Fastfetch Presets&ensp;:brands-github:](https://github.com/benhaube/fastfetch-login-preset){ .md-button }
+
+#### Install & Configure
 
 1.  Install Fastfetch:
 

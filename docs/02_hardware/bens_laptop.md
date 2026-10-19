@@ -63,9 +63,7 @@ _ThinkPad X1 Yoga_
 { .no-bullets }
 - SMAP
 { .no-bullets }
-- Suspend-to-idle: enabled
-{ .no-bullets }
-- Suspend-to-RAM: disabled
+- Suspend-to-Idle
 { .no-bullets }
 - TPM v2.0
 { .no-bullets }

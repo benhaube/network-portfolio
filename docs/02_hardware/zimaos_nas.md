@@ -462,19 +462,32 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 #### Install
 
-1.  Download the latest `fastfetch` release from [GitHub](https://github.com/fastfetch-cli/fastfetch/releases/latest){ external-link } and decompress the archive:
+1.  Download the latest `fastfetch` release from [GitHub](https://github.com/fastfetch-cli/fastfetch/releases/latest){ external-link }:
 
     ``` bash linenums="1"
-    sudo wget https://github.com/fastfetch-cli/fastfetch/releases/download/[release-version]/fastfetch-linux-amd64.zip
-    sudo unzip fastfetch-linux-amd64.zip
+    # Set the `FF_VERSION` variable for the latest release
+    FF_VERSION=2.70.0  # (1)!
+    wget https://github.com/fastfetch-cli/fastfetch/releases/download/${FF_VERSION}/fastfetch-linux-amd64.tar.gz
     ```
 
-2.  Manually install `fastfetch` into `/opt/bin` directory:
+    1. Check the latest version on the [releases](https://github.com/fastfetch-cli/fastfetch/releases/){ external-link } page
+
+2.  Transfer the downloaded tarball to the `/tmp` directory on the server:
+
+    ``` bash
+    scp fastfetch-linux-amd64.tar.gz admin@ZimaOS-NAS:/tmp
+    ```
+
+3.  Start a new SSH session, enter the `/tmp` directory, and unpack the tarball:
+
+    ``` bash
+    tar -xvf fastfetch-linux-amd64.tar.gz
+    ```
+
+4.  Copy the contents to the `/opt` directory:
 
     ``` bash linenums="1" 
-    sudo cp fastfetch-linux-amd64/usr/bin/fastfetch /opt/bin
-    sudo cp -r fastfetch-linux-amd64/usr/share/fastfetch /opt/share
-    sudo cp -r fastfetch-linux-amd64/usr/share/bash-completion /opt/share
+    sudo cp -r fastfetch-linux-amd64/usr /opt
     ```
 
 #### Configure
@@ -485,15 +498,27 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
     sudo cp login.jsonc /opt/share/fastfetch/presets
     ```
 
-2.  Add the `fastfetch` command to the `~/.bashrc` file:
+2. Create the `/logos` directory:
+
+    ``` bash
+    sudo mkdir /opt/share/fastfetch/logos
+    ```
+
+3. Copy the ASCII art logo file, `zimaos.txt` to the logos directory:
+
+    ``` bash
+    sudo cp zimaos.txt /opt/share/fastfetch/logos
+    ```
+
+4.  Add the `fastfetch` command to the `~/.bashrc` file to run on login:
 
     ``` bash linenums="1"
     fastfetch -c login
     ```
 
-#### Fastfetch Preset File
+#### Config Files
 
-``` json { .mono-title title="/usr/share/fastfetch/presets/login.jsonc" linenums="1" }
+``` json { .mono-title title="/opt/share/fastfetch/presets/login.jsonc" linenums="1" }
 --8<-- "includes/code/config/fastfetch-login-zimaos.jsonc"
 ```
 
@@ -514,6 +539,10 @@ The Fastfetch Login Preset prints a customized Fastfetch output with relevant in
 
 4.  Aligns all keys to this uniform width.
 5.  Sets the separator symbol used between the keys and values.
+
+``` text { .mono-title title="/opt/share/fastfetch/logos/zimaos.txt" }
+--8<-- "includes/code/config/fastfetch-logo-zimaos.txt"
+```
 
 ### :symbols-clock-fading:&ensp;Zima Cron
 

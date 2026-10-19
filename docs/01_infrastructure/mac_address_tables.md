@@ -118,7 +118,7 @@ _Hardware MAC Addresses_
 
     [Disaster Recovery Plan](disaster_recovery_plan.md){ .md-button }
 
--   :symbols-shield-keyhole:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-ethernet-port-shield:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

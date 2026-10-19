@@ -175,7 +175,7 @@ All three **Debian servers** send email & push notifications when new [SSH](../0
 
     [IP Address Management](ip_address_management.md){ .md-button }
 
--   :symbols-shield-keyhole:{ .lg .middle }&emsp;**Network Security**
+-   :symbols-ethernet-port-shield:{ .lg .middle }&emsp;**Network Security**
 
     ---
 

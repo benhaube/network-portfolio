@@ -27,19 +27,19 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Insert description of service here
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `1234`
 
-**:symbols-link-2:&ensp;URL / Access** 
+**URL / Access** 
 
 :    <https://example.com>
 
-**:symbols-user-key:&ensp;Credentials** 
+**Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

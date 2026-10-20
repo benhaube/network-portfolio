@@ -25,27 +25,27 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    Insert role here
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `hostname`
 
-**:symbols-layers:&ensp;Hypervisor**
+**Hypervisor**
 
 :    (e.g., KVM / QEMU)
 
-**:symbols-cpu:&ensp;Operating System**
+**Operating System**
 
 :    [:os-icon:&nbsp;Operating System](https://example.com)
 
-**:symbols-network-node:&ensp;Host Node**
+**Host Node**
 
 :    [:device-icon: Device_Template](device_template.md)
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

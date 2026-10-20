@@ -26,23 +26,23 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox: Role**
+**Role**
 
 :    AiMesh Node
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `hostname`
 
-**:symbols-link-2:&ensp;FQDN**
+**FQDN**
 
 :    `*.internal`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    :symbols-router:&nbsp;Router_OS
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

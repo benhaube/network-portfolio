@@ -1,12 +1,12 @@
 ---
-icon: symbols/user-search
+icon: symbols/user-question-mark
 title: About Me
 subtitle: From Engines to Infrastructure
 hide:
   - toc
 ---
 
-![Lucide 'user-search' icon](assets/icons/user-search.svg){ width=200 }
+![Custom Lucide 'user-question-mark' icon](assets/icons/user-question-mark.svg){ width=200 }
 
 # About Me & Professional Philosophy
 

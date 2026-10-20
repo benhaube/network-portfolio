@@ -44,11 +44,11 @@ _Git with a Cup of Tea_
 
 **URL / Access**
 
--   Web-UI:
+-   :symbols-app-window:&ensp;Web-UI:
 { .no-bullets }
     - <http://storage-server.internal:3080>
     - <http://storage-server-2.internal:3080>
--   SSH:
+-   :symbols-square-terminal:&ensp;SSH:
 { .no-bullets }
     - `git@storage-server.internal:222`
 

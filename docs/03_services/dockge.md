@@ -40,10 +40,10 @@ _Docker Management_
 
 **URL / Access**
 
--   Main Server:
+-   :symbols-server:&ensp;Main Server:
 { .no-bullets }
     - <http://pi-server.internal:5001>
--   Dockge Agents:
+-   :symbols-hard-drive-upload:&ensp;Agents:
 { .no-bullets }
     - <http://pi-zero.internal:5001>
     - <http://debian-vm.internal:5001>

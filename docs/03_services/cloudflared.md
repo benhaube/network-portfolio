@@ -54,7 +54,7 @@ _Reverse-Proxy Server_
 - 2FA / MFA
 { .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
-    - :symbols-clock:&ensp;TOTP
+    - :symbols-clock-key:&ensp;TOTP
 
 **:symbols-route:&ensp;Routes**
 

@@ -56,7 +56,7 @@ _A DNS Sinkhole_
     - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
 -   2FA / MFA
 { .no-bullets }
-    - :symbols-clock:&ensp;TOTP
+    - :symbols-clock-key:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

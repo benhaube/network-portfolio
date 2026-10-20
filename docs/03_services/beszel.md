@@ -52,7 +52,7 @@ _Server Monitoring_
     - Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
 - 2FA / MFA
 { .no-bullets }
-    - :symbols-clock:&ensp;TOTP
+    - :symbols-clock-key:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

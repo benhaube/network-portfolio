@@ -63,7 +63,7 @@ _Authoritative & Recursive DNS_
     - Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
 - 2FA / MFA
 { .no-bullets }
-    - :symbols-clock:&ensp;TOTP
+    - :symbols-clock-key:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

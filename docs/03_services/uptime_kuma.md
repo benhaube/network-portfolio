@@ -24,8 +24,8 @@ _A Fancy Monitoring Tool_
 
 ---
 
-![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-light.png#only-light){ width=400 align=right .on-glb }
-![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-home-dark.png#only-dark){ width=400 align=right .on-glb }
+![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-dashboard-light.png#only-light){ width=400 align=right .on-glb }
+![Uptime Kuma homepage](../assets/screenshots/uptime-kuma-dashboard-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 
@@ -54,7 +54,7 @@ _A Fancy Monitoring Tool_
     - Local Network&ensp;:symbols-move-right:&ensp;"Uptime Kuma"
 -   2FA / MFA
 { .no-bullets }
-    - :symbols-clock:&ensp;TOTP
+    - :symbols-clock-key:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

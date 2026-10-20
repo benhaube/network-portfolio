@@ -62,7 +62,7 @@ _Container Management_
 - 2FA / MFA
 { .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
-    - :symbols-clock:&ensp;TOTP
+    - :symbols-clock-key:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

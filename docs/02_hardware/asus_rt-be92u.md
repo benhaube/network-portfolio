@@ -161,7 +161,7 @@ The NVRAM, JFFS, and external USB drive are backed up automatically once a week 
 | :symbols-server-nas:&nbsp;ZimaOS NAS | `/media/Quick-Storage/Backup/router` |
 | :symbols-server:&nbsp;Pi 4B Server   | `/mnt/usb-drive/smb-share/router`    |
 
-### :services-gotify-notification:&ensp;Gotify Push Notifications
+### :symbols-message-square-dot:&ensp;Push Notifications
 
 While most automated notifications from the router are sent via email, there are a few services that utilize the [Gotify](../03_services/gotify.md#notifications){ data-preview } server to send instant push notifications for events that may require an urgent response.
 

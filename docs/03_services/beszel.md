@@ -36,7 +36,7 @@ _Server Monitoring_
 
 - Hub:&ensp;`8090`
 { .no-bullets }
-- Agent:&ensp;`45867`
+- Agent:&ensp;`45876`
 { .no-bullets }
 
 **URL / Access**
@@ -58,18 +58,20 @@ _Server Monitoring_
 
 **Hub**
 
-| Host Device                                                          | Method                                    | Container Name | Image                  | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------- | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel`       | `8090`  |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent` | `45867` |
+| Host Device                                                          | Method                                    | Container Name | Image            | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel` | `8090`  |
 
 **Agents**
 
 | Host Device                                                                    | Method                                    | Container Name | Image                        | Port(s) |
 | :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- | :------ |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45867` |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45867` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` | `45867` |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45876` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45876` |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45876` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` | `45876` |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)         | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                        | `45876` |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)    | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                        | `45876` |
 
 ---
 
@@ -116,3 +118,66 @@ curl -X POST "http://pi-server.internal:8090/api/collections/users/auth-with-pas
 ```
 
 1. Rename the root disk in the Beszel Hub UI with the `FILESYSTEM` environment variable. _(&ge; `v0.19.0` ONLY)_
+
+### :symbols-tux:&ensp;Native Linux Install
+
+1. Download and run the install script:
+
+    ``` bash
+    # Download script
+    curl -sL https://get.beszel.dev -o /tmp/install-agent.sh && chmod +x /tmp/install-agent.sh 
+
+    # Run script as `root` user
+    sudo bash /tmp/install-agent.sh \
+    -url http://pi-server.internal:8090 \
+    -p 45876 \
+    -k "public-ssh-key" \
+    -t server-token \ 
+    --auto-update  # (1)!
+    ```
+
+    1. Enables automatic updates for the Beszel Agent by creating `beszel-agent-update.service` and `beszel-agent-update.timer` Systemd unit files.
+
+    | Flag            | Purpose                                                                   |
+    | :-------------- | :------------------------------------------------------------------------ |
+    | `-k`            | Public key _(enclose in quotes; interactive if not provided)_             |
+    | `-p`            | Port or address _(default: `45876`)_                                      |
+    | `-t`            | Token _(optional for backwards compatibility)_                            |
+    | `-url`          | Hub URL _(optional for backwards compatibility)_                          |
+    | `-v`            | Version _(default: `latest`)_                                             |
+    | `-u`            | Uninstall Beszel Agent                                                    |
+    | `--auto-update` | Enable or disable automatic daily updates _(interactive if not provided)_ |
+    | `-h`            | Show help printout                                                        |
+
+2. Edit the `beszel-agent.service` Systemd unit file to change the settings.
+
+    ``` bash
+    # Edit the Systemd unit file
+    sudo nano /etc/systemd/system/beszel-agent.service
+
+    # Reload Systemd Daemons
+    sudo systemctl daemon-reload
+
+    # Restart the Beszel Agent service
+    sudo systemctl restart beszel-agent.service
+    ```
+
+3. Check the status of the Beszel Agent service:
+
+    ``` bash
+    systemctl status beszel-agent.service
+    ```
+
+### :symbols-file-braces-corner:&ensp;Systemd Unit Files
+
+#### Ben's Desktop
+
+``` systemd { .mono-title title="/etc/systemd/system/beszel-agent.service" }
+--8<-- "includes/code/systemd/beszel-agent-desktop.service"
+```
+
+#### Ben's Laptop
+
+``` systemd { .mono-title title="/etc/systemd/system/beszel-agent.service" }
+--8<-- "includes/code/systemd/beszel-agent-laptop.service"
+```

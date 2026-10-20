@@ -30,39 +30,39 @@ _Detailed Configuration Info_
 
 ## :symbols-info:&ensp;Basic Information
 
-**:symbols-hash:&ensp;Model**
+**Model**
 
 :    Creality^&copy;^ K1C
 
-**:symbols-box:&ensp;Build Volume**
+**Build Volume**
 
 :    `220x220x250`
 
-**:symbols-git-commit-vertical:&ensp;Revision**
+**Revision**
 
 :    v2.0.5  
 
-**:symbols-calendar:&ensp;Create Date**
+**Create Date**
 
 :    2023/09/05
 
 ### :symbols-circuit-board:&ensp;Printer MCU
 
-#### Nozzle
+**Nozzle**
 
 - _Chip:_ `GD32F303CBT6`
 { .no-bullets }
 - _Version:_ `CR-K1-MAX-NOZZLE-V1.2.0`
 { .no-bullets }
 
-#### Leveling
+**Leveling**
 
 - _Chip:_ `GD32E230F8P6`
 { .no-bullets }
 - _Version:_ `CR-K1-MAX-LEVELING-V1.1.0`
 { .no-bullets }
 
-#### Main
+**Main**
 
 - _Chip:_ `GD32F303RET6`
 { .no-bullets }
@@ -71,11 +71,11 @@ _Detailed Configuration Info_
 
 ### :symbols-api:&ensp;Moonraker
 
-#### URL
+**URL**
 
 :    <http://kacey.internal:7125>
 
-#### API Key
+**API Key**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -83,7 +83,7 @@ _Detailed Configuration Info_
 
 ### :services-fluidd:&ensp;Fluidd
 
-#### URL
+**URL**
 
 - <http://kacey.internal>
 { .no-bullets }
@@ -92,7 +92,7 @@ _Detailed Configuration Info_
 
 ### :symbols-webcam:&ensp;Camera
 
-#### Stream URL
+**Stream URL**
 
 - <http://kacey.internal:8080/?action=stream>
 { .no-bullets }
@@ -101,7 +101,7 @@ _Detailed Configuration Info_
 - <http://127.0.0.1:8080/?action=stream>
 { .no-bullets }
 
-#### Snapshot URL
+**Snapshot URL**
 
 - <http://kacey.internal:8080/?action=snapshot>
 { .no-bullets }

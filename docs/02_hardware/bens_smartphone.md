@@ -28,19 +28,19 @@ _Google Pixel 9 Pro_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `ben-s-phone`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -48,7 +48,7 @@ _Google Pixel 9 Pro_
 
 ### :symbols-brick-wall-shield:&ensp;Device Security
 
-#### Software
+**Software**
 
 - :symbols-key-fido2:&nbsp;Titan M2 security chip _(FIDO2 / WebAuthn)_
 { .no-bullets }
@@ -57,7 +57,7 @@ _Google Pixel 9 Pro_
 - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 { .no-bullets }
 
-#### Biometric
+**Biometric**
 
 - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
 { .no-bullets }

@@ -30,15 +30,15 @@ _Docker Management_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `5001`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   Main Server:
 { .no-bullets }
@@ -49,7 +49,7 @@ _Docker Management_
     - <http://debian-vm.internal:5001>
     - <http://storage-server.internal:5001>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -26,22 +26,22 @@ _Private Cloud_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Self-hosted cloud storage and collaboration platform.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `10081`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - ~~<http://storage-server.internal:10081>~~
 { .no-bullets }
 - ~~<http://storage-server-2.internal:10081>~~
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

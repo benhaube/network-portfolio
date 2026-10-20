@@ -33,22 +33,22 @@ _Centralized Network Visibility_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `20211`
 { .no-bullets }
 - `20212`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 :    <http://storage-server.internal:20211>
 
-**:symbols-user-key:&ensp;Credentials** 
+**Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

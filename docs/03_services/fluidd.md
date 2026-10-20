@@ -27,25 +27,25 @@ _The Klipper UI_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   A free and open-source Klipper web interface for managing your 3D-printer.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `80`
 { .no-bullets }
 - `4408`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://kacey.internal>
 { .no-bullets }
 - <https://kacey.rac3r4life.online>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

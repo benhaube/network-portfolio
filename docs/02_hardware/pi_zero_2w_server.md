@@ -33,19 +33,19 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role** { #role }
+**Role** { #role }
 
 :    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi _(SSID: `Home`)_.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `pi-zero`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -33,22 +33,22 @@ _Secondary DNS Server_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role** { #role }
+**Role** { #role }
 
 :   The secondary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 - `pi-server` _(VLAN50 / `eth0`)_
 { .no-bullets }
 - `home-assistant` _(VLAN53 / `wlan0`)_
 { .no-bullets }
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

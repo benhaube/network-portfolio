@@ -29,15 +29,15 @@ _A Fancy Monitoring Tool_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A fancy self-hosted service monitoring tool.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `3001`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-network:&ensp;Local Access
 { .no-bullets }
@@ -47,7 +47,7 @@ _A Fancy Monitoring Tool_
 { .no-bullets }
     - <https://uptime.rac3r4life.online>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }

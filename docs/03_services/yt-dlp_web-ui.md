@@ -28,22 +28,22 @@ _Download Videos from YouTube_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `3033`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://storage-server.internal:3033>
 { .no-bullets }
 - <http://storage-server-2.internal:3033>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

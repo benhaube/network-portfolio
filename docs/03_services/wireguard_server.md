@@ -29,15 +29,15 @@ _A Simple, Modern VPN_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `41820`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-waypoints:&ensp;Server Endpoint:
 { .no-bullets }
@@ -46,13 +46,13 @@ _A Simple, Modern VPN_
 { .no-bullets }
     - <https://asusrouter.internal:8443/Advanced_VPNServer_Content.asp>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
 
-**:symbols-monitor-smartphone:&ensp;Client Profiles**
+**Client Profiles**
 
 :    :symbols-router:&ensp;ASUS RT-BE92U:
 

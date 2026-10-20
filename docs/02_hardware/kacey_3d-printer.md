@@ -30,7 +30,7 @@ _Modified Creality K1C_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi _(SSID: `Home`)_. Affectionately, named 'Kacey' as a play on the model name, K1C.
 
@@ -38,11 +38,11 @@ _Modified Creality K1C_
 
     [More Kacey Info&ensp;:symbols-printer-3d-nozzle:](kacey_info.md){ .md-button }
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `k1c-a71e`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 - [:brands-creality:&ensp;Creality FW Version: 1.3.3.46](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }
 { .no-bullets }
@@ -51,7 +51,7 @@ _Modified Creality K1C_
 - [:services-klipper:&ensp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -27,19 +27,19 @@ _The Klipper Web API_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `7125`
 
-**:symbols-link-2:&ensp;URL / Access**   
+**URL / Access**   
 
 :    <http://kacey.internal:7125>
 
-**:symbols-user-key:&ensp;Credentials** 
+**Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

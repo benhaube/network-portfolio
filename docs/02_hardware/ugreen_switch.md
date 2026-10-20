@@ -30,17 +30,17 @@ _Model UM106X_
 
 ## :symbols-info:&ensp;Physical Overview
 
-**:symbols-toolbox:&ensp;Role** { #role }
+**Role** { #role }
 
 :   A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
 
-**:symbols-plug:&ensp;Power Source**
+**Power Source**
 
-:   Wall wart _(12.0V / 1.0A)_
+:   :symbols-plug:&ensp;Wall wart _(12.0V / 1.0A)_
 
 ### :symbols-circuit-board:&ensp;Specs
 
-#### Throughput
+**Throughput**
 
 - Five 2.5 Gb/s Ports
 { .no-bullets }
@@ -49,12 +49,12 @@ _Model UM106X_
 - 45 Gb/s Total Switching Capacity
 { .no-bullets }
 
-#### Jumbo Frames
+**Jumbo Frames**
 
 - Supported _(12 KB)_
 { .no-bullets }
 
-#### Management Features
+**Management Features**
 
 - VLAN
 { .no-bullets }
@@ -83,7 +83,7 @@ _Model UM106X_
 
 ---
 
-## :symbols-sticky-notes:&ensp;Maintenance Notes
+## :symbols-sticky-notes:&ensp;Maintenance & Notes
 
 !!! visual inline "Visual Indicators"
 

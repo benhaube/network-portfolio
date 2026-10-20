@@ -27,15 +27,15 @@ _Network Documentation_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `8080`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-network:&ensp;Local Access:
 { .no-bullets }
@@ -45,7 +45,7 @@ _Network Documentation_
 { .no-bullets }
     - <https://portfolio.rac3r4life.online>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :   N/A
 

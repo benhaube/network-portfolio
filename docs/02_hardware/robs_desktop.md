@@ -30,19 +30,19 @@ _High-Performance Desktop PC_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role** { #role }
+**Role** { #role }
 
 :    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `Rob-Desktop`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -50,7 +50,7 @@ _High-Performance Desktop PC_
 
 ### :symbols-brick-wall-shield:&ensp;Device Security
 
-#### Firmware
+**Firmware**
 
 - IOMMU
 { .no-bullets }
@@ -65,7 +65,7 @@ _High-Performance Desktop PC_
 - UEFI Secure Boot
 { .no-bullets }
 
-#### Software
+**Software**
 
 - :symbols-hard-drive-lock:&nbsp;Bitlocker drive encryption
 { .no-bullets }

@@ -29,22 +29,22 @@ _Test Network Performance_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A free & open-source HTML5 network performance estimation tool.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `3004`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://storage-server.internal:3004>
 { .no-bullets }
 - <http://storage-server-2.internal:3004>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :   N/A
 

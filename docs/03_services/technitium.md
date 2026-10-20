@@ -30,11 +30,11 @@ _Authoritative & Recursive DNS_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `53`
 { .no-bullets }
@@ -43,7 +43,7 @@ _Authoritative & Recursive DNS_
 - `5380`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-layers:&ensp;Debian Server
 { .no-bullets }
@@ -54,7 +54,7 @@ _Authoritative & Recursive DNS_
     - `192.168.50.2` &mdash; Secondary server
     - <http://pi-server.internal:5380>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }
@@ -117,7 +117,7 @@ Most distributions include the `libicu` package by default, but in some instance
     sudo apt install libicu76
     ```
 
-### :symbols-refresh-cw-clock:&ensp;Update
+### :symbols-rotate-cw-clock:&ensp;Update
 
 !!! tip inline end
 

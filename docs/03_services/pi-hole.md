@@ -27,11 +27,11 @@ _A DNS Sinkhole_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**:
+**Description**:
 
 :    A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 -   Web:
 { .no-bullets }
@@ -41,14 +41,14 @@ _A DNS Sinkhole_
 { .no-bullets }
     - `53`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - ~~<https://pi-server.internal/admin/login>~~
 { .no-bullets }
 - ~~<https://pi-hole.internal/admin/login>~~
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }

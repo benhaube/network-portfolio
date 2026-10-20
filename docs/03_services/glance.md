@@ -30,11 +30,11 @@ _Server Dashboard_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A self-hosted dashboard that puts all your feeds in one place.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `8580`
 { .no-bullets }
@@ -43,11 +43,11 @@ _Server Dashboard_
 - `4463`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 :    <http://pi-server.internal:8580/>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

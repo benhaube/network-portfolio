@@ -28,15 +28,15 @@ _Sync with CouchDB_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `5984`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-monitor-cog:&ensp;Settings Web UI:
 { .no-bullets }
@@ -47,7 +47,7 @@ _Sync with CouchDB_
     - <http://storage-server.internal:5984/obsidian-vault>
     - <http://storage-server-2.internal:5984/obsidian-vault>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
 

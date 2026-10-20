@@ -26,19 +26,19 @@ _All of the Data_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Visualization of real-time track data and telemetry synced to F1 live and replays.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `8000`
 
-**:symbols-link-2:&ensp;URL / Access** 
+**URL / Access** 
 
 :    <http://storage-server.internal:8000>
 
-**:symbols-user-key:&ensp;Credentials** 
+**Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -29,15 +29,15 @@ _Port Monitoring & Discovery_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `4999`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-server:&ensp;Pi 4B Server:
 { .no-bullets }
@@ -47,7 +47,7 @@ _Port Monitoring & Discovery_
     - <http://storage-server.internal:4999>
     - <http://storage-server-2.internal:4999>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :   N/A
 

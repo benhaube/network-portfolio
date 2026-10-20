@@ -29,22 +29,22 @@ _Inventory Management_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    An inventory and organization system built for the home user.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `3100`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://storage-server.internal:3100>
 { .no-bullets }
 - <http://storage-server-2.internal:3100>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

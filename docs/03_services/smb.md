@@ -29,15 +29,15 @@ _Server Message Block_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Remote file system access.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `445`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-router:&ensp;ASUS RT-BE92U:
 { .no-bullets }
@@ -50,7 +50,7 @@ _Server Message Block_
     - `\\storage-server.internal\nvme0n1p1`
     - `\\storage-server.internal\Quick-Storage`
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

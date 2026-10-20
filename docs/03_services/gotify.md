@@ -29,15 +29,15 @@ _Push Notifications_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A simple server for sending and receiving messages in real-time per WebSocket. _(Includes a sleek Web-UI)_
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :     `8180`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-network:&ensp;Local Access:
 { .no-bullets }
@@ -47,7 +47,7 @@ _Push Notifications_
 { .no-bullets }
     - <https://gotify.rac3r4life.online> &mdash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

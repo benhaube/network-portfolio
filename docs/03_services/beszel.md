@@ -28,22 +28,22 @@ _Server Monitoring_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - Hub:&ensp;`8090`
 { .no-bullets }
 - Agent:&ensp;`45867`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 :   <http://pi-server.internal:8090/>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }

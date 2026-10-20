@@ -30,22 +30,22 @@ _Search You Run Yourself_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A self-hosted search engine aggregator with a comprehensive plugin / extension system.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `4444`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://storage-server.internal:4444>
 { .no-bullets }
 - <http://storage-server-2.internal:4444>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

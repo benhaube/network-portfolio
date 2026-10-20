@@ -27,19 +27,19 @@ _Remote Desktop Protocol_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Remote desktop access over the local network _(not publicly exposed)_
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `3389`
 
-**:symbols-link-2:&ensp;URL / Access**   
+**URL / Access**   
 
 :    [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
 

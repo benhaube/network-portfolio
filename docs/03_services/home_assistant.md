@@ -28,22 +28,22 @@ _Awaken Your Home_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Open-source home automation that puts local control and privacy first.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `8123`
 
-**:symbols-link-2:&ensp;URL / Access**  
+**URL / Access**  
 
 - <http://pi-server.internal:8123>
 { .no-bullets }
 - <https://home.rac3r4life.online>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials** 
+**Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

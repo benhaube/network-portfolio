@@ -30,13 +30,13 @@ _Cron Monitoring_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
 
 :   ![AppData Backup](https://healthchecks.rac3r4life.online/b/3/7a592da9-bc4e-44d8-bc9a-0c47854875fd.svg)&ensp;![Devices Backup](https://healthchecks.rac3r4life.online/b/3/632c4949-6b24-4943-90e0-e8cc92f59947.svg)&ensp;![Immich Backup](https://healthchecks.rac3r4life.online/b/3/f96a7e0b-d0cd-445e-b4c0-e81b145ce50c.svg)
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `2525` &mdash; _SMTP Server_
 { .no-bullets }
@@ -45,14 +45,14 @@ _Cron Monitoring_
 - `8000` &mdash; _Web Server_
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <https://healthchecks.rac3r4life.online>
 { .no-bullets }
 - <http://debian-vm.internal:8000>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }

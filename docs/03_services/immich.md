@@ -28,15 +28,15 @@ _Bye Bye, Google Photos_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    High performance self-hosted photo and video management solution.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `2283`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-network:&ensp;Local Access:
 { .no-bullets }
@@ -46,7 +46,7 @@ _Bye Bye, Google Photos_
 { .no-bullets }
     - <https://immich.rac3r4life.online>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -27,22 +27,22 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `80`
 { .no-bullets }
 - `443`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 :    <https://pi-zero.internal>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    N/A
 

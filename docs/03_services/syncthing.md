@@ -30,11 +30,11 @@ _File Synchronization_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Open decentralized file synchronization.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `8384` &mdash; _TCP_
 { .no-bullets }
@@ -43,7 +43,7 @@ _File Synchronization_
 - `21027` &mdash; _UDP_
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-pc-case:&ensp;Ben's Desktop
 { .no-bullets }
@@ -68,7 +68,7 @@ _File Synchronization_
     - <https://storage-server.internal:8384>
     - <https://storage-server-2.internal:8384>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -26,22 +26,22 @@ _NTP Server_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Advanced, lightweight NTP client and server.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `123`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - `192.168.50.1:123`
 { .no-bullets }
 - `asusrouter.internal:123`
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

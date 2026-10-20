@@ -27,25 +27,25 @@ _Network Traffic Probe_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Web-based traffic and security network traffic monitoring.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `3000`
 { .no-bullets }
 - `5556`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://storage-server.internal:3000>
 { .no-bullets }
 - <http://storage-server-2.internal:3000>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :   N/A
 

@@ -28,11 +28,11 @@ _Container Management_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   A lightweight service delivery platform for containerized applications.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - Hub:
 { .no-bullets }
@@ -41,7 +41,7 @@ _Container Management_
 { .no-bullets }
     - `9001`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - Hub:
 { .no-bullets }
@@ -52,7 +52,7 @@ _Container Management_
     - ~~<http://pi-zero.internal:9001>~~
     - ~~<http://storage-server.internal:9001>~~
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }

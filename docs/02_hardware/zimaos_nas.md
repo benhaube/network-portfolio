@@ -33,19 +33,19 @@ _Rack-Mount ZimaBoard 2_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server "Product Information"){ external-link } as the "beating heart," it is the most powerful server on the local network. It has an _x86-64_ Intel N150 quad-core CPU _(3.6 GHz)_ and 16 GB of LPDDR5 _(6400 MHz)_ RAM, and it is located in the 10-inch server rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `ZimaOS-NAS`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(v1.7.0)_
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

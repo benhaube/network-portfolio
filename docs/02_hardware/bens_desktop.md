@@ -31,19 +31,19 @@ _High-Performance Desktop PC_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `bens-workstation`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -51,7 +51,7 @@ _High-Performance Desktop PC_
 
 ### :symbols-brick-wall-shield:&ensp;Device Security
 
-#### Firmware
+**Firmware**
 
 - IOMMU
 { .no-bullets }
@@ -68,7 +68,7 @@ _High-Performance Desktop PC_
 - UEFI Secure Boot
 { .no-bullets }
 
-#### Software
+**Software**
 
 - :symbols-arrow-right-left-lock:&nbsp;Linux swap encryption
 { .no-bullets }

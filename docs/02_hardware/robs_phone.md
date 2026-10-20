@@ -28,19 +28,19 @@ _Samsung Galaxy S25+_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `robert-s-s25`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -48,14 +48,14 @@ _Samsung Galaxy S25+_
 
 ### :symbols-brick-wall-shield:&ensp;Device Security
 
-#### Software
+**Software**
 
 - :symbols-hard-drive-lock:&nbsp;Full-disk encryption
 { .no-bullets }
 - :symbols-rectangle-ellipsis:&nbsp;8-digit PIN
 { .no-bullets }
 
-#### Biometric
+**Biometric**
 
 - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
 { .no-bullets }

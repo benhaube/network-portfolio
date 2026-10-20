@@ -32,27 +32,27 @@ _Primary DNS Server_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    The primary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#device-overview){ data-preview }.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `debian-vm`
 
-**:symbols-layers:&ensp;Hypervisor** 
+**Hypervisor** 
 
 :    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(KVM / QEMU)_
 
-**:symbols-cpu:&ensp;Operating System** 
+**Operating System** 
 
 :    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
 
-**:symbols-network-node:&ensp;Host Node** 
+**Host Node** 
 
 :    [:symbols-server-nas:&ensp;ZimaOS NAS](zimaos_nas.md#virtualization){ data-preview }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

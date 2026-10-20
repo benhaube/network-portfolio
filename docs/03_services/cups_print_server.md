@@ -26,26 +26,25 @@ _Open Print Server_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `631`
 
-**:symbols-link-2:&ensp;URL / Access** 
+**URL / Access**
 
-:    <https://192.168.50.2:631>
-
-**:symbols-printer-plus:&ensp;Printer URL**
-
-- IPP:&ensp;`ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
+-   :symbols-settings:&ensp;CUPS Settings
 { .no-bullets }
-- mDNS:&ensp;`dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
+    - <https://192.168.50.2:631>
+-   :symbols-printer-plus:&ensp;Printer URL
 { .no-bullets }
+    - IPP:&ensp;`ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
+    - mDNS:&ensp;`dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

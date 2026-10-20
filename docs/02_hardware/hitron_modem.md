@@ -30,15 +30,15 @@ _DOCSIS 3.1 Cable Modem_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :   The DOCSIS 3.1 cable modem that communicates with the ISP _([Xfinity](https://www.xfinity.com/overview){ external-link })_. Located in the 10-inch server rack.
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    Hitron FW version: `7.3.5.3.2b2`
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    N/A
 

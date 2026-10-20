@@ -31,19 +31,19 @@ _ThinkPad X1 Yoga_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `ben-laptop`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
@@ -51,7 +51,7 @@ _ThinkPad X1 Yoga_
 
 ### :symbols-brick-wall-shield:&ensp;Device Security
 
-#### Firmware
+**Firmware**
 
 - BIOS rollback protection
 { .no-bullets }
@@ -72,7 +72,7 @@ _ThinkPad X1 Yoga_
 - UEFI Secure Boot
 { .no-bullets }
 
-#### Software
+**Software**
 
 - :symbols-arrow-right-left-lock:&nbsp;Linux swap encryption
 { .no-bullets }
@@ -81,7 +81,7 @@ _ThinkPad X1 Yoga_
 - :symbols-key-fido2:&nbsp;FIDO2-based MFA for local user
 { .no-bullets }
 
-#### Biometric
+**Biometric**
 
 - :symbols-fingerprint-pattern:&nbsp;Fingerprint Scan
 { .no-bullets }

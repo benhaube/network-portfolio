@@ -29,15 +29,15 @@ _Network File System_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Remote file system access for Linux.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `2049`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   :symbols-folder-tree:&ensp;Network Storage:
 { .no-bullets }
@@ -46,7 +46,7 @@ _Network File System_
 { .no-bullets }
     - `192.168.50.4:/media/nvme0n1p1`
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

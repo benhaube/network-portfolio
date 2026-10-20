@@ -29,22 +29,22 @@ _Handy Tools for Devs_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Handy tools for network administrators and developers.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `8080`
 { .no-bullets }
 - `8000`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 :    <http://pi-server.internal:8080/>
 
-**:symbols-user-key:&ensp;Credentials** 
+**Credentials** 
 
 :    N/A
 

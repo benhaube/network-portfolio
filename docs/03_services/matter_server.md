@@ -30,22 +30,22 @@ _Based on Matter.js_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    The **Open Home Foundation** Matter Server serves as the foundation to provide Matter support to [Home Assistant](home_assistant.md), but its universal approach makes it suitable to be used in other projects too.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `5580`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://pi-server.internal:8123/config/matter/dashboard>
 { .no-bullets }
 - <https://home.rac3r4life.online/config/matter/dashboard>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials** 
+**Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

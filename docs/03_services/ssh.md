@@ -29,15 +29,15 @@ _Secure Shell_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 :    `22`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 { #url-access }
 
 -   :symbols-router:&ensp;ASUS RT-BE92U
@@ -67,7 +67,7 @@ _Secure Shell_
     - `192.168.50.153:22`
     - `kacey.internal:22`
 
-**:symbols-user-key:&ensp;Credentials** { #credentials }
+**Credentials** { #credentials }
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

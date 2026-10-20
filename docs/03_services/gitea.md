@@ -31,18 +31,18 @@ _Git with a Cup of Tea_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 - `3080`
 { .no-bullets }
 - `222`
 { .no-bullets }
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 -   Web-UI:
 { .no-bullets }
@@ -52,7 +52,7 @@ _Git with a Cup of Tea_
 { .no-bullets }
     - `git@storage-server.internal:222`
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 - [:brands-gitlab:&ensp;GitLab OAuth](https://gitlab.com/-/user_settings/applications){ external-link }
 { .no-bullets }

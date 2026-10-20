@@ -30,23 +30,23 @@ _AiMesh Node_
 
 ## :symbols-info:&ensp;Device Overview
 
-**:symbols-toolbox:&ensp;Role**
+**Role**
 
 :    A secondary router located on the stationary printer cart in the office upstairs, acting as an "_AiMesh_" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
-**:symbols-host:&ensp;Hostname**
+**Hostname**
 
 :    `RT-AX55-1360`
 
-**:symbols-link-2:&ensp;FQDN**
+**FQDN**
 
 :    `aimesh-node.internal`
 
-**:symbols-cpu:&ensp;OS / Firmware**
+**OS / Firmware**
 
 :    [:symbols-wizard-hat:&ensp;asuswrt](https://www.asus.com/us/content/asuswrt/){ external-link } _(3004.386.53329)_
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -28,19 +28,19 @@ _Provided by addr.tools_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A networking service that automatically maps a static domain name _(FQDN)_ to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `N/A`
 
-**:symbols-link-2:&ensp;URL / Access** 
+**URL / Access** 
 
 :    <https://rac3r4life.myaddr.dev>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

@@ -30,25 +30,21 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Secure reverse-proxy tunnel for hosting private services on the public internet.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
-Outbound
-
-- `7844` &ndash; _TCP & UDP_
+- :symbols-globe:&ensp;Outbound
 { .no-bullets }
-- `443` &ndash; _TCP_
+    - `7844` &ndash; _TCP & UDP_
+    - `443` &ndash; _TCP_
+- :symbols-activity:&ensp;Local Metrics
 { .no-bullets }
+    - `60123`
 
-Local Metrics
-
-- `60123`
-{ .no-bullets }
-
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }

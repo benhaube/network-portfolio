@@ -27,22 +27,22 @@ _The Terminal on the Web_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    A DockerApp makes it easy to use the host terminal on the Web.
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `2222`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://storage-server.internal:2222>
 { .no-bullets }
 - <http://storage-server-2.internal:2222>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 

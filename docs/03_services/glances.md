@@ -27,22 +27,22 @@ _An Eye on Your System_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :    Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 
-**:symbols-hash:&ensp;Port(s)** 
+**Port(s)** 
 
 :    `61208`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 - <http://pi-server.internal:61208>
 { .no-bullets }
 - <http://storage-server.internal:61208>
 { .no-bullets }
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :   N/A
 

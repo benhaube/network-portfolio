@@ -29,11 +29,11 @@ _Anti-Virus for ZimaOS_
 
 ## :symbols-info:&ensp;Overview
 
-**:symbols-file-text:&ensp;Description**
+**Description**
 
 :   Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 
-**:symbols-hash:&ensp;Port(s)**
+**Port(s)**
 
 -   Service:&ensp;`clamav-server`
 { .no-bullets }
@@ -42,11 +42,11 @@ _Anti-Virus for ZimaOS_
 { .no-bullets }
     - `8099`
 
-**:symbols-link-2:&ensp;URL / Access**
+**URL / Access**
 
 :    <http://storage-server.internal:8099>
 
-**:symbols-user-key:&ensp;Credentials**
+**Credentials**
 
 :    N/A
 

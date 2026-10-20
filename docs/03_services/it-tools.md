@@ -42,7 +42,10 @@ _Handy Tools for Devs_
 
 **URL / Access**
 
-:    <http://pi-server.internal:8080/>
+- <http://pi-server.internal:8080/>
+{ .no-bullets }
+- <https://it-tools.rac3r4life.online>
+{ .no-bullets }
 
 **Credentials** 
 

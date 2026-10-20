@@ -25,8 +25,8 @@ _Search You Run Yourself_
 
 ---
 
-![Degoog search results screenshot](../assets/screenshots/degoog-home-light.png#only-light){ width=400 align=right .on-glb }
-![Degoog search results screenshot](../assets/screenshots/degoog-home-dark.png#only-dark){ width=400 align=right .on-glb }
+![Degoog search results screenshot](../assets/screenshots/degoog-search-light.png#only-light){ width=400 align=right .on-glb }
+![Degoog search results screenshot](../assets/screenshots/degoog-search-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

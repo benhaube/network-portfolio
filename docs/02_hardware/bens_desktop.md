@@ -104,20 +104,20 @@ _High-Performance Desktop PC_
 
 ### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point    | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path                 | File System | Encryption                        |
-| :------------- | :--------- | :--------------------------------------------- | :-------------------------- | :---------- | :-------------------------------- |
-| `/`, `/home`   | NVMe SSD   | 929 GB                                         | `/dev/dm-0`                 | `btrfs`     | :symbols-lock-keyhole:&nbsp;LUKS2 |
-| `/mnt/1TB_HDD` | SATA HDD   | 1 TB                                           | `/dev/mapper/1TB_HDD_crypt` | `btrfs`     | :symbols-lock-keyhole:&nbsp;LUKS2 |
+| Mount Point    | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path                 | File System | Encryption                           |
+| :------------- | :--------- | :--------------------------------------------- | :-------------------------- | :---------- | :----------------------------------- |
+| `/`, `/home`   | NVMe SSD   | 929 GB                                         | `/dev/dm-0`                 | `btrfs`     | :symbols-hard-drive-lock:&nbsp;LUKS2 |
+| `/mnt/1TB_HDD` | SATA HDD   | 1 TB                                           | `/dev/mapper/1TB_HDD_crypt` | `btrfs`     | :symbols-hard-drive-lock:&nbsp;LUKS2 |
 
 ### :symbols-usb:&ensp;External / Attached
 
-| Mount Point                         | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path                         | File System      | Encryption                              |
-| :---------------------------------- | :------------ | :--------------------------------------------- | :---------------------------------- | :--------------- | :-------------------------------------- |
-| `/run/media/bhaube/External_SSD`    | NVMe SSD      | 916 GB                                         | `/dev/dm-2`                         | `ext4`           | :symbols-lock-keyhole:&nbsp;LUKS2       |
-| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                         | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | :symbols-lock-keyhole:&nbsp;`gocryptfs` |
-| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                           |                                     | `fuse.rclone`    | N/A                                     |
-| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | N/A                                     |
-| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | N/A                                     |
+| Mount Point                         | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path                         | File System      | Encryption                           |
+| :---------------------------------- | :------------ | :--------------------------------------------- | :---------------------------------- | :--------------- | :----------------------------------- |
+| `/run/media/bhaube/External_SSD`    | NVMe SSD      | 916 GB                                         | `/dev/dm-2`                         | `ext4`           | :symbols-hard-drive-lock:&nbsp;LUKS2 |
+| `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                         | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | :symbols-folder-lock:&nbsp;gocryptfs |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                           |                                     | `fuse.rclone`    | N/A                                  |
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | N/A                                  |
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | N/A                                  |
 
 ## :symbols-cloud:&ensp;Services & Containers
 
@@ -131,10 +131,11 @@ _High-Performance Desktop PC_
 
 ### :symbols-tux:&ensp;Native Linux
 
-|  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                  |
-| :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------ |
-| _Active_ | [:symbols-screen-share:&nbsp;RDP](../03_services/rdp.md)               |                `3389`                 | Remote desktop protocol for accessing the desktop over the local network. |
-| _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                  |
+|  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
+| :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| _Active_ | [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| _Active_ | [:symbols-screen-share:&nbsp;RDP](../03_services/rdp.md)               |                `3389`                 | Remote desktop protocol for accessing the desktop over the local network.                            |
+| _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |
 
 ---
 

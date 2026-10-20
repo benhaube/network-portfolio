@@ -583,6 +583,8 @@ A modern, reliable task scheduler for ZimaOS with a completely redesigned web in
 
     :    Tasks are persisted to disk and automatically restored after system restart using the Systemd unit, `cron.service`. This fixes the known issue where tasks did not continue after a reboot in previous versions.
 
+    ---
+
     Open **Zima Cron** from the [ZimaOS dashboard](http://storage-server.internal){ external-link }, or directly at <http://storage-server.internal/modules/cron/>.
 
 ### :symbols-brick-wall-fire:&ensp;Zima Firewall
@@ -617,4 +619,6 @@ Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live se
 
     The script, `install.sh`, places the sysext module in `/var/lib/extensions/`, installs the engine script to `/media/ZimaOS-HD/zfw/zfw` _(root:root, 0700)_, verifies the module checksum, merges the sysext and (re)starts `zfw-ui.service`. Re-run it any time to update an install in place.
 
-    Open it from the [ZimaOS dashboard](http://storage-server.internal){ external-link } _(ZFW Firewall)_, or directly at <http://storage-server.internal/modules/zfw/index.html>.
+    ---
+
+    Open **Zima Firewall** from the [ZimaOS dashboard](http://storage-server.internal){ external-link } _(ZFW Firewall)_, or directly at <http://storage-server.internal/modules/zfw/index.html>.

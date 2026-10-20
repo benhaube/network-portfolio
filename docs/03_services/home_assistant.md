@@ -43,11 +43,14 @@ _Awaken Your Home_
 - <https://home.rac3r4life.online>
 { .no-bullets }
 
-**Credentials** 
+**Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
+-   2FA / MFA
+{ .no-bullets }
+    - :symbols-clock-key:&ensp;TOTP
 
 ## :symbols-package-search:&ensp;Deployment Details
 

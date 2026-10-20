@@ -17,6 +17,8 @@ _Chamber Air Scrubber_
 
 ---
 
+![Photo of the Bento Box installed in the Creality K1C](../assets/pictures/bento-k1c.jpg){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;About
 
 The Bento box is a HEPA & activated carbon based air scrubber for the chamber; reducing harmful PM2.5 particulate matter and VOCs emitted during prints. This results in much healthier air in your home during prints for both humans and pets. The air scrubber uses two 5015 blower fans connected with a splitter to the spare 2-pin, 24V fan header on the printer's motherboard.

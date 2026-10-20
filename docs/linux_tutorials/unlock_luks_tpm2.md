@@ -29,6 +29,14 @@ _Speeding Up the Boot Process_
 
 ## :symbols-badge-alert:&ensp;Prerequisites
 
+!!! tip inline end
+
+    Check the **LUKS** version your encrypted volume is using with this command:
+
+    ``` bash linenums="1"
+    cryptsetup luksDump /dev/your_device
+    ```
+
 **TPM2 Chip**
 
 Your computer must have an active **TPM2** chip. Most modern hardware does, but you may need to enable in **UEFI** settings.
@@ -36,14 +44,6 @@ Your computer must have an active **TPM2** chip. Most modern hardware does, but 
 **LUKS2**
 
 Your encrypted volume must be using **LUKS2** format.
-
-???+ tip
-
-    Check the **LUKS** version your encrypted volume is using with this command:
-
-    ``` bash linenums="1"
-    cryptsetup luksDump /dev/your_device
-    ```
 
 **Packages**
 
@@ -150,7 +150,7 @@ The `systemd-cryptenroll` command adds a new random key to one of your LUKS key 
 
 ### Configure Grub
 
-???+ warning
+!!! warning inline end
 
     If your encrypted volume contains the **root filesystem**, you will need to add this option to the **kernel command line** in your bootloader configuration file.
 

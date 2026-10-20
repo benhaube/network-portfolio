@@ -89,9 +89,9 @@ _Google Pixel 9 Pro_
 
 ### :symbols-hard-drive:&ensp;Internal Drive(s)
 
-| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                       |
-| :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :----------------------------------------------- |
-| `N/A`       | UFS 3.1    | 128 GB                                         | `N/A`       | `N/A`       | :symbols-lock-keyhole:&nbsp;Full-disk encryption |
+| Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                          |
+| :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :-------------------------------------------------- |
+| `N/A`       | UFS 3.1    | 128 GB                                         | `N/A`       | `N/A`       | :symbols-hard-drive-lock:&nbsp;Full-disk encryption |
 
 ### :symbols-usb:&ensp;External/Attached
 

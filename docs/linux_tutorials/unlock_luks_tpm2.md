@@ -29,11 +29,11 @@ _Speeding Up the Boot Process_
 
 ## :symbols-badge-alert:&ensp;Prerequisites
 
-#### TPM2 Chip
+**TPM2 Chip**
 
 Your computer must have an active **TPM2** chip. Most modern hardware does, but you may need to enable in **UEFI** settings.
 
-#### LUKS2
+**LUKS2**
 
 Your encrypted volume must be using **LUKS2** format.
 
@@ -45,7 +45,7 @@ Your encrypted volume must be using **LUKS2** format.
     cryptsetup luksDump /dev/your_device
     ```
 
-#### Packages
+**Packages**
 
 Ensure you have the necessary packages installed.
 
@@ -55,7 +55,7 @@ Ensure you have the necessary packages installed.
 | `tpm2-tss`                               |
 | `dracut` _or_ `update-initramfs`         |
 
-#### Initramfs Support
+**Initramfs Support**
 
 Your system's initial ramdisk **(initramfs)** must be configured to include the necessary components to perform the unlock early in the boot process.
 

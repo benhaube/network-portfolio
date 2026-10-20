@@ -58,7 +58,8 @@ _Organized IP Address Space_
 
 | Device                                                                                                        | VLAN   | IP Address { data-sort-method="dotsep" } | Hostname           | Role / Notes { data-sort-method="none" }                                |
 | :------------------------------------------------------------------------------------------------------------ | :----- | :--------------------------------------- | :----------------- | :---------------------------------------------------------------------- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md#network-configuration)                  | VLAN50 | `192.168.50.10`                          | `bens-workstation` | Fedora Linux 44 _(KDE Plasma Desktop Edition)_                          |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md#network-configuration)                  | VLAN50 | `192.168.50.10`                          | `bens-workstation` | Custom built desktop PC, Fedora Linux 44 _(KDE Plasma Desktop Edition)_ |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md#network-configuration)             | VLAN50 | `192.168.50.20`                          | `ben-laptop`       | ThinkPad X1 Yoga, Fedora Linux 44 _(KDE Plasma Desktop Edition)_        |
 | [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md#network-configuration) | VLAN50 | `192.168.50.15`                          | `k1c-a71e`         | Creality K1C _(Modified)_                                               |
 | [:symbols-server:&nbsp;Ras-Pi 4B Server](../02_hardware/pi_4b_server.md#network-configuration) _(`wlan0`)_    | VLAN53 | `192.168.53.2`                           | `pi-server`        | Bridge to VLAN53 for [Home Assistant](../03_services/home_assistant.md) |
 

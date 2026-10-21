@@ -105,6 +105,7 @@
 *[KDE]: K Desktop Environment
 *[KVM]: Kernel Virtual Machine
 *[LAN]: Local Area Network
+*[LDAP]: Lightweight Directory Access Protocol
 *[LED]: Light Emitting Diode
 *[LEDs]: Light Emitting Diodes
 *[LLDP]: Link Layer Discovery Protocol
@@ -144,6 +145,7 @@
 *[NTP]: Network Time Protocol
 *[NVM]: Non-volatile Memory
 *[NVMe]: Non-volatile Memory Express
+*[OIDC]: OpenID Connect
 *[OLED]: Organic Light Emitting Diode
 *[OOM]: Out of Memory
 *[OS]: Operating System
@@ -162,6 +164,7 @@
 *[PNG]: Portable Network Graphics
 *[QEMU]: The Quick Emulator
 *[QoS]: Quality of Service
+*[RADIUS]: Remote Authentication Dial-In User Service
 *[RAM]: Random Access Memory
 *[RBAC]: Role-Based Access Control
 *[RCS]: Rich Communication Services

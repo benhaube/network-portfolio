@@ -54,6 +54,8 @@ _Git with a Cup of Tea_
 
 **Credentials**
 
+- [:services-authentik:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
+{ .no-bullets }
 - [:brands-gitlab:&ensp;GitLab OAuth](https://gitlab.com/-/user_settings/applications){ external-link }
 { .no-bullets }
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }

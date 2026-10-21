@@ -120,6 +120,9 @@ hide:
 
         [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
 
+[:services-authentik:&ensp;Authentik](03_services/authentik.md)
+: An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters.
+
 [:services-beszel:&ensp;Beszel](03_services/beszel.md)
 : A lightweight server monitoring hub with historical data, docker stats, and alerts.
 

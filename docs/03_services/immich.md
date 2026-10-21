@@ -49,6 +49,7 @@ _Bye Bye, Google Photos_
 **Credentials**
 
 -   [:services-authentik:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
+{ .no-bullets }
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Immich (admin)"

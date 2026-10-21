@@ -56,7 +56,7 @@ _Authoritative & Recursive DNS_
 
 **Credentials**
 
-- [:brands-github:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
+- [:services-authentik:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
 { .no-bullets }
 - [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }

@@ -50,7 +50,8 @@
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/clamav-dashboard.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/degoog.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/matter-server.yaml",
-            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/healthchecks-compose.yml"
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/healthchecks-compose.yml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/authentik.yaml"
         ],
         "https://raw.githubusercontent.com/not-first/glance-schema/master/schema.json": [
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance.yml",

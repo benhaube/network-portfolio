@@ -96,7 +96,7 @@ Mobile devices _(e.g., smartphones and tablets)_ utilize **Android**. Only **Goo
 
 While Bitwarden does have the ability to store TOTP credentials, we forego this feature and use [Ente Auth][ente]{ external-link } instead. We believe it is vitally important to separate your primary and secondary authentication factors. Storing both factors in the same location gives attackers a single point of access, and negates the benefits of 2FA / MFA entirely. **Ente Auth** is an open-source, cross-platform TOTP manager with secure synchronization. It has desktop, mobile, and PWA clients making it easy to access your second factor authentication credentials anywhere you need them.
 
-##### FIDO2 / WebAuthn
+##### FIDO2 / WebAuthen
 
 The other 2FA / MFA method we utilize wherever possible are physical FIDO2 / WebAuthen security keys. While there are many companies manufacturing these physical security keys, we generally recommend the [YubiKey 5][yubi]{ external-link } and the [Google Titan][titan]{ external-link } products. Both products have a long, proven history of security, and come from reputable companies. Unfortunately, not all accounts offer FIDO2 authentication, but we recommend using it on any accounts that do. It is ideal to have a backup in the event you lose your physical key. This can be either a second physical key you store in a secure location, or TOTP authentication.
 

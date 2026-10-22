@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 
-![Authentik logo](../assets/icons/authentik_pride.png){ width=200 .no-shadow }
+![Authentik logo](../assets/icons/authentik-pride.png){ width=200 .no-shadow }
 
 # Authentik
 

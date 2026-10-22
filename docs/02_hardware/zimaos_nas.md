@@ -17,9 +17,8 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
-![Custom 'server-nas' icon following Lucide style guidelines](../assets/icons/server-nas.svg){ width=200 }
+![Lucide 'server-nas' icon](../assets/icons/server-nas-light.svg#only-light){ width=200 }
+![Lucide 'server-nas' icon](../assets/icons/server-nas-dark.svg#only-dark){ width=200 }
 
 # ZimaOS NAS
 

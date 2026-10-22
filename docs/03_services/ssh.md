@@ -14,7 +14,8 @@ hide:
   - toc
 ---
 
-![Lucide 'square-terminal' icon](../assets/icons/square-terminal.svg){ width=200 }
+![Lucide 'square-terminal' icon](../assets/icons/ssh-light.svg#only-light){ width=200 }
+![Lucide 'square-terminal' icon](../assets/icons/ssh-dark.svg#only-dark){ width=200 }
 
 # SSH
 
@@ -24,8 +25,8 @@ _Secure Shell_
 
 ---
 
-![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-zimaos-light.png#only-light){ width=400 align=right .on-glb }
-![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-zimaos-dark.png#only-dark){ width=400 align=right .on-glb }
+![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-pi-server-light.png#only-light){ width=400 align=right .on-glb }
+![SSH session on ZimaOS-NAS](../assets/screenshots/ssh-pi-server-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

@@ -1,7 +1,7 @@
 ---
 icon: services/authentik
 title: Authentik
-subtitle: Identity Provider
+subtitle: SSO Identity Provider
 description: An open-source Identity Provider (IdP) for modern SSO. It supports SAML, OAuth2 / OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters.
 status: new
 tags:
@@ -19,7 +19,7 @@ hide:
 
 # Authentik
 
-_Identity Provider_
+_SSO Identity Provider_
 
 [GitHub&ensp;:brands-github:](https://github.com/goauthentik/authentik){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.goauthentik.io/){ .md-button .md-button--primary }
 

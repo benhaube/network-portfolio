@@ -41,8 +41,8 @@ _Open Print Server_
     - <https://192.168.50.2:631>
 -   :symbols-printer-plus:&ensp;Printer URL
 { .no-bullets }
-    - IPP:&ensp;`ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
-    - mDNS:&ensp;`dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
+    - `ipp://192.168.50.2:631/printers/Brother_HL-L2300D_series`
+    - `dnssd://Brother%20Laser%20Printer%20%40%20pi-server._ipp._tcp.local/cups?uuid=06d625d5-f736-30c6-6315-c20eec2f460e`
 
 **Credentials**
 

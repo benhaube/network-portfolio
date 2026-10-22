@@ -39,13 +39,12 @@ _Push Notifications_
 
 **URL / Access**
 
--   :symbols-network:&ensp;Local Access:
+- <http://storage-server.internal:8180>
 { .no-bullets }
-    - <http://storage-server.internal:8180>
-    - <http://storage-server-2.internal:8180>
--   :symbols-globe-arrow:&ensp;Remote Access:
+- <http://storage-server-2.internal:8180>
 { .no-bullets }
-    - <https://gotify.rac3r4life.online> &mdash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
+- <https://gotify.rac3r4life.online>&nbsp;&mdash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
+{ .no-bullets }
 
 **Credentials**
 

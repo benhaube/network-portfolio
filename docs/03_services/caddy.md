@@ -40,7 +40,7 @@ _Reverse-Proxy Server_
 
 **URL / Access**
 
-:    <https://pi-zero.internal>
+:    <https://proxy.pi-zero.internal>
 
 **Credentials**
 

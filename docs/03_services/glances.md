@@ -41,6 +41,8 @@ _An Eye on Your System_
 { .no-bullets }
 - <http://storage-server.internal:61208>
 { .no-bullets }
+- <http://storage-server-2.internal:61208>
+{ .no-bullets }
 
 **Credentials**
 

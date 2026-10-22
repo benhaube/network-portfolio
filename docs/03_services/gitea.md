@@ -48,6 +48,7 @@ _Git with a Cup of Tea_
 { .no-bullets }
     - <http://storage-server.internal:3080>
     - <http://storage-server-2.internal:3080>
+    - <https://gitea.rac3r4life.online>
 -   :symbols-square-terminal:&ensp;SSH:
 { .no-bullets }
     - `git@storage-server.internal:222`

@@ -41,7 +41,10 @@ _Server Monitoring_
 
 **URL / Access**
 
-:   <http://pi-server.internal:8090/>
+- <http://pi-server.internal:8090/>
+{ .no-bullets }
+- <https://beszel.rac3r4life.online>
+{ .no-bullets }
 
 **Credentials**
 

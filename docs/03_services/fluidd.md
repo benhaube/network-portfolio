@@ -42,7 +42,7 @@ _The Klipper UI_
 
 - <http://kacey.internal>
 { .no-bullets }
-- <https://kacey.rac3r4life.online>
+- <http://kacey.internal:4408>
 { .no-bullets }
 
 **Credentials**

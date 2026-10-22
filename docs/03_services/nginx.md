@@ -37,13 +37,12 @@ _Network Documentation_
 
 **URL / Access**
 
--   :symbols-network:&ensp;Local Access:
+- <http://storage-server.internal:8080>
 { .no-bullets }
-    - <http://storage-server.internal:8080>
-    - <http://storage-server-2.internal:8080>
--   :symbols-globe-arrow:&ensp;Remote Access:
+- <http://storage-server-2.internal:8080>
 { .no-bullets }
-    - <https://portfolio.rac3r4life.online>
+- <https://portfolio.rac3r4life.online>
+{ .no-bullets }
 
 **Credentials**
 

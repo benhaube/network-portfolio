@@ -32,11 +32,15 @@ _All of the Data_
 
 **Port(s)**
 
-:    `8000`
+- `8000`
+{ .no-bullets }
 
-**URL / Access** 
+**URL / Access**
 
-:    <http://storage-server.internal:8000>
+- <http://storage-server.internal:8000>
+{ .no-bullets }
+- <http://storage-server-2.internal:8000>
+{ .no-bullets }
 
 **Credentials** 
 

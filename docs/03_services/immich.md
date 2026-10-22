@@ -38,13 +38,12 @@ _Bye Bye, Google Photos_
 
 **URL / Access**
 
--   :symbols-network:&ensp;Local Access:
+- <http://storage-server.internal:2283>
 { .no-bullets }
-    - <http://storage-server.internal:2283>
-    - <http://storage-server-2.internal:2283>
--   :symbols-globe-arrow:&ensp;Remote Access:
+- <http://storage-server-2.internal:2283>
 { .no-bullets }
-    - <https://immich.rac3r4life.online>
+- <https://immich.rac3r4life.online>
+{ .no-bullets }
 
 **Credentials**
 

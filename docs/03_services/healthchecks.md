@@ -47,9 +47,9 @@ _Cron Monitoring_
 
 **URL / Access**
 
-- <https://healthchecks.rac3r4life.online>
-{ .no-bullets }
 - <http://debian-vm.internal:8000>
+{ .no-bullets }
+- <https://healthchecks.rac3r4life.online>
 { .no-bullets }
 
 **Credentials**

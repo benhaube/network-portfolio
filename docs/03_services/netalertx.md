@@ -46,7 +46,10 @@ _Centralized Network Visibility_
 
 **URL / Access**
 
-:    <http://storage-server.internal:20211>
+- <http://storage-server.internal:20211>
+{ .no-bullets }
+- <http://storage-server-2.internal:20211>
+{ .no-bullets }
 
 **Credentials** 
 

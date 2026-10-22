@@ -39,12 +39,10 @@ _Network File System_
 
 **URL / Access**
 
--   :symbols-folder-tree:&ensp;Network Storage:
+- `192.168.50.4:/media/Quick-Storage`
 { .no-bullets }
-    - `192.168.50.4:/media/Quick-Storage`
--   :symbols-folder-git-2:&ensp;Application Data:
+- `192.168.50.4:/media/nvme0n1p1`
 { .no-bullets }
-    - `192.168.50.4:/media/nvme0n1p1`
 
 **Credentials**
 

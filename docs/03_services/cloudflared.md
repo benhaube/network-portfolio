@@ -65,15 +65,19 @@ Debian Server
 
 Pi 4B Server
 
-- <https://it-tools.rac3r4life.online>
-{ .no-bullets }
 - <https://beszel.rac3r4life.online>
+{ .no-bullets }
+- <https://home.rac3r4life.online>
+{ .no-bullets }
+- <https://it-tools.rac3r4life.online>
 { .no-bullets }
 - <https://uptime.rac3r4life.online>
 { .no-bullets }
 
 ZimaOS NAS
 
+- <https://auth.rac3r4life.online>
+{ .no-bullets }
 - <https://gitea.rac3r4life.online>
 { .no-bullets }
 - <https://gotify.rac3r4life.online>

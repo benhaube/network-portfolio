@@ -39,13 +39,12 @@ _A Fancy Monitoring Tool_
 
 **URL / Access**
 
--   :symbols-network:&ensp;Local Access
+- <https://uptime.internal>
 { .no-bullets }
-    - <https://uptime.internal>
-    - <http://pi-server.internal:3001>
--   :symbols-globe-arrow:&ensp;Remote Access
+- <http://pi-server.internal:3001>
 { .no-bullets }
-    - <https://uptime.rac3r4life.online>
+- <https://uptime.rac3r4life.online>
+{ .no-bullets }
 
 **Credentials**
 

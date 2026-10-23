@@ -1,14 +1,19 @@
 #!/bin/bash
 
-# --- Configuration ---
+# ~~~ Configuration ~~~
+
 SOURCE_DIR="$HOME/"
 DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/<client-hostname>/" # (1)!
 MOUNT_POINT="/mnt/storage_server/Quick_Storage"
 EXCLUDE_FILE="$HOME/.bkp-exclude-nas"
 LOG_FILE="$HOME/.var/log/backup_log.log"
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
+# (2)!
+GOTIFY_URL="https://gotify.yourdomain.com/message"
+GOTIFY_TOKEN="gotify-app-token"
 
-# --- Environment Validation ---
+# ~~~ Environment Validation ~~~
+
 # Ensure log rotation is configured to prevent infinite log growth
 LOGROTATE_CONF="/etc/logrotate.d/home-backup"
 if [ ! -f "$LOGROTATE_CONF" ]; then
@@ -16,7 +21,8 @@ if [ ! -f "$LOGROTATE_CONF" ]; then
     echo "[$TIMESTAMP] Logs will grow indefinitely until this is fixed." | tee -a "$LOG_FILE"
 fi
 
-# --- Safety Check: Trigger Automount & Verify ---
+# ~~~ Safety Check: Trigger Automount & Verify ~~~
+
 # Access the mount point to wake up systemd automount
 ls "$MOUNT_POINT" > /dev/null 2>&1
 
@@ -32,11 +38,8 @@ mkdir -p "$DEST_DIR"
 # Print status to terminal & log
 echo "[$TIMESTAMP] Starting home directory backup..." | tee -a "$LOG_FILE"
 
-# --- The Rsync Command ---
-# -av: Archive mode + increase verbosity
-# --progress: Show progress during transfer
-# --timeout=60: Sets IO timeout to 60s
-# --delete: Remove files on NAS that were deleted from Source
+# ~~~ The Rsync Command ~~~
+
 rsync -av --progress --timeout=60 --delete --exclude-from="$EXCLUDE_FILE" "$SOURCE_DIR" "$DEST_DIR" >> "$LOG_FILE" 2>&1
 
 # Capture the exit code immediately
@@ -53,13 +56,9 @@ else
 fi
 
 # Print to terminal and append to log
-echo "$MSG"
-echo "$MSG" >> "$LOG_FILE"
+echo "$MSG" | tee -a "$LOG_FILE"
 
-# --- Gotify Notification ---
-# (2)!
-GOTIFY_URL="https://gotify.yourdomain.com/message"
-GOTIFY_TOKEN="YourGotifyToken"
+# ~~~ Gotify Notification ~~~
 
 # Adjust the push notification title and priority based on the exit code
 if [ $EXIT_CODE -eq 0 ]; then
@@ -71,15 +70,12 @@ else
 fi
 
 # Send the push notification
-# Uses the same '$MSG' variable defined for the system log
-# -sS: Silent mode but still shows errors if it fails
-# -F: Formats the data as multipart/form-data for Gotify
 curl -sS -X POST "$GOTIFY_URL" \
     -H "X-Gotify-Key: $GOTIFY_TOKEN" \
     -F "title=$GOTIFY_TITLE" \
     -F "message=$HOSTNAME: $MSG" \
     -F "extras={\"client::display\": {\"contentType\": \"text/markdown\"}}" \
-    -F "priority=$GOTIFY_PRIORITY" >> "$LOG_FILE" 2>&1
+    -F "priority=$GOTIFY_PRIORITY" > /dev/null
 
 # Log that the notification was attempted
-echo "[$TIMESTAMP] Gotify notification triggered." >> "$LOG_FILE"
+echo "[$TIMESTAMP] Gotify notification triggered." | tee -a "$LOG_FILE"

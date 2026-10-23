@@ -218,13 +218,69 @@ To solve this problem we need to create a Macvlan shim. Because Macvtap operatin
     sudo systemctl enable macvlan-shim.service
     ```
 
+### :symbols-hard-drive-upload:&ensp;System Config Backup
+
+!!! note inline end
+
+    The operating system itself is not backed up. ZimaOS is reinstalled from IceWhale's installer, then this backup restores the configuration.
+
+The ZimaOS system configuration files are backed up to the `Quick-Storage` RAID volume using a dedicated Bash script _(`system-bkp.sh`)_, then backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link } cloud storage with the rest of the network client backups using the `b2-backup-bkp.sh` script. This maintains the **3-2-1 Backup Strategy** by keeping one backed up copy locally and another in the cloud. The backup includes the configuration files in `/etc` _(network, users, hostname, SSH keys, Systemd services, etc.)_, the ZimaOS state _(apps, users, app store, file service)_, and the installed ZimaOS modules.
+
+#### Backup Script
+
+1. Place the backup script, `system-bkp.sh`, in the `/opt/scripts` directory.
+
+    ``` bash { .mono-title title="/opt/scripts/system-bkp.sh" hl_lines="14 15" }
+    --8<-- "includes/code/bash/zimaos-system-bkp.sh"
+    ```
+
+2. Populate the Gotify application token variable in the backup script.
+3. Set restricted permissions. Allow _ONLY_ the `root` user to have read, write, and execute permissions.
+
+    ``` bash
+    sudo chmod 700 /opt/scripts/system-bkp.sh
+    ```
+
+#### Systemd Automation
+
+1. Create the Systemd timer unit file in the directory, `/etc/systemd/system`, and paste in the following code. Name the file to match the script's filename. _(e.g., `system-bkp.timer`)_
+
+    ``` systemd { .mono-title title="/etc/systemd/system/system-bkp.timer" }
+    --8<-- "includes/code/systemd/system-bkp.timer"
+    ```
+
+2. Create the Systemd service unit file in the directory, `/etc/systemd/system`, and paste in the following code. Name the file to match the script's filename. _(e.g., `system-bkp.service`)_
+
+    ``` systemd { .mono-title title="/etc/systemd/system/system-bkp.timer" }
+    --8<-- "includes/code/systemd/system-bkp.service"
+    ```
+
+3. Tell Systemd to parse the changes.
+
+    ``` bash
+    sudo systemctl daemon-reload
+    ```
+
+4. Test the new service, and check the log to make sure it completed successfully.
+
+    ``` bash
+    sudo systemctl start system-bkp.service
+    sudo journalctl -u system-bkp.service -e
+    ```
+
+5. After confirming the service runs successfully, enable the timer so it survives a reboot and begins its schedule.
+
+    ``` bash 
+    sudo systemctl enable --now system-bkp.timer
+    ```
+
 ### :symbols-cloud-upload:&ensp;Backblaze B2 Cloud Backup
 
-The ZimaOS NAS is the main backup server for clients and other servers on the local network. To maintain the **3-2-1 Backup Strategy** the important data stored on the NAS is backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage) cloud storage. To automate the backup process we utilize Bash scripts that use the `rclone` command and Systemd unit files to trigger the scripts on a set schedule. Reference the [Backblaze docs](https://www.backblaze.com/docs/cloud-storage-integrate-rclone-with-backblaze-b2) for help with `rclone` integration.
+The ZimaOS NAS is the main backup server for clients and other servers on the local network. To maintain the **3-2-1 Backup Strategy** the important data stored on the NAS is backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link } cloud storage. To automate the backup process we utilize Bash scripts that use the `rclone` command and Systemd unit files to trigger the scripts on a set schedule. Reference the [Backblaze docs](https://www.backblaze.com/docs/cloud-storage-integrate-rclone-with-backblaze-b2){ external-link } for help with `rclone` integration.
 
 [Backup Scripts&ensp;:brands-github:](https://github.com/benhaube/zimaos-backup-scripts){ .md-button }
 
-#### Activate Scripts
+#### Backup Scripts
 
 1. Put the backup scripts `b2-appdata-bkp.sh`, `b2-backup-bkp.sh`, and `b2-immich-bkp.sh`  into the `/opt/scripts` directory.
 
@@ -240,7 +296,7 @@ The ZimaOS NAS is the main backup server for clients and other servers on the lo
     sudo chmod 700 /opt/scripts/b2-*-bkp.sh
     ```
 
-#### Automate with Systemd
+#### Systemd Automation { #automate-with-systemd }
 
 1. Create the Systemd timer unit files in the directory, `/etc/systemd/system`, and paste in the following code. Name the files to match the script's filename. _(e.g., `b2-appdata-bkp.timer`)_
 
@@ -279,8 +335,8 @@ The ZimaOS NAS is the main backup server for clients and other servers on the lo
 4. Test the new services, and check the logs to make sure they completed successfully.
 
     ``` bash
-    sudo systemctl start b2-<script>-bkp.service
-    sudo journalctl -u b2-<script>-bkp.service -e
+    sudo systemctl start b2-{script}-bkp.service
+    sudo journalctl -u b2-{script}-bkp.service -e
     ```
 
 5. After confirming the services run successfully, enable the timers so they survive a reboot and begin their schedule.

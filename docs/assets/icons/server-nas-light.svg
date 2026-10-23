@@ -2,7 +2,7 @@
   <path d="m9 13v-8" fill="#212121" stroke="#212121"/>
   <path d="m13 13v-8" fill="#212121" stroke="#212121"/>
   <path d="m17 13v-8" fill="#212121" stroke="#212121"/>
-  <path d="m5 9h.01" stroke="#b58900"/>
-  <path d="m5 13h.01" stroke="#b58900"/>
-  <rect x="1" y="1" width="20" height="16" rx="2" stroke="#b58900"/>
+  <path d="m5 9h.01" stroke="#FFAA00"/>
+  <path d="m5 13h.01" stroke="#FFAA00"/>
+  <rect x="1" y="1" width="20" height="16" rx="2" stroke="#FFAA00"/>
 </svg>

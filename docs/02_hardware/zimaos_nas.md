@@ -62,7 +62,7 @@ _Rack-Mount ZimaBoard 2_
 
 | CPU                                 | Cores / Threads | CPU Freq. | RAM                       | GPU                              | GPU Freq. | VRAM     |
 | :---------------------------------- | :-------------- | :-------- | :------------------------ | :------------------------------- | :-------- | :------- |
-| :brands-intel:&nbsp;N150 _(x86-64)_ | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 _(6400 MHz)_ | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | _Shared_ |
+| :brands-intel:&nbsp;N150 _(x86-64)_ | 4C / 4T         | 3.6 GHz   | 16 GB LPDDR5 _(4800 MHz)_ | :brands-intel:&nbsp;UHD Graphics | 1.0 GHz   | _Shared_ |
 
 ## :symbols-network:&ensp;Network Configuration
 

@@ -187,7 +187,7 @@ The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](z
 
 1.  Place `home-bkp-nas.sh` in the `~/.local/bin` directory.
 
-    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="1" hl_lines="5 40 61 62" }
+    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="1" hl_lines="6 12 13 43" }
     --8<-- "home-bkp-nas.sh"
     ```
 

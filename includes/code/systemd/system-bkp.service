@@ -1,0 +1,12 @@
+[Unit]
+Description=Weekly AppData backup to Backblaze B2
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStartPre=-curl -sS -m 10 --retry 5 https://healthchecks.rac3r4life.online/ping/{UUID}/system-config-bakup/start
+ExecStart=/opt/scripts/system-bkp.sh
+ExecStopPost=curl -sS -m 10 --retry 5 https://healthchecks.rac3r4life.online/ping/{UUID}/system-config-bakup/${EXIT_STATUS}
+
+[Install]
+WantedBy=multi-user.target

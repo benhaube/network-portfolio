@@ -1,0 +1,10 @@
+[Unit]
+Description=Run ZimaOS config backup on Sundays at 6AM
+
+[Timer]
+OnCalendar=Sun 06:00:00
+Persistent=true
+RandomizedDelaySec=5m
+
+[Install]
+WantedBy=timers.target

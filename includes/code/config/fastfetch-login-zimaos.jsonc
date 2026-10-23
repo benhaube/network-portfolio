@@ -4,7 +4,7 @@
     "type": "file",
     "source": "/opt/share/fastfetch/logos/zimaos.txt",
     "color": {
-        "1": "#b58900",
+        "1": "#FFAA00",
         "2": "white"
     }
   },  
@@ -26,8 +26,8 @@
     },
     "separator": " ↪",  // (5)!
     "color": {
-      "separator": "#b58900",
-      "title": "#b58900",
+      "separator": "#FFAA00",
+      "title": "#FFAA00",
       "keys": "white"
     }
   },
@@ -37,7 +37,7 @@
       "key": " ",
       "type": "datetime",
       "format": "{month-name-short} {day-pretty}, {year}: {hour-pretty}:{minute-pretty}:{second-pretty} {timezone-name}",
-      "outputColor": "#b58900"
+      "outputColor": "#FFAA00"
     },
     { 
       "key": " ",

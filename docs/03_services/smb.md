@@ -14,7 +14,8 @@ hide:
   - toc
 ---
 
-![Lucide 'folder-tree' icon](../assets/icons/folder-tree.svg){ width=200 }
+![Lucide 'folder-tree' icon](../assets/icons/folder-tree-light.svg#only-light){ width=200 }
+![Lucide 'folder-tree' icon](../assets/icons/folder-tree-dark.svg#only-dark){ width=200 }
 
 # SMB
 

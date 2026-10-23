@@ -17,9 +17,8 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
-![Lucide 'server' icon](../assets/icons/server.svg){ width=200 }
+![Lucide 'server' icon](../assets/icons/server-light.svg#only-light){ width=200 }
+![Lucide 'server' icon](../assets/icons/server-dark.svg#only-dark){ width=200 }
 
 # Pi 4B Server
 

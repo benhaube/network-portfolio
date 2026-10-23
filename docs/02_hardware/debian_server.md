@@ -16,9 +16,8 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
-![Lucide 'server' icon](../assets/icons/layers.svg){ width=200 }
+![Lucide 'layers' icon](../assets/icons/layers-light.svg#only-light){ width=200 }
+![Lucide 'layers' icon](../assets/icons/layers-dark.svg#only-dark){ width=200 }
 
 # Debian Server
 

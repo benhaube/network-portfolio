@@ -83,7 +83,7 @@ hide:
 : A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
 
 [:symbols-server-nas:&ensp;ZimaOS NAS](02_hardware/zimaos_nas.md) 
-: The primary rack-mounted NAS server & VM host for the LAN. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu){ external-link } as the "beating heart," it is the most powerful server on the LAN. With an _x86-64_ Intel N150 CPU and 16 GB of LPDDR5 _(6400 MHz)_ RAM. Located in the 10-inch server rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
+: The primary rack-mounted NAS server & VM host for the LAN. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu){ external-link } as the "beating heart," it is the most powerful server on the LAN. With an _x86-64_ Intel N150 CPU and 16 GB of LPDDR5 _(4800 MHz)_ RAM. Located in the 10-inch server rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
 
 ### Key Clients
 

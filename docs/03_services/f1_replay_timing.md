@@ -80,3 +80,11 @@ _All of the Data_
 ``` properties { .mono-title title="../AppData/dockge/stacks/f1-replay-timing/.env" linenums="1" }
 --8<-- "f1-replay-timing.env"
 ```
+
+1.  This is just an example. To generate a secret key, use the following command:
+
+    ``` bash
+    openssl rand -hex 32
+    ```
+
+2.  An F1TV "Access" or "Pro" account is required to download timing data. 

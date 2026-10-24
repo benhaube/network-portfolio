@@ -2,7 +2,7 @@ services:
   f1timing:
     image: ghcr.io/adn8naiagent/f1replaytiming:latest
     ports:
-      - "${PORT:-8000}:8000"
+      - "${PORT}:8000"
     volumes:
       - f1data:/data
       - f1cache:/data/fastf1-cache    

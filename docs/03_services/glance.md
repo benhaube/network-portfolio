@@ -49,8 +49,10 @@ _Server Dashboard_
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+- [:services-authentik:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance Admin"
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance User (bhaube)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Glance User (rpereira)"

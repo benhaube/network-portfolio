@@ -34,6 +34,7 @@ services:
       - aqi_token
       - nasa_api_key
       - vault_pw
+      - oidc_client_secret
   glance-github-graph:
     image: haumea/glance-github-graph:latest
     ports:
@@ -79,3 +80,5 @@ secrets:
     file: ./secrets/nasa_api_key.txt
   vault_pw:
     file: ./secrets/vault_pw.txt
+  oidc_client_secret:
+    file: ./secrets/oidc_client_secret.txt

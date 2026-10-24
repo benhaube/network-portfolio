@@ -34,6 +34,15 @@ auth:
       password: ${secret:bhaube_pw_hash}
     rpereira:
       password: ${secret:rpereira_pw_hash}
+  oidc:
+    issuer-url: https://auth.rac3r4life.online/application/o/glance-dashboard/
+    client-id: client-id
+    client-secret: ${secret:oidc_client_secret}
+    redirect-url: http://pi-server.internal:8580/api/oidc/callback
+    scopes:
+      - openid
+      - profile
+      - email
 
 pages:
   - $include: pages/home.yml

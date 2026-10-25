@@ -2,14 +2,15 @@
 
 # ~~~ Configuration ~~~
 
+HOSTNAME=$(hostname)
 SOURCE_DIR="$HOME/"
-DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/<client-hostname>/" # (1)!
+DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/$HOSTNAME/" # (1)!
 MOUNT_POINT="/mnt/storage_server/Quick_Storage"
 EXCLUDE_FILE="$HOME/.bkp-exclude-nas"
 LOG_FILE="$HOME/.var/log/backup_log.log"
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 # (2)!
-GOTIFY_URL="https://gotify.yourdomain.com/message"
+GOTIFY_URL="https://gotify.rac3r4life.online/message"
 GOTIFY_TOKEN="gotify-app-token"
 
 # ~~~ Environment Validation ~~~

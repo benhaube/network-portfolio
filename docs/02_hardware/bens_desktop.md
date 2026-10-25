@@ -187,7 +187,7 @@ The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](z
     --8<-- "home-bkp-nas.sh"
     ```
 
-    1. Double check that `DEST_DIR` is set to the correct directory for the client. Risk of overwriting another client's data!
+    1. `DEST_DIR` is set automatically using the variable, `HOSTNAME`. 
     2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
 
 2.  Place `.bkp-exclude-nas` in the home _(`~/`)_ directory.

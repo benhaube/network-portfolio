@@ -48,6 +48,8 @@ _Server Monitoring_
 
 **Credentials**
 
+- [:services-authentik:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
+{ .no-bullets }
 - [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
 { .no-bullets }
 - [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }

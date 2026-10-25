@@ -2,7 +2,6 @@
 
 # ~~~ Configuration ~~~
 
-HOSTNAME=$(hostname)
 SOURCE_DIR="$HOME/"
 DEST_DIR="/mnt/storage_server/Quick_Storage/Backup/$HOSTNAME/" # (1)!
 MOUNT_POINT="/mnt/storage_server/Quick_Storage"

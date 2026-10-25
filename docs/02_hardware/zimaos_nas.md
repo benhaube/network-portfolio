@@ -42,7 +42,7 @@ _Rack-Mount ZimaBoard 2_
 
 **OS / Firmware**
 
-:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(v1.7.0)_
+:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(v1.8.0)_
 
 **Credentials**
 

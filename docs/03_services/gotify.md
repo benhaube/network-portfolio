@@ -48,8 +48,10 @@ _Push Notifications_
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+- [:services-authentik:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
+{ .no-bullets }
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Gotify (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Gotify (bhaube)"
 
@@ -97,6 +99,7 @@ _Push Notifications_
 ```
 
 1. Sets your initial `admin` password. Change the `admin` password after first login.
+2. Place the **"Client ID"** and **"Client Secret"** in the `.env` file with the variables `CLIENT_ID` and `CLIENT_SECRET`.
 
 ### :brands-fedora:&ensp;Fedora Linux PCs
 

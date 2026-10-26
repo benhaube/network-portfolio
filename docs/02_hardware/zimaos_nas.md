@@ -365,9 +365,13 @@ The ZimaOS NAS is the main backup server for clients and other servers on the lo
     8 timers listed.
     ```
 
-### :symbols-broom-sparkles:&ensp;Docker Cleanup
+### :symbols-broom-sparkles:&ensp;System Cleanup
 
-Over time the Docker container management system builds up a lot of stale data which can fill up the system drive. This data includes temporary cache, unused containers, dangling volumes, and old or outdated images. To keep the Docker system from accumulating too much unwanted data we have written a script to perform a Docker system cleanup, and the script is automated using Systemd unit files. The `docker-cleanup.sh` script will run weekly on Mondays at 10:00 UTC. Built into the script is a push notification sent through the [Gotify](../03_services/gotify.md) server to report cleanup success or failure as well as how much data was removed.
+Over time the Docker container management system builds up a lot of stale data which can fill up the system drive. This data includes temporary cache, unused containers, dangling volumes, and old or outdated images. To keep the Docker system from accumulating too much unwanted data we have written a script to perform a Docker system cleanup, and a separate script to clean up files in the `/tmp` directory more than 7 days old.
+
+Both scripts are automated using Systemd unit files. The `docker-cleanup.sh` script will run weekly on Mondays at 10:00 UTC, and the `tmp-cleanup.sh` script will run weekly on Sundays at 08:00 UTC. Built into both of the scripts is a push notification sent through the [Gotify](../03_services/gotify.md) server to report cleanup success or failure as well as how much data was removed.
+
+#### Docker Files
 
 1.  Place the `docker-cleanup.sh` Bash script in the `/opt/scripts` directory.
 
@@ -419,6 +423,60 @@ Over time the Docker container management system builds up a lot of stale data w
     ``` bash
     sudo systemctl status docker-cleanup.service
     sudo journalctl -u docker-cleanup.service
+    ```
+
+#### Temp Files
+
+1.  Place the `tmp-cleanup.sh` Bash script in the `/opt/scripts` directory.
+
+    ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" hl_lines="4 5" }
+    --8<-- "includes/code/bash/temp_files_clean.sh"
+    ```
+
+2.  Give restricted read permissions to the script to ensure only the `root` user can read the Gotify token. The script should be executable by all users and groups with read and write permissions for the `root` user only.
+
+    ``` bash
+    sudo chmod 711 /opt/scripts/tmp-cleanup.sh
+
+    # Example
+    -rwx--x--x 1 root root 1089 Oct 10 14:19 tmp-cleanup.sh
+    ```
+
+3.  Create the Systemd service unit file in the `/etc/systemd/system` directory.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/tmp-cleanup.service" }
+    --8<-- "tmp-cleanup.service"
+    ```
+
+4.  Create the Systemd timer unit file in the `/etc/systemd/system` directory.
+
+    ``` systemd { .mono-title title="/etc/systemd/system/tmp-cleanup.timer" }
+    --8<-- "tmp-cleanup.timer"
+    ```
+
+5.  Reload Systemd to load the new unit files.
+
+    ``` bash
+    sudo systemctl daemon-reload
+    ```
+
+6.  Enable the Systemd timer unit.
+
+    ``` bash
+    sudo systemctl enable --now tmp-cleanup.timer
+    ```
+
+7.  Run the Systemd service manually to test the script, and watch for the Gotify notification.
+
+    ``` bash
+    sudo systemctl start tmp-cleanup.service
+    ```
+
+8.  Use either of the following commands to see the logs and check the status of the service.
+
+    ``` bash
+    sudo systemctl status tmp-cleanup.service
+    sudo journalctl -u tmp-cleanup.service
     ```
 
 --8<-- "nerd-fonts.md"

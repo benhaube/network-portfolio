@@ -531,40 +531,34 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
 1.  Create the custom script in the `/opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /opt/scripts/docker_cleanup.sh
+    sudo nano /opt/scripts/docker-cleanup.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/opt/scripts/docker_cleanup.sh" linenums="1" hl_lines="4 5" }
-    --8<-- "docker_cleanup.sh"
+    ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" linenums="1" hl_lines="3 4" }
+    --8<-- "docker-cleanup_zima.sh"
     ```
-
-    1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.
 
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /opt/scripts/docker_cleanup.sh
+    sudo chmod +x /opt/scripts/docker-cleanup.sh
     ```
 
-4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
-
-    ``` bash linenums="1"
-    bash /opt/scripts/docker_cleanup.sh
-    ```
+4.  See the [System Cleanup](../02_hardware/zimaos_nas.md#system-cleanup) documentation for Systemd configuration to automate script execution.
 
 #### Temp Files Cleanup
 
 1.  Create the custom script in the `/opt/scripts` directory:
 
     ``` bash linenums="1"
-    sudo nano /opt/scripts/temp_files_clean.sh
+    sudo nano /opt/scripts/tmp-cleanup.sh
     ```
 
 2.  Paste the following code into the file:
 
-    ``` bash { .mono-title title="/opt/scripts/temp_files_clean.sh" linenums="1" hl_lines="4 5" }
+    ``` bash { .mono-title title="/opt/scripts/tmp-cleanup.sh" linenums="1" hl_lines="4 5" }
     --8<-- "temp_files_clean.sh"
     ```
 
@@ -573,11 +567,7 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
 3.  Set the execute permission:
 
     ``` bash linenums="1"
-    sudo chmod +x /opt/scripts/temp_files_clean.sh
+    sudo chmod +x /opt/scripts/tmp-cleanup.sh
     ```
 
-4.  Open the **Zima Cron** Web-UI and add the cron job to execute the script with the following command:
-
-    ``` bash linenums="1"
-    bash /opt/scripts/temp_files_clean.sh
-    ```
+4.  See the [System Cleanup](../02_hardware/zimaos_nas.md#system-cleanup) documentation for Systemd configuration to automate script execution.

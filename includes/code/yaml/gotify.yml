@@ -10,3 +10,14 @@ services:
     environment:
       - GOTIFY_DEFAULTUSER_PASS=ChangeThisPassword123  # (1)!
       - TZ=America/New_York
+      - GOTIFY_OIDC_ENABLED=true
+      - GOTIFY_OIDC_ISSUER=https://auth.rac3r4life.online/application/o/gotify/
+      - GOTIFY_OIDC_CLIENTID=${CLIENT_ID}  # (2)!
+      - GOTIFY_OIDC_CLIENTSECRET=${CLIENT_SECRET}
+      - GOTIFY_OIDC_REDIRECTURL=https://gotify.rac3r4life.online/auth/oidc/callback
+      - GOTIFY_OIDC_SCOPES=openid,profile,email
+      - GOTIFY_OIDC_IDP_NAME=Authentik
+      - GOTIFY_OIDC_PROMPT=login
+      - GOTIFY_OIDC_AUTO_REDIRECT=false
+      - GOTIFY_OIDC_AUTOREGISTER=false
+      - GOTIFY_OIDC_LINK_BY_USERNAME=true

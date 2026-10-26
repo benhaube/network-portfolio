@@ -103,16 +103,22 @@ _Push Notifications_
 
 ### :brands-fedora:&ensp;Fedora Linux PCs
 
-1.  Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`.
+1.  Enter the Gotify webhook URL and application token in the variables at the top of the script, `home-bkp-nas.sh`.
 
-    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="59" hl_lines="3 4" }
-    --8<-- "home-bkp-nas.sh:59"
+    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="3" hl_lines="10 11" }
+    --8<-- "home-bkp-nas.sh:3:13"
     ```
 
-    1. Placeholder
+    1. `DEST_DIR` is set automatically using the variable, `HOSTNAME`.
     2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
 
-2.  That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup.
+2.  Ensure the Gotify notification code is included at the bottom of the script, `home-bkp-nas.sh`.
+
+    ``` bash { .mono-title title="~/.local/bin/home-bkp-nas.sh" linenums="59" }
+    --8<-- "home-bkp-nas.sh:61"
+    ```
+
+3.  That is all the extra configuration needed. Now, every time the backup script runs a notification will be sent to the Gotify server showing the success or failure of the backup.
 
 ### :services-beszel:&ensp;Beszel
 

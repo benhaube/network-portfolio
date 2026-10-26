@@ -1,0 +1,9 @@
+[Unit]
+Description=Weekly temp files cleanup script
+
+[Service]
+Type=oneshot
+ExecStart=/opt/scripts/tmp-cleanup.sh
+
+[Install]
+WantedBy=multi-user.target

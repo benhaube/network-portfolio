@@ -2,7 +2,7 @@
 icon: services/homebox
 title: Homebox
 subtitle: Inventory Management
-description: An inventory and organization system built for the home user.
+description: Homebox is the inventory and organization system built for the home user! With a focus on simplicity and ease of use, Homebox is the perfect solution for your home inventory, organization, and management needs.
 tags:
   - Active
   - Container
@@ -31,7 +31,7 @@ _Inventory Management_
 
 **Description**
 
-:    An inventory and organization system built for the home user.
+:    Homebox is the inventory and organization system built for the home user! With a focus on simplicity and ease of use, Homebox is the perfect solution for your home inventory, organization, and management needs.
 
 **Port(s)** 
 

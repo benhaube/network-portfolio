@@ -175,7 +175,7 @@ hide:
 : Open-source home automation that puts local control and privacy first.
 
 [:services-homebox:&ensp;Homebox](03_services/homebox.md) 
-: An inventory and organization system built for the home user.
+: Homebox is the inventory and organization system built for the home user! With a focus on simplicity and ease of use, Homebox is the perfect solution for your home inventory, organization, and management needs.
 
 [:services-immich:&ensp;Immich](03_services/immich.md)
 : High performance self-hosted photo and video management solution.

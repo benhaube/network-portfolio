@@ -3,10 +3,13 @@
         <img src="./readme-assets/logo.png" alt="Project / Site Logo" width="300" height="300">
     </a>
 </p>
+
 <h1 align="center" color="#4CAE4F">
-    Network Documentation & Portfolio
+  Network Documentation & Portfolio
 </h1>
+
 </p>
+
 <p align="center">
     <a href="https://github.com/benhaube/network-portfolio/blob/main/LICENSE">
         <img alt="Static Badge" src="https://img.shields.io/badge/License-ISC-%234CAE4F?logo=data%3Aimage%2Fsvg%2Bxml%3Bcharset%3Dutf-8%2C%253Csvg%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%2520width%253D%252224%2522%2520height%253D%252224%2522%2520viewBox%253D%25220%25200%252024%252024%2522%2520fill%253D%2522none%2522%2520stroke%253D%2522%25234CAE4F%2522%2520stroke-width%253D%25222%2522%2520stroke-linecap%253D%2522round%2522%2520stroke-linejoin%253D%2522round%2522%2520class%253D%2522lucide%2520lucide-scale-icon%2520lucide-scale%2522%253E%253Cpath%2520d%253D%2522M12%25203v18%2522%252F%253E%253Cpath%2520d%253D%2522m19%25208%25203%25208a5%25205%25200%25200%25201-6%25200zV7%2522%252F%253E%253Cpath%2520d%253D%2522M3%25207h1a17%252017%25200%25200%25200%25208-2%252017%252017%25200%25200%25200%25208%25202h1%2522%252F%253E%253Cpath%2520d%253D%2522m5%25208%25203%25208a5%25205%25200%25200%25201-6%25200zV7%2522%252F%253E%253Cpath%2520d%253D%2522M7%252021h10%2522%252F%253E%253C%252Fsvg%253E&logoColor=%230A84FF">
@@ -21,17 +24,16 @@
         <img alt="Static Badge" src="https://img.shields.io/badge/Google_Fonts-Icons-%234285F4?logo=googlefonts&logoColor=%234285F4&link=https%3A%2F%2Ffonts.google.com%2Ficons">
     </a>
 </p>
-<p align="center">
-    <a href="#clone-the-repo">Clone the Repository</a>
-    ·
-    <a href="#using-python-the-preferred-method">Build Using Python</a>
-    ·
-    <a href="#using-docker">Build Using Docker</a>
-    ·
-    <a href="#zensical-testing">Zensical Testing</a>
-</p>
 
-## About
+<p align="center">
+  <a href="#clone-the-repo">Clone the Repository</a>
+  ·
+  <a href="#using-python-the-preferred-method">Build Using Python</a>
+  ·
+  <a href="#using-docker">Build Using Docker</a>
+  ·
+  <a href="#zensical-testing">Zensical Testing</a>
+</p>
 
 This is my personal, self-hosted professional portfolio and network documentation website built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel.
 
@@ -45,7 +47,7 @@ You can build your own network documentation website with the configuration, dir
 
 #### HTTPS
 
-```bash
+``` bash
 git clone https://github.com/benhaube/network-portfolio.git
 
 cd network-portfolio/
@@ -53,24 +55,24 @@ cd network-portfolio/
 
 #### SSH
 
-```bash
+``` bash
 git clone git@github.com:benhaube/network-portfolio.git
 
 cd network-portfolio/
 ```
 
-## Using Python *(The Preferred Method)*
+## Using Python _(The Preferred Method)_
 
 ### Setup Python Virtual Environment
 
-```bash
+``` bash
 python -m venv .venv/
 source .venv/bin/activate
 ```
 
 ### Install Material for MkDocs
 
-```bash
+``` bash
 pip install mkdocs-material
 ```
 
@@ -83,7 +85,7 @@ pip install mkdocs-material
 | [<code>mkdocs-open-in-new-tab</code>](https://github.com/JakubAndrysek/mkdocs-open-in-new-tab) | Open external links in a new tab.              |
 | [<code>mkdocs-panzoom-plugin</code>](https://github.com/PLAYG0N/mkdocs-panzoom)                | Enable pan & zoom on large Mermaid flowcharts. |
 
-```bash
+``` bash
 pip install mkdocs-awesome-nav mkdocs-glightbox mkdocs-panzoom-plugin mkdocs-open-in-new-tab
 ```
 
@@ -93,15 +95,15 @@ The built-in [Optimize](https://squidfunk.github.io/mkdocs-material/plugins/opti
 
 ##### Python
 
-```bash
+``` bash
 pip install "mkdocs-material[imaging]"
 ```
 
 > [!note]
 > This will install compatible versions of the following python packages:
 > 
-> + [Pillow](https://pillow.readthedocs.io/)
-> + [CairoSVG](https://cairosvg.org/)
+> - [Pillow](https://pillow.readthedocs.io/)
+> - [CairoSVG](https://cairosvg.org/)
 > 
 > The Docker image includes the dependencies required for the Optimize plugin.
 
@@ -109,7 +111,7 @@ pip install "mkdocs-material[imaging]"
 
 [Cairo](https://www.cairographics.org/) is a graphics library and dependency of Pillow, which Material for MkDocs makes use of for generating social cards and performing image optimization.
 
-```bash
+``` bash
 # Fedora / RHEL
 sudo dnf install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
 
@@ -124,7 +126,7 @@ sudo apt-get install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpn
 
 [pngquant](https://pngquant.org/) is an excellent library for lossy PNG compression, and a direct dependency of the built-in optimize plugin.
 
-```bash
+``` bash
 # Fedora / RHEL
 sudo dnf install pngquant
 
@@ -139,7 +141,7 @@ sudo apt-get install pngquant
 
 Run the following commands to upgrade Material for MkDocs and the required plugins to the latest version.
 
-```bash
+``` bash
 # Material for MkDocs
 pip install --upgrade --force-reinstall mkdocs-material "mkdocs-material[imaging]"
 
@@ -151,7 +153,7 @@ pip install --upgrade --force-reinstall mkdocs-awesome-nav mkdocs-glightbox mkdo
 
 Run the following command to check the currently installed version of Material for MkDocs.
 
-```bash
+``` bash
 pip show mkdocs-material
 ```
 
@@ -159,7 +161,7 @@ pip show mkdocs-material
 
 #### Serve Site for Testing
 
-```bash
+``` bash
 # Serve on the default port -- localhost:8000
 mkdocs serve
 
@@ -169,29 +171,29 @@ mkdocs serve -a localhost:<port>
 
 #### Build Site for Deployment
 
-```bash
+``` bash
 mkdocs build
 ```
 
 > [!tip]
-> **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
+> **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server.
 
 ## Using Docker
 
 ### Build the Custom Image
 
 > [!note] 
-> This project uses plugins for MkDocs that are not included with the standard Docker image. Therefore it is a requirement to pull the standard image and build a new, custom image with those plugins added. The `Dockerfile` contains the 'instructions' for **Docker / Podman** to build the custom image. The two `compose-*.yml` files already have the `localhost/mkdocs-custom` image defined. 
+> This project uses plugins for MkDocs that are not included with the standard Docker image. Therefore it is a requirement to pull the standard image and build a new, custom image with those plugins added. The `Dockerfile` contains the 'instructions' for **Docker / Podman** to build the custom image. The two `compose-*.yml` files already have the `localhost/mkdocs-custom` image defined.
 
 #### Pull Material for MkDocs
 
-```bash
+``` bash
 podman pull docker.io/squidfunk/mkdocs-material:latest
 ```
 
 #### Build Image w/ Extra Plugins
 
-```bash
+``` bash
 podman build -t mkdocs-custom .
 ```
 
@@ -202,37 +204,37 @@ podman build -t mkdocs-custom .
 
 #### Serve Site for Testing
 
-```bash
+``` bash
 podman compose -f compose-serve.yml up -d  # You can optionally remove the detach flag `-d` if you want to see the log output for debugging. 
 ```
 
 #### Build Site for Deployment
 
-```bash
+``` bash
 podman compose -f compose-build.yml up -d
 ```
 
 > [!tip]
-> **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server. 
+> **Material for MkDocs** will create a new directory in the root of the repository named 'site' and build the site in that directory. Move the resulting `site/*` directory and its contents onto the Web server of your choice. Do **NOT** move any other source files or directories to the Web server.
 
-#### Alternative `podman run` Commands *(Not Recommended)*
+#### Alternative `podman run` Commands _(Not Recommended)_
 
-Podman / Docker compose is the preferred method for starting and stopping the MkDocs container, but you can also use the following `podman run` commands. 
+Podman / Docker compose is the preferred method for starting and stopping the MkDocs container, but you can also use the following `podman run` commands.
 
-```bash
+``` bash
 podman run --rm -it -p 8000:8000 -v ${PWD}:/docs:Z mkdocs-custom serve -a 0.0.0.0:8000 --livereload
 ```
 
-```bash
+``` bash
 podman run --rm -it -v ${PWD}:/docs:Z mkdocs-custom build
 ```
 
 > [!note]
-> The `:Z` or `:z` in the volume definition *(also in the compose.yml files)* is critical for **Fedora / Podman** based workstations that use SE-Linux. The container will not run properly without it. It allows the container to set the appropriate SE-Linux context on each file in the repo directory. 
+> The `:Z` or `:z` in the volume definition _(also in the compose.yml files)_ is critical for **Fedora / Podman** based workstations that use SE-Linux. The container will not run properly without it. It allows the container to set the appropriate SE-Linux context on each file in the repo directory.
 
 ## Zensical Testing
 
-The `zensical-testing` branch exists to experiment with the new [Zensical](https://zensical.org/) static website generator. Eventually, this project will need to migrate to Zensical because Material for MkDocs has entered a maintenance-only development stage, and will eventually be deprecated. This is due to breaking changes made by the MkDocs team with MkDocs 2.0... Once Material for MkDocs is deprecated it will continue to function, but it will not receive updates for security vulnerabilities. 
+The `zensical-testing` branch exists to experiment with the new [Zensical](https://zensical.org/) static website generator. Eventually, this project will need to migrate to Zensical because Material for MkDocs has entered a maintenance-only development stage, and will eventually be deprecated. This is due to breaking changes made by the MkDocs team with MkDocs 2.0... Once Material for MkDocs is deprecated it will continue to function, but it will not receive updates for security vulnerabilities.
 
 Fortunately, Zenzical is the successor to Material for MkDocs developed from scratch by the same team. Unfortunately, Zensical is still pretty early in its development roadmap, and it is lacking features and extensions I rely on for this project. Once Zenzical develops enough to meet the requirements for this project I will migrate. Until then, this branch exists to build the `zensical.toml` configuration file, and to test the site as Zensical develops.
 
@@ -242,17 +244,17 @@ Fortunately, Zenzical is the successor to Material for MkDocs developed from scr
 
 Open up a terminal window and install Zensical by first setting up a virtual environment and then using `pip` to install the Zensical package into it:
 
-```bash
+``` bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install zensical
 ```
- 
+
 #### Install with UV
 
 To install Zensical with `uv` and add it to your development dependencies in your `pyproject.toml`, use:
 
-```bash
+``` bash
 uv init
 uv add --dev zensical
 uv run zensical
@@ -262,31 +264,31 @@ uv run zensical
 
 #### Serve Site for Testing
 
-```bash
+``` bash
 zensical serve
 ```
 
 #### Build Site for Deployment
 
-```bash
+``` bash
 zensical build
 ```
 
 ## Custom Icons for Panzoom Plugin
 
-I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG0N/mkdocs-panzoom) plugin with [Lucide](https://lucide.dev/) icons to match the rest of the site. The icons cannot be applied using CSS due to the way the Panzoom plugin is written. To use the custom icons you need to copy the XML text into the `panzoom_box.py` file located in your virtual environment directory. 
+I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG0N/mkdocs-panzoom) plugin with [Lucide](https://lucide.dev/) icons to match the rest of the site. The icons cannot be applied using CSS due to the way the Panzoom plugin is written. To use the custom icons you need to copy the XML text into the `panzoom_box.py` file located in your virtual environment directory.
 
 #### Apply Customization
 
-1. Locate the `panzoom_box.py` file: 
+1.  Locate the `panzoom_box.py` file:
 
     ```
     .venv/lib/python3.14/site-packages/mkdocs_panzoom_plugin/panzoom_box.py
     ```
 
-2. Open the file and replace the SVG icon XML with the new, custom icons:
+2.  Open the file and replace the SVG icon XML with the new, custom icons:
 
-    ```python
+    ``` python
     info_button = """<button class="panzoom-info panzoom-button">
         <svg class="panzoom-icon" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="m12 1c-6.0633 0-11 4.9367-11 11 0 6.0633 4.9367 11 11 11 6.0633 0 11-4.9367 11-11 0-6.0633-4.9367-11-11-11zm0 2c4.9824 0 9 4.0176 9 9 0 4.9824-4.0176 9-9 9-4.9824 0-9-4.0176-9-9 0-4.9824 4.0176-9 9-9zm-.0625 2.9961c-1.551-.0023421-3.1655.89385-3.791 2.6719a1 1 0 00.61133 1.2754 1 1 0 001.2754-.61133c.40595-1.154 1.3156-1.4645 2.2246-1.3086s1.6639.7513 1.6621 1.9746a1.0001 1.0001 0 000 .0019531c0 .5-.4327 1.0033-1.0547 1.418-.62199.41466-1.2617.63281-1.2617.63281a1 1 0 00-.63281 1.2656 1 1 0 001.2656.63281s.86027-.28185 1.7383-.86719c.8776-.58507 1.9443-1.5812 1.9453-3.0801v-.001953c.002189-2.153-1.5977-3.6511-3.3242-3.9473-.21588-.037029-.43664-.056306-.6582-.056641zm.0625 10.004a1 1 0 00-1 1 1 1 0 001 1h.009766a1 1 0 001-1 1 1 0 00-1-1h-.009766z"/>
@@ -312,7 +314,7 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
     </button>"""
     ```
 
-3. After saving and closing the file you can now use the `mkdocs serve` and `mkdocs build` commands as usual, and the new navigation button icons shown on Mermaid diagrams using the Panzoom plugin will have the new, matching Lucide icons. 
+3.  After saving and closing the file you can now use the `mkdocs serve` and `mkdocs build` commands as usual, and the new navigation button icons shown on Mermaid diagrams using the Panzoom plugin will have the new, matching Lucide icons.
 
     **Before:**
 
@@ -323,7 +325,7 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
     ![Panzoom button icons after modification](readme-assets/panzoom-button-after.png)&emsp;![Panzoom button icons after modification - maximized](readme-assets/panzoom-button-after-max.png)
 
 > [!note]
-> The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with `class="panzoom-icon"`. 
+> The code above contains the custom SVG icon XML, but the files are also located in this repo in the `custom_panzoom_icons/` directory. To make the [Lucide](https://lucide.dev/) icons compatible with the Panzoom plugin I have converted the stroke to paths with standard fill, I removed all fill instructions, and replaced the Lucide class definitions with `class="panzoom-icon"`.
 > 
 > After upgrading the `mkdocs-panzoom-plugin` package you may need to re-apply this modification to the `panzoom_box.py` file. Depending on the changes made by the upgrade, the file may be overwritten.
 
@@ -343,13 +345,13 @@ I have replaced the button icons used by the [Panzooom](https://github.com/PLAYG
 
 Install Zensical Studio in VSCode and open your **Zensical** or **MkDocs** project. Zensical Studio automatically detects `zensical.toml` or `mkdocs.yml` and activates Python Markdown support for your documentation files.
 
-1. Open the command palette _(Ctrl + Shift + P)_ and paste the following command:
+1.  Open the command palette _(Ctrl + Shift + P)_ and paste the following command:
 
     ```
     ext install zensical.zensical-studio
     ```
 
-2. Confirm the extension is active and the Python Markdown language is active when you open a Markdown file. You can see this in the status bar in the bottom right of the screen. If you do not see a status bar, you can turn it on in **View** → **Appearance** → **Status Bar**.
+2.  Confirm the extension is active and the Python Markdown language is active when you open a Markdown file. You can see this in the status bar in the bottom right of the screen. If you do not see a status bar, you can turn it on in **View** → **Appearance** → **Status Bar**.
 
 > [!tip]
 > You can also install the extension from the Linux command line:
@@ -440,27 +442,27 @@ Install Zensical Studio in VSCode and open your **Zensical** or **MkDocs** proje
 
 **[Google](https://fonts.google.com/)** &mdash; For their `Google Sans` and `Google Sans Code` fonts.
 
-+ The fonts are used with the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/).
+- The fonts are used with the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/).
 
 **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)** &mdash; For their incredible open-source static website generator.
 
-+ Some of the Material for MkDocs source code has been modified and redistributed in this repository with the [MIT](https://github.com/squidfunk/mkdocs-material/blob/master/LICENSE) license.
+- Some of the Material for MkDocs source code has been modified and redistributed in this repository with the [MIT](https://github.com/squidfunk/mkdocs-material/blob/master/LICENSE) license.
 
 **[Lucide](https://lucide.dev/)** &mdash; For their beautiful and modern icon library.
 
-+ Some Lucide icons are used, modified and redistributed in this repository with the [ISC and MIT](https://github.com/lucide-icons/lucide/blob/main/LICENSE) licenses.
+- Some Lucide icons are used, modified and redistributed in this repository with the [ISC and MIT](https://github.com/lucide-icons/lucide/blob/main/LICENSE) licenses.
 
-**[Selfh.st](https://selfh.st/icons/)** &mdash; For their awesome, colorful brand icons. 
+**[Selfh.st](https://selfh.st/icons/)** &mdash; For their awesome, colorful brand icons.
 
-+ Some Selfh.st icons are used, modified and redistributed in this repository with the [Creative Commons Attribution 4.0](https://github.com/selfhst/icons/blob/main/LICENSE?ref=selfh.st) license.
+- Some Selfh.st icons are used, modified and redistributed in this repository with the [Creative Commons Attribution 4.0](https://github.com/selfhst/icons/blob/main/LICENSE?ref=selfh.st) license.
 
 **[Simple Icons](https://simpleicons.org/)** &mdash; For their monochrome brand icons.
 
-+ Some Simple Icons are used, modified and redistributed in this repository with the [CC0 1.0 Universal](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) license.
+- Some Simple Icons are used, modified and redistributed in this repository with the [CC0 1.0 Universal](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md) license.
 
 **[Mermaid.js](https://mermaid.js.org/)** &mdash; For building an amazing tool for rendering beautiful flowcharts.
 
-+ The Mermaid javascript is used with the [MIT](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE) license.
+- The Mermaid javascript is used with the [MIT](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE) license.
 
 **[VSCodium](https://vscodium.com/)** &mdash; For their excellent open-source, MIT-Licensed IDE that lacks Microsoft's spyware / telemetry. I have used it extensively in the development of this website, and daily in all of my projects and network configuration management.
 

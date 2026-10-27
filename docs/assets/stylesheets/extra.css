@@ -87,9 +87,13 @@
 .md-grid {
   max-width: 1355px;
 }
-/* --- Hide icons in Table of Contents --- */
+/* Hide icons in Table of Contents */
 .md-nav--secondary .twemoji {
-    display: none !important;
+  display: none !important;
+}
+/* Don't underline links */
+.md-typeset a {
+  text-decoration: none;
 }
 
 /* ~~~~~~~~~~~ *

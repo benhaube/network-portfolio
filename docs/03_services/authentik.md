@@ -54,8 +54,7 @@ _SSO Identity Provider_
 
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
-    - Local Network&ensp;:symbols-move-right:&ensp;"Authentik Secrets"
-    - Local Network&ensp;:symbols-move-right:&ensp;"Authentik Admin"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Authentik (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Authentik (bhaube)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Authentik (rpereira)"
 -   2FA / MFA

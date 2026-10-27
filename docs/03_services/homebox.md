@@ -43,11 +43,15 @@ _Inventory Management_
 { .no-bullets }
 - <http://storage-server-2.internal:3100>
 { .no-bullets }
+- <https://homebox.rac3r4life.online>
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-authentik:&ensp;Authentik OAuth](https://auth.rac3r4life.online){ external-link }
+{ .no-bullets }
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Homebox"
 
 ## :symbols-package-search:&ensp;Deployment Details
@@ -71,8 +75,8 @@ _Inventory Management_
 
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml { .mono-title title="../AppData/dockge/stacks/homebox/compose.yaml" linenums="1" }
---8<-- "homebox.yml"
+``` yaml { .mono-title title="../AppData/dockge/stacks/homebox/compose.yaml" hl_lines="15 19 20" }
+--8<-- "includes/code/yaml/homebox.yml"
 ```
 
 1.  Please consider allowing analytics to help us improve Homebox _(basic computer information, no personal data)_.

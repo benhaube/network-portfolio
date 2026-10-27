@@ -133,6 +133,6 @@ If this is a fresh Authentik installation, generate a PostgreSQL password and an
 
 ### :symbols-file-type-corner:&ensp;Environment Variables File
 
-``` properties { .mono-title title="../AppData/dockge/stacks/authentik/.env" }
+``` properties { .mono-title title="../AppData/dockge/stacks/authentik/.env" hl_lines="3 9 10 15" }
 --8<-- "includes/code/config/authentik.env"
 ```

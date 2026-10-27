@@ -69,7 +69,7 @@ Pi 4B Server
 
 - <https://beszel.rac3r4life.online>
 { .no-bullets }
-- <https://home.rac3r4life.online>
+- <https://home.rac3r4life.online> _(`CNAME` record only, Exposed with Home Assistant Cloud)_
 { .no-bullets }
 - <https://it-tools.rac3r4life.online>
 { .no-bullets }

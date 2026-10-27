@@ -63,6 +63,25 @@ _SSO Identity Provider_
     - :symbols-clock-key:&ensp;TOTP
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthen
 
+**Applications**
+
+- [:services-beszel:&ensp;Beszel](beszel.md#overview){ data-preview }
+{ .no-bullets }
+- [:services-cloudflare-zero-trust:&ensp;Cloudflare](cloudflared.md#overview){ data-preview }
+{ .no-bullets }
+- [:services-gitea:&ensp;Gitea](gitea.md#overview){ data-preview }
+{ .no-bullets }
+- [:services-glance:&ensp;Glance](glance.md#overview){ data-preview }
+{ .no-bullets }
+- [:services-gotify-notification:&ensp;Gotify](gotify.md#overview){ data-preview }
+{ .no-bullets }
+- [:services-homebox:&ensp;Homebox](homebox.md#overview){ data-preview }
+{ .no-bullets }
+- [:services-immich:&ensp;Immich](immich.md#overview){ data-preview }
+{ .no-bullets }
+- [:services-technitium:&ensp;Technitium](technitium.md#overview){ data-preview }
+{ .no-bullets }
+
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                          | Method                                    | Container Name           | Image                                  | Port(s)       |

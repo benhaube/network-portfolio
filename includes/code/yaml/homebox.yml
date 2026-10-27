@@ -7,11 +7,18 @@ services:
       volumes:
         - /media/nvme0n1p1/AppData/homebox-data:/data/
       environment:
-        - HBOX_LOG_LEVEL=info
-        - HBOX_LOG_FORMAT=text
-        - HBOX_WEB_MAX_UPLOAD_SIZE=10
-        - HBOX_OPTIONS_ALLOW_ANALYTICS=true  # (1)!
-        - HBOX_AUTH_API_KEY_PEPPER=some_random_string  # (2)!
+      - HBOX_LOG_LEVEL=info
+      - HBOX_LOG_FORMAT=text
+      - HBOX_WEB_MAX_UPLOAD_SIZE=10
+      - HBOX_OPTIONS_ALLOW_ANALYTICS=true  # (1)!
+      - HBOX_OPTIONS_ALLOW_REGISTRATION=false
+      - HBOX_AUTH_API_KEY_PEPPER=${PEPPER}  # (2)!
+      - HBOX_OIDC_ENABLED=true
+      - HBOX_OIDC_BUTTON_TEXT=Sign in with Authentik
+      - HBOX_OIDC_ISSUER_URL=https://auth.rac3r4life.online/application/o/homebox/
+      - HBOX_OIDC_CLIENT_ID=${CLIENT_ID}
+      - HBOX_OIDC_CLIENT_SECRET=${CLIENT_SECRET}
+      - HBOX_OPTIONS_TRUST_PROXY=true
 
 volumes:
   homebox-data:

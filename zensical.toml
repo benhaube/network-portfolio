@@ -1,38 +1,30 @@
-[project]
+# ---------------- #
+# Project Settings #
+# ---------------- #
 
+[project]
 dev_addr = "localhost:8000"
 docs_dir = "docs"
-
 site_name = "Network Documentation & Portfolio"
 site_description = "My personal, self-hosted network documentation, professional portfolio, and blog website. Designed to showcase my knowledge and capabilities in IT and network security, and to make managing my homelab easier."
 site_author = "Benjamin Haube"
 site_url = "https://portfolio.rac3r4life.online/"
-
+# Disable directory URLs
+use_directory_urls = false
+# Set the copyright message & create cookies settings link
 copyright = """
   Copyright &copy; Benjamin Haube –
   <a href="#__consent">Change cookie settings</a>
 """
-
+# Git Repo URL & Docs directory
 repo_url = "https://github.com/benhaube/network-portfolio"
 repo_name = "benhaube/network-portfolio"
 edit_uri = "edit/main/docs/"
-
+# Watch directories outside of '/docs'
 watch = [
     "includes"
 ]
-
-# Zensical supports both implicit navigation and explicitly defined navigation.
-# If you decide not to define a navigation here then Zensical will simply
-# derive the navigation structure from the directory structure of your
-# "docs_dir". The definition below demonstrates how a navigation structure
-# can be defined using TOML syntax.
-#
-# Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
-
+# Define extra CSS / Javascript files
 extra_css = ["assets/stylesheets/extra.css"]
 extra_javascript = [
     "assets/javascripts/open-in-new-tab.js",
@@ -47,22 +39,21 @@ extra_javascript = [
 ]
 
 [project.extra]
+# Disable "Made with Zensical" message in site footer
 generator = false
 
-# ----------------------------------------------------------------------------
-# Section for configuring theme options
-# ----------------------------------------------------------------------------
+# -------------- #
+# Theme Settings #
+# -------------- #
 
 [project.theme]
-
-# change this to "classic" to use the traditional Material for MkDocs look.
+# Change this to "classic" to use the traditional Material for MkDocs look.
 #variant = "classic"
 custom_dir = "overrides"
 favicon = "assets/favicon.svg"
 language = "en"
-
+# Enable Zensical theme features
 features = [
-
     "announce.dismiss",
     "content.action.edit",
     "content.action.view",
@@ -90,9 +81,10 @@ features = [
     "toc.follow",
     "toc.integrate",
 ]
-
+# Set the site logo
 logo = "assets/favicon.svg"
 
+# Set the theme icons
 [project.theme.icon]
 edit = "lucide/file-pen"
 view = "lucide/file-code-corner"
@@ -133,36 +125,33 @@ toggle.name = "Switch to system preference"
 primary = "green"
 accent = "light blue"
 
+# Create social media links for the site footer
 [[project.extra.social]]
 icon = "brands/gitlab"
 link = "https://gitlab.com/benhaube"
 name = "benhaube — Gitlab"
-
 [[project.extra.social]]
 icon = "brands/github"
 link = "https://github.com/benhaube/network-portfolio"
 name = "benhaube — GitHub"
-
 [[project.extra.social]]
 icon = "brands/linkedin"
 link = "https://www.linkedin.com/in/benjamin-haube/"
 name = "Benjamin Haube — Linkedin"
-
 [[project.extra.social]]
 icon = "brands/printables"
 link = "https://www.printables.com/@rac3r4life"
 name = "@rac3r4life — Printables"
-
 [[project.extra.social]]
 icon = "brands/reddit"
 link = "https://reddit.com/u/benhaube"
 name = "u/benhaube — Reddit"
-
 [[project.extra.social]]
 icon = "brands/bluesky"
 link = "https://bsky.app/profile/rac3r4life.me"
 name = "@rac3r4life.me — Bluesky"
 
+# Modify cookie consent form options & message
 [project.extra.consent]
 title = "Cookie Consent"
 description = """
@@ -177,11 +166,13 @@ actions = [
     "manage"
 ]
 
+# Set page status tooltip text
 [project.extra.status]
 new = "Recently added"
 deprecated = "Deprecated"
 inactive = "Inactive"
 
+# Page tag definitions
 [project.extra.tags]
 "Container Host" = "container-host"
 "File Share" = "file-share"
@@ -239,6 +230,7 @@ VLAN = "vlan"
 VPN = "vpn"
 Windows = "windows"
 
+# Page tag icons
 [project.theme.icon.tag]
 3D-printer = "symbols/printer-3d-nozzle"
 active = "lucide/circle-check"
@@ -295,9 +287,9 @@ vpn = "lucide/waypoints"
 web-host = "lucide/globe"
 windows = "brands/microsoft"
 
-# ----------------------------------------------------------------------------
-# Section for configuring Python Markdown extensions.
-# ----------------------------------------------------------------------------
+# ------------------------------------ #
+# Configure Python Markdown extensions #
+# ------------------------------------ #
 
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
@@ -355,9 +347,9 @@ clickable_checkbox = true
 auto = false
 auto_themed = true
 
-# ----------------------------------------------------------------------------
-# Section for configuring supported MkDocs Plugins.
-# ----------------------------------------------------------------------------
+# ---------------------------------- #
+# Configure supported MkDocs Plugins #
+# ---------------------------------- #
 
 [project.plugins.tags]
 [project.plugins.awesome-nav]

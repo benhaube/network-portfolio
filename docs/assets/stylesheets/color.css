@@ -68,7 +68,7 @@
     --node-text: var(--md-code-fg-color);
     --edge-line: var(--md-code-fg-color);
     /* Subgraph & Edge Label */
-    --subgraph-bg: var(--md-default-bg-color--lighter);
+    --subgraph-bg: var(--md-code-bg-color--lighter);
     --subgraph-border: var(--md-default-fg-color--lightest);
     --edge-bg: var(--md-default-bg-color); 
     --edge-text: var(--md-code-fg-color);
@@ -108,7 +108,7 @@
     --node-text: var(--md-code-fg-color);
     --edge-line: var(--md-code-fg-color);
     /* Subgraph & Edge Label */
-    --subgraph-bg: var(--md-default-bg-color--lighter);
+    --subgraph-bg: var(--md-code-bg-color--lighter);
     --subgraph-border: var(--md-default-fg-color--lightest);
     --edge-bg: var(--md-default-bg-color);
     --edge-text: var(--md-code-fg-color);

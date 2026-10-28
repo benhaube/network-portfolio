@@ -166,7 +166,7 @@ _Server Dashboard_
 
         [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

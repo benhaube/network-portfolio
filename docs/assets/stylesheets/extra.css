@@ -3,11 +3,11 @@
  * ~~~~~~~~~~~~~~~~ */
 
 @import url(admonition.css);
-@import url(button.css);
+/*@import url(button.css);*/
 @import url(code-block.css);
 @import url(color.css);
 @import url(page-status.css);
-@import url(search.css);
+/*@import url(search.css);*/
 @import url(typeset.css);
 
 /* ~~~~~~~~~~~~~~~~~~~~~ *
@@ -87,13 +87,21 @@
 .md-grid {
   max-width: 1355px;
 }
+/* Hide icons in Table of Contents */
+.md-nav--secondary .twemoji {
+  display: none !important;
+}
+/* Don't underline links */
+.md-typeset a {
+  text-decoration: none;
+}
 
 /* ~~~~~~~~~~~ *
  * Page Header *
  * ~~~~~~~~~~~ */   
 
 /* Replicate Zensical header with translucency and blur */
-.md-header {
+/*.md-header {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
 	background-color: var(--md-default-bg-color--light);
@@ -106,12 +114,12 @@
 	z-index: 4;
 }
 /* Replicate the box-shadow from the Zensical header */
-.md-header--shadow {
+/*.md-header--shadow {
   box-shadow: 0 .05rem 0 var(--md-default-fg-color--lightest);
   transition: transform .25s cubic-bezier(.1,.7,.1,1)
 }
 /* Remove background color from navigation tabs, add box-shadow, and change the text color */
-.md-tabs {
+/*.md-tabs {
     box-shadow: 0 -.05rem 0 inset var(--md-default-fg-color--lightest);
     background-color: transparent;
     color: var(--md-default-fg-color);
@@ -122,7 +130,7 @@
     z-index: 3;
 }
 /* Add a bottom border to the active navigation tab */
-.md-tabs__item--active {
+/*.md-tabs__item--active {
   border-bottom: .05rem solid var(--md-default-fg-color);
   color: var(--md-default-fg-color);
   font-weight: 500;
@@ -133,7 +141,7 @@
   border-bottom:.05rem solid #0000
 }
 /* Adjust site title text spacing */
-.md-header__title {
+/*.md-header__title {
   flex-grow: 1;
   font-size: .9rem;
   height: 2.4rem;
@@ -153,7 +161,7 @@
  * ~~~~~~~~~~~ */   
 
 /* Footer background & border */
-.md-footer {
+/*.md-footer {
   -webkit-backdrop-filter: blur(.4rem);
 	backdrop-filter: blur(.4rem);
   background-color: var(--md-default-bg-color);
@@ -164,14 +172,14 @@
   background-color: var(--md-default-fg-color--lightest)
 }
 /* Copyright text color */
-.md-copyright {
+/*.md-copyright {
   color: var(--md-default-fg-color--light);
 }
 .md-copyright__highlight {
   color: var(--md-default-fg-color);
 }
 /* Footer link color */ 
-html .md-footer-meta.md-typeset a {
+/*html .md-footer-meta.md-typeset a {
   color: var(--md-default-fg-color);
 }
 html .md-footer-meta.md-typeset a:focus,
@@ -179,7 +187,7 @@ html .md-footer-meta.md-typeset a:hover {
   color:var(--md-accent-fg-color)
 }
 /* Customize dialog popup */
-.md-dialog--active {
+/*.md-dialog--active {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
@@ -219,7 +227,7 @@ html .md-footer-meta.md-typeset a:hover {
  * ~~~~~~~~~~~~~~~ */
 
 /* Customize title card */
-.md-nav--primary .md-nav__title[for="__drawer"] {
+/*.md-nav--primary .md-nav__title[for="__drawer"] {
 	background-color: var(--md-accent-fg-color--transparent);
 	color: #FFF;
 }
@@ -230,7 +238,7 @@ html .md-footer-meta.md-typeset a:hover {
   }
 }
 /* Customize repo card */
-@media screen and (max-width: 59.9844em) {
+/*@media screen and (max-width: 59.9844em) {
   .md-nav__source {
     background-color: var(--md-accent-fg-color--transparent);
     color: var(--md-default-fg-color--light);
@@ -239,11 +247,11 @@ html .md-footer-meta.md-typeset a:hover {
   }
 }
 /* Inactive page icon opacity */
-.md-nav__link svg {
+/*.md-nav__link svg {
   opacity: .5;
 }
 /* Active page icon opacity */
-.md-nav__item .md-nav__link--active svg {
+/*.md-nav__item .md-nav__link--active svg {
   opacity: 1;
 }
 
@@ -263,7 +271,7 @@ html .md-footer-meta.md-typeset a:hover {
 	padding: .8rem;
 }
 /* Standard tooltip popup */
-.md-tooltip--inline .md-tooltip__inner {
+/*.md-tooltip--inline .md-tooltip__inner {
 	background-color: var(--md-default-bg-color);
   border-radius: 0.4rem;
 }

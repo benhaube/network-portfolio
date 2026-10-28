@@ -58,7 +58,7 @@ _All of the Data_
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 
@@ -87,4 +87,4 @@ _All of the Data_
     openssl rand -hex 32
     ```
 
-2.  An F1TV "Access" or "Pro" account is required to download timing data. 
+2.  An F1TV "Access" or "Pro" account is required to download timing data.

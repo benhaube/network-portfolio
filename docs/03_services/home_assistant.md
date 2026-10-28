@@ -62,7 +62,7 @@ _Awaken Your Home_
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

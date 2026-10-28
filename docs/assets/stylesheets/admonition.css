@@ -19,6 +19,11 @@
 .md-typeset details:not([open]) {
 	border-radius: .4rem;
 }
+/* Add border */ 
+.md-typeset .admonition,
+.md-typeset details {
+  border: .075rem solid #448aff;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~ *
  * Built-In Admonitions *
@@ -29,7 +34,8 @@
 /* Set background color */
 .md-typeset .admonition.note,
 .md-typeset details.note {
-  background-color: #448aff1a
+  background-color: #448aff1a;
+  border-color: #448aff
 }
 /* Set color of expand/collapse button */
 .md-typeset .note > .admonition-title:after,
@@ -41,7 +47,8 @@
 
 .md-typeset .admonition.abstract,
 .md-typeset details.abstract {
-  background-color: #00b0ff1a
+  background-color: #00b0ff1a;
+  border-color: #00b0ff
 }
 .md-typeset .abstract > .admonition-title:after,
 .md-typeset .abstract > summary:after {
@@ -52,7 +59,8 @@
 
 .md-typeset .admonition.info,
 .md-typeset details.info {
-  background-color: #00b8d41a
+  background-color: #00b8d41a;
+  border-color: #00b8d4
 }
 .md-typeset .info > .admonition-title:after,
 .md-typeset .info > summary:after {
@@ -63,7 +71,8 @@
 
 .md-typeset .admonition.tip,
 .md-typeset details.tip {
-  background-color: #00bfa51a
+  background-color: #00bfa51a;
+  border-color: #00bfa5
 }
 .md-typeset .tip > .admonition-title:after,
 .md-typeset .tip > summary:after {
@@ -74,7 +83,8 @@
 
 .md-typeset .admonition.success,
 .md-typeset details.success {
-  background-color: #00c8531a
+  background-color: #00c8531a;
+  border-color: #00c853
 }
 .md-typeset .success > .admonition-title:after,
 .md-typeset .success > summary:after {
@@ -85,7 +95,8 @@
 
 .md-typeset .admonition.question,
 .md-typeset details.question {
-  background-color: #64dd171a
+  background-color: #64dd171a;
+  border-color: #64dd17
 }
 .md-typeset .question > .admonition-title:after,
 .md-typeset .question > summary:after {
@@ -96,7 +107,8 @@
 
 .md-typeset .admonition.warning,
 .md-typeset details.warning {
-  background-color: #ff91001a
+  background-color: #ff91001a;
+  border-color: #ff9100
 }
 .md-typeset .warning > .admonition-title:after,
 .md-typeset .warning > summary:after {
@@ -107,7 +119,8 @@
 
 .md-typeset .admonition.failure,
 .md-typeset details.failure {
-  background-color: #ff52521a
+  background-color: #ff52521a;
+  border-color: #ff5252
 }
 .md-typeset .failure > .admonition-title:after,
 .md-typeset .failure > summary:after {
@@ -118,7 +131,8 @@
 
 .md-typeset .admonition.danger,
 .md-typeset details.danger {
-  background-color: #ff17441a
+  background-color: #ff17441a;
+  border-color: #ff1744
 }
 .md-typeset .danger > .admonition-title:after,
 .md-typeset .danger > summary:after {
@@ -129,7 +143,8 @@
 
 .md-typeset .admonition.bug,
 .md-typeset details.bug {
-  background-color: #f500571a
+  background-color: #f500571a;
+  border-color: #f50057
 }
 .md-typeset .bug > .admonition-title:after,
 .md-typeset .bug > summary:after {
@@ -140,7 +155,8 @@
 
 .md-typeset .admonition.example,
 .md-typeset details.example {
-  background-color:#7c4dff1a
+  background-color:#7c4dff1a;
+  border-color: #7c4dff
 }
 .md-typeset .example > .admonition-title:after,
 .md-typeset .example > summary:after {
@@ -151,7 +167,8 @@
 
 .md-typeset .admonition.quote,
 .md-typeset details.quote {
-  background-color: #9e9e9e1a
+  background-color: #9e9e9e1a;
+  border-color: #9e9e9e
 }
 .md-typeset .quote > .admonition-title:after,
 .md-typeset .quote > summary:after {

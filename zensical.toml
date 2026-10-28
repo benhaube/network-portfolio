@@ -13,7 +13,7 @@ site_url = "https://portfolio.rac3r4life.online/"
 use_directory_urls = false
 # Set the copyright message & create cookies settings link
 copyright = """
-  Copyright &copy; Benjamin Haube –
+  Copyright &copy; 2026 Benjamin Haube –
   <a href="#__consent">Change cookie settings</a>
 """
 # Git Repo URL & Docs directory

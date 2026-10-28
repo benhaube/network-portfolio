@@ -35,7 +35,7 @@ watch = [
 
 extra_css = ["assets/stylesheets/extra.css"]
 extra_javascript = [
-    "assets/javascripts/link-new-tab.js",
+    "assets/javascripts/open-in-new-tab.js",
     "assets/javascripts/mermaid.mjs",
     "assets/javascripts/tablesort.js",
     "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js", 

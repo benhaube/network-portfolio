@@ -3,11 +3,9 @@
  * ~~~~~~~~~~~~~~~~ */
 
 @import url(admonition.css);
-/*@import url(button.css);*/
 @import url(code-block.css);
 @import url(color.css);
 @import url(page-status.css);
-/*@import url(search.css);*/
 @import url(typeset.css);
 
 /* ~~~~~~~~~~~~~~~~~~~~~ *
@@ -44,45 +42,6 @@
   --md-typeset-mailto-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>');
   --md-path-icon: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>');
 }
-/* Lucide icon class ('stroke' instead of 'fill') */
-.md-icon svg.lucide {
-  fill:#0000;
-  stroke:currentcolor
-}
-.md-content__button svg.lucide {
-  fill:#0000;
-  stroke:currentcolor
-}
-.md-social__link svg.lucide {
-  fill:#0000;
-  stroke:currentcolor
-}
-.md-header__button.md-logo img.lucide,
-.md-header__button.md-logo svg.lucide {
-  fill:#0000;
-  stroke:currentcolor
-}
-.md-nav__link svg.lucide {
-  fill:#0000;
-  stroke:currentcolor
-}
-@media screen and (max-width:76.234375em) {
-  .md-nav .md-nav__title[for=__drawer] .md-logo img.lucide,
-  .md-nav .md-nav__title[for=__drawer] .md-logo svg.lucide {
-    fill:#0000;
-    stroke:currentcolor
-  }
-}
-.md-top svg.lucide {
-  fill:#0000;
-  stroke:currentcolor
-}
-.md-typeset .emojione svg.lucide,
-.md-typeset .gemoji svg.lucide,
-.md-typeset .twemoji svg.lucide {
-  fill:#0000;
-  stroke:currentcolor
-}
 /* Set max page width */
 .md-grid {
   max-width: 1355px;
@@ -94,165 +53,6 @@
 /* Don't underline links */
 .md-typeset a {
   text-decoration: none;
-}
-
-/* ~~~~~~~~~~~ *
- * Page Header *
- * ~~~~~~~~~~~ */   
-
-/* Replicate Zensical header with translucency and blur */
-/*.md-header {
-  -webkit-backdrop-filter: blur(.4rem);
-	backdrop-filter: blur(.4rem);
-	background-color: var(--md-default-bg-color--light);
-	color: var(--md-default-fg-color);
-	display: block;
-	left: 0;
-	position: sticky;
-	right: 0;
-	top: 0;
-	z-index: 4;
-}
-/* Replicate the box-shadow from the Zensical header */
-/*.md-header--shadow {
-  box-shadow: 0 .05rem 0 var(--md-default-fg-color--lightest);
-  transition: transform .25s cubic-bezier(.1,.7,.1,1)
-}
-/* Remove background color from navigation tabs, add box-shadow, and change the text color */
-/*.md-tabs {
-    box-shadow: 0 -.05rem 0 inset var(--md-default-fg-color--lightest);
-    background-color: transparent;
-    color: var(--md-default-fg-color);
-    display: block;
-    line-height: 1.3;
-    overflow: auto;
-    width: 100%;
-    z-index: 3;
-}
-/* Add a bottom border to the active navigation tab */
-/*.md-tabs__item--active {
-  border-bottom: .05rem solid var(--md-default-fg-color);
-  color: var(--md-default-fg-color);
-  font-weight: 500;
-  position: relative;
-  transition: border-bottom .25s, ease-in;
-}
-.md-tabs[hidden] .md-tabs__item--active {
-  border-bottom:.05rem solid #0000
-}
-/* Adjust site title text spacing */
-/*.md-header__title {
-  flex-grow: 1;
-  font-size: .9rem;
-  height: 2.4rem;
-  letter-spacing: -.025em;
-}
-[dir=ltr] .md-header__title {
-  margin-left: .4rem;
-  margin-right: .4rem
-}
-[dir=rtl] .md-header__title {
-  margin-left: .4rem;
-  margin-right: .4rem
-}
-
-/* ~~~~~~~~~~~ *
- * Page Footer *
- * ~~~~~~~~~~~ */   
-
-/* Footer background & border */
-/*.md-footer {
-  -webkit-backdrop-filter: blur(.4rem);
-	backdrop-filter: blur(.4rem);
-  background-color: var(--md-default-bg-color);
-  border-top: .05rem solid var(--md-default-fg-color--lightest);
-  color: var(--md-default-fg-color)
-}
-.md-footer-meta {
-  background-color: var(--md-default-fg-color--lightest)
-}
-/* Copyright text color */
-/*.md-copyright {
-  color: var(--md-default-fg-color--light);
-}
-.md-copyright__highlight {
-  color: var(--md-default-fg-color);
-}
-/* Footer link color */ 
-/*html .md-footer-meta.md-typeset a {
-  color: var(--md-default-fg-color);
-}
-html .md-footer-meta.md-typeset a:focus,
-html .md-footer-meta.md-typeset a:hover {
-  color:var(--md-accent-fg-color)
-}
-/* Customize dialog popup */
-/*.md-dialog--active {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-  transition: transform .4s cubic-bezier(.075,.85,.175,1),opacity .4s
-}
-.md-dialog__inner {
-  color: var(--md-default-bg-color);
-  font-size: .7rem
-}
-.md-dialog {
-  background-color: var(--md-accent-fg-color);
-  border-radius: 1.2rem;
-  bottom: .8rem;
-  box-shadow: var(--md-shadow-z3);
-  min-width: 11.1rem;
-  opacity: 0;
-  padding: .4rem 1.2rem;
-  pointer-events: none;
-  position: fixed;
-  transform: translateY(100%);
-  transition: transform 0ms .4s,opacity .4s;
-  z-index: 4
-}
-.md-dialog--active {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-  transition: transform .4s cubic-bezier(.075,.85,.175,1),opacity .4s
-}
-.md-dialog__inner {
-  color: var(--md-default-bg-color);
-  font-size: .7rem
-}
-
-/* ~~~~~~~~~~~~~~~ * 
- * Site Navigation *
- * ~~~~~~~~~~~~~~~ */
-
-/* Customize title card */
-/*.md-nav--primary .md-nav__title[for="__drawer"] {
-	background-color: var(--md-accent-fg-color--transparent);
-	color: #FFF;
-}
-@media screen and (max-width: 76.2344em) {
-  .md-nav--primary .md-nav__title {
-    background-color: var(--md-accent-fg-color--transparent);
-    color: var(--md-default-fg-color--light);
-  }
-}
-/* Customize repo card */
-/*@media screen and (max-width: 59.9844em) {
-  .md-nav__source {
-    background-color: var(--md-accent-fg-color--transparent);
-    color: var(--md-default-fg-color--light);
-    display: block;
-    padding: 0 .2rem;
-  }
-}
-/* Inactive page icon opacity */
-/*.md-nav__link svg {
-  opacity: .5;
-}
-/* Active page icon opacity */
-/*.md-nav__item .md-nav__link--active svg {
-  opacity: 1;
 }
 
 /* ~~~~~~~~~~~~~~~ *
@@ -269,137 +69,6 @@ html .md-footer-meta.md-typeset a:hover {
 .md-tooltip__inner {
 	font-size: .64rem;
 	padding: .8rem;
-}
-/* Standard tooltip popup */
-/*.md-tooltip--inline .md-tooltip__inner {
-	background-color: var(--md-default-bg-color);
-  border-radius: 0.4rem;
-}
-:root {
-  --md-tooltip-width: 20rem;
-  --md-tooltip-tail: 0.3rem
-}
-element {
-	--md-tooltip-host-x: 442.6000061035156px;
-	--md-tooltip-host-y: 3731.8333129882812px;
-	--md-tooltip-x: 60.166664123535156px;
-	--md-tooltip-y: -480px;
-}
-.md-tooltip2 {
-  backface-visibility:hidden;
-  color: var(--md-default-fg-color);
-  font-family: var(--md-text-font-family);
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  top: calc(var(--md-tooltip-host-y) + var(--md-tooltip-y));
-  transform: translateY(.4rem);
-  transform-origin: calc(var(--md-tooltip-host-x) + var(--md-tooltip-x)) 0;
-  transition: transform 0ms .25s,opacity .25s,z-index .25s;
-  width: 100%;
-  z-index: 0
-}
-.md-tooltip2:before {
-  border-left: var(--md-tooltip-tail) solid #0000;
-  border-right: var(--md-tooltip-tail) solid #0000;
-  content: "";
-  display: block;
-  left: clamp(1.5 * .8rem,var(--md-tooltip-host-x) + var(--md-tooltip-x) - var(--md-tooltip-tail),100vw - 2 * var(--md-tooltip-tail) - 1.5 * .8rem);
-  position: absolute;
-  z-index: 1;
-}
-.md-tooltip2--top:before {
-  border-top: var(--md-tooltip-tail) solid var(--md-default-bg-color);
-  bottom: calc(var(--md-tooltip-tail)*-1 + .025rem);
-  filter: drop-shadow(0 1px 0 var(--md-default-fg-color--lightest));
-}
-.md-tooltip2--bottom:before {
-  border-bottom: var(--md-tooltip-tail) solid var(--md-default-bg-color);
-  filter: drop-shadow(0 -1px 0 var(--md-default-fg-color--lightest));
-  top: calc(var(--md-tooltip-tail)*-1 + .025rem)
-}
-.md-tooltip2[role=dialog]:after {
-  content: "";
-  display: block;
-  height: .8rem;
-  left: clamp(.8rem,var(--md-tooltip-host-x) - .8rem,100vw - var(--md-tooltip-width) - .8rem);
-  pointer-events: auto;
-  position: absolute;
-  width: var(--md-tooltip-width);
-  z-index: 1;
-}
-.md-tooltip2[role=dialog].md-tooltip2--top:after {
-  top: 100%;
-}
-.md-tooltip2[role=dialog].md-tooltip2--bottom:after {
-  bottom: 100%
-}
-.md-tooltip2--active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: transform .4s cubic-bezier(0,1,.35,1),opacity .25s,z-index 0ms;
-  z-index: 4
-}
-.md-tooltip2__inner {
-  scrollbar-gutter: stable;
-  background-color: var(--md-default-bg-color);
-  border-radius: .4rem;
-  box-shadow: var(--md-shadow-z2);
-  left: clamp(.8rem,var(--md-tooltip-host-x) - .8rem,100vw - var(--md-tooltip-width) - .8rem);
-  max-height: 40vh;
-  max-width: calc(100vw - 1.6rem);
-  position: relative;
-  scrollbar-width: thin
-}
-.md-tooltip2__inner::-webkit-scrollbar {
-  height: .2rem;
-  width: .2rem
-}
-.md-tooltip2__inner::-webkit-scrollbar-thumb {
-  background-color: var(--md-default-fg-color--lighter)
-}
-.md-tooltip2__inner::-webkit-scrollbar-thumb:hover {
-  background-color: var(--md-accent-fg-color)
-}
-[role=dialog]>.md-tooltip2__inner {
-  font-size: .64rem;
-  overflow: auto;
-  padding: 0 .8rem;
-  pointer-events: auto;
-  width: var(--md-tooltip-width)
-}
-[role=dialog]>.md-tooltip2__inner:after,
-[role=dialog]>.md-tooltip2__inner:before {
-  content: "";
-  display: block;
-  height: .8rem;
-  position: sticky;
-  width: 100%;
-  z-index: 10
-}
-[role=dialog]>.md-tooltip2__inner:before {
-  background: linear-gradient(var(--md-default-bg-color),#0000 75%);
-  top: 0
-}
-[role=dialog]>.md-tooltip2__inner:after {
-  background: linear-gradient(#0000,var(--md-default-bg-color) 75%);
-  bottom: 0
-}
-[role=tooltip]>.md-tooltip2__inner {
-  font-size: .55rem;
-  font-weight: 400;
-  left: clamp(.8rem,var(--md-tooltip-host-x) + var(--md-tooltip-x) - var(--md-tooltip-width)/2,100vw - var(--md-tooltip-width) - .8rem);
-  max-width: min(100vw - 2 * .8rem,400px);
-  padding: .2rem .4rem;
-  -webkit-user-select: none;
-  user-select: none;
-  width: fit-content
-}
-.md-tooltip2__inner.md-typeset>:first-child {
-  margin-top: 0
-}
-.md-tooltip2__inner.md-typeset>:last-child {
-  margin-bottom: 0
 }
 
 /* ~~~~~~~~~~~ *
@@ -447,34 +116,6 @@ img[src$=".gif" i] {
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
   border-radius: 0.4rem;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~ *
- * Cookie Consent Form *
- * ~~~~~~~~~~~~~~~~~~~ */
-
-/* Replicte the Zensical cookie consent form */
-.md-consent__inner {
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  max-height: 100%;
-  padding: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 5;
-  background: transparent;
-}
-.md-consent__form {
-  animation: consent .5s cubic-bezier(.1,.7,.1,1) both;
-  background-color: var(--md-default-bg-color);
-  border: 0;
-  border-radius: 0.8rem;
-  box-shadow: var(--md-shadow-z3);
-  margin: 0.4rem;
-  overflow: auto;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem
 }
 
 /* ~~~~~~~~~~~~~~~~~ *
@@ -540,7 +181,7 @@ img[src$=".gif" i] {
 /* Overlay background */
 .goverlay {
   background: #000;
-  backdrop-filter: blur(.3rem) !important;
+  backdrop-filter: blur(.4rem) !important;
 }
 
 /* ~~~~~~~~~~~~~~~ *

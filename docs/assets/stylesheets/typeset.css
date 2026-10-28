@@ -13,18 +13,6 @@
 .md-typeset mark {
     background-color: var(--md-code-hl-color--light);
 }
-/* Reproduce keyboard plugin style from Zensical */
-.md-typeset kbd {
-    background: var(--md-default-bg-color);
-    border-radius: .2rem;
-    box-shadow: 0 0 0 .05rem var(--md-typeset-kbd-border-color),0 .15rem 0 var(--md-typeset-kbd-border-color);
-    color: var(--md-default-fg-color);
-    display: inline-block;
-    font-size: .75em;
-    padding: 0 .6666666667em;
-    vertical-align: text-top;
-    word-break: break-word
-}
 /* Hide bullets/numbers in lists */
 .no-bullets {
     list-style-type: none;

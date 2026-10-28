@@ -93,7 +93,7 @@ _SSO Identity Provider_
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-key-round:&ensp;Generate New Secrets
 
@@ -127,11 +127,11 @@ If this is a fresh Authentik installation, generate a PostgreSQL password and an
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/authentik/docker-compose.yaml" }
---8<-- "includes/code/yaml/authentik.yaml"
+--8<-- "code/yaml/authentik.yaml"
 ```
 
 ### :symbols-file-type-corner:&ensp;Environment Variables File
 
 ``` properties { .mono-title title="../AppData/dockge/stacks/authentik/.env" hl_lines="3 9 10 15" }
---8<-- "includes/code/config/authentik.env"
+--8<-- "code/config/authentik.env"
 ```

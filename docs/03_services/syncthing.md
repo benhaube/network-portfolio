@@ -96,7 +96,7 @@ _File Synchronization_
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
 

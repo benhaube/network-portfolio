@@ -64,7 +64,7 @@ _Inventory Management_
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 
@@ -76,7 +76,7 @@ _Inventory Management_
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/homebox/compose.yaml" hl_lines="15 19 20" }
---8<-- "includes/code/yaml/homebox.yml"
+--8<-- "code/yaml/homebox.yml"
 ```
 
 1.  Please consider allowing analytics to help us improve Homebox _(basic computer information, no personal data)_.

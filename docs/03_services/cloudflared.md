@@ -103,7 +103,7 @@ ZimaOS NAS
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 
@@ -138,5 +138,5 @@ ZimaOS NAS
 #### ZimaOS NAS
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/cloudflared/compose.yaml" linenums="1" }
---8<-- "includes/code/yaml/cloudflared-zimaos-nas.yaml"
+--8<-- "code/yaml/cloudflared-zimaos-nas.yaml"
 ```

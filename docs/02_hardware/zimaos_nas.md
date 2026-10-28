@@ -231,7 +231,7 @@ The ZimaOS system configuration files are backed up to the `Quick-Storage` RAID 
 1. Place the backup script, `system-bkp.sh`, in the `/opt/scripts` directory.
 
     ``` bash { .mono-title title="/opt/scripts/system-bkp.sh" hl_lines="14 15" }
-    --8<-- "includes/code/bash/zimaos-system-bkp.sh"
+    --8<-- "code/bash/zimaos-system-bkp.sh"
     ```
 
 2. Populate the Gotify application token variable in the backup script.
@@ -246,13 +246,13 @@ The ZimaOS system configuration files are backed up to the `Quick-Storage` RAID 
 1. Create the Systemd timer unit file in the directory, `/etc/systemd/system`, and paste in the following code. Name the file to match the script's filename. _(e.g., `system-bkp.timer`)_
 
     ``` systemd { .mono-title title="/etc/systemd/system/system-bkp.timer" }
-    --8<-- "includes/code/systemd/system-bkp.timer"
+    --8<-- "code/systemd/system-bkp.timer"
     ```
 
 2. Create the Systemd service unit file in the directory, `/etc/systemd/system`, and paste in the following code. Name the file to match the script's filename. _(e.g., `system-bkp.service`)_
 
     ``` systemd { .mono-title title="/etc/systemd/system/system-bkp.timer" }
-    --8<-- "includes/code/systemd/system-bkp.service"
+    --8<-- "code/systemd/system-bkp.service"
     ```
 
 3. Tell Systemd to parse the changes.
@@ -430,7 +430,7 @@ Both scripts are automated using Systemd unit files. The `docker-cleanup.sh` scr
 1.  Place the `tmp-cleanup.sh` Bash script in the `/opt/scripts` directory.
 
     ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" hl_lines="4 5" }
-    --8<-- "includes/code/bash/temp_files_clean.sh"
+    --8<-- "code/bash/temp_files_clean.sh"
     ```
 
 2.  Give restricted read permissions to the script to ensure only the `root` user can read the Gotify token. The script should be executable by all users and groups with read and write permissions for the `root` user only.
@@ -635,7 +635,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output that shows relev
 #### Config Files
 
 ``` json { .mono-title title="/opt/share/fastfetch/presets/login.jsonc" linenums="1" }
---8<-- "includes/code/config/fastfetch-login-zimaos.jsonc"
+--8<-- "code/config/fastfetch-login-zimaos.jsonc"
 ```
 
 1.  Sets the width of the percentage bars.
@@ -657,7 +657,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output that shows relev
 5.  Sets the separator symbol used between the keys and values.
 
 ``` text { .mono-title title="/opt/share/fastfetch/logos/zimaos.txt" }
---8<-- "includes/code/config/fastfetch-logo-zimaos.txt"
+--8<-- "code/config/fastfetch-logo-zimaos.txt"
 ```
 
 ### :symbols-clock-fading:&ensp;Zima Cron

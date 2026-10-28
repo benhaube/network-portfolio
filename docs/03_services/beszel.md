@@ -82,7 +82,7 @@ _Server Monitoring_
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "includes/managed_by_dockge.md"
+--8<-- "managed_by_dockge.md"
 
 ### :symbols-key-round:&ensp;Generate API Tokens
 
@@ -178,11 +178,11 @@ curl -X POST "http://pi-server.internal:8090/api/collections/users/auth-with-pas
 #### Ben's Desktop
 
 ``` systemd { .mono-title title="/etc/systemd/system/beszel-agent.service" }
---8<-- "includes/code/systemd/beszel-agent-desktop.service"
+--8<-- "code/systemd/beszel-agent-desktop.service"
 ```
 
 #### Ben's Laptop
 
 ``` systemd { .mono-title title="/etc/systemd/system/beszel-agent.service" }
---8<-- "includes/code/systemd/beszel-agent-laptop.service"
+--8<-- "code/systemd/beszel-agent-laptop.service"
 ```

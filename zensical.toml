@@ -46,6 +46,9 @@ extra_javascript = [
     "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js"
 ]
 
+[project.extra]
+generator = false
+
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
 # ----------------------------------------------------------------------------
@@ -350,3 +353,26 @@ clickable_checkbox = true
 [project.markdown_extensions.zensical.extensions.glightbox]
 auto = false
 auto_themed = true
+
+# ----------------------------------------------------------------------------
+# Section for configuring supported MkDocs Plugins.
+# ----------------------------------------------------------------------------
+
+[project.plugins.tags]
+[project.plugins.awesome-nav]
+enabled = true
+filename = ".nav.yml"
+[project.plugins.glightbox]
+enabled = true
+manual = true
+[project.plugins.blog]
+enabled = true
+authors = true
+authors_file = "{blog}/.authors.yml"
+authors_profiles = true
+[project.plugins.search]
+[project.plugins.social]
+log = true
+log_level = "warn"
+cards_layout_options = { background_color = "#0B0C0F", font_family = "Google Sans" }
+[project.plugins.meta]

@@ -365,6 +365,7 @@ filename = ".nav.yml"
 [project.plugins.glightbox]
 enabled = true
 manual = true
+auto_themed = true
 [project.plugins.blog]
 enabled = true
 authors = true

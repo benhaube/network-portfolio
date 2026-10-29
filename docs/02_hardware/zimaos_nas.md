@@ -430,7 +430,7 @@ Both scripts are automated using Systemd unit files. The `docker-cleanup.sh` scr
 1.  Place the `tmp-cleanup.sh` Bash script in the `/opt/scripts` directory.
 
     ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" hl_lines="4 5" }
-    --8<-- "code/bash/temp_files_clean.sh"
+    --8<-- "code/bash/tmp-cleanup_zima.sh"
     ```
 
 2.  Give restricted read permissions to the script to ensure only the `root` user can read the Gotify token. The script should be executable by all users and groups with read and write permissions for the `root` user only.

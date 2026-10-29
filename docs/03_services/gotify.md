@@ -559,7 +559,7 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
 2.  Paste the following code into the file:
 
     ``` bash { .mono-title title="/opt/scripts/tmp-cleanup.sh" linenums="1" hl_lines="4 5" }
-    --8<-- "temp_files_clean.sh"
+    --8<-- "code/bash/tmp-cleanup_zima.sh"
     ```
 
     1. Replace the `TOKEN` and `URL` variables with your actual Gotify App token and URL.

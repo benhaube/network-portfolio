@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# (1)!
 TOKEN="YourGotifyToken"
 URL="https://gotify.rac3r4life.online/message?token=$TOKEN"
 

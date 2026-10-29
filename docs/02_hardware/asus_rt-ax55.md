@@ -51,7 +51,7 @@ _AiMesh Node_
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
-    - SSH Keys&ensp;:symbols-move-right:&ensp;"ASUS RT-BE91U (Admin)"
+    - SSH Keys&ensp;:symbols-move-right:&ensp;"Asus Router (Admin)"
 
 ### :symbols-map-pin:&ensp;Location
 

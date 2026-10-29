@@ -48,7 +48,7 @@ _Reverse-Proxy Server_
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
-    - SSH Keys&ensp;:symbols-move-right:&ensp;"pi-zero (admin)"
+    - SSH Keys&ensp;:symbols-move-right:&ensp;"Pi Zero Server (admin)"
 
 ### :symbols-map-pin:&ensp;Location
 

@@ -56,6 +56,7 @@ _Modified Creality K1C_
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Root User @ Kacey"
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"
 
 ### :symbols-map-pin:&ensp;Location

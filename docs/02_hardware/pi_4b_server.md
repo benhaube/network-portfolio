@@ -51,7 +51,7 @@ _Secondary DNS Server_
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
-    - SSH Keys&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
+    - SSH Keys&ensp;:symbols-move-right:&ensp;"Pi 4B Server (admin)"
 
 ### :symbols-map-pin:&ensp;Location
 

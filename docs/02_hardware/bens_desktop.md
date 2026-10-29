@@ -338,7 +338,7 @@ The `rsync` command in the backup script has been modified to reflect this chang
 1.  Place the`rclone.conf` file in the `~/.config/rclone` directory.
 
     ``` ini { .mono-title title="~/.config/rclone/rclone.conf" linenums="1" }
-    --8<-- "rclone.conf"
+    --8<-- "code/config/rclone-gdrive.conf"
     ```
 
 2.  Place the `.desktop` file in the `~/.config/autostart` directory.

@@ -23,9 +23,6 @@
     <a href="https://github.com/lucide-icons/lucide">
         <img alt="Lucide Icons repo - static badge" src="https://img.shields.io/badge/Lucide_Icons-repo-%23f56565?logo=data%3Aimage%2Fsvg%2Bxml%3Bcharset%3Dutf-8%2C%253Csvg%2520fill%253D%2522none%2522%2520stroke-linecap%253D%2522round%2522%2520stroke-linejoin%253D%2522round%2522%2520stroke-width%253D%25222%2522%2520version%253D%25221.1%2522%2520viewBox%253D%25220%25200%252024%252024%2522%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%253E%250A%2520%2520%253Cpath%2520d%253D%2522m10%252012c0%25202.2091%25201.7909%25204%25204%25204s4-1.7909%25204-4c0-4.4183-3.5817-8-8-8-4.4183%25200-8%25203.5817-8%25208%25200%25203.5841%25201.5713%25206.8012%25204.0625%25209%2522%2520stroke%253D%2522%2523f56565%2522%252F%253E%250A%2520%2520%253Cpath%2520d%253D%2522m14%252012c0-2.2091-1.7909-4-4-4-2.2091%25200-4%25201.7909-4%25204%25200%25204.4183%25203.5817%25208%25208%25208%25204.4183%25200%25208-3.5817%25208-8%25200-3.554-1.545-6.7472-4-8.9444%2522%2520stroke%253D%2522%2523dfdfd6%2522%252F%253E%250A%253C%252Fsvg%253E">
     </a>
-    <a href="https://fonts.google.com">
-        <img alt="Google Fonts - static badge" src="https://img.shields.io/badge/Google_Fonts-Icons-%234285F4?logo=googlefonts&logoColor=%234285F4&link=https%3A%2F%2Ffonts.google.com%2Ficons">
-    </a>
 </p>
 
 <p align="center">

@@ -6,10 +6,14 @@
     "files.associations": {
         "*.md": "python-markdown"
     },
+    "workbench.activityBar.autoHide": true,
     "svg.preview.background": "editor",
     "mermaid.themeCSS": "",
     "mermaid.theme": "dark",
-    "stylelint.validate": ["css", "scss"],
+    "stylelint.validate": [
+        "css",
+        "scss"
+    ],
     "[toml]": {
         "editor.defaultFormatter": "zensical.zensical-studio"
     },
@@ -85,7 +89,7 @@
     "yaml.disableSchemaDetection": [
         "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ha-automations.yaml"
     ],
-    "yaml.customTags": [ 
+    "yaml.customTags": [
         "!ENV scalar",
         "!ENV sequence",
         "!relative scalar",

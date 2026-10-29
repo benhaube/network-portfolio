@@ -1,6 +1,25 @@
 {
-    "files.autoSave": "afterDelay",
     "editor.wordWrap": "off",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 10000,
+    "files.associations": {
+        "*.md": "python-markdown"
+    },
+    "svg.preview.background": "editor",
+    "mermaid.themeCSS": "",
+    "mermaid.theme": "dark",
+    "stylelint.validate": ["css", "scss"],
+    "[toml]": {
+        "editor.defaultFormatter": "zensical.zensical-studio"
+    },
+    "[markdown]": {
+        "editor.wordWrap": "off"
+    },
+    "[python-markdown]": {
+        "editor.defaultFormatter": "zensical.zensical-studio",
+        "editor.formatOnSave": true
+    },
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
         "https://raw.githubusercontent.com/compose-spec/compose-go/master/schema/compose-spec.json": [
@@ -63,14 +82,9 @@
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance-formula1.yml"
         ]
     },
-    "files.associations": {
-        "*.md": "python-markdown"
-    },
-    "[python-markdown]": {
-        "editor.defaultFormatter": "zensical.zensical-studio",
-        "editor.formatOnSave": true
-    },
-    "stylelint.validate": ["css", "scss"],
+    "yaml.disableSchemaDetection": [
+        "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ha-automations.yaml"
+    ],
     "yaml.customTags": [ 
         "!ENV scalar",
         "!ENV sequence",
@@ -81,11 +95,6 @@
         "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping",
         "tag:yaml.org,2002:python/name:material.plugins.tags.tag_name_casefold scalar"
     ],
-    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
-    "files.autoSaveDelay": 10000,
-    "[markdown]": {
-        "editor.wordWrap": "off"
-    },
     "cSpell.words": [
         "ACPI",
         "Adreno",
@@ -361,11 +370,5 @@
         "zimaos",
         "zoneinfo",
         "zpkg"
-    ],
-    "mermaid.themeCSS": "",
-    "mermaid.theme": "dark",
-    "yaml.disableSchemaDetection": [
-        "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/ha-automations.yaml"
-    ],
-    "svg.preview.background": "editor"
+    ]
 }

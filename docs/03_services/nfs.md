@@ -26,7 +26,8 @@ _Network File System_
 
 ---
 
-![NFS Mount in Dolphin file explorer](../assets/screenshots/dolphin-nfs-mount.png){ width=400 align=right .on-glb }
+![ZimaOS Files SMB shares](../assets/screenshots/zimaos-files-smb-light.png#only-light){ width=400 align=right .on-glb }
+![ZimaOS Files SMB shares](../assets/screenshots/zimaos-files-smb-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 

@@ -239,6 +239,7 @@ Install Zensical Studio in VSCode and open your **Zensical** or **MkDocs** proje
     │   │   ├── images
     │   │   ├── javascripts
     │   │   │   ├── mermaid.mjs
+    │   │   │   ├── open-in-new-tab.js
     │   │   │   └── tablesort.js
     │   │   ├── manuals
     │   │   ├── pictures
@@ -286,6 +287,7 @@ Install Zensical Studio in VSCode and open your **Zensical** or **MkDocs** proje
     ├── templates
     │   └── *.md
     ├── LICENSE
+    ├── zensical-studio.toml
     ├── zensical.toml
     └── README.md
 ```

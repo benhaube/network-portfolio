@@ -135,7 +135,7 @@ Most distributions include the `libicu` package by default, but in some instance
     sudo chmod 700 /opt/scripts/technitium-update.sh
     ```
 
-3. Run the install script as the `root` user to update Technitum:
+3. Run the install script as the `root` user to update Technitium:
 
     ``` bash 
     sudo bash /opt/scripts/technitium-update.sh

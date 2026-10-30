@@ -119,7 +119,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
     source ~/.bashrc
     ```
 
-### Using the Function
+## :symbols-wrench:&ensp;Using the Function
 
 Now you can pipe any SVG directly into your new command. 
 
@@ -135,7 +135,7 @@ Now you can pipe any SVG directly into your new command.
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
     ```
 
-### Bonus!
+## :symbols-badge-check:&ensp;Bonus!
 
 If you want to skip highlighting and copying the terminal output altogether, you can pipe the final output directly to your system's clipboard. On Linux you have either `xclip` _(X11)_ or `wl-copy` _(Wayland)_ available:
 

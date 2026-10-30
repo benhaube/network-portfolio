@@ -21,4 +21,4 @@ services:
           create_host_path: true
     environment:
       - COUCHDB_PASSWORD=password # (1)!
-      - COUCHDB_USER=bhaube
+      - COUCHDB_USER=admin

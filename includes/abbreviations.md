@@ -15,6 +15,7 @@
 *[CDN]: Content Delivery Network
 *[CI/CD]: Continuous Integration and Continuous Deployment
 *[CIDR]: Classless Inter-Domain Routing
+*[CIFS]: Common Internet File System
 *[CLI]: Command Line Interface
 *[CORS]: Cross-Origin Resource Sharing
 *[CPU]: Central Processing Unit

@@ -2,7 +2,7 @@
 icon: symbols/folder-tree
 title: SMB
 subtitle: Server Message Block
-description: Remote file system access.
+description: Samba is an open-source software suite that has, since 1992, provided file and print services to all manner of SMB / CIFS clients, including the numerous versions of Microsoft Windows operating systems.
 tags:
   - Active
   - Backup
@@ -32,7 +32,7 @@ _Server Message Block_
 
 **Description**
 
-:    Remote file system access.
+:    Samba is an open-source software suite that has, since 1992, provided file and print services to all manner of SMB / CIFS clients, including the numerous versions of Microsoft Windows operating systems.
 
 **Port(s)**
 

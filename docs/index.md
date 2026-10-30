@@ -226,7 +226,7 @@ hide:
 : KRDP is a Remote Desktop Protocol server implementation for the KDE Plasma desktop environment and Wayland-based systems. It enables remote access to a Wayland desktop session using standard RDP clients, leveraging modern Linux desktop technologies including PipeWire for screen capture, XDG Desktop Portals for compositor integration, and FreeRDP for protocol implementation.
 
 [:symbols-folder-tree:&ensp;SMB](03_services/smb.md)
-: Remote file system access.
+: Samba is an open-source software suite that has, since 1992, provided file and print services to all manner of SMB / CIFS clients, including the numerous versions of Microsoft Windows operating systems.
 
 [:services-spoolman:&ensp;Spoolman](03_services/spoolman.md)
 : Keep track of your inventory of 3D-printer filament spools.

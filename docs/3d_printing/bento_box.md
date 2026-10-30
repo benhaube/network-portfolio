@@ -41,7 +41,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
 
     You can use this method to modify any of the Helper-Script configuration files to your needs. I have also done this with my `M600-support.cfg` and `useful-macros.cfg` files to make changes for the [PROWIPER mod](prowiper_mod.md).
 
-#### Replace `fans-control.cfg`
+### Replace `fans-control.cfg`
 
 1.  [ ] Copy the file `fans-control.cfg` from the `Helper-Script/` directory and paste the copy into the main configuration directory.
 2.  [ ] Open the `printer.cfg` configuration file and comment out the following line with a hash _(`#`)_.
@@ -56,7 +56,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
     [include fans-control.cfg]
     ```
 
-#### Base Printer Configuration
+### Base Printer Configuration
 
 1.  [ ] Add the new `output-pin` to `printer.cfg` below `fan2`.
 
@@ -92,7 +92,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
     variable_cam_off_temp: 60
     ```
 
-#### Automatic Temperature Control
+### Automatic Temperature Control
 
 1.  [ ] Open the new `fans-control.cfg` file and add `PA0` to the `duplicate_pin_override` section.
 
@@ -121,7 +121,7 @@ To enable the new fans we need to modify the following files; `printer.cfg`, `gc
     min_speed: 0.5
     ```
 
-#### `M106` Macro Control
+### `M106` Macro Control
 
 For proper `M106` macro control of the fan we need to modify the macro located in the `fans-control.cfg` file.
 

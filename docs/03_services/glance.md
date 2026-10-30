@@ -14,8 +14,7 @@ hide:
   - toc
 ---
 
-![Glance Logo](../assets/icons/glance-light.svg#only-light){ width=200 }
-![Glance Logo](../assets/icons/glance.svg#only-dark){ width=200 }
+![Glance Logo](../assets/icons/glance.svg){ width=200 }
 
 # Glance
 

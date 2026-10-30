@@ -130,7 +130,7 @@ hide:
 : Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
 [:symbols-refresh-cw-clock:&nbsp;Chrony](03_services/chrony.md)
-: Advanced, lightweight NTP client and server.
+: A versatile implementation of the Network Time Protocol. It can synchronize the system clock with NTP servers, reference clocks _(e.g. GPS receiver)_, and manual input using wristwatch and keyboard.
 
 [:services-clamav:&ensp;ClamAV Dashboard](03_services/clamav_dashboard.md)
 : Anti-virus security dashboard for **ZimaOS** with automatic disk discovery, scan progress, history and confirmed quarantine actions.

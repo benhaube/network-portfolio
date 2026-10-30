@@ -2,7 +2,7 @@
 icon: symbols/refresh-cw-clock
 title: Chrony
 subtitle: NTP Server
-description: Advanced, lightweight NTP client and server.
+description: A versatile implementation of the Network Time Protocol. It can synchronize the system clock with NTP servers, reference clocks (e.g. GPS receiver), and manual input using wristwatch and keyboard.
 tags:
   - Active
   - Infrastructure
@@ -28,7 +28,7 @@ _NTP Server_
 
 **Description**
 
-:    Advanced, lightweight NTP client and server.
+:    A versatile implementation of the Network Time Protocol. It can synchronize the system clock with NTP servers, reference clocks _(e.g. GPS receiver)_, and manual input using wristwatch and keyboard.
 
 **Port(s)**
 

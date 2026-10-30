@@ -138,6 +138,9 @@ hide:
 [:services-cloudflare:&ensp;Cloudflared](03_services/cloudflared.md)
 : A secure _reverse-proxy_ tunnel for hosting private services on the public Internet.
 
+[:services-couchdb:&ensp;CouchDB](03_services/couchdb.md)
+: Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
+
 [:symbols-printer:&ensp;CUPS](03_services/cups_print_server.md)
 : A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
@@ -206,9 +209,6 @@ hide:
 
 [:services-ntop:&ensp;ntopng](03_services/ntopng.md)
 : Web-based traffic and security network traffic monitoring.
-
-[:services-obsidian:&ensp;Obsidian LiveSync](03_services/obsidian_livesync.md)
-: Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
 [:services-openspeedtest:&ensp;OpenSpeedTest](03_services/openspeedtest.md)
 : A free & open-source HTML5 network performance estimation tool.

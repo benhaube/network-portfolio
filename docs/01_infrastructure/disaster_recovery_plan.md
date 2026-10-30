@@ -63,7 +63,7 @@ The **Linux PCs**, [Ben's Desktop](../02_hardware/bens_desktop.md#device-overvie
 
 The **Windows PCs**, [Rob's Desktop](../02_hardware/robs_desktop.md#device-overview){ data-preview } and [Rob's Laptop](../02_hardware/robs_laptop.md#device-overview){ data-preview }, use [SMB](../03_services/smb.md) and the built-in backup utility in **Windows 11** to back up personal data to the **ZimaOS NAS**. The backup directory on the **ZimaOS NAS** is located at: `/media/Quick-Storage/Backup/<client-hostname>`.
 
-**Obsidian** vaults are synchronized in real-time with a [CouchDB](../03_services/obsidian_livesync.md) database hosted on the **ZimaOS NAS** in a Docker container, and periodically to a private GitHub repository.
+**Obsidian** vaults are synchronized in real-time with a [CouchDB](../03_services/couchdb.md) database hosted on the **ZimaOS NAS** in a Docker container, and periodically to a private GitHub repository.
 
 #### Mobile Devices
 

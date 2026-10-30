@@ -1,7 +1,7 @@
 ---
-icon: services/obsidian
-title: Obsidian LiveSync
-subtitle: Sync with CouchDB
+icon: services/couchdb
+title: CouchDB
+subtitle: Obsidian LiveSync
 description: Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 tags:
   - Active
@@ -14,11 +14,11 @@ hide:
   - toc
 ---
 
-![Obsidian Logo](../assets/icons/obsidian.svg){ width=200 }![CouchDB Logo](../assets/icons/couchdb.svg){ width=75 }
+![CouchDB Logo](../assets/icons/couchdb.svg){ width=200 }
 
-# Obsidian LiveSync
+# CouchDB
 
-_Sync with CouchDB_
+_Obsidian LiveSync_
 
 [GitHub&ensp;:brands-github:](https://github.com/apache/couchdb){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](http://storage-server.internal:5984/_utils/docs/index.html){ .md-button .md-button--primary }
 
@@ -51,7 +51,8 @@ _Sync with CouchDB_
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
 
-    - Local Network&ensp;:symbols-move-right:&ensp;"Obsidian LiveSync"
+    - Local Network&ensp;:symbols-move-right:&ensp;"CouchDB (admin)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"CouchDB (bhaube)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -76,7 +77,7 @@ _Sync with CouchDB_
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/obsidian-livesync/compose.yaml" linenums="1" }
---8<-- "obsidian-livesync.yml"
+--8<-- "code/yaml/obsidian-livesync.yml"
 ```
 
 1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI.
@@ -84,5 +85,5 @@ _Sync with CouchDB_
 ### :symbols-file-cog:&ensp;Config File
 
 ``` ini { .mono-title title="../AppData/obsidian-livesync/data/local.ini" linenums="1" }
---8<-- "couchdb-local.ini"
+--8<-- "code/config/couchdb-local.ini"
 ```

@@ -50,41 +50,25 @@ cat <your-icon>.svg | node -e "const fs = require('fs'); console.log('data:image
 
 ### Changing the Color & Size
 
-You can change the color by adding a `fill` attribute to either the main `<svg>` tag or the specific `<path>` tag.
+You can change the color by adding a `fill` attribute to either the main `<svg>` tag or the specific `<path>` tag. The compatible color code formats are standard hex codes, RGB values, or CSS color names.
 
-- You can use standard hex codes, RGB values, or CSS color names.
-
-To scale the icon up or down, leave the `viewBox` alone and explicitly define the `width` and `height` attributes.
-
-- Material Design icons, for example, typically use a `viewBox="0 0 24 24"`.
+To scale the icon up or down, leave the `viewBox` alone and explicitly define the `width` and `height` attributes. Material Design icons, for example, typically use a `viewBox="0 0 24 24"`.
 
 #### The CLI Power-User Route
 
 If you want to handle the color and size adjustments without even opening a text editor, you can use `sed` to inject those attributes on the fly and pipe the output directly into the Node.js encoder.
 
--   Here is a one-liner that injects a green hex code and a `48x48` size into your standard `<your-icon>.svg` and outputs the final data URI:
+Here is a one-liner that injects a green hex code and a `48x48` size into your standard `icon.svg` and outputs the final data URI:
 
-    ``` bash { .wrap-code linenums="1" }
-    cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
-    ```
-
-    ???+ note
-
-        The expression `fs.readFileSync(0, 'utf-8')` tells Node.js to read directly from the standard input rather than a saved file.
+``` bash { .wrap-code linenums="1" }
+cat icon.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
+```
 
 ## :symbols-file-code-corner:&ensp;Making a Function
 
 This is the perfect use case for a shell alias / function. On Linux we can easily add this to the Bash shell's configuration file (`.bashrc`) so it is always available. Here is how to create a custom `svg2uri` function that reads directly from standard input.
 
 ### Add to Shell Profile
-
-!!! tip inline end
-
-    If you have a lot of different aliases / functions it can be beneficial to add them into your distribution's dedicated file to keep your `.bashrc` file cleaner.
-
-    You can check out instructions on how to do this for **Debian / Fedora** based distributions in my tutorial:
-
-    [Defining Aliases&ensp;:symbols-square-terminal:](define_bash_aliases.md){ .md-button }
 
 1.  Open your terminal profile configuration _(usually `~/.bashrc` if you are using Bash, or `~/.zshrc` if you are using Zsh)_ in your preferred editor:
 
@@ -103,7 +87,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
     1. Reads from standard input (stdin) and outputs a URL-encoded SVG Data URI
 
-    ???+ note
+    ??? note
 
         I appended a `.trim()` to the end of the command just to ensure no invisible newline characters at the end of the file get encoded.
 
@@ -113,26 +97,26 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
     ++ctrl+x++&ensp;to close
 
-4.  Reload the configuration:
+4.  Reload the Bash configuration:
 
     ``` bash linenums="1"
     source ~/.bashrc
     ```
 
-## :symbols-wrench:&ensp;Using the Function
+### Using the Function
 
 Now you can pipe any SVG directly into your new command. 
 
 :    If you just want the raw conversion:
 
     ``` bash linenums="1"
-    cat <your-icon>.svg | svg2uri
+    cat icon.svg | svg2uri
     ```
 
 :    Or, if you want to use the `sed` trick I mentioned above to inject a color or change size before it gets encoded, you can just chain them together:
 
     ``` bash linenums="1"
-    cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
+    cat icon.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
     ```
 
 ## :symbols-badge-check:&ensp;Bonus!
@@ -149,7 +133,7 @@ cat icon.svg | svg2uri | xclip -selection clipboard  # (2)!
 
 Now you can just&ensp;++ctrl+v++&ensp;_(paste)_ the output into whatever CSS / HTML file you are working on.
 
-## :symbols-wrench:&ensp;Using the Output
+## :symbols-code-xml:&ensp;Using the Output
 
 Once you have your generated string, you can drop it directly into your code:
 

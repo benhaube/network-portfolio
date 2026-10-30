@@ -190,7 +190,7 @@ hide:
 : The **Open Home Foundation** Matter Server serves as the foundation to provide Matter support to [Home Assistant](03_services/home_assistant.md), but its universal approach makes it suitable to be used in other projects too.
 
 [:symbols-api:&ensp;Moonraker](03_services/moonraker.md)
-: Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.
+: Moonraker is a Python 3 based web server that exposes APIs with which client applications may use to interact with the 3D printing firmware, [Klipper](https://www.klipper3d.org/){ external-link }.
 
 [:symbols-refresh-cw-cog:&ensp;Nebula-Sync](03_services/nebula-sync.md)
 : Synchronize configuration between multiple [Pi-hole](https://pi-hole.net){ external-link } instances.

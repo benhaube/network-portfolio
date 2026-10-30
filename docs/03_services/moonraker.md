@@ -2,7 +2,7 @@
 icon: symbols/api
 title: Moonraker
 subtitle: The Klipper Web API
-description: Web API server for Klipper. 
+description: Moonraker is a Python 3 based web server that exposes APIs with which client applications may use to interact with the 3D printing firmware Klipper.
 tags:
   - 3D-Printer
   - Active
@@ -29,7 +29,7 @@ _The Klipper Web API_
 
 **Description**
 
-:    Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.
+:    Moonraker is a Python 3 based web server that exposes APIs with which client applications may use to interact with the 3D printing firmware, [Klipper](https://www.klipper3d.org/){ external-link }.
 
 **Port(s)**
 

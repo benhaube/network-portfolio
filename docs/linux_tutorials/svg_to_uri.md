@@ -76,7 +76,7 @@ If you want to handle the color and size adjustments without even opening a text
 
 This is the perfect use case for a shell alias / function. On Linux we can easily add this to the Bash shell's configuration file (`.bashrc`) so it is always available. Here is how to create a custom `svg2uri` function that reads directly from standard input.
 
-#### Add to Shell Profile
+### Add to Shell Profile
 
 !!! tip inline end
 
@@ -119,7 +119,7 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
     source ~/.bashrc
     ```
 
-#### Using the Function
+### Using the Function
 
 Now you can pipe any SVG directly into your new command. 
 
@@ -135,7 +135,7 @@ Now you can pipe any SVG directly into your new command.
     cat <your-icon>.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
     ```
 
-#### Bonus!
+### Bonus!
 
 If you want to skip highlighting and copying the terminal output altogether, you can pipe the final output directly to your system's clipboard. On Linux you have either `xclip` _(X11)_ or `wl-copy` _(Wayland)_ available:
 

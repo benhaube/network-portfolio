@@ -2,7 +2,7 @@
 icon: services/home-assistant
 title: Home Assistant
 subtitle: Awaken Your Home
-description: Open-source home automation that puts local control and privacy first.
+description: Open-source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts.
 tags:
   - Active
   - Container
@@ -30,7 +30,7 @@ _Awaken Your Home_
 
 **Description**
 
-:    Open-source home automation that puts local control and privacy first.
+:    Open-source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts.
 
 **Port(s)** 
 

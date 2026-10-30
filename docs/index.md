@@ -124,7 +124,7 @@ hide:
 : An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters.
 
 [:services-beszel:&ensp;Beszel](03_services/beszel.md)
-: A lightweight server monitoring hub with historical data, docker stats, and alerts.
+: A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
 [:services-caddy:&ensp;Caddy](03_services/caddy.md)
 : Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
@@ -175,7 +175,7 @@ hide:
 : Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
 
 [:services-home-assistant:&ensp;Home Assistant](03_services/home_assistant.md)
-: Open-source home automation that puts local control and privacy first.
+: Open-source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts.
 
 [:services-homebox:&ensp;Homebox](03_services/homebox.md) 
 : Homebox is the inventory and organization system built for the home user! With a focus on simplicity and ease of use, Homebox is the perfect solution for your home inventory, organization, and management needs.

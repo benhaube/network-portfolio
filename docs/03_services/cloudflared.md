@@ -58,38 +58,25 @@ _Reverse-Proxy Server_
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn
     - :symbols-clock-key:&ensp;TOTP
 
-**:symbols-route:&ensp;Routes**
+**Routes**
 
-Debian Server
-
-- <https://healthchecks.rac3r4life.online>
+- :symbols-layers:&ensp;Debian Server
 { .no-bullets }
-
-Pi 4B Server
-
-- <https://beszel.rac3r4life.online>
+    - <https://healthchecks.rac3r4life.online>
+- :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
-- <https://home.rac3r4life.online> _(`CNAME` record only, Exposed with Home Assistant Cloud)_
+    - <https://beszel.rac3r4life.online>
+    - <https://home.rac3r4life.online> _(`CNAME` record only, Exposed with Home Assistant Cloud)_
+    - <https://it-tools.rac3r4life.online>
+    - <https://uptime.rac3r4life.online>
+- :symbols-server-nas:&ensp;ZimaOS NAS
 { .no-bullets }
-- <https://it-tools.rac3r4life.online>
-{ .no-bullets }
-- <https://uptime.rac3r4life.online>
-{ .no-bullets }
-
-ZimaOS NAS
-
-- <https://auth.rac3r4life.online>
-{ .no-bullets }
-- <https://gitea.rac3r4life.online>
-{ .no-bullets }
-- <https://gotify.rac3r4life.online>
-{ .no-bullets }
-- <https://homebox.rac3r4life.online>
-{ .no-bullets }
-- <https://immich.rac3r4life.online>
-{ .no-bullets }
-- <https://portfolio.rac3r4life.online>
-{ .no-bullets }
+    - <https://auth.rac3r4life.online>
+    - <https://gitea.rac3r4life.online>
+    - <https://gotify.rac3r4life.online>
+    - <https://homebox.rac3r4life.online>
+    - <https://immich.rac3r4life.online>
+    - <https://portfolio.rac3r4life.online>
 
 ## :symbols-package-search:&ensp;Deployment Details
 

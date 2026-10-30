@@ -160,7 +160,7 @@ hide:
 : Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
 [:services-glance:&ensp;Glance](03_services/glance.md)
-: A self-hosted dashboard that puts all your feeds in one place.
+: A self-hosted dashboard built for people who want their information in one place. It focuses on dynamic content updates and seamless integration with external applications.
 
 [:services-glances:&ensp;Glances](03_services/glances.md)
 : Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.

@@ -235,7 +235,7 @@ hide:
 : Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
 [:services-syncthing-alt:&ensp;Syncthing](03_services/syncthing.md)
-: Open decentralized file synchronization.
+: Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.
 
 [:services-technitium:&ensp;Technitium](03_services/technitium.md)
 : An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.

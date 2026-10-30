@@ -2,7 +2,7 @@
 icon: services/syncthing-alt
 title: Syncthing
 subtitle: File Synchronization
-description: Open decentralized file synchronization.
+description: Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.
 tags:
   - Active
   - Backup
@@ -32,7 +32,7 @@ _File Synchronization_
 
 **Description**
 
-:   Open decentralized file synchronization.
+:   Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.
 
 **Port(s)**
 

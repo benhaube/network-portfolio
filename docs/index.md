@@ -241,7 +241,7 @@ hide:
 : An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
 [:symbols-square-terminal:&ensp;ttydBridge](03_services/ttydbridge.md)
-: A DockerApp makes it easy to use the host terminal in the Web.
+: A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
 
 [:services-uptime-kuma:&ensp;Uptime Kuma](03_services/uptime_kuma.md)
 : A fancy self-hosted monitoring tool.

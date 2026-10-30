@@ -2,7 +2,7 @@
 icon: symbols/square-terminal
 title: ttydBridge
 subtitle: The Terminal on the Web
-description: A DockerApp makes it easy to use the host terminal on the Web.
+description: A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
 tags:
   - Active
   - Container
@@ -30,7 +30,7 @@ _The Terminal on the Web_
 
 **Description**
 
-:    A DockerApp makes it easy to use the host terminal on the Web.
+:    A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
 
 **Port(s)** 
 

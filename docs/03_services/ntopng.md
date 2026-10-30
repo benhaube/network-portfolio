@@ -3,7 +3,7 @@ icon: services/ntop
 status: inactive
 title: ntopng
 subtitle: Network Traffic Probe
-description: Web-based traffic and security network traffic monitoring.
+description: A web-based network traffic monitoring application released under GPLv3. It is the new incarnation of the original ntop written in 1998, and now revamped in terms of performance, usability, and features.
 tags:
   - Container
   - Inactive
@@ -29,7 +29,7 @@ _Network Traffic Probe_
 
 **Description**
 
-:   Web-based traffic and security network traffic monitoring.
+:   A web-based network traffic monitoring application released under GPLv3. It is the new incarnation of the original ntop written in 1998, and now revamped in terms of performance, usability, and features.
 
 **Port(s)**
 

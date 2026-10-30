@@ -208,7 +208,7 @@ hide:
 : The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
 [:services-ntop:&ensp;ntopng](03_services/ntopng.md)
-: Web-based traffic and security network traffic monitoring.
+: A web-based network traffic monitoring application released under GPLv3. It is the new incarnation of the original ntop written in 1998, and now revamped in terms of performance, usability, and features.
 
 [:services-openspeedtest:&ensp;OpenSpeedTest](03_services/openspeedtest.md)
 : A free & open-source HTML5 network performance estimation tool.

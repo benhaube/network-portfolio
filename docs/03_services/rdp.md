@@ -2,7 +2,7 @@
 icon: symbols/screen-share
 title: RDP
 subtitle: Remote Desktop Protocol
-description: Remote desktop access over the local network
+description: KRDP is a Remote Desktop Protocol server implementation for the KDE Plasma desktop environment and Wayland-based systems. It enables remote access to a Wayland desktop session using standard RDP clients, leveraging modern Linux desktop technologies including PipeWire for screen capture, XDG Desktop Portals for compositor integration, and FreeRDP for protocol implementation.
 tags:
   - Active
   - Infrastructure
@@ -30,7 +30,7 @@ _Remote Desktop Protocol_
 
 **Description**
 
-:    Remote desktop access over the local network _(not publicly exposed)_
+:    KRDP is a Remote Desktop Protocol server implementation for the KDE Plasma desktop environment and Wayland-based systems. It enables remote access to a Wayland desktop session using standard RDP clients, leveraging modern Linux desktop technologies including PipeWire for screen capture, XDG Desktop Portals for compositor integration, and FreeRDP for protocol implementation.
 
 **Port(s)**
 

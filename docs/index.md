@@ -223,7 +223,7 @@ hide:
 : A self-hosted, real-time port monitoring and discovery tool.
 
 [:symbols-screen-share:&ensp;RDP](03_services/rdp.md)
-: Remote desktop access over the LAN. _(not exposed to the internet)_
+: KRDP is a Remote Desktop Protocol server implementation for the KDE Plasma desktop environment and Wayland-based systems. It enables remote access to a Wayland desktop session using standard RDP clients, leveraging modern Linux desktop technologies including PipeWire for screen capture, XDG Desktop Portals for compositor integration, and FreeRDP for protocol implementation.
 
 [:symbols-folder-tree:&ensp;SMB](03_services/smb.md)
 : Remote file system access.

@@ -2,7 +2,7 @@
 icon: symbols/folder-tree
 title: NFS
 subtitle: Network File System
-description: Remote file system access for Linux.
+description: Allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. This enables system administrators to consolidate resources onto centralized servers on the network.
 tags:
   - Active
   - Backup
@@ -33,7 +33,7 @@ _Network File System_
 
 **Description**
 
-:    Remote file system access for Linux.
+:    Allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. This enables system administrators to consolidate resources onto centralized servers on the network.
 
 **Port(s)**
 

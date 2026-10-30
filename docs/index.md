@@ -202,7 +202,7 @@ hide:
 : Self-hosted cloud storage and collaboration platform.
 
 [:symbols-folder-tree:&ensp;NFS](03_services/nfs.md) 
-: Remote file system access.
+: Allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. This enables system administrators to consolidate resources onto centralized servers on the network.
 
 [:services-nginx:&ensp;Nginx](03_services/nginx.md)
 : The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.

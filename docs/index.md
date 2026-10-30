@@ -136,7 +136,7 @@ hide:
 : Anti-virus security dashboard for **ZimaOS** with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 
 [:services-cloudflare:&ensp;Cloudflared](03_services/cloudflared.md)
-: A secure _reverse-proxy_ tunnel for hosting private services on the public Internet.
+: Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
 
 [:services-couchdb:&ensp;CouchDB](03_services/couchdb.md)
 : Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.

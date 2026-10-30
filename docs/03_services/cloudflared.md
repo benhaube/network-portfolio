@@ -2,7 +2,7 @@
 icon: services/cloudflare
 title: Cloudflared
 subtitle: Reverse-Proxy Server
-description: Secure reverse-proxy tunnel for hosting private services on the public internet.
+description: Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
 tags:
   - Active
   - Container
@@ -32,7 +32,7 @@ _Reverse-Proxy Server_
 
 **Description**
 
-:   Secure reverse-proxy tunnel for hosting private services on the public internet.
+:   Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
 
 **Port(s)**
 

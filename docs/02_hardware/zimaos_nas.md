@@ -429,7 +429,7 @@ Both scripts are automated using Systemd unit files. The `docker-cleanup.sh` scr
 
 1.  Place the `tmp-cleanup.sh` Bash script in the `/opt/scripts` directory.
 
-    ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" hl_lines="4 5" }
+    ``` bash { .mono-title title="/opt/scripts/docker-cleanup.sh" hl_lines="3 4" }
     --8<-- "code/bash/tmp-cleanup_zima.sh"
     ```
 

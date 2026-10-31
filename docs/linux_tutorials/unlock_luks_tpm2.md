@@ -29,14 +29,6 @@ _Speeding Up the Boot Process_
 
 ## :symbols-badge-alert:&ensp;Prerequisites
 
-!!! tip inline end
-
-    Check the **LUKS** version your encrypted volume is using with this command:
-
-    ``` bash linenums="1"
-    cryptsetup luksDump /dev/your_device
-    ```
-
 **TPM2 Chip**
 
 Your computer must have an active **TPM2** chip. Most modern hardware does, but you may need to enable in **UEFI** settings.
@@ -45,15 +37,21 @@ Your computer must have an active **TPM2** chip. Most modern hardware does, but 
 
 Your encrypted volume must be using **LUKS2** format.
 
+!!! tip
+
+    Check the **LUKS** version your encrypted volume is using with this command:
+
+    ``` bash linenums="1"
+    cryptsetup luksDump /dev/your_device
+    ```
+
 **Packages**
 
 Ensure you have the necessary packages installed.
 
-| Dependencies { data-sort-method="none" } |
-| :--------------------------------------- |
-| `systemd-cryptenroll`                    |
-| `tpm2-tss`                               |
-| `dracut` _or_ `update-initramfs`         |
+- `systemd-cryptenroll`  
+- `tpm2-tss`  
+- `dracut` _or_ `update-initramfs`  
 
 **Initramfs Support**
 
@@ -117,12 +115,27 @@ The `systemd-cryptenroll` command adds a new random key to one of your LUKS key 
 
 #### Platform Control Registers
 
-| PCR # { data-sort-method="number" } | Function { data-sort-method="none" }                             |
-| :---------------------------------: | :--------------------------------------------------------------- |
-|                  0                  | Core system firmware. _(UEFI / BIOS)_                            |
-|                  4                  | Boot loader and additional drivers. _(GRUB / shim)_              |
-|                  7                  | The Secure Boot state. _(enabled / disabled, UEFI certificates)_ |
-|                 11                  | **UKI** components, kernel image, embedded initrd.               |
+| PCR # { data-sort-method="number" } | Function { data-sort-method="none" }                                                        |
+| :---------------------------------: | :------------------------------------------------------------------------------------------ |
+|                  0                  | Core system firmware executable code. _(UEFI / BIOS)_                                       |
+|                  1                  | Core system firmware data / host platform configuration. _(SMBIOS, CPU, motherboard, etc.)_ |
+|                  2                  | Extended or pluggable executable code. _(Option ROMs on add-in cards, PXE, etc.)_           |
+|                  3                  | Extended or pluggable firmware data. _(Option ROM configuration and hardware status)_       |
+|                  4                  | Boot loader and additional drivers. _(GRUB / shim / systemd-boot)_                          |
+|                  5                  | Boot loader configuration and **GPT** partition table. _(boot manager state)_               |
+|                  6                  | Host platform manufacturer-specific measurements and state transitions. _(resume from S4)_  |
+|                  7                  | The **Secure Boot** state. _(enabled / disabled, UEFI certificates, db / dbx)_              |
+|                  8                  | Files and kernel command line measured by **GRUB**. _(specific to GRUB bootloader)_         |
+|                  9                  | Kernel image, initrd, and additional files measured by the Linux kernel or **GRUB**.        |
+|                 10                  | **IMA** measurements. _(Integrity Measurement Architecture log)_                            |
+|                 11                  | **UKI** components, kernel image, embedded initrd, and boot phase measurements.             |
+|                 12                  | Kernel command line, system credentials, and configuration overlays. _(systemd-stub)_       |
+|                 13                  | **System extension** images for the initrd. _(`systemd-sysext` images)_                     |
+|                 14                  | **MOK** certificates and hashes. _(Machine Owner Keys managed by `shim`)_                   |
+|                 15                  | Root and `/var` file system volume cryptographic measurements. _(`systemd-cryptsetup`)_     |
+|                 16                  | Debug and testing measurements. _(freely resettable, do not use for sealing)_               |
+|                17–22                | **DRTM** and **TXT** measurements. _(Dynamic Root of Trust for Measurement / Late Launch)_  |
+|                 23                  | Application-specific support. _(freely resettable by user-space applications)_              |
 
 ### Configure `crypttab`
 

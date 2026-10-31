@@ -1,6 +1,6 @@
-# ---------------- #
-# Project Settings #
-# ---------------- #
+# ----------------
+# Project Settings
+# ----------------
 
 [project]
 dev_addr = "localhost:8000"
@@ -13,8 +13,8 @@ site_url = "https://portfolio.rac3r4life.online/"
 use_directory_urls = false
 # Set the copyright message & create cookies settings link
 copyright = """
-  Copyright &copy; 2026 Benjamin Haube –
-  <a href="#__consent">Change cookie settings</a>
+    Copyright &copy; 2026 Benjamin Haube –
+    <a href="#__consent">Change cookie settings</a>
 """
 # Git Repo URL & Docs directory
 repo_url = "https://github.com/benhaube/network-portfolio"
@@ -22,7 +22,7 @@ repo_name = "benhaube/network-portfolio"
 edit_uri = "edit/main/docs/"
 # Watch directories outside of '/docs'
 watch = [
-    "includes"
+"includes"
 ]
 # Define extra CSS / Javascript files
 extra_css = ["assets/stylesheets/extra.css"]
@@ -30,7 +30,7 @@ extra_javascript = [
     "assets/javascripts/open-in-new-tab.js",
     "assets/javascripts/mermaid.mjs",
     "assets/javascripts/tablesort.js",
-    "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js", 
+    "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js",
     "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js",
     "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.dotsep.min.js",
     "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.filesize.min.js",
@@ -42,15 +42,16 @@ extra_javascript = [
 # Disable "Made with Zensical" message in site footer
 generator = false
 
-# -------------- #
-# Theme Settings #
-# -------------- #
+# --------------
+# Theme Settings
+# --------------
 
 [project.theme]
 # Change this to "classic" to use the traditional Material for MkDocs look.
-#variant = "classic"
+# variant = "classic"
 custom_dir = "overrides"
 favicon = "assets/favicon.svg"
+logo = "assets/favicon.svg"
 language = "en"
 # Enable Zensical theme features
 features = [
@@ -74,15 +75,13 @@ features = [
     # "navigation.prune",
     "navigation.sections",
     "navigation.tabs",
-    #"navigation.tabs.sticky",
+    # "navigation.tabs.sticky",
     "navigation.top",
     "navigation.tracking",
     "search.highlight",
     "toc.follow",
     "toc.integrate",
 ]
-# Set the site logo
-logo = "assets/favicon.svg"
 
 # Set the theme icons
 [project.theme.icon]
@@ -246,6 +245,7 @@ desktop = "lucide/pc-case"
 development = "lucide/git-fork"
 diagram = "symbols/sitemap"
 dns = "lucide/cloud-cog"
+domain = "lucide/globe-code"
 download = "lucide/download"
 file-share = "lucide/share"
 hardware = "lucide/circuit-board"
@@ -263,7 +263,7 @@ nas = "lucide/server-nas"
 native = "symbols/tux"
 network = "lucide/network"
 new = "lucide/badge-alert"
-office = "symbols/pencil-ruler"
+office = "lucide/pencil-ruler"
 pc = "lucide/computer"
 policy = "lucide/file-pen-line"
 print = "lucide/printer"
@@ -275,7 +275,7 @@ server = "lucide/server"
 server-rack = "symbols/server-rack"
 service = "lucide/cloud"
 shell = "lucide/square-terminal"
-software = "lucide/package"
+software = "lucide/package-open"
 switch = "lucide/ethernet-port"
 sync = "lucide/refresh-cw"
 tools = "lucide/wrench"
@@ -288,9 +288,9 @@ vpn = "lucide/waypoints"
 web-host = "lucide/globe"
 windows = "brands/microsoft"
 
-# ------------------------------------ #
-# Configure Python Markdown extensions #
-# ------------------------------------ #
+# ------------------------------------
+# Configure Python Markdown extensions
+# ------------------------------------
 
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
@@ -335,7 +335,7 @@ base_path = [
 
 [project.markdown_extensions.pymdownx.superfences]
 custom_fences = [
-  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
 ]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
@@ -348,9 +348,9 @@ clickable_checkbox = true
 auto = false
 auto_themed = true
 
-# ---------------------------------- #
-# Configure supported MkDocs Plugins #
-# ---------------------------------- #
+# ----------------------------------
+# Configure supported MkDocs Plugins
+# ----------------------------------
 
 [project.plugins.tags]
 [project.plugins.awesome-nav]

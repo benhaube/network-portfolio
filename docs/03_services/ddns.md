@@ -1,5 +1,5 @@
 ---
-icon: symbols/cloud-sync
+icon: symbols/globe-sync
 title: DDNS
 subtitle: Provided by addr.tools
 description: A networking service that automatically maps a static domain name (FQDN) to a dynamic public IP address. On this LAN, the DDNS service is provided by addr.tools.
@@ -14,7 +14,7 @@ hide:
   - toc
 ---
 
-![Lucide 'cloud-cog' icon](../assets/icons/cloud-sync.svg){ width=200 }
+![Custom Lucide 'globe-sync' icon](../assets/icons/globe-sync.svg){ width=200 }
 
 # DDNS
 

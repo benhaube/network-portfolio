@@ -144,7 +144,7 @@ hide:
 [:symbols-printer:&ensp;CUPS](03_services/cups_print_server.md)
 : A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
-[:symbols-cloud-sync:&ensp;DDNS](03_services/ddns.md)
+[:symbols-globe-sync:&ensp;DDNS](03_services/ddns.md)
 : A networking service that automatically maps a static domain name _(FQDN)_ to a dynamic public IP address. On this LAN, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
 
 [:services-degoog:&ensp;Degoog](03_services/degoog.md)

@@ -218,7 +218,7 @@ To solve this problem we need to create a Macvlan shim. Because Macvtap operatin
     sudo systemctl enable macvlan-shim.service
     ```
 
-### :symbols-hard-drive-upload:&ensp;System Config Backup
+### :symbols-hard-drive-upload:&ensp;System Backup
 
 !!! note inline end
 
@@ -274,7 +274,7 @@ The ZimaOS system configuration files are backed up to the `Quick-Storage` RAID 
     sudo systemctl enable --now system-bkp.timer
     ```
 
-### :symbols-cloud-upload:&ensp;Backblaze B2 Cloud Backup
+### :symbols-cloud-upload:&ensp;Cloud Backup
 
 The ZimaOS NAS is the main backup server for clients and other servers on the local network. To maintain the **3-2-1 Backup Strategy** the important data stored on the NAS is backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link } cloud storage. To automate the backup process we utilize Bash scripts that use the `rclone` command and Systemd unit files to trigger the scripts on a set schedule. Reference the [Backblaze docs](https://www.backblaze.com/docs/cloud-storage-integrate-rclone-with-backblaze-b2){ external-link } for help with `rclone` integration.
 

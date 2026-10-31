@@ -15,7 +15,7 @@
         "scss"
     ],
     "[toml]": {
-        "editor.defaultFormatter": "zensical.zensical-studio"
+        "editor.defaultFormatter": "tombi-toml.tombi"
     },
     "[markdown]": {
         "editor.wordWrap": "off"

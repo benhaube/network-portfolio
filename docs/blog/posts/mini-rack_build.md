@@ -28,10 +28,11 @@ hide:
 
     - RackMate bottom horizontal frame
     - ZimaBoard 2 w/SSD mounting bracket
-    - Vented blank plates _(hexagon pattern)_
-    - Ugreen CM753 mounting bracket _(No longer available to download. Included a similar model in collection linked below.)_
+    - Vented blank plates _(Made with CageMaker PRCG)_
+    - 2x 80mm fan bracket _(Made with CageMaker PRCG)_
+    - Ugreen UM106X / CM753 mounting bracket _(Made with CageMaker PRCG)_
 
-    [3D-Models&ensp;:symbols-file-axis-3d:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }
+    [Printables&ensp;:brands-printables:](https://www.printables.com/@rac3r4life/collections/3360495){ .md-button }&emsp;[CageMaker PRCG&ensp;:brands-cagemaker:](https://github.com/WebMaka/CageMakerPRCG){ .md-button }
 
     **Purchased Parts:**
 
@@ -80,3 +81,5 @@ hide:
 ## Final Rack Configuration
 
 ![RackMate build final front](../assets/photos/rack-build/rackmate_final.jpg){ width=500 .on-glb }&emsp;![RackMate build final rear](../assets/photos/rack-build/rackmate_final_back.jpg){ width=500 .on-glb }
+
+![RackMate build final front](../assets/photos/rack-build/rackmate_final_2.jpg){ width=500 .on-glb }&emsp;![RackMate build final rear](../assets/photos/rack-build/rackmate_final_back_2.jpg){ width=500 .on-glb }

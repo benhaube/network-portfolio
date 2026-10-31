@@ -1,5 +1,5 @@
 ---
-icon: symbols/cloud-cog
+icon: symbols/globe-code
 title: DNS Migration
 subtitle: From Pi-hole to Technitium
 description: A checklist for completing the tasks required to migrate the network's DNS servers from PiHole to Technitium.
@@ -12,7 +12,7 @@ hide:
   - toc
 ---
 
-![Lucide 'cloud-cog' icon](../assets/icons/cloud-cog.svg){ width=200 }
+![Lucide 'globe-code' icon](../assets/icons/globe-code.svg){ width=200 }
 
 # DNS Migration
 

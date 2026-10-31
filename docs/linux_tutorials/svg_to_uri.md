@@ -58,7 +58,7 @@ To scale the icon up or down, leave the `viewBox` alone and explicitly define th
 
 If you want to handle the color and size adjustments without even opening a text editor, you can use `sed` to inject those attributes on the fly and pipe the output directly into the Node.js encoder.
 
-Here is a one-liner that injects a green hex code and a `48x48` size into your standard `icon.svg` and outputs the final data URI:
+Here is a one-liner that injects a green hex code and a `48px x 48px` size into your standard `icon.svg` and outputs the final data URI:
 
 ``` bash { .wrap-code linenums="1" }
 cat icon.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | node -e "const fs = require('fs'); console.log('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(fs.readFileSync(0, 'utf-8')))"
@@ -105,43 +105,45 @@ This is the perfect use case for a shell alias / function. On Linux we can easil
 
 ### Using the Function
 
-Now you can pipe any SVG directly into your new command. 
+Now you can pipe any SVG directly into your new command.
 
-:    If you just want the raw conversion:
+1.  If you just want the raw conversion:
 
     ``` bash linenums="1"
     cat icon.svg | svg2uri
     ```
 
-:    Or, if you want to use the `sed` trick I mentioned above to inject a color or change size before it gets encoded, you can just chain them together:
+2.  Or, if you want to use the `sed` trick I mentioned above to inject a color or change size before it gets encoded, you can just chain them together:
 
     ``` bash linenums="1"
     cat icon.svg | sed 's/<svg/<svg fill="%2310B981" width="48" height="48"/g' | svg2uri
     ```
 
-## :symbols-badge-check:&ensp;Bonus!
+#### Bonus!
 
-If you want to skip highlighting and copying the terminal output altogether, you can pipe the final output directly to your system's clipboard. On Linux you have either `xclip` _(X11)_ or `wl-copy` _(Wayland)_ available:
+If you want to skip highlighting and copying the terminal output altogether, you can pipe the final output directly to your system's clipboard.
 
-``` bash linenums="1"
-cat icon.svg | svg2uri | wl-copy  # (1)! 
-cat icon.svg | svg2uri | xclip -selection clipboard  # (2)!
-```
+1.  On Linux you have either `xclip` _(X11)_ or `wl-copy` _(Wayland)_ available:
 
-1. For Wayland _(The default on most modern Linux distributions)_
-2. For X11 _(A legacy display server used mostly on older Linux installs)_
+    ``` bash linenums="1"
+    cat icon.svg | svg2uri | wl-copy  # (1)! 
+    cat icon.svg | svg2uri | xclip -selection clipboard  # (2)!
+    ```
 
-Now you can just&ensp;++ctrl+v++&ensp;_(paste)_ the output into whatever CSS / HTML file you are working on.
+    1. For Wayland _(The default on most modern Linux distributions)_
+    2. For X11 _(A legacy display server used mostly on older Linux installs)_
+
+    Now you can just&ensp;++ctrl+v++&ensp;_(paste)_ the output into whatever CSS / HTML file you are working on.
 
 ## :symbols-code-xml:&ensp;Using the Output
 
 Once you have your generated string, you can drop it directly into your code:
 
-``` html title="HTML Example" linenums="1" 
+``` html title="Example: HTML" linenums="1" 
 <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D..." alt="My Icon" />
 ```
 
-``` css title="CSS Example" linenums="1"
+``` css title="Example: CSS" linenums="1"
 .my-icon {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D...");
 }

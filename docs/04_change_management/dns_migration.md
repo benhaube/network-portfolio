@@ -85,7 +85,7 @@ _From Pi-hole to Technitium_
 
 ---
 
-## :symbols-sitemap:&ensp;Flowchart
+## :lucide-graph-hub:&ensp;Flowchart
 
 ``` mermaid { .pz-ignore }
 --8<-- "dns_migration.mmd"

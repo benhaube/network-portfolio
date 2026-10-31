@@ -6,6 +6,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="lucide lucide-globe-sync-icon lucide-globe-sync"
 >
   <path d="M10.153 21.828A10 10 0 0112 2a14.5 14.5 0 013.18 5.194" />
   <path d="M12 10v4l1.535-1.605a5 5 0 018 1.5" />

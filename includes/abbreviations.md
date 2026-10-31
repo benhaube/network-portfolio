@@ -163,6 +163,7 @@
 *[PLA]: Polylactic Acid
 *[PM2.5]: Particulate Matter (2.5 microns or smaller)
 *[PNG]: Portable Network Graphics
+*[PRCG]: Parametric Rack Cage Generator
 *[QEMU]: The Quick Emulator
 *[QoS]: Quality of Service
 *[RADIUS]: Remote Authentication Dial-In User Service

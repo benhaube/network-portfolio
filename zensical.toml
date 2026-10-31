@@ -1,5 +1,7 @@
 # ----------------
+
 # Project Settings
+
 # ----------------
 
 [project]
@@ -9,81 +11,108 @@ site_name = "Network Documentation & Portfolio"
 site_description = "My personal, self-hosted network documentation, professional portfolio, and blog website. Designed to showcase my knowledge and capabilities in IT and network security, and to make managing my homelab easier."
 site_author = "Benjamin Haube"
 site_url = "https://portfolio.rac3r4life.online/"
+
 # Disable directory URLs
+
 use_directory_urls = false
+
 # Set the copyright message & create cookies settings link
+
 copyright = """
-    Copyright &copy; 2026 Benjamin Haube –
-    <a href="#__consent">Change cookie settings</a>
+Copyright &copy; 2026 Benjamin Haube –
+<a href="#__consent">Change cookie settings</a>
 """
+
 # Git Repo URL & Docs directory
+
 repo_url = "https://github.com/benhaube/network-portfolio"
 repo_name = "benhaube/network-portfolio"
 edit_uri = "edit/main/docs/"
+
 # Watch directories outside of '/docs'
+
 watch = [
 "includes"
 ]
+
 # Define extra CSS / Javascript files
+
 extra_css = ["assets/stylesheets/extra.css"]
 extra_javascript = [
-    "assets/javascripts/open-in-new-tab.js",
-    "assets/javascripts/mermaid.mjs",
-    "assets/javascripts/tablesort.js",
-    "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js",
-    "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js",
-    "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.dotsep.min.js",
-    "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.filesize.min.js",
-    "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.monthname.min.js",
-    "https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js"
+"assets/javascripts/open-in-new-tab.js",
+"assets/javascripts/mermaid.mjs",
+"assets/javascripts/tablesort.js",
+"https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js",
+"https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js",
+"https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.dotsep.min.js",
+"https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.filesize.min.js",
+"https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.monthname.min.js",
+"https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js"
 ]
 
 [project.extra]
+
 # Disable "Made with Zensical" message in site footer
+
 generator = false
 
 # --------------
+
 # Theme Settings
+
 # --------------
 
 [project.theme]
+
 # Change this to "classic" to use the traditional Material for MkDocs look.
+
 # variant = "classic"
+
 custom_dir = "overrides"
 favicon = "assets/favicon.svg"
 logo = "assets/favicon.svg"
 language = "en"
+
 # Enable Zensical theme features
+
 features = [
-    "announce.dismiss",
-    "content.action.edit",
-    "content.action.view",
-    "content.code.annotate",
-    "content.code.copy",
-    "content.code.select",
-    "content.footnote.tooltips",
-    "content.tabs.link",
-    "content.tooltips",
-    # "header.autohide",
-    # "navigation.expand",
-    "navigation.footer",
-    "navigation.indexes",
-    "navigation.instant",
-    "navigation.instant.prefetch",
-    "navigation.instant.progress",
-    "navigation.path",
-    # "navigation.prune",
-    "navigation.sections",
-    "navigation.tabs",
-    # "navigation.tabs.sticky",
-    "navigation.top",
-    "navigation.tracking",
-    "search.highlight",
-    "toc.follow",
-    "toc.integrate",
+"announce.dismiss",
+"content.action.edit",
+"content.action.view",
+"content.code.annotate",
+"content.code.copy",
+"content.code.select",
+"content.footnote.tooltips",
+"content.tabs.link",
+"content.tooltips",
+
+# "header.autohide",
+
+# "navigation.expand",
+
+"navigation.footer",
+"navigation.indexes",
+"navigation.instant",
+"navigation.instant.prefetch",
+"navigation.instant.progress",
+"navigation.path",
+
+# "navigation.prune",
+
+"navigation.sections",
+"navigation.tabs",
+
+# "navigation.tabs.sticky",
+
+"navigation.top",
+"navigation.tracking",
+"search.highlight",
+"toc.follow",
+"toc.integrate",
 ]
 
 # Set the theme icons
+
 [project.theme.icon]
 edit = "lucide/file-pen"
 view = "lucide/file-code-corner"
@@ -99,6 +128,7 @@ text = "Google Sans"
 code = "Google Sans Code"
 
 # Palette toggle for automatic mode
+
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
 toggle.icon = "lucide/sun-moon"
@@ -107,6 +137,7 @@ primary = "green"
 accent = "light blue"
 
 # Palette toggle for light mode
+
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
@@ -116,6 +147,7 @@ primary = "green"
 accent = "light blue"
 
 # Palette toggle for dark mode
+
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
@@ -125,6 +157,7 @@ primary = "green"
 accent = "light blue"
 
 # Create social media links for the site footer
+
 [[project.extra.social]]
 icon = "brands/gitlab"
 link = "https://gitlab.com/benhaube"
@@ -151,27 +184,30 @@ link = "https://bsky.app/profile/rac3r4life.me"
 name = "@rac3r4life.me — Bluesky"
 
 # Modify cookie consent form options & message
+
 [project.extra.consent]
 title = "Cookie Consent"
 description = """
-    We use cookies to recognize your repeated visits and preferences, as well
-    as to measure the effectiveness of our documentation and whether users
-    find what they're searching for. With your consent, you're helping us to
-    make our documentation better.
+We use cookies to recognize your repeated visits and preferences, as well
+as to measure the effectiveness of our documentation and whether users
+find what they're searching for. With your consent, you're helping us to
+make our documentation better.
 """
 actions = [
-    "accept",
-    "reject",
-    "manage"
+"accept",
+"reject",
+"manage"
 ]
 
 # Set page status tooltip text
+
 [project.extra.status]
 new = "Recently added"
 deprecated = "Deprecated"
 inactive = "Inactive"
 
 # Page tag definitions
+
 [project.extra.tags]
 "Container Host" = "container-host"
 "File Share" = "file-share"
@@ -230,6 +266,7 @@ VPN = "vpn"
 Windows = "windows"
 
 # Page tag icons
+
 [project.theme.icon.tag]
 3D-printer = "symbols/printer-3d-nozzle"
 active = "lucide/circle-check"
@@ -282,14 +319,16 @@ tools = "lucide/wrench"
 tv-stand = "lucide/tv-minimal"
 vh = "symbols/host"
 video = "lucide/film"
-vlan = "symbols/hub"
+vlan = "lucide/graph-star"
 vm = "lucide/layers"
 vpn = "lucide/waypoints"
 web-host = "lucide/globe"
 windows = "brands/microsoft"
 
 # ------------------------------------
+
 # Configure Python Markdown extensions
+
 # ------------------------------------
 
 [project.markdown_extensions.abbr]
@@ -322,20 +361,20 @@ pygments_lang_class = true
 [project.markdown_extensions.pymdownx.snippets]
 auto_append = ["abbreviations.md"]
 base_path = [
-    "*",
-    "includes",
-    "includes/code",
-    "includes/code/bash",
-    "includes/code/config",
-    "includes/code/gcode",
-    "includes/code/mermaid",
-    "includes/code/systemd",
-    "includes/code/yaml"
+"*",
+"includes",
+"includes/code",
+"includes/code/bash",
+"includes/code/config",
+"includes/code/gcode",
+"includes/code/mermaid",
+"includes/code/systemd",
+"includes/code/yaml"
 ]
 
 [project.markdown_extensions.pymdownx.superfences]
 custom_fences = [
-    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+{ name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
 ]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
@@ -349,7 +388,9 @@ auto = false
 auto_themed = true
 
 # ----------------------------------
+
 # Configure supported MkDocs Plugins
+
 # ----------------------------------
 
 [project.plugins.tags]

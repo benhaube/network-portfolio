@@ -29,7 +29,7 @@ _Organized IP Address Space_
 
 ---
 
-## :symbols-hub:&ensp;Virtual Local Networks
+## :lucide-graph-star:&ensp;Virtual Local Networks
 
 | VLAN                                                             | SSID                                                           | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Domain   |          WAN Access { data-sort-method="none" }          | Role / Notes                          |
 | :--------------------------------------------------------------- | :------------------------------------------------------------- | :--------------------------------- | :---------------------------------------- | :------- | :------------------------------------------------------: | :------------------------------------ |

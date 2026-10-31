@@ -66,7 +66,7 @@ _AiMesh Node_
 | :-------------------------------------: | :--------------------------------------- | :------------------ | :--------------------------------------- |
 |                 `wan0`                  | `192.168.50.221`                         | `7C:10:C9:DF:13:60` | Network backhaul                         |
 
-### :symbols-hub:&ensp;Virtual Local Networks
+### :lucide-graph-star:&ensp;Virtual Local Networks
 
 |                VLAN                | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
 | :--------------------------------: | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
@@ -96,7 +96,7 @@ _AiMesh Node_
 
 !!! config inline end "Critical Configurations"
 
-    **:symbols-hub:&ensp;AiMesh Node**
+    **:lucide-graph-star:&ensp;AiMesh Node**
 
     :   The AiMesh Node acts like a "dumb" wireless access point. All available settings for the AiMesh node are available through the main router's Web-UI. See [ASUS RT-BE92U](asus_rt-be92u.md#device-overview){ data-preview }.
 

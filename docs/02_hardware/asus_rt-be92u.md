@@ -73,7 +73,7 @@ _Wireless Router_
 |                 `wan0`                  | `DHCP`                                   | `60:CF:84:51:FA:F0` | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview } |
 |                 `wan1`                  | `Disabled`                               | `xx:xx:xx:xx:xx:xx` | -                                                                                          |
 
-### :symbols-hub:&ensp;Virtual Local Networks
+### :lucide-graph-star:&ensp;Virtual Local Networks
 
 |                VLAN                | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
 | :--------------------------------: | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |

@@ -41,23 +41,23 @@ _Secure Shell_
 **URL / Access**
 { #url-access }
 
--   :symbols-router:&ensp;ASUS RT-BE92U
+-   :symbols-router:&ensp;ASUS RT-BE92U&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/17/status){ style="vertical-align: middle;" }&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/17/uptime/24){ style="vertical-align: middle;" }
 { .no-bullets }
     - `192.168.50.1:22`
     - `asusrouter.internal:22`
--   :symbols-layers:&ensp;Debian Server
+-   :symbols-layers:&ensp;Debian Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/36/status){ style="vertical-align: middle;" }&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/36/uptime/24){ style="vertical-align: middle;" }
 { .no-bullets }
     - `192.168.50.6:22`
     - `debian-vm.internal:22`
--   :symbols-server:&ensp;Pi 4B Server
+-   :symbols-server:&ensp;Pi 4B Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/15/status){ style="vertical-align: middle;" }&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/15/uptime/24){ style="vertical-align: middle;" }
 { .no-bullets }
     - `192.168.50.2:22`
     - `pi-server.internal:22`
--   :symbols-server:&ensp;Pi Zero 2W Server
+-   :symbols-server:&ensp;Pi Zero 2W Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/16/status){ style="vertical-align: middle;" }&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/16/uptime/24){ style="vertical-align: middle;" }
 { .no-bullets }
     - `192.168.50.3:22`
     - `pi-zero.internal:22`
--   :symbols-server-nas:&ensp;ZimaOS NAS
+-   :symbols-server-nas:&ensp;ZimaOS NAS&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/34/status){ style="vertical-align: middle;" }&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/34/uptime/24){ style="vertical-align: middle;" }
 { .no-bullets }
     - `192.168.50.4:22`
     - `192.168.50.5:22`

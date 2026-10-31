@@ -45,11 +45,11 @@ _Authoritative & Recursive DNS_
 
 **URL / Access**
 
--   :symbols-layers:&ensp;Debian Server
+-   :symbols-layers:&ensp;Debian Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/37/status){ style='vertical-align: middle;' }&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/37/uptime/24){ style='vertical-align: middle;' }
 { .no-bullets }
     - `192.168.50.6` &mdash; Primary server
     - <http://debian-vm.internal:5380>
--   :symbols-server:&ensp;Pi 4B Server
+-   :symbols-server:&ensp;Pi 4B Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/38/status){ style='vertical-align: middle;' }&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/38/uptime/24){ style='vertical-align: middle;' }
 { .no-bullets }
     - `192.168.50.2` &mdash; Secondary server
     - <http://pi-server.internal:5380>

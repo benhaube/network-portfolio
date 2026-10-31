@@ -1,5 +1,5 @@
 ---
-icon: symbols/sitemap
+icon: lucide/graph-hub
 title: Logical Diagram
 subtitle: Focusing on Servers and Services
 description: A Mermaid.js flowchart focusing on servers, services, and their connections.
@@ -14,7 +14,7 @@ hide:
   - toc
 ---
 
-![Material Design sitemap icon](../assets/icons/sitemap.svg){ width=200 }
+![Lucide `graph-hub` icon](../assets/icons/graph-hub.svg){ width=200 }
 
 # Logical Diagram
 

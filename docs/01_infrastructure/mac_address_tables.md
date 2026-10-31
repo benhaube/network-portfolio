@@ -102,7 +102,7 @@ _Hardware MAC Addresses_
 
     [IP Address Management](ip_address_management.md){ .md-button }
 
--   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
+-   :lucide-graph-hub:{ .lg .middle }&emsp;**Network Diagrams**
 
     ---
 

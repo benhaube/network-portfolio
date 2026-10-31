@@ -134,7 +134,7 @@ The migration from **Google Home** to **Home Assistant** ensures that IoT device
 
     [MAC Address Tables](mac_address_tables.md){ .md-button }
 
--   :symbols-sitemap:{ .lg .middle }&emsp;**Network Diagrams**
+-   :lucide-graph-hub:{ .lg .middle }&emsp;**Network Diagrams**
 
     ---
 

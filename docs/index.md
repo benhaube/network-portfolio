@@ -23,6 +23,8 @@ hide:
 
         [Infrastructure Tags&ensp;:symbols-tags:](01_infrastructure/tags.md){ .md-button }
 
+: ![status badge](https://uptime.rac3r4life.online/api/badge/23/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/23/uptime)
+
 [:symbols-tornado:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
 : Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
@@ -53,7 +55,7 @@ hide:
 
         [Hardware Tags&ensp;:symbols-tags:](02_hardware/tags.md){ .md-button }
 
-### Core Infrastructure
+: ![status badge](https://uptime.rac3r4life.online/api/badge/118/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/118/uptime)
 
 [:symbols-router:&ensp;ASUS RT-BE92U](02_hardware/asus_rt-be92u.md)
 : The main wireless router and firewall for the LAN. Located next to the 10-inch server rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
@@ -61,17 +63,38 @@ hide:
 [:symbols-router:&ensp;ASUS RT-AX55](02_hardware/asus_rt-ax55.md)
 : A secondary router located on the stationary printer cart in the office upstairs, acting as an "_AiMesh_" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
+[:symbols-pc-case:&ensp;Ben's Workstation](02_hardware/bens_desktop.md) 
+: Ben's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
+
+[:symbols-laptop-minimal:&ensp;Ben's Laptop](02_hardware/bens_laptop.md)
+: Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
+
+[:symbols-smartphone:&ensp;Ben's Smartphone](02_hardware/bens_smartphone.md)
+: Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
+
 [:symbols-layers:&ensp;Debian Server](02_hardware/debian_server.md)
 : The primary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](02_hardware/zimaos_nas.md#virtualization){ data-preview }.
 
 [:symbols-globe:&ensp;Hitron Modem](02_hardware/hitron_modem.md)
 : The DOCSIS 3.1 cable modem that communicates with the ISP _([Xfinity](https://www.xfinity.com/overview){ external-link })_. Located in the 10-inch server rack.
 
+[:symbols-printer-3d-nozzle:&ensp;Kacey 3D-Printer](02_hardware/kacey_3d-printer.md) 
+: The Creality K1C 3D-printer located in the office upstairs, and connected to the LAN through 2.4 GHz Wi-Fi _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_. Affectionately, named 'Kacey' as a play on the model name, K1C.
+
 [:symbols-server:&ensp;Pi 4B Server](02_hardware/pi_4b_server.md)
 : The secondary DNS server in the [Technitium](03_services/technitium.md#deployment-details){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
 
 [:symbols-server:&ensp;Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) 
 : A tiny, low-power server acting as a dedicated as Caddy _reverse-proxy_, giving unique `.internal` FQDNs to services hosted on the LAN. Located on the stationary printer cart in the office upstairs, and connected to the LAN via 2.4 GHz Wi-Fi _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
+
+[:symbols-pc-case:&ensp;Rob's Workstation](02_hardware/robs_desktop.md) 
+: Rob's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
+
+[:symbols-laptop-minimal:&ensp;Rob's Laptop](02_hardware/robs_laptop.md) 
+: Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_. However, sometimes it has a 2.5 Gb/s Ethernet connection through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
+
+[:symbols-smartphone:&ensp;Rob's Smartphone](02_hardware/robs_phone.md)
+: Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
 
 [:symbols-ethernet-port:&ensp;TP-Link LiteWave Switch](02_hardware/tp-link_litewave_switch.md)
 : A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
@@ -85,29 +108,6 @@ hide:
 [:symbols-server-nas:&ensp;ZimaOS NAS](02_hardware/zimaos_nas.md) 
 : The primary rack-mounted NAS server & VM host for the LAN. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server?utm_source=head&utm_medium=menu){ external-link } as the "beating heart," it is the most powerful server on the LAN. With an _x86-64_ Intel N150 CPU and 16 GB of LPDDR5 _(4800 MHz)_ RAM. Located in the 10-inch server rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
 
-### Key Clients
-
-[:symbols-pc-case:&ensp;Ben's Workstation](02_hardware/bens_desktop.md) 
-: Ben's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
-
-[:symbols-laptop-minimal:&ensp;Ben's Laptop](02_hardware/bens_laptop.md)
-: Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
-
-[:symbols-smartphone:&ensp;Ben's Smartphone](02_hardware/bens_smartphone.md)
-: Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
-
-[:symbols-printer-3d-nozzle:&ensp;Kacey 3D-Printer](02_hardware/kacey_3d-printer.md) 
-: The Creality K1C 3D-printer located in the office upstairs, and connected to the LAN through 2.4 GHz Wi-Fi _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_. Affectionately, named 'Kacey' as a play on the model name, K1C.
-
-[:symbols-pc-case:&ensp;Rob's Workstation](02_hardware/robs_desktop.md) 
-: Rob's main workstation PC located at his desk in the office upstairs. Connected to the LAN through the [TP-Link Switch](02_hardware/tp-link_switch.md#port-map){ data-preview }.
-
-[:symbols-laptop-minimal:&ensp;Rob's Laptop](02_hardware/robs_laptop.md) 
-: Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile device primarily connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_. However, sometimes it has a 2.5 Gb/s Ethernet connection through the [Ugreen Switch](02_hardware/ugreen_switch.md#port-map){ data-preview }.
-
-[:symbols-smartphone:&ensp;Rob's Smartphone](02_hardware/robs_phone.md)
-: Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi network _([SSID: `Home`](02_hardware/asus_rt-be92u.md#wi-fi-networks){ data-preview })_.
-
 ---
 
 ## :symbols-cloud:&ensp;Services
@@ -119,6 +119,8 @@ hide:
     :    An index of tags relevant to the network services.
 
         [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
+
+: ![status badge](https://uptime.rac3r4life.online/api/badge/40/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/40/uptime)
 
 [:services-authentik:&ensp;Authentik](03_services/authentik.md)
 : An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters.

@@ -35,6 +35,8 @@ _Primary DNS Server_
 
 :    The primary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#device-overview){ data-preview }.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/36/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/36/uptime)
+
 **Hostname**
 
 :    `debian-vm`

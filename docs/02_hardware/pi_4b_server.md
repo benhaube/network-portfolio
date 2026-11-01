@@ -36,6 +36,8 @@ _Secondary DNS Server_
 
 :   The secondary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/15/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/15/uptime)
+
 **Hostname**
 
 - `pi-server` _(VLAN50 / `eth0`)_

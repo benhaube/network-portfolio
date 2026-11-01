@@ -36,7 +36,7 @@ _Secondary DNS Server_
 
 :   The secondary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster, a CUPS print server, a Home Assistant server, and host for other [Docker](https://www.docker.com/){ external-link } containers. Located next to the Ai-Mesh node on the stationary printer cart in the office upstairs, and connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/15/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/15/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/132/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/132/uptime)
 
 **Hostname**
 
@@ -68,10 +68,10 @@ _Secondary DNS Server_
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                 |
-| :-------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
-|  `eth0`   | `192.168.50.2`                           | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(port 3, VLAN50)_ |
-|  `wlan0`  | `192.168.53.2`                           | `E4:5F:01:A4:60:08` | [:symbols-wifi-lock:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN53)_                |
+|                                                       Interface                                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                 |
+| :--------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
+| `eth0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/120/status){ style='vertical-align: middle;' }  | `192.168.50.2`                           | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(port 3, VLAN50)_ |
+| `wlan0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/131/status){ style='vertical-align: middle;' } | `192.168.53.2`                           | `E4:5F:01:A4:60:08` | [:symbols-wifi-lock:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN53)_                |
 
 | Interface |                VLAN                | FQDN                 | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------: | :--------------------------------: | :------------------- | :---------------------------------------- | :------------------------------------ |

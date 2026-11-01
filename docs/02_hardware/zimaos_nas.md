@@ -36,7 +36,7 @@ _Rack-Mount ZimaBoard 2_
 
 :    The primary rack-mounted NAS server & VM host for the local network. With a [ZimaBoard 2 1664](https://www.zimaspace.com/products/single-board2-server "Product Information"){ external-link } as the "beating heart," it is the most powerful server on the local network. It has an _x86-64_ Intel N150 quad-core CPU _(3.6 GHz)_ and 16 GB of LPDDR5 _(4800 MHz)_ RAM, and it is located in the 10-inch server rack in the living room on the main floor. It has two 2.5 Gb/s Ethernet NICs connected through the Ugreen Switch.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/34/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/34/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/124/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/124/uptime)
 
 **Hostname**
 
@@ -68,10 +68,10 @@ _Rack-Mount ZimaBoard 2_
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                       |
-| :-------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
-|                 `eth0`                  | `192.168.50.4`                           | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } _(Port 4)_ |
-|                 `eth1`                  | `192.168.50.5`                           | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } _(Port 5)_ |
+|                                        Interface { data-sort-method="number" }                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                       |
+| :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------- |
+| `eth0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/122/status){ style='vertical-align: middle;' } | `192.168.50.4`                           | `00:E0:4C:5B:9A:96` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } _(Port 4)_ |
+| `eth1`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/123/status){ style='vertical-align: middle;' } | `192.168.50.5`                           | `00:E0:4C:5B:9A:95` | [:symbols-ethernet-port:&nbsp;Ugreen Switch](ugreen_switch.md#port-map){ data-preview } _(Port 5)_ |
 
 | Interface { data-sort-method="number" } |             VLAN             | FQDN                        | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------------------------------------: | :--------------------------: | :-------------------------- | :---------------------------------------- | :------------------------------------ |

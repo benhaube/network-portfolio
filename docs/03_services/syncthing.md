@@ -34,6 +34,8 @@ _File Synchronization_
 
 :   Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/29/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/29/uptime)
+
 **Port(s)**
 
 - `8384` &mdash; _TCP_
@@ -54,16 +56,16 @@ _File Synchronization_
 -   :symbols-smartphone:&ensp;Ben's Smartphone
 { .no-bullets }
     - <https://localhost:8384>
--   :symbols-layers:&ensp;Debian Server
+-   :symbols-layers:&ensp;Debian Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/54/status){ style="vertical-align: middle;" }
 { .no-bullets }
     - <https://debian-vm.internal:8384>
--   :symbols-server:&ensp;Pi 4B Server
+-   :symbols-server:&ensp;Pi 4B Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/27/status){ style="vertical-align: middle;" }
 { .no-bullets }
     - <https://pi-server.internal:8384>
--   :symbols-server:&ensp;Pi Zero 2W Server
+-   :symbols-server:&ensp;Pi Zero 2W Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/28/status){ style="vertical-align: middle;" }
 { .no-bullets }
     - <https://pi-zero.internal:8384>
--   :symbols-server-nas:&ensp;ZimaOS NAS
+-   :symbols-server-nas:&ensp;ZimaOS NAS&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/35/status){ style="vertical-align: middle;" }
 { .no-bullets }
     - <https://storage-server.internal:8384>
     - <https://storage-server-2.internal:8384>

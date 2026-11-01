@@ -30,6 +30,8 @@ _Open Print Server_
 
 :    A standards-based, open-source printing system for Linux and other Unix-like operating systems.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/101/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/101/uptime)
+
 **Port(s)**
 
 :    `631`

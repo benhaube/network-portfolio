@@ -33,6 +33,8 @@ _A Simple, Modern VPN_
 
 :    An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/114/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/114/uptime)
+
 **Port(s)** 
 
 :    `41820`

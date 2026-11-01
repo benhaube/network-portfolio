@@ -33,6 +33,8 @@ _Server Dashboard_
 
 :    A self-hosted dashboard built for people who want their information in one place. It focuses on dynamic content updates and seamless integration with external applications.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/48/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/48/uptime)
+
 **Port(s)**
 
 - `8580`

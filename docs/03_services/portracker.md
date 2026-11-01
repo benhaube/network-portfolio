@@ -33,16 +33,18 @@ _Port Monitoring & Discovery_
 
 :    A self-hosted, real-time port monitoring and discovery tool.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/62/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/62/uptime)
+
 **Port(s)**
 
 :    `4999`
 
 **URL / Access**
 
--   :symbols-server:&ensp;Pi 4B Server:
+-   :symbols-server:&ensp;Pi 4B Server:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/41/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - <http://pi-server.internal:4999>
--   :symbols-server-nas:&ensp;ZimaOS NAS:
+-   :symbols-server-nas:&ensp;ZimaOS NAS:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/55/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - <http://storage-server.internal:4999>
     - <http://storage-server-2.internal:4999>

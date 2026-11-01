@@ -33,6 +33,8 @@ _Anti-Virus for ZimaOS_
 
 :   Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/82/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/82/uptime)
+
 **Port(s)**
 
 -   Service:&ensp;`clamav-server`

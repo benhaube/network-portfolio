@@ -37,6 +37,8 @@ _Centralized Network Visibility_
 
 :   Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/66/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/66/uptime)
+
 **Port(s)**
 
 - `20211`

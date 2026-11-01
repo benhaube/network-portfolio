@@ -35,6 +35,8 @@ _Git with a Cup of Tea_
 
 :   Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/73/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/73/uptime)
+
 **Port(s)**
 
 - `3080`
@@ -44,12 +46,12 @@ _Git with a Cup of Tea_
 
 **URL / Access**
 
--   :symbols-app-window:&ensp;Web-UI:
+-   :symbols-app-window:&ensp;Web-UI:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/67/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - <http://storage-server.internal:3080>
     - <http://storage-server-2.internal:3080>
     - <https://gitea.rac3r4life.online>
--   :symbols-square-terminal:&ensp;SSH:
+-   :symbols-square-terminal:&ensp;SSH:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/102/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - `git@storage-server.internal:222`
 

@@ -32,6 +32,8 @@ _Filament Inventory Management_
 
 :    Spoolman is a self-hosted web service designed to help you efficiently manage your 3D printer filament spools and monitor their usage. It acts as a centralized database that seamlessly integrates with popular 3D printing software like **OctoPrint** and **Klipper / Moonraker**. When connected, it automatically updates spool weights as printing progresses, giving you real-time insights into filament usage.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/43/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/43/uptime)
+
 **Port(s)**
 
 :    `7912`

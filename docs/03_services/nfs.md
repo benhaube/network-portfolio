@@ -35,6 +35,8 @@ _Network File System_
 
 :    Allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. This enables system administrators to consolidate resources onto centralized servers on the network.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/104/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/104/uptime)
+
 **Port(s)**
 
 :    `2049`

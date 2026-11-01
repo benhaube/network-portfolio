@@ -34,6 +34,8 @@ _Search You Run Yourself_
 
 :    A self-hosted search engine aggregator with a comprehensive plugin / extension system.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/81/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/81/uptime)
+
 **Port(s)**
 
 :    `4444`

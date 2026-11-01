@@ -33,6 +33,8 @@ _Test Network Performance_
 
 :    A free & open-source HTML5 network performance estimation tool.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/89/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/89/uptime)
+
 **Port(s)**
 
 :    `3004`

@@ -34,6 +34,8 @@ _Reverse-Proxy Server_
 
 :   Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/65/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/65/uptime)
+
 **Port(s)**
 
 - :symbols-globe:&ensp;Outbound
@@ -60,16 +62,16 @@ _Reverse-Proxy Server_
 
 **Routes**
 
-- :symbols-layers:&ensp;Debian Server
+- :symbols-layers:&ensp;Debian Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/99/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - <https://healthchecks.rac3r4life.online>
-- :symbols-server:&ensp;Pi 4B Server
+- :symbols-server:&ensp;Pi 4B Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/64/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - <https://beszel.rac3r4life.online>
     - <https://home.rac3r4life.online> _(`CNAME` record only, Exposed with Home Assistant Cloud)_
     - <https://it-tools.rac3r4life.online>
     - <https://uptime.rac3r4life.online>
-- :symbols-server-nas:&ensp;ZimaOS NAS
+- :symbols-server-nas:&ensp;ZimaOS NAS&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/61/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - <https://auth.rac3r4life.online>
     - <https://gitea.rac3r4life.online>

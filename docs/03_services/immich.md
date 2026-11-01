@@ -32,6 +32,8 @@ _Bye Bye, Google Photos_
 
 :    High performance self-hosted photo and video management solution.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/75/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/75/uptime)
+
 **Port(s)** 
 
 :    `2283`

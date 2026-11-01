@@ -30,6 +30,8 @@ _All of the Data_
 
 :    Visualization of real-time track data and telemetry synced to F1 live and replays.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/80/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/80/uptime)
+
 **Port(s)**
 
 - `8000`

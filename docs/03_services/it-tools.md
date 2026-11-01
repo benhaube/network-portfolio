@@ -33,6 +33,8 @@ _Handy Tools for Devs_
 
 :   Handy tools for network administrators and developers.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/9/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/9/uptime)
+
 **Port(s)**
 
 - `8080`

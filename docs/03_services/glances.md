@@ -31,6 +31,8 @@ _An Eye on Your System_
 
 :    Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/46/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/46/uptime)
+
 **Port(s)** 
 
 :    `61208`

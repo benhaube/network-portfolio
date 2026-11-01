@@ -32,6 +32,8 @@ _The Terminal on the Web_
 
 :    A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/110/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/110/uptime)
+
 **Port(s)** 
 
 :    `2222`

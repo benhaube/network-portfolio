@@ -32,6 +32,8 @@ _Server Monitoring_
 
 :   A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/47/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/47/uptime)
+
 **Port(s)**
 
 - Hub:&ensp;`8090`

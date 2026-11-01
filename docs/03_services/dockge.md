@@ -34,6 +34,8 @@ _Docker Management_
 
 :    A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/57/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/57/uptime)
+
 **Port(s)** 
 
 :    `5001`

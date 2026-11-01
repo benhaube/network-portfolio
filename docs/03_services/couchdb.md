@@ -32,6 +32,8 @@ _Obsidian LiveSync_
 
 :    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/88/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/88/uptime)
+
 **Port(s)**
 
 :    `5984`

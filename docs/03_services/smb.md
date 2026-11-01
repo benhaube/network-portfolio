@@ -34,19 +34,21 @@ _Server Message Block_
 
 :    Samba is an open-source software suite that has, since 1992, provided file and print services to all manner of SMB / CIFS clients, including the numerous versions of Microsoft Windows operating systems.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/106/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/106/uptime)
+
 **Port(s)**
 
 :    `445`
 
 **URL / Access**
 
--   :symbols-router:&ensp;ASUS RT-BE92U:
+-   :symbols-router:&ensp;ASUS RT-BE92U:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/107/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - `\\asusrouter.internal\`
--   :symbols-server:&ensp;Pi 4B Server:
+-   :symbols-server:&ensp;Pi 4B Server:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/108/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - `\\pi-server.internal\smb-share`
--   :symbols-server-nas:&ensp;ZimaOS NAS:
+-   :symbols-server-nas:&ensp;ZimaOS NAS:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/109/status){ style='vertical-align: middle;' }
 { .no-bullets }
     - `\\storage-server.internal\nvme0n1p1`
     - `\\storage-server.internal\Quick-Storage`

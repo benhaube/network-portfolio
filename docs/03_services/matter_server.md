@@ -34,6 +34,8 @@ _Based on Matter.js_
 
 :    The **Open Home Foundation** Matter Server serves as the foundation to provide Matter support to [Home Assistant](home_assistant.md), but its universal approach makes it suitable to be used in other projects too.
 
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/86/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/86/uptime)
+
 **Port(s)**
 
 :    `5580`

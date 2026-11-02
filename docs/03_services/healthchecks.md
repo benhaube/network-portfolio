@@ -36,7 +36,12 @@ _Cron Monitoring_
 
 :   ![status badge](https://uptime.rac3r4life.online/api/badge/94/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/94/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/135/cert-exp)
 
-:   ![AppData Backup](https://healthchecks.rac3r4life.online/b/3/7a592da9-bc4e-44d8-bc9a-0c47854875fd.svg)&ensp;![Devices Backup](https://healthchecks.rac3r4life.online/b/3/632c4949-6b24-4943-90e0-e8cc92f59947.svg)&ensp;![Immich Backup](https://healthchecks.rac3r4life.online/b/3/f96a7e0b-d0cd-445e-b4c0-e81b145ce50c.svg)&ensp;![System Config Backup](https://healthchecks.rac3r4life.online/b/3/fb7e547c-b73e-4302-a6ea-b0df5d4baf1d.svg)
+**Checks Status**
+
+- ![AppData Backup](https://healthchecks.rac3r4life.online/b/3/7a592da9-bc4e-44d8-bc9a-0c47854875fd.svg){ style="vertical-align: middle;" }&ensp;![Devices Backup](https://healthchecks.rac3r4life.online/b/3/632c4949-6b24-4943-90e0-e8cc92f59947.svg){ style="vertical-align: middle;" }&ensp;![Immich Backup](https://healthchecks.rac3r4life.online/b/3/f96a7e0b-d0cd-445e-b4c0-e81b145ce50c.svg){ style="vertical-align: middle;" }&ensp;![System Config Backup](https://healthchecks.rac3r4life.online/b/3/fb7e547c-b73e-4302-a6ea-b0df5d4baf1d.svg){ style="vertical-align: middle;" }
+{ .no-bullets }
+- ![Desktop Backup](https://healthchecks.rac3r4life.online/b/3/2c8cbfbb-d73e-4a88-8520-8039e22116cc.svg){ style="vertical-align: middle;" }&ensp;![Laptop Backup](https://healthchecks.rac3r4life.online/b/3/3e89a6a7-af0b-4175-8fab-8645cae4027a.svg){ style="vertical-align: middle;" }
+{ .no-bullets }
 
 **Port(s)**
 

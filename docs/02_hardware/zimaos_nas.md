@@ -44,7 +44,7 @@ _Rack-Mount ZimaBoard 2_
 
 **OS / Firmware**
 
-:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(v1.8.0)_
+:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link }&ensp;![GitHub Release](https://img.shields.io/github/v/release/IceWhaleTech/ZimaOS?label=Release&color=%23FFAA00){ style="vertical-align: middle;" }
 
 **Credentials**
 

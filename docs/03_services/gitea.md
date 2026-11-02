@@ -35,7 +35,7 @@ _Git with a Cup of Tea_
 
 :   Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/73/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/73/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/73/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/73/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/141/cert-exp)
 
 **Port(s)**
 

@@ -31,7 +31,7 @@ _Network Documentation_
 
 :    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/87/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/87/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/87/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/87/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/145/cert-exp)
 
 **Port(s)** 
 

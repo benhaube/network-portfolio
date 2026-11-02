@@ -34,7 +34,7 @@ _SSO Identity Provider_
 
 :    An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/95/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/95/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/95/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/95/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/134/cert-exp)
 
 **Port(s)**
 

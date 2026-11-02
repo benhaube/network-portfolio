@@ -33,7 +33,7 @@ _A Fancy Monitoring Tool_
 
 :    A fancy self-hosted service monitoring tool.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/111/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/111/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/111/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/111/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/139/cert-exp)
 
 **Port(s)** 
 

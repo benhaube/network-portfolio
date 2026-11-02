@@ -225,6 +225,8 @@ The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](z
 
 ### :brands-node-js:&ensp;Setup Node.js
 
+![Fedora package](https://img.shields.io/fedora/v/nodejs?label=Release&color=%2351A2DA){ style="vertical-align: middle;" }
+
 [Node.js](https://nodejs.org/en){ external-link } is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts. Starting from Fedora 24, `npm` is a part of the Node.js package and does not need to be installed separately.
 
 #### Install

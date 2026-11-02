@@ -70,10 +70,9 @@ _Wireless Router_
 
 ### :symbols-globe:&ensp;WAN Connection
 
-| Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" }                                                   |
-| :-------------------------------------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
-|                 `wan0`                  | `DHCP`                                   | `60:CF:84:51:FA:F0` | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview } |
-|                 `wan1`                  | `Disabled`                               | `xx:xx:xx:xx:xx:xx` | -                                                                                          |
+|                                        Interface { data-sort-method="number" }                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" }                                                   |
+| :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+| `wan0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/148/status){ style='vertical-align: middle;' } | `DHCP`                                   | `60:CF:84:51:FA:F0` | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview } |
 
 ### :lucide-graph-star:&ensp;Virtual Local Networks
 

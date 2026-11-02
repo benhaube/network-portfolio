@@ -66,3 +66,15 @@ When I’m not hardening my network or managing services, you can usually find m
 
 - Spending time outdoors and / or hanging out with my husband and our dog, Max.
 { .no-bullets }
+
+<br>
+
+<p align="center">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/benhaube">
+    &ensp;
+    <img alt="Bluesky followers" src="https://img.shields.io/bluesky/followers/rac3r4life.me">
+    &ensp;
+    <img alt="Bluesky posts" src="https://img.shields.io/bluesky/posts/rac3r4life.me">
+    &ensp;
+    <img alt="Reddit user karma" src="https://img.shields.io/reddit/user-karma/combined/benhaube">
+</p>

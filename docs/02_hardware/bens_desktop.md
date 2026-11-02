@@ -173,11 +173,13 @@ flatpak update -y
 
 ### :symbols-cloud-upload:&ensp;Backup Policy
 
-!!! tip inline end
-
-    See ["ZimaOS NAS Mounts"](#zimaos-nas-mounts) for NFS auto-mount client configuration documentation.
+![Desktop Backup status badge](https://healthchecks.rac3r4life.online/b/3/2c8cbfbb-d73e-4a88-8520-8039e22116cc.svg){ style="vertical-align: middle;" }
 
 The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#backup-script) triggered by Systemd. With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time. Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+
+!!! tip
+
+    See ["ZimaOS NAS Mounts"](#zimaos-nas-mounts) for NFS auto-mount client configuration documentation.
 
 #### Backup Script
 
@@ -187,7 +189,7 @@ The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](z
     --8<-- "home-bkp-nas.sh"
     ```
 
-    1. `DEST_DIR` is set automatically using the variable, `HOSTNAME`. 
+    1. `DEST_DIR` is set automatically using the variable, `HOSTNAME`.
     2. Replace the `GOTIFY_TOKEN` and `GOTIFY_URL` variables with your actual Gotify App token and URL.
 
 2.  Place `.bkp-exclude-nas` in the home _(`~/`)_ directory.

@@ -177,11 +177,13 @@ flatpak update -y
 
 ### :symbols-cloud-upload:&ensp;Backup Policy
 
-!!! tip inline end
-
-    See ["ZimaOS NAS Mounts"](#zimaos-nas-mounts) for NFS auto-mount client configuration documentation.
+![Laptop Backup status badge](https://healthchecks.rac3r4life.online/b/3/3e89a6a7-af0b-4175-8fab-8645cae4027a.svg){ style="vertical-align: middle;" }
 
 The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](zimaos_nas.md#data){ data-preview } with a custom [backup script](#zimaos-nas-mounts) triggered by Systemd. With the `Persistent=true` value set in the Systemd `*.timer` unit file, the backup script will run the next time the system is running if the system is powered off or sleeping at the scheduled backup time. Backups of the user files stored on the **ZimaOS NAS** are then backed up to the cloud storage provider, [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link }, to maintain the [3-2-1 Backup Strategy](../01_infrastructure/disaster_recovery_plan.md#backup-strategy).
+
+!!! tip
+
+    See ["ZimaOS NAS Mounts"](#zimaos-nas-mounts) for NFS auto-mount client configuration documentation.
 
 #### Backup Script
 

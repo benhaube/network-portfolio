@@ -222,9 +222,7 @@ To solve this problem we need to create a Macvlan shim. Because Macvtap operatin
 
 ### :symbols-hard-drive-upload:&ensp;System Backup
 
-!!! note inline end
-
-    The operating system itself is not backed up. ZimaOS is reinstalled from IceWhale's installer, then this backup restores the configuration.
+![System Config Backup](https://healthchecks.rac3r4life.online/b/3/fb7e547c-b73e-4302-a6ea-b0df5d4baf1d.svg){ style="vertical-align: middle;" }
 
 The ZimaOS system configuration files are backed up to the `Quick-Storage` RAID volume using a dedicated Bash script _(`system-bkp.sh`)_, then backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link } cloud storage with the rest of the network client backups using the `b2-backup-bkp.sh` script. This maintains the **3-2-1 Backup Strategy** by keeping one backed up copy locally and another in the cloud. The backup includes the configuration files in `/etc` _(network, users, hostname, SSH keys, Systemd services, etc.)_, the ZimaOS state _(apps, users, app store, file service)_, and the installed ZimaOS modules.
 
@@ -277,6 +275,8 @@ The ZimaOS system configuration files are backed up to the `Quick-Storage` RAID 
     ```
 
 ### :symbols-cloud-upload:&ensp;Cloud Backup
+
+![AppData Backup](https://healthchecks.rac3r4life.online/b/3/7a592da9-bc4e-44d8-bc9a-0c47854875fd.svg){ style="vertical-align: middle;" }&ensp;![Devices Backup](https://healthchecks.rac3r4life.online/b/3/632c4949-6b24-4943-90e0-e8cc92f59947.svg){ style="vertical-align: middle;" }&ensp;![Immich Backup](https://healthchecks.rac3r4life.online/b/3/f96a7e0b-d0cd-445e-b4c0-e81b145ce50c.svg){ style="vertical-align: middle;" }
 
 The ZimaOS NAS is the main backup server for clients and other servers on the local network. To maintain the **3-2-1 Backup Strategy** the important data stored on the NAS is backed up to [Backblaze B2](https://www.backblaze.com/cloud-storage){ external-link } cloud storage. To automate the backup process we utilize Bash scripts that use the `rclone` command and Systemd unit files to trigger the scripts on a set schedule. Reference the [Backblaze docs](https://www.backblaze.com/docs/cloud-storage-integrate-rclone-with-backblaze-b2){ external-link } for help with `rclone` integration.
 

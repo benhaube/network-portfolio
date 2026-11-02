@@ -25,13 +25,16 @@ _Reverse-Proxy Server_
 
 ---
 
+![Caddy web-server page](../assets/screenshots/caddy-light.png#only-light){ width=400 align=right .on-glb }
+![Caddy web-server page](../assets/screenshots/caddy-dark.png#only-dark){ width=400 align=right .on-glb }
+
 ## :symbols-info:&ensp;Overview
 
 **Description**
 
 :   Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/105/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/105/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/105/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/105/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/caddyserver/caddy?label=Release&color=%234cae4f)
 
 **Port(s)**
 

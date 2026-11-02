@@ -33,7 +33,7 @@ _Inventory Management_
 
 :    Homebox is the inventory and organization system built for the home user! With a focus on simplicity and ease of use, Homebox is the perfect solution for your home inventory, organization, and management needs.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/63/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/63/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/143/cert-exp)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/63/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/63/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/143/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/sysadminsmedia/homebox?label=Release&color=%23FF7AC6)
 
 **Port(s)** 
 

@@ -32,7 +32,7 @@ _Bye Bye, Google Photos_
 
 :    High performance self-hosted photo and video management solution.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/75/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/75/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/144/cert-exp)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/75/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/75/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/144/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/immich-app/immich?label=Release&color=%234452AD)
 
 **Port(s)** 
 

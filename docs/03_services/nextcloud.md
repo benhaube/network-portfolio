@@ -30,6 +30,8 @@ _Private Cloud_
 
 :    Self-hosted cloud storage and collaboration platform.
 
+:   ![GitHub Release](https://img.shields.io/github/v/release/nextcloud/server?label=Release&color=%230091EB)
+
 **Port(s)**
 
 :    `10081`

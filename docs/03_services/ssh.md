@@ -34,7 +34,7 @@ _Secure Shell_
 
 :    Provides secure encrypted communications between two untrusted hosts over an insecure network.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/18/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/18/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/18/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/18/uptime)&ensp;![Debian package (for distribution)](https://img.shields.io/debian/v/openssh-server/stable?label=Debian&color=%23DA3F33)
 
 **Port(s)**
 

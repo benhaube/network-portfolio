@@ -31,6 +31,8 @@ _The Klipper UI_
 
 :   A free and open-source Klipper web interface for managing your 3D-printer.
 
+:   ![GitHub Release](https://img.shields.io/github/v/release/fluidd-core/fluidd?label=Release&color=%230091EC)
+
 **Port(s)**
 
 - `80`

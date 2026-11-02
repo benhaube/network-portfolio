@@ -32,6 +32,8 @@ _Remote Desktop Protocol_
 
 :    KRDP is a Remote Desktop Protocol server implementation for the KDE Plasma desktop environment and Wayland-based systems. It enables remote access to a Wayland desktop session using standard RDP clients, leveraging modern Linux desktop technologies including PipeWire for screen capture, XDG Desktop Portals for compositor integration, and FreeRDP for protocol implementation.
 
+:   ![Fedora package](https://img.shields.io/fedora/v/krdp?label=Release&color=%2351a2da)
+
 **Port(s)**
 
 :    `3389`

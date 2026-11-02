@@ -32,7 +32,7 @@ _The Terminal on the Web_
 
 :    A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/110/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/110/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/110/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/110/uptime)&ensp;![Docker Image Version](https://img.shields.io/docker/v/cp0204/ttydbridge?label=Release&color=%23FFAA00)
 
 **Port(s)** 
 
@@ -55,7 +55,7 @@ _The Terminal on the Web_
 
 | Host Device                                                          | Method                                    | Container Name | Image                      | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ttydbridge`   | `cp0204/ttydbridge:v0.0.3` | `2222`  |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ttydbridge`   | `cp0204/ttydbridge:v0.0.4` | `2222`  |
 
 ---
 

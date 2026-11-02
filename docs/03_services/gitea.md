@@ -35,7 +35,7 @@ _Git with a Cup of Tea_
 
 :   Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/73/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/73/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/141/cert-exp)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/73/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/73/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/141/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/go-gitea/gitea?label=Release&color=%234493F8)
 
 **Port(s)**
 
@@ -124,6 +124,8 @@ To build a custom logo and / or favicon; clone the Gitea source repository, repl
 
 ### :symbols-palette:&ensp;Gitea GitHub Theme
 
+![GitHub Release](https://img.shields.io/github/v/release/lutinglt/gitea-github-theme?label=Release&color=%234493F8){ style="vertical-align: middle;" }
+
 The built-in themes are `gitea-light`, `gitea-dark`, and `gitea-auto` _(which automatically adapts to OS settings)_. The default theme can be changed via `DEFAULT_THEME` in the `[ui]` section of `app.ini`. Gitea also has support for user themes, which means every user can select which theme should be used. The list of themes a user can choose from can be configured with the `THEMES` value in the `[ui]` section of `app.ini`.
 
 [Gitea GitHub Theme&ensp;:brands-github:](https://github.com/lutinglt/gitea-github-theme){ .md-button }
@@ -139,6 +141,8 @@ The built-in themes are `gitea-light`, `gitea-dark`, and `gitea-auto` _(which au
     ```
 
 ### :symbols-layout-template:&ensp;Gitea Mail Templates
+
+![Gitea Release](https://img.shields.io/gitea/v/release/KenanZhu/GiteaMailTemplates?gitea_url=https%3A%2F%2Fgitea.kenanzhu.com&label=Release&color=%234493F8){ style="vertical-align: middle;" }
 
 The `./templates/mail` folder allows changing the body of every mail of Gitea. Templates to override can be found in the `templates/mail` directory of Gitea source. Override by making a copy of the file under `./templates/mail` using a full path structure matching source.
 

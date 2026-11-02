@@ -33,7 +33,7 @@ _Port Monitoring & Discovery_
 
 :    A self-hosted, real-time port monitoring and discovery tool.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/62/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/62/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/62/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/62/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/mostafa-wahied/portracker?label=Release&color=%237c86ff)
 
 **Port(s)**
 

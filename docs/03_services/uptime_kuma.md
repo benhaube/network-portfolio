@@ -33,7 +33,7 @@ _A Fancy Monitoring Tool_
 
 :    A fancy self-hosted service monitoring tool.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/111/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/111/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/139/cert-exp)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/111/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/111/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/139/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/louislam/uptime-kuma?label=Release&color=%235BDB8A)
 
 **Port(s)** 
 

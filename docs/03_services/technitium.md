@@ -34,7 +34,7 @@ _Authoritative & Recursive DNS_
 
 :   An open-source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/7/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/7/uptime)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/7/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/7/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/TechnitiumSoftware/DnsServer?label=Release&color=%236698fe)
 
 **Port(s)**
 

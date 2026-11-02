@@ -485,6 +485,8 @@ Both scripts are automated using Systemd unit files. The `docker-cleanup.sh` scr
 
 ### :symbols-rocket:&ensp;Starship Terminal Prompt
 
+![GitHub Release](https://img.shields.io/github/v/release/starship/starship?label=Release&color=%23E71467){ style="vertical-align: middle;" }
+
 The Starship terminal prompt is a cross-platform, cross-shell application that replaces the standard shell prompt on your Android, BSD, Windows, Linux, or MacOS computer. It is compatible with Bash, Cmd, Elvish, Fish, Ion, Nutshell, Powershell, Tcsh, Xonsh, and Zsh.
 
 [Starship&ensp;:brands-github:](https://github.com/starship/starship){ .md-button }
@@ -575,6 +577,8 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 ![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/ssh-zimaos-light.png#only-light){ width=320 align=right .on-glb }
 ![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/ssh-zimaos-dark.png#only-dark){ width=320 align=right .on-glb }
 
+![GitHub Release](https://img.shields.io/github/v/release/fastfetch-cli/fastfetch?label=Release&color=%230172B1){ style="vertical-align: middle;" }
+
 The Fastfetch Login Preset prints a customized Fastfetch output that shows relevant information every time a new terminal session is started. All variants of the preset are hosted in a code repository on GitHub. Including a custom ASCII art version of the ZimaOS logo.
 
 [Fastfetch Presets&ensp;:brands-github:](https://github.com/benhaube/fastfetch-login-preset){ .md-button }
@@ -664,6 +668,8 @@ The Fastfetch Login Preset prints a customized Fastfetch output that shows relev
 
 ### :symbols-clock-fading:&ensp;Zima Cron
 
+![GitHub Release](https://img.shields.io/github/v/release/chicohaager/cron?label=Release&color=%23FFAA00){ style="vertical-align: middle;" }
+
 A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support.
 
 [Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
@@ -704,6 +710,8 @@ A modern, reliable task scheduler for ZimaOS with a completely redesigned web in
     Open **Zima Cron** from the [ZimaOS dashboard](http://storage-server.internal){ external-link }, or directly at <http://storage-server.internal/modules/cron/>.
 
 ### :symbols-brick-wall-fire:&ensp;Zima Firewall
+
+![GitHub Release](https://img.shields.io/github/v/release/chicohaager/zfw?label=Release&color=%23FFAA00){ style="vertical-align: middle;" }
 
 Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live security dashboard. Default-drop `INPUT` allowlist + `DOCKER-USER` blocklist, IPv6-aware, dead-man Safe-Apply, GeoIP, threat detection.
 

@@ -32,6 +32,8 @@ _Container Management_
 
 :   A lightweight service delivery platform for containerized applications.
 
+:   ![GitHub Release](https://img.shields.io/github/v/release/portainer/portainer?label=Release&color=%23c080ff)
+
 **Port(s)**
 
 - Hub:

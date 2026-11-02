@@ -334,6 +334,8 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
 
 ### :symbols-app-window:&ensp;HelixScreen
 
+![GitHub Release](https://img.shields.io/github/v/release/prestonbrown/helixscreen?label=Release&color=%23C61434){ style="vertical-align: middle;" }
+
 Your printer can do way more than your current touchscreen lets you. Bed mesh visualization, input shaper graphs, multi-material management, print history — it's all trapped in a browser tab. HelixScreen puts it at your fingertips. Fast, beautiful, and frugal enough to run on hardware you already own — your printer's onboard SoC, a Raspberry Pi from a drawer, or anything newer.
 
 [HelixScreen&ensp;:brands-github:](https://github.com/prestonbrown/helixscreen){ .md-button }

@@ -31,6 +31,8 @@ _A DNS Sinkhole_
 
 :    A DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
+:    ![GitHub Release](https://img.shields.io/github/v/release/pi-hole/pi-hole?label=Release&color=%23f42e1c)
+
 **Port(s)**
 
 -   Web:

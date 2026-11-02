@@ -33,7 +33,7 @@ _Push Notifications_
 
 :    A simple server for sending and receiving messages in real-time per WebSocket. _(Includes a sleek Web-UI)_
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/85/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/85/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/142/cert-exp)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/85/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/85/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/142/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/gotify/server?label=Release&color=%2372C7EC)
 
 **Port(s)** 
 

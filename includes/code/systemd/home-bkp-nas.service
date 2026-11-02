@@ -4,7 +4,9 @@ ConditionPathIsMountPoint=/mnt/storage_server/Quick_Storage
 
 [Service]
 Type=oneshot
+ExecStartPre=-curl -sS -m 10 --retry 5 https://healthchecks.rac3r4life.online/ping/{UUID}/start
 ExecStart=/home/bhaube/.local/bin/home-bkp-nas.sh
+ExecStopPost=curl -sS -m 10 --retry 5 https://healthchecks.rac3r4life.online/ping/{UUID}/${EXIT_STATUS}
 Nice=19
 IOSchedulingClass=idle
 

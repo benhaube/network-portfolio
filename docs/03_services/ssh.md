@@ -188,6 +188,8 @@ _Secure Shell_
 ![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-light.png#only-light){ width=350 align=right .on-glb }
 ![Bitwarden application settings](../assets/screenshots/bitwarden-ssh-agent-dark.png#only-dark){ width=350 align=right .on-glb }
 
+![Flathub Version](https://img.shields.io/flathub/v/com.bitwarden.desktop?label=Flathub&color=%23175DDC){ style="vertical-align: middle;" }
+
 1.  Install the **flatpak** version of the Bitwarden desktop application from [Flathub](https://flathub.org/en/apps/com.bitwarden.desktop "Flathub &mdash; Bitwarden"){ external-link }
 
     ``` bash linenums="1"

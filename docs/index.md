@@ -137,7 +137,7 @@ hide:
 [:services-clamav:&ensp;ClamAV Dashboard](03_services/clamav_dashboard.md)
 : Anti-virus security dashboard for **ZimaOS** with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 
-[:services-cloudflare:&ensp;Cloudflared](03_services/cloudflared.md)
+[:services-cloudflare-zero-trust:&ensp;Cloudflared](03_services/cloudflared.md)
 : Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
 
 [:services-couchdb:&ensp;CouchDB](03_services/couchdb.md)

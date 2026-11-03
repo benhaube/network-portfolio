@@ -26,12 +26,12 @@ _Maintaining High Availability_
 
 ## :symbols-list-start:&ensp;Service Priority Levels
 
-| Priority | Service                                                                                                                                       | Impact of Failure { data-sort-method="none" }   | RTO { data-sort-method="none" }    |
-| :------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :--------------------------------- |
-| Critical | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md) DNS Cluster                                                             | Total loss of Internet / LAN connectivity.      | < 5 Minutes _(Automatic Failover)_ |
-| High     | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md) / [:services-cloudflare:&nbsp;Cloudflare](../03_services/cloudflared.md) Reverse Proxy | Loss of remote access and SSL termination.      | < 1 Hour                           |
-| Medium   | [:services-home-assistant:&nbsp;Home Assistant](../03_services/home_assistant.md) / IoT                                                       | Loss of automation and physical device control. | < 4 Hours                          |
-| Standard | [:services-immich:&nbsp;Immich](../03_services/immich.md) / Media                                                                             | Loss of access to personal archives.            | < 24 Hours                         |
+| Priority | Service                                                                                                                                                  | Impact of Failure { data-sort-method="none" }   | RTO { data-sort-method="none" }    |
+| :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :--------------------------------- |
+| Critical | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md) DNS Cluster                                                                        | Total loss of Internet / LAN connectivity.      | < 5 Minutes _(Automatic Failover)_ |
+| High     | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md) / [:services-cloudflare-zero-trust:&nbsp;Cloudflare](../03_services/cloudflared.md) Reverse Proxy | Loss of remote access and SSL termination.      | < 1 Hour                           |
+| Medium   | [:services-home-assistant:&nbsp;Home Assistant](../03_services/home_assistant.md) / IoT                                                                  | Loss of automation and physical device control. | < 4 Hours                          |
+| Standard | [:services-immich:&nbsp;Immich](../03_services/immich.md) / Media                                                                                        | Loss of access to personal archives.            | < 24 Hours                         |
 
 ## :symbols-cloud-upload:&ensp;Backup Strategy
 

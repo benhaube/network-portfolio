@@ -1,5 +1,5 @@
 ---
-icon: services/cloudflare
+icon: services/cloudflare-zero-trust
 title: Cloudflared
 subtitle: Reverse-Proxy Server
 description: Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 
-![Cloudflare Logo](../assets/icons/cloudflare.svg){ width=200 }
+![Cloudflare Zero-Trust logo](../assets/icons/cloudflare-zero-trust.svg){ width=200 }
 
 # Cloudflared
 

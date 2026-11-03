@@ -32,7 +32,7 @@ _Synchronize Pi-hole_
 
 :    Synchronize configuration between multiple [Pi-hole](pi-hole.md#overview){ data-preview } instances.
 
-:   ![Docker Image Version](https://img.shields.io/docker/v/lovelaze/nebula-sync?label=Release&color=%230091eb)
+:   ![Docker Image Version](https://img.shields.io/docker/v/lovelaze/nebula-sync?label=Release&color=%23f42e1c)
 
 **Port(s)**
 

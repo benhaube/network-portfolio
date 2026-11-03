@@ -32,7 +32,7 @@ _Server Monitoring_
 
 :   A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/47/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/47/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/136/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/henrygd/beszel?label=Release&color=%230D72B2)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/47/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/47/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/136/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/henrygd/beszel?label=Release&color=%237b7bfc)
 
 **Port(s)**
 

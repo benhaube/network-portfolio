@@ -13,8 +13,7 @@ hide:
   - toc
 ---
 
-![Uptime Kuma Icon](../assets/icons/uptime-kuma-light.svg#only-light){ width=200 }
-![Uptime Kuma Icon](../assets/icons/uptime-kuma.svg#only-dark){ width=200 }
+![Uptime Kuma Icon](../assets/icons/uptime-kuma.svg){ width=200 }
 
 # Uptime Kuma
 

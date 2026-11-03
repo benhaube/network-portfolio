@@ -15,8 +15,7 @@ hide:
   - toc
 ---
 
-![Dockge Icon](../assets/icons/dockge-light.svg#only-light){ width=200 }
-![Dockge Icon](../assets/icons/dockge.svg#only-dark){ width=200 }
+![Dockge Icon](../assets/icons/dockge.svg){ width=200 }
 
 # Dockge
 

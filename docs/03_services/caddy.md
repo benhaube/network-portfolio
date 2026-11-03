@@ -34,7 +34,7 @@ _Reverse-Proxy Server_
 
 :   Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/105/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/105/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/caddyserver/caddy?label=Release&color=%234cae4f)
+:   ![status badge](https://uptime.rac3r4life.online/api/badge/105/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/105/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/caddyserver/caddy?label=Release&color=%231f88c0)
 
 **Port(s)**
 

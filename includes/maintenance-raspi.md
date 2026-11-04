@@ -174,7 +174,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 ![Fastfetch login preset on Debian Server](../assets/screenshots/ssh-pi-server-light.png#only-light){ .on-glb width=340 align=right }
 ![Fastfetch login preset on Debian Server](../assets/screenshots/ssh-pi-server-dark.png#only-dark){ .on-glb width=340 align=right }
 
-![GitHub Release](https://img.shields.io/github/v/release/fastfetch-cli/fastfetch?label=Release&color=%230172B1){ style="vertical-align: middle;" }
+![Fastfetch Release](https://img.shields.io/debian/v/fastfetch?label=Release&color=0172B1){ style="vertical-align: middle;" }
 
 The Fastfetch Login Preset prints a customized Fastfetch output that shows relevant information every time a new terminal session is started. All variants of the preset are hosted in a code repository on GitHub.
 

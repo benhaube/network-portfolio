@@ -99,15 +99,15 @@ Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi ne
 
 ### :symbols-layers:&ensp;Virtualization
 
-| Status   | OS                                                                      | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" } |
-| :------- | :---------------------------------------------------------------------- | :---------- | :----------------- | :--------------------------------------- |
-| _Active_ | [:brands-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment       |
+| OS                                                                      | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" } |
+| :---------------------------------------------------------------------- | :---------- | :----------------- | :--------------------------------------- |
+| [:brands-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment       |
 
 ### :brands-android-2:&ensp;Native Android
 
-| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
-| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
-| _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |        `8384` `22000` `21027`         | Open decentralized file synchronization. |
+| Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
+| :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
+| [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |        `8384` `22000` `21027`         | Open decentralized file synchronization. |
 
 ---
 

@@ -29,11 +29,9 @@ _Server Dashboard_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A self-hosted dashboard built for people who want their information in one place. It focuses on dynamic content updates and seamless integration with external applications.
 
-:    A self-hosted dashboard built for people who want their information in one place. It focuses on dynamic content updates and seamless integration with external applications.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/48/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/48/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/Panonim/dynacat?label=Release&color=%23ff6bcb)
+![status badge](https://uptime.rac3r4life.online/api/badge/48/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/48/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/Panonim/dynacat?label=Release&color=%23ff6bcb)
 
 **Port(s)**
 

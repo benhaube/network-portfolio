@@ -30,11 +30,9 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
 
-:   Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/105/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/105/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/caddyserver/caddy?label=Release&color=%231f88c0)
+![status badge](https://uptime.rac3r4life.online/api/badge/105/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/105/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/caddyserver/caddy?label=Release&color=%231f88c0)
 
 **Port(s)**
 
@@ -45,7 +43,10 @@ _Reverse-Proxy Server_
 
 **URL / Access**
 
-:    <https://proxy.pi-zero.internal>
+- <http://pi-zero.internal:80>
+{ .no-bullets }
+- <https://pi-zero.internal:443>
+{ .no-bullets }
 
 **Credentials**
 

@@ -30,11 +30,9 @@ _Cron Monitoring_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
 
-:   Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages _("pings")_ from your cron jobs and scheduled tasks _("checks")_. When a ping does not arrive on time, Healthchecks sends out alerts.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/94/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/94/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/135/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/healthchecks/healthchecks?label=Release&color=%2322BC66)
+![status badge](https://uptime.rac3r4life.online/api/badge/94/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/94/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/135/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/healthchecks/healthchecks?label=Release&color=%2322BC66)
 
 **Checks Status**
 

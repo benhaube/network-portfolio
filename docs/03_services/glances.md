@@ -27,11 +27,9 @@ _An Eye on Your System_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
 
-:    Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.  
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/46/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/46/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/nicolargo/glances?label=Release&color=%2357cb6a)
+![status badge](https://uptime.rac3r4life.online/api/badge/46/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/46/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/nicolargo/glances?label=Release&color=%2357cb6a)
 
 **Port(s)** 
 

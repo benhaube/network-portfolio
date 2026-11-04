@@ -28,17 +28,15 @@ _Server Monitoring_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
 
-:   A lightweight server monitoring hub with historical data, docker stats, and alerts. Includes the **"Hub"** container _(the main server)_ and **"Agent"** containers for connecting other servers to the hub.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/47/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/47/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/136/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/henrygd/beszel?label=Release&color=%237b7bfc)
+![status badge](https://uptime.rac3r4life.online/api/badge/47/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/47/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/136/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/henrygd/beszel?label=Release&color=%237b7bfc)
 
 **Port(s)**
 
-- Hub:&ensp;`8090`
+- `8090`&ensp;_(Hub)_
 { .no-bullets }
-- Agent:&ensp;`45876`
+- `45876`&ensp;_(Agents)_
 { .no-bullets }
 
 **URL / Access**

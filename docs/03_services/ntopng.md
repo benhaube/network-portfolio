@@ -27,11 +27,9 @@ _Network Traffic Probe_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A web-based network traffic monitoring application released under GPLv3. It is the new incarnation of the original ntop written in 1998, and now revamped in terms of performance, usability, and features.
 
-:   A web-based network traffic monitoring application released under GPLv3. It is the new incarnation of the original ntop written in 1998, and now revamped in terms of performance, usability, and features.
-
-:   ![GitHub Release](https://img.shields.io/github/v/release/ntop/ntopng?label=Release&color=%23ff7502)
+![GitHub Release](https://img.shields.io/github/v/release/ntop/ntopng?label=Release&color=%23ff7502)
 
 **Port(s)**
 

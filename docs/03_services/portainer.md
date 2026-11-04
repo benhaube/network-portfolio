@@ -28,11 +28,9 @@ _Container Management_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A lightweight service delivery platform for containerized applications.
 
-:   A lightweight service delivery platform for containerized applications.
-
-:   ![GitHub Release](https://img.shields.io/github/v/release/portainer/portainer?label=Release&color=%23c080ff)
+![GitHub Release](https://img.shields.io/github/v/release/portainer/portainer?label=Release&color=%23c080ff)
 
 **Port(s)**
 

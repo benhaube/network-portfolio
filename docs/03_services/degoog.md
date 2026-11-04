@@ -30,11 +30,9 @@ _Search You Run Yourself_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A self-hosted search engine aggregator with a comprehensive plugin / extension system.
 
-:    A self-hosted search engine aggregator with a comprehensive plugin / extension system.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/81/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/81/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/degoog-org/degoog?label=Release&color=%234580E4)
+![status badge](https://uptime.rac3r4life.online/api/badge/81/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/81/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/degoog-org/degoog?label=Release&color=%234580E4)
 
 **Port(s)**
 

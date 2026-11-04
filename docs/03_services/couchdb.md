@@ -28,11 +28,9 @@ _Obsidian LiveSync_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
 
-:    Seamless multi-primary syncing database with an intuitive HTTP / JSON API, designed for reliability.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/88/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/88/uptime)&ensp;![Docker Image Version](https://img.shields.io/docker/v/apache/couchdb?label=Release&color=%23e42528)
+![status badge](https://uptime.rac3r4life.online/api/badge/88/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/88/uptime)&ensp;![Docker Image Version](https://img.shields.io/docker/v/apache/couchdb?label=Release&color=%23e42528)
 
 **Port(s)**
 

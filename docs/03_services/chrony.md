@@ -26,11 +26,9 @@ _NTP Server_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A versatile implementation of the Network Time Protocol. It can synchronize the system clock with NTP servers, reference clocks _(e.g. GPS receiver)_, and manual input using wristwatch and keyboard.
 
-:    A versatile implementation of the Network Time Protocol. It can synchronize the system clock with NTP servers, reference clocks _(e.g. GPS receiver)_, and manual input using wristwatch and keyboard.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/113/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/113/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/113/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/113/uptime)
 
 **Port(s)**
 

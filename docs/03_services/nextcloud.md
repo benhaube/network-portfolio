@@ -26,11 +26,9 @@ _Private Cloud_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Self-hosted cloud storage and collaboration platform.
 
-:    Self-hosted cloud storage and collaboration platform.
-
-:   ![GitHub Release](https://img.shields.io/github/v/release/nextcloud/server?label=Release&color=%230091EB)
+![GitHub Release](https://img.shields.io/github/v/release/nextcloud/server?label=Release&color=%230091EB)
 
 **Port(s)**
 

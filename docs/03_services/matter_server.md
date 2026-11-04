@@ -30,11 +30,9 @@ _Based on Matter.js_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+The **Open Home Foundation** Matter Server serves as the foundation to provide Matter support to [Home Assistant](home_assistant.md), but its universal approach makes it suitable to be used in other projects too.
 
-:    The **Open Home Foundation** Matter Server serves as the foundation to provide Matter support to [Home Assistant](home_assistant.md), but its universal approach makes it suitable to be used in other projects too.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/86/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/86/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/matter-js/matterjs-server?label=Release&color=%23375396)
+![status badge](https://uptime.rac3r4life.online/api/badge/86/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/86/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/matter-js/matterjs-server?label=Release&color=%23375396)
 
 **Port(s)**
 

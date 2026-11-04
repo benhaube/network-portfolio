@@ -26,11 +26,9 @@ _All of the Data_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Visualization of real-time track data and telemetry synced to F1 live and replays.
 
-:    Visualization of real-time track data and telemetry synced to F1 live and replays.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/80/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/80/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/adn8naiagent/F1ReplayTiming?label=Release&color=%23e10600)
+![status badge](https://uptime.rac3r4life.online/api/badge/80/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/80/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/adn8naiagent/F1ReplayTiming?label=Release&color=%23e10600)
 
 **Port(s)**
 

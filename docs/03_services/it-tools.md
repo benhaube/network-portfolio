@@ -29,11 +29,9 @@ _Handy Tools for Devs_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Handy tools for network administrators and developers.
 
-:   Handy tools for network administrators and developers.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/9/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/9/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/138/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/sharevb/it-tools?label=Release&color=%2318a058)
+![status badge](https://uptime.rac3r4life.online/api/badge/9/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/9/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/138/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/sharevb/it-tools?label=Release&color=%2318a058)
 
 **Port(s)**
 

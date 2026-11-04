@@ -29,11 +29,9 @@ _Test Network Performance_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A free & open-source HTML5 network performance estimation tool.
 
-:    A free & open-source HTML5 network performance estimation tool.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/89/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/89/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/openspeedtest/Docker-Image?label=Release&color=%233da6ff)
+![status badge](https://uptime.rac3r4life.online/api/badge/89/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/89/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/openspeedtest/Docker-Image?label=Release&color=%233da6ff)
 
 **Port(s)**
 

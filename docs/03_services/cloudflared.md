@@ -30,11 +30,9 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
 
-:   Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that proxies traffic from the Cloudflare network to your origins. This daemon sits between Cloudflare network and your origin.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/65/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/65/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/cloudflare/cloudflared?label=Release&color=%23f4811f)
+![status badge](https://uptime.rac3r4life.online/api/badge/65/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/65/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/cloudflare/cloudflared?label=Release&color=%23f4811f)
 
 **Port(s)**
 

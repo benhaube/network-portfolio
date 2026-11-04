@@ -31,11 +31,9 @@ _Git with a Cup of Tea_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
 
-:   Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/73/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/73/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/141/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/go-gitea/gitea?label=Release&color=%234493F8)
+![status badge](https://uptime.rac3r4life.online/api/badge/73/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/73/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/141/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/go-gitea/gitea?label=Release&color=%234493F8)
 
 **Port(s)**
 

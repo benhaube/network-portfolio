@@ -27,11 +27,9 @@ _Network Documentation_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache. This Nginx server is a Docker container with read-only access to the single directory containing the website. It hosts the very **"Network Documentation & Portfolio"** website you are browsing now.
 
-:    The world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/87/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/87/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/145/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/nginx/nginx?label=Release&color=%2300963B)
+![status badge](https://uptime.rac3r4life.online/api/badge/87/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/87/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/145/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/nginx/nginx?label=Release&color=%2300963B)
 
 **Port(s)** 
 

@@ -28,11 +28,9 @@ _Download Videos from YouTube_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
 
-:    High performance extendable Web-UI and RPC server for `yt-dlp` with low impact on resources.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/91/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/91/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/91/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/91/uptime)
 
 **Port(s)**
 

@@ -30,11 +30,9 @@ _Server Message Block_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Samba is an open-source software suite that has, since 1992, provided file and print services to all manner of SMB / CIFS clients, including the numerous versions of Microsoft Windows operating systems.
 
-:    Samba is an open-source software suite that has, since 1992, provided file and print services to all manner of SMB / CIFS clients, including the numerous versions of Microsoft Windows operating systems.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/106/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/106/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/106/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/106/uptime)
 
 **Port(s)**
 

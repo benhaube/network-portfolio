@@ -28,11 +28,9 @@ _Awaken Your Home_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Open-source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts.
 
-:    Open-source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/8/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/8/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/137/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/home-assistant/core?label=Release&color=%2318bcf2)
+![status badge](https://uptime.rac3r4life.online/api/badge/8/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/8/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/137/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/home-assistant/core?label=Release&color=%2318bcf2)
 
 **Port(s)** 
 

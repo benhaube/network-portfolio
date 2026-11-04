@@ -28,11 +28,9 @@ _Bye Bye, Google Photos_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+High performance self-hosted photo and video management solution. An alternative to closed-source, cloud-based solutions like Google Photos and iCloud Photos.
 
-:    High performance self-hosted photo and video management solution.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/75/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/75/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/144/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/immich-app/immich?label=Release&color=%234452AD#only-light)![GitHub Release](https://img.shields.io/github/v/release/immich-app/immich?label=Release&color=%23AAC9FA#only-dark)
+![status badge](https://uptime.rac3r4life.online/api/badge/75/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/75/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/144/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/immich-app/immich?label=Release&color=%234452AD#only-light)![GitHub Release](https://img.shields.io/github/v/release/immich-app/immich?label=Release&color=%23AAC9FA#only-dark)
 
 **Port(s)** 
 

@@ -30,11 +30,9 @@ _File Synchronization_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.
 
-:   Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/29/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/29/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/syncthing/syncthing?label=Release&color=%230882c8)
+![status badge](https://uptime.rac3r4life.online/api/badge/29/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/29/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/syncthing/syncthing?label=Release&color=%230882c8)
 
 **Port(s)**
 

@@ -29,11 +29,9 @@ _Anti-Virus for ZimaOS_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
 
-:   Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan progress, history and confirmed quarantine actions.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/82/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/82/uptime)&ensp;![Docker Image Version (tag)](https://img.shields.io/docker/v/clamav/clamav/1.5_base?label=Release&color=%23E03C3B)
+![status badge](https://uptime.rac3r4life.online/api/badge/82/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/82/uptime)&ensp;![Docker Image Version (tag)](https://img.shields.io/docker/v/clamav/clamav/1.5_base?label=Release&color=%23E03C3B)
 
 **Port(s)**
 

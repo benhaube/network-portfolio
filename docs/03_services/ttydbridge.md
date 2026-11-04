@@ -28,11 +28,9 @@ _The Terminal on the Web_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
 
-:    A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/110/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/110/uptime)&ensp;![Docker Image Version](https://img.shields.io/docker/v/cp0204/ttydbridge?label=Release&color=%23FFAA00)
+![status badge](https://uptime.rac3r4life.online/api/badge/110/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/110/uptime)&ensp;![Docker Image Version](https://img.shields.io/docker/v/cp0204/ttydbridge?label=Release&color=%23FFAA00)
 
 **Port(s)** 
 

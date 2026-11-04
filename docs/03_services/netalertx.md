@@ -33,11 +33,9 @@ _Centralized Network Visibility_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
 
-:   Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/66/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/66/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/netalertx/NetAlertX?label=Release&color=%23d40000)
+![status badge](https://uptime.rac3r4life.online/api/badge/66/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/66/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/netalertx/NetAlertX?label=Release&color=%23d40000)
 
 **Port(s)**
 

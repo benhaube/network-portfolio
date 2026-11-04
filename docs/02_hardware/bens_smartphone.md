@@ -28,9 +28,7 @@ _Google Pixel 9 Pro_
 
 ## :symbols-info:&ensp;Overview
 
-**Role**
-
-:    Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
+Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
 **Hostname**
 

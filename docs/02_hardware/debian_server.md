@@ -31,11 +31,9 @@ _Primary DNS Server_
 
 ## :symbols-info:&ensp;Overview
 
-**Role**
+The primary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#device-overview){ data-preview }.
 
-:    The primary DNS server in the [Technitium](../03_services/technitium.md#overview){ data-preview } cluster. It is a VM hosted on the rack-mounted [ZimaOS NAS](zimaos_nas.md#device-overview){ data-preview }.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/119/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/119/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/119/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/119/uptime)
 
 **Hostname**
 
@@ -67,9 +65,9 @@ _Primary DNS Server_
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Notes { data-sort-method="none" }                                             |
-| :-------: | :--------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
-| `enp1s0`  | `192.168.50.6`                           | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter _(Appears as separate device on LAN)_ |
+|                                                        Interface                                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Notes { data-sort-method="none" }                                             |
+| :---------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
+| `enp1s0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/119/status){ style='vertical-align: middle;' } | `192.168.50.6`                           | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter _(Appears as separate device on LAN)_ |
 
 | Interface |             VLAN             | FQDN                 | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------: | :--------------------------: | :------------------- | :---------------------------------------- | :------------------------------------ |

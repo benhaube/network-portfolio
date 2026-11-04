@@ -30,11 +30,9 @@ _AiMesh Node_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
+A secondary router located on the stationary printer cart in the office upstairs, acting as an "_AiMesh_" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
 
-:    A secondary router located on the stationary printer cart in the office upstairs, acting as an "_AiMesh_" node to expand Wi-Fi coverage to the upper levels. All settings and firmware updates are managed through the main router's Web-UI.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/127/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/127/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/127/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/127/uptime)
 
 **Hostname**
 

@@ -30,9 +30,7 @@ _High-Performance Desktop PC_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role** { #role }
-
-:    Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
+Rob's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
 **Hostname**
 

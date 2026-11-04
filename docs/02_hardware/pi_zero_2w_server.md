@@ -32,11 +32,9 @@ _Reverse-Proxy Server_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role** { #role }
+A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi _(SSID: `Home`)_.
 
-:    A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving unique `.internal` FQDNs to services hosted on the local network. Located on the stationary printer cart in the office upstairs, and connected to the local network via 2.4 GHz Wi-Fi _(SSID: `Home`)_.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/121/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/121/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/121/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/121/uptime)
 
 **Hostname**
 
@@ -65,9 +63,9 @@ _Reverse-Proxy Server_
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-|  `wlan0`  | `192.168.50.3`                           | `2c:cf:67:db:f5:e2` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+|                                                       Interface                                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
+| :--------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlan0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/121/status){ style='vertical-align: middle;' } | `192.168.50.3`                           | `2c:cf:67:db:f5:e2` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
 | Interface |             VLAN             | FQDN               | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------: | :--------------------------: | :----------------- | :---------------------------------------- | :------------------------------------ |

@@ -31,9 +31,9 @@ _ThinkPad X1 Yoga_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
+Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
-:    Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done on-the-go. A mobile device connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
+![status badge](https://uptime.rac3r4life.online/api/badge/161/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/161/uptime)
 
 **Hostname**
 
@@ -101,9 +101,9 @@ _ThinkPad X1 Yoga_
 
 ## :symbols-network:&ensp;Network Configuration
 
-|  Interface  | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :---------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-| `wlp0s20f3` | `192.168.50.20`                          | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+|                                                         Interface                                                          | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
+| :------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlp0s20f3`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/161/status){ style='vertical-align: middle;' } | `192.168.50.20`                          | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
 |  Interface  |             VLAN             | FQDN                   | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :---------: | :--------------------------: | :--------------------- | :---------------------------------------- | :------------------------------------ |

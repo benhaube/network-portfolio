@@ -28,9 +28,7 @@ _Samsung Galaxy S25+_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
-
-:    Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
+Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi network _(SSID: `Home`)_.
 
 **Hostname**
 

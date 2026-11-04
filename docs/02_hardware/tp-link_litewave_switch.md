@@ -31,37 +31,27 @@ _Model LS1005G_
 
 ## :symbols-info:&ensp;Physical Overview
 
-**Role**
-
-:   A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
+A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices in the TV stand in the living room. Located on the back of the TV stand, attached with Velcro.
 
 **Power Source**
 
 :   :symbols-plug:&ensp;Wall Wart _(5V / 0.6A)_
 
-### :symbols-circuit-board:&ensp;Specs
+**Specs**
 
-**Throughput**
-
-- Five 1 GbE ports
+-   Throughput:
 { .no-bullets }
-- 10 Gb/s total switching capacity
+    - Five 1 GbE ports
+    - 10 Gb/s total switching capacity
+-   Jumbo Frames:
 { .no-bullets }
-
-**Jumbo Frames**
-
-- Not Supported
+    - Not Supported
+-   Management Features:
 { .no-bullets }
-
-**Management Features**
-
-- None &mdash; Unmanaged
+    - None &mdash; Unmanaged
+-   Hardware Revision:
 { .no-bullets }
-
-**Hardware Revision**
-
-- v5.46
-{ .no-bullets }
+    - v5.46
 
 ### :symbols-map-pin:&ensp;Location
 

@@ -31,9 +31,9 @@ _High-Performance Desktop PC_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
+Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
 
-:    Ben's main workstation PC located at his desk in the office upstairs. Connected to the local network through the [TP-Link Switch](tp-link_switch.md#physical-overview){ data-preview }.
+![status badge](https://uptime.rac3r4life.online/api/badge/160/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/160/uptime)
 
 **Hostname**
 
@@ -90,10 +90,10 @@ _High-Performance Desktop PC_
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                         |
-| :-------: | :--------------------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
-| `enp7s0`  | `192.168.50.10`                          | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(Port 1)_ |
-| `wlp6s0`  | `DHCP`                                   | `F2:1E:02:CD:11:10` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_          |
+|                                                        Interface                                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                         |
+| :---------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
+| `enp7s0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/160/status){ style='vertical-align: middle;' } | `192.168.50.10`                          | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(Port 1)_ |
+| `wlp6s0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/162/status){ style='vertical-align: middle;' } | `192.168.50.11`                          | `F2:1E:02:CD:11:10` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_          |
 
 | Interface |             VLAN             | FQDN                        | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------: | :--------------------------: | :-------------------------- | :---------------------------------------- | :------------------------------------ |

@@ -30,11 +30,9 @@ _DOCSIS 3.1 Cable Modem_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
+The DOCSIS 3.1 cable modem that communicates with the ISP _([Xfinity](https://www.xfinity.com/overview){ external-link })_. Located in the 10-inch server rack.
 
-:   The DOCSIS 3.1 cable modem that communicates with the ISP _([Xfinity](https://www.xfinity.com/overview){ external-link })_. Located in the 10-inch server rack.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/158/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/158/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/158/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/158/uptime)
 
 **OS / Firmware**
 
@@ -51,10 +49,10 @@ _DOCSIS 3.1 Cable Modem_
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                           |
-| :-------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------- |
-|                  LAN 1                  | `192.168.100.1`                          | `00:1c:73:00:00:99` | [:symbols-router:&nbsp;ASUS RT-BE92U](asus_rt-be92u.md#wan-connection){ data-preview } |
-|                  LAN 2                  | `Down`                                   | `xx:xx:xx:xx:xx:xx` | -                                                                                      |
+|                                       Interface { data-sort-method="number" }                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                           |
+| :------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------- |
+| LAN 1&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/158/status){ style='vertical-align: middle;' } | `192.168.100.1`                          | `00:1c:73:00:00:99` | [:symbols-router:&nbsp;ASUS RT-BE92U](asus_rt-be92u.md#wan-connection){ data-preview } |
+|                                                        LAN 2                                                         | `Unused`                                 | `xx:xx:xx:xx:xx:xx` | -                                                                                      |
 
 ---
 

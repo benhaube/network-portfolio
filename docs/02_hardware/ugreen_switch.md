@@ -30,40 +30,28 @@ _Model UM106X_
 
 ## :symbols-info:&ensp;Physical Overview
 
-**Role** { #role }
-
-:   A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
+A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink to the router, distributing Ethernet connections to the devices in the 10-inch server rack with extra ports available for future network expansion.
 
 **Power Source**
 
 :   :symbols-plug:&ensp;Wall wart _(12.0V / 1.0A)_
 
-### :symbols-circuit-board:&ensp;Specs
+**Specs**
 
-**Throughput**
-
-- Five 2.5 Gb/s Ports
+-   Throughput:
 { .no-bullets }
-- One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview } router)*
+    - Five 2.5 Gb/s Ports
+    - One SFP+ 10 Gb/s Uplink *(from [ASUS RT-BE92U](asus_rt-be92u.md#physical-ethernet-ports){ data-preview } router)*
+    - 45 Gb/s Total Switching Capacity
+-   Jumbo Frames:
 { .no-bullets }
-- 45 Gb/s Total Switching Capacity
+    - Supported _(12 KB)_
+-   Management Features:
 { .no-bullets }
-
-**Jumbo Frames**
-
-- Supported _(12 KB)_
-{ .no-bullets }
-
-**Management Features**
-
-- VLAN
-{ .no-bullets }
-- Link Aggregation
-{ .no-bullets }
-- Loopback Detection
-{ .no-bullets }
-- 802.11ab LLDP
-{ .no-bullets }
+    - VLAN
+    - Link Aggregation
+    - Loopback Detection
+    - 802.11ab LLDP
 
 ### :symbols-map-pin:&ensp;Location
 

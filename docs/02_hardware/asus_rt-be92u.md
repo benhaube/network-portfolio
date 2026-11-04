@@ -30,11 +30,9 @@ _Wireless Router_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
+The main wireless router and firewall for the local network. Located next to the 10-inch server rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
 
-:   The main wireless router and firewall for the local network. Located next to the 10-inch server rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
-
-:   ![status badge](https://uptime.rac3r4life.online/api/badge/126/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/126/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/126/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/126/uptime)
 
 **Hostname**
 

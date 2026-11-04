@@ -128,16 +128,16 @@ Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done o
 
 ### :symbols-layers:&ensp;Virtualization
 
-| Status   | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }        |
-| :------- | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
-| _Active_ | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
+| OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }        |
+| :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
+| [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
 ### :symbols-tux:&ensp;Native Linux
 
-| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
-| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
-| _Active_ | [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
-| _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |
+| Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
+| :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |
 
 ---
 
@@ -397,7 +397,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 ![Fastfetch login preset on Ben's Desktop PC](../assets/screenshots/fastfetch-bens-laptop-light.png#only-light){ .on-glb width=400 align=right }
 ![Fastfetch login preset on Ben's Desktop PC](../assets/screenshots/fastfetch-bens-laptop-dark.png#only-dark){ .on-glb width=400 align=right }
 
-![GitHub Release](https://img.shields.io/github/v/release/fastfetch-cli/fastfetch?label=Release&color=%230172B1){ style="vertical-align: middle;" }
+![GitHub Release](https://img.shields.io/fedora/v/fastfetch?label=Release&color=0172B1){ style="vertical-align: middle;" }
 
 The Fastfetch Login Preset prints a customized Fastfetch output that shows relevant information every time a new terminal session is started. All variants of the preset are hosted in a code repository on GitHub.
 

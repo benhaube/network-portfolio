@@ -121,19 +121,19 @@ Ben's main workstation PC located at his desk in the office upstairs. Connected 
 
 ### :symbols-layers:&ensp;Virtualization
 
-| Status   | OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes { data-sort-method="none" }                              |
-| :------- | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
-| _Active_ | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
-| _Active_ | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
-| _Active_ | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows-11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
+| OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes { data-sort-method="none" }                              |
+| :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
+| [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
+| [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
+| [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows-11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
 ### :symbols-tux:&ensp;Native Linux
 
-| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
-| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
-| _Active_ | [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
-| _Active_ | [:symbols-screen-share:&nbsp;RDP](../03_services/rdp.md)               |                `3389`                 | Remote desktop protocol for accessing the desktop over the local network.                            |
-| _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |
+| Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
+| :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| [:symbols-screen-share:&nbsp;RDP](../03_services/rdp.md)               |                `3389`                 | Remote desktop protocol for accessing the desktop over the local network.                            |
+| [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |
 
 ---
 
@@ -393,7 +393,7 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 ![Fastfetch login preset on Ben's Desktop PC](../assets/screenshots/fastfetch-bens-workstation-light.png#only-light){ .on-glb width=400 align=right }
 ![Fastfetch login preset on Ben's Desktop PC](../assets/screenshots/fastfetch-bens-workstation-dark.png#only-dark){ .on-glb width=400 align=right }
 
-![GitHub Release](https://img.shields.io/github/v/release/fastfetch-cli/fastfetch?label=Release&color=%230172B1){ style="vertical-align: middle;" }
+![GitHub Release](https://img.shields.io/fedora/v/fastfetch?label=Release&color=0172B1){ style="vertical-align: middle;" }
 
 The Fastfetch Login Preset prints a customized Fastfetch output that shows relevant information every time a new terminal session is started. All variants of the preset are hosted in a code repository on GitHub.
 

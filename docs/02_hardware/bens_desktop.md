@@ -17,7 +17,7 @@ hide:
 
 <!-- lint: off heading.level-skip -->
 
-![Lucide 'pc-case' icon](../assets/icons/pc-case.svg){ width=200 }
+![Lucide 'monitor-pc' icon](../assets/icons/monitor-pc.svg){ width=200 }
 
 # Ben's Workstation
 

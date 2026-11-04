@@ -85,19 +85,18 @@ A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving un
 
 ### :symbols-tux:&ensp;Native Linux
 
-| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                              |
-| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------ |
-| _Active_ | [:services-caddy:&nbsp;Caddy](../03_services/caddy.md)                 |             `80`<br>`443`             | Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services. |
-| _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md)            |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
-| _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                                                              |
+| Service                                                                | Port(s) { data-sort-method="number" } | Status                                                                                                              | Role / Notes { data-sort-method="none" }                                                                                              |
+| :--------------------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------ |
+| [:services-caddy:&nbsp;Caddy](../03_services/caddy.md)                 |             `80`<br>`443`             | ![Caddy status](https://uptime.rac3r4life.online/api/badge/105/status?label=){ style='vertical-align: middle;' }    | Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for creating unique domains for locally hosted services. |
+| [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md)            |                 `22`                  | ![SSH status](https://uptime.rac3r4life.online/api/badge/16/status?label=){ style='vertical-align: middle;' }       | Provides secure encrypted communications between two untrusted hosts over an insecure network.                                        |
+| [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | ![Syncthing status](https://uptime.rac3r4life.online/api/badge/28/status?label=){ style='vertical-align: middle;' } | Open decentralized file synchronization.                                                                                              |
 
 ### :symbols-container:&ensp;Docker Container
 
-| Status     | Service                                                            | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
-| :--------- | :----------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
-| _Active_   | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)          |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
-| _Active_   | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)          |                `5001`                 | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
-| _Inactive_ | [:services-portainer:&nbsp;Portainer](../03_services/portainer.md) |                `9001`                 | A lightweight service delivery platform for containerized applications.                              |
+| Service                                                   | Port(s) { data-sort-method="number" } | Status                                                                                                           | Role / Notes { data-sort-method="none" }                                                             |
+| :-------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| [:services-beszel:&nbsp;Beszel](../03_services/beszel.md) |                `45876`                | ![Beszel status](https://uptime.rac3r4life.online/api/badge/72/status?label=){ style='vertical-align: middle;' } | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| [:services-dockge:&nbsp;Dockge](../03_services/dockge.md) |                `5001`                 | ![Dockge status](https://uptime.rac3r4life.online/api/badge/58/status?label=){ style='vertical-align: middle;' } | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
 
 ---
 

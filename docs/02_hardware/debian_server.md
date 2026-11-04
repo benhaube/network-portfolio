@@ -45,7 +45,7 @@ The primary DNS server in the [Technitium](../03_services/technitium.md#overview
 
 **Operating System** 
 
-:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link } _(trixie)_
+:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link }&ensp;![trixie v13](https://img.shields.io/badge/trixie-v13-A80030){ style="vertical-align: middle;" }
 
 **Host Node** 
 
@@ -59,34 +59,34 @@ The primary DNS server in the [Technitium](../03_services/technitium.md#overview
 
 ### :symbols-square-activity:&ensp;Resource Allocation
 
-|          vCPU          | RAM { data-sort-method="filesize" } | Storage { data-sort-method="filesize" } | VDI Location                             |
-| :--------------------: | :---------------------------------: | :-------------------------------------- | :--------------------------------------- |
-| 2C / 2T _(VT-x, VT-d)_ |                3 GB                 | 50 GB                                   | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
+| vCPU                   | RAM { data-sort-method="filesize" } | Storage { data-sort-method="filesize" } | VDI Location                             |
+| :--------------------- | :---------------------------------- | :-------------------------------------- | :--------------------------------------- |
+| 2C / 2T _(VT-x, VT-d)_ | 3 GB _(shared LPDDR5)_              | 50 GB _(Virtual Disk Image)_            | `/media/nvme0n1p1/VM/debian-vm/cd175b11` |
 
 ## :symbols-network:&ensp;Network Configuration
 
-|                                                        Interface                                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Notes { data-sort-method="none" }                                             |
-| :---------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
-| `enp1s0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/119/status){ style='vertical-align: middle;' } | `192.168.50.6`                           | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter _(Appears as separate device on LAN)_ |
+| Interface                                                                                                                       | IP Address { data-sort-method="dotsep" } | MAC Address         | Notes { data-sort-method="none" }                                             |
+| :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
+| `enp1s0`&ensp;![enp1s0 status](https://uptime.rac3r4life.online/api/badge/119/status?label=){ style='vertical-align: middle;' } | `192.168.50.6`                           | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter _(Appears as separate device on LAN)_ |
 
-| Interface |             VLAN             | FQDN                 | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------: | :------------------- | :---------------------------------------- | :------------------------------------ |
-| `enp1s0`  | :symbols-shield:&nbsp;VLAN50 | `debian-vm.internal` | `127.0.0.1`                               | `192.168.50.1`                        |
+| Interface | VLAN { data-sort-method="number" } | FQDN                 | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------- | :--------------------------------- | :------------------- | :---------------------------------------- | :------------------------------------ |
+| `enp1s0`  | :symbols-shield:&nbsp;VLAN50       | `debian-vm.internal` | `127.0.0.1`                               | `192.168.50.1`                        |
 
 ## :symbols-cloud:&ensp;Services & Containers
 
 ### :symbols-tux:&ensp;Native Linux
 
-|  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
-| :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
+| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
+| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
 | _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md)            |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                       |
 | _Active_ | [:services-technitium:&nbsp;Technitium](../03_services/technitium.md)  |        `53`<br>`443`<br>`5380`        | An open-source authoritative as well as recursive DNS server.                                  |
 
 ### :symbols-container:&ensp;Docker Container
 
-|  Status  | Service                                                                            | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
-| :------: | :--------------------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| Status   | Service                                                                            | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
+| :------- | :--------------------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
 | _Active_ | [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)                          |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
 | _Active_ | [:services-cloudflare-zero-trust:&nbsp;Cloudflared](../03_services/cloudflared.md) |                `60123`                | Secure reverse-proxy tunnel for hosting private services on the public internet.                     |
 | _Active_ | [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)                          |                `5001`                 | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |

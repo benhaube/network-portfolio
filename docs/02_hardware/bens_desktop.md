@@ -15,8 +15,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Lucide 'monitor-pc' icon](../assets/icons/monitor-pc.svg){ width=200 }
 
 # Ben's Workstation
@@ -41,7 +39,7 @@ Ben's main workstation PC located at his desk in the office upstairs. Connected 
 
 **OS / Firmware**
 
-:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }
+:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }&ensp;![Fedora kernel version](https://img.shields.io/fedora/v/kernel?label=kernel&color=%2351A2DA){ style="vertical-align: middle;" }
 
 **Credentials**
 
@@ -90,15 +88,15 @@ Ben's main workstation PC located at his desk in the office upstairs. Connected 
 
 ## :symbols-network:&ensp;Network Configuration
 
-|                                                        Interface                                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                         |
-| :---------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
-| `enp7s0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/160/status){ style='vertical-align: middle;' } | `192.168.50.10`                          | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(Port 1)_ |
-| `wlp6s0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/162/status){ style='vertical-align: middle;' } | `192.168.50.11`                          | `F2:1E:02:CD:11:10` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_          |
+| Interface                                                                                                                       | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
+| `enp7s0`&ensp;![enp7s0 status](https://uptime.rac3r4life.online/api/badge/160/status?label=){ style='vertical-align: middle;' } | `192.168.50.10`                          | `3C:7C:3F:0D:A9:CD` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(Port 1)_ |
+| `wlp6s0`&ensp;![wlp6s0 status](https://uptime.rac3r4life.online/api/badge/162/status?label=){ style='vertical-align: middle;' } | `192.168.50.11`                          | `F2:1E:02:CD:11:10` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_          |
 
-| Interface |             VLAN             | FQDN                        | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------: | :-------------------------- | :---------------------------------------- | :------------------------------------ |
-| `enp7s0`  | :symbols-shield:&nbsp;VLAN50 | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
-| `wlp6s0`  | :symbols-shield:&nbsp;VLAN50 | `-`                         | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| Interface | VLAN { data-sort-method="number" } | FQDN                        | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------- | :--------------------------------- | :-------------------------- | :---------------------------------------- | :------------------------------------ |
+| `enp7s0`  | :symbols-shield:&nbsp;VLAN50       | `bens-workstation.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| `wlp6s0`  | :symbols-shield:&nbsp;VLAN50       | `-`                         | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -123,16 +121,16 @@ Ben's main workstation PC located at his desk in the office upstairs. Connected 
 
 ### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes { data-sort-method="none" }                              |
-| :------: | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
+| Status   | OS                                                                        | Virtual NIC | Virtual Disk Image    | Role / Notes { data-sort-method="none" }                              |
+| :------- | :------------------------------------------------------------------------ | :---------- | :-------------------- | :-------------------------------------------------------------------- |
 | _Active_ | [:services-fedora-coreos:&nbsp;CoreOS](https://fedoraproject.org/coreos/) | NAT         | `fedora-coreos.qcow2` | Learning and experimenting with Fedora's immutable server OS          |
 | _Active_ | [:services-kali:&nbsp;Kali Linux](https://kali.org)                       | NAT         | `kali-linux.qcow2`    | Network security and penetration testing tools.                       |
 | _Active_ | [:brands-microsoft:&nbsp;Windows 11](https://microsoft.com/windows)       | NAT         | `Windows-11.qcow2`    | Windows environment to run Windows software that won't run with WINE. |
 
 ### :symbols-tux:&ensp;Native Linux
 
-|  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
-| :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
+| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
 | _Active_ | [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
 | _Active_ | [:symbols-screen-share:&nbsp;RDP](../03_services/rdp.md)               |                `3389`                 | Remote desktop protocol for accessing the desktop over the local network.                            |
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |

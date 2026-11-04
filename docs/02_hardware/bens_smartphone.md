@@ -12,8 +12,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Lucide 'smartphone' icon](../assets/icons/smartphone.svg){ width=200 }
 
 # Ben's Smartphone
@@ -76,12 +74,12 @@ Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi ne
 ## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-|   Wi-Fi   | `DHCP`                                   | `08:8B:C8:4E:19:7B` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| :-------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| Wi-Fi     | `DHCP`                                   | `08:8B:C8:4E:19:7B` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
-| Interface | VLAN                         | FQDN                   | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------- | :--------------------- | :---------------------------------------- | :------------------------------------ |
-|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `ben-s-phone.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| Interface | VLAN { data-sort-method="number" } | FQDN                   | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------- | :--------------------------------- | :--------------------- | :---------------------------------------- | :------------------------------------ |
+| Wi-Fi     | :symbols-shield:&nbsp;VLAN50       | `ben-s-phone.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -101,14 +99,14 @@ Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi ne
 
 ### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                                      | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" } |
-| :------: | :---------------------------------------------------------------------- | :---------- | :----------------- | :--------------------------------------- |
+| Status   | OS                                                                      | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" } |
+| :------- | :---------------------------------------------------------------------- | :---------- | :----------------- | :--------------------------------------- |
 | _Active_ | [:brands-debian:&nbsp;Debian](https://www.debian.org/){ external-link } | NAT         | `-`                | Android Virtualization Environment       |
 
 ### :brands-android-2:&ensp;Native Android
 
-|  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
-| :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
+| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
+| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |        `8384` `22000` `21027`         | Open decentralized file synchronization. |
 
 ---

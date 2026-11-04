@@ -14,8 +14,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Lucide 'router' icon](../assets/icons/router.svg){ width=200 }
 
 # ASUS RT-AX55
@@ -44,7 +42,7 @@ A secondary router located on the stationary printer cart in the office upstairs
 
 **OS / Firmware**
 
-:    [:symbols-wizard-hat:&ensp;asuswrt](https://www.asus.com/us/content/asuswrt/){ external-link } _(3004.386.53329)_
+:    [:symbols-wizard-hat:&ensp;asuswrt](https://www.asus.com/us/content/asuswrt/){ external-link }&ensp;![3004.386_53370](https://img.shields.io/badge/3004.386__53370-1982FF){ style="vertical-align: middle;" }
 
 **Credentials**
 
@@ -62,23 +60,23 @@ A secondary router located on the stationary printer cart in the office upstairs
 
 ### :symbols-globe:&ensp;WAN Connection
 
-| Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" } |
-| :-------------------------------------: | :--------------------------------------- | :------------------ | :--------------------------------------- |
-|                 `wan0`                  | `192.168.50.221`                         | `7C:10:C9:DF:13:60` | Network backhaul                         |
+| Interface { data-sort-method="number" }                                                                                     | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" } |
+| :-------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :--------------------------------------- |
+| `wan0`&ensp;![wan0 status](https://uptime.rac3r4life.online/api/badge/127/status?label=){ style='vertical-align: middle;' } | `192.168.50.243`                         | `7C:10:C9:DF:13:60` | Network backhaul                         |
 
 ### :lucide-graph-star:&ensp;Virtual Local Networks
 
-|                VLAN                | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
-| :--------------------------------: | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
-|    :symbols-shield:&nbsp;VLAN50    | internal | `192.168.50.6` `192.168.50.2`               | `192.168.50.0/24`                  | `192.168.50.1`                        | `192.168.50.255`                        | `.22` to `.254`                        |
+| VLAN { data-sort-method="number" } | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
+| :--------------------------------- | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
+| :symbols-shield:&nbsp;VLAN50       | internal | `192.168.50.6` `192.168.50.2`               | `192.168.50.0/24`                  | `192.168.50.1`                        | `192.168.50.255`                        | `.22` to `.254`                        |
 | :symbols-shield-house:&nbsp;VLAN53 | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.53.0/24`                  | `192.168.53.1`                        | `192.168.53.255`                        | `.3` to `.254`                         |
 
 ### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
-|   SSID   |  VLAN  |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                |
-| :------: | :----: | :------------------------------------------------------: | :--------------------------------- | :-------------------------------------- | :----------------------------------- |
-|  _Home_  | VLAN50 | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.50.0/24`                  | 2.4 GHz, 5 GHz                          | :symbols-shield:&nbsp;Trusted VLAN   |
-| *2G_IoT* | VLAN53 |   <span aria-label="No" role="img">:symbols-x:</span>    | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN |
+| SSID     | VLAN { data-sort-method="number" } |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                |
+| :------- | :--------------------------------- | :------------------------------------------------------: | :--------------------------------- | :-------------------------------------- | :----------------------------------- |
+| _Home_   | VLAN50                             | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.50.0/24`                  | 2.4 GHz, 5 GHz                          | :symbols-shield:&nbsp;Trusted VLAN   |
+| *2G_IoT* | VLAN53                             |   <span aria-label="No" role="img">:symbols-x:</span>    | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN |
 
 ### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 

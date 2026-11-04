@@ -12,8 +12,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Lucide 'smartphone' icon](../assets/icons/smartphone.svg){ width=200 }
 
 # Rob's Smartphone
@@ -74,12 +72,12 @@ Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi n
 ## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-|   Wi-Fi   | `DHCP`                                   | `1A:5C:54:48:81:37` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| :-------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| Wi-Fi     | `DHCP`                                   | `1A:5C:54:48:81:37` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
-| Interface | VLAN                         | FQDN                    | DNS Servers { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------- | :---------------------- | :-------------------------------------- | :------------------------------------ |
-|   Wi-Fi   | :symbols-shield:&nbsp;VLAN50 | `robert-s-s25.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
+| Interface | VLAN { data-sort-method="number" } | FQDN                    | DNS Servers { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } |
+| :-------- | :--------------------------------- | :---------------------- | :-------------------------------------- | :------------------------------------ |
+| Wi-Fi     | :symbols-shield:&nbsp;VLAN50       | `robert-s-s25.internal` | `192.168.50.6` `192.168.50.2`           | `192.168.50.1`                        |
 
 ## :symbols-folders:&ensp;Storage & Mounts
 

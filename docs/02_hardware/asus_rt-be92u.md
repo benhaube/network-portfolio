@@ -14,8 +14,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Lucide 'router' icon](../assets/icons/router.svg){ width=200 }
 
 # ASUS RT-BE92U
@@ -44,7 +42,7 @@ The main wireless router and firewall for the local network. Located next to the
 
 **OS / Firmware**
 
-:    [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link } *(3006.102.8_2)*
+:    [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }&ensp;![3006.102.9](https://img.shields.io/badge/3006.102.9-1982FF){ style="vertical-align: middle;" }
 
 **Credentials**
 
@@ -68,25 +66,25 @@ The main wireless router and firewall for the local network. Located next to the
 
 ### :symbols-globe:&ensp;WAN Connection
 
-|                                        Interface { data-sort-method="number" }                                        | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" }                                                   |
-| :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
-| `wan0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/148/status){ style='vertical-align: middle;' } | `DHCP`                                   | `60:CF:84:51:FA:F0` | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview } |
+| Interface { data-sort-method="number" }                                                                                     | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" }                                                   |
+| :-------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------- |
+| `wan0`&ensp;![wan0 status](https://uptime.rac3r4life.online/api/badge/148/status?label=){ style='vertical-align: middle;' } | `DHCP`                                   | `60:CF:84:51:FA:F0` | [:symbols-globe:&nbsp;Hitron Modem](hitron_modem.md#network-configuration){ data-preview } |
 
 ### :lucide-graph-star:&ensp;Virtual Local Networks
 
-|                VLAN                | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
-| :--------------------------------: | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
-|    :symbols-shield:&nbsp;VLAN50    | internal | `192.168.50.6` `192.168.50.2`               | `192.168.50.0/24`                  | `192.168.50.1`                        | `192.168.50.255`                        | `.22` to `.254`                        |
+| VLAN { data-sort-method="number" } | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
+| :--------------------------------- | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
+| :symbols-shield:&nbsp;VLAN50       | internal | `192.168.50.6` `192.168.50.2`               | `192.168.50.0/24`                  | `192.168.50.1`                        | `192.168.50.255`                        | `.22` to `.254`                        |
 | :symbols-shield-user:&nbsp;VLAN52  | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.52.0/24`                  | `192.168.52.1`                        | `192.168.52.255`                        | `.2` to `.254`                         |
 | :symbols-shield-house:&nbsp;VLAN53 | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.53.0/24`                  | `192.168.53.1`                        | `192.168.53.255`                        | `.3` to `.254`                         |
 
 ### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
-|     SSID     |  VLAN  |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                 |
-| :----------: | :----: | :------------------------------------------------------: | :--------------------------------- | :-------------------------------------- | :------------------------------------ |
-|    _Home_    | VLAN50 | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.50.0/24`                  | 2.4 GHz / 5 GHz / 6 GHz                 | :symbols-shield:&nbsp;Trusted VLAN    |
-| *Home_Guest* | VLAN52 | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.52.0/24`                  | 2.4 GHz / 5 GHz                         | :symbols-shield-user:&nbsp;Guest VLAN |
-|   *2G_IoT*   | VLAN53 |   <span aria-label="No" role="img">:symbols-x:</span>    | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN  |
+| SSID         | VLAN { data-sort-method="number" } |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                 |
+| :----------- | :--------------------------------- | :------------------------------------------------------: | :--------------------------------- | :-------------------------------------- | :------------------------------------ |
+| _Home_       | VLAN50                             | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.50.0/24`                  | 2.4 GHz / 5 GHz / 6 GHz                 | :symbols-shield:&nbsp;Trusted VLAN    |
+| *Home_Guest* | VLAN52                             | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.52.0/24`                  | 2.4 GHz / 5 GHz                         | :symbols-shield-user:&nbsp;Guest VLAN |
+| *2G_IoT*     | VLAN53                             |   <span aria-label="No" role="img">:symbols-x:</span>    | `192.168.53.0/24`                  | 2.4 GHz                                 | :symbols-shield-house:&nbsp;IoT VLAN  |
 
 ### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
@@ -119,8 +117,8 @@ The main wireless router and firewall for the local network. Located next to the
 
 ### :symbols-tux:&ensp;Native
 
-|  Status  | Service                                                                   | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                                                                                                                 |
-| :------: | :------------------------------------------------------------------------ | :-----------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Status   | Service                                                                   | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                                                                                                                                                 |
+| :------- | :------------------------------------------------------------------------ | :-----------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _Active_ | [:symbols-refresh-cw-clock:&nbsp;Chrony](../03_services/chrony.md)        |                 `123`                 | Advanced, lightweight NTP client and server.                                                                                                                                                                             |
 | _Active_ | [:symbols-globe-sync:&nbsp;DDNS](../03_services/ddns.md)                  |                 `N/A`                 | A networking service that automatically maps a static domain name _(hostname)_ to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }. |
 | _Active_ | [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md)                   |                 `445`                 | Remote file system access.                                                                                                                                                                                               |

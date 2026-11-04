@@ -14,8 +14,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Custom 3D-printer nozzle icon using Lucide design guidelines](../assets/icons/printer-3d-nozzle.svg){ width=200 }
 
 # Kacey 3D-Printer
@@ -42,11 +40,11 @@ See more detailed information about the Creality K1C hardware...
 
 **OS / Firmware**
 
-- [:brands-creality:&ensp;Creality FW Version: 1.3.3.46](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }
+- [:brands-creality:&ensp;Creality FW](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }&ensp;![version 1.3.3.46](https://img.shields.io/badge/version-1.3.3.46-12A34C){ style='vertical-align: middle;' }
 { .no-bullets }
-- [:symbols-tux:&ensp;Buildroot 2020.02.1](https://buildroot.org/){ external-link }
+- [:symbols-tux:&ensp;Buildroot](https://buildroot.org/){ external-link }&ensp;![version 2020.02.1](https://img.shields.io/badge/version-2020.02.1-EDC92F){ style='vertical-align: middle;' }
 { .no-bullets }
-- [:services-klipper:&ensp;Klipper 0.13.0](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }
+- [:services-klipper:&ensp;Klipper](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }&ensp;![version 0.13.0](https://img.shields.io/badge/version-0.13.0-b12f35){ style='vertical-align: middle;' }
 { .no-bullets }
 
 **Credentials**
@@ -65,12 +63,12 @@ See more detailed information about the Creality K1C hardware...
 ## :symbols-network:&ensp;Network Configuration
 
 | Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :-------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-|  `wlan0`  | `192.168.50.15`                          | `FC:EE:28:09:A7:1E` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| :-------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlan0`   | `192.168.50.15`                          | `FC:EE:28:09:A7:1E` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
-| Interface |             VLAN             | FQDN             | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :--------------------------: | :--------------- | :---------------------------------------- | :------------------------------------ |
-|  `wlan0`  | :symbols-shield:&nbsp;VLAN50 | `kacey.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| Interface | VLAN { data-sort-method="number" } | FQDN             | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :-------- | :--------------------------------- | :--------------- | :---------------------------------------- | :------------------------------------ |
+| `wlan0`   | :symbols-shield:&nbsp;VLAN50       | `kacey.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -92,8 +90,8 @@ See more detailed information about the Creality K1C hardware...
 
 ### :symbols-tux:&ensp;Native Linux
 
-|  Status  | Service                                                     | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
-| :------: | :---------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
+| Status   | Service                                                     | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
+| :------- | :---------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
 | _Active_ | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   |            `80`<br>`4408`             | A free and open-source Klipper web interface for managing your 3D-printer.                     |
 | _Active_ | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |                `7125`                 | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |
 | _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md) |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |

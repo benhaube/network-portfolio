@@ -15,8 +15,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Lucide 'laptop-minimal' icon](../assets/icons/laptop-minimal.svg){ width=200 }
 
 # Ben's Laptop
@@ -41,7 +39,7 @@ Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done o
 
 **OS / Firmware**
 
-:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }
+:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }&ensp;![Fedora kernel version](https://img.shields.io/fedora/v/kernel?label=kernel&color=%2351A2DA){ style="vertical-align: middle;" }
 
 **Credentials**
 
@@ -101,13 +99,13 @@ Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done o
 
 ## :symbols-network:&ensp;Network Configuration
 
-|                                                         Interface                                                          | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-| `wlp0s20f3`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/161/status){ style='vertical-align: middle;' } | `192.168.50.20`                          | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| Interface { data-sort-method="number" }                                                                                               | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
+| :------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlp0s20f3`&ensp;![wlp0s20f3 status](https://uptime.rac3r4life.online/api/badge/161/status?label=){ style='vertical-align: middle;' } | `192.168.50.20`                          | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
-|  Interface  |             VLAN             | FQDN                   | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
-| :---------: | :--------------------------: | :--------------------- | :---------------------------------------- | :------------------------------------ |
-| `wlp0s20f3` | :symbols-shield:&nbsp;VLAN50 | `bens-laptop.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
+| Interface   | VLAN { data-sort-method="number" } | FQDN                   | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
+| :---------- | :--------------------------------- | :--------------------- | :---------------------------------------- | :------------------------------------ |
+| `wlp0s20f3` | :symbols-shield:&nbsp;VLAN50       | `bens-laptop.internal` | `192.168.50.6` `192.168.50.2`             | `192.168.50.1`                        |
 
 ## :symbols-folder-tree:&ensp;Storage & Mounts
 
@@ -130,14 +128,14 @@ Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done o
 
 ### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }        |
-| :------: | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
+| Status   | OS                                                  | Virtual NIC | Virtual Disk Image | Role / Notes { data-sort-method="none" }        |
+| :------- | :-------------------------------------------------- | :---------- | :----------------- | :---------------------------------------------- |
 | _Active_ | [:services-kali:&nbsp;Kali Linux](https://kali.org) | NAT         | `kali-linux.qcow2` | Network security and penetration testing tools. |
 
 ### :symbols-tux:&ensp;Native Linux
 
-|  Status  | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
-| :------: | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
+| Status   | Service                                                                | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                             |
+| :------- | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
 | _Active_ | [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
 | _Active_ | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |
 

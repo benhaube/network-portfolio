@@ -50,9 +50,9 @@ Visualization of real-time track data and telemetry synced to F1 live and replay
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                                        | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------------- | :------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1timing`     | `ghcr.io/adn8naiagent/f1replaytiming:latest` | `8000`  |
+| Host Device                                                          | Method                                    | Container Name | Image                                        | Status                                                                                                          | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `f1timing`     | `ghcr.io/adn8naiagent/f1replaytiming:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/80/status?label=){ style='vertical-align: middle;' } | `8000`  |
 
 ---
 

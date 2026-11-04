@@ -60,16 +60,16 @@ Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that 
 
 **Routes**
 
-- :symbols-layers:&ensp;Debian Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/99/status){ style='vertical-align: middle;' }
+- :symbols-layers:&ensp;Debian Server
 { .no-bullets }
     - <https://healthchecks.rac3r4life.online>
-- :symbols-server:&ensp;Pi 4B Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/64/status){ style='vertical-align: middle;' }
+- :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
     - <https://beszel.rac3r4life.online>
     - <https://home.rac3r4life.online> _(`CNAME` record only, Exposed with Home Assistant Cloud)_
     - <https://it-tools.rac3r4life.online>
     - <https://uptime.rac3r4life.online>
-- :symbols-server-nas:&ensp;ZimaOS NAS&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/61/status){ style='vertical-align: middle;' }
+- :symbols-server-nas:&ensp;ZimaOS NAS
 { .no-bullets }
     - <https://auth.rac3r4life.online>
     - <https://gitea.rac3r4life.online>
@@ -80,11 +80,11 @@ Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that 
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                                    | Container Name      | Image                           | Port(s) |
-| :--------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :------------------------------ | :------ |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | `60123` |
+| Host Device                                                            | Method                                    | Container Name      | Image                           | Status                                                                                                          | Port(s) |
+| :--------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :------------------------------ | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/99/status?label=){ style='vertical-align: middle;' } | `60123` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/64/status?label=){ style='vertical-align: middle;' } | `60123` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/61/status?label=){ style='vertical-align: middle;' } | `60123` |
 
 ---
 

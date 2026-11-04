@@ -33,7 +33,7 @@ _Network File System_
 
 Allows remote hosts to mount file systems over a network and interact with those file systems as though they are mounted locally. This enables system administrators to consolidate resources onto centralized servers on the network.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/104/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/104/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/128/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/128/uptime)
 
 **Port(s)**
 
@@ -54,9 +54,9 @@ Allows remote hosts to mount file systems over a network and interact with those
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                          | Container Name | Image | Port(s) |
-| :------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `2049`  |
+| Host Device                                                          | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
+| :------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/128/status?label=){ style='vertical-align: middle;' } | `2049`  |
 
 ---
 

@@ -59,9 +59,9 @@ Centralized network visibility and continuous asset discovery. Monitor devices, 
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                      | Port(s)              |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :------------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx`    | `jokobsk/netalertx:latest` | `20211`&ensp;`20212` |
+| Host Device                                                          | Method                                    | Container Name | Image                      | Status                                                                                                          | Port(s)              |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `netalertx`    | `jokobsk/netalertx:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/66/status?label=){ style='vertical-align: middle;' } | `20211`&ensp;`20212` |
 
 ---
 

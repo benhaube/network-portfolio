@@ -30,7 +30,7 @@ _Provided by addr.tools_
 
 A networking service that automatically maps a static domain name _(FQDN)_ to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/117/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/117/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/116/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/116/uptime)
 
 **Port(s)** 
 
@@ -48,9 +48,9 @@ A networking service that automatically maps a static domain name _(FQDN)_ to a 
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                          | Container Name | Image | Port(s) |
-| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `N/A`   |
+| Host Device                                                            | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
+| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/116/status?label=){ style='vertical-align: middle;' } | `N/A`   |
 
 ---
 

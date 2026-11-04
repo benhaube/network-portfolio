@@ -53,10 +53,10 @@ A self-hosted, real-time port monitoring and discovery tool.
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                             | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- | :------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | `4999`  |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | `4999`  |
+| Host Device                                                          | Method                                    | Container Name | Image                             | Status                                                                                                          | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/55/status?label=){ style='vertical-align: middle;' } | `4999`  |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `portracker`   | `mostafawahied/portracker:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/41/status?label=){ style='vertical-align: middle;' } | `4999`  |
 
 ---
 

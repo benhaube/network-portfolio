@@ -49,9 +49,9 @@ Spoolman is a self-hosted web service designed to help you efficiently manage yo
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                            | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------- | :------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `spoolman`     | `ghcr.io/donkie/spoolman:latest` | `7912`  |
+| Host Device                                                          | Method                                    | Container Name | Image                            | Status                                                                                                          | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `spoolman`     | `ghcr.io/donkie/spoolman:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/43/status?label=){ style='vertical-align: middle;' } | `7912`  |
 
 ---
 

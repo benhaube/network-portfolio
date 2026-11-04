@@ -45,9 +45,9 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
 
 - `2525` &mdash; _SMTP Server_
 { .no-bullets }
-- `5432` &mdash; _Postgres DB_&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/93/status){ style='vertical-align: middle;' }
+- `5432` &mdash; _Postgres DB_
 { .no-bullets }
-- `8000` &mdash; _Web Server_&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/92/status){ style='vertical-align: middle;' }
+- `8000` &mdash; _Web Server_
 { .no-bullets }
 
 **URL / Access**
@@ -70,10 +70,10 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                                    | Container Name       | Image                              | Port(s)       |
-| :--------------------------------------------------------------------- | :---------------------------------------- | :------------------- | :--------------------------------- | :------------ |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `healthchecks-web-1` | `healthchecks/healthchecks:latest` | `8000` `2525` |
-|                                                                        | :symbols-container:&nbsp;Docker Container | `healthchecks-db-1`  | `postgres:16`                      | `5432`        |
+| Host Device                                                            | Method                                    | Container Name       | Image                              | Status                                                                                                          | Port(s)       |
+| :--------------------------------------------------------------------- | :---------------------------------------- | :------------------- | :--------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------ |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `healthchecks-web-1` | `healthchecks/healthchecks:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/92/status?label=){ style='vertical-align: middle;' } | `8000` `2525` |
+|                                                                        | :symbols-container:&nbsp;Docker Container | `healthchecks-db-1`  | `postgres:16`                      | ![status badge](https://uptime.rac3r4life.online/api/badge/93/status?label=){ style='vertical-align: middle;' } | `5432`        |
 
 ---
 

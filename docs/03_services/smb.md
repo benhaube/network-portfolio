@@ -40,13 +40,13 @@ Samba is an open-source software suite that has, since 1992, provided file and p
 
 **URL / Access**
 
--   :symbols-router:&ensp;ASUS RT-BE92U:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/107/status){ style='vertical-align: middle;' }
+-   :symbols-router:&ensp;ASUS RT-BE92U
 { .no-bullets }
     - `\\asusrouter.internal\`
--   :symbols-server:&ensp;Pi 4B Server:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/108/status){ style='vertical-align: middle;' }
+-   :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
     - `\\pi-server.internal\smb-share`
--   :symbols-server-nas:&ensp;ZimaOS NAS:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/109/status){ style='vertical-align: middle;' }
+-   :symbols-server-nas:&ensp;ZimaOS NAS
 { .no-bullets }
     - `\\storage-server.internal\nvme0n1p1`
     - `\\storage-server.internal\Quick-Storage`
@@ -56,18 +56,18 @@ Samba is an open-source software suite that has, since 1992, provided file and p
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
     - Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
-    - Local Network&ensp;:symbols-move-right:&ensp;"pi-server (admin)"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Pi 4B Server (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                          | Container Name | Image | Port(s) |
-| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `445`   |
+| Host Device                                                            | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
+| :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/107/status?label=){ style='vertical-align: middle;' } | `445`   |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/108/status?label=){ style='vertical-align: middle;' } | `445`   |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/109/status?label=){ style='vertical-align: middle;' } | `445`   |
 
 ---
 

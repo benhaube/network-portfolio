@@ -31,7 +31,7 @@ _Handy Tools for Devs_
 
 Handy tools for network administrators and developers.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/9/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/9/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/138/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/sharevb/it-tools?label=Release&color=%2318a058)
+![status badge](https://uptime.rac3r4life.online/api/badge/164/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/164/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/138/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/sharevb/it-tools?label=Release&color=%2318a058)
 
 **Port(s)**
 
@@ -53,10 +53,10 @@ Handy tools for network administrators and developers.
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name     | Image                             | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :-------------------------------- | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `it-tools`         | `sharevb/it-tools:latest`         | `8080`  |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `network-utils-ws` | `sharevb/network-utils-ws:latest` | `8000`  |
+| Host Device                                                          | Method                                    | Container Name     | Image                             | Status                                                                                                           | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :-------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `it-tools`         | `sharevb/it-tools:latest`         | ![status badge](https://uptime.rac3r4life.online/api/badge/9/status?label=){ style='vertical-align: middle;' }   | `8080`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `network-utils-ws` | `sharevb/network-utils-ws:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/165/status?label=){ style='vertical-align: middle;' } | `8000`  |
 
 ---
 

@@ -41,23 +41,23 @@ Provides secure encrypted communications between two untrusted hosts over an ins
 **URL / Access**
 { #url-access }
 
--   :symbols-router:&ensp;ASUS RT-BE92U&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/17/status){ style="vertical-align: middle;" }
+-   :symbols-router:&ensp;ASUS RT-BE92U
 { .no-bullets }
     - `192.168.50.1:22`
     - `asusrouter.internal:22`
--   :symbols-layers:&ensp;Debian Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/36/status){ style="vertical-align: middle;" }
+-   :symbols-layers:&ensp;Debian Server
 { .no-bullets }
     - `192.168.50.6:22`
     - `debian-vm.internal:22`
--   :symbols-server:&ensp;Pi 4B Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/15/status){ style="vertical-align: middle;" }
+-   :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
     - `192.168.50.2:22`
     - `pi-server.internal:22`
--   :symbols-server:&ensp;Pi Zero 2W Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/16/status){ style="vertical-align: middle;" }
+-   :symbols-server:&ensp;Pi Zero 2W Server
 { .no-bullets }
     - `192.168.50.3:22`
     - `pi-zero.internal:22`
--   :symbols-server-nas:&ensp;ZimaOS NAS&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/34/status){ style="vertical-align: middle;" }
+-   :symbols-server-nas:&ensp;ZimaOS NAS
 { .no-bullets }
     - `192.168.50.4:22`
     - `192.168.50.5:22`
@@ -80,14 +80,14 @@ Provides secure encrypted communications between two untrusted hosts over an ins
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                             | Method                          | Container Name | Image | Port(s) |
-| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md)                  | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)                  | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)                    | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)          | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)                    | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
-| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `22`    |
+| Host Device                                                                             | Method                          | Container Name | Image | Status                                                                                                          | Port(s) |
+| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md)                  | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/17/status?label=){ style='vertical-align: middle;' } | `22`    |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)                  | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/36/status?label=){ style='vertical-align: middle;' } | `22`    |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)                    | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/15/status?label=){ style='vertical-align: middle;' } | `22`    |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)          | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/16/status?label=){ style='vertical-align: middle;' } | `22`    |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)                    | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/34/status?label=){ style='vertical-align: middle;' } | `22`    |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` |                                                                                                                 | `22`    |
 
 ---
 

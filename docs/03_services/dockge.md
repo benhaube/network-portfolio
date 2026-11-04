@@ -1,7 +1,7 @@
 ---
 icon: services/dockge
 title: Dockge
-subtitle: Docker Management
+subtitle: Container Management
 description: A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 tags:
   - Active
@@ -19,7 +19,7 @@ hide:
 
 # Dockge
 
-_Docker Management_
+_Container Management_
 
 [GitHub&ensp;:brands-github:](https://github.com/louislam/dockge){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://dockge.kuma.pet/){ .md-button .md-button--primary }
 
@@ -52,19 +52,19 @@ A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented man
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 
-    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ debian-vm"
-    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-server"
-    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ pi-zero"
-    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ storage-server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ Debian Server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ Pi 4B Server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ Pi Zero Server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ ZimaOS NAS"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                                    | Container Name    | Image               | Port(s) |
-| :----------------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :------------------ | :------ |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | `5001`  |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | `5001`  |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | `5001`  |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `dockge`          | `louislam/dockge:1` | `5001`  |
+| Host Device                                                                    | Method                                    | Container Name    | Image               | Status                                                                                                          | Port(s) |
+| :----------------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :------------------ | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | ![status badge](https://uptime.rac3r4life.online/api/badge/59/status?label=){ style='vertical-align: middle;' } | `5001`  |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | ![status badge](https://uptime.rac3r4life.online/api/badge/51/status?label=){ style='vertical-align: middle;' } | `5001`  |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | ![status badge](https://uptime.rac3r4life.online/api/badge/58/status?label=){ style='vertical-align: middle;' } | `5001`  |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `dockge`          | `louislam/dockge:1` | ![status badge](https://uptime.rac3r4life.online/api/badge/60/status?label=){ style='vertical-align: middle;' } | `5001`  |
 
 ---
 

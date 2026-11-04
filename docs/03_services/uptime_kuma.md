@@ -56,9 +56,9 @@ A fancy self-hosted service monitoring tool.
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                    | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :----------------------- | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `uptime-kuma`  | `louislam/uptime-kuma:2` | `3001`  |
+| Host Device                                                          | Method                                    | Container Name | Image                    | Status                                                                                                           | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :----------------------- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `uptime-kuma`  | `louislam/uptime-kuma:2` | ![status badge](https://uptime.rac3r4life.online/api/badge/111/status?label=){ style='vertical-align: middle;' } | `3001`  |
 
 ---
 

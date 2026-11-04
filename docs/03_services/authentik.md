@@ -83,11 +83,11 @@ An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name           | Image                                  | Port(s)       |
-| :------------------------------------------------------------------- | :---------------------------------------- | :----------------------- | :------------------------------------- | :------------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `authentik-server-1`     | `ghcr.io/goauthentik/server`           | `9000` `9443` |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `authentik-worker-1`     | `ghcr.io/goauthentik/server`           | `-`           |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `authentik-postgresql-1` | `docker.io/library/postgres:16-alpine` | `-`           |
+| Host Device                                                          | Method                                    | Container Name           | Image                                  | Status                                                                                                          | Port(s)       |
+| :------------------------------------------------------------------- | :---------------------------------------- | :----------------------- | :------------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `authentik-server-1`     | `ghcr.io/goauthentik/server`           | ![status badge](https://uptime.rac3r4life.online/api/badge/96/status?label=){ style='vertical-align: middle;' } | `9000` `9443` |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `authentik-worker-1`     | `ghcr.io/goauthentik/server`           | ![status badge](https://uptime.rac3r4life.online/api/badge/97/status?label=){ style='vertical-align: middle;' } | `-`           |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `authentik-postgresql-1` | `docker.io/library/postgres:16-alpine` | ![status badge](https://uptime.rac3r4life.online/api/badge/98/status?label=){ style='vertical-align: middle;' } | `-`           |
 
 ---
 

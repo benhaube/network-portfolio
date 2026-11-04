@@ -63,20 +63,20 @@ A lightweight server monitoring hub with historical data, docker stats, and aler
 
 **Hub**
 
-| Host Device                                                          | Method                                    | Container Name | Image            | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------- | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel` | `8090`  |
+| Host Device                                                          | Method                                    | Container Name | Image            | Status                                                                                                          | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel` | ![status badge](https://uptime.rac3r4life.online/api/badge/31/status?label=){ style='vertical-align: middle;' } | `8090`  |
 
 **Agents**
 
-| Host Device                                                                    | Method                                    | Container Name | Image                        | Port(s) |
-| :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- | :------ |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45876` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45876` |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | `45876` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` | `45876` |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)         | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                        | `45876` |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)    | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                        | `45876` |
+| Host Device                                                                    | Method                                    | Container Name | Image                        | Status                                                                                                          | Port(s) |
+| :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | ![status badge](https://uptime.rac3r4life.online/api/badge/71/status?label=){ style='vertical-align: middle;' } | `45876` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | ![status badge](https://uptime.rac3r4life.online/api/badge/32/status?label=){ style='vertical-align: middle;' } | `45876` |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | ![status badge](https://uptime.rac3r4life.online/api/badge/72/status?label=){ style='vertical-align: middle;' } | `45876` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent-intel` | ![status badge](https://uptime.rac3r4life.online/api/badge/70/status?label=){ style='vertical-align: middle;' } | `45876` |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)         | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                        |                                                                                                                 | `45876` |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)    | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                        |                                                                                                                 | `45876` |
 
 ---
 

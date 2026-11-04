@@ -56,12 +56,12 @@ High performance self-hosted photo and video management solution. An alternative
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name            | Image                                                            | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------------------ | :--------------------------------------------------------------- | :------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `immich-server`           | `ghcr.io/immich-app/immich-server:v3-release`                    | `2283`  |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v3-openvino`         | `N/A`   |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `redis`                   | `docker.io/valkey/valkey:9`                                      | `N/A`   |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `database`                | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` | `N/A`   |
+| Host Device                                                          | Method                                    | Container Name            | Image                                                            | Status                                                                                                          | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------------------ | :--------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `immich-server`           | `ghcr.io/immich-app/immich-server:v3-release`                    | ![status badge](https://uptime.rac3r4life.online/api/badge/42/status?label=){ style='vertical-align: middle;' } | `2283`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `immich-machine-learning` | `ghcr.io/immich-app/immich-machine-learning:v3-openvino`         | ![status badge](https://uptime.rac3r4life.online/api/badge/76/status?label=){ style='vertical-align: middle;' } | `N/A`   |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `redis`                   | `docker.io/valkey/valkey:9`                                      | ![status badge](https://uptime.rac3r4life.online/api/badge/77/status?label=){ style='vertical-align: middle;' } | `N/A`   |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `database`                | `ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0` | ![status badge](https://uptime.rac3r4life.online/api/badge/78/status?label=){ style='vertical-align: middle;' } | `N/A`   |
 
 ---
 

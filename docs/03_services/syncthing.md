@@ -54,16 +54,16 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 -   :symbols-smartphone:&ensp;Ben's Smartphone
 { .no-bullets }
     - <https://localhost:8384>
--   :symbols-layers:&ensp;Debian Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/54/status){ style="vertical-align: middle;" }
+-   :symbols-layers:&ensp;Debian Server
 { .no-bullets }
     - <https://debian-vm.internal:8384>
--   :symbols-server:&ensp;Pi 4B Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/27/status){ style="vertical-align: middle;" }
+-   :symbols-server:&ensp;Pi 4B Server
 { .no-bullets }
     - <https://pi-server.internal:8384>
--   :symbols-server:&ensp;Pi Zero 2W Server&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/28/status){ style="vertical-align: middle;" }
+-   :symbols-server:&ensp;Pi Zero 2W Server
 { .no-bullets }
     - <https://pi-zero.internal:8384>
--   :symbols-server-nas:&ensp;ZimaOS NAS&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/35/status){ style="vertical-align: middle;" }
+-   :symbols-server-nas:&ensp;ZimaOS NAS&
 { .no-bullets }
     - <https://storage-server.internal:8384>
     - <https://storage-server-2.internal:8384>
@@ -78,19 +78,19 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
     - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ debian-vm"
     - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-server"
     - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ pi-zero"
-    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ storage-server"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Syncthing @ ZimaOS-NAS"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                     | Method                                    | Container Name | Image                          | Port(s)                          |
-| :------------------------------------------------------------------------------ | :---------------------------------------- | :------------- | :----------------------------- | :------------------------------- |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
-| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)     | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
-| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_hardware/bens_smartphone.md) | :brands-android-2:&nbsp;Native Android    | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)            | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
-| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)  | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | `8384`&ensp;`22000`&ensp;`21027` |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)            | :symbols-container:&nbsp;Docker Container | `syncthing`    | `linuxserver/syncthing:latest` | `8384`&ensp;`22000`&ensp;`21027` |
+| Host Device                                                                     | Method                                    | Container Name | Image                          | Status                                                                                                          | Port(s)                          |
+| :------------------------------------------------------------------------------ | :---------------------------------------- | :------------- | :----------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------- |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |                                                                                                                 | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)     | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          |                                                                                                                 | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-smartphone:&nbsp;Ben's Smartphone](../02_hardware/bens_smartphone.md) | :brands-android-2:&nbsp;Native Android    | `N/A`          | `N/A`                          |                                                                                                                 | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)          | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | ![status badge](https://uptime.rac3r4life.online/api/badge/54/status?label=){ style='vertical-align: middle;' } | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)            | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | ![status badge](https://uptime.rac3r4life.online/api/badge/27/status?label=){ style='vertical-align: middle;' } | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md)  | :symbols-tux:&nbsp;Native Linux           | `N/A`          | `N/A`                          | ![status badge](https://uptime.rac3r4life.online/api/badge/28/status?label=){ style='vertical-align: middle;' } | `8384`&ensp;`22000`&ensp;`21027` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)            | :symbols-container:&nbsp;Docker Container | `syncthing`    | `linuxserver/syncthing:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/35/status?label=){ style='vertical-align: middle;' } | `8384`&ensp;`22000`&ensp;`21027` |
 
 ---
 

@@ -73,11 +73,11 @@ A self-hosted dashboard built for people who want their information in one place
 
     [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#dynacat)
 
-| Host Device                                                          | Method                                    | Container Name        | Image                               | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :-------------------- | :---------------------------------- | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glance`              | `panonim/dynacat:latest`            | `8580`  |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `f1_api`              | `skyallinott/f1_api:latest`         | `4463`  |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `glance-github-graph` | `haumea/glance-github-graph:latest` | `9090`  |
+| Host Device                                                          | Method                                    | Container Name        | Image                               | Status                                                                                                           | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :-------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glance`              | `panonim/dynacat:latest`            | ![status badge](https://uptime.rac3r4life.online/api/badge/5/status?label=){ style='vertical-align: middle;' }   | `8580`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `f1_api`              | `skyallinott/f1_api:latest`         | ![status badge](https://uptime.rac3r4life.online/api/badge/30/status?label=){ style='vertical-align: middle;' }  | `4463`  |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `glance-github-graph` | `haumea/glance-github-graph:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/163/status?label=){ style='vertical-align: middle;' } | `9090`  |
 
 ---
 

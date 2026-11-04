@@ -44,12 +44,12 @@ Painless, self-hosted, all-in-one software development service. Including Git ho
 
 **URL / Access**
 
--   :symbols-app-window:&ensp;Web-UI:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/67/status){ style='vertical-align: middle;' }
+-   :symbols-app-window:&ensp;Web-UI:
 { .no-bullets }
     - <http://storage-server.internal:3080>
     - <http://storage-server-2.internal:3080>
     - <https://gitea.rac3r4life.online>
--   :symbols-square-terminal:&ensp;SSH:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/102/status){ style='vertical-align: middle;' }
+-   :symbols-square-terminal:&ensp;SSH:
 { .no-bullets }
     - `git@storage-server.internal:222`
 
@@ -73,10 +73,10 @@ Painless, self-hosted, all-in-one software development service. Including Git ho
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                           | Port(s)           |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------ | :---------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `gitea`        | `docker.gitea.com/gitea:latest` | `3080`&ensp;`222` |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `gitea_runner` | `gitea/act_runner:latest`       | `N/A`             |
+| Host Device                                                          | Method                                    | Container Name | Image                           | Status                                                                                                          | Port(s)           |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------- | :---------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `gitea`        | `docker.gitea.com/gitea:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/67/status?label=){ style='vertical-align: middle;' } | `3080`&ensp;`222` |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `gitea_runner` | `gitea/act_runner:latest`       | ![status badge](https://uptime.rac3r4life.online/api/badge/74/status?label=){ style='vertical-align: middle;' } | `N/A`             |
 
 ---
 

@@ -72,11 +72,11 @@ The main wireless router and firewall for the local network. Located next to the
 
 ### :lucide-graph-star:&ensp;Virtual Local Networks
 
-| VLAN { data-sort-method="number" } | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
-| :--------------------------------- | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
-| :symbols-shield:&nbsp;VLAN50       | internal | `192.168.50.6` `192.168.50.2`               | `192.168.50.0/24`                  | `192.168.50.1`                        | `192.168.50.255`                        | `.22` to `.254`                        |
-| :symbols-shield-user:&nbsp;VLAN52  | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.52.0/24`                  | `192.168.52.1`                        | `192.168.52.255`                        | `.2` to `.254`                         |
-| :symbols-shield-house:&nbsp;VLAN53 | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.53.0/24`                  | `192.168.53.1`                        | `192.168.53.255`                        | `.3` to `.254`                         |
+| VLAN { data-sort-method="number" }                                                                                                                        | Domain   | DNS Server(s) { data-sort-method="dotsep" } | CIDR { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------ | :--------------------------------- | :------------------------------------ | :-------------------------------------- | :------------------------------------- |
+| :symbols-shield:&nbsp;VLAN50&ensp;![VLAN50 status](https://uptime.rac3r4life.online/api/badge/126/status?label=){ style='vertical-align: middle;' }       | internal | `192.168.50.6` `192.168.50.2`               | `192.168.50.0/24`                  | `192.168.50.1`                        | `192.168.50.255`                        | `.22` to `.254`                        |
+| :symbols-shield-user:&nbsp;VLAN52&ensp;![VLAN52 status](https://uptime.rac3r4life.online/api/badge/167/status?label=){ style='vertical-align: middle;' }  | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.52.0/24`                  | `192.168.52.1`                        | `192.168.52.255`                        | `.2` to `.254`                         |
+| :symbols-shield-house:&nbsp;VLAN53&ensp;![VLAN53 status](https://uptime.rac3r4life.online/api/badge/168/status?label=){ style='vertical-align: middle;' } | -        | `9.9.9.9` `149.112.112.112`                 | `192.168.53.0/24`                  | `192.168.53.1`                        | `192.168.53.255`                        | `.3` to `.254`                         |
 
 ### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 

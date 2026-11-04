@@ -14,8 +14,6 @@ hide:
   - toc
 ---
 
-<!-- lint: off heading.level-skip -->
-
 ![Lucide 'ethernet-port' icon](../assets/icons/ethernet-port.svg){ width=200 }
 
 # TP-Link Switch

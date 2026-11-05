@@ -30,9 +30,13 @@ _Modified Creality K1C_
 
 The Creality K1C 3D-printer located in the office upstairs, and connected to the local network through 2.4 GHz Wi-Fi _(SSID: `Home`)_. Affectionately, named 'Kacey' as a play on the model name, K1C.
 
-See more detailed information about the Creality K1C hardware...
+![status badge](https://uptime.rac3r4life.online/api/badge/169/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/169/uptime)
 
-[More Kacey Info&ensp;:symbols-printer-3d-nozzle:](kacey_info.md){ .md-button }
+!!! links
+
+    See more detailed information about the Creality K1C hardware...
+
+    [More Kacey Info&ensp;:symbols-printer-3d-nozzle:](kacey_info.md){ .md-button }
 
 **Hostname**
 
@@ -40,11 +44,11 @@ See more detailed information about the Creality K1C hardware...
 
 **OS / Firmware**
 
-- [:brands-creality:&ensp;Creality FW](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }&ensp;![version 1.3.3.46](https://img.shields.io/badge/version-1.3.3.46-12A34C){ style='vertical-align: middle;' }
+- [:brands-creality:&ensp;Creality FW](https://www.crealitycloud.com/downloads/firmware/flagship-series/k1c "Download Firmware Images"){ external-link }&ensp;![version 1.3.3.46](https://img.shields.io/badge/1.3.3.46-12A34C){ style='vertical-align: middle;' }
 { .no-bullets }
-- [:symbols-tux:&ensp;Buildroot](https://buildroot.org/){ external-link }&ensp;![version 2020.02.1](https://img.shields.io/badge/version-2020.02.1-EDC92F){ style='vertical-align: middle;' }
+- [:symbols-tux:&ensp;Buildroot](https://buildroot.org/){ external-link }&ensp;![version 2020.02.1](https://img.shields.io/badge/2020.02.1-EDC92F){ style='vertical-align: middle;' }
 { .no-bullets }
-- [:services-klipper:&ensp;Klipper](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }&ensp;![version 0.13.0](https://img.shields.io/badge/version-0.13.0-b12f35){ style='vertical-align: middle;' }
+- [:services-klipper:&ensp;Klipper](https://www.klipper3d.org/Releases.html#klipper-0130){ external-link }&ensp;![version 0.13.0](https://img.shields.io/badge/0.13.0-b12f35){ style='vertical-align: middle;' }
 { .no-bullets }
 
 **Credentials**
@@ -62,9 +66,9 @@ See more detailed information about the Creality K1C hardware...
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :-------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-| `wlan0`   | `192.168.50.15`                          | `FC:EE:28:09:A7:1E` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| Interface                                                                                                                     | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
+| :---------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlan0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/169/status?label=){ style='vertical-align: middle;' } | `192.168.50.15`                          | `FC:EE:28:09:A7:1E` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
 | Interface | VLAN { data-sort-method="number" } | FQDN             | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------- | :--------------------------------- | :--------------- | :---------------------------------------- | :------------------------------------ |
@@ -90,11 +94,11 @@ See more detailed information about the Creality K1C hardware...
 
 ### :symbols-tux:&ensp;Native Linux
 
-| Status   | Service                                                     | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" }                                                       |
-| :------- | :---------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------- |
-| _Active_ | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   |            `80`<br>`4408`             | A free and open-source Klipper web interface for managing your 3D-printer.                     |
-| _Active_ | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |                `7125`                 | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |
-| _Active_ | [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md) |                 `22`                  | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
+| Service                                                     | Port(s) { data-sort-method="number" } | Status                                                                                                               | Role / Notes { data-sort-method="none" }                                                       |
+| :---------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   |            `80`<br>`4408`             | ![Fluidd status](https://uptime.rac3r4life.online/api/badge/175/status?label=){ style='vertical-align: middle;' }    | A free and open-source Klipper web interface for managing your 3D-printer.                     |
+| [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |                `7125`                 | ![Moonraker status](https://uptime.rac3r4life.online/api/badge/174/status?label=){ style='vertical-align: middle;' } | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |
+| [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md) |                 `22`                  | ![SSH status](https://uptime.rac3r4life.online/api/badge/173/status?label=){ style='vertical-align: middle;' }       | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
 
 ---
 

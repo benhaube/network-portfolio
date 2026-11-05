@@ -29,7 +29,7 @@ _The Klipper UI_
 
 A free and open-source Klipper web interface for managing your 3D-printer.
 
-![GitHub Release](https://img.shields.io/github/v/release/fluidd-core/fluidd?label=Release&color=%230091EC)
+![status badge](https://uptime.rac3r4life.online/api/badge/175/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/175/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/fluidd-core/fluidd?label=Release&color=%230091EC)
 
 **Port(s)**
 
@@ -53,9 +53,9 @@ A free and open-source Klipper web interface for managing your 3D-printer.
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                             | Method                          | Container Name | Image | Port(s)          |
-| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------- |
-| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `80`&ensp;`4408` |
+| Host Device                                                                             | Method                          | Container Name | Image | Status                                                                                                           | Port(s)          |
+| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :--------------- |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/175/status?label=){ style='vertical-align: middle;' } | `80`&ensp;`4408` |
 
 ---
 

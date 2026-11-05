@@ -29,6 +29,8 @@ _The Klipper Web API_
 
 Moonraker is a Python 3 based web server that exposes APIs with which client applications may use to interact with the 3D printing firmware, [Klipper](https://www.klipper3d.org/){ external-link }.
 
+![status badge](https://uptime.rac3r4life.online/api/badge/174/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/174/uptime)
+
 **Port(s)**
 
 :    `7125`
@@ -45,9 +47,9 @@ Moonraker is a Python 3 based web server that exposes APIs with which client app
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                             | Method                          | Container Name | Image | Port(s) |
-| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
-| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `7125`  |
+| Host Device                                                                             | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
+| :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/174/status?label=){ style='vertical-align: middle;' } | `7125`  |
 
 ---
 

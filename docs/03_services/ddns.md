@@ -134,19 +134,23 @@ A networking service that automatically maps a static domain name _(FQDN)_ to a 
 
          Otherwise, add the `-O` flag to both `scp` commands to use SSH instead of SFTP.
 
-3.  Make the scripts executable:
+3.  Set restrictive permissions, so only the `root` user can read, write, and execute the scripts:
 
     ``` bash linenums="1"
-    chmod +x auth_hook.sh deploy_cert.sh
+    chmod 700 auth_hook.sh deploy_cert.sh
     ```
 
 4.  Run the Certbot command to get the TLS certificate from Lets Encrypt:
 
     ``` bash linenums="1"
-    sudo certbot certonly \
+    # Obtain superuser permissions
+    sudo -i
+
+    # Run the Certbot command
+    certbot certonly \
       --manual \
       --preferred-challenges dns \
       --manual-auth-hook /path/to/auth_hook.sh \
       --deploy-hook /path/to/deploy_cert.sh \
-      -d rac3r4life.myaddr.tools
+      -d rac3r4life.myaddr.dev
     ```

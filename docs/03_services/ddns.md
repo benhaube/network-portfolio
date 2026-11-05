@@ -30,7 +30,7 @@ _Provided by addr.tools_
 
 A networking service that automatically maps a static domain name _(FQDN)_ to a dynamic public IP address. On this local network, the DDNS service is provided by [addr.tools](https://addr.tools){ external-link }.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/116/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/116/uptime)
+![status badge](https://uptime.rac3r4life.online/api/badge/116/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/116/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/170/cert-exp)
 
 **Port(s)** 
 

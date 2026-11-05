@@ -62,9 +62,9 @@ _Organized IP Address Space_
 
 ## :symbols-globe-sync:&ensp;Dynamic DNS Providers
 
-| Provider                                  | Server                                                                        | FQDN                            | TLS Certificate                         | Certificate Expire { data-sort-method="date" } | Status                                                                                                          |
-| :---------------------------------------- | :---------------------------------------------------------------------------- | :------------------------------ | :-------------------------------------- | :--------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
-| :symbols-square-terminal:&nbsp;addr.tools | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#native) | <https://rac3r4life.myaddr.dev> | :brands-lets-encrypt:&nbsp;Lets Encrypt | 2026-08-23                                     | ![DDNS status](https://uptime.rac3r4life.online/api/badge/116/status?label=){ style='vertical-align: middle;' } |
+| Provider                                  | Server                                                                        | FQDN                            | TLS Certificate                         | Certificate Expire { data-sort-method="date" }                                                                    | Status                                                                                                          |
+| :---------------------------------------- | :---------------------------------------------------------------------------- | :------------------------------ | :-------------------------------------- | :---------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| :symbols-square-terminal:&nbsp;addr.tools | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md#native) | <https://rac3r4life.myaddr.dev> | :brands-lets-encrypt:&nbsp;Lets Encrypt | ![Cert expire](https://uptime.rac3r4life.online/api/badge/170/cert-exp?label=){ style='vertical-align: middle;' } | ![DDNS status](https://uptime.rac3r4life.online/api/badge/116/status?label=){ style='vertical-align: middle;' } |
 
 ## :symbols-waypoints:&ensp;VPN Servers / Clients
 

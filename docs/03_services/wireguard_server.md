@@ -65,7 +65,7 @@ An extremely simple yet fast and modern VPN that utilizes state-of-the-art crypt
 
 | Host Device                                                            | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
-| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/114/status?label=){ style='vertical-align: middle;' } | `41820` |
+| [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/114/status?label=){ style='vertical-align: middle;' } | `41820` |
 
 ---
 

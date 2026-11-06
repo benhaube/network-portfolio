@@ -76,7 +76,7 @@ Painless, self-hosted, all-in-one software development service. Including Git ho
 | Host Device                                                          | Method                                    | Container Name | Image                           | Status                                                                                                          | Port(s)           |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------- | :---------------- |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `gitea`        | `docker.gitea.com/gitea:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/67/status?label=){ style='vertical-align: middle;' } | `3080`&ensp;`222` |
-|                                                                      | :symbols-container:&nbsp;Docker Container | `gitea_runner` | `gitea/act_runner:latest`       | ![status badge](https://uptime.rac3r4life.online/api/badge/74/status?label=){ style='vertical-align: middle;' } | `N/A`             |
+|                                                                      | :symbols-container:&nbsp;Docker Container | `gitea_runner` | `gitea/act_runner:latest`       | ![status badge](https://uptime.rac3r4life.online/api/badge/74/status?label=){ style='vertical-align: middle;' } | `-`               |
 
 ---
 

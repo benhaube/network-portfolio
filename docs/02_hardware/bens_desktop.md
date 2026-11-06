@@ -113,9 +113,9 @@ Ben's main workstation PC located at his desk in the office upstairs. Connected 
 | :---------------------------------- | :------------ | :--------------------------------------------- | :---------------------------------- | :--------------- | :----------------------------------- |
 | `/run/media/bhaube/External_SSD`    | NVMe SSD      | 916 GB                                         | `/dev/dm-2`                         | `ext4`           | :symbols-hard-drive-lock:&nbsp;LUKS2 |
 | `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                         | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | :symbols-folder-lock:&nbsp;gocryptfs |
-| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                           |                                     | `fuse.rclone`    | N/A                                  |
-| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | N/A                                  |
-| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | N/A                                  |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                           | `-`                                 | `fuse.rclone`    | -                                    |
+| `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -                                    |
+| `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -                                    |
 
 ## :symbols-cloud:&ensp;Services & Containers
 

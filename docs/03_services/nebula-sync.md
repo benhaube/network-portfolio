@@ -51,7 +51,7 @@ Synchronize configuration between multiple [Pi-hole](pi-hole.md#overview){ data-
 
 | Host Device                                                              | Method                                    | Container Name | Image                                 | Port(s) |
 | :----------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------ | :------ |
-| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` | `N/A`   |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `nebula-sync`  | `ghcr.io/lovelaze/nebula-sync:latest` | `-`     |
 
 ---
 

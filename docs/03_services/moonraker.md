@@ -49,7 +49,7 @@ Moonraker is a Python 3 based web server that exposes APIs with which client app
 
 | Host Device                                                                             | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
 | :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
-| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/174/status?label=){ style='vertical-align: middle;' } | `7125`  |
+| [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/174/status?label=){ style='vertical-align: middle;' } | `7125`  |
 
 ---
 

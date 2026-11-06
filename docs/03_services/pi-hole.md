@@ -62,8 +62,8 @@ A DNS sinkhole that protects your devices from unwanted content without installi
 
 | Host Device                                                                        | Method                          | Container Name | Image | Port(s)                   |
 | :--------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------------------------ |
-| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md)           | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `80`&ensp;`443`&ensp;`53` |
-| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `80`&ensp;`443`&ensp;`53` |
+| [:symbols-server:&nbsp;~~Pi 4B Server~~](../02_hardware/pi_4b_server.md)           | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | `80`&ensp;`443`&ensp;`53` |
+| [:symbols-server:&nbsp;~~Pi Zero 2W Server~~](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | `80`&ensp;`443`&ensp;`53` |
 
 ---
 

@@ -69,8 +69,8 @@ An open-source authoritative as well as recursive DNS server that can be used fo
 
 | Host Device                                                            | Method                          | Container Name | Image | Status                                                                                                          | Port(s)                     |
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :-------------------------------------------------------------------------------------------------------------- | :-------------------------- |
-| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/37/status?label=){ style='vertical-align: middle;' } | `53`&ensp;`443`&ensp;`5380` |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/38/status?label=){ style='vertical-align: middle;' } | `53`&ensp;`443`&ensp;`5380` |
+| [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/37/status?label=){ style='vertical-align: middle;' } | `53`&ensp;`443`&ensp;`5380` |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/38/status?label=){ style='vertical-align: middle;' } | `53`&ensp;`443`&ensp;`5380` |
 
 ---
 

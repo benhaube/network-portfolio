@@ -85,7 +85,7 @@ Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile d
 | CPU                                            | Cores / Threads | CPU Freq. | RAM                      | GPU                                              | GPU Freq. | VRAM       |
 | :--------------------------------------------- | :-------------- | :-------- | :----------------------- | :----------------------------------------------- | :-------- | :--------- |
 | :brands-amd:&nbsp;Ryzen(r) 9 7940HS _(x86-64)_ | 8C / 16T        | 4.0 GHz   | 16 GB DDR5 _(4800 MT/s)_ | :brands-amd:&nbsp;Radeon(r) 780M                 | 2700 MHz  | _Shared_   |
-|                                                |                 |           |                          | :brands-nvidia:&nbsp;GeForce RTX 4070 _(mobile)_ | 2175 MHz  | 8 GB GDDR6 |
+| -                                              | -               | -         | -                        | :brands-nvidia:&nbsp;GeForce RTX 4070 _(mobile)_ | 2175 MHz  | 8 GB GDDR6 |
 
 ## :symbols-network:&ensp;Network Configuration
 
@@ -111,7 +111,7 @@ Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile d
 
 | Mount Point | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------- | :------------ | :--------------------------------------------- | :---------- | :---------- | :--------- |
-| `N:`        | Network Drive | 1.81 TB                                        | `-`         | `ntfs`      | N/A        |
+| `N:`        | Network Drive | 1.81 TB                                        | `-`         | `ntfs`      | -          |
 
 ---
 

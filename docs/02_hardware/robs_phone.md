@@ -85,7 +85,7 @@ Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi n
 
 | Mount Point | Drive Type | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption                                          |
 | :---------- | :--------- | :--------------------------------------------- | :---------- | :---------- | :-------------------------------------------------- |
-| `N/A`       | UFS 4.0    | 256 GB                                         | `N/A`       | `N/A`       | :symbols-hard-drive-lock:&nbsp;Full-disk encryption |
+| `-`         | UFS 4.0    | 256 GB                                         | `-`         | `-`         | :symbols-hard-drive-lock:&nbsp;Full-disk encryption |
 
 ### :symbols-usb:&ensp;External/Attached
 

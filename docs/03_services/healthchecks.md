@@ -73,7 +73,7 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
 | Host Device                                                            | Method                                    | Container Name       | Image                              | Status                                                                                                          | Port(s)       |
 | :--------------------------------------------------------------------- | :---------------------------------------- | :------------------- | :--------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------ |
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `healthchecks-web-1` | `healthchecks/healthchecks:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/92/status?label=){ style='vertical-align: middle;' } | `8000` `2525` |
-|                                                                        | :symbols-container:&nbsp;Docker Container | `healthchecks-db-1`  | `postgres:16`                      | ![status badge](https://uptime.rac3r4life.online/api/badge/93/status?label=){ style='vertical-align: middle;' } | `5432`        |
+| -                                                                      | :symbols-container:&nbsp;Docker Container | `healthchecks-db-1`  | `postgres:16`                      | ![status badge](https://uptime.rac3r4life.online/api/badge/93/status?label=){ style='vertical-align: middle;' } | `5432`        |
 
 ---
 

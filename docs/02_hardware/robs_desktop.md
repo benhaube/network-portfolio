@@ -76,7 +76,7 @@ Rob's main workstation PC located at his desk in the office upstairs. Connected 
 | CPU                                              | Cores / Threads | CPU Freq. | RAM                     | GPU                                      | GPU Freq. | VRAM       |
 | :----------------------------------------------- | :-------------- | :-------- | :---------------------- | :--------------------------------------- | :-------- | :--------- |
 | :brands-intel:&nbsp;Core(r) i7 12700K _(x86-64)_ | 12C / 20T       | 5.0 GHz   | 32 GB DDR4 _(3600 MHz)_ | :brands-intel:&nbsp;UHD 770 Graphics     | 1500 MHz  | _Shared_   |
-|                                                  |                 |           |                         | :brands-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz  | 8 GB GDDR6 |
+| -                                                | -               | -         | -                       | :brands-nvidia:&nbsp;GeForce(r) RTX 3070 | 1725 MHz  | 8 GB GDDR6 |
 
 ## :symbols-network:&ensp;Network Configuration
 
@@ -104,7 +104,7 @@ Rob's main workstation PC located at his desk in the office upstairs. Connected 
 
 | Mount Point | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path | File System | Encryption |
 | :---------- | :------------ | :--------------------------------------------- | :---------- | :---------- | :--------- |
-| `N:`        | Network Drive | 1.81 TB                                        | `-`         | `ntfs`      | N/A        |
+| `N:`        | Network Drive | 1.81 TB                                        | `-`         | `ntfs`      | -          |
 
 ---
 

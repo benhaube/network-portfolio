@@ -56,7 +56,7 @@ Allows remote hosts to mount file systems over a network and interact with those
 
 | Host Device                                                          | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
 | :------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | ![status badge](https://uptime.rac3r4life.online/api/badge/128/status?label=){ style='vertical-align: middle;' } | `2049`  |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/128/status?label=){ style='vertical-align: middle;' } | `2049`  |
 
 ---
 

@@ -120,7 +120,7 @@ Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done o
 | Mount Point                         | Drive Type    | Drive Capacity { data-sort-method="filesize" } | Device Path                         | File System      | Encryption                           |
 | :---------------------------------- | :------------ | :--------------------------------------------- | :---------------------------------- | :--------------- | :----------------------------------- |
 | `/home/bhaube/Encrypted-Documents`  | Encrypted Dir | 929 GB                                         | `/home/bhaube/.cipher`              | `fuse.gocryptfs` | :symbols-folder-lock:&nbsp;gocryptfs |
-| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                           | -                                   | `fuse.rclone`    | -                                    |
+| `/home/bhaube/Google-Drive`         | Cloud Storage | 2 TB                                           | `-`                                 | `fuse.rclone`    | -                                    |
 | `/mnt/storage_server/Quick_Storage` | NFS           | 1.9 TB                                         | `192.168.50.4:/media/Quick-Storage` | `nfs4`           | -                                    |
 | `/mnt/storage_server/NVMe`          | NFS           | 234 GB                                         | `192.168.50.4:/media/nvme0n1p1`     | `nfs4`           | -                                    |
 

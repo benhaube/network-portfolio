@@ -50,7 +50,7 @@ KRDP is a Remote Desktop Protocol server implementation for the KDE Plasma deskt
 
 | Host Device                                                            | Method                          | Container Name | Image | Port(s) |
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :------ |
-| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md) | :symbols-tux:&nbsp;Native Linux | `N/A`          | `N/A` | `3389`  |
+| [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | `3389`  |
 
 ---
 

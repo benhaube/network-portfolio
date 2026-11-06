@@ -30,11 +30,14 @@ _A Fancy Monitoring Tool_
 
 A fancy self-hosted service monitoring tool.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/111/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/111/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/139/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/louislam/uptime-kuma?label=Release&color=%235BDB8A)
+![status badge](https://uptime.rac3r4life.online/api/badge/177/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/177/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/139/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/louislam/uptime-kuma?label=Release&color=%235BDB8A)
 
-**Port(s)** 
+**Port(s)**
 
-:    `3001`
+- `2375`
+{ .no-bullets }
+- `3001`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -56,9 +59,10 @@ A fancy self-hosted service monitoring tool.
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                    | Status                                                                                                           | Port(s) |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :----------------------- | :--------------------------------------------------------------------------------------------------------------- | :------ |
-| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `uptime-kuma`  | `louislam/uptime-kuma:2` | ![status badge](https://uptime.rac3r4life.online/api/badge/111/status?label=){ style='vertical-align: middle;' } | `3001`  |
+| Host Device                                                          | Method                                    | Container Name | Image                                  | Status                                                                                                           | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `uptime-kuma`  | `louislam/uptime-kuma:2`               | ![status badge](https://uptime.rac3r4life.online/api/badge/111/status?label=){ style='vertical-align: middle;' } | `3001`  |
+| -                                                                    | :symbols-container:&nbsp;Docker Container | `docker-proxy` | `tecnativa/docker-socket-proxy:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/178/status?label=){ style='vertical-align: middle;' } | `2375`  |
 
 ---
 
@@ -71,7 +75,7 @@ A fancy self-hosted service monitoring tool.
 | Contents            | Path                                   |
 | :------------------ | :------------------------------------- |
 | Docker Compose File | `/opt/stacks/uptime-kuma/compose.yaml` |
-| Application Data    | `/opt/stacks/uptime-kuma/data`         |
+| Application Data    | Docker Volume: `kuma-data`             |
 
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 

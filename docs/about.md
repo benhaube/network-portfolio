@@ -33,9 +33,9 @@ I am a firm believer in and staunch advocate for the **Self-Hosted** and **Open-
 - Using tools like [Technitium](03_services/technitium.md) DNS and [Network Attached Storage](02_hardware/zimaos_nas.md) servers to take back control of my data.
 { .no-bullets }
 
-**Immutable Documentation**
+**Documentation**
 
-- Maintaining a "Single Source of Truth" using **Markdown** with [VSCodium](https://vscodium.com/){ external-link } and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/){ external-link } to ensure the infrastructure is reproducible and transparent.
+- Maintaining a "Single Source of Truth" using **Markdown** with [VSCodium](https://vscodium.com/){ external-link } and [Zensical](https://zensical.org/){ external-link } to ensure the infrastructure is reproducible and transparent.
 { .no-bullets }
 
 **Continuous Learning**

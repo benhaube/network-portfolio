@@ -39,13 +39,12 @@ A self-hosted, real-time port monitoring and discovery tool.
 
 **URL / Access**
 
--   :symbols-server:&ensp;Pi 4B Server:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/41/status){ style='vertical-align: middle;' }
+- <http://pi-server.internal:4999>
 { .no-bullets }
-    - <http://pi-server.internal:4999>
--   :symbols-server-nas:&ensp;ZimaOS NAS:&emsp;![status badge](https://uptime.rac3r4life.online/api/badge/55/status){ style='vertical-align: middle;' }
+- <http://storage-server.internal:4999>
 { .no-bullets }
-    - <http://storage-server.internal:4999>
-    - <http://storage-server-2.internal:4999>
+- <http://storage-server-2.internal:4999>
+{ .no-bullets }
 
 **Credentials**
 

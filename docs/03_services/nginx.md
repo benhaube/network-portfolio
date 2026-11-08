@@ -120,7 +120,7 @@ After building the site with the `zensical build` command on the client PC, the 
 2.  Run the `scp` command to copy the files.
 
     ``` bash
-    rsync -av /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio
+    rsync -av /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio/site
     ```
 
     You will be prompted by the Bitwarden SSH key agent to approve sending the private key.

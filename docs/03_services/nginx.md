@@ -91,7 +91,7 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 
 ### :symbols-cloud-upload:&ensp;Deploy Site
 
-After building the site with the `zensical build` command on the client PC, the `/site` directory will be created in the repository directory. To deploy the build website, the `/site` directory needs to be copied to the server. This is accomplished most efficiently using the `scp` or `rsync` commands and the SSH protocol. The benefit of using `rsync` is a faster transfer and less write cycles on the NVMe SSD. This is because `rsync` will only copy the files that have changed, while `scp` copies everything and overwrites the existing files.
+After building the site with the `zensical build` command on the client PC, the `/site` directory will be created in the repository directory. To deploy the built website, the `/site` directory needs to be copied to the server. This is accomplished most efficiently using the `scp` or `rsync` commands and the SSH protocol. The benefit of using `rsync` is a faster transfer and less write cycles on the NVMe SSD. This is because `rsync` will only copy the files that have changed, while `scp` copies everything and overwrites the existing files.
 
 #### Using `scp`
 
@@ -107,7 +107,7 @@ After building the site with the `zensical build` command on the client PC, the 
     scp -r /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio
     ```
 
-    You will be prompted by the Bitwarden SSH key agent to approve sending the private key.
+    You will be prompted by the [Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link } SSH key agent to approve sending the private key.
 
 #### Using `rsync`
 
@@ -123,4 +123,4 @@ After building the site with the `zensical build` command on the client PC, the 
     rsync -av /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio/site
     ```
 
-    You will be prompted by the Bitwarden SSH key agent to approve sending the private key.
+    You will be prompted by the [Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link } SSH key agent to approve sending the private key.

@@ -46,7 +46,9 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 
 **Credentials**
 
-:   N/A
+:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+
+    - SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -86,3 +88,39 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 1. Maps port `8080` on the VM to port `80` inside the container.
 2. Mounts your site folder as read-only (ro) for extra security.
 3. Mounts your site folder as read-only (ro) for extra security.
+
+### :symbols-cloud-upload:&ensp;Deploy Site
+
+After building the site with the `zensical build` command on the client PC, the `/site` directory will be created in the repository directory. To deploy the build website, the `/site` directory needs to be copied to the server. This is accomplished most efficiently using the `scp` or `rsync` commands and the SSH protocol. The benefit of using `rsync` is a faster transfer and less write cycles on the NVMe SSD. This is because `rsync` will only copy the files that have changed, while `scp` copies everything and overwrites the existing files.
+
+#### Using `scp`
+
+1.  Ensure the `../AppData/Network-Portfolio` directory has the correct permissions.
+
+    ``` text
+    drwxr-xr-x 11 admin admin 4096 Nov  8 07:37 Network-Portfolio
+    ```
+
+2.  Run the `scp` command to copy the files.
+
+    ``` bash
+    scp -r /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio
+    ```
+
+    You will be prompted by the Bitwarden SSH key agent to approve sending the private key.
+
+#### Using `rsync`
+
+1.  Ensure the `../AppData/Network-Portfolio` directory has the correct permissions.
+
+    ``` text
+    drwxr-xr-x 11 admin samba 4096 Nov  8 07:37 Network-Portfolio
+    ```
+
+2.  Run the `scp` command to copy the files.
+
+    ``` bash
+    rsync -av /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio
+    ```
+
+    You will be prompted by the Bitwarden SSH key agent to approve sending the private key.

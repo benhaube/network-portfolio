@@ -169,6 +169,74 @@ To update Flatpak apps manually with the CLI run the following command:
 flatpak update -y
 ```
 
+#### DNF Btrfs Snapshots
+
+Fedora uses the Btrfs filesystem by default, and one of the great features of Btrfs is snapshots. Snapshots make it very easy to roll back a bad update that causes breakages, however, they are not configured by default. Additional packages and configurations are required to get them working.
+
+!!! warning
+
+    Do not use the `snapper rollback` command on a default Fedora installation. Fedora's volume layout differs from openSUSE, and running that command can break your boot configuration permanently. You must restore snapshots manually via Btrfs commands or Btrfs Assistant.
+
+1.  Install Snapper, Btrfs-Assistant, and dependencies.
+
+    ``` bash
+    sudo dnf install snapper btrfs-assistant libdnf5-plugin-actions
+    ```
+
+2.  Create the Snapper `root` configuration.
+
+    ``` bash
+    sudo snapper -c root create-config /
+    sudo restorecon -Rv /.snapshots  # (1)!
+    ```
+
+    1. Without the `restorecon` command, SELinux will silently block Snapper from functioning.
+
+3.  Open Btrfs Assistant, select the **"Snapper Settings"** tab, and configure the snapshots timeline and cleanup as shown in the screenshot. When complete, click the **"Save"** button to save the configuration and the **"Apply Systemd changes"** button to enable the Systemd unit files.
+
+    ![Btrfs Assistant Snapper Settings](../assets/screenshots/btrfs-assistant-settings-light.png#only-light){ width=400 .on-glb }
+    ![Btrfs Assistant Snapper Settings](../assets/screenshots/btrfs-assistant-settings-dark.png#only-dark){ width=400 .on-glb }
+
+4.  Select the **"Btrfs maintenance"** tab, enable **Balance** and **Scrub** on all volumes, and **Defrag** only on `/mnt/1TB_HDD`, then click the **"Apply"** button.
+
+    ![Btrfs Assistant Maintenance Settings](../assets/screenshots/btrfs-assistant-maintenance-light.png#only-light){ width=400 .on-glb }
+    ![Btrfs Assistant Maintenance Settings](../assets/screenshots/btrfs-assistant-maintenance-dark.png#only-dark){ width=400 .on-glb }
+
+5.  Create the Snapper action hook file that tells DNF5 to hook into Snapper immediately before and after a transaction, then paste in the following configuration.
+
+    ``` bash 
+    sudo nano /etc/dnf/libdnf5-plugins/actions.d/snapper.actions
+    ```
+
+    ``` bash { .mono-title title="/etc/dnf/libdnf5-plugins/actions.d/snapper.actions" }
+    # Get the dnf command description
+    pre_transaction::::/usr/bin/sh -c echo\ "tmp.cmd=$(ps\ -o\ command\ --no-headers\ -p\ '${pid}')"
+
+    # Create the pre-snapshot and store its ID in a temporary variable
+    pre_transaction::::/usr/bin/sh -c echo\ "tmp.snapper_pre_number=$(snapper\ create\ -c\ root\ -t\ pre\ -p\ -d\ '${tmp.cmd}')"
+
+    # If the pre-snapshot exists, create the post-snapshot referencing the pre-snapshot ID, then clear variables
+    post_transaction::::/usr/bin/sh -c [\ -n\ "${tmp.snapper_pre_number}"\ ]\ &&\ snapper\ create\ -c\ root\ -t\ post\ --pre-number\ "${tmp.snapper_pre_number}"\ -d\ "${tmp.cmd}"\ ;\ echo\ tmp.snapper_pre_number\ ;\ echo\ tmp.cmd
+    ```
+
+6.  Now that the hook is in place, run a small transaction to test it. Run the following commands to install a package and check the snapshot list.
+
+    ``` bash
+    # Install the `tree` package
+    sudo dnf install tree
+
+    # Check the snapshots list
+    sudo snapper ls 
+    ```
+
+    You should see the paired `pre` and `post` snapshots at the bottom of your list, with the exact DNF command you just ran logged in the description column.
+
+    ``` text title="Example"
+    1   │ pre    │       │ Sun 08 Nov 2026 10:24:13 AM EST │ root │ root     │ dnf install tree                       │
+    2   │ post   │   1   │ Sun 08 Nov 2026 10:24:14 AM EST │ root │ root     │ dnf install tree                       │
+
+    ```
+
 ### :symbols-cloud-upload:&ensp;Backup Policy
 
 ![Desktop Backup status badge](https://healthchecks.rac3r4life.online/b/3/2c8cbfbb-d73e-4a88-8520-8039e22116cc.svg){ style="vertical-align: middle;" }

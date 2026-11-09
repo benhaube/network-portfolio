@@ -259,8 +259,8 @@ windows = "brands/microsoft"
 # ------------------------------------
 
 [project.theme.font]
-text = "Google Sans"
-code = "Google Sans Code"
+text = "Noto Sans"
+code = "Noto Sans Mono"
 
 # Palette toggle for automatic mode
 [[project.theme.palette]]

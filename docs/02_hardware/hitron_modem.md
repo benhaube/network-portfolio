@@ -20,7 +20,7 @@ hide:
 
 _DOCSIS 3.1 Cable Modem_
 
-[Xfinity Account&ensp;:brands-xfinity:](https://login.xfinity.com/login){ .md-button .md-button--primary }&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/CODA_User_Manual.pdf){ .md-button .md-button--primary }
+[Xfinity Account&ensp;:brands-xfinity:](https://login.xfinity.com/login){ .md-button .md-button--primary }&emsp;[OpenSpeedTest&ensp;:services-openspeedtest:](https://openspeedtest.com){.md-button .md-button-primary}&emsp;[User Manual&ensp;:symbols-notebook-text:](../assets/manuals/CODA_User_Manual.pdf){ .md-button .md-button--primary }
 
 ---
 

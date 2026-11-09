@@ -89,7 +89,7 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 2. Mounts your site folder as read-only (ro) for extra security.
 3. Mounts your site folder as read-only (ro) for extra security.
 
-### :symbols-cloud-upload:&ensp;Deploy Site
+### :symbols-cloud-upload:&ensp;Deploy Site Manually
 
 After building the site with the `zensical build` command on the client PC, the `/site` directory will be created in the repository directory. To deploy the built website, the `/site` directory needs to be copied to the server. This is accomplished most efficiently using the `scp` or `rsync` commands and the SSH protocol. The benefit of using `rsync` is a faster transfer and less write cycles on the NVMe SSD. This is because `rsync` will only copy the files that have changed, while `scp` copies everything and overwrites the existing files.
 
@@ -120,7 +120,69 @@ After building the site with the `zensical build` command on the client PC, the 
 2.  Run the `scp` command to copy the files.
 
     ``` bash
-    rsync -av /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio/site
+    rsync -av --delete /home/bhaube/Development/network-portfolio/site/ admin@ZimaOS-NAS:/media/nvme0n1p1/AppData/Network-Portfolio/site
     ```
 
     You will be prompted by the [Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link } SSH key agent to approve sending the private key.
+
+### :symbols-circle-fading-arrow-up:&ensp;CI/CD Pipeline
+
+The local [Gitea](gitea.md#overview){ data-preview } server hosting the Network Documentation site's code repository has a built-in feature called [Gitea Actions](https://docs.gitea.com/usage/actions/overview/ "Documentation"){ external-link }, which uses an execution runner _(called `act_runner`)_ that parses almost the exact same YAML syntax as GitHub. The standard, secure way to handle this on a single-server deployment is to have the runner build the site in isolation, and then use SSH / SCP to securely transfer the files from the job container back to the host machine.
+
+#### Enable Actions & Secrets
+
+1.  Go to your `network-portfolio` repository settings in [Gitea](gitea.md) and check the box to Enable Repository Actions.
+
+    ![Gitea enable Actions settings](../assets/screenshots/gitea-enable-actions-light.png#only-light){ width=500 .on-glb }
+    ![Gitea enable Actions settings](../assets/screenshots/gitea-enable-actions-dark.png#only-dark){ width=500 .on-glb }
+
+2.  Go to **Settings**&ensp;:symbols-move-right:&ensp;**Actions**&ensp;:symbols-move-right:&ensp;**Secrets** and add the following keys so your workflow can securely access the server:
+    - `SERVER_IP` &ndash; _Server's LAN IP address_
+    - `SERVER_USER` &ndash; _Server's SSH username_
+    - `SSH_PRIVATE_KEY` &ndash; _Server's private SSH key_
+
+    ![Gitea Actions secrets settings](../assets/screenshots/gitea-actions-secrets-light.png#only-light){ width=500 .on-glb }
+    ![Gitea Actions secrets settings](../assets/screenshots/gitea-actions-secrets-dark.png#only-dark){ width=500 .on-glb }
+
+#### Create Workflow File
+
+1.  In the repository, create the directory structure for `.gitea/workflows` and add a file named `deploy.yaml`.
+    - This workflow triggers when you push to the `main` branch, builds the site, then uses SSH to execute the `rsync` command copying it into the site directory.
+
+    ``` yaml { .mono-title title=".gitea/workflows/deploy.yaml" }
+    name: Build and Deploy Site
+
+    on:
+      push:
+        branches:
+          - main
+
+    jobs:
+      deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4
+
+          - name: Build the Site
+            run: |
+              echo "Building site..."
+              python -m venv .venv/
+              source .venv/bin/activate
+              pip install --upgrade --force-reinstall zensical mkdocs-awesome-nav mkdocs-glightbox
+              zensical build
+
+          - name: Deploy Site via Rsync over SSH
+            env:
+              SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+              SERVER_USER: ${{ secrets.SERVER_USER }}
+              SERVER_IP: ${{ secrets.SERVER_IP }}
+            run: |
+              mkdir -p ~/.ssh
+              chmod 700 ~/.ssh
+              echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+              chmod 600 ~/.ssh/id_rsa
+              rsync -av --delete -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa" site/ $SERVER_USER@$SERVER_IP:/media/nvme0n1p1/AppData/Network-Portfolio/site/
+    ```
+
+2.  Once you commit and push this `deploy.yaml` file to your Gitea repository, the pipeline will immediately kick off. You can monitor the build logs natively inside Gitea under the **"Actions"** tab of your repo.

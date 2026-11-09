@@ -1,0 +1,40 @@
+name: Build and Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build the Site
+        run: |
+          echo "Building site..."
+          pip install --upgrade --force-reinstall zensical mkdocs-awesome-nav mkdocs-glightbox
+          zensical build
+
+      - name: Secure Copy (SCP) files to host
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "site/*"
+          target: "/tmp/portfolio-deployment"
+          strip_components: 1
+
+      - name: Deploy to Nginx Container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            rsync -av --delete /tmp/portfolio-deployment/ /media/nvme0n1p1/AppData/Network-Portfolio/site/
+
+            rm -rf /tmp/portfolio-deployment

@@ -1,8 +1,0 @@
-services:
-    zensical-custom:
-        stdin_open: true
-        tty: true
-        volumes:
-            - ${PWD}:/docs:Z
-        image: zensical-custom
-        command: build

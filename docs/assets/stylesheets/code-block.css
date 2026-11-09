@@ -35,7 +35,6 @@
 .highlighttable .linenos {
   border-bottom-left-radius: 0.4rem;
   border-top-left-radius: 0.4rem;
-  line-height: 1.8;
 }
 /* Code body border radius */
 .md-typeset .highlighttable > tbody > tr > .code > div > pre > code {

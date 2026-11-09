@@ -1,4 +1,4 @@
-name: Build and Deploy Portfolio
+name: Build and Deploy Site
 
 on:
   push:
@@ -20,23 +20,14 @@ jobs:
           pip install --upgrade --force-reinstall zensical mkdocs-awesome-nav mkdocs-glightbox
           zensical build
 
-      - name: Secure Copy (SCP) files to host
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "site/*"
-          target: "/tmp/portfolio-deployment"
-          strip_components: 1
-
-      - name: Deploy to Nginx Container
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            rsync -av --delete /tmp/portfolio-deployment/ /media/nvme0n1p1/AppData/Network-Portfolio/site/
-
-            rm -rf /tmp/portfolio-deployment
+      - name: Deploy Site via Rsync over SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          rsync -av --delete -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa" site/ $SERVER_USER@$SERVER_IP:/media/nvme0n1p1/AppData/Network-Portfolio/site/

@@ -236,9 +236,10 @@ Fedora uses the Btrfs filesystem by default, and one of the great features of Bt
     You should see the paired `pre` and `post` snapshots at the bottom of your list, with the exact DNF command you just ran logged in the description column.
 
     ``` text title="Example"
+      # │ Type   │ Pre # │ Date                            │ User │ Cleanup  │ Description                            │ Userdata
+    ────┼────────┼───────┼─────────────────────────────────┼──────┼──────────┼────────────────────────────────────────┼─────────
     1   │ pre    │       │ Sun 08 Nov 2026 10:24:13 AM EST │ root │ root     │ dnf install tree                       │
     2   │ post   │   1   │ Sun 08 Nov 2026 10:24:14 AM EST │ root │ root     │ dnf install tree                       │
-
     ```
 
 ### :symbols-cloud-upload:&ensp;Backup Policy

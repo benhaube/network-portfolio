@@ -50,10 +50,6 @@
 .md-nav--secondary .twemoji {
   display: none !important;
 }
-/* Don't underline links */
-.md-typeset a {
-  text-decoration: none;
-}
 
 /* ~~~~~~~~~~~~~~~ *
  * Tooltip Styling *

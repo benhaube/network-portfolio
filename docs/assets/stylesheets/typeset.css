@@ -2,13 +2,6 @@
  * Typeset Style *
  * ~~~~~~~~~~~~~ */
 
-/* Font size and spacing */
-.md-typeset {
-	font-size: .75rem;
-	letter-spacing: -.01em;
-	line-height: 1.8;
-	overflow-wrap: break-word;
-}
 /* Highlighted text background */
 .md-typeset mark {
     background-color: var(--md-code-hl-color--light);
@@ -31,13 +24,6 @@
 .md-typeset h3 {
     font-weight: 500;
 }
-/* Give headings more contrast in dark theme */
-[data-md-color-scheme=slate] .md-header__title,
-[data-md-color-scheme=slate] h2,
-[data-md-color-scheme=slate] h3,
-[data-md-color-scheme=slate] h4 {
-    color: hsla(var(--md-hue),0%,100%,1)
-}
 /* Disable all uppercase letters for H5 headings */
 .md-typeset h5 {
     text-transform: none;
@@ -46,39 +32,9 @@
 .md-typeset h5, .md-typeset h6 {
     font-size: 0.83em;
 }
-
-/* ~~~~~~~~~~~~~~~~~ *
- * Data Preview Link *
- * ~~~~~~~~~~~~~~~~~ */
-
-.md-typeset [data-preview] {
-  position: relative
-}
-[dir=ltr] .md-typeset [data-preview]:after {
-  margin-left: .125em
-}
-[dir=rtl] .md-typeset [data-preview]:after {
-  margin-right: .125em
-}
-/* Remove existing bottom border */
-.md-typeset [data-preview] {
-    border-bottom: none;
-}
-/* Add icon after */
-.md-typeset [data-preview]::after {
-	background-color: currentcolor;
-	content: "";
-	display: inline-block;
-	height: .8em;
-	-webkit-mask-image: var(--md-typeset-preview-icon);
-	mask-image: var(--md-typeset-preview-icon);
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	transition: background-color 125ms;
-	vertical-align: text-top;
-	width: .8em;
+/* Don't underline links */
+.md-typeset a {
+  text-decoration: none;
 }
 
 /* ~~~~~~~~~~~~~~~~~~ *

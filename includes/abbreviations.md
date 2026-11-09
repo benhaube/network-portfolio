@@ -182,6 +182,7 @@
 *[SAML]: Security Assertion Markup Language
 *[SAN]: Storage Area Network
 *[SATA]: Serial Advanced Technology Attachment
+*[SCP]: Secure Copy Protocol
 *[SD]: Secure Digital
 *[SDRAM]: Synchronous Dynamic Random-Access Memory
 *[SELinux]: Security-Enhanced Linux

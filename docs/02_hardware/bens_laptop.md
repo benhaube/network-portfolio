@@ -39,7 +39,7 @@ Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done o
 
 **OS / Firmware**
 
-:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }&ensp;![Fedora kernel version](https://img.shields.io/fedora/v/kernel?label=kernel&color=%2351A2DA){ style="vertical-align: middle;" }
+:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }&ensp;![Fedora kernel version](https://img.shields.io/fedora/v/kernel/f45?label=kernel&color=51A2DA){ style="vertical-align: middle;" }
 
 **Credentials**
 

@@ -32,7 +32,7 @@
   ·
   <a href="#zensical-studio-for-vscode">Zensical Studio</a>
   ·
-  <a href="#special-thanks">Special Thanks</a>
+  <a href="#-special-thanks">Special Thanks</a>
 </p>
 
 This is my personal, self-hosted professional portfolio and network documentation website built with [Zensical](https://github.com/zensical/zensical). This repository only contains the source markdown and development files. The built website in the `/site` directory is not tracked in the repo, but get's uploaded to my Nginx Web server. The website is hosted on my own server and exposed to the internet with a Cloudflare Tunnel.

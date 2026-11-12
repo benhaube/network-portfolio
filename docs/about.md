@@ -16,7 +16,7 @@ hide:
 
 ![My Profile Picture](assets/pictures/profilepic.jpg){ width=300 align="right" }
 
-## :symbols-engine: :symbols-move-right: :symbols-network:&ensp;From Engines to Infrastructure
+## :symbols-engine: :lucide-move-right: :symbols-network:&ensp;From Engines to Infrastructure
 
 With thirteen years of experience as an Automotive Technician and Maryland State Inspector, I spent over a decade diagnosing complex mechanical and electrical systems. In 2022, I pivoted that diagnostic mindset toward **Information Technology** and **Cybersecurity**.
 

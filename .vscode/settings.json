@@ -27,8 +27,6 @@
     "yaml.schemas": {
         "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
         "https://raw.githubusercontent.com/compose-spec/compose-go/master/schema/compose-spec.json": [
-            "file:///home/bhaube/Development/network-portfolio/compose-serve.yml",
-            "file:///home/bhaube/Development/network-portfolio/compose-build.yml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/beszel-debian-vm.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/beszel-pi-4b.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/beszel-pi-zero.yaml",

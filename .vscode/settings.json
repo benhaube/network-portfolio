@@ -72,7 +72,10 @@
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/degoog.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/matter-server.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/healthchecks-compose.yml",
-            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/authentik.yaml"
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/authentik.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/arcane-agent-debian-vm.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/arcane-agent-pi-server.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/arcane-manager-zimaos.yaml"
         ],
         "https://raw.githubusercontent.com/not-first/glance-schema/master/schema.json": [
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance.yml",

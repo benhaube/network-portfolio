@@ -116,6 +116,9 @@ hide:
 
         [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
 
+[:services-arcane:&ensp;Arcane](03_services/arcane.md)
+: Modern Docker management, designed for everyone. A comprehensive set of tools to handle every aspect of your container infrastructure.
+
 [:services-authentik:&ensp;Authentik](03_services/authentik.md)
 : An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters.
 

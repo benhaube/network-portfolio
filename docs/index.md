@@ -23,8 +23,6 @@ hide:
 
         [Infrastructure Tags&ensp;:symbols-tags:](01_infrastructure/tags.md){ .md-button }
 
-: ![status badge](https://uptime.rac3r4life.online/api/badge/23/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/23/uptime)
-
 [:symbols-tornado:&ensp;Disaster Recovery Plan](01_infrastructure/disaster_recovery_plan.md)
 : Ensuring **HA** for critical network services and providing a clear path to data restoration for stateful services in the event of hardware failure or data corruption.
 
@@ -54,8 +52,6 @@ hide:
     :    An index of tags relevant to the network's hardware.
 
         [Hardware Tags&ensp;:symbols-tags:](02_hardware/tags.md){ .md-button }
-
-: ![status badge](https://uptime.rac3r4life.online/api/badge/118/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/118/uptime)
 
 [:symbols-router:&ensp;ASUS RT-BE92U](02_hardware/asus_rt-be92u.md)
 : The main wireless router and firewall for the LAN. Located next to the 10-inch server rack in the living room on the main floor. The standard firmware has been replaced with [Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }, a more powerful option that retains the standard ASUS features / UI and adds a lot of great features and capabilities.
@@ -119,8 +115,6 @@ hide:
     :    An index of tags relevant to the network services.
 
         [Services Tags&ensp;:symbols-tags:](03_services/tags.md){ .md-button }
-
-: ![status badge](https://uptime.rac3r4life.online/api/badge/40/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/40/uptime)
 
 [:services-authentik:&ensp;Authentik](03_services/authentik.md)
 : An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters.

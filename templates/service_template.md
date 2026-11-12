@@ -27,9 +27,9 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Overview
 
-**Description**
+Insert description of service here
 
-:    Insert description of service here
+![status badge](https://uptime.rac3r4life.online/api/badge/#/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/#/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/#/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/{user}/{repo}?label=Release&color=%23{color})
 
 **Port(s)**
 
@@ -47,10 +47,10 @@ _Subtitle_
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                      | Method                                    | Container Name   | Image            | Port(s) |
-| :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- | :------ |
-| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` | `1234`  |
-| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            | `1234`  |
+| Host Device                                      | Method                                    | Container Name   | Image            | Status                                                                                                         | Port(s) |
+| :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- | :------------------------------------------------------------------------------------------------------------- | :------ |
+| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `1234`  |
+| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `1234`  |
 
 ---
 

@@ -26,9 +26,9 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
+Router description goes here.
 
-:    AiMesh Node
+![status badge](https://uptime.rac3r4life.online/api/badge/#/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/#/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/#/cert-exp)
 
 **Hostname**
 
@@ -57,21 +57,21 @@ _Subtitle_
 
 #### :symbols-globe:&ensp;WAN Connection
 
-| Interface { data-sort-method="number" } | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" } |
-| :-------------------------------------: | :--------------------------------------- | :------------------ | :--------------------------------------- |
-|                 `wan0`                  | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | -                                        |
+| Interface { data-sort-method="number" }                                                                                   | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" } |
+| :------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :--------------------------------------- |
+| `wan0`&ensp;![wan0 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | -                                        |
 
 #### :symbols-network:&ensp;Virtual Local Networks
 
-|  VLAN  | Domain | DNS Server(s) { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } | Subnet { data-sort-method="dotsep" } | Subnet Mask { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
-| :----: | :----- | :---------------------------------------- | :------------------------------------ | :----------------------------------- | :---------------------------------------- | :-------------------------------------- | :------------------------------------- |
-| _vlan_ | domain | `x.x.x.x` `x.x.x.x`                       | `x.x.x.1`                             | `x.x.x.x/xx`                         | `255.x.x.x`                               | `x.x.x.255`                             | `.x` to `.xxx`                         |
+| VLAN { data-sort-method="number" }                                                                                          | Domain | DNS Server(s) { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } | Subnet { data-sort-method="dotsep" } | Subnet Mask { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
+| :-------------------------------------------------------------------------------------------------------------------------- | :----- | :---------------------------------------- | :------------------------------------ | :----------------------------------- | :---------------------------------------- | :-------------------------------------- | :------------------------------------- |
+| VLAN50&ensp;![VLAN50 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | domain | `x.x.x.x` `x.x.x.x`                       | `x.x.x.1`                             | `x.x.x.x/xx`                         | `255.x.x.x`                               | `x.x.x.255`                             | `.x` to `.xxx`                         |
 
 #### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
-|  SSID  |  VLAN  | IP Address { data-sort-method="dotsep" } | Frequency { data-sort-method="none" } | Notes |
-| :----: | :----: | :--------------------------------------- | :------------------------------------ | :---- |
-| _SSID_ | _vlan_ | `x.x.x.x/xx`                             | -                                     | -     |
+| SSID   | VLAN { data-sort-method="number" } |                        WAN Access                        | IP Address { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes |
+| :----- | :--------------------------------- | :------------------------------------------------------: | :--------------------------------------- | :-------------------------------------- | :---- |
+| _SSID_ | VLAN50                             | <span aria-label="Yes" role="img">:symbols-check:</span> | `x.x.x.x/xx`                             | 2.4 GHz / 5 GHz / 6 GHz                 | -     |
 
 #### :symbols-ethernet-port:&ensp;Physical Ethernet Ports
 
@@ -102,15 +102,15 @@ _Subtitle_
 
 #### :symbols-tux:&ensp;Native
 
-|  Status  | Service                                                  | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
-| :------: | :------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
-| _Active_ | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
+| Service                                                  | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| :------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
+| [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 #### :symbols-container:&ensp;Container
 
-|  Status  | Service                                                  | Port(s) { data-sort-method="number" } | Role / Notes { data-sort-method="none" } |
-| :------: | :------------------------------------------------------- | :-----------------------------------: | :--------------------------------------- |
-| _Active_ | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | -                                        |
+| Service                                                  | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| :------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
+| [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 ---
 
@@ -122,8 +122,8 @@ _Subtitle_
 
 ### :symbols-rotate-cw-clock:&ensp;Update Process
 
-- Update Process
+Update Process
 
 ### :symbols-cloud-upload:&ensp;Backup Policy
 
-- Backup policy
+Backup policy

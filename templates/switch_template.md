@@ -26,30 +26,23 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Physical Overview
 
-**Role**
-
-:   Core Desktop Switch
+Description of switch goes here.
 
 **Power Source**
 
 :    :symbols-plug:&ensp;(e.g., Wall wart 12V / 1A)
 
-### :symbols-circuit-board:&ensp;Specs
+**Specs**
 
-**Throughput**
-
-- (e.g., 50 Gb/s)
+-   Throughput
 { .no-bullets }
-
-**Jumbo Frames**
-
-- Supported / Unsupported
+    - (e.g., 50 Gb/s)
+-   Jumbo Frames
 { .no-bullets }
-
-**Managed**
-
-- Managed / Unmanaged
+    - Supported / Unsupported
+-   Managed
 { .no-bullets }
+    - Managed / Unmanaged
 
 ### :symbols-map-pin:&ensp;Location
 

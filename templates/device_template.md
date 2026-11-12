@@ -25,9 +25,9 @@ _Subtitle_
 
 ## :symbols-info:&ensp;Device Overview
 
-**Role**
+Device description goes here.
 
-:    Device role
+![status badge](https://uptime.rac3r4life.online/api/badge/#/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/#/uptime)S
 
 **Hostname**
 
@@ -60,13 +60,13 @@ _Subtitle_
 
 ### :symbols-network:&ensp;Network Configuration
 
-| Interface | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                  |
-| :-------: | :--------------------------------------- | :------------------ | :---------------------------- |
-|  enp7s0   | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
+| Interface                                                                                                                   | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                  |
+| :-------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :---------------------------- |
+| enp7s0&ensp;![enp7s0 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
 
 | Interface | VLAN   | FQDN               | DNS Servers { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } |
-| :-------: | :----- | :----------------- | :-------------------------------------- | :------------------------------------ |
-|  enp7s0   | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x`                     | `x.x.x.1`                             |
+| :-------- | :----- | :----------------- | :-------------------------------------- | :------------------------------------ |
+| enp7s0    | VLAN50 | `example.internal` | `x.x.x.x` `x.x.x.x`                     | `x.x.x.1`                             |
 
 ### :symbols-folders:&ensp;Storage & Mounts
 
@@ -86,21 +86,21 @@ _Subtitle_
 
 #### :symbols-layers:&ensp;Virtualization
 
-|  Status  | OS                                       | Virtual NIC             | Virtual Disk Image | Role / Notes |
-| :------: | :--------------------------------------- | :---------------------- | :----------------- | :----------- |
-| _Active_ | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network _(NAT)_ | `disk-image.qcow2` | -            |
+| OS                                       | Virtual NIC             | Virtual Disk Image | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| :--------------------------------------- | :---------------------- | :----------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
+| :os-icon:&nbsp;[OS](https://example.com) | Virtual Network _(NAT)_ | `disk-image.qcow2` | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 #### :symbols-tux:&ensp;Native Linux
 
-|  Status  | Service                                                   | Port(s) { data-sort-method="number" } | Role / Notes |
-| :------: | :-------------------------------------------------------- | :-----------------------------------: | :----------- |
-| _Active_ | :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | -            |
+| Service                                                   | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| :-------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
+| :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 #### :symbols-container:&ensp;Docker
 
-|  Status  | Service                                                   | Port(s) { data-sort-method="number" } | Role / Notes |
-| :------: | :-------------------------------------------------------- | :-----------------------------------: | :----------- |
-| _Active_ | :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | -            |
+| Service                                                   | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| :-------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
+| :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 ---
 
@@ -112,8 +112,8 @@ _Subtitle_
 
 ### :symbols-rotate-cw-clock:&ensp;Update Process
 
-- Update Process
+Update Process
 
 ### :symbols-cloud-upload:&ensp;Backup Policy
 
-- Backup policy
+Backup policy

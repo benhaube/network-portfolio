@@ -131,8 +131,8 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 
 ### :services-homebox:&ensp;Homebox
 
-![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
-![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
+![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ .on-glb width=325 align=right }
+![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ .on-glb width=325 align=right }
 
 1.  Log into the [Homebox](https://homebox.rac3r4life.online){ external-link } Web application.
 2.  Click the arrow to expand the "Collections" menu on the left side-bar, then click "Notifiers."
@@ -406,8 +406,8 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 
 ### :services-uptime-kuma:&ensp;Uptime Kuma
 
-![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
-![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
+![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ .on-glb width=325 align=right }
+![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ .on-glb width=325 align=right }
 
 1.  Open the [Uptime Kuma](https://uptime.rac3r4life.online){ external-link } settings menu, and enter the **"Notifications"** sub-menu.
 2.  Click the **"Set Up Notification"** button.

@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'docs/**'
+      - 'includes/**'
+      - 'overrides/**'
+      - 'zensical.toml'
+      - '.gitea/workflows/deploy.yaml'
 
 jobs:
   deploy:

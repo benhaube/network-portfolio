@@ -9,7 +9,6 @@ tags:
   - Container
   - Development
   - File Share
-  - New
   - Service
 hide:
   - toc

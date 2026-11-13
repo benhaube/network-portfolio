@@ -7,7 +7,6 @@ tags:
   - Active
   - Container
   - Monitor
-  - New
   - Service
 hide:
   - toc

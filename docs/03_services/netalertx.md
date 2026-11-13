@@ -9,7 +9,6 @@ tags:
   - Inventory
   - Monitor
   - Network
-  - New
   - Service
   - Tools
 hide:

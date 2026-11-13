@@ -217,142 +217,142 @@
 
 .md-typeset .admonition.config,
 .md-typeset details.config {
-  border-color: rgb(245 , 0, 87);
-  background-color: rgba(245 , 0, 87, 0.1);
+  border-color: #f50057;
+  background-color: #f500571a;
 }
 .md-typeset .config > .admonition-title::before,
 .md-typeset .config > summary::before {
-  background-color: rgb(245, 0, 87);
+  background-color: #f50057;
   -webkit-mask-image: var(--md-admonition-icon--config);
           mask-image: var(--md-admonition-icon--config);
 }
 .md-typeset .config > .admonition-title:after,
 .md-typeset .config > summary:after {
-  color: rgb(245, 0, 87);
+  color: #f50057;
 }
 
 /* Admonition: 'Dockge' */
 
 .md-typeset .admonition.dockge,
 .md-typeset details.dockge {
-  border-color: rgb(116, 194, 255);
-  background-color: rgba(116, 194, 255, 0.1);
+  border-color: #74c2ff;
+  background-color: #74c2ff1a;
 }
 .md-typeset .dockge > .admonition-title::before,
 .md-typeset .dockge > summary::before {
-  background-color: rgb(116, 194, 255);
+  background-color: #74c2ff;
   -webkit-mask-image: var(--md-admonition-icon--dockge);
           mask-image: var(--md-admonition-icon--dockge);
 }
 .md-typeset .dockge > .admonition-title:after,
 .md-typeset .dockge > summary:after {
-  color: rgb(116, 194, 255);
+  color: #74c2ff;
 }
 
 /* Admonition: `Links` */
 
 .md-typeset .admonition.links,
 .md-typeset details.links {
-  border-color: rgb(76, 174, 79);
-  background-color: rgba(76, 174, 79, 0.1)
+  border-color: #4cae4f;
+  background-color: #4cae4f1a
 }
 .md-typeset .links > .admonition-title::before,
 .md-typeset .links > summary::before {
-  background-color: rgb(76, 174, 79);
+  background-color: #4cae4f;
   -webkit-mask-image: var(--md-admonition-icon--links);
           mask-image: var(--md-admonition-icon--links);
 }
 .md-typeset .links > .admonition-title:after,
 .md-typeset .links > summary:after {
-  color: rgb(76, 174, 79);
+  color: #4cae4f;
 }
 
 /* Admonition: `Nerd` */
 
 .md-typeset .admonition.nerd,
 .md-typeset details.nerd {
-  border-color: rgb(255, 206, 62);
-  background-color: rgba(255, 206, 62, .1)
+  border-color: #ffce3e;
+  background-color: #ffce3e1a
 }
 .md-typeset .nerd > .admonition-title::before,
 .md-typeset .nerd > summary::before {
-  background-color: rgb(255, 206, 62);
+  background-color: #ffce3e;
   -webkit-mask-image: var(--md-admonition-icon--nerd);
           mask-image: var(--md-admonition-icon--nerd);
 }
 .md-typeset .nerd > .admonition-title:after,
 .md-typeset .nerd > summary:after {
-  color: rgb(255, 206, 62);
+  color: #ffce3e;
 }
 
 /* Admonition: 'Party' */
 
 .md-typeset .admonition.party,
 .md-typeset details.party {
-  border-color: rgb(0 , 200, 83);
-  background-color: rgba(0 , 200, 83, 0.1);
+  border-color: #00c853;
+  background-color: #00c8531a;
 }
 .md-typeset .party > .admonition-title::before,
 .md-typeset .party > summary::before {
-  background-color: rgb(0, 200, 83);
+  background-color: #00c853;
   -webkit-mask-image: var(--md-admonition-icon--party);
           mask-image: var(--md-admonition-icon--party);
 }
 .md-typeset .party > .admonition-title:after,
 .md-typeset .party > summary:after {
-  color: rgb(0 , 200, 83);
+  color: #00c853;
 }
 
 /* Admonition: 'Security' */
 
 .md-typeset .admonition.security,
 .md-typeset details.security {
-  border-color: rgb(245 , 0, 87);
-  background-color: rgba(245 , 0, 87, 0.1);
+  border-color: #f50057;
+  background-color: #f500571a;
 }
 .md-typeset .security > .admonition-title::before,
 .md-typeset .security > summary::before {
-  background-color: rgb(245, 0, 87);
+  background-color: #f50057;
   -webkit-mask-image: var(--md-admonition-icon--security);
           mask-image: var(--md-admonition-icon--security);
 }
 .md-typeset .security > .admonition-title:after,
 .md-typeset .security > summary:after {
-  color: rgb(245 , 0, 87);
+  color: #f50057;
 }
 
 /* Admonition: 'Visual' */
 
 .md-typeset .admonition.visual,
 .md-typeset details.visual {
-  border-color: rgb(0 , 191, 165);
-  background-color: rgba(0 , 191, 165, 0.1);
+  border-color: #00bfa5;
+  background-color: #00bfa51a;
 }
 .md-typeset .visual > .admonition-title::before,
 .md-typeset .visual > summary::before {
-  background-color: rgb(0, 191, 165);
+  background-color: #00bfa5;
   -webkit-mask-image: var(--md-admonition-icon--visual);
           mask-image: var(--md-admonition-icon--visual);
 }
 .md-typeset .visual > .admonition-title:after,
 .md-typeset .visual > summary:after {
-  color: rgb(0, 191, 165);
+  color: #00bfa5;
 }
 
 /* Admonition: 'ZimaOS' */
 
 .md-typeset .admonition.zima,
 .md-typeset details.zima {
-  border-color: rgb(255, 170, 0);
-  background-color: rgba(255, 170, 0, 0.1);
+  border-color: #ffaa00;
+  background-color: #ffaa001a;
 }
 .md-typeset .zima > .admonition-title::before,
 .md-typeset .zima > summary::before {
-  background-color: rgb(255, 170, 0);
+  background-color: #ffaa00;
   -webkit-mask-image: var(--md-admonition-icon--zima);
           mask-image: var(--md-admonition-icon--zima);
 }
 .md-typeset .zima > .admonition-title:after,
 .md-typeset .zima > summary:after {
-  color: rgb(255, 170, 0);
+  color: #ffaa00;
 }

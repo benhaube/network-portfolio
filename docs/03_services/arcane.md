@@ -106,6 +106,48 @@ Modern Docker management, designed for everyone. A comprehensive set of tools to
 --8<-- "arcane-agents.yaml"
 ```
 
+### :symbols-monitor-arrow-down-corner:&ensp;Install Arcane
+
+1. Generate an encryption key.
+
+    Arcane needs an `ENCRYPTION_KEY` that is 32 bytes long _(raw, base64, or hex)_. Generate one with the `openssl` command and copy the output.
+
+    ``` bash
+    openssl rand -hex 32
+    ```
+
+2. Paste the generated key into the `compose.yaml` file `ENCRYPTION_KEY` variable.
+3. Create the `/opt/arcane` directory and copy the `compose.yaml` file into it.
+
+    ``` bash
+    sudo mkdir /opt/arcane
+    sudo cp compose.yaml /opt/arcane
+    ```
+
+    ??? note
+
+        On the [ZimaOS NAS](../02_hardware/zimaos_nas.md) the `compose.yaml` file for Arcane is in the `/DATA/.casaos/apps/arcane` directory. NOT `/opt/arcane`!
+
+4. Start the Arcane container with the `docker compose` command.
+
+    ``` bash
+    docker compose up -d
+    ```
+
+### :symbols-rotate-cw-clock:&ensp;Update Arcane
+
+1. Enter the directory containing the `compose.yaml` file.
+
+    ``` bash
+    cd /opt/arcane
+    ```
+
+2. Pull the updated image and recreate the container with the `docker compose` command.
+
+    ``` bash
+    docker compose pull && docker compose up -d
+    ```
+
 ### :symbols-cloud-upload:&ensp;Data Backup
 
 Arcane can back up your Docker volumes and its own data _(database, settings, and runtime configuration)_, on demand or on a schedule. Backups are stored on local storage mounted at `/backups`, in an S3-compatible bucket, or in both. For this configuration the data is backed up to both the local `/backups` directory and [Backblaze B2](https://www.backblaze.com/){ external-link } cloud storage in the `Arcane-Docker-Bkp` bucket.

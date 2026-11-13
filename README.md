@@ -92,10 +92,10 @@ pip install mkdocs-awesome-nav mkdocs-glightbox
 Run the following commands to upgrade Material for MkDocs and the required plugins to the latest version.
 
 ``` bash
-# Material for MkDocs
+# Upgrade Zenzical
 pip install --upgrade --force-reinstall zensical
 
-# MkDocs Plugins
+# Upgrade Plugins
 pip install --upgrade --force-reinstall mkdocs-awesome-nav mkdocs-glightbox
 
 # Upgrade `pip`

@@ -41,7 +41,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 { .no-bullets }
 - <http://storage-server-2.internal:8180>
 { .no-bullets }
-- <https://gotify.rac3r4life.online>&nbsp;&mdash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
+- <https://gotify.rac3r4life.online>&nbsp;&ndash;&nbsp;:symbols-webhook:&nbsp;_notification webhook_
 { .no-bullets }
 
 **Credentials**
@@ -55,19 +55,20 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 
 ## :symbols-message-square-dot:&ensp;Notifications
 
-| Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding documentation." } | Role / Notes { data-sort-method="none" }                                                                                                             |
-| :----------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [:brands-asus-router:&nbsp;Asus Router](#asus-router)                                                                    | Receive push notifications from the **ASUS RT-BE92U** wireless router on WAN IP changes, automated backups, `connmon` events, and DHCP `add` events. |
-| [:services-beszel:&nbsp;Beszel](#beszel)                                                                                 | Receive push notifications when servers have a hardware failure and/or reach or exceed set thresholds for temperature, load avg, etc.                |
-| [:brands-debian:&nbsp;Debian Server](../02_hardware/debian_server.md#docker-cleanup)                                     | Receive push notifications from the Debian 13 virtual machine server hosted on the ZimaOS NAS                                                        |
-| [:brands-fedora:&nbsp;Fedora Linux PCs](#fedora-linux-pcs)                                                               | Receive push notifications when the `home-bkp-nas.sh` script runs on my Linux PCs.                                                                   |
-| [:services-healthchecks:&nbsp;Healthchecks](healthchecks.md#gotify)                                                      | Receive push notifications from the self-hosted Healthchecks server monitoring cron jobs                                                             |
-| [:services-homebox:&nbsp;Homebox Alerts](#homebox)                                                                       | Receive push notifications for upcoming maintenance reminders.                                                                                       |
-| [:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md#docker-cleanup)                                 | Receive push notifications from the Raspberry Pi 4B server                                                                                           |
-| [:brands-raspberry-pi:&nbsp;Pi Zero Server](../02_hardware/pi_zero_2w_server.md#docker-cleanup)                          | Receive push notifications from the Raspberry Pi Zero server                                                                                         |
-| [:symbols-square-terminal:&nbsp;SSH Alerts](#ssh-alerts)                                                                 | Receive push notifications when a new SSH session is successfully established. Reports the user, hostname, and client IP address.                    |
-| [:services-uptime-kuma:&nbsp;Uptime Kuma](#uptime-kuma)                                                                  | Receive push notifications when services / infrastructure monitored by Uptime Kuma report a down status or other issue.                              |
-| [:services-zimaos:&nbsp;ZimaOS NAS](#zimaos-nas)                                                                         | Receive push notifications when automated maintenance tasks and cron jobs are completed on the ZimaOS NAS.                                           |
+| Application&emsp;:symbols-info:{ title="Click on the links in this column to jump to the corresponding documentation." } | Role / Notes { data-sort-method="none" }                                |
+| :----------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
+| [:services-arcane:&nbsp;Arcane](#arcane)                                                                                 | Receive push notifications from the Arcane service.                     |
+| [:symbols-router:&nbsp;Asus Router](#asus-router)                                                                        | Receive push notifications from the **ASUS RT-BE92U** wireless router.  |
+| [:services-beszel:&nbsp;Beszel](#beszel)                                                                                 | Receive push notifications from the Beszel service about server health. |
+| [:brands-debian:&nbsp;Debian Server](../02_hardware/debian_server.md#docker-cleanup)                                     | Receive push notifications from the Debian 13 VM server.                |
+| [:brands-fedora:&nbsp;Fedora Linux PCs](#fedora-linux-pcs)                                                               | Receive push notifications when the `home-bkp-nas.sh` script runs.      |
+| [:services-healthchecks:&nbsp;Healthchecks](healthchecks.md#gotify)                                                      | Receive push notifications from the Healthchecks service.               |
+| [:services-homebox:&nbsp;Homebox Alerts](#homebox)                                                                       | Receive push notifications from the Homebox service.                    |
+| [:brands-raspberry-pi:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md#docker-cleanup)                                 | Receive push notifications from the Raspberry Pi 4B server.             |
+| [:brands-raspberry-pi:&nbsp;Pi Zero Server](../02_hardware/pi_zero_2w_server.md#docker-cleanup)                          | Receive push notifications from the Raspberry Pi Zero server.           |
+| [:symbols-square-terminal:&nbsp;SSH Alerts](#ssh-alerts)                                                                 | Receive push notifications for new SSH sessions.                        |
+| [:services-uptime-kuma:&nbsp;Uptime Kuma](#uptime-kuma)                                                                  | Receive push notifications from Uptime Kuma.                            |
+| [:services-zimaos:&nbsp;ZimaOS NAS](#zimaos-nas)                                                                         | Receive push notifications from the ZimaOS NAS.                         |
 
 ## :symbols-package-search:&ensp;Deployment Details
 
@@ -120,7 +121,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 
 ### :services-beszel:&ensp;Beszel
 
-1.  Open the [Beszel Hub](beszel.md) settings menu, go to the **"Notifications"** sub-menu, and enter the following URL into the **"Webhook / Push Notifications"** section.
+1.  Open the [Beszel Hub](https://beszel.rac3r4life.online){ external-link } settings menu, go to the **"Notifications"** sub-menu, and enter the following URL into the **"Webhook / Push Notifications"** section.
 
     ``` text linenums="1"
     gotify://gotify.rac3r4life.online/<YourAppToken>
@@ -133,7 +134,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-light.png#only-light){ width=325 align=right }
 ![Homebox notification settings screenshot](../assets/screenshots/homebox-notify-dark.png#only-dark){ width=325 align=right }
 
-1.  Log into the Homebox Web application.
+1.  Log into the [Homebox](https://homebox.rac3r4life.online){ external-link } Web application.
 2.  Click the arrow to expand the "Collections" menu on the left side-bar, then click "Notifiers."
 3.  Click the "Create" button.
 4.  Fill out the name and URL fields.
@@ -147,7 +148,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 5.  Click the "Test" button to send a test notification.
 6.  Click "Submit" to save the new notification.
 
-### :brands-asus-router:&ensp;Asus Router
+### :symbols-router:&ensp;Asus Router
 
 #### WAN IP Change
 
@@ -408,7 +409,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-light.png#only-light){ width=325 align=right }
 ![Uptime Kuma "Add Notification" Settings](../assets/screenshots/gotify-uptime-kuma-dark.png#only-dark){ width=325 align=right }
 
-1.  Open the [Uptime Kuma](uptime_kuma.md) settings menu, and enter the **"Notifications"** sub-menu.
+1.  Open the [Uptime Kuma](https://uptime.rac3r4life.online){ external-link } settings menu, and enter the **"Notifications"** sub-menu.
 2.  Click the **"Set Up Notification"** button.
 3.  In the **"Notification Type"** drop-down menu, select the option **"Gotify"**.
 4.  Give your new notification a name in the **"Friendly Name"** field.
@@ -427,7 +428,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 
 ### :services-zimaos:&ensp;ZimaOS NAS
 
-The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
+The ZimaOS module, [Zima Cron](http://storage-server.internal/modules/cron/index.html){ external-link }, is required to create custom cron jobs on ZimaOS. Make sure the Zima Cron module is installed with the native ZimaOS package manager, `zpkg`. Zima Cron should be installed by default on ZimaOS v1.6.0 and higher, but you can also download the Zima Cron package from the official GitHub repository, and see detailed installation instructions in the README.
 
 [Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
 
@@ -569,3 +570,27 @@ The ZimaOS module, **Zima Cron**, is required to create custom cron jobs on Zima
     ```
 
 4.  See the [System Cleanup](../02_hardware/zimaos_nas.md#system-cleanup) documentation for Systemd configuration to automate script execution.
+
+### :services-arcane:&ensp;Arcane
+
+![Arcane's notification settings for Gotify](../assets/screenshots/arcane-gotify-light.png#only-light){ .on-glb width=400 align=right }
+![Arcane's notification settings for Gotify](../assets/screenshots/arcane-gotify-dark.png#only-dark){ .on-glb width=400 align=right }
+
+1. Log into the [Arcane web-UI](http://storage-server.internal:3552){ external-link }.
+2. In the sidebar, navigate to:&nbsp;**Administration**&ensp;:symbols-move-right:&ensp;**Settings**&ensp;:symbols-move-right:&ensp;**Notifications**.
+3. Along the top row, click the button labeled **Gotify** and enable it.
+4. Enter the Gotify server's hostname and application token, then test the configuration and save the settings. _(do not include `https://`)_
+
+    ``` text
+    gotify.rac3r4life.online
+    ``` 
+
+5. **Optional:**&nbsp;Select the events you want to trigger a push notification. All events are enabled by default.
+
+    | Event                 | Action                                                                                                          |
+    | :-------------------- | :-------------------------------------------------------------------------------------------------------------- |
+    | Image Update Detected | Notify when a new image version is available.                                                                   |
+    | Container Updated     | Notify when a container is actually updated/restarted.                                                          |
+    | System Prune Report   | Receive a summary report when a scheduled prune operation completes.                                            |
+    | Vulnerability Found   | Notify when a scan finds a vulnerability that has a fixed version. _(CVE link, severity, image, fixed version)_ |
+    | Auto Heal Restart     | Notify when an unhealthy container is automatically restarted.                                                  |

@@ -1,6 +1,5 @@
 ---
 icon: services/gitea
-status: new
 title: Gitea
 subtitle: Git with a Cup of Tea
 description: Painless, self-hosted, all-in-one software development service. Including Git hosting, code review, team collaboration, package registry and CI/CD.

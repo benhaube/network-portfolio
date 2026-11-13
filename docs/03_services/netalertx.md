@@ -3,7 +3,6 @@ icon: services/netalertx
 title: NetAlertX
 subtitle: Centralized Network Visibility
 description: Centralized network visibility and continuous asset discovery. Monitor devices, detect change, and stay aware across distributed networks.
-status: new
 tags:
   - Active
   - Container

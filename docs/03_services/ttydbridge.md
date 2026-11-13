@@ -3,9 +3,10 @@ icon: symbols/square-terminal
 title: ttydBridge
 subtitle: The Terminal on the Web
 description: A "bridge" to the host environment, allowing you to easily use the host terminal in your browser.
+status: inactive
 tags:
-  - Active
   - Container
+  - Inactive
   - Remote Access
   - Service
   - Shell

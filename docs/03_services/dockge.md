@@ -3,11 +3,12 @@ icon: services/dockge
 title: Dockge
 subtitle: Container Management
 description: A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
+status: inactive
 tags:
-  - Active
   - Container
   - Dashboard
   - Download
+  - Inactive
   - Service
   - Shell
   - Tools

@@ -227,14 +227,10 @@ If you have a [Gotify](../03_services/gotify.md) instance, you can use it to sen
     1. Add line to `/etc/pam.d/sshd` _after_ the existing "session" lines.
 
 <figure markdown="span">
-![Gotify SSH alert screenshot light](../assets/screenshots/gotify-ssh-alert-light.png#only-light){ .on-glb width=500 data-title="Example Alert:" data-description=".gotify-ssh-desc" }
-![Gotify SSH alert screenshot dark](../assets/screenshots/gotify-ssh-alert-dark.png#only-dark){ .on-glb width=500 data-title="Example Alert:" data-description=".gotify-ssh-desc" }
+![Gotify SSH alert screenshot light](../assets/screenshots/gotify-ssh-alert-light.png#only-light){ .on-glb width=500 }
+![Gotify SSH alert screenshot dark](../assets/screenshots/gotify-ssh-alert-dark.png#only-dark){ .on-glb width=500 }
     <figcaption><b>Example Alert:</b> Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</figcaption>
 </figure>
-
-<div class="glightbox-desc gotify-ssh-desc">
-    <p>Real-time SSH monitoring showing the authenticated user, target hostname, and source IP address.</p>
-</div>
 
 ## :symbols-sticky-notes:&ensp;Important Notes
 

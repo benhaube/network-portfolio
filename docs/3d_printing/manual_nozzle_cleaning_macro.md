@@ -70,15 +70,10 @@ _Manually Clean Your Nozzle_
 - [ ] Click the **"Park & Cool"** button to automatically trigger the `DONE_CLEANING_COOL` macro.
 
 <figure markdown="span">
-  ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-light.png#only-light){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
-  ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-dark.png#only-dark){ .on-glb data-title="Manual Nozzle Cleaning Macro" data-description=".nozzle-clean-desc" }
+  ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-light.png#only-light){ .on-glb }
+  ![Manual Nozzle Cleaning Macro Dialog](../assets/screenshots/nozzle-cleaning-macro-dark.png#only-dark){ .on-glb }
 <figcaption>The Fluidd UI prompt will appear when the nozzle has reached the specified temperature. Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</figcaption>
 </figure>
-
-<div class="glightbox-desc nozzle-clean-desc">
-  <p>The Fluidd UI prompt will appear when the nozzle has reached the specified temperature.</p>
-  <p>Click the <b>"Park"</b> or <b>"Park & Cool"</b> button to dismiss the prompt when you are done cleaning.</p>
-</div>
 
 ---
 

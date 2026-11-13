@@ -83,14 +83,9 @@ _Fine Tune Your Bed Level_
 18. [ ] Place the build plate back on.
 
 <figure markdown="span">
-![Completed bed leveling mod.](../assets/pictures/bed-knobs-mod-complete.jpg){ width=800 .on-glb data-title="Completed Modification" data-description=".img-desc1" }
-<figcaption>This is what the completed bed leveling mod should look like. <b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</figcaption>
+![Completed bed leveling mod.](../assets/pictures/bed-knobs-mod-complete.jpg){ width=800 .on-glb }
+<figcaption>This is what the completed bed leveling mod should look like. <b>Note:</b> If you bought your kit from Amazon the knobs will be blue.</figcaption>
 </figure>
-
-<div class="glightbox-desc img-desc1">
-  <p>This is what the completed bed leveling mod should look like.</p>
-  <p><b>Note:</b> If you bought your kit from <a href="https://amzn.to/4jkJ185">Amazon</a> the knobs will be blue.</p>
-</div>
 
 ## :symbols-cpu:&ensp;Firmware Setup
 
@@ -150,14 +145,10 @@ _Fine Tune Your Bed Level_
 1. [ ] The printer will probe each corner and a message will pop up telling you how high or low the corners are relative to the front left corner. It will instruct you which direction _(looking at it from the top down)_ and how far to turn each knob _(in minutes)_.
 
 <figure markdown="span">
-  ![A screenshot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-light.png#only-light){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
-  ![A screenshot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-dark.png#only-dark){ width=400 .on-glb data-title="Screws Tilt Adjust" data-description=".img-desc2" }
+  ![A screenshot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-light.png#only-light){ width=400 .on-glb }
+  ![A screenshot of Fluidd UI 'Screws Tilt Adjust' dialog.](../assets/screenshots/screws-tilt-adjust-dark.png#only-dark){ width=400 .on-glb }
 <figcaption>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly 1&frasl;16 of a turn.</figcaption>
 </figure>
-
-<div class="glightbox-desc img-desc2">
-  <p>In the image, the back right corner is 0.0468 mm higher than the front left, and to correct it, you would turn it 4 minutes counter clockwise <i>(looking at it from above)</i>, or roughly <sup>1</sup>/<sub>16</sub> of a turn.</p>
-</div>
 
 1.  [ ] Click retry or repeat the command to check the new level.
 

@@ -85,14 +85,10 @@ _Improved Nozzle Brush Routine_
 - [ ] In the slicer's printer settings, change the **Excluded bed area** to: `70x210, 150x210, 150x220, 70x220`.
 
 <figure markdown="span">
-  ![Excluded Bed Area](../assets/screenshots/printable-area-light.png#only-light){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
-  ![Excluded Bed Area](../assets/screenshots/printable-area-dark.png#only-dark){ .on-glb width=700 data-title="Printable Area Settings" data-description=".printable-area-desc" }
+  ![Excluded Bed Area](../assets/screenshots/printable-area-light.png#only-light){ .on-glb width=700 }
+  ![Excluded Bed Area](../assets/screenshots/printable-area-dark.png#only-dark){ .on-glb width=700 }
 <figcaption><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</figcaption>
 </figure>
-
-<div class="glightbox-desc printable-area-desc">
-  <p><b>OrcaSlicer v2.3.2:</b> printer settings screenshot, showing the "Excluded bed area" setting field.</p>
-</div>
 
 ## :symbols-toggle-right:&ensp;Dry Run
 

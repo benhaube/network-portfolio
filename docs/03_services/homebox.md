@@ -64,7 +64,7 @@ Homebox is the inventory and organization system built for the home user! With a
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

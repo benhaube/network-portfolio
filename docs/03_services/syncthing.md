@@ -96,7 +96,7 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-monitor-arrow-down-corner:&ensp;Install Commands
 

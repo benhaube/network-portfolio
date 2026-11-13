@@ -61,7 +61,7 @@ The **Open Home Foundation** Matter Server serves as the foundation to provide M
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

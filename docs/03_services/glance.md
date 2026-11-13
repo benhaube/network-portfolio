@@ -165,7 +165,7 @@ A self-hosted dashboard built for people who want their information in one place
 
         [Glance Widgets&ensp;:brands-github:](https://github.com/benhaube/glance-pages/tree/main/config/widgets){ .md-button }
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

@@ -82,7 +82,7 @@ A lightweight server monitoring hub with historical data, docker stats, and aler
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-key-round:&ensp;Generate API Tokens
 

@@ -59,7 +59,7 @@ Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

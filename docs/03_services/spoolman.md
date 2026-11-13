@@ -57,7 +57,7 @@ Spoolman is a self-hosted web service designed to help you efficiently manage yo
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

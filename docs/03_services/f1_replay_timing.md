@@ -58,7 +58,7 @@ Visualization of real-time track data and telemetry synced to F1 live and replay
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

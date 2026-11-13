@@ -62,7 +62,7 @@ Handy tools for network administrators and developers.
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ``` yaml { .mono-title title="/opt/stacks/it-tools/compose.yaml" linenums="1" }
 --8<-- "it-tools.yml"

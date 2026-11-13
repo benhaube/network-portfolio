@@ -79,7 +79,7 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ### :symbols-folder-git-2:&ensp;Data Directories
 

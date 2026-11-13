@@ -58,7 +58,7 @@ A free & open-source HTML5 network performance estimation tool.
 
 ## :symbols-settings:&ensp;Configuration
 
---8<-- "managed_by_dockge.md"
+--8<-- "managed-by-arcane.md"
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/openspeedtest/compose.yaml" linenums="1" }
 --8<-- "openspeedtest.yml"

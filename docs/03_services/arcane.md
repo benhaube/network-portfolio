@@ -9,6 +9,7 @@ tags:
   - Container
   - Dashboard
   - Download
+  - New
   - Service
   - Shell
   - Tools

@@ -3,12 +3,12 @@ icon: services/portainer
 title: Portainer-EE
 subtitle: Container Management
 description: A lightweight service delivery platform for containerized applications. 
-status: inactive
+status: deprecated
 tags:
   - Container
   - Dashboard
+  - Deprecated
   - Download
-  - Inactive
   - Service
   - Shell
   - Tools

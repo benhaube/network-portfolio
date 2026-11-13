@@ -98,7 +98,10 @@ A networking service that automatically maps a static domain name _(FQDN)_ to a 
 
 4.  Make sure the DDNS setting in the router's Web-UI is set to "Custom" and the "Host Name" field has your domain name:
 
-    ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ width=700 }
+<figure markdown="span">
+    ![ASUS Router DDNS Settings](../assets/screenshots/ddns-settings.png){ .on-glb width=500 }
+<figcaption>Select "Custom" in the "Server" drop-down menu, and enter the router's public hostname in the "Host Name" field.</figcaption>
+</figure>
 
 ### :symbols-award:&ensp;TLS Certificate
 

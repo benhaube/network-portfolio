@@ -81,13 +81,13 @@ The **Open Home Foundation** Matter Server serves as the foundation to provide M
 1.  Open the Home Assistant dashboard and navigate to **Settings**&ensp;:symbols-move-right:&ensp;**Devices & Services**.
 2.  Click **"Add Integration"** and select **"Matter"**.
 
-    ![Home Assistant add integration dialog](../assets/screenshots/ha-add-integration-light.png#only-light){ width=400 }
-    ![Home Assistant add integration dialog](../assets/screenshots/ha-add-integration-dark.png#only-dark){ width=400 }
+    ![Home Assistant add integration dialog](../assets/screenshots/ha-add-integration-light.png#only-light){ .on-glb width=400 }
+    ![Home Assistant add integration dialog](../assets/screenshots/ha-add-integration-dark.png#only-dark){ .on-glb width=400 }
 
 3.  When prompted for the connection method, uncheck the option to use the supervisor add-on. Enter the WebSocket URL of your host: `ws://<your-host-ip>:5580/ws`.
 
-    ![Home Assistant Matter websocket URL](../assets/screenshots/ha-add-matter-hub-light.png#only-light){ width=400 }
-    ![Home Assistant Matter websocket URL](../assets/screenshots/ha-add-matter-hub-dark.png#only-dark){ width=400 }
+    ![Home Assistant Matter websocket URL](../assets/screenshots/ha-add-matter-hub-light.png#only-light){ .on-glb width=400 }
+    ![Home Assistant Matter websocket URL](../assets/screenshots/ha-add-matter-hub-dark.png#only-dark){ .on-glb width=400 }
 
 ### :brands-thread:&ensp;Sync Google Thread Credentials
 
@@ -96,8 +96,8 @@ To utilize the Google TV Streamer and Nest Hubs as Thread border routers, Home A
 1.  Ensure your phone is on the same Wi-Fi network as the border routers. Open the Home Assistant app on an Android device, navigate to **Settings**&ensp;:symbols-move-right:&ensp;**Devices & Services**, and select the **Thread** integration.
 2.  Tap the **gear icon** to configure, then select **"Send Credentials to Home Assistant"**.
 
-    ![Home Assistant Android Thread settings](../assets/screenshots/ha-android-thread-light.png#only-light){ width=400 }
-    ![Home Assistant Android Thread settings](../assets/screenshots/ha-android-thread-dark.png#only-dark){ width=400 }
+    ![Home Assistant Android Thread settings](../assets/screenshots/ha-android-thread-light.png#only-light){ .on-glb width=400 }
+    ![Home Assistant Android Thread settings](../assets/screenshots/ha-android-thread-dark.png#only-dark){ .on-glb width=400 }
 
-    ![Home Assistant Android Thread import credentials](../assets/screenshots/ha-android-thread-credentials-light.png#only-light){ width=400 }
-    ![Home Assistant Android Thread import credentials](../assets/screenshots/ha-android-thread-credentials-dark.png#only-dark){ width=400 }
+    ![Home Assistant Android Thread import credentials](../assets/screenshots/ha-android-thread-credentials-light.png#only-light){ .on-glb width=400 }
+    ![Home Assistant Android Thread import credentials](../assets/screenshots/ha-android-thread-credentials-dark.png#only-dark){ .on-glb width=400 }

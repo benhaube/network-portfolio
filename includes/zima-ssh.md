@@ -4,8 +4,8 @@
 
     :   Settings&ensp;:symbols-move-right:&ensp;General&ensp;:symbols-move-right:&ensp;Developer Mode&ensp;:symbols-move-right:&ensp;SSH Access
 
-        ![ZimaOS developer settings screenshot](../assets/screenshots/zimaos_ssh_light.png#only-light){ width=600 }
-        ![ZimaOS developer settings screenshot](../assets/screenshots/zimaos_ssh_dark.png#only-dark){ width=600 }
+        ![ZimaOS developer settings screenshot](../assets/screenshots/zimaos_ssh_light.png#only-light){ .on-glb width=600 }
+        ![ZimaOS developer settings screenshot](../assets/screenshots/zimaos_ssh_dark.png#only-dark){ .on-glb width=600 }
 
     After enabling SSH in the developer options the [ttydBridge](../03_services/ttydbridge.md) application is automatically installed. The SSH service can be configured from there.
 

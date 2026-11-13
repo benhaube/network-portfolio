@@ -170,13 +170,13 @@ To send email notifications, the container needs to be configured with your SMTP
 
 1.  To add an email integration, go to the **Integrations** tab, click **Add** next to email, and enter the address where you want email notifications sent.
 
-    ![Healthchecks add email integration](../assets/screenshots/healthchecks-email-integration-light.png#only-light){ width=600 }
-    ![Healthchecks add email integration](../assets/screenshots/healthchecks-email-integration-dark.png#only-dark){ width=600 }
+    ![Healthchecks add email integration](../assets/screenshots/healthchecks-email-integration-light.png#only-light){ .on-glb width=600 }
+    ![Healthchecks add email integration](../assets/screenshots/healthchecks-email-integration-dark.png#only-dark){ .on-glb width=600 }
 
 2.  Click **Save Integration** to return to the Integrations tab, and click **Test** on your new integration to send a test notification. If your SMTP server is configured correctly, you will receive a message in your email inbox. If you do not see a test notification, check your spam / junk folder and your SMTP configuration.
 
-    ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-light.png#only-light){ width=600 }
-    ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-dark.png#only-dark){ width=600 }
+    ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-light.png#only-light){ .on-glb width=600 }
+    ![Healthchecks test integration](../assets/screenshots/healthchecks-test-integration-dark.png#only-dark){ .on-glb width=600 }
 
 #### Gotify
 
@@ -186,8 +186,8 @@ To send email notifications, the container needs to be configured with your SMTP
 2.  After you have created the application, copy its **application token**.
 3.  Enter the URL of your **Gotify** server, and the **application token** in the form shown below. Then save the integration, and you are done!
 
-    ![Healthchecks add Gotify integration](../assets/screenshots/healthchecks-gotify-integration-light.png#only-light){ width=600 }
-    ![Healthchecks add Gotify integration](../assets/screenshots/healthchecks-gotify-integration-dark.png#only-dark){ width=600 }
+    ![Healthchecks add Gotify integration](../assets/screenshots/healthchecks-gotify-integration-light.png#only-light){ .on-glb width=600 }
+    ![Healthchecks add Gotify integration](../assets/screenshots/healthchecks-gotify-integration-dark.png#only-dark){ .on-glb width=600 }
 
 4.  After returning to the **Integrations** tab, you can test the new integration using the same method shown above for the email integration.
 
@@ -201,8 +201,8 @@ APPRISE_ENABLED=True
 
 1.  To add a Home Assistant integration, go to the **Integrations** tab, click **Add** next to Apprise, and enter the Webhook URL for your Home Assistant server.
 
-    ![Healthchecks add Apprise integration](../assets/screenshots/healthchecks-apprise-integration-light.png#only-light){ width=600 }
-    ![Healthchecks add Apprise integration](../assets/screenshots/healthchecks-apprise-integration-dark.png#only-dark){ width=600 }
+    ![Healthchecks add Apprise integration](../assets/screenshots/healthchecks-apprise-integration-light.png#only-light){ .on-glb width=600 }
+    ![Healthchecks add Apprise integration](../assets/screenshots/healthchecks-apprise-integration-dark.png#only-dark){ .on-glb width=600 }
 
     !!! tip
 

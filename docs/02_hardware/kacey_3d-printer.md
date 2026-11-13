@@ -288,8 +288,8 @@ If you have already installed **Moonraker**, **Fluidd** or **Mainsail** provided
 
 #### Installed Software
 
-![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-light.png#only-light){ align=right width=550 }
-![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-dark.png#only-dark){ align=right width=550 }
+![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-light.png#only-light){ .on-glb align=right width=550 }
+![Creality Helper Script "Information" menu CLI output](../assets/screenshots/helper-script-info-menu-dark.png#only-dark){ .on-glb align=right width=550 }
 
 1.  Essentials:
     - Moonraker & Nginx
@@ -346,7 +346,7 @@ Your printer can do way more than your current touchscreen lets you. Bed mesh vi
 
     Installs to `/usr/data/helixscreen/`, boot service at `/etc/init.d/S99helixscreen`.
 
-![Screenshot of HelixScreen home screen UI](../assets/screenshots/helixscreen-home.png){ align=right width=400 }
+![Screenshot of HelixScreen home screen UI](../assets/screenshots/helixscreen-home.png){ .on-glb align=right width=400 }
 
 #### One-Step Install
 

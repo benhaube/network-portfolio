@@ -7,7 +7,6 @@ tags:
   - Active
   - Container
   - Inventory
-  - New
   - Service
 hide:
   - toc

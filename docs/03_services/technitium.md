@@ -9,7 +9,6 @@ tags:
   - Infrastructure
   - Native
   - Network
-  - New
   - Service
 hide:
   - toc

@@ -93,10 +93,11 @@ A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving un
 
 ### :symbols-container:&ensp;Docker Container
 
-| Service                                                   | Port(s) { data-sort-method="number" } | Status                                                                                                           | Role / Notes { data-sort-method="none" }                                                             |
-| :-------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| [:services-beszel:&nbsp;Beszel](../03_services/beszel.md) |                `45876`                | ![Beszel status](https://uptime.rac3r4life.online/api/badge/72/status?label=){ style='vertical-align: middle;' } | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
-| [:services-dockge:&nbsp;Dockge](../03_services/dockge.md) |                `5001`                 | ![Dockge status](https://uptime.rac3r4life.online/api/badge/58/status?label=){ style='vertical-align: middle;' } | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
+| Service                                                               | Port(s) { data-sort-method="number" } | Status                                                                                                                  | Role / Notes { data-sort-method="none" }                                                             |
+| :-------------------------------------------------------------------- | :-----------------------------------: | :---------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| [:services-beszel:&nbsp;Beszel](../03_services/beszel.md)             |                `45876`                | ![Beszel status](https://uptime.rac3r4life.online/api/badge/72/status?label=){ style='vertical-align: middle;' }        | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
+| [:services-docker:&nbsp;Docker Proxy](../03_services/docker-proxy.md) |                `2375`                 | ![Docker Proxy status](https://uptime.rac3r4life.online/api/badge/185/status?label=){ style='vertical-align: middle;' } | Proxy over your Docker socket to restrict which requests it accepts.                                 |
+| [:services-dockge:&nbsp;Dockge](../03_services/dockge.md)             |                `5001`                 | ![Dockge status](https://uptime.rac3r4life.online/api/badge/58/status?label=){ style='vertical-align: middle;' }        | A fancy, easy-to-use and reactive self-hosted Docker `compose.yaml` stack-oriented manager.          |
 
 ---
 

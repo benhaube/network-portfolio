@@ -51,7 +51,7 @@ High performance extendable Web-UI and RPC server for `yt-dlp` with low impact o
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                             | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name | Image                             | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `yt-dlp-webui` | `marcobaobao/yt-dlp-webui:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/91/status?label=){ style='vertical-align: middle;' } | `3033`  |
 

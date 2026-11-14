@@ -60,7 +60,7 @@ Modern Docker management, designed for everyone. A comprehensive set of tools to
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                                    | Container Name      | Image                                 | Status                                                                                                           | Port(s) |
+| Host Device                                                            | Method                                    | Container Name      | Image                                 | Status { data-sort-method="none" }                                                                               | Port(s) |
 | :--------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `arcane-edge-agent` | `ghcr.io/getarcaneapp/agent:latest`   | ![status badge](https://uptime.rac3r4life.online/api/badge/182/status?label=){ style='vertical-align: middle;' } | `3553`  |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-container:&nbsp;Docker Container | `arcane-edge-agent` | `ghcr.io/getarcaneapp/agent:latest`   | ![status badge](https://uptime.rac3r4life.online/api/badge/181/status?label=){ style='vertical-align: middle;' } | `3553`  |

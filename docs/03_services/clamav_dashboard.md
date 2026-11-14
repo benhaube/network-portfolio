@@ -51,7 +51,7 @@ Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan pro
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name     | Image                                       | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name     | Image                                       | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS-NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `clamav-server`    | `clamav/clamav:1.5_base`                    | ![status badge](https://uptime.rac3r4life.online/api/badge/83/status?label=){ style='vertical-align: middle;' } | `3310`  |
 | -                                                                    | :symbols-container:&nbsp;Docker Container | `clamav-dashboard` | `ghcr.io/jacko88888/clamav-dashboard:0.2.4` | ![status badge](https://uptime.rac3r4life.online/api/badge/84/status?label=){ style='vertical-align: middle;' } | `8099`  |

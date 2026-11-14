@@ -52,7 +52,7 @@ A "bridge" to the host environment, allowing you to easily use the host terminal
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                      | Status                                                                                                           | Port(s) |
+| Host Device                                                          | Method                                    | Container Name | Image                      | Status { data-sort-method="none" }                                                                               | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------- | :--------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ttydbridge`   | `cp0204/ttydbridge:v0.0.4` | ![status badge](https://uptime.rac3r4life.online/api/badge/110/status?label=){ style='vertical-align: middle;' } | `2222`  |
 

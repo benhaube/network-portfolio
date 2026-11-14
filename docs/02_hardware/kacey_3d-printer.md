@@ -94,7 +94,7 @@ The Creality K1C 3D-printer located in the office upstairs, and connected to the
 
 ### :symbols-tux:&ensp;Native Linux
 
-| Service                                                     | Port(s) { data-sort-method="number" } | Status                                                                                                               | Role / Notes { data-sort-method="none" }                                                       |
+| Service                                                     | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                                   | Role / Notes { data-sort-method="none" }                                                       |
 | :---------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
 | [:services-fluidd:&nbsp;Fluidd](../03_services/fluidd.md)   |            `80`<br>`4408`             | ![Fluidd status](https://uptime.rac3r4life.online/api/badge/175/status?label=){ style='vertical-align: middle;' }    | A free and open-source Klipper web interface for managing your 3D-printer.                     |
 | [:symbols-api:&nbsp;Moonraker](../03_services/moonraker.md) |                `7125`                 | ![Moonraker status](https://uptime.rac3r4life.online/api/badge/174/status?label=){ style='vertical-align: middle;' } | Web API server for [Klipper](https://www.klipper3d.org/){ external-link }.                     |

@@ -73,7 +73,7 @@ A self-hosted dashboard built for people who want their information in one place
 
     [:symbols-arrow-down:&nbsp;**See the new config file below**&nbsp;:symbols-arrow-down:](#dynacat)
 
-| Host Device                                                          | Method                                    | Container Name        | Image                               | Status                                                                                                           | Port(s) |
+| Host Device                                                          | Method                                    | Container Name        | Image                               | Status { data-sort-method="none" }                                                                               | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :-------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glance`              | `panonim/dynacat:latest`            | ![status badge](https://uptime.rac3r4life.online/api/badge/5/status?label=){ style='vertical-align: middle;' }   | `8580`  |
 | -                                                                    | :symbols-container:&nbsp;Docker Container | `f1_api`              | `skyallinott/f1_api:latest`         | ![status badge](https://uptime.rac3r4life.online/api/badge/30/status?label=){ style='vertical-align: middle;' }  | `4463`  |

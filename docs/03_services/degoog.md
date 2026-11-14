@@ -53,7 +53,7 @@ A self-hosted search engine aggregator with a comprehensive plugin / extension s
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name    | Image                              | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name    | Image                              | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :--------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `degoog-degoog-1` | `ghcr.io/degoog-org/degoog:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/81/status?label=){ style='vertical-align: middle;' } | `4444`  |
 

@@ -54,7 +54,7 @@ Open-source home automation that puts local control and privacy first. Powered b
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name  | Image                                          | Status                                                                                                         | Port(s) |
+| Host Device                                                          | Method                                    | Container Name  | Image                                          | Status { data-sort-method="none" }                                                                             | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `homeassistant` | `ghcr.io/home-assistant/home-assistant:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/8/status?label=){ style='vertical-align: middle;' } | `8123`  |
 

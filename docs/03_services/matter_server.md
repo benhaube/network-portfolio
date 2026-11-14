@@ -53,7 +53,7 @@ The **Open Home Foundation** Matter Server serves as the foundation to provide M
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name  | Image                                      | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name  | Image                                      | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :-------------- | :----------------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `matter-server` | `ghcr.io/matter-js/matterjs-server:stable` | ![status badge](https://uptime.rac3r4life.online/api/badge/86/status?label=){ style='vertical-align: middle;' } | `5580`  |
 

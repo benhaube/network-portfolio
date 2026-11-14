@@ -53,7 +53,7 @@ A free and open-source Klipper web interface for managing your 3D-printer.
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                             | Method                          | Container Name | Image | Status                                                                                                           | Port(s)          |
+| Host Device                                                                             | Method                          | Container Name | Image | Status { data-sort-method="none" }                                                                               | Port(s)          |
 | :-------------------------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :--------------- |
 | [:symbols-printer-3d-nozzle:&nbsp;Kacey 3D-Printer](../02_hardware/kacey_3d-printer.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/175/status?label=){ style='vertical-align: middle;' } | `80`&ensp;`4408` |
 

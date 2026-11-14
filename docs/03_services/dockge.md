@@ -60,7 +60,7 @@ A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented man
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                                    | Container Name    | Image               | Status                                                                                                          | Port(s) |
+| Host Device                                                                    | Method                                    | Container Name    | Image               | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :----------------------------------------------------------------------------- | :---------------------------------------- | :---------------- | :------------------ | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | ![status badge](https://uptime.rac3r4life.online/api/badge/59/status?label=){ style='vertical-align: middle;' } | `5001`  |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `dockge-dockge-1` | `louislam/dockge:1` | ![status badge](https://uptime.rac3r4life.online/api/badge/51/status?label=){ style='vertical-align: middle;' } | `5001`  |

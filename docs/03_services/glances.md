@@ -50,7 +50,7 @@ Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                           | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name | Image                           | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `glances`      | `nicolargo/glances:latest-full` | ![status badge](https://uptime.rac3r4life.online/api/badge/45/status?label=){ style='vertical-align: middle;' } | `61208` |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `glances`      | `nicolargo/glances:latest-full` | ![status badge](https://uptime.rac3r4life.online/api/badge/44/status?label=){ style='vertical-align: middle;' } | `61208` |

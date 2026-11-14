@@ -80,7 +80,7 @@ The main wireless router and firewall for the local network. Located next to the
 
 ### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
-| SSID         | VLAN { data-sort-method="number" } |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes                                 |
+| SSID         | VLAN { data-sort-method="number" } |                        WAN Access                        | CIDR { data-sort-method="dotsep" } | Frequency { data-sort-method="number" } | Notes { data-sort-method="none" }     |
 | :----------- | :--------------------------------- | :------------------------------------------------------: | :--------------------------------- | :-------------------------------------- | :------------------------------------ |
 | _Home_       | VLAN50                             | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.50.0/24`                  | 2.4 GHz / 5 GHz / 6 GHz                 | :symbols-shield:&nbsp;Trusted VLAN    |
 | *Home_Guest* | VLAN52                             | <span aria-label="Yes" role="img">:symbols-check:</span> | `192.168.52.0/24`                  | 2.4 GHz / 5 GHz                         | :symbols-shield-user:&nbsp;Guest VLAN |
@@ -117,7 +117,7 @@ The main wireless router and firewall for the local network. Located next to the
 
 ### :symbols-tux:&ensp;Native
 
-| Service                                                                   | Port(s) { data-sort-method="number" } | Status                                                                                                               | Role / Notes { data-sort-method="none" }                                                          |
+| Service                                                                   | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                                   | Role / Notes { data-sort-method="none" }                                                          |
 | :------------------------------------------------------------------------ | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
 | [:symbols-refresh-cw-clock:&nbsp;Chrony](../03_services/chrony.md)        |                 `123`                 | ![Chrony status](https://uptime.rac3r4life.online/api/badge/113/status?label=){ style='vertical-align: middle;' }    | Advanced, lightweight NTP client and server.                                                      |
 | [:symbols-globe-sync:&nbsp;DDNS](../03_services/ddns.md)                  |                 `N/A`                 | ![DDNS status](https://uptime.rac3r4life.online/api/badge/116/status?label=){ style='vertical-align: middle;' }      | A networking service that automatically maps a static domain name to a dynamic public IP address. |

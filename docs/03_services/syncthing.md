@@ -82,7 +82,7 @@ Syncthing is a continuous file synchronization program. It synchronizes files be
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                     | Method                                    | Container Name | Image                          | Status                                                                                                          | Port(s)                          |
+| Host Device                                                                     | Method                                    | Container Name | Image                          | Status { data-sort-method="none" }                                                                              | Port(s)                          |
 | :------------------------------------------------------------------------------ | :---------------------------------------- | :------------- | :----------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------- |
 | [:symbols-pc-case:&nbsp;Ben's Desktop](../02_hardware/bens_desktop.md)          | :symbols-tux:&nbsp;Native Linux           | `-`            | `-`                            | -                                                                                                               | `8384`&ensp;`22000`&ensp;`21027` |
 | [:symbols-laptop-minimal:&nbsp;Ben's Laptop](../02_hardware/bens_laptop.md)     | :symbols-tux:&nbsp;Native Linux           | `-`            | `-`                            | -                                                                                                               | `8384`&ensp;`22000`&ensp;`21027` |

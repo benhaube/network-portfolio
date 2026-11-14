@@ -51,7 +51,7 @@ Globalping allows anyone to run networking commands such as `ping`, `traceroute`
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name     | Image                                | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name     | Image                                | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :----------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `globalping-probe` | `globalping/globalping-probe:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/79/status?label=){ style='vertical-align: middle;' } | `-`     |
 

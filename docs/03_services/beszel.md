@@ -63,13 +63,13 @@ A lightweight server monitoring hub with historical data, docker stats, and aler
 
 **Hub**
 
-| Host Device                                                          | Method                                    | Container Name | Image            | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name | Image            | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `beszel-hub`   | `henrygd/beszel` | ![status badge](https://uptime.rac3r4life.online/api/badge/31/status?label=){ style='vertical-align: middle;' } | `8090`  |
 
 **Agents**
 
-| Host Device                                                                    | Method                                    | Container Name | Image                        | Status                                                                                                          | Port(s) |
+| Host Device                                                                    | Method                                    | Container Name | Image                        | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :----------------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md)         | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | ![status badge](https://uptime.rac3r4life.online/api/badge/71/status?label=){ style='vertical-align: middle;' } | `45876` |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)           | :symbols-container:&nbsp;Docker Container | `beszel-agent` | `henrygd/beszel-agent`       | ![status badge](https://uptime.rac3r4life.online/api/badge/32/status?label=){ style='vertical-align: middle;' } | `45876` |

@@ -80,7 +80,7 @@ Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that 
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                                    | Container Name      | Image                           | Status                                                                                                          | Port(s) |
+| Host Device                                                            | Method                                    | Container Name      | Image                           | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :--------------------------------------------------------------------- | :---------------------------------------- | :------------------ | :------------------------------ | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-layers:&nbsp;Debian Server](../02_hardware/debian_server.md) | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/99/status?label=){ style='vertical-align: middle;' } | `60123` |
 | [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md)   | :symbols-container:&nbsp;Docker Container | `cloudflare-tunnel` | `cloudflare/cloudflared:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/64/status?label=){ style='vertical-align: middle;' } | `60123` |

@@ -53,7 +53,7 @@ Lightweight, open-source Web server written in Go. Used as a _reverse-proxy_ for
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                                    | Method                                      | Container Name | Image | Status                                                                                                           | Port(s)         |
+| Host Device                                                                    | Method                                      | Container Name | Image | Status { data-sort-method="none" }                                                                               | Port(s)         |
 | :----------------------------------------------------------------------------- | :------------------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :-------------- |
 | [:symbols-server:&nbsp;Pi Zero 2W Server](../02_hardware/pi_zero_2w_server.md) | :symbols-tux:&nbsp;Native Linux _(Systemd)_ | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/105/status?label=){ style='vertical-align: middle;' } | `80`&ensp;`443` |
 

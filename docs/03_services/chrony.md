@@ -50,7 +50,7 @@ A versatile implementation of the Network Time Protocol. It can synchronize the 
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                            | Method                          | Container Name | Image | Status                                                                                                           | Port(s) |
+| Host Device                                                            | Method                          | Container Name | Image | Status { data-sort-method="none" }                                                                               | Port(s) |
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/113/status?label=){ style='vertical-align: middle;' } | `123`   |
 

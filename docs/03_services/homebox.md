@@ -55,7 +55,7 @@ Homebox is the inventory and organization system built for the home user! With a
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                                   | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name | Image                                   | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :-------------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `homebox`      | `ghcr.io/sysadminsmedia/homebox:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/63/status?label=){ style='vertical-align: middle;' } | `3100`  |
 

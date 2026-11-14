@@ -72,7 +72,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                  | Status                                                                                                          | Port(s) |
+| Host Device                                                          | Method                                    | Container Name | Image                  | Status { data-sort-method="none" }                                                                              | Port(s) |
 | :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :--------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `gotify`       | `gotify/server:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/85/status?label=){ style='vertical-align: middle;' } | `8180`  |
 

@@ -1,5 +1,5 @@
 ---
-icon: services/f1-replay-timing
+icon: brands/f1
 title: F1 Replay Timing
 subtitle: All of the Data
 description: Visualization of real-time track data and telemetry synced to F1 live and replays.
@@ -11,8 +11,7 @@ hide:
   - toc
 ---
 
-![F1 Replay Timing Icon](../assets/icons/f1-replay-timing-light.svg#only-light){ width=200 }
-![F1 Replay Timing Icon](../assets/icons/f1-replay-timing-dark.svg#only-dark){ width=200 }
+![F1 Replay Timing Icon](../assets/icons/f1-replay-timing.png){ .no-shadow width=200 }
 
 # F1 Replay Timing
 

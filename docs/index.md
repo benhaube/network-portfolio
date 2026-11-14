@@ -152,7 +152,7 @@ hide:
 [:services-dockge:&ensp;Dockge](03_services/dockge.md) 
 : A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 
-[:services-f1-replay-timing:&ensp;F1 Replay Timing](03_services/f1_replay_timing.md) 
+[:brands-f1:&ensp;F1 Replay Timing](03_services/f1_replay_timing.md) 
 : Visualization of real-time track data and telemetry synced to F1 live and replays.
 
 [:services-fluidd:&ensp;Fluidd](03_services/fluidd.md)

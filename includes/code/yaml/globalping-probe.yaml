@@ -1,0 +1,16 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/globalping-color.svg
+  urls:
+    - https://globalping.io/
+    - https://github.com/jsdelivr/globalping
+
+services:
+  globalping-probe:
+    container_name: globalping-probe
+    image: globalping/globalping-probe
+    restart: always
+    network_mode: host
+    logging:
+      driver: local
+    environment:
+      - GP_ADOPTION_TOKEN=${TOKEN}

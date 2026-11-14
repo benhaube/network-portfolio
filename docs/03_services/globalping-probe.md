@@ -6,8 +6,10 @@ description: A global network of probes to run network tests like ping, tracerou
 tags:
   - Active
   - Container
+  - Monitor
+  - Network
   - Service
-  - Software
+  - Tools
 hide:
   - toc
 ---

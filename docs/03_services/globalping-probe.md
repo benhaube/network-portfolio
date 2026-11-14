@@ -1,9 +1,8 @@
 ---
 icon: services/globalping
 title: Globalping Probe
-subtitle: Subtitle
-description: Description
-status: new
+subtitle: Global Network of Probes
+description: A global network of probes to run network tests like ping, traceroute and DNS resolve.
 tags:
   - Active
   - Container
@@ -13,55 +12,55 @@ hide:
   - toc
 ---
 
-![Page Title Icon](../assets/icons/icon.svg){ width=200 }
+![Globalping logo](../assets/icons/globalping.svg){ width=200 }
 
-# Title
+# Globalping Probe
 
-_Subtitle_
+_Global Network of Probes_
 
-[GitHub&ensp;:brands-github:](https://github.com){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://docs.github.com/en){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/jsdelivr/globalping){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://globalping.io/){ .md-button .md-button--primary }&emsp;[Dashboard&ensp;:symbols-layout-dashboard:](https://dash.globalping.io/){ .md-button .md-button--primary }
 
 ---
 
-![Service screenshot](../assets/screenshots/screenshot.png){ width=400 align=right .on-glb }
+![Service screenshot](../assets/screenshots/globalping-dash-light.png#only-light){ width=400 align=right .on-glb }
+![Service screenshot](../assets/screenshots/globalping-dash-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 
-Insert description of service here
+Globalping allows anyone to run networking commands such as `ping`, `traceroute`, `dig`, and `mtr` on probes distributed around the globe. Gain insights into your network routing from any location in the world! Troubleshoot anycast issues, monitor CDN and DNS performance, perform uptime monitoring, and build your own network tools for personal or public use.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/#/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/#/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/#/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/{user}/{repo}?label=Release&color=%23{color})
+![status badge](https://uptime.rac3r4life.online/api/badge/79/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/79/uptime)&ensp;![Docker image version badge](https://img.shields.io/docker/v/globalping/globalping-probe/latest?color=17D4A7)
 
 **Port(s)**
 
-:    `1234`
+:    `N/A`
 
 **URL / Access** 
 
-:    <https://example.com>
+:    <https://dash.globalping.io>
 
-**Credentials** 
+**Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
-    - Folder&ensp;:symbols-move-right:&ensp;"Credential Entry"
+-   [:brands-github:&ensp;GitHub OAuth](https://github.com/settings/developers){ external-link }
+{ .no-bullets }
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Globalping Token"
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                      | Method                                    | Container Name   | Image            | Status                                                                                                         | Port(s) |
-| :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- | :------------------------------------------------------------------------------------------------------------- | :------ |
-| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `1234`  |
-| [:devices-icon:&nbsp;Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `1234`  |
+| Host Device                                                          | Method                                    | Container Name     | Image                                | Status                                                                                                          | Port(s) |
+| :------------------------------------------------------------------- | :---------------------------------------- | :----------------- | :----------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------ |
+| [:symbols-server:&nbsp;Pi 4B Server](../02_hardware/pi_4b_server.md) | :symbols-container:&nbsp;Docker Container | `globalping-probe` | `globalping/globalping-probe:latest` | ![status badge](https://uptime.rac3r4life.online/api/badge/79/status?label=){ style='vertical-align: middle;' } | `-`     |
 
 ---
 
 ## :symbols-settings:&ensp;Configuration
 
-``` bash title="" linenums="1"
-# Paste your docker-compose.yaml or docker run command here!
-docker run -d \
-  --name=homeassistant \
-  --restart=unless-stopped \
-  -v /path/to/config:/config \
-  --network=host \
-  homeassistant/home-assistant:stable
+--8<-- "managed-by-arcane.md"
+
+### :symbols-file-code-corner:&ensp;Docker Compose File
+
+``` yaml { .mono-title title="/opt/stacks/globalping/compose.yaml" }
+--8<-- "globalping-probe.yaml"
 ```

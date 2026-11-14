@@ -75,7 +75,8 @@
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/authentik.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/arcane-agent-debian-vm.yaml",
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/arcane-agent-pi-server.yaml",
-            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/arcane-manager-zimaos.yaml"
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/arcane-manager-zimaos.yaml",
+            "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/globalping-probe.yaml"
         ],
         "https://raw.githubusercontent.com/not-first/glance-schema/master/schema.json": [
             "file:///home/bhaube/Development/network-portfolio/includes/code/yaml/glance.yml",

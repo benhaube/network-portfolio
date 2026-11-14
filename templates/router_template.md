@@ -57,15 +57,15 @@ Router description goes here.
 
 #### :symbols-globe:&ensp;WAN Connection
 
-| Interface { data-sort-method="number" }                                                                                   | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" } |
-| :------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :--------------------------------------- |
-| `wan0`&ensp;![wan0 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | -                                        |
+| Interface { data-sort-method="number" } | Status { data-sort-method="none" }                                                                            | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To { data-sort-method="none" } |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :--------------------------------------- |
+| `wan0`                                  | ![wan0 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | -                                        |
 
 #### :symbols-network:&ensp;Virtual Local Networks
 
-| VLAN { data-sort-method="number" }                                                                                          | Domain | DNS Server(s) { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } | Subnet { data-sort-method="dotsep" } | Subnet Mask { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
-| :-------------------------------------------------------------------------------------------------------------------------- | :----- | :---------------------------------------- | :------------------------------------ | :----------------------------------- | :---------------------------------------- | :-------------------------------------- | :------------------------------------- |
-| VLAN50&ensp;![VLAN50 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | domain | `x.x.x.x` `x.x.x.x`                       | `x.x.x.1`                             | `x.x.x.x/xx`                         | `255.x.x.x`                               | `x.x.x.255`                             | `.x` to `.xxx`                         |
+| VLAN { data-sort-method="number" } | Status { data-sort-method="none" }                                                                              | DNS Server(s) { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } | Subnet { data-sort-method="dotsep" } | Subnet Mask { data-sort-method="dotsep" } | Broadcast { data-sort-method="dotsep" } | DHCP Range { data-sort-method="none" } |
+| :--------------------------------- | :-------------------------------------------------------------------------------------------------------------- | :------------------------------------------ | :------------------------------------ | :----------------------------------- | :---------------------------------------- | :-------------------------------------- | :------------------------------------- |
+| VLAN50                             | ![VLAN50 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `x.x.x.x` `x.x.x.x`                         | `x.x.x.1`                             | `x.x.x.x/xx`                         | `255.x.x.x`                               | `x.x.x.255`                             | `.x` to `.xxx`                         |
 
 #### :symbols-wifi-lock:&ensp;Wi-Fi Networks
 
@@ -102,13 +102,13 @@ Router description goes here.
 
 #### :symbols-tux:&ensp;Native
 
-| Service                                                  | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| Service                                                  | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                             | Role / Notes { data-sort-method="none" } |
 | :------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
 | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 #### :symbols-container:&ensp;Container
 
-| Service                                                  | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| Service                                                  | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                             | Role / Notes { data-sort-method="none" } |
 | :------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
 | [:service-icon:&nbsp;Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 

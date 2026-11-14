@@ -47,7 +47,7 @@ Insert description of service here
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                      | Method                                    | Container Name   | Image            | Status                                                                                                         | Port(s) |
+| Host Device                                      | Method                                    | Container Name   | Image            | Status { data-sort-method="none" }                                                                             | Port(s) |
 | :----------------------------------------------- | :---------------------------------------- | :--------------- | :--------------- | :------------------------------------------------------------------------------------------------------------- | :------ |
 | [:devices-icon:&nbsp;Device](device_template.md) | :symbols-container:&nbsp;Docker Container | `container-name` | `image_name:tag` | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `1234`  |
 | [:devices-icon:&nbsp;Device](device_template.md) | :symbols-tux:&nbsp;Native Linux           | `N/A`            | `N/A`            | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `1234`  |

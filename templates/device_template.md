@@ -60,9 +60,9 @@ Device description goes here.
 
 ### :symbols-network:&ensp;Network Configuration
 
-| Interface                                                                                                                   | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                  |
-| :-------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :---------------------------- |
-| enp7s0&ensp;![enp7s0 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
+| Interface | Status { data-sort-method="none" }                                                                              | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                  |
+| :-------- | :-------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :---------------------------- |
+| enp7s0    | ![enp7s0 status](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | `x.x.x.x`                                | `XX:XX:XX:XX:XX:XX` | :symbols-ethernet-port:&nbsp; |
 
 | Interface | VLAN   | FQDN               | DNS Servers { data-sort-method="none" } | Gateway { data-sort-method="dotsep" } |
 | :-------- | :----- | :----------------- | :-------------------------------------- | :------------------------------------ |
@@ -86,19 +86,19 @@ Device description goes here.
 
 #### :symbols-layers:&ensp;Virtualization
 
-| OS                                       | Virtual NIC             | Virtual Disk Image | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| OS                                       | Virtual NIC             | Virtual Disk Image | Status { data-sort-method="none" }                                                                             | Role / Notes { data-sort-method="none" } |
 | :--------------------------------------- | :---------------------- | :----------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
 | :os-icon:&nbsp;[OS](https://example.com) | Virtual Network _(NAT)_ | `disk-image.qcow2` | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 #### :symbols-tux:&ensp;Native Linux
 
-| Service                                                   | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| Service                                                   | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                             | Role / Notes { data-sort-method="none" } |
 | :-------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
 | :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 
 #### :symbols-container:&ensp;Docker
 
-| Service                                                   | Port(s) { data-sort-method="number" } | Status                                                                                                         | Role / Notes { data-sort-method="none" } |
+| Service                                                   | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                             | Role / Notes { data-sort-method="none" } |
 | :-------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------- |
 | :services-icon:&nbsp;[Service](../03_Services/Service.md) |                `XXXX`                 | ![status badge](https://uptime.rac3r4life.online/api/badge/#/status?label=){ style='vertical-align: middle;' } | -                                        |
 

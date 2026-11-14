@@ -1,5 +1,5 @@
 ---
-icon: services/docker
+icon: services/docker-proxy
 title: Docker Proxy
 subtitle: Proxy Over Docker Socket
 description: Proxy over your Docker socket to restrict which requests it accepts.
@@ -13,7 +13,7 @@ hide:
   - toc
 ---
 
-![Docker icon](../assets/icons/docker.svg){ width=200 }
+![Docker icon](../assets/icons/docker-proxy.svg){ width=200 }
 
 # Docker Proxy
 

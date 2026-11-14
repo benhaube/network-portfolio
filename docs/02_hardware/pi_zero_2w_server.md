@@ -63,9 +63,9 @@ A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving un
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface                                                                                                                     | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :---------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-| `wlan0`&ensp;![wlan0 status](https://uptime.rac3r4life.online/api/badge/121/status?label=){ style='vertical-align: middle;' } | `192.168.50.3`                           | `2c:cf:67:db:f5:e2` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| Interface | Status { data-sort-method="none" }                                                                               | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
+| :-------- | :--------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlan0`   | ![wlan0 status](https://uptime.rac3r4life.online/api/badge/121/status?label=){ style='vertical-align: middle;' } | `192.168.50.3`                           | `2c:cf:67:db:f5:e2` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
 | Interface | VLAN { data-sort-method="number" } | FQDN               | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------- | :--------------------------------: | :----------------- | :---------------------------------------- | :------------------------------------ |

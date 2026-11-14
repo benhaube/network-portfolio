@@ -66,9 +66,9 @@ The Creality K1C 3D-printer located in the office upstairs, and connected to the
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface                                                                                                                     | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :---------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-| `wlan0`&ensp;![status badge](https://uptime.rac3r4life.online/api/badge/169/status?label=){ style='vertical-align: middle;' } | `192.168.50.15`                          | `FC:EE:28:09:A7:1E` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| Interface | Status { data-sort-method="none" }                                                                               | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
+| :-------- | :--------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlan0`   | ![status badge](https://uptime.rac3r4life.online/api/badge/169/status?label=){ style='vertical-align: middle;' } | `192.168.50.15`                          | `FC:EE:28:09:A7:1E` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
 | Interface | VLAN { data-sort-method="number" } | FQDN             | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------- | :--------------------------------- | :--------------- | :---------------------------------------- | :------------------------------------ |

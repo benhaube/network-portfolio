@@ -66,10 +66,10 @@ The secondary DNS server in the [Technitium](../03_services/technitium.md#overvi
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface                                                                                                                     | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                 |
-| :---------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
-| `eth0`&ensp;![eth0 status](https://uptime.rac3r4life.online/api/badge/120/status?label=){ style='vertical-align: middle;' }   | `192.168.50.2`                           | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(port 3, VLAN50)_ |
-| `wlan0`&ensp;![wlan0 status](https://uptime.rac3r4life.online/api/badge/131/status?label=){ style='vertical-align: middle;' } | `192.168.53.2`                           | `E4:5F:01:A4:60:08` | [:symbols-wifi-lock:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN53)_                |
+| Interface | Status { data-sort-method="none" }                                                                               | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                                 |
+| :-------- | :--------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
+| `eth0`    | ![eth0 status](https://uptime.rac3r4life.online/api/badge/120/status?label=){ style='vertical-align: middle;' }  | `192.168.50.2`                           | `E4:5F:01:A4:60:07` | [:symbols-ethernet-port:&nbsp;TP-Link Switch](tp-link_switch.md#port-map){ data-preview } _(port 3, VLAN50)_ |
+| `wlan0`   | ![wlan0 status](https://uptime.rac3r4life.online/api/badge/131/status?label=){ style='vertical-align: middle;' } | `192.168.53.2`                           | `E4:5F:01:A4:60:08` | [:symbols-wifi-lock:&nbsp;2G_IoT](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN53)_                |
 
 | Interface | VLAN { data-sort-method="number" } | FQDN                 | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------- | :--------------------------------- | :------------------- | :---------------------------------------- | :------------------------------------ |

@@ -65,9 +65,9 @@ The primary DNS server in the [Technitium](../03_services/technitium.md#overview
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface                                                                                                                       | IP Address { data-sort-method="dotsep" } | MAC Address         | Notes { data-sort-method="none" }                                             |
-| :------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
-| `enp1s0`&ensp;![enp1s0 status](https://uptime.rac3r4life.online/api/badge/119/status?label=){ style='vertical-align: middle;' } | `192.168.50.6`                           | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter _(Appears as separate device on LAN)_ |
+| Interface | Status { data-sort-method="none" }                                                                                | IP Address { data-sort-method="dotsep" } | MAC Address         | Notes { data-sort-method="none" }                                             |
+| :-------- | :---------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :---------------------------------------------------------------------------- |
+| `enp1s0`  | ![enp1s0 status](https://uptime.rac3r4life.online/api/badge/119/status?label=){ style='vertical-align: middle;' } | `192.168.50.6`                           | `52:54:00:28:BB:EA` | :symbols-workflow:&nbsp;Bridged Adapter _(Appears as separate device on LAN)_ |
 
 | Interface | VLAN { data-sort-method="number" } | FQDN                 | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :-------- | :--------------------------------- | :------------------- | :---------------------------------------- | :------------------------------------ |

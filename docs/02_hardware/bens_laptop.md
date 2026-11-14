@@ -99,9 +99,9 @@ Ben's main laptop PC, a ThinkPad X1 Yoga, used primarily for getting work done o
 
 ## :symbols-network:&ensp;Network Configuration
 
-| Interface { data-sort-method="number" }                                                                                               | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
-| :------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
-| `wlp0s20f3`&ensp;![wlp0s20f3 status](https://uptime.rac3r4life.online/api/badge/161/status?label=){ style='vertical-align: middle;' } | `192.168.50.20`                          | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
+| Interface { data-sort-method="number" } | Status { data-sort-method="none" }                                                                                   | IP Address { data-sort-method="dotsep" } | MAC Address         | Connected To                                                                                |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------- | :--------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
+| `wlp0s20f3`                             | ![wlp0s20f3 status](https://uptime.rac3r4life.online/api/badge/161/status?label=){ style='vertical-align: middle;' } | `192.168.50.20`                          | `A6:97:E3:D2:F1:C4` | [:symbols-wifi-lock:&nbsp;Home](asus_rt-be92u.md#wi-fi-networks){ data-preview } _(VLAN50)_ |
 
 | Interface   | VLAN { data-sort-method="number" } | FQDN                   | DNS Servers { data-sort-method="dotsep" } | Gateway { data-sort-method="dotsep" } |
 | :---------- | :--------------------------------- | :--------------------- | :---------------------------------------- | :------------------------------------ |

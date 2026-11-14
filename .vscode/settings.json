@@ -350,6 +350,7 @@
         "tmpfiles",
         "tmpfs",
         "TOTP",
+        "traceroute",
         "trixie",
         "ttyd",
         "ttydbridge",

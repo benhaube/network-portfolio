@@ -57,6 +57,10 @@ An open-source Identity Provider for modern SSO. It supports SAML, OAuth2 / OIDC
     - Local Network&ensp;:symbols-move-right:&ensp;"Authentik (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Authentik (bhaube)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Authentik (rpereira)"
+-   [:brands-ente-auth:&ensp;Ente Auth](https://auth.ente.com/login "Login – Ente Auth"){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Authentik Admin"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Authentik User"
 -   2FA / MFA
 { .no-bullets }
     - :symbols-clock-key:&ensp;TOTP

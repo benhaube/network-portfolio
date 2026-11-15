@@ -53,6 +53,9 @@ Contains the command-line client for Cloudflare Tunnel, a tunneling daemon that 
 - [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Software&ensp;:symbols-move-right:&ensp;"Cloudflare Dashboard"
+-   [:brands-ente-auth:&ensp;Ente Auth](https://auth.ente.com/login "Login – Ente Auth"){ external-link }
+{ .no-bullets }
+    - Software&ensp;:symbols-move-right:&ensp;"Cloudflare"
 - 2FA / MFA
 { .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn

@@ -60,6 +60,9 @@ An open-source authoritative as well as recursive DNS server that can be used fo
 - [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
+-   [:brands-ente-auth:&ensp;Ente Auth](https://auth.ente.com/login "Login – Ente Auth"){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Technitium"
 - 2FA / MFA
 { .no-bullets }
     - :symbols-clock-key:&ensp;TOTP

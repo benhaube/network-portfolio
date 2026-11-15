@@ -49,6 +49,9 @@ Open-source home automation that puts local control and privacy first. Powered b
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
+-   [:brands-ente-auth:&ensp;Ente Auth](https://auth.ente.com/login "Login – Ente Auth"){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
 -   2FA / MFA
 { .no-bullets }
     - :symbols-clock-key:&ensp;TOTP

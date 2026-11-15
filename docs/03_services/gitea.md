@@ -64,6 +64,10 @@ Painless, self-hosted, all-in-one software development service. Including Git ho
     - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Gitea (benhaube)"
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Gitea"
+-   [:brands-ente-auth:&ensp;Ente Auth](https://auth.ente.com/login "Login – Ente Auth"){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Gitea Admin"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Gitea User"
 - 2FA / MFA
 { .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn

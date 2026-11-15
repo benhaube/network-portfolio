@@ -63,6 +63,10 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Healthchecks Admin"
     - Local Network&ensp;:symbols-move-right:&ensp;"Healthchecks User"
+-   [:brands-ente-auth:&ensp;Ente Auth](https://auth.ente.com/login "Login – Ente Auth"){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Healthchecks Admin"
+    - Local Network&ensp;:symbols-move-right:&ensp;"Healthchecks User"
 -   2FA / MFA
 { .no-bullets }
     - :symbols-key-fido2:&ensp;FIDO2 / WebAuthn

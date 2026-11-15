@@ -55,6 +55,9 @@ A lightweight server monitoring hub with historical data, docker stats, and aler
 - [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Beszel Hub"
+-   [:brands-ente-auth:&ensp;Ente Auth](https://auth.ente.com/login "Login – Ente Auth"){ external-link }
+{ .no-bullets }
+    - Local Network&ensp;:symbols-move-right:&ensp;"Beszel"
 - 2FA / MFA
 { .no-bullets }
     - :symbols-clock-key:&ensp;TOTP

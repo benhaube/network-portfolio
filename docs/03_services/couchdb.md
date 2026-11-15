@@ -34,7 +34,8 @@ Seamless multi-primary syncing database with an intuitive HTTP / JSON API, desig
 
 **Port(s)**
 
-:    `5984`
+- `5984`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -49,8 +50,8 @@ Seamless multi-primary syncing database with an intuitive HTTP / JSON API, desig
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"CouchDB (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"CouchDB (bhaube)"
 

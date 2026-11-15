@@ -33,9 +33,10 @@ A "bridge" to the host environment, allowing you to easily use the host terminal
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/110/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/110/uptime)&ensp;![Docker Image Version](https://img.shields.io/docker/v/cp0204/ttydbridge?label=Release&color=%23FFAA00)
 
-**Port(s)** 
+**Port(s)**
 
-:    `2222`
+- `2222`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -46,8 +47,8 @@ A "bridge" to the host environment, allowing you to easily use the host terminal
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-package-search:&ensp;Deployment Details

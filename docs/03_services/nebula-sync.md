@@ -32,10 +32,10 @@ Synchronize configuration between multiple [Pi-hole](pi-hole.md#overview){ data-
 
 ![Docker Image Version](https://img.shields.io/docker/v/lovelaze/nebula-sync?label=Release&color=%23f42e1c)
 
-**Credentials** 
+**Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-zero"
     - Local Network&ensp;:symbols-move-right:&ensp;"Pihole Admin @ pi-server"
 

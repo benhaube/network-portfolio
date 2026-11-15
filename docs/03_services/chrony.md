@@ -32,7 +32,8 @@ A versatile implementation of the Network Time Protocol. It can synchronize the 
 
 **Port(s)**
 
-:    `123`
+- `123`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -43,10 +44,10 @@ A versatile implementation of the Network Time Protocol. It can synchronize the 
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
-      - SSH Key&ensp;:symbols-move-right:&ensp;"admin@asusrouter"
+    - SSH Key&ensp;:symbols-move-right:&ensp;"admin@asusrouter"
 
 ## :symbols-package-search:&ensp;Deployment Details
 

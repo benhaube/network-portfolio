@@ -31,9 +31,10 @@ A simple server for sending and receiving messages in real-time per WebSocket. _
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/85/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/85/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/142/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/gotify/server?label=Release&color=%2372C7EC)
 
-**Port(s)** 
+**Port(s)**
 
-:     `8180`
+-    `8180`
+{ .no-bullets }
 
 **URL / Access**
 

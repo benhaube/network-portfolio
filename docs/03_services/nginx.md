@@ -31,9 +31,10 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/87/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/87/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/145/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/nginx/nginx?label=Release&color=%2300963B)
 
-**Port(s)** 
+**Port(s)**
 
-:    `8080`
+- `8080`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -46,8 +47,8 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-package-search:&ensp;Deployment Details

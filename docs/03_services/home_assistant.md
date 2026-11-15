@@ -32,9 +32,10 @@ Open-source home automation that puts local control and privacy first. Powered b
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/8/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/8/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/137/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/home-assistant/core?label=Release&color=%2318bcf2)
 
-**Port(s)** 
+**Port(s)**
 
-:    `8123`
+- `8123`
+{ .no-bullets }
 
 **URL / Access**  
 

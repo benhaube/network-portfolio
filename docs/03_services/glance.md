@@ -44,7 +44,8 @@ A self-hosted dashboard built for people who want their information in one place
 
 **URL / Access**
 
-:    <http://pi-server.internal:8580/>
+-  <http://pi-server.internal:8580/>
+{ .no-bullets }
 
 **Credentials**
 

@@ -40,7 +40,8 @@ The Creality K1C 3D-printer located in the office upstairs, and connected to the
 
 **Hostname**
 
-:    `k1c-a71e`
+- `k1c-a71e`
+{ .no-bullets }
 
 **OS / Firmware**
 
@@ -53,8 +54,8 @@ The Creality K1C 3D-printer located in the office upstairs, and connected to the
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Root User @ Kacey"
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Kacey (root)"

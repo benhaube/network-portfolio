@@ -33,16 +33,18 @@ Moonraker is a Python 3 based web server that exposes APIs with which client app
 
 **Port(s)**
 
-:    `7125`
+- `7125`
+{ .no-bullets }
 
-**URL / Access**   
+**URL / Access**  
 
-:    <http://kacey.internal:7125>
+- <http://kacey.internal:7125>
+{ .no-bullets }
 
-**Credentials** 
+**Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
 ## :symbols-package-search:&ensp;Deployment Details

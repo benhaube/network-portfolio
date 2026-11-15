@@ -33,9 +33,10 @@ An extremely simple yet fast and modern VPN that utilizes state-of-the-art crypt
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/114/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/114/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/wg-easy/wg-easy?label=Release&color=%2382201E)
 
-**Port(s)** 
+**Port(s)**
 
-:    `41820`
+- `41820`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -48,14 +49,14 @@ An extremely simple yet fast and modern VPN that utilizes state-of-the-art crypt
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
 
 **Client Profiles**
 
-:    :symbols-router:&ensp;ASUS RT-BE92U:
-
+-   :symbols-router:&ensp;ASUS RT-BE92U:
+{ .no-bullets }
     - `Ben's-Phone`
     - `Ben's-Laptop`
     - `Rob's-Phone`

@@ -38,16 +38,18 @@ The primary rack-mounted NAS server & VM host for the local network. With a [Zim
 
 **Hostname**
 
-:    `ZimaOS-NAS`
+- `ZimaOS-NAS`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link }&ensp;![ZimaOS release version](https://img.shields.io/github/v/release/IceWhaleTech/ZimaOS?label=&color=%23FFAA00){ style="vertical-align: middle;" }
+- [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link }&ensp;![ZimaOS release version](https://img.shields.io/github/v/release/IceWhaleTech/ZimaOS?label=&color=%23FFAA00){ style="vertical-align: middle;" }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+- [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (bhaube)"
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (rpereira)"  

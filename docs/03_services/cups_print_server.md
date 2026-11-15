@@ -32,7 +32,8 @@ A standards-based, open-source printing system for Linux and other Unix-like ope
 
 **Port(s)**
 
-:    `631`
+- `631`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -46,8 +47,8 @@ A standards-based, open-source printing system for Linux and other Unix-like ope
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"CUPS Admin"&emsp;:symbols-info:{ title="Login needed for Administration, but anyone on the local network can print." }
 
 ## :symbols-package-search:&ensp;Deployment Details

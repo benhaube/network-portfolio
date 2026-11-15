@@ -34,7 +34,8 @@ High performance extendable Web-UI and RPC server for `yt-dlp` with low impact o
 
 **Port(s)**
 
-:    `3033`
+- `3033`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -45,8 +46,8 @@ High performance extendable Web-UI and RPC server for `yt-dlp` with low impact o
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"yt-dlp-webui"
 
 ## :symbols-package-search:&ensp;Deployment Details

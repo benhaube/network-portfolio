@@ -34,16 +34,18 @@ KRDP is a Remote Desktop Protocol server implementation for the KDE Plasma deskt
 
 **Port(s)**
 
-:    `3389`
+- `3389`
+{ .no-bullets }
 
-**URL / Access**   
+**URL / Access**  
 
-:    [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
+- [rdp://bens-workstation.internal:3389](rdp://192.168.50.67:3389)
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }  
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
 
 ## :symbols-package-search:&ensp;Deployment Details

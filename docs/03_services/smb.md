@@ -36,7 +36,8 @@ Samba is an open-source software suite that has, since 1992, provided file and p
 
 **Port(s)**
 
-:    `445`
+- `445`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -53,8 +54,8 @@ Samba is an open-source software suite that has, since 1992, provided file and p
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
     - Local Network&ensp;:symbols-move-right:&ensp;"Pi 4B Server (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"

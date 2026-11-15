@@ -32,7 +32,8 @@ A rack-mounted 2.5 gigabit switch in the living room with a 10 Gb/s SFP+ uplink 
 
 **Power Source**
 
-:   :symbols-plug:&ensp;Wall wart _(12.0V / 1.0A)_
+- :symbols-plug:&ensp;Wall wart _(12.0V / 1.0A)_
+{ .no-bullets }
 
 **Specs**
 

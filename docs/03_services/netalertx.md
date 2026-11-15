@@ -49,10 +49,10 @@ Centralized network visibility and continuous asset discovery. Monitor devices, 
 - <http://storage-server-2.internal:20211>
 { .no-bullets }
 
-**Credentials** 
+**Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"NetAlertX"
 
 ## :symbols-package-search:&ensp;Deployment Details

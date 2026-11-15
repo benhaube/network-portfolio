@@ -36,7 +36,8 @@ The **Open Home Foundation** Matter Server serves as the foundation to provide M
 
 **Port(s)**
 
-:    `5580`
+- `5580`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -45,10 +46,10 @@ The **Open Home Foundation** Matter Server serves as the foundation to provide M
 - <https://home.rac3r4life.online/config/matter/dashboard>
 { .no-bullets }
 
-**Credentials** 
+**Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Home Assistant"
 
 ## :symbols-package-search:&ensp;Deployment Details

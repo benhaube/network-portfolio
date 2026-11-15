@@ -36,7 +36,8 @@ A self-hosted search engine aggregator with a comprehensive plugin / extension s
 
 **Port(s)**
 
-:    `4444`
+- `4444`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -47,8 +48,8 @@ A self-hosted search engine aggregator with a comprehensive plugin / extension s
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Degoog Settings"
 
 ## :symbols-package-search:&ensp;Deployment Details

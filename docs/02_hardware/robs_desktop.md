@@ -32,16 +32,18 @@ Rob's main workstation PC located at his desk in the office upstairs. Connected 
 
 **Hostname**
 
-:    `Rob-Desktop`
+- `Rob-Desktop`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
+- [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Desktop PC"
 
 ### :symbols-brick-wall-shield:&ensp;Device Security

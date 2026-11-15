@@ -34,9 +34,10 @@ A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented man
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/57/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/57/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/louislam/dockge?label=Release&color=%2370C0FE)
 
-**Port(s)** 
+**Port(s)**
 
-:    `5001`
+- `5001`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -51,8 +52,8 @@ A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented man
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ Debian Server"
     - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ Pi 4B Server"
     - Local Network&ensp;:symbols-move-right:&ensp;"Dockge @ Pi Zero Server"

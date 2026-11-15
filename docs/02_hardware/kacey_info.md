@@ -30,19 +30,23 @@ _Detailed Configuration Info_
 
 **Model**
 
-:    Creality^&copy;^ K1C
+- Creality^&copy;^ K1C
+{ .no-bullets }
 
 **Build Volume**
 
-:    `220x220x250`
+- `220x220x250`
+{ .no-bullets }
 
 **Revision**
 
-:    v2.0.5  
+- v2.0.5  
+{ .no-bullets }
 
 **Create Date**
 
-:    2023/09/05
+- 2023/09/05
+{ .no-bullets }
 
 ### :symbols-circuit-board:&ensp;Printer MCU
 
@@ -71,12 +75,13 @@ _Detailed Configuration Info_
 
 **URL**
 
-:    <http://kacey.internal:7125>
+- <http://kacey.internal:7125>
+{ .no-bullets }
 
 **API Key**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
 ### :services-fluidd:&ensp;Fluidd

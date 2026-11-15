@@ -41,10 +41,10 @@ Visualization of real-time track data and telemetry synced to F1 live and replay
 - <http://storage-server-2.internal:8000>
 { .no-bullets }
 
-**Credentials** 
+**Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"F1 Replay Timing"
 
 ## :symbols-package-search:&ensp;Deployment Details

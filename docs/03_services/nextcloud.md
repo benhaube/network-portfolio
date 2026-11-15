@@ -32,7 +32,8 @@ Self-hosted cloud storage and collaboration platform.
 
 **Port(s)**
 
-:    `10081`
+- `10081`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -43,8 +44,8 @@ Self-hosted cloud storage and collaboration platform.
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (admin)"
     - Local Network&ensp;:symbols-move-right:&ensp;"Nextcloud (bhaube)"
 

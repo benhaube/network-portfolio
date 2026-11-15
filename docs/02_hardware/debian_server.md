@@ -37,24 +37,28 @@ The primary DNS server in the [Technitium](../03_services/technitium.md#overview
 
 **Hostname**
 
-:    `debian-vm`
+- `debian-vm`
+{ .no-bullets }
 
-**Hypervisor** 
+**Hypervisor**
 
-:    [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(KVM / QEMU)_
+- [:services-zimaos:&ensp;ZimaOS](https://www.zimaspace.com/zimaos "Download ZimaOS"){ external-link } _(KVM / QEMU)_
+{ .no-bullets }
 
-**Operating System** 
+**Operating System**
 
-:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link }&ensp;![trixie v13](https://img.shields.io/badge/trixie-v13-A80030){ style="vertical-align: middle;" }
+- [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link }&ensp;![trixie v13](https://img.shields.io/badge/trixie-v13-A80030){ style="vertical-align: middle;" }
+{ .no-bullets }
 
-**Host Node** 
+**Host Node**
 
-:    [:symbols-server-nas:&ensp;ZimaOS NAS](zimaos_nas.md#virtualization){ data-preview }
+- [:symbols-server-nas:&ensp;ZimaOS NAS](zimaos_nas.md#virtualization){ data-preview }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Debian Server (server-admin)"
 
 ### :symbols-square-activity:&ensp;Resource Allocation

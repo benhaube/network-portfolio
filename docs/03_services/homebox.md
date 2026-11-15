@@ -32,9 +32,10 @@ Homebox is the inventory and organization system built for the home user! With a
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/63/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/63/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/143/cert-exp)&ensp;![GitHub Release](https://img.shields.io/github/v/release/sysadminsmedia/homebox?label=Release&color=%235C7F67#only-light)![GitHub Release](https://img.shields.io/github/v/release/sysadminsmedia/homebox?label=Release&color=%23FF7AC6#only-dark)
 
-**Port(s)** 
+**Port(s)**
 
-:    `3100`
+- `3100`
+{ .no-bullets }
 
 **URL / Access**
 

@@ -38,16 +38,18 @@ A tiny, low-power server acting as a dedicated as Caddy reverse-proxy, giving un
 
 **Hostname**
 
-:    `pi-zero`
+- `pi-zero`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link }&ensp;![trixie v13](https://img.shields.io/badge/trixie-v13-A80030){ style="vertical-align: middle;" }
+- [:brands-debian:&ensp;Debian Linux](https://www.debian.org/distrib/ "Download Debian"){ external-link }&ensp;![trixie v13](https://img.shields.io/badge/trixie-v13-A80030){ style="vertical-align: middle;" }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Pi Zero Server (admin)"
 
 ### :symbols-map-pin:&ensp;Location

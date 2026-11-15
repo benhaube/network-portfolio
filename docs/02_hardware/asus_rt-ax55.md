@@ -34,20 +34,23 @@ A secondary router located on the stationary printer cart in the office upstairs
 
 **Hostname**
 
-:    `RT-AX55-1360`
+- `RT-AX55-1360`
+{ .no-bullets }
 
 **FQDN**
 
-:    `aimesh-node.internal`
+- `aimesh-node.internal`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:symbols-wizard-hat:&ensp;asuswrt](https://www.asus.com/us/content/asuswrt/){ external-link }&ensp;![3004.386_53370](https://img.shields.io/badge/3004.386__53370-1982FF){ style="vertical-align: middle;" }
+- [:symbols-wizard-hat:&ensp;asuswrt](https://www.asus.com/us/content/asuswrt/){ external-link }&ensp;![3004.386_53370](https://img.shields.io/badge/3004.386__53370-1982FF){ style="vertical-align: middle;" }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Asus Router (Admin)"
 

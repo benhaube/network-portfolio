@@ -34,20 +34,23 @@ The main wireless router and firewall for the local network. Located next to the
 
 **Hostname**
 
-:    `RT-BE92U-FAF0`
+- `RT-BE92U-FAF0`
+{ .no-bullets }
 
 **FQDN**
 
-:    `asusrouter.internal`
+- `asusrouter.internal`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }&ensp;![3006.102.9](https://img.shields.io/badge/3006.102.9-1982FF){ style="vertical-align: middle;" }
+- [:symbols-wizard-hat:&ensp;Asuswrt-Merlin](https://www.asuswrt-merlin.net/){ external-link }&ensp;![3006.102.9](https://img.shields.io/badge/3006.102.9-1982FF){ style="vertical-align: middle;" }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Asus Router"
     - SSH Keys&ensp;:symbols-move-right:&ensp;"Asus Router (Admin)"
 
@@ -268,7 +271,7 @@ Below is a list of QoS application categories in descending order from **highest
 
         :symbols-gauge:&ensp;**Bandwidth Setting:**
 
-        :    It is necessary to leave **"Bandwidth Setting"** set to **"Manual Setting"** for the `spdMerlin` script to automatically set the bandwidth based on the scheduled bandwidth test results. Though it may sound counter-intuitive, this is required for the feature to work.
+        :   It is necessary to leave **"Bandwidth Setting"** set to **"Manual Setting"** for the `spdMerlin` script to automatically set the bandwidth based on the scheduled bandwidth test results. Though it may sound counter-intuitive, this is required for the feature to work.
 
     ![Screenshot of ASUS Router QoS settings](../assets/screenshots/asus_router_qos_settings.png){ .on-glb width=500 }
 

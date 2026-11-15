@@ -35,16 +35,18 @@ Ben's main workstation PC located at his desk in the office upstairs. Connected 
 
 **Hostname**
 
-:    `bens-workstation`
+- `bens-workstation`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }&ensp;![Fedora kernel version](https://img.shields.io/fedora/v/kernel/f45?label=kernel&color=51A2DA){ style="vertical-align: middle;" }
+- [:brands-fedora:&ensp;Fedora Linux](https://fedoraproject.org/kde/ "Download Fedora (KDE Plasma)"){ external-link }&ensp;![Fedora kernel version](https://img.shields.io/fedora/v/kernel/f45?label=kernel&color=51A2DA){ style="vertical-align: middle;" }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Local User @ Ben's-Workstation"
 
 ### :symbols-brick-wall-shield:&ensp;Device Security

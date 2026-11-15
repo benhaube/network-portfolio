@@ -32,7 +32,8 @@ A gigabit desktop switch _(5-port)_ distributing Ethernet connections to devices
 
 **Power Source**
 
-:   :symbols-plug:&ensp;Wall Wart _(5V / 0.6A)_
+- :symbols-plug:&ensp;Wall Wart _(5V / 0.6A)_
+{ .no-bullets }
 
 **Specs**
 

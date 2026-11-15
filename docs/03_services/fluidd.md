@@ -47,8 +47,8 @@ A free and open-source Klipper web interface for managing your 3D-printer.
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"Fluidd (Creality K1C)"
 
 ## :symbols-package-search:&ensp;Deployment Details

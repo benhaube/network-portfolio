@@ -34,11 +34,8 @@ The DOCSIS 3.1 cable modem that communicates with the ISP _([Xfinity](https://ww
 
 **OS / Firmware**
 
-:    Hitron FW&ensp;![version 7.3.5.3.2b2](https://img.shields.io/badge/version-7.3.5.3.2b2-009CE5){ style='vertical-align: middle;' }
-
-**Credentials**
-
-:    N/A
+- Hitron FW&ensp;![version 7.3.5.3.2b2](https://img.shields.io/badge/version-7.3.5.3.2b2-009CE5){ style='vertical-align: middle;' }
+{ .no-bullets }
 
 ### :symbols-map-pin:&ensp;Location
 

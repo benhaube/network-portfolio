@@ -30,16 +30,18 @@ Ben's main mobile device. A Google Pixel 9 Pro connected to the Trusted Wi-Fi ne
 
 **Hostname**
 
-:    `ben-s-phone`
+- `ben-s-phone`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
+- [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Email&ensp;:symbols-move-right:&ensp;"Google"
 
 ### :symbols-brick-wall-shield:&ensp;Device Security

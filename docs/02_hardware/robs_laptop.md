@@ -32,16 +32,18 @@ Rob's laptop PC, an ASUS TUF Gaming laptop, used for work and gaming. A mobile d
 
 **Hostname**
 
-:    `ems1`
+- `ems1`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
+- [:brands-microsoft:&ensp;Windows 11 Pro](https://microsoft.com/windows){ external-link }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"PIN - Rob's Laptop PC"
 
 ### :symbols-brick-wall-shield:&ensp;Device Security

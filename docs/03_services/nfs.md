@@ -37,7 +37,8 @@ Allows remote hosts to mount file systems over a network and interact with those
 
 **Port(s)**
 
-:    `2049`
+- `2049`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -48,8 +49,8 @@ Allows remote hosts to mount file systems over a network and interact with those
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - SSH Keys&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 ## :symbols-package-search:&ensp;Deployment Details

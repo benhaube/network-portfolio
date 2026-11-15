@@ -30,16 +30,18 @@ Rob's main mobile device. A Samsung Galaxy S25+ connected to the Trusted Wi-Fi n
 
 **Hostname**
 
-:    `robert-s-s25`
+- `robert-s-s25`
+{ .no-bullets }
 
 **OS / Firmware**
 
-:    [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
+- [:brands-android-2:&ensp;Android 17](https://www.android.com/){ external-link }
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Email&ensp;:symbols-move-right:&ensp;"Google"
 
 ### :symbols-brick-wall-shield:&ensp;Device Security

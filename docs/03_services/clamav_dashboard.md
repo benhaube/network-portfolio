@@ -45,10 +45,6 @@ Anti-virus security dashboard for ZimaOS with automatic disk discovery, scan pro
 
 :    <http://storage-server.internal:8099>
 
-**Credentials**
-
-:    N/A
-
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                          | Method                                    | Container Name     | Image                                       | Status { data-sort-method="none" }                                                                              | Port(s) |

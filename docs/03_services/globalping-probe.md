@@ -33,13 +33,10 @@ Globalping allows anyone to run networking commands such as `ping`, `traceroute`
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/79/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/79/uptime)&ensp;![Docker image version badge](https://img.shields.io/docker/v/globalping/globalping-probe/latest?color=17D4A7)
 
-**Port(s)**
+**URL / Access**
 
-:    `N/A`
-
-**URL / Access** 
-
-:    <https://dash.globalping.io>
+-  <https://dash.globalping.io>
+{ .no-bullets }
 
 **Credentials**
 

@@ -32,14 +32,6 @@ Synchronize configuration between multiple [Pi-hole](pi-hole.md#overview){ data-
 
 ![Docker Image Version](https://img.shields.io/docker/v/lovelaze/nebula-sync?label=Release&color=%23f42e1c)
 
-**Port(s)**
-
-:    `N/A`
-
-**URL / Access** 
-
-:    N/A
-
 **Credentials** 
 
 :    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }

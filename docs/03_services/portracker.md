@@ -35,7 +35,8 @@ A self-hosted, real-time port monitoring and discovery tool.
 
 **Port(s)**
 
-:    `4999`
+- `4999`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -45,10 +46,6 @@ A self-hosted, real-time port monitoring and discovery tool.
 { .no-bullets }
 - <http://storage-server-2.internal:4999>
 { .no-bullets }
-
-**Credentials**
-
-:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

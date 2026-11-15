@@ -45,10 +45,6 @@ A web-based network traffic monitoring application released under GPLv3. It is t
 - <http://storage-server-2.internal:3000>
 { .no-bullets }
 
-**Credentials**
-
-:   N/A
-
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                          | Method                                    | Container Name | Image                | Port(s)            |

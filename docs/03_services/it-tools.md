@@ -47,10 +47,6 @@ Handy tools for network administrators and developers.
 - <https://it-tools.rac3r4life.online>
 { .no-bullets }
 
-**Credentials** 
-
-:    N/A
-
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                          | Method                                    | Container Name     | Image                             | Status { data-sort-method="none" }                                                                               | Port(s) |

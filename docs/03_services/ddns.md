@@ -32,18 +32,15 @@ A networking service that automatically maps a static domain name _(FQDN)_ to a 
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/116/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/116/uptime)&ensp;![cert expire badge](https://uptime.rac3r4life.online/api/badge/170/cert-exp)
 
-**Port(s)** 
+**URL / Access**
 
-:    `N/A`
-
-**URL / Access** 
-
-:    <https://rac3r4life.myaddr.dev>
+- <https://rac3r4life.myaddr.dev>
+{ .no-bullets }
 
 **Credentials**
 
-:    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
-
+-   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
+{ .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"DDNS Key (myaddr.tools)"
 
 ## :symbols-package-search:&ensp;Deployment Details

@@ -34,7 +34,8 @@ Spoolman is a self-hosted web service designed to help you efficiently manage yo
 
 **Port(s)**
 
-:    `7912`
+- `7912`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -42,10 +43,6 @@ Spoolman is a self-hosted web service designed to help you efficiently manage yo
 { .no-bullets }
 - <http://storage-server-2.internal:7912/>
 { .no-bullets }
-
-**Credentials**
-
-:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

@@ -31,9 +31,10 @@ Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD
 
 ![status badge](https://uptime.rac3r4life.online/api/badge/46/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/46/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/nicolargo/glances?label=Release&color=%2357cb6a)
 
-**Port(s)** 
+**Port(s)**
 
-:    `61208`
+- `61208`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -43,10 +44,6 @@ Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD
 { .no-bullets }
 - <http://storage-server-2.internal:61208>
 { .no-bullets }
-
-**Credentials**
-
-:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

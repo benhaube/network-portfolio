@@ -35,7 +35,8 @@ A free & open-source HTML5 network performance estimation tool.
 
 **Port(s)**
 
-:    `3004`
+- `3004`
+{ .no-bullets }
 
 **URL / Access**
 
@@ -43,10 +44,6 @@ A free & open-source HTML5 network performance estimation tool.
 { .no-bullets }
 - <http://storage-server-2.internal:3004>
 { .no-bullets }
-
-**Credentials**
-
-:   N/A
 
 ## :symbols-package-search:&ensp;Deployment Details
 

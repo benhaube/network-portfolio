@@ -11,11 +11,11 @@ services:
       - /DATA/AppData/arcane-backups:/backups
       - /DATA/AppData/dockge/stacks:/DATA/AppData/dockge/stacks
     environment:
-      - APP_URL=http://storage-server.internal:3552
+      - ARCANE_APP_URL=http://storage-server.internal:3552
       - PUID=0
       - PGID=0
-      - ENCRYPTION_KEY=${KEY}
-      - PROJECTS_DIRECTORY=/DATA/AppData/dockge/stacks
+      - ARCANE_ENCRYPTION_KEY=${KEY}
+      - ARCANE_PROJECTS_DIRECTORY=/DATA/AppData/dockge/stacks
     cgroup: host
     healthcheck:
       test: ["CMD", "./arcane", "health", "--timeout", "2s"]

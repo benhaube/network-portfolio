@@ -143,7 +143,9 @@ Android updates are automatic, but can also be performed manually through the sy
 
 #### Applications
 
-Most applications are installed / updated via the [Google Play Store](https://play.google.com/store/apps){ external-link }. Other FOSS applications are installed / updated via the [F-Droid](https://f-droid.org/){ external-link } app store and the [Obtainium](https://obtainium.imranr.dev/){ external-link } application.
+Most applications are installed / updated via the **Google Play Store**. Other FOSS applications are installed / updated via the **F-Droid** app store and the **Obtainium** application.
+
+[Google Play&ensp;:brands-google-play:](https://play.google.com/store/apps){ .md-button }&emsp;[F-Droid&ensp;:brands-f-droid:](https://f-droid.org/){ .md-button }&emsp;[Obtainium&ensp;:brands-obtainium:](https://obtainium.imranr.dev/){ .md-button }
 
 ### :symbols-cloud-upload:&ensp;Backup Policy
 

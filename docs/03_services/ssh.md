@@ -39,7 +39,7 @@ Provides secure encrypted communications between two untrusted hosts over an ins
 -    `22`
 { .no-bullets }
 
-**URL / Access** { #url-access }
+**URL / Access**{ #url-access }
 
 -   :symbols-router:&ensp;ASUS RT-BE92U
 { .no-bullets }
@@ -68,7 +68,7 @@ Provides secure encrypted communications between two untrusted hosts over an ins
     - `192.168.50.153:22`
     - `kacey.internal:22`
 
-**Credentials** { #credentials }
+**Credentials**{ #credentials }
 
 -    [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }

@@ -17,7 +17,7 @@ hide:
   - toc
 ---
 
-![Arcane icon](../assets/icons/arcane.svg){ width=200 }
+![Arcane icon](../assets/icons/arcane-style.svg){ width=200 }
 
 # Arcane
 

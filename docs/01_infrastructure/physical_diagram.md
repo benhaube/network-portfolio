@@ -14,8 +14,6 @@ hide:
   - toc
 ---
 
-![Lucide `graph-hub` icon](../assets/icons/graph-hub.svg){ width=200 }
-
 # Physical Diagram
 
 _Focusing on Physical Connections_

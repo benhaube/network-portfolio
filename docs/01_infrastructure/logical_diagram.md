@@ -14,8 +14,6 @@ hide:
   - toc
 ---
 
-![Lucide `graph-hub` icon](../assets/icons/graph-hub.svg){ width=200 }
-
 # Logical Diagram
 
 _Focusing on Servers and Services_

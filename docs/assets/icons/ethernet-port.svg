@@ -1,5 +1,5 @@
 <svg class="lucide lucide-ethernet-port-icon lucide-ethernet-port" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg">
-  <path d="m14 17 3-3h2a2 2 0 002-2v-9a2 2 0 00-2-2h-16a2 2 0 00-2 2v9a2 2 0 002 2h2l3 3z" stroke="#0091eb"/>
+  <path d="m14 17 3-3h2a2 2 0 002-2v-9a2 2 0 00-2-2h-16a2 2 0 00-2 2v9a2 2 0 002 2h2l3 3z" stroke="#0091eb" fill="#0091eb" fill-opacity=".3"/>
   <path d="m5 5v1" stroke="#4cae4f"/>
   <path d="m9 5v1" stroke="#4cae4f"/>
   <path d="m13 5v1" stroke="#4cae4f"/>

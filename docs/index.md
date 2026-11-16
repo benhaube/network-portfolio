@@ -149,6 +149,9 @@ hide:
 [:services-degoog:&ensp;Degoog](03_services/degoog.md)
 : A self-hosted search engine aggregator with a comprehensive plugin / extension system.
 
+[:services-docker-proxy:&ensp;Docker Proxy](03_services/docker-proxy.md)
+: This is a security-enhanced proxy for the Docker Socket. Giving access to your Docker socket could mean giving root access to your host, or even to your whole swarm, but some services require hooking into that socket to react to events, etc. Using this proxy lets you block anything you consider those services should not do.
+
 [:services-dockge:&ensp;Dockge](03_services/dockge.md) 
 : A fancy, easy-to-use, and reactive self-hosted Docker Compose stack-oriented manager.
 
@@ -166,6 +169,9 @@ hide:
 
 [:services-glances:&ensp;Glances](03_services/glances.md)
 : Glances an Eye on your system. A `top` / `htop` alternative for GNU / Linux, BSD, Mac OS and Windows operating systems.
+
+[:services-globalping:&ensp;Globalping Probe](03_services/globalping-probe.md)
+: Globalping allows anyone to run networking commands such as `ping`, `traceroute`, `dig`, and `mtr` on probes distributed around the globe. Gain insights into your network routing from any location in the world! Troubleshoot anycast issues, monitor CDN and DNS performance, perform uptime monitoring, and build your own network tools for personal or public use.
 
 [:services-gotify-notification:&ensp;Gotify](03_services/gotify.md)
 : A simple server for sending and receiving messages in real-time per WebSocket.

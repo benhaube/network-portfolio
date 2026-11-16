@@ -14,7 +14,7 @@ hide:
   - toc
 ---
 
-![Lucide 'router' icon](../assets/icons/router.svg){ width=200 }
+![Lucide 'router' icon](../assets/icons/asus-router.svg){ width=200 }
 
 # ASUS RT-AX55
 

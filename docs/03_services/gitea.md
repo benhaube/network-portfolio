@@ -97,16 +97,16 @@ Painless, self-hosted, all-in-one software development service. Including Git ho
 | SSH Data            | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/data/ssh`              |
 | Runner Data         | `/media/nvme0n1p1/AppData/dockge/stacks/gitea/runner-data`           |
 
-### :symbols-file-cog:&ensp;Config File
-
-``` ini { .mono-title title="../data/gitea/conf/app.ini" linenums="1" }
---8<-- "gitea_app.ini"
-```
-
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/gitea/compose.yaml" linenums="1" }
 --8<-- "gitea.yml"
+```
+
+### :symbols-file-cog:&ensp;Config File
+
+``` ini { .mono-title title="../data/gitea/conf/app.ini" linenums="1" }
+--8<-- "gitea_app.ini"
 ```
 
 ### :symbols-svg:&ensp;Change Site Logo

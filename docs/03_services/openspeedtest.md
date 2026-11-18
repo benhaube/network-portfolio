@@ -57,6 +57,8 @@ A free & open-source HTML5 network performance estimation tool.
 
 --8<-- "managed-by-arcane.md"
 
+### :symbols-file-code-corner:&ensp;Docker Compose file
+
 ``` yaml { .mono-title title="../AppData/dockge/stacks/openspeedtest/compose.yaml" linenums="1" }
 --8<-- "openspeedtest.yml"
 ```

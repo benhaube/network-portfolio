@@ -126,9 +126,13 @@ Healthchecks is a cron job monitoring service. It listens for HTTP requests and 
     docker compose run web /opt/healthchecks/manage.py createsuperuser --email user@example.com --password changeme123
     ```
 
+### :symbols-file-code-corner:&ensp;Docker Compose File
+
 ``` yaml { .mono-title title="/opt/stacks/healthchecks/compose.yaml" } 
 --8<-- "healthchecks-compose.yml"
 ```
+
+### :symbols-file-type-corner:&ensp;Environment Variables File
 
 ``` properties { .mono-title title="/opt/stacks/healthchecks/.env" }
 --8<-- "healthchecks.env"

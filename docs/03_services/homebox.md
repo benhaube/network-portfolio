@@ -75,7 +75,7 @@ Homebox is the inventory and organization system built for the home user! With a
 
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
-``` yaml { .mono-title title="../AppData/dockge/stacks/homebox/compose.yaml" hl_lines="15 19 20" }
+``` yaml { .mono-title title="../AppData/dockge/stacks/homebox/compose.yaml" hl_lines="22 26 27" }
 --8<-- "code/yaml/homebox.yml"
 ```
 

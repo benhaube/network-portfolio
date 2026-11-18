@@ -1,7 +1,12 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/glances.svg
+  urls:
+    - https://github.com/nicolargo/glances
+
 services:
   glances:
     container_name: glances
-    image: nicolargo/glances:latest-full  # (1)!
+    image: nicolargo/glances:latest-full # (1)!
     restart: always
     privileged: false
     pid: host
@@ -16,6 +21,6 @@ services:
     tmpfs:
       - /tmp
     environment:
-      - TZ=America/New_York  # (2)!
+      - TZ=America/New_York # (2)!
       - GLANCES_OPT=-C /glances/conf/glances.conf -w --enable-plugin smart
       - PYTHONPYCACHEPREFIX=/tmp/py_caches

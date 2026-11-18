@@ -1,3 +1,8 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/portracker.svg
+  urls:
+    - https://github.com/Mostafa-Wahied/portracker
+
 services:
   portracker:
     container_name: portracker
@@ -5,15 +10,15 @@ services:
     restart: unless-stopped
     ports:
       - "4999:4999"
-    pid: "host"  # (1)!
+    pid: "host" # (1)!
     # (2)!
     cap_add:
-      - SYS_PTRACE  # (3)!
-      - SYS_ADMIN  #(4)!
+      - SYS_PTRACE # (3)!
+      - SYS_ADMIN #(4)!
     security_opt:
-      - apparmor:unconfined  # (5)!
+      - apparmor:unconfined # (5)!
     volumes:
-      - ./portracker-data:/data  # (6)!
-      - /var/run/docker.sock:/var/run/docker.sock:ro  # (7)!
+      - ./portracker-data:/data # (6)!
+      - /var/run/docker.sock:/var/run/docker.sock:ro # (7)!
     # environment:
-      # - TRUENAS_API_KEY=your-api-key-here  (8)
+    # - TRUENAS_API_KEY=your-api-key-here  (8)

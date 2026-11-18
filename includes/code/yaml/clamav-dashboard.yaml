@@ -1,3 +1,8 @@
+x-arcane:
+  icon: clamav
+  urls:
+    - https://github.com/Jacko88888/clamav-dashboard
+
 services:
   clamav-server:
     image: clamav/clamav:1.5_base
@@ -12,8 +17,7 @@ services:
       CLAMD_CONF_MaxThreads: "4"
       CLAMD_CONF_MaxFileSize: 512M
       CLAMD_CONF_MaxScanSize: 2G
-      CLAMD_CONF_StreamMaxLength: 512M          
-  
+      CLAMD_CONF_StreamMaxLength: 512M
   clamav-dashboard:
     image: ghcr.io/jacko88888/clamav-dashboard:0.2.4
     restart: unless-stopped

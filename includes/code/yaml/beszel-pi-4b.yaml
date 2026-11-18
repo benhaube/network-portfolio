@@ -1,3 +1,9 @@
+x-arcane:
+  icon: beszel
+  urls:
+    - https://www.beszel.dev/
+    - https://github.com/henrygd/beszel
+
 services:
   beszel:
     container_name: beszel-hub
@@ -25,12 +31,11 @@ services:
         - health
         - --url
         - http://localhost:8090
-      start_period: 5s 
-      interval: 120s   
-  
+      start_period: 5s
+      interval: 120s
   beszel-agent:
     container_name: beszel-agent
-    image: henrygd/beszel-agent
+    image: henrygd/beszel-agent:latest
     restart: unless-stopped
     network_mode: host
     volumes:

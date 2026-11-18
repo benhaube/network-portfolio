@@ -1,3 +1,9 @@
+x-arcane:
+  icon: cloudflare-zero-trust
+  urls:
+    - https://dash.cloudflare.com/login
+    - https://github.com/cloudflare/cloudflared
+
 services:
   cloudflared:
     container_name: cloudflare-tunnel

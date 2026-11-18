@@ -6,7 +6,7 @@ services:
     environment:
       - ARCANE_AGENT=true
       - ARCANE_AGENT_TRANSPORT=auto
-      - ARCANE_AGENT_TOKEN=${TOKEN}
+      - ARCANE_AGENT_TOKEN=${AGENT_TOKEN}
       - ARCANE_MANAGER_API_URL=http://192.168.50.5:3552
       - PUID=0
       - PGID=0
@@ -17,6 +17,8 @@ services:
       - arcane-backups:/backups
       - arcane-builds:/builds
       - /opt/stacks:/opt/stacks
+    labels:
+      - com.getarcaneapp.arcane.icon=arcane
 
 volumes:
   arcane-data:

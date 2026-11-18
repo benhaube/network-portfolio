@@ -1,3 +1,10 @@
+x-arcane:
+  icon: gotify
+  urls:
+    - https://gotify.net/
+    - https://github.com/gotify
+    - https://gotify.rac3r4life.online
+
 services:
   gotify:
     container_name: gotify
@@ -8,11 +15,11 @@ services:
     volumes:
       - ./data:/app/data
     environment:
-      - GOTIFY_DEFAULTUSER_PASS=ChangeThisPassword123  # (1)!
+      - GOTIFY_DEFAULTUSER_PASS=ChangeThisPassword123 # (1)!
       - TZ=America/New_York
       - GOTIFY_OIDC_ENABLED=true
       - GOTIFY_OIDC_ISSUER=https://auth.rac3r4life.online/application/o/gotify/
-      - GOTIFY_OIDC_CLIENTID=${CLIENT_ID}  # (2)!
+      - GOTIFY_OIDC_CLIENTID=${CLIENT_ID} # (2)!
       - GOTIFY_OIDC_CLIENTSECRET=${CLIENT_SECRET}
       - GOTIFY_OIDC_REDIRECTURL=https://gotify.rac3r4life.online/auth/oidc/callback
       - GOTIFY_OIDC_SCOPES=openid,profile,email

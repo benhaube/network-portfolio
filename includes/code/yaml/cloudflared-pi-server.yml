@@ -1,3 +1,9 @@
+x-arcane:
+  icon: cloudflare-zero-trust
+  urls:
+    - https://dash.cloudflare.com/login
+    - https://github.com/cloudflare/cloudflared
+
 services:
   cloudflared:
     container_name: cloudflare-tunnel
@@ -19,6 +25,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
 networks:
   it-tools_default:
     external: true

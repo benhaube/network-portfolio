@@ -1,3 +1,9 @@
+x-arcane:
+  icon: degoog
+  urls:
+    - https://degoog.org/
+    - https://github.com/degoog-org/degoog
+
 services:
   degoog:
     image: ghcr.io/degoog-org/degoog:latest
@@ -7,5 +13,5 @@ services:
     volumes:
       - ./data:/app/data
     environment:
-      DEGOOG_SETTINGS_PASSWORDS: ${SETTINGS_PW}  # (1)!
+      DEGOOG_SETTINGS_PASSWORDS: ${SETTINGS_PW} # (1)!
       DEGOOG_PUBLIC_INSTANCE: "false"

@@ -1,3 +1,9 @@
+x-arcane:
+  icon-light: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/matter-light.svg
+  icon-dark: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/matter.svg
+  urls:
+    - https://github.com/matter-js/matterjs-server
+
 services:
   matter-server:
     container_name: matter-server

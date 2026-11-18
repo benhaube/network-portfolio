@@ -3,33 +3,12 @@ services:
     container_name: dockge
     image: louislam/dockge:1
     restart: unless-stopped
-    privileged: false
-    networks:
-      - default
     ports:
-      - mode: ingress
-        target: 5001
-        published: "5001"
-        protocol: tcp
+      - 5001:5001
     volumes:
-      - type: bind
-        source: /var/run/docker.sock
-        target: /var/run/docker.sock
-        bind:
-          create_host_path: true
-      - type: bind
-        source: /DATA/AppData/dockge/data
-        target: /app/data
-        bind:
-          create_host_path: true
-      - type: bind
-        source: /DATA/AppData/dockge/stacks
-        target: /DATA/AppData/dockge/stacks
-        bind:
-          create_host_path: true
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /DATA/AppData/dockge/data:/app/data
+      - /DATA/AppData/dockge/stacks:/DATA/AppData/dockge/stacks
     environment:
       - DOCKGE_STACKS_DIR=/DATA/AppData/dockge/stacks
-
-networks:
-  default:
-    name: big-bear-dockge_default
+      - DOCKGE_CONSOLE_ENBLE=true

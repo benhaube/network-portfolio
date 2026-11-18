@@ -1,3 +1,8 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/gitea.svg
+  urls:
+    - https://about.gitea.com/
+
 services:
   server:
     container_name: gitea
@@ -15,7 +20,6 @@ services:
     environment:
       - USER_UID=1000
       - USER_GID=1000
-
   runner:
     container_name: gitea_runner
     image: gitea/act_runner:latest

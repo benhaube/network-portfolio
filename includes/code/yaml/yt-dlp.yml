@@ -1,3 +1,9 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/youtube-dl.svg
+  urls:
+    - https://hub.docker.com/r/marcobaobao/yt-dlp-webui
+    - https://deepwiki.com/qokelate/yt-dlp-webui/2-getting-started
+
 services:
   yt-dlp-webui:
     image: marcobaobao/yt-dlp-webui:latest
@@ -5,9 +11,9 @@ services:
     ports:
       - 3033:3033
     volumes:
-      - /DATA/Downloads/yt-dlp:/downloads  # (1)!
-      - /DATA/AppData/dockge/stacks/yt-dlp-webui/config:/config  # (2)!
+      - /DATA/Downloads/yt-dlp:/downloads # (1)!
+      - /DATA/AppData/dockge/stacks/yt-dlp-webui/config:/config # (2)!
     environment:
-      - JWT_SECRET=your-secret  # (3)!
+      - JWT_SECRET=your-secret # (3)!
     healthcheck:
       test: curl -f http://localhost:3033 || exit 1

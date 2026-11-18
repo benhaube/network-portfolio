@@ -1,3 +1,9 @@
+x-arcane:
+  icon: beszel
+  urls:
+    - https://www.beszel.dev/
+    - https://github.com/henrygd/beszel
+
 services:
   beszel-agent:
     container_name: beszel-agent

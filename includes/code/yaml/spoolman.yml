@@ -1,11 +1,14 @@
+x-arcane:
+  icon: spoolman
+  urls:
+    - https://github.com/Donkie/Spoolman
+
 services:
   spoolman:
     image: ghcr.io/donkie/spoolman:latest
     restart: unless-stopped
     volumes:
-      - type: bind
-        source: ./data
-        target: /home/app/.local/share/spoolman
+      - ./data:/home/app/.local/share/spoolman
     ports:
       - 7912:8000
     env_file: .env

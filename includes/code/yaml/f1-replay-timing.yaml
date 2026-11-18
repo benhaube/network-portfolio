@@ -1,3 +1,8 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/f1-replay-timing-small.png
+  urls:
+    - https://github.com/adn8naiagent/F1ReplayTiming
+
 services:
   f1timing:
     image: ghcr.io/adn8naiagent/f1replaytiming:latest
@@ -5,7 +10,7 @@ services:
       - "${PORT}:8000"
     volumes:
       - f1data:/data
-      - f1cache:/data/fastf1-cache    
+      - f1cache:/data/fastf1-cache
     env_file: .env
 
 volumes:

@@ -1,3 +1,8 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/glances.svg
+  urls:
+    - https://github.com/nicolargo/glances
+
 services:
   glances:
     container_name: glances

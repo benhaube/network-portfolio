@@ -1,17 +1,13 @@
 services:
   ttydbridge:
     container_name: ttydbridge
-    image: cp0204/ttydbridge:v0.0.3
+    image: cp0204/ttydbridge:v0.0.4
     restart: unless-stopped
     pid: host
     privileged: true
-    network_mode: bridge    
+    network_mode: bridge
     volumes:
-      - type: bind
-        source: /opt
-        target: /opt
-        bind:
-          create_host_path: true
+      - /opt:/opt
     environment:
       - EXEC_DIR=/opt
       - PORT=2222

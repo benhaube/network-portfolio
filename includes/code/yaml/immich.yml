@@ -1,5 +1,10 @@
 # (1)!
-name: immich
+x-arcane:
+  icon: immich
+  urls:
+    - https://immich.app
+    - https://github.com/immich-app/immich
+    - https://immich.rac3r4life.online
 
 services:
   immich-server:
@@ -15,7 +20,7 @@ services:
     env_file:
       - .env
     ports:
-      - '2283:2283'
+      - "2283:2283"
     depends_on:
       - redis
       - database
@@ -52,7 +57,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_USER: ${DB_USERNAME}
       POSTGRES_DB: ${DB_DATABASE_NAME}
-      POSTGRES_INITDB_ARGS: '--data-checksums'
+      POSTGRES_INITDB_ARGS: "--data-checksums"
       # (5)!
       # DB_STORAGE_TYPE: 'HDD'
     volumes:
@@ -62,3 +67,5 @@ services:
     restart: always
     healthcheck:
       disable: false
+    labels:
+      - com.getarcaneapp.arcane.icon=postgresql

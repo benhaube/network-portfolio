@@ -1,3 +1,9 @@
+x-arcane:
+  icon: beszel
+  urls:
+    - https://www.beszel.dev/
+    - https://github.com/henrygd/beszel
+
 services:
   beszel-agent:
     container_name: beszel-agent
@@ -26,9 +32,9 @@ services:
       - LISTEN=45876
       - TOKEN=your-token
       - GPU_COLLECTOR=intel_gpu_top
-      - FILESYSTEM=nvme0__NVMe  # (1)!
+      - FILESYSTEM=nvme0__NVMe # (1)!
     healthcheck:
       test:
         - CMD
         - /agent
-        - health    
+        - health

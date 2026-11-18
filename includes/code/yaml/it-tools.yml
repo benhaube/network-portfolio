@@ -1,3 +1,10 @@
+x-arcane:
+  icon-light: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/it-tools-light.svg
+  icon-dark: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/it-tools.svg
+  urls:
+    - https://github.com/sharevb/it-tools
+    - https://it-tools.tech
+
 services:
   it-tools:
     container_name: it-tools
@@ -11,7 +18,16 @@ services:
     dns:
       - 192.168.50.2
       - 192.168.50.6
-
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - -f
+        - http://localhost:8080
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
   network-utils-ws:
     container_name: network-utils-ws
     image: sharevb/network-utils-ws:latest
@@ -20,6 +36,16 @@ services:
       - it-tools_default
     ports:
       - 8000:8000
+  docker-image-download-server:
+    container_name: docker-image-download-server
+    image: sharevb/docker-image-download-server:latest
+    restart: unless-stopped
+    networks:
+      - it-tools_default
+    ports:
+      - 3000:3000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   it-tools_default:

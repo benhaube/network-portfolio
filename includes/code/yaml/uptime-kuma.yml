@@ -1,3 +1,9 @@
+x-arcane:
+  icon: uptime-kuma
+  urls:
+    - https://github.com/louislam/uptime-kuma
+    - https://uptime.rac3r4life.online
+
 services:
   docker-proxy:
     image: tecnativa/docker-socket-proxy:latest
@@ -30,6 +36,18 @@ services:
       - SYSTEM=0
       - TASKS=0
       - VOLUMES=0
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -qO- http://127.0.0.1:2375/info > /dev/null || exit 1",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    labels:
+      - com.getarcaneapp.arcane.icon=https://haube-pereira.com/icons/docker-proxy.svg
   uptime-kuma:
     image: louislam/uptime-kuma:2
     container_name: uptime-kuma
@@ -65,9 +83,11 @@ services:
       options:
         max-size: 10m
         max-file: "3"
+
 networks:
   kuma_network:
     driver: bridge
+
 volumes:
   kuma-data:
     external: true

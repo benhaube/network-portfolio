@@ -1,3 +1,6 @@
+x-arcane:
+  icon: couchdb
+
 services:
   couchdb:
     container_name: obsidian-livesync

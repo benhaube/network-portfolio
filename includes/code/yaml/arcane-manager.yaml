@@ -2,6 +2,7 @@ services:
   arcane:
     image: ghcr.io/getarcaneapp/manager:latest
     container_name: arcane
+    restart: unless-stopped
     ports:
       - "3552:3552"
     volumes:
@@ -14,7 +15,7 @@ services:
       - ARCANE_APP_URL=http://storage-server.internal:3552
       - PUID=0
       - PGID=0
-      - ARCANE_ENCRYPTION_KEY=${KEY}
+      - ARCANE_ENCRYPTION_KEY=${ENCRYPTION_KEY}
       - ARCANE_PROJECTS_DIRECTORY=/DATA/AppData/dockge/stacks
     cgroup: host
     healthcheck:
@@ -23,7 +24,8 @@ services:
       timeout: 3s
       retries: 5
       start_period: 15s
-    restart: unless-stopped
+    labels:
+      - com.getarcaneapp.arcane.icon=arcane
 
 volumes:
   arcane-data:

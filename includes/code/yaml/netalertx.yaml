@@ -1,3 +1,10 @@
+x-arcane:
+  icon-dark: https://haube-pereira.com/icons/netalertx-light.svg
+  icon-light: https://haube-pereira.com/icons/netalertx-dark.svg
+  urls:
+    - https://netalertx.com/
+    - https://github.com/netalertx/NetAlertX
+
 services:
   netalertx:
     container_name: netalertx
@@ -15,21 +22,13 @@ services:
     cap_drop:
       - ALL
     volumes:
-      - type: bind
-        source: /DATA/AppData/netalertx/config
-        target: /data/config
-        bind:
-          create_host_path: true
-      - type: bind
-        source: /DATA/AppData/netalertx/db
-        target: /data/db
-        bind:
-          create_host_path: true
+      - /DATA/AppData/netalertx/config:/data/config
+      - /DATA/AppData/netalertx/db:/data/db
     tmpfs:
       - /tmp
     environment:
       - ALWAYS_FRESH_INSTALL=false
       - PGID=1000
-      - PORT=20211
       - PUID=1000
+      - PORT=20211
       - TZ=UTC

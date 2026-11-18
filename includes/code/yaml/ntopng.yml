@@ -10,8 +10,20 @@ services:
     volumes:
       - ntopng_redis:/var/lib/redis
     # (1)!
-    command: [ '-i', 'eth0', '-i', 'eth1', '-i', 'tcp://*:5556c', '-F', 'clickhouse', '--disable-login', '1', '--community' ]
-
+    command:
+      [
+        "-i",
+        "eth0",
+        "-i",
+        "eth1",
+        "-i",
+        "tcp://*:5556c",
+        "-F",
+        "clickhouse",
+        "--disable-login",
+        "1",
+        "--community",
+      ]
   clickhouse:
     container_name: clickhouse
     hostname: clickhouse

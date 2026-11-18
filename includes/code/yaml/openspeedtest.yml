@@ -1,8 +1,11 @@
+x-arcane:
+  icon: https://haube-pereira.com/icons/openspeedtest.svg
+
 services:
   speedtest:
     container_name: openspeedtest
     image: openspeedtest/latest
     restart: unless-stopped
     ports:
-      - '3004:3000'  # (1)!
+      - "3004:3000" # (1)!
       # - '3001:3001'  (2)

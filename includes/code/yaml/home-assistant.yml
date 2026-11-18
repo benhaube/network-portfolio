@@ -1,3 +1,10 @@
+x-arcane:
+  icon: home-assistant
+  urls:
+    - https://www.home-assistant.io/
+    - https://github.com/home-assistant
+    - https://home.rac3r4life.online
+
 services:
   homeassistant:
     container_name: homeassistant

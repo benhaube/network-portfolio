@@ -71,15 +71,6 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 | Nginx Config File   | `/media/nvme0n1p1/AppData/Network-Portfolio/default.conf`               |
 | Site Data           | `/media/nvme0n1p1/AppData/Network-Portfolio/site`                       |
 
-### :symbols-file-cog:&ensp;Config File
-
-``` nginx { .mono-title title="../AppData/Network-Portfolio/default.conf" linenums="1" }
---8<-- "nginx.conf"
-```
-
-1. Pull in standard MIME types, then explicitly define `.mjs`
-2. Redirect server error pages to the static page `/50x.html`
-
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/network-documentation-portfolio/compose.yaml" linenums="1" }
@@ -89,6 +80,15 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 1. Maps port `8080` on the VM to port `80` inside the container.
 2. Mounts your site folder as read-only (ro) for extra security.
 3. Mounts your site folder as read-only (ro) for extra security.
+
+### :symbols-file-cog:&ensp;Config File
+
+``` nginx { .mono-title title="../AppData/Network-Portfolio/default.conf" linenums="1" }
+--8<-- "nginx.conf"
+```
+
+1. Pull in standard MIME types, then explicitly define `.mjs`
+2. Redirect server error pages to the static page `/50x.html`
 
 ### :symbols-cloud-upload:&ensp;Deploy Site Manually
 

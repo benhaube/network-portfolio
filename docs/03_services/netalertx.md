@@ -75,7 +75,15 @@ Centralized network visibility and continuous asset discovery. Monitor devices, 
 | Configuration File  | `/media/nvme0n1p1/AppData/netalertx/config/app.conf` |
 | Database File       | `/media/nvme0n1p1/AppData/netalertx/db/app.db`       |
 
+### :symbols-file-code-corner:&ensp;Docker Compose File
+
+``` yaml { .mono-title title="../AppData/dockge/stacks/netalertx/compose.yaml" linenums="1" }
+--8<-- "netalertx.yaml"
+```
+
 ### :symbols-puzzle:&ensp;Loaded Plugins
+
+NetAlertX supports additional plugins to extend its functionality, each with its own settings and options. Plugins can be loaded via the **General**&ensp;:symbols-move-right:&ensp;`LOADED_PLUGINS` setting. For custom plugin development, refer to the [Plugin development guide](https://docs.netalertx.com/PLUGINS_DEV/){ external-link }.
 
 | Plugin ID   | Category       | Description { data-sort-method="none" }      |              Required { data-sort-reverse }              |
 | :---------- | :------------- | :------------------------------------------- | :------------------------------------------------------: |
@@ -102,14 +110,8 @@ Centralized network visibility and continuous asset discovery. Monitor devices, 
 
 ### :symbols-svg:&ensp;Custom Device Icons
 
-The NetAlertX service allows users to add custom device and property SVG icons through the settings, but they need to be base64 encoded first. Below is a file containing icons from the open-source Lucide project that are already base64 encoded.
+NetAlertX allows users to add custom device and property SVG icons through the settings, but they need to be `base64` encoded first. Below is a file containing icons from the open-source Lucide project that are already `base64` encoded.
 
 ``` toml title="Base64 Encoded Lucide Icons" linenums="1" 
 --8<-- "lucide_base64_encoded.txt"
-```
-
-### :symbols-file-code-corner:&ensp;Docker Compose File
-
-``` yaml { .mono-title title="../AppData/dockge/stacks/netalertx/compose.yaml" linenums="1" }
---8<-- "netalertx.yaml"
 ```

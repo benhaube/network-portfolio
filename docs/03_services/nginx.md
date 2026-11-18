@@ -78,8 +78,8 @@ The world's most popular Web Server, high performance Load Balancer, Reverse Pro
 ```
 
 1. Maps port `8080` on the VM to port `80` inside the container.
-2. Mounts your site folder as read-only (ro) for extra security.
-3. Mounts your site folder as read-only (ro) for extra security.
+2. Mounts the site directory as read-only _(`ro`)_ for extra security.
+3. Mounts the `nginx.conf` configuration file as read-only _(`ro`)_ for extra security.
 
 ### :symbols-file-cog:&ensp;Config File
 

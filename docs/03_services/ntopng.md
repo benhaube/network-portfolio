@@ -47,9 +47,10 @@ A web-based network traffic monitoring application released under GPLv3. It is t
 
 ## :symbols-package-search:&ensp;Deployment Details
 
-| Host Device                                                          | Method                                    | Container Name | Image                | Port(s)            |
-| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------- | :----------------- |
-| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ntop`         | `ntop/ntopng:latest` | `3000`&ensp;`5556` |
+| Host Device                                                          | Method                                    | Container Name | Image                                 | Port(s)            |
+| :------------------------------------------------------------------- | :---------------------------------------- | :------------- | :------------------------------------ | :----------------- |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md) | :symbols-container:&nbsp;Docker Container | `ntop`         | `ntop/ntopng:latest`                  | `3000`&ensp;`5556` |
+| -                                                                    | :symbols-container:&nbsp;Docker Container | `clickhouse`   | `clickhouse/clickhouse-server:latest` | `-`                |
 
 ---
 

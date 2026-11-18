@@ -21,37 +21,43 @@ hide:
 
 _A Simple, Modern VPN_
 
-[GitHub&ensp;:brands-github:](https://github.com/wg-easy/wg-easy){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://wg-easy.github.io/wg-easy/latest/){ .md-button .md-button--primary }
+[GitHub&ensp;:brands-github:](https://github.com/chicohaager/zimaos-wireguard-sysext){ .md-button .md-button--primary }&emsp;[Documentation&ensp;:symbols-files:](https://www.wireguard.com/){ .md-button .md-button--primary }
 
 ---
 
-![WireGuard settings on ASUS router](../assets/screenshots/asus-router-wireguard.png){ width=400 align=right .on-glb }
+![WireGuard settings on ZimaOS NAS](../assets/screenshots/wireguard-zima-light.png#only-light){ width=400 align=right .on-glb }
+![WireGuard settings on ZimaOS NAS](../assets/screenshots/wireguard-zima-dark.png#only-dark){ width=400 align=right .on-glb }
 
 ## :symbols-info:&ensp;Overview
 
 An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/114/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/114/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/wg-easy/wg-easy?label=Release&color=%2382201E)
+![status badge](https://uptime.rac3r4life.online/api/badge/114/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/114/uptime)&ensp;![GitHub Release](https://img.shields.io/github/v/release/chicohaager/zimaos-wireguard-sysext?label=Release&color=%2382201E)
 
 **Port(s)**
 
 - `41820`
 { .no-bullets }
+- `51820`
+{ .no-bullets }
 
 **URL / Access**
 
--   :symbols-waypoints:&ensp;Server Endpoint:
+-   :symbols-waypoints:&ensp;Server Endpoint(s):
 { .no-bullets }
     - `rac3r4life.myaddr.dev:41820`
+    - `rac3r4life.myaddr.dev:51820`
 -   :symbols-monitor-cog:&ensp;Web UI Admin:
 { .no-bullets }
     - <https://asusrouter.internal:8443/Advanced_VPNServer_Content.asp>
+    - <http://storage-server.internal/modules/wireguard/index.html>
 
 **Credentials**
 
 -   [:services-bitwarden:&ensp;Bitwarden](https://vault.bitwarden.com "Bitwarden Web Vault"){ external-link }
 { .no-bullets }
     - Local Network&ensp;:symbols-move-right:&ensp;"ASUS Router"
+    - Local Network&ensp;:symbols-move-right:&ensp;"ZimaOS NAS (admin)"
 
 **Client Profiles**
 
@@ -61,12 +67,19 @@ An extremely simple yet fast and modern VPN that utilizes state-of-the-art crypt
     - `Ben's-Laptop`
     - `Rob's-Phone`
     - `Rob's-Laptop`
+-   :symbols-server-nas:&ensp;ZimaOS NAS:
+{ .no-bullets }
+    - `ben-laptop`
+    - `ben-phone`
+    - `rob-laptop`
+    - `rob-phone`
 
 ## :symbols-package-search:&ensp;Deployment Details
 
 | Host Device                                                            | Method                          | Container Name | Image | Status { data-sort-method="none" }                                                                               | Port(s) |
 | :--------------------------------------------------------------------- | :------------------------------ | :------------- | :---- | :--------------------------------------------------------------------------------------------------------------- | :------ |
 | [:symbols-router:&nbsp;ASUS RT-BE92U](../02_hardware/asus_rt-be92u.md) | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/114/status?label=){ style='vertical-align: middle;' } | `41820` |
+| [:symbols-server-nas:&nbsp;ZimaOS NAS](../02_hardware/zimaos_nas.md)   | :symbols-tux:&nbsp;Native Linux | `-`            | `-`   | ![status badge](https://uptime.rac3r4life.online/api/badge/1/status?label=){ style='vertical-align: middle;' }   | `51820` |
 
 ---
 

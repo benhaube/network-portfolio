@@ -31,11 +31,13 @@ _Organized IP Address Space_
 
 ## :lucide-graph-star:&ensp;Virtual Local Networks
 
-| VLAN { data-sort-method="number" }                               | SSID                                                           | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Status { data-sort-method="none" }                                                                                |          WAN Access { data-sort-method="none" }          | Role / Notes                          |
-| :--------------------------------------------------------------- | :------------------------------------------------------------- | :--------------------------------- | :---------------------------------------- | :---------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------: | :------------------------------------ |
-| [VLAN50](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_Home_](../02_hardware/asus_rt-be92u.md#wi-fi-networks)       | `192.168.50.0/24`                  | `192.168.50.6` `192.168.50.2`             | ![VLAN50 status](https://uptime.rac3r4life.online/api/badge/126/status?label=){ style='vertical-align: middle;' } | <span aria-label="Yes" role="img">:symbols-check:</span> | :symbols-shield:&nbsp;Trusted VLAN    |
-| [VLAN52](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_Home_Guest_](../02_hardware/asus_rt-be92u.md#wi-fi-networks) | `192.168.52.0/24`                  | `9.9.9.9` `149.112.112.112`               | ![VLAN52 status](https://uptime.rac3r4life.online/api/badge/167/status?label=){ style='vertical-align: middle;' } | <span aria-label="Yes" role="img">:symbols-check:</span> | :symbols-shield-user:&nbsp;Guest VLAN |
-| [VLAN53](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_2G_IoT_](../02_hardware/asus_rt-be92u.md#wi-fi-networks)     | `192.168.53.0/24`                  | `9.9.9.9` `149.122.122.122`               | ![VLAN53 status](https://uptime.rac3r4life.online/api/badge/168/status?label=){ style='vertical-align: middle;' } |   <span aria-label="No" role="img">:symbols-x:</span>    | :symbols-shield-house:&nbsp;IoT VLAN  |
+| VLAN { data-sort-method="number" }                               | SSID                                                           | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Status { data-sort-method="none" }                                                                                   |          WAN Access { data-sort-method="none" }          | Role / Notes                           |
+| :--------------------------------------------------------------- | :------------------------------------------------------------- | :--------------------------------- | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------: | :------------------------------------- |
+| [VLAN50](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_Home_](../02_hardware/asus_rt-be92u.md#wi-fi-networks)       | `192.168.50.0/24`                  | `192.168.50.6` `192.168.50.2`             | ![VLAN50 status](https://uptime.rac3r4life.online/api/badge/126/status?label=){ style='vertical-align: middle;' }    | <span aria-label="Yes" role="img">:symbols-check:</span> | :symbols-shield:&nbsp;Trusted VLAN     |
+| [VLAN52](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_Home_Guest_](../02_hardware/asus_rt-be92u.md#wi-fi-networks) | `192.168.52.0/24`                  | `9.9.9.9` `149.112.112.112`               | ![VLAN52 status](https://uptime.rac3r4life.online/api/badge/167/status?label=){ style='vertical-align: middle;' }    | <span aria-label="Yes" role="img">:symbols-check:</span> | :symbols-shield-user:&nbsp;Guest VLAN  |
+| [VLAN53](../02_hardware/asus_rt-be92u.md#virtual-local-networks) | [_2G_IoT_](../02_hardware/asus_rt-be92u.md#wi-fi-networks)     | `192.168.53.0/24`                  | `9.9.9.9` `149.122.122.122`               | ![VLAN53 status](https://uptime.rac3r4life.online/api/badge/168/status?label=){ style='vertical-align: middle;' }    |   <span aria-label="No" role="img">:symbols-x:</span>    | :symbols-shield-house:&nbsp;IoT VLAN   |
+| WG0                                                              | -                                                              | `10.6.0.1/24`                      | `10.6.0.1`                                | ![WireGuard status](https://uptime.rac3r4life.online/api/badge/114/status?label=){ style='vertical-align: middle;' } | <span aria-label="Yes" role="img">:symbols-check:</span> | :symbols-waypoints:&nbsp;WireGuard VPN |
+| WG1                                                              | -                                                              | `10.8.0.1/24`                      | `10.8.0.1`                                | ![WireGuard status](https://uptime.rac3r4life.online/api/badge/1/status?label=){ style='vertical-align: middle;' }   | <span aria-label="Yes" role="img">:symbols-check:</span> | :symbols-waypoints:&nbsp;WireGuard VPN |
 
 ## :symbols-router:&ensp;Core Infrastructure
 
@@ -68,7 +70,7 @@ _Organized IP Address Space_
 
 ## :symbols-waypoints:&ensp;VPN Servers / Clients
 
-**WireGuard @ ASUS Router**&ensp;![WireGuard status badge](https://uptime.rac3r4life.online/api/badge/114/status){ style='vertical-align: middle;' }
+**WireGuard @ ASUS Router**&ensp;`10.6.0.1/24`&ensp;![WireGuard status badge](https://uptime.rac3r4life.online/api/badge/114/status){ style='vertical-align: middle;' }
 
 | Client                                     | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Endpoint                      |
 | :----------------------------------------- | :--------------------------------- | :---------------------------------------- | :---------------------------- |
@@ -76,6 +78,15 @@ _Organized IP Address Space_
 | :symbols-laptop-minimal:&nbsp;Ben's-Laptop | `10.6.0.3/32`                      | `192.168.50.6` `192.168.50.2`             | `rac3r4life.myaddr.dev:41820` |
 | :symbols-smartphone:&nbsp;Rob's-Phone      | `10.6.0.4/32`                      | `10.6.0.1`                                | `rac3r4life.myaddr.dev:41820` |
 | :symbols-laptop-minimal:&nbsp;Rob's-Laptop | `10.6.0.5/32`                      | `10.6.0.1`                                | `rac3r4life.myaddr.dev:41820` |
+
+**WireGuard @ ZimaOS NAS**&ensp;`10.8.0.1/24`&ensp;![WireGuard status badge](https://uptime.rac3r4life.online/api/badge/1/status){ style='vertical-align: middle;' }
+
+| Client                                   | CIDR { data-sort-method="dotsep" } | DNS Servers { data-sort-method="dotsep" } | Endpoint                      |
+| :--------------------------------------- | :--------------------------------- | :---------------------------------------- | :---------------------------- |
+| :symbols-smartphone:&nbsp;ben-phone      | `10.8.0.2/32`                      | `10.8.0.1`                                | `rac3r4life.myaddr.dev:51820` |
+| :symbols-laptop-minimal:&nbsp;ben-laptop | `10.8.0.3/32`                      | `10.8.0.1`                                | `rac3r4life.myaddr.dev:51820` |
+| :symbols-smartphone:&nbsp;rob-phone      | `10.8.0.4/32`                      | `10.8.0.1`                                | `rac3r4life.myaddr.dev:51820` |
+| :symbols-laptop-minimal:&nbsp;rob-laptop | `10.8.0.5/32`                      | `10.8.0.1`                                | `rac3r4life.myaddr.dev:51820` |
 
 ---
 

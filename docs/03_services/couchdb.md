@@ -78,7 +78,7 @@ Seamless multi-primary syncing database with an intuitive HTTP / JSON API, desig
 ### :symbols-file-code-corner:&ensp;Docker Compose File
 
 ``` yaml { .mono-title title="../AppData/dockge/stacks/obsidian-livesync/compose.yaml" linenums="1" }
---8<-- "code/yaml/obsidian-livesync.yml"
+--8<-- "code/yaml/couchdb.yml"
 ```
 
 1. Leave the default password in the Docker compose file, and change the password from the CouchDB Web UI.

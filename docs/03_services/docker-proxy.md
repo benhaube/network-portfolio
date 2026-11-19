@@ -29,7 +29,7 @@ _Proxy Over Docker Socket_
 
 This is a security-enhanced proxy for the Docker Socket. Giving access to your Docker socket could mean giving root access to your host, or even to your whole swarm, but some services require hooking into that socket to react to events, etc. Using this proxy lets you block anything you consider those services should not do.
 
-![status badge](https://uptime.rac3r4life.online/api/badge/183/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/183/uptime)&ensp;![Docker image version](https://img.shields.io/docker/v/tecnativa/docker-socket-proxy/latest?label=Release&color=2396ed)
+![status badge](https://uptime.rac3r4life.online/api/badge/183/status)&ensp;![uptime badge](https://uptime.rac3r4life.online/api/badge/183/uptime)&ensp;![Docker image version](https://img.shields.io/docker/v/tecnativa/docker-socket-proxy?label=Release&color=%232396ED)
 
 **Port(s)**
 

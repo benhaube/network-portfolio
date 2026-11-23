@@ -7,7 +7,7 @@ hide:
   - toc
 ---
 
-![Bento Box v2.1 image](../assets/images/bento-box.webp){ width=300 .no-shadow }
+![Bento Box v2.1 image](../assets/images/bento-box.webp){ width=250 .no-shadow }
 
 # Bento Box v2.1 Mod
 

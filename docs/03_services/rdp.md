@@ -13,8 +13,7 @@ hide:
   - toc
 ---
 
-![Lucide 'screen-share' icon](../assets/icons/screen-share-light.svg#only-light){ width=200 }
-![Lucide 'screen-share' icon](../assets/icons/screen-share-dark.svg#only-dark){ width=200 }
+![Lucide 'screen-share' icon](../assets/icons/screen-share.svg){ width=200 }
 
 # RDP
 

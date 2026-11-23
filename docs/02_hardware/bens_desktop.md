@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 
-![Lucide 'monitor-pc' icon](../assets/icons/monitor-pc.svg){ width=220 }
+![Lucide 'monitor-pc' icon](../assets/icons/monitor-pc.svg){ width=200 }
 
 # Ben's Workstation
 

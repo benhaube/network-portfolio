@@ -15,7 +15,7 @@ hide:
   - toc
 ---
 
-![Lucide 'laptop-minimal' icon](../assets/icons/laptop-minimal.svg){ width=244 }
+![Lucide 'laptop-minimal' icon](../assets/icons/laptop-minimal.svg){ width=200 }
 
 # Ben's Laptop
 

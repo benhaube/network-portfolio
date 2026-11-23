@@ -12,7 +12,7 @@ hide:
   - toc
 ---
 
-![Caddy Logo](../assets/icons/caddy.svg){ width=200 }
+![Lucide `chevrons-left-right-ellipsis` icon](../assets/icons/chevrons-left-right-ellipsis.svg){ width=200 }
 
 # Reverse Proxy
 

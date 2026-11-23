@@ -7,8 +7,8 @@ hide:
   - toc
 ---
 
-![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=250 .no-shadow }
-![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=250 .no-shadow }
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod.png#only-light){ width=200 .no-shadow }
+![Bed Knobs Mod Parts](../assets/pictures/bed-knobs-mod-dark.png#only-dark){ width=200 .no-shadow }
 
 # Manual Bed Leveling Mod
 

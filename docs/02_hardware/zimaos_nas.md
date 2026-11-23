@@ -107,11 +107,12 @@ The primary rack-mounted NAS server & VM host for the local network. With a [Zim
 
 ### :symbols-tux:&ensp;Native Linux
 
-| Service                                                     | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                             | Role / Notes { data-sort-method="none" }                                                       |
-| :---------------------------------------------------------- | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| [:symbols-folder-tree:&nbsp;NFS](../03_services/nfs.md)     |                `2049`                 | ![NFS status](https://uptime.rac3r4life.online/api/badge/128/status?label=){ style='vertical-align: middle;' } | Remote file system access.                                                                     |
-| [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md) |                 `22`                  | ![SSH status](https://uptime.rac3r4life.online/api/badge/130/status?label=){ style='vertical-align: middle;' } | Provides secure encrypted communications between two untrusted hosts over an insecure network. |
-| [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md)     |                 `445`                 | ![SMB status](https://uptime.rac3r4life.online/api/badge/109/status?label=){ style='vertical-align: middle;' } | Remote file system access.                                                                     |
+| Service                                                                   | Port(s) { data-sort-method="number" } | Status { data-sort-method="none" }                                                                                 | Role / Notes { data-sort-method="none" }                                           |
+| :------------------------------------------------------------------------ | :-----------------------------------: | :----------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| [:symbols-folder-tree:&nbsp;NFS](../03_services/nfs.md)                   |                `2049`                 | ![NFS status](https://uptime.rac3r4life.online/api/badge/128/status?label=){ style='vertical-align: middle;' }     | Remote file system access.                                                         |
+| [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md)               |                 `22`                  | ![SSH status](https://uptime.rac3r4life.online/api/badge/130/status?label=){ style='vertical-align: middle;' }     | Secure encrypted communication between two trusted hosts over an insecure network. |
+| [:symbols-folder-tree:&nbsp;SMB](../03_services/smb.md)                   |                 `445`                 | ![SMB status](https://uptime.rac3r4life.online/api/badge/109/status?label=){ style='vertical-align: middle;' }     | Remote file system access.                                                         |
+| [:services-wireguard:&nbsp;WireGuard](../03_services/wireguard_server.md) |                `51820`                | ![WireGuard status](https://uptime.rac3r4life.online/api/badge/1/status?label=){ style='vertical-align: middle;' } | A simple yet fast and modern VPN that utilizes state-of-the-art cryptography.      |
 
 ### :symbols-container:&ensp;Docker Container
 
@@ -665,15 +666,59 @@ The Fastfetch Login Preset prints a customized Fastfetch output that shows relev
 --8<-- "code/config/fastfetch-logo-zimaos.txt"
 ```
 
+### :symbols-layout-grid-plus:&ensp;ZimaOS Module Manager
+
+![GitHub Release](https://img.shields.io/github/v/release/chicohaager/modmanager?label=Release&color=%23FFAA00){ style="vertical-align: middle;" }
+
+Use Module Manager for ZimaOS to hide or restore built-in apps _(e.g., Photos, PeerDrop, ZVM, Backup)_ and install / update GitHub system extension modules using the `zpkg` command. Hiding a built-in module from the ZimaOS dashboard does not delete it unless you ask it to. Clicking "Restore" brings the module back up exactly as ZimaOS shipped it.
+
+[Module Manager&ensp;:brands-github:](https://github.com/chicohaager/modmanager){ .md-button }
+
+#### Install
+
+1. Download the latest release from [Github](https://github.com/chicohaager/modmanager/releases/latest){ external-link }.
+
+    ``` bash
+    cd /tmp
+    curl -fsSLO https://github.com/chicohaager/modmanager/releases/latest/download/modmanager-amd64.raw
+    curl -fsSLO https://github.com/chicohaager/modmanager/releases/latest/download/modmanager-amd64.raw.sha256
+    ```
+
+2. Verify the sha256 checksum.
+
+    ``` bash
+    sha256sum -c modmanager-amd64.raw.sha256  # must print: 'modmanager-amd64.raw: OK'
+    ```
+
+3. Rename the `.raw` file.
+
+    ``` bash
+    mv modmanager-amd64.raw modmanager.raw
+    ```
+
+4. Install the package.
+
+    ``` bash
+    sudo zpkg install /tmp/modmanager.raw
+    ```
+
+!!! note
+
+    Updating by hand requires restarting the service. To update Module Manager manually use the following command after downloading the latest `.raw` package.
+
+    ``` bash
+    sudo zpkg install --force /tmp/modmanager.raw && sudo systemctl daemon-reload && sudo systemctl restart modmanager
+    ```
+
 ### :symbols-clock-fading:&ensp;Zima Cron
 
 ![GitHub Release](https://img.shields.io/github/v/release/chicohaager/cron?label=Release&color=%23FFAA00){ style="vertical-align: middle;" }
 
-A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support.
+A modern, reliable task scheduler for ZimaOS with a completely redesigned web interface. Replaces the previous cron implementation with improved task persistence, advanced scheduling options, and comprehensive notification support. The Cron module can be installed / updated manually or via Module Manager.
 
 [Zima Cron&ensp;:brands-github:](https://github.com/chicohaager/cron){ .md-button }
 
-#### Install
+#### Manual Install
 
 1.  Download the latest release from [GitHub](https://github.com/chicohaager/cron/releases/latest){ external-link }.
 
@@ -745,3 +790,75 @@ Host firewall for ZimaOS &mdash; a standalone module with a web UI and a live se
     ---
 
     Open **Zima Firewall** from the [ZimaOS dashboard](http://storage-server.internal){ external-link } _(ZFW Firewall)_, or directly at <http://storage-server.internal/modules/zfw/index.html>.
+
+### :symbols-waypoints:&ensp;WireGuard Tools
+
+![GitHub Release](https://img.shields.io/github/v/release/chicohaager/zimaos-wireguard-sysext?label=Release&color=%23FFAA00){ style="vertical-align: middle;" }
+
+WireGuard Tools _(`wg`, `wg-quick`)_ for ZimaOS is a Systemd-sysext module with a dashboard tile and web-UI for creating and managing WireGuard tunnels and clients. The WireGuard service can also be managed in the CLI with the `wg` and `wg-quick` commands. The WireGuard Tools module can be installed / updated manually or through Module Manager.
+
+[WireGuard Tools&ensp;:brands-github:](https://github.com/chicohaager/zimaos-wireguard-sysext){ .md-button }
+
+#### Manual Install
+
+1. Download the latest release from [GitHub](https://github.com/chicohaager/zimaos-wireguard-sysext/releases/latest){ external-link }.
+
+    ``` bash
+    cd /tmp
+    curl -fsSLO https://github.com/chicohaager/zimaos-wireguard-sysext/releases/latest/download/wireguard-amd64.raw
+    curl -fsSLO https://github.com/chicohaager/zimaos-wireguard-sysext/releases/latest/download/wireguard-amd64.raw.sha256
+    ```
+
+2. Verify the sha256 checksum.
+
+    ``` bash
+    sha256sum -c wireguard-amd64.raw.sha256  # must print: 'wireguard-amd64.raw: OK'
+    ```
+
+3. Rename the `.raw` file.
+
+    ``` bash
+    mv wireguard-amd64.raw wireguard.raw
+    ```
+
+4. Install the package.
+
+    ``` bash
+    sudo zpkg install /tmp/wireguard.raw
+    ```
+
+### :symbols-terminal:&ensp;Admin Tools
+
+![GitHub Release](https://img.shields.io/github/v/release/chicohaager/zimaos-admintools-sysext?label=Release&color=%23FFAA00){ style="vertical-align: middle;" }
+
+Admin Tools for ZimaOS is a Systemd-sysext module with a dashboard tile that installs and manages useful CLI tools for administrators. The Admin Tools module can be installed / updated manually or through Module Manager. The CLI tools installed include `diff`, `strace`, `tcpdump`, `socat`, `7z`, `iotop`, `iftop`, `screen`, `mosh`, `nsenter`, `pv`, and `ping`. The tools come from Debian stable and receive Debian's security fixes. Some upstream projects are further ahead _(`strace`, `tcpdump`)_; a new module release picks up whatever Debian 13 ships then.
+
+[Admin Tools&ensp;:brands-github:](https://github.com/chicohaager/zimaos-admintools-sysext){ .md-button }
+
+#### Manual Install
+
+1. Download the latest release from [GitHub](https://github.com/chicohaager/zimaos-wireguard-sysext/releases/latest){ external-link }.
+
+    ``` bash
+    cd /tmp
+    curl -fsSLO https://github.com/chicohaager/zimaos-admintools-sysext/releases/latest/download/admintools-amd64.raw
+    curl -fsSLO https://github.com/chicohaager/zimaos-admintools-sysext/releases/latest/download/admintools-amd64.raw.sha256
+    ```
+
+2. Verify the sha256 checksum.
+
+    ``` bash
+    sha256sum -c admintools-amd64.raw.sha256  # must print: 'admintools-amd64.raw: OK'
+    ```
+
+3. Rename the `.raw` file.
+
+    ``` bash
+    mv admintools-amd64.raw admintools.raw
+    ```
+
+4. Install the package.
+
+    ``` bash
+    sudo zpkg install /tmp/admintools.raw
+    ```

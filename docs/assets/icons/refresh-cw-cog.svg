@@ -1,16 +1,16 @@
 <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-  <rect width="26" height="26" rx="4.5" ry="4.5" fill="#91180c"/>
-  <path d="m12.6 22a9.75 9.75 0 01-6.74-2.74l-2.26-2.26" stroke="#f42e1c"/>
-  <path d="m15.8 15.9-.923-.383" stroke="#0f0"/>
-  <path d="m15.8 18.2-.923.383" stroke="#0f0"/>
-  <path d="m17.5 14.2-.383-.923" stroke="#0f0"/>
-  <path d="m17.5 19.8-.383.924" stroke="#0f0"/>
-  <path d="m19.8 14.2.383-.923" stroke="#0f0"/>
-  <path d="m20.1 20.7-.382-.924" stroke="#0f0"/>
-  <path d="m21.4 15.9.923-.383" stroke="#0f0"/>
-  <path d="m21.4 18.2.923.383" stroke="#0f0"/>
-  <path d="m21.6 4v5h-5" stroke="#f42e1c"/>
-  <path d="m3.64 13a9 9 0 019-9 9.75 9.75 0 016.74 2.74l2.26 2.26" stroke="#f42e1c"/>
-  <path d="m8.64 17h-5v5" stroke="#f42e1c"/>
-  <circle cx="18.6" cy="17" r="3" stroke="#0f0"/>
+  <rect width="26" height="26" rx="4.5" ry="4.5" fill="#0065a0"/>
+  <path d="m12.6 22a9.75 9.75 0 01-6.74-2.74l-2.26-2.26" stroke="#0091eb"/>
+  <path d="m15.8 15.9-.923-.383" stroke="#4cae4f"/>
+  <path d="m15.8 18.2-.923.383" stroke="#4cae4f"/>
+  <path d="m17.5 14.2-.383-.923" stroke="#4cae4f"/>
+  <path d="m17.5 19.8-.383.924" stroke="#4cae4f"/>
+  <path d="m19.8 14.2.383-.923" stroke="#4cae4f"/>
+  <path d="m20.1 20.7-.382-.924" stroke="#4cae4f"/>
+  <path d="m21.4 15.9.923-.383" stroke="#4cae4f"/>
+  <path d="m21.4 18.2.923.383" stroke="#4cae4f"/>
+  <path d="m21.6 4v5h-5" stroke="#0091eb"/>
+  <path d="m3.64 13a9 9 0 019-9 9.75 9.75 0 016.74 2.74l2.26 2.26" stroke="#0091eb"/>
+  <path d="m8.64 17h-5v5" stroke="#0091eb"/>
+  <circle cx="18.6" cy="17" r="3" stroke="#4cae4f"/>
 </svg>

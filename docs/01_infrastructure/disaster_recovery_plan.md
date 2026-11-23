@@ -12,7 +12,7 @@ tags:
   - Service
 ---
 
-![Lucide 'tornado' icon](../assets/icons/tornado.svg){ width=200 }
+![Lucide 'tornado' icon](../assets/icons/tornado.svg){ width=222 }
 
 # Disaster Recovery Plan
 

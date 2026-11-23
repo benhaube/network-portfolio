@@ -13,7 +13,7 @@ tags:
   - VPN
 ---
 
-![Lucide 'brick-wall-shield' icon](../assets/icons/ethernet-port-shield.svg){ width=200 }
+![Lucide 'brick-wall-shield' icon](../assets/icons/ethernet-port-shield.svg){ width=244 }
 
 # Network Security Policy
 

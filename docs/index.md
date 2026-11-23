@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-![Material Design file-document-multiple customized icon](assets/icons/logo.svg){ width=250 }
+![Material Design file-document-multiple customized icon](assets/icons/logo.svg){ width=200 }
 
 # Network Documentation & Portfolio
 

@@ -17,7 +17,7 @@ hide:
   - toc
 ---
 
-![Lucide 'server-nas' icon](../assets/icons/zimaos-nas.svg){ width=200 }
+![Lucide 'server-nas' icon](../assets/icons/zimaos-nas.svg){ width=236 }
 
 # ZimaOS NAS
 

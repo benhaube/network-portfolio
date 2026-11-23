@@ -14,8 +14,7 @@ hide:
   - toc
 ---
 
-![Lucide 'square-terminal' icon](../assets/icons/ssh-light.svg#only-light){ width=200 }
-![Lucide 'square-terminal' icon](../assets/icons/ssh-dark.svg#only-dark){ width=200 }
+![Lucide 'square-terminal' icon](../assets/icons/ssh.svg){ width=200 }
 
 # SSH
 

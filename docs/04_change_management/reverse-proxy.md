@@ -1,5 +1,5 @@
 ---
-icon: services/caddy
+icon: symbols/chevrons-left-right-ellipsis
 title: Reverse Proxy
 subtitle: Domain Names for Local Services
 description: Set up a local reverse-proxy server using Caddy to give local services their own, unique FQDN.

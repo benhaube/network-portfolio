@@ -261,7 +261,7 @@ hide:
 
 ## :symbols-arrow-right-left:&ensp;Change Management
 
-[:services-caddy:&ensp;Reverse Proxy & DNS Routing](04_change_management/reverse-proxy.md)
+[:symbols-chevrons-left-right-ellipsis:&ensp;Reverse Proxy & DNS Routing](04_change_management/reverse-proxy.md)
 : Preparing the [Pi Zero 2W Server](02_hardware/pi_zero_2w_server.md) to be a [Caddy](03_services/caddy.md) reverse proxy server to give unique FQDNs to services hosted on the LAN.
 
 [:symbols-globe-code:&ensp;DNS Migration](04_change_management/dns_migration.md) 

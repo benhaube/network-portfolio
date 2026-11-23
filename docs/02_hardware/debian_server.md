@@ -16,8 +16,7 @@ hide:
   - toc
 ---
 
-![Lucide 'layers' icon](../assets/icons/layers-light.svg#only-light){ width=200 }
-![Lucide 'layers' icon](../assets/icons/layers-dark.svg#only-dark){ width=200 }
+![Lucide 'layers' icon](../assets/icons/layers.svg){ width=200 }
 
 # Debian Server
 

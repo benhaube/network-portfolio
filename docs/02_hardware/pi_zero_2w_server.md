@@ -17,8 +17,7 @@ hide:
   - toc
 ---
 
-![Lucide 'server' icon](../assets/icons/server-light.svg#only-light){ width=200 }
-![Lucide 'server' icon](../assets/icons/server-dark.svg#only-dark){ width=200 }
+![Lucide 'server' icon](../assets/icons/server.svg){ width=200 }
 
 # Pi Zero 2W Server
 

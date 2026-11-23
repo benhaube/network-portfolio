@@ -1,0 +1,8 @@
+<svg class="lucide lucide-chevrons-left-right-ellipsis preview-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+  <rect width="26" height="26" rx="4.5" ry="4.5" fill="#0065a0"/>
+  <path d="m13 13h.01" stroke="#4cae4f"/>
+  <path d="m17 13h.01" stroke="#4cae4f"/>
+  <path d="m18 8 5 5-5 5" stroke="#0091eb"/>
+  <path d="m8 8-5 5 5 5" stroke="#0091eb"/>
+  <path d="m9 13h.01" stroke="#4cae4f"/>
+</svg>

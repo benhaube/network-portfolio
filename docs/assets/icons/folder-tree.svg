@@ -1,0 +1,7 @@
+<svg class="lucide lucide-folder-tree-icon lucide-folder-tree" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+  <rect width="26" height="26" rx="4.5" ry="4.5" fill="#966400" stroke-linecap="square" stroke-width="3"/>
+  <path d="m21 11a1 1 0 001-1v-3a1 1 0 00-1-1h-2.5a1 1 0 01-.8-.4l-.9-1.2a1 1 0 00-.8-.4h-2a1 1 0 00-1 1v5a1 1 0 001 1z" fill="#b47800" stroke="#fa0"/>
+  <path d="m21 22a1 1 0 001-1v-3a1 1 0 00-1-1h-2.9a1 1 0 01-.88-.55l-.42-.85a1 1 0 00-.92-.6h-1.88a1 1 0 00-1 1v5a1 1 0 001 1z" fill="#b47800" stroke="#fa0"/>
+  <path d="m4 6a2 2 0 002 2h3" stroke="#fff"/>
+  <path d="m4 4v13a2 2 0 002 2h3" stroke="#fff"/>
+</svg>

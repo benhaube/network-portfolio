@@ -1,8 +1,9 @@
-<svg class="lucide lucide-binary-icon lucide-binary" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-  <rect x="9" y="11" width="4" height="6" rx="2" stroke="#0091eb"/>
-  <rect x="1" y="1" width="4" height="6" rx="2" stroke="#4cae4f"/>
-  <path d="m1 17h4" stroke="#0091eb"/>
-  <path d="m9 7h4" stroke="#4cae4f"/>
-  <path d="m1 11h2v6" stroke="#0091eb"/>
-  <path d="m9 1h2v6" stroke="#4cae4f"/>
+<svg class="lucide lucide-binary-icon lucide-binary" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+  <rect width="26" height="26" rx="4.5" ry="4.5" fill="#0065a0" stroke-linecap="square" stroke-width="3"/>
+  <rect x="15" y="15" width="4" height="6" rx="2" stroke="#0091eb"/>
+  <rect x="7" y="5" width="4" height="6" rx="2" stroke="#0091eb"/>
+  <path d="m7 21h4" stroke="#0091eb"/>
+  <path d="m15 11h4" stroke="#0091eb"/>
+  <path d="m7 15h2v6" stroke="#0091eb"/>
+  <path d="m15 5h2v6" stroke="#0091eb"/>
 </svg>

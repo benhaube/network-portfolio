@@ -1,9 +1,9 @@
-<svg class="lucide lucide-server-nas preview-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
-  <rect width="24" height="20" rx="4" ry="4" fill="#966400"/>
-  <rect x="2" y="2" width="20" height="16" rx="2" fill="#b47800" stroke="#fa0"/>
-  <path d="m10 14v-8" stroke="#fff"/>
-  <path d="m14 14v-8" stroke="#fff"/>
-  <path d="m18 14v-8" stroke="#fff"/>
-  <path d="m6 10h.01" stroke="#fa0"/>
-  <path d="m6 14h.01" stroke="#fa0"/>
+<svg class="lucide lucide-server-nas preview-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+  <rect width="26" height="26" rx="4.5" ry="4.5" fill="#966400"/>
+  <rect x="3" y="5" width="20" height="16" rx="2" fill="#b47800" stroke="#fa0"/>
+  <path d="m11 17v-8" stroke="#fff"/>
+  <path d="m15 17v-8" stroke="#fff"/>
+  <path d="m19 17v-8" stroke="#fff"/>
+  <path d="m7 13h.01" stroke="#fa0"/>
+  <path d="m7 17h.01" stroke="#fa0"/>
 </svg>

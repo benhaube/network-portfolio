@@ -14,8 +14,7 @@ hide:
   - toc
 ---
 
-![Lucide `square-terminal` icon](../assets/icons/ttydbridge-light.svg#only-light){ width=200 }
-![Lucide `square-terminal` icon](../assets/icons/ttydbridge-dark.svg#only-dark){ width=200 }
+![Lucide `square-terminal` icon](../assets/icons/ttydbridge.svg){ width=200 }
 
 # ttydBridge
 

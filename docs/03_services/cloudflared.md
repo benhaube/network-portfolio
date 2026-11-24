@@ -15,7 +15,8 @@ hide:
   - toc
 ---
 
-![Cloudflare Zero-Trust logo](../assets/icons/cloudflare-zero-trust.svg){ width=200 }
+![Cloudflare Zero-Trust logo](../assets/icons/cloudflare-zero-trust-light.svg#only-light){ width=200 }
+![Cloudflare Zero-Trust logo](../assets/icons/cloudflare-zero-trust-dark.svg#only-dark){ width=200 }
 
 # Cloudflared
 

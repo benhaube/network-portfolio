@@ -13,8 +13,7 @@ hide:
   - toc
 ---
 
-![IT-Tools Icon](../assets/icons/it-tools-light.svg#only-light){ width=200 }
-![IT-Tools Icon](../assets/icons/it-tools-dark.svg#only-dark){ width=200 }
+![IT-Tools Icon](../assets/icons/it-tools.svg){ width=200 }
 
 # IT-Tools
 

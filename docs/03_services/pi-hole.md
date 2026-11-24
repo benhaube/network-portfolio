@@ -15,7 +15,8 @@ hide:
   - toc
 ---
 
-![Pi-hole Logo](../assets/icons/pi-hole.svg){ width=200 }
+![Pi-hole Logo](../assets/icons/pi-hole-light.svg#only-light){ width=200 }
+![Pi-hole Logo](../assets/icons/pi-hole-dark.svg#only-dark){ width=200 }
 
 # Pi-hole
 

@@ -14,7 +14,8 @@ hide:
   - toc
 ---
 
-![Beszel Logo](../assets/icons/beszel.svg){ width=200 }
+![Beszel Logo](../assets/icons/beszel-light.svg#only-light){ width=200 }
+![Beszel Logo](../assets/icons/beszel-dark.svg#only-dark){ width=200 }
 
 # Beszel
 

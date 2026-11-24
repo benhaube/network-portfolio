@@ -13,7 +13,8 @@ hide:
   - toc
 ---
 
-![Immich Logo](../assets/icons/immich.svg){ width=200 }
+![Immich Logo](../assets/icons/immich-light.svg#only-light){ width=200 }
+![Immich Logo](../assets/icons/immich-dark.svg#only-dark){ width=200 }
 
 # Immich
 

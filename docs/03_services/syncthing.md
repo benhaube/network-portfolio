@@ -15,7 +15,8 @@ hide:
   - toc
 ---
 
-![Syncthing Icon](../assets/icons/syncthing.svg){ width=200 }
+![Syncthing Icon](../assets/icons/syncthing-light.svg#only-light){ width=200 }
+![Syncthing Icon](../assets/icons/syncthing-dark.svg#only-dark){ width=200 }
 
 # Syncthing
 

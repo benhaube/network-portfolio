@@ -15,7 +15,8 @@ hide:
   - toc
 ---
 
-![ntop Logo](../assets/icons/ntop.svg){ width=200 }
+![ntop Logo](../assets/icons/ntop-light.svg#only-light){ width=200 }
+![ntop Logo](../assets/icons/ntop-dark.svg#only-dark){ width=200 }
 
 # ntopng
 

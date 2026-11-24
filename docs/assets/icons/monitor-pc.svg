@@ -2,7 +2,7 @@
   <rect width="26" height="26" rx="4.5" ry="4.5" fill="#0065a0" stroke-linecap="square" stroke-width="3"/>
   <path d="m15 12h8" stroke="#4cae4f"/>
   <path d="m15 8h8" stroke="#4cae4f"/>
-  <path d="m19 18h.01" stroke="#4cae4f"/>
+  <path d="m19 18h.01" stroke="#0091eb"/>
   <path d="m11 16h-6a2 2 0 01-2-2v-6a2 2 0 012-2h6" stroke="#0091eb"/>
   <path d="m11 20h-5" stroke="#0091eb"/>
   <path d="m10 20v-4" stroke="#0091eb"/>

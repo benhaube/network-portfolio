@@ -14,8 +14,7 @@ hide:
   - toc
 ---
 
-![Healthchecks.io logo](../assets/icons/healthchecks-light.svg#only-light){ width=200 }
-![Healthchecks.io logo](../assets/icons/healthchecks-dark.svg#only-dark){ width=200 }
+![Healthchecks logo](../assets/icons/healthchecks.svg){ width=200 }
 
 # Healthchecks
 

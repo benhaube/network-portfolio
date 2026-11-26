@@ -115,6 +115,8 @@ Provides secure encrypted communications between two untrusted hosts over an ins
     --8<-- "sshd_config"
     ```
 
+    1. Set `AllowAgentForwarding` and `AllowTcpForwarding` to `yes` _ONLY_ on [Ben's Desktop](../02_hardware/bens_desktop.md). They are required for VSCodium remote access to function. All other settings can stay the same.
+
 2.  Restart the SSH service for the change to take effect:
 
     ``` bash linenums="1"

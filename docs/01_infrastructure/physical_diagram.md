@@ -14,6 +14,8 @@ hide:
   - toc
 ---
 
+![Lucide 'diagram-flow-horizontal' icon](../assets/icons/diagram-flow-horizontal.svg){ width=200 }
+
 # Physical Diagram
 
 _Focusing on Physical Connections_

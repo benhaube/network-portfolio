@@ -14,6 +14,8 @@ hide:
   - toc
 ---
 
+![Lucide 'diagram-flow-horizontal' icon](../assets/icons/diagram-flow-horizontal.svg){ width=200 }
+
 # Logical Diagram
 
 _Focusing on Servers and Services_

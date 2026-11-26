@@ -6,6 +6,7 @@
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
+  class="lucide lucide-ethernet-port-power"
 >
   <path d="M10 8v1" />
   <path d="M12.998 12.003a5 5 0 108-.005" />

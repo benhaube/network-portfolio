@@ -35,10 +35,10 @@ hide:
 [:symbols-ethernet-port-shield:&ensp;Network Security Policy](01_infrastructure/network_security_policy.md) 
 : This infrastructure operates on the _Principle of Least Privilege_. No device or service is granted more network access than is strictly required for its primary function. Security is maintained through physical isolation, logical segmentation, and encrypted transit.
 
-[:lucide-graph-hub:&ensp;Logical Diagram](01_infrastructure/logical_diagram.md)
+[:symbols-diagram-flow-horizontal:&ensp;Logical Diagram](01_infrastructure/logical_diagram.md)
 : A _Mermaid.js_ flowchart focusing on servers, services, and their connections.
 
-[:lucide-graph-hub:&ensp;Physical Diagram](01_infrastructure/physical_diagram.md)
+[:symbols-diagram-flow-horizontal:&ensp;Physical Diagram](01_infrastructure/physical_diagram.md)
 : A _Mermaid.js_ flowchart focusing on physical devices and their connections.
 
 ---

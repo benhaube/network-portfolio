@@ -1,5 +1,5 @@
 ---
-icon: lucide/graph-hub
+icon: symbols/diagram-flow-horizontal
 title: Physical Diagram
 subtitle: Focusing on Physical Connections
 description: A Mermaid.js flowchart focusing on physical devices and their connections.

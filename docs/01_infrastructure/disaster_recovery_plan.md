@@ -159,7 +159,7 @@ All three **Debian servers** send email & push notifications when new [SSH](../0
 
     [MAC Address Tables](mac_address_tables.md){ .md-button }
 
--   :lucide-graph-hub:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-diagram-flow-horizontal:{ .lg .middle }&emsp;**Network Diagrams**
 
     ---
 

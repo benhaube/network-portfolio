@@ -101,7 +101,7 @@ _Hardware MAC Addresses_
 
     [IP Address Management](ip_address_management.md){ .md-button }
 
--   :lucide-graph-hub:{ .lg .middle }&emsp;**Network Diagrams**
+-   :symbols-diagram-flow-horizontal:{ .lg .middle }&emsp;**Network Diagrams**
 
     ---
 

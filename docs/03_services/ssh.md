@@ -300,6 +300,8 @@ The flatpak version of the **Bitwarden** desktop client requires a custom policy
 
         Prevents offering all other keys stored in Bitwarden
 
+    4.  Only required for the client configuration on [Ben's Laptop](../02_hardware/bens_laptop.md). The SSH server on Ben's Desktop PC is used for VSCodium remote access.
+
 4.  Create the `IdentityFile` for all of the servers in the `~/.ssh` directory and paste in the public key.
 
     ``` bash title="Example" linenums="1"
@@ -327,3 +329,45 @@ The flatpak version of the **Bitwarden** desktop client requires a custom policy
             ``` bash
             chmod 600 ~/.ssh/*.pub
             ```
+
+#### Git Commit Signing
+
+1. Place the `git` signing public key in a file in the local user's home directory.
+
+    ``` text
+    ~/.ssh/git-sign.pub
+    ```
+
+2. Tell `git` to use SSH for commit signing.
+
+    ``` bash
+    git config --global gpg.format ssh
+    ```
+
+3. Provide the path to your public `git` signing SSH key.
+
+    ``` bash
+    git config --global user.signingkey ~/.ssh/git-sign.pub
+    ``` 
+
+4. Tell `git` to automatically sign all commits.
+
+    ``` bash
+    git config --global commit.gpgsign true
+    ```
+
+!!! note "Local Verification"
+
+    While GitHub and Gitea will show the "Verified" badge automatically, if you want `git log --show-signature` to verify commits locally on your own workstation, you will need to create an `allowed_signers` file and point Git to it.
+
+    1. Create the `allowed_signers` file and paste your signing public key into it.
+
+        ``` bash
+        nano ~/.ssh/allowed_signers
+        ```
+
+    2. Point `git` to the new `allowed_signers` file.
+
+        ``` bash
+        git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+        ```

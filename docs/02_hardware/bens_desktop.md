@@ -293,6 +293,8 @@ The `/home` directory backed up every weekday at **23:00 UTC** to [ZimaOS NAS](z
     systemctl --user enable home-bkp-nas.timer
     ```
 
+--8<-- "wake-on-lan.md"
+
 ### :brands-node-js:&ensp;Setup Node.js
 
 ![Fedora package](https://img.shields.io/fedora/v/nodejs?label=Release&color=%2351A2DA){ style="vertical-align: middle;" }

@@ -220,6 +220,8 @@ To solve this problem we need to create a Macvlan shim. Because Macvtap operatin
     sudo systemctl enable macvlan-shim.service
     ```
 
+--8<-- "wake-on-lan.md"
+
 ### :symbols-hard-drive-upload:&ensp;System Backup
 
 ![System Config Backup](https://healthchecks.rac3r4life.online/b/3/fb7e547c-b73e-4302-a6ea-b0df5d4baf1d.svg){ style="vertical-align: middle;" }

@@ -135,6 +135,7 @@ Ben's main workstation PC located at his desk in the office upstairs. Connected 
 | :--------------------------------------------------------------------- | :-----------------------------------: | :--------------------------------------------------------------------------------------------------- |
 | [:services-beszel:&nbsp;Beszel Agent](../03_services/beszel.md)        |                `45876`                | Agent for Beszel Hub *(hosted on [Pi 4B Server](pi_4b_server.md#docker-container){ data-preview })*. |
 | [:symbols-screen-share:&nbsp;RDP](../03_services/rdp.md)               |                `3389`                 | Remote desktop protocol for accessing the desktop over the local network.                            |
+| [:symbols-square-terminal:&nbsp;SSH](../03_services/ssh.md)            |                 `22`                  | For VSCodium remote access from [Ben's Laptop](bens_laptop.md).                                      |
 | [:services-syncthing-alt:&nbsp;Syncthing](../03_services/syncthing.md) |     `8384`<br>`22000`<br>`21027`      | Open decentralized file synchronization.                                                             |
 
 ---

@@ -247,6 +247,7 @@
 *[WAF]: Web Application Firewall
 *[WAN]: Wide Area Network
 *[WINE]: A compatibility layer to run software written for Windows on GNU / Linux. Recursive acronym: "WINE is not an Emulator".
+*[WoL]: Wake on LAN
 *[XDR]: Extended Detection and Response
 *[XML]: Extensible Markup Language
 *[XSS]: Cross-Site Scripting

@@ -58,3 +58,9 @@ Host github.com GitHub
     User git
     IdentityFile ~/.ssh/github.pub
     IdentitiesOnly yes
+# (4)!
+Host Workstation
+    HostName bens-workstation.internal
+    User bhaube
+    IdentityFile ~/.ssh/bens-workstation.pub 
+    IdentitiesOnly yes

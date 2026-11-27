@@ -1,35 +1,35 @@
 #:schema https://starship.rs/config-schema.json
 
 add_newline = true
-continuation_prompt = '[❯❯ ](bright-black)'
+continuation_prompt = "[❯❯ ](bright-black)"
 
 [character]
-success_symbol = '[❯](bold green)'
-error_symbol = '[❯](bold red)'
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
 
 [username]
-style_user = 'bold white'
-style_root = 'bold red'
-format = '[$user]($style) '
+style_user = "bold white"
+style_root = "bold red"
+format = "[$user]($style) "
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
 ssh_symbol = " "
-format = '@ [$ssh_symbol$hostname](bold cyan) '
+format = "@ [$ssh_symbol$hostname](bold cyan) "
 disabled = false
 
 [directory]
-style = 'bold white'
+style = "bold white"
 truncation_length = 8
-truncation_symbol = '…/'
+truncation_symbol = "…/"
 read_only = " 󰌾"
-read_only_style = 'bold red'
+read_only_style = "bold red"
 
 [localip]
 ssh_only = true
-format = '- [$localipv4](bold white) '
+format = "- [$localipv4](bold white) "
 disabled = false
 
 [os]
@@ -38,86 +38,78 @@ style = "bold cyan"
 disabled = false
 
 [os.symbols]
-Android = " "
-Debian = " "
 Fedora = " "
-Kali = " "
-Linux = " "
-openSUSE = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
 
 [cmd_duration]
-style = 'bold cyan'
-format = 'took [$duration]($style) '
+style = "bold cyan"
+format = "took [$duration]($style) "
 
 [battery]
-format = '[$symbol$percentage ]($style)'
-full_symbol = '󰁹 '
-charging_symbol = '󰂄 '
-discharging_symbol = '󰂃 '
-empty_symbol = '󰂎 '
+format = "[$symbol$percentage ]($style)"
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+empty_symbol = "󰂎 "
 
 [[battery.display]]
 threshold = 10
-style = 'bold red'
-charging_symbol = '󰢜 '
-discharging_symbol = '󱃍 '
+style = "bold red"
+charging_symbol = "󰢜 "
+discharging_symbol = "󱃍 "
 
 [[battery.display]]
 threshold = 20
-style = 'bold red'
-charging_symbol = '󰂆 '
-discharging_symbol = '󰁻 '    
+style = "bold red"
+charging_symbol = "󰂆 "
+discharging_symbol = "󰁻 "
 
 [[battery.display]]
 threshold = 30
-style = 'bold yellow'
-charging_symbol = '󰂇 '
-discharging_symbol = '󰁼 '
+style = "bold yellow"
+charging_symbol = "󰂇 "
+discharging_symbol = "󰁼 "
 
 [[battery.display]]
 threshold = 40
-style = 'bold yellow' 
-charging_symbol = '󰂈 '
-discharging_symbol = '󰁽 '
+style = "bold yellow"
+charging_symbol = "󰂈 "
+discharging_symbol = "󰁽 "
 
 [[battery.display]]
 threshold = 50
-style = 'bold yellow'
-charging_symbol = '󰢝 '
-discharging_symbol = '󰁾 '
+style = "bold yellow"
+charging_symbol = "󰢝 "
+discharging_symbol = "󰁾 "
 
 [[battery.display]]
 threshold = 60
-style = 'bold yellow'
-charging_symbol = '󰂉 '
-discharging_symbol = '󰁿 '
+style = "bold yellow"
+charging_symbol = "󰂉 "
+discharging_symbol = "󰁿 "
 
 [[battery.display]]
 threshold = 70
-style = 'bold green'
-charging_symbol = '󰢞 '
-discharging_symbol = '󰂀 '
+style = "bold green"
+charging_symbol = "󰢞 "
+discharging_symbol = "󰂀 "
 
 [[battery.display]]
 threshold = 80
-style = 'bold green'
-charging_symbol = '󰂊 '
-discharging_symbol = '󰂁 '
+style = "bold green"
+charging_symbol = "󰂊 "
+discharging_symbol = "󰂁 "
 
 [[battery.display]]
 threshold = 90
-style = 'bold green'  
-charging_symbol = '󰂋 '
-discharging_symbol = '󰂂 '
+style = "bold green"
+charging_symbol = "󰂋 "
+discharging_symbol = "󰂂 "
 
 [[battery.display]]
 threshold = 100
-style = 'bold green'
-charging_symbol = '󰂅 '
-discharging_symbol = '󰁹 '
+style = "bold green"
+charging_symbol = "󰂅 "
+discharging_symbol = "󰁹 "
 
 [docker_context]
 symbol = " "
@@ -126,4 +118,4 @@ symbol = " "
 symbol = " "
 
 [git_commit]
-tag_symbol = '  '
+tag_symbol = "  "

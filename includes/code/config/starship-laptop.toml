@@ -45,7 +45,7 @@ style = "bold cyan"
 format = "took [$duration]($style) "
 
 [battery]
-format = "[$symbol$percentage ]($style)"
+format = "[$symbol]($style)"
 full_symbol = "󰁹 "
 charging_symbol = "󰂄 "
 discharging_symbol = "󰂃 "

@@ -200,7 +200,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output that shows relev
 3.  Add the `fastfetch` command to the `~/.bashrc` file:
 
     ``` bash linenums="1"
-    fastfetch -c login
+    echo "" && fastfetch -c login
     ```
 
 #### Fastfetch Preset File

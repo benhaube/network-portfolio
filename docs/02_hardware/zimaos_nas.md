@@ -587,34 +587,64 @@ The Fastfetch Login Preset prints a customized Fastfetch output that shows relev
 
 #### Install
 
-1.  Download the latest `fastfetch` release from [GitHub](https://github.com/fastfetch-cli/fastfetch/releases/latest){ external-link }:
+1.  Download the `fastfetch-install.sh` script from my [GitHub](https://github.com/benhaube/fastfetch-login-preset){ external-link } repository to the `/tmp` directory.
 
     ``` bash linenums="1"
-    FF_VERSION=2.70.0  # (1)!
-    wget https://github.com/fastfetch-cli/fastfetch/releases/download/${FF_VERSION}/fastfetch-linux-amd64.tar.gz
+    cd /tmp
+    curl -fsSL https://raw.githubusercontent.com/benhaube/fastfetch-login-preset/refs/heads/master/fastfetch-install.sh -o fastfetch-install.sh
     ```
 
-    1. Sets the `FF_VERSION` variable for the latest release. Check the latest release version on the [releases](https://github.com/fastfetch-cli/fastfetch/releases/){ external-link } page
-
-2.  Transfer the downloaded tarball to the `/tmp` directory on the server:
+2.  Move the install script into the `/opt/scripts` directory, and give it permission to execute.
 
     ``` bash
-    scp fastfetch-linux-amd64.tar.gz admin@ZimaOS-NAS:/tmp
+    sudo mv fastfetch-install.sh /opt/scripts && sudo chown root:root /opt/scripts/fastfetch-install.sh && sudo chmod 711 /opt/scripts/fastfetch-install.sh
     ```
 
-3.  Start a new SSH session, enter the `/tmp` directory, and unpack the tarball:
+3.  Run the `fastfetch-install.sh` shell script to install the latest version of fastfetch into the `/opt/bin` directory.
 
     ``` bash
-    tar -xvf fastfetch-linux-amd64.tar.gz
+    sudo bash /opt/scripts/fastfetch-install.sh
     ```
 
-4.  Copy the contents to the `/opt` directory:
+#### Auto Update
 
-    ``` bash linenums="1" 
-    sudo cp -r fastfetch-linux-amd64/usr /opt
+1. Create the Systemd service unit file:
+
+    ``` systemd { .mono-title title="/etc/systemd/system/fastfetch-update.service" }
+    [Unit]
+    Description=Weekly Fastfetch update script
+
+    [Service]
+    Type=oneshot
+    ExecStart=/opt/scripts/fastfetch-install.sh
+
+    [Install]
+    WantedBy=multi-user.target
     ```
 
-#### Configure
+2.  Create the Systemd timer unit file:
+
+    ``` systemd { .mono-title title="/etc/systemd/system/fastfetch-update.timer" }
+    [Unit]
+    Description=Run weekly Fastfetch update script
+
+    [Timer]
+    OnCalendar=Sun 06:00:00
+    Persistent=true
+    RandomizedDelaySec=5m
+
+    [Install]
+    WantedBy=timers.target
+    ```
+
+3.  Reload Systemd daemons and enable timer unit:
+
+    ``` bash
+    sudo systemctl daemon-reload
+    sudo systemctl enable --now fastfetch-update.timer
+    ```
+
+#### Configure Preset
 
 1.  Copy the `login.jsonc` preset file into the presets directory:
 
@@ -637,7 +667,7 @@ The Fastfetch Login Preset prints a customized Fastfetch output that shows relev
 4.  Add the `fastfetch` command to the `~/.bashrc` file to run on login:
 
     ``` bash linenums="1"
-    fastfetch -c login
+    echo "" && fastfetch -c login
     ```
 
 #### Config Files

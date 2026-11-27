@@ -16,7 +16,7 @@ show_always = true
 
 [hostname]
 ssh_only = true
-ssh_symbol = " "
+ssh_symbol = "󰒍 "
 format = "@ [$ssh_symbol$hostname](bold red) "
 disabled = false
 
@@ -24,7 +24,7 @@ disabled = false
 style = "bold white"
 truncation_length = 8
 truncation_symbol = "…/"
-read_only = " 󰌾"
+read_only = " "
 read_only_style = "bold red"
 
 [localip]

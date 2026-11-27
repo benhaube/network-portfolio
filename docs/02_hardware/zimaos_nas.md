@@ -576,8 +576,8 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 ### :symbols-log-in:&ensp;Fastfetch Login Preset
 
-![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/ssh-zimaos-light.png#only-light){ width=320 align=right .on-glb }
-![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/ssh-zimaos-dark.png#only-dark){ width=320 align=right .on-glb }
+![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/fastfetch-zimaos-nas-light.png#only-light){ width=320 align=right .on-glb }
+![Fastfetch Login Preset on ZimaOS NAS](../assets/screenshots/fastfetch-zimaos-nas-dark.png#only-dark){ width=320 align=right .on-glb }
 
 ![GitHub Release](https://img.shields.io/github/v/release/fastfetch-cli/fastfetch?label=Release&color=%230172B1){ style="vertical-align: middle;" }
 

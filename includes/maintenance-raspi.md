@@ -173,8 +173,8 @@ The Starship terminal prompt is a cross-platform, cross-shell application that r
 
 ### :symbols-log-in:&ensp;Fastfetch Login Preset
 
-![Fastfetch login preset on Debian Server](../assets/screenshots/ssh-pi-server-light.png#only-light){ .on-glb width=340 align=right }
-![Fastfetch login preset on Debian Server](../assets/screenshots/ssh-pi-server-dark.png#only-dark){ .on-glb width=340 align=right }
+![Fastfetch login preset on Debian Server](../assets/screenshots/fastfetch-pi-server-light.png#only-light){ .on-glb width=340 align=right }
+![Fastfetch login preset on Debian Server](../assets/screenshots/fastfetch-pi-server-dark.png#only-dark){ .on-glb width=340 align=right }
 
 ![Fastfetch Release](https://img.shields.io/debian/v/fastfetch?label=Release&color=0172B1){ style="vertical-align: middle;" }
 
